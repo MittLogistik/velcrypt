@@ -2,7 +2,7 @@
  * Global site configuration. Flip APP_LIVE and set APP_STORE_URL when the
  * app is approved; every CTA on the site reads from here.
  */
-export const SITE_URL = 'https://velcrypt.com';
+export const SITE_URL = 'https://velcrypt.app';
 export const SITE_NAME = 'Velcrypt';
 export const TAGLINE = 'Well Encrypted. Truly Private.';
 
@@ -13,9 +13,9 @@ export const APP_LIVE = false;
 export const APP_STORE_URL = 'https://apps.apple.com/app/velcrypt/id0000000000';
 
 /** Contact addresses (placeholders until the mailboxes exist). */
-export const SUPPORT_EMAIL = 'support@velcrypt.com';
-export const PRESS_EMAIL = 'press@velcrypt.com';
-export const PRIVACY_EMAIL = 'privacy@velcrypt.com';
+export const SUPPORT_EMAIL = 'support@velcrypt.app';
+export const PRESS_EMAIL = 'press@velcrypt.app';
+export const PRIVACY_EMAIL = 'privacy@velcrypt.app';
 
 /** Minimum OS requirement, used in copy and JSON-LD. */
 export const MIN_IOS = '17';

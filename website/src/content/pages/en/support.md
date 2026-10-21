@@ -4,9 +4,9 @@ title: "Velcrypt Support: Contact and Troubleshooting"
 description: "Get help with Velcrypt: how to contact support, what to include in your message, quick fixes for common issues, and what support cannot do."
 h1: "Velcrypt support"
 navTitle: "Support"
-answer: "Email support@velcrypt.com with your iOS version, Velcrypt version and a description of the problem. We can help with how the app works, but we can never open, reset or recover a vault, because we have no access to your patterns or keys."
+answer: "Email support@velcrypt.app with your iOS version, Velcrypt version and a description of the problem. We can help with how the app works, but we can never open, reset or recover a vault, because we have no access to your patterns or keys."
 keyFacts:
-  - "Contact: support@velcrypt.com."
+  - "Contact: support@velcrypt.app."
   - "Include your iPhone model, iOS version, Velcrypt version and the steps that led to the problem."
   - "Support cannot recover patterns or vaults — we have no access to them."
   - "An unexpected empty vault usually means a slightly different pattern was drawn."
@@ -33,7 +33,7 @@ Most questions about Velcrypt are answered in the [FAQ](id:faq). If yours isn’
 
 ## Contact us
 
-Email **support@velcrypt.com**. For privacy questions, write to privacy@velcrypt.com; for media enquiries, see the [press kit](id:press).
+Email **support@velcrypt.app**. For privacy questions, write to privacy@velcrypt.app; for media enquiries, see the [press kit](id:press).
 
 There is no account and no in-app chat, so email is the only channel. We only receive what you choose to send.
 

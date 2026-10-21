@@ -3,7 +3,7 @@ import { defineConfig } from 'astro/config';
 import remarkIdLinks from './src/lib/remark-id-links.mjs';
 
 export default defineConfig({
-  site: 'https://velcrypt.com',
+  site: 'https://velcrypt.app',
   output: 'static',
   trailingSlash: 'always',
   build: {

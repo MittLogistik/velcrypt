@@ -27,7 +27,7 @@ faq: []
 
 **Effective date:** 21 October 2026
 
-These Terms of Use (“Terms”) govern your use of the Velcrypt iPhone app (the “App”) and the velcrypt.com website (the “Website”), provided by Velcrypt (“we”, “us”). By downloading or using the App or using the Website, you agree to these Terms.
+These Terms of Use (“Terms”) govern your use of the Velcrypt iPhone app (the “App”) and the velcrypt.app website (the “Website”), provided by Velcrypt (“we”, “us”). By downloading or using the App or using the Website, you agree to these Terms.
 
 ## 1. The App and Apple’s EULA
 
@@ -92,4 +92,4 @@ These Terms are governed by the laws of [jurisdiction TBD], without regard to co
 
 ## 12. Contact
 
-Questions about these Terms: **support@velcrypt.com**. For how we handle data, see the [Privacy Policy](id:privacy).
+Questions about these Terms: **support@velcrypt.app**. For how we handle data, see the [Privacy Policy](id:privacy).

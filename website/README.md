@@ -1,4 +1,4 @@
-# velcrypt.com
+# velcrypt.app
 
 Marketing website for **Velcrypt**, a private, encrypted photo, video and document vault for iPhone.
 
@@ -124,7 +124,7 @@ See `SEO-PLAN.md` for the locale priority order and slug guidelines.
 - `public/_redirects` holds legacy paths.
 - Redirect `www` to the apex with a Cloudflare Redirect Rule.
 - Cloudflare serves `404.html` automatically.
-- After the first deploy, submit `https://velcrypt.com/sitemap.xml` in Google Search Console and Bing Webmaster Tools.
+- After the first deploy, submit `https://velcrypt.app/sitemap.xml` in Google Search Console and Bing Webmaster Tools.
 
 ## Open TODOs
 

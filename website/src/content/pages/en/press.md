@@ -4,13 +4,13 @@ title: "Velcrypt Press Kit: Logos, Facts and Contact"
 description: "Velcrypt press kit: boilerplate text, fact sheet, brand colours, logo and app icon downloads, and the press contact for media enquiries."
 h1: "Velcrypt press kit"
 navTitle: "Press kit"
-answer: "Velcrypt is an iPhone app (iOS 17 or later) that stores private photos, videos and documents in encrypted, pattern-locked vaults on the device, with no account and no cloud. Logos, colours and a fact sheet are below; contact press@velcrypt.com."
+answer: "Velcrypt is an iPhone app (iOS 17 or later) that stores private photos, videos and documents in encrypted, pattern-locked vaults on the device, with no account and no cloud. Logos, colours and a fact sheet are below; contact press@velcrypt.app."
 keyFacts:
   - "Tagline: “Well Encrypted. Truly Private.”"
   - "Platform: iPhone, iOS 17 or later."
   - "Pricing model: free with optional Premium; pricing to be announced."
   - "Downloads: logo and mark (transparent PNG) and 1024 px app icon."
-  - "Press contact: press@velcrypt.com."
+  - "Press contact: press@velcrypt.app."
 primaryKeyword: "velcrypt press kit"
 keywords: ["velcrypt logo", "velcrypt media kit", "velcrypt fact sheet", "velcrypt brand colors"]
 datePublished: 2026-10-21
@@ -22,12 +22,12 @@ faq:
   - q: "Can I use the Velcrypt logo in an article?"
     a: "Yes. You may use the logo and app icon from this page to write about Velcrypt. Please don’t alter, recolour or crop them in a misleading way."
   - q: "Can I get a review copy or ask technical questions about Velcrypt?"
-    a: "Email press@velcrypt.com with your publication and deadline. We are happy to answer technical questions about the security model."
+    a: "Email press@velcrypt.app with your publication and deadline. We are happy to answer technical questions about the security model."
   - q: "Has Velcrypt been independently audited?"
     a: "No. Velcrypt uses standard algorithms through Apple CryptoKit, but no independent security audit has taken place yet. Please don’t describe it as audited."
 ---
 
-Everything you need to write about Velcrypt is on this page. If something is missing, email press@velcrypt.com.
+Everything you need to write about Velcrypt is on this page. If something is missing, email press@velcrypt.app.
 
 ## Boilerplate
 
@@ -53,7 +53,7 @@ Velcrypt is a native iPhone app that keeps private photos, videos and documents 
 | Encryption | AES-256-GCM (Apple CryptoKit); PBKDF2-HMAC-SHA512 key derivation |
 | Data | 100% on-device; no account, no cloud sync, no ads |
 | Planned | Duress pattern (coming soon), encrypted backup |
-| Press contact | press@velcrypt.com |
+| Press contact | press@velcrypt.app |
 
 For technical detail, link to the [security model](id:security); for a feature overview, see [features](id:features).
 
@@ -89,4 +89,4 @@ Read [about Velcrypt](id:about) for the principles behind the app, and [pricing]
 
 ## Press contact
 
-**press@velcrypt.com** — for interviews, technical questions and asset requests.
+**press@velcrypt.app** — for interviews, technical questions and asset requests.

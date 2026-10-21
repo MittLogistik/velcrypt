@@ -71,7 +71,7 @@ cd ios && xcodegen generate && open Velcrypt.xcodeproj
 ## Known limitations before App Store submission
 
 - Import, viewer and albums arrive in Milestone 3; the + button explains this for now.
-- Privacy policy, terms and support URLs point to velcrypt.com pages that don't exist yet.
+- Privacy policy, terms and support URLs point to velcrypt.app pages that don't exist yet.
 - `ITSAppUsesNonExemptEncryption = false`: the app only uses Apple's built-in encryption to protect the user's own data. Confirm this export-compliance answer before release.
 - English only. Localization comes later.
 - The UI has not yet been checked on a physical device.

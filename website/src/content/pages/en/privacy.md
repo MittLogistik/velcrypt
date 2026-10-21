@@ -33,7 +33,7 @@ faq:
 
 **Effective date:** 21 October 2026
 
-This Privacy Policy explains what information Velcrypt (“we”, “us”) handles when you use the Velcrypt iPhone app and the velcrypt.com website. The short version: the app is designed so that we never receive your content, and we collect as little as possible everywhere else.
+This Privacy Policy explains what information Velcrypt (“we”, “us”) handles when you use the Velcrypt iPhone app and the velcrypt.app website. The short version: the app is designed so that we never receive your content, and we collect as little as possible everywhere else.
 
 ## The Velcrypt app
 
@@ -73,7 +73,7 @@ Interactive tools on the site, such as the [photo metadata remover](id:photo-met
 
 ## Emails you send us
 
-If you email us — for example at support@velcrypt.com — we receive your email address and whatever you include in the message. We use it only to reply and to help you, and we keep it only as long as needed for that purpose. Please never send us your vault pattern or private content; we don’t need it. See [support](id:support).
+If you email us — for example at support@velcrypt.app — we receive your email address and whatever you include in the message. We use it only to reply and to help you, and we keep it only as long as needed for that purpose. Please never send us your vault pattern or private content; we don’t need it. See [support](id:support).
 
 ## Children
 
@@ -83,7 +83,7 @@ Velcrypt is not directed at children, and we do not knowingly collect personal d
 
 Depending on where you live, laws such as the EU and UK General Data Protection Regulation (GDPR) or the California Consumer Privacy Act (CCPA) may give you rights to access, correct, delete or restrict the use of your personal data, to object to processing, and to receive a copy of your data. You also have the right to complain to your local data protection authority.
 
-In practice, the only personal data we may hold about you is the content of emails you have sent us, and any diagnostic data Apple shares if you opted in. To exercise any of your rights, write to privacy@velcrypt.com. We do not sell personal data and do not use it for targeted advertising.
+In practice, the only personal data we may hold about you is the content of emails you have sent us, and any diagnostic data Apple shares if you opted in. To exercise any of your rights, write to privacy@velcrypt.app. We do not sell personal data and do not use it for targeted advertising.
 
 ## Security
 
@@ -95,4 +95,4 @@ If our practices change, we will update this page and change the effective date 
 
 ## Contact
 
-Questions about this policy or your data: **privacy@velcrypt.com**. You can also read our [Terms of Use](id:terms).
+Questions about this policy or your data: **privacy@velcrypt.app**. You can also read our [Terms of Use](id:terms).

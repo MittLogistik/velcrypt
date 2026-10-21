@@ -51,13 +51,13 @@ struct SettingsView: View {
 
                 Section("About") {
                     LabeledContent("Version", value: Self.versionString)
-                    Link(destination: URL(string: "https://velcrypt.com/privacy/")!) {
+                    Link(destination: URL(string: "https://velcrypt.app/privacy/")!) {
                         Label("Privacy Policy", systemImage: "hand.raised.fill")
                     }
-                    Link(destination: URL(string: "https://velcrypt.com/terms/")!) {
+                    Link(destination: URL(string: "https://velcrypt.app/terms/")!) {
                         Label("Terms of Service", systemImage: "doc.plaintext")
                     }
-                    Link(destination: URL(string: "mailto:support@velcrypt.com")!) {
+                    Link(destination: URL(string: "mailto:support@velcrypt.app")!) {
                         Label("Contact Support", systemImage: "envelope.fill")
                     }
                 }

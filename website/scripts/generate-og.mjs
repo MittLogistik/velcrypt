@@ -46,7 +46,7 @@ function svg({ kicker, title }) {
   <text x="76" y="262" font-family="${font}" font-size="24" font-weight="600" fill="#75D8FF" letter-spacing="3">${kicker.toUpperCase()}</text>
   <text x="76" y="338" font-family="${font}" font-size="58" font-weight="700" fill="#FFFFFF" letter-spacing="-1.5">${title[0]}</text>
   <text x="76" y="410" font-family="${font}" font-size="58" font-weight="700" fill="#FFFFFF" letter-spacing="-1.5">${title[1]}</text>
-  <text x="76" y="548" font-family="${font}" font-size="26" font-weight="500" fill="#94A3B8">Well Encrypted. Truly Private.  ·  velcrypt.com</text>
+  <text x="76" y="548" font-family="${font}" font-size="26" font-weight="500" fill="#94A3B8">Well Encrypted. Truly Private.  ·  velcrypt.app</text>
   ${dots.join('')}
   <path d="${d}" fill="none" stroke="url(#g)" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" opacity=".6" filter="url(#blur)"/>
   <path d="${d}" fill="none" stroke="url(#g)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>

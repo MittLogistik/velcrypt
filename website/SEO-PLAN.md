@@ -1,6 +1,6 @@
 # Velcrypt SEO and content plan
 
-Last updated: 21 October 2026. Scope: velcrypt.com (English launch, built for about 30 locales).
+Last updated: 21 October 2026. Scope: velcrypt.app (English launch, built for about 30 locales).
 
 ## 1. Strategy in five lines
 
