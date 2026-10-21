@@ -2,6 +2,7 @@ import SwiftUI
 
 struct SettingsView: View {
     @Environment(VaultSession.self) private var session
+    @Environment(VaultLibrary.self) private var library
     @Environment(\.dismiss) private var dismiss
     @AppStorage("appearance") private var appearance: AppearancePreference = .dark
 
@@ -38,6 +39,18 @@ struct SettingsView: View {
                     Text("Security")
                 } footer: {
                     Text("Each pattern opens its own vault. Changing the pattern only affects the vault that is open now.")
+                }
+
+                Section {
+                    LabeledContent("Photos", value: "\(library.count(of: .photo))")
+                    LabeledContent("Videos", value: "\(library.count(of: .video))")
+                    LabeledContent("Documents", value: "\(library.count(of: .document))")
+                    LabeledContent("Albums", value: "\(library.albums.count)")
+                    LabeledContent("Storage Used", value: ByteCountFormatter.string(fromByteCount: library.totalBytes, countStyle: .file))
+                } header: {
+                    Text("This Vault")
+                } footer: {
+                    Text("Vault data stays on this iPhone and is not included in iCloud or computer backups.")
                 }
 
                 Section("Appearance") {

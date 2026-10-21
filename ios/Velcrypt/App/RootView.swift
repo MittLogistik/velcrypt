@@ -15,8 +15,13 @@ struct RootView: View {
                 LockScreenView()
                     .transition(.opacity)
             case .unlocked:
-                VaultHomeView()
-                    .transition(.opacity.combined(with: .scale(scale: 1.02)))
+                if let library = session.library {
+                    VaultHomeView()
+                        .environment(library)
+                        // A new library (e.g. after a pattern change) gets a fresh view hierarchy.
+                        .id(ObjectIdentifier(library))
+                        .transition(.opacity.combined(with: .scale(scale: 1.02)))
+                }
             }
 
             // Hides content from the app switcher snapshot and while system sheets cover the app.

@@ -1,101 +1,189 @@
 import SwiftUI
 
-/// Main dashboard. Collections and import are wired to real storage in Milestone 3.
+/// Main dashboard of the open vault.
+///
+/// The brand header is part of the scroll content (it scrolls away) and the status bar area gets a
+/// solid backdrop, so content never slides underneath a transparent navigation bar.
 struct VaultHomeView: View {
     @Environment(VaultSession.self) private var session
-    @State private var showSettings = false
-    @State private var showImportOptions = false
+    @Environment(VaultLibrary.self) private var library
+    @AppStorage("originalsNoticeDismissed") private var originalsNoticeDismissed = false
 
-    private let collections: [VaultCollection] = [
-        VaultCollection(title: "Photos", systemImage: "photo.fill", tint: VCColor.accent),
-        VaultCollection(title: "Videos", systemImage: "play.rectangle.fill", tint: Color(hex: 0xA78BFA)),
-        VaultCollection(title: "Documents", systemImage: "doc.text.fill", tint: VCColor.accentCyan),
-        VaultCollection(title: "Albums", systemImage: "rectangle.stack.fill", tint: Color(hex: 0xF59E0B)),
-    ]
+    @State private var showSettings = false
+    @State private var showImporter = false
 
     var body: some View {
         NavigationStack {
             ScrollView {
                 VStack(alignment: .leading, spacing: 24) {
-                    SecurityStatusCard(itemCount: 0, storageBytes: 0)
+                    header
+                    SecurityStatusCard(itemCount: library.items.count, storageBytes: library.totalBytes)
+                    if library.lastImportCount > 0 && !originalsNoticeDismissed {
+                        originalsNotice
+                    }
                     collectionsGrid
                     recentSection
                 }
                 .padding(.horizontal, VCMetric.screenPadding)
-                .padding(.bottom, 120)
+                .padding(.top, 8)
+                .padding(.bottom, 140)
             }
+            .scrollIndicators(.hidden)
             .background(VCBackground())
-            .toolbar { toolbarContent }
-            .toolbarBackground(.hidden, for: .navigationBar)
-            .overlay(alignment: .bottom) { addButton }
-            .sheet(isPresented: $showSettings) { SettingsView() }
-            .confirmationDialog("Add to Vault", isPresented: $showImportOptions) {
-                Button("Photos & Videos") {}
-                Button("Files") {}
-            } message: {
-                Text("Import is enabled in the next build.")
+            .safeAreaInset(edge: .top, spacing: 0) {
+                // Opaque strip behind the status bar.
+                Color.clear
+                    .frame(height: 0)
+                    .background(VCColor.background.ignoresSafeArea(edges: .top))
             }
+            .toolbar(.hidden, for: .navigationBar)
+            .overlay(alignment: .bottom) {
+                VStack(spacing: 12) {
+                    ImportProgressCard()
+                    if !library.isImporting { addButton }
+                }
+                .padding(.bottom, 20)
+                .animation(.snappy, value: library.isImporting)
+            }
+            .navigationDestination(for: VaultRoute.self) { route in
+                switch route {
+                case .items(let filter): ItemGridView(filter: filter)
+                case .albums: AlbumsView()
+                }
+            }
+            .sheet(isPresented: $showSettings) { SettingsView() }
+            .vaultImporter(isPresented: $showImporter)
         }
+        .alert(
+            "Something went wrong",
+            isPresented: Binding(get: { library.errorMessage != nil }, set: { if !$0 { library.errorMessage = nil } })
+        ) {
+            Button("OK", role: .cancel) {}
+        } message: {
+            Text(library.errorMessage ?? "")
+        }
+        .task { await library.load() }
     }
 
-    @ToolbarContentBuilder
-    private var toolbarContent: some ToolbarContent {
-        ToolbarItem(placement: .topBarLeading) {
-            VelcryptWordmark(markSize: 26)
-        }
-        ToolbarItemGroup(placement: .topBarTrailing) {
-            Button {
+    // MARK: Sections
+
+    private var header: some View {
+        HStack(spacing: 4) {
+            VelcryptWordmark(markSize: 30)
+            Spacer()
+            headerButton("lock.fill", label: "Lock vault") {
                 Haptics.tap()
                 session.lock()
-            } label: {
-                Image(systemName: "lock.fill")
             }
-            .accessibilityLabel("Lock vault")
+            headerButton("gearshape.fill", label: "Settings") { showSettings = true }
+        }
+        .padding(.top, 4)
+    }
+
+    private func headerButton(_ symbol: String, label: LocalizedStringKey, action: @escaping () -> Void) -> some View {
+        Button(action: action) {
+            Image(systemName: symbol)
+                .font(.system(size: 17, weight: .semibold))
+                .foregroundStyle(VCColor.textPrimary)
+                .frame(width: 42, height: 42)
+                .background(Circle().fill(VCColor.surface))
+                .overlay(Circle().strokeBorder(VCColor.stroke))
+        }
+        .accessibilityLabel(Text(label))
+    }
+
+    private var originalsNotice: some View {
+        HStack(alignment: .top, spacing: 10) {
+            VCNotice(kind: .info, message: "Your imported items are safe in the vault. The originals are still in Photos or Files — delete them there (and in Recently Deleted) if you no longer want them outside Velcrypt.")
             Button {
-                showSettings = true
+                withAnimation { originalsNoticeDismissed = true }
             } label: {
-                Image(systemName: "gearshape.fill")
+                Image(systemName: "xmark")
+                    .font(.system(size: 12, weight: .bold))
+                    .foregroundStyle(VCColor.textSecondary)
+                    .padding(8)
             }
-            .accessibilityLabel("Settings")
+            .accessibilityLabel("Dismiss")
         }
     }
 
     private var collectionsGrid: some View {
         LazyVGrid(columns: [GridItem(.flexible(), spacing: 14), GridItem(.flexible(), spacing: 14)], spacing: 14) {
-            ForEach(collections) { collection in
-                CollectionTile(collection: collection, count: 0)
+            NavigationLink(value: VaultRoute.items(.kind(.photo))) {
+                CollectionTile(title: "Photos", systemImage: "photo.fill", tint: VCColor.accent, subtitle: itemsLabel(library.count(of: .photo)))
+            }
+            NavigationLink(value: VaultRoute.items(.kind(.video))) {
+                CollectionTile(title: "Videos", systemImage: "play.rectangle.fill", tint: Color(hex: 0xA78BFA), subtitle: itemsLabel(library.count(of: .video)))
+            }
+            NavigationLink(value: VaultRoute.items(.kind(.document))) {
+                CollectionTile(title: "Documents", systemImage: "doc.text.fill", tint: VCColor.accentCyan, subtitle: itemsLabel(library.count(of: .document)))
+            }
+            NavigationLink(value: VaultRoute.albums) {
+                CollectionTile(
+                    title: "Albums", systemImage: "rectangle.stack.fill", tint: Color(hex: 0xF59E0B),
+                    subtitle: library.albums.count == 1 ? String(localized: "1 album") : String(localized: "\(library.albums.count) albums")
+                )
+            }
+        }
+        .buttonStyle(.plain)
+    }
+
+    @ViewBuilder
+    private var recentSection: some View {
+        VStack(alignment: .leading, spacing: 12) {
+            HStack {
+                Text("Recently Added")
+                    .font(VCFont.headline)
+                    .foregroundStyle(VCColor.textPrimary)
+                Spacer()
+                if !library.items.isEmpty {
+                    NavigationLink("See All", value: VaultRoute.items(.all))
+                        .font(VCFont.callout.weight(.semibold))
+                        .foregroundStyle(VCColor.accentCyan)
+                }
+            }
+            if library.items.isEmpty {
+                emptyCard
+            } else {
+                ScrollView(.horizontal) {
+                    LazyHStack(spacing: 10) {
+                        ForEach(library.recentItems) { item in
+                            NavigationLink(value: VaultRoute.items(.all)) {
+                                ItemThumbnail(item: item, cornerRadius: 14)
+                                    .frame(width: 96, height: 96)
+                            }
+                            .buttonStyle(.plain)
+                        }
+                    }
+                }
+                .scrollIndicators(.hidden)
             }
         }
     }
 
-    private var recentSection: some View {
-        VStack(alignment: .leading, spacing: 12) {
-            Text("Recently Added")
-                .font(VCFont.headline)
-                .foregroundStyle(VCColor.textPrimary)
-            VCCard(padding: 28) {
-                VStack(spacing: 14) {
-                    Image(systemName: "sparkles.rectangle.stack")
-                        .font(.system(size: 40, weight: .light))
-                        .foregroundStyle(VCColor.accentGradient)
-                        .accessibilityHidden(true)
-                    Text("Your vault is empty")
-                        .font(VCFont.headline)
-                        .foregroundStyle(VCColor.textPrimary)
-                    Text("Tap + to add photos, videos or documents. They're encrypted as they're imported.")
-                        .font(VCFont.callout)
-                        .foregroundStyle(VCColor.textSecondary)
-                        .multilineTextAlignment(.center)
-                }
-                .frame(maxWidth: .infinity)
+    private var emptyCard: some View {
+        VCCard(padding: 28) {
+            VStack(spacing: 14) {
+                Image(systemName: "sparkles.rectangle.stack")
+                    .font(.system(size: 40, weight: .light))
+                    .foregroundStyle(VCColor.accentGradient)
+                    .accessibilityHidden(true)
+                Text("Your vault is empty")
+                    .font(VCFont.headline)
+                    .foregroundStyle(VCColor.textPrimary)
+                Text("Tap + to add photos, videos or documents. They're encrypted as they're imported.")
+                    .font(VCFont.callout)
+                    .foregroundStyle(VCColor.textSecondary)
+                    .multilineTextAlignment(.center)
             }
+            .frame(maxWidth: .infinity)
         }
     }
 
     private var addButton: some View {
         Button {
             Haptics.tap()
-            showImportOptions = true
+            showImporter = true
         } label: {
             Image(systemName: "plus")
                 .font(.system(size: 24, weight: .semibold))
@@ -104,36 +192,35 @@ struct VaultHomeView: View {
                 .background(Circle().fill(VCColor.accentGradient))
                 .shadow(color: VCColor.accent.opacity(0.5), radius: 16, y: 6)
         }
-        .padding(.bottom, 24)
         .accessibilityLabel("Add to vault")
+    }
+
+    private func itemsLabel(_ count: Int) -> String {
+        count == 1 ? String(localized: "1 item") : String(localized: "\(count) items")
     }
 }
 
-struct VaultCollection: Identifiable {
+struct CollectionTile: View {
     let title: LocalizedStringKey
     let systemImage: String
     let tint: Color
-    var id: String { systemImage }
-}
-
-struct CollectionTile: View {
-    let collection: VaultCollection
-    let count: Int
+    let subtitle: String
 
     var body: some View {
         VCCard {
             VStack(alignment: .leading, spacing: 14) {
-                VCIconBadge(systemName: collection.systemImage, size: 40, tint: collection.tint)
+                VCIconBadge(systemName: systemImage, size: 40, tint: tint)
                 VStack(alignment: .leading, spacing: 2) {
-                    Text(collection.title)
+                    Text(title)
                         .font(VCFont.headline)
                         .foregroundStyle(VCColor.textPrimary)
-                    Text("\(count) items")
+                    Text(subtitle)
                         .font(VCFont.caption)
                         .foregroundStyle(VCColor.textSecondary)
                 }
             }
         }
+        .contentShape(Rectangle())
         .accessibilityElement(children: .combine)
     }
 }

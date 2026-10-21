@@ -52,6 +52,9 @@ final class VaultSession {
         didSet { defaults.set(autoLockDelay.rawValue, forKey: DefaultsKey.autoLock) }
     }
 
+    /// Content of the open vault. Nil whenever the session is locked.
+    private(set) var library: VaultLibrary?
+
     @ObservationIgnored private var openVault: OpenVault?
     @ObservationIgnored private var backgroundedAt: Date?
     @ObservationIgnored private let keyring: VaultKeyring
@@ -75,6 +78,8 @@ final class VaultSession {
             try? files.deleteAll()
             defaults.set(true, forKey: DefaultsKey.hasLaunched)
         }
+        // Plaintext temp files from a previous run (e.g. after a crash) must not survive a relaunch.
+        TemporaryFiles.purgeAll()
 
         self.phase = keyring.isSetUp ? .locked : .onboarding
         self.autoLockDelay = AutoLockDelay(rawValue: defaults.integer(forKey: DefaultsKey.autoLock)) ?? .immediately
@@ -97,7 +102,7 @@ final class VaultSession {
             let masterKey = try Self.loadMasterKey(credentials, files: files) ?? Self.createMasterKey(credentials, files: files)
             return OpenVault(credentials: credentials, masterKey: masterKey)
         }.value
-        openVault = opened
+        activate(opened)
     }
 
     func finishOnboarding() {
@@ -114,9 +119,23 @@ final class VaultSession {
             let credentials = try keyring.credentials(for: pattern)
             return OpenVault(credentials: credentials, masterKey: try Self.loadMasterKey(credentials, files: files))
         }.value
-        openVault = opened
+        activate(opened)
         backgroundedAt = nil
         phase = .unlocked
+    }
+
+    private func activate(_ vault: OpenVault) {
+        library?.close()
+        openVault = vault
+        library = VaultLibrary(
+            files: files,
+            vaultID: vault.credentials.vaultID,
+            masterKey: vault.masterKey,
+            keyProvider: { [weak self] in
+                guard let self else { throw VaultError.locked }
+                return try await self.masterKeyForWriting()
+            }
+        )
     }
 
     // MARK: Writing
@@ -136,13 +155,17 @@ final class VaultSession {
     // MARK: Lock
 
     func lock() {
+        library?.close()
+        library = nil
         openVault = nil
         backgroundedAt = nil
+        TemporaryFiles.purgeAll()
         if phase == .unlocked { phase = .locked }
     }
 
     func appDidEnterBackground() {
         guard phase == .unlocked else { return }
+        TemporaryFiles.purgeAll()
         if autoLockDelay == .immediately {
             lock()
         } else {
@@ -173,7 +196,9 @@ final class VaultSession {
             try files.rekey(from: oldID, to: credentials.vaultID, newRecord: record)
             return credentials
         }.value
-        openVault = OpenVault(credentials: newCredentials, masterKey: masterKey)
+        // The vault directory moved, so the library must reopen it at its new location.
+        activate(OpenVault(credentials: newCredentials, masterKey: masterKey))
+        await library?.load()
     }
 
     /// Permanently deletes the open vault and locks.
@@ -187,7 +212,10 @@ final class VaultSession {
     func eraseEverything() throws {
         try files.deleteAll()
         try keyring.destroy()
+        library?.close()
+        library = nil
         openVault = nil
+        TemporaryFiles.purgeAll()
         phase = .onboarding
     }
 
