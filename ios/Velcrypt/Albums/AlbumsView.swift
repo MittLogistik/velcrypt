@@ -10,6 +10,7 @@ struct AlbumsView: View {
     @State private var renaming: Album?
     @State private var renameText = ""
     @State private var deleting: Album?
+    @State private var showConfirmVault = false
 
     private let columns = [GridItem(.flexible(), spacing: 14), GridItem(.flexible(), spacing: 14)]
 
@@ -52,13 +53,17 @@ struct AlbumsView: View {
                 }
                 .accessibilityLabel("Sort albums")
                 Button {
-                    newName = ""
-                    showCreate = true
+                    startCreate()
                 } label: {
                     Image(systemName: "plus")
                 }
                 .accessibilityLabel("New album")
             }
+        }
+        .sheet(isPresented: $showConfirmVault, onDismiss: {
+            if library.creationConfirmed { newName = ""; showCreate = true }
+        }) {
+            ConfirmNewVaultView()
         }
         .alert("New Album", isPresented: $showCreate) {
             TextField("Album name", text: $newName)
@@ -88,6 +93,16 @@ struct AlbumsView: View {
         }
     }
 
+    /// Creating an album is the first write in a new vault, so a never-saved vault confirms its pattern first.
+    private func startCreate() {
+        if library.needsCreationConfirmation {
+            showConfirmVault = true
+        } else {
+            newName = ""
+            showCreate = true
+        }
+    }
+
     private var emptyState: some View {
         VStack(spacing: 14) {
             Image(systemName: "rectangle.stack.badge.plus")
@@ -101,8 +116,7 @@ struct AlbumsView: View {
                 .foregroundStyle(VCColor.textSecondary)
                 .multilineTextAlignment(.center)
             Button("Create Album") {
-                newName = ""
-                showCreate = true
+                startCreate()
             }
             .buttonStyle(.vcPrimary)
             .frame(maxWidth: 220)

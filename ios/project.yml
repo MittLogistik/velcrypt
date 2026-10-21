@@ -33,6 +33,7 @@ targets:
           - UIInterfaceOrientationPortrait
         UIApplicationSupportsIndirectInputEvents: true
         NSPhotoLibraryAddUsageDescription: Velcrypt saves items you choose to export back to your photo library.
+        NSPhotoLibraryUsageDescription: Velcrypt only uses photo access to delete originals you choose to remove after importing them.
         ITSAppUsesNonExemptEncryption: false
     settings:
       base:

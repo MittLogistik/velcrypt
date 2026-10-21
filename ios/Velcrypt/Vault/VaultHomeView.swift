@@ -7,7 +7,6 @@ import SwiftUI
 struct VaultHomeView: View {
     @Environment(VaultSession.self) private var session
     @Environment(VaultLibrary.self) private var library
-    @AppStorage("originalsNoticeDismissed") private var originalsNoticeDismissed = false
 
     @State private var showSettings = false
     @State private var showImporter = false
@@ -18,9 +17,6 @@ struct VaultHomeView: View {
                 VStack(alignment: .leading, spacing: 24) {
                     header
                     SecurityStatusCard(itemCount: library.items.count, storageBytes: library.totalBytes)
-                    if library.lastImportCount > 0 && !originalsNoticeDismissed {
-                        originalsNotice
-                    }
                     collectionsGrid
                     recentSection
                 }
@@ -90,21 +86,6 @@ struct VaultHomeView: View {
                 .overlay(Circle().strokeBorder(VCColor.stroke))
         }
         .accessibilityLabel(Text(label))
-    }
-
-    private var originalsNotice: some View {
-        HStack(alignment: .top, spacing: 10) {
-            VCNotice(kind: .info, message: "Your imported items are safe in the vault. The originals are still in Photos or Files — delete them there (and in Recently Deleted) if you no longer want them outside Velcrypt.")
-            Button {
-                withAnimation { originalsNoticeDismissed = true }
-            } label: {
-                Image(systemName: "xmark")
-                    .font(.system(size: 12, weight: .bold))
-                    .foregroundStyle(VCColor.textSecondary)
-                    .padding(8)
-            }
-            .accessibilityLabel("Dismiss")
-        }
     }
 
     private var collectionsGrid: some View {

@@ -37,6 +37,15 @@ final class VaultLibrary {
     var errorMessage: String?
     /// Set after an import finishes, so the UI can remind the user that originals still exist.
     var lastImportCount = 0
+    /// Photos library identifiers of items imported successfully in the last import, offered for deletion.
+    var importedOriginals: [String] = []
+    /// The user re-drew the pattern for this never-saved vault.
+    var creationConfirmed = false
+
+    /// A vault that has never been saved must have its pattern confirmed before the first write.
+    var needsCreationConfirmation: Bool {
+        store == nil && initialMasterKey == nil && !creationConfirmed
+    }
 
     @ObservationIgnored private var store: VaultStore?
     @ObservationIgnored private var importTask: Task<Void, Never>?
@@ -164,6 +173,7 @@ final class VaultLibrary {
     private func runImport(_ requests: [ImportRequest], albumID: UUID?) async {
         var failures = 0
         var imported = 0
+        var originals: [String] = []
         do {
             let store = try await ensureStore()
             for request in requests {
@@ -171,6 +181,9 @@ final class VaultLibrary {
                 do {
                     try await importOne(request, into: store, albumID: albumID)
                     imported += 1
+                    if case .picker(let pickerItem) = request, let identifier = pickerItem.itemIdentifier {
+                        originals.append(identifier)
+                    }
                 } catch is CancellationError {
                     throw CancellationError()
                 } catch {
@@ -191,6 +204,7 @@ final class VaultLibrary {
                 : String(localized: "\(failures) items couldn't be imported.")
         }
         lastImportCount = imported
+        importedOriginals = originals
         importProgress = nil
         importTask = nil
     }

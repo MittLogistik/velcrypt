@@ -138,6 +138,17 @@ final class VaultSession {
         )
     }
 
+    /// True if `pattern` belongs to the open vault. Used to confirm a pattern before a new vault is first saved,
+    /// so a mis-drawn pattern can't silently create a vault the user can never find again.
+    func patternOpensCurrentVault(_ pattern: UnlockPattern) async -> Bool {
+        guard let currentID = openVault?.credentials.vaultID else { return false }
+        let keyring = keyring
+        let id = try? await Task.detached(priority: .userInitiated) {
+            try keyring.credentials(for: pattern).vaultID
+        }.value
+        return id == currentID
+    }
+
     // MARK: Writing
 
     /// Returns the master key, persisting the vault first if this is its first write.

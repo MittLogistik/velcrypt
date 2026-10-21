@@ -260,3 +260,29 @@ final class VaultLibraryTests: XCTestCase {
         XCTAssertEqual(reopened.albums.map(\.name), ["Decoy"])
     }
 }
+
+@MainActor
+final class NewVaultConfirmationTests: XCTestCase {
+    func testOnlyNeverSavedVaultsNeedConfirmationAndOnlyTheSamePatternConfirms() async throws {
+        let store = InMemorySecretStore()
+        let files = makeTemporaryFileStore()
+        defer { try? files.deleteAll() }
+        let defaults = UserDefaults(suiteName: "NewVaultConfirmationTests.\(UUID().uuidString)")!
+        let session = VaultSession(store: store, files: files, defaults: defaults,
+                                   keyring: VaultKeyring(store: store, roundsProvider: { TestConstants.fastRounds }))
+        try await session.createFirstVault(pattern: .sample)
+        session.finishOnboarding()
+        XCTAssertEqual(session.library?.needsCreationConfirmation, false, "The onboarding vault is already saved")
+        session.lock()
+
+        try await session.unlock(pattern: .other)
+        let library = try XCTUnwrap(session.library)
+        XCTAssertTrue(library.needsCreationConfirmation)
+        let mismatch = await session.patternOpensCurrentVault(.third)
+        let match = await session.patternOpensCurrentVault(.other)
+        XCTAssertFalse(mismatch)
+        XCTAssertTrue(match)
+        library.creationConfirmed = true
+        XCTAssertFalse(library.needsCreationConfirmation)
+    }
+}

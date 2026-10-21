@@ -5,6 +5,7 @@ struct SettingsView: View {
     @Environment(VaultLibrary.self) private var library
     @Environment(\.dismiss) private var dismiss
     @AppStorage("appearance") private var appearance: AppearancePreference = .dark
+    @AppStorage("offerDeleteOriginals") private var offerDeleteOriginals = true
 
     @State private var showChangePattern = false
     @State private var showDeleteVaultConfirm = false
@@ -51,6 +52,17 @@ struct SettingsView: View {
                     Text("This Vault")
                 } footer: {
                     Text("Vault data stays on this iPhone and is not included in iCloud or computer backups.")
+                }
+
+                Section {
+                    Toggle(isOn: $offerDeleteOriginals) {
+                        Label("Offer to Delete Originals", systemImage: "trash.slash")
+                    }
+                    .tint(VCColor.accent)
+                } header: {
+                    Text("Import")
+                } footer: {
+                    Text("After importing from Photos, Velcrypt asks whether to move the originals to Recently Deleted.")
                 }
 
                 Section("Appearance") {
