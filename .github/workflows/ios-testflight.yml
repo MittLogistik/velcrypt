@@ -53,10 +53,11 @@ jobs:
             -authenticationKeyID "$ASC_KEY_ID" \
             -authenticationKeyIssuerID "$ASC_ISSUER_ID" \
             DEVELOPMENT_TEAM="$TEAM_ID" \
-            CURRENT_PROJECT_VERSION="${{ github.run_number }}"
+            CURRENT_PROJECT_VERSION="${{ github.run_number }}" 2>&1 | tee -a "$RUNNER_TEMP/xcodebuild.log"
 
       - name: Export and upload to App Store Connect
         run: |
+          set -o pipefail
           cat > "$RUNNER_TEMP/ExportOptions.plist" <<PLIST
           <?xml version="1.0" encoding="UTF-8"?>
           <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
@@ -77,7 +78,20 @@ jobs:
             -allowProvisioningUpdates \
             -authenticationKeyPath "$KEY_PATH" \
             -authenticationKeyID "$ASC_KEY_ID" \
-            -authenticationKeyIssuerID "$ASC_ISSUER_ID"
+            -authenticationKeyIssuerID "$ASC_ISSUER_ID" 2>&1 | tee -a "$RUNNER_TEMP/xcodebuild.log"
+
+      # Surfaces signing/build/upload errors as one annotation, readable without log access.
+      - name: Summarize failures
+        if: failure()
+        run: |
+          LOG="$RUNNER_TEMP/xcodebuild.log"
+          [ -f "$LOG" ] || exit 0
+          ERRS=$(grep -E 'error:|error |\*\* (ARCHIVE|EXPORT) FAILED|No profiles|No signing|provisioning|certificate|Authentication|401|403' "$LOG" \
+            | sed "s#$GITHUB_WORKSPACE/##g" | awk '!seen[$0]++' | head -80)
+          [ -z "$ERRS" ] && ERRS=$(tail -60 "$LOG")
+          ERRS="${ERRS//'%'/'%25'}"
+          ERRS="${ERRS//$'\n'/'%0A'}"
+          echo "::error title=xcodebuild failures::$ERRS"
 
       - name: Remove API key
         if: always()
