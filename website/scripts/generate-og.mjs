@@ -3,7 +3,8 @@
 import sharp from 'sharp';
 import fs from 'node:fs';
 import path from 'node:path';
-import { SHIELD_PATH, V_PATH } from './brand.mjs';
+// Brand mark embedded as a data URI so librsvg can render it.
+const MARK = 'data:image/png;base64,' + (await sharp(path.resolve(import.meta.dirname, '../../brand/velcrypt-mark.png')).resize({ height: 160 }).png().toBuffer()).toString('base64');
 
 const outDir = path.resolve(import.meta.dirname, '../public/og');
 fs.mkdirSync(outDir, { recursive: true });
@@ -36,16 +37,11 @@ function svg({ kicker, title }) {
   <defs>
     <radialGradient id="bg1" cx="78%" cy="40%" r="60%"><stop offset="0" stop-color="#1B3460"/><stop offset="1" stop-color="#0B1220"/></radialGradient>
     <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4F8CFF"/><stop offset="1" stop-color="#75D8FF"/></linearGradient>
-    <linearGradient id="o" x1="10" y1="6" x2="54" y2="60" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#4F8CFF"/><stop offset="1" stop-color="#75D8FF"/></linearGradient>
-    <linearGradient id="v" x1="22" y1="22" x2="42" y2="44" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#75D8FF"/></linearGradient>
     <filter id="blur"><feGaussianBlur stdDeviation="9"/></filter>
   </defs>
   <rect width="1200" height="630" fill="url(#bg1)"/>
   <rect x="0.5" y="0.5" width="1199" height="629" fill="none" stroke="#75D8FF" stroke-opacity=".12"/>
-  <g transform="translate(72 64) scale(1.1)">
-    <path d="${SHIELD_PATH}" fill="#0B1220" stroke="url(#o)" stroke-width="3.4" stroke-linejoin="round"/>
-    <path d="${V_PATH}" fill="none" stroke="url(#v)" stroke-width="5.2" stroke-linecap="round" stroke-linejoin="round"/>
-  </g>
+  <image href="${MARK}" x="72" y="62" width="66" height="72"/>
   <text x="156" y="113" font-family="${font}" font-size="38" font-weight="700" fill="#FFFFFF" letter-spacing="-0.5">Velcrypt</text>
   <text x="76" y="262" font-family="${font}" font-size="24" font-weight="600" fill="#75D8FF" letter-spacing="3">${kicker.toUpperCase()}</text>
   <text x="76" y="338" font-family="${font}" font-size="58" font-weight="700" fill="#FFFFFF" letter-spacing="-1.5">${title[0]}</text>

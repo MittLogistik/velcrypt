@@ -9,7 +9,7 @@ keyFacts:
   - "Tagline: “Well Encrypted. Truly Private.”"
   - "Platform: iPhone, iOS 17 or later."
   - "Pricing model: free with optional Premium; pricing to be announced."
-  - "Downloads: logo SVG and 1024 px app icon."
+  - "Downloads: logo and mark (transparent PNG) and 1024 px app icon."
   - "Press contact: press@velcrypt.com."
 primaryKeyword: "velcrypt press kit"
 keywords: ["velcrypt logo", "velcrypt media kit", "velcrypt fact sheet", "velcrypt brand colors"]
@@ -70,7 +70,8 @@ For technical detail, link to the [security model](id:security); for a feature o
 
 ## Logo and app icon
 
-- [Velcrypt logo (SVG)](/press/velcrypt-logo.svg)
+- [Velcrypt logo, horizontal (PNG, transparent)](/press/velcrypt-logo.png)
+- [Velcrypt mark (PNG, transparent)](/press/velcrypt-mark.png)
 - [Velcrypt app icon, 1024 × 1024 (PNG)](/press/velcrypt-app-icon-1024.png)
 
 Please use the assets as supplied: keep enough clear space around the logo, don’t stretch or recolour it, and place it on a dark background where possible. The product is written “Velcrypt”, with a capital V only.
