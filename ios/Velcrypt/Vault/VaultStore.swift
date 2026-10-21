@@ -88,6 +88,17 @@ actor VaultStore {
         }
     }
 
+    /// Replaces an item's content (note editing). The old ciphertext is swapped atomically.
+    func updateContent(_ id: UUID, data: Data, filename: String, preview: String?) throws {
+        guard let i = index.items.firstIndex(where: { $0.id == id }) else { throw StoreError.itemNotFound }
+        try ChunkedCipher.encrypt(data: data, to: itemURL(id), key: itemKey(id), itemID: id)
+        index.items[i].filename = filename
+        index.items[i].byteCount = Int64(data.count)
+        index.items[i].preview = preview
+        index.items[i].modifiedAt = .now
+        try saveIndex()
+    }
+
     func deleteItems(_ ids: Set<UUID>) throws {
         index.items.removeAll { ids.contains($0.id) }
         for i in index.albums.indices where index.albums[i].coverItemID.map(ids.contains) == true {

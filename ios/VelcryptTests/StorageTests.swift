@@ -286,3 +286,44 @@ final class NewVaultConfirmationTests: XCTestCase {
         XCTAssertFalse(library.needsCreationConfirmation)
     }
 }
+
+final class NoteTests: XCTestCase {
+    func testTitlePreviewAndFilename() {
+        let text = "  Shopping list \nMilk\n\nEggs: 12 \n"
+        XCTAssertEqual(NoteText.title(of: text), "Shopping list")
+        XCTAssertEqual(NoteText.preview(of: text), "Milk Eggs: 12")
+        XCTAssertEqual(NoteText.filename(for: text), "Shopping list.txt")
+        XCTAssertEqual(NoteText.filename(for: "a/b: c"), "a-b- c.txt")
+        XCTAssertFalse(NoteText.title(of: "\n\n  ").isEmpty, "Empty notes still get a title")
+    }
+
+    func testPlainTextDocumentsAreNotes() {
+        let note = VaultItem(id: UUID(), kind: .document, filename: "x.txt", contentType: "public.plain-text", byteCount: 0,
+                             importedAt: .now, capturedAt: nil, pixelWidth: nil, pixelHeight: nil, duration: nil, albumID: nil, hasThumbnail: false)
+        var pdf = note
+        pdf.contentType = "com.adobe.pdf"
+        XCTAssertTrue(note.isNote)
+        XCTAssertFalse(pdf.isNote)
+    }
+
+    func testUpdateContentReplacesTextAndMetadata() async throws {
+        let dir = FileManager.default.temporaryDirectory.appending(path: "NoteTests-\(UUID().uuidString)")
+        try FileManager.default.createDirectory(at: dir, withIntermediateDirectories: true)
+        defer { try? FileManager.default.removeItem(at: dir) }
+        let store = try VaultStore(directory: dir, vaultID: "notes", masterKey: SymmetricKey(size: .bits256))
+        let note = VaultItem(id: UUID(), kind: .document, filename: "New Note.txt", contentType: "public.plain-text", byteCount: 0,
+                             importedAt: .now, capturedAt: nil, pixelWidth: nil, pixelHeight: nil, duration: nil, albumID: nil, hasThumbnail: false)
+        try await store.add(.data(Data()), item: note, thumbnail: nil)
+
+        let text = "Passwords\nBank: 1234 — ünïcødé ✓"
+        try await store.updateContent(note.id, data: Data(text.utf8), filename: NoteText.filename(for: text), preview: NoteText.preview(of: text))
+
+        let content = try await store.contentData(for: note.id)
+        XCTAssertEqual(String(data: content, encoding: .utf8), text)
+        let stored = try XCTUnwrap(await store.snapshot.items.first)
+        XCTAssertEqual(stored.filename, "Passwords.txt")
+        XCTAssertEqual(stored.preview, "Bank: 1234 — ünïcødé ✓")
+        XCTAssertNotNil(stored.modifiedAt)
+        XCTAssertEqual(stored.byteCount, Int64(Data(text.utf8).count))
+    }
+}

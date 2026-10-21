@@ -4,12 +4,14 @@ import UniformTypeIdentifiers
 
 /// "Add to Vault" flow:
 /// 1. A never-saved vault first asks the user to re-draw its pattern (`ConfirmNewVaultView`).
-/// 2. Choice between the Photos picker and Files, feeding `VaultLibrary.startImport`.
+/// 2. Choice between Camera, the Photos picker, Files and a new note, feeding `VaultLibrary`.
 /// 3. After a Photos import, an offer to delete the originals (iOS confirms again; they go to Recently Deleted).
 /// The Photos picker runs out of process and needs no photo library permission; deleting originals asks for it.
 private struct VaultImporterModifier: ViewModifier {
     @Binding var isPresented: Bool
     let albumID: UUID?
+    /// Set to true to create a note directly (e.g. the compose button in Documents).
+    @Binding var noteRequest: Bool
 
     @Environment(VaultLibrary.self) private var library
     @AppStorage("offerDeleteOriginals") private var offerDeleteOriginals = true
@@ -22,6 +24,8 @@ private struct VaultImporterModifier: ViewModifier {
     /// Only the screen that started an import offers to delete its originals.
     @State private var startedImport = false
     @State private var cleanupOutcome: OriginalsCleaner.Outcome?
+    @State private var pendingNote = false
+    @State private var editingNote: VaultItem?
 
     private var offerOriginals: Binding<Bool> {
         Binding(
@@ -41,8 +45,20 @@ private struct VaultImporterModifier: ViewModifier {
                     showChoice = true
                 }
             }
+            .onChange(of: noteRequest) { _, requested in
+                guard requested else { return }
+                noteRequest = false
+                if library.needsCreationConfirmation {
+                    pendingNote = true
+                    showConfirmVault = true
+                } else {
+                    createNote()
+                }
+            }
             .sheet(isPresented: $showConfirmVault, onDismiss: {
-                if library.creationConfirmed { showChoice = true }
+                defer { pendingNote = false }
+                guard library.creationConfirmed else { return }
+                if pendingNote { createNote() } else { showChoice = true }
             }) {
                 ConfirmNewVaultView()
             }
@@ -67,6 +83,7 @@ private struct VaultImporterModifier: ViewModifier {
                 }
                 Button("Photos & Videos") { showPhotos = true }
                 Button("Files") { showFiles = true }
+                Button("New Note") { createNote() }
             } message: {
                 Text("Velcrypt imports encrypted copies. Your originals stay where they are until you delete them.")
             }
@@ -93,11 +110,20 @@ private struct VaultImporterModifier: ViewModifier {
                 }
                 .ignoresSafeArea()
             }
+            .fullScreenCover(item: $editingNote) { note in
+                NoteEditorView(item: note, startsEditing: true)
+            }
             .fileImporter(isPresented: $showFiles, allowedContentTypes: [.item], allowsMultipleSelection: true) { result in
                 if case .success(let urls) = result {
                     library.startImport(urls.map { .file($0) }, into: albumID)
                 }
             }
+    }
+
+    private func createNote() {
+        Task {
+            if let note = await library.createNote(in: albumID) { editingNote = note }
+        }
     }
 
     private func finishOriginalsOffer() {
@@ -120,8 +146,8 @@ private struct VaultImporterModifier: ViewModifier {
 }
 
 extension View {
-    func vaultImporter(isPresented: Binding<Bool>, albumID: UUID? = nil) -> some View {
-        modifier(VaultImporterModifier(isPresented: isPresented, albumID: albumID))
+    func vaultImporter(isPresented: Binding<Bool>, albumID: UUID? = nil, noteRequest: Binding<Bool> = .constant(false)) -> some View {
+        modifier(VaultImporterModifier(isPresented: isPresented, albumID: albumID, noteRequest: noteRequest))
     }
 }
 

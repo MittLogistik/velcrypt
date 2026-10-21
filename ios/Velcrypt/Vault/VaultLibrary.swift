@@ -271,6 +271,42 @@ final class VaultLibrary {
         )
     }
 
+    // MARK: Notes
+
+    /// Creates an empty note and returns it for editing. Empty notes are removed when the editor closes.
+    func createNote(in albumID: UUID?) async -> VaultItem? {
+        do {
+            let store = try await ensureStore()
+            let item = VaultItem(
+                id: UUID(), kind: .document, filename: NoteText.filename(for: ""), contentType: UTType.plainText.identifier,
+                byteCount: 0, importedAt: .now, capturedAt: nil, pixelWidth: nil, pixelHeight: nil, duration: nil,
+                albumID: albumID, hasThumbnail: false, modifiedAt: .now, preview: ""
+            )
+            try await store.add(.data(Data()), item: item, thumbnail: nil)
+            await refresh(from: store)
+            return item
+        } catch {
+            errorMessage = String(localized: "The note couldn't be created.")
+            return nil
+        }
+    }
+
+    func noteText(for item: VaultItem) async throws -> String {
+        let data = try await imageData(for: item)
+        // Imported text files may use another encoding; fall back rather than refuse to open.
+        return String(data: data, encoding: .utf8) ?? String(decoding: data, as: UTF8.self)
+    }
+
+    func saveNote(_ id: UUID, text: String) async {
+        guard let store else { return }
+        do {
+            try await store.updateContent(id, data: Data(text.utf8), filename: NoteText.filename(for: text), preview: NoteText.preview(of: text))
+        } catch {
+            errorMessage = String(localized: "The note couldn't be saved.")
+        }
+        await refresh(from: store)
+    }
+
     // MARK: Editing
 
     func delete(_ ids: Set<UUID>) async {

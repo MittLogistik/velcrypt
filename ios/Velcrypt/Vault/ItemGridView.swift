@@ -32,6 +32,8 @@ struct ItemGridView: View {
     @State private var confirmDelete = false
     @State private var exportURLs: [URL] = []
     @State private var isPreparingExport = false
+    @State private var newNoteRequested = false
+    @State private var editingNote: VaultItem?
 
     private var items: [VaultItem] {
         library.items(matching: filter, search: search, newestFirst: newestFirst)
@@ -78,7 +80,10 @@ struct ItemGridView: View {
             } message: {
                 Text("Deleted items are removed from the vault permanently.")
             }
-            .vaultImporter(isPresented: $showImporter, albumID: albumID)
+            .fullScreenCover(item: $editingNote) { note in
+                NoteEditorView(item: note)
+            }
+            .vaultImporter(isPresented: $showImporter, albumID: albumID, noteRequest: $newNoteRequested)
     }
 
     // MARK: Content
@@ -117,7 +122,7 @@ struct ItemGridView: View {
             ItemThumbnail(item: item, cornerRadius: 8)
                 .frame(width: 54, height: 54)
             VStack(alignment: .leading, spacing: 3) {
-                Text(item.filename)
+                Text(item.isNote ? (item.filename as NSString).deletingPathExtension : item.filename)
                     .font(VCFont.callout.weight(.medium))
                     .foregroundStyle(VCColor.textPrimary)
                     .lineLimit(1)
@@ -191,6 +196,14 @@ struct ItemGridView: View {
                     Image(systemName: "line.3.horizontal.decrease.circle")
                 }
                 .accessibilityLabel("View options")
+                if canCompose {
+                    Button {
+                        newNoteRequested = true
+                    } label: {
+                        Image(systemName: "square.and.pencil")
+                    }
+                    .accessibilityLabel("New Note")
+                }
                 Button {
                     showImporter = true
                 } label: {
@@ -249,7 +262,9 @@ struct ItemGridView: View {
             if selection.contains(item.id) { selection.remove(item.id) } else { selection.insert(item.id) }
             return
         }
-        if item.kind == .document {
+        if item.isNote {
+            editingNote = item
+        } else if item.kind == .document {
             Task {
                 do {
                     previewURL = try await library.temporaryFile(for: item)
@@ -290,6 +305,14 @@ struct ItemGridView: View {
         case .kind(.video): String(localized: "Videos")
         case .kind(.document): String(localized: "Documents")
         case .album(let id): library.album(id)?.name ?? String(localized: "Album")
+        }
+    }
+
+    /// The compose button appears where notes belong: Documents and albums.
+    private var canCompose: Bool {
+        switch filter {
+        case .kind(.document), .album: true
+        default: false
         }
     }
 

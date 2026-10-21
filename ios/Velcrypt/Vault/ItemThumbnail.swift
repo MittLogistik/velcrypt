@@ -15,7 +15,9 @@ struct ItemThumbnail: View {
             .overlay {
                 ZStack {
                     VCColor.surfaceRaised
-                    if let image {
+                    if item.isNote {
+                        noteTile
+                    } else if let image {
                         Image(uiImage: image)
                             .resizable()
                             .scaledToFill()
@@ -52,6 +54,8 @@ struct ItemThumbnail: View {
             .padding(.vertical, 3)
             .background(Capsule().fill(.black.opacity(0.55)))
             .padding(5)
+        case .document where item.isNote:
+            EmptyView()
         case .document:
             Text(item.utType.preferredFilenameExtension?.uppercased() ?? "FILE")
                 .font(.caption2.weight(.bold))
@@ -63,6 +67,25 @@ struct ItemThumbnail: View {
         case .photo:
             EmptyView()
         }
+    }
+
+    /// A small "page" with the note's title and first words, like the Notes gallery.
+    private var noteTile: some View {
+        VStack(alignment: .leading, spacing: 4) {
+            Text((item.filename as NSString).deletingPathExtension)
+                .font(.caption.weight(.bold))
+                .foregroundStyle(Color(uiColor: .label))
+                .lineLimit(2)
+            Text(item.preview ?? "")
+                .font(.system(size: 10))
+                .foregroundStyle(Color(uiColor: .secondaryLabel))
+                .lineLimit(5)
+            Spacer(minLength: 0)
+        }
+        .padding(8)
+        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
+        .background(Color(uiColor: .tertiarySystemBackground))
+        .overlay(alignment: .top) { NoteEditorView.tint.frame(height: 3) }
     }
 
     static func placeholderSymbol(for item: VaultItem) -> String {
