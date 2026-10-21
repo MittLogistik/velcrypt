@@ -1,0 +1,22 @@
+---
+import HubLayout from '../../layouts/HubLayout.astro';
+import { getPages } from '../../lib/content';
+const items = await getPages('compare');
+---
+<HubLayout
+  pageId="compare"
+  title="Compare Velcrypt with Other Photo Vault Options"
+  description="Neutral, fact-checked comparisons of Velcrypt with Keepsafe, Private Photo Vault, calculator vault apps, the iPhone Hidden album and Apple Notes."
+  h1="How Velcrypt compares"
+  crumb="Compare"
+  answer="Velcrypt differs from most photo vault options in three ways: it encrypts files on the device with keys derived from a pattern, it needs no account or cloud, and each pattern opens its own vault. These pages compare it fairly with popular alternatives."
+  facts={[
+    'Comparisons were last checked in October 2026.',
+    'Competitor details come from public listings and documentation.',
+    'Each page notes when another option may suit you better.',
+    'Velcrypt v1 has no cloud backup; apps that offer one may fit some needs better.',
+  ]}
+  groups={[{ pages: items }]}
+  og="/og/compare.png"
+  ct="compare_hub"
+/>

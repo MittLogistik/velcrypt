@@ -1,0 +1,82 @@
+---
+import Logo from './Logo.astro';
+import AppStoreButton from './AppStoreButton.astro';
+import { t } from '../i18n/ui';
+import { pathFor } from '../i18n/registry.mjs';
+import { getPages, type Page } from '../lib/content';
+import { TAGLINE } from '../config/site';
+
+interface Props { locale: string }
+const { locale } = Astro.props;
+const [features, guides, useCases, compare, tools, pages] = await Promise.all([
+  getPages('features', locale),
+  getPages('guides', locale),
+  getPages('useCases', locale),
+  getPages('compare', locale),
+  getPages('tools', locale),
+  getPages('pages', locale),
+]);
+// Highest-intent guides first in the footer hub.
+const topGuides = guides.slice().sort((a, b) => a.data.order - b.data.order).slice(0, 14);
+const company = ['security', 'pricing', 'faq', 'about', 'support', 'press', 'privacy', 'terms']
+  .map((id) => pages.find((p) => p.data.pageId === id))
+  .filter(Boolean) as Page[];
+const year = new Date().getFullYear();
+const cols: { title: string; hub: string; items: Page[] }[] = [
+  { title: t(locale, 'footer_features'), hub: 'features', items: features },
+  { title: t(locale, 'footer_guides'), hub: 'guides', items: topGuides },
+  { title: t(locale, 'footer_usecases'), hub: 'use-cases', items: useCases },
+];
+---
+<footer class="site-footer">
+  <div class="container">
+    <div class="top">
+      <div class="brandcol">
+        <Logo size={36} uid="ftr" wordmark />
+        <p class="tag">{TAGLINE}</p>
+        <p class="muted small">{t(locale, 'footer_tagline')}</p>
+        <AppStoreButton ct="footer" locale={locale} />
+      </div>
+      <nav class="cols" aria-label="Footer">
+        {cols.map((c) => (
+          <div>
+            <h2><a href={pathFor(c.hub, locale)}>{c.title}</a></h2>
+            <ul>{c.items.map((p) => <li><a href={p.path}>{p.data.navTitle}</a></li>)}</ul>
+          </div>
+        ))}
+        <div>
+          <h2><a href={pathFor('compare', locale)}>{t(locale, 'footer_compare')}</a></h2>
+          <ul>{compare.map((p) => <li><a href={p.path}>{p.data.navTitle}</a></li>)}</ul>
+          <h2 class="mt"><a href={pathFor('tools', locale)}>{t(locale, 'footer_tools')}</a></h2>
+          <ul>{tools.map((p) => <li><a href={p.path}>{p.data.navTitle}</a></li>)}</ul>
+          <h2 class="mt">{t(locale, 'footer_company')}</h2>
+          <ul>{company.map((p) => <li><a href={p.path}>{p.data.navTitle}</a></li>)}</ul>
+        </div>
+      </nav>
+    </div>
+    <div class="bottom">
+      <p>© {year} Velcrypt. {t(locale, 'footer_legal_note')}</p>
+      <p><a href="/llms.txt">llms.txt</a> · <a href="/sitemap.xml">Sitemap</a></p>
+    </div>
+  </div>
+</footer>
+<style>
+  .site-footer { border-top: 1px solid var(--line); background: linear-gradient(180deg, #0b1220, #080d18); padding: 64px 0 32px; margin-top: 40px; }
+  .top { display: grid; grid-template-columns: minmax(240px, 300px) 1fr; gap: 48px; }
+  .tag { font-weight: 650; margin: 16px 0 6px; }
+  .small { font-size: 0.92rem; margin-bottom: 20px; }
+  .cols { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 28px; }
+  h2 { font-size: 0.8rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-2); margin: 0 0 12px; }
+  h2 a { color: inherit; text-decoration: none; }
+  h2 a:hover { color: #fff; }
+  .mt { margin-top: 26px; }
+  ul { list-style: none; padding: 0; margin: 0; }
+  li { margin: 0 0 7px; line-height: 1.35; }
+  li a { color: var(--text-3); text-decoration: none; font-size: 0.9rem; }
+  li a:hover { color: #fff; text-decoration: underline; }
+  .bottom { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; margin-top: 48px; padding-top: 22px; border-top: 1px solid var(--line); font-size: 0.84rem; color: var(--text-2); }
+  .bottom p { margin: 0; }
+  .bottom a { color: var(--text-2); }
+  @media (max-width: 980px) { .top { grid-template-columns: 1fr; } .cols { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  @media (max-width: 520px) { .cols { grid-template-columns: 1fr 1fr; gap: 22px 16px; } }
+</style>

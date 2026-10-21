@@ -1,0 +1,43 @@
+---
+/**
+ * "Download on the App Store"-style button (styled text, not Apple's badge
+ * artwork). All CTAs route through APP_STORE_URL with a ?ct= campaign token.
+ * When APP_LIVE is false it reads "Coming soon to the App Store" and links to
+ * the support page's notify section instead of a dead store link.
+ */
+import { APP_LIVE, appStoreLink } from '../config/site';
+import { t } from '../i18n/ui';
+import { pathFor } from '../i18n/registry.mjs';
+
+interface Props { ct: string; locale?: string; size?: 'md' | 'lg'; note?: boolean }
+const { ct, locale = 'en', size = 'md', note = false } = Astro.props;
+const href = APP_LIVE ? appStoreLink(ct) : `${pathFor('support', locale)}#get-notified`;
+---
+<div class:list={['asb-wrap', size]}>
+  <a class="asb" href={href} data-ct={ct} rel={APP_LIVE ? 'noopener' : undefined}>
+    <!-- Generic phone glyph: Apple's logo/badge artwork is intentionally not used. -->
+    <svg class="glyph" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><rect x="6" y="2.5" width="12" height="19" rx="3" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 7.5v6m0 0-2.6-2.6M12 13.5l2.6-2.6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M10.5 18h3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+    <span class="txt">
+      <span class="small">{APP_LIVE ? t(locale, 'cta_live_small') : t(locale, 'cta_soon_small')}</span>
+      <span class="big">{APP_LIVE ? t(locale, 'cta_live_big') : t(locale, 'cta_soon_big')}</span>
+    </span>
+  </a>
+  {note && <p class="note">{APP_LIVE ? t(locale, 'cta_note_live') : t(locale, 'cta_note_soon')}</p>}
+</div>
+<style>
+  .asb-wrap { display: inline-flex; flex-direction: column; gap: 10px; }
+  .asb {
+    display: inline-flex; align-items: center; gap: 11px; text-decoration: none; color: #0b1220;
+    background: #fff; border-radius: 14px; padding: 9px 20px 9px 16px; min-height: 54px;
+    box-shadow: 0 0 0 1px rgba(255,255,255,.2), 0 10px 30px -10px rgba(79,140,255,.65);
+    transition: transform .15s ease, box-shadow .2s ease;
+  }
+  .asb:hover { color: #0b1220; transform: translateY(-1px); box-shadow: 0 0 0 1px rgba(255,255,255,.3), 0 14px 38px -10px rgba(117,216,255,.75); }
+  .asb:focus-visible { outline: 2px solid var(--cyan); outline-offset: 3px; }
+  .txt { display: flex; flex-direction: column; line-height: 1.1; text-align: left; }
+  .small { font-size: 0.72rem; font-weight: 500; letter-spacing: 0.01em; }
+  .big { font-size: 1.28rem; font-weight: 650; letter-spacing: -0.02em; }
+  .lg .asb { min-height: 62px; padding: 10px 26px 10px 20px; }
+  .lg .big { font-size: 1.46rem; }
+  .note { margin: 0; font-size: 0.88rem; color: var(--text-2); }
+</style>

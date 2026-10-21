@@ -1,0 +1,12 @@
+# Cloudflare Pages redirects. www -> apex is best done with a Cloudflare
+# Redirect Rule (zone level); trailing slashes are handled by Pages.
+/home                 /                     301
+/index.html           /                     301
+/blog                 /guides/              301
+/blog/*               /guides/:splat        301
+/scenarios            /use-cases/           301
+/scenarios/*          /use-cases/:splat     301
+/how-it-works         /security/            301
+/contact              /support/             301
+/privacy-policy       /privacy/             301
+/terms-of-use         /terms/               301

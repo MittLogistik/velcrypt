@@ -1,0 +1,56 @@
+---
+import Logo from './Logo.astro';
+import { t } from '../i18n/ui';
+import { pathFor } from '../i18n/registry.mjs';
+import { APP_LIVE, appStoreLink } from '../config/site';
+
+interface Props { locale: string; current?: string }
+const { locale, current } = Astro.props;
+const links = [
+  { id: 'features', label: t(locale, 'nav_features') },
+  { id: 'security', label: t(locale, 'nav_security') },
+  { id: 'guides', label: t(locale, 'nav_guides') },
+  { id: 'pricing', label: t(locale, 'nav_pricing') },
+  { id: 'faq', label: t(locale, 'nav_faq') },
+];
+const ctaHref = APP_LIVE ? appStoreLink('header') : `${pathFor('support', locale)}#get-notified`;
+---
+<header class="site-header">
+  <div class="container bar">
+    <a class="brand" href={pathFor('home', locale)} aria-label="Velcrypt home"><Logo size={30} uid="hdr" wordmark /></a>
+    <nav aria-label="Main">
+      <ul>
+        {links.map((l) => (
+          <li><a href={pathFor(l.id, locale)} aria-current={current === l.id ? 'page' : undefined}>{l.label}</a></li>
+        ))}
+      </ul>
+    </nav>
+    <a class="hdr-cta" href={ctaHref} data-ct="header">{APP_LIVE ? t(locale, 'cta_header_live') : t(locale, 'cta_header_soon')}</a>
+  </div>
+</header>
+<style>
+  .site-header {
+    position: sticky; top: 0; z-index: 50;
+    background: rgba(11, 18, 32, 0.82);
+    backdrop-filter: saturate(160%) blur(14px); -webkit-backdrop-filter: saturate(160%) blur(14px);
+    border-bottom: 1px solid var(--line);
+  }
+  .bar { display: flex; align-items: center; gap: 20px; min-height: 64px; }
+  .brand { text-decoration: none; display: inline-flex; }
+  nav { margin-left: auto; overflow-x: auto; scrollbar-width: none; }
+  nav::-webkit-scrollbar { display: none; }
+  ul { list-style: none; display: flex; gap: 4px; margin: 0; padding: 0; }
+  nav a { display: block; padding: 8px 12px; border-radius: 10px; color: var(--text-3); text-decoration: none; font-size: 0.95rem; font-weight: 500; white-space: nowrap; }
+  nav a:hover, nav a[aria-current='page'] { color: #fff; background: rgba(148,163,184,.1); }
+  .hdr-cta {
+    flex: none; text-decoration: none; color: #0b1220; background: var(--grad); font-weight: 650; font-size: 0.92rem;
+    padding: 9px 16px; border-radius: 12px; white-space: nowrap;
+  }
+  .hdr-cta:hover { color: #0b1220; filter: brightness(1.08); }
+  @media (max-width: 860px) {
+    .bar { flex-wrap: wrap; gap: 8px 12px; padding-top: 8px; padding-bottom: 4px; }
+    nav { order: 3; width: 100%; margin: 0 -8px; }
+    .hdr-cta { margin-left: auto; }
+    nav a { padding: 8px 10px; font-size: 0.9rem; }
+  }
+</style>

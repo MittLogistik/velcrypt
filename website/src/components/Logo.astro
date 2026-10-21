@@ -1,0 +1,27 @@
+---
+/** Velcrypt mark: navy shield with blue→cyan outline and a white→cyan "V". */
+interface Props { size?: number; uid?: string; title?: string; wordmark?: boolean }
+const { size = 32, uid = 'l', title, wordmark = false } = Astro.props;
+const g1 = `vg-o-${uid}`;
+const g2 = `vg-v-${uid}`;
+---
+<span class="logo">
+  <svg width={size} height={size} viewBox="0 0 64 64" role={title ? 'img' : undefined} aria-hidden={title ? undefined : 'true'} aria-label={title}>
+    <defs>
+      <linearGradient id={g1} x1="10" y1="6" x2="54" y2="60" gradientUnits="userSpaceOnUse">
+        <stop offset="0" stop-color="#4F8CFF" /><stop offset="1" stop-color="#75D8FF" />
+      </linearGradient>
+      <linearGradient id={g2} x1="22" y1="22" x2="42" y2="44" gradientUnits="userSpaceOnUse">
+        <stop offset="0" stop-color="#FFFFFF" /><stop offset="1" stop-color="#75D8FF" />
+      </linearGradient>
+    </defs>
+    <path d="M32 4.5 53.5 12v17.6c0 13.6-9 24.3-21.5 29.9C19.5 53.9 10.5 43.2 10.5 29.6V12L32 4.5Z" fill="#0B1220" stroke={`url(#${g1})`} stroke-width="3.4" stroke-linejoin="round" />
+    <path d="M21.5 22.5 32 43.5l10.5-21" fill="none" stroke={`url(#${g2})`} stroke-width="5.2" stroke-linecap="round" stroke-linejoin="round" />
+  </svg>
+  {wordmark && <span class="wm">Velcrypt</span>}
+</span>
+<style>
+  .logo { display: inline-flex; align-items: center; gap: 10px; }
+  .logo svg { display: block; flex: none; }
+  .wm { font-weight: 700; font-size: 1.14rem; letter-spacing: -0.02em; color: #fff; }
+</style>

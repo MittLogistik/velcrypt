@@ -1,0 +1,243 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import AppStoreButton from '../components/AppStoreButton.astro';
+import PatternGrid from '../components/PatternGrid.astro';
+import Faq from '../components/Faq.astro';
+import CtaBand from '../components/CtaBand.astro';
+import { getPages, href } from '../lib/content';
+import * as S from '../lib/schema';
+import { TAGLINE, SITE_UPDATED } from '../config/site';
+
+const features = await getPages('features');
+const guides = await getPages('guides');
+const featured = ['hide-photos-iphone', 'is-iphone-hidden-album-private', 'are-hidden-photos-saved-to-icloud', 'best-private-photo-vault-apps-iphone', 'what-is-a-decoy-vault', 'remove-photo-metadata-iphone']
+  .map((id) => guides.find((g) => g.data.pageId === id)!)
+  .filter(Boolean);
+
+const title = 'Velcrypt: Private Encrypted Photo Vault for iPhone';
+const description = 'Hide photos, videos and documents in encrypted vaults on your iPhone. Each pattern opens its own vault. No account, no cloud, no Face ID by design.';
+
+const steps = [
+  { name: 'Draw a pattern', text: 'Connect at least 6 dots on the 5×5 grid in one continuous line with at least one turn. That pattern now opens its own vault.' },
+  { name: 'Add what you want to protect', text: 'Import photos and videos from your library or documents from Files. Velcrypt encrypts each one on the device as it comes in.' },
+  { name: 'Remove the originals', text: 'Importing makes an encrypted copy. Delete the original from Photos and empty Recently Deleted so no readable copy is left behind.' },
+];
+const faq = [
+  { q: 'What is Velcrypt?', a: 'Velcrypt is an iPhone app that stores private photos, videos and documents in encrypted vaults on the device. You open a vault by drawing a pattern on a 5×5 grid of dots.' },
+  { q: 'Is the iPhone Hidden album encrypted?', a: 'Not separately. The Hidden album keeps photos out of the main library view and can require Face ID, but the photos remain in your library and sync with iCloud Photos like any others. Velcrypt encrypts each file with its own key.' },
+  { q: 'What happens if someone sees me open Velcrypt?', a: 'They only learn the pattern they watched. Every pattern opens a different vault, an unknown pattern simply opens an empty vault, and there is no list that reveals how many vaults exist.' },
+  { q: 'Why is there no Face ID unlock?', a: 'Biometrics can be used without your consent: someone can hold the phone up to your face. A pattern lives only in your memory, so Velcrypt leaves out Face ID and Touch ID on purpose.' },
+  { q: 'Does Velcrypt need an account or upload anything?', a: 'No. There is no sign-up, no server and no upload. Vault content is encrypted and stays on your iPhone, and it is excluded from iCloud and computer backups in the first version.' },
+  { q: 'What if I forget my pattern or lose my phone?', a: 'Then that vault cannot be recovered, by you or by us, because no one else holds the keys. Choose a pattern you will remember and keep important originals somewhere safe. An encrypted backup option is planned.' },
+  { q: 'Is Velcrypt free?', a: 'There will be a free version and an optional Premium upgrade. Planned Premium items include unlimited items, more vaults, a duress pattern and encrypted backup. Pricing has not been announced.' },
+  { q: 'Which iPhones does Velcrypt support?', a: 'Velcrypt is a native iPhone app for iOS 17 or later.' },
+];
+const jsonLd = S.graph(
+  S.organization(),
+  S.website('en'),
+  S.mobileApp(),
+  S.webPage({ type: 'WebPage', path: '/', title, description, locale: 'en', dateModified: SITE_UPDATED, image: '/og/default.png' }),
+  S.breadcrumbs([{ name: 'Home', path: '/' }]),
+  S.howTo({ name: 'How to start a private vault in Velcrypt', steps }, '/', '/og/default.png'),
+  S.faqPage(faq, '/'),
+);
+const compareRows = [
+  ['Encrypts each file', 'Yes, AES-256-GCM', 'No separate encryption', 'Varies, often not documented'],
+  ['Opens with your phone passcode', 'No, only your pattern', 'Yes', 'Varies'],
+  ['Account required', 'No', 'Apple Account for iCloud', 'Often'],
+  ['Copies to the cloud', 'Never', 'Yes, with iCloud Photos', 'Often, as an option'],
+  ['Several separate vaults', 'Yes, one per pattern', 'No', 'Some apps'],
+  ['Reveals that other vaults exist', 'No', 'Not applicable', 'Varies'],
+];
+---
+<BaseLayout title={title} description={description} pageId="home" path="/" jsonLd={jsonLd}>
+  <section class="hero">
+    <div class="container hero-in">
+      <div class="hero-copy">
+        <p class="eyebrow">Encrypted photo vault for iPhone</p>
+        <h1>The private photo vault that opens with <span class="grad-text">a pattern only you know</span></h1>
+        <p class="lead">Velcrypt keeps private photos, videos and documents in encrypted vaults on your iPhone. Draw a pattern on a 5×5 grid to open a vault. Every pattern opens its own vault, and nothing ever leaves your device.</p>
+        <div class="hero-cta">
+          <AppStoreButton ct="home_hero" size="lg" />
+          <a class="btn btn-ghost" href={href('security')}>How the security works</a>
+        </div>
+        <p class="tag">{TAGLINE}</p>
+      </div>
+      <div class="hero-art">
+        <div class="device">
+          <p class="device-t" aria-hidden="true">Draw to unlock</p>
+          <PatternGrid uid="hero" size={320} label="Animation: a glowing line draws an unlock pattern through nine dots on a five-by-five grid" />
+          <p class="device-s" aria-hidden="true">Each pattern opens its own vault</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="facts-strip" aria-label="Key facts">
+    <div class="container">
+      <ul>
+        <li><strong>AES-256-GCM</strong><span>Every file encrypted on the device</span></li>
+        <li><strong>No account</strong><span>No sign-up, no servers, no uploads</span></li>
+        <li><strong>One pattern, one vault</strong><span>No list of vaults to discover</span></li>
+        <li><strong>No Face ID</strong><span>By design: it can’t be taken from your face</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section" id="how-it-works" aria-labelledby="hiw">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">How it works</p>
+        <h2 id="hiw">Three steps to a vault that’s truly yours</h2>
+        <p>Velcrypt is a vault, not a hiding place. Hiding a photo only moves it out of sight. Velcrypt turns it into encrypted data that only your pattern can open.</p>
+      </div>
+      <ol class="steps">
+        {steps.map((s, i) => (
+          <li class="card"><span class="num">{i + 1}</span><h3>{s.name}</h3><p>{s.text}</p></li>
+        ))}
+      </ol>
+    </div>
+  </section>
+
+  <section class="section vaults" aria-labelledby="vaults-h">
+    <div class="container split">
+      <div>
+        <p class="eyebrow">Hidden vaults</p>
+        <h2 id="vaults-h">Every pattern is its own vault</h2>
+        <p class="muted">There is no list of vaults and no “wrong pattern” message. A pattern Velcrypt has never seen just opens an empty vault, so nothing on screen proves other vaults exist. Keep everyday photos behind one pattern and your most private files behind another.</p>
+        <p class="muted">That is what <a href={href('plausible-deniability-explained')}>plausible deniability</a> means in practice. You can also keep a believable <a href={href('what-is-a-decoy-vault')}>decoy vault</a>. A <a href={href('duress-pattern')}>duress pattern</a> that silently removes access to the other vaults is planned for Premium <span class="pill">Coming soon</span>.</p>
+        <a class="btn btn-ghost" href={href('hidden-vaults')}>About hidden vaults</a>
+      </div>
+      <div class="two-grids" aria-hidden="true">
+        <figure><PatternGrid uid="v1" size={170} pattern="cta" animate={false} /><figcaption>Pattern A · Personal</figcaption></figure>
+        <figure><PatternGrid uid="v2" size={170} pattern="decoy" animate={false} /><figcaption>Pattern B · Everyday</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="feat-h">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Features</p>
+        <h2 id="feat-h">Built for privacy, not for show</h2>
+        <p>Everything happens on your iPhone. No account, no cloud, no analytics on what you store.</p>
+      </div>
+      <div class="grid grid-3">
+        {features.map((f) => (
+          <a class="card link-card" href={f.path}>
+            {f.data.status === 'coming-soon' && <span class="pill">Coming soon</span>}
+            <h3>{f.data.navTitle}</h3>
+            <p>{f.data.summary}</p>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="security" aria-labelledby="sec-h">
+    <div class="container split">
+      <div>
+        <p class="eyebrow">Security</p>
+        <h2 id="sec-h">Encryption you can read about</h2>
+        <p class="muted">Your pattern is stretched into a key with PBKDF2-HMAC-SHA512 (at least 600,000 iterations) and a random salt kept in the iOS Keychain. That key protects a random 256-bit master key for each vault, and every file gets its own key through HKDF. Files are sealed with AES-256-GCM through Apple CryptoKit, and iOS Data Protection is applied on top.</p>
+        <p class="muted">We also publish <a href={`${href('security')}#what-velcrypt-does-not-protect-against`}>what Velcrypt does not protect against</a>, because honest limits are part of security.</p>
+        <a class="btn btn-ghost" href={href('security')}>Read the security model</a>
+      </div>
+      <ul class="checks card">
+        <li><strong>Auto-lock</strong> when you leave the app, with a delay you choose</li>
+        <li><strong>App switcher</strong> shows nothing of your vault</li>
+        <li><strong>No iCloud copies</strong>: vaults are excluded from iCloud and computer backups</li>
+        <li><strong>No ads, no tracking</strong> of vault content</li>
+        <li><strong>Copy, not move</strong>: you decide when originals are deleted</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="cmp-h">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Compared</p>
+        <h2 id="cmp-h">Hidden is not the same as encrypted</h2>
+        <p>How Velcrypt differs from the iPhone Hidden album and from typical lock-screen vault apps.</p>
+      </div>
+      <table class="table cmp">
+        <caption class="visually-hidden">Velcrypt compared with the iPhone Hidden album and typical vault apps</caption>
+        <thead><tr><th scope="col"></th><th scope="col">Velcrypt</th><th scope="col">iPhone Hidden album</th><th scope="col">Typical PIN vault app</th></tr></thead>
+        <tbody>{compareRows.map((r) => <tr><th scope="row">{r[0]}</th><td>{r[1]}</td><td>{r[2]}</td><td>{r[3]}</td></tr>)}</tbody>
+      </table>
+      <p class="muted small">Details for third-party apps vary by app and version. See the <a href={href('compare')}>full comparisons</a>.</p>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="guides-h">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Guides</p>
+        <h2 id="guides-h">Learn how iPhone photo privacy really works</h2>
+      </div>
+      <div class="grid grid-3">
+        {featured.map((g) => (
+          <a class="card link-card" href={g.path}><h3>{g.data.navTitle}</h3><p>{g.data.summary}</p><span class="arrow">Read →</span></a>
+        ))}
+      </div>
+      <p class="more"><a href={href('guides')}>All {guides.length} guides →</a></p>
+    </div>
+  </section>
+
+  <section class="container">
+    <Faq items={faq} heading="Frequently asked questions" />
+    <p class="more"><a href={href('faq')}>More questions and answers →</a></p>
+    <CtaBand ct="home_bottom" />
+  </section>
+</BaseLayout>
+
+<style>
+  .hero { position: relative; overflow: hidden; padding: clamp(40px, 7vw, 96px) 0 clamp(40px, 6vw, 72px);
+    background: radial-gradient(60% 70% at 80% 30%, rgba(79,140,255,.18), transparent 70%), radial-gradient(40% 50% at 10% 90%, rgba(117,216,255,.08), transparent 70%); }
+  .hero-in { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 48px; align-items: center; }
+  .hero h1 { font-size: clamp(2.3rem, 5.4vw, 4rem); margin: 14px 0 20px; }
+  .lead { font-size: clamp(1.05rem, 1.6vw, 1.22rem); color: var(--text-3); max-width: 600px; }
+  .hero-cta { display: flex; flex-wrap: wrap; gap: 14px; align-items: center; margin: 28px 0 18px; }
+  .hero-cta .btn { min-height: 62px; }
+  .tag { color: var(--text-2); font-weight: 600; letter-spacing: .02em; margin: 0; }
+  .hero-art { display: flex; justify-content: center; }
+  .device { width: min(100%, 380px); padding: 30px 26px 26px; border-radius: 44px; text-align: center;
+    background: linear-gradient(180deg, #121c2e, #0c1424); border: 1px solid rgba(117,216,255,.18);
+    box-shadow: 0 40px 90px -30px rgba(79,140,255,.45), inset 0 1px 0 rgba(255,255,255,.06); }
+  .device-t { margin: 0 0 6px; font-weight: 650; color: #fff; }
+  .device-s { margin: 6px 0 0; font-size: .85rem; color: var(--text-2); }
+  .device :global(svg) { width: 100%; height: auto; }
+
+  .facts-strip { border-block: 1px solid var(--line); background: rgba(21,31,48,.5); }
+  .facts-strip ul { list-style: none; margin: 0; padding: 22px 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
+  .facts-strip li { display: flex; flex-direction: column; gap: 2px; }
+  .facts-strip strong { font-size: 1.02rem; }
+  .facts-strip span { color: var(--text-2); font-size: .9rem; }
+
+  .steps { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+  .steps .num { display: inline-grid; place-items: center; width: 34px; height: 34px; border-radius: 50%; background: var(--grad); color: #0b1220; font-weight: 750; margin-bottom: 14px; }
+  .steps p { color: var(--text-2); margin: 0; }
+
+  .split { display: grid; grid-template-columns: 1.1fr .9fr; gap: 48px; align-items: center; }
+  .two-grids { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+  .two-grids figure { margin: 0; padding: 18px; border-radius: 22px; border: 1px solid var(--line); background: var(--bg-2); text-align: center; }
+  .two-grids :global(svg) { width: 100%; height: auto; }
+  .two-grids figcaption { font-size: .86rem; color: var(--text-2); margin-top: 6px; }
+  .checks { list-style: none; margin: 0; padding: 26px 28px; }
+  .checks li { padding: 10px 0 10px 30px; position: relative; color: var(--text-3); border-bottom: 1px solid var(--line); }
+  .checks li:last-child { border: 0; }
+  .checks li::before { content: ''; position: absolute; left: 0; top: 15px; width: 16px; height: 16px; border-radius: 50%; background: var(--grad); -webkit-mask: radial-gradient(circle, transparent 3px, #000 3.5px); mask: radial-gradient(circle, transparent 3px, #000 3.5px); }
+  .checks strong { color: #fff; }
+  .cmp td:nth-child(2) { color: var(--cyan); font-weight: 600; }
+  .cmp tbody th { color: var(--text-3); font-weight: 500; }
+  .small { font-size: .88rem; }
+  .more { margin-top: 22px; font-weight: 600; }
+  .vaults { background: linear-gradient(180deg, transparent, rgba(21,31,48,.45), transparent); }
+
+  @media (max-width: 920px) {
+    .hero-in, .split { grid-template-columns: 1fr; }
+    .device { width: min(100%, 300px); padding: 22px 18px 18px; border-radius: 34px; }
+    .steps { grid-template-columns: 1fr; }
+    .facts-strip ul { grid-template-columns: 1fr 1fr; }
+  }
+</style>

@@ -1,0 +1,62 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import KeyFacts from '../components/KeyFacts.astro';
+import Faq from '../components/Faq.astro';
+import CtaBand from '../components/CtaBand.astro';
+import { pathFor } from '../i18n/registry.mjs';
+import type { Page } from '../lib/content';
+import * as S from '../lib/schema';
+import { SITE_UPDATED } from '../config/site';
+
+interface Group { title?: string; intro?: string; pages: Page[] }
+interface Props {
+  pageId: string; locale?: string; title: string; description: string; h1: string; crumb: string;
+  answer: string; facts: string[]; groups: Group[]; faq?: { q: string; a: string }[]; og?: string; ct: string;
+}
+const { pageId, locale = 'en', title, description, h1, crumb, answer, facts, groups, faq = [], og = '/og/default.png', ct } = Astro.props;
+const path = pathFor(pageId, locale);
+const crumbs = [{ name: 'Home', path: pathFor('home', locale) }, { name: crumb, path }];
+const all = groups.flatMap((g) => g.pages);
+const nodes: object[] = [
+  S.organization(), S.website(locale),
+  { ...S.webPage({ type: 'CollectionPage', path, title: h1, description, locale, dateModified: SITE_UPDATED, image: og }), mainEntity: S.itemList(all.map((p) => ({ name: p.data.navTitle, path: p.path }))) },
+  S.breadcrumbs(crumbs),
+];
+if (faq.length) nodes.push(S.faqPage(faq, path));
+---
+<BaseLayout title={title} description={description} pageId={pageId} locale={locale} path={path} ogImage={og} jsonLd={S.graph(...nodes)} navCurrent={pageId}>
+  <div class="container">
+    <Breadcrumbs items={crumbs} />
+    <header class="hub-head">
+      <h1>{h1}</h1>
+    </header>
+    <KeyFacts answer={answer} facts={facts} />
+    <slot />
+    {groups.map((g, gi) => (
+      <section class="hub-group" aria-labelledby={`g-${gi}`}>
+        {g.title ? <h2 id={`g-${gi}`}>{g.title}</h2> : <h2 id={`g-${gi}`} class="visually-hidden">{crumb}</h2>}
+        {g.intro && <p class="muted intro">{g.intro}</p>}
+        <div class="grid grid-3">
+          {g.pages.map((p) => (
+            <a class="card link-card" href={p.path}>
+              {p.data.status === 'coming-soon' && <span class="pill">Coming soon</span>}
+              <h3>{p.data.navTitle}</h3>
+              <p>{p.data.summary ?? p.data.description}</p>
+              <span class="arrow">Read →</span>
+            </a>
+          ))}
+        </div>
+      </section>
+    ))}
+    {faq.length > 0 && <Faq items={faq} heading="Frequently asked questions" />}
+    <CtaBand ct={ct} locale={locale} />
+  </div>
+</BaseLayout>
+<style>
+  .hub-head h1 { max-width: 20ch; margin-bottom: 18px; }
+  .hub-group { margin-top: 48px; }
+  .hub-group h2 { font-size: 1.45rem; }
+  .intro { max-width: 680px; margin-top: -4px; }
+  .pill { margin-bottom: 10px; }
+</style>

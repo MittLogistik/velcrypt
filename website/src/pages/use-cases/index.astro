@@ -1,0 +1,25 @@
+---
+import HubLayout from '../../layouts/HubLayout.astro';
+import { getPages, USE_CASE_GROUPS } from '../../lib/content';
+const items = await getPages('useCases');
+const groups = Object.keys(USE_CASE_GROUPS)
+  .map((g) => ({ title: USE_CASE_GROUPS[g], pages: items.filter((p) => p.data.group === g) }))
+  .filter((g) => g.pages.length);
+---
+<HubLayout
+  pageId="use-cases"
+  title="Velcrypt Use Cases: When a Private Vault Helps"
+  description="Real situations where a private photo vault helps: lending your phone, shared iCloud, repairs, travel, medical records, creators and journalists."
+  h1="When a private vault helps"
+  crumb="Use cases"
+  answer="A private vault helps whenever other people can see or reach your iPhone: a child borrowing it, a partner scrolling, a repair counter, a shared family account or a border check. Each page below covers one situation calmly and practically."
+  facts={[
+    'Most exposure happens through ordinary access, not hacking.',
+    'iOS features like Guided Access and Safety Check help in many situations.',
+    'A vault keeps chosen files encrypted even while the phone is unlocked.',
+    'Velcrypt cannot remove copies that still exist in Photos, iCloud or chats.',
+  ]}
+  groups={groups}
+  og="/og/use-cases.png"
+  ct="usecases_hub"
+/>

@@ -1,0 +1,24 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PatternGrid from '../components/PatternGrid.astro';
+import { href } from '../lib/content';
+---
+<BaseLayout title="Page not found | Velcrypt" description="This page does not exist. Find Velcrypt's features, security model, guides and FAQ from here instead." pageId="404" path="/404/" noindex>
+  <section class="container nf">
+    <PatternGrid uid="nf" size={160} pattern="decoy" animate={false} />
+    <h1>This pattern opened an empty page</h1>
+    <p class="muted">The page you were looking for doesn’t exist or has moved. Here are some good places to continue:</p>
+    <ul>
+      <li><a href={href('home')}>Home</a></li>
+      <li><a href={href('features')}>Features</a></li>
+      <li><a href={href('security')}>Security model</a></li>
+      <li><a href={href('guides')}>Guides</a></li>
+      <li><a href={href('faq')}>FAQ</a></li>
+    </ul>
+  </section>
+</BaseLayout>
+<style>
+  .nf { padding: 72px 20px; text-align: center; }
+  .nf h1 { font-size: clamp(1.8rem, 4vw, 2.6rem); margin-top: 18px; }
+  ul { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 10px 22px; justify-content: center; }
+</style>

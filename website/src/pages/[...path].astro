@@ -1,0 +1,158 @@
+---
+/**
+ * Renders every Markdown entry of every collection, in every active locale,
+ * at its localized URL (see src/i18n/registry.mjs).
+ */
+import { render } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import KeyFacts from '../components/KeyFacts.astro';
+import Faq from '../components/Faq.astro';
+import Related from '../components/Related.astro';
+import CtaBand from '../components/CtaBand.astro';
+import AppStoreButton from '../components/AppStoreButton.astro';
+import KeyDiagram from '../components/KeyDiagram.astro';
+import ExifTool from '../components/tools/ExifTool.astro';
+import PatternChecker from '../components/tools/PatternChecker.astro';
+import { getAllPages, isoDate, readingMinutes, GUIDE_CATEGORIES, type Page } from '../lib/content';
+import { pathFor } from '../i18n/registry.mjs';
+import { t } from '../i18n/ui';
+import * as S from '../lib/schema';
+import { SUPPORT_EMAIL, APP_LIVE } from '../config/site';
+
+export async function getStaticPaths() {
+  const pages = await getAllPages();
+  return pages.map((page) => ({ params: { path: page.path.replace(/^\/|\/$/g, '') }, props: { page } }));
+}
+
+const { page } = Astro.props as { page: Page };
+const { data, collection, locale, path } = page;
+const { Content, headings } = await render(page.entry);
+
+const HUBS: Record<string, { id: string; name: string } | null> = {
+  pages: null,
+  features: { id: 'features', name: 'Features' },
+  guides: { id: 'guides', name: 'Guides' },
+  useCases: { id: 'use-cases', name: 'Use cases' },
+  compare: { id: 'compare', name: 'Compare' },
+  tools: { id: 'tools', name: 'Free tools' },
+};
+const hub = HUBS[collection];
+const crumbs = [{ name: t(locale, 'breadcrumb_home'), path: pathFor('home', locale) }];
+if (hub) crumbs.push({ name: hub.name, path: pathFor(hub.id, locale) });
+crumbs.push({ name: data.navTitle, path });
+
+const OG: Record<string, string> = { pages: 'default', features: 'features', guides: 'guides', useCases: 'use-cases', compare: 'compare', tools: 'tools' };
+const ogImage = data.ogImage ?? `/og/${data.pageId === 'security' ? 'security' : OG[collection]}.png`;
+const published = isoDate(data.datePublished);
+const modified = isoDate(data.dateModified);
+const faqAll = data.faqGroups.length ? data.faqGroups.flatMap((g) => g.items) : data.faq;
+const isArticle = data.schemaType === 'Article';
+
+const nodes: object[] = [
+  S.organization(),
+  S.website(locale),
+  S.webPage({
+    type: data.schemaType === 'FAQPage' ? 'WebPage' : data.schemaType,
+    path, title: data.h1, description: data.description, locale,
+    datePublished: published, dateModified: modified, image: ogImage,
+    articleSection: collection === 'guides' ? GUIDE_CATEGORIES[data.category ?? ''] : hub?.name,
+    keywords: [data.primaryKeyword, ...data.keywords],
+  }),
+  S.breadcrumbs(crumbs),
+];
+if (faqAll.length) nodes.push(S.faqPage(faqAll, path));
+if (data.howTo) nodes.push(S.howTo(data.howTo, path, ogImage));
+if (collection === 'pages' && ['home', 'pricing', 'security', 'about'].includes(data.pageId)) nodes.push(S.mobileApp());
+if (collection === 'features') nodes.push(S.mobileApp());
+if (collection === 'tools') {
+  nodes.push({
+    '@type': 'WebApplication',
+    name: data.toolName,
+    url: new URL(path, 'https://velcrypt.com').toString(),
+    applicationCategory: 'UtilitiesApplication',
+    operatingSystem: 'Any (runs in the browser)',
+    browserRequirements: 'Requires JavaScript',
+    offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+    isAccessibleForFree: true,
+  });
+}
+const toc = headings.filter((h) => h.depth === 2);
+const showToc = toc.length >= 4 && collection !== 'tools';
+const minutes = readingMinutes(page.entry.body);
+const ct = `${collection === 'useCases' ? 'uc' : collection.slice(0, 2)}_${data.pageId}`.slice(0, 34);
+---
+<BaseLayout title={data.title} description={data.description} pageId={data.pageId} locale={locale} path={path} ogImage={ogImage} ogType={isArticle ? 'article' : 'website'} jsonLd={S.graph(...nodes)} navCurrent={data.pageId} published={published} modified={modified}>
+  <div class="container">
+    <Breadcrumbs items={crumbs} />
+    <article class="entry">
+      <header class="entry-head">
+        {data.status === 'coming-soon' && <span class="pill">{t(locale, 'coming_soon')}</span>}
+        {collection === 'guides' && data.category && <span class="eyebrow">{GUIDE_CATEGORIES[data.category]}</span>}
+        <h1>{data.h1}</h1>
+        <p class="meta">
+          <span>{t(locale, 'updated')} <time datetime={modified}>{new Date(modified).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' })}</time></span>
+          {isArticle && <span> · {minutes} min read</span>}
+          {collection === 'compare' && <span> · Last checked: {data.lastChecked}</span>}
+        </p>
+      </header>
+
+      <KeyFacts answer={data.answer} facts={data.keyFacts} label={t(locale, 'key_facts')} answerLabel={t(locale, 'in_short')} />
+
+      {data.pageId === 'photo-metadata-remover' && <ExifTool />}
+      {data.pageId === 'pattern-strength-checker' && <PatternChecker />}
+      {data.pageId === 'security' && <KeyDiagram />}
+
+      {showToc && (
+        <nav class="toc" aria-label={t(locale, 'on_this_page')}>
+          <p class="toc-h">{t(locale, 'on_this_page')}</p>
+          <ol>{toc.map((h) => <li><a href={`#${h.slug}`}>{h.text}</a></li>)}</ol>
+        </nav>
+      )}
+
+      <div class="prose">
+        <Content />
+      </div>
+
+      {data.pageId === 'support' && (
+        <section class="notify card" id="get-notified" aria-labelledby="notify-h">
+          <h2 id="notify-h">{APP_LIVE ? 'Get Velcrypt' : 'Get notified at launch'}</h2>
+          {APP_LIVE ? (
+            <p>Velcrypt is on the App Store for iPhone (iOS 17 or later).</p>
+          ) : (
+            <p>Velcrypt is not on the App Store yet. Email us and we will send one message when it launches, then delete your address. No newsletter, no tracking.</p>
+          )}
+          {APP_LIVE ? <AppStoreButton ct="support_notify" locale={locale} /> : (
+            <a class="btn btn-ghost" href={`mailto:${SUPPORT_EMAIL}?subject=${encodeURIComponent('Notify me when Velcrypt launches')}`}>Email me at launch</a>
+          )}
+        </section>
+      )}
+
+      {data.faqGroups.length > 0 ? (
+        data.faqGroups.map((g, i) => <Faq items={g.items} heading={g.title} id={`faq-${i + 1}`} />)
+      ) : (
+        data.faq.length > 0 && <Faq items={data.faq} heading={t(locale, 'faq_heading')} />
+      )}
+    </article>
+
+    <Related ids={data.related} locale={locale} heading={t(locale, 'related_heading')} />
+    <CtaBand ct={ct} locale={locale} />
+  </div>
+</BaseLayout>
+
+<style>
+  .entry { max-width: 820px; }
+  .entry-head { margin-bottom: 26px; }
+  .entry-head h1 { margin: 10px 0 14px; font-size: clamp(2rem, 4.4vw, 3.1rem); max-width: 18ch; }
+  .entry-head .pill { margin-bottom: 6px; }
+  .meta { color: var(--text-2); font-size: 0.9rem; margin: 0; }
+  .toc { max-width: var(--prose); margin: 0 0 36px; padding: 18px 22px; border-left: 2px solid var(--blue); background: rgba(21,31,48,.55); border-radius: 0 14px 14px 0; }
+  .toc-h { font-size: 0.78rem; letter-spacing: .12em; text-transform: uppercase; color: var(--text-2); margin: 0 0 8px; font-weight: 600; }
+  .toc ol { margin: 0; padding-left: 1.2em; columns: 2; column-gap: 28px; }
+  .toc li { margin: 4px 0; font-size: 0.93rem; break-inside: avoid; }
+  .toc a { color: var(--text-3); text-decoration: none; }
+  .toc a:hover { color: #fff; text-decoration: underline; }
+  .notify { margin-top: 40px; max-width: var(--prose); }
+  .notify h2 { font-size: 1.4rem; }
+  @media (max-width: 640px) { .toc ol { columns: 1; } }
+</style>
