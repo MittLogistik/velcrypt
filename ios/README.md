@@ -68,6 +68,16 @@ cd ios && xcodegen generate && open Velcrypt.xcodeproj
 | 4 | Full settings, error handling, accessibility pass, integration tests | ⏳ |
 | 5 | StoreKit 2, paywall, duress pattern (Premium) | ⏳ |
 
+## Backlog
+
+- **Share extension** ("Share → Velcrypt" from Photos, Safari and other apps). This needs:
+  - an App Group container and Keychain sharing with the main app
+  - normal signing, which in turn needs at least one registered device
+  - migrating vault storage into the App Group container
+- **Duress pattern** (Premium). A designated pattern opens a chosen vault and removes access to all other vaults.
+- **Encrypted backup** or transfer to a new iPhone.
+- **StoreKit 2 paywall** (Milestone 5).
+
 ## Known limitations before App Store submission
 
 - Import, viewer and albums arrive in Milestone 3; the + button explains this for now.

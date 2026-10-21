@@ -1,0 +1,290 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "NSPhotoLibraryAddUsageDescription" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Velcrypt saves items you choose to export back to your photo library."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Velcrypt guarda en tu fototeca los elementos que decidas exportar."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Velcrypt sichert Objekte, die du exportierst, in deiner Fotomediathek."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Velcrypt enregistre dans votre photothèque les éléments que vous choisissez d’exporter."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O Velcrypt salva na sua fototeca os itens que você escolher exportar."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Velcryptは、書き出すことを選んだ項目を写真ライブラリに保存します。"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Velcrypt는 내보내기로 선택한 항목을 사진 보관함에 저장합니다."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Velcrypt 会将你选择导出的项目存储到你的照片图库中。"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Velcrypt salva nella libreria Foto gli elementi che scegli di esportare."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Velcrypt bewaart onderdelen die je exporteert in je fotobibliotheek."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Velcrypt sparar objekt som du väljer att exportera i ditt bildbibliotek."
+          }
+        }
+      }
+    },
+    "NSPhotoLibraryUsageDescription" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Velcrypt only uses photo access to delete originals you choose to remove after importing them."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Velcrypt solo usa el acceso a las fotos para eliminar los originales que decidas borrar después de importarlos."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Velcrypt nutzt den Fotozugriff nur, um Originale zu löschen, die du nach dem Importieren entfernen möchtest."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Velcrypt utilise l’accès aux photos uniquement pour supprimer les originaux que vous choisissez de retirer après leur importation."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O Velcrypt usa o acesso às fotos apenas para apagar os originais que você escolher remover depois de importá-los."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Velcryptが写真へのアクセスを使うのは、読み込み後に削除すると選んだオリジナルを削除するときだけです。"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Velcrypt는 가져온 후 제거하기로 선택한 원본을 삭제할 때만 사진 접근 권한을 사용합니다."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Velcrypt 仅在你选择于导入后移除原件时，才使用照片访问权限删除这些原件。"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Velcrypt usa l’accesso alle foto solo per eliminare gli originali che scegli di rimuovere dopo averli importati."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Velcrypt gebruikt toegang tot foto's alleen om originelen te verwijderen die je na het importeren wilt weghalen."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Velcrypt använder bara åtkomst till bilder för att radera original som du väljer att ta bort efter import."
+          }
+        }
+      }
+    },
+    "NSCameraUsageDescription" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Photos and videos you take in Velcrypt go straight into your encrypted vault, never into your photo library."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Las fotos y los vídeos que haces en Velcrypt van directamente a tu bóveda cifrada, nunca a tu fototeca."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fotos und Videos, die du in Velcrypt aufnimmst, landen direkt in deinem verschlüsselten Tresor und nie in deiner Fotomediathek."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Les photos et vidéos que vous prenez dans Velcrypt vont directement dans votre coffre chiffré, jamais dans votre photothèque."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "As fotos e os vídeos que você faz no Velcrypt vão direto para o seu cofre criptografado, nunca para a sua fototeca."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Velcryptで撮影した写真やビデオは、写真ライブラリではなく、暗号化された保管庫に直接保存されます。"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Velcrypt에서 촬영한 사진과 비디오는 사진 보관함이 아닌 암호화된 금고로 바로 저장됩니다."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "你在 Velcrypt 中拍摄的照片和视频会直接存入加密保险库，绝不会进入你的照片图库。"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Le foto e i video che scatti in Velcrypt finiscono direttamente nella cassaforte cifrata, mai nella libreria Foto."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Foto's en video's die je in Velcrypt maakt, gaan rechtstreeks naar je versleutelde kluis en nooit naar je fotobibliotheek."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bilder och videor som du tar i Velcrypt hamnar direkt i ditt krypterade valv, aldrig i ditt bildbibliotek."
+          }
+        }
+      }
+    },
+    "NSMicrophoneUsageDescription" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Velcrypt records sound only when you film a video into your vault."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Velcrypt solo graba sonido cuando grabas un vídeo para tu bóveda."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Velcrypt nimmt nur dann Ton auf, wenn du ein Video für deinen Tresor filmst."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Velcrypt n’enregistre le son que lorsque vous filmez une vidéo dans votre coffre."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O Velcrypt só grava som quando você filma um vídeo para o seu cofre."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Velcryptが音声を録音するのは、保管庫にビデオを撮影するときだけです。"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Velcrypt는 금고에 비디오를 촬영할 때만 소리를 녹음합니다."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Velcrypt 仅在你为保险库拍摄视频时录制声音。"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Velcrypt registra l’audio solo quando giri un video nella cassaforte."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Velcrypt neemt alleen geluid op wanneer je een video voor je kluis filmt."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Velcrypt spelar bara in ljud när du filmar en video till ditt valv."
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}
