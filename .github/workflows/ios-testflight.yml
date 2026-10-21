@@ -53,7 +53,7 @@ jobs:
             -authenticationKeyID "$ASC_KEY_ID" \
             -authenticationKeyIssuerID "$ASC_ISSUER_ID" \
             DEVELOPMENT_TEAM="$TEAM_ID" \
-            CURRENT_PROJECT_VERSION="${{ github.run_number }}" 2>&1 | tee -a "$RUNNER_TEMP/xcodebuild.log"
+            CODE_SIGNING_ALLOWED=NO \n            CURRENT_PROJECT_VERSION="${{ github.run_number }}" 2>&1 | tee -a "$RUNNER_TEMP/xcodebuild.log"
 
       - name: Export and upload to App Store Connect
         run: |
