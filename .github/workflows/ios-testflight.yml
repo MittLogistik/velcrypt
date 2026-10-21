@@ -20,7 +20,6 @@ jobs:
       TEAM_ID: ${{ secrets.APPLE_TEAM_ID }}
       ASC_KEY_ID: ${{ secrets.ASC_KEY_ID }}
       ASC_ISSUER_ID: ${{ secrets.ASC_ISSUER_ID }}
-      ARCHIVE_PATH: ${{ runner.temp }}/Velcrypt.xcarchive
     steps:
       - uses: actions/checkout@v5
 
@@ -38,6 +37,7 @@ jobs:
           KEY_PATH="$RUNNER_TEMP/AuthKey_${ASC_KEY_ID}.p8"
           echo "${{ secrets.ASC_KEY_P8_BASE64 }}" | base64 --decode > "$KEY_PATH"
           echo "KEY_PATH=$KEY_PATH" >> "$GITHUB_ENV"
+          echo "ARCHIVE_PATH=$RUNNER_TEMP/Velcrypt.xcarchive" >> "$GITHUB_ENV"
 
       - name: Archive
         run: |
