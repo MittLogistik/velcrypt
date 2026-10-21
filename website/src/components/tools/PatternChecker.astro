@@ -104,27 +104,98 @@ const dots = Array.from({ length: 25 }, (_, i) => i);
     ul.replaceChildren(...(seq.length ? r.notes : []).map((t) => { const li = document.createElement('li'); li.textContent = t; return li; }));
   }
 
-  function add(i: number) { if (!seq.includes(i)) { seq.push(i); render(); } }
+  // Dots strictly between two grid points (e.g. 0→4 passes 1, 2, 3), as in the app.
+  function between(a: number, b: number) {
+    const dr = Math.floor(b / 5) - Math.floor(a / 5), dc = (b % 5) - (a % 5);
+    const gcd = (x: number, y: number): number => (y ? gcd(y, x % y) : x);
+    const steps = gcd(Math.abs(dr), Math.abs(dc));
+    const out: number[] = [];
+    for (let k = 1; k < steps; k++) out.push((Math.floor(a / 5) + (dr / steps) * k) * 5 + (a % 5) + (dc / steps) * k);
+    return out;
+  }
+  function add(i: number) {
+    if (seq.includes(i)) return false;
+    const last = seq[seq.length - 1];
+    if (last !== undefined) for (const m of between(last, i)) if (!seq.includes(m)) seq.push(m);
+    seq.push(i);
+    return true;
+  }
   function toLocal(e: PointerEvent) { const r = board.getBoundingClientRect(); return [((e.clientX - r.left) / r.width) * 500, ((e.clientY - r.top) / r.height) * 500]; }
-  function hit(p: number[]) { for (let i = 0; i < 25; i++) { const [x, y] = C(i); if (Math.hypot(p[0] - x, p[1] - y) < 34) return i; } return -1; }
+  function hit(p: number[], radius = 38) { for (let i = 0; i < 25; i++) { const [x, y] = C(i); if (Math.hypot(p[0] - x, p[1] - y) < radius) return i; } return -1; }
+  function nearest(p: number[]) {
+    let best = -1, dist = Infinity;
+    for (let i = 0; i < 25; i++) { const [x, y] = C(i); const d = Math.hypot(p[0] - x, p[1] - y); if (d < dist) { dist = d; best = i; } }
+    return dist < 70 ? best : -1;
+  }
+
+  // Rendering is batched to one frame; the analysis only reruns when the sequence changes.
+  let lastPoint: number[] | null = null;
+  let pointer: number[] | undefined;
+  let dirty = false, frame = 0;
+  function schedule(changed: boolean) {
+    dirty ||= changed;
+    if (frame) return;
+    frame = requestAnimationFrame(() => {
+      frame = 0;
+      if (dirty) { dirty = false; render(pointer); } else drawTail();
+    });
+  }
+  function drawTail() {
+    if (pointer && seq.length) {
+      const [x, y] = C(seq[seq.length - 1]);
+      tail.setAttribute('x1', String(x)); tail.setAttribute('y1', String(y)); tail.setAttribute('x2', String(pointer[0])); tail.setAttribute('y2', String(pointer[1]));
+      tail.setAttribute('visibility', 'visible');
+    } else tail.setAttribute('visibility', 'hidden');
+  }
+
+  // Samples along the segment since the last event, so fast swipes can't jump over a dot.
+  function trace(from: number[], to: number[]) {
+    let changed = false;
+    const steps = Math.max(1, Math.ceil(Math.hypot(to[0] - from[0], to[1] - from[1]) / 12));
+    for (let s = 1; s <= steps; s++) {
+      const i = hit([from[0] + ((to[0] - from[0]) * s) / steps, from[1] + ((to[1] - from[1]) * s) / steps]);
+      if (i >= 0 && add(i)) changed = true;
+    }
+    return changed;
+  }
 
   board.addEventListener('pointerdown', (e) => {
-    const i = hit(toLocal(e));
+    // Start from the nearest dot, so a slightly-off first touch still begins a pattern.
+    const p = toLocal(e);
+    const i = nearest(p);
     if (i < 0) return;
     e.preventDefault();
     drawing = true; seq = []; add(i);
+    lastPoint = p; pointer = p;
     board.setPointerCapture(e.pointerId);
+    schedule(true);
   });
   board.addEventListener('pointermove', (e) => {
-    if (!drawing) return;
-    const p = toLocal(e); const i = hit(p);
-    if (i >= 0) add(i);
-    render(p);
+    if (!drawing || !lastPoint) return;
+    e.preventDefault();
+    let changed = false;
+    const samples = typeof e.getCoalescedEvents === 'function' ? e.getCoalescedEvents() : [];
+    for (const ev of samples.length ? samples : [e]) {
+      const p = toLocal(ev);
+      if (trace(lastPoint, p)) changed = true;
+      lastPoint = p;
+    }
+    pointer = lastPoint;
+    schedule(changed);
   });
-  const end = () => { if (drawing) { drawing = false; render(); } };
+  const end = () => {
+    if (!drawing) return;
+    drawing = false; lastPoint = null; pointer = undefined;
+    if (frame) { cancelAnimationFrame(frame); frame = 0; }
+    dirty = false;
+    render();
+  };
   board.addEventListener('pointerup', end);
   board.addEventListener('pointercancel', end);
-  buttons.forEach((b) => b.addEventListener('click', (e) => { if ((e as MouseEvent).detail === 0) add(Number(b.dataset.i)); }));
+  board.addEventListener('lostpointercapture', end);
+  // Stop iOS from turning a drag into a scroll or text selection.
+  board.addEventListener('touchmove', (e) => { if (drawing) e.preventDefault(); }, { passive: false });
+  buttons.forEach((b) => b.addEventListener('click', (e) => { if ((e as MouseEvent).detail === 0 && add(Number(b.dataset.i))) render(); }));
   document.getElementById('pc-reset')!.addEventListener('click', () => { seq = []; render(); });
   render();
 </script>
