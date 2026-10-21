@@ -14,7 +14,7 @@ final class UnlockPatternTests: XCTestCase {
         XCTAssertEqual(UnlockPattern.directionChanges(in: [0, 1, 2, 3, 4]), 0)
         XCTAssertEqual(UnlockPattern.directionChanges(in: [0, 2, 4]), 0, "Jumps are normalised to unit direction")
         XCTAssertEqual(UnlockPattern.directionChanges(in: [0, 1, 2, 7]), 1)
-        XCTAssertEqual(UnlockPattern.directionChanges(in: [0, 1, 6, 7, 12]), 4)
+        XCTAssertEqual(UnlockPattern.directionChanges(in: [0, 1, 6, 7, 12]), 3)
     }
 
     func testRejectsDuplicatesAndOutOfRange() {
@@ -37,7 +37,7 @@ final class UnlockPatternTests: XCTestCase {
     func testExtendSkipsAlreadyVisitedDots() {
         XCTAssertEqual(UnlockPattern.extend([0], with: 4), [0, 1, 2, 3, 4])
         XCTAssertEqual(UnlockPattern.extend([2, 7], with: 0).last, 0)
-        XCTAssertEqual(UnlockPattern.extend([2, 0], with: 4), [2, 0, 4], "Dot 2 between 0 and 4 is already used")
+        XCTAssertEqual(UnlockPattern.extend([2, 0], with: 4), [2, 0, 1, 3, 4], "Already-used dot 2 is skipped; 1 and 3 are picked up")
         XCTAssertEqual(UnlockPattern.extend([0, 1], with: 1), [0, 1])
     }
 
