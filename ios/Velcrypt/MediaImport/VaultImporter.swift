@@ -17,6 +17,7 @@ private struct VaultImporterModifier: ViewModifier {
     @State private var showConfirmVault = false
     @State private var showPhotos = false
     @State private var showFiles = false
+    @State private var showCamera = false
     @State private var selection: [PhotosPickerItem] = []
     /// Only the screen that started an import offers to delete its originals.
     @State private var startedImport = false
@@ -61,6 +62,9 @@ private struct VaultImporterModifier: ViewModifier {
                 Text(cleanupMessage)
             }
             .confirmationDialog("Add to Vault", isPresented: $showChoice, titleVisibility: .visible) {
+                if VaultCamera.isAvailable {
+                    Button("Camera") { showCamera = true }
+                }
                 Button("Photos & Videos") { showPhotos = true }
                 Button("Files") { showFiles = true }
             } message: {
@@ -82,6 +86,12 @@ private struct VaultImporterModifier: ViewModifier {
                 startedImport = true
                 library.startImport(picked.map { .picker($0) }, into: albumID)
                 selection = []
+            }
+            .fullScreenCover(isPresented: $showCamera) {
+                VaultCamera { capture in
+                    library.startImport([.camera(capture)], into: albumID)
+                }
+                .ignoresSafeArea()
             }
             .fileImporter(isPresented: $showFiles, allowedContentTypes: [.item], allowsMultipleSelection: true) { result in
                 if case .success(let urls) = result {

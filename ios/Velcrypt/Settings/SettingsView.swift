@@ -72,6 +72,11 @@ struct SettingsView: View {
                         }
                     }
                     .pickerStyle(.segmented)
+                    NavigationLink {
+                        AppIconSettingsView()
+                    } label: {
+                        Label("App Icon", systemImage: "app.badge")
+                    }
                 }
 
                 Section("About") {

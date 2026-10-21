@@ -16,6 +16,7 @@ final class VaultLibrary {
     enum ImportRequest {
         case picker(PhotosPickerItem)
         case file(URL)
+        case camera(VaultCamera.Capture)
     }
 
     struct ImportProgress: Equatable {
@@ -229,6 +230,21 @@ final class VaultLibrary {
                                     bytes: Int64(data.count), info: info, albumID: albumID)
                 try await store.add(.data(data), item: item, thumbnail: info.thumbnail)
             }
+
+        case .camera(.photo(let data, let type)):
+            var info = MediaInspector.inspectImage(data)
+            info.capturedAt = info.capturedAt ?? .now
+            let item = makeItem(id: id, kind: .photo, type: type, filename: Self.filename(prefix: "Photo", type: type, date: info.capturedAt),
+                                bytes: Int64(data.count), info: info, albumID: albumID)
+            try await store.add(.data(data), item: item, thumbnail: info.thumbnail)
+
+        case .camera(.video(let url)):
+            defer { TemporaryFiles.remove(url) }
+            var info = await MediaInspector.inspectVideo(at: url)
+            info.capturedAt = info.capturedAt ?? .now
+            let item = makeItem(id: id, kind: .video, type: .quickTimeMovie, filename: Self.filename(prefix: "Video", type: .quickTimeMovie, date: info.capturedAt),
+                                bytes: Self.fileSize(url), info: info, albumID: albumID)
+            try await store.add(.file(url), item: item, thumbnail: info.thumbnail)
 
         case .file(let url):
             let scoped = url.startAccessingSecurityScopedResource()

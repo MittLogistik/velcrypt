@@ -34,12 +34,15 @@ targets:
         UIApplicationSupportsIndirectInputEvents: true
         NSPhotoLibraryAddUsageDescription: Velcrypt saves items you choose to export back to your photo library.
         NSPhotoLibraryUsageDescription: Velcrypt only uses photo access to delete originals you choose to remove after importing them.
+        NSCameraUsageDescription: Photos and videos you take in Velcrypt go straight into your encrypted vault, never into your photo library.
+        NSMicrophoneUsageDescription: Velcrypt records sound only when you film a video into your vault.
         ITSAppUsesNonExemptEncryption: false
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.velcrypt.app
         TARGETED_DEVICE_FAMILY: "1"
         ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS: YES
         ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
         GENERATE_INFOPLIST_FILE: NO
 
