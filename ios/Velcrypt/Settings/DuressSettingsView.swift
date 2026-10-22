@@ -5,10 +5,12 @@ import SwiftUI
 struct DuressSettingsView: View {
     @Environment(VaultLibrary.self) private var library
     @Environment(PremiumStore.self) private var premium
+    @Environment(VaultSession.self) private var session
 
     @State private var mode: DuressPatternEntryView.Mode?
     @State private var paywall: PaywallView.Reason?
     @State private var needsContent = false
+    @State private var onlyOneVault = false
 
     var body: some View {
         Form {
@@ -20,8 +22,8 @@ struct DuressSettingsView: View {
                 )
                 VCFeatureRow(
                     systemName: "theatermasks.fill",
-                    title: "Opens This Vault",
-                    message: "The duress pattern opens the vault you set it up in, so fill this one with harmless photos."
+                    title: "Set It Up in Your Decoy",
+                    message: "Set it up in a decoy vault, not your real one. The duress pattern opens the vault you're in now, so fill it with harmless photos."
                 )
                 VCFeatureRow(
                     systemName: "trash.fill",
@@ -37,7 +39,9 @@ struct DuressSettingsView: View {
                     } else if library.isNewVault {
                         needsContent = true
                     } else {
-                        mode = .set
+                        // This vault is the only one, so the duress pattern would delete nothing: almost
+                        // certainly set up in the real vault by mistake.
+                        if session.savedVaultCount <= 1 { onlyOneVault = true } else { mode = .set }
                     }
                 } label: {
                     Label("Set Up Duress Pattern", systemImage: "exclamationmark.shield.fill")
@@ -60,6 +64,12 @@ struct DuressSettingsView: View {
         }
         .sheet(item: $paywall) { reason in
             PaywallView(reason: reason)
+        }
+        .alert("Only One Vault", isPresented: $onlyOneVault) {
+            Button("Set Up Anyway") { mode = .set }
+            Button("Cancel", role: .cancel) {}
+        } message: {
+            Text("This is the only vault on this iPhone, so the duress pattern would just open it and delete nothing. Create a decoy vault with a different pattern first, and set up the duress pattern there.")
         }
         .alert("Add Something First", isPresented: $needsContent) {
             Button("OK", role: .cancel) {}
