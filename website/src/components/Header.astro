@@ -1,11 +1,12 @@
 ---
 import Logo from './Logo.astro';
+import LangSwitcher from './LangSwitcher.astro';
 import { t } from '../i18n/ui';
 import { pathFor } from '../i18n/registry.mjs';
 import { APP_LIVE, appStoreLink } from '../config/site';
 
-interface Props { locale: string; current?: string }
-const { locale, current } = Astro.props;
+interface Props { locale: string; pageId: string; current?: string }
+const { locale, pageId, current } = Astro.props;
 const links = [
   { id: 'features', label: t(locale, 'nav_features') },
   { id: 'security', label: t(locale, 'nav_security') },
@@ -17,40 +18,91 @@ const ctaHref = APP_LIVE ? appStoreLink('header') : `${pathFor('support', locale
 ---
 <header class="site-header">
   <div class="container bar">
-    <a class="brand" href={pathFor('home', locale)} aria-label="Velcrypt home"><Logo size={30} uid="hdr" wordmark /></a>
-    <nav aria-label="Main">
+    <a class="brand" href={pathFor('home', locale)} aria-label={t(locale, 'home_aria')}><Logo size={30} uid="hdr" wordmark /></a>
+    <nav aria-label={t(locale, 'nav_main')} class="main-nav">
       <ul>
         {links.map((l) => (
           <li><a href={pathFor(l.id, locale)} aria-current={current === l.id ? 'page' : undefined}>{l.label}</a></li>
         ))}
       </ul>
     </nav>
-    <a class="hdr-cta" href={ctaHref} data-ct="header">{APP_LIVE ? t(locale, 'cta_header_live') : t(locale, 'cta_header_soon')}</a>
+    <div class="tools">
+      <LangSwitcher locale={locale} pageId={pageId} id="hdr" />
+      <button type="button" class="theme-toggle" data-theme-toggle aria-label={t(locale, 'theme_toggle')} title={t(locale, 'theme_toggle')}>
+        <svg class="i-sun" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 2.5v2.2M12 19.3v2.2M4.6 4.6l1.6 1.6M17.8 17.8l1.6 1.6M2.5 12h2.2M19.3 12h2.2M4.6 19.4l1.6-1.6M17.8 6.2l1.6-1.6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        <svg class="i-moon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M20.2 14.6A8.2 8.2 0 0 1 9.4 3.8a8.3 8.3 0 1 0 10.8 10.8Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+      </button>
+      <a class="hdr-cta" href={ctaHref} data-ct="header">{APP_LIVE ? t(locale, 'cta_header_live') : t(locale, 'cta_header_soon')}</a>
+    </div>
   </div>
 </header>
+
+<script>
+  // Theme toggle (progressive enhancement; the initial theme is set by the inline head script).
+  const KEY = 'velcrypt-theme';
+  const root = document.documentElement;
+  const current = () => root.dataset.theme || (matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+  const sync = () => document.querySelectorAll<HTMLButtonElement>('[data-theme-toggle]').forEach((b) => b.setAttribute('aria-pressed', String(current() === 'light')));
+  document.querySelectorAll<HTMLButtonElement>('[data-theme-toggle]').forEach((b) =>
+    b.addEventListener('click', () => {
+      const next = current() === 'light' ? 'dark' : 'light';
+      root.dataset.theme = next;
+      try { localStorage.setItem(KEY, next); } catch { /* storage unavailable */ }
+      document.querySelectorAll<HTMLMetaElement>('meta[name="theme-color"]').forEach((m) => (m.content = next === 'light' ? '#F6F8FC' : '#0B1220'));
+      sync();
+    }),
+  );
+  if (root.dataset.theme) document.querySelectorAll<HTMLMetaElement>('meta[name="theme-color"]').forEach((m) => (m.content = root.dataset.theme === 'light' ? '#F6F8FC' : '#0B1220'));
+  sync();
+
+  // Language menus: Esc closes and returns focus; clicking elsewhere closes.
+  const menus = () => [...document.querySelectorAll<HTMLDetailsElement>('details.lang[open]')];
+  document.addEventListener('keydown', (e) => {
+    if (e.key !== 'Escape') return;
+    for (const d of menus()) { d.open = false; d.querySelector('summary')?.focus(); }
+  });
+  document.addEventListener('click', (e) => {
+    for (const d of menus()) if (!d.contains(e.target as Node)) d.open = false;
+  });
+</script>
+
 <style>
   .site-header {
     position: sticky; top: 0; z-index: 50;
-    background: rgba(11, 18, 32, 0.82);
+    background: color-mix(in srgb, var(--bg) 84%, transparent);
     backdrop-filter: saturate(160%) blur(14px); -webkit-backdrop-filter: saturate(160%) blur(14px);
     border-bottom: 1px solid var(--line);
   }
-  .bar { display: flex; align-items: center; gap: 20px; min-height: 64px; }
-  .brand { text-decoration: none; display: inline-flex; }
-  nav { margin-left: auto; overflow-x: auto; scrollbar-width: none; }
-  nav::-webkit-scrollbar { display: none; }
-  ul { list-style: none; display: flex; gap: 4px; margin: 0; padding: 0; }
-  nav a { display: block; padding: 8px 12px; border-radius: 10px; color: var(--text-3); text-decoration: none; font-size: 0.95rem; font-weight: 500; white-space: nowrap; }
-  nav a:hover, nav a[aria-current='page'] { color: #fff; background: rgba(148,163,184,.1); }
+  .bar { display: flex; align-items: center; gap: 16px; min-height: 64px; }
+  .brand { text-decoration: none; display: inline-flex; border-radius: 10px; }
+  .main-nav { margin-left: auto; overflow-x: auto; scrollbar-width: none; }
+  .main-nav::-webkit-scrollbar { display: none; }
+  .main-nav ul { list-style: none; display: flex; gap: 2px; margin: 0; padding: 0; }
+  .main-nav a { display: block; padding: 8px 11px; border-radius: 10px; color: var(--text-3); text-decoration: none; font-size: 0.94rem; font-weight: 500; white-space: nowrap; transition: color .15s, background .15s; }
+  .main-nav a:hover, .main-nav a[aria-current='page'] { color: var(--text); background: var(--hover); }
+  .tools { display: flex; align-items: center; gap: 6px; flex: none; }
+  .theme-toggle {
+    display: inline-grid; place-items: center; width: 38px; height: 38px; border-radius: 11px; cursor: pointer;
+    color: var(--text-3); background: transparent; border: 1px solid transparent; transition: color .15s, background .15s, border-color .15s;
+  }
+  .theme-toggle:hover { color: var(--text); background: var(--hover); border-color: var(--line); }
+  .theme-toggle .i-sun { display: none; }
+  :global(:root[data-theme='light']) .theme-toggle .i-sun { display: block; }
+  :global(:root[data-theme='light']) .theme-toggle .i-moon { display: none; }
+  @media (prefers-color-scheme: light) {
+    :global(:root:not([data-theme='dark'])) .theme-toggle .i-sun { display: block; }
+    :global(:root:not([data-theme='dark'])) .theme-toggle .i-moon { display: none; }
+  }
   .hdr-cta {
-    flex: none; text-decoration: none; color: #0b1220; background: var(--grad); font-weight: 650; font-size: 0.92rem;
-    padding: 9px 16px; border-radius: 12px; white-space: nowrap;
+    flex: none; text-decoration: none; color: #061024; background: var(--grad); font-weight: 650; font-size: 0.9rem;
+    padding: 9px 15px; border-radius: 11px; white-space: nowrap; margin-left: 4px; transition: filter .15s, box-shadow .2s;
   }
-  .hdr-cta:hover { color: #0b1220; filter: brightness(1.08); }
-  @media (max-width: 860px) {
-    .bar { flex-wrap: wrap; gap: 8px 12px; padding-top: 8px; padding-bottom: 4px; }
-    nav { order: 3; width: 100%; margin: 0 -8px; }
-    .hdr-cta { margin-left: auto; }
-    nav a { padding: 8px 10px; font-size: 0.9rem; }
+  .hdr-cta:hover { color: #061024; filter: brightness(1.06); box-shadow: 0 6px 20px -8px rgba(79,140,255,.7); }
+  @media (max-width: 960px) {
+    .bar { flex-wrap: wrap; gap: 6px 10px; padding-top: 8px; padding-bottom: 4px; }
+    .main-nav { order: 3; width: 100%; margin: 0 -8px; }
+    .tools { margin-left: auto; }
+    .main-nav a { padding: 8px 10px; font-size: 0.9rem; }
   }
+  @media (max-width: 420px) { .hdr-cta { padding: 8px 11px; font-size: .84rem; } }
 </style>

@@ -1,10 +1,14 @@
 ---
 /** 5×5 pattern strength checker. Runs locally; nothing is stored or sent. */
+import { getCopy, fmt } from '../../i18n/copy/index';
+interface Props { locale?: string }
+const { locale = 'en' } = Astro.props;
+const T = getCopy(locale).tools.pattern;
 const dots = Array.from({ length: 25 }, (_, i) => i);
 ---
-<section class="tool card" aria-labelledby="pc-h">
-  <h2 id="pc-h">Test a pattern</h2>
-  <p class="muted">Drag across the dots, or tap them one by one (keyboard: Tab and Enter). Use a pattern that is <em>similar</em> to yours, never your real one.</p>
+<section class="tool card" aria-labelledby="pc-h" id="pc-tool" data-i18n={JSON.stringify(T)}>
+  <h2 id="pc-h">{T.title}</h2>
+  <p class="muted">{T.intro}</p>
   <div class="pc">
     <div class="board" id="pc-board">
       <svg viewBox="0 0 500 500" aria-hidden="true" focusable="false">
@@ -13,20 +17,22 @@ const dots = Array.from({ length: 25 }, (_, i) => i);
         <line id="pc-tail" stroke="#75D8FF" stroke-opacity=".45" stroke-width="6" stroke-linecap="round" x1="0" y1="0" x2="0" y2="0" visibility="hidden" />
       </svg>
       <div class="dots">
-        {dots.map((i) => <button type="button" class="dot" data-i={i} aria-label={`Row ${Math.floor(i / 5) + 1}, column ${(i % 5) + 1}`}><span></span></button>)}
+        {dots.map((i) => <button type="button" class="dot" data-i={i} aria-label={fmt(T.dotLabel, { r: Math.floor(i / 5) + 1, c: (i % 5) + 1 })}><span></span></button>)}
       </div>
     </div>
     <div class="result" aria-live="polite">
-      <p class="rating" id="pc-rating">Draw a pattern to start</p>
+      <p class="rating" id="pc-rating">{T.start}</p>
       <div class="meter" aria-hidden="true"><span id="pc-bar"></span></div>
       <p class="bits" id="pc-bits"></p>
       <ul id="pc-notes" class="notes"></ul>
-      <button type="button" class="btn btn-ghost" id="pc-reset">Clear</button>
+      <button type="button" class="btn btn-ghost" id="pc-reset">{T.clear}</button>
     </div>
   </div>
 </section>
 
 <script>
+  const T = JSON.parse((document.getElementById('pc-tool') as HTMLElement).dataset.i18n || '{}');
+  const F = (s: string, n: number) => s.replace('{n}', String(n));
   const board = document.getElementById('pc-board')!;
   const line = document.getElementById('pc-line') as unknown as SVGPolylineElement;
   const tail = document.getElementById('pc-tail') as unknown as SVGLineElement;
@@ -65,23 +71,23 @@ const dots = Array.from({ length: 25 }, (_, i) => i);
     const notes: string[] = [];
     let bits = n ? Math.log2(25) : 0;
     for (let k = 1; k < n; k++) bits += Math.log2(Math.min(8, 25 - k));
-    if (turns < 2) { bits -= 4; notes.push('Few changes of direction make the shape easy to guess.'); }
+    if (turns < 2) { bits -= 4; notes.push(T.notes.fewTurns); }
     else if (turns > 2) bits += Math.min(3, turns - 2);
-    if (corner) { bits -= 2; notes.push('Starting in a corner is the most common choice.'); }
-    if (crossings) { bits += Math.min(3, crossings * 1.5); notes.push('Crossing your own path adds useful unpredictability.'); }
-    if (rows <= 2 && cols <= 2) { bits -= 3; notes.push('The pattern uses only a small part of the grid.'); }
+    if (corner) { bits -= 2; notes.push(T.notes.corner); }
+    if (crossings) { bits += Math.min(3, crossings * 1.5); notes.push(T.notes.crossing); }
+    if (rows <= 2 && cols <= 2) { bits -= 3; notes.push(T.notes.small); }
     else if (rows >= 4 && cols >= 4) bits += 1;
-    if (maxRun >= 4) { bits -= 2; notes.push('A long straight run is easy to spot from a distance.'); }
-    if (ortho && jumps === 0 && turns <= 3 && n > 2) { bits -= 3; notes.push('Only straight, neighbouring moves with few turns resemble a letter or simple shape (L, U, Z, square).'); }
-    if (!ortho) notes.push('Diagonal moves widen the range of possible patterns.');
-    if (n >= 8) notes.push('Eight or more dots is in the recommended range.');
+    if (maxRun >= 4) { bits -= 2; notes.push(T.notes.straight); }
+    if (ortho && jumps === 0 && turns <= 3 && n > 2) { bits -= 3; notes.push(T.notes.shape); }
+    if (!ortho) notes.push(T.notes.diagonal);
+    if (n >= 8) notes.push(T.notes.long);
     bits = Math.max(0, bits);
-    let rating = 'Very strong', level = 5;
-    if (n < 6) { rating = 'Too short'; level = 0; notes.unshift('Velcrypt needs at least 6 dots.'); }
-    else if (turns < 1) { rating = 'Needs a turn'; level = 0; notes.unshift('Velcrypt needs at least one change of direction.'); }
-    else if (bits < 16) { rating = 'Weak'; level = 1; }
-    else if (bits < 24) { rating = 'Fair'; level = 2; }
-    else if (bits < 32) { rating = 'Strong'; level = 3; }
+    let rating = T.ratings.veryStrong, level = 5;
+    if (n < 6) { rating = T.ratings.tooShort; level = 0; notes.unshift(T.notes.min6); }
+    else if (turns < 1) { rating = T.ratings.needsTurn; level = 0; notes.unshift(T.notes.minTurn); }
+    else if (bits < 16) { rating = T.ratings.weak; level = 1; }
+    else if (bits < 24) { rating = T.ratings.fair; level = 2; }
+    else if (bits < 32) { rating = T.ratings.strong; level = 3; }
     return { n, bits, rating, level, notes };
   }
 
@@ -95,11 +101,11 @@ const dots = Array.from({ length: 25 }, (_, i) => i);
     } else tail.setAttribute('visibility', 'hidden');
     const r = analyse(seq);
     const rating = document.getElementById('pc-rating')!;
-    rating.textContent = seq.length ? `${r.rating} · ${r.n} dot${r.n === 1 ? '' : 's'}` : 'Draw a pattern to start';
+    rating.textContent = seq.length ? `${r.rating} · ${F(r.n === 1 ? T.dot : T.dots, r.n)}` : T.start;
     rating.dataset.level = seq.length ? String(r.level) : '';
     (document.getElementById('pc-bar') as HTMLElement).style.width = seq.length ? `${Math.max(6, (r.level / 5) * 100)}%` : '0';
     (document.getElementById('pc-bar') as HTMLElement).dataset.level = String(r.level);
-    document.getElementById('pc-bits')!.textContent = seq.length >= 2 ? `Rough estimate: about ${Math.round(r.bits)} bits. A heuristic, not a guarantee.` : '';
+    document.getElementById('pc-bits')!.textContent = seq.length >= 2 ? F(T.bits, Math.round(r.bits)) : '';
     const ul = document.getElementById('pc-notes')!;
     ul.replaceChildren(...(seq.length ? r.notes : []).map((t) => { const li = document.createElement('li'); li.textContent = t; return li; }));
   }
@@ -204,23 +210,25 @@ const dots = Array.from({ length: 25 }, (_, i) => i);
   .tool { margin: 0 0 44px; max-width: var(--prose); }
   .tool h2 { font-size: 1.35rem; margin-bottom: 6px; }
   .pc { display: grid; grid-template-columns: minmax(0, 320px) 1fr; gap: 28px; align-items: start; margin-top: 18px; }
-  .board { position: relative; width: 100%; aspect-ratio: 1; touch-action: none; user-select: none; -webkit-user-select: none; border-radius: 20px; background: radial-gradient(circle at 50% 40%, #16233a, #0d1526); border: 1px solid var(--line); }
+  .board { position: relative; width: 100%; aspect-ratio: 1; touch-action: none; user-select: none; -webkit-user-select: none; border-radius: 20px; background: radial-gradient(circle at 50% 40%, var(--board-a, #16233a), var(--board-b, #0d1526)); border: 1px solid var(--line); }
+  :global(:root[data-theme='light']) .board { --board-a: #ffffff; --board-b: #e9eff8; }
+  @media (prefers-color-scheme: light) { :global(:root:not([data-theme='dark'])) .board { --board-a: #ffffff; --board-b: #e9eff8; } }
   .board svg { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
   .dots { position: absolute; inset: 0; display: grid; grid-template-columns: repeat(5, 1fr); grid-template-rows: repeat(5, 1fr); }
   .dot { all: unset; display: grid; place-items: center; cursor: pointer; border-radius: 50%; }
-  .dot span { width: 15px; height: 15px; border-radius: 50%; background: #2f4060; transition: transform .15s, background .15s, box-shadow .15s; }
-  .dot.on span { background: #75d8ff; transform: scale(1.35); box-shadow: 0 0 14px rgba(117,216,255,.8); }
-  .dot:focus-visible span { outline: 2px solid #fff; outline-offset: 4px; }
+  .dot span { width: 15px; height: 15px; border-radius: 50%; background: var(--pg-dot); transition: transform .15s, background .15s, box-shadow .15s; }
+  .dot.on span { background: var(--pg-lit); transform: scale(1.35); box-shadow: 0 0 14px rgba(117,216,255,.8); }
+  .dot:focus-visible span { outline: 2px solid var(--text); outline-offset: 4px; }
   .rating { font-size: 1.3rem; font-weight: 700; margin: 0 0 10px; }
-  .rating[data-level='0'] { color: #ff9a8a; }
+  .rating[data-level='0'] { color: var(--danger); }
   .rating[data-level='1'] { color: var(--warn); }
-  .rating[data-level='3'], .rating[data-level='4'], .rating[data-level='5'] { color: var(--cyan); }
+  .rating[data-level='3'], .rating[data-level='4'], .rating[data-level='5'] { color: var(--accent-text); }
   .meter { height: 8px; border-radius: 9px; background: var(--bg-3); overflow: hidden; margin-bottom: 10px; }
   .meter span { display: block; height: 100%; width: 0; background: var(--grad); transition: width .25s; }
-  .meter span[data-level='0'] { background: #ff9a8a; }
+  .meter span[data-level='0'] { background: var(--danger); }
   .meter span[data-level='1'] { background: var(--warn); }
   .bits { color: var(--text-2); font-size: .9rem; min-height: 1.4em; }
-  .notes { padding-left: 1.1em; margin: 0 0 16px; font-size: .93rem; color: #cdd6e3; }
+  .notes { padding-left: 1.1em; margin: 0 0 16px; font-size: .93rem; color: var(--prose-text); }
   .notes li { margin: 4px 0; }
   @media (max-width: 640px) { .pc { grid-template-columns: 1fr; } .board { max-width: 320px; } }
 </style>

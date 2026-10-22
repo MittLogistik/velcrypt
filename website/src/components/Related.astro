@@ -2,19 +2,25 @@
 import { getPageById, type Page } from '../lib/content';
 import { STATIC_ROUTES } from '../i18n/static-routes.mjs';
 import { pathFor } from '../i18n/registry.mjs';
+import { getCopy } from '../i18n/copy/index';
+import { t } from '../i18n/ui';
 
 interface Props { ids: string[]; locale: string; heading?: string }
-const { ids, locale, heading = 'Related reading' } = Astro.props;
-const SECTION_LABEL: Record<string, string> = { pages: 'Velcrypt', features: 'Feature', guides: 'Guide', useCases: 'Use case', compare: 'Comparison', tools: 'Free tool' };
+const { ids, locale, heading = t(locale, 'related_heading') } = Astro.props;
+const copy = getCopy(locale);
+const HUB_COPY: Record<string, { h1: string; description: string }> = {
+  features: copy.hubs.features, guides: copy.hubs.guides, 'use-cases': copy.hubs.useCases, compare: copy.hubs.compare, tools: copy.hubs.tools,
+};
 const items: { title: string; summary: string; href: string; label: string }[] = [];
 for (const id of ids) {
   const p: Page | undefined = await getPageById(id, locale);
   if (p) {
-    items.push({ title: p.data.navTitle, summary: p.data.summary ?? p.data.description, href: p.path, label: SECTION_LABEL[p.collection] });
+    items.push({ title: p.data.navTitle, summary: p.data.summary ?? p.data.description, href: p.path, label: copy.relatedLabels[p.collection] });
     continue;
   }
   const s = STATIC_ROUTES.find((r) => r.id === id);
-  if (s) { items.push({ title: s.title, summary: s.description, href: pathFor(id, locale), label: 'Overview' }); continue; }
+  if (s && HUB_COPY[id]) { items.push({ title: HUB_COPY[id].h1, summary: HUB_COPY[id].description, href: pathFor(id, locale), label: t(locale, 'overview') }); continue; }
+  if (s) continue;
   throw new Error(`Related: unknown pageId "${id}"`);
 }
 ---
@@ -33,6 +39,7 @@ for (const id of ids) {
   </section>
 )}
 <style>
-  .related { margin-top: 64px; }
-  .lbl { display: block; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--cyan); margin-bottom: 8px; font-weight: 600; }
+  .related { margin-top: 72px; }
+  .related h2 { font-size: clamp(1.35rem, 2.4vw, 1.7rem); margin-bottom: 20px; }
+  .lbl { display: block; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--accent-text); margin-bottom: 8px; font-weight: 650; }
 </style>

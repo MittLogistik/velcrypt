@@ -70,7 +70,8 @@ For technical detail, link to the [security model](id:security); for a feature o
 
 ## Logo and app icon
 
-- [Velcrypt logo, horizontal (PNG, transparent)](/press/velcrypt-logo.png)
+- [Velcrypt logo, horizontal — for dark backgrounds (PNG, transparent)](/press/velcrypt-logo-on-dark.png)
+- [Velcrypt logo, horizontal — for light backgrounds (PNG, transparent)](/press/velcrypt-logo-on-light.png)
 - [Velcrypt mark (PNG, transparent)](/press/velcrypt-mark.png)
 - [Velcrypt app icon, 1024 × 1024 (PNG)](/press/velcrypt-app-icon-1024.png)
 

@@ -1,0 +1,81 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import KeyFacts from '../components/KeyFacts.astro';
+import Faq from '../components/Faq.astro';
+import CtaBand from '../components/CtaBand.astro';
+import { pathFor } from '../i18n/registry.mjs';
+import { getPages, GUIDE_CATEGORY_KEYS, USE_CASE_GROUP_KEYS, type Page, type CollectionName } from '../lib/content';
+import { getCopy, fmt } from '../i18n/copy/index';
+import { t } from '../i18n/ui';
+import * as S from '../lib/schema';
+import { SITE_UPDATED } from '../config/site';
+
+interface Props { locale: string; collection: Exclude<CollectionName, 'pages'>; pageId: string }
+const { locale, collection, pageId } = Astro.props;
+const copy = getCopy(locale);
+const hc = copy.hubs[collection];
+const items = await getPages(collection, locale);
+
+interface Group { title?: string; intro?: string; pages: Page[] }
+let groups: Group[] = [{ pages: items }];
+if (collection === 'features') {
+  const coreIds = ['pattern-lock', 'hidden-vaults', 'duress-pattern', 'encryption', 'offline-no-account'];
+  const fc = copy.hubs.features;
+  groups = [
+    { title: fc.groupCoreTitle, intro: fc.groupCoreIntro, pages: items.filter((p) => coreIds.includes(p.data.pageId)) },
+    { title: fc.groupRestTitle, intro: fc.groupRestIntro, pages: items.filter((p) => !coreIds.includes(p.data.pageId)) },
+  ];
+} else if (collection === 'guides') {
+  groups = GUIDE_CATEGORY_KEYS.map((k) => ({ title: copy.guideCategories[k], intro: copy.guideCategoryIntros[k], pages: items.filter((p) => p.data.category === k) }));
+} else if (collection === 'useCases') {
+  groups = USE_CASE_GROUP_KEYS.map((k) => ({ title: copy.useCaseGroups[k], pages: items.filter((p) => p.data.group === k) })).filter((g) => g.pages.length);
+}
+const OG: Record<string, string> = { features: 'features', guides: 'guides', useCases: 'use-cases', compare: 'compare', tools: 'tools' };
+const og = `/og/${OG[collection]}.png`;
+const path = pathFor(pageId, locale);
+const crumb = copy.sections[collection];
+const crumbs = [{ name: t(locale, 'breadcrumb_home'), path: pathFor('home', locale) }, { name: crumb, path }];
+const facts = hc.facts.map((f) => fmt(f, { n: items.length }));
+const nodes: object[] = [
+  S.organization(), S.website(locale),
+  { ...S.webPage({ type: 'CollectionPage', path, title: hc.h1, description: hc.description, locale, dateModified: SITE_UPDATED, image: og }), mainEntity: S.itemList(items.map((p) => ({ name: p.data.navTitle, path: p.path }))) },
+  S.breadcrumbs(crumbs),
+];
+if (hc.faq.length) nodes.push(S.faqPage(hc.faq, path));
+---
+<BaseLayout title={hc.title} description={hc.description} pageId={pageId} locale={locale} path={path} ogImage={og} jsonLd={S.graph(...nodes)} navCurrent={pageId}>
+  <div class="container">
+    <Breadcrumbs items={crumbs} label={t(locale, 'breadcrumb_aria')} />
+    <header class="hub-head">
+      <h1>{hc.h1}</h1>
+    </header>
+    <KeyFacts answer={hc.answer} facts={facts} label={t(locale, 'key_facts')} answerLabel={t(locale, 'in_short')} />
+    {groups.map((g, gi) => (
+      <section class="hub-group" aria-labelledby={`g-${gi}`}>
+        {g.title ? <h2 id={`g-${gi}`}>{g.title}</h2> : <h2 id={`g-${gi}`} class="visually-hidden">{crumb}</h2>}
+        {g.intro && <p class="muted intro">{g.intro}</p>}
+        <div class="grid grid-3">
+          {g.pages.map((p) => (
+            <a class="card link-card" href={p.path}>
+              {p.data.status === 'coming-soon' && <span class="pill">{t(locale, 'coming_soon')}</span>}
+              <h3>{p.data.navTitle}</h3>
+              <p>{p.data.summary ?? p.data.description}</p>
+              <span class="arrow">{t(locale, 'read_more')}</span>
+            </a>
+          ))}
+        </div>
+      </section>
+    ))}
+    {hc.faq.length > 0 && <Faq items={hc.faq} heading={t(locale, 'faq_heading')} />}
+    <CtaBand ct={`${OG[collection]}_hub`} locale={locale} />
+  </div>
+</BaseLayout>
+<style>
+  .hub-head h1 { max-width: 22ch; margin-bottom: 18px; }
+  .hub-group { margin-top: 56px; }
+  .hub-group h2 { font-size: clamp(1.3rem, 2.2vw, 1.55rem); margin-bottom: 8px; }
+  .intro { max-width: 64ch; margin: 0 0 20px; }
+  .hub-group h2 + .grid { margin-top: 18px; }
+  .pill { margin-bottom: 10px; }
+</style>

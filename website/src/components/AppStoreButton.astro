@@ -27,13 +27,16 @@ const href = APP_LIVE ? appStoreLink(ct) : `${pathFor('support', locale)}#get-no
 <style>
   .asb-wrap { display: inline-flex; flex-direction: column; gap: 10px; }
   .asb {
-    display: inline-flex; align-items: center; gap: 11px; text-decoration: none; color: #0b1220;
-    background: #fff; border-radius: 14px; padding: 9px 20px 9px 16px; min-height: 54px;
-    box-shadow: 0 0 0 1px rgba(255,255,255,.2), 0 10px 30px -10px rgba(79,140,255,.65);
+    --asb-bg: #ffffff; --asb-fg: #0b1220;
+    display: inline-flex; align-items: center; gap: 11px; text-decoration: none; color: var(--asb-fg);
+    background: var(--asb-bg); border-radius: 14px; padding: 9px 20px 9px 16px; min-height: 54px;
+    box-shadow: 0 0 0 1px rgba(255,255,255,.18), 0 10px 30px -10px rgba(79,140,255,.65);
     transition: transform .15s ease, box-shadow .2s ease;
   }
-  .asb:hover { color: #0b1220; transform: translateY(-1px); box-shadow: 0 0 0 1px rgba(255,255,255,.3), 0 14px 38px -10px rgba(117,216,255,.75); }
-  .asb:focus-visible { outline: 2px solid var(--cyan); outline-offset: 3px; }
+  .asb:hover { color: var(--asb-fg); transform: translateY(-1px); box-shadow: 0 0 0 1px rgba(255,255,255,.28), 0 14px 38px -10px rgba(117,216,255,.75); }
+  .asb:focus-visible { outline: 2px solid var(--accent-text); outline-offset: 3px; }
+  :global(:root[data-theme='light']) .asb { --asb-bg: #0b1220; --asb-fg: #ffffff; box-shadow: 0 10px 28px -12px rgba(11,26,46,.55); }
+  @media (prefers-color-scheme: light) { :global(:root:not([data-theme='dark'])) .asb { --asb-bg: #0b1220; --asb-fg: #ffffff; box-shadow: 0 10px 28px -12px rgba(11,26,46,.55); } }
   .txt { display: flex; flex-direction: column; line-height: 1.1; text-align: left; }
   .small { font-size: 0.72rem; font-weight: 500; letter-spacing: 0.01em; }
   .big { font-size: 1.28rem; font-weight: 650; letter-spacing: -0.02em; }

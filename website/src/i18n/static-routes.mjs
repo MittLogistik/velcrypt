@@ -1,45 +1,26 @@
 // @ts-check
 /**
- * Hand-built (non-collection) pages, each with a stable id and per-locale paths.
- * When you add a translated version under src/pages/<locale>/..., add its path
- * here; hreflang tags, the sitemap and llms.txt pick it up automatically.
- * @type {{id:string, title:string, description:string, paths:Record<string,string>}[]}
+ * Data-driven (non-Markdown) pages: the home page and the section hubs.
+ * They exist in every active locale (copy lives in src/i18n/copy/<locale>.ts)
+ * and their URLs derive from the locale prefix and translated section
+ * segments, so nothing needs to be added here when a locale is switched on.
  */
-export const STATIC_ROUTES = [
-  {
-    id: 'home',
-    title: 'Velcrypt: private encrypted photo vault for iPhone',
-    description: 'Home page. What Velcrypt is, how the pattern unlock works and why every pattern opens its own vault.',
-    paths: { en: '/' },
-  },
-  {
-    id: 'features',
-    title: 'Velcrypt features',
-    description: 'Index of every Velcrypt feature: pattern lock, hidden vaults, encryption, offline design, albums and more.',
-    paths: { en: '/features/' },
-  },
-  {
-    id: 'guides',
-    title: 'iPhone photo privacy guides',
-    description: 'Index of practical guides on hiding, locking and encrypting photos, videos and documents on iPhone.',
-    paths: { en: '/guides/' },
-  },
-  {
-    id: 'use-cases',
-    title: 'Use cases',
-    description: 'Real situations where a private vault helps, from lending your phone to crossing a border.',
-    paths: { en: '/use-cases/' },
-  },
-  {
-    id: 'compare',
-    title: 'Comparisons',
-    description: 'Neutral comparisons between Velcrypt and other ways to keep photos private on iPhone.',
-    paths: { en: '/compare/' },
-  },
-  {
-    id: 'tools',
-    title: 'Free privacy tools',
-    description: 'Free browser-only tools: photo metadata remover and pattern strength checker.',
-    paths: { en: '/tools/' },
-  },
-];
+import { ACTIVE_LOCALES } from './locales.mjs';
+import { HUB_IDS, sectionSegment } from './sections.mjs';
+
+/** @typedef {{ id:string, kind:'home'|'hub', collection?:string, paths:Record<string,string> }} StaticRoute */
+
+/** @returns {StaticRoute[]} */
+function build() {
+  /** @type {StaticRoute[]} */
+  const routes = [{ id: 'home', kind: 'home', paths: {} }];
+  for (const [collection, id] of Object.entries(HUB_IDS)) routes.push({ id, kind: 'hub', collection, paths: {} });
+  for (const l of ACTIVE_LOCALES) {
+    for (const r of routes) {
+      r.paths[l.code] = r.kind === 'home' ? `${l.prefix}/` : `${l.prefix}/${sectionSegment(/** @type {string} */ (r.collection), l.code)}/`;
+    }
+  }
+  return routes;
+}
+
+export const STATIC_ROUTES = build();

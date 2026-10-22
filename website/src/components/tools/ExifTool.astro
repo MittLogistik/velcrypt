@@ -1,41 +1,46 @@
 ---
 /** Browser-only EXIF viewer + remover. No uploads: everything runs locally. */
+import { getCopy } from '../../i18n/copy/index';
+interface Props { locale?: string }
+const { locale = 'en' } = Astro.props;
+const T = getCopy(locale).tools.exif;
 ---
-<section class="tool card" aria-labelledby="exif-h">
-  <h2 id="exif-h">View and remove photo metadata</h2>
-  <p class="muted">Your photo never leaves this device. The file is read and cleaned by your browser; nothing is uploaded.</p>
+<section class="tool card" aria-labelledby="exif-h" id="exif-tool" data-i18n={JSON.stringify(T)}>
+  <h2 id="exif-h">{T.title}</h2>
+  <p class="muted">{T.intro}</p>
   <label class="drop" id="exif-drop">
     <input id="exif-file" type="file" accept="image/*" />
-    <span class="drop-t"><strong>Choose a photo</strong> or drop it here</span>
-    <span class="drop-s">JPEG shows full EXIF details. PNG, WebP and (in Safari) HEIC can be cleaned too.</span>
+    <span class="drop-t"><strong>{T.choose}</strong> {T.orDrop}</span>
+    <span class="drop-s">{T.formats}</span>
   </label>
   <div id="exif-out" hidden>
     <div class="row">
-      <img id="exif-prev" alt="Preview of the selected photo" width="160" height="160" />
+      <img id="exif-prev" alt={T.previewAlt} width="160" height="160" />
       <div class="meta">
         <p id="exif-name" class="fname"></p>
         <p id="exif-gps" class="gps" role="status"></p>
       </div>
     </div>
     <table class="table" aria-describedby="exif-h">
-      <caption class="visually-hidden">Metadata found in the selected photo</caption>
-      <thead><tr><th scope="col">Field</th><th scope="col">Value</th></tr></thead>
+      <caption class="visually-hidden">{T.tableCaption}</caption>
+      <thead><tr><th scope="col">{T.colField}</th><th scope="col">{T.colValue}</th></tr></thead>
       <tbody id="exif-rows"></tbody>
     </table>
     <div class="actions">
-      <button id="exif-clean" class="btn btn-primary" type="button">Remove metadata</button>
-      <a id="exif-dl" class="btn btn-ghost" hidden download>Download clean copy</a>
+      <button id="exif-clean" class="btn btn-primary" type="button">{T.remove}</button>
+      <a id="exif-dl" class="btn btn-ghost" hidden download>{T.download}</a>
     </div>
     <p id="exif-result" class="muted small" role="status" aria-live="polite"></p>
   </div>
 </section>
 
 <script>
+  const T = JSON.parse((document.getElementById('exif-tool') as HTMLElement).dataset.i18n || '{}');
   const TAGS: Record<number, string> = {
-    0x010f: 'Camera make', 0x0110: 'Camera model', 0x0112: 'Orientation', 0x0131: 'Software', 0x0132: 'Modified',
-    0x013b: 'Artist', 0x8298: 'Copyright', 0x9003: 'Date taken', 0x9004: 'Date digitized', 0x9010: 'Time zone',
-    0xa434: 'Lens', 0xa433: 'Lens make', 0x829a: 'Exposure time', 0x829d: 'F-number', 0x8827: 'ISO',
-    0x920a: 'Focal length', 0xa002: 'Width (px)', 0xa003: 'Height (px)', 0xa420: 'Unique image ID', 0xa431: 'Camera serial number',
+    0x010f: T.tags.make, 0x0110: T.tags.model, 0x0112: T.tags.orientation, 0x0131: T.tags.software, 0x0132: T.tags.modified,
+    0x013b: T.tags.artist, 0x8298: T.tags.copyright, 0x9003: T.tags.taken, 0x9004: T.tags.digitized, 0x9010: T.tags.tz,
+    0xa434: T.tags.lens, 0xa433: T.tags.lensMake, 0x829a: T.tags.exposure, 0x829d: T.tags.fnumber, 0x8827: T.tags.iso,
+    0x920a: T.tags.focal, 0xa002: T.tags.width, 0xa003: T.tags.height, 0xa420: T.tags.uid, 0xa431: T.tags.serial,
   };
   type Val = string | number | number[];
 
@@ -130,10 +135,10 @@
     const rows = $('exif-rows');
     rows.replaceChildren();
     const add = (k: string, val: string) => { const tr = document.createElement('tr'); const th = document.createElement('th'); th.scope = 'row'; th.textContent = k; const td = document.createElement('td'); td.textContent = val; tr.append(th, td); rows.append(tr); };
-    if (gps) add('GPS location', `${gps.lat.toFixed(6)}, ${gps.lon.toFixed(6)}${gps.alt !== undefined ? ` · ${Math.round(gps.alt)} m altitude` : ''}`);
+    if (gps) add(T.gpsLabel, `${gps.lat.toFixed(6)}, ${gps.lon.toFixed(6)}${gps.alt !== undefined ? ` · ${Math.round(gps.alt)} ${T.altitude}` : ''}`);
     fields.forEach(([k, val]) => add(k, val));
-    if (!rows.children.length) add('Result', /jpe?g$/i.test(file.type) || file.type === 'image/jpeg' ? 'No EXIF metadata found in this JPEG.' : 'Detailed reading supports JPEG only. Cleaning still removes embedded metadata.');
-    $('exif-gps').textContent = gps ? 'This photo contains GPS coordinates that reveal where it was taken.' : 'No GPS coordinates found.';
+    if (!rows.children.length) add(T.result, /jpe?g$/i.test(file.type) || file.type === 'image/jpeg' ? T.noExif : T.onlyJpeg);
+    $('exif-gps').textContent = gps ? T.gpsFound : T.gpsNone;
     $('exif-gps').classList.toggle('warn', !!gps);
   }
 
@@ -158,11 +163,11 @@
       lastUrl = URL.createObjectURL(blob);
       const a = $<HTMLAnchorElement>('exif-dl');
       a.href = lastUrl;
-      a.download = current.name.replace(/\.[^.]+$/, '') + '-clean.jpg';
+      a.download = current.name.replace(/\.[^.]+$/, '') + T.cleanSuffix + '.jpg';
       a.hidden = false;
-      res.textContent = `Done. Clean copy: ${bmp.width}×${bmp.height} px, ${kb(blob.size)}, with no EXIF, GPS, XMP or IPTC data.`;
+      res.textContent = T.done.replace('{w}', String(bmp.width)).replace('{h}', String(bmp.height)).replace('{size}', kb(blob.size));
     } catch {
-      res.textContent = 'This browser could not open that image format. Try a JPEG or PNG, or use Safari for HEIC.';
+      res.textContent = T.failed;
     }
   });
 </script>

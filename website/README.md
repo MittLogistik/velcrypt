@@ -9,10 +9,16 @@ The site is a static [Astro](https://astro.build) 7 build. It uses plain CSS, sh
 ```bash
 npm install
 npm run dev        # http://localhost:4321
-npm run build      # static output in dist/
-npm run preview    # serve dist/ locally
-npm run check      # astro check (types + content)
+npm run build          # content check + clean static build into dist/
+npm run preview        # serve dist/ locally
+npm run check          # astro check (types + content)
+npm run check:content  # fast frontmatter/limits/duplicates check for every locale
+npm run check:dist     # post-build audit: one H1, title ≤60, unique titles/descriptions per locale,
+                       # internal links + anchors, JSON-LD, reciprocal hreflang, sitemap coverage
+npm run csp-hash       # recompute the CSP hash of the inline theme script into public/_headers
 ```
+
+`npm run build` runs `astro build --force`, so the content cache never keeps stale localized links after a slug changes.
 
 Requires Node 22.12 or later. Node 24 is recommended and is the version used to build.
 
@@ -49,22 +55,26 @@ src/
       compare/   → /compare/<slug>/
       tools/     → /tools/<slug>/   (article text; the widget is in components/tools/)
   i18n/
-    locales.mjs               # 30 locales, only `en` active
+    locales.mjs               # 30 locales; 11 active (en, es, de, fr, pt-br, it, nl, sv, ja, ko, zh-hans)
     sections.mjs              # translated section folders per locale
-    static-routes.mjs         # hand-built pages (home, hubs) with per-locale paths
+    static-routes.mjs         # home + hubs; URLs derived for every active locale
     registry.mjs              # pageId → URL per locale (hreflang, sitemap, links)
-    ui.ts                     # UI strings per locale
+    copy/<locale>.ts          # all UI, home, hub, 404 and tool strings per locale (shape of copy/en.ts)
+    ui.ts                     # t(locale, key) helper over copy/*.ts
   lib/
     remark-id-links.mjs       # resolves [text](id:page-id) links; unknown ids fail the build
     schema.ts                 # JSON-LD builders (Organization, WebSite, MobileApplication, Article, FAQPage, HowTo, BreadcrumbList…)
-    llms.ts                   # builds /llms.txt and /llms-full.txt from content
+    llms.ts                   # builds /llms.txt, /llms-full.txt and /<locale>/llms*.txt from content
+    theme.ts                  # inline no-flash theme script (its hash is in public/_headers)
+    integrations.mjs          # moves /<locale>/404/index.html to /<locale>/404.html after build
+  views/                      # HomeView, HubView, EntryView, NotFoundView (locale-aware)
   pages/
-    index.astro, features/, guides/, use-cases/, compare/, tools/   # home + hubs
-    [...path].astro           # renders every Markdown entry in every active locale
+    [...path].astro           # single router: home, hubs, every entry and localized 404s in all locales
+    [lang]/llms.txt.ts, [lang]/llms-full.txt.ts
     sitemap.xml.ts, robots.txt.ts, llms.txt.ts, llms-full.txt.ts, 404.astro
 public/
   _headers, _redirects, favicons, og/, press/
-scripts/                      # icon + OG image generators (sharp)
+scripts/                      # icon + OG generators, content/dist checks, keyword map, CSP hash
 ```
 
 Every page gets these automatically:
@@ -94,11 +104,24 @@ Content rules (honesty):
 
 ## Add a language
 
-1. In `src/i18n/locales.mjs`, set `active: true` for the locale, for example `de`.
-2. Add translated section folders in `src/i18n/sections.mjs` (for example `guides: { de: 'anleitungen' }`) and UI strings in `src/i18n/ui.ts`.
-3. Add translated Markdown files under `src/content/<collection>/de/<localized-slug>.md`. Keep the same `pageId` as the English file and use a keyword-localized slug.
-4. For hand-built pages (home, hubs), create `src/pages/de/…` files and add their paths to `src/i18n/static-routes.mjs`.
-5. Build. hreflang tags in `<head>` and in `sitemap.xml`, including `x-default`, are generated from shared `pageId`s, and only for pages that exist in each locale. `id:` links resolve to the same locale and fall back to English.
+1. In `src/i18n/locales.mjs`, set `active: true` for the locale (for example `pl`).
+2. Add its translated section folders in `src/i18n/sections.mjs` (for example `guides: { pl: 'poradniki' }`).
+3. Create `src/i18n/copy/pl.ts` with the same shape as `copy/en.ts` (UI, home page, hubs, 404, tool UI, llms summary). It is picked up automatically, and missing keys fall back to English.
+4. Add translated Markdown files under `src/content/<collection>/pl/<localized-slug>.md`. Keep the same `pageId` as the English file and use a keyword-localized slug. On the security page, keep `<a id="what-velcrypt-does-not-protect-against"></a>` directly above that H2.
+5. Run `npm run build`, then `npm run check:dist`. These are all generated automatically:
+   - home and hub URLs
+   - hreflang tags with `x-default`, in `<head>` and in `sitemap.xml`
+   - the language switcher entries
+   - `/pl/llms.txt` and `/pl/404.html`
+
+   `id:` links resolve to the same locale and fall back to English.
+
+## Themes, language switcher, footer
+
+- **Themes:** dark is the default. Light follows `prefers-color-scheme`, and the header toggle saves the choice in `localStorage` (`velcrypt-theme`). All colours are CSS custom properties in `src/styles/global.css`; the light palette is under `[data-theme='light']` and the matching media query.
+- **No theme flash:** a tiny inline `<head>` script (`src/lib/theme.ts`) applies the saved theme before the page renders. Its SHA-256 hash is whitelisted in the CSP in `public/_headers`. If you change the script, run `npm run csp-hash`.
+- **Language dropdown:** `src/components/LangSwitcher.astro` is a `<details>` menu that works without JavaScript. A small script closes it on Esc or a click outside.
+- **Footer starfield:** `src/components/Starfield.astro` is a seeded SVG generated at build time. It animates with CSS only and shows a static fallback when reduced motion is on.
 
 See `SEO-PLAN.md` for the locale priority order and slug guidelines.
 
@@ -131,4 +154,5 @@ See `SEO-PLAN.md` for the locale priority order and slug guidelines.
 - Legal review of `/privacy/` and `/terms/`. Both are marked as drafts on the page and with `<!-- TODO: legal review -->`.
 - Founder and company details on `/about/` (`<!-- TODO: add founder/company details -->`).
 - Verify competitor claims on the `/compare/` pages and in `best-private-photo-vault-apps-iphone` and `calculator-vault-apps-explained`. Search the source for `TODO verify`.
+- Localized pages carry `<!-- TODO verify iOS label -->` wherever a translated iOS menu label is uncertain. Check them on a device in each language.
 - Replace the `APP_STORE_URL` placeholder and flip `APP_LIVE` at launch. Create the support, press and privacy mailboxes.

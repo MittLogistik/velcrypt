@@ -1,33 +1,29 @@
 ---
 /** Key hierarchy diagram for the security page (HTML, accessible, no JS). */
-const steps = [
-  { k: 'Your pattern', v: 'Drawn on the 5×5 grid. Never stored, never sent anywhere.' },
-  { k: 'PBKDF2-HMAC-SHA512', v: 'At least 600,000 iterations with a random per-device salt kept in the iOS Keychain.' },
-  { k: 'Pattern key (256-bit)', v: 'Unlocks only the vault that belongs to this exact pattern.' },
-  { k: 'Vault master key', v: 'A random 256-bit key, unique to each vault, protected by the pattern key.' },
-  { k: 'HKDF → per-file keys', v: 'Every file gets its own key derived from the master key.' },
-  { k: 'AES-256-GCM', v: 'Authenticated encryption via Apple CryptoKit, plus iOS Data Protection on the files.' },
-];
+import { getCopy } from '../i18n/copy/index';
+interface Props { locale?: string }
+const { locale = 'en' } = Astro.props;
+const { steps, caption } = getCopy(locale).keyDiagram;
 ---
 <figure class="kd" aria-labelledby="kd-cap">
   <ol>
     {steps.map((s, i) => (
-      <li style={`--i:${i}`}>
+      <li>
         <span class="n" aria-hidden="true">{i + 1}</span>
         <span class="k">{s.k}</span>
         <span class="v">{s.v}</span>
       </li>
     ))}
   </ol>
-  <figcaption id="kd-cap">How a pattern becomes the keys that encrypt your files. Each step happens on your iPhone.</figcaption>
+  <figcaption id="kd-cap">{caption}</figcaption>
 </figure>
 <style>
-  .kd { margin: 0 0 40px; max-width: var(--prose); }
+  .kd { margin: 0 0 40px; max-width: var(--prose); padding: 22px 24px; border-radius: var(--radius); border: 1px solid var(--line); background: var(--surface); box-shadow: var(--shadow-card); }
   ol { list-style: none; margin: 0; padding: 0; position: relative; }
-  ol::before { content: ''; position: absolute; left: 17px; top: 18px; bottom: 18px; width: 2px; background: linear-gradient(#4f8cff, #75d8ff); opacity: .6; }
-  li { position: relative; display: grid; grid-template-columns: 36px 1fr; column-gap: 16px; padding: 10px 0; }
-  .n { grid-row: span 2; width: 36px; height: 36px; border-radius: 50%; display: grid; place-items: center; font-weight: 700; font-size: .9rem; color: #0b1220; background: var(--grad); box-shadow: 0 0 0 5px var(--bg), 0 0 18px rgba(117,216,255,.45); position: relative; }
-  .k { font-weight: 650; font-family: var(--mono); font-size: .95rem; color: #fff; }
-  .v { color: var(--text-2); font-size: .94rem; }
-  figcaption { margin-top: 10px; font-size: .88rem; color: var(--text-2); }
+  ol::before { content: ''; position: absolute; left: 17px; top: 18px; bottom: 18px; width: 2px; background: linear-gradient(#4f8cff, #75d8ff); opacity: .55; }
+  li { position: relative; display: grid; grid-template-columns: 36px 1fr; column-gap: 16px; padding: 9px 0; }
+  .n { grid-row: span 2; width: 36px; height: 36px; border-radius: 50%; display: grid; place-items: center; font-weight: 700; font-size: .9rem; color: #061024; background: var(--grad); box-shadow: 0 0 0 5px var(--surface); position: relative; }
+  .k { font-weight: 650; font-family: var(--mono); font-size: .93rem; color: var(--text); }
+  .v { color: var(--text-2); font-size: .93rem; }
+  figcaption { margin-top: 12px; font-size: .86rem; color: var(--text-2); }
 </style>

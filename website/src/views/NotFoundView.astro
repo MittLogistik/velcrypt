@@ -1,0 +1,33 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PatternGrid from '../components/PatternGrid.astro';
+import { href } from '../lib/content';
+import { getCopy } from '../i18n/copy/index';
+import { t } from '../i18n/ui';
+import { getLocale } from '../i18n/locales.mjs';
+
+interface Props { locale: string }
+const { locale } = Astro.props;
+const c = getCopy(locale).notFound;
+const links = [
+  { id: 'home', label: c.home },
+  { id: 'features', label: t(locale, 'nav_features') },
+  { id: 'security', label: c.security },
+  { id: 'guides', label: t(locale, 'nav_guides') },
+  { id: 'faq', label: t(locale, 'nav_faq') },
+];
+---
+<BaseLayout title={c.title} description={c.description} pageId="404" locale={locale} path={`${getLocale(locale).prefix}/404/`} noindex>
+  <section class="container nf">
+    <PatternGrid uid="nf" size={160} pattern="decoy" animate={false} />
+    <h1>{c.h1}</h1>
+    <p class="muted">{c.text}</p>
+    <ul>{links.map((l) => <li><a href={href(l.id, locale)}>{l.label}</a></li>)}</ul>
+  </section>
+</BaseLayout>
+<style>
+  .nf { padding: 72px 20px 40px; text-align: center; }
+  .nf h1 { font-size: clamp(1.8rem, 4vw, 2.6rem); margin: 18px auto 12px; max-width: 22ch; }
+  .muted { max-width: 52ch; margin: 0 auto 20px; }
+  ul { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 10px 22px; justify-content: center; }
+</style>

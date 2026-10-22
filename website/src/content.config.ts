@@ -11,20 +11,20 @@ import { z } from 'astro/zod';
  *   to the right localized URL at build time (unknown ids fail the build).
  */
 
-const faqItem = z.object({ q: z.string().min(5), a: z.string().min(10) });
+const faqItem = z.object({ q: z.string().min(3), a: z.string().min(5) });
 
 const base = z.object({
   pageId: z.string().regex(/^[a-z0-9-]+$/),
   /** <title> (brand suffix is NOT added automatically). Max 60 chars. */
-  title: z.string().min(10).max(60),
+  title: z.string().min(4).max(60),
   /** Meta description, max 155 chars. */
   description: z.string().min(50).max(155),
   /** The single H1. */
-  h1: z.string().min(5),
+  h1: z.string().min(2),
   /** Short label for breadcrumbs, cards and footer links. */
   navTitle: z.string().min(2).max(48),
   /** Direct 1-2 sentence answer shown first on the page (AI-extraction friendly). */
-  answer: z.string().min(40).max(420),
+  answer: z.string().min(20).max(420),
   /** Short TL;DR bullets, 3-6 items. */
   keyFacts: z.array(z.string()).min(3).max(7),
   primaryKeyword: z.string(),

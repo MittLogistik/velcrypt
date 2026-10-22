@@ -1,4 +1,6 @@
 import { SITE_URL, SITE_NAME, TAGLINE, APP_LIVE, APP_STORE_URL, MIN_IOS, SUPPORT_EMAIL, absoluteUrl } from '../config/site';
+import { getCopy } from '../i18n/copy/index';
+import { ACTIVE_LOCALES } from '../i18n/locales.mjs';
 
 const ORG_ID = `${SITE_URL}/#organization`;
 const SITE_ID = `${SITE_URL}/#website`;
@@ -13,7 +15,7 @@ export function organization() {
     slogan: TAGLINE,
     logo: { '@type': 'ImageObject', url: absoluteUrl('/press/velcrypt-app-icon-1024.png'), width: 1024, height: 1024 },
     email: SUPPORT_EMAIL,
-    contactPoint: { '@type': 'ContactPoint', contactType: 'customer support', email: SUPPORT_EMAIL, availableLanguage: ['en'] },
+    contactPoint: { '@type': 'ContactPoint', contactType: 'customer support', email: SUPPORT_EMAIL, availableLanguage: ACTIVE_LOCALES.map((l) => l.hreflang) },
     ...(APP_LIVE ? { sameAs: [APP_STORE_URL] } : {}),
   };
 }
@@ -24,42 +26,36 @@ export function website(locale = 'en') {
     '@id': SITE_ID,
     name: SITE_NAME,
     url: SITE_URL + '/',
-    description: 'Private, encrypted photo, video and document vault for iPhone.',
-    inLanguage: locale,
+    description: getCopy(locale).schema.websiteDescription,
+    inLanguage: getLocaleTag(locale),
     publisher: { '@id': ORG_ID },
   };
 }
 
 /** MobileApplication. Deliberately no aggregateRating/review (no ratings yet). */
-export function mobileApp() {
+export function mobileApp(locale = 'en') {
+  const c = getCopy(locale).schema;
   return {
     '@type': 'MobileApplication',
     '@id': APP_ID,
     name: SITE_NAME,
     alternateName: 'Velcrypt Photo Vault',
-    description:
-      'Velcrypt stores private photos, videos and documents in encrypted vaults on your iPhone. Each pattern drawn on a 5×5 grid opens its own vault. No account, no cloud.',
+    description: c.appDescription,
+    inLanguage: getLocaleTag(locale),
     operatingSystem: `iOS ${MIN_IOS}.0 or later`,
     applicationCategory: 'UtilitiesApplication',
-    applicationSubCategory: 'Photo vault',
+    applicationSubCategory: c.appSubCategory,
     device: 'iPhone',
     image: absoluteUrl('/press/velcrypt-app-icon-1024.png'),
     url: SITE_URL + '/',
     ...(APP_LIVE ? { downloadUrl: APP_STORE_URL, installUrl: APP_STORE_URL } : {}),
     publisher: { '@id': ORG_ID },
-    featureList: [
-      'AES-256-GCM encryption on the device',
-      'Pattern unlock on a 5×5 grid',
-      'Every pattern opens its own vault',
-      'No account, no servers, no uploads',
-      'Auto-lock and app-switcher privacy',
-      'Albums, photo and video viewer, document import',
-    ],
+    featureList: c.featureList,
     offers: {
       '@type': 'Offer',
       price: '0',
       priceCurrency: 'USD',
-      description: 'Free version with an optional Premium upgrade.',
+      description: c.offerDescription,
       availability: APP_LIVE ? 'https://schema.org/InStock' : 'https://schema.org/PreOrder',
     },
   };
@@ -110,7 +106,7 @@ export function webPage(opts: {
     url,
     ...(isArticle ? { headline: opts.title, mainEntityOfPage: url } : { name: opts.title }),
     description: opts.description,
-    inLanguage: opts.locale,
+    inLanguage: getLocaleTag(opts.locale),
     isPartOf: { '@id': SITE_ID },
     ...(opts.image ? { image: absoluteUrl(opts.image) } : {}),
     ...(opts.datePublished ? { datePublished: opts.datePublished } : {}),
@@ -131,4 +127,8 @@ export function itemList(items: { name: string; path: string }[]) {
 
 export function graph(...nodes: object[]) {
   return { '@context': 'https://schema.org', '@graph': nodes };
+}
+
+function getLocaleTag(code: string): string {
+  return ACTIVE_LOCALES.find((l) => l.code === code)?.hreflang ?? code;
 }

@@ -21,7 +21,10 @@ await sharp(mark).resize({ width: 120 }).png({ compressionLevel: 9 }).toFile(pat
 
 // Press kit
 fs.copyFileSync(appIcon, path.join(pub, 'press', 'velcrypt-app-icon-1024.png'));
+// Lockups: on-dark (white "Vel") and on-light (navy "Vel"). velcrypt-logo.png is kept as an alias of on-dark for old links.
+fs.copyFileSync(path.join(brand, 'velcrypt-logo.png'), path.join(pub, 'press', 'velcrypt-logo-on-dark.png'));
 fs.copyFileSync(path.join(brand, 'velcrypt-logo.png'), path.join(pub, 'press', 'velcrypt-logo.png'));
+fs.copyFileSync(path.join(brand, 'velcrypt-logo-on-light.png'), path.join(pub, 'press', 'velcrypt-logo-on-light.png'));
 fs.copyFileSync(mark, path.join(pub, 'press', 'velcrypt-mark.png'));
 
 // Touch / PWA icons come from the opaque app icon.

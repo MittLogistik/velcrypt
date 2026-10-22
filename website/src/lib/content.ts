@@ -57,26 +57,18 @@ export function href(pageId: string, locale = 'en'): string {
   return pathFor(pageId, locale);
 }
 
-export const GUIDE_CATEGORIES: Record<string, string> = {
-  hiding: 'Hide and lock photos',
-  apple: 'iCloud and Apple’s built-in options',
-  choosing: 'Choosing a vault app',
-  security: 'Security explained',
-  practical: 'Practical privacy',
-};
-
-export const USE_CASE_GROUPS: Record<string, string> = {
-  everyday: 'Everyday boundaries',
-  travel: 'Travel',
-  sensitive: 'Sensitive records',
-  professional: 'Professional confidentiality',
-};
+/** Ordered keys; labels come from the locale copy (copy.guideCategories / copy.useCaseGroups). */
+export const GUIDE_CATEGORY_KEYS = ['hiding', 'apple', 'choosing', 'security', 'practical'] as const;
+export const USE_CASE_GROUP_KEYS = ['everyday', 'travel', 'sensitive', 'professional'] as const;
 
 export function isoDate(d: Date | string): string {
   return new Date(d).toISOString().slice(0, 10);
 }
 
-export function readingMinutes(body: string | undefined): number {
-  const words = (body ?? '').replace(/<!--[\s\S]*?-->/g, '').split(/\s+/).filter(Boolean).length;
+export function readingMinutes(body: string | undefined, locale = 'en'): number {
+  const text = (body ?? '').replace(/<!--[\s\S]*?-->/g, '');
+  // Japanese and Chinese don't separate words with spaces: estimate by characters.
+  if (locale === 'ja' || locale === 'zh-hans') return Math.max(1, Math.round(text.replace(/\s/g, '').length / 500));
+  const words = text.split(/\s+/).filter(Boolean).length;
   return Math.max(1, Math.round(words / 220));
 }

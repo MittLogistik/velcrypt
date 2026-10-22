@@ -1,0 +1,217 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import AppStoreButton from '../components/AppStoreButton.astro';
+import PatternGrid from '../components/PatternGrid.astro';
+import Faq from '../components/Faq.astro';
+import CtaBand from '../components/CtaBand.astro';
+import { getPages, href } from '../lib/content';
+import { getCopy, rich, fmt } from '../i18n/copy/index';
+import { t } from '../i18n/ui';
+import * as S from '../lib/schema';
+import { TAGLINE, SITE_UPDATED } from '../config/site';
+
+interface Props { locale: string }
+const { locale } = Astro.props;
+const c = getCopy(locale).home;
+const path = href('home', locale);
+
+const features = await getPages('features', locale);
+const guides = await getPages('guides', locale);
+const featured = ['hide-photos-iphone', 'is-iphone-hidden-album-private', 'are-hidden-photos-saved-to-icloud', 'best-private-photo-vault-apps-iphone', 'what-is-a-decoy-vault', 'remove-photo-metadata-iphone']
+  .map((id) => guides.find((g) => g.data.pageId === id))
+  .filter((g): g is NonNullable<typeof g> => Boolean(g));
+
+const jsonLd = S.graph(
+  S.organization(),
+  S.website(locale),
+  S.mobileApp(locale),
+  S.webPage({ type: 'WebPage', path, title: c.title, description: c.description, locale, dateModified: SITE_UPDATED, image: '/og/default.png' }),
+  S.breadcrumbs([{ name: t(locale, 'breadcrumb_home'), path }]),
+  S.howTo({ name: c.howToName, steps: c.steps }, path, '/og/default.png'),
+  S.faqPage(c.faq, path),
+);
+---
+<BaseLayout title={c.title} description={c.description} pageId="home" locale={locale} path={path} jsonLd={jsonLd}>
+  <section class="hero">
+    <div class="container hero-in">
+      <div class="hero-copy">
+        <p class="eyebrow">{c.eyebrow}</p>
+        <h1>{c.h1a} <span class="grad-text">{c.h1b}</span></h1>
+        <p class="lead">{c.lead}</p>
+        <div class="hero-cta">
+          <AppStoreButton ct="home_hero" size="lg" locale={locale} />
+          <a class="btn btn-ghost" href={href('security', locale)}>{c.secondaryCta}</a>
+        </div>
+        <p class="tag" lang="en">{TAGLINE}</p>
+      </div>
+      <div class="hero-art">
+        <div class="device">
+          <p class="device-t" aria-hidden="true">{c.deviceTitle}</p>
+          <PatternGrid uid="hero" size={320} label={c.heroAlt} />
+          <p class="device-s" aria-hidden="true">{c.deviceCaption}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="facts-strip" aria-label={c.factsAria}>
+    <div class="container">
+      <ul>{c.facts.map((f) => <li><strong>{f.k}</strong><span>{f.v}</span></li>)}</ul>
+    </div>
+  </section>
+
+  <section class="section" id="how-it-works" aria-labelledby="hiw">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">{c.howEyebrow}</p>
+        <h2 id="hiw">{c.howTitle}</h2>
+        <p>{c.howText}</p>
+      </div>
+      <ol class="steps">
+        {c.steps.map((s, i) => (
+          <li class="card"><span class="num">{i + 1}</span><h3>{s.name}</h3><p>{s.text}</p></li>
+        ))}
+      </ol>
+    </div>
+  </section>
+
+  <section class="section vaults" aria-labelledby="vaults-h">
+    <div class="container split">
+      <div>
+        <p class="eyebrow">{c.vaultsEyebrow}</p>
+        <h2 id="vaults-h">{c.vaultsTitle}</h2>
+        <p class="muted">{c.vaultsP1}</p>
+        <p class="muted"><Fragment set:html={rich(c.vaultsP2, locale)} /> <span class="pill">{t(locale, 'coming_soon')}</span></p>
+        <a class="btn btn-ghost" href={href('hidden-vaults', locale)}>{c.vaultsButton}</a>
+      </div>
+      <div class="two-grids" aria-hidden="true">
+        <figure><PatternGrid uid="v1" size={170} pattern="cta" animate={false} /><figcaption>{c.vaultA}</figcaption></figure>
+        <figure><PatternGrid uid="v2" size={170} pattern="decoy" animate={false} /><figcaption>{c.vaultB}</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="feat-h">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">{c.featEyebrow}</p>
+        <h2 id="feat-h">{c.featTitle}</h2>
+        <p>{c.featText}</p>
+      </div>
+      <div class="grid grid-3">
+        {features.map((f) => (
+          <a class="card link-card" href={f.path}>
+            {f.data.status === 'coming-soon' && <span class="pill">{t(locale, 'coming_soon')}</span>}
+            <h3>{f.data.navTitle}</h3>
+            <p>{f.data.summary}</p>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="security" aria-labelledby="sec-h">
+    <div class="container split">
+      <div>
+        <p class="eyebrow">{c.secEyebrow}</p>
+        <h2 id="sec-h">{c.secTitle}</h2>
+        <p class="muted">{c.secP1}</p>
+        <p class="muted" set:html={rich(c.secP2, locale)} />
+        <a class="btn btn-ghost" href={href('security', locale)}>{c.secButton}</a>
+      </div>
+      <ul class="checks card">
+        {c.checks.map((k) => <li><strong>{k.k}</strong> {k.v}</li>)}
+      </ul>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="cmp-h">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">{c.cmpEyebrow}</p>
+        <h2 id="cmp-h">{c.cmpTitle}</h2>
+        <p>{c.cmpText}</p>
+      </div>
+      <table class="table cmp">
+        <caption class="visually-hidden">{c.cmpCaption}</caption>
+        <thead><tr><td></td>{c.cmpHead.map((h) => <th scope="col">{h}</th>)}</tr></thead>
+        <tbody>{c.cmpRows.map((r) => <tr><th scope="row">{r[0]}</th><td>{r[1]}</td><td>{r[2]}</td><td>{r[3]}</td></tr>)}</tbody>
+      </table>
+      <p class="muted small" set:html={rich(c.cmpNote, locale)} />
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="guides-h">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">{c.guidesEyebrow}</p>
+        <h2 id="guides-h">{c.guidesTitle}</h2>
+      </div>
+      <div class="grid grid-3">
+        {featured.map((g) => (
+          <a class="card link-card" href={g.path}><h3>{g.data.navTitle}</h3><p>{g.data.summary}</p><span class="arrow">{t(locale, 'read_more')}</span></a>
+        ))}
+      </div>
+      <p class="more"><a href={href('guides', locale)}>{fmt(c.allGuides, { n: guides.length })}</a></p>
+    </div>
+  </section>
+
+  <section class="container">
+    <Faq items={c.faq} heading={t(locale, 'faq_heading')} />
+    <p class="more"><a href={href('faq', locale)}>{c.moreFaq}</a></p>
+    <CtaBand ct="home_bottom" locale={locale} />
+  </section>
+</BaseLayout>
+
+<style>
+  .hero { position: relative; overflow: hidden; padding: clamp(44px, 7vw, 100px) 0 clamp(44px, 6vw, 80px);
+    background: radial-gradient(60% 70% at 80% 30%, rgba(79,140,255,.16), transparent 70%), radial-gradient(40% 50% at 10% 90%, rgba(117,216,255,.07), transparent 70%); }
+  .hero-in { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 56px; align-items: center; }
+  .hero h1 { font-size: clamp(2.3rem, 5.2vw, 3.9rem); margin: 4px 0 22px; max-width: 16ch; }
+  :global(:lang(ja)) .hero h1, :global(:lang(zh-Hans)) .hero h1, :global(:lang(ko)) .hero h1 { max-width: 20ch; font-size: clamp(2rem, 4.4vw, 3.3rem); }
+  .lead { font-size: clamp(1.06rem, 1.5vw, 1.2rem); color: var(--text-3); max-width: 58ch; line-height: 1.65; }
+  .hero-cta { display: flex; flex-wrap: wrap; gap: 14px; align-items: center; margin: 30px 0 18px; }
+  .hero-cta .btn { min-height: 62px; }
+  .tag { color: var(--text-2); font-weight: 600; letter-spacing: .02em; margin: 0; }
+  .hero-art { display: flex; justify-content: center; }
+  .device { width: min(100%, 380px); padding: 30px 26px 26px; border-radius: 44px; text-align: center;
+    background: linear-gradient(180deg, var(--device-top), var(--device-bottom)); border: 1px solid var(--kf-border);
+    box-shadow: 0 40px 90px -30px rgba(79,140,255,.45), inset 0 1px 0 rgba(255,255,255,.06); }
+  .device-t { margin: 0 0 6px; font-weight: 650; color: var(--text); }
+  .device-s { margin: 6px 0 0; font-size: .85rem; color: var(--text-2); }
+  .device :global(svg) { width: 100%; height: auto; }
+
+  .facts-strip { border-block: 1px solid var(--line); background: color-mix(in srgb, var(--surface) 55%, transparent); }
+  .facts-strip ul { list-style: none; margin: 0; padding: 24px 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+  .facts-strip li { display: flex; flex-direction: column; gap: 3px; padding-left: 14px; border-left: 2px solid var(--kf-border); }
+  .facts-strip strong { font-size: 1rem; color: var(--text); }
+  .facts-strip span { color: var(--text-2); font-size: .88rem; line-height: 1.45; }
+
+  .steps { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+  .steps .num { display: inline-grid; place-items: center; width: 34px; height: 34px; border-radius: 50%; background: var(--grad); color: #061024; font-weight: 750; margin-bottom: 16px; }
+  .steps p { color: var(--text-2); margin: 0; }
+
+  .split { display: grid; grid-template-columns: 1.1fr .9fr; gap: 56px; align-items: center; }
+  .split .muted { max-width: 60ch; }
+  .two-grids { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .two-grids figure { margin: 0; padding: 18px; border-radius: 22px; border: 1px solid var(--line); background: var(--surface); text-align: center; box-shadow: var(--shadow-card); }
+  .two-grids :global(svg) { width: 100%; height: auto; }
+  .two-grids figcaption { font-size: .86rem; color: var(--text-2); margin-top: 6px; }
+  .checks { list-style: none; margin: 0; padding: 26px 28px; }
+  .checks li { padding: 11px 0 11px 30px; position: relative; color: var(--text-3); border-bottom: 1px solid var(--line); }
+  .checks li:last-child { border: 0; }
+  .checks li::before { content: ''; position: absolute; left: 0; top: 16px; width: 16px; height: 16px; border-radius: 50%; background: var(--grad); -webkit-mask: radial-gradient(circle, transparent 3px, #000 3.5px); mask: radial-gradient(circle, transparent 3px, #000 3.5px); }
+  .checks strong { color: var(--text); }
+  .cmp td:nth-child(2) { color: var(--accent-text); font-weight: 600; }
+  .cmp tbody th { color: var(--text-3); font-weight: 500; }
+  .small { font-size: .88rem; }
+  .more { margin-top: 24px; font-weight: 600; }
+  .vaults { background: linear-gradient(180deg, transparent, color-mix(in srgb, var(--surface) 50%, transparent), transparent); }
+
+  @media (max-width: 920px) {
+    .hero-in, .split { grid-template-columns: 1fr; gap: 40px; }
+    .device { width: min(100%, 300px); padding: 22px 18px 18px; border-radius: 34px; }
+    .steps { grid-template-columns: 1fr; }
+    .facts-strip ul { grid-template-columns: 1fr 1fr; }
+  }
+</style>
