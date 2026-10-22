@@ -1737,7 +1737,7 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "AES-256 encrypted · %#@arg1@ · %@"
+            "value" : "AES-256 encrypted · %#@arg1@ · %2$@"
           },
           "substitutions" : {
             "arg1" : {
@@ -1765,7 +1765,7 @@
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Cifrado AES-256 · %#@arg1@ · %@"
+            "value" : "Cifrado AES-256 · %#@arg1@ · %2$@"
           },
           "substitutions" : {
             "arg1" : {
@@ -1799,7 +1799,7 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "AES-256-verschlüsselt · %#@arg1@ · %@"
+            "value" : "AES-256-verschlüsselt · %#@arg1@ · %2$@"
           },
           "substitutions" : {
             "arg1" : {
@@ -1827,7 +1827,7 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Chiffré en AES-256 · %#@arg1@ · %@"
+            "value" : "Chiffré en AES-256 · %#@arg1@ · %2$@"
           },
           "substitutions" : {
             "arg1" : {
@@ -1861,7 +1861,7 @@
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Criptografado com AES-256 · %#@arg1@ · %@"
+            "value" : "Criptografado com AES-256 · %#@arg1@ · %2$@"
           },
           "substitutions" : {
             "arg1" : {
@@ -1931,7 +1931,7 @@
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Cifrato AES-256 · %#@arg1@ · %@"
+            "value" : "Cifrato AES-256 · %#@arg1@ · %2$@"
           },
           "substitutions" : {
             "arg1" : {
@@ -1965,7 +1965,7 @@
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "AES-256-versleuteld · %#@arg1@ · %@"
+            "value" : "AES-256-versleuteld · %#@arg1@ · %2$@"
           },
           "substitutions" : {
             "arg1" : {
@@ -1993,7 +1993,7 @@
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "AES-256-krypterat · %#@arg1@ · %@"
+            "value" : "AES-256-krypterat · %#@arg1@ · %2$@"
           },
           "substitutions" : {
             "arg1" : {

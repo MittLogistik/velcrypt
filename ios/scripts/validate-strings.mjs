@@ -70,14 +70,17 @@ function leaves(loc) {
 // Expands substitution tokens (%#@arg1@) into the substitution's own specifier for comparison.
 function effectiveSpecs(text, subs) {
   if (!subs) return specs(text);
-  // A %#@name@ token consumes the next argument like any other specifier, so expand it in place;
-  // use the positional form only when the string already uses positional specifiers.
-  const positional = /%\d+\$/.test(text);
   let t = text;
-  for (const [name, s] of Object.entries(subs)) {
-    t = t.replace(`%#@${name}@`, positional ? `%${s.argNum}$${s.formatSpecifier}` : `%${s.formatSpecifier}`);
-  }
+  for (const [name, s] of Object.entries(subs)) t = t.replace(`%#@${name}@`, `%${s.argNum}$${s.formatSpecifier}`);
   return specs(t);
+}
+
+// A %#@name@ token does not advance Foundation's argument counter, so a plain %@ after it reads
+// argument 1 again (an integer read as an object crashes). Other specifiers must be positional.
+function checkPositionalWithSubs(key, lang, text, subs) {
+  if (!subs) return;
+  const rest = text.replace(/%#@[A-Za-z0-9_]+@/g, '').replace(/%%/g, '');
+  if (/%(?!\d+\$)/.test(rest)) err(`${key} [${lang}]: specifiers next to a substitution must be positional (e.g. %2$@) in ${JSON.stringify(text)}`);
 }
 
 function checkCatalog(file, requiredKeys, { sourceIsKey }) {
@@ -143,6 +146,7 @@ function checkPluralForms(key, lang, plural, where) {
 
 function checkSubs(key, lang, loc, enSpecs) {
   if (!loc.substitutions) return;
+  checkPositionalWithSubs(key, lang, loc.stringUnit?.value ?? '', loc.substitutions);
   for (const [name, s] of Object.entries(loc.substitutions)) {
     if (!loc.stringUnit?.value?.includes(`%#@${name}@`)) err(`${key} [${lang}]: substitution ${name} not referenced`);
     if (!enSpecs.includes(`${s.argNum}:${s.formatSpecifier}`)) err(`${key} [${lang}]: substitution ${name} argNum/formatSpecifier mismatch`);

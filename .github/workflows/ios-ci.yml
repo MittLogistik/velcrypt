@@ -21,6 +21,9 @@ jobs:
     steps:
       - uses: actions/checkout@v5
 
+      - name: Validate translations
+        run: node scripts/validate-strings.mjs
+
       - uses: maxim-lobanov/setup-xcode@v1
         with:
           xcode-version: latest-stable
