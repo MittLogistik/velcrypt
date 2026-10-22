@@ -89,12 +89,18 @@ struct CreateBackupView: View {
     @State private var backupURL: URL?
     @State private var showShare = false
     @State private var failed = false
+    @State private var revealed = false
+    @State private var leftConfirmation = false
     @FocusState private var focused: Field?
 
     private enum Field { case password, confirmation }
 
     private var isWorking: Bool { task != nil }
-    private var mismatch: Bool { !confirmation.isEmpty && confirmation != password }
+    /// Not shown while the confirmation is still being typed, only once it is as long as the password or left.
+    private var mismatch: Bool {
+        guard !confirmation.isEmpty, confirmation != password else { return false }
+        return leftConfirmation || confirmation.count >= password.count
+    }
     private var canCreate: Bool {
         password.count >= VaultBackup.minimumPasswordLength && confirmation == password && !isWorking
     }
@@ -132,6 +138,9 @@ struct CreateBackupView: View {
             }
             .interactiveDismissDisabled(isWorking || backupURL != nil)
             .onAppear { focused = .password }
+            .onChange(of: focused) { old, new in
+                if old == .confirmation, new != .confirmation { leftConfirmation = true }
+            }
             .onDisappear {
                 task?.cancel()
                 if let backupURL { VaultBackup.removeTemporary(backupURL) }
@@ -142,13 +151,18 @@ struct CreateBackupView: View {
     @ViewBuilder
     private var passwordContent: some View {
         Section {
-            SecureField("Backup Password", text: $password)
-                .textContentType(.newPassword)
-                .focused($focused, equals: .password)
-                .submitLabel(.next)
-                .onSubmit { focused = .confirmation }
-            SecureField("Confirm Password", text: $confirmation)
-                .textContentType(.newPassword)
+            HStack {
+                PasswordField(title: "Backup Password", text: $password, revealed: revealed)
+                    .focused($focused, equals: .password)
+                    .submitLabel(.next)
+                    .onSubmit { focused = .confirmation }
+                RevealPasswordButton(revealed: $revealed) {
+                    // Switching between secure and plain fields drops focus; put it back.
+                    let current = focused
+                    Task { focused = current }
+                }
+            }
+            PasswordField(title: "Confirm Password", text: $confirmation, revealed: revealed)
                 .focused($focused, equals: .confirmation)
                 .submitLabel(.done)
                 .onSubmit(create)
@@ -249,6 +263,7 @@ struct RestoreBackupView: View {
     @State private var task: Task<Void, Never>?
     @State private var result: VaultBackup.RestoreResult?
     @State private var errorMessage: LocalizedStringKey?
+    @State private var revealed = false
     @FocusState private var focused: Bool
 
     private var isWorking: Bool { task != nil }
@@ -288,12 +303,17 @@ struct RestoreBackupView: View {
             } icon: {
                 Image(systemName: "doc.fill").foregroundStyle(VCColor.accent)
             }
-            SecureField("Backup Password", text: $password)
-                .textContentType(.password)
-                .focused($focused)
-                .submitLabel(.go)
-                .onSubmit(restore)
-                .disabled(isWorking)
+            HStack {
+                PasswordField(title: "Backup Password", text: $password, revealed: revealed)
+                    .focused($focused)
+                    .submitLabel(.go)
+                    .onSubmit(restore)
+                RevealPasswordButton(revealed: $revealed) {
+                    let current = focused
+                    Task { focused = current }
+                }
+            }
+            .disabled(isWorking)
         } header: {
             Text("Backup File")
         } footer: {
@@ -390,5 +410,44 @@ struct RestoreBackupView: View {
     private func fail(_ message: LocalizedStringKey) {
         Haptics.error()
         errorMessage = message
+    }
+}
+
+// MARK: - Password field
+
+/// A password field that can show its text. Autocorrection and capitalisation are off in both modes,
+/// so what the user sees is exactly what is used as the key.
+private struct PasswordField: View {
+    let title: LocalizedStringKey
+    @Binding var text: String
+    let revealed: Bool
+
+    var body: some View {
+        Group {
+            if revealed {
+                TextField(title, text: $text)
+            } else {
+                SecureField(title, text: $text)
+            }
+        }
+        .textInputAutocapitalization(.never)
+        .autocorrectionDisabled()
+    }
+}
+
+private struct RevealPasswordButton: View {
+    @Binding var revealed: Bool
+    var onToggle: () -> Void = {}
+
+    var body: some View {
+        Button {
+            revealed.toggle()
+            onToggle()
+        } label: {
+            Image(systemName: revealed ? "eye.slash" : "eye")
+                .foregroundStyle(VCColor.textSecondary)
+        }
+        .buttonStyle(.borderless)
+        .accessibilityLabel(revealed ? LocalizedStringKey("Hide Password") : "Show Password")
     }
 }
