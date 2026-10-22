@@ -74,8 +74,13 @@ PREMIUM (IN-APP PURCHASES)
 The free version allows one vault with up to 50 items. Velcrypt Premium (weekly or yearly subscription with a 3-day free trial on yearly, or a lifetime purchase) unlocks unlimited items, more vaults and alternate app icons.
 The paywall appears: once after onboarding; from Settings → "Upgrade to Premium"; when adding a 51st item; when saving into a second vault (draw a new pattern, then tap "+"); and when choosing an alternate icon. "Restore Purchases" is on the paywall.
 
+DELETING ORIGINALS FROM PHOTOS (OPTIONAL, USER-INITIATED)
+Importing makes an encrypted copy; it never removes anything by itself. After an import from the Photos picker, the app asks whether the user also wants to remove the originals. Only if the user taps "Delete Originals" does the app request Photos access and call PHAssetChangeRequest.deleteAssets for exactly the items the user just picked. iOS then shows its own system confirmation, and the items go to Recently Deleted for 30 days. Nothing is hidden or deleted without that explicit two-step confirmation, and the user can turn the offer off in Settings → Import. This mirrors what users would otherwise do by hand in the Photos app after moving files into a vault.
+
 The app makes no network requests, collects no data and has no account.
 ```
+
+> Apple has rejected at least one competitor under Guideline 2.5.1 for deleting originals after import ("decoy functionality to hide user's photos"). If we are rejected for this, reply that the deletion is user-initiated, confirmed twice (by the app and by iOS) and recoverable from Recently Deleted. If Apple still insists, ship without the deletion step and show a hint to delete the originals in Photos instead.
 
 ## Screenshots plan (6.9", up to 10)
 
