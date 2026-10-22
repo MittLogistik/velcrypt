@@ -64,7 +64,7 @@ struct SettingsView: View {
                     NavigationLink {
                         BackupView()
                     } label: {
-                        Label("Backup", systemImage: "externaldrive.badge.timemachine")
+                        Label("Backup", systemImage: "clock.arrow.circlepath")
                     }
                 } footer: {
                     Text("Back up this vault to an encrypted file, or restore a backup on a new iPhone.")
