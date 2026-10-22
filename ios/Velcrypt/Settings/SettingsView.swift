@@ -100,7 +100,7 @@ struct SettingsView: View {
                     }
                 }
 
-                Section("About") {
+                Section {
                     LabeledContent("Version", value: Self.versionString)
                     Link(destination: URL(string: "https://velcrypt.app/privacy/")!) {
                         Label("Privacy Policy", systemImage: "hand.raised.fill")
@@ -111,6 +111,13 @@ struct SettingsView: View {
                     Link(destination: URL(string: "mailto:support@velcrypt.app")!) {
                         Label("Contact Support", systemImage: "envelope.fill")
                     }
+                    Link(destination: Self.feedbackURL) {
+                        Label("Send Feedback", systemImage: "bubble.left.and.text.bubble.right.fill")
+                    }
+                } header: {
+                    Text("About")
+                } footer: {
+                    Text("Something not right, or an idea? Tell us. We read every message.")
                 }
 
                 Section {
@@ -217,6 +224,13 @@ struct SettingsView: View {
         } catch {
             errorMessage = String(localized: "The vaults could not be erased.")
         }
+    }
+
+    /// A feedback email with the version filled in, so replies can be matched to a build.
+    static var feedbackURL: URL {
+        var components = URLComponents(string: "mailto:support@velcrypt.app")!
+        components.queryItems = [URLQueryItem(name: "subject", value: "Velcrypt feedback ((versionString))")]
+        return components.url ?? URL(string: "mailto:support@velcrypt.app")!
     }
 
     static var versionString: String {

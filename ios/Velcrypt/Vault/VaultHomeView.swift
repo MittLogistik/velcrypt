@@ -64,6 +64,7 @@ struct VaultHomeView: View {
         }
         .task {
             await library.load()
+            ReviewPrompt.shared.recordVaultOpened()
             // Shown once, the first time a vault opens (right after onboarding): most purchases happen on day one.
             if !hasSeenWelcomePaywall && !premium.isPremium {
                 hasSeenWelcomePaywall = true

@@ -212,6 +212,7 @@ final class VaultLibrary {
                 : String(localized: "\(failures) items couldn't be imported.")
         }
         lastImportCount = imported
+        ReviewPrompt.shared.recordImported(imported)
         importedOriginals = originals
         importProgress = nil
         importTask = nil

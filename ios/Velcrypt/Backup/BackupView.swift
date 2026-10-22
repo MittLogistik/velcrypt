@@ -4,6 +4,7 @@ import UniformTypeIdentifiers
 /// Settings → Backup: back up the open vault to a password-protected file, or restore one into it.
 struct BackupView: View {
     @Environment(VaultLibrary.self) private var library
+    @Environment(.requestReview) private var requestReview
     @State private var showCreate = false
     @State private var showConfirmVault = false
     @State private var showPicker = false
@@ -60,7 +61,7 @@ struct BackupView: View {
         .background(VCBackground())
         .navigationTitle("Backup")
         .navigationBarTitleDisplayMode(.inline)
-        .sheet(isPresented: $showCreate) {
+        .sheet(isPresented: $showCreate, onDismiss: { ReviewPrompt.shared.askIfDue(requestReview) }) {
             CreateBackupView()
         }
         .sheet(isPresented: $showConfirmVault, onDismiss: {
@@ -238,6 +239,7 @@ struct CreateBackupView: View {
         task = Task {
             do {
                 backupURL = try await library.createBackup(password: chosen)
+                ReviewPrompt.shared.recordBackupCreated()
                 password = ""
                 confirmation = ""
                 Haptics.success()

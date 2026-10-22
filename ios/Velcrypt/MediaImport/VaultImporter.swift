@@ -18,6 +18,7 @@ private struct VaultImporterModifier: ViewModifier {
     @Environment(PremiumStore.self) private var premium
     @State private var paywall: PaywallView.Reason?
     @AppStorage("offerDeleteOriginals") private var offerDeleteOriginals = true
+    @Environment(.requestReview) private var requestReview
     @State private var showChoice = false
     @State private var showConfirmVault = false
     @State private var showPhotos = false
@@ -39,6 +40,14 @@ private struct VaultImporterModifier: ViewModifier {
 
     func body(content: Content) -> some View {
         content
+            .onChange(of: library.isImporting) { wasImporting, isImporting in
+                // A finished import is a good moment to ask for a rating, unless the originals offer is about to show;
+                // then it waits until that is answered.
+                guard wasImporting, !isImporting, library.lastImportCount > 0 else { return }
+                if !(offerDeleteOriginals && !library.importedOriginals.isEmpty) {
+                    ReviewPrompt.shared.askIfDue(requestReview)
+                }
+            }
             .onChange(of: isPresented) { _, requested in
                 guard requested else { return }
                 isPresented = false
@@ -150,6 +159,7 @@ private struct VaultImporterModifier: ViewModifier {
     private func finishOriginalsOffer() {
         library.importedOriginals = []
         startedImport = false
+        ReviewPrompt.shared.askIfDue(requestReview)
     }
 
     private var cleanupTitle: LocalizedStringKey {
