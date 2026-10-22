@@ -1,6 +1,6 @@
 import Foundation
 import StoreKit
-import SwiftUI
+import UIKit
 
 /// Decides when to show Apple's rating prompt: only right after a success (an import or a backup), once the
 /// user has used Velcrypt for a while, and at most every 120 days. iOS itself also limits the prompt to three
@@ -58,13 +58,15 @@ struct ReviewPrompt {
     }
 
     /// Shows Apple's rating prompt shortly after a success, if it is due.
-    func askIfDue(_ requestReview: RequestReviewAction, now: Date = .now) {
+    func askIfDue(now: Date = .now) {
         guard isDue(now: now) else { return }
         markAsked(now: now)
         Task {
             // Let the success UI settle first.
             try? await Task.sleep(for: .seconds(1))
-            requestReview()
+            let scene = UIApplication.shared.connectedScenes
+                .first { $0.activationState == .foregroundActive } as? UIWindowScene
+            if let scene { AppStore.requestReview(in: scene) }
         }
     }
 }
