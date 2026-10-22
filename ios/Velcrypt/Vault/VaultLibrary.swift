@@ -368,10 +368,11 @@ final class VaultLibrary {
         return urls
     }
 
-    // MARK: Duress
+    // MARK: Index
 
-    /// Makes sure this saved vault has an index on disk, which is how the duress pattern finds its decoy.
-    func prepareAsDecoy() async throws {
+    /// Writes the index in the current format now. The duress pattern finds its decoy by the index, and a
+    /// pattern change renames the vault directory, so both make sure it is on disk first.
+    func saveIndexNow() async throws {
         let store = try await ensureStore()
         try await store.ensureIndexSaved()
     }

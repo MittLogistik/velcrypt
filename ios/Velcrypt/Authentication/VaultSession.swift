@@ -210,6 +210,7 @@ final class VaultSession {
     func changePattern(to newPattern: UnlockPattern) async throws {
         guard let vault = openVault else { throw VaultError.locked }
         let masterKey = try await masterKeyForWriting()
+        try await library?.saveIndexNow()
         let keyring = keyring, files = files, oldID = vault.credentials.vaultID
         let newCredentials = try await Task.detached(priority: .userInitiated) {
             let credentials = try keyring.credentials(for: newPattern)
@@ -233,7 +234,7 @@ final class VaultSession {
     func setDuressPattern(_ pattern: UnlockPattern) async throws {
         guard let vault = openVault, let masterKey = vault.masterKey, let library else { throw VaultError.locked }
         // The decoy is found by its index, so make sure there is one.
-        try await library.prepareAsDecoy()
+        try await library.saveIndexNow()
         let keyring = keyring, files = files, currentID = vault.credentials.vaultID
         try await Task.detached(priority: .userInitiated) {
             let credentials = try keyring.credentials(for: pattern)

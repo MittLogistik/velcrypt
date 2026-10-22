@@ -34,8 +34,11 @@ actor VaultStore {
         self.vaultID = vaultID
         self.masterKey = masterKey
         self.metadataKey = metadataKey
-        self.index = try Self.loadIndex(directory: directory, vaultID: vaultID, key: metadataKey)
+        let (index, isLegacy) = try Self.loadIndex(directory: directory, vaultID: vaultID, key: metadataKey)
+        self.index = index
         try Self.createSubdirectories(in: directory)
+        // Rewrite a v1 index straight away, so a later pattern change (which renames the directory) can't strand it.
+        if isLegacy { try? Self.writeIndex(index, to: directory, key: metadataKey) }
     }
 
     // MARK: Reading
@@ -208,17 +211,20 @@ actor VaultStore {
     /// True if the index in `directory` decrypts with `masterKey`. Used to find the decoy vault, whose
     /// directory name changes when its pattern changes but whose master key does not.
     nonisolated static func indexOpens(directory: URL, vaultID: String, masterKey: SymmetricKey) -> Bool {
-        guard let sealed = try? Data(contentsOf: directory.appending(path: indexFileName)) else { return false }
         let key = VaultCrypto.deriveKey(from: masterKey, purpose: .metadata)
-        return (try? VaultCrypto.open(sealed, using: key, authenticating: indexAAD(vaultID))) != nil
+        return (try? loadIndex(directory: directory, vaultID: vaultID, key: key, requireFile: true)) != nil
     }
 
     // MARK: Private
 
     private func saveIndex() throws {
+        try Self.writeIndex(index, to: directory, key: metadataKey)
+    }
+
+    private static func writeIndex(_ index: VaultIndex, to directory: URL, key: SymmetricKey) throws {
         let raw = try JSONEncoder().encode(index)
-        let sealed = try VaultCrypto.seal(raw, using: metadataKey, authenticating: Self.indexAAD(vaultID))
-        try sealed.write(to: directory.appending(path: Self.indexFileName), options: [.atomic, .completeFileProtection])
+        let sealed = try VaultCrypto.seal(raw, using: key, authenticating: indexAAD)
+        try sealed.write(to: directory.appending(path: indexFileName), options: [.atomic, .completeFileProtection])
     }
 
     private func itemKey(_ id: UUID) -> SymmetricKey {
@@ -243,16 +249,34 @@ actor VaultStore {
         try? FileManager.default.removeItem(at: thumbnailURL(id))
     }
 
-    private static func indexAAD(_ vaultID: String) -> Data {
+    /// v2 is not bound to the vault ID, because the ID (the directory name) changes with the pattern. The metadata
+    /// key comes from the vault's own random master key, so an index still can't be moved to another vault.
+    private static let indexAAD = Data("velcrypt.index.v2".utf8)
+
+    /// v1 bound the index to the vault ID. Still read, and rewritten as v2 when the vault opens.
+    private static func legacyIndexAAD(_ vaultID: String) -> Data {
         Data("velcrypt.index.v1".utf8) + Data(vaultID.utf8)
     }
 
-    private static func loadIndex(directory: URL, vaultID: String, key: SymmetricKey) throws -> VaultIndex {
+    /// Returns the index and whether it was in the v1 format. A missing file is an empty index, unless `requireFile`.
+    private static func loadIndex(
+        directory: URL,
+        vaultID: String,
+        key: SymmetricKey,
+        requireFile: Bool = false
+    ) throws -> (index: VaultIndex, isLegacy: Bool) {
         let url = directory.appending(path: indexFileName)
-        guard FileManager.default.fileExists(atPath: url.path(percentEncoded: false)) else { return VaultIndex() }
+        guard FileManager.default.fileExists(atPath: url.path(percentEncoded: false)) else {
+            if requireFile { throw StoreError.corruptedIndex }
+            return (VaultIndex(), false)
+        }
         do {
-            let raw = try VaultCrypto.open(Data(contentsOf: url), using: key, authenticating: indexAAD(vaultID))
-            return try JSONDecoder().decode(VaultIndex.self, from: raw)
+            let sealed = try Data(contentsOf: url)
+            if let raw = try? VaultCrypto.open(sealed, using: key, authenticating: indexAAD) {
+                return (try JSONDecoder().decode(VaultIndex.self, from: raw), false)
+            }
+            let raw = try VaultCrypto.open(sealed, using: key, authenticating: legacyIndexAAD(vaultID))
+            return (try JSONDecoder().decode(VaultIndex.self, from: raw), true)
         } catch {
             throw StoreError.corruptedIndex
         }

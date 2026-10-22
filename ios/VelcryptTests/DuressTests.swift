@@ -1,3 +1,4 @@
+import CryptoKit
 import XCTest
 @testable import Velcrypt
 
@@ -180,5 +181,51 @@ final class DuressTests: XCTestCase {
         try await session.unlock(pattern: Self.duress)
         XCTAssertEqual(session.library?.isNewVault, true)
         XCTAssertEqual(files.vaultIDs().count, 1)
+    }
+}
+
+/// Regression: the index used to be bound to the vault ID, which changes with the pattern, so a vault
+/// with content couldn't be read after "Change This Vault's Pattern".
+@MainActor
+final class IndexFormatTests: XCTestCase {
+    func testChangePatternKeepsContentReadable() async throws {
+        let store = InMemorySecretStore()
+        let files = makeTemporaryFileStore()
+        defer { try? files.deleteAll() }
+        let defaults = try XCTUnwrap(UserDefaults(suiteName: "IndexFormatTests.\(UUID().uuidString)"))
+        let session = VaultSession(store: store, files: files, defaults: defaults,
+                                   keyring: VaultKeyring(store: store, roundsProvider: { TestConstants.fastRounds }))
+        try await session.createFirstVault(pattern: .sample)
+        session.finishOnboarding()
+        await session.library?.load()
+        await session.library?.createAlbum(named: "Kept")
+
+        try await session.changePattern(to: .third)
+        XCTAssertNil(session.library?.errorMessage)
+        XCTAssertEqual(session.library?.albums.map(\.name), ["Kept"])
+
+        session.lock()
+        try await session.unlock(pattern: .third)
+        await session.library?.load()
+        XCTAssertNil(session.library?.errorMessage)
+        XCTAssertEqual(session.library?.albums.map(\.name), ["Kept"])
+    }
+
+    func testLegacyIndexIsReadAndRewritten() async throws {
+        let dir = FileManager.default.temporaryDirectory.appending(path: "IndexFormatTests-\(UUID().uuidString)")
+        try FileManager.default.createDirectory(at: dir, withIntermediateDirectories: true)
+        defer { try? FileManager.default.removeItem(at: dir) }
+        let master = SymmetricKey(size: .bits256)
+        var legacy = VaultIndex()
+        legacy.albums = [Album(id: UUID(), name: "Old", createdAt: .now, coverItemID: nil)]
+        let aad = Data("velcrypt.index.v1".utf8) + Data("old-id".utf8)
+        let sealed = try VaultCrypto.seal(JSONEncoder().encode(legacy), using: VaultCrypto.deriveKey(from: master, purpose: .metadata), authenticating: aad)
+        try sealed.write(to: dir.appending(path: VaultStore.indexFileName))
+
+        let opened = try VaultStore(directory: dir, vaultID: "old-id", masterKey: master)
+        let names = await opened.snapshot.albums.map(\.name)
+        XCTAssertEqual(names, ["Old"])
+        // Rewritten as v2, so it still opens under a new vault ID (as after a pattern change).
+        XCTAssertTrue(VaultStore.indexOpens(directory: dir, vaultID: "new-id", masterKey: master))
     }
 }
