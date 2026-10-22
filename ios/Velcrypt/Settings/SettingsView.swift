@@ -55,6 +55,16 @@ struct SettingsView: View {
                 }
 
                 Section {
+                    NavigationLink {
+                        BackupView()
+                    } label: {
+                        Label("Backup", systemImage: "externaldrive.badge.timemachine")
+                    }
+                } footer: {
+                    Text("Back up this vault to an encrypted file, or restore a backup on a new iPhone.")
+                }
+
+                Section {
                     Toggle(isOn: $offerDeleteOriginals) {
                         Label("Offer to Delete Originals", systemImage: "trash.slash")
                     }

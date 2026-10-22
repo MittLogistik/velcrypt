@@ -118,6 +118,63 @@ enum ChunkedCipher {
     private static func decrypt(fileAt url: URL, key: SymmetricKey, itemID: UUID, sink: (Data) throws -> Void) throws {
         let input = try FileHandle(forReadingFrom: url)
         defer { try? input.close() }
+        try readStream(from: input, key: key, itemID: itemID) { _, _, plaintext in try sink(plaintext) }
+        if let trailing = try input.read(upToCount: 1), !trailing.isEmpty {
+            throw CipherError.malformed
+        }
+    }
+
+    // MARK: Re-encrypt
+
+    /// Re-encrypts one stream under `newKey`, chunk by chunk, so plaintext never reaches disk.
+    /// Reads exactly one stream from `input`'s current offset and appends it to `output`.
+    /// Returns the number of bytes written, which equals the number of bytes read.
+    @discardableResult
+    static func reencrypt(from input: FileHandle, key: SymmetricKey, to output: FileHandle, newKey: SymmetricKey, itemID: UUID) throws -> UInt64 {
+        var written: UInt64 = 0
+        try readStream(from: input, key: key, itemID: itemID) { header, aad, plaintext in
+            if written == 0 {
+                try output.write(contentsOf: header)
+                written += UInt64(header.count)
+            }
+            let sealed = try VaultCrypto.seal(plaintext, using: newKey, authenticating: aad)
+            try output.write(contentsOf: sealed)
+            written += UInt64(sealed.count)
+        }
+        return written
+    }
+
+    /// Re-encrypts the stream at `input`'s current offset into a new file at `destination`,
+    /// via `<destination>.partial` so an interrupted restore never leaves a half file.
+    static func reencrypt(from input: FileHandle, key: SymmetricKey, toFileAt destination: URL, newKey: SymmetricKey, itemID: UUID) throws -> UInt64 {
+        let fileManager = FileManager.default
+        let partial = destination.appendingPathExtension("partial")
+        try? fileManager.removeItem(at: partial)
+        guard fileManager.createFile(
+            atPath: partial.path(percentEncoded: false),
+            contents: nil,
+            attributes: [.protectionKey: FileProtectionType.complete]
+        ) else {
+            throw CocoaError(.fileWriteUnknown)
+        }
+        let written: UInt64
+        do {
+            let output = try FileHandle(forWritingTo: partial)
+            defer { try? output.close() }
+            written = try reencrypt(from: input, key: key, to: output, newKey: newKey, itemID: itemID)
+            try output.synchronize()
+        } catch {
+            try? fileManager.removeItem(at: partial)
+            throw error
+        }
+        try? fileManager.removeItem(at: destination)
+        try fileManager.moveItem(at: partial, to: destination)
+        return written
+    }
+
+    /// Authenticates and decrypts one stream from `input`'s current offset, leaving the handle just after it.
+    /// `chunk` receives the header, the chunk's AAD and its plaintext.
+    private static func readStream(from input: FileHandle, key: SymmetricKey, itemID: UUID, chunk: (Data, Data, Data) throws -> Void) throws {
         guard let header = try input.read(upToCount: headerLength),
               header.count == headerLength,
               header.prefix(4) == magic,
@@ -143,11 +200,8 @@ enum ChunkedCipher {
             } catch {
                 throw CipherError.authenticationFailed
             }
-            try sink(plaintext)
+            try chunk(header, aad, plaintext)
             remaining -= UInt64(size)
-        }
-        if let trailing = try input.read(upToCount: 1), !trailing.isEmpty {
-            throw CipherError.malformed
         }
     }
 

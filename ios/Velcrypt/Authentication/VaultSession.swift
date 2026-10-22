@@ -80,6 +80,7 @@ final class VaultSession {
         }
         // Plaintext temp files from a previous run (e.g. after a crash) must not survive a relaunch.
         TemporaryFiles.purgeAll()
+        VaultBackup.purgeTemporaryFiles()
 
         self.phase = keyring.isSetUp ? .locked : .onboarding
         self.autoLockDelay = AutoLockDelay(rawValue: defaults.integer(forKey: DefaultsKey.autoLock)) ?? .immediately

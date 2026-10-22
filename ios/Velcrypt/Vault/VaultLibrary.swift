@@ -33,6 +33,8 @@ final class VaultLibrary {
     private(set) var items: [VaultItem] = []
     private(set) var albums: [Album] = []
     private(set) var importProgress: ImportProgress?
+    /// Items written to or read from a backup so far, while one is being created or restored.
+    private(set) var backupProgress: ImportProgress?
     private(set) var isLoaded = false
     /// One-shot user-facing error, cleared by the view that shows it.
     var errorMessage: String?
@@ -359,6 +361,57 @@ final class VaultLibrary {
             }
         }
         return urls
+    }
+
+    // MARK: Backup
+
+    /// Writes a password-protected backup of this vault to a temporary file and returns its URL.
+    /// The caller removes it with `VaultBackup.removeTemporary` once the user has saved it.
+    func createBackup(password: String) async throws -> URL {
+        guard let store else { throw VaultError.locked }
+        let url = try VaultBackup.makeTemporaryURL()
+        backupProgress = ImportProgress(total: items.count)
+        defer { backupProgress = nil }
+        do {
+            try await VaultBackup.write(store: store, password: password, to: url) { [weak self] completed, _ in
+                await self?.setBackupProgress(completed)
+            }
+        } catch {
+            VaultBackup.removeTemporary(url)
+            throw error
+        }
+        return url
+    }
+
+    /// Checks a backup's password without changing the vault.
+    func openBackup(at url: URL, password: String) async throws -> VaultBackup.Opened {
+        let scoped = url.startAccessingSecurityScopedResource()
+        defer { if scoped { url.stopAccessingSecurityScopedResource() } }
+        return try await VaultBackup.open(url, password: password)
+    }
+
+    /// Adds everything in an opened backup to this vault.
+    func restoreBackup(_ backup: VaultBackup.Opened) async throws -> VaultBackup.RestoreResult {
+        let scoped = backup.url.startAccessingSecurityScopedResource()
+        defer { if scoped { backup.url.stopAccessingSecurityScopedResource() } }
+        let store = try await ensureStore()
+        backupProgress = ImportProgress(total: backup.manifest.entries.count)
+        defer { backupProgress = nil }
+        do {
+            let result = try await VaultBackup.restore(backup, into: store) { [weak self] completed, _ in
+                await self?.setBackupProgress(completed)
+            }
+            await refresh(from: store)
+            return result
+        } catch {
+            // Items restored before a cancellation or error are kept.
+            await refresh(from: store)
+            throw error
+        }
+    }
+
+    private func setBackupProgress(_ completed: Int) {
+        backupProgress?.completed = completed
     }
 
     // MARK: Private

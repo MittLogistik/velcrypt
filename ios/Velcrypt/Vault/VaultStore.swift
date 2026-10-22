@@ -149,6 +149,55 @@ actor VaultStore {
         if deletingItems { members.forEach(removeFiles) }
     }
 
+    // MARK: Backup
+
+    /// Appends the item's content to the file at `url`, re-encrypted under `backupKey`. Returns the bytes written.
+    func exportContent(_ id: UUID, appendingTo url: URL, backupKey: SymmetricKey) throws -> UInt64 {
+        guard index.items.contains(where: { $0.id == id }) else { throw StoreError.itemNotFound }
+        let input = try FileHandle(forReadingFrom: itemURL(id))
+        defer { try? input.close() }
+        let output = try FileHandle(forWritingTo: url)
+        defer { try? output.close() }
+        try output.seekToEnd()
+        return try ChunkedCipher.reencrypt(from: input, key: itemKey(id), to: output, newKey: backupKey, itemID: id)
+    }
+
+    /// Adds an item whose content is the `length` bytes at `offset` in a backup file, encrypted under `backupKey`.
+    /// Returns false if the vault already has the item, so restoring the same backup twice adds nothing.
+    func restoreItem(_ item: VaultItem, from url: URL, offset: UInt64, length: UInt64, backupKey: SymmetricKey, thumbnail: Data?) throws -> Bool {
+        let id = item.id
+        guard !index.items.contains(where: { $0.id == id }) else { return false }
+        do {
+            let input = try FileHandle(forReadingFrom: url)
+            defer { try? input.close() }
+            try input.seek(toOffset: offset)
+            let read = try ChunkedCipher.reencrypt(from: input, key: backupKey, toFileAt: itemURL(id), newKey: itemKey(id), itemID: id)
+            guard read == length else { throw ChunkedCipher.CipherError.malformed }
+            if let thumbnail {
+                let sealed = try VaultCrypto.seal(thumbnail, using: thumbnailKey(id), authenticating: id.rawBytes)
+                try sealed.write(to: thumbnailURL(id), options: [.atomic, .completeFileProtection])
+            }
+            var stored = item
+            stored.hasThumbnail = thumbnail != nil
+            index.items.append(stored)
+            try saveIndex()
+        } catch {
+            index.items.removeAll { $0.id == id }
+            removeFiles(for: id)
+            throw error
+        }
+        return true
+    }
+
+    /// Adds albums from a backup that this vault doesn't have yet.
+    func mergeAlbums(_ albums: [Album]) throws {
+        let existing = Set(index.albums.map(\.id))
+        let added = albums.filter { !existing.contains($0.id) }
+        guard !added.isEmpty else { return }
+        index.albums.append(contentsOf: added)
+        try saveIndex()
+    }
+
     // MARK: Private
 
     private func saveIndex() throws {

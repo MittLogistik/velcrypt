@@ -37,6 +37,12 @@ targets:
         NSCameraUsageDescription: Photos and videos you take in Velcrypt go straight into your encrypted vault, never into your photo library.
         NSMicrophoneUsageDescription: Velcrypt records sound only when you film a video into your vault.
         ITSAppUsesNonExemptEncryption: false
+        UTExportedTypeDeclarations:
+          - UTTypeIdentifier: com.velcrypt.backup
+            UTTypeDescription: Velcrypt Backup
+            UTTypeConformsTo: [public.data]
+            UTTypeTagSpecification:
+              public.filename-extension: [velcrypt]
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.velcrypt.app
