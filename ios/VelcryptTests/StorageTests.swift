@@ -320,7 +320,8 @@ final class NoteTests: XCTestCase {
 
         let content = try await store.contentData(for: note.id)
         XCTAssertEqual(String(data: content, encoding: .utf8), text)
-        let stored = try XCTUnwrap(await store.snapshot.items.first)
+        let snapshot = await store.snapshot
+        let stored = try XCTUnwrap(snapshot.items.first)
         XCTAssertEqual(stored.filename, "Passwords.txt")
         XCTAssertEqual(stored.preview, "Bank: 1234 — ünïcødé ✓")
         XCTAssertNotNil(stored.modifiedAt)
