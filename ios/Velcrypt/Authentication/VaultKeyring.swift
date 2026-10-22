@@ -7,6 +7,8 @@ struct VaultCredentials: Sendable {
     let vaultID: String
     /// Wraps the vault's random master key.
     let wrappingKey: SymmetricKey
+    /// Opens the duress record if this pattern is the duress pattern.
+    let duressKey: SymmetricKey
 }
 
 /// Turns unlock patterns into vault credentials using a per-device salt kept in the Keychain.
@@ -34,11 +36,34 @@ final class VaultKeyring: @unchecked Sendable {
         (try? store.data(for: Self.account)) != nil
     }
 
-    /// Creates the per-device salt and round count. Does nothing if they already exist.
+    /// Creates the per-device salt, round count and duress placeholder. Does nothing if they already exist.
     func setUpIfNeeded() throws {
-        guard !isSetUp else { return }
-        let record = DeviceKDF(version: 1, salt: VaultCrypto.randomBytes(32), rounds: roundsProvider())
-        try store.set(try JSONEncoder().encode(record), for: Self.account)
+        if !isSetUp {
+            let record = DeviceKDF(version: 1, salt: VaultCrypto.randomBytes(32), rounds: roundsProvider())
+            try store.set(try JSONEncoder().encode(record), for: Self.account)
+        }
+        try DuressRecord.ensureExists(in: store)
+    }
+
+    // MARK: Duress
+
+    /// Gives installs from before the duress pattern their placeholder record.
+    func ensureDuressRecord() throws {
+        guard isSetUp else { return }
+        try DuressRecord.ensureExists(in: store)
+    }
+
+    /// The decoy master key if these credentials belong to the duress pattern.
+    func duressDecoyKey(for credentials: VaultCredentials) -> SymmetricKey? {
+        DuressRecord.decoyMasterKey(duressKey: credentials.duressKey, in: store)
+    }
+
+    func setDuress(decoyMasterKey: SymmetricKey, credentials: VaultCredentials) throws {
+        try DuressRecord.set(decoyMasterKey: decoyMasterKey, duressKey: credentials.duressKey, in: store)
+    }
+
+    func clearDuress() throws {
+        try DuressRecord.clear(in: store)
     }
 
     func credentials(for pattern: UnlockPattern) throws -> VaultCredentials {
@@ -50,7 +75,11 @@ final class VaultKeyring: @unchecked Sendable {
         let root = try KeyDerivation.pbkdf2(password: pattern.keyMaterial, salt: kdf.salt, rounds: kdf.rounds, prf: .sha512)
         let idKey = VaultCrypto.deriveKey(from: root, purpose: .vaultID, outputByteCount: 16)
         let vaultID = idKey.withUnsafeBytes { $0.map { String(format: "%02x", $0) }.joined() }
-        return VaultCredentials(vaultID: vaultID, wrappingKey: VaultCrypto.deriveKey(from: root, purpose: .vaultWrap))
+        return VaultCredentials(
+            vaultID: vaultID,
+            wrappingKey: VaultCrypto.deriveKey(from: root, purpose: .vaultWrap),
+            duressKey: VaultCrypto.deriveKey(from: root, purpose: .duress)
+        )
     }
 
     func destroy() throws {

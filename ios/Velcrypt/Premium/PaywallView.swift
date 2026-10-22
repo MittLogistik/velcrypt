@@ -5,7 +5,7 @@ import SwiftUI
 struct PaywallView: View {
     /// Why the paywall is shown; it changes only the subtitle.
     enum Reason: String, Identifiable {
-        case welcome, upgrade, itemLimit, vaultLimit, appIcons
+        case welcome, upgrade, itemLimit, vaultLimit, appIcons, duress
         var id: String { rawValue }
     }
 
@@ -94,6 +94,7 @@ struct PaywallView: View {
         case .itemLimit: "The free version holds \(PremiumLimits.freeItems) items. Go Premium to store as much as you like."
         case .vaultLimit: "The free version has one vault. Go Premium to give other patterns their own vaults."
         case .appIcons: "Alternate app icons are part of Premium."
+        case .duress: "The duress pattern is part of Premium."
         case .welcome, .upgrade: "Everything in Velcrypt, without limits."
         }
     }
@@ -109,6 +110,11 @@ struct PaywallView: View {
                 systemName: "square.stack.3d.up.fill",
                 title: "More Vaults",
                 message: "Give other patterns their own separate vaults."
+            )
+            VCFeatureRow(
+                systemName: "exclamationmark.shield.fill",
+                title: "Duress Pattern",
+                message: "A separate pattern that opens a decoy vault and permanently deletes all the others."
             )
             VCFeatureRow(
                 systemName: "app.badge.fill",

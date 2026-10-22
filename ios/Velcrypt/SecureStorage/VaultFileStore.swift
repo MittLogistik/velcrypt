@@ -74,6 +74,13 @@ final class VaultFileStore: @unchecked Sendable {
         try fileManager.removeItem(at: dir)
     }
 
+    /// Deletes every vault except `keep` (all of them if nil). Used by the duress pattern.
+    func deleteVaults(except keep: String?) throws {
+        for id in vaultIDs() where id != keep {
+            try fileManager.removeItem(at: directory(for: id))
+        }
+    }
+
     func deleteAll() throws {
         guard fileManager.fileExists(atPath: root.path(percentEncoded: false)) else { return }
         try fileManager.removeItem(at: root)

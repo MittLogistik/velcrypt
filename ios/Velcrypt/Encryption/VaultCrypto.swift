@@ -62,4 +62,5 @@ enum KeyPurpose: String {
     case backupManifest = "velcrypt.backup.manifest.v1"
     case backupItem = "velcrypt.backup.item.v1"
     case backupThumbnail = "velcrypt.backup.thumbnail.v1"
+    case duress = "velcrypt.duress.v1"
 }

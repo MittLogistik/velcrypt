@@ -198,6 +198,21 @@ actor VaultStore {
         try saveIndex()
     }
 
+    // MARK: Duress
+
+    /// Writes the index even if nothing changed, so the vault can be recognised by `indexOpens`.
+    func ensureIndexSaved() throws {
+        try saveIndex()
+    }
+
+    /// True if the index in `directory` decrypts with `masterKey`. Used to find the decoy vault, whose
+    /// directory name changes when its pattern changes but whose master key does not.
+    nonisolated static func indexOpens(directory: URL, vaultID: String, masterKey: SymmetricKey) -> Bool {
+        guard let sealed = try? Data(contentsOf: directory.appending(path: indexFileName)) else { return false }
+        let key = VaultCrypto.deriveKey(from: masterKey, purpose: .metadata)
+        return (try? VaultCrypto.open(sealed, using: key, authenticating: indexAAD(vaultID))) != nil
+    }
+
     // MARK: Private
 
     private func saveIndex() throws {

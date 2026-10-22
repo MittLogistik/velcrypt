@@ -83,6 +83,7 @@ final class VaultSession {
         VaultBackup.purgeTemporaryFiles()
 
         self.phase = keyring.isSetUp ? .locked : .onboarding
+        try? keyring.ensureDuressRecord()
         self.autoLockDelay = AutoLockDelay(rawValue: defaults.integer(forKey: DefaultsKey.autoLock)) ?? .immediately
     }
 
@@ -119,10 +120,14 @@ final class VaultSession {
     // MARK: Unlock
 
     /// Opens the vault belonging to `pattern`, or an empty in-memory vault if none exists yet.
+    /// The duress pattern instead opens its decoy vault after deleting every other vault.
     func unlock(pattern: UnlockPattern) async throws {
         let keyring = keyring, files = files
         let opened = try await Task.detached(priority: .userInitiated) {
             let credentials = try keyring.credentials(for: pattern)
+            if let decoyKey = keyring.duressDecoyKey(for: credentials) {
+                return try Self.triggerDuress(credentials: credentials, decoyKey: decoyKey, files: files)
+            }
             return OpenVault(credentials: credentials, masterKey: try Self.loadMasterKey(credentials, files: files))
         }.value
         activate(opened)
@@ -200,7 +205,8 @@ final class VaultSession {
 
     // MARK: Management
 
-    /// Moves the open vault to a new pattern. Fails with `.patternInUse` if that pattern already has a vault.
+    /// Moves the open vault to a new pattern. Fails with `.patternInUse` if that pattern already has a vault
+    /// or is the duress pattern.
     func changePattern(to newPattern: UnlockPattern) async throws {
         guard let vault = openVault else { throw VaultError.locked }
         let masterKey = try await masterKeyForWriting()
@@ -208,7 +214,9 @@ final class VaultSession {
         let newCredentials = try await Task.detached(priority: .userInitiated) {
             let credentials = try keyring.credentials(for: newPattern)
             guard credentials.vaultID != oldID else { return credentials }
-            guard !files.vaultExists(credentials.vaultID) else { throw VaultError.patternInUse }
+            guard !files.vaultExists(credentials.vaultID), keyring.duressDecoyKey(for: credentials) == nil else {
+                throw VaultError.patternInUse
+            }
             let record = try Self.wrap(masterKey, with: credentials)
             try files.rekey(from: oldID, to: credentials.vaultID, newRecord: record)
             return credentials
@@ -216,6 +224,50 @@ final class VaultSession {
         // The vault directory moved, so the library must reopen it at its new location.
         activate(OpenVault(credentials: newCredentials, masterKey: masterKey))
         await library?.load()
+    }
+
+    // MARK: Duress
+
+    /// Makes `pattern` the duress pattern, with the open vault as its decoy. Replaces any earlier duress pattern.
+    /// The open vault must already be saved, and the pattern must not open any vault.
+    func setDuressPattern(_ pattern: UnlockPattern) async throws {
+        guard let vault = openVault, let masterKey = vault.masterKey, let library else { throw VaultError.locked }
+        // The decoy is found by its index, so make sure there is one.
+        try await library.prepareAsDecoy()
+        let keyring = keyring, files = files, currentID = vault.credentials.vaultID
+        try await Task.detached(priority: .userInitiated) {
+            let credentials = try keyring.credentials(for: pattern)
+            guard credentials.vaultID != currentID, !files.vaultExists(credentials.vaultID) else {
+                throw VaultError.patternInUse
+            }
+            try keyring.setDuress(decoyMasterKey: masterKey, credentials: credentials)
+        }.value
+    }
+
+    /// Turns the duress pattern off if `pattern` is it. Returns false if it isn't, and changes nothing.
+    func removeDuressPattern(_ pattern: UnlockPattern) async throws -> Bool {
+        let keyring = keyring
+        return try await Task.detached(priority: .userInitiated) {
+            let credentials = try keyring.credentials(for: pattern)
+            guard keyring.duressDecoyKey(for: credentials) != nil else { return false }
+            try keyring.clearDuress()
+            return true
+        }.value
+    }
+
+    /// Deletes every vault except the decoy and opens the decoy. The decoy is the vault whose index opens
+    /// with the stored master key. If it no longer exists, every vault is deleted and an empty vault opens,
+    /// exactly as for any new pattern.
+    nonisolated private static func triggerDuress(credentials: VaultCredentials, decoyKey: SymmetricKey, files: VaultFileStore) throws -> OpenVault {
+        let decoyID = files.vaultIDs().first { id in
+            VaultStore.indexOpens(directory: files.directory(for: id), vaultID: id, masterKey: decoyKey)
+        }
+        try files.deleteVaults(except: decoyID)
+        guard let decoyID else {
+            return OpenVault(credentials: credentials, masterKey: nil)
+        }
+        let decoy = VaultCredentials(vaultID: decoyID, wrappingKey: credentials.wrappingKey, duressKey: credentials.duressKey)
+        return OpenVault(credentials: decoy, masterKey: decoyKey)
     }
 
     /// Permanently deletes the open vault and locks.

@@ -101,14 +101,25 @@ trailer   manifest length u64
   counts damaged items as failed without stopping.
 * A forgotten backup password cannot be recovered.
 
-## Duress pattern (planned, Premium)
+## Duress pattern (Premium)
 
-A designated pattern that opens a chosen vault and silently deletes the key
-records of all other vaults on the device. Planned design:
-* The Keychain always holds a fixed-size duress record, filled with random bytes
-  when no duress pattern is set, so its presence reveals nothing.
-* The record holds an HKDF tag derived from the duress pattern's root key and is
-  checked on every unlock.
+A separate pattern that opens a chosen decoy vault and silently and permanently deletes every other
+vault on the device (`DuressRecord`, `VaultSession.triggerDuress`).
+
+* Every pattern's root key also yields `duressKey = HKDF(root, "velcrypt.duress.v1")`.
+* The Keychain always holds a fixed-size record (`duress.v1`, 60 bytes). With a duress pattern set,
+  the record is AES-GCM(duressKey, decoy master key). Without one, it is random bytes. Only the duress
+  pattern can tell the two apart, and the app never shows whether one is set.
+* Every unlock tries to open the record with the drawn pattern's duress key. That is one AES-GCM
+  operation after the PBKDF2 that runs anyway, so unlock timing doesn't change.
+* On a match, the decoy is the vault whose index decrypts with the stored master key. This survives a
+  pattern change of the decoy, which renames its directory but keeps its master key. Every other vault
+  directory is deleted and the decoy opens. If the decoy no longer exists, every vault is deleted and an
+  empty vault opens, as for any new pattern.
+* Setting up requires a saved vault and a pattern that opens no vault. A vault's pattern can't be changed
+  to the duress pattern. Setting up a new duress pattern replaces the old one. Turning it off requires
+  drawing it, which overwrites the record with random bytes.
+* The duress pattern keeps working after a subscription lapses. Only setting it up needs Premium.
 
 ## Fresh install detection
 
@@ -125,7 +136,7 @@ Keychain items survive app deletion. On the first launch after an install
 * **Deniability is not perfect.** A forensic examination of the file system can
   count vault directories and see which ones contain data. What it cannot do is
   link a directory to a pattern or decrypt it.
-* The duress wipe will remove key records. Flash storage gives no guarantee that
+* The duress wipe deletes vault directories. Flash storage gives no guarantee that
   deleted bytes are physically erased.
 * Imported originals stay in the Photos library and its iCloud backups until the
   user deletes them.

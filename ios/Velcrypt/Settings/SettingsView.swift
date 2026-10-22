@@ -36,6 +36,11 @@ struct SettingsView: View {
                     } label: {
                         Label("Change This Vault's Pattern", systemImage: "circle.grid.3x3.fill")
                     }
+                    NavigationLink {
+                        DuressSettingsView()
+                    } label: {
+                        Label("Duress Pattern", systemImage: "exclamationmark.shield.fill")
+                    }
                     Button {
                         dismiss()
                         session.lock()
@@ -181,7 +186,7 @@ struct SettingsView: View {
                             Text("Upgrade to Premium")
                                 .font(VCFont.headline)
                                 .foregroundStyle(VCColor.textPrimary)
-                            Text("Unlimited items, more vaults and app icons.")
+                            Text("Unlimited items, more vaults, duress pattern and app icons.")
                                 .font(VCFont.caption)
                                 .foregroundStyle(VCColor.textSecondary)
                         }

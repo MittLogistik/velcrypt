@@ -20475,6 +20475,1926 @@
           }
         }
       }
+    },
+    "Duress Pattern" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Patrón de coacción"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Notfallmuster"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Schéma de contrainte"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Padrão de Coação"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "緊急用パターン"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "비상 패턴"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "胁迫图案"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sequenza di emergenza"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Noodpatroon"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nödmönster"
+          }
+        }
+      }
+    },
+    "For When You're Forced" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Para cuando te obliguen"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Für den Ernstfall"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Si l’on vous y contraint"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Para Quando Você For Forçado"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "強要されたときのために"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "강요받을 때를 위해"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "被迫时使用"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Per quando sei costretto"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Voor als je gedwongen wordt"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "När någon tvingar dig"
+          }
+        }
+      }
+    },
+    "If someone makes you open Velcrypt, draw your duress pattern instead of your real one." : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Si alguien te obliga a abrir Velcrypt, dibuja tu patrón de coacción en lugar del real."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wenn dich jemand zwingt, Velcrypt zu öffnen, zeichne dein Notfallmuster statt deines echten Musters."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Si quelqu’un vous force à ouvrir Velcrypt, tracez votre schéma de contrainte au lieu du vrai."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Se alguém obrigar você a abrir o Velcrypt, desenhe seu padrão de coação em vez do verdadeiro."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "誰かにVelcryptを開くよう強要されたら、本当のパターンの代わりに緊急用パターンを描きます。"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "누군가 Velcrypt를 열라고 강요하면 실제 패턴 대신 비상 패턴을 그리세요."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "如果有人逼你打开 Velcrypt，请绘制胁迫图案，而不是真正的图案。"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Se qualcuno ti costringe ad aprire Velcrypt, traccia la sequenza di emergenza invece di quella vera."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Als iemand je dwingt Velcrypt te openen, teken je je noodpatroon in plaats van je echte patroon."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Om någon tvingar dig att öppna Velcrypt ritar du ditt nödmönster i stället för ditt riktiga."
+          }
+        }
+      }
+    },
+    "Opens This Vault" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Abre esta bóveda"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Öffnet diesen Tresor"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ouvre ce coffre"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Abre Este Cofre"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "この保管庫が開きます"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "이 금고가 열립니다"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "打开此保险库"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apre questa cassaforte"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Opent deze kluis"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Öppnar det här valvet"
+          }
+        }
+      }
+    },
+    "The duress pattern opens the vault you set it up in, so fill this one with harmless photos." : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "El patrón de coacción abre la bóveda en la que lo configuras, así que llénala de fotos inofensivas."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Das Notfallmuster öffnet den Tresor, in dem du es einrichtest. Füll diesen also mit harmlosen Fotos."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Le schéma de contrainte ouvre le coffre dans lequel vous le configurez : remplissez celui-ci de photos anodines."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O padrão de coação abre o cofre em que você o configura, então encha este com fotos inofensivas."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "緊急用パターンは、設定した保管庫を開きます。この保管庫には当たり障りのない写真を入れておきましょう。"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "비상 패턴은 설정한 금고를 엽니다. 이 금고에는 무해한 사진을 넣어 두세요."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "胁迫图案会打开你设置它时所在的保险库，所以请在这里放一些无关紧要的照片。"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La sequenza di emergenza apre la cassaforte in cui la configuri, quindi riempi questa di foto innocue."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Het noodpatroon opent de kluis waarin je het instelt, dus vul deze met onschuldige foto’s."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nödmönstret öppnar valvet du ställer in det i, så fyll det här med harmlösa bilder."
+          }
+        }
+      }
+    },
+    "Deletes Every Other Vault" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Elimina todas las demás bóvedas"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Löscht alle anderen Tresore"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supprime tous les autres coffres"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apaga Todos os Outros Cofres"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ほかの保管庫はすべて削除"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "다른 모든 금고 삭제"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "删除所有其他保险库"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Elimina tutte le altre casseforti"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Verwijdert alle andere kluizen"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Raderar alla andra valv"
+          }
+        }
+      }
+    },
+    "At the same moment, every other vault on this iPhone is permanently deleted. Nothing on screen shows it happened." : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "En ese mismo momento, todas las demás bóvedas de este iPhone se eliminan de forma permanente. Nada en la pantalla indica que haya ocurrido."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Im selben Moment werden alle anderen Tresore auf diesem iPhone endgültig gelöscht. Auf dem Bildschirm deutet nichts darauf hin."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Au même instant, tous les autres coffres de cet iPhone sont définitivement supprimés. Rien à l’écran ne le montre."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No mesmo instante, todos os outros cofres deste iPhone são apagados permanentemente. Nada na tela mostra que isso aconteceu."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "同時に、このiPhone上のほかの保管庫はすべて完全に削除されます。画面には何の変化も表示されません。"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "동시에 이 iPhone의 다른 모든 금고가 영구적으로 삭제됩니다. 화면에는 아무 표시도 나타나지 않습니다."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "与此同时，此 iPhone 上的所有其他保险库都会被永久删除。屏幕上不会有任何迹象。"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nello stesso momento, tutte le altre casseforti su questo iPhone vengono eliminate definitivamente. Sullo schermo non appare nulla."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Op hetzelfde moment worden alle andere kluizen op deze iPhone definitief verwijderd. Niets op het scherm laat zien dat het gebeurd is."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "I samma ögonblick raderas alla andra valv på den här iPhonen permanent. Inget på skärmen visar att det har hänt."
+          }
+        }
+      }
+    },
+    "Set Up Duress Pattern" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Configurar patrón de coacción"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Notfallmuster einrichten"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Configurer le schéma de contrainte"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Configurar Padrão de Coação"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "緊急用パターンを設定"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "비상 패턴 설정"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "设置胁迫图案"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Configura sequenza di emergenza"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stel noodpatroon in"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ställ in nödmönster"
+          }
+        }
+      }
+    },
+    "Turn Off Duress Pattern" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Desactivar patrón de coacción"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Notfallmuster deaktivieren"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Désactiver le schéma de contrainte"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Desativar Padrão de Coação"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "緊急用パターンをオフにする"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "비상 패턴 끄기"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "关闭胁迫图案"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Disattiva sequenza di emergenza"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Schakel noodpatroon uit"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stäng av nödmönster"
+          }
+        }
+      }
+    },
+    "For your safety, Velcrypt never shows whether a duress pattern is set. Setting up a new one replaces the old one. Deleted vaults can't be recovered, except from an encrypted backup." : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Por tu seguridad, Velcrypt nunca muestra si hay un patrón de coacción configurado. Configurar uno nuevo sustituye al anterior. Las bóvedas eliminadas no se pueden recuperar, salvo desde una copia de seguridad cifrada."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zu deiner Sicherheit zeigt Velcrypt nie an, ob ein Notfallmuster eingerichtet ist. Ein neues ersetzt das alte. Gelöschte Tresore lassen sich nur aus einem verschlüsselten Backup wiederherstellen."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pour votre sécurité, Velcrypt n’indique jamais si un schéma de contrainte est configuré. En configurer un nouveau remplace l’ancien. Les coffres supprimés ne peuvent être récupérés qu’à partir d’une sauvegarde chiffrée."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Para sua segurança, o Velcrypt nunca mostra se há um padrão de coação configurado. Configurar um novo substitui o anterior. Cofres apagados não podem ser recuperados, exceto a partir de um backup criptografado."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "安全のため、Velcryptは緊急用パターンが設定されているかどうかを表示しません。新しく設定すると以前のものは置き換えられます。削除された保管庫は、暗号化されたバックアップからしか復元できません。"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "안전을 위해 Velcrypt는 비상 패턴이 설정되어 있는지 표시하지 않습니다. 새로 설정하면 이전 패턴은 대체됩니다. 삭제된 금고는 암호화된 백업에서만 복원할 수 있습니다."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "为了你的安全，Velcrypt 从不显示是否已设置胁迫图案。设置新图案会替换旧图案。已删除的保险库无法恢复，除非你有加密备份。"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Per la tua sicurezza, Velcrypt non mostra mai se è impostata una sequenza di emergenza. Configurarne una nuova sostituisce la precedente. Le casseforti eliminate non possono essere recuperate, se non da un backup cifrato."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Voor je veiligheid laat Velcrypt nooit zien of er een noodpatroon is ingesteld. Een nieuw patroon vervangt het oude. Verwijderde kluizen kunnen alleen worden hersteld uit een versleutelde back-up."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "För din säkerhet visar Velcrypt aldrig om ett nödmönster är inställt. Ställer du in ett nytt ersätter det det gamla. Raderade valv kan inte återställas, utom från en krypterad säkerhetskopia."
+          }
+        }
+      }
+    },
+    "Add Something First" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Añade algo primero"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Füge zuerst etwas hinzu"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ajoutez d’abord du contenu"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adicione Algo Primeiro"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "先に項目を追加してください"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "먼저 항목을 추가하세요"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "请先添加内容"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aggiungi prima qualcosa"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Voeg eerst iets toe"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lägg till något först"
+          }
+        }
+      }
+    },
+    "The duress pattern opens this vault, so it needs to be saved first. Add a few harmless photos, then try again." : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "El patrón de coacción abre esta bóveda, así que primero tiene que guardarse. Añade algunas fotos inofensivas e inténtalo de nuevo."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Das Notfallmuster öffnet diesen Tresor, daher muss er zuerst gespeichert sein. Füge ein paar harmlose Fotos hinzu und versuche es erneut."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Le schéma de contrainte ouvre ce coffre : il doit donc d’abord être enregistré. Ajoutez quelques photos anodines, puis réessayez."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O padrão de coação abre este cofre, então ele precisa ser salvo primeiro. Adicione algumas fotos inofensivas e tente novamente."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "緊急用パターンはこの保管庫を開くため、先に保存されている必要があります。当たり障りのない写真をいくつか追加してから、もう一度お試しください。"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "비상 패턴은 이 금고를 열기 때문에 먼저 저장되어 있어야 합니다. 무해한 사진을 몇 장 추가한 후 다시 시도하세요."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "胁迫图案会打开此保险库，因此需要先保存它。请添加几张无关紧要的照片，然后重试。"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La sequenza di emergenza apre questa cassaforte, quindi prima deve essere salvata. Aggiungi qualche foto innocua e riprova."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Het noodpatroon opent deze kluis, dus die moet eerst worden bewaard. Voeg een paar onschuldige foto’s toe en probeer het opnieuw."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nödmönstret öppnar det här valvet, så det måste sparas först. Lägg till några harmlösa bilder och försök igen."
+          }
+        }
+      }
+    },
+    "Turn on the duress pattern?" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "¿Activar el patrón de coacción?"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Notfallmuster aktivieren?"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Activer le schéma de contrainte ?"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ativar o padrão de coação?"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "緊急用パターンをオンにしますか？"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "비상 패턴을 켜시겠습니까?"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "要开启胁迫图案吗？"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Attivare la sequenza di emergenza?"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Noodpatroon inschakelen?"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Slå på nödmönstret?"
+          }
+        }
+      }
+    },
+    "Turn On" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Activar"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aktivieren"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Activer"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ativar"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "オンにする"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "켜기"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "开启"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Attiva"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Schakel in"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Slå på"
+          }
+        }
+      }
+    },
+    "Drawing it on the lock screen opens this vault and permanently deletes every other vault on this iPhone." : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dibujarlo en la pantalla de bloqueo abre esta bóveda y elimina de forma permanente todas las demás bóvedas de este iPhone."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wenn du es auf dem Sperrbildschirm zeichnest, öffnet sich dieser Tresor und alle anderen Tresore auf diesem iPhone werden endgültig gelöscht."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Le tracer sur l’écran de verrouillage ouvre ce coffre et supprime définitivement tous les autres coffres de cet iPhone."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Desenhá-lo na tela de bloqueio abre este cofre e apaga permanentemente todos os outros cofres deste iPhone."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ロック画面で描くとこの保管庫が開き、このiPhone上のほかの保管庫はすべて完全に削除されます。"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "잠금 화면에서 그리면 이 금고가 열리고 이 iPhone의 다른 모든 금고가 영구적으로 삭제됩니다."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在锁定屏幕上绘制它会打开此保险库，并永久删除此 iPhone 上的所有其他保险库。"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tracciarla nella schermata di blocco apre questa cassaforte ed elimina definitivamente tutte le altre casseforti su questo iPhone."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Als je het op het toegangsscherm tekent, opent deze kluis en worden alle andere kluizen op deze iPhone definitief verwijderd."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ritar du det på låsskärmen öppnas det här valvet och alla andra valv på den här iPhonen raderas permanent."
+          }
+        }
+      }
+    },
+    "Duress Pattern On" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Patrón de coacción activado"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Notfallmuster aktiviert"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Schéma de contrainte activé"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Padrão de Coação Ativado"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "緊急用パターンはオンです"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "비상 패턴 켜짐"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "胁迫图案已开启"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sequenza di emergenza attivata"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Noodpatroon ingeschakeld"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nödmönstret är på"
+          }
+        }
+      }
+    },
+    "Duress Pattern Off" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Patrón de coacción desactivado"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Notfallmuster deaktiviert"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Schéma de contrainte désactivé"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Padrão de Coação Desativado"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "緊急用パターンはオフです"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "비상 패턴 꺼짐"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "胁迫图案已关闭"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sequenza di emergenza disattivata"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Noodpatroon uitgeschakeld"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nödmönstret är av"
+          }
+        }
+      }
+    },
+    "Practise it in your head, not on the lock screen: drawing it deletes your other vaults." : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Practícalo mentalmente, no en la pantalla de bloqueo: dibujarlo elimina tus otras bóvedas."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Übe es im Kopf, nicht auf dem Sperrbildschirm: Wenn du es zeichnest, werden deine anderen Tresore gelöscht."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Entraînez-vous mentalement, pas sur l’écran de verrouillage : le tracer supprime vos autres coffres."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pratique mentalmente, não na tela de bloqueio: desenhá-lo apaga seus outros cofres."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "練習は頭の中だけで。ロック画面で描くと、ほかの保管庫が削除されます。"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "연습은 머릿속으로만 하세요. 잠금 화면에서 그리면 다른 금고가 삭제됩니다."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "请在脑中练习，不要在锁定屏幕上试：绘制它会删除你的其他保险库。"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Esercitati a mente, non nella schermata di blocco: tracciarla elimina le altre casseforti."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Oefen het in je hoofd, niet op het toegangsscherm: tekenen verwijdert je andere kluizen."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Öva i huvudet, inte på låsskärmen: ritar du det raderas dina andra valv."
+          }
+        }
+      }
+    },
+    "The duress pattern no longer does anything." : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "El patrón de coacción ya no hace nada."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Das Notfallmuster hat keine Wirkung mehr."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Le schéma de contrainte n’a plus aucun effet."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O padrão de coação não faz mais nada."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "緊急用パターンは何も起こさなくなりました。"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "비상 패턴이 더 이상 작동하지 않습니다."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "胁迫图案已不再起作用。"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La sequenza di emergenza non ha più alcun effetto."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Het noodpatroon doet niets meer."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nödmönstret gör inte längre något."
+          }
+        }
+      }
+    },
+    "Draw a duress pattern" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dibuja un patrón de coacción"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zeichne ein Notfallmuster"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tracez un schéma de contrainte"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Desenhe um padrão de coação"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "緊急用パターンを描いてください"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "비상 패턴을 그리세요"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "绘制胁迫图案"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Traccia una sequenza di emergenza"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Teken een noodpatroon"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rita ett nödmönster"
+          }
+        }
+      }
+    },
+    "Draw your duress pattern" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dibuja tu patrón de coacción"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zeichne dein Notfallmuster"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tracez votre schéma de contrainte"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Desenhe seu padrão de coação"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "緊急用パターンを描いてください"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "비상 패턴을 그리세요"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "绘制你的胁迫图案"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Traccia la tua sequenza di emergenza"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Teken je noodpatroon"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rita ditt nödmönster"
+          }
+        }
+      }
+    },
+    "Use a pattern that's different from all your vault patterns." : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Usa un patrón distinto de todos los patrones de tus bóvedas."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Verwende ein Muster, das sich von all deinen Tresormustern unterscheidet."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Utilisez un schéma différent de tous ceux de vos coffres."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Use um padrão diferente de todos os padrões dos seus cofres."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "どの保管庫のパターンとも違うパターンにしてください。"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "모든 금고 패턴과 다른 패턴을 사용하세요."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "请使用与所有保险库图案都不同的图案。"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Usa una sequenza diversa da tutte quelle delle tue casseforti."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gebruik een patroon dat verschilt van al je kluispatronen."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Använd ett mönster som skiljer sig från alla dina valvmönster."
+          }
+        }
+      }
+    },
+    "Drawing it here only turns it off. Nothing is deleted." : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dibujarlo aquí solo lo desactiva. No se elimina nada."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hier gezeichnet, wird es nur deaktiviert. Es wird nichts gelöscht."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Le tracer ici ne fait que le désactiver. Rien n’est supprimé."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Desenhá-lo aqui apenas o desativa. Nada é apagado."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ここで描いてもオフになるだけで、何も削除されません。"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "여기서 그리면 꺼지기만 하고 아무것도 삭제되지 않습니다."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在这里绘制只会将其关闭，不会删除任何内容。"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tracciarla qui la disattiva soltanto. Non viene eliminato nulla."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hier tekenen schakelt het alleen uit. Er wordt niets verwijderd."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ritar du det här stängs det bara av. Inget raderas."
+          }
+        }
+      }
+    },
+    "That pattern opens a vault. Choose a pattern you don't use for any vault." : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ese patrón abre una bóveda. Elige uno que no uses para ninguna bóveda."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dieses Muster öffnet einen Tresor. Wähle eines, das du für keinen Tresor verwendest."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ce schéma ouvre un coffre. Choisissez-en un que vous n’utilisez pour aucun coffre."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Esse padrão abre um cofre. Escolha um que você não use para nenhum cofre."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "そのパターンは保管庫を開きます。どの保管庫にも使っていないパターンを選んでください。"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "이 패턴은 금고를 엽니다. 어떤 금고에도 사용하지 않는 패턴을 선택하세요."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "该图案会打开一个保险库。请选择一个没有用于任何保险库的图案。"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Questa sequenza apre una cassaforte. Scegline una che non usi per nessuna cassaforte."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dit patroon opent een kluis. Kies een patroon dat je voor geen enkele kluis gebruikt."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Det mönstret öppnar ett valv. Välj ett mönster som du inte använder för något valv."
+          }
+        }
+      }
+    },
+    "The duress pattern couldn't be set. Please try again." : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No se pudo configurar el patrón de coacción. Inténtalo de nuevo."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Das Notfallmuster konnte nicht eingerichtet werden. Bitte versuche es erneut."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Impossible de configurer le schéma de contrainte. Veuillez réessayer."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Não foi possível configurar o padrão de coação. Tente novamente."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "緊急用パターンを設定できませんでした。もう一度お試しください。"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "비상 패턴을 설정할 수 없습니다. 다시 시도하세요."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "无法设置胁迫图案。请重试。"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Impossibile configurare la sequenza di emergenza. Riprova."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Het noodpatroon kon niet worden ingesteld. Probeer het opnieuw."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nödmönstret kunde inte ställas in. Försök igen."
+          }
+        }
+      }
+    },
+    "That isn't the duress pattern." : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ese no es el patrón de coacción."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Das ist nicht das Notfallmuster."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ce n’est pas le schéma de contrainte."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Esse não é o padrão de coação."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "それは緊急用パターンではありません。"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "비상 패턴이 아닙니다."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "这不是胁迫图案。"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Questa non è la sequenza di emergenza."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dat is niet het noodpatroon."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Det är inte nödmönstret."
+          }
+        }
+      }
+    },
+    "The duress pattern couldn't be turned off. Please try again." : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No se pudo desactivar el patrón de coacción. Inténtalo de nuevo."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Das Notfallmuster konnte nicht deaktiviert werden. Bitte versuche es erneut."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Impossible de désactiver le schéma de contrainte. Veuillez réessayer."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Não foi possível desativar o padrão de coação. Tente novamente."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "緊急用パターンをオフにできませんでした。もう一度お試しください。"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "비상 패턴을 끌 수 없습니다. 다시 시도하세요."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "无法关闭胁迫图案。请重试。"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Impossibile disattivare la sequenza di emergenza. Riprova."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Het noodpatroon kon niet worden uitgeschakeld. Probeer het opnieuw."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nödmönstret kunde inte stängas av. Försök igen."
+          }
+        }
+      }
+    },
+    "The duress pattern is part of Premium." : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "El patrón de coacción forma parte de Premium."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Das Notfallmuster ist Teil von Premium."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Le schéma de contrainte fait partie de Premium."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O padrão de coação faz parte do Premium."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "緊急用パターンはプレミアムの機能です。"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "비상 패턴은 프리미엄 기능입니다."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "胁迫图案是高级版功能。"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La sequenza di emergenza fa parte di Premium."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Het noodpatroon hoort bij Premium."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nödmönstret ingår i Premium."
+          }
+        }
+      }
+    },
+    "A separate pattern that opens a decoy vault and permanently deletes all the others." : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Un patrón aparte que abre una bóveda señuelo y elimina de forma permanente todas las demás."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ein eigenes Muster, das einen Täuschungstresor öffnet und alle anderen endgültig löscht."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Un schéma distinct qui ouvre un coffre leurre et supprime définitivement tous les autres."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Um padrão separado que abre um cofre de disfarce e apaga permanentemente todos os outros."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ダミーの保管庫を開き、ほかの保管庫をすべて完全に削除する専用のパターン。"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "위장 금고를 열고 나머지 금고를 모두 영구적으로 삭제하는 별도의 패턴."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "一个独立的图案，会打开伪装保险库并永久删除所有其他保险库。"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Una sequenza separata che apre una cassaforte civetta ed elimina definitivamente tutte le altre."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Een apart patroon dat een afleidingskluis opent en alle andere definitief verwijdert."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ett separat mönster som öppnar ett skenvalv och raderar alla andra permanent."
+          }
+        }
+      }
+    },
+    "Unlimited items, more vaults, duress pattern and app icons." : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Elementos ilimitados, más bóvedas, patrón de coacción e iconos de la app."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Unbegrenzt viele Objekte, mehr Tresore, Notfallmuster und App-Symbole."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Éléments illimités, plus de coffres, schéma de contrainte et icônes d’app."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Itens ilimitados, mais cofres, padrão de coação e ícones do app."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "項目数無制限、複数の保管庫、緊急用パターン、Appアイコン。"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "무제한 항목, 더 많은 금고, 비상 패턴, 앱 아이콘."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "无限项目、更多保险库、胁迫图案和 App 图标。"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Elementi illimitati, più casseforti, sequenza di emergenza e icone dell’app."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Onbeperkt onderdelen, meer kluizen, noodpatroon en appsymbolen."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Obegränsat antal objekt, fler valv, nödmönster och appsymboler."
+          }
+        }
+      }
     }
   },
   "version" : "1.0"
