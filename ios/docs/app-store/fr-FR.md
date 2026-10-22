@@ -8,7 +8,7 @@
 | Subtitle | 30 | 23 |
 | Keywords | 100 | 98 |
 | Promotional text | 170 | 167 |
-| Description | 4,000 | 2,851 |
+| Description | 4,000 | 3,160 |
 | What's New | 4,000 | 171 |
 
 **Search phrases targeted:** Targets "coffre-fort photo", "cacher photos" (name and subtitle combine), "cacher vidéos", "masquer photos", "album secret", "photos privées", "galerie cachée", "photos chiffrées" and "verrouiller photos".
@@ -37,7 +37,7 @@ secret,album,privé,chiffré,sécurisé,galerie,masquer,caché,cadenas,schéma,d
 Dessinez un schéma, ouvrez votre coffre. Chaque schéma ouvre son propre coffre chiffré. Sans compte ni cloud : tout reste sur l’iPhone, avec des sauvegardes chiffrées.
 ```
 
-## Description (2,851/4,000)
+## Description (3,160/4,000)
 
 ```
 Velcrypt est un coffre privé pour les photos, vidéos, documents et notes que personne d’autre ne doit voir. Tout est chiffré sur votre iPhone en AES-256-GCM. Pas de compte. Pas de cloud. Pas de pistage.
@@ -47,6 +47,9 @@ Vous déverrouillez Velcrypt en dessinant un schéma sur une grille de 5×5 poin
 
 GARDEZ UN COFFRE LEURRE (PREMIUM)
 Remplissez un second coffre de photos anodines. Si l’on vous pousse un jour à ouvrir l’app, dessinez ce schéma-là.
+
+SCHÉMA DE CONTRAINTE (PREMIUM)
+Définissez un schéma de contrainte distinct dans votre coffre leurre. Le dessiner ouvre le coffre leurre et supprime, discrètement et définitivement, tous les autres coffres de l’iPhone. Velcrypt n’indique jamais si un schéma de contrainte est défini.
 
 CHIFFRÉ SUR VOTRE IPHONE
 • Chiffrement AES-256-GCM pour chaque photo, vidéo, document et note
@@ -71,7 +74,7 @@ DÉGUISEZ L’APP (PREMIUM)
 Remplacez l’icône de l’écran d’accueil par une calculatrice, un minuteur, une règle et bien d’autres.
 
 VELCRYPT PREMIUM
-La version gratuite comprend un coffre de 50 éléments au maximum. Premium débloque les éléments illimités, des coffres supplémentaires et des icônes d’app alternatives.
+La version gratuite comprend un coffre de 50 éléments au maximum. Premium débloque les éléments illimités, des coffres supplémentaires, le schéma de contrainte et des icônes d’app alternatives.
 • Choisissez un abonnement hebdomadaire ou annuel (l’abonnement annuel commence par un essai gratuit) ou un achat unique à vie.
 • Le paiement est débité de votre compte Apple. Les abonnements se renouvellent automatiquement, sauf résiliation au moins 24 heures avant la fin de la période en cours. Gérez-les ou résiliez-les dans les réglages de votre compte Apple.
 • Conditions d’utilisation : https://velcrypt.app/terms/

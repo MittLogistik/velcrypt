@@ -8,7 +8,7 @@
 | Subtitle | 30 | 26 |
 | Keywords | 100 | 94 |
 | Promotional text | 170 | 169 |
-| Description | 4,000 | 2,546 |
+| Description | 4,000 | 2,776 |
 | What's New | 4,000 | 176 |
 
 **Search phrases targeted:** Targets "dölj bilder", "dölja bilder", "gömma bilder", "fotovalv", "hemligt album", "dölja video", "låsa bilder", "privata bilder" and "dolt album". "valv" and "foto" are listed separately because Apple does not split the compound "fotovalv".
@@ -37,7 +37,7 @@ gömma,hemlig,album,valv,säker,lås,galleri,skydda,dold,mönster,dokument,fil,f
 Rita ett mönster och öppna ditt valv. Varje mönster öppnar ett eget krypterat valv. Inget konto, inget moln – allt stannar på din iPhone, med krypterade säkerhetskopior.
 ```
 
-## Description (2,546/4,000)
+## Description (2,776/4,000)
 
 ```
 Velcrypt är ett privat valv för bilder, videor, dokument och anteckningar som ingen annan ska se. Allt krypteras på din iPhone med AES-256-GCM. Inget konto. Inget moln. Ingen spårning.
@@ -47,6 +47,9 @@ Du låser upp Velcrypt genom att rita ett mönster på ett rutnät med 5×5 punk
 
 HA ETT SKENVALV (PREMIUM)
 Fyll ett andra valv med harmlösa bilder. Om någon pressar dig att öppna appen ritar du det mönstret.
+
+NÖDMÖNSTER (PREMIUM)
+Ställ in ett separat nödmönster i ditt skenvalv. När du ritar det öppnas skenvalvet och alla andra valv på iPhonen raderas tyst och permanent. Velcrypt visar aldrig om ett nödmönster är inställt.
 
 KRYPTERAT PÅ DIN IPHONE
 • AES-256-GCM-kryptering för varje bild, video, dokument och anteckning
@@ -71,7 +74,7 @@ FÖRKLÄD APPEN (PREMIUM)
 Byt symbolen på hemskärmen mot en miniräknare, en timer, en linjal med mera.
 
 VELCRYPT PREMIUM
-Gratisversionen har ett valv med upp till 50 objekt. Premium ger obegränsat antal objekt, fler valv och alternativa appsymboler.
+Gratisversionen har ett valv med upp till 50 objekt. Premium ger obegränsat antal objekt, fler valv, nödmönster och alternativa appsymboler.
 • Välj en vecko- eller årsprenumeration (årsprenumerationen börjar med en gratis provperiod) eller ett engångsköp som gäller livet ut.
 • Betalningen debiteras ditt Apple-konto. Prenumerationer förnyas automatiskt om de inte sägs upp minst 24 timmar innan den aktuella perioden tar slut. Hantera eller avsluta dem i inställningarna för ditt Apple-konto.
 • Användarvillkor: https://velcrypt.app/terms/

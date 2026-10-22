@@ -8,7 +8,7 @@
 | Subtitle | 30 | 25 |
 | Keywords | 100 | 98 |
 | Promotional text | 170 | 155 |
-| Description | 4,000 | 2,611 |
+| Description | 4,000 | 2,907 |
 | What's New | 4,000 | 169 |
 
 **Search phrases targeted:** Targets "cofre de fotos", "esconder fotos" (name and subtitle combine), "ocultar fotos", "galeria secreta", "álbum privado", "fotos ocultas", "bloquear fotos" and "cadeado de fotos".
@@ -37,7 +37,7 @@ ocultar,galeria,secreta,álbum,privado,seguro,criptografia,cadeado,bloquear,padr
 Desenhe um padrão e abra seu cofre. Cada padrão abre um cofre criptografado próprio. Sem conta, sem nuvem: tudo fica no iPhone, com backups criptografados.
 ```
 
-## Description (2,611/4,000)
+## Description (2,907/4,000)
 
 ```
 O Velcrypt é um cofre privado para as fotos, vídeos, documentos e notas que você não quer que mais ninguém veja. Tudo é criptografado no seu iPhone com AES-256-GCM. Sem conta. Sem nuvem. Sem rastreamento.
@@ -47,6 +47,9 @@ Você desbloqueia o Velcrypt desenhando um padrão em uma grade de 5×5 pontos. 
 
 TENHA UM COFRE DE DISFARCE (PREMIUM)
 Encha um segundo cofre com fotos inofensivas. Se algum dia pressionarem você a abrir o app, desenhe esse padrão.
+
+PADRÃO DE COAÇÃO (PREMIUM)
+Defina um padrão de coação separado no seu cofre de disfarce. Ao desenhá-lo, o cofre de disfarce é aberto e todos os outros cofres do iPhone são apagados de forma silenciosa e permanente. O Velcrypt nunca mostra se há um padrão de coação definido.
 
 CRIPTOGRAFADO NO SEU IPHONE
 • Criptografia AES-256-GCM para cada foto, vídeo, documento e nota
@@ -71,7 +74,7 @@ DISFARCE O APP (PREMIUM)
 Troque o ícone da Tela de Início por uma calculadora, um timer, uma régua e muito mais.
 
 VELCRYPT PREMIUM
-A versão gratuita inclui um cofre com até 50 itens. O Premium libera itens ilimitados, mais cofres e ícones alternativos do app.
+A versão gratuita inclui um cofre com até 50 itens. O Premium libera itens ilimitados, mais cofres, o padrão de coação e ícones alternativos do app.
 • Escolha uma assinatura semanal ou anual (o plano anual começa com um teste gratuito) ou uma compra única vitalícia.
 • O pagamento é cobrado na sua Conta Apple. As assinaturas são renovadas automaticamente, a menos que sejam canceladas pelo menos 24 horas antes do fim do período atual. Gerencie ou cancele as assinaturas nos ajustes da sua Conta Apple.
 • Termos de Uso: https://velcrypt.app/terms/

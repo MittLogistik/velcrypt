@@ -8,7 +8,7 @@
 | Subtitle | 30 | 30 |
 | Keywords | 100 | 96 |
 | Promotional text | 170 | 159 |
-| Description | 4,000 | 2,701 |
+| Description | 4,000 | 3,003 |
 | What's New | 4,000 | 176 |
 
 **Search phrases targeted:** Targets "ocultar fotos", "bóveda de fotos", "álbum secreto/privado", "esconder fotos" and "galería oculta" for Mexico and for US Spanish speakers. Because the US storefront also indexes es-MX, the keywords add two English terms that en-US does not use ("lockbox", "image") and leave out everything that is already in en-US. No keyword overlaps with en-US name, subtitle or keywords.
@@ -37,7 +37,7 @@ esconder,video,galería,candado,cifrado,caja,fuerte,patrón,documento,oculto,gua
 Dibuja un patrón y abre tu bóveda. Cada patrón abre su propia bóveda cifrada. Sin cuenta ni nube: todo se queda en tu iPhone, con copias de seguridad cifradas.
 ```
 
-## Description (2,701/4,000)
+## Description (3,003/4,000)
 
 ```
 Velcrypt es una bóveda privada para las fotos, los videos, los documentos y las notas que no quieres que vea nadie más. Todo se cifra en tu iPhone con AES-256-GCM. Sin cuenta. Sin nube. Sin rastreo.
@@ -47,6 +47,9 @@ Desbloqueas Velcrypt dibujando un patrón en una cuadrícula de 5×5 puntos. Cad
 
 TEN UNA BÓVEDA SEÑUELO (PREMIUM)
 Llena una segunda bóveda con fotos inofensivas. Si alguna vez te presionan para abrir la app, dibuja ese patrón.
+
+PATRÓN DE COACCIÓN (PREMIUM)
+Configura un patrón de coacción aparte en tu bóveda señuelo. Al dibujarlo, se abre la bóveda señuelo y se eliminan de forma silenciosa y permanente todas las demás bóvedas del iPhone. Velcrypt nunca muestra si hay un patrón de coacción configurado.
 
 CIFRADO EN TU IPHONE
 • Cifrado AES-256-GCM para cada foto, video, documento y nota
@@ -71,7 +74,7 @@ DISFRAZA LA APP (PREMIUM)
 Cambia el icono de la pantalla de inicio por una calculadora, un temporizador, una regla y más.
 
 VELCRYPT PREMIUM
-La versión gratuita incluye una bóveda con hasta 50 elementos. Premium desbloquea elementos ilimitados, más bóvedas e iconos alternativos de la app.
+La versión gratuita incluye una bóveda con hasta 50 elementos. Premium desbloquea elementos ilimitados, más bóvedas, el patrón de coacción e iconos alternativos de la app.
 • Elige una suscripción semanal o anual (el plan anual empieza con una prueba gratuita) o una compra única vitalicia.
 • El pago se carga en tu cuenta de Apple. Las suscripciones se renuevan automáticamente salvo que se cancelen al menos 24 horas antes del final del periodo actual. Gestiónalas o cancélalas en los ajustes de tu cuenta de Apple.
 • Términos de uso: https://velcrypt.app/terms/

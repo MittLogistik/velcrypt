@@ -8,7 +8,7 @@
 | Subtitle | 30 | 28 |
 | Keywords | 100 | 100 |
 | Promotional text | 170 | 167 |
-| Description | 4,000 | 2,801 |
+| Description | 4,000 | 3,133 |
 | What's New | 4,000 | 168 |
 
 **Search phrases targeted:** Targets "nascondere foto", "nascondi foto", "cassaforte foto", "foto private", "album segreto", "nascondere video", "galleria nascosta", "foto con lucchetto" and "bloccare foto".
@@ -37,7 +37,7 @@ album,segreto,video,galleria,sicuro,nascosto,proteggere,lucchetto,sequenza,docum
 Disegna una sequenza e apri la tua cassaforte. Ogni sequenza apre una cassaforte cifrata diversa. Niente account né cloud: tutto resta sull’iPhone, con backup cifrati.
 ```
 
-## Description (2,801/4,000)
+## Description (3,133/4,000)
 
 ```
 Velcrypt è una cassaforte privata per le foto, i video, i documenti e le note che non vuoi far vedere a nessuno. Tutto viene cifrato sul tuo iPhone con AES-256-GCM. Nessun account. Nessun cloud. Nessun tracciamento.
@@ -47,6 +47,9 @@ Sblocchi Velcrypt disegnando una sequenza su una griglia di 5×5 punti. Ogni seq
 
 TIENI UNA CASSAFORTE CIVETTA (PREMIUM)
 Riempi una seconda cassaforte con foto innocue. Se qualcuno ti costringe ad aprire l’app, disegna quella sequenza.
+
+SEQUENZA DI EMERGENZA (PREMIUM)
+Imposta una sequenza di emergenza separata nella tua cassaforte civetta. Disegnandola si apre la cassaforte civetta e tutte le altre casseforti sull’iPhone vengono eliminate in modo silenzioso e definitivo. Velcrypt non mostra mai se è impostata una sequenza di emergenza.
 
 CIFRATO SUL TUO IPHONE
 • Cifratura AES-256-GCM per ogni foto, video, documento e nota
@@ -71,7 +74,7 @@ TRAVESTI L’APP (PREMIUM)
 Sostituisci l’icona nella schermata Home con una calcolatrice, un timer, un righello e altro ancora.
 
 VELCRYPT PREMIUM
-La versione gratuita include una cassaforte con un massimo di 50 elementi. Premium sblocca elementi illimitati, più casseforti e icone alternative dell’app.
+La versione gratuita include una cassaforte con un massimo di 50 elementi. Premium sblocca elementi illimitati, più casseforti, la sequenza di emergenza e icone alternative dell’app.
 • Scegli un abbonamento settimanale o annuale (il piano annuale inizia con una prova gratuita) oppure un acquisto a vita una tantum.
 • Il pagamento viene addebitato sul tuo Account Apple. Gli abbonamenti si rinnovano automaticamente se non vengono annullati almeno 24 ore prima della fine del periodo in corso. Gestiscili o annullali nelle impostazioni del tuo Account Apple.
 • Termini di utilizzo: https://velcrypt.app/terms/

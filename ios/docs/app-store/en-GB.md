@@ -8,7 +8,7 @@
 | Subtitle | 30 | 28 |
 | Keywords | 100 | 98 |
 | Promotional text | 170 | 156 |
-| Description | 4,000 | 2,429 |
+| Description | 4,000 | 2,674 |
 | What's New | 4,000 | 154 |
 
 **Search phrases targeted:** Leads with "hide photos" and "hide videos", the main phrasing of the intent, so en-US ("private photo vault") and en-GB together cover both. The subtitle adds "secret vault", "private album" and "secret photo vault". The keywords add terms that are weaker in en-US: "picture", "lockbox", "image", "confidential", "storage". Overlap with en-US: safe, locker, encrypt, gallery, secure, decoy, pattern, folder.
@@ -37,7 +37,7 @@ picture,lockbox,safe,locker,encrypt,gallery,confidential,secure,decoy,pattern,im
 Draw a pattern, open your vault. Every pattern opens its own encrypted vault. No account, no cloud: everything stays on your iPhone, with encrypted backups.
 ```
 
-## Description (2,429/4,000)
+## Description (2,674/4,000)
 
 ```
 Velcrypt is a private vault for the photos, videos, documents and notes you don't want anyone else to see. Everything is encrypted on your iPhone with AES-256-GCM. No account. No cloud. No tracking.
@@ -47,6 +47,9 @@ You unlock Velcrypt by drawing a pattern on a 5×5 grid of dots. Every pattern o
 
 KEEP A DECOY (PREMIUM)
 Fill a second vault with harmless photos. If you're ever pressured to open the app, draw that pattern instead.
+
+DURESS PATTERN (PREMIUM)
+Set a separate duress pattern in your decoy vault. Drawing it opens the decoy and silently, permanently deletes every other vault on the iPhone. Velcrypt never shows whether a duress pattern is set.
 
 ENCRYPTED ON YOUR IPHONE
 • AES-256-GCM encryption for every photo, video, document and note
@@ -71,7 +74,7 @@ DISGUISE THE APP (PREMIUM)
 Swap the Home Screen icon for a calculator, a timer, a ruler and more.
 
 VELCRYPT PREMIUM
-The free version includes one vault with up to 50 items. Premium unlocks unlimited items, more vaults and alternate app icons.
+The free version includes one vault with up to 50 items. Premium unlocks unlimited items, more vaults, the duress pattern and alternate app icons.
 • Choose a weekly or yearly subscription (the yearly plan starts with a free trial) or a one-time lifetime purchase.
 • Payment is charged to your Apple Account. Subscriptions renew automatically unless cancelled at least 24 hours before the end of the current period. Manage or cancel them in your Apple Account settings.
 • Terms of Use: https://velcrypt.app/terms/

@@ -8,7 +8,7 @@
 | Subtitle | 30 | 26 |
 | Keywords | 100 | 96 |
 | Promotional text | 170 | 168 |
-| Description | 4,000 | 2,842 |
+| Description | 4,000 | 3,149 |
 | What's New | 4,000 | 182 |
 
 **Search phrases targeted:** Targets "Foto Tresor", "Fotos verstecken", "Bilder verstecken", "Videos verstecken", "geheime Fotos", "privates Album", "Foto Safe", "Fotos verschlüsseln" and "Galerie sperren".
@@ -37,7 +37,7 @@ geheim,privat,album,sicher,verschlüsselt,safe,galerie,versteckt,schützen,sperr
 Muster zeichnen, Tresor öffnen. Jedes Muster hat einen eigenen verschlüsselten Tresor. Kein Konto, keine Cloud: Alles bleibt auf dem iPhone, mit verschlüsseltem Backup.
 ```
 
-## Description (2,842/4,000)
+## Description (3,149/4,000)
 
 ```
 Velcrypt ist ein privater Tresor für Fotos, Videos, Dokumente und Notizen, die niemand sonst sehen soll. Alles wird auf deinem iPhone mit AES-256-GCM verschlüsselt. Kein Konto. Keine Cloud. Kein Tracking.
@@ -47,6 +47,9 @@ Du entsperrst Velcrypt, indem du ein Muster auf ein Raster aus 5×5 Punkten zeic
 
 TÄUSCHUNGSTRESOR (PREMIUM)
 Fülle einen zweiten Tresor mit harmlosen Fotos. Falls dich jemand drängt, die App zu öffnen, zeichnest du einfach dieses Muster.
+
+NOTFALLMUSTER (PREMIUM)
+Lege in deinem Täuschungstresor ein separates Notfallmuster fest. Wenn du es zeichnest, öffnet sich der Täuschungstresor, und alle anderen Tresore auf dem iPhone werden unbemerkt und endgültig gelöscht. Velcrypt zeigt nie an, ob ein Notfallmuster festgelegt ist.
 
 VERSCHLÜSSELT AUF DEINEM IPHONE
 • AES-256-GCM-Verschlüsselung für jedes Foto, Video, Dokument und jede Notiz
@@ -71,7 +74,7 @@ APP TARNEN (PREMIUM)
 Ersetze das Symbol auf dem Home-Bildschirm durch einen Rechner, einen Timer, ein Lineal und mehr.
 
 VELCRYPT PREMIUM
-Die kostenlose Version hat einen Tresor mit bis zu 50 Objekten. Premium bietet unbegrenzt viele Objekte, weitere Tresore und alternative App-Symbole.
+Die kostenlose Version hat einen Tresor mit bis zu 50 Objekten. Premium bietet unbegrenzt viele Objekte, weitere Tresore, das Notfallmuster und alternative App-Symbole.
 • Wähle ein Wochen- oder Jahresabo (das Jahresabo beginnt mit einer kostenlosen Testphase) oder einen einmaligen Kauf auf Lebenszeit.
 • Die Zahlung wird deinem Apple Account belastet. Abos verlängern sich automatisch, sofern sie nicht mindestens 24 Stunden vor Ende des aktuellen Zeitraums gekündigt werden. Verwalte oder kündige sie in den Einstellungen deines Apple Accounts.
 • Nutzungsbedingungen: https://velcrypt.app/terms/
