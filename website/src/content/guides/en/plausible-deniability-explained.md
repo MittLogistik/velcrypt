@@ -18,7 +18,7 @@ dateModified: 2026-10-22
 summary: "The concept behind hidden volumes and decoy vaults, how Velcrypt’s unknown-pattern design uses it, and what it honestly can’t do."
 category: security
 order: 42
-related: [what-is-a-decoy-vault, hidden-vaults, duress-pattern, aes-256-encryption-explained, phone-privacy-border-crossing, security]
+related: [what-is-a-decoy-vault, hidden-vaults, duress-pattern, duress-password-explained, self-destruct-photo-vault, aes-256-encryption-explained, phone-privacy-border-crossing, security]
 faq:
   - q: "What does plausible deniability mean in simple terms?"
     a: "It means you can credibly say “this is everything” and nobody can prove otherwise. In encryption, it is achieved by designs where hidden data is indistinguishable from empty space or from data that doesn’t exist."
@@ -60,7 +60,7 @@ Velcrypt adapts the principle to a photo and document vault on iPhone. There is 
 
 The consequence is that a wrong pattern and a valid-but-empty vault look identical. If you open a vault for someone, there is nothing in the interface that shows other vaults exist. That makes a [decoy vault](id:what-is-a-decoy-vault) a natural pattern of use rather than a special mode. The [hidden vaults](id:hidden-vaults) feature page shows how it works in practice.
 
-A [duress pattern](id:duress-pattern), planned for a future update, would extend this: a special pattern would open a chosen vault and silently remove access to the others.
+A [duress pattern](id:duress-pattern), available with Premium, extends this: one special pattern opens a decoy vault and silently, permanently deletes every other vault on the iPhone. The app never shows whether one is set, so its existence is deniable too. [Duress passwords, explained](id:duress-password-explained) puts the idea in context.
 
 ## The honest limits
 

@@ -77,7 +77,7 @@ A decoy vault is a vault filled with harmless but believable content, for exampl
 
 A decoy works best when it looks lived-in. An empty vault invites the question "why install a vault app for nothing?", while a vault with a few dozen ordinary items rarely does. The guide on [what a decoy vault is](id:what-is-a-decoy-vault) covers how to make one convincing.
 
-Velcrypt is also planning a [duress pattern](id:duress-pattern) for a future update. It is meant to go one step further than a decoy by opening a chosen vault and silently removing access to the others.
+With Premium, you can also set up a [duress pattern](id:duress-pattern) inside the decoy. It goes one step further: drawing it opens the decoy and silently, permanently deletes every other vault on the iPhone. The guide on [setting up a decoy vault and duress pattern](id:set-up-decoy-vault-and-duress-pattern) walks through it.
 
 ## How each vault stays separate
 

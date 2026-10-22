@@ -8,7 +8,7 @@ answer: "Calculator vault apps disguise themselves as a working calculator and o
 keyFacts:
   - "Calculator vault apps look and work like a calculator; a code typed as a calculation opens the vault."
   - "Encryption details vary widely between calculator vault apps and are often not published."
-  - "Velcrypt has no calculator disguise and no alternate icons; its name is visible on the Home Screen."
+  - "Velcrypt has no working calculator disguise. Premium offers alternate Home Screen icons, but the app still opens to the pattern grid."
   - "Velcrypt’s deniability comes from hidden vaults: unknown patterns open an empty vault."
   - "iOS 18 and later can hide any app in a hidden folder behind Face ID, including Velcrypt."
 primaryKeyword: "calculator vault app vs velcrypt"
@@ -24,7 +24,7 @@ faq:
   - q: "Are calculator vault apps secure?"
     a: "It depends on the app. The calculator disguise only hides that a vault exists; how well the files are protected depends on whether and how the app encrypts them, which many apps don’t document. Check each app’s own privacy and security information."
   - q: "Does Velcrypt have a calculator disguise?"
-    a: "No. Velcrypt has no disguise and no alternate icons. Instead, it makes the contents deniable: each pattern opens its own vault and nothing reveals how many vaults exist. On iOS 18 and later you can also hide the app itself using the system’s hidden apps feature."
+    a: "Not as a working calculator. Premium includes alternate Home Screen icons, such as a calculator or a timer, but the app still opens to its pattern grid. Instead of a fake front end, it makes the contents deniable: each pattern opens its own vault and nothing reveals how many vaults exist. On iOS 18 and later you can also hide the app itself using the system’s hidden apps feature."
   - q: "Can someone tell a calculator app is really a vault?"
     a: "Sometimes. The app’s name and description in the App Store, your purchase history, storage usage in Settings and the app’s behaviour can all give it away to someone who knows what to look for."
   - q: "Which is better for plausible deniability?"
@@ -54,7 +54,7 @@ Both can be useful. The question is what you’re protecting against. A disguise
 | Biometrics (Face ID / Touch ID) | Not offered, by design | Varies |
 | Disguise | None; visible as Velcrypt | Looks like a working calculator |
 | Decoy / multiple vaults | Every pattern is its own vault (a second vault needs Premium) | Varies; some offer a decoy code |
-| Duress pattern | Planned for a future update | Varies |
+| Duress pattern | Yes, with Premium (opens a decoy, deletes the other vaults) | Varies |
 | Break-in photos | Not offered | Common, but varies |
 | Recovery if you forget the code | None | Varies; some offer email or security-question recovery |
 | Business model | Free version (1 vault, up to 50 items) plus optional Premium | Varies; some free versions show ads |

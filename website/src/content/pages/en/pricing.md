@@ -4,10 +4,10 @@ title: "Velcrypt Pricing: Free Version and Premium"
 description: "Velcrypt is free with one vault and up to 50 items. Premium is $1.99/week, $19.99/year or $39.99 lifetime. No ads, no account."
 h1: "Velcrypt pricing"
 navTitle: "Pricing"
-answer: "Velcrypt is free with one vault, up to 50 items and encrypted backup. Premium adds unlimited items, more vaults and alternate app icons for $1.99 a week, $19.99 a year (with a 3-day free trial) or $39.99 once for lifetime. Prices are in USD and vary by country. No version shows ads."
+answer: "Velcrypt is free with one vault, up to 50 items and encrypted backup. Premium adds unlimited items, more vaults, a duress pattern and alternate app icons for $1.99 a week, $19.99 a year (with a 3-day free trial) or $39.99 once for lifetime. Prices are in USD and vary by country. No version shows ads."
 keyFacts:
   - "Free version: 1 vault with up to 50 items and the standard app icon."
-  - "Premium: unlimited items, more vaults and alternate app icons."
+  - "Premium: unlimited items, more vaults, a duress pattern and alternate app icons."
   - "Prices (USD): $1.99/week, $19.99/year with a 3-day free trial, $39.99 lifetime."
   - "Encrypted backup is free for everyone."
   - "No ads and no selling of data, in either version."
@@ -18,7 +18,7 @@ datePublished: 2026-10-21
 dateModified: 2026-10-22
 schemaType: WebPage
 order: 2
-related: [features, hidden-vaults, security, faq]
+related: [features, hidden-vaults, duress-pattern, security, faq]
 faq:
   - q: "Is Velcrypt free?"
     a: "Yes. The free version gives you one vault with up to 50 items, the same encryption as Premium and encrypted backup. Premium is an optional upgrade for people who want more."
@@ -30,6 +30,8 @@ faq:
     a: "Yes. Every vault uses the same encryption — AES-256-GCM with keys derived from your pattern — whether or not you upgrade. Premium adds capacity and features, not stronger security."
   - q: "Is encrypted backup a Premium feature?"
     a: "No. Encrypted backup is free for everyone. In Settings → Backup you create an encrypted .velcrypt file for the open vault, protected by a backup password you choose."
+  - q: "Is the duress pattern part of Premium?"
+    a: "Yes. Setting up a duress pattern needs Premium, because it lives in a second (decoy) vault. Once set up, it keeps working even if your Premium subscription ends."
   - q: "How do I cancel a Velcrypt subscription?"
     a: "Subscriptions renew automatically unless you cancel at least 24 hours before the end of the current period. You manage and cancel them in your Apple Account settings. Lifetime is a one-time purchase and doesn’t renew."
   - q: "How are Velcrypt purchases handled?"
@@ -51,10 +53,11 @@ Velcrypt is a free download with an optional Premium upgrade.
 | Encrypted backup | Yes | Yes |
 | Number of items | Up to 50 | Unlimited |
 | Number of vaults | 1 | More vaults (each pattern opens its own) |
+| Duress pattern | — | Yes |
 | Alternate app icons | — | Yes |
 | Ads | None | None |
 
-Because the free version has one vault, a second vault — such as a [decoy vault](id:hidden-vaults) — needs Premium.
+Because the free version has one vault, a second vault — such as a [decoy vault](id:hidden-vaults) — needs Premium. So does the duress pattern, which you set up from inside a decoy vault.
 
 ## Premium prices
 
@@ -78,7 +81,7 @@ There is also no account in any version. You don’t sign up, you don’t give a
 
 A privacy app that earns money from advertising or data has a conflict of interest built into it. Velcrypt avoids that by asking the people who want more from the app to pay for it directly. Everyone else keeps a fully encrypted free version with no strings attached.
 
-That model also shapes what goes into Premium. Paid features add capacity — more items, more vaults — or extras like alternate app icons. They never unlock a “real” level of encryption that the free version lacks, and encrypted backup stays free so nobody has to pay to protect their files against a lost phone. A [duress pattern](id:duress-pattern) is planned for a future update.
+That model also shapes what goes into Premium. Paid features add capacity — more items, more vaults — or extras like the [duress pattern](id:duress-pattern) and alternate app icons. They never unlock a “real” level of encryption that the free version lacks, and encrypted backup stays free so nobody has to pay to protect their files against a lost phone. A duress pattern you have already set up keeps working even if Premium lapses; only setting one up needs Premium.
 
 If you upgrade later, nothing about your existing vault changes. Your data stays on your iPhone, encrypted the same way, whether or not you upgrade.
 

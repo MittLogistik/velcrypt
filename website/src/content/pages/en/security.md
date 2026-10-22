@@ -120,7 +120,7 @@ In Settings → Backup you can create an encrypted `.velcrypt` file for the vaul
 Every security tool has limits, and you should know Velcrypt’s before you rely on it.
 
 - **Shoulder-surfing.** If someone sees you draw your pattern, in person or on camera, they can open that vault. Draw it out of sight, and consider a pattern that doesn’t look like a simple letter or shape.
-- **Being forced to unlock.** Velcrypt cannot stop someone from coercing you into drawing a pattern. A decoy vault can help; a duress pattern, planned for a future update, would open a chosen vault and silently remove access to the others.
+- **Being forced to unlock.** Velcrypt cannot stop someone from coercing you into drawing a pattern. A decoy vault can help, and with Premium a [duress pattern](id:duress-pattern) opens a decoy vault while permanently deleting the others. Neither can stop someone who already knows your real pattern, and deleted vaults can only be restored from a backup file you made earlier.
 - **A phone handed over with the vault open.** While a vault is unlocked, anyone holding the phone can see what you see. Lock it before passing your phone to anyone.
 - **Compromised or jailbroken devices and malware.** Software that can read the screen, log touches or inspect app memory on a compromised device can defeat any app-level encryption.
 - **Screenshots or photos of the screen.** Velcrypt can’t stop another camera from photographing your display.

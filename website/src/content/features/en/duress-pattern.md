@@ -1,80 +1,123 @@
 ---
 pageId: duress-pattern
-title: "Duress Pattern (Planned): Protect Vaults Under Pressure"
-description: "The duress pattern is a planned Velcrypt feature for a future update: one pattern opens a chosen vault and silently removes access to the others."
-h1: "Duress pattern (planned)"
-navTitle: "Duress pattern (planned)"
-answer: "The duress pattern is a planned Velcrypt feature for a future update and isn’t in the app yet. It is designed to let you set a special pattern that opens a vault you choose and silently removes access to your other vaults, for moments when you are pressured to unlock the app."
+title: "Duress Pattern: Open a Decoy, Erase Every Other Vault"
+description: "Velcrypt’s duress pattern opens your decoy vault and silently, permanently deletes every other vault on the iPhone. How it works, setup and limits."
+h1: "Duress pattern"
+navTitle: "Duress pattern"
+answer: "The duress pattern is a Premium feature in Velcrypt 1.0. You set it up from inside a decoy vault. If you ever draw it on the lock screen, Velcrypt opens that decoy vault and silently, permanently deletes every other vault on the iPhone. Nothing on screen shows that it happened."
 keyFacts:
-  - "Status: planned for a future update. Not in the app yet."
-  - "A special pattern will open a chosen vault."
-  - "At the same time it will silently remove access to the other vaults."
-  - "It cannot recall copies that exist outside Velcrypt, including backup files."
-  - "It is a privacy tool, not legal advice or a way around lawful orders."
+  - "Available now in Velcrypt 1.0 as part of Premium."
+  - "Set up in Settings → Duress Pattern, from inside a decoy vault."
+  - "Drawing it opens the decoy and permanently deletes every other vault on that iPhone."
+  - "Unlock looks the same and takes the same time as a normal unlock."
+  - "The app never shows whether a duress pattern is set."
+  - "Deleted vaults can only be restored from an encrypted backup file you made earlier."
+  - "It is a personal-safety tool, not legal advice or a way around lawful orders."
 primaryKeyword: "duress pattern vault app"
 keywords: ["duress password iphone", "panic pattern photo vault", "duress code app", "coerced unlock protection", "self-destruct vault pattern"]
 datePublished: 2026-10-21
 dateModified: 2026-10-22
-summary: "Planned for a future update: a special pattern that opens a chosen vault and silently removes access to the others."
-status: coming-soon
+summary: "A separate pattern that opens your decoy vault and silently, permanently deletes every other vault on the iPhone. Premium."
+status: available
 schemaType: WebPage
 order: 3
-related: [hidden-vaults, pattern-lock, what-is-a-decoy-vault, plausible-deniability-explained, phone-privacy-border-crossing]
+related: [set-up-decoy-vault-and-duress-pattern, duress-password-explained, forced-to-unlock-phone, self-destruct-photo-vault, hidden-vaults, what-is-a-decoy-vault, plausible-deniability-explained]
+howTo:
+  name: "Set up a duress pattern in Velcrypt"
+  steps:
+    - name: "Make an encrypted backup of your real vault"
+      text: "Open your real vault, go to Settings → Backup and save a password-protected .velcrypt file somewhere outside the app, such as Files or a computer."
+    - name: "Open your decoy vault"
+      text: "Draw the pattern of a second vault that holds harmless, believable content. Vaults beyond the first need Premium."
+    - name: "Open Settings → Duress Pattern"
+      text: "From inside the decoy vault, open Settings and choose Duress Pattern."
+    - name: "Draw a new duress pattern twice"
+      text: "Draw a separate pattern that does not open any vault, then draw it again to confirm it."
+    - name: "Confirm"
+      text: "Read the warning and confirm. From now on, drawing that pattern on the lock screen opens this decoy and deletes every other vault on the iPhone."
 faq:
   - q: "Is the duress pattern available in Velcrypt now?"
-    a: "No. It is planned for a future update, and there is no release date yet. Until then, you can use hidden vaults and a decoy vault, which are available today."
-  - q: "What will happen when someone enters the duress pattern?"
-    a: "The plan is that it opens a vault you chose in advance and, at the same time, silently removes access to your other vaults. Nothing on screen will signal that anything else happened."
+    a: "Yes. It ships in Velcrypt 1.0 as part of Premium. You set it up in Settings → Duress Pattern while a decoy vault is open."
+  - q: "What happens when someone draws the duress pattern?"
+    a: "Velcrypt opens the decoy vault it was set up in and, at the same time, silently and permanently deletes every other vault on that iPhone. There is no message, animation or delay that gives it away."
+  - q: "Can someone tell whether I have a duress pattern?"
+    a: "Not from the app. Velcrypt never shows whether one is set. A fixed-size encrypted record always exists in the Keychain, filled with random bytes when no duress pattern is set, so the record looks the same either way."
+  - q: "Can I get the deleted vaults back?"
+    a: "Not from the phone. The only way back is an encrypted backup file you made earlier in Settings → Backup and saved outside the app. The duress pattern does not touch backup files stored elsewhere."
+  - q: "Do I need to keep paying for Premium for it to work?"
+    a: "No. Setting it up needs Premium, but a duress pattern you have already set keeps working if Premium lapses."
+  - q: "How do I turn the duress pattern off?"
+    a: "In Settings → Duress Pattern, tap Turn Off Duress Pattern and draw the duress pattern. Drawing it there only turns it off; nothing is deleted."
   - q: "Can the duress pattern delete photos I already shared?"
-    a: "No. It can only affect what is inside Velcrypt on that phone. Copies in your Photos library, iCloud, chats, email, a Velcrypt backup file or another person's device are out of its reach."
+    a: "No. It only deletes Velcrypt’s own vaults on that phone. Copies in your Photos library, iCloud, chats, email, a backup file or another person’s device are out of its reach."
   - q: "Is it legal to use a duress pattern?"
-    a: "That depends on where you are and the situation. Removing data while authorities are lawfully inspecting a device may be an offence in some countries. Velcrypt cannot give legal advice; if this matters to you, speak to a lawyer."
+    a: "That depends on where you are and the situation. Deleting data when police, border officials or a court lawfully demand access can itself be an offence. The duress pattern is meant for personal-safety situations, not for destroying evidence. If a legal demand is involved, get legal advice."
 ---
 
-Sometimes the risk is not a stolen phone but a person standing in front of you, asking you to open the app. The duress pattern is Velcrypt's planned answer to that moment. It is not available yet: it is **planned for a future update**, and this page describes what it is designed to do.
+Sometimes the risk is not a stolen phone but a person standing in front of you, telling you to open the app. A [decoy vault](id:what-is-a-decoy-vault) helps in many of those moments. The duress pattern goes further: it opens the decoy **and** permanently deletes every other vault on the iPhone, so your private vaults can no longer be opened there, not even later.
 
-## What the duress pattern will do
+It is part of Premium in Velcrypt 1.0.
 
-A duress pattern is a special unlock pattern meant to be used when you are being pressured or coerced. In Velcrypt, it is planned to work like this:
+## What the duress pattern does
 
-1. In advance, you set a duress pattern and choose which vault it should open, typically a [decoy vault](id:what-is-a-decoy-vault) with ordinary content.
+A duress pattern is a separate unlock pattern that you only use under pressure. In Velcrypt it works like this:
+
+1. You set it up in advance, from inside a decoy vault: a second vault filled with harmless, believable content.
 2. If you are ever forced to unlock the app, you draw the duress pattern instead of your real one.
-3. Velcrypt opens the chosen vault as usual.
-4. In the background, it silently removes access to your other vaults on that device.
+3. Velcrypt opens the decoy vault, exactly as a normal unlock would.
+4. At the same moment, it silently and permanently deletes every other vault on that iPhone.
 
-From the outside, nothing unusual happens. There is no alert, no animation and no message saying that something was removed.
+Nothing on screen tells the other person what happened. There is no alert, no animation and no extra delay: the unlock looks and takes the same time as any other.
 
-## How it builds on hidden vaults
+## How to set it up
 
-Velcrypt already gives you [hidden vaults](id:hidden-vaults): every pattern opens its own vault, there is no vault list, and an unknown pattern opens an empty vault without an error. That already makes it hard for someone to prove that more vaults exist.
+You need Premium, because the duress pattern lives in a second vault and vaults beyond the first are a Premium feature.
 
-The duress pattern adds a second layer. A decoy relies on the other person believing you. The duress pattern is meant for situations where that may not be enough, for example if you expect to be asked repeatedly or to have your real pattern demanded later. Once it is used, the other vaults are no longer reachable on that phone. The idea behind both features is explained in [plausible deniability, explained](id:plausible-deniability-explained).
+1. **Back up your real vault first.** Open it, go to **Settings → Backup** and save the password-protected .velcrypt file somewhere outside the app, such as Files, iCloud Drive or a computer. This is the only way to recover the vault if the duress pattern is ever used.
+2. **Open your decoy vault.** If you don’t have one yet, draw a new pattern to create it and add some ordinary content; Velcrypt asks you to add something before a vault can get a duress pattern. The [decoy vault guide](id:what-is-a-decoy-vault) explains how to make it believable.
+3. **Go to Settings → Duress Pattern** while the decoy vault is open.
+4. **Draw the duress pattern twice.** It must be a new pattern that does not open any existing vault.
+5. **Read the warning and confirm.** Afterwards, practise the pattern in your head, not on the lock screen: drawing it there deletes your other vaults.
 
-## When it could matter
+The full walkthrough, including practice tips, is in [how to set up a decoy vault and duress pattern](id:set-up-decoy-vault-and-duress-pattern).
 
-People rarely plan for coercion, but some situations make it more likely:
+### Rules worth knowing
 
-- **An abusive or controlling relationship**, where a partner demands to see everything on your phone.
-- **Journalists and researchers** who carry material that could expose sources.
-- **Travel through places with intrusive device checks**, covered in [phone privacy at border crossings](id:phone-privacy-border-crossing).
-- **Theft or robbery**, where someone forces you to unlock things on the spot.
+- **One per iPhone.** There is only one duress pattern on a device. Setting a new one replaces the old.
+- **Turning it off** requires drawing the duress pattern in Settings → Duress Pattern. Drawing it there only turns it off; nothing is deleted.
+- **It keeps working if Premium lapses.** Only setting it up needs Premium.
+- **Set it up in a decoy, not in your only vault.** If the decoy is the only vault on the phone, there is nothing for the duress pattern to delete. Velcrypt warns you when this is the case.
 
-In each case, the goal is the same: give you a way to comply on the surface while keeping your most sensitive files out of reach.
+## Nothing reveals that it exists
+
+A duress pattern is only useful if nobody can tell it is there. Velcrypt never shows whether one is set, in the interface or in its settings. Behind the scenes, a fixed-size encrypted record always exists in the iOS Keychain; when no duress pattern is set, it holds random bytes. So the record looks the same whether you use the feature or not.
+
+This builds on [hidden vaults](id:hidden-vaults): every pattern opens its own vault, there is no list of vaults, and an unknown pattern opens an empty vault without an error. The idea behind both is explained in [plausible deniability, explained](id:plausible-deniability-explained).
+
+## When it can help
+
+The duress pattern is meant for personal-safety situations, for example:
+
+- **A controlling or abusive partner** who demands to see everything on your phone.
+- **A robbery or threat**, where someone forces you to unlock things on the spot.
+- **Persistent snooping** by someone who won’t accept the decoy and will keep asking.
+
+If you are in one of these situations, the guide on [what to do if someone forces you to unlock your phone](id:forced-to-unlock-phone) covers the wider picture, including when to contact support services.
 
 ## Honest limits
 
-A duress pattern is a strong tool, and it comes with equally real limits. It is better to know them now than to discover them later.
+**It is permanent.** Deleted vaults cannot be recovered from the phone. Vault data is excluded from iCloud and computer backups, so the only way back is an encrypted backup file you made earlier. Backup files saved outside the app are not touched.
 
-**It cannot undo copies.** It only acts on Velcrypt's own vaults on that device. If a photo is still in your Photos library, in Recently Deleted, in iCloud Photos, in a chat or on someone else's phone, it stays there. The same goes for any encrypted Velcrypt backup file you have saved elsewhere. Clean up originals after importing; the guide on [deleting originals after import](id:delete-original-photos-after-import) shows how.
+**Flash storage has limits.** Like any app, Velcrypt cannot guarantee that deleted bytes are physically erased from flash storage. What it does guarantee is that vault data is encrypted with AES-256-GCM and that the keys are deleted along with the vault directories, so the leftover data is unreadable ciphertext.
 
-**Treat it as permanent.** Vault data is not included in iCloud or computer backups, so you should assume that access, once removed from that phone, cannot be restored there. Use it only when you truly accept losing those files.
+**It cannot undo copies.** If a photo is still in your Photos library, in Recently Deleted, in iCloud Photos, in a chat or on someone else’s phone, it stays there. [Delete originals after importing](id:delete-original-photos-after-import).
 
-**It does not stop observation.** If someone has watched you draw your real pattern, or filmed the screen, the duress pattern does not change what they saw.
+**It does not stop observation.** If someone has watched you draw your real pattern or filmed the screen, the duress pattern doesn’t change what they saw. Draw it out of sight.
 
-**Coercion is unpredictable.** Some people may react badly if they suspect something has been hidden or removed. Your physical safety matters more than any file. A duress pattern is one option, not an obligation, and you are the best judge of whether using it is safe.
+**Your safety comes first.** Some people may react badly if they suspect something has been hidden or removed. A duress pattern is one option, never an obligation. You are the best judge of whether using it is safe.
 
-**It is not legal advice.** Laws on device searches, compelled unlocking and destruction of data differ by country and situation. In some places, removing data during an official inspection can itself be an offence. Velcrypt cannot tell you what is lawful where you are; if the stakes are high, ask a lawyer before you travel or act.
+**It is not a way around the law.** Never use it to destroy evidence or to defy a lawful demand from police, border officials or a court. Laws on device searches and deleting data differ by country, and deleting data under a legal demand can itself be an offence. If a legal demand is involved, get legal advice. The [border-crossing guide](id:phone-privacy-border-crossing) covers travel.
 
-## Until it arrives
+## Pricing
 
-You can already prepare with features that exist today. Create a believable decoy vault, choose a strong [pattern](id:pattern-lock) for your real vault, and keep sensitive originals out of your camera roll. When the duress pattern ships, it will slot into that setup.
+The duress pattern is part of Premium, alongside unlimited items, more vaults and alternate app icons. Encrypted backup stays free for everyone. See [pricing](id:pricing) for plans.

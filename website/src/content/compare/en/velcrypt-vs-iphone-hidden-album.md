@@ -53,7 +53,7 @@ If iCloud Photos is on, hidden items sync like everything else. They’re encryp
 | Unlock method | Pattern on a 5×5 grid, separate from passcode | Face ID, Touch ID or device passcode |
 | Biometrics | Not offered, by design | Yes |
 | Decoy / multiple vaults | Every pattern is its own vault (a second vault needs Premium) | One Hidden album |
-| Duress pattern | Planned for a future update | No |
+| Duress pattern | Yes, with Premium (opens a decoy, deletes the other vaults) | No |
 | Recovery if you forget the code | None | Device passcode and Apple Account recovery |
 | Cost | Free version (1 vault, up to 50 items) plus optional Premium | Included with iOS |
 | Platforms | iPhone (iOS 17+) | iPhone, iPad and Mac |

@@ -53,7 +53,7 @@ Velcrypt is a pattern-locked, on-device vault. A pattern is a continuous line dr
 | Unlock method | Pattern on a 5×5 grid | PIN / passcode |
 | Biometrics (Face ID / Touch ID) | Not offered, by design | Varies |
 | Decoy / multiple vaults | Every pattern is its own vault (a second vault needs Premium) | Decoy password |
-| Duress pattern | Planned for a future update | Not stated publicly |
+| Duress pattern | Yes, with Premium (opens a decoy, deletes the other vaults) | Not stated publicly |
 | Break-in reports | Not offered | Offered, according to its listing |
 | Recovery if you forget the code | None | Not stated publicly |
 | Business model | Free version (1 vault, up to 50 items) plus optional Premium | Free version plus paid upgrade |

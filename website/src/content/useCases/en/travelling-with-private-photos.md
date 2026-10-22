@@ -70,6 +70,6 @@ There’s no account and nothing is uploaded, so there’s no cloud login to phi
 - **Originals stay in Photos until you delete them.** Importing copies a photo. [Delete the original](id:delete-original-photos-after-import) and empty Recently Deleted.
 - **Someone watching you draw** your pattern could learn it.
 - **The app icon is visible** on the Home Screen unless you use iOS 18’s option to hide apps.
-- **A vault isn’t a legal shield.** At a border, the rules of the country apply; the duress pattern is planned for a future update and not available today.
+- **A vault isn’t a legal shield.** At a border, the rules of the country apply. Don’t use the [duress pattern](id:duress-pattern) to delete data when officials lawfully demand access; that can itself be an offence.
 
 Travel light, travel prepared: a locked-down phone means losing it is an inconvenience, not a crisis.

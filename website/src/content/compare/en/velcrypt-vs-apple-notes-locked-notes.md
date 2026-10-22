@@ -55,7 +55,7 @@ You can add photos from your library, take a photo inside the note, or scan a do
 | Unlock method | Pattern on a 5×5 grid | Device passcode or separate Notes password |
 | Biometrics | Not offered, by design | Optional Face ID / Touch ID |
 | Decoy / multiple vaults | Every pattern is its own vault (a second vault needs Premium) | Not supported; all locked notes share one password |
-| Duress pattern | Planned for a future update | No |
+| Duress pattern | Yes, with Premium (opens a decoy, deletes the other vaults) | No |
 | Recovery if you forget the code | None | Passcode option avoids a separate password; old Notes passwords can’t be recovered |
 | Photo and video handling | Albums, viewer with zoom and swipe, videos | Images inside a note; video support varies |
 | Cost | Free version (1 vault, up to 50 items) plus optional Premium | Included with iOS |

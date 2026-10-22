@@ -81,7 +81,7 @@ const jsonLd = S.graph(
         <p class="eyebrow">{c.vaultsEyebrow}</p>
         <h2 id="vaults-h">{c.vaultsTitle}</h2>
         <p class="muted">{c.vaultsP1}</p>
-        <p class="muted"><Fragment set:html={rich(c.vaultsP2, locale)} /> <span class="pill">{t(locale, 'coming_soon')}</span></p>
+        <p class="muted"><Fragment set:html={rich(c.vaultsP2, locale)} /></p>
         <a class="btn btn-ghost" href={href('hidden-vaults', locale)}>{c.vaultsButton}</a>
       </div>
       <div class="two-grids" aria-hidden="true">

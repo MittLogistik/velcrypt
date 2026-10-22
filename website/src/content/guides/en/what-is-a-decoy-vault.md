@@ -11,7 +11,7 @@ keyFacts:
   - "An empty decoy is suspicious; a lived-in decoy with albums and recent items is convincing."
   - "A decoy protects against snooping and casual pressure, not against forensic analysis or someone who watched you draw."
   - "A second vault, and so a decoy, needs Velcrypt Premium; the free version has one vault."
-  - "A duress pattern that also removes access to other vaults is planned for a future update."
+  - "With Premium, a duress pattern can open the decoy and permanently delete every other vault on the iPhone."
 primaryKeyword: "decoy vault"
 keywords: ["what is a decoy vault", "decoy password photo vault", "fake vault app", "decoy pattern", "second vault iphone"]
 datePublished: 2026-10-21
@@ -19,7 +19,7 @@ dateModified: 2026-10-22
 summary: "What a decoy vault is, how to build one that looks lived-in with a second Velcrypt pattern, and the limits you should know."
 category: security
 order: 41
-related: [hidden-vaults, plausible-deniability-explained, duress-pattern, pattern-lock-vs-pin-vs-face-id, partner-scrolling-camera-roll, phone-privacy-border-crossing]
+related: [hidden-vaults, plausible-deniability-explained, duress-pattern, set-up-decoy-vault-and-duress-pattern, duress-password-explained, forced-to-unlock-phone, pattern-lock-vs-pin-vs-face-id, partner-scrolling-camera-roll, phone-privacy-border-crossing]
 howTo:
   name: "Set up a decoy vault in Velcrypt"
   steps:
@@ -41,7 +41,7 @@ faq:
   - q: "Can someone tell that a vault is a decoy?"
     a: "Not from inside the app: Velcrypt keeps no list of vaults and shows no hint that others exist. What can give a decoy away is its content, for example if it is empty, stale, or clearly staged."
   - q: "Is a decoy vault the same as a duress pattern?"
-    a: "No. A decoy simply opens a different vault. A duress pattern, planned for a future Velcrypt update, would open a chosen vault and also silently remove access to the others."
+    a: "No. A decoy simply opens a different vault and leaves the others untouched. A duress pattern, available with Velcrypt Premium, opens the decoy vault and also silently and permanently deletes every other vault on the iPhone."
   - q: "Should I use a decoy vault with police or border officials?"
     a: "This guide can’t give legal advice. Misleading officials can be an offence in many countries. A decoy is mainly for everyday snooping and informal pressure; for official situations, learn your rights and talk to a lawyer."
 ---
@@ -94,7 +94,7 @@ A decoy vault is a social tool backed by good cryptography. It is not magic, and
 
 ## Decoy vault vs duress pattern
 
-A decoy opens a different vault and leaves everything else untouched. A **duress pattern** goes one step further: it opens a vault you have chosen and quietly removes access to the others at the same time. In Velcrypt, the [duress pattern](id:duress-pattern) is planned for a future update and isn’t available yet. Until then, a well-kept decoy covers most everyday situations, such as a curious partner, a friend scrolling through your phone, or a nosy colleague.
+A decoy opens a different vault and leaves everything else untouched. A **duress pattern** goes one step further: it opens your decoy and, at the same moment, silently and permanently deletes every other vault on the iPhone. In Velcrypt, the [duress pattern](id:duress-pattern) is part of Premium and is set up from inside the decoy vault. It suits situations where you expect to be pressed again later; for everyday curiosity, such as a partner, a friend scrolling through your phone or a nosy colleague, a well-kept decoy alone is usually enough. Because deletion is permanent, make an encrypted backup of your real vault first. [How to set up a decoy vault and duress pattern](id:set-up-decoy-vault-and-duress-pattern) walks through both.
 
 ## Where Velcrypt fits
 

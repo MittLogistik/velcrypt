@@ -63,7 +63,7 @@ The answers decide your tools. Over-engineering a low-risk story wastes time; un
 
 Velcrypt is one layer in that plan. It stores photos, videos and documents in encrypted vaults on your iPhone, using AES-256-GCM with keys derived from your pattern. There’s no account, no server, no sync and no analytics on vault content, so there’s nothing on a server for anyone to request.
 
-Vaults open with a pattern on a 5×5 grid. Velcrypt deliberately doesn’t support Face ID or Touch ID, because biometrics can be used without your consent; a pattern lives only in your memory. The reasoning is in [pattern vs PIN vs Face ID](id:pattern-lock-vs-pin-vs-face-id). Every pattern opens its own vault, and an unknown pattern opens an empty one with no error, which supports [plausible deniability](id:plausible-deniability-explained). A duress pattern that removes access to other vaults is planned for a future update and isn’t available today.
+Vaults open with a pattern on a 5×5 grid. Velcrypt deliberately doesn’t support Face ID or Touch ID, because biometrics can be used without your consent; a pattern lives only in your memory. The reasoning is in [pattern vs PIN vs Face ID](id:pattern-lock-vs-pin-vs-face-id). Every pattern opens its own vault, and an unknown pattern opens an empty one with no error, which supports [plausible deniability](id:plausible-deniability-explained). With Premium, a [duress pattern](id:duress-pattern) opens a decoy vault and permanently deletes the others. It is meant for personal-safety situations such as theft or threats, not for deleting material when authorities lawfully demand access, which can itself be an offence; get legal advice if that is a risk for you.
 
 ## Honest limits
 

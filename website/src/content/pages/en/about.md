@@ -10,7 +10,7 @@ keyFacts:
   - "No Face ID or Touch ID by design — a pattern lives only in your memory."
   - "No ads and no selling of data."
   - "Honest about limits, including no recovery of forgotten patterns."
-  - "Free encrypted backup; a duress pattern is planned for a future update."
+  - "Free encrypted backup for everyone; a duress pattern for situations of coercion, with Premium."
 primaryKeyword: "about velcrypt"
 keywords: ["velcrypt app", "who makes velcrypt", "velcrypt principles", "private photo vault iphone"]
 datePublished: 2026-10-21
@@ -23,8 +23,8 @@ faq:
     a: "Because data that never leaves your phone can’t be exposed by a server breach, a subpoena to a provider or a reused password. The trade-off is that a forgotten pattern can’t be recovered, and a lost phone can only be restored from an encrypted backup file you made yourself."
   - q: "Does Velcrypt make money from my data?"
     a: "No. Velcrypt doesn’t collect your vault content or analytics about it and shows no ads. Velcrypt is funded by an optional paid Premium upgrade, and the free version stays fully encrypted."
-  - q: "What is Velcrypt working on next?"
-    a: "A duress pattern is planned for a future update. It has no release date yet, and we won’t attach one until it’s ready."
+  - q: "Does Velcrypt have a duress pattern?"
+    a: "Yes, in Velcrypt 1.0 with Premium. Drawing it opens a decoy vault and silently, permanently deletes every other vault on the iPhone. It is meant for personal-safety situations, not as a way around lawful orders."
 ---
 
 <!-- TODO: add founder/company details -->
@@ -59,15 +59,16 @@ Privacy tools fail people when they overpromise. We would rather tell you up fro
 
 Velcrypt shows no advertising and doesn’t sell data. It doesn’t collect your vault content or analytics about it, so there is nothing to sell. Velcrypt is funded by an optional Premium upgrade — see [pricing](id:pricing).
 
-## What’s next
+## What’s in Velcrypt 1.0
 
-Velcrypt 1.0 includes free encrypted backup and an optional Premium upgrade with unlimited items, more vaults and alternate app icons. The item below is planned. It is not in the app today, and we won’t attach a date until it is ready.
+Velcrypt 1.0 includes free encrypted backup and an optional Premium upgrade with unlimited items, more vaults, a duress pattern and alternate app icons.
 
 | Item | Status |
 |---|---|
-| [Duress pattern](id:duress-pattern) — opens a chosen vault and silently removes access to the others | Planned for a future update |
+| Encrypted backup — a password-protected file you store yourself | Available, free |
+| [Duress pattern](id:duress-pattern) — opens a decoy vault and silently, permanently deletes every other vault on the iPhone | Available, Premium |
 
-Anything we add will follow the same principles: on-device by default, no account, and a clear explanation of the trade-offs.
+The duress pattern follows the same principles as everything else: on-device, no account, and a clear explanation of the trade-offs. Deletion is permanent, and it is meant for personal-safety situations, not as a way around lawful orders. Anything we add later will follow the same rules.
 
 ## Get in touch
 

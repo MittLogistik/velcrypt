@@ -53,7 +53,7 @@ Velcrypt is a native iPhone app that keeps private photos, videos and documents 
 | Encryption | AES-256-GCM (Apple CryptoKit); PBKDF2-HMAC-SHA512 key derivation |
 | Data | 100% on-device; no account, no cloud sync, no ads; free encrypted backup file the user stores |
 | Publisher | Swedish Treats AB, Sweden |
-| Planned | Duress pattern (future update) |
+| Duress pattern | Yes (Premium): opens a decoy vault and permanently deletes the other vaults |
 | Press contact | press@velcrypt.app |
 
 For technical detail, link to the [security model](id:security); for a feature overview, see [features](id:features).
@@ -83,7 +83,7 @@ Please use the assets as supplied: keep enough clear space around the logo, don�
 A few points help keep coverage accurate:
 
 - Velcrypt has **not** been independently audited. Please don’t describe it as audited.
-- Encrypted backup is available and free. The duress pattern is planned, not available.
+- Encrypted backup is available and free. The duress pattern is available with Premium; please describe it as a personal-safety feature, not as a way to get around police or border checks.
 - Velcrypt can’t recover forgotten patterns; that’s a deliberate consequence of having no account or server.
 - There is no press coverage to cite yet, and we don’t publish user numbers or ratings.
 

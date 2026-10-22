@@ -53,7 +53,7 @@ Neither approach is universally better. One trades convenience for minimal expos
 | Unlock method | Pattern on a 5×5 grid | PIN or passcode |
 | Biometrics (Face ID / Touch ID) | Not offered, by design | Supported, according to its listing |
 | Decoy / multiple vaults | Every pattern is its own vault (a second vault needs Premium) | Fake/decoy PIN in premium |
-| Duress pattern | Planned for a future update | Not stated publicly |
+| Duress pattern | Yes, with Premium (opens a decoy, deletes the other vaults) | Not stated publicly |
 | Break-in alerts | Not offered | Offered in premium |
 | Recovery if you forget the code | None; vault cannot be recovered | Varies; account-based recovery may be available |
 | Business model | Free version (1 vault, up to 50 items) plus optional Premium (see [pricing](id:pricing)) | Free tier plus premium subscription |
@@ -81,7 +81,7 @@ Many vault apps offer a second, fake code that opens a harmless vault. Keepsafe 
 
 <!-- TODO verify -->
 
-Velcrypt’s model is structural rather than an add-on. Every pattern is its own vault, there is no list of vaults, and a pattern the app has never seen simply opens an empty vault with no error. Nothing on screen proves other vaults exist. That is what [hidden vaults](id:hidden-vaults) and [plausible deniability](id:plausible-deniability-explained) mean in practice. A duress pattern, which would open a chosen vault and silently remove access to the others, is planned for a future update.
+Velcrypt’s model is structural rather than an add-on. Every pattern is its own vault, there is no list of vaults, and a pattern the app has never seen simply opens an empty vault with no error. Nothing on screen proves other vaults exist. That is what [hidden vaults](id:hidden-vaults) and [plausible deniability](id:plausible-deniability-explained) mean in practice. With Premium, a [duress pattern](id:duress-pattern) goes further: it opens a decoy vault and silently, permanently deletes every other vault on the iPhone.
 
 ## When Keepsafe may suit you better
 
