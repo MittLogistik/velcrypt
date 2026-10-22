@@ -131,4 +131,19 @@ Keychain items survive app deletion. On the first launch after an install
   user deletes them.
 * There is no recovery: a forgotten pattern means that vault is lost, unless the user
   has a backup and remembers its password.
+* **The free version's one-vault limit is visible.** Without Premium, writing to a second vault
+  shows the paywall, which tells someone holding the unlocked phone that another vault exists.
+  Premium removes the limit and with it this signal, so decoy vaults are effectively a Premium
+  feature.
 * Not independently audited.
+
+## Premium (StoreKit 2)
+
+`PremiumStore` offers three products: `com.velcrypt.app.premium.weekly` and `com.velcrypt.app.premium.yearly`
+(auto-renewable, in one subscription group, and the yearly plan has a free-trial introductory offer), plus
+`com.velcrypt.app.premium.lifetime` (non-consumable). Any verified, unrevoked entitlement unlocks Premium.
+
+The free version allows one vault with 50 items and only the standard icon (`PremiumLimits`). Restoring a backup
+is never limited, so moving to a new iPhone always works. A lapsed subscription keeps every existing item, but
+nothing more can be added above the limit. The paywall appears once after onboarding, when a limit is reached,
+and from Settings.

@@ -3,6 +3,8 @@ import SwiftUI
 /// Album overview: create, rename, sort and delete albums. Tapping an album opens its items.
 struct AlbumsView: View {
     @Environment(VaultLibrary.self) private var library
+    @Environment(VaultSession.self) private var session
+    @Environment(PremiumStore.self) private var premium
     @AppStorage("albumSort") private var sort: VaultLibrary.AlbumSort = .newest
 
     @State private var showCreate = false
@@ -11,6 +13,7 @@ struct AlbumsView: View {
     @State private var renameText = ""
     @State private var deleting: Album?
     @State private var showConfirmVault = false
+    @State private var paywall: PaywallView.Reason?
 
     private let columns = [GridItem(.flexible(), spacing: 14), GridItem(.flexible(), spacing: 14)]
 
@@ -65,6 +68,9 @@ struct AlbumsView: View {
         }) {
             ConfirmNewVaultView()
         }
+        .sheet(item: $paywall) { reason in
+            PaywallView(reason: reason)
+        }
         .alert("New Album", isPresented: $showCreate) {
             TextField("Album name", text: $newName)
             Button("Create") { Task { await library.createAlbum(named: newName) } }
@@ -95,7 +101,9 @@ struct AlbumsView: View {
 
     /// Creating an album is the first write in a new vault, so a never-saved vault confirms its pattern first.
     private func startCreate() {
-        if library.needsCreationConfirmation {
+        if let reason = premium.blockReason(creatingIn: library, session: session) {
+            paywall = reason
+        } else if library.needsCreationConfirmation {
             showConfirmVault = true
         } else {
             newName = ""

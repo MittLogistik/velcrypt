@@ -1,8 +1,10 @@
+import StoreKit
 import SwiftUI
 
 struct SettingsView: View {
     @Environment(VaultSession.self) private var session
     @Environment(VaultLibrary.self) private var library
+    @Environment(PremiumStore.self) private var premium
     @Environment(\.dismiss) private var dismiss
     @AppStorage("appearance") private var appearance: AppearancePreference = .dark
     @AppStorage("offerDeleteOriginals") private var offerDeleteOriginals = true
@@ -11,12 +13,16 @@ struct SettingsView: View {
     @State private var showDeleteVaultConfirm = false
     @State private var showEraseConfirm = false
     @State private var errorMessage: String?
+    @State private var showPaywall = false
+    @State private var showManageSubscriptions = false
 
     var body: some View {
         @Bindable var session = session
 
         NavigationStack {
             Form {
+                premiumSection
+
                 Section {
                     Picker(selection: $session.autoLockDelay) {
                         ForEach(AutoLockDelay.allCases) { delay in
@@ -129,6 +135,10 @@ struct SettingsView: View {
             .sheet(isPresented: $showChangePattern) {
                 ChangePatternView()
             }
+            .sheet(isPresented: $showPaywall) {
+                PaywallView(reason: .upgrade)
+            }
+            .manageSubscriptionsSheet(isPresented: $showManageSubscriptions)
             .confirmationDialog("Delete this vault?", isPresented: $showDeleteVaultConfirm, titleVisibility: .visible) {
                 Button("Delete Vault", role: .destructive, action: deleteVault)
             } message: {
@@ -143,6 +153,45 @@ struct SettingsView: View {
                 Button("OK", role: .cancel) {}
             } message: {
                 Text(errorMessage ?? "")
+            }
+        }
+    }
+
+    @ViewBuilder
+    private var premiumSection: some View {
+        Section {
+            if premium.isPremium {
+                Label {
+                    Text("Velcrypt Premium is active")
+                } icon: {
+                    Image(systemName: "checkmark.seal.fill").foregroundStyle(VCColor.success)
+                }
+                Button {
+                    showManageSubscriptions = true
+                } label: {
+                    Label("Manage Subscription", systemImage: "creditcard")
+                }
+            } else {
+                Button {
+                    showPaywall = true
+                } label: {
+                    HStack(spacing: 14) {
+                        VCIconBadge(systemName: "crown.fill", size: 40)
+                        VStack(alignment: .leading, spacing: 2) {
+                            Text("Upgrade to Premium")
+                                .font(VCFont.headline)
+                                .foregroundStyle(VCColor.textPrimary)
+                            Text("Unlimited items, more vaults and app icons.")
+                                .font(VCFont.caption)
+                                .foregroundStyle(VCColor.textSecondary)
+                        }
+                    }
+                    .padding(.vertical, 4)
+                }
+            }
+        } footer: {
+            if !premium.isPremium {
+                Text("The free version has one vault with up to \(PremiumLimits.freeItems) items.")
             }
         }
     }

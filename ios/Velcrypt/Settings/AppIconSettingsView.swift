@@ -46,8 +46,10 @@ enum AppIconOption: String, CaseIterable, Identifiable {
 }
 
 struct AppIconSettingsView: View {
+    @Environment(PremiumStore.self) private var premium
     @State private var selected = AppIconOption.current
     @State private var failed = false
+    @State private var paywall: PaywallView.Reason?
 
     private let columns = Array(repeating: GridItem(.flexible(), spacing: 16), count: 4)
 
@@ -80,6 +82,9 @@ struct AppIconSettingsView: View {
         .alert("The icon couldn't be changed.", isPresented: $failed) {
             Button("OK", role: .cancel) {}
         }
+        .sheet(item: $paywall) { reason in
+            PaywallView(reason: reason)
+        }
     }
 
     private func tile(_ option: AppIconOption) -> some View {
@@ -93,6 +98,17 @@ struct AppIconSettingsView: View {
                     RoundedRectangle(cornerRadius: 14, style: .continuous)
                         .strokeBorder(isSelected ? VCColor.accent : VCColor.stroke, lineWidth: isSelected ? 3 : 1)
                 )
+                .overlay(alignment: .topTrailing) {
+                    if !premium.isPremium && option != .standard {
+                        Image(systemName: "lock.fill")
+                            .font(.system(size: 10, weight: .bold))
+                            .foregroundStyle(.white)
+                            .padding(5)
+                            .background(Circle().fill(.black.opacity(0.6)))
+                            .padding(4)
+                            .accessibilityLabel("Premium")
+                    }
+                }
             Text(option.title)
                 .font(VCFont.caption)
                 .foregroundStyle(isSelected ? VCColor.textPrimary : VCColor.textSecondary)
@@ -103,6 +119,11 @@ struct AppIconSettingsView: View {
 
     private func choose(_ option: AppIconOption) {
         guard option != selected, UIApplication.shared.supportsAlternateIcons else { return }
+        // Going back to the standard icon is always allowed, so a lapsed subscription never strands an icon.
+        guard premium.isPremium || option == .standard else {
+            paywall = .appIcons
+            return
+        }
         UIApplication.shared.setAlternateIconName(option.iconName) { error in
             Task { @MainActor in
                 if error == nil {

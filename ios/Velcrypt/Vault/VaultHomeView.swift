@@ -7,9 +7,12 @@ import SwiftUI
 struct VaultHomeView: View {
     @Environment(VaultSession.self) private var session
     @Environment(VaultLibrary.self) private var library
+    @Environment(PremiumStore.self) private var premium
+    @AppStorage("hasSeenWelcomePaywall") private var hasSeenWelcomePaywall = false
 
     @State private var showSettings = false
     @State private var showImporter = false
+    @State private var showWelcomePaywall = false
 
     var body: some View {
         NavigationStack {
@@ -48,6 +51,7 @@ struct VaultHomeView: View {
                 }
             }
             .sheet(isPresented: $showSettings) { SettingsView() }
+            .sheet(isPresented: $showWelcomePaywall) { PaywallView(reason: .welcome) }
             .vaultImporter(isPresented: $showImporter)
         }
         .alert(
@@ -58,7 +62,15 @@ struct VaultHomeView: View {
         } message: {
             Text(library.errorMessage ?? "")
         }
-        .task { await library.load() }
+        .task {
+            await library.load()
+            // Shown once, the first time a vault opens (right after onboarding): most purchases happen on day one.
+            if !hasSeenWelcomePaywall && !premium.isPremium {
+                hasSeenWelcomePaywall = true
+                try? await Task.sleep(for: .milliseconds(500))
+                showWelcomePaywall = true
+            }
+        }
     }
 
     // MARK: Sections

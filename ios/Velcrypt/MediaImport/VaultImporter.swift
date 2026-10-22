@@ -14,6 +14,9 @@ private struct VaultImporterModifier: ViewModifier {
     @Binding var noteRequest: Bool
 
     @Environment(VaultLibrary.self) private var library
+    @Environment(VaultSession.self) private var session
+    @Environment(PremiumStore.self) private var premium
+    @State private var paywall: PaywallView.Reason?
     @AppStorage("offerDeleteOriginals") private var offerDeleteOriginals = true
     @State private var showChoice = false
     @State private var showConfirmVault = false
@@ -39,7 +42,9 @@ private struct VaultImporterModifier: ViewModifier {
             .onChange(of: isPresented) { _, requested in
                 guard requested else { return }
                 isPresented = false
-                if library.needsCreationConfirmation {
+                if let reason = premium.blockReason(adding: library, session: session) {
+                    paywall = reason
+                } else if library.needsCreationConfirmation {
                     showConfirmVault = true
                 } else {
                     showChoice = true
@@ -48,7 +53,9 @@ private struct VaultImporterModifier: ViewModifier {
             .onChange(of: noteRequest) { _, requested in
                 guard requested else { return }
                 noteRequest = false
-                if library.needsCreationConfirmation {
+                if let reason = premium.blockReason(adding: library, session: session) {
+                    paywall = reason
+                } else if library.needsCreationConfirmation {
                     pendingNote = true
                     showConfirmVault = true
                 } else {
@@ -90,7 +97,7 @@ private struct VaultImporterModifier: ViewModifier {
             .photosPicker(
                 isPresented: $showPhotos,
                 selection: $selection,
-                maxSelectionCount: nil,
+                maxSelectionCount: premium.remainingItems(in: library),
                 selectionBehavior: .ordered,
                 matching: .any(of: [.images, .videos]),
                 preferredItemEncoding: .current,
@@ -106,6 +113,7 @@ private struct VaultImporterModifier: ViewModifier {
             }
             .fullScreenCover(isPresented: $showCamera) {
                 VaultCamera { capture in
+                    guard premium.remainingItems(in: library) != 0 else { return }
                     library.startImport([.camera(capture)], into: albumID)
                 }
                 .ignoresSafeArea()
@@ -115,14 +123,27 @@ private struct VaultImporterModifier: ViewModifier {
             }
             .fileImporter(isPresented: $showFiles, allowedContentTypes: [.item], allowsMultipleSelection: true) { result in
                 if case .success(let urls) = result {
-                    library.startImport(urls.map { .file($0) }, into: albumID)
+                    let allowed = premium.remainingItems(in: library).map { Array(urls.prefix($0)) } ?? urls
+                    library.startImport(allowed.map { .file($0) }, into: albumID)
+                    if allowed.count < urls.count { showPaywallAfterDismissal(.itemLimit) }
                 }
+            }
+            .sheet(item: $paywall) { reason in
+                PaywallView(reason: reason)
             }
     }
 
     private func createNote() {
         Task {
             if let note = await library.createNote(in: albumID) { editingNote = note }
+        }
+    }
+
+    /// The Files picker is still animating away when its completion runs; a sheet presented then is dropped.
+    private func showPaywallAfterDismissal(_ reason: PaywallView.Reason) {
+        Task {
+            try? await Task.sleep(for: .milliseconds(600))
+            paywall = reason
         }
     }
 

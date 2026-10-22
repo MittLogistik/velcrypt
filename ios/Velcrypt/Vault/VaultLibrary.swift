@@ -47,7 +47,12 @@ final class VaultLibrary {
 
     /// A vault that has never been saved must have its pattern confirmed before the first write.
     var needsCreationConfirmation: Bool {
-        store == nil && initialMasterKey == nil && !creationConfirmed
+        isNewVault && !creationConfirmed
+    }
+
+    /// The open vault exists only in memory; its first write creates it.
+    var isNewVault: Bool {
+        store == nil && initialMasterKey == nil
     }
 
     @ObservationIgnored private var store: VaultStore?

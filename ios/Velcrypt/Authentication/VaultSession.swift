@@ -88,6 +88,11 @@ final class VaultSession {
 
     var isUnlocked: Bool { phase == .unlocked }
 
+    /// Vaults saved on this iPhone, for the free-version limit only. Never shown in the UI.
+    var savedVaultCount: Int {
+        files.vaultIDs().filter(files.vaultExists).count
+    }
+
     /// The open vault's master key, or nil if locked or the vault has never been written to.
     var currentMasterKey: SymmetricKey? { openVault?.masterKey }
 

@@ -4,6 +4,9 @@ import UniformTypeIdentifiers
 /// Settings → Backup: back up the open vault to a password-protected file, or restore one into it.
 struct BackupView: View {
     @Environment(VaultLibrary.self) private var library
+    @Environment(VaultSession.self) private var session
+    @Environment(PremiumStore.self) private var premium
+    @State private var paywall: PaywallView.Reason?
     @State private var showCreate = false
     @State private var showConfirmVault = false
     @State private var showPicker = false
@@ -24,7 +27,9 @@ struct BackupView: View {
                 }
                 .disabled(library.items.isEmpty)
                 Button {
-                    if library.needsCreationConfirmation {
+                    if let reason = premium.blockReason(creatingIn: library, session: session) {
+                        paywall = reason
+                    } else if library.needsCreationConfirmation {
                         showConfirmVault = true
                     } else {
                         showPicker = true
@@ -72,6 +77,9 @@ struct BackupView: View {
         }
         .sheet(item: $picked) { backup in
             RestoreBackupView(url: backup.url)
+        }
+        .sheet(item: $paywall) { reason in
+            PaywallView(reason: reason)
         }
     }
 }
