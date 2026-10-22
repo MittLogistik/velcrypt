@@ -9,11 +9,11 @@ keyFacts:
   - "Ogni dispositivo collegato al tuo Account Apple con Foto di iCloud attivo mostra tutta la tua libreria, album Nascosti compreso."
   - "La Libreria foto condivisa di iCloud (iOS 16.1 e successivi) condivide le foto con un massimo di altre cinque persone e può aggiungerle in automatico."
   - "In famiglia permette a ognuno di mantenere il proprio Account Apple condividendo acquisti e abbonamenti."
-  - "Le casseforti Velcrypt restano solo sul tuo iPhone: nessun account, nessuna sincronizzazione e, nella prima versione, nessun backup su iCloud."
+  - "Le casseforti Velcrypt restano solo sul tuo iPhone: nessun account, nessuna sincronizzazione e nessun backup automatico su iCloud."
 primaryKeyword: "foto iphone compaiono su ipad"
 keywords: ["bloccare sincronizzazione foto ipad famiglia", "foto con id apple condiviso", "privacy libreria foto condivisa icloud", "separare foto icloud in famiglia", "foto che compaiono su un altro dispositivo"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Perché le foto dell'iPhone compaiono sull'iPad o sul Mac di famiglia, come sbrogliare account e librerie condivisi e dove tenere le foto private."
 group: everyday
 schemaType: Article
@@ -27,7 +27,7 @@ faq:
   - q: "Come evito che le foto finiscano automaticamente nella Libreria condivisa?"
     a: "Nelle impostazioni di Foto, nella sezione della Libreria condivisa, puoi disattivare la condivisione automatica dalla Fotocamera o fare in modo che la Fotocamera salvi nella Libreria personale. Puoi anche spostare singole foto di nuovo nella Libreria personale."
   - q: "Le casseforti Velcrypt si sincronizzano su iPad o Mac?"
-    a: "No. Velcrypt è solo per iPhone, non ha account né sincronizzazione cloud. Nella prima versione i dati delle casseforti sono anche esclusi dai backup di iCloud e del computer."
+    a: "No. Velcrypt è solo per iPhone, non ha account né sincronizzazione cloud. I dati delle casseforti sono anche esclusi dai backup di iCloud e del computer, quindi non compaiono su un iPad."
 ---
 
 Spesso comincia con un «Mamma, cos'è questa?» stupito dal divano. Una foto che hai scattato con l'iPhone è comparsa sull'iPad di famiglia o sul Mac in cucina. Nessuno ha sbagliato: i dispositivi stanno facendo esattamente ciò per cui sono stati configurati. Per sbrogliare la situazione bastano qualche impostazione e una breve chiacchierata in famiglia.
@@ -71,7 +71,7 @@ Importare copia una foto nella cassaforte. Per toglierla da tutti i dispositivi 
 ## Limiti, detti con onestà
 
 - Poiché le casseforti non si sincronizzano, non puoi vedere gli elementi della cassaforte su iPad o Mac. Velcrypt è un'app per iPhone.
-- Nella prima versione i dati delle casseforti non sono nei backup di iCloud o del computer. Se perdi l'iPhone o dimentichi la sequenza, la cassaforte non si può recuperare. È prevista un'opzione di backup cifrato.
+- I dati delle casseforti non sono nei backup di iCloud o del computer. Se perdi l'iPhone senza un backup cifrato, o dimentichi la sequenza, la cassaforte non si può recuperare. Il backup cifrato lo crei in Impostazioni → Backup.
 - Tutto ciò che era già stato condiviso, in una Libreria condivisa, in un album condiviso o in un messaggio, può esistere ancora su altri dispositivi. Controlla anche quei posti.
 - L'icona di Velcrypt è visibile nella schermata Home, a meno che tu non usi l'opzione di iOS 18 per nascondere le app.
 

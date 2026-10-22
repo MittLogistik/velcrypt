@@ -10,11 +10,11 @@ keyFacts:
   - "Nyare iOS-versioner har ett reparationsläge där Hitta kan vara på; fråga verkstaden vad de behöver."
   - "Enhetens lösenkod låser upp Bilder, albumet Gömda, Filer och allt annat som är låst med den."
   - "Ett valv i Velcrypt kräver ett separat mönster, så enbart lösenkoden öppnar det inte."
-  - "Valvdata i Velcrypt ingår inte i iCloud- eller datorsäkerhetskopior i den första versionen, så en raderad telefon betyder ett förlorat valv."
+  - "Valvdata i Velcrypt ingår inte i iCloud- eller datorsäkerhetskopior, så skapa en krypterad säkerhetskopia av valvet före reparationen."
 primaryKeyword: "iphone reparation bilder integritet"
 keywords: ["dölja bilder före mobilreparation", "kan verkstaden se mina bilder", "iphone reparation lösenkod", "skydda data vid iphone-reparation", "integritetstips mobilreparation"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Vad en reparationstekniker kan komma åt i din iPhone, hur du förbereder dig och varför valvet behöver en plan för säkerhetskopior."
 group: everyday
 schemaType: Article
@@ -26,7 +26,7 @@ faq:
   - q: "Måste jag stänga av Hitta innan en iPhone-reparation?"
     a: "Det beror på reparationen och verkstaden. Nyare iOS-versioner erbjuder ett reparationsläge där Hitta förblir på under servicen. Följ verkstadens instruktioner och kontrollera Apple Support om du är osäker."
   - q: "Klarar sig mitt valv i Velcrypt genom en reparation?"
-    a: "Om telefonen kommer tillbaka med samma data, ja. Om enheten raderas eller byts ut är valvet borta: i den första versionen undantas valvdata från iCloud- och datorsäkerhetskopior, och en krypterad säkerhetskopia är planerad."
+    a: "Om telefonen kommer tillbaka med samma data, ja. Om enheten raderas eller byts ut är valvet borta, eftersom valvdata undantas från iCloud- och datorsäkerhetskopior. Har du skapat en krypterad säkerhetskopia i Velcrypt kan du återställa valvet från den."
   - q: "Ska jag ge teknikern min lösenkod?"
     a: "Bara om reparationen verkligen kräver det. Många hårdvarureparationer gör inte det. Lämnar du ut den, byt den så fort du fått tillbaka telefonen."
 ---
@@ -44,7 +44,7 @@ De flesta reparationstekniker är yrkespersoner utan något intresse för dina b
 
 ## Innan du lämnar in den
 
-1. **Gör en fullständig säkerhetskopia.** Använd iCloud-säkerhetskopiering eller en säkerhetskopia på dator. Kontrollera att den blev klar.
+1. **Gör en fullständig säkerhetskopia.** Använd iCloud-säkerhetskopiering eller en säkerhetskopia på dator. Kontrollera att den blev klar. Velcrypts valv ingår inte i den, så skapa också en krypterad säkerhetskopia av varje valv i Velcrypt.
 2. **Följ verkstadens instruktioner om Hitta.** Nyare iOS-versioner har ett reparationsläge där enheten kan vara kopplad till Hitta under servicen, medan du tidigare fick stänga av funktionen. Fråga verkstaden vad som gäller, eller kontrollera [Apple Support](https://support.apple.com/).
 3. **Fråga om din lösenkod verkligen behövs.** Många hårdvarureparationer kräver den inte.
 4. **Flytta känsliga saker utom räckhåll.** Skannade id-handlingar, medicinska bilder och intima bilder ska inte ligga i bildbiblioteket under en reparation.
@@ -67,12 +67,12 @@ Importerade bilder är kopior, så kom ihåg att [radera originalen](id:delete-o
 
 ## Den ärliga avvägningen: säkerhetskopior
 
-Det här behöver du väga noga. I den första versionen är valvdata i Velcrypt **undantagen från iCloud- och datorsäkerhetskopior**. Det är avsiktligt, eftersom inget lämnar din enhet, men det betyder att:
+Det här behöver du väga noga. Valvdata i Velcrypt är **undantagen från iCloud- och datorsäkerhetskopior**. Det är avsiktligt, eftersom inget lämnar din enhet utan att du väljer det, men det betyder att:
 
-- om reparationen slutar med en raderad eller utbytt iPhone kan ditt valv inte återställas, varken av dig eller av Velcrypt.
-- en krypterad säkerhetskopia med återställning är planerad, men finns inte ännu.
+- om reparationen slutar med en raderad eller utbytt iPhone kan ditt valv inte återställas från en vanlig säkerhetskopia, varken av dig eller av Velcrypt.
+- det enda sättet att få tillbaka valvet är en krypterad säkerhetskopia som du själv har skapat under Inställningar → Säkerhetskopiering.
 
-Så för allt som är oersättligt: spara en andra kopia på ett ställe du litar på före reparationen, till exempel en krypterad hårddisk som du kontrollerar. Detsamma gäller om du någon gång [glömmer ditt mönster](id:forgot-vault-pattern). Läs mer om designvalen på [säkerhetssidan](id:security).
+Så före reparationen: skapa en krypterad säkerhetskopia av varje valv och spara filen utanför telefonen, till exempel i iCloud Drive eller på en dator. Glöm inte lösenordet för säkerhetskopian; det kan inte återställas. Detsamma gäller om du någon gång [glömmer ditt mönster](id:forgot-vault-pattern). Läs mer om designvalen på [säkerhetssidan](id:security).
 
 ## Andra begränsningar att tänka på
 

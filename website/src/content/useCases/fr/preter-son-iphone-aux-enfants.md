@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "prêter son iphone à un enfant"
 keywords: ["cacher des photos à ses enfants iphone", "mon enfant regarde mes photos", "accès guidé enfant iphone", "temps d’écran enfant iphone", "bloquer l’iphone sur une app pour un enfant"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Laissez vos enfants jouer sur votre iPhone sans qu’ils tombent sur vos photos privées : Accès guidé, Temps d’écran et un coffre qui reste fermé."
 group: everyday
 schemaType: Article
@@ -79,6 +79,6 @@ Le [verrouillage automatique](id:auto-lock) ferme le coffre dès que l’app pas
 - Si votre enfant vous regarde tracer votre schéma, il peut le retenir. Tracez-le à l’abri des regards et choisissez-en un plus long.
 - Si vous tendez le téléphone avec le coffre ouvert et l’app au premier plan, le contenu reste visible jusqu’à ce que l’app passe en arrière-plan.
 - L’icône Velcrypt est visible sur votre écran d’accueil. Depuis iOS 18, vous pouvez masquer des apps derrière Face ID dans un dossier caché ; c’est une fonction d’iOS, pas de Velcrypt.
-- Dans la première version, les données des coffres ne sont incluses ni dans les sauvegardes iCloud ni dans celles sur ordinateur. Si le téléphone est perdu ou cassé, ou si vous oubliez le schéma, le coffre ne peut pas être récupéré. Gardez une copie des photos irremplaçables en lieu sûr.
+- Les données des coffres ne sont incluses ni dans les sauvegardes iCloud ni dans celles sur ordinateur. Si vous oubliez le schéma, le coffre ne peut pas être récupéré ; si le téléphone est perdu ou cassé, seule une sauvegarde chiffrée permet de le restaurer. Pour les photos irremplaçables, créez une sauvegarde chiffrée dans Réglages → Sauvegarde.
 
 Pour la plupart des familles, la meilleure combinaison est simple : l’Accès guidé chaque fois que vous prêtez le téléphone, et un coffre pour les quelques fichiers qui ne devraient jamais être à un balayage de doigt.

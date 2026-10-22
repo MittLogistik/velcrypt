@@ -7,14 +7,14 @@ navTitle: "Velcrypt vs Keepsafe"
 answer: "Velcrypt tiene tutto sul tuo iPhone, senza account, e si sblocca con una sequenza disegnata, mentre Keepsafe, secondo la sua scheda sull’App Store, usa un account e offre il backup cloud. Scegli Velcrypt per l’archiviazione solo locale e la negabilità plausibile; Keepsafe potrebbe fare più al caso tuo se vuoi backup e sincronizzazione."
 keyFacts:
   - "Velcrypt non richiede account, email né registrazione; Keepsafe usa un account, secondo la sua scheda."
-  - "Keepsafe offre un backup cloud facoltativo; Velcrypt v1 conserva le casseforti solo sul tuo iPhone."
+  - "Keepsafe offre un backup cloud facoltativo; Velcrypt conserva le casseforti solo sul tuo iPhone, con un backup cifrato manuale."
   - "Velcrypt si sblocca con una sequenza su una griglia 5×5 e, per scelta, non ha Face ID né Touch ID."
   - "In Velcrypt ogni sequenza apre la propria cassaforte e le sequenze sconosciute ne aprono una vuota."
   - "Se dimentichi la sequenza di Velcrypt o perdi il telefono, la cassaforte non si può recuperare."
 primaryKeyword: "velcrypt vs keepsafe"
 keywords: ["keepsafe vs velcrypt", "keepsafe confronto", "alternativa a keepsafe", "cassaforte foto senza account", "keepsafe backup cloud"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Cassaforte solo locale e senza account contro una cassaforte con account e backup cloud. Dove si colloca ciascuna, fianco a fianco."
 competitor: "Keepsafe"
 lastChecked: "ottobre 2026"
@@ -24,7 +24,7 @@ faq:
   - q: "Keepsafe richiede un account?"
     a: "Secondo la sua scheda sull’App Store al momento della stesura, Keepsafe usa un account legato a un indirizzo email, che supporta funzioni come il backup cloud. Velcrypt non ha alcun account: nulla su di te o sulla tua cassaforte lascia il telefono."
   - q: "Velcrypt può fare il backup della cassaforte come il cloud di Keepsafe?"
-    a: "Non nella prima versione. Velcrypt esclude i dati delle casseforti dai backup iCloud e sul computer, quindi con un telefono perso o una sequenza dimenticata la cassaforte è persa. Un’opzione di backup cifrato è in programma, senza una data fissata."
+    a: "Non nel cloud. Velcrypt esclude i dati delle casseforti dai backup iCloud e sul computer, ma offre un backup cifrato gratuito: in Impostazioni → Backup crei un file .velcrypt protetto da una password del backup e lo salvi dove vuoi. Una sequenza dimenticata resta irrecuperabile."
   - q: "Quale delle due ha una cassaforte esca?"
     a: "Entrambe offrono una forma di esca. Keepsafe ha descritto un PIN falso o esca come funzione premium. In Velcrypt ogni sequenza può essere una cassaforte a sé, quindi puoi tenere una cassaforte esca innocua, e le sequenze sconosciute aprono semplicemente una cassaforte vuota."
   - q: "Posso passare da Keepsafe a Velcrypt?"
@@ -49,14 +49,14 @@ Nessuno dei due approcci è migliore in assoluto. Uno rinuncia a un po’ di com
 |---|---|---|
 | Dettagli della cifratura sul dispositivo pubblicati | Sì: AES-256-GCM, derivazione delle chiavi con PBKDF2-HMAC-SHA512 (vedi [cifratura](id:encryption)) | Non dichiarati pubblicamente nel dettaglio |
 | Account richiesto | Nessun account, nessuna email | Sì, secondo la sua scheda |
-| Backup cloud | No (v1); backup cifrato in programma | “Private Cloud” facoltativo con premium |
+| Backup cloud | Nessuna sincronizzazione; backup cifrato manuale gratuito in un file | “Private Cloud” facoltativo con premium |
 | Metodo di sblocco | Sequenza su griglia 5×5 | PIN o codice |
 | Biometria (Face ID / Touch ID) | Non offerta, per scelta | Supportata, secondo la sua scheda |
-| Esca / più casseforti | Ogni sequenza è una cassaforte a sé | PIN falso/esca nel premium |
-| Sequenza di emergenza | In arrivo (Premium) | Non dichiarato pubblicamente |
+| Esca / più casseforti | Ogni sequenza è una cassaforte a sé (più casseforti con Premium) | PIN falso/esca nel premium |
+| Sequenza di emergenza | Prevista per un aggiornamento futuro | Non dichiarato pubblicamente |
 | Avvisi di intrusione | Non offerti | Offerti nel premium |
 | Recupero se dimentichi il codice | Nessuno; la cassaforte non si può recuperare | Variabile; può esserci un recupero tramite account |
-| Modello di business | Versione gratuita più Premium facoltativo (vedi [prezzi](id:pricing)) | Livello gratuito più abbonamento premium |
+| Modello di business | Gratuita (1 cassaforte, 50 elementi) più Premium facoltativo da 1,99 $/settimana, 19,99 $/anno o 39,99 $ a vita (USD; vedi [prezzi](id:pricing)) | Livello gratuito più abbonamento premium |
 | Piattaforme | iPhone (iOS 17+) | iOS e Android |
 
 <!-- TODO verify -->
@@ -65,7 +65,7 @@ Nessuno dei due approcci è migliore in assoluto. Uno rinuncia a un po’ di com
 
 Un account è una comodità. Permette a un’app di ripristinare la cassaforte su un nuovo telefono e di sincronizzarla tra dispositivi. Significa però anche che un’azienda conserva un tuo identificativo e che, se usi il backup cloud, una copia dei tuoi file si trova su server che non controlli, protetta dalla cifratura e dalle regole di accesso di quel servizio.
 
-Velcrypt prende la posizione opposta. Non c’è registrazione, né email, né server, come spiegato in [offline, senza account](id:offline-no-account). Nella versione 1, i dati delle casseforti sono esclusi dai backup iCloud e del Finder. La conseguenza, detta onestamente, è che nessuno può ripristinarli per te: né Apple, né Velcrypt, né tu. Se questo ti preoccupa, leggi [hai dimenticato la sequenza?](id:forgot-vault-pattern) prima di decidere.
+Velcrypt prende la posizione opposta. Non c’è registrazione, né email, né server, come spiegato in [offline, senza account](id:offline-no-account). I dati delle casseforti sono esclusi dai backup iCloud e del Finder. La conseguenza, detta onestamente, è che nessuno può ripristinarli per te, né Apple né Velcrypt: puoi farlo solo tu, da un backup cifrato che hai creato e salvato. Se questo ti preoccupa, leggi [hai dimenticato la sequenza?](id:forgot-vault-pattern) prima di decidere.
 
 ## Sblocco: sequenza contro PIN e biometria
 
@@ -81,11 +81,11 @@ Molte app cassaforte offrono un secondo codice falso che apre una cassaforte inn
 
 <!-- TODO verify -->
 
-Il modello di Velcrypt è strutturale, non un componente aggiuntivo. Ogni sequenza è una cassaforte a sé, non c’è un elenco di casseforti e una sequenza mai vista dall’app apre semplicemente una cassaforte vuota, senza errori. Nulla sullo schermo prova che esistano altre casseforti. È questo il significato pratico di [casseforti nascoste](id:hidden-vaults) e [negabilità plausibile](id:plausible-deniability-explained). Una sequenza di emergenza, che aprirebbe una cassaforte scelta e rimuoverebbe in silenzio l’accesso alle altre, è in programma per il Premium ed è in arrivo.
+Il modello di Velcrypt è strutturale, non un componente aggiuntivo. Ogni sequenza è una cassaforte a sé, non c’è un elenco di casseforti e una sequenza mai vista dall’app apre semplicemente una cassaforte vuota, senza errori. Nulla sullo schermo prova che esistano altre casseforti. È questo il significato pratico di [casseforti nascoste](id:hidden-vaults) e [negabilità plausibile](id:plausible-deniability-explained). Una sequenza di emergenza, che aprirebbe una cassaforte scelta e rimuoverebbe in silenzio l’accesso alle altre, è prevista per un aggiornamento futuro.
 
 ## Quando Keepsafe potrebbe fare più al caso tuo
 
-- **Vuoi backup e sincronizzazione.** Se perdere il telefono non deve significare perdere le foto, oggi un backup cloud legato a un account è la risposta più semplice. Velcrypt v1 non lo offre.
+- **Vuoi backup e sincronizzazione.** Se perdere il telefono non deve significare perdere le foto, oggi un backup cloud automatico legato a un account è la risposta più semplice. Velcrypt offre solo un backup cifrato manuale.
 - **Usi anche Android.** Secondo le sue schede negli store, Keepsafe è disponibile su più piattaforme; Velcrypt è solo per iPhone.
 - **Preferisci Face ID.** Se la comodità della biometria conta più del rischio di sblocco forzato, Velcrypt per scelta non la offrirà.
 - **Vuoi gli avvisi di intrusione.** Velcrypt non scatta foto agli intrusi.

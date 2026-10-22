@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "hemligt fotoalbum iphone"
 keywords: ["hemlig mapp iphone", "hemligt album iphone", "dold mapp iphone", "skapa privat album på iphone", "hemliga bilder iphone", "privat album iphone"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Skapa ett verkligt hemligt fotoalbum på iPhone och undvik de vanliga knepen som bara ser hemliga ut."
 category: hiding
 order: 5
@@ -104,4 +104,4 @@ Velcrypt närmar sig det hemliga albumet från sidan ”ingen kan öppna det”.
 
 Det ovanliga är hur valven fungerar. Varje mönster du ritar på rutnätet med 5×5 punkter är ett eget valv, och appen sparar ingen lista över dem. Ett mönster som Velcrypt aldrig har sett öppnar helt enkelt ett nytt, tomt valv, utan felmeddelande. Det betyder att ingenting i appen avslöjar hur många [dolda valv](id:hidden-vaults) du har, och du kan ha ett harmlöst valv som lockbete.
 
-De ärliga begränsningarna: själva Velcrypt-symbolen syns om du inte använder iOS egen funktion för att gömma appar, och ingenting skyddar ett valv om någon ser dig rita mönstret eller tar telefonen medan valvet är öppet. Eftersom valvdata inte säkerhetskopieras innebär ett glömt mönster ett förlorat album.
+De ärliga begränsningarna: själva Velcrypt-symbolen syns om du inte använder iOS egen funktion för att gömma appar, och ingenting skyddar ett valv om någon ser dig rita mönstret eller tar telefonen medan valvet är öppet. Eftersom valvdata inte ingår i iCloud- eller datorsäkerhetskopior innebär ett glömt mönster ett förlorat album, om du inte själv har skapat en krypterad säkerhetskopia.

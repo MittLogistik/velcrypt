@@ -19,7 +19,7 @@ keywords:
   - "calculator hidden photos app"
   - "how to find hidden calculator apps"
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "How calculator-disguised vaults work, why a disguise isn’t the same as encryption, and when the trick still has a place."
 category: choosing
 order: 22
@@ -110,6 +110,6 @@ That last point catches people out with every kind of vault. The original stays 
 
 ## How Velcrypt approaches this
 
-Velcrypt doesn’t pretend to be something else. It has no calculator disguise and no alternate icon. Instead it focuses on what happens once the app is open. Each vault opens with its own pattern drawn on a 5×5 grid, and any pattern the app hasn’t seen before simply opens an empty vault, with no error and nothing that proves other vaults exist ([hidden vaults](id:hidden-vaults)). Files are encrypted with AES-256-GCM using keys derived from the pattern ([encryption](id:encryption)), and everything stays on the device.
+Velcrypt doesn’t pretend to be something else. It has no working calculator front; Premium offers alternate Home Screen icons (calculator, timer, ruler and more), but opening the app still shows the pattern grid. Instead it focuses on what happens once the app is open. Each vault opens with its own pattern drawn on a 5×5 grid, and any pattern the app hasn’t seen before simply opens an empty vault, with no error and nothing that proves other vaults exist ([hidden vaults](id:hidden-vaults)). Files are encrypted with AES-256-GCM using keys derived from the pattern ([encryption](id:encryption)), and everything stays on the device.
 
-The trade-off is that the app is visible on your Home Screen, unless you use iOS’s own hidden-apps feature. And in the first version, vault content isn’t backed up anywhere, so a lost phone or forgotten pattern means lost content. For a direct comparison, see [Velcrypt vs calculator vault apps](id:velcrypt-vs-calculator-vault-apps).
+The trade-off is that the app is visible on your Home Screen, unless you use iOS’s own hidden-apps feature. And vault content is excluded from iCloud and computer backups, so a lost phone means lost content unless you made an encrypted backup file in Settings → Backup. A forgotten pattern can’t be recovered at all. For a direct comparison, see [Velcrypt vs calculator vault apps](id:velcrypt-vs-calculator-vault-apps).

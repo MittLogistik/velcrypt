@@ -10,11 +10,11 @@ keyFacts:
   - "Items in je filmrol synchroniseren met iCloud-foto's naar elk apparaat met je Apple Account."
   - "Fotometadata kan de locatie, datum en camera van een shoot verraden; verwijder die voordat je post."
   - "Velcrypt bewaart foto's, video's en documenten in versleutelde kluizen op je iPhone, geordend in albums."
-  - "Velcrypt heeft in de eerste versie geen cloudsynchronisatie of back-up, dus bewaar je originelen in je eigen archief."
+  - "Velcrypt heeft geen cloudsynchronisatie en is geen archief, dus bewaar je originelen in je eigen archief."
 primaryKeyword: "klantfoto's veilig bewaren iphone"
 keywords: ["onuitgebrachte foto's beschermen iphone", "fotograaf privacy klant telefoon", "werkfoto's verbergen iphone", "privacy content creators", "onuitgebrachte content privé houden"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Voor fotografen, kunstenaars en makers: houd onuitgebracht werk en klantmateriaal privé op je iPhone en deel het alleen bewust."
 group: professional
 schemaType: Article
@@ -28,7 +28,7 @@ faq:
   - q: "Kan ik projecten ordenen in Velcrypt?"
     a: "Ja. Kluizen bevatten albums, dus je kunt per project of klant een apart album bijhouden, items meervoudig selecteren en tussen albums verplaatsen."
   - q: "Vervangt Velcrypt mijn fotoarchief?"
-    a: "Nee. Velcrypt houdt werkkopieën privé op je iPhone. Het heeft geen cloudsynchronisatie en kluisgegevens worden in de eerste versie niet geback-upt, dus je originele bestanden horen in je eigen archief."
+    a: "Nee. Velcrypt houdt werkkopieën privé op je iPhone. Het heeft geen cloudsynchronisatie en kluisgegevens zitten niet in iCloud- of computerback-ups, dus je originele bestanden horen in je eigen archief."
 ---
 
 Maak je dingen voor je werk, of uit liefde voor het vak, dan staat er op je iPhone waarschijnlijk werk dat nog niet gezien mag worden. Bewerkingen die nog niet af zijn, een shoot onder embargo, proefafdrukken voor een klant, schetsen voor een opdracht of content voor een abonnementsplatform. Zeker voor makers van content voor volwassenen is een lek niet alleen vervelend; het kan gevolgen hebben voor inkomen, veiligheid en de privacy van anderen. Wat je ook maakt, het principe is hetzelfde: jij bepaalt wanneer en hoe je werk wordt gezien.
@@ -69,7 +69,7 @@ Met veilig exporteren haal je één bestand uit de kluis als het tijd is om op t
 
 ## Eerlijke beperkingen
 
-- **Geen archief.** Geen cloudsynchronisatie, en in de eerste versie geen back-up: raak je je telefoon kwijt of vergeet je het patroon, dan is de kluis niet te herstellen. Bewaar originelen elders.
+- **Geen archief.** Geen cloudsynchronisatie en geen automatische back-up: vergeet je het patroon, of raak je je telefoon kwijt zonder versleuteld back-upbestand, dan is de kluis niet te herstellen. Bewaar originelen elders.
 - **Exports verlaten de kluis.** Zodra een bestand verstuurd is, is het maar zo privé als het toestel van de ontvanger.
 - **Schermopnames door anderen.** Een kluis kan niet voorkomen dat iemand je scherm fotografeert, of dat een ontvanger een screenshot maakt van wat je stuurt.
 - **Controleer metadata zelf.** Ga er niet van uit dat een export locatie- of cameragegevens verwijdert; haal bestanden door een speciaal hulpmiddel voordat je publiceert.

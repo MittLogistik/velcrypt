@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "dölja videor iphone app"
 keywords: ["krypterat videovalv iphone", "privat videoapp iphone", "låsa videor iphone", "hemligt videovalv", "dölja videor från kamerarullen"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Importera videor som krypterade kopior, spela upp dem i valvet och rensa originalen utan att lagringsutrymmet tar slut."
 status: available
 schemaType: WebPage
@@ -26,7 +26,7 @@ faq:
   - q: "Varför minskade mitt lediga utrymme när jag importerade videor?"
     a: "Importen skapar en kopia, så tills du raderat originalet från Bilder och tömt Nyligen raderade finns videon två gånger. När originalet är borta frigörs utrymmet."
   - q: "Ingår videorna i mitt valv i iCloud-säkerhetskopian?"
-    a: "Nej. I den första versionen undantas valvdata från iCloud- och datorsäkerhetskopior. Videorna i valvet finns bara i din iPhone."
+    a: "Nej. Valvdata undantas från iCloud- och datorsäkerhetskopior. Vill du ha en kopia skapar du en krypterad säkerhetskopia under Inställningar → Säkerhetskopiering."
   - q: "Synkas dolda videor i Velcrypt till mina andra enheter?"
     a: "Nej. Velcrypt har ingen molnsynkning och finns bara för iPhone. En video i ditt valv stannar i den telefon där du importerade den."
 ---
@@ -79,9 +79,9 @@ Tänk på tre saker:
 
 ## Bra att veta
 
-- Velcrypt har ingen inbyggd kamera. Spela in med appen Kamera, importera videon och radera sedan originalet.
+- Med kameran i valvet hamnar nya videor direkt i valvet och aldrig i bildbiblioteket. Videor du redan har spelat in med appen Kamera importerar du och raderar sedan originalet.
 - Olika mönster öppnar olika [dolda valv](id:hidden-vaults). Om vissa videor aldrig ska ligga bredvid andra, ge dem ett eget valv i stället för bara ett separat album.
-- Valvdata säkerhetskopieras inte i den första versionen. Spara en andra kopia av oersättliga videor någonstans du litar på.
+- Valvdata ingår inte i iCloud- eller datorsäkerhetskopior. Skapa en krypterad säkerhetskopia av oersättliga videor och spara filen någonstans du litar på.
 - Om en video någon gång skickats i en chatt eller lagts upp i ett delat album ligger de kopiorna utanför valvet. Guiden om [att förvara intima bilder säkert](id:store-intimate-photos-safely-iphone) tar upp den risken mer ingående.
 
 För en bredare genomgång av alla inbyggda alternativ och tredjepartsalternativ, se [så döljer du videor på iPhone](id:hide-videos-iphone).

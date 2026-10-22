@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "secret photo album iphone"
 keywords: ["secret folder iphone", "secret album iphone", "hidden folder iphone", "make a private album on iphone", "secret photos iphone", "private album iphone"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Create a genuinely secret photo album on iPhone, and avoid the common tricks that only look secret."
 category: hiding
 order: 5
@@ -98,6 +98,6 @@ One thing no vault can fully hide is its own existence. The app icon is on your 
 
 Velcrypt approaches the secret album from the “nobody can open it” side. Inside a vault you can create as many [albums](id:albums) as you like and move photos and videos between them, all encrypted on the device with AES-256-GCM.
 
-The part that is unusual is how vaults work. Each pattern you draw on the 5×5 grid is its own vault, and the app keeps no list of them. A pattern Velcrypt has never seen simply opens a new, empty vault, with no error message. That means there is nothing in the app that reveals how many [hidden vaults](id:hidden-vaults) you have, and you can keep a harmless one as a decoy.
+The part that is unusual is how vaults work. Each pattern you draw on the 5×5 grid is its own vault, and the app keeps no list of them. A pattern Velcrypt has never seen simply opens a new, empty vault, with no error message. That means there is nothing in the app that reveals how many [hidden vaults](id:hidden-vaults) you have, and with Premium, which adds more vaults, you can keep a harmless one as a decoy.
 
-The honest limits: the Velcrypt icon itself is visible unless you use iOS’s own app hiding, and nothing protects a vault if someone sees you draw the pattern or takes the phone while the vault is open. Since vault data is not backed up, a forgotten pattern means a lost album.
+The honest limits: the Velcrypt icon itself is visible unless you use iOS’s own app hiding, and nothing protects a vault if someone sees you draw the pattern or takes the phone while the vault is open. Since vault data is not included in iCloud or computer backups, a forgotten pattern means a lost album; an encrypted backup file you create in Settings → Backup protects against a lost phone.

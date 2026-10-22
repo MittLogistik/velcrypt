@@ -19,7 +19,7 @@ keywords:
   - "rekenmachine app verborgen foto's"
   - "verborgen rekenmachine apps vinden"
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Hoe als rekenmachine vermomde kluizen werken, waarom vermomming niet hetzelfde is als versleuteling en wanneer de truc toch zin heeft."
 category: choosing
 order: 22
@@ -112,6 +112,6 @@ Dat laatste punt overvalt mensen bij elk soort kluis. Het origineel blijft in Fo
 
 ## Hoe Velcrypt dit aanpakt
 
-Velcrypt doet zich niet voor als iets anders. Er is geen rekenmachinevermomming en geen alternatief symbool. In plaats daarvan richt de app zich op wat er gebeurt zodra hij open is. Elke kluis opent met een eigen patroon dat je op een raster van 5×5 tekent, en elk patroon dat de app nog niet kent, opent gewoon een lege kluis, zonder foutmelding en zonder iets wat bewijst dat er andere kluizen bestaan ([verborgen kluizen](id:hidden-vaults)). Bestanden worden versleuteld met AES-256-GCM, met sleutels die van het patroon zijn afgeleid ([versleuteling](id:encryption)), en alles blijft op het apparaat.
+Velcrypt doet zich niet voor als iets anders. Er is geen werkende rekenmachine als vermomming; met Premium kun je wel een alternatief appsymbool kiezen, maar de naam Velcrypt blijft staan. In plaats daarvan richt de app zich op wat er gebeurt zodra hij open is. Elke kluis opent met een eigen patroon dat je op een raster van 5×5 tekent, en elk patroon dat de app nog niet kent, opent gewoon een lege kluis, zonder foutmelding en zonder iets wat bewijst dat er andere kluizen bestaan ([verborgen kluizen](id:hidden-vaults)). Bestanden worden versleuteld met AES-256-GCM, met sleutels die van het patroon zijn afgeleid ([versleuteling](id:encryption)), en alles blijft op het apparaat.
 
-De keerzijde is dat de app zichtbaar is op je beginscherm, tenzij je de functie van iOS gebruikt om apps te verbergen. En in de eerste versie krijgt kluisinhoud nergens een back-up, dus een verloren telefoon of vergeten patroon betekent verloren inhoud. Voor een directe vergelijking, zie [Velcrypt vs rekenmachine-kluisapps](id:velcrypt-vs-calculator-vault-apps).
+De keerzijde is dat de app zichtbaar is op je beginscherm, tenzij je de functie van iOS gebruikt om apps te verbergen. En kluisinhoud zit niet in iCloud- of computerback-ups: een vergeten patroon betekent verloren inhoud, en een verloren telefoon ook, tenzij je zelf een versleuteld back-upbestand hebt gemaakt. Voor een directe vergelijking, zie [Velcrypt vs rekenmachine-kluisapps](id:velcrypt-vs-calculator-vault-apps).

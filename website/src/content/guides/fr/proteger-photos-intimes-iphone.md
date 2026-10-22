@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "protéger photos intimes iphone"
 keywords: ["où garder ses photos privées sur iphone", "cacher des nudes iphone en sécurité", "sécurité photos privées", "confidentialité images intimes", "protéger ses photos privées"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Un plan de sécurité respectueux, étape par étape, pour vos photos intimes sur iPhone, et que faire si quelqu’un menace de les diffuser."
 category: practical
 order: 32
@@ -38,7 +38,7 @@ faq:
   - q: "L’album Masqués est-il sûr pour des photos intimes ?"
     a: "Il retire les photos de la grille principale et, depuis iOS 16, verrouille l’album avec Face ID, Touch ID ou votre code. Mais toute personne qui connaît le code de l’appareil peut l’ouvrir, et les photos masquées se synchronisent quand même via Photos iCloud sur vos autres appareils."
   - q: "Mes photos privées sont-elles sauvegardées dans iCloud ?"
-    a: "Si Photos iCloud est activé, oui, y compris les photos masquées. Elles sont chiffrées, mais de bout en bout uniquement si vous avez activé la Protection avancée des données. Les photos placées dans Velcrypt ne sont pas incluses dans les sauvegardes iCloud ou sur ordinateur dans la première version."
+    a: "Si Photos iCloud est activé, oui, y compris les photos masquées. Elles sont chiffrées, mais de bout en bout uniquement si vous avez activé la Protection avancée des données. Les photos placées dans Velcrypt ne sont pas incluses dans les sauvegardes iCloud ou sur ordinateur."
   - q: "Quelqu’un menace de diffuser mes photos intimes. Que faire ?"
     a: "Ne payez pas et n’envoyez pas d’autres images, conservez les preuves des menaces et faites-vous aider. StopNCII.org permet aux adultes de créer, sur leur propre appareil, des empreintes numériques de leurs images pour que les plateformes participantes puissent les bloquer. Vous pouvez aussi signaler les faits à la plateforme et à la police ou à une association d’aide."
   - q: "Peut-on envoyer des photos intimes en sécurité ?"
@@ -117,6 +117,6 @@ Si vous avez moins de 18 ans, parlez-en tout de suite à un adulte de confiance 
 
 ## La place de Velcrypt
 
-Velcrypt est conçu précisément pour la faille que laisse l’album Masqués : un contenu qui doit rester sur cet iPhone, derrière un secret que vous êtes seul à connaître. Les photos et vidéos que vous [cachez dans Velcrypt](id:hide-photos) sont chiffrées sur l’appareil en AES-256-GCM, restent hors des sauvegardes iCloud et sur ordinateur dans la première version, et ne touchent jamais un serveur. Chaque schéma ouvre son propre coffre, il n’y a pas de Face ID que quelqu’un pourrait utiliser pendant votre sommeil, et le contenu est masqué dans le sélecteur d’apps.
+Velcrypt est conçu précisément pour la faille que laisse l’album Masqués : un contenu qui doit rester sur cet iPhone, derrière un secret que vous êtes seul à connaître. Les photos et vidéos que vous [cachez dans Velcrypt](id:hide-photos) sont chiffrées sur l’appareil en AES-256-GCM, restent hors des sauvegardes iCloud et sur ordinateur, et ne touchent jamais un serveur. L’appareil photo intégré au coffre permet même de prendre une photo sans qu’elle passe par la photothèque. Chaque schéma ouvre son propre coffre, il n’y a pas de Face ID que quelqu’un pourrait utiliser pendant votre sommeil, et le contenu est masqué dans le sélecteur d’apps.
 
 Des limites honnêtes demeurent : Velcrypt ne peut pas atteindre les copies sur le téléphone de quelqu’un d’autre, ne peut pas empêcher quelqu’un de vous regarder tracer votre schéma, et un schéma oublié est irrécupérable. Si une relation vient de se terminer, la page [après une rupture](id:after-a-breakup) propose d’autres pistes.

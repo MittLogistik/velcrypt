@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "ex har tillgång till mina bilder iphone"
 keywords: ["byta lösenkod efter uppbrott", "ta bort ex från delat album", "säkerhetskontroll iphone", "ex kan min lösenkod", "lämna delat icloud-bildbibliotek"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "En lugn checklista för veckorna efter ett uppbrott: ny lösenkod, Säkerhetskontroll, delade album och bibliotek, och en privat plats för bilder."
 group: everyday
 schemaType: Article
@@ -68,7 +68,7 @@ Efter importen [raderar du originalen](id:delete-original-photos-after-import) f
 
 - Inget i din telefon kan ta bort kopior som ditt ex redan har: bilder du skickat, sparat från ett delat album eller som finns i exets säkerhetskopior.
 - Ett valv hjälper inte om någon ser dig rita ditt mönster, eller om telefonen tas medan valvet är öppet.
-- I den första versionen ingår valvdata inte i iCloud- eller datorsäkerhetskopior. Om du tappar bort telefonen eller glömmer ditt mönster kan valvet inte återställas. Spara en andra kopia av allt oersättligt på ett säkert ställe.
+- Valvdata ingår inte i iCloud- eller datorsäkerhetskopior. Om du tappar bort telefonen eller glömmer ditt mönster kan valvet inte återställas. Skapa en krypterad säkerhetskopia av allt oersättligt och spara den på ett säkert ställe.
 - Appsymbolen syns på hemskärmen om du inte använder iOS 18:s alternativ för att gömma appar.
 
 ## Om det går längre

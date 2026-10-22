@@ -10,11 +10,12 @@ keyFacts:
   - "Vault content is encrypted on your iPhone and never sent to us."
   - "Purchases are handled by Apple; we receive no payment details."
   - "The website uses no cookies and no analytics or tracking scripts."
-  - "Effective date: 21 October 2026 (draft pending legal review)."
+  - "Backup files are stored only where you choose; we never receive them."
+  - "Effective date: 22 October 2026 (draft pending legal review)."
 primaryKeyword: "velcrypt privacy policy"
 keywords: ["velcrypt privacy", "velcrypt data collection", "does velcrypt collect data", "photo vault privacy policy"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 schemaType: WebPage
 order: 6
 related: [terms, security, offline-no-account, support, about]
@@ -31,9 +32,9 @@ faq:
 
 **Draft — pending legal review.** This policy describes our current practices accurately, but its wording has not yet been reviewed by a lawyer and may change before launch.
 
-**Effective date:** 21 October 2026
+**Effective date:** 22 October 2026
 
-This Privacy Policy explains what information Velcrypt (“we”, “us”) handles when you use the Velcrypt iPhone app and the velcrypt.app website. The short version: the app is designed so that we never receive your content, and we collect as little as possible everywhere else.
+This Privacy Policy explains what information Velcrypt (“we”, “us”), operated by Swedish Treats AB, Sweden, handles when you use the Velcrypt iPhone app and the velcrypt.app website. The short version: the app is designed so that we never receive your content, and we collect as little as possible everywhere else.
 
 ## The Velcrypt app
 
@@ -43,7 +44,11 @@ The Velcrypt app does not collect personal data. There is no account, no sign-up
 
 ### Vault content stays on your device
 
-Photos, videos and documents you add to Velcrypt are encrypted on your iPhone and stored there. They are never uploaded to us or to any server we operate, and we have no way to view, decrypt or recover them. In the current version, vault data is also excluded from iCloud and computer backups. How the encryption works is described on the [security model](id:security) page.
+Photos, videos and documents you add to Velcrypt are encrypted on your iPhone and stored there. They are never uploaded to us or to any server we operate, and we have no way to view, decrypt or recover them. Vault data is also excluded from iCloud and computer backups. How the encryption works is described on the [security model](id:security) page.
+
+### Encrypted backup files
+
+If you use Settings → Backup, the app creates an encrypted `.velcrypt` file on your iPhone, protected by a backup password you choose. The file is saved only where you choose — for example in Files, iCloud Drive or on a computer — and is then handled by that service under its own terms. Velcrypt never receives the file or the backup password, and we cannot open or recover either.
 
 ### No analytics on content, no ads
 
@@ -51,7 +56,7 @@ The app contains no advertising and collects no analytics on your vault content.
 
 ### Purchases
 
-Any purchase, such as the optional Premium upgrade, is processed by Apple through the App Store. Apple handles your payment; we do not receive your name, card number or billing address. The App Store confirms the purchase to the app on your device so it can unlock the relevant features. Apple’s own handling of your data is described at [apple.com/privacy](https://www.apple.com/privacy/).
+Any purchase, such as the optional Premium upgrade, is processed by Apple through the App Store. Apple handles your payment; Velcrypt receives no payment details, and we do not receive your name, card number or billing address. The App Store confirms the purchase to the app on your device so it can unlock the relevant features. Apple’s own handling of your data is described at [apple.com/privacy](https://www.apple.com/privacy/).
 
 ### Information Apple may share with us
 

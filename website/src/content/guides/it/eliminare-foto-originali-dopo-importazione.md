@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "eliminare foto dopo importazione in cassaforte"
 keywords: ["eliminare foto originali dopo importazione", "svuotare eliminati di recente iphone", "eliminare definitivamente foto iphone", "eliminati di recente ios 18", "eliminare foto da iphone ma non dalla cassaforte", "app cassaforte copia o sposta"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Copiare o spostare, eliminare gli originali da Foto, svuotare Eliminati di recente e le copie che restano su iCloud e nelle chat."
 category: practical
 order: 30
@@ -123,4 +123,4 @@ Per le immagini particolarmente delicate, la guida su come [conservare foto inti
 
 Velcrypt segue il modello della copia descritto sopra. Quando [importi foto](id:hide-photos) o [video](id:hide-videos), la cassaforte cifra la propria copia con AES-256-GCM e lascia l’originale in Foto, quindi eliminare l’originale e svuotare Eliminati di recente spetta a te.
 
-Prima di farlo, valuta con onestà un limite. I dati delle casseforti Velcrypt sono conservati solo sul tuo iPhone e sono esclusi dai backup di iCloud e del computer. Una volta spariti gli originali, la cassaforte contiene l’unica copia su quel dispositivo. Se perdi il telefono o [dimentichi la sequenza](id:forgot-vault-pattern), quei file non possono essere recuperati né da te né da Velcrypt. È prevista un’opzione di backup cifrato; fino ad allora, conserva una copia separata di tutto ciò che è insostituibile in un posto di cui ti fidi.
+Prima di farlo, valuta con onestà un limite. I dati delle casseforti Velcrypt sono conservati solo sul tuo iPhone e sono esclusi dai backup di iCloud e del computer. Una volta spariti gli originali, la cassaforte contiene l’unica copia su quel dispositivo. Se [dimentichi la sequenza](id:forgot-vault-pattern), o perdi il telefono senza un backup, quei file non possono essere recuperati né da te né da Velcrypt. Prima di eliminare gli originali, crea un backup cifrato in Impostazioni → Backup e conservalo in un posto di cui ti fidi.

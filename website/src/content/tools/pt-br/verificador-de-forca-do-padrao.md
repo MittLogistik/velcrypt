@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "padrão de desbloqueio seguro"
 keywords: ["força do padrão de desbloqueio", "meu padrão é seguro", "segurança do bloqueio por padrão", "padrão de desbloqueio 5x5", "ideias de padrão de desbloqueio seguro", "testar padrão de desbloqueio"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Desenhe um padrão de teste em uma grade 5×5 e veja uma nota aproximada de força. Funciona localmente. Nunca use seu padrão real."
 toolName: "Verificador de força do padrão"
 schemaType: WebPage
@@ -43,7 +43,7 @@ faq:
   - q: "Um padrão forte protege contra alguém que está me observando?"
     a: "Não. Se alguém vir você desenhar, a força não importa. Proteja a tela e desenhe onde não possa ser observado nem filmado."
   - q: "E se eu esquecer um padrão complicado?"
-    a: "Na primeira versão do Velcrypt, um padrão esquecido não pode ser recuperado, nem por você nem pelo Velcrypt. Escolha algo complexo, mas fácil de lembrar, e pratique antes de depender dele."
+    a: "No Velcrypt, um padrão esquecido não pode ser recuperado, nem por você nem pelo Velcrypt. Escolha algo complexo, mas fácil de lembrar, e pratique antes de depender dele."
 ---
 
 ## Como funciona
@@ -90,4 +90,4 @@ Este verificador não armazena nem transmite nada, mas o hábito importa mais do
 
 No Velcrypt, seu padrão é a chave: as chaves de criptografia são derivadas dele com PBKDF2-HMAC-SHA512 usando no mínimo 600.000 iterações, o que torna cada tentativa lenta. Veja [criptografia](id:encryption). Cada padrão também abre seu próprio cofre, como explicado em [cofres ocultos](id:hidden-vaults) e [bloqueio por padrão](id:pattern-lock).
 
-Um padrão forte não protege contra alguém que observa você desenhar, contra um celular entregue com o cofre aberto nem contra um padrão esquecido. Na primeira versão não há recuperação, então leia [esqueceu o padrão do cofre](id:forgot-vault-pattern) antes de escolher algo de que você talvez não se lembre.
+Um padrão forte não protege contra alguém que observa você desenhar, contra um celular entregue com o cofre aberto nem contra um padrão esquecido. Não há redefinição de padrão, então leia [esqueceu o padrão do cofre](id:forgot-vault-pattern) antes de escolher algo de que você talvez não se lembre.

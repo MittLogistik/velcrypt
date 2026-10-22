@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "plausibele ontkenning versleuteling"
 keywords: ["wat is plausibele ontkenning", "ontkenbare versleuteling", "verborgen volume uitgelegd", "plausibele ontkenning fotokluis", "ontkenbare kluis iphone"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Het concept achter verborgen volumes en lokkluizen, hoe Velcrypts ontwerp met onbekende patronen het gebruikt en wat het eerlijk gezegd niet kan."
 category: security
 order: 42
@@ -60,7 +60,7 @@ Velcrypt past het principe toe op een kluis voor foto's en documenten op de iPho
 
 Het gevolg is dat een verkeerd patroon en een geldige maar lege kluis er precies hetzelfde uitzien. Open je een kluis voor iemand, dan toont niets in de interface dat er andere kluizen bestaan. Daardoor is een [lokkluis](id:what-is-a-decoy-vault) een natuurlijke manier van gebruiken in plaats van een speciale modus. De functiepagina over [verborgen kluizen](id:hidden-vaults) laat zien hoe het in de praktijk werkt.
 
-Een geplande Premium-functie, het [dwangpatroon](id:duress-pattern) (binnenkort beschikbaar), breidt dit uit: een speciaal patroon zou een gekozen kluis openen en stilletjes de toegang tot de andere wegnemen.
+Een geplande functie voor een toekomstige update, het [dwangpatroon](id:duress-pattern), breidt dit uit: een speciaal patroon zou een gekozen kluis openen en stilletjes de toegang tot de andere wegnemen.
 
 ## De eerlijke grenzen
 

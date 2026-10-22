@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "assistance velcrypt"
 keywords: ["contacter velcrypt", "aide velcrypt", "velcrypt n’ouvre pas mon coffre", "dépannage velcrypt", "e-mail velcrypt"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 schemaType: ContactPage
 order: 5
 related: [faq, forgot-vault-pattern, auto-lock, security, privacy]
@@ -54,7 +54,8 @@ Merci de **ne pas** envoyer votre motif, ni de captures d’écran montrant du c
 Velcrypt est conçu pour que personne d’autre que vous ne puisse ouvrir vos coffres — nous compris. L’assistance **ne peut donc pas** :
 
 - récupérer ou réinitialiser un motif oublié,
-- restaurer un coffre depuis un iPhone perdu, cassé ou réinitialisé,
+- restaurer un coffre depuis un iPhone perdu, cassé ou réinitialisé (seule une sauvegarde chiffrée que vous avez créée le permet),
+- récupérer un mot de passe de sauvegarde oublié,
 - vous dire combien de coffres existent sur un appareil,
 - déchiffrer des fichiers ou récupérer du contenu pour vous.
 
@@ -79,3 +80,15 @@ Les copies chiffrées occupent à peu près autant d’espace que les originaux.
 ### Je ne retrouve pas un fichier importé
 
 Regardez dans les autres albums du même coffre, et vérifiez que vous avez bien ouvert le coffre que vous pensiez. Les éléments d’un coffre ne sont jamais visibles depuis un autre.
+
+### Je change d’iPhone
+
+Les coffres ne sont pas transférés par les sauvegardes iCloud ou ordinateur. Sur l’ancien iPhone, ouvrez chaque coffre et créez une sauvegarde chiffrée dans Réglages → Sauvegarde, puis enregistrez le fichier ailleurs, par exemple dans iCloud Drive ou sur un ordinateur. Sur le nouvel iPhone, ouvrez Velcrypt, ouvrez le coffre de destination et restaurez la sauvegarde depuis Réglages → Sauvegarde avec votre mot de passe de sauvegarde. Les éléments sont ajoutés au coffre ouvert ; rien n’est supprimé.
+
+### Mon mot de passe de sauvegarde ne fonctionne pas
+
+Saisissez exactement le mot de passe choisi lors de la création de cette sauvegarde, en respectant majuscules et minuscules. Velcrypt ne connaît pas ce mot de passe et ne peut pas le récupérer : sans lui, la sauvegarde ne peut pas être ouverte.
+
+### Premium n’apparaît pas sur mon nouvel iPhone
+
+Ouvrez l’écran Premium et touchez « Restaurer les achats », connecté avec le même compte Apple que lors de l’achat. Les abonnements se gèrent et se résilient dans les réglages de votre compte Apple ; les remboursements sont traités par Apple.

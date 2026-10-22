@@ -7,14 +7,14 @@ navTitle: "Nutzungsbedingungen"
 answer: "Du darfst Velcrypt nach diesen Bedingungen und Apples Standard-Endbenutzer-Lizenzvertrag für lizenzierte Anwendungen für rechtmäßige, persönliche Zwecke nutzen. Da Velcrypt verlorene Daten nicht wiederherstellen kann, bist du selbst dafür verantwortlich, dir deine Muster zu merken und Kopien wichtiger Dateien aufzubewahren."
 keyFacts:
   - "Für die App gilt Apples Endbenutzer-Lizenzvertrag für lizenzierte Anwendungen (Licensed Application EULA)."
-  - "Velcrypt kann vergessene Muster oder verlorene Tresore nicht wiederherstellen."
-  - "Du bist dafür verantwortlich, Kopien wichtiger Dateien aufzubewahren."
-  - "Käufe erfolgen und werden abgewickelt über Apple."
+  - "Velcrypt kann vergessene Muster und vergessene Backup-Passwörter nicht wiederherstellen."
+  - "Du bist dafür verantwortlich, Kopien wichtiger Dateien aufzubewahren, etwa mit einem verschlüsselten Backup."
+  - "Käufe laufen über Apple; Abos verlängern sich automatisch, bis du sie kündigst."
   - "Entwurf – rechtliche Prüfung vor dem Start erforderlich."
 primaryKeyword: "velcrypt nutzungsbedingungen"
 keywords: ["velcrypt agb", "velcrypt eula", "velcrypt lizenzbedingungen"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 schemaType: WebPage
 order: 7
 related: [privacy, support, pricing, forgot-vault-pattern]
@@ -25,9 +25,9 @@ faq: []
 
 **Entwurf – rechtliche Prüfung vor dem Start erforderlich.** Diese Bedingungen sind ein Arbeitsentwurf; sie werden geprüft und können sich ändern, bevor Velcrypt veröffentlicht wird.
 
-**Gültig ab:** 21. Oktober 2026
+**Gültig ab:** 22. Oktober 2026
 
-Diese Nutzungsbedingungen („Bedingungen“) regeln deine Nutzung der Velcrypt-App für das iPhone (die „App“) und der Website velcrypt.app (die „Website“), bereitgestellt von Velcrypt („wir“, „uns“). Indem du die App herunterlädst oder nutzt oder die Website verwendest, stimmst du diesen Bedingungen zu.
+Diese Nutzungsbedingungen („Bedingungen“) regeln deine Nutzung der Velcrypt-App für das iPhone (die „App“) und der Website velcrypt.app (die „Website“), bereitgestellt von Swedish Treats AB, Schweden („wir“, „uns“). Indem du die App herunterlädst oder nutzt oder die Website verwendest, stimmst du diesen Bedingungen zu.
 
 ## 1. Die App und Apples EULA
 
@@ -52,15 +52,25 @@ Da deine Tresorinhalte auf deinem Gerät bleiben und verschlüsselt sind, könne
 Velcrypt ist so gebaut, dass niemand außer dir deine Tresore öffnen kann. Das hat Folgen, die du mit der Nutzung akzeptierst:
 
 - **Wir können deine Daten nicht wiederherstellen.** Deine Muster und Schlüssel werden nie an uns gesendet. Vergisst du ein Muster, kann der Tresor, den es öffnet, weder von dir noch von uns wiederhergestellt werden.
-- **Verlorene Geräte bedeuten verlorene Tresore.** In der aktuellen Version sind Tresordaten von iCloud- und Computer-Backups ausgeschlossen. Wird dein Gerät verloren, gestohlen, beschädigt oder zurückgesetzt, sind seine Tresore weg.
-- **Bewahre eigene Kopien auf.** Du bist dafür verantwortlich, Kopien jeder Datei, die du nicht verlieren darfst, an einem Ort aufzubewahren, dem du vertraust.
+- **Tresore sind nicht in Geräte-Backups enthalten.** Tresordaten sind von iCloud- und Computer-Backups ausgeschlossen. Wird dein Gerät verloren, gestohlen, beschädigt oder zurückgesetzt, sind seine Tresore weg – es sei denn, du hast vorher unter Einstellungen → Backup ein verschlüsseltes Backup erstellt und an einem anderen Ort gespeichert.
+- **Dein Backup-Passwort ist nicht wiederherstellbar.** Ein Backup ist mit einem Passwort geschützt, das du selbst wählst. Wir erhalten weder das Passwort noch die Backup-Datei. Vergisst du das Passwort, lässt sich das Backup nicht öffnen.
+- **Bewahre eigene Kopien auf.** Du bist dafür verantwortlich, Kopien jeder Datei, die du nicht verlieren darfst, an einem Ort aufzubewahren, dem du vertraust, und deine Backup-Dateien sicher aufzubewahren.
 - **Halte dein Muster geheim.** Jeder, der dein Muster kennt oder beobachtet, kann diesen Tresor öffnen.
 
 Lies [Tresormuster vergessen](id:forgot-vault-pattern) und die auf der Seite zum [Sicherheitsmodell](id:security) aufgeführten Grenzen, bevor du dich bei wichtigen Dateien auf Velcrypt verlässt.
 
 ## 5. Käufe
 
-Käufe, einschließlich des optionalen Premium-Upgrades, erfolgen über den App Store und unterliegen den Bedingungen von Apple. Apple verarbeitet die Zahlung, und Erstattungsanfragen bearbeitet Apple nach seinen Richtlinien. Preise werden im App Store angezeigt, bevor du kaufst. Funktionen, die als geplant oder demnächst verfügbar beschrieben sind, sind bis zu ihrer Veröffentlichung nicht garantiert.
+Velcrypt Premium wird als wöchentliches oder jährliches Abo und als einmaliger lebenslanger Kauf angeboten. Alle Käufe erfolgen über den App Store und unterliegen den Bedingungen von Apple. Preise werden in der App und im App Store angezeigt, bevor du kaufst, und können je nach Land variieren.
+
+- **Zahlung.** Die Zahlung wird bei Bestätigung des Kaufs deinem Apple Account belastet. Apple verarbeitet die Zahlung; wir erhalten deine Zahlungsdaten nicht.
+- **Automatische Verlängerung.** Abos verlängern sich automatisch zum jeweils gültigen Preis, sofern sie nicht mindestens 24 Stunden vor Ende des aktuellen Zeitraums gekündigt werden. Abos verwaltest und kündigst du in den Einstellungen deines Apple Accounts.
+- **Gratistest.** Ein Gratistest, etwa beim Jahresabo, geht automatisch in ein bezahltes Abo über, sofern du ihn nicht mindestens 24 Stunden vor seinem Ende kündigst.
+- **Lebenslang.** Der lebenslange Kauf ist eine Einmalzahlung und verlängert sich nicht.
+- **Erstattungen.** Erstattungsanfragen bearbeitet Apple nach seinen Richtlinien.
+- **Käufe wiederherstellen.** Auf einem neuen oder zurückgesetzten Gerät stellst du Premium mit „Käufe wiederherstellen“ in der App wieder her, angemeldet mit demselben Apple Account.
+
+Funktionen, die als geplant beschrieben sind, sind bis zu ihrer Veröffentlichung nicht garantiert und nicht Teil eines Kaufs.
 
 ## 6. Änderungen an der App
 
@@ -74,13 +84,13 @@ Manche Rechtsordnungen erlauben bestimmte Gewährleistungsausschlüsse nicht, da
 
 ## 8. Haftungsbeschränkung
 
-Soweit gesetzlich zulässig, haften wir nicht für indirekte, zufällige, besondere, Folge- oder Strafschäden oder für den Verlust von Daten, Inhalten, Gewinnen oder Goodwill, die sich aus deiner Nutzung oder der Unmöglichkeit der Nutzung von App oder Website ergeben – einschließlich Datenverlust durch ein vergessenes Muster, ein verlorenes oder zurückgesetztes Gerät oder gelöschte Dateien. Unsere Gesamthaftung für jeden Anspruch ist auf den Betrag begrenzt, den du in den zwölf Monaten vor dem Anspruch für die App bezahlt hast.
+Soweit gesetzlich zulässig, haften wir nicht für indirekte, zufällige, besondere, Folge- oder Strafschäden oder für den Verlust von Daten, Inhalten, Gewinnen oder Goodwill, die sich aus deiner Nutzung oder der Unmöglichkeit der Nutzung von App oder Website ergeben – einschließlich Datenverlust durch ein vergessenes Muster oder Backup-Passwort, ein verlorenes oder zurückgesetztes Gerät oder gelöschte Dateien. Unsere Gesamthaftung für jeden Anspruch ist auf den Betrag begrenzt, den du in den zwölf Monaten vor dem Anspruch für die App bezahlt hast.
 
 Nichts in diesen Bedingungen beschränkt eine Haftung, die gesetzlich nicht beschränkt werden kann.
 
 ## 9. Beendigung
 
-Du kannst die Nutzung der App jederzeit beenden, indem du sie löschst; mit der App werden auch ihre Tresore gelöscht. Wir können deine Lizenz beenden, wenn du wesentlich gegen diese Bedingungen verstößt.
+Du kannst die Nutzung der App jederzeit beenden, indem du sie löschst; mit der App werden auch ihre Tresore gelöscht. Backup-Dateien, die du außerhalb der App gespeichert hast, bleiben dort, wo du sie abgelegt hast. Ein laufendes Abo kündigst du separat in den Einstellungen deines Apple Accounts. Wir können deine Lizenz beenden, wenn du wesentlich gegen diese Bedingungen verstößt.
 
 ## 10. Änderungen dieser Bedingungen
 
@@ -88,7 +98,7 @@ Wir können diese Bedingungen aktualisieren. Die aktualisierte Fassung veröffen
 
 ## 11. Anwendbares Recht
 
-Diese Bedingungen unterliegen dem Recht von [Rechtsordnung noch festzulegen], unter Ausschluss kollisionsrechtlicher Bestimmungen. Zwingende Verbraucherschutzvorschriften deines Wohnsitzlandes bleiben anwendbar.
+Diese Bedingungen unterliegen schwedischem Recht, unter Ausschluss kollisionsrechtlicher Bestimmungen. Zwingende Verbraucherschutzvorschriften deines Wohnsitzlandes bleiben anwendbar.
 
 ## 12. Kontakt
 

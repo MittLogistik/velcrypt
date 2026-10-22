@@ -19,7 +19,7 @@ keywords:
   - "calculadora bóveda de fotos"
   - "cómo encontrar apps de calculadora ocultas"
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Cómo funcionan las bóvedas camufladas de calculadora, por qué camuflar no es lo mismo que cifrar y cuándo el truco sigue teniendo sentido."
 category: choosing
 order: 22
@@ -112,6 +112,6 @@ Ese último punto sorprende a la gente con cualquier tipo de bóveda. El origina
 
 ## Cómo lo aborda Velcrypt
 
-Velcrypt no finge ser otra cosa. No tiene camuflaje de calculadora ni iconos alternativos. En cambio, se centra en lo que pasa una vez abierta la app. Cada bóveda se abre con su propio patrón dibujado en una cuadrícula de 5×5, y cualquier patrón que la app no haya visto antes simplemente abre una bóveda vacía, sin ningún error y sin nada que demuestre que existen otras bóvedas ([bóvedas ocultas](id:hidden-vaults)). Los archivos se cifran con AES-256-GCM mediante claves derivadas del patrón ([cifrado](id:encryption)), y todo se queda en el dispositivo.
+Velcrypt no finge ser otra cosa. No es una calculadora funcional; con Premium puedes elegir iconos alternativos para la pantalla de inicio (como una calculadora, un temporizador o una regla), pero el nombre Velcrypt sigue viéndose. Su protección se centra en lo que pasa una vez abierta la app. Cada bóveda se abre con su propio patrón dibujado en una cuadrícula de 5×5, y cualquier patrón que la app no haya visto antes simplemente abre una bóveda vacía, sin ningún error y sin nada que demuestre que existen otras bóvedas ([bóvedas ocultas](id:hidden-vaults)). Los archivos se cifran con AES-256-GCM mediante claves derivadas del patrón ([cifrado](id:encryption)), y todo se queda en el dispositivo.
 
-La contrapartida es que la app se ve en tu pantalla de inicio, salvo que uses la función de iOS para ocultar apps. Y en la primera versión, el contenido de la bóveda no tiene copia de seguridad en ningún sitio, así que un teléfono perdido o un patrón olvidado significa contenido perdido. Para una comparación directa, consulta [Velcrypt frente a las apps de calculadora secreta](id:velcrypt-vs-calculator-vault-apps).
+La contrapartida es que la app se ve en tu pantalla de inicio, salvo que uses la función de iOS para ocultar apps. Y el contenido de la bóveda no está en las copias de iCloud, así que un patrón olvidado significa contenido perdido, y un teléfono perdido también, salvo que hayas creado una copia de seguridad cifrada. Para una comparación directa, consulta [Velcrypt frente a las apps de calculadora secreta](id:velcrypt-vs-calculator-vault-apps).

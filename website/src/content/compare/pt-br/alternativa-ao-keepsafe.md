@@ -10,11 +10,11 @@ keyFacts:
   - "O Velcrypt não exige conta e guarda os cofres criptografados só no seu iPhone."
   - "O álbum Ocultos e as notas bloqueadas da Apple são opções gratuitas e nativas, com sincronização pelo iCloud."
   - "Trocar significa exportar, importar e depois apagar as sobras e esvaziar a pasta Apagados."
-  - "O Velcrypt v1 não tem backup: um padrão esquecido ou um celular perdido significa perder o cofre."
+  - "O Velcrypt não tem nuvem nem conta; o backup é um arquivo criptografado manual, e um padrão esquecido não pode ser recuperado."
 primaryKeyword: "alternativa ao keepsafe"
 keywords: ["alternativa ao keepsafe iphone", "apps parecidos com keepsafe", "sair do keepsafe", "substituto do keepsafe", "cofre de fotos sem conta"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Por que as pessoas procuram uma alternativa ao Keepsafe, o que verificar em qualquer cofre de fotos e como migrar sem deixar cópias para trás."
 competitor: "Keepsafe"
 lastChecked: "outubro de 2026"
@@ -28,7 +28,7 @@ faq:
   - q: "Apagar o Keepsafe apaga meu backup na nuvem?"
     a: "Não necessariamente. Apagar um app normalmente não encerra a conta nem remove dados do servidor. Confira a ajuda ou os ajustes de conta do Keepsafe para saber como apagar sua conta e seus dados na nuvem."
   - q: "Existe alternativa ao Keepsafe com backup na nuvem?"
-    a: "Sim, vários apps de cofre oferecem recursos na nuvem, e o álbum Ocultos da Apple sincroniza com o Fotos do iCloud. O Velcrypt v1 não oferece; uma opção de backup criptografado está planejada."
+    a: "Sim, vários apps de cofre oferecem recursos na nuvem, e o álbum Ocultos da Apple sincroniza com o Fotos do iCloud. O Velcrypt não sincroniza com a nuvem; em vez disso, oferece um backup criptografado grátis, em arquivo, que você mesmo cria e pode salvar no iCloud Drive."
 ---
 
 *Última verificação: outubro de 2026. Os detalhes dos produtos mudam; confira a página de cada app na App Store para ver a versão atual.*
@@ -61,14 +61,14 @@ Um cofre de fotos é um app que guarda fotos e vídeos escolhidos separados da s
 
 | Opção | Conta | Cópia na nuvem | Segredo separado | Observações |
 |---|---|---|---|---|
-| Velcrypt | Nenhuma | Não (v1) | Sim, um padrão | Cofres ocultos, documentos, sem Face ID |
+| Velcrypt | Nenhuma | Não; backup criptografado manual em arquivo | Sim, um padrão | Cofres ocultos, documentos, sem Face ID |
 | Álbum Ocultos do iPhone | Conta Apple para o iCloud | Com o Fotos do iCloud | Não, código do aparelho | Grátis, nativo |
 | Notas bloqueadas no app Notas | Conta Apple para o iCloud | Com as Notas do iCloud | Senha opcional do Notas | Melhor para poucos itens |
 | Outros apps de cofre | Varia | Varia | Varia | Confira cada página na loja |
 
 <!-- TODO verify -->
 
-O **Velcrypt** mantém tudo no iPhone, sem conta e sem servidores. Você desbloqueia desenhando um padrão em uma grade 5×5, e cada padrão abre seu próprio cofre; um padrão desconhecido abre um cofre vazio, o que dá a você [negação plausível](id:plausible-deniability-explained). Os arquivos são criptografados com AES-256-GCM. A contrapartida honesta: na v1, os dados do cofre não entram nos backups, então um celular perdido ou um padrão esquecido não tem volta. A [comparação direta com o Keepsafe](id:velcrypt-vs-keepsafe) coloca os dois lado a lado.
+O **Velcrypt** mantém tudo no iPhone, sem conta e sem servidores. Você desbloqueia desenhando um padrão em uma grade 5×5, e cada padrão abre seu próprio cofre; um padrão desconhecido abre um cofre vazio, o que dá a você [negação plausível](id:plausible-deniability-explained). Os arquivos são criptografados com AES-256-GCM. A contrapartida honesta: os dados do cofre não entram nos backups do iCloud nem do computador, então um padrão esquecido não tem volta, e um celular perdido só tem volta se você tiver criado um backup criptografado. A [comparação direta com o Keepsafe](id:velcrypt-vs-keepsafe) coloca os dois lado a lado.
 
 As **opções nativas da Apple** não custam nada. O [álbum Ocultos](id:velcrypt-vs-iphone-hidden-album) é fácil e sincroniza, mas abre com o código do aparelho. As [notas bloqueadas](id:velcrypt-vs-apple-notes-locked-notes) servem para algumas imagens ou digitalizações sensíveis.
 
@@ -76,7 +76,7 @@ As **opções nativas da Apple** não custam nada. O [álbum Ocultos](id:velcryp
 
 ## Quando continuar com o Keepsafe pode fazer sentido
 
-Se o backup na nuvem é o recurso de que você mais depende e você se sente à vontade com uma conta, o Keepsafe pode continuar sendo a melhor opção. O Velcrypt v1 não oferece backup nem sincronização e não está disponível para Android.
+Se o backup na nuvem é o recurso de que você mais depende e você se sente à vontade com uma conta, o Keepsafe pode continuar sendo a melhor opção. O Velcrypt não oferece backup automático na nuvem nem sincronização, apenas um backup criptografado manual, e não está disponível para Android.
 
 ## Como trocar sem deixar cópias
 

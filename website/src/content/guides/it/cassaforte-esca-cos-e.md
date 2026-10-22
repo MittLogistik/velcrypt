@@ -10,11 +10,11 @@ keyFacts:
   - "In Velcrypt ogni sequenza è una cassaforte a sé e non esiste un elenco di casseforti che tradisca le altre."
   - "Un’esca vuota è sospetta; un’esca vissuta, con album ed elementi recenti, è convincente."
   - "Un’esca protegge da curiosità e pressioni occasionali, non dall’analisi forense né da chi ti ha visto disegnare."
-  - "Una sequenza di coercizione che rimuove anche l’accesso alle altre casseforti è una funzione Premium prevista (in arrivo)."
+  - "Una sequenza di emergenza che rimuova anche l’accesso alle altre casseforti è prevista per un aggiornamento futuro."
 primaryKeyword: "cassaforte esca"
 keywords: ["cos’è una cassaforte esca", "password esca app foto", "cassaforte finta app", "sequenza esca", "seconda cassaforte iphone"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Cos’è una cassaforte esca, come costruirne una credibile con una seconda sequenza in Velcrypt e i limiti da conoscere."
 category: security
 order: 41
@@ -36,11 +36,11 @@ faq:
   - q: "Cos’è una password esca in un’app cassaforte per foto?"
     a: "Una password esca (o PIN o sequenza esca) è un secondo segreto che apre un insieme separato e innocuo di contenuti. Ti permette di sembrare disponibile ad aprire l’app senza rivelare ciò che tieni davvero privato."
   - q: "Come creo una cassaforte esca in Velcrypt?"
-    a: "Disegna una seconda sequenza che non hai mai usato. Velcrypt apre per lei una nuova cassaforte vuota. Aggiungi contenuti quotidiani credibili, come scontrini, screenshot e foto ordinarie, e quella sequenza aprirà la tua esca."
+    a: "Disegna una seconda sequenza che non hai mai usato. Velcrypt apre per lei una nuova cassaforte vuota. Aggiungi contenuti quotidiani credibili, come scontrini, screenshot e foto ordinarie, e quella sequenza aprirà la tua esca. Poiché la versione gratuita ha una sola cassaforte, una seconda cassaforte richiede il Premium."
   - q: "Qualcuno può capire che una cassaforte è un’esca?"
     a: "Non dall’interno dell’app: Velcrypt non tiene un elenco delle casseforti e non lascia intendere che ne esistano altre. Ciò che può tradire un’esca è il contenuto, per esempio se è vuota, ferma da tempo o palesemente costruita."
-  - q: "Una cassaforte esca è la stessa cosa di una sequenza di coercizione?"
-    a: "No. Un’esca apre semplicemente un’altra cassaforte. Una sequenza di coercizione, funzione Premium prevista di Velcrypt in arrivo, aprirebbe una cassaforte scelta e rimuoverebbe anche, in silenzio, l’accesso alle altre."
+  - q: "Una cassaforte esca è la stessa cosa di una sequenza di emergenza?"
+    a: "No. Un’esca apre semplicemente un’altra cassaforte. Una sequenza di emergenza, prevista in Velcrypt per un aggiornamento futuro, aprirebbe una cassaforte scelta e rimuoverebbe anche, in silenzio, l’accesso alle altre."
   - q: "Devo usare una cassaforte esca con la polizia o alla frontiera?"
     a: "Questa guida non può dare consulenza legale. Ingannare un pubblico ufficiale può essere reato in molti paesi. Un’esca serve soprattutto contro la curiosità quotidiana e le pressioni informali; per le situazioni ufficiali, informati sui tuoi diritti e parla con un avvocato."
 ---
@@ -68,7 +68,7 @@ Quindi in Velcrypt una cassaforte esca non è una funzione da attivare. È solo 
 ## Creare un’esca credibile, passo per passo
 
 1. **Scegli una seconda sequenza.** Deve seguire le regole consuete (una linea continua che passa per almeno 6 punti sulla griglia 5×5, almeno un cambio di direzione). Rendila facile da ricordare sotto stress, ma diversa dalla sequenza vera per forma e punto di partenza.
-2. **Disegnala nella schermata di sblocco.** Velcrypt apre per lei una cassaforte vuota. Non c’è altro da configurare.
+2. **Disegnala nella schermata di sblocco.** Velcrypt apre per lei una cassaforte vuota. Non c’è altro da configurare (serve il Premium, perché la versione gratuita ha una sola cassaforte).
 3. **Dalle un motivo di esistere.** Chiediti perché una persona come te userebbe plausibilmente una cassaforte. Risposte comuni e credibili: copie di documenti d’identità e assicurativi, scontrini e garanzie, screenshot di prenotazioni, idee regalo, una sorpresa che stai organizzando.
 4. **Riempila di contenuti reali.** Importa qualche decina di elementi in un paio di [album](id:albums), per esempio «Documenti», «Scontrini» e «Idee regalo». Usa materiale reale e poco delicato, non immagini di repertorio a caso.
 5. **Tienila viva.** Aggiungi qualcosa ogni poche settimane. Un’esca il cui elemento più recente ha un anno sembra abbandonata, e fa nascere la domanda: «E le cose recenti dove le tieni?»
@@ -91,9 +91,9 @@ Una cassaforte esca è uno strumento sociale sostenuto da una buona crittografia
 - **La coercizione persistente.** Un’esca disinnesca un momento. Non è un piano per una situazione di abuso continuativa; se è la tua situazione, rivolgiti ai servizi di supporto della tua zona.
 - **I contesti legali.** Ingannare un pubblico ufficiale può essere reato in molti paesi. Rifletti bene prima di usare un’esca con le autorità, e leggi la [guida ai controlli alla frontiera](id:phone-privacy-border-crossing).
 
-## Cassaforte esca e sequenza di coercizione
+## Cassaforte esca e sequenza di emergenza
 
-Un’esca apre un’altra cassaforte e lascia tutto il resto intatto. Una **sequenza di coercizione** fa un passo in più: apre una cassaforte che hai scelto e, nello stesso momento, rimuove in silenzio l’accesso alle altre. In Velcrypt la [sequenza di coercizione](id:duress-pattern) è una funzione Premium prevista ed è in arrivo. Fino ad allora, un’esca ben curata copre la maggior parte delle situazioni quotidiane, come un partner curioso, un amico che scorre il tuo telefono o un collega impiccione.
+Un’esca apre un’altra cassaforte e lascia tutto il resto intatto. Una **sequenza di emergenza** fa un passo in più: apre una cassaforte che hai scelto e, nello stesso momento, rimuove in silenzio l’accesso alle altre. In Velcrypt la [sequenza di emergenza](id:duress-pattern) è prevista per un aggiornamento futuro. Nel frattempo, un’esca ben curata copre la maggior parte delle situazioni quotidiane, come un partner curioso, un amico che scorre il tuo telefono o un collega impiccione.
 
 ## Dove si inserisce Velcrypt
 

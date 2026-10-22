@@ -4,18 +4,19 @@ title: "Segurança do Velcrypt: como funciona a criptografia"
 description: "Como o Velcrypt protege seus cofres: derivação PBKDF2, chave mestra por cofre, AES-256-GCM, Proteção de Dados do iOS — e contra o que ele não protege."
 h1: "Como o Velcrypt funciona: o modelo de segurança"
 navTitle: "Modelo de segurança"
-answer: "O Velcrypt transforma o padrão que você desenha em uma chave com PBKDF2-HMAC-SHA512 (no mínimo 600.000 iterações), usa essa chave para proteger uma chave mestra aleatória de 256 bits daquele cofre e criptografa cada arquivo com AES-256-GCM no seu iPhone. Nada é enviado, e não existe conta nem cópia de recuperação das suas chaves."
+answer: "O Velcrypt transforma o padrão que você desenha em uma chave com PBKDF2-HMAC-SHA512 (no mínimo 600.000 iterações), usa essa chave para proteger uma chave mestra aleatória de 256 bits daquele cofre e criptografa cada arquivo com AES-256-GCM no seu iPhone. Nada é enviado, e não existe conta nem cópia de recuperação das suas chaves. O único jeito de ter uma cópia é um backup criptografado que você mesmo cria."
 keyFacts:
   - "Padrão → PBKDF2-HMAC-SHA512, no mínimo 600.000 iterações, salt aleatório por aparelho guardado no Keychain do iOS."
   - "Cada cofre tem sua própria chave mestra aleatória de 256 bits; as chaves de cada arquivo são derivadas com HKDF."
   - "Os arquivos são criptografados com AES-256-GCM via Apple CryptoKit, além da Proteção de Dados do iOS (classe de proteção completa)."
   - "Um padrão desconhecido abre um cofre vazio — sem lista de cofres, sem mensagem de “padrão incorreto”."
-  - "Sem rede, sem conta, sem análises sobre o conteúdo do cofre; na v1 os dados do cofre ficam fora dos backups do iCloud e do computador."
+  - "Sem rede, sem conta, sem análises sobre o conteúdo do cofre; os dados do cofre ficam fora dos backups do iCloud e do computador."
+  - "Backup opcional: um arquivo .velcrypt criptografado, protegido por uma senha de backup que você escolhe."
   - "O Velcrypt ainda não passou por uma auditoria de segurança independente."
 primaryKeyword: "segurança velcrypt"
 keywords: ["criptografia cofre de fotos iphone", "como funciona a criptografia do velcrypt", "cofre de fotos aes-256-gcm", "bloqueio por padrão pbkdf2", "modelo de ameaças cofre de fotos", "app cofre com negação plausível"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 schemaType: WebPage
 order: 1
 related: [encryption, pattern-lock, hidden-vaults, aes-256-encryption-explained, plausible-deniability-explained, forgot-vault-pattern]
@@ -38,7 +39,7 @@ Esta página explica, em linguagem simples, o que acontece com suas fotos, víde
 
 O Velcrypt é um app para iPhone que guarda arquivos privados em cofres criptografados no próprio aparelho. Você abre um cofre desenhando um padrão em uma grade de 5×5 pontos. Esse padrão nunca é salvo em lugar nenhum. Em vez disso, ele passa por uma função lenta de derivação de chave, que gera uma chave — e é essa chave que protege o conteúdo do cofre.
 
-Tudo acontece no próprio iPhone. O Velcrypt não tem conta, nem servidores, nem etapa de envio, então não existe cópia do seu cofre, nem das suas chaves, em nenhum outro lugar. Essa é a origem da sua força e também a sua principal limitação: se você esquecer o padrão ou perder o celular, o cofre não pode ser recuperado.
+Tudo acontece no próprio iPhone. O Velcrypt não tem conta, nem servidores, nem etapa de envio, então não existe cópia do seu cofre, nem das suas chaves, em nenhum outro lugar. Essa é a origem da sua força e também a sua principal limitação: se você esquecer o padrão, o cofre não pode ser recuperado, e se perder o celular, só recupera os cofres dos quais tiver criado um backup criptografado.
 
 ## Do padrão à chave
 
@@ -78,7 +79,7 @@ A maioria dos apps compara sua senha com algo armazenado — um hash, um verific
 
 Não existe lista de cofres nem valor armazenado que confirme se um padrão está “correto”. Quando você desenha um padrão, o Velcrypt deriva uma chave e tenta abrir o cofre que pertence a ela. Se nenhum cofre corresponder, o app simplesmente abre um cofre novo e vazio para aquele padrão. Para quem está com o celular na mão, um padrão nunca usado e um cofre real, porém vazio, parecem idênticos.
 
-Isso dá a você **negação plausível**: a possibilidade de dizer, com credibilidade, que não há mais nada para ver, porque nada no app prova o contrário. Você pode manter um cofre de fachada com fotos comuns e um cofre separado para o que é realmente privado. A página de [cofres ocultos](id:hidden-vaults) e nossos guias sobre [cofres de fachada](id:what-is-a-decoy-vault) e [negação plausível](id:plausible-deniability-explained) trazem mais detalhes.
+Isso dá a você **negação plausível**: a possibilidade de dizer, com credibilidade, que não há mais nada para ver, porque nada no app prova o contrário. Com o Premium, que libera mais de um cofre, você pode manter um cofre de fachada com fotos comuns e um cofre separado para o que é realmente privado. A página de [cofres ocultos](id:hidden-vaults) e nossos guias sobre [cofres de fachada](id:what-is-a-decoy-vault) e [negação plausível](id:plausible-deniability-explained) trazem mais detalhes.
 
 Um efeito colateral prático: se você lembrar o padrão com um ponto errado, vai cair em um cofre vazio em vez de ver uma mensagem de erro. Isso é proposital, não um defeito.
 
@@ -88,11 +89,13 @@ O Velcrypt bloqueia automaticamente quando vai para segundo plano, depois de um 
 
 Não há desbloqueio por Face ID ou Touch ID, por escolha de design. Um rosto ou um dedo pode ser usado sem o seu consentimento — enquanto você dorme ou sob pressão. Um padrão existe apenas na sua memória.
 
-## Sem rede, sem conta, sem backups
+## Sem rede, sem conta, sem backups automáticos
 
 O Velcrypt funciona totalmente offline. Não há cadastro, endereço de e-mail, servidor nem envio do conteúdo do cofre, e nenhuma análise é coletada sobre o que você guarda. A página [offline e sem conta](id:offline-no-account) mostra o que isso significa na prática.
 
-Na primeira versão, os dados do cofre também ficam **fora dos backups do iCloud e do computador (Finder)**. Isso mantém seus arquivos criptografados longe dos servidores da Apple e de qualquer computador com o qual você sincronize, mas tem uma consequência real: se o seu iPhone for perdido, quebrar ou for redefinido, os cofres vão junto. Uma opção de backup criptografado está planejada, sem data definida.
+Os dados do cofre também ficam **fora dos backups do iCloud e do computador (Finder)**. Isso mantém seus arquivos criptografados longe dos servidores da Apple e de qualquer computador com o qual você sincronize, mas tem uma consequência real: se o seu iPhone for perdido, quebrar ou for redefinido, os cofres vão junto.
+
+Para se proteger disso, você pode criar um **backup criptografado** em Ajustes → Backup. Ele gera um único arquivo .velcrypt do cofre aberto, protegido por uma senha de backup que você escolhe. Cada cofre tem seu próprio backup, então um backup nunca revela seus outros cofres. Você decide onde guardar o arquivo (app Arquivos, iCloud Drive ou um computador), e o Velcrypt nunca o recebe. O Velcrypt não consegue recuperar uma senha de backup esquecida: sem ela, o backup não pode ser aberto. Escolha uma senha longa, porque qualquer pessoa com o arquivo e a senha consegue restaurar o conteúdo.
 
 ## Modelo de ameaças em resumo
 
@@ -103,11 +106,12 @@ Na primeira versão, os dados do cofre também ficam **fora dos backups do iClou
 | Alguém tenta provar que você tem mais cofres | Em grande parte | Sem lista de cofres, sem mensagem de “padrão incorreto”; o app não mostra quantos cofres existem. |
 | Roubo de um iPhone bloqueado | Sim | Proteção de Dados do iOS mais a criptografia AES-256-GCM do próprio Velcrypt. |
 | Força bruta no padrão a partir de arquivos extraídos | Dificultada | PBKDF2 com mais de 600.000 iterações e salt por aparelho; um padrão longo faz diferença. |
-| Invasão de conta na nuvem | Sim | Os dados do cofre não são enviados e ficam fora dos backups do iCloud na v1. |
+| Invasão de conta na nuvem | Sim | Os dados do cofre não são enviados e ficam fora dos backups do iCloud. Um backup do Velcrypt salvo no iCloud Drive continua criptografado com a sua senha de backup. |
 | Adulteração de arquivos criptografados | Detectada | A autenticação do AES-256-GCM rejeita dados modificados. |
 | Alguém observando você desenhar o padrão | Não | Veja abaixo. |
 | Malware ou aparelho com jailbreak | Não | Veja abaixo. |
-| Padrão esquecido ou celular perdido | Não | Não há recuperação possível. |
+| Padrão ou senha de backup esquecidos | Não | Não há recuperação possível. |
+| Celular perdido | Só com backup | Os cofres dos quais você criou um backup criptografado podem ser restaurados em outro iPhone. |
 
 <a id="what-velcrypt-does-not-protect-against"></a>
 ## Contra o que o Velcrypt não protege
@@ -115,12 +119,12 @@ Na primeira versão, os dados do cofre também ficam **fora dos backups do iClou
 Toda ferramenta de segurança tem limites, e você deve conhecer os do Velcrypt antes de depender dele.
 
 - **Olhares por cima do ombro.** Se alguém vir você desenhar seu padrão, pessoalmente ou por uma câmera, poderá abrir aquele cofre. Desenhe longe dos olhos dos outros e prefira um padrão que não pareça uma letra ou forma simples.
-- **Ser obrigado a desbloquear.** O Velcrypt não consegue impedir que alguém force você a desenhar um padrão. Um cofre de fachada pode ajudar; um padrão de coação (em breve, Premium) está planejado para abrir um cofre escolhido e remover silenciosamente o acesso aos outros.
+- **Ser obrigado a desbloquear.** O Velcrypt não consegue impedir que alguém force você a desenhar um padrão. Um cofre de fachada pode ajudar; um padrão de coação está planejado para uma atualização futura, para abrir um cofre escolhido e remover silenciosamente o acesso aos outros.
 - **Celular entregue com o cofre aberto.** Enquanto um cofre está desbloqueado, qualquer pessoa com o celular na mão vê o que você vê. Bloqueie antes de passar o celular para alguém.
 - **Aparelhos comprometidos ou com jailbreak e malware.** Um software capaz de ler a tela, registrar toques ou inspecionar a memória dos apps em um aparelho comprometido pode derrotar qualquer criptografia no nível do app.
 - **Capturas de tela ou fotos da tela.** O Velcrypt não consegue impedir que outra câmera fotografe sua tela.
 - **Cópias em outros lugares.** Importar copia a foto; o original continua no Fotos até você apagá-lo e, depois disso, fica em Apagados por cerca de 30 dias. Também podem existir cópias no Fotos do iCloud, em apps de mensagem, no e-mail ou no celular de outra pessoa. Siga o guia sobre [apagar os originais depois de importar](id:delete-original-photos-after-import).
-- **Perda do celular ou padrão esquecido.** Nos dois casos, os dados se perdem. Não há frase de recuperação nem redefinição. Veja [esqueceu o padrão do cofre](id:forgot-vault-pattern).
+- **Padrão esquecido ou perda do celular sem backup.** Nos dois casos, os dados se perdem. Não há frase de recuperação nem redefinição, e uma senha de backup esquecida também não pode ser recuperada. Veja [esqueceu o padrão do cofre](id:forgot-vault-pattern).
 - **Detecção de que o Velcrypt está em uso.** O ícone do app é visível, e ferramentas forenses podem perceber que o Velcrypt guarda dados criptografados e mais ou menos quanto. O Velcrypt não promete esconder isso — apenas o número de cofres e o conteúdo deles.
 - **Padrões fracos ou fáceis de adivinhar.** Um padrão curto, ou em forma de L, Z ou quadrado, é muito mais fácil de adivinhar. Teste uma forma parecida no [verificador de força do padrão](id:pattern-strength-checker) — nunca o seu padrão real.
 

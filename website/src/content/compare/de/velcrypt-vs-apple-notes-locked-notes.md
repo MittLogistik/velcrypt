@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "fotos in notizen sperren"
 keywords: ["fotos in gesperrten notizen verstecken", "apple notizen fotos sperren", "gesperrte notizen iphone fotos", "notizen app private fotos", "gesperrte notiz vs tresor app"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Fotos in einer gesperrten Apple-Notiz verstecken oder ein eigener verschlüsselter Tresor: Komfort, Kapazität, Synchronisierung und wer sie öffnen kann."
 competitor: "Gesperrte Notizen in Apple Notizen"
 lastChecked: "Oktober 2026"
@@ -51,14 +51,14 @@ Du kannst Fotos aus deiner Mediathek hinzufügen, in der Notiz ein Foto aufnehme
 |---|---|---|
 | Details zur Verschlüsselung auf dem Gerät veröffentlicht | Ja: AES-256-GCM, PBKDF2-HMAC-SHA512 | In Apples Dokumentation zur Plattformsicherheit beschrieben |
 | Konto erforderlich | Nein | Nein für Notizen auf dem Gerät; Apple Account für iCloud-Synchronisierung |
-| Cloud-Backup | Nein (v1); verschlüsseltes Backup geplant | Ja, mit iCloud-Notizen |
+| Cloud-Backup | Nein; kostenloses manuelles verschlüsseltes Backup | Ja, mit iCloud-Notizen |
 | Entsperren | Muster auf einem 5×5-Raster | Gerätecode oder separates Notizen-Passwort |
 | Biometrie | Bewusst nicht angeboten | Optional Face ID / Touch ID |
-| Köder- / mehrere Tresore | Jedes Muster ist ein eigener Tresor | Nicht unterstützt; alle gesperrten Notizen teilen ein Passwort |
-| Notfallmuster | Demnächst (Premium) | Nein |
+| Köder- / mehrere Tresore | Jedes Muster ist ein eigener Tresor (mehrere Tresore mit Premium) | Nicht unterstützt; alle gesperrten Notizen teilen ein Passwort |
+| Notfallmuster | Geplant, noch nicht verfügbar | Nein |
 | Wiederherstellung bei vergessenem Code | Keine | Mit Gerätecode entfällt ein separates Passwort; alte Notizen-Passwörter lassen sich nicht wiederherstellen |
 | Umgang mit Fotos und Videos | Alben, Anzeige mit Zoomen und Wischen, Videos | Bilder in einer Notiz; Videounterstützung unterschiedlich |
-| Kosten | Kostenlose Version plus optionales Premium | In iOS enthalten |
+| Kosten | Kostenlos: 1 Tresor, bis zu 50 Objekte; Premium als Abo oder einmaliger Kauf (siehe [Preise](id:pricing)) | In iOS enthalten |
 | Plattformen | iPhone (iOS 17+) | iPhone, iPad, Mac und iCloud.com |
 
 <!-- TODO verify -->
@@ -71,7 +71,7 @@ Wenn du eine Kopie eines Reisepass-Scans, ein paar Screenshots oder einen Arztbr
 
 Notizen ist in erster Linie eine Schreib-App. Sobald du Dutzende oder Hunderte Bilder oder Videos hast, wird das Durchblättern von Notizen mühsam. Velcrypt ist wie eine Foto-App organisiert: [Alben](id:albums) in jedem Tresor, eine Vollbildanzeige mit Zoomen und Wischen, Mehrfachauswahl, Verschieben zwischen Alben und Dokumentimport aus der App „Dateien“ ([private Dokumente](id:private-documents)).
 
-Der andere Unterschied ist das Geheimnis. Sperrst du Notizen mit deinem Gerätecode, kann sie jeder öffnen, der den Code kennt. Ein separates Notizen-Passwort löst das, aber es bleibt ein Passwort für alle gesperrten Notizen. Das Muster von Velcrypt ist unabhängig von deinem Code, und jedes Muster öffnet einen separaten Tresor, der die anderen nicht verrät. Ein Muster, das die App noch nicht kennt, öffnet einen leeren Tresor – so kannst du einen Köder führen. Siehe [Mustersperre](id:pattern-lock) und [versteckte Tresore](id:hidden-vaults).
+Der andere Unterschied ist das Geheimnis. Sperrst du Notizen mit deinem Gerätecode, kann sie jeder öffnen, der den Code kennt. Ein separates Notizen-Passwort löst das, aber es bleibt ein Passwort für alle gesperrten Notizen. Das Muster von Velcrypt ist unabhängig von deinem Code, und jedes Muster öffnet einen separaten Tresor, der die anderen nicht verrät. Ein Muster, das die App noch nicht kennt, öffnet einen leeren Tresor – so kannst du mit Premium einen Köder führen. Siehe [Mustersperre](id:pattern-lock) und [versteckte Tresore](id:hidden-vaults).
 
 ## Wann Apple Notizen besser passen kann
 
@@ -83,7 +83,7 @@ Der andere Unterschied ist das Geheimnis. Sperrst du Notizen mit deinem Gerätec
 ## Wann Velcrypt besser passen kann
 
 - **Du hast eine echte Sammlung.** Viele Fotos, Videos und Dokumente, in Alben geordnet.
-- **Nichts soll in die Cloud.** Tresordaten bleiben auf dem iPhone und in v1 außerhalb von Backups.
+- **Nichts soll ungefragt in die Cloud.** Tresordaten bleiben auf dem iPhone und außerhalb von iCloud- und Computer-Backups; ein verschlüsseltes Backup legst du nur an, wenn du es willst.
 - **Du brauchst getrennte private Bereiche.** Jedes Muster ist ein eigener Tresor.
 - **Jemand anderes kennt deinen Code.** Das Muster ist ein separates Geheimnis.
 

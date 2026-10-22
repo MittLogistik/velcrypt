@@ -10,11 +10,11 @@ keyFacts:
   - "Velcrypt entsperrt mit einem Muster auf einem 5×5-Raster; jedes Muster ist ein separater Tresor."
   - "Velcrypt veröffentlicht sein Verschlüsselungskonzept: AES-256-GCM mit Schlüsselableitung per PBKDF2-HMAC-SHA512."
   - "Velcrypt hat bewusst keine Einbruchsfotos und kein Face ID."
-  - "Velcrypt v1 hat kein Backup: Ein vergessenes Muster oder verlorenes iPhone bedeutet, dass der Tresor weg ist."
+  - "Velcrypt hat kein Cloud-Backup, nur ein manuelles verschlüsseltes Backup; ein vergessenes Muster lässt sich nicht wiederherstellen."
 primaryKeyword: "velcrypt vs private photo vault"
 keywords: ["private photo vault alternative", "private photo vault vergleich", "private photo vault vs", "foto tresor köder passwort", "foto tresor mit mustersperre"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "PIN-Tresor mit Köder- und Einbruchsfunktionen gegen einen kontofreien, verschlüsselten Tresor mit Mustersperre. Neutral nebeneinander."
 competitor: "Private Photo Vault"
 lastChecked: "Oktober 2026"
@@ -49,14 +49,14 @@ Velcrypt ist ein Tresor auf dem Gerät mit Mustersperre. Ein Muster ist eine dur
 |---|---|---|
 | Details zur Verschlüsselung auf dem Gerät veröffentlicht | Ja: AES-256-GCM, Schlüssel pro Tresor und pro Datei | Nicht im Detail öffentlich angegeben |
 | Konto erforderlich | Nein | Nicht öffentlich angegeben |
-| Cloud-Backup | Nein (v1); verschlüsseltes Backup geplant | Unterschiedlich; aktuellen Store-Eintrag prüfen |
+| Cloud-Backup | Nein; kostenloses manuelles verschlüsseltes Backup | Unterschiedlich; aktuellen Store-Eintrag prüfen |
 | Entsperren | Muster auf einem 5×5-Raster | PIN / Code |
 | Biometrie (Face ID / Touch ID) | Bewusst nicht angeboten | Unterschiedlich |
-| Köder- / mehrere Tresore | Jedes Muster ist ein eigener Tresor | Köder-Passwort |
-| Notfallmuster | Demnächst (Premium) | Nicht öffentlich angegeben |
+| Köder- / mehrere Tresore | Jedes Muster ist ein eigener Tresor (mehrere Tresore mit Premium) | Köder-Passwort |
+| Notfallmuster | Geplant, noch nicht verfügbar | Nicht öffentlich angegeben |
 | Einbruchsberichte | Nicht angeboten | Angeboten, laut Store-Eintrag |
 | Wiederherstellung bei vergessenem Code | Keine | Nicht öffentlich angegeben |
-| Geschäftsmodell | Kostenlose Version plus optionales Premium | Kostenlose Version plus kostenpflichtiges Upgrade |
+| Geschäftsmodell | Kostenlos: 1 Tresor, bis zu 50 Objekte; Premium als Abo oder einmaliger Kauf (siehe [Preise](id:pricing)) | Kostenlose Version plus kostenpflichtiges Upgrade |
 | Plattformen | iPhone (iOS 17+) | Unterschiedlich; Store-Einträge prüfen |
 
 <!-- TODO verify -->
@@ -69,7 +69,7 @@ Köder funktionieren unterschiedlich. Das Köder-Passwort von Private Photo Vaul
 
 <!-- TODO verify -->
 
-In Velcrypt sind Köder kein spezieller Modus. Du legst einfach mit einem anderen Muster einen weiteren Tresor an und bewahrst darin etwas Unauffälliges auf. Weil jedes unbekannte Muster ohne Fehlermeldung einen frischen, leeren Tresor öffnet, kann jemand, der die App durchsieht, nicht erkennen, wie viele Tresore du hast. Die Anleitung zu [Köder-Tresoren](id:what-is-a-decoy-vault) erklärt, warum das wichtig ist.
+In Velcrypt sind Köder kein spezieller Modus. Du legst mit Premium einfach mit einem anderen Muster einen weiteren Tresor an und bewahrst darin etwas Unauffälliges auf. Weil jedes unbekannte Muster ohne Fehlermeldung einen frischen, leeren Tresor öffnet, kann jemand, der die App durchsieht, nicht erkennen, wie viele Tresore du hast. Die Anleitung zu [Köder-Tresoren](id:what-is-a-decoy-vault) erklärt, warum das wichtig ist.
 
 ## Verschlüsselung und Transparenz
 
@@ -83,7 +83,7 @@ Für Private Photo Vault haben wir zum Zeitpunkt des Schreibens keine vergleichb
 
 - **Du willst Einbruchsberichte.** Wenn es dir wichtig ist zu wissen, dass jemand versucht hat, deinen Tresor zu öffnen – das bietet Velcrypt nicht.
 - **Du bevorzugst einen Zahlencode oder Face ID.** Manche finden eine PIN schneller als das Zeichnen eines Musters.
-- **Du willst eine Backup- oder Übertragungsoption.** Falls deine Version eine bietet, ist das etwas, das Velcrypt v1 fehlt.
+- **Du willst ein automatisches Cloud-Backup.** Falls deine Version eins bietet, ist das etwas, das Velcrypt fehlt; Velcrypt bietet nur ein manuelles verschlüsseltes Backup.
 - **Du bist dort schon eingerichtet.** Eine große Sammlung umzuziehen kostet Mühe; ein Wechsel lohnt sich nur, wenn dir die Unterschiede wichtig sind.
 
 <!-- TODO verify -->

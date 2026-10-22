@@ -9,11 +9,11 @@ keyFacts:
   - "Jedes Gerät, das mit deinem Apple-Account und aktivem iCloud-Fotos angemeldet ist, zeigt deine ganze Mediathek, einschließlich „Ausgeblendet“."
   - "Die geteilte iCloud-Fotomediathek (ab iOS 16.1) teilt Fotos mit bis zu fünf weiteren Personen und kann sie automatisch hinzufügen."
   - "Mit der Familienfreigabe behält jede Person einen eigenen Apple-Account und teilt trotzdem Käufe und Abos."
-  - "Velcrypt-Tresore bleiben nur auf deinem iPhone: kein Konto, keine Synchronisierung, in der ersten Version nicht in iCloud-Backups."
+  - "Velcrypt-Tresore bleiben nur auf deinem iPhone: kein Konto, keine Synchronisierung, nicht in iCloud-Backups."
 primaryKeyword: "iphone fotos erscheinen auf ipad"
 keywords: ["fotos nicht mehr auf familien ipad synchronisieren", "geteilte apple id fotos", "geteilte icloud fotomediathek privatsphäre", "icloud fotos familie trennen", "fotos erscheinen auf anderem gerät"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Warum deine iPhone-Fotos auf iPad oder Mac der Familie auftauchen, wie du geteilte Accounts und Mediatheken entwirrst und wohin private Fotos gehören."
 group: everyday
 schemaType: Article
@@ -27,7 +27,7 @@ faq:
   - q: "Wie verhindere ich, dass Fotos automatisch in die geteilte Mediathek wandern?"
     a: "In den Einstellungen von Fotos unter „Geteilte Mediathek“ kannst du das automatische Teilen aus der Kamera ausschalten oder die Kamera in deiner persönlichen Mediathek speichern lassen. Einzelne Fotos kannst du auch zurück in deine persönliche Mediathek verschieben."
   - q: "Werden Velcrypt-Tresore auf mein iPad oder meinen Mac synchronisiert?"
-    a: "Nein. Velcrypt gibt es nur fürs iPhone, ohne Konto und ohne Cloud-Synchronisierung. In der ersten Version sind Tresordaten außerdem von iCloud- und Computer-Backups ausgeschlossen."
+    a: "Nein. Velcrypt gibt es nur fürs iPhone, ohne Konto und ohne Cloud-Synchronisierung. Tresordaten sind außerdem von iCloud- und Computer-Backups ausgeschlossen. Ein verschlüsseltes Backup erstellst du nur selbst, als Datei, die du speicherst, wo du willst."
 ---
 
 Oft fängt es mit einem überraschten „Mama, was ist das?“ vom Sofa an. Ein Foto, das du mit deinem iPhone gemacht hast, ist auf dem Familien-iPad aufgetaucht oder auf dem Mac in der Küche. Niemand hat etwas falsch gemacht – die Geräte tun genau das, wofür sie eingerichtet wurden. Das zu entwirren, braucht ein paar Einstellungen und ein kurzes Familiengespräch.
@@ -69,7 +69,7 @@ Der Import kopiert ein Foto in den Tresor. Um es von allen synchronisierten Ger�
 ## Ehrliche Grenzen
 
 - Weil Tresore nicht synchronisiert werden, kannst du Tresorinhalte nicht auf iPad oder Mac ansehen. Velcrypt ist eine iPhone-App.
-- In der ersten Version sind Tresordaten nicht in iCloud- oder Computer-Backups. Verlierst du dein iPhone oder vergisst du das Muster, lässt sich der Tresor nicht wiederherstellen. Eine verschlüsselte Backup-Option ist geplant.
+- Tresordaten sind nicht in iCloud- oder Computer-Backups. Verlierst du dein iPhone, hilft nur ein verschlüsseltes Backup, das du selbst erstellt hast; speicherst du es in iCloud Drive, achte darauf, dass es nicht in einem mit der Familie geteilten Ordner liegt. Ein vergessenes Muster lässt sich nicht wiederherstellen.
 - Alles, was bereits geteilt wurde – in eine geteilte Mediathek, ein geteiltes Album oder per Nachricht –, kann noch auf anderen Geräten existieren. Prüf auch diese Orte.
 - Das Velcrypt-Symbol ist auf deinem Home-Bildschirm sichtbar, es sei denn, du nutzt die iOS-18-Option zum Ausblenden von Apps.
 

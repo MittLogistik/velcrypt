@@ -10,11 +10,11 @@ keyFacts:
   - "Velcrypt ontgrendelt met een patroon op een raster van 5×5; elk patroon is een aparte kluis."
   - "Velcrypt publiceert zijn versleutelingsontwerp: AES-256-GCM met sleutelafleiding via PBKDF2-HMAC-SHA512."
   - "Velcrypt maakt bewust geen inbraakfoto’s en heeft geen Face ID."
-  - "Velcrypt v1 heeft geen back-up: bij een vergeten patroon of verloren telefoon is de kluis weg."
+  - "Velcrypt heeft een gratis versleuteld back-upbestand, maar een vergeten patroon is niet te herstellen."
 primaryKeyword: "velcrypt vs private photo vault"
 keywords: ["private photo vault alternatief", "private photo vault vergelijking", "private photo vault vs", "fotokluis lokwachtwoord", "fotokluis met patroon"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Een kluis met pincode, lok- en inbraakfuncties tegenover een versleutelde patroonkluis zonder account. Neutraal naast elkaar gezet."
 competitor: "Private Photo Vault"
 lastChecked: "oktober 2026"
@@ -49,14 +49,14 @@ Velcrypt is een kluis op het apparaat die je met een patroon vergrendelt. Een pa
 |---|---|---|
 | Details over versleuteling op het apparaat gepubliceerd | Ja: AES-256-GCM, sleutels per kluis en per bestand | Niet in detail openbaar |
 | Account nodig | Nee | Niet openbaar vermeld |
-| Cloudback-up | Nee (v1); versleutelde back-up gepland | Verschilt; check de actuele vermelding |
+| Cloudback-up | Geen automatische; gratis versleuteld back-upbestand dat je zelf bewaart | Verschilt; check de actuele vermelding |
 | Ontgrendelen | Patroon op een raster van 5×5 | Pincode / toegangscode |
 | Biometrie (Face ID / Touch ID) | Bewust niet aangeboden | Verschilt |
-| Lokkluis / meerdere kluizen | Elk patroon is een eigen kluis | Lokwachtwoord |
-| Dwangpatroon | Binnenkort (Premium) | Niet openbaar vermeld |
+| Lokkluis / meerdere kluizen | Elk patroon is een eigen kluis (tweede kluis met Premium) | Lokwachtwoord |
+| Dwangpatroon | Gepland voor een toekomstige update | Niet openbaar vermeld |
 | Inbraakrapporten | Niet aangeboden | Aangeboden, volgens de vermelding |
 | Herstel als je de code vergeet | Geen | Niet openbaar vermeld |
-| Verdienmodel | Gratis versie plus optioneel Premium | Gratis versie plus betaalde upgrade |
+| Verdienmodel | Gratis (1 kluis, tot 50 onderdelen); Premium vanaf $ 1,99 per week | Gratis versie plus betaalde upgrade |
 | Platforms | iPhone (iOS 17+) | Verschilt; check de winkelvermeldingen |
 
 <!-- TODO verify -->
@@ -83,7 +83,7 @@ Voor Private Photo Vault konden we op het moment van schrijven geen vergelijkbar
 
 - **Je wilt inbraakrapporten.** Wil je weten of iemand je kluis probeerde te openen, dan biedt Velcrypt dat niet.
 - **Je hebt liever een cijfercode of Face ID.** Sommige mensen vinden een pincode sneller dan een patroon tekenen.
-- **Je wilt een back-up- of overzetoptie.** Biedt de versie die je gebruikt er een, dan is dat iets wat Velcrypt v1 niet heeft.
+- **Je wilt een automatische back-up of cloudsynchronisatie.** Biedt de versie die je gebruikt er een, dan is dat iets wat Velcrypt niet heeft; Velcrypt werkt met een handmatig back-upbestand.
 - **Je zit er al goed.** Een grote bibliotheek verhuizen kost moeite; overstappen heeft alleen zin als de verschillen voor jou tellen.
 
 <!-- TODO verify -->

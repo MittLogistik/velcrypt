@@ -9,11 +9,11 @@ keyFacts:
   - "Any device signed in to your Apple Account with iCloud Photos on shows your whole library, including the Hidden album."
   - "iCloud Shared Photo Library (iOS 16.1 and later) shares photos with up to five other people, and can add them automatically."
   - "Family Sharing lets everyone keep their own Apple Account while sharing purchases and subscriptions."
-  - "Velcrypt vaults stay on your iPhone only: no account, no sync, not in iCloud backups in the first version."
+  - "Velcrypt vaults stay on your iPhone: no account, no sync, not in iCloud backups."
 primaryKeyword: "iphone photos showing on ipad"
 keywords: ["stop photos syncing to family ipad", "shared apple id photos", "icloud shared photo library privacy", "separate icloud photos family", "photos appearing on another device"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Why your iPhone photos appear on a family iPad or Mac, how to untangle shared accounts and libraries, and where private photos belong."
 group: everyday
 schemaType: Article
@@ -27,7 +27,7 @@ faq:
   - q: "How do I stop photos going into the Shared Library automatically?"
     a: "In the Photos settings under Shared Library, you can turn off automatic sharing from the Camera, or switch the Camera to save to your Personal Library. You can also move individual photos back to your Personal Library."
   - q: "Do Velcrypt vaults sync to my iPad or Mac?"
-    a: "No. Velcrypt is iPhone-only, has no account and no cloud sync. In the first version vault data is also excluded from iCloud and computer backups."
+    a: "No. Velcrypt is iPhone-only, has no account and no cloud sync. Vault data is also excluded from iCloud and computer backups. The only copy is an encrypted backup file you choose to save yourself."
 ---
 
 It often starts with a surprised “Mum, what’s this?” from the sofa. A photo you took on your iPhone has appeared on the family iPad, or on the Mac in the kitchen. Nobody did anything wrong — the devices are doing exactly what they were set up to do. Untangling it takes a few settings and a short family chat.
@@ -67,7 +67,7 @@ Importing copies a photo into the vault. To take it off every synced device, [de
 ## Honest limits
 
 - Because vaults don’t sync, you can’t view vault items on an iPad or Mac. Velcrypt is an iPhone app.
-- In the first version, vault data isn’t in iCloud or computer backups. If your iPhone is lost or you forget the pattern, the vault can’t be recovered. An encrypted backup option is planned.
+- Vault data isn’t in iCloud or computer backups. If you forget the pattern, the vault can’t be recovered; if your iPhone is lost, you need an encrypted backup made earlier in Settings → Backup. If you save that file to iCloud Drive, it stays encrypted with your backup password.
 - Anything that was already shared — to a Shared Library, a shared album or a message — may still exist on other devices. Check those places too.
 - The Velcrypt icon is visible on your Home Screen unless you use iOS 18’s option to hide apps.
 

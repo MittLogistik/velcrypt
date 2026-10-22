@@ -4,17 +4,17 @@ title: "Velcrypt vs app calculadora secreta: disfarce ou cripto"
 description: "Apps de calculadora secreta escondem fotos atrás de uma calculadora falsa. O Velcrypt usa criptografia e cofres ocultos. Comparativo neutro para iPhone."
 h1: "Velcrypt vs apps de calculadora secreta"
 navTitle: "Velcrypt vs calculadora secreta"
-answer: "Os apps de cofre calculadora se disfarçam de calculadora funcional e abrem quando você digita um código secreto como se fosse uma conta. O Velcrypt não se disfarça; ele se apoia em criptografia documentada no aparelho e em cofres ocultos por padrão, que não revelam uns aos outros. O disfarce esconde que o cofre existe; a criptografia protege o que está dentro."
+answer: "Os apps de cofre calculadora se disfarçam de calculadora funcional e abrem quando você digita um código secreto como se fosse uma conta. O Velcrypt não se disfarça de calculadora funcional (o Premium só troca o ícone); ele se apoia em criptografia documentada no aparelho e em cofres ocultos por padrão, que não revelam uns aos outros. O disfarce esconde que o cofre existe; a criptografia protege o que está dentro."
 keyFacts:
   - "Apps de cofre calculadora parecem e funcionam como uma calculadora; um código digitado como conta abre o cofre."
   - "Os detalhes de criptografia variam muito entre esses apps e muitas vezes não são publicados."
-  - "O Velcrypt não tem disfarce de calculadora nem ícones alternativos; o nome dele aparece na Tela de Início."
+  - "O Velcrypt não funciona como calculadora; o Premium oferece ícones alternativos, como calculadora, timer e régua."
   - "A negação plausível do Velcrypt vem dos cofres ocultos: padrões desconhecidos abrem um cofre vazio."
   - "No iOS 18 e posterior, é possível ocultar qualquer app em uma pasta oculta protegida por Face ID, inclusive o Velcrypt."
 primaryKeyword: "app calculadora secreta"
 keywords: ["calculadora secreta para esconder fotos", "app calculadora que esconde fotos", "calculadora falsa cofre iphone", "alternativa ao cofre calculadora", "cofre calculadora é seguro"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Disfarce versus criptografia: como os apps de cofre no estilo calculadora se comparam aos cofres ocultos por padrão do Velcrypt."
 competitor: "Apps de cofre calculadora"
 lastChecked: "outubro de 2026"
@@ -24,7 +24,7 @@ faq:
   - q: "Apps de calculadora secreta são seguros?"
     a: "Depende do app. O disfarce de calculadora só esconde que existe um cofre; a proteção dos arquivos depende de o app criptografá-los ou não, e de como faz isso — algo que muitos apps não documentam. Confira as informações de privacidade e segurança de cada app."
   - q: "O Velcrypt tem disfarce de calculadora?"
-    a: "Não. O Velcrypt não tem disfarce nem ícones alternativos. Em vez disso, ele torna o conteúdo negável: cada padrão abre seu próprio cofre e nada revela quantos cofres existem. No iOS 18 e posterior, você também pode ocultar o próprio app com o recurso de apps ocultos do sistema."
+    a: "Não como um app de calculadora funcional. O Premium permite trocar o ícone da Tela de Início por alternativas como calculadora, timer ou régua, mas o app continua abrindo a tela de padrão do Velcrypt. A proteção principal é outra: ele torna o conteúdo negável: cada padrão abre seu próprio cofre e nada revela quantos cofres existem. No iOS 18 e posterior, você também pode ocultar o próprio app com o recurso de apps ocultos do sistema."
   - q: "Dá para perceber que um app de calculadora é na verdade um cofre?"
     a: "Às vezes. O nome e a descrição do app na App Store, seu histórico de compras, o uso de armazenamento nos Ajustes e o comportamento do app podem entregá-lo para quem sabe o que procurar."
   - q: "Qual é melhor para negação plausível?"
@@ -49,15 +49,15 @@ Os dois podem ser úteis. A questão é contra o que você está se protegendo. 
 |---|---|---|
 | Detalhes da criptografia no aparelho publicados | Sim: AES-256-GCM, PBKDF2-HMAC-SHA512 | Varia; muitas vezes não informados publicamente |
 | Exige conta | Não | Varia |
-| Backup na nuvem | Não (v1); backup criptografado planejado | Varia; alguns oferecem recursos na nuvem |
+| Backup na nuvem | Não; backup criptografado manual em arquivo (grátis) | Varia; alguns oferecem recursos na nuvem |
 | Forma de desbloqueio | Padrão em uma grade 5×5 | Código numérico digitado como conta |
 | Biometria (Face ID / Touch ID) | Não oferecida, por design | Varia |
-| Disfarce | Nenhum; aparece como Velcrypt | Parece uma calculadora funcional |
-| Fachada / vários cofres | Cada padrão é um cofre próprio | Varia; alguns oferecem código de fachada |
-| Padrão de coação | Em breve (Premium) | Varia |
+| Disfarce | Ícones alternativos no Premium (calculadora, timer, régua e outros); sem calculadora funcional | Parece uma calculadora funcional |
+| Fachada / vários cofres | Cada padrão é um cofre próprio (mais de um cofre exige o Premium) | Varia; alguns oferecem código de fachada |
+| Padrão de coação | Planejado para uma atualização futura | Varia |
 | Fotos de intrusos | Não oferecidas | Comuns, mas varia |
 | Recuperação se você esquecer o código | Nenhuma | Varia; alguns oferecem recuperação por e-mail ou pergunta de segurança |
-| Modelo de negócio | Versão grátis e Premium opcional | Varia; algumas versões grátis mostram anúncios |
+| Modelo de negócio | Grátis (1 cofre, 50 itens) e Premium opcional | Varia; algumas versões grátis mostram anúncios |
 | Plataformas | iPhone (iOS 17+) | Varia; muitos para iOS e Android |
 
 <!-- TODO verify -->
@@ -78,9 +78,9 @@ Se você também quiser o app fora de vista, o iOS 18 e posterior permitem ocult
 
 ## Quando um cofre calculadora pode ser melhor para você
 
-- **Você quer principalmente que o app pareça comum.** Se o problema é ter um app de cofre visível no celular, um disfarce resolve isso diretamente, e o Velcrypt não.
+- **Você quer principalmente que o app pareça comum.** Se o problema é ter um app de cofre visível no celular, uma calculadora funcional resolve isso mais diretamente. Os ícones alternativos do Velcrypt Premium só mudam o ícone, não o que aparece ao abrir o app.
 - **Você quer fotos de intrusos.** Muitos apps de calculadora oferecem isso; o Velcrypt não.
-- **Você quer uma opção de recuperação.** Alguns apps oferecem um jeito de voltar a entrar se você esquecer o código. O Velcrypt v1 não tem nenhum.
+- **Você quer uma opção de recuperação.** Alguns apps oferecem um jeito de voltar a entrar se você esquecer o código. O Velcrypt não tem nenhum; só um backup criptografado feito antes permite recuperar o conteúdo.
 - **Você também usa Android.** Muitos apps de cofre calculadora existem nas duas plataformas.
 
 <!-- TODO verify -->

@@ -9,12 +9,12 @@ keyFacts:
   - "Screenshots in the camera roll can be seen, deleted or synced by anyone with your passcode or Apple Account."
   - "Safety Check (Settings › Privacy & Security, iOS 16+) helps you see who has access to your iPhone and account."
   - "Evidence is only useful if it survives: keep at least two copies, in places the other person can’t access."
-  - "Velcrypt has no backup in the first version, so it should never hold your only copy."
+  - "Velcrypt isn’t in iCloud backups, so it should never hold your only copy."
   - "Local support organisations and law enforcement can advise on what records are useful where you live."
 primaryKeyword: "how to save evidence of harassment iphone"
 keywords: ["keep harassment screenshots private", "store evidence on iphone", "document abuse evidence phone", "hide screenshots from abuser", "harassment evidence safety"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "A careful, safety-first approach to keeping screenshots and photos of harassment private, intact and backed up somewhere safe."
 group: sensitive
 schemaType: Article
@@ -26,7 +26,7 @@ faq:
   - q: "Can an abuser see my photos if we share an Apple Account?"
     a: "Yes. With iCloud Photos on, photos sync to every device signed in to that account, including the Hidden album. Safety Check and a separate Apple Account can help, but think about safety before making changes they might notice."
   - q: "Is Velcrypt enough to store evidence?"
-    a: "It can keep a copy private on your iPhone, but it shouldn’t be your only copy. In the first version vault data isn’t backed up, so a lost, broken or taken phone means the vault is gone."
+    a: "It can keep a copy private on your iPhone, but it shouldn’t be your only copy. Vault data isn’t in iCloud or computer backups, so a lost, broken or taken phone means the vault is gone unless you saved an encrypted backup file somewhere else."
   - q: "Is this legal advice?"
     a: "No. Rules about evidence differ between countries. A local support organisation, a lawyer or the police can tell you what kind of records are useful where you live."
 ---
@@ -68,7 +68,7 @@ Vaults open with a pattern drawn on a 5×5 grid, not your device passcode or Fac
 
 ## Honest limits — please read
 
-- **Velcrypt must not be your only copy.** In the first version, vault data isn’t included in iCloud or computer backups. If the phone is lost, broken or taken, or you forget the pattern, the vault can’t be recovered by anyone.
+- **Velcrypt must not be your only copy.** Vault data isn’t included in iCloud or computer backups. If you forget the pattern, the vault can’t be recovered by anyone. If the phone is lost, broken or taken, only an encrypted backup file you created in Settings → Backup and stored somewhere they can’t reach can bring it back.
 - **The app is visible.** The Velcrypt icon appears on your Home Screen. iOS 18 lets you hide apps behind Face ID in a hidden folder, but someone who checks closely may still notice an app. Consider whether that could put you at risk.
 - **Someone watching** you draw your pattern, or taking your phone while the vault is open, defeats the lock.
 - **Monitoring software** on a jailbroken or tampered phone can see what’s on screen. If you suspect this, a support organisation can advise; using a device the person has never had access to may be safer.

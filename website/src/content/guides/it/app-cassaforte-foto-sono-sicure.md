@@ -19,7 +19,7 @@ keywords:
   - "privacy app cassaforte foto"
   - "app foto segrete sicura"
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Una checklist pratica per valutare qualsiasi cassaforte per foto: crittografia, etichetta privacy, account, cloud, pubblicità, disinstallazione e recupero."
 category: choosing
 order: 21
@@ -117,7 +117,7 @@ Per trasparenza, ecco come se la cava la nostra app:
 - **Crittografia:** AES-256-GCM tramite Apple CryptoKit. Le chiavi derivano dalla tua sequenza tramite PBKDF2-HMAC-SHA512 con almeno 600.000 iterazioni, ogni cassaforte ha una propria chiave master casuale e in più si applica la Protezione dati di iOS. Dettagli nella nostra [pagina sulla sicurezza](id:security) e nella [pagina sulla crittografia](id:encryption).
 - **Segreto:** una sequenza su una griglia 5×5, separata dal codice del dispositivo; niente Face ID per scelta.
 - **Account e cloud:** nessuno. Nessuna registrazione, nessun server, nessun caricamento ([offline, senza account](id:offline-no-account)).
-- **Recupero:** nessuno nella prima versione. I contenuti della cassaforte sono esclusi dai backup di iCloud e del computer, quindi perdere il telefono o dimenticare la sequenza significa che i contenuti non si possono recuperare. È prevista un’opzione di backup cifrato.
+- **Recupero:** solo tramite il tuo backup. I contenuti della cassaforte sono esclusi dai backup di iCloud e del computer, ma puoi creare un backup cifrato gratuito protetto da una password scelta da te. Senza backup, perdere il telefono o dimenticare la sequenza significa che i contenuti non si possono recuperare.
 - **Originali:** importare copia l’elemento; l’originale lo rimuovi tu.
 
 Se una cassaforte che stai valutando sa rispondere a questi punti con la stessa chiarezza, è un buon segno. Per un confronto più ampio tra le opzioni, vedi [le migliori app cassaforte per foto su iPhone](id:best-private-photo-vault-apps-iphone).

@@ -7,14 +7,14 @@ navTitle: "Velcrypt vs Keepsafe"
 answer: "Velcrypt håller allt på din iPhone utan konto och låses upp med ett ritat mönster, medan Keepsafe enligt sin App Store-sida använder ett konto och erbjuder molnbackup. Välj Velcrypt för enbart lokal lagring och trovärdigt förnekande; Keepsafe kan passa bättre om du vill ha säkerhetskopiering och synk."
 keyFacts:
   - "Velcrypt kräver inget konto, ingen e-post och ingen registrering; Keepsafe använder ett konto enligt sin App Store-sida."
-  - "Keepsafe erbjuder valfri molnbackup; Velcrypt v1 lagrar valven bara på din iPhone."
+  - "Keepsafe erbjuder valfri molnbackup; Velcrypt lagrar valven bara på din iPhone, med en manuell krypterad säkerhetskopia."
   - "Velcrypt låses upp med ett mönster på ett 5×5-rutnät och saknar medvetet Face ID och Touch ID."
   - "I Velcrypt öppnar varje mönster ett eget valv, och okända mönster öppnar ett tomt."
   - "Om du glömmer ditt Velcrypt-mönster eller tappar bort telefonen kan valvet inte återställas."
 primaryKeyword: "velcrypt vs keepsafe"
 keywords: ["keepsafe vs velcrypt", "keepsafe jämförelse", "alternativ till keepsafe fotovalv", "fotovalv utan konto", "keepsafe molnbackup"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Lokalt valv utan konto mot ett kontobaserat valv med molnbackup. Var vart och ett passar, sida vid sida."
 competitor: "Keepsafe"
 lastChecked: "oktober 2026"
@@ -24,9 +24,9 @@ faq:
   - q: "Kräver Keepsafe ett konto?"
     a: "Enligt Keepsafes App Store-sida i skrivande stund använder appen ett konto kopplat till en e-postadress, vilket möjliggör funktioner som molnbackup. Velcrypt har inget konto alls; ingenting om dig eller ditt valv lämnar telefonen."
   - q: "Kan Velcrypt säkerhetskopiera mitt valv som Keepsafes moln?"
-    a: "Inte i första versionen. Velcrypt undantar valvdata från iCloud- och datorsäkerhetskopior, så en förlorad telefon eller ett glömt mönster innebär att valvet är borta. Ett alternativ för krypterad säkerhetskopiering är planerat, utan fastställt datum."
+    a: "Inte automatiskt. Velcrypt undantar valvdata från iCloud- och datorsäkerhetskopior och har inget moln. I stället skapar du gratis en krypterad säkerhetskopia under Inställningar → Säkerhetskopiering, skyddad av ett lösenord du väljer, och sparar filen där du vill."
   - q: "Vilken av apparna har ett lockvalv?"
-    a: "Båda erbjuder någon form av lockbete. Keepsafe har beskrivit en falsk PIN-kod (lock-PIN) som en premiumfunktion. I Velcrypt kan varje mönster vara ett eget valv, så du kan ha ett harmlöst lockvalv, och okända mönster öppnar helt enkelt ett tomt valv."
+    a: "Båda erbjuder någon form av lockbete. Keepsafe har beskrivit en falsk PIN-kod (lock-PIN) som en premiumfunktion. I Velcrypt kan varje mönster vara ett eget valv, så du kan ha ett harmlöst lockvalv (fler valv kräver Premium), och okända mönster öppnar helt enkelt ett tomt valv."
   - q: "Kan jag byta från Keepsafe till Velcrypt?"
     a: "Ja, i stora drag: exportera dina bilder från Keepsafe tillbaka till Bilder eller Filer, importera dem till Velcrypt och radera sedan de exporterade kopiorna och töm Nyligen raderade. De exakta exportstegen beror på aktuell Keepsafe-version."
 ---
@@ -49,14 +49,14 @@ Inget av upplägget är bäst för alla. Det ena byter bekvämlighet mot minimal
 |---|---|---|
 | Publicerade detaljer om kryptering på enheten | Ja: AES-256-GCM, nyckelhärledning med PBKDF2-HMAC-SHA512 (se [kryptering](id:encryption)) | Inte offentligt beskrivet i detalj |
 | Kräver konto | Inget konto, ingen e-post | Ja, enligt App Store-sidan |
-| Molnbackup | Nej (v1); krypterad säkerhetskopiering planerad | Valfri ”Private Cloud” med premium |
+| Molnbackup | Nej; manuell krypterad säkerhetskopia (gratis) | Valfri ”Private Cloud” med premium |
 | Upplåsning | Mönster på ett 5×5-rutnät | PIN-kod eller lösenkod |
 | Biometri (Face ID / Touch ID) | Erbjuds inte, med avsikt | Stöds, enligt App Store-sidan |
-| Lockvalv / flera valv | Varje mönster är ett eget valv | Falsk lock-PIN i premium |
-| Tvångsmönster | Kommer snart (Premium) | Inte offentligt angivet |
+| Lockvalv / flera valv | Varje mönster är ett eget valv (fler valv med Premium) | Falsk lock-PIN i premium |
+| Tvångsmönster | Planerat till en framtida uppdatering | Inte offentligt angivet |
 | Intrångsvarningar | Erbjuds inte | Erbjuds i premium |
 | Återställning om du glömmer koden | Ingen; valvet kan inte återställas | Varierar; kontobaserad återställning kan finnas |
-| Affärsmodell | Gratisversion plus valfri Premium (se [priser](id:pricing)) | Gratisnivå plus premiumabonnemang |
+| Affärsmodell | Gratis (ett valv, 50 objekt) plus valfri Premium (se [priser](id:pricing)) | Gratisnivå plus premiumabonnemang |
 | Plattformar | iPhone (iOS 17+) | iOS och Android |
 
 <!-- TODO verify -->
@@ -65,7 +65,7 @@ Inget av upplägget är bäst för alla. Det ena byter bekvämlighet mot minimal
 
 Ett konto är en bekvämlighetsfunktion. Det låter en app återställa ditt valv på en ny telefon och synka det mellan enheter. Det betyder också att ett företag har en identifierare för dig och – om du använder molnbackup – att en kopia av dina filer ligger på servrar du inte kontrollerar, skyddad av den kryptering och de åtkomstregler som tjänsten använder.
 
-Velcrypt intar motsatt hållning. Det finns ingen registrering, ingen e-post och ingen server, vilket förklaras på sidan [offline utan konto](id:offline-no-account). I version 1 undantas valvdata från iCloud- och Finder-säkerhetskopior. Den ärliga följden är att ingen kan återställa dem åt dig: varken Apple, Velcrypt eller du själv. Om det oroar dig, läs [glömt valvmönstret](id:forgot-vault-pattern) innan du bestämmer dig.
+Velcrypt intar motsatt hållning. Det finns ingen registrering, ingen e-post och ingen server, vilket förklaras på sidan [offline utan konto](id:offline-no-account). Valvdata undantas från iCloud- och Finder-säkerhetskopior. Den ärliga följden är att ingen kan återställa dem åt dig: varken Apple eller Velcrypt. Det enda skyddsnätet är en krypterad säkerhetskopia som du själv skapar. Om det oroar dig, läs [glömt valvmönstret](id:forgot-vault-pattern) innan du bestämmer dig.
 
 ## Upplåsning: mönster mot PIN-kod och biometri
 
@@ -81,11 +81,11 @@ Många valvappar erbjuder en andra, falsk kod som öppnar ett harmlöst valv. Ke
 
 <!-- TODO verify -->
 
-Velcrypts modell är inbyggd i strukturen snarare än ett tillägg. Varje mönster är ett eget valv, det finns ingen valvlista, och ett mönster appen aldrig sett öppnar helt enkelt ett tomt valv utan felmeddelande. Ingenting på skärmen bevisar att andra valv finns. Det är vad [dolda valv](id:hidden-vaults) och [trovärdigt förnekande](id:plausible-deniability-explained) betyder i praktiken. Ett tvångsmönster, som skulle öppna ett valt valv och i tysthet ta bort åtkomsten till de andra, är planerat för Premium och kommer snart.
+Velcrypts modell är inbyggd i strukturen snarare än ett tillägg. Varje mönster är ett eget valv, det finns ingen valvlista, och ett mönster appen aldrig sett öppnar helt enkelt ett tomt valv utan felmeddelande. Ingenting på skärmen bevisar att andra valv finns. Det är vad [dolda valv](id:hidden-vaults) och [trovärdigt förnekande](id:plausible-deniability-explained) betyder i praktiken. Ett tvångsmönster, som skulle öppna ett valt valv och i tysthet ta bort åtkomsten till de andra, är planerat till en framtida uppdatering.
 
 ## När Keepsafe kan passa dig bättre
 
-- **Du vill ha säkerhetskopiering och synk.** Om en förlorad telefon inte får betyda förlorade bilder är en kontobaserad molnbackup den enklare lösningen i dag. Velcrypt v1 erbjuder inte det.
+- **Du vill ha säkerhetskopiering och synk.** Om en förlorad telefon inte får betyda förlorade bilder är en automatisk, kontobaserad molnbackup den enklare lösningen. Velcrypt har bara en manuell krypterad säkerhetskopia som du själv måste komma ihåg att skapa.
 - **Du använder även Android.** Keepsafe finns på mer än en plattform enligt sina butikssidor; Velcrypt finns bara för iPhone.
 - **Du föredrar Face ID.** Om biometrisk bekvämlighet väger tyngre för dig än risken för framtvingad upplåsning erbjuder Velcrypt det medvetet inte.
 - **Du vill ha intrångsvarningar.** Velcrypt tar inga bilder av inkräktare.

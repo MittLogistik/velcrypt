@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "foto's verbergen voor kinderen iphone"
 keywords: ["kind gebruikt mijn telefoon foto's", "iphone delen met kind privacy", "begeleide toegang kinderen", "schermtijd kinderen iphone", "kind swipet door foto's"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Laat kinderen op je iPhone spelen zonder dat ze in je privéfoto's belanden: Begeleide toegang, Schermtijd en een kluis die dicht blijft."
 group: everyday
 schemaType: Article
@@ -81,6 +81,6 @@ De kluis open je door een [patroon op een 5×5-raster](id:pattern-lock) te teken
 - Kijkt je kind mee terwijl je je patroon tekent, dan onthoudt het dat misschien. Teken het buiten zicht en kies een langer patroon.
 - Geef je de telefoon door met de kluis open en de app op de voorgrond, dan is de inhoud zichtbaar tot de app naar de achtergrond gaat.
 - Het Velcrypt-symbool is zichtbaar op je beginscherm. Vanaf iOS 18 kun je apps achter Face ID in een verborgen map zetten; dat is een functie van iOS, niet van Velcrypt.
-- In de eerste versie zitten kluisgegevens niet in iCloud- of computerbackups. Raakt je telefoon kwijt of kapot, of vergeet je je patroon, dan is de kluis niet te herstellen. Bewaar kopieën van onvervangbare foto's op een veilige plek.
+- Kluisgegevens zitten niet in iCloud- of computerback-ups. Vergeet je je patroon, dan is de kluis niet te herstellen. Raakt je telefoon kwijt of kapot, dan helpt alleen een versleuteld back-upbestand: maak dat via Instellingen → Back-up en bewaar het ergens anders dan op de telefoon.
 
 Voor de meeste gezinnen is de beste combinatie eenvoudig: Begeleide toegang elke keer dat je je telefoon uit handen geeft, en een kluis voor dat handjevol dingen dat nooit maar één veeg verwijderd mag zijn.

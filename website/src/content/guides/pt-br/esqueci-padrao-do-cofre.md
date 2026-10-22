@@ -4,17 +4,17 @@ title: "Esqueci a senha ou o padrão do cofre de fotos: e agora?"
 description: "Esqueceu a senha ou o padrão do cofre de fotos? O que tentar primeiro, por que o Velcrypt não tem redefinição, como outros apps recuperam e como evitar."
 h1: "Esqueceu a senha ou o padrão do cofre de fotos? O que dá e o que não dá para fazer"
 navTitle: "Esqueci o padrão do cofre"
-answer: "No Velcrypt, um padrão esquecido não pode ser redefinido nem recuperado, nem por você nem pelo Velcrypt, porque a chave existe só na sua memória e nenhum servidor guarda uma cópia. O que você pode fazer é tentar, com calma, variações próximas do padrão. Outros apps de cofre podem oferecer recuperação por e-mail ou conta; confira o que o seu usa."
+answer: "No Velcrypt, um padrão esquecido não pode ser redefinido nem recuperado, nem por você nem pelo Velcrypt, porque a chave existe só na sua memória e nenhum servidor guarda uma cópia. O que você pode fazer é tentar, com calma, variações próximas do padrão ou restaurar um backup criptografado, se tiver criado um. Outros apps de cofre podem oferecer recuperação por e-mail ou conta; confira o que o seu usa."
 keyFacts:
   - "O Velcrypt não tem redefinição, e-mail de recuperação nem frase de recuperação: as chaves são derivadas do seu padrão no aparelho."
   - "Um padrão errado no Velcrypt abre um cofre vazio em vez de mostrar erro, então um cofre vazio muitas vezes significa um padrão ligeiramente diferente."
-  - "Os dados do cofre ficam fora dos backups do iCloud e do computador na primeira versão."
-  - "Uma opção de backup criptografado / recuperação está planejada, sem data prometida."
+  - "Os dados do cofre ficam fora dos backups do iCloud e do computador."
+  - "Um backup criptografado feito antes, em Ajustes → Backup, pode ser restaurado em qualquer cofre com a senha de backup."
   - "Se perder algo seria insuportável, mantenha uma cópia em outro lugar de confiança."
 primaryKeyword: "esqueci a senha do cofre de fotos"
 keywords: ["esqueci o padrão do cofre", "recuperar cofre de fotos", "esqueci o pin do app de cofre", "redefinir padrão do cofre", "bloqueado no cofre de fotos"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "O que tentar primeiro, por que o Velcrypt não redefine um padrão esquecido, como outros apps lidam com recuperação e hábitos que evitam ficar trancado de fora."
 category: security
 order: 44
@@ -28,8 +28,8 @@ faq:
     a: "Não. Apagar o app apaga os dados criptografados dele do aparelho. Reinstalar dá a você um app limpo, não acesso aos cofres antigos. Só apague se já aceitou que o conteúdo se perdeu."
   - q: "Como outros apps de cofre de fotos lidam com um PIN esquecido?"
     a: "Muitos apps com conta permitem redefinir o PIN por e-mail ou por uma conta na nuvem, ou seja, existe um caminho de recuperação fora da sua memória. Confira a ajuda do seu app antes de precisar e entenda que um caminho de recuperação também pode ser uma porta de entrada para outra pessoa."
-  - q: "O Velcrypt vai ganhar uma opção de recuperação?"
-    a: "Uma opção de backup criptografado e recuperação está planejada, mas não há data de lançamento. Até ela existir, trate o seu padrão como a única chave."
+  - q: "Um backup do Velcrypt ajuda se eu esquecer o padrão?"
+    a: "Sim, se você criou um antes. Abra qualquer cofre (um padrão novo abre um cofre vazio), vá em Ajustes → Backup e restaure o arquivo com a senha de backup. Os itens são adicionados ao cofre aberto. Sem backup, o conteúdo não pode ser recuperado, e uma senha de backup esquecida também não."
 ---
 
 Aquele frio na barriga quando o desenho que você fez cem vezes de repente não funciona é real. Antes de qualquer coisa: não apague nem reinstale o app. A maioria dos padrões “esquecidos” acaba sendo padrões lembrados com um pequeno erro, e há coisas sensatas para tentar primeiro.
@@ -50,14 +50,18 @@ Siga estes passos com calma:
 
 ## Se realmente se perdeu
 
-Se nada disso funcionar, a resposta honesta é: o conteúdo não pode ser recuperado. Nem por você, nem pelo Velcrypt, nem por ninguém.
+Se nada disso funcionar e você não tiver um backup, a resposta honesta é: o conteúdo não pode ser recuperado. Nem por você, nem pelo Velcrypt, nem por ninguém.
 
 Isso não é uma política que alguém possa contornar. É como a criptografia funciona:
 
 - O Velcrypt não tem conta, e-mail nem servidor. Veja [offline, sem conta](id:offline-no-account).
 - As chaves do seu cofre são desbloqueadas por uma chave derivada do seu padrão no aparelho, usando PBKDF2 e um salt guardado no Keychain do iOS. Sem o padrão, essa chave não pode ser gerada.
 - Os dados do cofre são criptografados com AES-256-GCM, que não pode ser quebrado por força bruta. O [explicador sobre AES-256](id:aes-256-encryption-explained) mostra por quê.
-- Na primeira versão, os dados do cofre ficam fora dos backups do iCloud e do Finder/iTunes, então não existe cópia mais antiga para restaurar.
+- Os dados do cofre ficam fora dos backups do iCloud e do Finder/iTunes, então não existe uma cópia automática para restaurar. A única cópia possível é um backup criptografado que você mesmo tenha criado.
+
+### Se você tem um backup criptografado
+
+Se você criou um backup do cofre em Ajustes → Backup antes de esquecer o padrão, ainda pode recuperar o conteúdo. Desenhe um padrão novo (de preferência um que você vá lembrar), que abre um cofre vazio, vá em Ajustes → Backup, escolha Restaurar Backup e digite a senha escolhida quando o backup foi criado. Os itens do backup são adicionados ao cofre aberto. O backup só contém o que havia no cofre no momento em que foi criado, e o Velcrypt não consegue recuperar uma senha de backup esquecida.
 
 As mesmas propriedades que tornam o seu cofre privado tornam definitivo um padrão esquecido. Um sistema com um botão “esqueceu o padrão?” necessariamente mantém uma porta de entrada que não depende só de você.
 
@@ -89,9 +93,13 @@ Teste uma forma parecida (não a real) no [verificador de força de padrão](id:
 - Evite trocar o padrão logo antes de um período estressante, como uma viagem.
 - Se você tem vários cofres, faça padrões bem diferentes para não misturá-los.
 
+### Faça backups criptografados
+
+Em Ajustes → Backup, crie um backup de cada cofre importante e salve o arquivo fora do iPhone, no iCloud Drive ou em um computador. Refaça o backup depois de adicionar coisas importantes. Escolha uma senha de backup longa que você consiga lembrar ou guarde num gerenciador de senhas: sem ela, o arquivo não abre.
+
 ### Mantenha originais onde a perda doeria
 
-Se perder uma foto ou um documento seria realmente insuportável, um cofre não deve ser o único lugar onde ele existe. Para itens insubstituíveis, mantenha uma cópia extra num lugar de confiança, como um drive criptografado guardado em segurança. É uma troca consciente: cada cópia extra é mais um lugar para proteger.
+Se perder uma foto ou um documento seria realmente insuportável, um cofre não deve ser o único lugar onde ele existe. Para itens insubstituíveis, mantenha um backup ou uma cópia extra num lugar de confiança, como um drive criptografado guardado em segurança. É uma troca consciente: cada cópia extra é mais um lugar para proteger.
 
 ### Não anote o padrão perto do celular
 
@@ -110,4 +118,4 @@ O [guia sobre cofres de fotos sem conta](id:photo-vault-without-account) explica
 
 ## Onde o Velcrypt se encaixa
 
-O Velcrypt é, de propósito, um cofre só no aparelho: sem conta, sem servidor, sem frase de recuperação, sem cópia das suas chaves em nenhum outro lugar. Uma opção de backup criptografado e recuperação está planejada como parte de uma atualização Premium opcional, sem data prometida. Se tiver dúvidas, o [suporte](id:support) pode explicar como o app se comporta, mas ninguém lá consegue abrir um cofre para você.
+O Velcrypt é, de propósito, um cofre só no aparelho: sem conta, sem servidor, sem frase de recuperação, sem cópia das suas chaves em nenhum outro lugar. O único caminho de volta é um backup criptografado que você mesmo cria e guarda, e esse recurso é grátis. Se tiver dúvidas, o [suporte](id:support) pode explicar como o app se comporta, mas ninguém lá consegue abrir um cofre para você.

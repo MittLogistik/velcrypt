@@ -19,7 +19,7 @@ keywords:
   - "albumet gömda face id"
   - "kan någon se mina gömda bilder"
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Vad albumet Gömda verkligen skyddar, vem som ändå kan öppna det och hur iCloud-synk och Avancerat dataskydd förändrar bilden."
 category: apple
 order: 10
@@ -122,4 +122,4 @@ Albumet Gömda är gjort för ordning och lätt integritet, inte för situatione
 
 Velcrypt använder det synsättet. Varje valv öppnas med ett mönster som ritas på ett rutnät med 5×5 punkter i stället för med Face ID eller enhetens lösenkod, och innehållet krypteras med AES-256-GCM med nycklar som härleds från mönstret ([så fungerar krypteringen](id:encryption)). Varje mönster öppnar ett eget valv och ett okänt mönster öppnar helt enkelt ett tomt, så ingenting avslöjar hur många valv som finns ([dolda valv](id:hidden-vaults)). Allt stannar på enheten, utan konto och utan kopia i molnet.
 
-Det medför också ärliga avvägningar. Valvinnehållet ingår inte i säkerhetskopior till iCloud eller dator i den första versionen, så om du tappar bort telefonen eller glömmer mönstret går innehållet inte att återställa. Och att importera en bild kopierar den, så du behöver fortfarande ta bort originalet från Bilder och Nyligen raderade. En jämförelse sida vid sida finns i [Velcrypt mot albumet Gömda på iPhone](id:velcrypt-vs-iphone-hidden-album).
+Det medför också ärliga avvägningar. Valvinnehållet ingår inte i säkerhetskopior till iCloud eller dator, så ett glömt mönster går inte att återställa, och en förlorad telefon tar innehållet med sig om du inte själv har skapat en krypterad säkerhetskopia. Och att importera en bild kopierar den, så du behöver fortfarande ta bort originalet från Bilder och Nyligen raderade. En jämförelse sida vid sida finns i [Velcrypt mot albumet Gömda på iPhone](id:velcrypt-vs-iphone-hidden-album).

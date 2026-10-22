@@ -10,11 +10,11 @@ keyFacts:
   - "Velcrypt si sblocca con una sequenza su una griglia 5×5; ogni sequenza è una cassaforte separata."
   - "Velcrypt pubblica lo schema di cifratura: AES-256-GCM con derivazione delle chiavi PBKDF2-HMAC-SHA512."
   - "Velcrypt, per scelta, non scatta foto agli intrusi e non ha Face ID."
-  - "Velcrypt v1 non ha backup: con una sequenza dimenticata o un telefono perso la cassaforte è persa."
+  - "Velcrypt non ha backup cloud: offre un backup cifrato manuale e gratuito, e una sequenza dimenticata non si recupera."
 primaryKeyword: "velcrypt vs private photo vault"
 keywords: ["alternativa a private photo vault", "private photo vault confronto", "private photo vault opinioni", "cassaforte foto password esca", "cassaforte foto con sequenza"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Cassaforte con PIN, esca e rilevamento intrusioni contro una cassaforte cifrata a sequenza e senza account. Confronto neutrale."
 competitor: "Private Photo Vault"
 lastChecked: "ottobre 2026"
@@ -49,14 +49,14 @@ Velcrypt è una cassaforte sul dispositivo bloccata da una sequenza. Una sequenz
 |---|---|---|
 | Dettagli della cifratura sul dispositivo pubblicati | Sì: AES-256-GCM, chiavi per cassaforte e per file | Non dichiarati pubblicamente nel dettaglio |
 | Account richiesto | No | Non dichiarato pubblicamente |
-| Backup cloud | No (v1); backup cifrato in programma | Variabile; controlla la scheda attuale |
+| Backup cloud | Nessuna sincronizzazione; backup cifrato manuale gratuito in un file | Variabile; controlla la scheda attuale |
 | Metodo di sblocco | Sequenza su griglia 5×5 | PIN / codice |
 | Biometria (Face ID / Touch ID) | Non offerta, per scelta | Variabile |
-| Esca / più casseforti | Ogni sequenza è una cassaforte a sé | Password esca |
-| Sequenza di emergenza | In arrivo (Premium) | Non dichiarato pubblicamente |
+| Esca / più casseforti | Ogni sequenza è una cassaforte a sé (più casseforti con Premium) | Password esca |
+| Sequenza di emergenza | Prevista per un aggiornamento futuro | Non dichiarato pubblicamente |
 | Report di intrusione | Non offerti | Offerti, secondo la sua scheda |
 | Recupero se dimentichi il codice | Nessuno | Non dichiarato pubblicamente |
-| Modello di business | Versione gratuita più Premium facoltativo | Versione gratuita più upgrade a pagamento |
+| Modello di business | Gratuita (1 cassaforte, 50 elementi) più Premium facoltativo da 1,99 $/settimana, 19,99 $/anno o 39,99 $ a vita (USD) | Versione gratuita più upgrade a pagamento |
 | Piattaforme | iPhone (iOS 17+) | Variabile; controlla le schede negli store |
 
 <!-- TODO verify -->
@@ -83,7 +83,7 @@ Per Private Photo Vault non abbiamo trovato, al momento della stesura, una descr
 
 - **Vuoi i report di intrusione.** Se per te è importante sapere che qualcuno ha provato ad aprire la cassaforte, Velcrypt non lo offre.
 - **Preferisci un codice numerico o Face ID.** Alcune persone trovano un PIN più rapido che disegnare una sequenza.
-- **Vuoi un’opzione di backup o trasferimento.** Se la versione che usi ne offre una, è qualcosa che Velcrypt v1 non ha.
+- **Vuoi un’opzione di backup o trasferimento.** Velcrypt offre un backup cifrato manuale in un file, ma nessun trasferimento automatico o cloud.
 - **Ti sei già organizzato.** Spostare una libreria grande richiede impegno; cambiare ha senso solo se le differenze contano per te.
 
 <!-- TODO verify -->

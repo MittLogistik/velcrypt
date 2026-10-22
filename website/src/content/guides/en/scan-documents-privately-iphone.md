@@ -19,7 +19,7 @@ keywords:
   - "scan documents to files iphone"
   - "where are scanned documents saved iphone"
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Scan IDs, contracts and medical papers without filling Photos or iCloud, then lock them away and remove leftover copies."
 category: practical
 order: 34
@@ -118,9 +118,9 @@ Many scanner apps on the App Store offer text recognition, cloud storage or auto
 
 Locking a note or keeping a PDF in On My iPhone is a good start, but anyone who can unlock your phone can still open Files. For identity documents, medical records and anything you’d hate to see leaked, moving the scan into an encrypted vault adds a separate secret.
 
-Velcrypt can import documents from the Files app into an encrypted vault ([private documents](id:private-documents)). Files are encrypted with AES-256-GCM on the device using keys derived from your unlock pattern, and nothing is uploaded ([offline, no account](id:offline-no-account)). Velcrypt doesn’t have a built-in scanner or camera, so you scan with Files or Notes first and then import the PDF.
+Velcrypt can import documents from the Files app into an encrypted vault ([private documents](id:private-documents)). Files are encrypted with AES-256-GCM on the device using keys derived from your unlock pattern, and nothing is uploaded ([offline, no account](id:offline-no-account)). Velcrypt’s in-vault camera saves photos straight into the vault, but it isn’t a document scanner, so for multi-page PDFs you scan with Files or Notes first and then import the PDF.
 
-Keep in mind that in the first version, vault content is not included in iCloud or computer backups. If an original document is irreplaceable, keep the paper version or another copy somewhere you control. Our [use case on medical and ID documents](id:medical-and-id-documents) covers that balance.
+Keep in mind that vault content is not included in iCloud or computer backups. If a document is irreplaceable, create an encrypted backup in Settings → Backup and store the file somewhere you control, or keep the paper version. Our [use case on medical and ID documents](id:medical-and-id-documents) covers that balance.
 
 ## Cleaning up the leftovers
 

@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "cacher des vidéos sur iphone"
 keywords: ["cacher une vidéo iphone", "masquer des vidéos iphone", "vidéos privées iphone", "cacher enregistrement d’écran iphone", "empêcher whatsapp d’enregistrer les vidéos dans photos", "vidéos masquées iphone"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Cachez des vidéos sur iPhone, empêchez les messageries de remplir votre pellicule et gérez l’espace pris par vos vidéos privées."
 category: hiding
 order: 3
@@ -97,4 +97,4 @@ Pour une discrétion de courte durée face à des amis ou à la famille, l’alb
 
 Velcrypt stocke les vidéos dans un coffre-fort chiffré sur l’appareil, avec la même protection que pour les photos : chiffrement AES-256-GCM, verrouillage par schéma indépendant du code de votre iPhone, ni envoi en ligne ni compte. Dans le coffre, vous pouvez classer les clips dans des [albums](id:albums) et les lire dans la visionneuse intégrée. La page [cacher des vidéos avec Velcrypt](id:hide-videos) donne les détails.
 
-Deux précisions honnêtes, propres à la vidéo. L’import copie le fichier : l’espace utilisé double tant que vous n’avez pas retiré l’original de Photos et de Suppressions récentes. Et les données du coffre ne sont pas incluses dans les sauvegardes iCloud ou sur ordinateur : si vous perdez le téléphone ou oubliez le schéma, les vidéos du coffre sont perdues. Gardez-le en tête avant de supprimer la seule autre copie de quelque chose que vous tenez à conserver.
+Deux précisions honnêtes, propres à la vidéo. L’import copie le fichier : l’espace utilisé double tant que vous n’avez pas retiré l’original de Photos et de Suppressions récentes. Et les données du coffre ne sont pas incluses dans les sauvegardes iCloud ou sur ordinateur : si vous oubliez le schéma, ou perdez le téléphone sans avoir créé de sauvegarde chiffrée, les vidéos du coffre sont perdues. Gardez-le en tête avant de supprimer la seule autre copie de quelque chose que vous tenez à conserver.

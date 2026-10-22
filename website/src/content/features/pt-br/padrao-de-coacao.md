@@ -1,12 +1,12 @@
 ---
 pageId: duress-pattern
-title: "Padrão de coação (em breve): proteja cofres sob pressão"
-description: "O padrão de coação é um recurso Premium planejado do Velcrypt, em breve: um padrão abre o cofre escolhido e remove em silêncio o acesso aos outros."
-h1: "Padrão de coação (em breve)"
-navTitle: "Padrão de coação (em breve)"
-answer: "O padrão de coação é um recurso Premium planejado, que chega em breve. Você poderá definir um padrão especial que abre um cofre escolhido por você e remove em silêncio o acesso aos seus outros cofres, para momentos em que alguém pressiona você a desbloquear o app."
+title: "Padrão de coação (planejado): proteja cofres sob pressão"
+description: "O padrão de coação é um recurso planejado do Velcrypt para uma atualização futura: um padrão abre o cofre escolhido e remove o acesso aos outros."
+h1: "Padrão de coação (planejado)"
+navTitle: "Padrão de coação (planejado)"
+answer: "O padrão de coação é um recurso planejado para uma atualização futura do Velcrypt e ainda não está no app. A ideia é que você possa definir um padrão especial que abre um cofre escolhido por você e remove em silêncio o acesso aos seus outros cofres, para momentos em que alguém pressiona você a desbloquear o app."
 keyFacts:
-  - "Status: planejado para o upgrade Premium opcional, em breve. Ainda não está no app."
+  - "Status: planejado para uma atualização futura. Ainda não está no app."
   - "Um padrão especial abrirá um cofre escolhido."
   - "Ao mesmo tempo, ele removerá em silêncio o acesso aos outros cofres."
   - "Ele não consegue recuperar cópias que existem fora do Velcrypt."
@@ -14,15 +14,15 @@ keyFacts:
 primaryKeyword: "senha de coação cofre de fotos"
 keywords: ["senha de pânico iphone", "padrão de pânico cofre de fotos", "código de coação app", "proteção contra desbloqueio forçado", "cofre com autodestruição"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
-summary: "Em breve no Premium: um padrão especial que abre um cofre escolhido e remove em silêncio o acesso aos outros."
+dateModified: 2026-10-22
+summary: "Planejado: um padrão especial que abriria um cofre escolhido e removeria em silêncio o acesso aos outros."
 status: coming-soon
 schemaType: WebPage
 order: 3
 related: [hidden-vaults, pattern-lock, what-is-a-decoy-vault, plausible-deniability-explained, phone-privacy-border-crossing]
 faq:
   - q: "O padrão de coação já está disponível no Velcrypt?"
-    a: "Não. É um recurso planejado para o upgrade Premium opcional e chega em breve. Até lá, você pode usar cofres ocultos e um cofre de fachada, que já funcionam hoje."
+    a: "Não. É um recurso planejado para uma atualização futura, ainda sem data. Até lá, você pode usar cofres ocultos e um cofre de fachada, que já funcionam hoje (um segundo cofre exige o Premium)."
   - q: "O que vai acontecer quando alguém usar o padrão de coação?"
     a: "A ideia é que ele abra um cofre escolhido por você com antecedência e, ao mesmo tempo, remova em silêncio o acesso aos seus outros cofres. Nada na tela vai indicar que algo mais aconteceu."
   - q: "Uma senha de coação apaga fotos que eu já compartilhei?"
@@ -31,7 +31,7 @@ faq:
     a: "Depende de onde você está e da situação. Remover dados enquanto autoridades inspecionam um aparelho legalmente pode ser crime em alguns países. O Velcrypt não pode dar aconselhamento jurídico; se isso for importante para você, fale com um advogado."
 ---
 
-Às vezes o risco não é um celular roubado, mas uma pessoa na sua frente pedindo para você abrir o app. O padrão de coação é a resposta planejada do Velcrypt para esse momento. Ele ainda não está disponível: é um **recurso que chega em breve** no upgrade Premium opcional, e esta página descreve o que ele foi pensado para fazer.
+Às vezes o risco não é um celular roubado, mas uma pessoa na sua frente pedindo para você abrir o app. O padrão de coação é a resposta planejada do Velcrypt para esse momento. Ele ainda não está disponível: é um **recurso planejado para uma atualização futura**, e esta página descreve o que ele foi pensado para fazer.
 
 ## O que o padrão de coação vai fazer
 
@@ -67,7 +67,7 @@ Um padrão de coação é uma ferramenta forte, e vem com limites igualmente rea
 
 **Ele não desfaz cópias.** Ele só age sobre os cofres do próprio Velcrypt naquele aparelho. Se uma foto ainda está na sua biblioteca do Fotos, em Apagados, nas Fotos do iCloud, em uma conversa ou no celular de outra pessoa, ela continua lá. Limpe os originais depois de importar; o guia sobre [apagar os originais depois de importar](id:delete-original-photos-after-import) mostra como.
 
-**Considere a ação permanente.** Os dados do cofre não entram nos backups do iCloud nem do computador na primeira versão, então assuma que o acesso, uma vez removido, não pode ser restaurado. Use-o só se você realmente aceitar perder esses arquivos.
+**Considere a ação permanente.** Os dados do cofre não entram nos backups do iCloud nem do computador, então assuma que o acesso, uma vez removido, não pode ser restaurado naquele aparelho. Um backup criptografado que você tenha salvo em outro lugar continuaria existindo, o que também significa que ele poderia ser encontrado. Use o recurso só se você realmente aceitar perder esses arquivos.
 
 **Ele não impede a observação.** Se alguém viu você desenhar o padrão verdadeiro ou filmou a tela, o padrão de coação não muda o que essa pessoa viu.
 
@@ -77,4 +77,4 @@ Um padrão de coação é uma ferramenta forte, e vem com limites igualmente rea
 
 ## Enquanto ele não chega
 
-Você já pode se preparar com recursos que existem hoje. Crie um cofre de fachada convincente, escolha um [padrão](id:pattern-lock) forte para o cofre verdadeiro e mantenha os originais sensíveis fora do rolo da câmera. Quando o padrão de coação for lançado, ele se encaixará nessa configuração.
+Você já pode se preparar com recursos que existem hoje. Crie um cofre de fachada convincente (um segundo cofre exige o [Premium](id:pricing)), escolha um [padrão](id:pattern-lock) forte para o cofre verdadeiro e mantenha os originais sensíveis fora do rolo da câmera. Quando o padrão de coação for lançado, ele se encaixará nessa configuração.

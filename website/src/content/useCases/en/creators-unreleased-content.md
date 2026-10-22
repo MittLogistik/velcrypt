@@ -10,11 +10,11 @@ keyFacts:
   - "Camera roll items sync to every device on your Apple Account with iCloud Photos on."
   - "Photo metadata can reveal a shoot’s location, date and camera; strip it before posting."
   - "Velcrypt keeps photos, videos and documents in encrypted vaults on your iPhone, organised in albums."
-  - "Velcrypt has no cloud sync or backup in the first version, so keep masters in your own archive."
+  - "Velcrypt has no cloud sync; its encrypted backup is manual, so keep masters in your own archive."
 primaryKeyword: "protect unreleased photos iphone"
 keywords: ["store client photos privately iphone", "photographer client privacy phone", "hide work photos iphone", "creator content privacy", "keep unreleased content private"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "For photographers, artists and creators: keep unreleased work and client material private on iPhone, and share it only on purpose."
 group: professional
 schemaType: Article
@@ -28,7 +28,7 @@ faq:
   - q: "Can I organise projects inside Velcrypt?"
     a: "Yes. Vaults contain albums, so you can keep a separate album per project or client, multi-select items and move them between albums."
   - q: "Is Velcrypt a replacement for my photo archive?"
-    a: "No. Velcrypt keeps working copies private on your iPhone. It has no cloud sync, and in the first version vault data isn’t backed up, so your master files should live in your own archive."
+    a: "No. Velcrypt keeps working copies private on your iPhone. It has no cloud sync, and vault data isn’t in iCloud or computer backups. You can save an encrypted backup file yourself, but your master files should live in your own archive."
 ---
 
 If you make things for a living — or for love — your iPhone probably holds work that isn’t ready to be seen. Edits in progress, a shoot under embargo, a client’s proofs, sketches for a commission, or content for a subscription platform. For adult creators especially, a leak isn’t just inconvenient; it can affect income, safety and other people’s privacy. Whatever you create, the principle is the same: you decide when and how your work is seen.
@@ -69,7 +69,7 @@ Secure export lets you take a single file out when it’s time to deliver or pub
 
 ## Honest limits
 
-- **Not an archive.** No cloud sync, and in the first version no backup: if the phone is lost or you forget the pattern, the vault can’t be recovered. Keep masters elsewhere.
+- **Not an archive.** No cloud sync and no automatic backup: if you forget the pattern, the vault can’t be recovered, and a lost phone can only be recovered from an encrypted backup file you made in Settings → Backup. Keep masters elsewhere.
 - **Exports leave the vault.** Once a file is sent, it’s only as private as the recipient’s device.
 - **Screen capture by others.** A vault can’t stop someone photographing your screen, or a recipient screenshotting what you send.
 - **Check metadata yourself.** Don’t assume any export removes location or camera data; run files through a dedicated tool before publishing.

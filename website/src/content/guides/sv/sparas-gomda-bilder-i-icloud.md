@@ -19,7 +19,7 @@ keywords:
   - "hålla bilder borta från icloud"
   - "gömda bilder på icloud.com"
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Gömda bilder synkas via iCloud-bilder och kan hamna i iCloud-säkerhetskopian. Så fungerar krypteringen i varje fall och så håller du en bild borta från iCloud."
 category: apple
 order: 11
@@ -105,9 +105,9 @@ Det stoppar nya uppladdningar, men det stoppar också synken av allt annat, och 
 
 ### Alternativ 2: Förvara bilden i en app som inte synkar
 
-Vissa appar lagrar filer bara i sin egen lagring på enheten och undantar dem från säkerhetskopior. Velcrypt är byggd så: bilder, videor och dokument du importerar krypteras på iPhonen och undantas i den första versionen från säkerhetskopior till iCloud och dator. Det finns inget konto och ingenting laddas upp ([på enheten, utan konto](id:offline-no-account)).
+Vissa appar lagrar filer bara i sin egen lagring på enheten och undantar dem från säkerhetskopior. Velcrypt är byggd så: bilder, videor och dokument du importerar krypteras på iPhonen och undantas från säkerhetskopior till iCloud och dator. Det finns inget konto och ingenting laddas upp ([på enheten, utan konto](id:offline-no-account)).
 
-Den ärliga avvägningen: om bilden bara finns i ett sådant valv och du tappar bort telefonen eller glömmer mönstret finns det ingen kopia någonstans att återställa. Ett alternativ för krypterad säkerhetskopiering är planerat för Velcrypt, men det ingår inte i den första versionen.
+Den ärliga avvägningen: om bilden bara finns i ett sådant valv och du tappar bort telefonen eller glömmer mönstret finns det ingen automatisk kopia att återställa. I Velcrypt kan du själv skapa en krypterad säkerhetskopia, skyddad av ett lösenord du väljer. Sparar du den i iCloud Drive hamnar bara den krypterade filen där, inte bilderna.
 
 ### Alternativ 3: Radera iCloud-kopian ordentligt
 

@@ -9,12 +9,12 @@ keyFacts:
   - "Les captures d’écran de la pellicule peuvent être vues, supprimées ou synchronisées par toute personne qui a votre code ou votre compte Apple."
   - "Le Contrôle de sécurité (Réglages › Confidentialité et sécurité, iOS 16+) vous aide à voir qui a accès à votre iPhone et à votre compte."
   - "Une preuve n’est utile que si elle est conservée : gardez au moins deux copies, dans des endroits inaccessibles à l’autre personne."
-  - "Velcrypt n’a pas de sauvegarde dans la première version : il ne doit jamais contenir votre seule copie."
+  - "Velcrypt n’a pas de sauvegarde automatique : il ne doit jamais contenir votre seule copie."
   - "Les associations d’aide et les forces de l’ordre peuvent vous dire quelles traces sont utiles là où vous vivez."
 primaryKeyword: "garder des preuves de harcèlement iphone"
 keywords: ["conserver des captures d’écran de harcèlement", "stocker des preuves sur iphone", "preuves de violences téléphone", "cacher des captures d’écran à son agresseur", "preuves cyberharcèlement sécurité", "sauvegarder des preuves de harcèlement"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Une approche prudente, sécurité d’abord, pour garder vos captures et photos de harcèlement privées, intactes et sauvegardées en lieu sûr."
 group: sensitive
 schemaType: Article
@@ -26,7 +26,7 @@ faq:
   - q: "Mon agresseur peut-il voir mes photos si nous partageons un compte Apple ?"
     a: "Oui. Avec Photos iCloud activé, les photos se synchronisent sur tous les appareils connectés à ce compte, album « Masqués » compris. Le Contrôle de sécurité et un compte Apple séparé peuvent aider, mais pensez à votre sécurité avant de faire des changements qu’il pourrait remarquer."
   - q: "Velcrypt suffit-il pour conserver des preuves ?"
-    a: "Il peut garder une copie privée sur votre iPhone, mais ce ne doit pas être votre seule copie. Dans la première version, les coffres ne sont pas sauvegardés : un téléphone perdu, cassé ou confisqué signifie un coffre perdu."
+    a: "Il peut garder une copie privée sur votre iPhone, mais ce ne doit pas être votre seule copie. Les coffres ne figurent pas dans les sauvegardes de l’iPhone : sans sauvegarde chiffrée Velcrypt enregistrée ailleurs, un téléphone perdu, cassé ou confisqué signifie un coffre perdu."
   - q: "Est-ce un conseil juridique ?"
     a: "Non. Les règles en matière de preuves varient selon les pays. Une association d’aide, un avocat ou la police peuvent vous dire quel type de traces est utile là où vous vivez."
 ---
@@ -68,7 +68,7 @@ Les coffres s’ouvrent avec un schéma tracé sur une grille 5×5, pas avec le 
 
 ## Des limites honnêtes — à lire
 
-- **Velcrypt ne doit pas contenir votre seule copie.** Dans la première version, les données des coffres ne sont incluses ni dans les sauvegardes iCloud ni dans celles sur ordinateur. Si le téléphone est perdu, cassé ou confisqué, ou si vous oubliez le schéma, personne ne peut récupérer le coffre.
+- **Velcrypt ne doit pas contenir votre seule copie.** Les données des coffres ne sont incluses ni dans les sauvegardes iCloud ni dans celles sur ordinateur. Si le téléphone est perdu, cassé ou confisqué, seule une sauvegarde chiffrée enregistrée ailleurs permet de restaurer le coffre ; si vous oubliez le schéma, personne ne peut le récupérer.
 - **L’app est visible.** L’icône Velcrypt apparaît sur votre écran d’accueil. iOS 18 permet de masquer des apps derrière Face ID dans un dossier caché, mais quelqu’un qui regarde de près peut quand même remarquer une app. Demandez-vous si cela pourrait vous mettre en danger.
 - **Quelqu’un qui vous regarde** tracer votre schéma, ou qui prend votre téléphone pendant que le coffre est ouvert, rend le verrou inutile.
 - **Un logiciel de surveillance** sur un téléphone jailbreaké ou manipulé peut voir ce qui s’affiche à l’écran. Si vous le soupçonnez, une association d’aide peut vous conseiller ; utiliser un appareil auquel la personne n’a jamais eu accès peut être plus sûr.

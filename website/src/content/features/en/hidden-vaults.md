@@ -10,11 +10,11 @@ keyFacts:
   - "Velcrypt never shows a list of vaults."
   - "An unknown pattern opens an empty vault, with no error message."
   - "You can keep a decoy vault with ordinary content."
-  - "More vaults are a planned part of the optional Premium upgrade."
+  - "The free version has one vault; more vaults, including a decoy, need Premium."
 primaryKeyword: "hidden vault app iphone"
 keywords: ["multiple vaults photo app", "decoy vault iphone", "secret vault app", "plausible deniability photo vault", "second hidden vault"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Every pattern is its own vault. No vault list, no error for unknown patterns, and room for a believable decoy vault."
 status: available
 schemaType: WebPage
@@ -64,6 +64,8 @@ It also has a practical side effect. If you mistype your pattern, you will land 
 
 ## How to create a second vault
 
+The free version of Velcrypt has one vault, so a second vault needs [Premium](id:pricing).
+
 1. **Lock Velcrypt.** Leave the vault you are in so the pattern grid appears.
 2. **Draw a new pattern.** Use one you have not used before, following the usual rules: at least 6 dots and at least one change of direction.
 3. **Add something.** An empty vault opens. Import a photo, video or document to start using it.
@@ -75,7 +77,7 @@ A decoy vault is a vault filled with harmless but believable content, for exampl
 
 A decoy works best when it looks lived-in. An empty vault invites the question "why install a vault app for nothing?", while a vault with a few dozen ordinary items rarely does. The guide on [what a decoy vault is](id:what-is-a-decoy-vault) covers how to make one convincing.
 
-Velcrypt is also planning a [duress pattern](id:duress-pattern) for the optional Premium upgrade (coming soon). It is meant to go one step further than a decoy by opening a chosen vault and silently removing access to the others.
+Velcrypt is also planning a [duress pattern](id:duress-pattern) for a future update. It is meant to go one step further than a decoy by opening a chosen vault and silently removing access to the others.
 
 ## How each vault stays separate
 

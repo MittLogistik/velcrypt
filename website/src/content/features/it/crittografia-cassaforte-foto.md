@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "cassaforte foto crittografata iphone"
 keywords: ["crittografia aes-256-gcm foto", "app foto cifrate iphone", "pbkdf2 app cassaforte", "come viene cifrata la mia cassaforte", "cifratura autenticata spiegata"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "AES-256-GCM per ogni file, chiavi derivate dalla sequenza con PBKDF2-HMAC-SHA512 e HKDF, più la Protezione dati di iOS."
 status: available
 schemaType: WebPage
@@ -72,7 +72,7 @@ I due livelli sono indipendenti. Anche se uno venisse in qualche modo aggirato, 
 
 Velcrypt funziona [completamente offline e senza account](id:offline-no-account). Non ci sono server, né caricamenti, né copie delle tue chiavi fuori dal telefono. Questo approccio elimina un'intera categoria di rischi: non c'è un database da violare né un dipendente dell'azienda in grado di decifrare i tuoi file.
 
-Ha anche un costo. Poiché le chiavi esistono solo sul dispositivo e solo attraverso la tua sequenza, nessuno può recuperare una cassaforte se dimentichi la sequenza o perdi il telefono. Un'opzione di backup cifrato è prevista, ma nella prima versione non esiste.
+Ha anche un costo. Poiché le chiavi esistono solo sul dispositivo e solo attraverso la tua sequenza, nessuno può recuperare una cassaforte se dimentichi la sequenza o perdi il telefono. Per proteggerti dalla perdita del telefono puoi creare un backup cifrato in Impostazioni → Backup, protetto da una password del backup che, se dimenticata, non si può recuperare.
 
 ## Cosa la crittografia non copre
 

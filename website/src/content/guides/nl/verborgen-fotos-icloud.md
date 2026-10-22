@@ -19,7 +19,7 @@ keywords:
   - "foto's niet in icloud zetten"
   - "verborgen foto's op icloud.com"
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Verborgen foto's synchroniseren via iCloud-foto's en kunnen in de iCloud-reservekopie belanden. Zo werkt versleuteling en zo houd je een foto uit iCloud."
 category: apple
 order: 11
@@ -105,9 +105,9 @@ Dit stopt nieuwe uploads, maar ook het synchroniseren van al het andere, en best
 
 ### Optie 2: de foto bewaren in een app die niet synchroniseert
 
-Sommige apps bewaren bestanden alleen in hun eigen opslag op het apparaat en sluiten ze uit van back-ups. Velcrypt is zo gebouwd: foto's, video's en documenten die je importeert, worden op de iPhone versleuteld en vallen in de eerste versie buiten iCloud- en computerback-ups. Er is geen account en er wordt niets geüpload ([op het apparaat, zonder account](id:offline-no-account)).
+Sommige apps bewaren bestanden alleen in hun eigen opslag op het apparaat en sluiten ze uit van back-ups. Velcrypt is zo gebouwd: foto's, video's en documenten die je importeert, worden op de iPhone versleuteld en vallen buiten iCloud- en computerback-ups. Er is geen account en er wordt niets geüpload ([op het apparaat, zonder account](id:offline-no-account)).
 
-De eerlijke afweging: bestaat de foto alleen in zo'n kluis en verlies je de telefoon of vergeet je je patroon, dan is er nergens een kopie om terug te zetten. Een optie voor versleutelde back-ups is gepland voor Velcrypt, maar maakt geen deel uit van de eerste versie.
+De eerlijke afweging: bestaat de foto alleen in zo'n kluis en verlies je de telefoon of vergeet je je patroon, dan is er nergens een kopie om terug te zetten. Velcrypt laat je daarom zelf een versleuteld back-upbestand maken. Bewaar je dat in iCloud Drive, dan staat er wel een kopie in iCloud, maar versleuteld met een back-upwachtwoord dat alleen jij kent.
 
 ### Optie 3: de iCloud-kopie goed verwijderen
 

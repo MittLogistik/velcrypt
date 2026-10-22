@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "album photo secret iphone"
 keywords: ["dossier secret iphone", "album secret iphone", "dossier caché iphone", "créer un album privé sur iphone", "photos secrètes iphone", "album privé iphone"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Créez un album photo vraiment secret sur iPhone, et évitez les astuces courantes qui n’ont de secret que l’apparence."
 category: hiding
 order: 5
@@ -106,4 +106,4 @@ Velcrypt aborde l’album secret par le côté « personne ne peut l’ouvrir »
 
 Ce qui sort de l’ordinaire, c’est le fonctionnement des coffres. Chaque schéma tracé sur la grille de 5×5 points correspond à son propre coffre, et l’app n’en tient aucune liste. Un schéma que Velcrypt n’a jamais vu ouvre simplement un nouveau coffre vide, sans message d’erreur. Rien dans l’app ne révèle donc combien de [coffres cachés](id:hidden-vaults) vous possédez, et vous pouvez en garder un anodin comme leurre.
 
-Les limites, en toute honnêteté : l’icône de Velcrypt reste visible sauf si vous utilisez le masquage d’apps d’iOS, et rien ne protège un coffre si quelqu’un vous voit tracer le schéma ou prend le téléphone pendant que le coffre est ouvert. Comme les données du coffre ne sont pas sauvegardées, un schéma oublié signifie un album perdu.
+Les limites, en toute honnêteté : l’icône de Velcrypt reste visible sauf si vous utilisez le masquage d’apps d’iOS, et rien ne protège un coffre si quelqu’un vous voit tracer le schéma ou prend le téléphone pendant que le coffre est ouvert. Comme un schéma oublié ne peut pas être récupéré, il signifie un album perdu. Pour vous protéger de la perte du téléphone, créez une sauvegarde chiffrée dans Réglages → Sauvegarde.

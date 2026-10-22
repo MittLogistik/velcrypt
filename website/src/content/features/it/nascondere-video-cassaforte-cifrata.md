@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "app per nascondere video iphone"
 keywords: ["nascondere video iphone", "cassaforte video cifrata iphone", "app video privati iphone", "bloccare video iphone", "nascondere video dal rullino"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Importa i video come copie cifrate, guardali dentro la cassaforte ed elimina gli originali senza restare a corto di spazio."
 status: available
 schemaType: WebPage
@@ -26,7 +26,7 @@ faq:
   - q: "Perché lo spazio libero è diminuito dopo aver importato i video?"
     a: "L'importazione crea una copia, quindi finché non elimini l'originale da Foto e svuoti «Eliminati di recente» il video esiste due volte. Una volta sparito l'originale, lo spazio si libera."
   - q: "I video nascosti nella cassaforte finiscono nel Backup di iCloud?"
-    a: "No. Nella prima versione i dati delle casseforti sono esclusi dai backup di iCloud e del computer. I video nella cassaforte esistono solo sul tuo iPhone."
+    a: "No. I dati delle casseforti sono esclusi dai backup di iCloud e del computer. Se vuoi una copia, crea un backup cifrato in Impostazioni → Backup."
   - q: "I video in Velcrypt si sincronizzano sugli altri miei dispositivi?"
     a: "No. Velcrypt non ha sincronizzazione cloud e funziona solo su iPhone. Un video nella cassaforte resta sull'unico telefono in cui l'hai importato."
 ---
@@ -79,9 +79,9 @@ Tieni a mente tre cose:
 
 ## Buono a sapersi
 
-- Velcrypt non ha una fotocamera integrata. Registra con l'app Fotocamera, importa il video e poi elimina l'originale.
+- Con la fotocamera nella cassaforte registri video direttamente in Velcrypt, senza che finiscano nella libreria di Foto. Se il video è già in Foto, importalo e poi elimina l'originale.
 - Sequenze diverse aprono [casseforti nascoste](id:hidden-vaults) diverse. Se alcuni video non devono mai stare accanto ad altri, dai loro una cassaforte a sé invece di un semplice album separato.
-- Nella prima versione i dati delle casseforti non finiscono nei backup. Per i video insostituibili, tieni una seconda copia in un posto di cui ti fidi.
+- I dati delle casseforti non finiscono nei backup di iCloud o del computer. Per i video insostituibili, crea un backup cifrato e salvalo in un posto di cui ti fidi.
 - Se un video è stato inviato in una chat o pubblicato in un album condiviso, quelle copie sono fuori dalla cassaforte. La guida su [come conservare in sicurezza le foto intime](id:store-intimate-photos-safely-iphone) approfondisce questo rischio.
 
 Per una panoramica più ampia di tutte le opzioni integrate e di terze parti, leggi [come nascondere i video su iPhone](id:hide-videos-iphone).

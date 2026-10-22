@@ -10,11 +10,11 @@ keyFacts:
   - "Velcrypt non mostra mai un elenco delle casseforti."
   - "Una sequenza sconosciuta apre una cassaforte vuota, senza messaggi di errore."
   - "Puoi tenere una cassaforte esca con contenuti qualsiasi."
-  - "Più casseforti fanno parte dei piani per l'upgrade Premium facoltativo."
+  - "La versione gratuita ha una cassaforte; più casseforti, e quindi un'esca, fanno parte del Premium."
 primaryKeyword: "app cassaforte nascosta iphone"
 keywords: ["app foto con più casseforti", "cassaforte esca iphone", "app cassaforte segreta", "negabilità plausibile cassaforte foto", "seconda cassaforte nascosta"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Ogni sequenza è una cassaforte a sé. Nessun elenco, nessun errore per sequenze sconosciute e spazio per una cassaforte esca credibile."
 status: available
 schemaType: WebPage
@@ -66,7 +66,7 @@ C'è anche un effetto pratico. Se sbagli a disegnare la sequenza, finisci in una
 
 1. **Blocca Velcrypt.** Esci dalla cassaforte in cui ti trovi, così compare la griglia.
 2. **Disegna una nuova sequenza.** Usane una mai usata prima, rispettando le solite regole: almeno 6 punti e almeno un cambio di direzione.
-3. **Aggiungi qualcosa.** Si apre una cassaforte vuota. Importa una foto, un video o un documento per iniziare a usarla.
+3. **Aggiungi qualcosa.** Si apre una cassaforte vuota (le casseforti aggiuntive richiedono il Premium). Importa una foto, un video o un documento per iniziare a usarla.
 4. **Esercitati con la sequenza.** Blocca e sblocca qualche volta, così ricordi esattamente quale sequenza appartiene a quale cassaforte.
 
 ## Usare una cassaforte esca
@@ -75,7 +75,7 @@ Una cassaforte esca è una cassaforte riempita di contenuti innocui ma credibili
 
 Un'esca funziona meglio quando sembra vissuta. Una cassaforte vuota fa nascere la domanda «perché installare un'app cassaforte per niente?», mentre una con qualche decina di elementi ordinari raramente la suscita. La guida su [cos'è una cassaforte esca](id:what-is-a-decoy-vault) spiega come renderla convincente.
 
-Velcrypt prevede anche una [sequenza di emergenza](id:duress-pattern) per l'upgrade Premium facoltativo (in arrivo). È pensata per andare un passo oltre l'esca: apre una cassaforte scelta e rimuove in silenzio l'accesso alle altre.
+Per un aggiornamento futuro Velcrypt prevede anche una [sequenza di emergenza](id:duress-pattern). È pensata per andare un passo oltre l'esca: apre una cassaforte scelta e rimuove in silenzio l'accesso alle altre.
 
 ## Come ogni cassaforte resta separata
 

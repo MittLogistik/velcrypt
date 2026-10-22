@@ -20,7 +20,7 @@ keywords:
   - "alternativas a keepsafe"
   - "app para esconder fotos iphone"
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Siete criterios para elegir una bóveda de fotos y un análisis honesto de las herramientas de Apple, Keepsafe, Private Photo Vault, calculadoras y Velcrypt."
 category: choosing
 order: 20
@@ -70,10 +70,10 @@ Una aclaración rápida: Velcrypt es nuestra app. Hemos intentado describirla co
 | --- | --- | --- | --- | --- | --- | --- |
 | Secreto distinto del código del dispositivo | No | Opcional | Sí | Sí | Sí | Sí |
 | Cuenta obligatoria | Cuenta de Apple para iCloud | Cuenta de Apple para iCloud | Sí (correo) | No es obligatoria para el uso básico | Varía | No |
-| Copia / sincronización en la nube | Con Fotos en iCloud | Con iCloud | Nube premium opcional | Varía | Varía | No (copia cifrada prevista) |
+| Copia / sincronización en la nube | Con Fotos en iCloud | Con iCloud | Nube premium opcional | Varía | Varía | No (copia de seguridad cifrada manual) |
 | Face ID / Touch ID | Sí | Sí | Sí | Sí | Varía | No, por diseño |
-| Función señuelo | No | No | PIN falso (premium) | Contraseña señuelo | Varía | Cada patrón abre su propia bóveda |
-| Camuflaje como otra app | No | No | No | No | Sí | No |
+| Función señuelo | No | No | PIN falso (premium) | Contraseña señuelo | Varía | Cada patrón abre su propia bóveda (Premium) |
+| Camuflaje como otra app | No | No | No | No | Sí | Iconos alternativos (Premium) |
 
 <!-- TODO verify -->
 
@@ -115,13 +115,13 @@ No conocemos ninguna bóveda de fotos de código abierto en el App Store de iOS 
 
 ## Velcrypt
 
-Velcrypt es una app nativa para iPhone que guarda fotos, videos y documentos en bóvedas cifradas en el dispositivo. Desbloqueas una bóveda dibujando un patrón en una cuadrícula de 5×5 ([bloqueo por patrón](id:pattern-lock)). Cada patrón abre su propia bóveda, y un patrón desconocido simplemente abre una vacía, así que la app nunca revela cuántas bóvedas existen ([bóvedas ocultas](id:hidden-vaults)). Los archivos se cifran con AES-256-GCM mediante claves derivadas del patrón ([cifrado](id:encryption)). No hay cuenta, ni servidor, ni subidas ([sin conexión, sin cuenta](id:offline-no-account)). Tiene una versión gratuita y una mejora Premium opcional.
+Velcrypt es una app nativa para iPhone que guarda fotos, videos y documentos en bóvedas cifradas en el dispositivo. Desbloqueas una bóveda dibujando un patrón en una cuadrícula de 5×5 ([bloqueo por patrón](id:pattern-lock)). Cada patrón abre su propia bóveda, y un patrón desconocido simplemente abre una vacía, así que la app nunca revela cuántas bóvedas existen ([bóvedas ocultas](id:hidden-vaults)). Los archivos se cifran con AES-256-GCM mediante claves derivadas del patrón ([cifrado](id:encryption)). No hay cuenta, ni servidor, ni subidas ([sin conexión, sin cuenta](id:offline-no-account)). La versión gratuita incluye 1 bóveda con hasta 50 elementos; Premium (semanal, anual o vitalicio) añade elementos ilimitados, más bóvedas e iconos alternativos.
 
 Sus límites son deliberados, pero reales:
 
-- **Sin copia de seguridad en la primera versión.** El contenido de la bóveda está excluido de las copias de seguridad de iCloud y del ordenador. Si pierdes el teléfono u olvidas el patrón, ni tú ni nosotros podemos recuperar los archivos. Está prevista una opción de copia de seguridad cifrada.
+- **Solo copia de seguridad manual.** El contenido de la bóveda está excluido de las copias de seguridad de iCloud y del ordenador. Puedes crear una copia de seguridad cifrada y gratuita, pero tienes que hacerlo tú. Si olvidas el patrón, ni tú ni nosotros podemos recuperar los archivos.
 - **Sin Face ID**, por diseño, así que desbloquear es más lento que una mirada.
-- **Sin camuflaje.** En tu pantalla de inicio, la app se ve como lo que es.
+- **Camuflaje limitado.** Con Premium puedes cambiar el icono, pero el nombre Velcrypt sigue viéndose en la pantalla de inicio.
 - **Sin sincronización en la nube, enlaces para compartir ni apps para iPad o Mac.**
 
 A quién puede encajarle: a quien quiere que sus archivos se queden estrictamente en el teléfono, sin cuenta, y puede asumir la responsabilidad de sus propias copias.

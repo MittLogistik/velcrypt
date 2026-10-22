@@ -4,17 +4,17 @@ title: "Politique de confidentialité de Velcrypt"
 description: "Politique de confidentialité de Velcrypt : l’app ne collecte aucune donnée personnelle, vos coffres restent sur l’iPhone, le site n’utilise aucun cookie."
 h1: "Politique de confidentialité"
 navTitle: "Politique de confidentialité"
-answer: "L’app Velcrypt ne collecte aucune donnée personnelle : il n’y a pas de compte, le contenu des coffres ne quitte jamais votre iPhone, et il n’y a ni publicité ni analyse de ce que vous stockez. Le site web ne dépose aucun cookie et n’exécute aucun script de suivi."
+answer: "L’app Velcrypt ne collecte aucune donnée personnelle : il n’y a pas de compte, le contenu des coffres ne nous est jamais envoyé, et il n’y a ni publicité ni analyse de ce que vous stockez. Le site web ne dépose aucun cookie et n’exécute aucun script de suivi."
 keyFacts:
   - "L’app ne collecte aucune donnée personnelle et ne nécessite aucun compte."
   - "Le contenu des coffres est chiffré sur votre iPhone et ne nous est jamais envoyé."
   - "Les achats sont gérés par Apple ; nous ne recevons aucune information de paiement."
   - "Le site web n’utilise ni cookies, ni outils d’analyse, ni scripts de suivi."
-  - "Date d’entrée en vigueur : 21 octobre 2026 (projet en attente de relecture juridique)."
+  - "Date d’entrée en vigueur : 22 octobre 2026 (projet en attente de relecture juridique)."
 primaryKeyword: "politique de confidentialité velcrypt"
 keywords: ["confidentialité velcrypt", "collecte de données velcrypt", "velcrypt collecte-t-il des données", "politique de confidentialité coffre-fort photo"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 schemaType: WebPage
 order: 6
 related: [terms, security, offline-no-account, support, about]
@@ -31,9 +31,9 @@ faq:
 
 **Projet — en attente de relecture juridique.** Cette politique décrit fidèlement nos pratiques actuelles, mais sa formulation n’a pas encore été relue par un juriste et pourra évoluer avant le lancement.
 
-**Date d’entrée en vigueur :** 21 octobre 2026
+**Date d’entrée en vigueur :** 22 octobre 2026
 
-La présente Politique de confidentialité explique quelles informations Velcrypt (« nous ») traite lorsque vous utilisez l’app iPhone Velcrypt et le site web velcrypt.app. En bref : l’app est conçue pour que nous ne recevions jamais votre contenu, et nous collectons le moins possible partout ailleurs.
+La présente Politique de confidentialité explique quelles informations Swedish Treats AB, Suède, éditeur de Velcrypt (« nous »), traite lorsque vous utilisez l’app iPhone Velcrypt et le site web velcrypt.app. En bref : l’app est conçue pour que nous ne recevions jamais votre contenu, et nous collectons le moins possible partout ailleurs.
 
 ## L’app Velcrypt
 
@@ -43,7 +43,11 @@ L’app Velcrypt ne collecte pas de données personnelles. Il n’y a ni compte,
 
 ### Le contenu des coffres reste sur votre appareil
 
-Les photos, vidéos et documents que vous ajoutez à Velcrypt sont chiffrés et stockés sur votre iPhone. Ils ne sont jamais envoyés chez nous ni sur un serveur que nous exploitons, et nous n’avons aucun moyen de les voir, de les déchiffrer ou de les récupérer. Dans la version actuelle, les données des coffres sont également exclues des sauvegardes iCloud et ordinateur. Le fonctionnement du chiffrement est décrit sur la page [modèle de sécurité](id:security).
+Les photos, vidéos et documents que vous ajoutez à Velcrypt sont chiffrés et stockés sur votre iPhone. Ils ne sont jamais envoyés chez nous ni sur un serveur que nous exploitons, et nous n’avons aucun moyen de les voir, de les déchiffrer ou de les récupérer. Les données des coffres sont également exclues des sauvegardes iCloud et ordinateur. Le fonctionnement du chiffrement est décrit sur la page [modèle de sécurité](id:security).
+
+### Sauvegardes chiffrées
+
+Si vous créez une sauvegarde chiffrée dans Réglages → Sauvegarde, Velcrypt produit sur votre iPhone un fichier `.velcrypt` protégé par un mot de passe de sauvegarde que vous choisissez. Ce fichier reste là où vous l’enregistrez, par exemple dans Fichiers, iCloud Drive ou sur un ordinateur. Velcrypt ne le reçoit jamais et ne connaît pas votre mot de passe de sauvegarde. Si vous l’enregistrez dans iCloud Drive, il est stocké par Apple selon les conditions de votre compte Apple.
 
 ### Ni analyse du contenu, ni publicité
 
@@ -51,7 +55,7 @@ L’app ne contient aucune publicité et ne collecte aucune donnée d’analyse 
 
 ### Achats
 
-Tout achat, comme l’option Premium, est traité par Apple via l’App Store. Apple gère votre paiement ; nous ne recevons ni votre nom, ni votre numéro de carte, ni votre adresse de facturation. L’App Store confirme l’achat à l’app sur votre appareil afin qu’elle débloque les fonctions concernées. La manière dont Apple traite vos données est décrite sur [apple.com/privacy](https://www.apple.com/privacy/).
+Tout achat, comme un abonnement Premium ou l’achat À vie, est traité par Apple via l’App Store. Apple gère votre paiement, les renouvellements et les remboursements ; nous ne recevons ni votre nom, ni votre numéro de carte, ni votre adresse de facturation. L’App Store confirme l’achat à l’app sur votre appareil afin qu’elle débloque les fonctions concernées. La manière dont Apple traite vos données est décrite sur [apple.com/privacy](https://www.apple.com/privacy/).
 
 ### Informations qu’Apple peut nous transmettre
 

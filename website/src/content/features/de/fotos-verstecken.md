@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "fotos verstecken iphone app"
 keywords: ["foto tresor app iphone", "verschlüsselter foto tresor iphone", "privates fotoalbum app", "bilder verstecken iphone", "fotos sperren iphone"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Fotos als verschlüsselte Kopien importieren, Originale und „Zuletzt gelöscht“ leeren, dann in Alben mit Zoom und Wischen ansehen."
 status: available
 schemaType: WebPage
@@ -79,6 +79,6 @@ Das Album „Ausgeblendet“ ist bequem und für viele Menschen ausreichend. Sei
 
 ## Gut zu wissen
 
-- Velcrypt hat keine integrierte Kamera. Mach das Foto mit der Kamera-App, importiere es und lösch dann das Original.
+- Mit der Kamera im Tresor nimmst du Fotos direkt im Tresor auf. Sie landen nie in deiner Fotomediathek, es gibt also kein Original zu löschen.
 - Fotos können Standort- und Gerätedaten enthalten. Wenn du sie später teilen willst, [entferne zuerst die Metadaten](id:remove-photo-metadata-iphone).
-- Tresordaten werden in der ersten Version nicht gesichert. Ist ein Foto unersetzlich, bewahr eine zweite Kopie an einem Ort auf, dem du vertraust.
+- Tresordaten sind nicht in iCloud- oder Computer-Backups enthalten. Ist ein Foto unersetzlich, erstelle unter Einstellungen → Backup ein verschlüsseltes Backup und speichere es an einem Ort, dem du vertraust.

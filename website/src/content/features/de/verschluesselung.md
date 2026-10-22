@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "foto tresor verschlüsselung iphone"
 keywords: ["aes-256-gcm foto tresor", "verschlüsselter foto tresor iphone", "pbkdf2 tresor app", "wie ist mein tresor verschlüsselt", "authentifizierte verschlüsselung erklärt"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "AES-256-GCM pro Datei, Schlüssel aus deinem Muster per PBKDF2-HMAC-SHA512 und HKDF, dazu iOS-Datenschutz."
 status: available
 schemaType: WebPage
@@ -72,7 +72,7 @@ Die beiden Schichten sind unabhängig. Würde eine davon irgendwie umgangen, st�
 
 Velcrypt arbeitet [komplett offline und ohne Konto](id:offline-no-account). Es gibt keine Server, keine Uploads und keine Kopie deiner Schlüssel außerhalb deines Handys. Damit fällt eine ganze Risikokategorie weg: Es gibt keine Datenbank, die gehackt werden kann, und niemanden im Unternehmen, der deine Dateien entschlüsseln könnte.
 
-Das hat auch einen Preis. Weil die Schlüssel nur auf dem Gerät und nur über dein Muster existieren, kann niemand einen Tresor wiederherstellen, wenn das Muster vergessen oder das Handy verloren ist. Ein verschlüsseltes Backup ist geplant, in der ersten Version gibt es das aber nicht.
+Das hat auch einen Preis. Weil die Schlüssel nur auf dem Gerät und nur über dein Muster existieren, kann niemand einen Tresor wiederherstellen, wenn das Muster vergessen oder das Handy verloren ist. Gegen Geräteverlust hilft ein verschlüsseltes Backup, das du unter Einstellungen → Backup selbst erstellst: eine Datei, geschützt mit einem eigenen Backup-Passwort, das sich ebenfalls nicht wiederherstellen lässt.
 
 ## Was Verschlüsselung nicht abdeckt
 

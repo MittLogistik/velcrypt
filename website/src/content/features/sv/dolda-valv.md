@@ -10,11 +10,11 @@ keyFacts:
   - "Velcrypt visar aldrig någon lista över valv."
   - "Ett okänt mönster öppnar ett tomt valv, utan felmeddelande."
   - "Du kan ha ett lockbetesvalv med vardagligt innehåll."
-  - "Fler valv är en planerad del av den valfria Premium-uppgraderingen."
+  - "Gratisversionen har ett valv; fler valv, och därmed ett lockbetesvalv, kräver Premium."
 primaryKeyword: "dolda valv app iphone"
 keywords: ["flera valv fotoapp", "lockbetesvalv iphone", "hemligt valv app", "trovärdig förnekelse fotovalv", "andra dolt valv"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Varje mönster är ett eget valv. Ingen valvlista, inget fel för okända mönster och plats för ett trovärdigt lockbetesvalv."
 status: available
 schemaType: WebPage
@@ -28,7 +28,7 @@ faq:
   - q: "Kan någon se att jag har mer än ett valv?"
     a: "Inte i appens gränssnitt. Det finns ingen lista, räknare eller felmeddelande som avslöjar andra valv. Velcrypt kan inte dölja att själva appen är installerad, och kan inte hindra någon från att se dig rita ett mönster."
   - q: "Vad är ett lockbetesvalv?"
-    a: "Ett lockbetesvalv är ett valv med vardagligt, trovärdigt innehåll som du kan öppna om du pressas att visa vad som finns i appen. Ditt riktiga valv ligger kvar bakom ett annat mönster."
+    a: "Ett lockbetesvalv är ett valv med vardagligt, trovärdigt innehåll som du kan öppna om du pressas att visa vad som finns i appen. Ditt riktiga valv ligger kvar bakom ett annat mönster. Eftersom det är ett andra valv kräver det Premium."
 howTo:
   name: "Skapa ett andra dolt valv i Velcrypt"
   steps:
@@ -64,6 +64,8 @@ Det har också en praktisk bieffekt. Ritar du ditt mönster fel hamnar du i ett 
 
 ## Så skapar du ett andra valv
 
+Gratisversionen har ett valv. För att lägga till objekt i ett andra valv behöver du [Premium](id:pricing), som ger andra mönster egna valv.
+
 1. **Lås Velcrypt.** Lämna valvet du är i så att mönsterrutnätet visas.
 2. **Rita ett nytt mönster.** Använd ett du inte använt förut och följ de vanliga reglerna: minst 6 punkter och minst ett riktningsbyte.
 3. **Lägg till något.** Ett tomt valv öppnas. Importera en bild, video eller ett dokument för att börja använda det.
@@ -75,7 +77,7 @@ Ett lockbetesvalv är ett valv fyllt med harmlöst men trovärdigt innehåll, ti
 
 Ett lockbetesvalv fungerar bäst när det ser använt ut. Ett tomt valv väcker frågan ”varför installera en valvapp för ingenting?”, medan ett valv med några dussin vardagliga saker sällan gör det. Guiden om [vad ett lockbetesvalv är](id:what-is-a-decoy-vault) visar hur du gör det övertygande.
 
-Velcrypt planerar också ett [tvångsmönster](id:duress-pattern) för den valfria Premium-uppgraderingen (kommer snart). Det är tänkt att gå ett steg längre än ett lockbete genom att öppna ett valt valv och i tysthet ta bort åtkomsten till de andra.
+Velcrypt planerar också ett [tvångsmönster](id:duress-pattern) till en framtida uppdatering. Det är tänkt att gå ett steg längre än ett lockbete genom att öppna ett valt valv och i tysthet ta bort åtkomsten till de andra.
 
 ## Så hålls varje valv åtskilt
 

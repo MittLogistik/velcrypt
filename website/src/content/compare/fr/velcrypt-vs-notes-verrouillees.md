@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "verrouiller une note avec des photos iphone"
 keywords: ["cacher des photos dans une note verrouillée", "apple notes verrouiller photos", "notes verrouillées iphone photos", "app notes photos privées", "note verrouillée ou app coffre-fort"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Cacher des photos dans une note verrouillée ou dans un coffre chiffré dédié : confort, capacité, synchronisation et qui peut les ouvrir."
 competitor: "Notes verrouillées d’Apple Notes"
 lastChecked: "octobre 2026"
@@ -51,14 +51,14 @@ Vous pouvez ajouter des photos de votre photothèque, prendre une photo depuis l
 |---|---|---|
 | Détails du chiffrement sur l’appareil publiés | Oui : AES-256-GCM, PBKDF2-HMAC-SHA512 | Décrits dans la documentation de sécurité des plateformes Apple |
 | Compte requis | Non | Non pour les notes sur l’appareil ; compte Apple pour la synchronisation iCloud |
-| Sauvegarde cloud | Non (v1) ; sauvegarde chiffrée prévue | Oui, avec Notes iCloud |
+| Sauvegarde cloud | Non ; sauvegarde chiffrée manuelle et gratuite (fichier protégé par mot de passe) | Oui, avec Notes iCloud |
 | Méthode de déverrouillage | Motif sur une grille 5×5 | Code de l’appareil ou mot de passe Notes distinct |
 | Biométrie | Non proposée, par choix | Face ID / Touch ID en option |
 | Leurre / plusieurs coffres | Chaque motif est son propre coffre | Non pris en charge ; toutes les notes verrouillées partagent un même mot de passe |
-| Motif de contrainte | Bientôt disponible (Premium) | Non |
+| Motif de contrainte | Prévu, pas encore disponible | Non |
 | Récupération en cas d’oubli du code | Aucune | L’option du code évite un mot de passe distinct ; les anciens mots de passe Notes ne sont pas récupérables |
 | Gestion des photos et vidéos | Albums, visionneuse avec zoom et balayage, vidéos | Images dans une note ; prise en charge des vidéos variable |
-| Coût | Version gratuite plus option Premium | Inclus dans iOS |
+| Coût | Gratuit (1 coffre, 50 éléments) ; Premium en abonnement ou achat unique | Inclus dans iOS |
 | Plateformes | iPhone (iOS 17+) | iPhone, iPad, Mac et iCloud.com |
 
 <!-- TODO verify -->
@@ -83,7 +83,7 @@ L’autre différence, c’est le secret. Si vous verrouillez vos notes avec le 
 ## Quand Velcrypt peut mieux vous convenir
 
 - **Vous avez une vraie collection.** De nombreuses photos, vidéos et documents, organisés en albums.
-- **Vous ne voulez rien dans le cloud.** Les données des coffres restent sur le téléphone et hors des sauvegardes en v1.
+- **Vous ne voulez rien dans le cloud.** Les données des coffres restent sur le téléphone et hors des sauvegardes iCloud ; une sauvegarde chiffrée n’est créée que si vous le décidez.
 - **Vous avez besoin d’espaces privés séparés.** Chaque motif est son propre coffre.
 - **Quelqu’un d’autre connaît votre code.** Le motif est un secret distinct.
 

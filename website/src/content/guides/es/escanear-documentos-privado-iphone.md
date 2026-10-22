@@ -19,7 +19,7 @@ keywords:
   - "escanear documentos en archivos iphone"
   - "dónde se guardan los documentos escaneados iphone"
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Escanea documentos de identidad, contratos e informes médicos sin llenar Fotos ni iCloud, guárdalos bajo llave y elimina las copias sobrantes."
 category: practical
 order: 34
@@ -124,7 +124,7 @@ Bloquear una nota o guardar un PDF en En mi iPhone es un buen comienzo, pero cua
 
 Velcrypt puede importar documentos desde la app Archivos a una bóveda cifrada ([documentos privados](id:private-documents)). Los archivos se cifran con AES-256-GCM en el dispositivo mediante claves derivadas de tu patrón de desbloqueo, y no se sube nada ([sin conexión, sin cuenta](id:offline-no-account)). Velcrypt no tiene escáner ni cámara integrados, así que primero escaneas con Archivos o Notas y después importas el PDF.
 
-Ten en cuenta que, en la primera versión, el contenido de la bóveda no se incluye en las copias de seguridad de iCloud ni del ordenador. Si un documento original es irremplazable, conserva la versión en papel u otra copia en un sitio que controles. Nuestro [caso de uso sobre documentos médicos y de identidad](id:medical-and-id-documents) trata ese equilibrio.
+Ten en cuenta que el contenido de la bóveda no se incluye en las copias de seguridad de iCloud ni del ordenador. Si un documento original es irremplazable, conserva la versión en papel o crea una copia de seguridad cifrada en Ajustes → Copia de seguridad y guárdala en un sitio que controles. Nuestro [caso de uso sobre documentos médicos y de identidad](id:medical-and-id-documents) trata ese equilibrio.
 
 ## Limpiar lo que sobra
 

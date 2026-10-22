@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "glaubhafte abstreitbarkeit verschlüsselung"
 keywords: ["was ist glaubhafte abstreitbarkeit", "abstreitbare verschlüsselung", "verstecktes volume erklärt", "plausible deniability foto tresor", "abstreitbarer tresor iphone"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Das Konzept hinter versteckten Volumes und Köder-Tresoren, wie Velcrypts Design mit unbekannten Mustern es nutzt – und was es ehrlicherweise nicht kann."
 category: security
 order: 42
@@ -60,7 +60,7 @@ Velcrypt überträgt das Prinzip auf einen Foto- und Dokumenten-Tresor auf dem i
 
 Die Folge: Ein falsches Muster und ein gültiger, aber leerer Tresor sehen identisch aus. Öffnest du für jemanden einen Tresor, zeigt nichts in der Oberfläche, dass es weitere gibt. Damit wird ein [Köder-Tresor](id:what-is-a-decoy-vault) zu einer natürlichen Nutzungsweise statt zu einem Sondermodus. Die Funktionsseite [versteckte Tresore](id:hidden-vaults) zeigt, wie das in der Praxis funktioniert.
 
-Eine geplante Premium-Funktion, das [Notfallmuster](id:duress-pattern) (bald verfügbar), erweitert das: Ein spezielles Muster würde einen gewählten Tresor öffnen und still den Zugriff auf die anderen entfernen.
+Das [Notfallmuster](id:duress-pattern), geplant für ein künftiges Update und noch nicht in der App, würde das erweitern: Ein spezielles Muster würde einen gewählten Tresor öffnen und still den Zugriff auf die anderen entfernen.
 
 ## Die ehrlichen Grenzen
 

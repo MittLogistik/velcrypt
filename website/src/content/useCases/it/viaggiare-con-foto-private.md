@@ -10,11 +10,11 @@ keyFacts:
   - "Telefoni persi, telefoni prestati e camere d'hotel condivise sono i rischi più comuni in viaggio."
   - "Accesso Guidato mantiene un iPhone prestato bloccato su una sola app, come Mappe o Telefono."
   - "Una cassaforte Velcrypt si apre solo con la tua sequenza; una sequenza sconosciuta apre una cassaforte vuota."
-  - "Nella prima versione i dati delle casseforti Velcrypt non sono nei backup di iCloud o del computer, quindi prevedi una seconda copia."
+  - "Le casseforti Velcrypt non sono nei backup di iCloud o del computer, quindi prima di partire crea un backup cifrato."
 primaryKeyword: "viaggiare con foto private iphone"
 keywords: ["proteggere le foto in viaggio", "iphone rubato all'estero foto", "protezione del dispositivo rubato viaggio", "prestare il telefono all'estero privacy", "consigli privacy telefono in viaggio"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Telefoni persi, iPhone prestati e controlli di frontiera: come viaggiare con foto e documenti privati senza pensieri."
 group: travel
 schemaType: Article
@@ -26,7 +26,7 @@ faq:
   - q: "Conviene tenere le foto del passaporto sul telefono in viaggio?"
     a: "Una copia può essere utile se perdi il passaporto, ma non lasciarla nel rullino. Conservala in una cassaforte cifrata o in un altro posto protetto e tieni una copia separata che puoi raggiungere anche se perdi il telefono."
   - q: "Cosa succede alla mia cassaforte Velcrypt se mi rubano il telefono all'estero?"
-    a: "Il ladro non può aprirla senza la tua sequenza, ma nemmeno tu puoi recuperarla: nella prima versione i dati delle casseforti non sono inclusi nei backup di iCloud o del computer. È prevista un'opzione di backup cifrato."
+    a: "Il ladro non può aprirla senza la tua sequenza, e i dati delle casseforti non sono inclusi nei backup di iCloud o del computer. Puoi recuperarla solo da un backup cifrato creato prima di partire e salvato altrove."
   - q: "È sicuro prestare l'iPhone a qualcuno all'estero?"
     a: "Di solito va bene per una telefonata veloce o per controllare una mappa. Avvia prima Accesso Guidato così resta in quell'unica app e tieni il telefono sott'occhio."
 ---
@@ -66,10 +66,10 @@ Non c'è un account e nulla viene caricato, quindi non esiste un login cloud che
 
 ## Limiti, detti con onestà
 
-- **Nessun backup nella prima versione.** I dati delle casseforti sono esclusi dai backup di iCloud e del computer. Se perdi il telefono o te lo rubano, perdi anche la cassaforte: nessuno può recuperarla. È prevista un'opzione di backup cifrato. In viaggio tieni una seconda copia di tutto ciò che è insostituibile in un posto sicuro.
+- **Backup solo manuale.** I dati delle casseforti sono esclusi dai backup di iCloud e del computer. Se perdi il telefono o te lo rubano senza un backup cifrato, perdi anche la cassaforte. Prima di partire crea un backup in Impostazioni → Backup e salvalo fuori dal telefono.
 - **Gli originali restano in Foto finché non li elimini.** Importare copia una foto. [Elimina l'originale](id:delete-original-photos-after-import) e svuota «Eliminati di recente».
 - **Chi ti guarda disegnare** la sequenza potrebbe impararla.
 - **L'icona dell'app è visibile** nella schermata Home, a meno che tu non usi l'opzione di iOS 18 per nascondere le app.
-- **Una cassaforte non è uno scudo legale.** Alla frontiera valgono le regole del Paese; la sequenza di emergenza è una funzione Premium prevista (in arrivo), oggi non disponibile.
+- **Una cassaforte non è uno scudo legale.** Alla frontiera valgono le regole del Paese; la sequenza di emergenza è prevista per un aggiornamento futuro e oggi non è disponibile.
 
 Viaggia leggero, viaggia preparato: con un telefono ben protetto, perderlo diventa un fastidio, non una crisi.

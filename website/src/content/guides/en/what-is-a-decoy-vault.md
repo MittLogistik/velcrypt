@@ -10,11 +10,12 @@ keyFacts:
   - "In Velcrypt, every pattern is its own vault and there is no list of vaults to give the others away."
   - "An empty decoy is suspicious; a lived-in decoy with albums and recent items is convincing."
   - "A decoy protects against snooping and casual pressure, not against forensic analysis or someone who watched you draw."
-  - "A duress pattern that also removes access to other vaults is a planned Premium feature (coming soon)."
+  - "A second vault, and so a decoy, needs Velcrypt Premium; the free version has one vault."
+  - "A duress pattern that also removes access to other vaults is planned for a future update."
 primaryKeyword: "decoy vault"
 keywords: ["what is a decoy vault", "decoy password photo vault", "fake vault app", "decoy pattern", "second vault iphone"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "What a decoy vault is, how to build one that looks lived-in with a second Velcrypt pattern, and the limits you should know."
 category: security
 order: 41
@@ -36,11 +37,11 @@ faq:
   - q: "What is a decoy password in a photo vault app?"
     a: "A decoy password (or decoy PIN or pattern) is a second secret that opens a separate, harmless set of content. It lets you appear to comply with a request to open the app without revealing what you actually keep private."
   - q: "How do I create a decoy vault in Velcrypt?"
-    a: "Draw a second pattern you have never used before. Velcrypt opens a new, empty vault for it. Add believable everyday content, such as receipts, screenshots and ordinary photos, and that pattern now opens your decoy."
+    a: "With Premium, draw a second pattern you have never used before. Velcrypt opens a new, empty vault for it. Add believable everyday content, such as receipts, screenshots and ordinary photos, and that pattern now opens your decoy."
   - q: "Can someone tell that a vault is a decoy?"
     a: "Not from inside the app: Velcrypt keeps no list of vaults and shows no hint that others exist. What can give a decoy away is its content, for example if it is empty, stale, or clearly staged."
   - q: "Is a decoy vault the same as a duress pattern?"
-    a: "No. A decoy simply opens a different vault. A duress pattern, a planned Velcrypt Premium feature that is coming soon, would open a chosen vault and also silently remove access to the others."
+    a: "No. A decoy simply opens a different vault. A duress pattern, planned for a future Velcrypt update, would open a chosen vault and also silently remove access to the others."
   - q: "Should I use a decoy vault with police or border officials?"
     a: "This guide can’t give legal advice. Misleading officials can be an offence in many countries. A decoy is mainly for everyday snooping and informal pressure; for official situations, learn your rights and talk to a lawyer."
 ---
@@ -63,7 +64,7 @@ Most apps treat the decoy as a special setting: one real PIN, one fake PIN. Velc
 - A pattern Velcrypt has never seen opens a new, empty vault.
 - There is no “wrong pattern” error message, and nothing proves that other vaults exist.
 
-So a decoy vault in Velcrypt is not a feature you switch on. It is just a second pattern you choose to use as a decoy. Your real vault and your decoy look and behave exactly the same, because they are the same kind of thing. The [hidden vaults](id:hidden-vaults) page explains the model in more detail.
+So a decoy vault in Velcrypt is not a feature you switch on. It is just a second pattern you choose to use as a decoy. Because the free version has one vault, a second vault needs Premium. Your real vault and your decoy look and behave exactly the same, because they are the same kind of thing. The [hidden vaults](id:hidden-vaults) page explains the model in more detail.
 
 ## Setting up a believable decoy, step by step
 
@@ -93,7 +94,7 @@ A decoy vault is a social tool backed by good cryptography. It is not magic, and
 
 ## Decoy vault vs duress pattern
 
-A decoy opens a different vault and leaves everything else untouched. A **duress pattern** goes one step further: it opens a vault you have chosen and quietly removes access to the others at the same time. In Velcrypt, the [duress pattern](id:duress-pattern) is a planned Premium feature and is coming soon. Until then, a well-kept decoy covers most everyday situations, such as a curious partner, a friend scrolling through your phone, or a nosy colleague.
+A decoy opens a different vault and leaves everything else untouched. A **duress pattern** goes one step further: it opens a vault you have chosen and quietly removes access to the others at the same time. In Velcrypt, the [duress pattern](id:duress-pattern) is planned for a future update and isn’t available yet. Until then, a well-kept decoy covers most everyday situations, such as a curious partner, a friend scrolling through your phone, or a nosy colleague.
 
 ## Where Velcrypt fits
 

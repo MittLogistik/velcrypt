@@ -10,11 +10,11 @@ keyFacts:
   - "Recent iOS versions support a repair mode that lets you keep Find My on; ask your provider what they need."
   - "Your device passcode unlocks Photos, the Hidden album, Files and anything locked with it."
   - "A Velcrypt vault needs a separate pattern, so a passcode alone doesn’t open it."
-  - "Velcrypt vault data isn’t in iCloud or computer backups in the first version, so an erased phone means a lost vault."
+  - "Velcrypt vault data isn’t in iCloud or computer backups; make an encrypted Velcrypt backup before a repair."
 primaryKeyword: "iphone repair privacy photos"
 keywords: ["hide photos before phone repair", "will repair shop see my photos", "iphone repair passcode", "protect data iphone repair", "phone repair privacy tips"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "What a repair technician could access on your iPhone, how to prepare, and why a vault backup plan matters before you hand it over."
 group: everyday
 schemaType: Article
@@ -26,7 +26,7 @@ faq:
   - q: "Do I need to turn off Find My before an iPhone repair?"
     a: "It depends on the repair and the provider. Recent iOS versions offer a repair mode that keeps Find My on during service. Follow the instructions your repair provider gives you, and check Apple Support if you’re unsure."
   - q: "Will my Velcrypt vault survive a repair?"
-    a: "If the phone comes back with the same data, yes. If the device is erased or replaced, the vault is gone: in the first version, vault data is excluded from iCloud and computer backups, and an encrypted backup option is planned."
+    a: "If the phone comes back with the same data, yes. If the device is erased or replaced, the vault is gone unless you made an encrypted backup file in Settings → Backup first: vault data is excluded from iCloud and computer backups."
   - q: "Should I give the technician my passcode?"
     a: "Only if the repair genuinely requires it. Many hardware repairs don’t. If you do share it, change it as soon as you get the phone back."
 ---
@@ -65,12 +65,12 @@ Imported photos are copies, so remember to [delete the originals](id:delete-orig
 
 ## The honest trade-off: backups
 
-Here’s what you need to weigh carefully. In the first version, Velcrypt vault data is **excluded from iCloud and computer backups**. That’s deliberate — nothing leaves your device — but it means:
+Here’s what you need to weigh carefully. Velcrypt vault data is **excluded from iCloud and computer backups**. That’s deliberate — nothing leaves your device — but it means:
 
-- If the repair ends with an erased or replaced iPhone, your vault cannot be restored, by you or by Velcrypt.
-- An encrypted backup and recovery option is planned, but not available yet.
+- If the repair ends with an erased or replaced iPhone, a full iPhone backup won’t bring your vault back.
+- Velcrypt’s own encrypted backup will: before the repair, open each vault, go to Settings → Backup, and save the `.velcrypt` file to Files, iCloud Drive or a computer. Remember the backup password — it can’t be recovered.
 
-So for anything irreplaceable, keep a second copy somewhere you trust before the repair — for example an encrypted drive you control. The same applies if you ever [forget your pattern](id:forgot-vault-pattern). Read more about the design choices on the [security page](id:security).
+So before the repair, make that backup, and keep a second copy of anything irreplaceable somewhere you trust. The same applies if you ever [forget your pattern](id:forgot-vault-pattern). Read more about the design choices on the [security page](id:security).
 
 ## Other limits to keep in mind
 

@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "app para ocultar vídeos iphone"
 keywords: ["bóveda de vídeos cifrada iphone", "app de vídeos privados iphone", "bloquear vídeos iphone", "bóveda de vídeos secreta", "esconder vídeos del carrete"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Importa vídeos como copias cifradas, reprodúcelos dentro de la bóveda y borra los originales sin quedarte sin espacio."
 status: available
 schemaType: WebPage
@@ -26,7 +26,7 @@ faq:
   - q: "¿Por qué ha bajado mi espacio libre después de importar vídeos?"
     a: "Importar crea una copia, así que hasta que borres el original de Fotos y vacíes el álbum Eliminado, el vídeo existe dos veces. Cuando el original desaparece, se libera el espacio."
   - q: "¿Se incluyen los vídeos de mi bóveda en la copia de seguridad de iCloud?"
-    a: "No. En la primera versión, los datos de la bóveda quedan fuera de las copias de iCloud y del ordenador. Los vídeos de la bóveda existen solo en tu iPhone."
+    a: "No. Los datos de la bóveda quedan fuera de las copias de iCloud y del ordenador. Los vídeos de la bóveda existen solo en tu iPhone, salvo que crees una copia de seguridad cifrada de Velcrypt."
   - q: "¿Los vídeos de Velcrypt se sincronizan con mis otros dispositivos?"
     a: "No. Velcrypt no tiene sincronización en la nube y solo funciona en iPhone. Un vídeo de tu bóveda se queda en el teléfono en el que lo importaste."
 ---
@@ -79,9 +79,9 @@ Ten en cuenta tres cosas:
 
 ## Conviene saber
 
-- Velcrypt no tiene cámara integrada. Graba con la app Cámara, importa el vídeo y después borra el original.
+- Con la cámara de la bóveda, los vídeos nuevos van directamente a la bóveda y nunca llegan a tu fototeca. Si grabas con la app Cámara, importa el vídeo y después borra el original.
 - Patrones distintos abren [bóvedas ocultas](id:hidden-vaults) distintas. Si algunos vídeos no deberían estar nunca junto a otros, dales una bóveda propia en lugar de solo un álbum aparte.
-- En la primera versión no se hace copia de seguridad de la bóveda. Para vídeos irreemplazables, guarda una segunda copia en un lugar de confianza.
+- La bóveda no se incluye en las copias de iCloud ni del ordenador. Para vídeos irreemplazables, crea una copia de seguridad cifrada en Ajustes → Copia de seguridad y guárdala fuera del iPhone.
 - Si alguna vez enviaste un vídeo por chat o lo publicaste en un álbum compartido, esas copias están fuera de la bóveda. La guía sobre [cómo guardar fotos íntimas de forma segura](id:store-intimate-photos-safely-iphone) trata ese riesgo con más detalle.
 
 Para un repaso más amplio de todas las opciones, tanto de iOS como de terceros, consulta [cómo ocultar vídeos en el iPhone](id:hide-videos-iphone).

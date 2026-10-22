@@ -10,11 +10,11 @@ keyFacts:
   - "Velcrypt braucht kein Konto und speichert verschlüsselte Tresore nur auf deinem iPhone."
   - "Apples Album „Ausgeblendet“ und gesperrte Notizen sind kostenlose, eingebaute Optionen mit iCloud-Synchronisierung."
   - "Wechseln heißt: exportieren, importieren, dann Reste löschen und „Zuletzt gelöscht“ leeren."
-  - "Velcrypt v1 hat kein Backup: Ein vergessenes Muster oder verlorenes iPhone bedeutet, dass der Tresor weg ist."
+  - "Velcrypt hat kein Cloud-Backup, nur ein manuelles verschlüsseltes Backup; ein vergessenes Muster lässt sich nicht wiederherstellen."
 primaryKeyword: "keepsafe alternative"
 keywords: ["keepsafe alternative iphone", "apps wie keepsafe", "von keepsafe wechseln", "keepsafe ersatz", "foto tresor ohne konto"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Warum Leute eine Keepsafe-Alternative suchen, worauf du bei jedem Foto-Tresor achten solltest und wie du ohne zurückbleibende Kopien umziehst."
 competitor: "Keepsafe"
 lastChecked: "Oktober 2026"
@@ -28,7 +28,7 @@ faq:
   - q: "Löscht das Entfernen von Keepsafe auch mein Cloud-Backup?"
     a: "Nicht unbedingt. Das Löschen einer App schließt meist weder ein Konto noch entfernt es Daten auf Servern. Wie du dein Konto und deine Cloud-Daten löschst, steht in der Hilfe oder den Kontoeinstellungen von Keepsafe."
   - q: "Gibt es eine Keepsafe-Alternative mit Cloud-Backup?"
-    a: "Ja, mehrere Tresor-Apps bieten Cloud-Funktionen, und Apples Album „Ausgeblendet“ synchronisiert mit iCloud-Fotos. Velcrypt v1 tut das nicht; eine verschlüsselte Backup-Option ist geplant."
+    a: "Ja, mehrere Tresor-Apps bieten Cloud-Funktionen, und Apples Album „Ausgeblendet“ synchronisiert mit iCloud-Fotos. Velcrypt synchronisiert nicht, bietet aber ein kostenloses verschlüsseltes Backup: eine passwortgeschützte Datei, die du selbst in iCloud Drive oder auf einem Computer speicherst."
 ---
 
 *Zuletzt geprüft: Oktober 2026. Produktdetails ändern sich; prüfe für die aktuelle Version den App-Store-Eintrag der jeweiligen App.*
@@ -61,14 +61,14 @@ Ein Foto-Tresor ist eine App, die ausgewählte Fotos und Videos getrennt von dei
 
 | Option | Konto | Cloud-Kopie | Eigenes Geheimnis | Hinweise |
 |---|---|---|---|---|
-| Velcrypt | Keins | Nein (v1) | Ja, ein Muster | Versteckte Tresore, Dokumente, kein Face ID |
+| Velcrypt | Keins | Nein; manuelles verschlüsseltes Backup | Ja, ein Muster | Versteckte Tresore, Dokumente, kein Face ID |
 | iPhone-Album „Ausgeblendet“ | Apple Account für iCloud | Mit iCloud-Fotos | Nein, Gerätecode | Kostenlos, eingebaut |
 | Gesperrte Notizen in Apple Notizen | Apple Account für iCloud | Mit iCloud-Notizen | Optionales Notizen-Passwort | Am besten für wenige Objekte |
 | Andere Tresor-Apps | Unterschiedlich | Unterschiedlich | Unterschiedlich | Jeweiligen Store-Eintrag prüfen |
 
 <!-- TODO verify -->
 
-**Velcrypt** hält alles ohne Konto und ohne Server auf dem iPhone. Du entsperrst, indem du ein Muster auf ein 5×5-Raster zeichnest, und jedes Muster öffnet einen eigenen Tresor; ein unbekanntes Muster öffnet einen leeren, was dir [glaubhafte Abstreitbarkeit](id:plausible-deniability-explained) gibt. Dateien werden mit AES-256-GCM verschlüsselt. Der ehrliche Kompromiss: Tresordaten sind in v1 nicht in Backups enthalten, ein verlorenes iPhone oder vergessenes Muster lässt sich also nicht rückgängig machen. Der [direkte Vergleich mit Keepsafe](id:velcrypt-vs-keepsafe) stellt beide nebeneinander.
+**Velcrypt** hält alles ohne Konto und ohne Server auf dem iPhone. Du entsperrst, indem du ein Muster auf ein 5×5-Raster zeichnest, und jedes Muster öffnet einen eigenen Tresor; ein unbekanntes Muster öffnet einen leeren, was dir [glaubhafte Abstreitbarkeit](id:plausible-deniability-explained) gibt. Dateien werden mit AES-256-GCM verschlüsselt. Der ehrliche Kompromiss: Tresordaten sind nicht in iCloud- oder Computer-Backups enthalten. Gegen ein verlorenes iPhone hilft nur ein verschlüsseltes Backup, das du selbst erstellst, und ein vergessenes Muster lässt sich nicht rückgängig machen. Der [direkte Vergleich mit Keepsafe](id:velcrypt-vs-keepsafe) stellt beide nebeneinander.
 
 **Apples Bordmittel** kosten nichts. Das [Album „Ausgeblendet“](id:velcrypt-vs-iphone-hidden-album) ist einfach und synchronisiert, öffnet sich aber mit deinem Gerätecode. [Gesperrte Notizen](id:velcrypt-vs-apple-notes-locked-notes) eignen sich für ein paar sensible Bilder oder Scans.
 
@@ -76,7 +76,7 @@ Ein Foto-Tresor ist eine App, die ausgewählte Fotos und Videos getrennt von dei
 
 ## Wann es sinnvoll sein kann, bei Keepsafe zu bleiben
 
-Wenn das Cloud-Backup die Funktion ist, auf die du dich am meisten verlässt, und du mit einem Konto einverstanden bist, passt Keepsafe womöglich weiterhin besser. Velcrypt v1 bietet weder Backup noch Synchronisierung und ist nicht für Android verfügbar.
+Wenn das Cloud-Backup die Funktion ist, auf die du dich am meisten verlässt, und du mit einem Konto einverstanden bist, passt Keepsafe womöglich weiterhin besser. Velcrypt bietet keine Synchronisierung und kein automatisches Backup, nur eine manuelle Backup-Datei, und ist nicht für Android verfügbar.
 
 ## So wechselst du, ohne Kopien zurückzulassen
 

@@ -10,11 +10,11 @@ keyFacts:
   - "Objekt i kamerarullen synkas till alla enheter på ditt Apple-konto när iCloud-bilder är på."
   - "Bildens metadata kan avslöja plats, datum och kamera för en fotografering; ta bort den innan du publicerar."
   - "Velcrypt förvarar bilder, videor och dokument i krypterade valv i din iPhone, ordnade i album."
-  - "Velcrypt har ingen molnsynkning eller säkerhetskopia i den första versionen, så behåll originalfilerna i ditt eget arkiv."
+  - "Velcrypt har ingen molnsynkning eller automatisk säkerhetskopia, så behåll originalfilerna i ditt eget arkiv."
 primaryKeyword: "skydda opublicerade bilder iphone"
 keywords: ["spara kundbilder privat iphone", "fotograf kundintegritet mobil", "dölja jobbilder iphone", "kreatör integritet innehåll", "hålla opublicerat innehåll privat"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "För fotografer, konstnärer och kreatörer: håll opublicerat material och kundmaterial privat i iPhone, och dela det bara med avsikt."
 group: professional
 schemaType: Article
@@ -28,7 +28,7 @@ faq:
   - q: "Kan jag ordna projekt i Velcrypt?"
     a: "Ja. Valven innehåller album, så du kan ha ett separat album per projekt eller kund, markera flera objekt och flytta dem mellan album."
   - q: "Ersätter Velcrypt mitt bildarkiv?"
-    a: "Nej. Velcrypt håller arbetskopior privata i din iPhone. Appen har ingen molnsynkning, och i den första versionen säkerhetskopieras inte valvdata, så dina originalfiler bör finnas i ditt eget arkiv."
+    a: "Nej. Velcrypt håller arbetskopior privata i din iPhone. Appen har ingen molnsynkning och bara manuella krypterade säkerhetskopior, så dina originalfiler bör finnas i ditt eget arkiv."
 ---
 
 Skapar du saker för att försörja dig, eller för att du älskar det, finns det säkert material i din iPhone som inte är redo att visas. Pågående redigeringar, en fotografering under embargo, en kunds korrektur, skisser till ett beställningsverk eller innehåll till en prenumerationsplattform. Särskilt för kreatörer som gör vuxeninnehåll är en läcka inte bara besvärlig; den kan påverka inkomst, säkerhet och andra människors integritet. Vad du än skapar är principen densamma: du bestämmer när och hur ditt arbete visas.
@@ -69,7 +69,7 @@ Med säker export kan du ta ut en enskild fil när det är dags att leverera ell
 
 ## Ärliga begränsningar
 
-- **Inget arkiv.** Ingen molnsynkning, och i den första versionen ingen säkerhetskopia: om telefonen försvinner eller du glömmer mönstret kan valvet inte återställas. Behåll originalfilerna någon annanstans.
+- **Inget arkiv.** Ingen molnsynkning och ingen automatisk säkerhetskopia: om telefonen försvinner eller du glömmer mönstret kan valvet inte återställas, om du inte själv har skapat en krypterad säkerhetskopia. Behåll originalfilerna någon annanstans.
 - **Exporter lämnar valvet.** När en fil väl är skickad är den bara så privat som mottagarens enhet.
 - **Andras skärmfångst.** Ett valv kan inte hindra någon från att fotografera din skärm, eller en mottagare från att ta en skärmbild av det du skickar.
 - **Kontrollera metadata själv.** Utgå inte från att en export tar bort plats- eller kameradata; kör filerna genom ett särskilt verktyg innan du publicerar.

@@ -21,7 +21,7 @@ keywords:
   - "geavanceerde databescherming herstelsleutel"
   - "advanced data protection icloud"
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Wat Geavanceerde databescherming versleutelt, wat standaard blijft, de herstelvereisten, de afwegingen en hoe je het aanzet."
 category: apple
 order: 12
@@ -138,6 +138,6 @@ Zie je de optie niet in je iCloud-instellingen, of is hij grijs, controleer dan 
 
 Geavanceerde databescherming en een kluis op het apparaat lossen verschillende problemen op. ADP houdt je iCloud-gegevens onleesbaar voor Apple, terwijl ze nog synchroniseren en via je eigen herstelmethode te herstellen zijn. Een kluis op het apparaat houdt bepaalde bestanden helemaal uit de cloud en zet een apart geheim tussen die bestanden en iedereen die je telefoon kan ontgrendelen.
 
-Velcrypt hoort in de tweede categorie. Foto's, video's en documenten die je importeert, worden op de iPhone versleuteld met AES-256-GCM, met sleutels die zijn afgeleid van een patroon dat je tekent ([hoe de versleuteling werkt](id:encryption)). Er is geen account en er wordt niets geüpload ([op het apparaat, zonder account](id:offline-no-account)). In de eerste versie valt kluisinhoud volledig buiten iCloud- en computerback-ups, dus er valt niets te herstellen als de telefoon kwijtraakt; een optie voor versleutelde back-ups is gepland.
+Velcrypt hoort in de tweede categorie. Foto's, video's en documenten die je importeert, worden op de iPhone versleuteld met AES-256-GCM, met sleutels die zijn afgeleid van een patroon dat je tekent ([hoe de versleuteling werkt](id:encryption)). Er is geen account en er wordt niets geüpload ([op het apparaat, zonder account](id:offline-no-account)). Kluisinhoud valt volledig buiten iCloud- en computerback-ups. Wil je een kopie, dan maak je zelf een versleuteld back-upbestand, beveiligd met een back-upwachtwoord dat je kiest; zonder zo'n bestand valt er niets te herstellen als de telefoon kwijtraakt.
 
 Veel mensen gebruiken verstandig genoeg allebei: ADP voor hun dagelijkse bibliotheek en back-ups, en een kluis voor de handvol bestanden die nergens mogen synchroniseren. Weeg je versleutelingstermen tegen elkaar af, dan zijn onze [uitleg over AES-256](id:aes-256-encryption-explained) en [worden verborgen foto's in iCloud opgeslagen?](id:are-hidden-photos-saved-to-icloud) goede vervolgstukken.

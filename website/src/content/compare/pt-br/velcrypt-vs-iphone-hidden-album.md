@@ -10,11 +10,11 @@ keyFacts:
   - "No iOS 16 e posterior, o álbum Ocultos é bloqueado por padrão com Face ID, Touch ID ou o código do aparelho."
   - "Qualquer pessoa que saiba o código do seu iPhone consegue abrir o álbum Ocultos."
   - "Fotos ocultas sincronizam com o Fotos do iCloud; só têm criptografia de ponta a ponta com a Proteção Avançada de Dados ativada."
-  - "O Velcrypt usa um padrão separado, mantém os cofres só no aparelho e os deixa fora dos backups na v1."
+  - "O Velcrypt usa um padrão separado, mantém os cofres só no aparelho e os deixa fora dos backups do iCloud; o backup é um arquivo criptografado manual."
 primaryKeyword: "esconder fotos iphone álbum ocultos"
 keywords: ["álbum ocultos iphone é seguro", "álbum ocultos vs app cofre", "alternativa ao álbum ocultos", "álbum ocultos face id", "fotos ocultas icloud"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "O álbum Ocultos nativo da Apple versus um cofre criptografado separado: o que cada um protege, onde as fotos sincronizam e quem consegue abri-las."
 competitor: "Álbum Ocultos do iPhone"
 lastChecked: "outubro de 2026"
@@ -51,13 +51,13 @@ Se o Fotos do iCloud estiver ativado, os itens ocultos sincronizam como todo o r
 |---|---|---|
 | Detalhes da criptografia no aparelho publicados | Sim: AES-256-GCM, chaves derivadas do seu padrão | Proteção de Dados do iOS, documentada pela Apple |
 | Exige conta | Não | Faz parte do Fotos; Conta Apple necessária para sincronizar pelo iCloud |
-| Backup na nuvem | Não (v1); backup criptografado planejado | Sim, com o Fotos do iCloud ou o Backup do iCloud |
+| Backup na nuvem | Não; backup criptografado manual em arquivo (grátis) | Sim, com o Fotos do iCloud ou o Backup do iCloud |
 | Forma de desbloqueio | Padrão em uma grade 5×5, separado do código | Face ID, Touch ID ou código do aparelho |
 | Biometria | Não oferecida, por design | Sim |
-| Fachada / vários cofres | Cada padrão é um cofre próprio | Um único álbum Ocultos |
-| Padrão de coação | Em breve (Premium) | Não |
+| Fachada / vários cofres | Cada padrão é um cofre próprio (mais de um cofre exige o Premium) | Um único álbum Ocultos |
+| Padrão de coação | Planejado para uma atualização futura | Não |
 | Recuperação se você esquecer o código | Nenhuma | Código do aparelho e recuperação da Conta Apple |
-| Custo | Versão grátis e Premium opcional | Incluído no iOS |
+| Custo | Grátis (1 cofre, 50 itens) e Premium opcional | Incluído no iOS |
 | Plataformas | iPhone (iOS 17+) | iPhone, iPad e Mac |
 | Documentos | Sim, do app Arquivos | Só fotos e vídeos |
 
@@ -75,7 +75,7 @@ Ocultar uma foto não a move para lugar nenhum; ela continua na sua fototeca, co
 
 <!-- TODO verify -->
 
-O Velcrypt funciona ao contrário. Uma foto importada é copiada para um cofre criptografado no iPhone, e na versão 1 os dados do cofre ficam fora dos backups do iCloud e do computador. Depois de importar, você apaga o original do Fotos e esvazia a pasta Apagados; caso contrário, ele fica lá por cerca de 30 dias. Leia [apagar as fotos originais depois de importar](id:delete-original-photos-after-import).
+O Velcrypt funciona ao contrário. Uma foto importada é copiada para um cofre criptografado no iPhone, e os dados do cofre ficam fora dos backups do iCloud e do computador. Se quiser uma cópia, você cria um backup criptografado em Ajustes → Backup. Depois de importar, você apaga o original do Fotos e esvazia a pasta Apagados; caso contrário, ele fica lá por cerca de 30 dias. Leia [apagar as fotos originais depois de importar](id:delete-original-photos-after-import).
 
 ## Negação plausível
 
@@ -95,4 +95,4 @@ Existe exatamente um álbum Ocultos, e a existência dele é óbvia para quem ab
 - **Você quer fachadas ou vários espaços privados.** Cada padrão é um cofre próprio.
 - **Você também precisa manter documentos em privado.** Importe PDFs e arquivos do app Arquivos.
 
-A contrapartida honesta: com o Velcrypt v1, um celular perdido ou um padrão esquecido significa que o cofre não pode ser recuperado. Decida qual risco preocupa você mais.
+A contrapartida honesta: com o Velcrypt, um padrão esquecido significa que o cofre não pode ser recuperado, e um celular perdido também, a menos que você tenha criado um backup criptografado. Decida qual risco preocupa você mais.

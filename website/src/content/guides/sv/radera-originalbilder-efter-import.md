@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "radera bilder efter import till valv"
 keywords: ["radera originalbilder efter import", "tömma nyligen raderade iphone", "radera bilder permanent iphone", "nyligen raderade ios 18", "radera bilder från iphone men inte valvet", "fotovalv kopiera eller flytta"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Kopiera eller flytta, radera originalen i Bilder, töm Nyligen raderade och kopiorna i iCloud och chattar som finns kvar."
 category: practical
 order: 30
@@ -125,4 +125,4 @@ För särskilt känsliga bilder går guiden om att [spara intima bilder säkert]
 
 Velcrypt följer kopieringsmodellen ovan. När du [importerar bilder](id:hide-photos) eller [videor](id:hide-videos) krypterar valvet sin egen kopia med AES-256-GCM och lämnar originalet i Bilder, så att radera originalet och tömma Nyligen raderade är upp till dig.
 
-Innan du gör det bör du ärligt väga in en begränsning. Velcrypts valvdata sparas bara i din iPhone och undantas från iCloud- och datorsäkerhetskopior. När originalen är borta har valvet den enda kopian på den enheten. Om du tappar bort telefonen eller [glömmer mönstret](id:forgot-vault-pattern) kan filerna inte återställas, varken av dig eller av Velcrypt. En krypterad säkerhetskopia är planerad; till dess bör du ha en separat kopia av allt som inte går att ersätta på ett ställe du litar på.
+Innan du gör det bör du ärligt väga in en begränsning. Velcrypts valvdata sparas bara i din iPhone och undantas från iCloud- och datorsäkerhetskopior. När originalen är borta har valvet den enda kopian på den enheten. Om du tappar bort telefonen eller [glömmer mönstret](id:forgot-vault-pattern) kan filerna inte återställas, varken av dig eller av Velcrypt. Skapa därför en krypterad säkerhetskopia under Inställningar → Säkerhetskopiering innan du raderar originalen, och spara filen på ett ställe du litar på.

@@ -4,17 +4,18 @@ title: "Política de privacidad de Velcrypt"
 description: "Privacidad en Velcrypt: la app no recopila datos personales, el contenido de las bóvedas no sale de tu iPhone y la web no usa cookies ni rastreo."
 h1: "Política de privacidad"
 navTitle: "Política de privacidad"
-answer: "La app Velcrypt no recopila datos personales: no hay cuenta, el contenido de las bóvedas nunca sale de tu iPhone y no hay anuncios ni analítica sobre lo que guardas. La web no instala cookies ni ejecuta scripts de rastreo."
+answer: "La app Velcrypt no recopila datos personales: no hay cuenta, el contenido de las bóvedas nunca se nos envía (ni siquiera las copias de seguridad que crees) y no hay anuncios ni analítica sobre lo que guardas. La web no instala cookies ni ejecuta scripts de rastreo."
 keyFacts:
   - "La app no recopila datos personales y no requiere cuenta."
   - "El contenido de las bóvedas se cifra en tu iPhone y nunca se nos envía."
+  - "Las copias de seguridad se quedan donde tú las guardes; Velcrypt nunca las recibe."
   - "Las compras las gestiona Apple; no recibimos datos de pago."
   - "La web no usa cookies ni scripts de analítica o rastreo."
-  - "Fecha de entrada en vigor: 21 de octubre de 2026 (borrador pendiente de revisión legal)."
+  - "Fecha de entrada en vigor: 22 de octubre de 2026 (borrador pendiente de revisión legal)."
 primaryKeyword: "política de privacidad velcrypt"
 keywords: ["privacidad velcrypt", "datos que recopila velcrypt", "velcrypt recopila datos", "política de privacidad bóveda de fotos"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 schemaType: WebPage
 order: 6
 related: [terms, security, offline-no-account, support, about]
@@ -31,9 +32,9 @@ faq:
 
 **Borrador pendiente de revisión legal.** Esta política describe con exactitud nuestras prácticas actuales, pero su redacción todavía no ha sido revisada por un abogado y puede cambiar antes del lanzamiento.
 
-**Fecha de entrada en vigor:** 21 de octubre de 2026
+**Fecha de entrada en vigor:** 22 de octubre de 2026
 
-Esta Política de privacidad explica qué información trata Velcrypt («nosotros») cuando usas la app Velcrypt para iPhone y el sitio web velcrypt.app. En resumen: la app está diseñada para que nunca recibamos tu contenido, y en todo lo demás recopilamos lo mínimo posible.
+Esta Política de privacidad explica qué información trata Swedish Treats AB, con sede en Suecia y editora de Velcrypt («nosotros»), cuando usas la app Velcrypt para iPhone y el sitio web velcrypt.app. En resumen: la app está diseñada para que nunca recibamos tu contenido, y en todo lo demás recopilamos lo mínimo posible.
 
 ## La app Velcrypt
 
@@ -43,7 +44,11 @@ La app Velcrypt no recopila datos personales. No hay cuenta, ni registro, ni dir
 
 ### El contenido de las bóvedas se queda en tu dispositivo
 
-Las fotos, vídeos y documentos que añades a Velcrypt se cifran en tu iPhone y se guardan allí. Nunca se nos suben a nosotros ni a ningún servidor que gestionemos, y no tenemos forma de verlos, descifrarlos ni recuperarlos. En la versión actual, los datos de las bóvedas también se excluyen de las copias de seguridad de iCloud y del ordenador. El funcionamiento del cifrado se describe en la página del [modelo de seguridad](id:security).
+Las fotos, vídeos y documentos que añades a Velcrypt se cifran en tu iPhone y se guardan allí. Nunca se nos suben a nosotros ni a ningún servidor que gestionemos, y no tenemos forma de verlos, descifrarlos ni recuperarlos. Los datos de las bóvedas también se excluyen de las copias de seguridad de iCloud y del ordenador. El funcionamiento del cifrado se describe en la página del [modelo de seguridad](id:security).
+
+### Copias de seguridad cifradas
+
+Si creas una copia de seguridad en Ajustes → Copia de seguridad, Velcrypt genera en tu iPhone un archivo cifrado con una contraseña que tú eliges. El archivo se queda donde tú lo pongas, por ejemplo en Archivos, en iCloud Drive o en un ordenador. Velcrypt nunca lo recibe y no conoce tu contraseña. Si lo guardas en un servicio como iCloud Drive, ese servicio almacena el archivo cifrado según su propia política de privacidad.
 
 ### Sin analítica sobre el contenido, sin anuncios
 
@@ -51,7 +56,7 @@ La app no contiene publicidad y no recopila analítica sobre el contenido de tus
 
 ### Compras
 
-Cualquier compra, como la mejora Premium opcional, la procesa Apple a través del App Store. Apple gestiona tu pago; nosotros no recibimos tu nombre, número de tarjeta ni dirección de facturación. El App Store confirma la compra a la app en tu dispositivo para que pueda desbloquear las funciones correspondientes. El tratamiento que hace Apple de tus datos se describe en [apple.com/privacy](https://www.apple.com/privacy/).
+Cualquier compra, como la mejora Premium opcional, la procesa Apple a través del App Store. Apple gestiona tu pago, las renovaciones de suscripciones y los reembolsos; nosotros no recibimos tu nombre, número de tarjeta ni dirección de facturación. El App Store confirma la compra a la app en tu dispositivo para que pueda desbloquear las funciones correspondientes. El tratamiento que hace Apple de tus datos se describe en [apple.com/privacy](https://www.apple.com/privacy/).
 
 ### Información que Apple puede compartir con nosotros
 

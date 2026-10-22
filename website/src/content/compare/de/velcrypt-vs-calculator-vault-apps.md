@@ -8,13 +8,13 @@ answer: "Taschenrechner-Tresor-Apps tarnen sich als funktionierender Taschenrech
 keyFacts:
   - "Taschenrechner-Tresor-Apps sehen aus und funktionieren wie ein Taschenrechner; ein als Rechnung eingetippter Code öffnet den Tresor."
   - "Die Verschlüsselung unterscheidet sich stark zwischen Taschenrechner-Tresor-Apps und ist oft nicht dokumentiert."
-  - "Velcrypt hat keine Taschenrechner-Tarnung und keine alternativen Symbole; sein Name ist auf dem Home-Bildschirm sichtbar."
+  - "Velcrypt hat keine funktionierende Taschenrechner-Tarnung; alternative App-Symbole gibt es mit Premium, der Name bleibt sichtbar."
   - "Die Abstreitbarkeit von Velcrypt kommt von versteckten Tresoren: Unbekannte Muster öffnen einen leeren Tresor."
   - "Ab iOS 18 lässt sich jede App in einem ausgeblendeten Ordner hinter Face ID verstecken, auch Velcrypt."
 primaryKeyword: "taschenrechner tresor app"
 keywords: ["taschenrechner app fotos verstecken", "fake taschenrechner tresor iphone", "taschenrechner tresor alternative", "geheime taschenrechner app", "calculator vault app"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Tarnung gegen Verschlüsselung: Wie Tresor-Apps im Taschenrechner-Look im Vergleich zu den versteckten Muster-Tresoren von Velcrypt abschneiden."
 competitor: "Taschenrechner-Tresor-Apps"
 lastChecked: "Oktober 2026"
@@ -24,7 +24,7 @@ faq:
   - q: "Sind Taschenrechner-Tresor-Apps sicher?"
     a: "Das hängt von der App ab. Die Taschenrechner-Tarnung verbirgt nur, dass ein Tresor existiert; wie gut die Dateien geschützt sind, hängt davon ab, ob und wie die App sie verschlüsselt – und das dokumentieren viele Apps nicht. Prüfe die Datenschutz- und Sicherheitsangaben der jeweiligen App."
   - q: "Hat Velcrypt eine Taschenrechner-Tarnung?"
-    a: "Nein. Velcrypt hat keine Tarnung und keine alternativen Symbole. Stattdessen macht es die Inhalte abstreitbar: Jedes Muster öffnet einen eigenen Tresor, und nichts verrät, wie viele Tresore existieren. Ab iOS 18 kannst du die App selbst zusätzlich mit der Systemfunktion zum Ausblenden von Apps verstecken."
+    a: "Nein, nicht als funktionierenden Taschenrechner. Mit Premium kannst du ein alternatives App-Symbol wählen (etwa Taschenrechner, Timer oder Lineal), die App bleibt aber Velcrypt. Stattdessen macht es die Inhalte abstreitbar: Jedes Muster öffnet einen eigenen Tresor, und nichts verrät, wie viele Tresore existieren. Ab iOS 18 kannst du die App selbst zusätzlich mit der Systemfunktion zum Ausblenden von Apps verstecken."
   - q: "Kann man erkennen, dass eine Taschenrechner-App in Wahrheit ein Tresor ist?"
     a: "Manchmal. Name und Beschreibung der App im App Store, deine Kaufhistorie, der Speicherverbrauch in den Einstellungen und das Verhalten der App können sie für jemanden verraten, der weiß, worauf er achten muss."
   - q: "Was ist besser für glaubhafte Abstreitbarkeit?"
@@ -49,15 +49,15 @@ Beides kann nützlich sein. Die Frage ist, wogegen du dich schützen willst. Ein
 |---|---|---|
 | Details zur Verschlüsselung auf dem Gerät veröffentlicht | Ja: AES-256-GCM, PBKDF2-HMAC-SHA512 | Unterschiedlich; oft nicht öffentlich angegeben |
 | Konto erforderlich | Nein | Unterschiedlich |
-| Cloud-Backup | Nein (v1); verschlüsseltes Backup geplant | Unterschiedlich; manche bieten Cloud-Funktionen |
+| Cloud-Backup | Nein; kostenloses manuelles verschlüsseltes Backup | Unterschiedlich; manche bieten Cloud-Funktionen |
 | Entsperren | Muster auf einem 5×5-Raster | Zahlencode, als Rechnung eingetippt |
 | Biometrie (Face ID / Touch ID) | Bewusst nicht angeboten | Unterschiedlich |
-| Tarnung | Keine; sichtbar als Velcrypt | Sieht aus wie ein funktionierender Taschenrechner |
-| Köder- / mehrere Tresore | Jedes Muster ist ein eigener Tresor | Unterschiedlich; manche bieten einen Köder-Code |
-| Notfallmuster | Demnächst (Premium) | Unterschiedlich |
+| Tarnung | Alternative App-Symbole (Premium); keine funktionierende Tarn-App | Sieht aus wie ein funktionierender Taschenrechner |
+| Köder- / mehrere Tresore | Jedes Muster ist ein eigener Tresor (mehrere Tresore mit Premium) | Unterschiedlich; manche bieten einen Köder-Code |
+| Notfallmuster | Geplant, noch nicht verfügbar | Unterschiedlich |
 | Einbruchsfotos | Nicht angeboten | Häufig, aber unterschiedlich |
 | Wiederherstellung bei vergessenem Code | Keine | Unterschiedlich; manche per E-Mail oder Sicherheitsfrage |
-| Geschäftsmodell | Kostenlose Version plus optionales Premium | Unterschiedlich; manche kostenlosen Versionen zeigen Werbung |
+| Geschäftsmodell | Kostenlos: 1 Tresor, bis zu 50 Objekte; Premium als Abo oder einmaliger Kauf (siehe [Preise](id:pricing)) | Unterschiedlich; manche kostenlosen Versionen zeigen Werbung |
 | Plattformen | iPhone (iOS 17+) | Unterschiedlich; viele für iOS und Android |
 
 <!-- TODO verify -->
@@ -70,7 +70,7 @@ Ein Taschenrechner-Symbol kann auf den ersten Blick überzeugen. Eine Tarnung mu
 
 ## Die Abstreitbarkeit von Velcrypt
 
-Velcrypt gibt nicht vor, etwas anderes zu sein. Seine Abstreitbarkeit steckt in der App selbst. Jedes Muster leitet einen eigenen Schlüssel ab und öffnet einen eigenen Tresor. Es gibt keine Tresorliste, und ein Muster, das die App noch nie gesehen hat, öffnet einfach einen leeren Tresor: keine Fehlermeldung, nichts, was auf weitere Tresore hindeutet. Du kannst einen Alltags-Köder-Tresor und einen privaten führen, und niemand kann beweisen, dass der zweite existiert. [Versteckte Tresore](id:hidden-vaults) und [glaubhafte Abstreitbarkeit](id:plausible-deniability-explained) erklären das Modell.
+Velcrypt gibt nicht vor, etwas anderes zu sein. Seine Abstreitbarkeit steckt in der App selbst. Jedes Muster leitet einen eigenen Schlüssel ab und öffnet einen eigenen Tresor. Es gibt keine Tresorliste, und ein Muster, das die App noch nie gesehen hat, öffnet einfach einen leeren Tresor: keine Fehlermeldung, nichts, was auf weitere Tresore hindeutet. Mit Premium kannst du einen Alltags-Köder-Tresor und einen privaten führen, und niemand kann beweisen, dass der zweite existiert. [Versteckte Tresore](id:hidden-vaults) und [glaubhafte Abstreitbarkeit](id:plausible-deniability-explained) erklären das Modell.
 
 Die Inhalte werden mit AES-256-GCM verschlüsselt; die Schlüssel werden aus deinem Muster mit PBKDF2-HMAC-SHA512 (mindestens 600.000 Iterationen) und einem gerätespezifischen Salt im iOS-Schlüsselbund abgeleitet. Details stehen auf der Seite zur [Verschlüsselung](id:encryption).
 
@@ -80,7 +80,7 @@ Wenn du auch die App selbst aus dem Blickfeld haben willst: Ab iOS 18 kannst du 
 
 - **Vor allem die App selbst soll unauffällig aussehen.** Wenn eine sichtbare Tresor-App auf deinem iPhone das Problem ist, löst eine Tarnung genau das – Velcrypt nicht.
 - **Du willst Einbruchsfotos.** Viele Taschenrechner-Apps bieten sie an; Velcrypt nicht.
-- **Du willst eine Wiederherstellungsoption.** Manche Apps bieten einen Weg zurück, wenn du deinen Code vergisst. Velcrypt v1 hat keinen.
+- **Du willst eine Wiederherstellungsoption.** Manche Apps bieten einen Weg zurück, wenn du deinen Code vergisst. Velcrypt hat keinen; sein verschlüsseltes Backup schützt vor Geräteverlust, nicht vor einem vergessenen Muster.
 - **Du nutzt auch Android.** Viele Taschenrechner-Tresor-Apps gibt es für beide Plattformen.
 
 <!-- TODO verify -->

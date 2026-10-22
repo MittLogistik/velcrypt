@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "periodistas proteger fuentes iphone"
 keywords: ["proteger fotos de fuentes en el móvil", "seguridad del móvil para periodistas", "privacidad de documentos de fuentes iphone", "seguridad de dispositivos para reporteros", "modelado de amenazas para periodistas"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Modelado de amenazas, minimización y metadatos para periodistas, y el papel de una bóveda cifrada en el iPhone como una capa más de protección."
 group: professional
 schemaType: Article
@@ -63,7 +63,7 @@ Las respuestas deciden tus herramientas. Sobreproteger una historia de bajo ries
 
 Velcrypt es una capa de ese plan. Guarda fotos, vídeos y documentos en bóvedas cifradas en tu iPhone, con AES-256-GCM y claves derivadas de tu patrón. No hay cuenta, ni servidor, ni sincronización, ni analíticas del contenido de la bóveda, así que no hay nada en un servidor que alguien pueda solicitar.
 
-Las bóvedas se abren con un patrón en una cuadrícula 5×5. Velcrypt no admite Face ID ni Touch ID a propósito, porque la biometría se puede usar sin tu consentimiento; un patrón vive solo en tu memoria. El razonamiento está en [patrón vs PIN vs Face ID](id:pattern-lock-vs-pin-vs-face-id). Cada patrón abre su propia bóveda, y un patrón desconocido abre una vacía sin error, lo que favorece la [negación plausible](id:plausible-deniability-explained). Un patrón de coacción que retire el acceso a las demás bóvedas es una función Premium prevista, disponible próximamente.
+Las bóvedas se abren con un patrón en una cuadrícula 5×5. Velcrypt no admite Face ID ni Touch ID a propósito, porque la biometría se puede usar sin tu consentimiento; un patrón vive solo en tu memoria. El razonamiento está en [patrón vs PIN vs Face ID](id:pattern-lock-vs-pin-vs-face-id). Cada patrón abre su propia bóveda, y un patrón desconocido abre una vacía sin error, lo que favorece la [negación plausible](id:plausible-deniability-explained). Un patrón de coacción que retire el acceso a las demás bóvedas está previsto para una actualización futura.
 
 ## Límites, con honestidad
 
@@ -74,6 +74,6 @@ Una bóveda no es, por sí sola, una estrategia de protección de fuentes:
 - **Dispositivos comprometidos.** El malware en un teléfono con jailbreak o atacado de forma dirigida puede ver lo que aparece en pantalla.
 - **Observación.** Alguien que te vea dibujar el patrón, o cámaras en la sala, lo anulan.
 - **App visible.** El icono de Velcrypt está en tu pantalla de inicio, salvo que uses la opción de iOS 18 para ocultar apps.
-- **Sin recuperación.** En la primera versión no se hace copia de seguridad de la bóveda. Si pierdes el móvil u olvidas el patrón, desaparece, lo que puede ser una ventaja para minimizar y un riesgo para el material que debes conservar. Consulta la [página de seguridad](id:security) para ver el panorama completo.
+- **Sin recuperación automática.** La bóveda no está en las copias de iCloud ni del ordenador. Si pierdes el móvil u olvidas el patrón, desaparece, salvo que hayas creado una copia de seguridad cifrada; eso puede ser una ventaja para minimizar y un riesgo para el material que debes conservar. Si creas una copia, recuerda que es un archivo más que proteger. Consulta la [página de seguridad](id:security) para ver el panorama completo.
 
 Proteger a las fuentes es sobre todo cuestión de hábitos. Las buenas herramientas ayudan, pero la decisión de guardar menos, compartir menos y planificar con antelación hace la mayor parte del trabajo.

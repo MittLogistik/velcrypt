@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "apple notes locked notes vs photo vault"
 keywords: ["hide photos in locked notes", "apple notes lock photos", "locked notes iphone photos", "notes app private photos", "locked note vs vault app"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Hiding photos in a locked Apple Note versus a dedicated encrypted vault: convenience, capacity, sync and who can open them."
 competitor: "Apple Notes locked notes"
 lastChecked: "October 2026"
@@ -51,14 +51,14 @@ You can add photos from your library, take a photo inside the note, or scan a do
 |---|---|---|
 | On-device encryption details published | Yes: AES-256-GCM, PBKDF2-HMAC-SHA512 | Described in Apple’s platform security documentation |
 | Account required | No | No for on-device notes; Apple Account for iCloud sync |
-| Cloud backup | No (v1); encrypted backup planned | Yes, with iCloud Notes |
+| Cloud backup | No cloud; optional encrypted backup file you store yourself (free) | Yes, with iCloud Notes |
 | Unlock method | Pattern on a 5×5 grid | Device passcode or separate Notes password |
 | Biometrics | Not offered, by design | Optional Face ID / Touch ID |
-| Decoy / multiple vaults | Every pattern is its own vault | Not supported; all locked notes share one password |
-| Duress pattern | Coming soon (Premium) | No |
+| Decoy / multiple vaults | Every pattern is its own vault (a second vault needs Premium) | Not supported; all locked notes share one password |
+| Duress pattern | Planned for a future update | No |
 | Recovery if you forget the code | None | Passcode option avoids a separate password; old Notes passwords can’t be recovered |
 | Photo and video handling | Albums, viewer with zoom and swipe, videos | Images inside a note; video support varies |
-| Cost | Free version plus optional Premium | Included with iOS |
+| Cost | Free version (1 vault, up to 50 items) plus optional Premium | Included with iOS |
 | Platforms | iPhone (iOS 17+) | iPhone, iPad, Mac and iCloud.com |
 
 <!-- TODO verify -->
@@ -83,7 +83,7 @@ The other difference is the secret. If you lock notes with your device passcode,
 ## When Velcrypt may suit you better
 
 - **You have a real collection.** Many photos, videos and documents, organised in albums.
-- **You want nothing in the cloud.** Vault data stays on the phone and out of backups in v1.
+- **You want nothing in the cloud.** Vault data stays on the phone and out of iCloud and computer backups; an encrypted backup file only goes where you put it.
 - **You need separate private spaces.** Each pattern is its own vault.
 - **Someone else knows your passcode.** The pattern is a separate secret.
 

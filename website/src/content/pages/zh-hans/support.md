@@ -8,13 +8,13 @@ answer: "请发邮件至 support@velcrypt.app，附上你的 iOS 版本、Velcry
 keyFacts:
   - "联系方式：support@velcrypt.app。"
   - "请附上你的 iPhone 型号、iOS 版本、Velcrypt 版本以及导致问题的操作步骤。"
-  - "支持无法恢复图案或保险箱——我们无法访问它们。"
+  - "支持无法恢复图案、备份密码或保险箱——我们无法访问它们。"
   - "意外打开空保险箱，通常意味着画出的图案略有不同。"
   - "永远不要把你的图案或私密内容截图发给我们。"
 primaryKeyword: "Velcrypt 客服"
 keywords: ["联系 Velcrypt", "Velcrypt 帮助", "Velcrypt 打不开保险箱", "Velcrypt 故障排除", "Velcrypt 邮箱"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 schemaType: ContactPage
 order: 5
 related: [faq, forgot-vault-pattern, auto-lock, security, privacy]
@@ -23,6 +23,10 @@ faq:
     a: "不能。你的图案从不被存储，密钥也从不离开你的 iPhone，所以支持团队无法打开、重置或恢复保险箱。"
   - q: "为什么 Velcrypt 打开的是空保险箱，而不是我的照片？"
     a: "很可能你画的图案与平时差了一个点或一个方向。Velcrypt 把每个图案都当作独立的保险箱，所以新图案会打开一个新的空保险箱，不会有任何错误提示。"
+  - q: "换手机后如何找回我的保险箱和 Premium？"
+    a: "在旧手机上于“设置”→“备份”中创建加密备份文件，在新 iPhone 上通过“从备份恢复”导入并输入备份密码。Premium 可在 App 中轻点“恢复购买”找回，需使用同一 Apple 账户。"
+  - q: "如何取消订阅或申请退款？"
+    a: "订阅和退款由 Apple 处理。你可以在 Apple 账户设置中管理或取消订阅；退款请通过 Apple 申请。我们无法替你取消或退款。"
   - q: "Velcrypt 多久回复支持邮件？"
     a: "我们会阅读每一封邮件，并尽快回复。现阶段我们不提供保证的响应时间。"
   - q: "我应该把图案发给支持吗？"
@@ -53,8 +57,8 @@ faq:
 
 Velcrypt 的设计使除你之外的任何人——包括我们——都无法打开你的保险箱。这意味着支持团队**无法**：
 
-- 恢复或重置被忘记的图案，
-- 从丢失、损坏或被抹掉的 iPhone 中还原保险箱，
+- 恢复或重置被忘记的图案或备份密码，
+- 在没有你自己的加密备份文件的情况下，从丢失、损坏或被抹掉的 iPhone 中还原保险箱，
 - 告诉你一台设备上有多少个保险箱，
 - 为你解密文件或取回内容。
 

@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "cacher des vidéos iphone"
 keywords: ["app pour cacher des vidéos iphone", "coffre-fort vidéo chiffré iphone", "masquer des vidéos iphone", "verrouiller des vidéos iphone", "vidéos privées iphone", "cacher des vidéos de la pellicule"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Importez vos vidéos en copies chiffrées, lisez-les dans le coffre et effacez les originaux sans saturer votre stockage."
 status: available
 schemaType: WebPage
@@ -26,7 +26,7 @@ faq:
   - q: "Pourquoi mon espace libre a-t-il baissé après l’import de vidéos ?"
     a: "L’import crée une copie : tant que vous n’avez pas supprimé l’original dans Photos et vidé « Suppressions récentes », la vidéo existe en double. Une fois l’original effacé, l’espace est libéré."
   - q: "Les vidéos de mon coffre sont-elles incluses dans la sauvegarde iCloud ?"
-    a: "Non. Dans la première version, les données des coffres sont exclues des sauvegardes iCloud et sur ordinateur. Les vidéos du coffre n’existent que sur votre iPhone."
+    a: "Non. Les données des coffres sont exclues des sauvegardes iCloud et sur ordinateur. Pour garder une copie, créez une sauvegarde chiffrée dans Réglages → Sauvegarde : un fichier protégé par votre mot de passe de sauvegarde, que vous enregistrez où vous voulez."
   - q: "Les vidéos cachées dans Velcrypt se synchronisent-elles sur mes autres appareils ?"
     a: "Non. Velcrypt n’a pas de synchronisation cloud et fonctionne uniquement sur iPhone. Une vidéo de votre coffre reste sur le téléphone où vous l’avez importée."
 ---
@@ -79,9 +79,9 @@ Gardez trois points en tête :
 
 ## Bon à savoir
 
-- Velcrypt n’a pas d’appareil photo intégré. Filmez avec l’app Appareil photo, importez la vidéo, puis supprimez l’original.
+- L’appareil photo intégré au coffre filme directement dans le coffre, sans passer par votre photothèque. Il n’y a alors aucun original à supprimer.
 - Des schémas différents ouvrent des [coffres cachés](id:hidden-vaults) différents. Si certaines vidéos ne doivent jamais côtoyer d’autres fichiers, donnez-leur un coffre à part plutôt qu’un simple album séparé.
-- Dans la première version, les coffres ne sont pas sauvegardés. Pour les vidéos irremplaçables, gardez une seconde copie dans un endroit de confiance.
+- Les coffres ne figurent pas dans les sauvegardes iCloud ou ordinateur. Pour les vidéos irremplaçables, créez une sauvegarde chiffrée dans Réglages → Sauvegarde et enregistrez-la hors de l’iPhone.
 - Si une vidéo a été envoyée dans une conversation ou publiée dans un album partagé, ces copies sont hors du coffre. Le guide [conserver ses photos intimes en sécurité](id:store-intimate-photos-safely-iphone) aborde ce risque plus en détail.
 
 Pour un panorama de toutes les options, intégrées ou non, consultez [comment cacher des vidéos sur iPhone](id:hide-videos-iphone).

@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "hide photos iphone app"
 keywords: ["encrypted photo vault iphone", "private photo album app", "hide pictures iphone", "lock photos app", "secret photo vault"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Import photos as encrypted copies, clear the originals and Recently Deleted, then browse them in albums with zoom and swipe."
 status: available
 schemaType: WebPage
@@ -77,6 +77,6 @@ The Hidden album is convenient and good enough for many people. Its limits are c
 
 ## Good to know
 
-- Velcrypt has no built-in camera. Take the photo with the Camera app, import it, then delete the original.
+- The in-vault camera saves new photos straight into the vault, so they never reach your Photos library. For photos you already took, import them, then delete the original.
 - Photos can carry location and device data. If you plan to share them later, [remove photo metadata](id:remove-photo-metadata-iphone) first.
-- Vault data is not backed up in the first version. If a photo is irreplaceable, keep a second copy somewhere you trust.
+- Vault data is not included in iCloud or computer backups. If a photo is irreplaceable, create an encrypted backup in Settings → Backup and keep the file somewhere you trust.

@@ -10,11 +10,11 @@ keyFacts:
   - "Valvinnehållet krypteras på din iPhone och skickas aldrig till oss."
   - "Köp hanteras av Apple; vi tar inte emot några betalningsuppgifter."
   - "Webbplatsen använder inga cookies och inga analys- eller spårningsskript."
-  - "Gäller från: 21 oktober 2026 (utkast i väntan på juridisk granskning)."
+  - "Gäller från: 22 oktober 2026 (utkast i väntan på juridisk granskning)."
 primaryKeyword: "velcrypt integritetspolicy"
 keywords: ["velcrypt integritet", "velcrypt datainsamling", "samlar velcrypt in data", "fotovalv integritetspolicy"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 schemaType: WebPage
 order: 6
 related: [terms, security, offline-no-account, support, about]
@@ -31,9 +31,9 @@ faq:
 
 **Utkast – i väntan på juridisk granskning.** Den här policyn beskriver vår nuvarande hantering korrekt, men formuleringarna har ännu inte granskats av en jurist och kan ändras före lanseringen.
 
-**Gäller från:** 21 oktober 2026
+**Gäller från:** 22 oktober 2026
 
-Den här integritetspolicyn förklarar vilken information Velcrypt (”vi”, ”oss”) hanterar när du använder Velcrypts iPhone-app och webbplatsen velcrypt.app. Kortfattat: appen är utformad så att vi aldrig tar emot ditt innehåll, och vi samlar in så lite som möjligt överallt annars.
+Den här integritetspolicyn förklarar vilken information Swedish Treats AB, Sverige, som ger ut Velcrypt (”vi”, ”oss”), hanterar när du använder Velcrypts iPhone-app och webbplatsen velcrypt.app. Kortfattat: appen är utformad så att vi aldrig tar emot ditt innehåll, och vi samlar in så lite som möjligt överallt annars.
 
 ## Velcrypt-appen
 
@@ -43,7 +43,11 @@ Velcrypt-appen samlar inte in personuppgifter. Det finns inget konto, ingen regi
 
 ### Valvinnehållet stannar på din enhet
 
-Bilder, videor och dokument som du lägger till i Velcrypt krypteras på din iPhone och lagras där. De laddas aldrig upp till oss eller till någon server vi driver, och vi har inget sätt att se, dekryptera eller återställa dem. I nuvarande version undantas valvdata också från iCloud- och datorsäkerhetskopior. Hur krypteringen fungerar beskrivs på sidan om [säkerhetsmodellen](id:security).
+Bilder, videor och dokument som du lägger till i Velcrypt krypteras på din iPhone och lagras där. De laddas aldrig upp till oss eller till någon server vi driver, och vi har inget sätt att se, dekryptera eller återställa dem. Valvdata undantas också från iCloud- och datorsäkerhetskopior. Hur krypteringen fungerar beskrivs på sidan om [säkerhetsmodellen](id:security).
+
+### Krypterade säkerhetskopior
+
+Om du skapar en krypterad säkerhetskopia under Inställningar → Säkerhetskopiering skapar appen en fil på din iPhone, krypterad med ett lösenord du väljer. Filen hamnar där du själv sparar den, till exempel i Filer, iCloud Drive eller på en dator. Vi får aldrig del av filen eller lösenordet och kan inte öppna eller återställa den åt dig. Sparar du filen hos en molntjänst, som iCloud Drive, gäller den tjänstens villkor för lagringen.
 
 ### Ingen analys av innehåll, inga annonser
 
@@ -51,7 +55,7 @@ Appen innehåller ingen reklam och samlar inte in någon analysdata om ditt valv
 
 ### Köp
 
-Alla köp, till exempel den valfria Premium-uppgraderingen, hanteras av Apple via App Store. Apple sköter din betalning; vi får inte ditt namn, kortnummer eller din faktureringsadress. App Store bekräftar köpet för appen på din enhet så att de aktuella funktionerna kan låsas upp. Apples egen hantering av dina uppgifter beskrivs på [apple.com/privacy](https://www.apple.com/privacy/).
+Alla köp, till exempel Premium-prenumerationer och livstidsköpet, hanteras av Apple via App Store. Apple sköter din betalning, förnyelser och återbetalningar; vi får inte ditt namn, kortnummer eller din faktureringsadress. App Store bekräftar köpet för appen på din enhet så att de aktuella funktionerna kan låsas upp. Apples egen hantering av dina uppgifter beskrivs på [apple.com/privacy](https://www.apple.com/privacy/).
 
 ### Information som Apple kan dela med oss
 

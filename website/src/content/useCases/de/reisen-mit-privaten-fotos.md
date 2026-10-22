@@ -10,11 +10,11 @@ keyFacts:
   - "Verlorene Handys, verliehene Handys und geteilte Hotelzimmer sind die häufigsten Risiken auf Reisen."
   - "Der Geführte Zugriff hält ein verliehenes iPhone in einer App, etwa Karten oder Telefon."
   - "Ein Velcrypt-Tresor öffnet sich nur mit deinem Muster; ein unbekanntes Muster öffnet einen leeren Tresor."
-  - "Velcrypt-Tresordaten sind in der ersten Version nicht in iCloud- oder Computer-Backups, plane also eine zweite Kopie."
+  - "Velcrypt-Tresordaten sind nicht in iCloud- oder Computer-Backups; erstelle vor der Reise ein verschlüsseltes Backup."
 primaryKeyword: "private fotos iphone reise schützen"
 keywords: ["fotos auf reisen schützen", "iphone im ausland gestohlen fotos", "schutz für gestohlene geräte reise", "handy im ausland verleihen privatsphäre", "handy datenschutz tipps reise"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Verlorene Handys, verliehene iPhones und Grenzkontrollen: So reist du mit privaten Fotos und Dokumenten, ohne dir Sorgen zu machen."
 group: travel
 schemaType: Article
@@ -26,7 +26,7 @@ faq:
   - q: "Sollte ich auf Reisen Fotos meines Reisepasses auf dem Handy haben?"
     a: "Eine Kopie kann nützlich sein, wenn der Pass verloren geht, aber lass sie nicht in der Mediathek liegen. Bewahr sie in einem verschlüsselten Tresor oder einem anderen geschützten Ort auf und halte eine separate Kopie bereit, an die du auch ohne Handy kommst."
   - q: "Was passiert mit meinem Velcrypt-Tresor, wenn mein Handy im Ausland gestohlen wird?"
-    a: "Der Dieb kann ihn ohne dein Muster nicht öffnen, aber du kannst ihn auch nicht wiederherstellen: In der ersten Version sind Tresordaten nicht in iCloud- oder Computer-Backups enthalten. Eine verschlüsselte Backup-Option ist geplant."
+    a: "Der Dieb kann ihn ohne dein Muster nicht öffnen, und Tresordaten sind nicht in iCloud- oder Computer-Backups enthalten. Wiederherstellen kannst du ihn nur, wenn du vorher ein verschlüsseltes Backup erstellt und außerhalb des Handys gespeichert hast."
   - q: "Ist es sicher, mein iPhone im Ausland jemandem zu leihen?"
     a: "Für einen kurzen Anruf oder einen Blick auf die Karte meist schon. Starte vorher den Geführten Zugriff, damit die Person in dieser einen App bleibt, und behalte das Handy im Blick."
 ---
@@ -66,10 +66,10 @@ Es gibt kein Konto und keine Uploads – also auch kein Cloud-Login, das unterwe
 
 ## Ehrliche Grenzen
 
-- **Kein Backup in der ersten Version.** Tresordaten sind von iCloud- und Computer-Backups ausgeschlossen. Geht das Handy verloren oder wird gestohlen, ist auch der Tresor weg – niemand kann ihn wiederherstellen. Eine verschlüsselte Backup-Option ist geplant. Bewahr für die Reise eine zweite Kopie von allem Unersetzlichen an einem sicheren Ort auf.
+- **Kein automatisches Backup.** Tresordaten sind von iCloud- und Computer-Backups ausgeschlossen. Geht das Handy verloren oder wird gestohlen, ist auch der Tresor weg, es sei denn, du hast vorher unter Einstellungen → Backup ein verschlüsseltes Backup erstellt und außerhalb des Handys gespeichert. Bewahr für die Reise eine zweite Kopie von allem Unersetzlichen an einem sicheren Ort auf.
 - **Originale bleiben in Fotos, bis du sie löschst.** Der Import kopiert ein Foto. [Lösch das Original](id:delete-original-photos-after-import) und leere „Zuletzt gelöscht“.
 - **Wer dir beim Zeichnen zusieht,** kann dein Muster lernen.
 - **Das App-Symbol ist sichtbar** auf dem Home-Bildschirm, es sei denn, du nutzt die iOS-18-Option zum Ausblenden von Apps.
-- **Ein Tresor ist kein rechtlicher Schutzschild.** An der Grenze gelten die Regeln des jeweiligen Landes; das Notfallmuster ist eine geplante Premium-Funktion (bald verfügbar) und heute noch nicht verfügbar.
+- **Ein Tresor ist kein rechtlicher Schutzschild.** An der Grenze gelten die Regeln des jeweiligen Landes; das Notfallmuster ist für ein künftiges Update geplant und heute noch nicht verfügbar.
 
 Leicht reisen, gut vorbereitet reisen: Mit einem gut abgesicherten Handy ist ein Verlust ärgerlich, aber keine Krise.

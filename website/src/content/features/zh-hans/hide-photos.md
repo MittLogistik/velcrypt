@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "iPhone 隐藏照片"
 keywords: ["照片加密 App", "iPhone 私密相册", "iPhone 照片保险箱", "照片上锁 App", "加密相册 iPhone"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "把照片导入为加密副本，清理原件和「最近删除」，再在相册中缩放、滑动浏览。"
 status: available
 schemaType: WebPage
@@ -79,6 +79,6 @@ faq:
 
 ## 须知
 
-- Velcrypt 没有内置相机。请用「相机」App 拍照，导入后再删除原件。
+- 使用保险箱内相机拍摄的新照片会直接存入保险箱，永远不会进入照片图库。已经用「相机」App 拍的照片，请导入后再删除原件。
 - 照片可能带有位置和设备信息。如果之后打算分享，请先[删除照片元数据](id:remove-photo-metadata-iphone)。
-- 第一个版本不会备份保险箱数据。如果某张照片无可替代，请在你信任的地方另存一份。
+- 保险箱数据不包含在 iCloud 和电脑备份中。如果某张照片无可替代，请在“设置”→“备份”中创建加密备份文件，或在你信任的地方另存一份。

@@ -10,11 +10,11 @@ keyFacts:
   - "Velcrypt toont nooit een lijst met kluizen."
   - "Een onbekend patroon opent een lege kluis, zonder foutmelding."
   - "Je kunt een lokkluis met gewone inhoud bijhouden."
-  - "Meer kluizen zijn gepland als onderdeel van de optionele Premium-upgrade."
+  - "De gratis versie heeft één kluis; met Premium krijgt elk ander patroon een eigen kluis."
 primaryKeyword: "verborgen kluis app iphone"
 keywords: ["meerdere kluizen foto app", "lokkluis iphone", "geheime kluis app", "plausibele ontkenning fotokluis", "tweede verborgen kluis"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Elk patroon is een eigen kluis. Geen kluizenlijst, geen foutmelding bij onbekende patronen en ruimte voor een geloofwaardige lokkluis."
 status: available
 schemaType: WebPage
@@ -28,7 +28,7 @@ faq:
   - q: "Kan iemand zien dat ik meer dan één verborgen kluis heb?"
     a: "Niet via de interface van de app. Er is geen lijst, teller of foutmelding die andere kluizen verraadt. Velcrypt kan niet verbergen dat de app zelf is geïnstalleerd, en kan niet voorkomen dat iemand meekijkt terwijl je een patroon tekent."
   - q: "Wat is een lokkluis?"
-    a: "Een lokkluis is een kluis met gewone, geloofwaardige inhoud die je kunt openen als je onder druk wordt gezet om te laten zien wat er in de app staat. Je echte kluis blijft achter een ander patroon."
+    a: "Een lokkluis is een kluis met gewone, geloofwaardige inhoud die je kunt openen als je onder druk wordt gezet om te laten zien wat er in de app staat. Je echte kluis blijft achter een ander patroon. Voor een tweede kluis heb je Premium nodig."
 howTo:
   name: "Een tweede verborgen kluis maken in Velcrypt"
   steps:
@@ -37,7 +37,7 @@ howTo:
     - name: "Teken een nieuw patroon"
       text: "Teken een patroon dat je nog niet eerder hebt gebruikt, met minstens 6 stippen en minstens één richtingsverandering. Er opent een lege kluis."
     - name: "Voeg inhoud toe"
-      text: "Importeer een foto, video of document in de lege kluis om hem in gebruik te nemen."
+      text: "Importeer een foto, video of document in de lege kluis om hem in gebruik te nemen. Een tweede kluis vraagt om Premium."
     - name: "Oefen het patroon"
       text: "Vergrendel en ontgrendel een paar keer, zodat je onthoudt welk patroon bij welke kluis hoort."
 ---
@@ -64,6 +64,8 @@ Het heeft ook een praktisch bijeffect. Teken je je patroon net verkeerd, dan kom
 
 ## Zo maak je een tweede kluis
 
+De gratis versie heeft één kluis. Met Premium krijgt elk ander patroon een eigen kluis.
+
 1. **Vergrendel Velcrypt.** Verlaat de kluis waarin je zit, zodat het patroonraster verschijnt.
 2. **Teken een nieuw patroon.** Gebruik er een dat je nog niet eerder hebt gebruikt, volgens de gewone regels: minstens 6 stippen en minstens één richtingsverandering.
 3. **Voeg iets toe.** Er opent een lege kluis. Importeer een foto, video of document om hem in gebruik te nemen.
@@ -75,7 +77,7 @@ Een lokkluis is een kluis met onschuldige maar geloofwaardige inhoud, bijvoorbee
 
 Een lokkluis werkt het best als hij er gebruikt uitziet. Een lege kluis roept de vraag op „waarom installeer je een kluis-app voor niks?”, terwijl een kluis met een paar dozijn gewone items die vraag zelden oproept. De gids over [wat een lokkluis is](id:what-is-a-decoy-vault) legt uit hoe je er een overtuigend maakt.
 
-Velcrypt plant ook een [dwangpatroon](id:duress-pattern) voor de optionele Premium-upgrade (binnenkort). Dat gaat een stap verder dan een lokkluis: het opent een gekozen kluis en ontneemt ongemerkt de toegang tot de andere.
+Velcrypt plant ook een [dwangpatroon](id:duress-pattern) voor een toekomstige update. Dat gaat een stap verder dan een lokkluis: het opent een gekozen kluis en ontneemt ongemerkt de toegang tot de andere.
 
 ## Zo blijft elke kluis gescheiden
 

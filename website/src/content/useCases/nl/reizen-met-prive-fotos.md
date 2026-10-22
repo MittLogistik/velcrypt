@@ -10,11 +10,11 @@ keyFacts:
   - "Een verloren telefoon, je telefoon uitlenen en gedeelde hotelkamers zijn de meest voorkomende risico's op reis."
   - "Begeleide toegang houdt een geleende iPhone vast op één app, zoals Kaarten of Telefoon."
   - "Een Velcrypt-kluis opent alleen met jouw patroon; een onbekend patroon opent een lege kluis."
-  - "Velcrypt-kluisgegevens zitten in de eerste versie niet in iCloud- of computerbackups, dus regel een tweede kopie."
+  - "Velcrypt-kluisgegevens zitten niet in iCloud- of computerback-ups, dus maak voor vertrek een versleutelde back-up."
 primaryKeyword: "privéfoto's beschermen op reis iphone"
 keywords: ["foto's beveiligen op reis", "iphone gestolen buitenland foto's", "bescherming gestolen apparaat reizen", "telefoon uitlenen buitenland privacy", "privacy tips telefoon op reis"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Verloren telefoons, je iPhone uitlenen en grenscontroles: zo reis je met privéfoto's en documenten zonder je zorgen te maken."
 group: travel
 schemaType: Article
@@ -26,7 +26,7 @@ faq:
   - q: "Moet ik foto's van mijn paspoort op mijn telefoon bewaren als ik op reis ga?"
     a: "Een kopie kan handig zijn als je paspoort kwijtraakt, maar laat hem niet in je filmrol staan. Bewaar hem in een versleutelde kluis of op een andere beschermde plek, en bewaar een aparte kopie ergens waar je bij kunt als je telefoon kwijt is."
   - q: "Wat gebeurt er met mijn Velcrypt-kluis als mijn telefoon in het buitenland wordt gestolen?"
-    a: "De dief kan hem niet openen zonder je patroon, maar jij kunt hem ook niet terughalen: in de eerste versie zitten kluisgegevens niet in iCloud- of computerbackups. Een versleutelde back-upoptie is gepland."
+    a: "De dief kan hem niet openen zonder je patroon, maar jij kunt hem alleen terughalen als je eerder een versleuteld back-upbestand hebt gemaakt: kluisgegevens zitten niet in iCloud- of computerback-ups."
   - q: "Is het veilig om mijn iPhone in het buitenland aan iemand uit te lenen?"
     a: "Voor een kort telefoontje of een blik op de kaart is het meestal prima. Start eerst Begeleide toegang, zodat diegene in die ene app blijft, en houd de telefoon in het oog."
 ---
@@ -68,10 +68,10 @@ Er is geen account en er wordt niets geüpload, dus er is geen cloudlogin die on
 
 ## Eerlijke beperkingen
 
-- **Geen back-up in de eerste versie.** Kluisgegevens zitten niet in iCloud- en computerbackups. Is je telefoon kwijt of gestolen, dan is de kluis dat ook; niemand kan hem herstellen. Een versleutelde back-upoptie is gepland. Bewaar op reis een tweede kopie van alles wat onvervangbaar is op een veilige plek.
+- **Geen automatische back-up.** Kluisgegevens zitten niet in iCloud- en computerback-ups. Is je telefoon kwijt of gestolen, dan is de kluis dat ook, tenzij je vooraf via Instellingen → Back-up een versleuteld back-upbestand hebt gemaakt en dat ergens anders hebt bewaard.
 - **Originelen blijven in Foto's tot je ze verwijdert.** Importeren kopieert een foto. [Verwijder het origineel](id:delete-original-photos-after-import) en leeg Recent verwijderd.
 - **Iemand die meekijkt** terwijl je je patroon tekent, kan het leren.
 - **Het app-symbool is zichtbaar** op je beginscherm, tenzij je de optie van iOS 18 gebruikt om apps te verbergen.
-- **Een kluis is geen juridisch schild.** Aan de grens gelden de regels van het land; het dwangpatroon is een geplande Premium-functie (binnenkort), en nu nog niet beschikbaar.
+- **Een kluis is geen juridisch schild.** Aan de grens gelden de regels van het land; het dwangpatroon is gepland voor een toekomstige update en nu nog niet beschikbaar.
 
 Reis licht, reis voorbereid: met een goed beveiligde telefoon is verlies vervelend, maar geen crisis.

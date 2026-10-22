@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "sharing iphone with kids privacy"
 keywords: ["kids using my phone photos", "hide photos from kids iphone", "guided access for kids", "screen time kids iphone", "child swiping through photos"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Let kids play on your iPhone without them wandering into private photos: Guided Access, Screen Time and a vault that stays closed."
 group: everyday
 schemaType: Article
@@ -79,6 +79,6 @@ The vault opens by drawing a [pattern on a 5×5 grid](id:pattern-lock), not with
 - If your child watches you draw your pattern, they may remember it. Draw it out of sight, and pick a longer one.
 - If you hand over the phone with the vault open and the app in the foreground, the content is visible until the app is backgrounded.
 - The Velcrypt icon is visible on your Home Screen. iOS 18 and later let you hide apps behind Face ID in a hidden folder; that’s an iOS feature, not part of Velcrypt.
-- In the first version, vault data isn’t included in iCloud or computer backups. If the phone is lost or broken, or you forget the pattern, the vault can’t be recovered. Keep copies of irreplaceable photos somewhere safe.
+- Vault data isn’t included in iCloud or computer backups. If you forget the pattern, the vault can’t be recovered; if the phone is lost or broken, only an encrypted backup you made in Settings → Backup can restore it. Keep copies of irreplaceable photos somewhere safe.
 
 For most families, the best combination is simple: Guided Access every time you hand the phone over, and a vault for the handful of things that should never be one swipe away.

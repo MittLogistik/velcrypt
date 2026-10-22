@@ -10,11 +10,12 @@ keyFacts:
   - "In Velcrypt ist jedes Muster ein eigener Tresor, und es gibt keine Tresorliste, die die anderen verraten würde."
   - "Ein leerer Köder wirkt verdächtig; ein benutzt wirkender Köder mit Alben und neuen Objekten überzeugt."
   - "Ein Köder schützt vor Herumschnüffeln und beiläufigem Druck, nicht vor forensischer Analyse oder jemandem, der dir beim Zeichnen zugesehen hat."
-  - "Ein Notfallmuster, das zusätzlich den Zugriff auf andere Tresore entfernt, ist eine geplante Premium-Funktion (bald verfügbar)."
+  - "Ein Köder braucht einen zweiten Tresor und damit Premium; die kostenlose Version hat einen Tresor."
+  - "Ein Notfallmuster, das zusätzlich den Zugriff auf andere Tresore entfernt, ist für ein künftiges Update geplant."
 primaryKeyword: "köder tresor"
 keywords: ["was ist ein köder tresor", "fake passwort foto tresor", "fake tresor app", "köder muster", "zweiter tresor iphone", "decoy tresor"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Was ein Köder-Tresor ist, wie du mit einem zweiten Velcrypt-Muster einen benutzt wirkenden baust – und welche Grenzen du kennen solltest."
 category: security
 order: 41
@@ -36,11 +37,11 @@ faq:
   - q: "Was ist ein Fake-Passwort in einer Foto-Tresor-App?"
     a: "Ein Fake- oder Köder-Passwort (bzw. eine Köder-PIN oder ein Köder-Muster) ist ein zweites Geheimnis, das einen getrennten, harmlosen Inhalt öffnet. So kannst du scheinbar der Aufforderung nachkommen, die App zu öffnen, ohne zu zeigen, was du wirklich privat hältst."
   - q: "Wie erstelle ich einen Köder-Tresor in Velcrypt?"
-    a: "Zeichne ein zweites Muster, das du noch nie verwendet hast. Velcrypt öffnet dafür einen neuen, leeren Tresor. Füge glaubwürdige Alltagsinhalte hinzu – Belege, Screenshots, gewöhnliche Fotos –, und dieses Muster öffnet fortan deinen Köder."
+    a: "Zeichne ein zweites Muster, das du noch nie verwendet hast. Velcrypt öffnet dafür einen neuen, leeren Tresor. Füge glaubwürdige Alltagsinhalte hinzu – Belege, Screenshots, gewöhnliche Fotos –, und dieses Muster öffnet fortan deinen Köder. Weil die kostenlose Version einen Tresor hat, brauchst du für den zweiten Premium."
   - q: "Kann jemand erkennen, dass ein Tresor ein Köder ist?"
     a: "Nicht aus der App heraus: Velcrypt führt keine Tresorliste und zeigt keinen Hinweis, dass weitere existieren. Verraten kann einen Köder sein Inhalt – etwa wenn er leer, veraltet oder offensichtlich inszeniert ist."
   - q: "Ist ein Köder-Tresor dasselbe wie ein Notfallmuster?"
-    a: "Nein. Ein Köder öffnet einfach einen anderen Tresor. Ein Notfallmuster – eine geplante Premium-Funktion von Velcrypt, die bald kommt – würde einen gewählten Tresor öffnen und zugleich still den Zugriff auf die anderen entfernen."
+    a: "Nein. Ein Köder öffnet einfach einen anderen Tresor. Ein Notfallmuster – in Velcrypt für ein künftiges Update geplant – würde einen gewählten Tresor öffnen und zugleich still den Zugriff auf die anderen entfernen."
   - q: "Sollte ich einen Köder-Tresor gegenüber Polizei oder Grenzbeamten nutzen?"
     a: "Diese Anleitung kann keine Rechtsberatung geben. Behörden zu täuschen kann in vielen Ländern strafbar sein. Ein Köder ist vor allem für alltägliches Herumschnüffeln und informellen Druck gedacht; in offiziellen Situationen informiere dich über deine Rechte und sprich mit einer Anwältin oder einem Anwalt."
 ---
@@ -63,7 +64,7 @@ Die meisten Apps behandeln den Köder als besondere Einstellung: eine echte PIN,
 - Ein Muster, das Velcrypt noch nie gesehen hat, öffnet einen neuen, leeren Tresor.
 - Es gibt keine Fehlermeldung „falsches Muster“, und nichts beweist, dass weitere Tresore existieren.
 
-Ein Köder-Tresor in Velcrypt ist also keine Funktion, die du einschaltest. Er ist einfach ein zweites Muster, das du als Köder nutzt. Dein echter Tresor und dein Köder sehen gleich aus und verhalten sich gleich, weil sie dasselbe sind. Die Seite zu [versteckten Tresoren](id:hidden-vaults) erklärt das Modell genauer.
+Ein Köder-Tresor in Velcrypt ist also keine Funktion, die du einschaltest. Er ist einfach ein zweites Muster, das du als Köder nutzt. Da die kostenlose Version einen Tresor hat, brauchst du dafür Premium. Dein echter Tresor und dein Köder sehen gleich aus und verhalten sich gleich, weil sie dasselbe sind. Die Seite zu [versteckten Tresoren](id:hidden-vaults) erklärt das Modell genauer.
 
 ## Schritt für Schritt zum glaubwürdigen Köder
 
@@ -93,7 +94,7 @@ Ein Köder-Tresor ist ein soziales Werkzeug mit guter Kryptografie dahinter. Zau
 
 ## Köder-Tresor vs. Notfallmuster
 
-Ein Köder öffnet einen anderen Tresor und lässt alles andere unberührt. Ein **Notfallmuster** geht einen Schritt weiter: Es öffnet einen von dir gewählten Tresor und entfernt gleichzeitig still den Zugriff auf die anderen. In Velcrypt ist das [Notfallmuster](id:duress-pattern) eine geplante Premium-Funktion und kommt bald. Bis dahin deckt ein gut gepflegter Köder die meisten Alltagssituationen ab – einen neugierigen Partner, einen Freund, der durch dein Handy scrollt, oder eine neugierige Kollegin.
+Ein Köder öffnet einen anderen Tresor und lässt alles andere unberührt. Ein **Notfallmuster** geht einen Schritt weiter: Es öffnet einen von dir gewählten Tresor und entfernt gleichzeitig still den Zugriff auf die anderen. In Velcrypt ist das [Notfallmuster](id:duress-pattern) für ein künftiges Update geplant und noch nicht in der App. Bis dahin deckt ein gut gepflegter Köder die meisten Alltagssituationen ab – einen neugierigen Partner, einen Freund, der durch dein Handy scrollt, oder eine neugierige Kollegin.
 
 ## Wo Velcrypt ins Spiel kommt
 

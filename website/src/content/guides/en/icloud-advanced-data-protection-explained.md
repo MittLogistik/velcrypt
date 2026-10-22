@@ -21,7 +21,7 @@ keywords:
   - "advanced data protection recovery key"
   - "advanced data protection uk"
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "What Advanced Data Protection encrypts, what stays standard, the recovery requirements, trade-offs and how to switch it on."
 category: apple
 order: 12
@@ -136,6 +136,6 @@ If you don’t see the option in your iCloud settings, or it is greyed out, chec
 
 Advanced Data Protection and an on-device vault solve different problems. ADP keeps your iCloud data unreadable to Apple while still letting it sync and be recovered through your own recovery method. An on-device vault keeps certain files from going to the cloud at all and puts a separate secret between them and anyone who can unlock your phone.
 
-Velcrypt is in the second category. Photos, videos and documents you import are encrypted with AES-256-GCM on the iPhone, with keys derived from a pattern you draw ([how the encryption works](id:encryption)). There is no account and nothing is uploaded ([on-device, no account](id:offline-no-account)). In the first version, vault content is excluded from iCloud and computer backups entirely, which means there is nothing to recover if the phone is lost; an encrypted backup option is planned.
+Velcrypt is in the second category. Photos, videos and documents you import are encrypted with AES-256-GCM on the iPhone, with keys derived from a pattern you draw ([how the encryption works](id:encryption)). There is no account and nothing is uploaded ([on-device, no account](id:offline-no-account)). Vault content is excluded from iCloud and computer backups entirely, which means there is nothing to recover if the phone is lost unless you created an encrypted backup file yourself in Settings → Backup.
 
 Many people sensibly use both: ADP for their everyday library and backups, and a vault for the handful of files that shouldn’t sync anywhere. If you’re weighing up encryption terms, our [AES-256 explainer](id:aes-256-encryption-explained) and [are hidden photos saved to iCloud?](id:are-hidden-photos-saved-to-icloud) are good next reads.

@@ -9,12 +9,12 @@ keyFacts:
   - "Skärmbilder i kamerarullen kan ses, raderas eller synkas av alla som har din lösenkod eller ditt Apple-konto."
   - "Säkerhetskontroll (Inställningar › Integritet och säkerhet, iOS 16+) hjälper dig att se vem som har åtkomst till din iPhone och ditt konto."
   - "Bevis är bara användbara om de finns kvar: ha minst två kopior, på platser den andra personen inte kommer åt."
-  - "Velcrypt har ingen säkerhetskopia i den första versionen, så appen ska aldrig ha din enda kopia."
+  - "Velcrypts valv ingår inte i iCloud-säkerhetskopior, så appen ska aldrig ha din enda kopia."
   - "Stödorganisationer och polisen där du bor kan ge råd om vilket underlag som är användbart."
 primaryKeyword: "spara bevis på trakasserier iphone"
 keywords: ["hålla skärmbilder på trakasserier privata", "spara bevis i iphone", "dokumentera bevis på övergrepp mobil", "dölja skärmbilder för förövare", "bevis trakasserier säkerhet"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Ett varsamt arbetssätt med säkerheten först för att hålla skärmbilder och bilder av trakasserier privata, intakta och säkerhetskopierade."
 group: sensitive
 schemaType: Article
@@ -26,7 +26,7 @@ faq:
   - q: "Kan en förövare se mina bilder om vi delar Apple-konto?"
     a: "Ja. Med iCloud-bilder på synkas bilder till alla enheter som är inloggade med kontot, även albumet Gömda. Säkerhetskontroll och ett separat Apple-konto kan hjälpa, men tänk på säkerheten innan du gör ändringar som personen kan märka."
   - q: "Räcker Velcrypt för att spara bevis?"
-    a: "Appen kan hålla en kopia privat i din iPhone, men den ska inte vara din enda kopia. I den första versionen säkerhetskopieras inte valvdata, så en borttappad, trasig eller fråntagen telefon betyder att valvet är borta."
+    a: "Appen kan hålla en kopia privat i din iPhone, men den ska inte vara din enda kopia. Valvdata ingår inte i iCloud- eller datorsäkerhetskopior, så en borttappad, trasig eller fråntagen telefon betyder att valvet är borta, om du inte har skapat en krypterad säkerhetskopia och sparat den någon annanstans."
   - q: "Är det här juridisk rådgivning?"
     a: "Nej. Reglerna för bevisning skiljer sig mellan länder. En stödorganisation, en jurist eller polisen kan berätta vilket underlag som är användbart där du bor."
 ---
@@ -70,7 +70,7 @@ Valven öppnas med ett mönster som ritas på ett 5×5-rutnät, inte med enheten
 
 ## Ärliga begränsningar – läs detta
 
-- **Velcrypt får inte vara din enda kopia.** I den första versionen ingår valvdata inte i iCloud- eller datorsäkerhetskopior. Om telefonen försvinner, går sönder eller tas ifrån dig, eller om du glömmer mönstret, kan valvet inte återställas av någon.
+- **Velcrypt får inte vara din enda kopia.** Valvdata ingår inte i iCloud- eller datorsäkerhetskopior. Om telefonen försvinner, går sönder eller tas ifrån dig, eller om du glömmer mönstret, kan valvet inte återställas av någon, utom från en krypterad säkerhetskopia som du själv har skapat.
 - **Appen syns.** Velcrypt-symbolen visas på hemskärmen. iOS 18 låter dig gömma appar bakom Face ID i en dold mapp, men den som kontrollerar noga kan ändå lägga märke till en app. Fundera på om det kan utsätta dig för risk.
 - **Någon som ser** dig rita ditt mönster, eller tar din telefon medan valvet är öppet, sätter låset ur spel.
 - **Övervakningsprogram** på en jailbreakad eller manipulerad telefon kan se det som visas på skärmen. Misstänker du det kan en stödorganisation ge råd; det kan vara säkrare att använda en enhet som personen aldrig haft åtkomst till.

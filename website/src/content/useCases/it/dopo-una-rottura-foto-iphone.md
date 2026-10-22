@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "il mio ex ha accesso alle mie foto"
 keywords: ["cambiare codice dopo una rottura", "rimuovere ex da album condiviso", "controllo di sicurezza iphone", "il mio ex conosce il codice dell'iphone", "uscire dalla libreria foto condivisa icloud"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Una checklist tranquilla per le settimane dopo una rottura: nuovo codice, Controllo di sicurezza, album e librerie condivisi e un posto privato per le foto."
 group: everyday
 schemaType: Article
@@ -68,7 +68,7 @@ Dopo l'importazione, [elimina gli originali](id:delete-original-photos-after-imp
 
 - Niente sul tuo telefono può eliminare le copie che il tuo ex ha già: foto che hai inviato, salvate da un album condiviso o presenti nei suoi backup.
 - Una cassaforte non aiuta se qualcuno ti guarda disegnare la sequenza o se il telefono ti viene preso mentre la cassaforte è aperta.
-- Nella prima versione i dati delle casseforti non sono inclusi nei backup di iCloud o del computer. Se perdi il telefono o dimentichi la sequenza, la cassaforte non si può recuperare. Tieni una seconda copia di tutto ciò che è insostituibile in un posto sicuro.
+- I dati delle casseforti non sono inclusi nei backup di iCloud o del computer. Se perdi il telefono senza un backup cifrato, o dimentichi la sequenza, la cassaforte non si può recuperare. Per tutto ciò che è insostituibile crea un backup cifrato e conservalo in un posto sicuro.
 - L'icona dell'app è visibile nella schermata Home, a meno che tu non usi l'opzione di iOS 18 per nascondere le app.
 
 ## Se le cose vanno oltre

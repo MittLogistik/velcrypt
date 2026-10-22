@@ -10,11 +10,11 @@ keyFacts:
   - "Objekte in der Mediathek werden mit iCloud-Fotos auf jedes Gerät deines Apple-Accounts synchronisiert."
   - "Foto-Metadaten können Ort, Datum und Kamera eines Shootings verraten; entferne sie vor dem Posten."
   - "Velcrypt bewahrt Fotos, Videos und Dokumente in verschlüsselten Tresoren auf deinem iPhone auf, geordnet in Alben."
-  - "Velcrypt hat in der ersten Version weder Cloud-Synchronisierung noch Backup – halte Masterdateien in deinem eigenen Archiv."
+  - "Velcrypt hat keine Cloud-Synchronisierung, nur ein manuelles verschlüsseltes Backup – halte Masterdateien in deinem eigenen Archiv."
 primaryKeyword: "unveröffentlichte fotos schützen iphone"
 keywords: ["kundenfotos privat speichern iphone", "fotograf kunden datenschutz handy", "arbeitsfotos verstecken iphone", "creator inhalte privatsphäre", "unveröffentlichte inhalte privat halten"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Für Fotografen, Künstler und Creator: unveröffentlichte Arbeiten und Kundenmaterial auf dem iPhone privat halten und nur gezielt teilen."
 group: professional
 schemaType: Article
@@ -28,7 +28,7 @@ faq:
   - q: "Kann ich Projekte in Velcrypt ordnen?"
     a: "Ja. Tresore enthalten Alben, du kannst also pro Projekt oder Kunde ein eigenes Album führen, Objekte per Mehrfachauswahl markieren und zwischen Alben verschieben."
   - q: "Ersetzt Velcrypt mein Fotoarchiv?"
-    a: "Nein. Velcrypt hält Arbeitskopien auf deinem iPhone privat. Es hat keine Cloud-Synchronisierung, und in der ersten Version werden Tresordaten nicht gesichert – deine Masterdateien gehören in dein eigenes Archiv."
+    a: "Nein. Velcrypt hält Arbeitskopien auf deinem iPhone privat. Es hat keine Cloud-Synchronisierung und sichert Tresordaten nur, wenn du selbst ein verschlüsseltes Backup erstellst – deine Masterdateien gehören in dein eigenes Archiv."
 ---
 
 Wenn du beruflich – oder aus Leidenschaft – etwas erschaffst, liegt auf deinem iPhone wahrscheinlich Arbeit, die noch nicht gesehen werden soll. Bearbeitungen in Arbeit, ein Shooting mit Sperrfrist, Korrekturabzüge für Kunden, Skizzen für einen Auftrag oder Inhalte für eine Abo-Plattform. Gerade für Creator im Erotikbereich ist ein Leak nicht nur ärgerlich; er kann Einkommen, Sicherheit und die Privatsphäre anderer betreffen. Egal, was du erschaffst, das Prinzip ist dasselbe: Du entscheidest, wann und wie deine Arbeit gesehen wird.
@@ -69,7 +69,7 @@ Mit dem sicheren Export holst du eine einzelne Datei heraus, wenn es Zeit für L
 
 ## Ehrliche Grenzen
 
-- **Kein Archiv.** Keine Cloud-Synchronisierung und in der ersten Version kein Backup: Geht das Handy verloren oder vergisst du das Muster, lässt sich der Tresor nicht wiederherstellen. Bewahr Masterdateien woanders auf.
+- **Kein Archiv.** Keine Cloud-Synchronisierung und kein automatisches Backup: Geht das Handy verloren, hilft nur ein verschlüsseltes Backup, das du selbst erstellt hast, und ein vergessenes Muster lässt sich nicht wiederherstellen. Bewahr Masterdateien woanders auf.
 - **Exporte verlassen den Tresor.** Ist eine Datei verschickt, ist sie nur so privat wie das Gerät des Empfängers.
 - **Bildschirmaufnahmen durch andere.** Ein Tresor kann nicht verhindern, dass jemand deinen Bildschirm fotografiert oder ein Empfänger einen Screenshot von dem macht, was du schickst.
 - **Prüf Metadaten selbst.** Geh nicht davon aus, dass ein Export Standort- oder Kameradaten entfernt; lass Dateien vor dem Veröffentlichen durch ein eigenes Werkzeug laufen.

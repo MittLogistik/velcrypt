@@ -19,7 +19,7 @@ keywords:
   - "calculadora falsa fotos ocultas"
   - "como descobrir calculadora secreta no celular"
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Como funcionam os cofres disfarçados de calculadora, por que disfarce não é criptografia e quando o truque ainda faz sentido."
 category: choosing
 order: 22
@@ -112,6 +112,6 @@ Esse último ponto pega as pessoas desprevenidas com qualquer tipo de cofre. O o
 
 ## Como o Velcrypt aborda isso
 
-O Velcrypt não finge ser outra coisa. Ele não tem disfarce de calculadora nem ícone alternativo. Em vez disso, ele se concentra no que acontece depois que o app é aberto. Cada cofre abre com o próprio padrão desenhado numa grade de 5×5, e qualquer padrão que o app nunca viu simplesmente abre um cofre vazio, sem erro e sem nada que prove que existem outros cofres ([cofres ocultos](id:hidden-vaults)). Os arquivos são criptografados com AES-256-GCM usando chaves derivadas do padrão ([criptografia](id:encryption)), e tudo fica no aparelho.
+O Velcrypt não finge ser outra coisa. Ele não funciona como calculadora; com o Premium, você pode trocar o ícone da Tela de Início por alternativas como calculadora, timer ou régua, mas o app abre a tela de padrão do Velcrypt. A proteção principal está em outro lugar: no que acontece depois que o app é aberto. Cada cofre abre com o próprio padrão desenhado numa grade de 5×5, e qualquer padrão que o app nunca viu simplesmente abre um cofre vazio, sem erro e sem nada que prove que existem outros cofres ([cofres ocultos](id:hidden-vaults)). Os arquivos são criptografados com AES-256-GCM usando chaves derivadas do padrão ([criptografia](id:encryption)), e tudo fica no aparelho.
 
-A contrapartida é que o app fica visível na sua Tela de Início, a menos que você use o recurso do próprio iOS para ocultar apps. E, na primeira versão, o conteúdo do cofre não tem backup em lugar nenhum, então um celular perdido ou um padrão esquecido significa conteúdo perdido. Para uma comparação direta, veja [Velcrypt vs. apps de calculadora secreta](id:velcrypt-vs-calculator-vault-apps).
+A contrapartida é que o app fica visível na sua Tela de Início, a menos que você use o recurso do próprio iOS para ocultar apps ou troque o ícone por um alternativo, como calculadora ou timer, com o Premium. E o conteúdo do cofre não entra nos backups do iCloud nem do computador: um padrão esquecido significa conteúdo perdido, e um celular perdido também, a menos que você tenha criado um backup criptografado. Para uma comparação direta, veja [Velcrypt vs. apps de calculadora secreta](id:velcrypt-vs-calculator-vault-apps).

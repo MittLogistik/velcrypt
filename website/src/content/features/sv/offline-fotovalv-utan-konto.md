@@ -4,17 +4,17 @@ title: "Offline fotovalv utan konto, utan moln och utan servrar"
 description: "Velcrypt fungerar helt i din iPhone: inget konto, ingen e-post, inga servrar, inga uppladdningar och ingen analys av valvinnehåll. Det här betyder det."
 h1: "Helt offline, inget konto"
 navTitle: "Offline, inget konto"
-answer: "Velcrypt körs helt i din iPhone. Det finns inget konto, ingen registrering, ingen e-post, ingen server och ingen uppladdning, och ingen analys av det du sparar. I den första versionen undantas valvdata också från iCloud- och datorsäkerhetskopior, så en förlorad telefon eller ett glömt mönster kan inte återställas."
+answer: "Velcrypt körs helt i din iPhone. Det finns inget konto, ingen registrering, ingen e-post, ingen server och ingen uppladdning, och ingen analys av det du sparar. Valvdata undantas också från iCloud- och datorsäkerhetskopior. Ett glömt mönster kan inte återställas, och en förlorad telefon tar valven med sig om du inte har skapat en egen krypterad säkerhetskopia."
 keyFacts:
   - "Inget konto, ingen registrering och ingen e-postadress."
   - "Inga servrar och inga uppladdningar; valvfilerna lämnar aldrig telefonen."
   - "Ingen analys av valvinnehåll."
-  - "Valvdata undantas från iCloud-säkerhetskopior och säkerhetskopior via Finder/iTunes i den första versionen."
-  - "Avvägning: ingen återställning om telefonen försvinner eller mönstret glöms. En krypterad säkerhetskopia är planerad."
+  - "Valvdata undantas från iCloud-säkerhetskopior och säkerhetskopior via Finder/iTunes."
+  - "Avvägning: ingen automatisk återställning. En krypterad säkerhetskopia som du skapar själv ingår gratis."
 primaryKeyword: "fotovalv utan konto"
 keywords: ["offline fotovalv iphone", "bildapp utan moln", "fotovalv utan registrering", "lokalt fotovalv", "privat bildapp utan inloggning"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Inget konto, inga servrar, inga uppladdningar, ingen innehållsanalys. Allt stannar i din iPhone, med en ärlig avvägning kring återställning."
 status: available
 schemaType: WebPage
@@ -24,11 +24,11 @@ faq:
   - q: "Behöver Velcrypt ett konto eller en e-postadress?"
     a: "Nej. Det finns ingen registrering, ingen inloggning och ingen e-post. Du öppnar appen och ritar ett mönster; det är allt."
   - q: "Säkerhetskopieras mina valvfiler till iCloud?"
-    a: "Nej. I den första versionen undantas valvdata från iCloud och från säkerhetskopior på dator via Finder eller iTunes. Dina filer finns bara i din iPhone."
+    a: "Nej. Valvdata undantas från iCloud och från säkerhetskopior på dator via Finder eller iTunes. Vill du ha en kopia skapar du en krypterad säkerhetskopia under Inställningar → Säkerhetskopiering."
   - q: "Vad händer med mitt valv om jag tappar bort telefonen?"
-    a: "Valvet försvinner med den. Eftersom inget sparas på en server eller i en säkerhetskopia kan varken du eller Velcrypt återställa det. Spara kopior av sådant som inte går att ersätta någonstans du litar på."
-  - q: "Kommer Velcrypt någon gång att erbjuda säkerhetskopior?"
-    a: "En krypterad säkerhetskopia med återställning är planerad, troligen som en del av den valfria Premium-uppgraderingen. Det finns inget lanseringsdatum ännu, och den första versionen innehåller den inte."
+    a: "Valvet försvinner med den, om du inte har skapat en krypterad säkerhetskopia. Har du det kan du återställa valvet från filen på en ny iPhone med lösenordet för säkerhetskopian. Velcrypt har ingen egen kopia och kan inte hjälpa till."
+  - q: "Kan jag säkerhetskopiera mina valv?"
+    a: "Ja, gratis. Under Inställningar → Säkerhetskopiering skapar du en krypterad .velcrypt-fil av det öppna valvet, skyddad av ett lösenord du väljer. Du sparar filen själv, och den kan återställas på vilken iPhone som helst."
 ---
 
 Många valvappar börjar med att be om din e-postadress. Velcrypt ber inte om någonting. Det finns inget att registrera sig för, inget att logga in på och inget på en server som kan läcka, eftersom det inte finns någon server. Den här sidan förklarar vad det innebär i praktiken, inklusive nackdelen.
@@ -53,27 +53,28 @@ Det betyder också att Velcrypt inte kan lämna ut dina filer, eftersom företag
 
 ## Undantaget från iCloud- och datorsäkerhetskopior
 
-I den första versionen undantas valvdata från iCloud-säkerhetskopiering och från säkerhetskopior på dator via Finder eller iTunes. Det är avsiktligt: en säkerhetskopia är ytterligare en kopia, lagrad någonstans du inte helt kontrollerar, och Velcrypt håller antalet kopior på en.
+Valvdata undantas från iCloud-säkerhetskopiering och från säkerhetskopior på dator via Finder eller iTunes. Det är avsiktligt: en säkerhetskopia är ytterligare en kopia, lagrad någonstans du inte helt kontrollerar, och Velcrypt skapar inga kopior som du inte själv har valt.
 
 Det skiljer sig från Apples eget album Gömda, som synkas via iCloud-bilder när det är aktiverat. Är du osäker på hur dina befintliga bilder lagras kan du läsa [sparas gömda bilder i iCloud?](id:are-hidden-photos-saved-to-icloud)
 
-## Den ärliga avvägningen: ingen återställning
+## Den ärliga avvägningen: ingen automatisk återställning
 
 Att hålla allt på en enda enhet har ett tydligt pris, och det är bättre att se det klart:
 
 | Situation | Kan valvet återställas? |
 | --- | --- |
-| Du glömmer ditt mönster | Nej |
-| Telefonen tappas bort eller blir stulen | Nej |
-| Telefonen går sönder så att den inte kan lagas | Nej |
-| Du återställer en ny telefon från en säkerhetskopia | Nej, valvdata finns inte i säkerhetskopian |
+| Du glömmer ditt mönster | Nej, men innehållet kan återställas från en tidigare krypterad säkerhetskopia |
+| Telefonen tappas bort eller blir stulen | Bara från en krypterad säkerhetskopia |
+| Telefonen går sönder så att den inte kan lagas | Bara från en krypterad säkerhetskopia |
+| Du återställer en ny telefon från en iCloud- eller datorsäkerhetskopia | Nej, valvdata finns inte i den |
+| Du glömmer lösenordet för säkerhetskopian | Nej |
 | Du raderar Velcrypt från telefonen | Nej, när en iOS-app raderas försvinner dess data |
 
-Ingen kan hjälpa till, inte heller Velcrypt, eftersom ingen annan någonsin haft en kopia. Innan du flyttar filer som inte går att ersätta till ett valv bör du bestämma var en andra kopia ska finnas, till exempel på en krypterad hårddisk du har hemma. Guiden om [vad du gör om du glömmer ditt valvmönster](id:forgot-vault-pattern) förklarar vilka alternativ som återstår.
+Ingen kan hjälpa till, inte heller Velcrypt, eftersom ingen annan någonsin haft en kopia. Innan du flyttar filer som inte går att ersätta till ett valv bör du skapa en krypterad säkerhetskopia och bestämma var den ska finnas, till exempel i iCloud Drive eller på en dator. Guiden om [vad du gör om du glömmer ditt valvmönster](id:forgot-vault-pattern) förklarar vilka alternativ som återstår.
 
-## Planerat: krypterad säkerhetskopia
+## Krypterad säkerhetskopia, när du vill
 
-En krypterad säkerhetskopia med återställning är planerad för en framtida version, som en del av den valfria Premium-uppgraderingen. Målet är att du ska kunna ha en skyddad kopia utan att ge upp principen att bara du har nycklarna. Det finns inget datum för den ännu, och inget på den här sidan ska läsas som ett löfte om när den kommer.
+Under Inställningar → Säkerhetskopiering kan du skapa en krypterad säkerhetskopia av det öppna valvet, gratis. Appen samlar valvet i en .velcrypt-fil som skyddas av ett lösenord du väljer, och du sparar filen själv i Filer, iCloud Drive eller på en dator. Velcrypt får aldrig del av filen. Med Återställ från säkerhetskopia läser du in den på vilken iPhone som helst. Bara du har lösenordet, så glömmer du det kan säkerhetskopian inte öppnas.
 
 ## Goda vanor för ett offlinevalv
 

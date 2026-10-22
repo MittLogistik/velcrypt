@@ -10,12 +10,12 @@ keyFacts:
   - "Ogni cassaforte ha una propria chiave master casuale a 256 bit; le chiavi per file sono derivate con HKDF."
   - "I file sono cifrati con AES-256-GCM tramite Apple CryptoKit, più la Protezione dati di iOS (classe di protezione completa)."
   - "Una sequenza sconosciuta apre una cassaforte vuota: nessun elenco di casseforti, nessun messaggio di “sequenza errata”."
-  - "Nessuna rete, nessun account, nessuna analisi dei contenuti; nella v1 i dati sono esclusi dai backup iCloud e sul computer."
+  - "Nessuna rete, nessun account, nessuna analisi dei contenuti; i dati sono esclusi dai backup iCloud e sul computer; il backup cifrato è un file manuale."
   - "Velcrypt non è ancora stato sottoposto a un audit di sicurezza indipendente."
 primaryKeyword: "velcrypt sicurezza"
 keywords: ["cifratura cassaforte foto iphone", "come funziona la cifratura di velcrypt", "cassaforte foto aes-256-gcm", "sblocco a sequenza pbkdf2", "modello di minaccia app cassaforte", "negabilità plausibile app cassaforte"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 schemaType: WebPage
 order: 1
 related: [encryption, pattern-lock, hidden-vaults, aes-256-encryption-explained, plausible-deniability-explained, forgot-vault-pattern]
@@ -38,7 +38,7 @@ Questa pagina spiega, in parole semplici, cosa succede a foto, video e documenti
 
 Velcrypt è un’app per iPhone che conserva file privati in casseforti cifrate sul dispositivo. Apri una cassaforte disegnando una sequenza su una griglia di 5×5 punti. Quella sequenza non viene mai salvata da nessuna parte: passa invece attraverso una funzione di derivazione lenta che produce una chiave, ed è quella chiave a proteggere il contenuto della cassaforte.
 
-Tutto avviene sull’iPhone stesso. Velcrypt non ha account, server né caricamenti, quindi non esiste altrove una copia della tua cassaforte o delle tue chiavi. È la sua forza e anche il suo limite principale: se la sequenza viene dimenticata o il telefono va perso, la cassaforte non si può recuperare.
+Tutto avviene sull’iPhone stesso. Velcrypt non ha account, server né caricamenti, quindi non esiste altrove una copia della tua cassaforte o delle tue chiavi. È la sua forza e anche il suo limite principale: se la sequenza viene dimenticata, la cassaforte non si può recuperare, e se il telefono va perso la recuperi solo da un backup cifrato creato da te.
 
 ## Dalla sequenza alla chiave
 
@@ -88,11 +88,13 @@ Velcrypt si blocca automaticamente quando passa in background, dopo un ritardo c
 
 Non c’è sblocco con Face ID o Touch ID, per scelta. Un volto o un dito possono essere usati senza il tuo consenso, mentre dormi o sotto pressione. Una sequenza esiste solo nella tua memoria.
 
-## Nessuna rete, nessun account, nessun backup
+## Nessuna rete, nessun account, backup solo se lo crei tu
 
 Velcrypt funziona completamente offline. Non c’è registrazione, indirizzo email, server né caricamento dei contenuti, e non vengono raccolte statistiche su ciò che conservi. La pagina [offline, senza account](id:offline-no-account) spiega cosa significa in pratica.
 
-Nella prima versione, i dati delle casseforti sono anche **esclusi dai backup iCloud e sul computer (Finder)**. Così i tuoi file cifrati restano fuori dai server di Apple e da qualsiasi computer con cui sincronizzi, ma con una conseguenza concreta: se il tuo iPhone viene perso, si rompe o viene inizializzato, le casseforti se ne vanno con lui. Un’opzione di backup cifrato è in programma, senza una data.
+I dati delle casseforti sono anche **esclusi dai backup iCloud e sul computer (Finder)**. Così i tuoi file cifrati restano fuori dai server di Apple e da qualsiasi computer con cui sincronizzi, ma con una conseguenza concreta: se il tuo iPhone viene perso, si rompe o viene inizializzato, le casseforti se ne vanno con lui, a meno che tu non abbia un backup.
+
+Per questo Velcrypt offre un **backup cifrato** gratuito. In Impostazioni → Backup crei un file `.velcrypt` della cassaforte aperta, cifrato con una password del backup scelta da te. Ogni cassaforte viene salvata separatamente, quindi un backup non rivela mai le altre casseforti. Il file lo salvi tu, per esempio in File, iCloud Drive o su un computer, e lo ripristini su qualsiasi iPhone. Velcrypt non riceve mai il file né la password, e una password del backup dimenticata non si può recuperare.
 
 ## Il modello di minaccia in sintesi
 
@@ -103,11 +105,12 @@ Nella prima versione, i dati delle casseforti sono anche **esclusi dai backup iC
 | Qualcuno cerca di dimostrare che hai altre casseforti | In gran parte | Nessun elenco, nessun messaggio di “sequenza errata”; l’app non mostra il numero di casseforti. |
 | Furto di un iPhone bloccato | Sì | Protezione dati di iOS più la cifratura AES-256-GCM di Velcrypt. |
 | Attacco a forza bruta sulla sequenza da file estratti | Rallentato | PBKDF2 con oltre 600.000 iterazioni e salt per dispositivo; una sequenza lunga fa la differenza. |
-| Violazione di un account cloud | Sì | I dati non vengono caricati e nella v1 sono esclusi dai backup iCloud. |
+| Violazione di un account cloud | Sì | I dati non vengono caricati e sono esclusi dai backup iCloud; un backup cifrato che salvi su iCloud Drive resta cifrato con la tua password. |
 | Manomissione dei file cifrati | Rilevata | L’autenticazione di AES-256-GCM rifiuta i dati modificati. |
 | Qualcuno ti guarda mentre disegni la sequenza | No | Vedi sotto. |
 | Malware o dispositivo con jailbreak | No | Vedi sotto. |
-| Sequenza dimenticata o telefono perso | No | Nessun recupero possibile. |
+| Sequenza dimenticata o password del backup dimenticata | No | Nessun recupero possibile. |
+| Telefono perso o inizializzato | Solo con backup | Ripristina un backup cifrato creato in Impostazioni → Backup. |
 
 <a id="what-velcrypt-does-not-protect-against"></a>
 ## Cosa Velcrypt non protegge
@@ -115,12 +118,12 @@ Nella prima versione, i dati delle casseforti sono anche **esclusi dai backup iC
 Ogni strumento di sicurezza ha dei limiti, e dovresti conoscere quelli di Velcrypt prima di affidartici.
 
 - **Sguardi indiscreti.** Se qualcuno ti vede disegnare la sequenza, di persona o tramite una telecamera, può aprire quella cassaforte. Disegnala al riparo da sguardi e preferisci una sequenza che non somigli a una lettera o a una forma semplice.
-- **Essere costretto a sbloccare.** Velcrypt non può impedire che qualcuno ti costringa a disegnare una sequenza. Una cassaforte esca può aiutare; una sequenza di emergenza (in arrivo, Premium) è in programma per aprire una cassaforte scelta e rimuovere in silenzio l’accesso alle altre.
+- **Essere costretto a sbloccare.** Velcrypt non può impedire che qualcuno ti costringa a disegnare una sequenza. Una cassaforte esca (con il Premium) può aiutare; una [sequenza di emergenza](id:duress-pattern), che aprirebbe una cassaforte scelta e rimuoverebbe in silenzio l’accesso alle altre, è prevista per un aggiornamento futuro.
 - **Un telefono consegnato con la cassaforte aperta.** Mentre una cassaforte è sbloccata, chiunque tenga il telefono vede ciò che vedi tu. Bloccala prima di passare il telefono a qualcuno.
 - **Dispositivi compromessi o con jailbreak e malware.** Un software in grado di leggere lo schermo, registrare i tocchi o ispezionare la memoria delle app su un dispositivo compromesso può aggirare qualsiasi cifratura a livello di app.
 - **Screenshot o foto dello schermo.** Velcrypt non può impedire a un’altra fotocamera di fotografare il tuo display.
 - **Copie altrove.** L’importazione copia una foto; l’originale resta in Foto finché non lo elimini, e poi rimane in Eliminati di recente per circa 30 giorni. Possono esistere copie anche in Foto di iCloud, nelle app di chat, nelle email o sul telefono di qualcun altro. Segui [eliminare gli originali dopo l’importazione](id:delete-original-photos-after-import).
-- **Telefono perso o sequenza dimenticata.** In entrambi i casi i dati sono persi. Non esistono frasi di recupero né reimpostazioni. Vedi [hai dimenticato la sequenza?](id:forgot-vault-pattern).
+- **Sequenza o password del backup dimenticata.** In entrambi i casi i dati sono persi. Non esistono frasi di recupero né reimpostazioni. Se perdi il telefono, puoi recuperare solo ciò che hai salvato in un backup cifrato. Vedi [hai dimenticato la sequenza?](id:forgot-vault-pattern).
 - **Rilevare che usi Velcrypt.** L’icona dell’app è visibile e strumenti forensi potrebbero vedere che Velcrypt contiene dati cifrati e all’incirca quanti. Velcrypt non pretende di nasconderlo: nasconde solo il numero di casseforti e il loro contenuto.
 - **Sequenze deboli o facili da indovinare.** Una sequenza corta, o a forma di L, Z o quadrato, è molto più facile da indovinare. Prova una forma simile con il [verifica robustezza sequenza](id:pattern-strength-checker), mai quella vera.
 

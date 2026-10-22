@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "velcrypt support"
 keywords: ["velcrypt kontakt", "velcrypt hilfe", "velcrypt tresor öffnet nicht", "velcrypt fehlerbehebung", "velcrypt e-mail"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 schemaType: ContactPage
 order: 5
 related: [faq, forgot-vault-pattern, auto-lock, security, privacy]
@@ -54,7 +54,8 @@ Bitte schick uns **nicht** dein Muster und keine Screenshots, die private Inhalt
 Velcrypt ist so gebaut, dass niemand außer dir deine Tresore öffnen kann – auch wir nicht. Deshalb kann der Support **nicht**:
 
 - ein vergessenes Muster wiederherstellen oder zurücksetzen,
-- einen Tresor von einem verlorenen, kaputten oder zurückgesetzten iPhone wiederherstellen,
+- einen Tresor von einem verlorenen, kaputten oder zurückgesetzten iPhone wiederherstellen (das geht nur mit einem verschlüsselten Backup, das du selbst erstellt hast),
+- ein vergessenes Backup-Passwort wiederherstellen,
 - dir sagen, wie viele Tresore auf einem Gerät existieren,
 - Dateien entschlüsseln oder Inhalte für dich abrufen.
 
@@ -67,6 +68,18 @@ Das ist keine Richtlinie, die wir auf Anfrage ändern könnten, sondern die Art,
 Das ist die häufigste Frage. Velcrypt hat keine Meldung „falsches Muster“: Jedes Muster, das die App noch nicht kennt, öffnet einfach einen neuen, leeren Tresor. Hast du deine Fotos erwartet, hast du höchstwahrscheinlich ein leicht anderes Muster gezeichnet – ein Punkt zu viel, eine verpasste Ecke oder ein anderer Startpunkt.
 
 Sperre die App und zeichne dein Muster dann langsam und bewusst noch einmal. Probiere ähnliche Varianten, an die du dich erinnerst. Dein ursprünglicher Tresor ist noch da und unverändert; der leere ersetzt ihn nicht.
+
+### Ich wechsle auf ein neues iPhone
+
+Tresore werden nicht über iCloud- oder Computer-Backups übertragen. Öffne auf dem alten iPhone jeden Tresor, erstelle unter Einstellungen → Backup ein verschlüsseltes Backup und speichere die Datei an einem anderen Ort, etwa in iCloud Drive oder auf einem Computer. Öffne auf dem neuen iPhone Velcrypt, öffne den Zieltresor und stelle das Backup unter Einstellungen → Backup mit deinem Backup-Passwort wieder her. Die Objekte werden dem geöffneten Tresor hinzugefügt; es wird nichts gelöscht.
+
+### Mein Backup-Passwort funktioniert nicht
+
+Gib genau das Passwort ein, das du beim Erstellen dieses Backups gewählt hast, inklusive Groß- und Kleinschreibung. Velcrypt kennt dieses Passwort nicht und kann es nicht wiederherstellen – ohne es lässt sich das Backup nicht öffnen.
+
+### Premium fehlt auf meinem neuen iPhone
+
+Öffne den Premium-Bildschirm und tippe auf „Käufe wiederherstellen“, angemeldet mit demselben Apple Account wie beim Kauf. Abos verwaltest und kündigst du in den Einstellungen deines Apple Accounts; Erstattungen bearbeitet Apple.
 
 ### Die App sperrt sich zu schnell
 

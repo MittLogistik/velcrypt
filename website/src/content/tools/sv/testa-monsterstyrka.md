@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "testa mönsterlås styrka"
 keywords: ["hur starkt är mitt mönster", "upplåsningsmönster styrka", "mönsterlås säkerhet", "5x5 mönsterlås", "säkert mönster tips", "mönsterlösenord styrka"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Rita ett testmönster på ett 5×5-rutnät och se ett grovt styrkebetyg. Körs lokalt. Använd aldrig ditt riktiga mönster."
 toolName: "Mönsterkontroll"
 schemaType: WebPage
@@ -43,7 +43,7 @@ faq:
   - q: "Skyddar ett starkt mönster mot någon som tittar på?"
     a: "Nej. Om någon ser dig rita det spelar styrkan ingen roll. Skärma av skärmen och rita mönstret där du inte kan bli iakttagen eller filmad."
   - q: "Vad händer om jag glömmer ett komplicerat mönster?"
-    a: "I Velcrypts första version kan ett glömt mönster inte återställas, varken av dig eller av Velcrypt. Välj något komplext men lätt att minnas, och öva på det innan du förlitar dig på det."
+    a: "I Velcrypt kan ett glömt mönster inte återställas, varken av dig eller av Velcrypt. Välj något komplext men lätt att minnas, och öva på det innan du förlitar dig på det."
 ---
 
 ## Så fungerar det
@@ -90,4 +90,4 @@ Den här kontrollen varken sparar eller skickar något, men vanan är viktigare 
 
 I Velcrypt är ditt mönster nyckeln: krypteringsnycklarna härleds från det med PBKDF2-HMAC-SHA512 och minst 600 000 iterationer, vilket gör varje gissning långsam. Se [kryptering](id:encryption). Varje mönster öppnar dessutom ett eget valv, som förklaras under [dolda valv](id:hidden-vaults) och [mönsterlås](id:pattern-lock).
 
-Ett starkt mönster kan inte skydda mot någon som ser dig rita det, en telefon som lämnas över med valvet öppet eller ett glömt mönster. I första versionen finns ingen återställning, så läs [glömt valvmönstret](id:forgot-vault-pattern) innan du väljer något du kanske inte kommer ihåg.
+Ett starkt mönster kan inte skydda mot någon som ser dig rita det, en telefon som lämnas över med valvet öppet eller ett glömt mönster. Det finns ingen återställning av mönster, så läs [glömt valvmönstret](id:forgot-vault-pattern) innan du väljer något du kanske inte kommer ihåg.

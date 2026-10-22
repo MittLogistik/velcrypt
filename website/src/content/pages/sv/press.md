@@ -8,13 +8,13 @@ answer: "Velcrypt är en iPhone-app (iOS 17 eller senare) som förvarar privata 
 keyFacts:
   - "Slogan: ”Well Encrypted. Truly Private.”"
   - "Plattform: iPhone, iOS 17 eller senare."
-  - "Prismodell: gratis med valfri Premium; priser meddelas senare."
+  - "Prismodell: gratis med valfri Premium (1,99 USD/vecka, 19,99 USD/år, 39,99 USD livstid)."
   - "Nedladdningar: logotyp och symbol (transparent PNG) samt appikon i 1024 px."
   - "Presskontakt: press@velcrypt.app."
 primaryKeyword: "velcrypt pressmaterial"
 keywords: ["velcrypt logotyp", "velcrypt mediekit", "velcrypt faktablad", "velcrypt varumärkesfärger"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 schemaType: WebPage
 order: 8
 related: [about, security, features, pricing]
@@ -37,7 +37,7 @@ Velcrypt är en iPhone-app för privata bilder, videor och dokument. Filerna kry
 
 ### 100 ord
 
-Velcrypt är en inbyggd iPhone-app som förvarar privata bilder, videor och dokument i krypterade valv på enheten. I stället för Face ID eller en PIN-kod öppnar du ett valv genom att rita ett mönster på ett 5×5-rutnät av punkter – en hemlighet som bara finns i ditt minne. Varje mönster är ett eget valv, och ett mönster appen aldrig sett öppnar ett tomt valv, så ingenting avslöjar hur många valv som finns. Filerna krypteras med AES-256-GCM via Apple CryptoKit. Det finns inget konto, ingen server och ingen spårning av valvinnehållet. Velcrypt har en gratisversion och en valfri Premium-uppgradering.
+Velcrypt är en inbyggd iPhone-app som förvarar privata bilder, videor och dokument i krypterade valv på enheten. I stället för Face ID eller en PIN-kod öppnar du ett valv genom att rita ett mönster på ett 5×5-rutnät av punkter – en hemlighet som bara finns i ditt minne. Varje mönster är ett eget valv, och ett mönster appen aldrig sett öppnar ett tomt valv, så ingenting avslöjar hur många valv som finns. Filerna krypteras med AES-256-GCM via Apple CryptoKit. Det finns inget konto, ingen server och ingen spårning av valvinnehållet. Velcrypt har en gratisversion och en valfri Premium-uppgradering, och ges ut av Swedish Treats AB i Sverige.
 
 ## Faktablad
 
@@ -47,12 +47,15 @@ Velcrypt är en inbyggd iPhone-app som förvarar privata bilder, videor och doku
 | Slogan | Well Encrypted. Truly Private. |
 | Plattform | iPhone, iOS 17 eller senare |
 | Kategori | Integritet / verktyg – krypterat valv för bilder, videor och dokument |
-| Prismodell | Gratis med valfri Premium; priser meddelas senare |
+| Utgivare | Swedish Treats AB, Sverige |
+| Prismodell | Gratis (ett valv, 50 objekt) med valfri Premium: 1,99 USD/vecka, 19,99 USD/år med 3 dagars gratis provperiod, 39,99 USD livstid. Priserna varierar mellan länder. |
 | Upplåsning | Mönster på ett 5×5-rutnät av punkter; ingen Face ID eller Touch ID, med avsikt |
 | Valv | Varje mönster är ett eget valv; ingen valvlista |
 | Kryptering | AES-256-GCM (Apple CryptoKit); nyckelhärledning med PBKDF2-HMAC-SHA512 |
 | Data | 100 % på enheten; inget konto, ingen molnsynk, inga annonser |
-| Planerat | Tvångsmönster (kommer snart), krypterad säkerhetskopiering |
+| Säkerhetskopiering | Manuell krypterad säkerhetskopia (.velcrypt-fil) med eget lösenord, gratis |
+| Språk | 11, bland annat svenska, engelska, tyska, japanska och koreanska |
+| Planerat | Tvångsmönster |
 | Presskontakt | press@velcrypt.app |
 
 För tekniska detaljer, länka till [säkerhetsmodellen](id:security); för en översikt, se [funktioner](id:features).
@@ -82,11 +85,11 @@ Använd materialet som det levereras: lämna tillräckligt med fritt utrymme run
 Några punkter som hjälper till att hålla bevakningen korrekt:
 
 - Velcrypt har **inte** granskats av en oberoende part. Beskriv inte appen som granskad.
-- Tvångsmönstret och krypterad säkerhetskopiering är planerade, inte tillgängliga.
+- Tvångsmönstret är planerat, inte tillgängligt. Krypterad säkerhetskopiering finns och är gratis.
 - Velcrypt kan inte återställa glömda mönster; det är en medveten följd av att det inte finns något konto eller någon server.
 - Det finns ingen pressbevakning att citera ännu, och vi publicerar inga användarsiffror eller betyg.
 
-Läs [om Velcrypt](id:about) för principerna bakom appen och [priser](id:pricing) för vad Premium är planerat att innehålla.
+Läs [om Velcrypt](id:about) för principerna bakom appen och [priser](id:pricing) för vad Premium innehåller och kostar.
 
 ## Presskontakt
 

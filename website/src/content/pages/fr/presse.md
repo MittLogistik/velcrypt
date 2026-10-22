@@ -8,13 +8,13 @@ answer: "Velcrypt est une app iPhone (iOS 17 ou version ultérieure) qui conserv
 keyFacts:
   - "Signature : « Well Encrypted. Truly Private. »"
   - "Plateforme : iPhone, iOS 17 ou version ultérieure."
-  - "Modèle tarifaire : gratuit avec option Premium ; tarifs annoncés ultérieurement."
+  - "Modèle tarifaire : gratuit ; Premium à 1,99 $/semaine, 19,99 $/an ou 39,99 $ à vie (USD)."
   - "Téléchargements : logo et symbole (PNG transparent) et icône de l’app en 1024 px."
   - "Contact presse : press@velcrypt.app."
 primaryKeyword: "kit presse velcrypt"
 keywords: ["logo velcrypt", "kit média velcrypt", "fiche d’information velcrypt", "couleurs de la marque velcrypt"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 schemaType: WebPage
 order: 8
 related: [about, security, features, pricing]
@@ -47,12 +47,13 @@ Velcrypt est une app iPhone native qui conserve photos, vidéos et documents pri
 | Signature | Well Encrypted. Truly Private. |
 | Plateforme | iPhone, iOS 17 ou version ultérieure |
 | Catégorie | Confidentialité / utilitaires — coffre-fort chiffré pour photos, vidéos et documents |
-| Modèle tarifaire | Gratuit avec option Premium ; tarifs à annoncer |
+| Modèle tarifaire | Gratuit (1 coffre, 50 éléments) ; Premium : 1,99 $/semaine, 19,99 $/an avec 3 jours d’essai gratuit, ou 39,99 $ à vie (USD, prix variables selon le pays) |
 | Déverrouillage | Motif sur une grille de 5×5 points ; ni Face ID ni Touch ID, par choix |
 | Coffres | Chaque motif est son propre coffre ; aucune liste de coffres |
 | Chiffrement | AES-256-GCM (Apple CryptoKit) ; dérivation de clé PBKDF2-HMAC-SHA512 |
-| Données | 100 % sur l’appareil ; sans compte, sans synchronisation cloud, sans publicité |
-| Prévu | Motif de contrainte (bientôt disponible), sauvegarde chiffrée |
+| Données | 100 % sur l’appareil ; sans compte, sans synchronisation cloud, sans publicité ; sauvegarde chiffrée manuelle et gratuite |
+| Éditeur | Swedish Treats AB, Suède |
+| Prévu | Motif de contrainte |
 | Contact presse | press@velcrypt.app |
 
 Pour le détail technique, renvoyez vers le [modèle de sécurité](id:security) ; pour une vue d’ensemble, voir les [fonctionnalités](id:features).
@@ -82,11 +83,11 @@ Merci d’utiliser les fichiers tels quels : laissez suffisamment d’espace aut
 Quelques points pour garantir une couverture exacte :
 
 - Velcrypt n’a **pas** fait l’objet d’un audit indépendant. Merci de ne pas le présenter comme audité.
-- Le motif de contrainte et la sauvegarde chiffrée sont prévus, pas disponibles.
+- La sauvegarde chiffrée est disponible et gratuite ; le motif de contrainte est prévu, pas disponible.
 - Velcrypt ne peut pas récupérer un motif oublié ; c’est une conséquence voulue de l’absence de compte et de serveur.
 - Il n’existe pas encore d’article de presse à citer, et nous ne publions ni nombre d’utilisateurs ni notes.
 
-Lisez [à propos de Velcrypt](id:about) pour les principes de l’app, et les [tarifs](id:pricing) pour le contenu prévu du Premium.
+Lisez [à propos de Velcrypt](id:about) pour les principes de l’app, et les [tarifs](id:pricing) pour le contenu du Premium.
 
 ## Contact presse
 

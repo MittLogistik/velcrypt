@@ -19,7 +19,7 @@ keywords:
   - "scansionare documenti in file iphone"
   - "dove vengono salvati i documenti scansionati iphone"
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Scansiona documenti d’identità, contratti e referti senza riempire Foto o iCloud, poi mettili al sicuro e rimuovi le copie rimaste."
 category: practical
 order: 34
@@ -124,7 +124,7 @@ Bloccare una nota o tenere un PDF in Sul mio iPhone è un buon inizio, ma chiunq
 
 Velcrypt può importare documenti dall’app File in una cassaforte cifrata ([documenti privati](id:private-documents)). I file vengono cifrati sul dispositivo con AES-256-GCM usando chiavi derivate dalla tua sequenza di sblocco, e niente viene caricato online ([offline, senza account](id:offline-no-account)). Velcrypt non ha uno scanner né una fotocamera integrati, quindi prima scansioni con File o Note e poi importi il PDF.
 
-Tieni presente che nella prima versione i contenuti della cassaforte non sono inclusi nei backup di iCloud o del computer. Se un documento originale è insostituibile, conserva la versione cartacea o un’altra copia in un posto che controlli tu. Il nostro [caso d’uso su documenti medici e d’identità](id:medical-and-id-documents) affronta questo equilibrio.
+Tieni presente che i contenuti della cassaforte non sono inclusi nei backup di iCloud o del computer. Se un documento originale è insostituibile, conserva la versione cartacea o crea un backup cifrato in Impostazioni → Backup e salvalo in un posto che controlli tu. Il nostro [caso d’uso su documenti medici e d’identità](id:medical-and-id-documents) affronta questo equilibrio.
 
 ## Ripulire ciò che resta
 

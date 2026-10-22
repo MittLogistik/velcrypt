@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "kryptera dokument iphone"
 keywords: ["kryptera pdf iphone", "spara id-handlingar säkert iphone", "säkert dokumentvalv iphone", "dölja dokument iphone", "krypterad passkopia iphone"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Importera PDF:er, skanningar och id-kopior från Filer till ett krypterat valv, visa dem offline och exportera bara vid behov."
 status: available
 schemaType: WebPage
@@ -24,11 +24,11 @@ faq:
   - q: "Vilka dokument kan jag spara i Velcrypt?"
     a: "Dokument som du når i appen Filer i iOS, som PDF:er och skannade sidor, samt bilder av dokument. Typiska exempel är kopior av pass och id-kort, läkarintyg, avtal och skattepapper."
   - q: "Kan jag skanna ett dokument direkt till Velcrypt?"
-    a: "Velcrypt har ingen inbyggd skanner eller kamera. Skanna med en app som sparar till Filer, importera skanningen till Velcrypt och radera sedan filen som skapades."
+    a: "Velcrypt har ingen inbyggd dokumentskanner. Du kan fotografera dokumentet med kameran i valvet, så att bilden aldrig hamnar i bildbiblioteket, eller skanna med en app som sparar till Filer, importera skanningen och radera sedan filen som skapades."
   - q: "Kan jag skicka ett dokument från mitt valv till någon?"
     a: "Ja, genom att exportera det. Export lägger en dekrypterad kopia utanför valvet, till exempel i Filer eller i ett mål i delningsmenyn. Den kopian skyddas inte längre av Velcrypt, så radera den när du är klar."
   - q: "Laddas mina krypterade dokument upp eller synkas de?"
-    a: "Nej. Velcrypt har inga servrar, inget konto och ingen molnsynkning. Dokumenten stannar krypterade i din iPhone och undantas från iCloud- och datorsäkerhetskopior i den första versionen."
+    a: "Nej. Velcrypt har inga servrar, inget konto och ingen molnsynkning. Dokumenten stannar krypterade i din iPhone och undantas från iCloud- och datorsäkerhetskopior."
 ---
 
 Pass, försäkringskort, läkarintyg och påskrivna avtal hamnar ofta som lösa filer i Hämtade filer eller som bilder i kamerarullen. Velcrypt ger dem en egen, krypterad plats i din iPhone, åtskild från allt du bläddrar i varje dag.
@@ -48,7 +48,7 @@ Varje dokument krypteras på enheten med AES-256-GCM, med en egen nyckel härled
 
 ## Skanna privat
 
-Velcrypt har ingen kamera eller skanner. Det säkraste flödet är att skanna med ett verktyg som sparar till Filer, importera resultatet till Velcrypt och sedan radera skanningen på dess ursprungliga plats. Om skannern också sparade en kopia i Bilder eller i en molnmapp, radera den också.
+Velcrypt har ingen dokumentskanner, men kameran i valvet kan fotografera ett dokument direkt in i valvet. Vill du ha en riktig skanning är det säkraste flödet att skanna med ett verktyg som sparar till Filer, importera resultatet till Velcrypt och sedan radera skanningen på dess ursprungliga plats. Om skannern också sparade en kopia i Bilder eller i en molnmapp, radera den också.
 
 Guiden om [att skanna dokument privat på iPhone](id:scan-documents-privately-iphone) jämför de inbyggda skanningsalternativen i iOS och var vart och ett sparar resultatet.
 
@@ -89,5 +89,5 @@ Om du väljer mellan dessa går [så lösenordsskyddar du en mapp på iPhone](id
 
 ## Bra att veta
 
-- Valvdata ingår inte i iCloud- eller datorsäkerhetskopior i den första versionen. Spara en andra kopia av oersättliga original, som en skanning av ditt pass, någonstans du litar på.
+- Valvdata ingår inte i iCloud- eller datorsäkerhetskopior. Skapa en krypterad säkerhetskopia av valvet, eller spara en andra kopia av oersättliga original, som en skanning av ditt pass, någonstans du litar på.
 - Ett valv kan inte skydda ett dokument som någon fotograferar medan det är öppet på din skärm.

@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "导入保险箱后删除原图"
 keywords: ["iPhone 彻底删除照片", "清空最近删除", "iOS 18 最近删除在哪", "私密相册导入后删除原图", "保险箱 App 是复制还是移动", "删除照片但保留在保险箱"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "复制与移动的区别、从“照片”删除原图、清空“最近删除”，以及仍然留在 iCloud 和聊天中的副本。"
 category: practical
 order: 30
@@ -125,4 +125,4 @@ iCloud 照片让你的 iPhone、iPad、Mac 和 iCloud.com 保持同一个同步�
 
 Velcrypt 遵循上面描述的复制模式。当你 [导入照片](id:hide-photos) 或 [视频](id:hide-videos) 时，保险箱会用 AES-256-GCM 加密自己的副本，原图留在“照片”中，所以删除原图和清空“最近删除”需要你自己来做。
 
-动手之前，请坦诚地权衡一个限制。Velcrypt 的保险箱数据只保存在你的 iPhone 上，不包含在 iCloud 和电脑备份中。原图一旦删除，保险箱就是那台设备上唯一的副本。如果你丢了手机或 [忘了图案](id:forgot-vault-pattern)，这些文件无论是你还是 Velcrypt 都无法恢复。加密备份功能已在计划中；在那之前，请把任何无法替代的内容在你信任的地方另存一份。
+动手之前，请坦诚地权衡一个限制。Velcrypt 的保险箱数据只保存在你的 iPhone 上，不包含在 iCloud 和电脑备份中。原图一旦删除，保险箱就是那台设备上唯一的副本。如果你丢了手机或 [忘了图案](id:forgot-vault-pattern)，这些文件无论是你还是 Velcrypt 都无法恢复。因此，删除原图之前，请在“设置”→“备份”中创建加密备份文件并存放在别处，或者把任何无法替代的内容在你信任的地方另存一份。

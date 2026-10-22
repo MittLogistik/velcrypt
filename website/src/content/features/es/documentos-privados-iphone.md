@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "guardar documentos privados iphone"
 keywords: ["cifrar pdf iphone", "guardar dni en el iphone de forma segura", "bóveda de documentos iphone", "ocultar documentos iphone", "escaneo de pasaporte cifrado iphone"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Importa PDF, escaneos y copias del DNI desde Archivos a una bóveda cifrada, míralos sin conexión y exporta solo cuando haga falta."
 status: available
 schemaType: WebPage
@@ -24,11 +24,11 @@ faq:
   - q: "¿Qué documentos puedo guardar en Velcrypt?"
     a: "Los documentos a los que puedes acceder desde la app Archivos de iOS, como PDF y páginas escaneadas, además de imágenes de documentos. Ejemplos típicos son copias del pasaporte y del DNI, informes médicos, contratos y papeles de impuestos."
   - q: "¿Puedo escanear un documento directamente en Velcrypt?"
-    a: "Velcrypt no tiene escáner ni cámara integrados. Escanea con una app que guarde en Archivos, importa el escaneo en Velcrypt y después borra el archivo que se creó."
+    a: "Velcrypt no tiene escáner de documentos. Puedes fotografiar una página con la cámara de la bóveda, que la guarda directamente en la bóveda, o escanear con una app que guarde en Archivos, importa el escaneo en Velcrypt y después borra el archivo que se creó."
   - q: "¿Puedo enviar a alguien un documento de mi bóveda?"
     a: "Sí, exportándolo. Exportar deja una copia descifrada fuera de la bóveda, por ejemplo en Archivos o en el destino que elijas del menú Compartir. Esa copia ya no está protegida por Velcrypt, así que bórrala cuando termines."
   - q: "¿Se suben o sincronizan mis documentos?"
-    a: "No. Velcrypt no tiene servidores, ni cuenta, ni sincronización en la nube. Los documentos se quedan cifrados en tu iPhone y, en la primera versión, quedan fuera de las copias de iCloud y del ordenador."
+    a: "No. Velcrypt no tiene servidores, ni cuenta, ni sincronización en la nube. Los documentos se quedan cifrados en tu iPhone y quedan fuera de las copias de iCloud y del ordenador, salvo que crees una copia de seguridad cifrada de Velcrypt."
 ---
 
 Pasaportes, tarjetas sanitarias, informes médicos y contratos firmados suelen acabar como archivos sueltos en Descargas o como fotos en el carrete. Velcrypt les da un sitio propio y cifrado en tu iPhone, separado de todo lo que consultas a diario.
@@ -48,7 +48,7 @@ Cada documento se cifra en el dispositivo con AES-256-GCM, con su propia clave d
 
 ## Escanear de forma privada
 
-Velcrypt no incluye cámara ni escáner. El flujo más seguro es escanear con una herramienta que guarde en Archivos, importar el resultado en Velcrypt y después borrar el escaneo de su ubicación original. Si el escáner también guardó una copia en Fotos o en una carpeta en la nube, bórrala también.
+Velcrypt no incluye un escáner de documentos. Para una foto rápida de una página, usa la cámara de la bóveda: la imagen va directamente a la bóveda y nunca pasa por tu fototeca. Para un escaneo de varias páginas, el flujo más seguro es escanear con una herramienta que guarde en Archivos, importar el resultado en Velcrypt y después borrar el escaneo de su ubicación original. Si el escáner también guardó una copia en Fotos o en una carpeta en la nube, bórrala también.
 
 La guía sobre [cómo escanear documentos de forma privada en el iPhone](id:scan-documents-privately-iphone) compara las opciones de escaneo integradas en iOS y dónde guarda cada una el resultado.
 
@@ -89,5 +89,5 @@ Si estás decidiendo entre estas opciones, [cómo proteger una carpeta con contr
 
 ## Conviene saber
 
-- En la primera versión, los datos de la bóveda no se incluyen en las copias de iCloud ni del ordenador. Guarda una segunda copia de los originales irreemplazables, como un escaneo de tu pasaporte, en un lugar de confianza.
+- Los datos de la bóveda no se incluyen en las copias de iCloud ni del ordenador. Para documentos irreemplazables, como un escaneo de tu pasaporte, crea una copia de seguridad cifrada en Ajustes → Copia de seguridad y guárdala fuera del iPhone.
 - Una bóveda no puede proteger un documento que alguien fotografía mientras está abierto en tu pantalla.

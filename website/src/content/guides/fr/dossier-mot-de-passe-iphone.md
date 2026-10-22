@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "mettre un mot de passe sur un dossier iphone"
 keywords: ["verrouiller l’app fichiers iphone", "dossier protégé par mot de passe iphone", "verrouiller un dossier iphone", "protéger des fichiers par mot de passe iphone", "dossier sécurisé iphone", "cacher des fichiers iphone"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Ce que l’app Fichiers peut verrouiller ou non, et les façons concrètes de protéger un dossier de documents sur iPhone."
 category: hiding
 order: 6
@@ -111,4 +111,4 @@ Pour les pièces d’identité et les documents de santé en particulier, le cas
 
 Velcrypt range les [documents privés](id:private-documents) dans les mêmes coffres chiffrés que les photos et les vidéos. Vous les importez depuis l’app Fichiers, et ils sont chiffrés sur l’appareil en AES-256-GCM avec des clés dérivées de votre schéma de déverrouillage. Pas de compte, rien n’est envoyé sur un serveur ; la page sur le [stockage hors ligne et sans compte](id:offline-no-account) explique ce que cela signifie concrètement.
 
-Comme les données du coffre sont exclues des sauvegardes iCloud et sur ordinateur, gardez une copie indépendante de tout document que vous ne pouvez pas vous permettre de perdre, dans un endroit de confiance. Si le téléphone est perdu ou le schéma oublié, personne ne peut ouvrir le coffre, pas même Velcrypt.
+Comme les données du coffre sont exclues des sauvegardes iCloud et sur ordinateur, créez une sauvegarde chiffrée (Réglages → Sauvegarde) de tout document que vous ne pouvez pas vous permettre de perdre, et conservez-la dans un endroit de confiance. Si le schéma est oublié, personne ne peut ouvrir le coffre, pas même Velcrypt.

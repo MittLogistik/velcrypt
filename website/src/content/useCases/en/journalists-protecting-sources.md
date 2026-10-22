@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "journalist protect sources iphone"
 keywords: ["protect source photos phone", "journalist phone security", "source documents iphone privacy", "reporter device security", "threat modelling journalists"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Threat modelling, minimisation and metadata for reporters, and where an encrypted iPhone vault fits as one layer of source protection."
 group: professional
 schemaType: Article
@@ -63,7 +63,7 @@ The answers decide your tools. Over-engineering a low-risk story wastes time; un
 
 Velcrypt is one layer in that plan. It stores photos, videos and documents in encrypted vaults on your iPhone, using AES-256-GCM with keys derived from your pattern. There’s no account, no server, no sync and no analytics on vault content, so there’s nothing on a server for anyone to request.
 
-Vaults open with a pattern on a 5×5 grid. Velcrypt deliberately doesn’t support Face ID or Touch ID, because biometrics can be used without your consent; a pattern lives only in your memory. The reasoning is in [pattern vs PIN vs Face ID](id:pattern-lock-vs-pin-vs-face-id). Every pattern opens its own vault, and an unknown pattern opens an empty one with no error, which supports [plausible deniability](id:plausible-deniability-explained). A duress pattern that removes access to other vaults is a planned Premium feature, coming soon.
+Vaults open with a pattern on a 5×5 grid. Velcrypt deliberately doesn’t support Face ID or Touch ID, because biometrics can be used without your consent; a pattern lives only in your memory. The reasoning is in [pattern vs PIN vs Face ID](id:pattern-lock-vs-pin-vs-face-id). Every pattern opens its own vault, and an unknown pattern opens an empty one with no error, which supports [plausible deniability](id:plausible-deniability-explained). A duress pattern that removes access to other vaults is planned for a future update and isn’t available today.
 
 ## Honest limits
 
@@ -74,6 +74,6 @@ A vault is not a source-protection strategy on its own:
 - **Compromised devices.** Malware on a jailbroken or targeted phone can see what’s on screen.
 - **Observation.** Someone watching you draw your pattern, or cameras in the room, defeat it.
 - **Visible app.** The Velcrypt icon is on your Home Screen unless you use iOS 18’s option to hide apps.
-- **No recovery.** In the first version, vault data isn’t backed up. Lose the phone or forget the pattern, and it’s gone — which can be a feature for minimisation, and a risk for material you must keep. See the [security page](id:security) for the full picture.
+- **No automatic recovery.** Vault data isn’t in iCloud or computer backups. Forget the pattern, or lose the phone without an encrypted backup file, and it’s gone — which can be a feature for minimisation, and a risk for material you must keep. A backup file is one more copy to protect. See the [security page](id:security) for the full picture.
 
 Protecting sources is mostly about habits. Good tools help, but the decision to keep less, share less and plan ahead does most of the work.

@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "private documents app iphone"
 keywords: ["encrypt pdf iphone", "store id documents iphone securely", "secure document vault iphone", "hide documents iphone", "encrypted passport scan iphone"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Import PDFs, scans and ID copies from Files into an encrypted vault, view them offline and export only when needed."
 status: available
 schemaType: WebPage
@@ -24,11 +24,11 @@ faq:
   - q: "Which documents can I store in Velcrypt?"
     a: "Documents you can reach in the iOS Files app, such as PDFs and scanned pages, as well as images of documents. Typical examples are passport and ID copies, medical letters, contracts and tax papers."
   - q: "Can I scan a document directly into Velcrypt?"
-    a: "Velcrypt has no built-in scanner or camera. Scan with an app that saves to Files, import the scan into Velcrypt, then delete the file it created."
+    a: "Velcrypt has no document scanner, but its in-vault camera can photograph a document straight into the vault. For a PDF scan, use an app that saves to Files, import the scan into Velcrypt, then delete the file it created."
   - q: "Can I send a document from my vault to someone?"
     a: "Yes, by exporting it. Export places a decrypted copy outside the vault, for example in Files or a share sheet destination. That copy is no longer protected by Velcrypt, so delete it once you are done."
   - q: "Are my documents uploaded or synced?"
-    a: "No. Velcrypt has no servers, no account and no cloud sync. Documents stay encrypted on your iPhone and are excluded from iCloud and computer backups in the first version."
+    a: "No. Velcrypt has no servers, no account and no cloud sync. Documents stay encrypted on your iPhone and are excluded from iCloud and computer backups. You can make an encrypted backup file yourself in Settings → Backup."
 ---
 
 Passports, insurance cards, medical letters and signed contracts tend to end up as loose files in Downloads or as photos in the camera roll. Velcrypt gives them a dedicated, encrypted place on your iPhone, separate from everything you browse every day.
@@ -48,7 +48,7 @@ Each document is encrypted on the device with AES-256-GCM, using its own key der
 
 ## Scanning privately
 
-Velcrypt does not include a camera or scanner. The safest flow is to scan with a tool that saves to Files, import the result into Velcrypt and then delete the scan from its original location. If the scanner also saved a copy to Photos or to a cloud folder, delete that too.
+Velcrypt does not include a document scanner. Its in-vault camera can take a photo of a document directly into the vault, which never touches your Photos library. For a proper scan, the safest flow is to use a tool that saves to Files, import the result into Velcrypt and then delete the scan from its original location. If the scanner also saved a copy to Photos or to a cloud folder, delete that too.
 
 The guide on [scanning documents privately on iPhone](id:scan-documents-privately-iphone) compares the built-in iOS scanning options and where each one stores its output.
 
@@ -87,5 +87,5 @@ If you are deciding between these, [how to password-protect a folder on iPhone](
 
 ## Good to know
 
-- Vault data is not included in iCloud or computer backups in the first version. Keep a second copy of irreplaceable originals, such as a scan of your passport, somewhere you trust.
+- Vault data is not included in iCloud or computer backups. For irreplaceable originals, such as a scan of your passport, create an encrypted backup in Settings → Backup and keep the file somewhere you trust.
 - A vault cannot protect a document someone photographs while it is open on your screen.

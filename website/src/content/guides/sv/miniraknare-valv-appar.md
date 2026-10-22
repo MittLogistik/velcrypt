@@ -19,7 +19,7 @@ keywords:
   - "kalkylator app gömda bilder"
   - "hitta dolda miniräknarappar"
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Så fungerar valv förklädda till miniräknare, varför en förklädnad inte är samma sak som kryptering och när knepet ändå har sin plats."
 category: choosing
 order: 22
@@ -112,6 +112,6 @@ Den sista punkten överraskar folk med alla sorters valv. Originalet ligger kvar
 
 ## Så hanterar Velcrypt det här
 
-Velcrypt låtsas inte vara något annat. Appen har ingen miniräknarförklädnad och ingen alternativ symbol. I stället fokuserar den på vad som händer när appen väl är öppen. Varje valv öppnas med sitt eget mönster som ritas på ett rutnät med 5×5 punkter, och ett mönster som appen inte har sett förut öppnar helt enkelt ett tomt valv, utan felmeddelande och utan något som bevisar att andra valv finns ([dolda valv](id:hidden-vaults)). Filerna krypteras med AES-256-GCM med nycklar som härleds från mönstret ([kryptering](id:encryption)), och allt stannar på enheten.
+Velcrypt låtsas inte vara något annat. Appen har ingen fungerande miniräknarförklädnad; med Premium kan du byta till en alternativ appikon, till exempel en miniräknare, men appen öppnas fortfarande med mönsterrutnätet. I stället fokuserar den på vad som händer när appen väl är öppen. Varje valv öppnas med sitt eget mönster som ritas på ett rutnät med 5×5 punkter, och ett mönster som appen inte har sett förut öppnar helt enkelt ett tomt valv, utan felmeddelande och utan något som bevisar att andra valv finns ([dolda valv](id:hidden-vaults)). Filerna krypteras med AES-256-GCM med nycklar som härleds från mönstret ([kryptering](id:encryption)), och allt stannar på enheten.
 
-Avvägningen är att appen syns på hemskärmen, om du inte använder iOS egen funktion för att gömma appar. Och i den första versionen säkerhetskopieras valvinnehållet ingenstans, så en förlorad telefon eller ett glömt mönster innebär förlorat innehåll. En direkt jämförelse finns i [Velcrypt mot miniräknarvalv](id:velcrypt-vs-calculator-vault-apps).
+Avvägningen är att appen syns på hemskärmen, om du inte använder iOS egen funktion för att gömma appar. Och valvinnehållet säkerhetskopieras inte automatiskt, så en förlorad telefon eller ett glömt mönster innebär förlorat innehåll om du inte själv har skapat en krypterad säkerhetskopia. En direkt jämförelse finns i [Velcrypt mot miniräknarvalv](id:velcrypt-vs-calculator-vault-apps).

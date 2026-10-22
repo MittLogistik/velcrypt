@@ -8,13 +8,13 @@ answer: "Velcrypt 是一款 iPhone App（iOS 17 或更高版本），把私密�
 keyFacts:
   - "标语：“Well Encrypted. Truly Private.”"
   - "平台：iPhone，iOS 17 或更高版本。"
-  - "定价模式：免费，可选 Premium；价格待公布。"
+  - "定价：免费版；Premium 每周 1.99 美元、每年 19.99 美元或终身 39.99 美元（各国价格不同）。"
   - "下载：标志和图形标（透明 PNG）以及 1024 像素 App 图标。"
   - "媒体联系：press@velcrypt.app。"
 primaryKeyword: "Velcrypt 媒体资料"
 keywords: ["Velcrypt 标志", "Velcrypt 媒体资料包", "Velcrypt 概况", "Velcrypt 品牌色"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 schemaType: WebPage
 order: 8
 related: [about, security, features, pricing]
@@ -47,12 +47,14 @@ Velcrypt 是一款原生 iPhone App，把私密照片、视频和文档存放在
 | 标语 | Well Encrypted. Truly Private. |
 | 平台 | iPhone，iOS 17 或更高版本 |
 | 类别 | 隐私 / 工具——加密照片、视频和文档保险箱 |
-| 定价模式 | 免费，可选 Premium；价格待公布 |
+| 定价 | 免费版（1 个保险箱、最多 50 个项目）；Premium 每周 1.99 美元、每年 19.99 美元（含 3 天免费试用）或终身 39.99 美元。各国价格不同，以 App Store 为准 |
 | 解锁方式 | 5×5 点阵上的图案；刻意不用面容 ID 或触控 ID |
 | 保险箱 | 每个图案都是独立的保险箱；没有保险箱列表 |
 | 加密 | AES-256-GCM（Apple CryptoKit）；PBKDF2-HMAC-SHA512 密钥派生 |
 | 数据 | 100% 在设备上；无需账户，没有云同步，没有广告 |
-| 计划中 | 胁迫图案（即将推出）、加密备份 |
+| 备份 | 免费的手动加密备份文件（.velcrypt），由用户自己存放 |
+| 计划中 | 胁迫图案 |
+| 发行方 | Swedish Treats AB（瑞典） |
 | 媒体联系 | press@velcrypt.app |
 
 技术细节请链接到[安全模型](id:security)；功能概览请看[功能](id:features)。
@@ -82,11 +84,11 @@ Velcrypt 是一款原生 iPhone App，把私密照片、视频和文档存放在
 以下几点有助于确保报道准确：
 
 - Velcrypt **尚未**经过独立审计。请不要将其描述为已审计。
-- 胁迫图案和加密备份尚在计划中，目前不可用。
+- 胁迫图案尚在计划中，目前不可用。加密备份已经提供，并且免费。
 - Velcrypt 无法恢复被忘记的图案；这是没有账户和服务器的有意结果。
 - 目前没有可引用的媒体报道，我们也不公布用户数量或评分。
 
-阅读[关于 Velcrypt](id:about) 了解 App 背后的原则，阅读[价格](id:pricing)了解 Premium 计划包含的内容。
+阅读[关于 Velcrypt](id:about) 了解 App 背后的原则，阅读[价格](id:pricing)了解 Premium 包含的内容。
 
 ## 媒体联系
 

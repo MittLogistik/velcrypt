@@ -4,18 +4,19 @@ title: "Seguridad de Velcrypt: así funciona el cifrado"
 description: "Cómo protege Velcrypt tus bóvedas: derivación de claves PBKDF2, clave maestra por bóveda, AES-256-GCM, Protección de datos de iOS y sus límites reales."
 h1: "Cómo funciona Velcrypt: el modelo de seguridad"
 navTitle: "Modelo de seguridad"
-answer: "Velcrypt convierte el patrón que dibujas en una clave con PBKDF2-HMAC-SHA512 (al menos 600.000 iteraciones), la usa para proteger una clave maestra aleatoria de 256 bits de esa bóveda y cifra cada archivo con AES-256-GCM en tu iPhone. No se sube nada y no hay cuenta ni copia de recuperación de tus claves."
+answer: "Velcrypt convierte el patrón que dibujas en una clave con PBKDF2-HMAC-SHA512 (al menos 600.000 iteraciones), la usa para proteger una clave maestra aleatoria de 256 bits de esa bóveda y cifra cada archivo con AES-256-GCM en tu iPhone. No se sube nada y no hay cuenta ni copia de recuperación de tus claves; solo una copia de seguridad cifrada que tú creas, protegida con tu propia contraseña."
 keyFacts:
   - "Patrón → PBKDF2-HMAC-SHA512, al menos 600.000 iteraciones, sal aleatoria por dispositivo guardada en el llavero de iOS."
   - "Cada bóveda tiene su propia clave maestra aleatoria de 256 bits; las claves por archivo se derivan con HKDF."
   - "Los archivos se cifran con AES-256-GCM mediante Apple CryptoKit, más la Protección de datos de iOS (clase de protección completa)."
   - "Un patrón desconocido abre una bóveda vacía: no hay lista de bóvedas ni mensaje de «patrón incorrecto»."
-  - "Sin red, sin cuenta y sin analítica sobre el contenido; en la v1 las bóvedas se excluyen de las copias de iCloud y del ordenador."
+  - "Sin red, sin cuenta y sin analítica sobre el contenido; las bóvedas se excluyen de las copias de iCloud y del ordenador."
+  - "La copia de seguridad opcional es un archivo cifrado por bóveda, protegido con una contraseña que tú eliges."
   - "Velcrypt aún no ha pasado una auditoría de seguridad independiente."
 primaryKeyword: "seguridad velcrypt"
 keywords: ["cifrado bóveda de fotos iphone", "cómo funciona el cifrado de velcrypt", "bóveda de fotos aes-256-gcm", "bloqueo con patrón pbkdf2", "modelo de amenazas bóveda de fotos", "app bóveda negación plausible"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 schemaType: WebPage
 order: 1
 related: [encryption, pattern-lock, hidden-vaults, aes-256-encryption-explained, plausible-deniability-explained, forgot-vault-pattern]
@@ -38,7 +39,7 @@ Esta página explica, en lenguaje claro, qué les ocurre a tus fotos, vídeos y 
 
 Velcrypt es una app para iPhone que guarda archivos privados en bóvedas cifradas en tu dispositivo. Abres una bóveda dibujando un patrón en una cuadrícula de 5×5 puntos. Ese patrón no se guarda en ningún sitio: pasa por una función de derivación de claves lenta que produce una clave, y esa clave es la que protege el contenido de la bóveda.
 
-Todo ocurre en el propio iPhone. Velcrypt no tiene cuenta, ni servidores, ni paso de subida, así que no existe ninguna copia de tu bóveda, ni de tus claves, en ningún otro lugar. Esa es su fortaleza y también su principal limitación: si olvidas el patrón o pierdes el teléfono, la bóveda no se puede recuperar.
+Todo ocurre en el propio iPhone. Velcrypt no tiene cuenta, ni servidores, ni paso de subida, así que no existe ninguna copia de tu bóveda, ni de tus claves, en ningún otro lugar, salvo una copia de seguridad cifrada que tú decidas crear. Esa es su fortaleza y también su principal limitación: si olvidas el patrón, la bóveda no se puede abrir, y si pierdes el teléfono sin tener una copia de seguridad, la bóveda no se puede recuperar.
 
 ## Del patrón a la clave
 
@@ -88,11 +89,15 @@ Velcrypt se bloquea automáticamente cuando pasa a segundo plano, tras un retard
 
 No hay desbloqueo con Face ID ni Touch ID, por diseño. Una cara o un dedo pueden usarse sin tu consentimiento: mientras duermes o bajo presión. Un patrón solo existe en tu memoria.
 
-## Sin red, sin cuenta, sin copias de seguridad
+## Sin red, sin cuenta, copias de seguridad solo si tú las creas
 
 Velcrypt funciona totalmente sin conexión. No hay registro, ni dirección de email, ni servidor, ni subida del contenido de las bóvedas, y no se recoge analítica sobre lo que guardas. La página [sin conexión y sin cuenta](id:offline-no-account) detalla lo que eso significa en la práctica.
 
-En la primera versión, los datos de las bóvedas también se **excluyen de las copias de seguridad de iCloud y del ordenador (Finder)**. Así tus archivos cifrados no acaban en los servidores de Apple ni en ningún ordenador con el que sincronices, pero tiene una consecuencia real: si tu iPhone se pierde, se rompe o se restablece, las bóvedas desaparecen con él. Está prevista una opción de copia de seguridad cifrada, sin fecha.
+Los datos de las bóvedas también se **excluyen de las copias de seguridad de iCloud y del ordenador (Finder)**. Así tus archivos cifrados no acaban en los servidores de Apple ni en ningún ordenador con el que sincronices sin que tú lo decidas, pero tiene una consecuencia real: si tu iPhone se pierde, se rompe o se restablece, las bóvedas desaparecen con él, salvo que tengas una copia de seguridad.
+
+### Copia de seguridad cifrada
+
+En Ajustes → Copia de seguridad, Velcrypt crea un archivo `.velcrypt` con la bóveda abierta, protegido con una **contraseña de copia de seguridad** que tú eliges. Cada bóveda se respalda por separado, así que una copia nunca revela tus otras bóvedas. Tú decides dónde guardarla (Archivos, iCloud Drive o un ordenador) y puedes restaurarla en cualquier iPhone; los elementos se añaden a la bóveda que tengas abierta. Velcrypt nunca recibe el archivo. Como con el patrón, una contraseña de copia de seguridad olvidada no se puede recuperar, y quien tenga el archivo solo puede intentar adivinarla, así que elige una contraseña larga.
 
 ## El modelo de amenazas de un vistazo
 
@@ -103,11 +108,12 @@ En la primera versión, los datos de las bóvedas también se **excluyen de las 
 | Alguien intenta demostrar que tienes más bóvedas | En gran medida | No hay lista de bóvedas ni mensaje de «patrón incorrecto»; la app no muestra cuántas bóvedas hay. |
 | Robo de un iPhone bloqueado | Sí | Protección de datos de iOS más el cifrado AES-256-GCM propio de Velcrypt. |
 | Ataque de fuerza bruta al patrón con archivos extraídos | Ralentizado | PBKDF2 con más de 600.000 iteraciones y sal por dispositivo; un patrón largo marca la diferencia. |
-| Filtración de una cuenta en la nube | Sí | Los datos de las bóvedas no se suben y se excluyen de las copias de iCloud en la v1. |
+| Filtración de una cuenta en la nube | Sí | Los datos de las bóvedas no se suben y se excluyen de las copias de iCloud. Si guardas una copia de seguridad en iCloud Drive, sigue cifrada con tu contraseña. |
 | Manipulación de archivos cifrados | Detectada | La autenticación de AES-256-GCM rechaza los datos modificados. |
 | Alguien te ve dibujar el patrón | No | Ver más abajo. |
 | Malware o un dispositivo con jailbreak | No | Ver más abajo. |
-| Patrón olvidado o teléfono perdido | No | No es posible recuperarlo. |
+| Teléfono perdido o restablecido | Solo con copia de seguridad | Restaura tu copia de seguridad cifrada en otro iPhone. |
+| Patrón o contraseña de copia de seguridad olvidados | No | No es posible recuperarlos. |
 
 <a id="what-velcrypt-does-not-protect-against"></a>
 ## Contra qué no protege Velcrypt
@@ -115,12 +121,12 @@ En la primera versión, los datos de las bóvedas también se **excluyen de las 
 Toda herramienta de seguridad tiene límites, y conviene que conozcas los de Velcrypt antes de confiar en ella.
 
 - **Mirar por encima del hombro.** Si alguien te ve dibujar el patrón, en persona o con una cámara, puede abrir esa bóveda. Dibújalo donde nadie te vea y piensa en un patrón que no parezca una letra o una forma simple.
-- **Que te obliguen a desbloquearla.** Velcrypt no puede impedir que alguien te coaccione para dibujar un patrón. Una bóveda señuelo puede ayudar; está previsto un patrón de coacción (próximamente, Premium) que abrirá una bóveda elegida y retirará en silencio el acceso a las demás.
+- **Que te obliguen a desbloquearla.** Velcrypt no puede impedir que alguien te coaccione para dibujar un patrón. Una bóveda señuelo (con Premium) puede ayudar; un patrón de coacción, previsto para una actualización futura, abriría una bóveda elegida y retiraría en silencio el acceso a las demás.
 - **Entregar el teléfono con la bóveda abierta.** Mientras una bóveda está desbloqueada, cualquiera que tenga el teléfono ve lo mismo que tú. Bloquéala antes de dejarle el móvil a nadie.
 - **Dispositivos comprometidos o con jailbreak y malware.** Un software capaz de leer la pantalla, registrar toques o inspeccionar la memoria de las apps en un dispositivo comprometido puede burlar cualquier cifrado a nivel de app.
 - **Capturas de pantalla o fotos de la pantalla.** Velcrypt no puede impedir que otra cámara fotografíe tu pantalla.
 - **Copias en otros lugares.** Importar copia la foto; el original sigue en Fotos hasta que lo borres y después permanece en «Eliminado» unos 30 días. También puede haber copias en Fotos en iCloud, apps de mensajería, el email o el teléfono de otra persona. Sigue la guía para [borrar los originales después de importar](id:delete-original-photos-after-import).
-- **Perder el teléfono u olvidar el patrón.** En ambos casos los datos se pierden. No hay frase de recuperación ni restablecimiento. Consulta [olvidé el patrón de mi bóveda](id:forgot-vault-pattern).
+- **Perder el teléfono u olvidar el patrón.** Sin una copia de seguridad, en ambos casos los datos se pierden. No hay frase de recuperación ni restablecimiento, y tampoco para una contraseña de copia de seguridad olvidada. Consulta [olvidé el patrón de mi bóveda](id:forgot-vault-pattern).
 - **Que se detecte que usas Velcrypt.** El icono de la app es visible y las herramientas forenses podrían ver que Velcrypt guarda datos cifrados y, aproximadamente, cuántos. Velcrypt no pretende ocultar eso, solo el número de bóvedas y su contenido.
 - **Patrones débiles o fáciles de adivinar.** Un patrón corto, o con forma de L, Z o cuadrado, es mucho más fácil de adivinar. Prueba una forma parecida con el [comprobador de solidez de patrones](id:pattern-strength-checker), nunca la real.
 

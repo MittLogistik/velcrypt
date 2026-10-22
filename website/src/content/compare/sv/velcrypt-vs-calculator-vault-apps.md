@@ -4,17 +4,17 @@ title: "Velcrypt vs kalkylatorvalv: förklädnad eller kryptering"
 description: "Kalkylatorappar döljer bilder bakom en falsk miniräknare. Velcrypt förlitar sig i stället på kryptering och dolda valv. En neutral jämförelse för iPhone."
 h1: "Velcrypt vs kalkylatorvalv"
 navTitle: "Velcrypt vs kalkylatorvalv"
-answer: "Kalkylatorvalv förklär sig till en fungerande miniräknare och öppnas när du skriver en hemlig kod som en uträkning. Velcrypt förklär sig inte; appen förlitar sig på dokumenterad kryptering på enheten och mönsterbaserade dolda valv som inte avslöjar varandra. Förklädnad döljer att ett valv finns; kryptering skyddar det som finns i det."
+answer: "Kalkylatorvalv förklär sig till en fungerande miniräknare och öppnas när du skriver en hemlig kod som en uträkning. Velcrypt förklär sig inte till en fungerande miniräknare; appen förlitar sig på dokumenterad kryptering på enheten och mönsterbaserade dolda valv som inte avslöjar varandra. Förklädnad döljer att ett valv finns; kryptering skyddar det som finns i det."
 keyFacts:
   - "Kalkylatorvalv ser ut och fungerar som en miniräknare; en kod som skrivs in som en uträkning öppnar valvet."
   - "Hur kalkylatorappar krypterar varierar mycket och beskrivs ofta inte offentligt."
-  - "Velcrypt har ingen kalkylatorförklädnad och inga alternativa ikoner; namnet syns på hemskärmen."
+  - "Velcrypt har ingen fungerande kalkylatorförklädnad; Premium ger alternativa appikoner, till exempel en miniräknare."
   - "Velcrypts förnekbarhet kommer från dolda valv: okända mönster öppnar ett tomt valv."
   - "I iOS 18 och senare kan du dölja vilken app som helst i en dold mapp bakom Face ID, även Velcrypt."
 primaryKeyword: "kalkylator app dölja bilder"
 keywords: ["kalkylatorvalv", "miniräknare app dölja bilder", "falsk miniräknare fotovalv iphone", "alternativ till kalkylatorvalv", "hemlig kalkylator app"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Förklädnad mot kryptering: så står sig kalkylatorappar som döljer bilder mot Velcrypts mönsterbaserade dolda valv."
 competitor: "Kalkylatorvalv"
 lastChecked: "oktober 2026"
@@ -24,7 +24,7 @@ faq:
   - q: "Är kalkylatorappar som döljer bilder säkra?"
     a: "Det beror på appen. Miniräknarförklädnaden döljer bara att ett valv finns; hur väl filerna skyddas beror på om och hur appen krypterar dem, vilket många appar inte dokumenterar. Läs varje apps egen information om integritet och säkerhet."
   - q: "Har Velcrypt en kalkylatorförklädnad?"
-    a: "Nej. Velcrypt har ingen förklädnad och inga alternativa ikoner. I stället gör appen innehållet förnekbart: varje mönster öppnar ett eget valv och ingenting avslöjar hur många valv som finns. I iOS 18 och senare kan du dessutom dölja själva appen med systemets funktion för dolda appar."
+    a: "Inte som en fungerande miniräknare. Med Premium kan du byta till en alternativ appikon, till exempel en miniräknare, timer eller linjal, men appen öppnas fortfarande med mönsterrutnätet. I stället gör appen innehållet förnekbart: varje mönster öppnar ett eget valv och ingenting avslöjar hur många valv som finns. I iOS 18 och senare kan du dessutom dölja själva appen med systemets funktion för dolda appar."
   - q: "Kan någon se att en kalkylatorapp egentligen är ett valv?"
     a: "Ibland. Appens namn och beskrivning i App Store, din köphistorik, lagringsanvändningen i Inställningar och appens beteende kan avslöja den för någon som vet vad hen ska leta efter."
   - q: "Vilket är bäst för trovärdigt förnekande?"
@@ -49,15 +49,15 @@ Båda kan vara användbara. Frågan är vad du skyddar dig mot. En förklädnad 
 |---|---|---|
 | Publicerade detaljer om kryptering på enheten | Ja: AES-256-GCM, PBKDF2-HMAC-SHA512 | Varierar; ofta inte offentligt angivet |
 | Kräver konto | Nej | Varierar |
-| Molnbackup | Nej (v1); krypterad säkerhetskopiering planerad | Varierar; vissa har molnfunktioner |
+| Molnbackup | Nej; manuell krypterad säkerhetskopia (gratis) | Varierar; vissa har molnfunktioner |
 | Upplåsning | Mönster på ett 5×5-rutnät | Sifferkod som skrivs in som en uträkning |
 | Biometri (Face ID / Touch ID) | Erbjuds inte, med avsikt | Varierar |
-| Förklädnad | Ingen; syns som Velcrypt | Ser ut som en fungerande miniräknare |
+| Förklädnad | Ingen fungerande förklädnad; alternativa appikoner med Premium | Ser ut som en fungerande miniräknare |
 | Lockvalv / flera valv | Varje mönster är ett eget valv | Varierar; vissa har en lockkod |
-| Tvångsmönster | Kommer snart (Premium) | Varierar |
+| Tvångsmönster | Planerat till en framtida uppdatering | Varierar |
 | Intrångsbilder | Erbjuds inte | Vanligt, men varierar |
 | Återställning om du glömmer koden | Ingen | Varierar; vissa erbjuder återställning via e-post eller säkerhetsfråga |
-| Affärsmodell | Gratisversion plus valfri Premium | Varierar; vissa gratisversioner visar annonser |
+| Affärsmodell | Gratis (ett valv, 50 objekt) plus valfri Premium | Varierar; vissa gratisversioner visar annonser |
 | Plattformar | iPhone (iOS 17+) | Varierar; många finns för iOS och Android |
 
 <!-- TODO verify -->
@@ -78,9 +78,9 @@ Vill du också ha appen utom synhåll kan du i iOS 18 och senare dölja vilken a
 
 ## När ett kalkylatorvalv kan passa dig bättre
 
-- **Du vill främst att själva appen ska se vardaglig ut.** Om problemet är att en synlig valvapp finns på telefonen löser en förklädnad det direkt, vilket Velcrypt inte gör.
+- **Du vill främst att själva appen ska se vardaglig ut.** Om problemet är att en synlig valvapp finns på telefonen löser en fungerande förklädnad det direkt. Velcrypt erbjuder bara alternativa appikoner med Premium.
 - **Du vill ha intrångsbilder.** Många kalkylatorappar erbjuder det; Velcrypt gör det inte.
-- **Du vill kunna återställa.** Vissa appar erbjuder en väg tillbaka om du glömmer koden. Velcrypt v1 har ingen.
+- **Du vill kunna återställa.** Vissa appar erbjuder en väg tillbaka om du glömmer koden. Velcrypt har ingen; bara innehållet kan återställas från en krypterad säkerhetskopia som du själv har skapat.
 - **Du använder även Android.** Många kalkylatorvalv finns för båda plattformarna.
 
 <!-- TODO verify -->

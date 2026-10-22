@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "mi ex tiene acceso a mis fotos del iphone"
 keywords: ["cambiar el código del iphone tras una ruptura", "eliminar a mi ex de un álbum compartido", "comprobación de seguridad iphone", "mi ex sabe el código de mi iphone", "salir de la fototeca compartida de icloud"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Una lista tranquila para las semanas tras una ruptura: código nuevo, Comprobación de seguridad, álbumes compartidos y un sitio privado para tus fotos."
 group: everyday
 schemaType: Article
@@ -68,7 +68,7 @@ Después de importar, [borra los originales](id:delete-original-photos-after-imp
 
 - Nada en tu teléfono puede eliminar las copias que tu ex ya tiene: fotos que enviaste, que guardó de un álbum compartido o que están en sus copias de seguridad.
 - Una bóveda no sirve si alguien te ve dibujar tu patrón o si te quitan el teléfono con la bóveda abierta.
-- En la primera versión, los datos de la bóveda no se incluyen en las copias de iCloud ni del ordenador. Si pierdes el móvil u olvidas tu patrón, la bóveda no se puede recuperar. Guarda una segunda copia de todo lo irreemplazable en un lugar seguro.
+- Los datos de la bóveda no se incluyen en las copias de iCloud ni del ordenador. Si olvidas tu patrón, la bóveda no se puede recuperar; si pierdes el móvil, solo desde una copia de seguridad cifrada creada en Ajustes → Copia de seguridad.
 - El icono de la app se ve en tu pantalla de inicio, salvo que uses la opción de iOS 18 para ocultar apps.
 
 ## Si la cosa va a más

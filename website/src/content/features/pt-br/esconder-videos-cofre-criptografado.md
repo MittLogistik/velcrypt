@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "app para esconder vídeos iphone"
 keywords: ["esconder vídeos iphone", "cofre de vídeos iphone", "cofre de vídeos criptografado", "trancar vídeos iphone", "ocultar vídeos do rolo da câmera", "app de vídeos privados"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Importe vídeos como cópias criptografadas, assista dentro do cofre e limpe os originais sem ficar sem espaço."
 status: available
 schemaType: WebPage
@@ -26,7 +26,7 @@ faq:
   - q: "Por que meu espaço livre diminuiu depois de importar vídeos?"
     a: "Importar cria uma cópia, então, até você apagar o original do Fotos e esvaziar Apagados, o vídeo existe duas vezes. Quando o original some, o espaço é liberado."
   - q: "Os vídeos escondidos no cofre entram no Backup do iCloud?"
-    a: "Não. Na primeira versão, os dados do cofre ficam fora dos backups do iCloud e do computador. Os vídeos do cofre existem apenas no seu iPhone."
+    a: "Não. Os dados do cofre ficam fora dos backups do iCloud e do computador. Os vídeos do cofre existem apenas no seu iPhone, a não ser que você crie um backup criptografado em Ajustes → Backup."
   - q: "Os vídeos do Velcrypt sincronizam com meus outros aparelhos?"
     a: "Não. O Velcrypt não tem sincronização na nuvem e roda apenas no iPhone. Um vídeo no seu cofre fica só no celular em que você o importou."
 ---
@@ -79,9 +79,9 @@ Tenha três coisas em mente:
 
 ## Bom saber
 
-- O Velcrypt não tem câmera própria. Grave com o app Câmera, importe o vídeo e depois apague o original.
+- Vídeos gravados com o app Câmera vão primeiro para a fototeca. Para pular essa etapa, grave com a câmera do cofre do Velcrypt, que salva direto no cofre; se usar o app Câmera, importe o vídeo e depois apague o original.
 - Padrões diferentes abrem [cofres ocultos](id:hidden-vaults) diferentes. Se alguns vídeos nunca devem ficar ao lado de outros, dê a eles um cofre próprio em vez de só um álbum separado.
-- Os dados do cofre não têm backup na primeira versão. Para vídeos insubstituíveis, guarde uma segunda cópia em um lugar de sua confiança.
+- Os dados do cofre não entram nos backups do iCloud nem do computador. Para vídeos insubstituíveis, crie um backup criptografado em Ajustes → Backup ou guarde uma segunda cópia em um lugar de sua confiança.
 - Se um vídeo já foi enviado em uma conversa ou publicado em um álbum compartilhado, essas cópias estão fora do cofre. O guia sobre [guardar fotos íntimas com segurança](id:store-intimate-photos-safely-iphone) aborda esse risco com mais profundidade.
 
 Para um panorama de todas as opções, nativas e de terceiros, veja [como esconder vídeos no iPhone](id:hide-videos-iphone).

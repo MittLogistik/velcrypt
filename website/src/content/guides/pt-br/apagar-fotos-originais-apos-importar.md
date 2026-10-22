@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "apagar fotos depois de importar para o cofre"
 keywords: ["apagar fotos originais depois de importar", "esvaziar apagados iphone", "apagar fotos definitivamente iphone", "apagados ios 18", "apagar fotos do iphone mas não do cofre", "app de cofre copia ou move"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Copiar vs. mover, apagar os originais do Fotos, esvaziar Apagados e as cópias no iCloud e nas conversas que continuam existindo."
 category: practical
 order: 30
@@ -125,4 +125,4 @@ Para imagens especialmente sensíveis, o guia sobre [guardar fotos íntimas com 
 
 O Velcrypt segue o modelo de cópia descrito acima. Quando você [importa fotos](id:hide-photos) ou [vídeos](id:hide-videos), o cofre criptografa a própria cópia com AES-256-GCM e deixa o original no Fotos, então apagar o original e esvaziar Apagados fica por sua conta.
 
-Antes de fazer isso, pese um limite com honestidade. Os dados do cofre do Velcrypt ficam só no seu iPhone e fora dos backups do iCloud e do computador. Depois que os originais somem, o cofre guarda a única cópia naquele aparelho. Se você perder o celular ou [esquecer o padrão](id:forgot-vault-pattern), esses arquivos não podem ser recuperados, nem por você nem pelo Velcrypt. Uma opção de backup criptografado está planejada; até lá, mantenha uma cópia separada de tudo o que for insubstituível num lugar de confiança.
+Antes de fazer isso, pese um limite com honestidade. Os dados do cofre do Velcrypt ficam só no seu iPhone e fora dos backups do iCloud e do computador. Depois que os originais somem, o cofre guarda a única cópia naquele aparelho. Se você perder o celular ou [esquecer o padrão](id:forgot-vault-pattern), esses arquivos não podem ser recuperados, nem por você nem pelo Velcrypt. Para se proteger, crie um backup criptografado em Ajustes → Backup e guarde o arquivo fora do iPhone, ou mantenha uma cópia separada de tudo o que for insubstituível num lugar de confiança.

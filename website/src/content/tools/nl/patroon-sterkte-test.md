@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "patroon sterkte test"
 keywords: ["sterkte ontgrendelpatroon", "hoe sterk is mijn patroon", "veiligheid patroonvergrendeling", "5x5 patroonvergrendeling", "ideeën voor een veilig patroon", "patroon wachtwoord sterkte"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Teken een testpatroon op een raster van 5×5 en zie een ruwe sterkte-inschatting. Werkt lokaal. Gebruik nooit je echte patroon."
 toolName: "Patroonsterktetest"
 schemaType: WebPage
@@ -43,7 +43,7 @@ faq:
   - q: "Beschermt een sterk patroon tegen iemand die meekijkt?"
     a: "Nee. Als iemand ziet hoe je het tekent, maakt de sterkte niet uit. Scherm het scherm af en teken het waar je niet bekeken of gefilmd kunt worden."
   - q: "Wat als ik een ingewikkeld patroon vergeet?"
-    a: "In de eerste versie van Velcrypt kan een vergeten patroon niet worden hersteld, niet door jou en niet door Velcrypt. Kies iets wat complex maar te onthouden is, en oefen het voordat je erop vertrouwt."
+    a: "In Velcrypt kan een vergeten patroon niet worden hersteld, niet door jou en niet door Velcrypt. Kies iets wat complex maar te onthouden is, en oefen het voordat je erop vertrouwt."
 ---
 
 ## Zo werkt het
@@ -90,4 +90,4 @@ Deze test bewaart en verstuurt niets, maar de gewoonte is belangrijker dan deze 
 
 In Velcrypt is je patroon de sleutel: versleutelingssleutels worden eruit afgeleid met PBKDF2-HMAC-SHA512 en minstens 600.000 iteraties, waardoor elke poging traag is. Zie [versleuteling](id:encryption). Elk patroon opent ook een eigen kluis, zoals uitgelegd bij [verborgen kluizen](id:hidden-vaults) en [patroonslot](id:pattern-lock).
 
-Een sterk patroon beschermt niet tegen iemand die meekijkt terwijl je het tekent, een telefoon die met open kluis wordt doorgegeven, of een vergeten patroon. In de eerste versie is er geen herstel, dus lees [kluispatroon vergeten](id:forgot-vault-pattern) voordat je iets kiest wat je misschien niet onthoudt.
+Een sterk patroon beschermt niet tegen iemand die meekijkt terwijl je het tekent, een telefoon die met open kluis wordt doorgegeven, of een vergeten patroon. Een vergeten patroon is niet te herstellen, dus lees [kluispatroon vergeten](id:forgot-vault-pattern) voordat je iets kiest wat je misschien niet onthoudt.

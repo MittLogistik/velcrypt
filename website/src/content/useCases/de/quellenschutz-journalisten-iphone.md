@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "quellenschutz journalisten iphone"
 keywords: ["quellenfotos auf dem handy schützen", "handy sicherheit journalisten", "quellendokumente iphone datenschutz", "geräte sicherheit reporter", "bedrohungsmodell journalisten"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Bedrohungsmodell, Datensparsamkeit und Metadaten für Reporter – und wo ein verschlüsselter iPhone-Tresor als eine Schutzschicht passt."
 group: professional
 schemaType: Article
@@ -63,7 +63,7 @@ Die Antworten bestimmen deine Werkzeuge. Eine Geschichte mit geringem Risiko zu 
 
 Velcrypt ist eine Schicht in diesem Plan. Es speichert Fotos, Videos und Dokumente in verschlüsselten Tresoren auf deinem iPhone, mit AES-256-GCM und Schlüsseln, die aus deinem Muster abgeleitet werden. Es gibt kein Konto, keinen Server, keine Synchronisierung und keine Analyse von Tresorinhalten – auf keinem Server liegt also etwas, das jemand anfordern könnte.
 
-Tresore öffnen sich mit einem Muster auf einem 5×5-Raster. Velcrypt unterstützt Face ID und Touch ID bewusst nicht, weil Biometrie ohne deine Zustimmung genutzt werden kann; ein Muster existiert nur in deinem Gedächtnis. Die Begründung steht in [Muster vs. PIN vs. Face ID](id:pattern-lock-vs-pin-vs-face-id). Jedes Muster öffnet seinen eigenen Tresor, und ein unbekanntes Muster öffnet ohne Fehler einen leeren – das unterstützt [glaubhafte Abstreitbarkeit](id:plausible-deniability-explained). Ein Notfallmuster, das den Zugriff auf andere Tresore entfernt, ist als Premium-Funktion geplant und bald verfügbar.
+Tresore öffnen sich mit einem Muster auf einem 5×5-Raster. Velcrypt unterstützt Face ID und Touch ID bewusst nicht, weil Biometrie ohne deine Zustimmung genutzt werden kann; ein Muster existiert nur in deinem Gedächtnis. Die Begründung steht in [Muster vs. PIN vs. Face ID](id:pattern-lock-vs-pin-vs-face-id). Jedes Muster öffnet seinen eigenen Tresor, und ein unbekanntes Muster öffnet ohne Fehler einen leeren – das unterstützt [glaubhafte Abstreitbarkeit](id:plausible-deniability-explained). Weitere Tresore gehören zu Premium. Ein Notfallmuster, das den Zugriff auf andere Tresore entfernt, ist für ein künftiges Update geplant und noch nicht verfügbar.
 
 ## Ehrliche Grenzen
 
@@ -74,6 +74,6 @@ Ein Tresor allein ist keine Quellenschutz-Strategie:
 - **Kompromittierte Geräte.** Schadsoftware auf einem gejailbreakten oder gezielt angegriffenen Handy kann sehen, was auf dem Bildschirm ist.
 - **Beobachtung.** Wer dir beim Zeichnen des Musters zusieht, oder Kameras im Raum hebeln es aus.
 - **Sichtbare App.** Das Velcrypt-Symbol liegt auf deinem Home-Bildschirm, es sei denn, du nutzt die iOS-18-Option zum Ausblenden von Apps.
-- **Keine Wiederherstellung.** In der ersten Version werden Tresordaten nicht gesichert. Geht das Handy verloren oder vergisst du das Muster, ist alles weg – für die Datensparsamkeit kann das ein Vorteil sein, für Material, das du behalten musst, ein Risiko. Das Gesamtbild zeigt die [Sicherheitsseite](id:security).
+- **Keine automatische Wiederherstellung.** Tresordaten werden nicht automatisch gesichert. Geht das Handy verloren, ist alles weg, sofern du kein verschlüsseltes Backup erstellt hast; ein vergessenes Muster lässt sich nie wiederherstellen. Für die Datensparsamkeit kann das ein Vorteil sein, für Material, das du behalten musst, ein Risiko. Bedenke, dass eine Backup-Datei eine weitere Kopie ist, die du schützen musst. Das Gesamtbild zeigt die [Sicherheitsseite](id:security).
 
 Quellenschutz ist vor allem eine Frage der Gewohnheiten. Gute Werkzeuge helfen, aber die Entscheidung, weniger zu behalten, weniger zu teilen und vorauszuplanen, leistet den größten Teil der Arbeit.

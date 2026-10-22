@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "supprimer photos après import coffre-fort"
 keywords: ["supprimer les photos originales après import", "vider suppressions récentes iphone", "supprimer définitivement des photos iphone", "suppressions récentes ios 18", "supprimer des photos de l’iphone mais pas du coffre", "coffre-fort copie ou déplace"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Copier ou déplacer, supprimer les originaux de Photos, vider Suppressions récentes, et les copies iCloud ou de conversations qui subsistent."
 category: practical
 order: 30
@@ -125,4 +125,4 @@ Pour les images particulièrement sensibles, le guide pour [protéger ses photos
 
 Velcrypt suit le modèle de copie décrit ci-dessus. Quand vous [importez des photos](id:hide-photos) ou des [vidéos](id:hide-videos), le coffre chiffre sa propre copie en AES-256-GCM et laisse l’original dans Photos : supprimer l’original et vider Suppressions récentes vous revient.
 
-Avant de le faire, pesez honnêtement une limite. Les données des coffres Velcrypt sont stockées uniquement sur votre iPhone et exclues des sauvegardes iCloud et sur ordinateur. Une fois les originaux supprimés, le coffre détient la seule copie présente sur cet appareil. Si vous perdez le téléphone ou [oubliez le schéma](id:forgot-vault-pattern), ces fichiers sont irrécupérables, par vous comme par Velcrypt. Une option de sauvegarde chiffrée est prévue ; en attendant, gardez une copie distincte de tout ce qui est irremplaçable dans un endroit de confiance.
+Avant de le faire, pesez honnêtement une limite. Les données des coffres Velcrypt sont stockées uniquement sur votre iPhone et exclues des sauvegardes iCloud et sur ordinateur. Une fois les originaux supprimés, le coffre détient la seule copie présente sur cet appareil. Si vous perdez le téléphone ou [oubliez le schéma](id:forgot-vault-pattern), ces fichiers sont irrécupérables, par vous comme par Velcrypt, sauf si vous avez une sauvegarde chiffrée (pour un téléphone perdu ; un schéma oublié reste sans recours). Avant de supprimer les originaux de ce qui est irremplaçable, créez une sauvegarde chiffrée dans Réglages → Sauvegarde et enregistrez-la dans un endroit de confiance.

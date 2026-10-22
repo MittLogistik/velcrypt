@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "Velcrypt 隐私政策"
 keywords: ["Velcrypt 隐私", "Velcrypt 数据收集", "Velcrypt 会收集数据吗", "照片保险箱 隐私政策"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 schemaType: WebPage
 order: 6
 related: [terms, security, offline-no-account, support, about]
@@ -31,9 +31,9 @@ faq:
 
 **草稿——待法律审核。** 本政策准确描述了我们目前的做法，但其措辞尚未经过律师审核，在正式发布前可能会有变化。
 
-**生效日期：** 2026 年 10 月 21 日
+**生效日期：** 2026 年 10 月 22 日
 
-本隐私政策说明你在使用 Velcrypt iPhone App 和 velcrypt.app 网站时，Velcrypt（“我们”）会处理哪些信息。简而言之：App 的设计使我们永远不会收到你的内容，在其他方面我们也尽可能少地收集信息。
+本隐私政策说明你在使用 Velcrypt iPhone App 和 velcrypt.app 网站时，Velcrypt 的发行方、瑞典的 Swedish Treats AB（“我们”）会处理哪些信息。简而言之：App 的设计使我们永远不会收到你的内容，在其他方面我们也尽可能少地收集信息。
 
 ## Velcrypt App
 
@@ -43,7 +43,11 @@ Velcrypt App 不收集个人数据。没有账户、没有注册、没有邮箱�
 
 ### 保险箱内容留在你的设备上
 
-你添加到 Velcrypt 的照片、视频和文档会在你的 iPhone 上加密并存储在那里。它们永远不会上传给我们或我们运营的任何服务器，我们也无法查看、解密或恢复它们。在当前版本中，保险箱数据也不包含在 iCloud 和电脑备份中。加密的工作原理请看[安全模型](id:security)页面。
+你添加到 Velcrypt 的照片、视频和文档会在你的 iPhone 上加密并存储在那里。它们永远不会上传给我们或我们运营的任何服务器，我们也无法查看、解密或恢复它们。保险箱数据也不包含在 iCloud 和电脑备份中。
+
+### 加密备份文件
+
+如果你在“设置”→“备份”中创建加密备份，App 会在你的设备上生成一个用你的备份密码加密的文件。这个文件存放在你选择的位置，例如“文件”、iCloud 云盘或电脑。我们永远不会收到它，也无法打开它。如果你把它存放在 iCloud 云盘等服务中，该服务的条款适用于存储，但文件内容仍处于加密状态。加密的工作原理请看[安全模型](id:security)页面。
 
 ### 不分析内容，没有广告
 
@@ -51,7 +55,7 @@ App 不包含广告，也不对你的保险箱内容收集分析数据。我们�
 
 ### 购买
 
-任何购买，例如可选的 Premium 升级，都由 Apple 通过 App Store 处理。付款由 Apple 处理；我们不会收到你的姓名、卡号或账单地址。App Store 会向你设备上的 App 确认购买，以便解锁相应功能。Apple 如何处理你的数据，请看 [apple.com/privacy](https://www.apple.com/privacy/)。
+任何购买，例如 Premium 订阅或终身购买，都通过 App Store 进行。付款、订阅续订和退款均由 Apple 处理；我们不会收到你的姓名、卡号或账单地址。App Store 会向你设备上的 App 确认购买，以便解锁相应功能。Apple 如何处理你的数据，请看 [apple.com/privacy](https://www.apple.com/privacy/)。
 
 ### Apple 可能与我们共享的信息
 

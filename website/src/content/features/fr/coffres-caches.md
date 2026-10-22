@@ -10,11 +10,11 @@ keyFacts:
   - "Velcrypt n’affiche jamais de liste de coffres."
   - "Un schéma inconnu ouvre un coffre vide, sans message d’erreur."
   - "Vous pouvez garder un coffre leurre au contenu ordinaire."
-  - "Davantage de coffres font partie de l’option Premium prévue."
+  - "La version gratuite comprend un coffre ; les coffres supplémentaires font partie de Premium."
 primaryKeyword: "coffre-fort caché iphone"
 keywords: ["app coffre-fort photo plusieurs coffres", "coffre leurre iphone", "app coffre secret", "déni plausible coffre-fort photo", "deuxième coffre caché", "cacher un coffre-fort photo"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Chaque schéma est un coffre à part. Pas de liste, pas d’erreur pour un schéma inconnu, et la possibilité d’un coffre leurre crédible."
 status: available
 schemaType: WebPage
@@ -64,6 +64,8 @@ Il y a aussi une conséquence pratique. Si vous vous trompez de schéma, vous ar
 
 ## Comment créer un deuxième coffre
 
+La version gratuite comprend un coffre. Pour donner à d’autres schémas leurs propres coffres, il faut Premium.
+
 1. **Verrouillez Velcrypt.** Quittez le coffre dans lequel vous êtes pour faire apparaître la grille.
 2. **Tracez un nouveau schéma.** Choisissez-en un jamais utilisé, en respectant les règles habituelles : au moins 6 points et au moins un changement de direction.
 3. **Ajoutez quelque chose.** Un coffre vide s’ouvre. Importez une photo, une vidéo ou un document pour commencer à l’utiliser.
@@ -75,7 +77,7 @@ Un coffre leurre est un coffre rempli de contenu anodin mais crédible, par exem
 
 Un leurre fonctionne mieux quand il a l’air utilisé. Un coffre vide appelle la question « pourquoi installer une app coffre-fort pour rien ? », alors qu’un coffre contenant quelques dizaines d’éléments ordinaires la suscite rarement. Le guide [qu’est-ce qu’un coffre leurre](id:what-is-a-decoy-vault) explique comment le rendre convaincant.
 
-Velcrypt prévoit aussi un [schéma de contrainte](id:duress-pattern) dans l’option Premium (bientôt disponible). Il doit aller plus loin qu’un leurre : ouvrir un coffre choisi et supprimer silencieusement l’accès aux autres.
+Velcrypt prévoit aussi un [schéma de contrainte](id:duress-pattern) pour une prochaine mise à jour. Il doit aller plus loin qu’un leurre : ouvrir un coffre choisi et supprimer silencieusement l’accès aux autres.
 
 ## Comment chaque coffre reste séparé
 

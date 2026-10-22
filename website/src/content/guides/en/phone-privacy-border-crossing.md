@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "can customs search my phone"
 keywords: ["border phone search", "phone privacy border crossing", "travel phone privacy checklist", "customs phone search iphone", "disable face id quickly"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "A general overview of border device searches, an iPhone preparation checklist, where a decoy vault fits, and the ethical lines not to cross."
 category: practical
 order: 33
@@ -105,6 +105,6 @@ Privacy at the border is a legitimate concern. Most people simply don’t want a
 
 ## Where Velcrypt fits
 
-Velcrypt is a sensible part of a travel setup for personal content you want to keep on your iPhone. Vaults are encrypted on the device with AES-256-GCM, there is no account or server, and there is no Face ID that could be used to open a vault without your involvement. Each pattern opens its own [hidden vault](id:hidden-vaults), so you can keep a lived-in decoy for everyday snooping.
+Velcrypt is a sensible part of a travel setup for personal content you want to keep on your iPhone. Vaults are encrypted on the device with AES-256-GCM, there is no account or server, and there is no Face ID that could be used to open a vault without your involvement. Each pattern opens its own [hidden vault](id:hidden-vaults), so with Premium (which adds vaults beyond the free version’s one) you can keep a lived-in decoy for everyday snooping.
 
 It can’t protect against someone watching you draw your pattern, against copies left in Photos, iCloud or chats, or against legal obligations in the country you are entering. Use it alongside the checklist above, not instead of it.

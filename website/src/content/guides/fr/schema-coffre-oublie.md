@@ -4,17 +4,18 @@ title: "Mot de passe ou schéma de coffre-fort photo oublié ?"
 description: "Code ou schéma de coffre-fort photo oublié ? Quoi essayer d’abord, pourquoi Velcrypt n’a pas de réinitialisation, et comment éviter de rester bloqué."
 h1: "Mot de passe ou schéma de coffre-fort photo oublié : ce que vous pouvez faire, ou non"
 navTitle: "Schéma de coffre oublié"
-answer: "Dans Velcrypt, un schéma oublié ne peut être ni réinitialisé ni récupéré, ni par vous ni par Velcrypt, car la clé n’existe que dans votre mémoire et aucun serveur n’en garde de copie. Vous pouvez en revanche réessayer calmement des variantes proches du schéma. D’autres apps de coffre-fort proposent parfois une récupération par e-mail ou par compte ; vérifiez ce qu’utilise la vôtre."
+answer: "Dans Velcrypt, un schéma oublié ne peut être ni réinitialisé ni récupéré, ni par vous ni par Velcrypt, car la clé n’existe que dans votre mémoire et aucun serveur n’en garde de copie. Vous pouvez en revanche réessayer calmement des variantes proches du schéma, ou restaurer une sauvegarde chiffrée créée auparavant. D’autres apps proposent parfois une récupération par e-mail ou par compte."
 keyFacts:
   - "Velcrypt n’a ni réinitialisation, ni e-mail de récupération, ni phrase de récupération : les clés sont dérivées de votre schéma sur l’appareil."
   - "Un mauvais schéma dans Velcrypt ouvre un coffre vide au lieu d’afficher une erreur : un coffre vide signifie souvent un schéma légèrement différent."
-  - "Les données du coffre sont exclues des sauvegardes iCloud et sur ordinateur dans la première version."
-  - "Une option de sauvegarde chiffrée et de récupération est prévue, sans date promise."
-  - "Si une perte vous serait insupportable, gardez une copie dans un autre endroit de confiance."
+  - "Les données du coffre sont exclues des sauvegardes iCloud et sur ordinateur."
+  - "Une sauvegarde chiffrée créée avant l’oubli peut être restaurée dans un autre coffre avec son mot de passe de sauvegarde."
+  - "Un mot de passe de sauvegarde oublié est lui aussi irrécupérable."
+  - "Si une perte vous serait insupportable, créez régulièrement une sauvegarde chiffrée et conservez-la dans un endroit de confiance."
 primaryKeyword: "mot de passe coffre-fort photo oublié"
 keywords: ["schéma coffre oublié", "récupérer coffre-fort photo", "code pin coffre-fort photo oublié", "réinitialiser schéma coffre", "bloqué hors de mon coffre-fort photo"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Quoi essayer d’abord, pourquoi Velcrypt ne peut pas réinitialiser un schéma oublié, comment font les autres apps, et les habitudes qui évitent le blocage."
 category: security
 order: 44
@@ -28,8 +29,8 @@ faq:
     a: "Non. Supprimer l’app supprime ses données chiffrées de l’appareil. La réinstallation vous donne une app vierge, pas l’accès aux anciens coffres. Ne la supprimez que si vous avez accepté que le contenu est perdu."
   - q: "Comment les autres apps de coffre-fort photo gèrent-elles un code oublié ?"
     a: "Beaucoup d’apps à compte permettent de réinitialiser le code par e-mail ou via un compte cloud : il existe donc un chemin de récupération en dehors de votre mémoire. Consultez l’aide de votre app avant d’en avoir besoin, et sachez qu’un chemin de récupération peut aussi servir de porte d’entrée à quelqu’un d’autre."
-  - q: "Velcrypt va-t-il ajouter une option de récupération ?"
-    a: "Une option de sauvegarde chiffrée et de récupération est prévue, mais sans date de sortie. En attendant, considérez votre schéma comme la seule clé."
+  - q: "Une sauvegarde Velcrypt peut-elle m’aider si j’ai oublié mon schéma ?"
+    a: "Oui, si vous aviez créé une sauvegarde chiffrée de ce coffre auparavant. Restaurez-la dans un autre coffre depuis Réglages → Sauvegarde avec votre mot de passe de sauvegarde : vous retrouvez le contenu tel qu’il était lors de la sauvegarde. Sans sauvegarde, ou sans son mot de passe, rien ne peut être récupéré."
 ---
 
 Ce moment de panique où la forme tracée cent fois ne fonctionne soudain plus est bien réel. Avant toute chose : ne supprimez pas l’app et ne la réinstallez pas. La plupart des schémas « oubliés » s’avèrent être des schémas légèrement mal mémorisés, et il y a des choses sensées à essayer d’abord.
@@ -50,16 +51,20 @@ Procédez calmement :
 
 ## Si le schéma est vraiment perdu
 
-Si rien de tout cela ne fonctionne, voici la réponse honnête : le contenu est irrécupérable. Ni par vous, ni par Velcrypt, ni par qui que ce soit.
+Si rien de tout cela ne fonctionne, voici la réponse honnête : le coffre lui-même est irrécupérable. Seule une sauvegarde chiffrée créée auparavant permet d’en retrouver le contenu (voir plus bas). Ni par vous, ni par Velcrypt, ni par qui que ce soit.
 
 Ce n’est pas une règle à laquelle on pourrait déroger. C’est le fonctionnement même du chiffrement :
 
 - Velcrypt n’a ni compte, ni e-mail, ni serveur. Voir [hors ligne, sans compte](id:offline-no-account).
 - Les clés de votre coffre sont déverrouillées par une clé dérivée de votre schéma sur l’appareil, avec PBKDF2 et un sel stocké dans le trousseau iOS. Sans le schéma, cette clé ne peut pas être produite.
 - Les données du coffre sont chiffrées en AES-256-GCM, impossible à casser par force brute. L’[explication de l’AES-256](id:aes-256-encryption-explained) dit pourquoi.
-- Dans la première version, les données du coffre sont exclues des sauvegardes iCloud et Finder/iTunes : il n’existe aucune copie plus ancienne à restaurer.
+- Les données du coffre sont exclues des sauvegardes iCloud et Finder/iTunes : une sauvegarde de l’iPhone ne contient aucune copie à restaurer.
 
 Les propriétés qui rendent votre coffre privé rendent aussi un schéma oublié définitif. Un système doté d’un bouton « schéma oublié ? » conserve forcément un accès qui ne dépend pas que de vous.
+
+### Avez-vous une sauvegarde chiffrée ?
+
+Le seul recours est une sauvegarde chiffrée que vous auriez créée dans Réglages → Sauvegarde pendant que ce coffre était ouvert. Le fichier `.velcrypt` ne dépend pas du schéma, mais du mot de passe de sauvegarde choisi à sa création. Ouvrez un autre coffre, puis restaurez la sauvegarde depuis Réglages → Sauvegarde : ses éléments sont ajoutés au coffre ouvert. Vous retrouvez le contenu tel qu’il était au moment de la sauvegarde, pas ce que vous avez ajouté ensuite. Si vous avez aussi oublié le mot de passe de sauvegarde, la sauvegarde ne peut pas être ouverte.
 
 ### Et les autres coffres ?
 
@@ -69,7 +74,7 @@ Comme chaque schéma est son propre coffre, oublier un schéma n’affecte pas l
 
 Les mécanismes de récupération créent toujours une seconde clé. Une réinitialisation par e-mail peut être déclenchée par quiconque accède à votre boîte de réception. Une sauvegarde cloud peut être restaurée par quiconque entre dans le compte. Les questions de sécurité se devinent souvent grâce aux réseaux sociaux.
 
-Velcrypt a choisi de ne pas avoir de seconde clé. Cela écarte toute une catégorie d’attaques et signifie qu’il n’y a rien à réquisitionner, à divulguer ou à hameçonner. Le prix, c’est que vous êtes seul responsable de vous souvenir du schéma. Pour beaucoup, ce compromis en vaut la peine ; pour certains contenus, non. Décidez de quel type de contenu il s’agit.
+Velcrypt a choisi de ne pas avoir de seconde clé pour vos coffres. La seule exception est celle que vous créez vous-même : une sauvegarde chiffrée, protégée par un mot de passe que vous seul connaissez. Cela écarte toute une catégorie d’attaques et signifie qu’il n’y a rien à réquisitionner, à divulguer ou à hameçonner. Le prix, c’est que vous êtes seul responsable de vous souvenir du schéma. Pour beaucoup, ce compromis en vaut la peine ; pour certains contenus, non. Décidez de quel type de contenu il s’agit.
 
 ## Éviter de rester bloqué
 
@@ -110,4 +115,4 @@ Le [guide des coffres-forts photo sans compte](id:photo-vault-without-account) e
 
 ## La place de Velcrypt
 
-Velcrypt est un coffre purement local par conception : pas de compte, pas de serveur, pas de phrase de récupération, aucune copie de vos clés ailleurs. Une option de sauvegarde chiffrée et de récupération est prévue dans le cadre d’une mise à niveau Premium facultative, sans date promise. En cas de doute, l’[assistance](id:support) peut vous expliquer le fonctionnement de l’app, mais personne ne peut y ouvrir un coffre à votre place.
+Velcrypt est un coffre purement local par conception : pas de compte, pas de serveur, pas de phrase de récupération, aucune copie de vos clés ailleurs. Il propose en revanche une sauvegarde chiffrée gratuite : un fichier que vous créez dans Réglages → Sauvegarde, protégé par un mot de passe de sauvegarde, et que Velcrypt ne reçoit jamais. C’est la meilleure protection contre un schéma oublié ou un téléphone perdu, à condition de la créer avant d’en avoir besoin. En cas de doute, l’[assistance](id:support) peut vous expliquer le fonctionnement de l’app, mais personne ne peut y ouvrir un coffre à votre place.

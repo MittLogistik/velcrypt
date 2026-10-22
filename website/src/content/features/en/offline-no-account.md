@@ -4,17 +4,18 @@ title: "Offline Photo Vault with No Account, No Cloud, No Servers"
 description: "Velcrypt works fully on your iPhone: no account, no email, no servers, no uploads and no analytics on vault content. Here is what that means for you."
 h1: "Fully offline, no account"
 navTitle: "Offline, no account"
-answer: "Velcrypt runs entirely on your iPhone. There is no account, no sign-up, no email, no server and no upload, and no analytics on what you store. In the first version vault data is also excluded from iCloud and computer backups, so a lost phone or forgotten pattern cannot be recovered."
+answer: "Velcrypt runs entirely on your iPhone. There is no account, no sign-up, no email, no server and no upload, and no analytics on what you store. Vault data is also excluded from iCloud and computer backups; a forgotten pattern can’t be recovered, and a lost phone only with an encrypted backup file you made."
 keyFacts:
   - "No account, sign-up or email address."
   - "No servers and no uploads; vault files never leave the phone."
   - "No analytics on vault content."
-  - "Vault data is excluded from iCloud and Finder/iTunes backups in the first version."
-  - "Trade-off: no recovery if the phone is lost or the pattern is forgotten. An encrypted backup is planned."
+  - "Vault data is excluded from iCloud and Finder/iTunes backups."
+  - "Optional, free encrypted backup: a .velcrypt file you store where you choose."
+  - "Trade-off: no recovery for a forgotten pattern or backup password."
 primaryKeyword: "offline photo vault no account"
 keywords: ["photo vault without account", "private photo app no cloud", "offline vault iphone", "photo vault no sign up", "local only photo vault"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "No account, no servers, no uploads, no content analytics. Everything stays on your iPhone, with an honest trade-off on recovery."
 status: available
 schemaType: WebPage
@@ -24,11 +25,11 @@ faq:
   - q: "Does Velcrypt need an account or email address?"
     a: "No. There is no sign-up, no login and no email. You open the app and draw a pattern; that is all."
   - q: "Are my vault files backed up to iCloud?"
-    a: "No. In the first version, vault data is excluded from iCloud and from computer backups made with Finder or iTunes. Your files exist only on your iPhone."
+    a: "No. Vault data is excluded from iCloud and from computer backups made with Finder or iTunes. Your files exist only on your iPhone, unless you create an encrypted backup file yourself."
   - q: "What happens to my vault if I lose my phone?"
-    a: "The vault is lost with it. Because nothing is stored on a server or in a backup, neither you nor Velcrypt can restore it. Keep copies of anything irreplaceable somewhere you trust."
-  - q: "Will Velcrypt ever offer backups?"
-    a: "An encrypted backup and recovery option is planned, likely as part of the optional Premium upgrade. There is no release date yet, and the first version does not include it."
+    a: "Unless you made an encrypted backup, the vault is lost with it. Nothing is stored on a server or in an iCloud backup, so neither you nor Velcrypt can restore it. With a backup file, you restore the vault on another iPhone using your backup password."
+  - q: "Does Velcrypt offer backups?"
+    a: "Yes, as a manual, encrypted backup that is free for everyone. Settings → Backup creates a .velcrypt file for the open vault, protected by a backup password you choose. You save it to Files, iCloud Drive or a computer; Velcrypt never receives it."
 ---
 
 Many vault apps start by asking for your email. Velcrypt does not ask for anything. There is nothing to sign up for, nothing to log into and nothing on a server that could leak, because there is no server. This page explains what that means in practice, including the downside.
@@ -53,7 +54,7 @@ It also means Velcrypt cannot hand over your files, because it has none. There i
 
 ## Excluded from iCloud and computer backups
 
-In the first version, vault data is excluded from iCloud Backup and from computer backups made with Finder or iTunes. That is intentional: a backup is another copy, stored somewhere you do not fully control, and Velcrypt keeps the number of copies at one.
+Vault data is excluded from iCloud Backup and from computer backups made with Finder or iTunes. That is intentional: a backup is another copy, stored somewhere you do not fully control, and Velcrypt keeps the number of automatic copies at zero. The only extra copy is one you choose to make, described below.
 
 This is different from Apple's own Hidden album, which syncs through iCloud Photos when that is turned on. If you are unsure how your existing photos are stored, read [are hidden photos saved to iCloud?](id:are-hidden-photos-saved-to-icloud)
 
@@ -64,16 +65,17 @@ Keeping everything on one device has a clear cost, and it is better to see it pl
 | Situation | Can the vault be recovered? |
 | --- | --- |
 | You forget your pattern | No |
-| Your phone is lost or stolen | No |
-| Your phone breaks beyond repair | No |
-| You restore a new phone from a backup | No, vault data is not in the backup |
+| Your phone is lost or stolen | Only from an encrypted backup file you made |
+| Your phone breaks beyond repair | Only from an encrypted backup file you made |
+| You restore a new phone from an iCloud or computer backup | No, vault data is not in that backup |
+| You forget your backup password | No |
 | You delete Velcrypt from the phone | No, deleting an iOS app removes its data |
 
-Nobody can help, including Velcrypt, because no one else ever had a copy. Before you move irreplaceable files into a vault, decide where a second copy should live, for example on an encrypted drive you keep at home. The guide on [what to do if you forget your vault pattern](id:forgot-vault-pattern) explains the options that remain.
+Nobody can help, including Velcrypt, because no one else ever had a copy or a key. Before you move irreplaceable files into a vault, make an encrypted backup and decide where the file should live. The guide on [what to do if you forget your vault pattern](id:forgot-vault-pattern) explains the options that remain.
 
-## Planned: encrypted backup
+## Encrypted backup, on your terms
 
-An encrypted backup and recovery option is planned for a future version, as part of the optional Premium upgrade. The goal is to let you keep a protected copy without giving up the principle that only you hold the keys. There is no date for it yet, and nothing in this page should be read as a promise of when it will arrive.
+In Settings → Backup, Velcrypt creates an encrypted `.velcrypt` file for the vault that is open, protected by a backup password you choose. You save the file wherever you want — Files, iCloud Drive or a computer — and restore it on any iPhone. It is free for everyone. The backup never passes through Velcrypt, and only you hold the backup password, so the principle stays the same: only you hold the keys. A forgotten backup password can’t be recovered.
 
 ## Good habits for an offline vault
 

@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "källskydd journalist iphone"
 keywords: ["skydda källors bilder mobil", "journalist mobilsäkerhet", "källdokument iphone integritet", "reporter enhetssäkerhet", "hotmodellering journalister"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Hotmodellering, dataminimering och metadata för reportrar, och var ett krypterat iPhone-valv passar in som ett lager i källskyddet."
 group: professional
 schemaType: Article
@@ -63,7 +63,7 @@ Svaren avgör dina verktyg. Att överdimensionera skyddet för en lågriskhistor
 
 Velcrypt är ett lager i den planen. Appen förvarar bilder, videor och dokument i krypterade valv i din iPhone, med AES-256-GCM och nycklar som härleds ur ditt mönster. Det finns inget konto, ingen server, ingen synkning och ingen analys av valvinnehåll, så det finns inget på en server som någon kan begära ut.
 
-Valven öppnas med ett mönster på ett 5×5-rutnät. Velcrypt stöder medvetet inte Face ID eller Touch ID, eftersom biometri kan användas utan ditt samtycke; ett mönster finns bara i ditt minne. Resonemanget finns i [mönster, PIN eller Face ID](id:pattern-lock-vs-pin-vs-face-id). Varje mönster öppnar sitt eget valv, och ett okänt mönster öppnar ett tomt valv utan felmeddelande, vilket stöder [trovärdig förnekelse](id:plausible-deniability-explained). Ett tvångsmönster som tar bort åtkomsten till andra valv är en planerad Premium-funktion som kommer snart.
+Valven öppnas med ett mönster på ett 5×5-rutnät. Velcrypt stöder medvetet inte Face ID eller Touch ID, eftersom biometri kan användas utan ditt samtycke; ett mönster finns bara i ditt minne. Resonemanget finns i [mönster, PIN eller Face ID](id:pattern-lock-vs-pin-vs-face-id). Varje mönster öppnar sitt eget valv, och ett okänt mönster öppnar ett tomt valv utan felmeddelande, vilket stöder [trovärdig förnekelse](id:plausible-deniability-explained). Ett tvångsmönster som tar bort åtkomsten till andra valv är planerat till en framtida uppdatering.
 
 ## Ärliga begränsningar
 
@@ -74,6 +74,6 @@ Ett valv är ingen strategi för källskydd i sig:
 - **Komprometterade enheter.** Skadlig kod på en jailbreakad eller riktat attackerad telefon kan se det som visas på skärmen.
 - **Iakttagelse.** Någon som ser dig rita ditt mönster, eller kameror i rummet, sätter det ur spel.
 - **Synlig app.** Velcrypt-symbolen finns på hemskärmen om du inte använder iOS 18:s alternativ för att gömma appar.
-- **Ingen återställning.** I den första versionen säkerhetskopieras inte valvdata. Tappar du telefonen eller glömmer mönstret är det borta, vilket kan vara en fördel för dataminimering och en risk för material du måste behålla. Se [säkerhetssidan](id:security) för helhetsbilden.
+- **Ingen automatisk återställning.** Valvdata ingår inte i iCloud- eller datorsäkerhetskopior. Tappar du telefonen eller glömmer mönstret är det borta, vilket kan vara en fördel för dataminimering och en risk för material du måste behålla. För sådant material kan du skapa en krypterad säkerhetskopia, men tänk på att filen då finns där du sparar den. Se [säkerhetssidan](id:security) för helhetsbilden.
 
 Källskydd handlar mest om vanor. Bra verktyg hjälper, men beslutet att spara mindre, dela mindre och planera i förväg gör det mesta av jobbet.

@@ -7,14 +7,14 @@ navTitle: "Conditions d’utilisation"
 answer: "Vous pouvez utiliser Velcrypt à des fins personnelles et licites, selon les présentes conditions et le contrat de licence utilisateur final standard d’Apple (Licensed Application EULA). Comme Velcrypt ne peut pas récupérer des données perdues, il vous appartient de retenir vos motifs et de garder des copies de tout fichier important."
 keyFacts:
   - "Le contrat de licence utilisateur final standard d’Apple (Licensed Application EULA) s’applique à l’app."
-  - "Velcrypt ne peut pas récupérer un motif oublié ni un coffre perdu."
-  - "Il vous appartient de conserver des copies de vos fichiers importants."
-  - "Les achats sont effectués et gérés via Apple."
+  - "Velcrypt ne peut pas récupérer un motif oublié ni un mot de passe de sauvegarde oublié."
+  - "Il vous appartient de conserver des copies de vos fichiers importants, par exemple avec une sauvegarde chiffrée."
+  - "Les achats passent par Apple ; les abonnements se renouvellent automatiquement jusqu’à résiliation."
   - "Projet — doit faire l’objet d’une relecture juridique avant le lancement."
 primaryKeyword: "conditions d’utilisation velcrypt"
 keywords: ["conditions velcrypt", "cluf velcrypt", "conditions générales velcrypt"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 schemaType: WebPage
 order: 7
 related: [privacy, support, pricing, forgot-vault-pattern]
@@ -25,9 +25,9 @@ faq: []
 
 **Projet — doit faire l’objet d’une relecture juridique avant le lancement.** Ces conditions sont un document de travail ; elles seront relues et pourront évoluer avant la sortie de Velcrypt.
 
-**Date d’entrée en vigueur :** 21 octobre 2026
+**Date d’entrée en vigueur :** 22 octobre 2026
 
-Les présentes Conditions d’utilisation (les « Conditions ») régissent votre utilisation de l’app iPhone Velcrypt (l’« App ») et du site web velcrypt.app (le « Site »), fournis par Velcrypt (« nous »). En téléchargeant ou en utilisant l’App, ou en utilisant le Site, vous acceptez ces Conditions.
+Les présentes Conditions d’utilisation (les « Conditions ») régissent votre utilisation de l’app iPhone Velcrypt (l’« App ») et du site web velcrypt.app (le « Site »), fournis par Swedish Treats AB, Suède (« nous »). En téléchargeant ou en utilisant l’App, ou en utilisant le Site, vous acceptez ces Conditions.
 
 ## 1. L’App et le CLUF d’Apple
 
@@ -52,15 +52,25 @@ Comme le contenu de vos coffres reste sur votre appareil et est chiffré, nous n
 Velcrypt est conçu pour que personne d’autre que vous ne puisse ouvrir vos coffres. Cela a des conséquences que vous acceptez en l’utilisant :
 
 - **Nous ne pouvons pas récupérer vos données.** Vos motifs et vos clés ne nous sont jamais envoyés. Si vous oubliez un motif, le coffre qu’il ouvre ne peut être récupéré ni par vous ni par nous.
-- **Appareil perdu, coffres perdus.** Dans la version actuelle, les données des coffres sont exclues des sauvegardes iCloud et ordinateur. Si votre appareil est perdu, volé, endommagé ou réinitialisé, ses coffres disparaissent.
-- **Gardez vos propres copies.** Il vous appartient de conserver, dans un endroit de confiance, une copie de tout fichier que vous ne pouvez pas vous permettre de perdre.
+- **Les coffres ne figurent pas dans les sauvegardes de l’appareil.** Les données des coffres sont exclues des sauvegardes iCloud et ordinateur. Si votre appareil est perdu, volé, endommagé ou réinitialisé, ses coffres disparaissent, sauf si vous avez auparavant créé une sauvegarde chiffrée dans Réglages → Sauvegarde et l’avez enregistrée ailleurs.
+- **Votre mot de passe de sauvegarde est irrécupérable.** Une sauvegarde est protégée par un mot de passe que vous choisissez. Nous ne recevons ni ce mot de passe ni le fichier de sauvegarde. Si vous oubliez le mot de passe, la sauvegarde ne peut pas être ouverte.
+- **Gardez vos propres copies.** Il vous appartient de conserver, dans un endroit de confiance, une copie de tout fichier que vous ne pouvez pas vous permettre de perdre, ainsi que vos fichiers de sauvegarde.
 - **Gardez votre motif secret.** Toute personne qui connaît ou observe votre motif peut ouvrir ce coffre.
 
 Lisez [motif de coffre oublié](id:forgot-vault-pattern) et les limites décrites sur la page [modèle de sécurité](id:security) avant de confier des fichiers importants à Velcrypt.
 
 ## 5. Achats
 
-Tout achat, y compris l’option Premium, s’effectue via l’App Store et est soumis aux conditions d’Apple. Apple traite le paiement, et les demandes de remboursement sont gérées par Apple selon ses propres règles. Les prix sont affichés dans l’App Store avant l’achat. Les fonctions décrites comme prévues ou bientôt disponibles ne sont pas garanties tant qu’elles ne sont pas sorties.
+Velcrypt Premium est proposé sous forme d’abonnement hebdomadaire ou annuel, ainsi qu’en achat unique À vie. Tout achat s’effectue via l’App Store et est soumis aux conditions d’Apple. Les prix sont affichés dans l’app et dans l’App Store avant l’achat et peuvent varier selon le pays.
+
+- **Paiement.** Le paiement est débité de votre compte Apple à la confirmation de l’achat. Apple traite le paiement ; nous ne recevons pas vos informations de paiement.
+- **Renouvellement automatique.** Les abonnements se renouvellent automatiquement au tarif en vigueur, sauf résiliation au moins 24 heures avant la fin de la période en cours. Vous gérez et résiliez vos abonnements dans les réglages de votre compte Apple.
+- **Essai gratuit.** Un essai gratuit, comme celui de l’abonnement annuel, se transforme automatiquement en abonnement payant, sauf résiliation au moins 24 heures avant sa fin.
+- **À vie.** L’achat À vie est un paiement unique, sans renouvellement.
+- **Remboursements.** Les demandes de remboursement sont gérées par Apple selon ses propres règles.
+- **Restaurer les achats.** Sur un appareil nouveau ou réinitialisé, utilisez « Restaurer les achats » dans l’app avec le même compte Apple pour retrouver Premium.
+
+Les fonctions décrites comme prévues ne sont pas garanties tant qu’elles ne sont pas sorties et ne font partie d’aucun achat.
 
 ## 6. Évolutions de l’App
 
@@ -74,13 +84,13 @@ Certaines juridictions n’autorisent pas certaines exclusions de garantie ; une
 
 ## 8. Limitation de responsabilité
 
-Dans toute la mesure permise par la loi, nous ne sommes pas responsables des dommages indirects, accessoires, spéciaux, consécutifs ou punitifs, ni de toute perte de données, de contenu, de bénéfices ou de clientèle, résultant de votre utilisation ou de l’impossibilité d’utiliser l’App ou le Site — y compris les données perdues en raison d’un motif oublié, d’un appareil perdu ou réinitialisé, ou de fichiers supprimés. Notre responsabilité totale pour toute réclamation est limitée au montant que vous avez payé pour l’App au cours des douze mois précédant la réclamation.
+Dans toute la mesure permise par la loi, nous ne sommes pas responsables des dommages indirects, accessoires, spéciaux, consécutifs ou punitifs, ni de toute perte de données, de contenu, de bénéfices ou de clientèle, résultant de votre utilisation ou de l’impossibilité d’utiliser l’App ou le Site — y compris les données perdues en raison d’un motif ou d’un mot de passe de sauvegarde oublié, d’un appareil perdu ou réinitialisé, ou de fichiers supprimés. Notre responsabilité totale pour toute réclamation est limitée au montant que vous avez payé pour l’App au cours des douze mois précédant la réclamation.
 
 Rien dans ces Conditions ne limite une responsabilité qui ne peut pas l’être en vertu de la loi.
 
 ## 9. Résiliation
 
-Vous pouvez cesser d’utiliser l’App à tout moment en la supprimant ; supprimer l’App supprime ses coffres. Nous pouvons mettre fin à votre licence en cas de manquement grave à ces Conditions.
+Vous pouvez cesser d’utiliser l’App à tout moment en la supprimant ; supprimer l’App supprime ses coffres. Les fichiers de sauvegarde enregistrés hors de l’app restent là où vous les avez placés. Un abonnement en cours se résilie séparément dans les réglages de votre compte Apple. Nous pouvons mettre fin à votre licence en cas de manquement grave à ces Conditions.
 
 ## 10. Modifications de ces Conditions
 
@@ -88,7 +98,7 @@ Nous pouvons mettre à jour ces Conditions. Nous publierons la version mise à j
 
 ## 11. Droit applicable
 
-Ces Conditions sont régies par le droit de [juridiction à définir], sans égard aux règles de conflit de lois. Les dispositions impératives de protection des consommateurs de votre pays de résidence continuent de s’appliquer.
+Ces Conditions sont régies par le droit suédois, sans égard aux règles de conflit de lois. Les dispositions impératives de protection des consommateurs de votre pays de résidence continuent de s’appliquer.
 
 ## 12. Contact
 

@@ -10,11 +10,11 @@ keyFacts:
   - "Velcrypt unlocks with a pattern on a 5×5 grid; each pattern is a separate vault."
   - "Velcrypt publishes its encryption design: AES-256-GCM with PBKDF2-HMAC-SHA512 key derivation."
   - "Velcrypt has no break-in photos and no Face ID, by design."
-  - "Velcrypt v1 has no backup: a forgotten pattern or lost phone means the vault is gone."
+  - "A forgotten Velcrypt pattern can’t be recovered; a lost phone needs an encrypted backup."
 primaryKeyword: "velcrypt vs private photo vault"
 keywords: ["private photo vault alternative", "private photo vault comparison", "private photo vault vs", "photo vault decoy password", "pattern lock photo vault"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "PIN-based vault with decoy and break-in features versus a pattern-based, account-free encrypted vault. Neutral side-by-side."
 competitor: "Private Photo Vault"
 lastChecked: "October 2026"
@@ -49,14 +49,14 @@ Velcrypt is a pattern-locked, on-device vault. A pattern is a continuous line dr
 |---|---|---|
 | On-device encryption details published | Yes: AES-256-GCM, per-vault and per-file keys | Not stated publicly in detail |
 | Account required | No | Not stated publicly |
-| Cloud backup | No (v1); encrypted backup planned | Varies; check current listing |
+| Cloud backup | No cloud; optional encrypted backup file you store yourself (free) | Varies; check current listing |
 | Unlock method | Pattern on a 5×5 grid | PIN / passcode |
 | Biometrics (Face ID / Touch ID) | Not offered, by design | Varies |
-| Decoy / multiple vaults | Every pattern is its own vault | Decoy password |
-| Duress pattern | Coming soon (Premium) | Not stated publicly |
+| Decoy / multiple vaults | Every pattern is its own vault (a second vault needs Premium) | Decoy password |
+| Duress pattern | Planned for a future update | Not stated publicly |
 | Break-in reports | Not offered | Offered, according to its listing |
 | Recovery if you forget the code | None | Not stated publicly |
-| Business model | Free version plus optional Premium | Free version plus paid upgrade |
+| Business model | Free version (1 vault, up to 50 items) plus optional Premium | Free version plus paid upgrade |
 | Platforms | iPhone (iOS 17+) | Varies; check store listings |
 
 <!-- TODO verify -->
@@ -83,7 +83,6 @@ For Private Photo Vault, we could not find an equivalent public technical descri
 
 - **You want break-in reports.** If knowing that someone tried to open your vault matters to you, Velcrypt does not offer this.
 - **You prefer a numeric code or Face ID.** Some people find a PIN quicker than drawing a pattern.
-- **You want a backup or transfer option.** If the version you use offers one, that is something Velcrypt v1 does not have.
 - **You’re already settled in.** Moving a large library takes effort; switching only makes sense if the differences matter to you.
 
 <!-- TODO verify -->

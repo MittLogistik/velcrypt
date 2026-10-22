@@ -19,7 +19,7 @@ keywords:
   - "keep photos off icloud"
   - "hidden photos on icloud.com"
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Hidden photos sync through iCloud Photos and can land in iCloud Backup. Here is how encryption works in each case and how to keep a photo off iCloud."
 category: apple
 order: 11
@@ -101,9 +101,9 @@ This stops new uploads, but it also stops syncing everything else, and existing 
 
 ### Option 2: Keep the photo in an app that doesn’t sync
 
-Some apps store files only in their own on-device storage and exclude them from backups. Velcrypt is built that way: photos, videos and documents you import are encrypted on the iPhone and, in the first version, are excluded from iCloud and computer backups. There is no account and nothing is uploaded ([on-device, no account](id:offline-no-account)).
+Some apps store files only in their own on-device storage and exclude them from backups. Velcrypt is built that way: photos, videos and documents you import are encrypted on the iPhone and excluded from iCloud and computer backups. There is no account and nothing is uploaded ([on-device, no account](id:offline-no-account)).
 
-The honest trade-off: if the photo exists only inside such a vault and you lose the phone or forget your pattern, there is no copy anywhere to restore. An encrypted backup option is planned for Velcrypt, but it isn’t part of the first version.
+The honest trade-off: if the photo exists only inside such a vault and you lose the phone or forget your pattern, there is no automatic copy anywhere to restore. Velcrypt lets you create an encrypted backup file yourself in Settings → Backup, protected by a backup password you choose. Where you save that file is up to you — if you put it in iCloud Drive, an encrypted copy does reach iCloud, but it can only be opened with your backup password.
 
 ### Option 3: Delete the iCloud copy properly
 

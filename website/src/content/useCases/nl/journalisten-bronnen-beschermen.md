@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "journalist bronbescherming telefoon"
 keywords: ["bronfoto's beschermen telefoon", "beveiliging telefoon journalist", "brondocumenten iphone privacy", "digitale veiligheid verslaggever", "dreigingsmodel journalisten"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Dreigingsmodellen, minimalisatie en metadata voor verslaggevers, en waar een versleutelde iPhone-kluis past als één laag bronbescherming."
 group: professional
 schemaType: Article
@@ -63,7 +63,7 @@ De antwoorden bepalen je hulpmiddelen. Een verhaal met weinig risico overdreven 
 
 Velcrypt is één laag in dat plan. Het bewaart foto's, video's en documenten in versleutelde kluizen op je iPhone, met AES-256-GCM en sleutels die van je patroon zijn afgeleid. Er is geen account, geen server, geen synchronisatie en geen analytics op kluisinhoud, dus er staat niets op een server dat iemand kan opvragen.
 
-Kluizen openen met een patroon op een 5×5-raster. Velcrypt ondersteunt bewust geen Face ID of Touch ID, omdat biometrie zonder jouw toestemming kan worden gebruikt; een patroon bestaat alleen in je geheugen. De redenering lees je in [patroon vs pincode vs Face ID](id:pattern-lock-vs-pin-vs-face-id). Elk patroon opent een eigen kluis, en een onbekend patroon opent zonder foutmelding een lege kluis, wat [plausibele ontkenning](id:plausible-deniability-explained) ondersteunt. Een dwangpatroon dat de toegang tot andere kluizen verwijdert, is een geplande Premium-functie die binnenkort komt.
+Kluizen openen met een patroon op een 5×5-raster. Velcrypt ondersteunt bewust geen Face ID of Touch ID, omdat biometrie zonder jouw toestemming kan worden gebruikt; een patroon bestaat alleen in je geheugen. De redenering lees je in [patroon vs pincode vs Face ID](id:pattern-lock-vs-pin-vs-face-id). Elk patroon opent een eigen kluis, en een onbekend patroon opent zonder foutmelding een lege kluis, wat [plausibele ontkenning](id:plausible-deniability-explained) ondersteunt. Meer kluizen horen bij Premium. Een dwangpatroon dat de toegang tot andere kluizen verwijdert, is gepland voor een toekomstige update.
 
 ## Eerlijke beperkingen
 
@@ -74,6 +74,6 @@ Een kluis is op zichzelf geen strategie voor bronbescherming:
 - **Gecompromitteerde toestellen.** Malware op een gejailbreakte of gericht aangevallen telefoon kan zien wat er op het scherm staat.
 - **Meekijken.** Iemand die je je patroon ziet tekenen, of camera's in de ruimte, maken het zinloos.
 - **Zichtbare app.** Het Velcrypt-symbool staat op je beginscherm, tenzij je de optie van iOS 18 gebruikt om apps te verbergen.
-- **Geen herstel.** In de eerste versie worden kluisgegevens niet geback-upt. Raak je je telefoon kwijt of vergeet je het patroon, dan is alles weg. Voor minimalisatie kan dat een voordeel zijn, voor materiaal dat je moet bewaren een risico. Zie de [beveiligingspagina](id:security) voor het volledige beeld.
+- **Geen automatisch herstel.** Kluisgegevens zitten niet in iCloud- of computerback-ups. Vergeet je het patroon, of raak je je telefoon kwijt zonder dat je zelf een versleutelde back-up hebt gemaakt, dan is alles weg. Bedenk dat een back-upbestand ook een kopie is die je moet beschermen. Voor minimalisatie kan dat een voordeel zijn, voor materiaal dat je moet bewaren een risico. Zie de [beveiligingspagina](id:security) voor het volledige beeld.
 
 Bronnen beschermen draait vooral om gewoontes. Goede hulpmiddelen helpen, maar de keuze om minder te bewaren, minder te delen en vooruit te plannen doet het meeste werk.

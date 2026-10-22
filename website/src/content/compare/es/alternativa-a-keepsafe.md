@@ -10,11 +10,11 @@ keyFacts:
   - "Velcrypt no necesita cuenta y guarda las bóvedas cifradas solo en tu iPhone."
   - "El álbum Oculto y las notas bloqueadas de Apple son opciones gratuitas e integradas que se sincronizan con iCloud."
   - "Cambiar implica exportar, importar, borrar lo que sobre y vaciar «Eliminado»."
-  - "Velcrypt v1 no tiene copia de seguridad: si olvidas el patrón o pierdes el teléfono, la bóveda desaparece."
+  - "Velcrypt no tiene nube: la única copia es una copia de seguridad cifrada que creas y guardas tú; un patrón olvidado no se recupera."
 primaryKeyword: "alternativa a keepsafe"
 keywords: ["alternativa a keepsafe iphone", "apps como keepsafe", "dejar keepsafe", "sustituto de keepsafe", "bóveda de fotos sin cuenta"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Por qué la gente busca una alternativa a Keepsafe, qué revisar en cualquier bóveda de fotos y cómo trasladar tus fotos sin dejar copias."
 competitor: "Keepsafe"
 lastChecked: "octubre de 2026"
@@ -28,7 +28,7 @@ faq:
   - q: "¿Borrar Keepsafe elimina mi copia en la nube?"
     a: "No necesariamente. Borrar una app no suele cerrar la cuenta ni eliminar los datos guardados en el servidor. Consulta la ayuda o los ajustes de cuenta de Keepsafe para saber cómo eliminar tu cuenta y tus datos en la nube."
   - q: "¿Hay alguna alternativa a Keepsafe con copia en la nube?"
-    a: "Sí, varias apps de bóveda ofrecen funciones en la nube, y el álbum Oculto de Apple se sincroniza con Fotos en iCloud. Velcrypt v1 no la tiene; está prevista una opción de copia de seguridad cifrada."
+    a: "Sí, varias apps de bóveda ofrecen funciones en la nube, y el álbum Oculto de Apple se sincroniza con Fotos en iCloud. Velcrypt no tiene copia en la nube, pero sí una copia de seguridad cifrada y gratuita en un archivo que guardas donde quieras, por ejemplo en iCloud Drive."
 ---
 
 *Última revisión: octubre de 2026. Los productos cambian; consulta la ficha del App Store de cada app para ver la versión actual.*
@@ -61,14 +61,14 @@ Una bóveda de fotos es una app que guarda las fotos y vídeos que eliges separa
 
 | Opción | Cuenta | Copia en la nube | Secreto independiente | Notas |
 |---|---|---|---|---|
-| Velcrypt | Ninguna | No (v1) | Sí, un patrón | Bóvedas ocultas, documentos, sin Face ID |
+| Velcrypt | Ninguna | No; copia de seguridad cifrada manual | Sí, un patrón | Bóvedas ocultas, documentos, sin Face ID |
 | Álbum Oculto del iPhone | Cuenta de Apple para iCloud | Con Fotos en iCloud | No, código del dispositivo | Gratis, integrado |
 | Notas bloqueadas de Notas | Cuenta de Apple para iCloud | Con Notas en iCloud | Contraseña de Notas opcional | Ideal para pocos elementos |
 | Otras apps de bóveda | Depende | Depende | Depende | Revisa cada ficha |
 
 <!-- TODO verify -->
 
-**Velcrypt** lo guarda todo en el iPhone, sin cuenta y sin servidores. Desbloqueas dibujando un patrón en una cuadrícula de 5×5, y cada patrón abre su propia bóveda; un patrón desconocido abre una vacía, lo que te da [negación plausible](id:plausible-deniability-explained). Los archivos se cifran con AES-256-GCM. La contrapartida honesta: en la v1 los datos de las bóvedas no se incluyen en las copias de seguridad, así que perder el teléfono u olvidar el patrón no tiene vuelta atrás. La [comparativa directa con Keepsafe](id:velcrypt-vs-keepsafe) pone las dos frente a frente.
+**Velcrypt** lo guarda todo en el iPhone, sin cuenta y sin servidores. Desbloqueas dibujando un patrón en una cuadrícula de 5×5, y cada patrón abre su propia bóveda; un patrón desconocido abre una vacía, lo que te da [negación plausible](id:plausible-deniability-explained). Los archivos se cifran con AES-256-GCM. La contrapartida honesta: los datos de las bóvedas no se incluyen en las copias de iCloud ni del ordenador, así que, sin una copia de seguridad cifrada creada por ti, perder el teléfono no tiene vuelta atrás, y un patrón olvidado nunca la tiene. La [comparativa directa con Keepsafe](id:velcrypt-vs-keepsafe) pone las dos frente a frente.
 
 **Las opciones integradas de Apple** no cuestan nada. El [álbum Oculto](id:velcrypt-vs-iphone-hidden-album) es fácil y se sincroniza, pero se abre con el código del dispositivo. Las [notas bloqueadas](id:velcrypt-vs-apple-notes-locked-notes) sirven para unas pocas imágenes o escaneos sensibles.
 
@@ -76,7 +76,7 @@ Una bóveda de fotos es una app que guarda las fotos y vídeos que eliges separa
 
 ## Cuándo puede tener sentido quedarse con Keepsafe
 
-Si la copia en la nube es la función de la que más dependes y te sientes cómodo con una cuenta, Keepsafe puede seguir siendo la mejor opción para ti. Velcrypt v1 no ofrece copia de seguridad ni sincronización, y no está disponible para Android.
+Si la copia en la nube es la función de la que más dependes y te sientes cómodo con una cuenta, Keepsafe puede seguir siendo la mejor opción para ti. Velcrypt no ofrece sincronización ni copia automática en la nube (solo una copia de seguridad cifrada manual), y no está disponible para Android.
 
 ## Cómo cambiar sin dejar copias
 

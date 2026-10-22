@@ -7,14 +7,14 @@ navTitle: "Velcrypt vs Keepsafe"
 answer: "Velcrypt keeps everything on your iPhone with no account and unlocks with a drawn pattern, while Keepsafe, according to its App Store listing, uses an account and offers cloud backup. Choose Velcrypt for local-only storage and plausible deniability; Keepsafe may suit you better if you want backup and sync."
 keyFacts:
   - "Velcrypt needs no account, email or sign-up; Keepsafe uses an account, according to its listing."
-  - "Keepsafe offers an optional cloud backup; Velcrypt v1 stores vaults only on your iPhone."
+  - "Keepsafe offers an optional cloud backup; Velcrypt keeps vaults on your iPhone, with a manual encrypted backup file."
   - "Velcrypt unlocks with a pattern on a 5×5 grid and deliberately has no Face ID or Touch ID."
   - "In Velcrypt every pattern opens its own vault, and unknown patterns open an empty one."
-  - "If you forget your Velcrypt pattern or lose the phone, the vault cannot be recovered."
+  - "A forgotten Velcrypt pattern can’t be recovered; a lost phone can only be covered by your own backup file."
 primaryKeyword: "velcrypt vs keepsafe"
 keywords: ["keepsafe vs velcrypt", "keepsafe comparison", "keepsafe photo vault alternative", "photo vault without account", "keepsafe cloud backup"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Local-only, account-free vault versus an account-based vault with cloud backup. Where each one fits, side by side."
 competitor: "Keepsafe"
 lastChecked: "October 2026"
@@ -24,7 +24,7 @@ faq:
   - q: "Does Keepsafe require an account?"
     a: "According to its App Store listing at the time of writing, Keepsafe uses an account tied to an email address, which supports features like cloud backup. Velcrypt has no account at all; nothing about you or your vault leaves the phone."
   - q: "Can Velcrypt back up my vault like Keepsafe’s cloud?"
-    a: "Not in the first version. Velcrypt excludes vault data from iCloud and computer backups, so a lost phone or forgotten pattern means the vault is gone. An encrypted backup option is planned, without a set date."
+    a: "Not automatically. Velcrypt excludes vault data from iCloud and computer backups and has no cloud of its own. Instead, Settings → Backup creates a free, encrypted .velcrypt file protected by a backup password; you save it to Files, iCloud Drive or a computer and restore it on any iPhone."
   - q: "Which one has a decoy vault?"
     a: "Both offer a form of decoy. Keepsafe has described a fake or decoy PIN as a premium feature. In Velcrypt, any pattern can be its own vault, so you can keep a harmless decoy vault, and unknown patterns simply open an empty vault."
   - q: "Can I switch from Keepsafe to Velcrypt?"
@@ -49,14 +49,14 @@ Neither approach is universally better. One trades convenience for minimal expos
 |---|---|---|
 | On-device encryption details published | Yes: AES-256-GCM, PBKDF2-HMAC-SHA512 key derivation (see [encryption](id:encryption)) | Not stated publicly in detail |
 | Account required | No account, no email | Yes, according to its listing |
-| Cloud backup | No (v1); encrypted backup planned | Optional “Private Cloud” with premium |
+| Cloud backup | No cloud; optional encrypted backup file you store yourself (free) | Optional “Private Cloud” with premium |
 | Unlock method | Pattern on a 5×5 grid | PIN or passcode |
 | Biometrics (Face ID / Touch ID) | Not offered, by design | Supported, according to its listing |
-| Decoy / multiple vaults | Every pattern is its own vault | Fake/decoy PIN in premium |
-| Duress pattern | Coming soon (Premium) | Not stated publicly |
+| Decoy / multiple vaults | Every pattern is its own vault (a second vault needs Premium) | Fake/decoy PIN in premium |
+| Duress pattern | Planned for a future update | Not stated publicly |
 | Break-in alerts | Not offered | Offered in premium |
 | Recovery if you forget the code | None; vault cannot be recovered | Varies; account-based recovery may be available |
-| Business model | Free version plus optional Premium (see [pricing](id:pricing)) | Free tier plus premium subscription |
+| Business model | Free version (1 vault, up to 50 items) plus optional Premium (see [pricing](id:pricing)) | Free tier plus premium subscription |
 | Platforms | iPhone (iOS 17+) | iOS and Android |
 
 <!-- TODO verify -->
@@ -65,7 +65,7 @@ Neither approach is universally better. One trades convenience for minimal expos
 
 An account is a convenience feature. It lets an app restore your vault on a new phone and sync it across devices. It also means a company holds an identifier for you, and, if you use cloud backup, a copy of your files sits on servers you don’t control, protected by whatever encryption and access policies that service uses.
 
-Velcrypt takes the opposite position. There is no sign-up, no email and no server, as explained on [offline, no account](id:offline-no-account). In version 1, vault data is excluded from iCloud and Finder backups. The honest consequence is that nobody can restore it for you: not Apple, not Velcrypt, not you. If that worries you, read [forgot your vault pattern](id:forgot-vault-pattern) before you decide.
+Velcrypt takes the opposite position. There is no sign-up, no email and no server, as explained on [offline, no account](id:offline-no-account). Vault data is excluded from iCloud and Finder backups. The honest consequence is that nobody can restore it for you — not Apple, not Velcrypt — unless you made an encrypted backup file yourself in Settings → Backup and still know its backup password. If that worries you, read [forgot your vault pattern](id:forgot-vault-pattern) before you decide.
 
 ## Unlocking: pattern versus PIN and biometrics
 
@@ -81,11 +81,11 @@ Many vault apps offer a second, fake code that opens a harmless vault. Keepsafe 
 
 <!-- TODO verify -->
 
-Velcrypt’s model is structural rather than an add-on. Every pattern is its own vault, there is no list of vaults, and a pattern the app has never seen simply opens an empty vault with no error. Nothing on screen proves other vaults exist. That is what [hidden vaults](id:hidden-vaults) and [plausible deniability](id:plausible-deniability-explained) mean in practice. A duress pattern, which would open a chosen vault and silently remove access to the others, is planned for Premium and is coming soon.
+Velcrypt’s model is structural rather than an add-on. Every pattern is its own vault, there is no list of vaults, and a pattern the app has never seen simply opens an empty vault with no error. Nothing on screen proves other vaults exist. That is what [hidden vaults](id:hidden-vaults) and [plausible deniability](id:plausible-deniability-explained) mean in practice. A duress pattern, which would open a chosen vault and silently remove access to the others, is planned for a future update.
 
 ## When Keepsafe may suit you better
 
-- **You want backup and sync.** If losing your phone must not mean losing your photos, an account-based cloud backup is the simpler answer today. Velcrypt v1 does not offer it.
+- **You want backup and sync.** If losing your phone must not mean losing your photos, an automatic account-based cloud backup is the simpler answer. Velcrypt only offers a manual encrypted backup file.
 - **You use Android too.** Keepsafe is available on more than one platform, according to its store listings; Velcrypt is iPhone-only.
 - **You prefer Face ID.** If biometric convenience matters more to you than the compelled-unlock concern, Velcrypt deliberately won’t offer it.
 - **You want break-in alerts.** Velcrypt does not take intruder photos.

@@ -8,13 +8,13 @@ answer: "Velcrypt es una app para iPhone (iOS 17 o posterior) que guarda fotos, 
 keyFacts:
   - "Eslogan: “Well Encrypted. Truly Private.”"
   - "Plataforma: iPhone, iOS 17 o posterior."
-  - "Modelo de precios: gratis con Premium opcional; precios por anunciar."
+  - "Modelo de precios: gratis con Premium opcional (semanal 1,99 US$, anual 19,99 US$, vitalicio 39,99 US$)."
   - "Descargas: logotipo y símbolo (PNG transparente) e icono de la app de 1024 px."
   - "Contacto de prensa: press@velcrypt.app."
 primaryKeyword: "kit de prensa velcrypt"
 keywords: ["logo velcrypt", "dossier de prensa velcrypt", "ficha de datos velcrypt", "colores de marca velcrypt"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 schemaType: WebPage
 order: 8
 related: [about, security, features, pricing]
@@ -46,13 +46,16 @@ Velcrypt es una app nativa para iPhone que guarda fotos, vídeos y documentos pr
 | Nombre | Velcrypt |
 | Eslogan | Well Encrypted. Truly Private. |
 | Plataforma | iPhone, iOS 17 o posterior |
+| Idiomas | 11 (incluido el español) |
 | Categoría | Privacidad / utilidades: bóveda cifrada de fotos, vídeos y documentos |
-| Modelo de precios | Gratis con Premium opcional; precios por anunciar |
+| Modelo de precios | Gratis (1 bóveda, hasta 50 elementos) con Premium opcional: semanal 1,99 US$, anual 19,99 US$ con 3 días de prueba, vitalicio 39,99 US$; los precios varían según el país |
+| Copia de seguridad | Copia de seguridad cifrada en un archivo, gratuita |
+| Editora | Swedish Treats AB, Suecia |
 | Desbloqueo | Patrón en una cuadrícula de 5×5 puntos; sin Face ID ni Touch ID por diseño |
 | Bóvedas | Cada patrón es su propia bóveda; no hay lista de bóvedas |
 | Cifrado | AES-256-GCM (Apple CryptoKit); derivación de claves PBKDF2-HMAC-SHA512 |
 | Datos | 100 % en el dispositivo; sin cuenta, sin sincronización en la nube, sin anuncios |
-| Previsto | Patrón de coacción (próximamente), copia de seguridad cifrada |
+| Previsto | Patrón de coacción (actualización futura) |
 | Contacto de prensa | press@velcrypt.app |
 
 Para los detalles técnicos, enlaza al [modelo de seguridad](id:security); para un resumen de funciones, consulta [funciones](id:features).
@@ -82,11 +85,11 @@ Usa los recursos tal como se proporcionan: deja suficiente espacio libre alreded
 Algunos puntos ayudan a que la cobertura sea precisa:
 
 - Velcrypt **no** ha sido auditada de forma independiente. Por favor, no la describas como auditada.
-- El patrón de coacción y la copia de seguridad cifrada están previstos, no disponibles.
+- El patrón de coacción está previsto, no disponible. La copia de seguridad cifrada sí está disponible y es gratuita.
 - Velcrypt no puede recuperar patrones olvidados; es una consecuencia deliberada de no tener cuenta ni servidor.
 - Todavía no hay cobertura de prensa que citar, y no publicamos cifras de usuarios ni valoraciones.
 
-Lee [acerca de Velcrypt](id:about) para conocer los principios de la app, y [precios](id:pricing) para saber qué está previsto que incluya Premium.
+Lee [acerca de Velcrypt](id:about) para conocer los principios de la app, y [precios](id:pricing) para saber qué incluye Premium.
 
 ## Contacto de prensa
 

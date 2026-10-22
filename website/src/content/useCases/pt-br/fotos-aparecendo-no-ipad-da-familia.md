@@ -9,11 +9,11 @@ keyFacts:
   - "Qualquer aparelho conectado à sua Conta Apple com as Fotos do iCloud ativadas mostra toda a sua biblioteca, incluindo o álbum Ocultos."
   - "A Fototeca Compartilhada do iCloud (iOS 16.1 e posteriores) compartilha fotos com até cinco outras pessoas e pode adicioná-las automaticamente."
   - "O Compartilhamento Familiar permite que cada pessoa tenha a própria Conta Apple e ainda compartilhe compras e assinaturas."
-  - "Os cofres do Velcrypt ficam só no seu iPhone: sem conta, sem sincronização e fora dos backups do iCloud na primeira versão."
+  - "Os cofres do Velcrypt ficam só no seu iPhone: sem conta, sem sincronização e fora dos backups do iCloud."
 primaryKeyword: "fotos do iphone aparecendo no ipad"
 keywords: ["parar de sincronizar fotos com o ipad da família", "fotos no mesmo id apple", "privacidade da fototeca compartilhada do icloud", "separar fotos do icloud da família", "fotos aparecendo em outro aparelho"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Por que suas fotos do iPhone aparecem no iPad ou no Mac da família, como desfazer contas e fototecas compartilhadas e onde guardar as fotos privadas."
 group: everyday
 schemaType: Article
@@ -27,7 +27,7 @@ faq:
   - q: "Como faço para as fotos não irem automaticamente para a Fototeca Compartilhada?"
     a: "Nos ajustes do Fotos, em Fototeca Compartilhada, você pode desativar o compartilhamento automático da Câmera ou fazer a Câmera salvar na sua Fototeca Pessoal. Também dá para mover fotos específicas de volta para a Fototeca Pessoal."
   - q: "Os cofres do Velcrypt sincronizam com o meu iPad ou Mac?"
-    a: "Não. O Velcrypt é só para iPhone, não tem conta nem sincronização na nuvem. Na primeira versão, os dados do cofre também ficam fora dos backups do iCloud e do computador."
+    a: "Não. O Velcrypt é só para iPhone, não tem conta nem sincronização na nuvem. Os dados do cofre também ficam fora dos backups do iCloud e do computador, então nada aparece no iPad da família."
 ---
 
 Muitas vezes começa com um “Mãe, o que é isso?” lá do sofá. Uma foto que você tirou no iPhone apareceu no iPad da família, ou no Mac da cozinha. Ninguém fez nada de errado — os aparelhos estão fazendo exatamente o que foram configurados para fazer. Para desfazer o nó, bastam alguns ajustes e uma conversa rápida em família.
@@ -71,7 +71,7 @@ Importar copia a foto para o cofre. Para tirá-la de todos os aparelhos sincroni
 ## Limites honestos
 
 - Como os cofres não sincronizam, você não consegue ver os itens do cofre em um iPad ou Mac. O Velcrypt é um app para iPhone.
-- Na primeira versão, os dados do cofre não entram nos backups do iCloud nem do computador. Se o iPhone for perdido ou você esquecer o padrão, o cofre não pode ser recuperado. Uma opção de backup criptografado está planejada.
+- Os dados do cofre não entram nos backups do iCloud nem do computador. Se você esquecer o padrão, ou perder o iPhone sem ter um backup, o cofre não pode ser recuperado. Um backup criptografado criado em Ajustes → Backup é um arquivo protegido por senha; se você salvá-lo no iCloud Drive, ele continua ilegível no iPad sem o Velcrypt e a senha.
 - Tudo o que já foi compartilhado — em uma Fototeca Compartilhada, em um álbum compartilhado ou em uma mensagem — pode continuar existindo em outros aparelhos. Confira esses lugares também.
 - O ícone do Velcrypt aparece na Tela de Início, a não ser que você use a opção do iOS 18 de ocultar apps.
 

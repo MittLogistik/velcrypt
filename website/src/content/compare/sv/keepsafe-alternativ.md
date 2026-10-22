@@ -10,11 +10,11 @@ keyFacts:
   - "Velcrypt kräver inget konto och lagrar krypterade valv bara på din iPhone."
   - "Apples album Gömda och låsta anteckningar är gratis, inbyggda alternativ med iCloud-synk."
   - "Att byta innebär export, import och sedan radering av rester och tömning av Nyligen raderade."
-  - "Velcrypt v1 har ingen säkerhetskopiering: ett glömt mönster eller en förlorad telefon innebär att valvet är borta."
+  - "Velcrypt har ingen molnbackup, men du kan själv skapa en krypterad säkerhetskopia. Ett glömt mönster kan inte återställas."
 primaryKeyword: "alternativ till keepsafe"
 keywords: ["keepsafe alternativ iphone", "appar som keepsafe", "byta från keepsafe", "ersättare för keepsafe", "fotovalv utan konto"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Varför folk letar efter ett alternativ till Keepsafe, vad du ska kontrollera i ett fotovalv och hur du flyttar bilderna utan att lämna kopior kvar."
 competitor: "Keepsafe"
 lastChecked: "oktober 2026"
@@ -28,7 +28,7 @@ faq:
   - q: "Raderas min molnbackup om jag tar bort Keepsafe?"
     a: "Inte nödvändigtvis. Att ta bort en app avslutar oftast inte ett konto eller raderar data på servern. Se Keepsafes hjälp eller kontoinställningar för hur du raderar ditt konto och dina molndata."
   - q: "Finns det något alternativ till Keepsafe med molnbackup?"
-    a: "Ja, flera valvappar har molnfunktioner, och Apples album Gömda synkas med iCloud-bilder. Velcrypt v1 har det inte; ett alternativ för krypterad säkerhetskopiering är planerat."
+    a: "Ja, flera valvappar har molnfunktioner, och Apples album Gömda synkas med iCloud-bilder. Velcrypt har ingen molnsynk, men du kan gratis skapa en krypterad säkerhetskopia som du sparar var du vill."
 ---
 
 *Senast kontrollerad: oktober 2026. Produktuppgifter ändras; se respektive apps sida i App Store för aktuell version.*
@@ -61,14 +61,14 @@ Ett fotovalv är en app som förvarar utvalda bilder och videor separat från di
 
 | Alternativ | Konto | Kopia i molnet | Separat hemlighet | Kommentar |
 |---|---|---|---|---|
-| Velcrypt | Inget | Nej (v1) | Ja, ett mönster | Dolda valv, dokument, ingen Face ID |
+| Velcrypt | Inget | Nej; manuell krypterad säkerhetskopia | Ja, ett mönster | Dolda valv, dokument, ingen Face ID |
 | iPhones album Gömda | Apple-konto för iCloud | Med iCloud-bilder | Nej, enhetens lösenkod | Gratis, inbyggt |
 | Låsta anteckningar i Apple Anteckningar | Apple-konto för iCloud | Med iCloud-anteckningar | Valfritt lösenord för Anteckningar | Bäst för ett fåtal objekt |
 | Andra valvappar | Varierar | Varierar | Varierar | Kontrollera varje apps sida |
 
 <!-- TODO verify -->
 
-**Velcrypt** håller allt på iPhonen, utan konto och utan servrar. Du låser upp genom att rita ett mönster på ett 5×5-rutnät, och varje mönster öppnar ett eget valv; ett okänt mönster öppnar ett tomt valv, vilket ger dig [trovärdigt förnekande](id:plausible-deniability-explained). Filerna krypteras med AES-256-GCM. Den ärliga avvägningen: valvdata ingår inte i säkerhetskopior i v1, så en förlorad telefon eller ett glömt mönster går inte att ångra. Den [direkta jämförelsen med Keepsafe](id:velcrypt-vs-keepsafe) ställer de två sida vid sida.
+**Velcrypt** håller allt på iPhonen, utan konto och utan servrar. Du låser upp genom att rita ett mönster på ett 5×5-rutnät, och varje mönster öppnar ett eget valv; ett okänt mönster öppnar ett tomt valv, vilket ger dig [trovärdigt förnekande](id:plausible-deniability-explained). Filerna krypteras med AES-256-GCM. Den ärliga avvägningen: valvdata ingår inte i iCloud- eller datorsäkerhetskopior, så ett glömt mönster går inte att ångra, och en förlorad telefon tar valven med sig om du inte själv har skapat en krypterad säkerhetskopia. Den [direkta jämförelsen med Keepsafe](id:velcrypt-vs-keepsafe) ställer de två sida vid sida.
 
 **Apples inbyggda alternativ** kostar ingenting. Albumet [Gömda](id:velcrypt-vs-iphone-hidden-album) är enkelt och synkas, men öppnas med enhetens lösenkod. [Låsta anteckningar](id:velcrypt-vs-apple-notes-locked-notes) passar för några få känsliga bilder eller skanningar.
 
@@ -76,7 +76,7 @@ Ett fotovalv är en app som förvarar utvalda bilder och videor separat från di
 
 ## När det kan vara rimligt att stanna kvar hos Keepsafe
 
-Om molnbackup är den funktion du är mest beroende av, och du är bekväm med ett konto, kan Keepsafe fortfarande passa bättre. Velcrypt v1 erbjuder varken säkerhetskopiering eller synk och finns inte för Android.
+Om molnbackup är den funktion du är mest beroende av, och du är bekväm med ett konto, kan Keepsafe fortfarande passa bättre. Velcrypt erbjuder ingen molnbackup eller synk, bara en manuell krypterad säkerhetskopia, och finns inte för Android.
 
 ## Så byter du utan att lämna kopior kvar
 

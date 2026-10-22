@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "trovärdigt förnekande kryptering"
 keywords: ["vad är plausible deniability", "förnekbar kryptering", "dold volym förklarad", "plausible deniability fotovalv", "förnekbart valv iphone"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Idén bakom dolda volymer och lockbetesvalv, hur Velcrypts design med okända mönster använder den och vad den ärligt talat inte kan göra."
 category: security
 order: 42
@@ -60,7 +60,7 @@ Velcrypt anpassar principen till ett valv för bilder och dokument i iPhone. Det
 
 Följden är att ett felaktigt mönster och ett giltigt men tomt valv ser likadana ut. Om du öppnar ett valv för någon finns det ingenting i gränssnittet som visar att andra valv finns. Det gör ett [lockbetesvalv](id:what-is-a-decoy-vault) till ett naturligt sätt att använda appen snarare än ett specialläge. Funktionssidan om [dolda valv](id:hidden-vaults) visar hur det fungerar i praktiken.
 
-En planerad Premium-funktion, [tvångsmönstret](id:duress-pattern) (kommer snart), bygger vidare på detta: ett särskilt mönster ska öppna ett valt valv och tyst ta bort åtkomsten till de andra.
+En planerad funktion för en framtida uppdatering, [tvångsmönstret](id:duress-pattern), bygger vidare på detta: ett särskilt mönster ska öppna ett valt valv och tyst ta bort åtkomsten till de andra.
 
 ## De ärliga gränserna
 

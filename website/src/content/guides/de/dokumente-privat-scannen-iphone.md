@@ -19,7 +19,7 @@ keywords:
   - "dokumente in dateien scannen iphone"
   - "wo werden gescannte dokumente gespeichert iphone"
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Ausweise, Verträge und Arztunterlagen scannen, ohne „Fotos“ oder iCloud zu füllen – dann sicher verstauen und übrige Kopien entfernen."
 category: practical
 order: 34
@@ -124,9 +124,9 @@ Viele Scanner-Apps im App Store bieten Texterkennung, Cloud-Speicher oder automa
 
 Eine Notiz zu sperren oder ein PDF unter „Auf meinem iPhone“ abzulegen ist ein guter Anfang, aber wer dein Handy entsperren kann, kann „Dateien“ trotzdem öffnen. Für Ausweisdokumente, Gesundheitsunterlagen und alles, dessen Veröffentlichung du fürchten würdest, fügt ein verschlüsselter Tresor ein separates Geheimnis hinzu.
 
-Velcrypt kann Dokumente aus der Dateien-App in einen verschlüsselten Tresor importieren ([private Dokumente](id:private-documents)). Dateien werden auf dem Gerät mit AES-256-GCM verschlüsselt, mit Schlüsseln, die aus deinem Entsperrmuster abgeleitet werden, und nichts wird hochgeladen ([offline, ohne Konto](id:offline-no-account)). Velcrypt hat keinen eingebauten Scanner und keine Kamera – du scannst also zuerst mit „Dateien“ oder Notizen und importierst dann das PDF.
+Velcrypt kann Dokumente aus der Dateien-App in einen verschlüsselten Tresor importieren ([private Dokumente](id:private-documents)). Dateien werden auf dem Gerät mit AES-256-GCM verschlüsselt, mit Schlüsseln, die aus deinem Entsperrmuster abgeleitet werden, und nichts wird hochgeladen ([offline, ohne Konto](id:offline-no-account)). Velcrypt hat keinen eingebauten Dokumentenscanner. Mit der Kamera im Tresor kannst du eine Seite zwar direkt als Foto in den Tresor aufnehmen, ohne dass sie in „Fotos“ landet; für ein sauberes PDF scannst du aber zuerst mit „Dateien“ oder Notizen und importierst es dann.
 
-Bedenke, dass Tresorinhalte in der ersten Version nicht in iCloud- oder Computer-Backups enthalten sind. Ist ein Originaldokument unersetzlich, bewahre das Papier oder eine weitere Kopie an einem Ort unter deiner Kontrolle auf. Unser [Anwendungsfall zu medizinischen Unterlagen und Ausweisen](id:medical-and-id-documents) behandelt diese Abwägung.
+Bedenke, dass Tresorinhalte nicht in iCloud- oder Computer-Backups enthalten sind. Erstelle unter Einstellungen → Backup ein verschlüsseltes Backup, und ist ein Originaldokument unersetzlich, bewahre das Papier oder eine weitere Kopie an einem Ort unter deiner Kontrolle auf. Unser [Anwendungsfall zu medizinischen Unterlagen und Ausweisen](id:medical-and-id-documents) behandelt diese Abwägung.
 
 ## Die Reste aufräumen
 

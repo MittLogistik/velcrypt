@@ -10,11 +10,11 @@ keyFacts:
   - "Dans Velcrypt, chaque schéma est son propre coffre et aucune liste de coffres ne trahit les autres."
   - "Un leurre vide éveille les soupçons ; un leurre vivant, avec des albums et des éléments récents, convainc."
   - "Un leurre protège contre la curiosité et une pression ponctuelle, pas contre une analyse forensique ou quelqu’un qui vous a vu tracer le schéma."
-  - "Un schéma de contrainte qui retire aussi l’accès aux autres coffres est une fonction Premium prévue (bientôt disponible)."
+  - "Un leurre nécessite un deuxième coffre, donc Premium ; un schéma de contrainte est prévu pour une prochaine mise à jour."
 primaryKeyword: "coffre-fort leurre"
 keywords: ["qu’est-ce qu’un coffre leurre", "mot de passe leurre coffre-fort photo", "faux coffre-fort app", "schéma leurre", "second coffre iphone"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Ce qu’est un coffre leurre, comment en créer un qui semble vivant avec un second schéma Velcrypt, et les limites à connaître."
 category: security
 order: 41
@@ -40,7 +40,7 @@ faq:
   - q: "Peut-on savoir qu’un coffre est un leurre ?"
     a: "Pas depuis l’app : Velcrypt ne tient aucune liste de coffres et ne laisse rien deviner de l’existence d’autres coffres. Ce qui peut trahir un leurre, c’est son contenu, par exemple s’il est vide, figé ou visiblement mis en scène."
   - q: "Un coffre leurre est-il la même chose qu’un schéma de contrainte ?"
-    a: "Non. Un leurre ouvre simplement un autre coffre. Un schéma de contrainte, fonction Premium de Velcrypt prévue et bientôt disponible, ouvrirait un coffre choisi tout en retirant discrètement l’accès aux autres."
+    a: "Non. Un leurre ouvre simplement un autre coffre. Un schéma de contrainte, fonction de Velcrypt prévue pour une prochaine mise à jour, ouvrirait un coffre choisi tout en retirant discrètement l’accès aux autres."
   - q: "Faut-il utiliser un coffre leurre face à la police ou aux douaniers ?"
     a: "Ce guide ne peut pas donner de conseil juridique. Tromper des agents publics peut constituer une infraction dans de nombreux pays. Un leurre sert surtout contre la curiosité du quotidien et les pressions informelles ; dans un cadre officiel, renseignez-vous sur vos droits et consultez un avocat."
 ---
@@ -93,8 +93,8 @@ Un coffre leurre est un outil social appuyé sur une bonne cryptographie. Ce n�
 
 ## Coffre leurre ou schéma de contrainte
 
-Un leurre ouvre un autre coffre et laisse tout le reste intact. Un **schéma de contrainte** va un cran plus loin : il ouvre un coffre que vous avez choisi et retire discrètement l’accès aux autres en même temps. Dans Velcrypt, le [schéma de contrainte](id:duress-pattern) est une fonction Premium prévue, bientôt disponible. En attendant, un leurre bien entretenu couvre la plupart des situations du quotidien : un partenaire curieux, un ami qui fait défiler votre téléphone, un collègue indiscret.
+Un leurre ouvre un autre coffre et laisse tout le reste intact. Un **schéma de contrainte** va un cran plus loin : il ouvre un coffre que vous avez choisi et retire discrètement l’accès aux autres en même temps. Dans Velcrypt, le [schéma de contrainte](id:duress-pattern) est prévu pour une prochaine mise à jour et n’est pas encore disponible. En attendant, un leurre bien entretenu couvre la plupart des situations du quotidien : un partenaire curieux, un ami qui fait défiler votre téléphone, un collègue indiscret.
 
 ## La place de Velcrypt
 
-Velcrypt a été conçu pour que les leurres soient naturels et non ajoutés après coup : chaque schéma est son propre coffre, il n’y a pas de liste de coffres, un schéma inconnu n’affiche aucune erreur, et il n’y a pas de Face ID qui permettrait d’éluder complètement la question. Chaque coffre est chiffré sur votre iPhone en AES-256-GCM avec sa propre clé : le leurre et le vrai coffre sont donc protégés de la même façon, la seule différence étant ce que vous y mettez. Pour en savoir plus, consultez la [présentation de la sécurité](id:security).
+Velcrypt a été conçu pour que les leurres soient naturels et non ajoutés après coup : chaque schéma est son propre coffre, il n’y a pas de liste de coffres, un schéma inconnu n’affiche aucune erreur, et il n’y a pas de Face ID qui permettrait d’éluder complètement la question. Chaque coffre est chiffré sur votre iPhone en AES-256-GCM avec sa propre clé : le leurre et le vrai coffre sont donc protégés de la même façon, la seule différence étant ce que vous y mettez. La version gratuite comprend un seul coffre : un coffre leurre nécessite donc Premium. Pour en savoir plus, consultez la [présentation de la sécurité](id:security).

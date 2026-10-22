@@ -10,11 +10,11 @@ keyFacts:
   - "Documentos no rolo da câmera sincronizam com todos os aparelhos com as Fotos do iCloud e podem aparecer em widgets e Memórias."
   - "O Velcrypt importa documentos do app Arquivos e fotos da sua biblioteca para cofres criptografados."
   - "Os itens importados são cópias; apague os originais e esvazie Apagados depois."
-  - "Os cofres do Velcrypt não entram nos backups do iCloud nem do computador na primeira versão, então guarde uma segunda cópia dos documentos essenciais."
+  - "Os cofres do Velcrypt não entram nos backups do iCloud nem do computador, então crie um backup criptografado ou guarde uma segunda cópia dos documentos essenciais."
 primaryKeyword: "guardar documentos no celular com segurança"
 keywords: ["foto do passaporte no iphone é seguro", "esconder fotos médicas iphone", "guardar carteirinha do plano no iphone", "guardar rg e cnh no celular", "privacidade de fotos de receitas"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Passaporte, RG e fotos médicas merecem mais que o rolo da câmera. Por onde eles vazam no iPhone e como mantê-los privados."
 group: sensitive
 schemaType: Article
@@ -28,7 +28,7 @@ faq:
   - q: "Posso colocar PDFs no Velcrypt?"
     a: "Sim. O Velcrypt importa documentos do app Arquivos, então PDFs como receitas, cartas do plano de saúde ou resultados de exames podem ficar em um cofre junto com as fotos."
   - q: "E se eu perder o celular com meus documentos no Velcrypt?"
-    a: "Sem o seu padrão, ninguém consegue abrir o cofre. Mas, na primeira versão, os dados do cofre não têm backup, então os documentos também se perdem. Guarde os originais ou uma segunda cópia em um lugar seguro."
+    a: "Sem o seu padrão, ninguém consegue abrir o cofre. Mas os dados do cofre não entram nos backups do iCloud, então os documentos também se perdem, a menos que você tenha criado um backup criptografado em Ajustes → Backup. Guarde os originais ou uma segunda cópia em um lugar seguro."
 ---
 
 Quase todo mundo já fez isso: fotografou o passaporte no balcão do aeroporto, tirou uma foto da carteirinha do plano para preencher um formulário ou registrou uma mancha na pele para mostrar ao médico. É prático. Mas essas fotos passam a morar no rolo da câmera, ao lado de fotos de férias e memes, por anos.
@@ -65,7 +65,7 @@ Quando você precisar enviar um documento — para um médico ou para um consula
 
 ## Limites honestos
 
-- **Sem backup na primeira versão.** Os dados do cofre ficam fora dos backups do iCloud e do computador. Se o celular for perdido ou você esquecer o padrão, os documentos não podem ser recuperados. Para documentos essenciais, guarde os originais ou uma segunda cópia que você controla. Uma opção de backup criptografado está planejada.
+- **Sem backup automático.** Os dados do cofre ficam fora dos backups do iCloud e do computador. Se você esquecer o padrão, ou perder o celular sem um backup criptografado, os documentos não podem ser recuperados. Para documentos essenciais, crie um backup em Ajustes → Backup e guarde os originais ou uma segunda cópia que você controla.
 - **Cópias em outros lugares não são protegidas.** E-mails, anexos de conversas e cópias no iCloud continuam onde estão até você removê-los. Veja [apagar os originais depois de importar](id:delete-original-photos-after-import).
 - **Tudo o que você exporta** sai do cofre e só é tão privado quanto o lugar para onde vai.
 - **Alguém observando** você desenhar o padrão, ou um celular entregue com o cofre aberto, anula a proteção.

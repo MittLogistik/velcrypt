@@ -1,20 +1,21 @@
 ---
 pageId: terms
 title: "Velcrypts användarvillkor"
-description: "Velcrypts användarvillkor: licens, godtagbar användning, ditt ansvar för mönster och kopior, inga garantier, ansvarsbegränsning och köp via Apple."
+description: "Velcrypts användarvillkor: licens, godtagbar användning, ditt ansvar för mönster och kopior, prenumerationer och köp via Apple, ansvarsbegränsning."
 h1: "Användarvillkor"
 navTitle: "Användarvillkor"
 answer: "Du får använda Velcrypt för lagliga, personliga ändamål enligt dessa villkor och Apples standardavtal för licensierade appar (Licensed Application End User License Agreement). Eftersom Velcrypt inte kan återställa förlorade data ansvarar du för att komma ihåg dina mönster och spara kopior av allt viktigt."
 keyFacts:
   - "Apples licensavtal för licensierade appar (Licensed Application EULA) gäller för appen."
-  - "Velcrypt kan inte återställa glömda mönster eller förlorade valv."
+  - "Velcrypt kan inte återställa glömda mönster, glömda lösenord för säkerhetskopior eller förlorade valv."
   - "Du ansvarar för att spara kopior av viktiga filer."
-  - "Köp görs och hanteras via Apple."
+  - "Köp görs via Apple. Prenumerationer förnyas automatiskt tills du säger upp dem."
+  - "Appen tillhandahålls av Swedish Treats AB, och svensk lag gäller."
   - "Utkast – behöver juridisk granskning före lansering."
 primaryKeyword: "velcrypt användarvillkor"
 keywords: ["velcrypt villkor", "velcrypt licensavtal", "velcrypt eula", "velcrypt allmänna villkor"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 schemaType: WebPage
 order: 7
 related: [privacy, support, pricing, forgot-vault-pattern]
@@ -25,9 +26,9 @@ faq: []
 
 **Utkast – behöver juridisk granskning före lansering.** Dessa villkor är ett arbetsutkast som kommer att granskas och kan ändras innan Velcrypt släpps.
 
-**Gäller från:** 21 oktober 2026
+**Gäller från:** 22 oktober 2026
 
-Dessa användarvillkor (”Villkoren”) gäller för din användning av Velcrypts iPhone-app (”Appen”) och webbplatsen velcrypt.app (”Webbplatsen”), som tillhandahålls av Velcrypt (”vi”, ”oss”). Genom att ladda ned eller använda Appen eller använda Webbplatsen godkänner du Villkoren.
+Dessa användarvillkor (”Villkoren”) gäller för din användning av Velcrypts iPhone-app (”Appen”) och webbplatsen velcrypt.app (”Webbplatsen”), som tillhandahålls av Swedish Treats AB, Sverige (”vi”, ”oss”). Genom att ladda ned eller använda Appen eller använda Webbplatsen godkänner du Villkoren.
 
 ## 1. Appen och Apples EULA
 
@@ -52,7 +53,8 @@ Eftersom ditt valvinnehåll stannar på din enhet och är krypterat kan vi inte 
 Velcrypt är utformat så att ingen annan än du kan öppna dina valv. Det får följder som du godtar genom att använda appen:
 
 - **Vi kan inte återställa dina data.** Dina mönster och nycklar skickas aldrig till oss. Om du glömmer ett mönster kan valvet det öppnar inte återställas, varken av dig eller av oss.
-- **Förlorade enheter innebär förlorade valv.** I nuvarande version undantas valvdata från iCloud- och datorsäkerhetskopior. Om din enhet försvinner, blir stulen, skadas eller återställs är dess valv borta.
+- **Valv finns inte i iCloud- eller datorsäkerhetskopior.** Valvdata undantas från iCloud- och datorsäkerhetskopior. Om din enhet försvinner, blir stulen, skadas eller återställs är dess valv borta, om du inte har skapat en krypterad säkerhetskopia i appen.
+- **Säkerhetskopior är ditt ansvar.** Under Inställningar → Säkerhetskopiering kan du skapa en krypterad säkerhetskopiefil av ett valv, skyddad av ett lösenord du väljer. Filen sparas där du själv lägger den, och vi får aldrig del av den. Om du glömmer lösenordet för säkerhetskopian kan den inte återställas, varken av dig eller av oss.
 - **Spara egna kopior.** Du ansvarar för att spara kopior av filer du inte har råd att förlora, på ett ställe du litar på.
 - **Håll ditt mönster hemligt.** Den som känner till eller ser ditt mönster kan öppna det valvet.
 
@@ -60,7 +62,15 @@ Läs [glömt valvmönstret](id:forgot-vault-pattern) och begränsningarna på si
 
 ## 5. Köp
 
-Alla köp, inklusive den valfria Premium-uppgraderingen, görs via App Store och omfattas av Apples villkor. Apple hanterar betalningen, och begäran om återbetalning hanteras av Apple enligt Apples riktlinjer. Priserna visas i App Store innan du köper. Funktioner som beskrivs som planerade eller kommer snart är inte garanterade förrän de har släppts.
+Appen kan laddas ned gratis. Velcrypt Premium erbjuds som vecko- eller årsprenumeration eller som ett engångsköp för livstid. Alla köp görs via App Store och omfattas av Apples villkor. Priserna visas i App Store innan du köper och kan variera mellan länder.
+
+- **Automatisk förnyelse.** Betalningen dras från ditt Apple-konto. Prenumerationer förnyas automatiskt för samma period om du inte säger upp dem minst 24 timmar innan den aktuella perioden slutar. Du hanterar och säger upp prenumerationer i inställningarna för ditt Apple-konto.
+- **Gratis provperiod.** Om en gratis provperiod erbjuds övergår den till en betald prenumeration när den slutar, om du inte säger upp den minst 24 timmar innan provperioden tar slut.
+- **Livstid.** Livstidsköpet är en engångsbetalning och förnyas inte.
+- **Återbetalningar.** Apple hanterar betalningen, och begäran om återbetalning hanteras av Apple enligt Apples riktlinjer.
+- **Återställ köp.** Byter du enhet eller installerar om Appen kan du trycka på Återställ köp i Appen för att återfå Premium med samma Apple-konto.
+
+Funktioner som beskrivs som planerade är inte garanterade förrän de har släppts.
 
 ## 6. Ändringar i Appen
 
@@ -74,7 +84,7 @@ Vissa jurisdiktioner tillåter inte vissa garantiundantag, så delar av ovanstå
 
 ## 8. Ansvarsbegränsning
 
-I den utsträckning lagen tillåter ansvarar vi inte för indirekta skador, följdskador, särskilda skador, oförutsedda skador eller skadestånd av straffkaraktär, eller för förlust av data, innehåll, vinst eller goodwill, som uppstår till följd av att du använder eller inte kan använda Appen eller Webbplatsen – inklusive data som förloras på grund av ett glömt mönster, en förlorad eller återställd enhet eller raderade filer. Vårt sammanlagda ansvar för ett anspråk är begränsat till det belopp du har betalat för Appen under de tolv månaderna före anspråket.
+I den utsträckning lagen tillåter ansvarar vi inte för indirekta skador, följdskador, särskilda skador, oförutsedda skador eller skadestånd av straffkaraktär, eller för förlust av data, innehåll, vinst eller goodwill, som uppstår till följd av att du använder eller inte kan använda Appen eller Webbplatsen – inklusive data som förloras på grund av ett glömt mönster, ett glömt lösenord för en säkerhetskopia, en förlorad eller återställd enhet eller raderade filer. Vårt sammanlagda ansvar för ett anspråk är begränsat till det belopp du har betalat för Appen under de tolv månaderna före anspråket.
 
 Ingenting i dessa Villkor begränsar ansvar som inte kan begränsas enligt lag.
 
@@ -88,7 +98,7 @@ Vi kan uppdatera dessa Villkor. Vi publicerar den uppdaterade versionen här och
 
 ## 11. Tillämplig lag
 
-Dessa Villkor regleras av lagarna i [jurisdiktion ej fastställd], utan hänsyn till lagvalsregler. Tvingande konsumentskyddslagstiftning i ditt bosättningsland gäller fortfarande.
+Dessa Villkor regleras av svensk lag, utan hänsyn till lagvalsregler. Tvingande konsumentskyddslagstiftning i ditt bosättningsland gäller fortfarande.
 
 ## 12. Kontakt
 

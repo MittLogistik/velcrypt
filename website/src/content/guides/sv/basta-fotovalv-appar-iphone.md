@@ -20,7 +20,7 @@ keywords:
   - "alternativ till keepsafe"
   - "app för gömda bilder iphone"
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Sju kriterier för att välja fotovalv och en ärlig genomgång av Apples verktyg, Keepsafe, Private Photo Vault, miniräknarvalv och Velcrypt."
 category: choosing
 order: 20
@@ -70,10 +70,10 @@ En snabb upplysning: Velcrypt är vår app. Vi har försökt beskriva den lika n
 | --- | --- | --- | --- | --- | --- | --- |
 | Hemlighet skild från enhetens lösenkod | Nej | Valfritt | Ja | Ja | Ja | Ja |
 | Konto krävs | Apple-konto för iCloud | Apple-konto för iCloud | Ja (e-post) | Krävs inte för grundläggande användning | Varierar | Nej |
-| Molnsäkerhetskopiering / synk | Via iCloud-bilder | Via iCloud | Valfritt premiummoln | Varierar | Varierar | Nej (krypterad säkerhetskopiering planerad) |
+| Molnsäkerhetskopiering / synk | Via iCloud-bilder | Via iCloud | Valfritt premiummoln | Varierar | Varierar | Ingen molnsynk; manuell krypterad säkerhetskopia |
 | Face ID / Touch ID | Ja | Ja | Ja | Ja | Varierar | Nej, medvetet |
-| Lockbetesfunktion | Nej | Nej | Falsk PIN (premium) | Lockbetes-lösenord | Varierar | Varje mönster öppnar ett eget valv |
-| Förklädnad som annan app | Nej | Nej | Nej | Nej | Ja | Nej |
+| Lockbetesfunktion | Nej | Nej | Falsk PIN (premium) | Lockbetes-lösenord | Varierar | Varje mönster öppnar ett eget valv (fler valv med Premium) |
+| Förklädnad som annan app | Nej | Nej | Nej | Nej | Ja | Alternativa appikoner (Premium) |
 
 <!-- TODO verify -->
 
@@ -115,13 +115,13 @@ Vi känner inte till något välanvänt, aktivt underhållet fotovalv med öppen
 
 ## Velcrypt
 
-Velcrypt är en inbyggd iPhone-app som lagrar bilder, videor och dokument i krypterade valv på enheten. Du låser upp ett valv genom att rita ett mönster på ett rutnät med 5×5 punkter ([mönsterlås](id:pattern-lock)). Varje mönster öppnar ett eget valv, och ett okänt mönster öppnar helt enkelt ett tomt, så appen avslöjar aldrig hur många valv som finns ([dolda valv](id:hidden-vaults)). Filerna krypteras med AES-256-GCM med nycklar som härleds från mönstret ([kryptering](id:encryption)). Det finns inget konto, ingen server och ingen uppladdning ([offline, utan konto](id:offline-no-account)). Appen finns som gratisversion plus en valfri Premium-uppgradering.
+Velcrypt är en inbyggd iPhone-app som lagrar bilder, videor och dokument i krypterade valv på enheten. Du låser upp ett valv genom att rita ett mönster på ett rutnät med 5×5 punkter ([mönsterlås](id:pattern-lock)). Varje mönster öppnar ett eget valv, och ett okänt mönster öppnar helt enkelt ett tomt, så appen avslöjar aldrig hur många valv som finns ([dolda valv](id:hidden-vaults)). Filerna krypteras med AES-256-GCM med nycklar som härleds från mönstret ([kryptering](id:encryption)). Det finns inget konto, ingen server och ingen uppladdning ([offline, utan konto](id:offline-no-account)). Gratisversionen har ett valv med upp till 50 objekt, och en valfri Premium-uppgradering ger obegränsat antal objekt, fler valv och alternativa appikoner ([priser](id:pricing)).
 
 Begränsningarna är medvetna men verkliga:
 
-- **Ingen säkerhetskopiering i den första versionen.** Valvinnehållet undantas från säkerhetskopior till iCloud och dator. Tappar du bort telefonen eller glömmer mönstret kan filerna inte återställas, varken av dig eller av oss. Ett alternativ för krypterad säkerhetskopiering är planerat.
+- **Ingen automatisk säkerhetskopiering.** Valvinnehållet undantas från säkerhetskopior till iCloud och dator. Ett glömt mönster kan inte återställas, varken av dig eller av oss. Mot en förlorad telefon skyddar du dig genom att själv skapa en krypterad säkerhetskopia under Inställningar → Säkerhetskopiering.
 - **Inget Face ID**, medvetet, så upplåsningen går långsammare än en blick.
-- **Ingen förklädnad.** Appen ser ut som det den är på hemskärmen.
+- **Ingen fungerande förklädnad.** Med Premium kan du välja en alternativ appikon, men appen öppnas fortfarande med mönsterrutnätet.
 - **Ingen molnsynk, inga delningslänkar och inga appar för iPad eller Mac.**
 
 Vem den kan passa: den som vill att filerna ska stanna strikt på telefonen, utan konto, och som kan leva med att själv ansvara för sina kopior.

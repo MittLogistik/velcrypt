@@ -10,11 +10,11 @@ keyFacts:
   - "Lost phones, lending your phone and shared hotel rooms are the most common travel exposures."
   - "Guided Access keeps a borrowed iPhone locked to one app, such as Maps or the Phone app."
   - "A Velcrypt vault opens only with your pattern; an unknown pattern opens an empty vault."
-  - "Velcrypt vault data isn’t in iCloud or computer backups in the first version, so plan a second copy."
+  - "Velcrypt vault data isn’t in iCloud or computer backups, so save an encrypted backup before you go."
 primaryKeyword: "travelling with private photos iphone"
 keywords: ["protect photos while travelling", "iphone stolen abroad photos", "stolen device protection travel", "lend phone abroad privacy", "travel phone privacy tips"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Lost phones, lending your iPhone and border checks: how to travel with private photos and documents without worrying about them."
 group: travel
 schemaType: Article
@@ -26,7 +26,7 @@ faq:
   - q: "Should I keep passport photos on my phone when travelling?"
     a: "A copy can be useful if your passport is lost, but don’t leave it in the camera roll. Keep it in an encrypted vault or another protected place, and keep a separate copy somewhere you can reach if the phone is lost."
   - q: "What happens to my Velcrypt vault if my phone is stolen abroad?"
-    a: "The thief can’t open it without your pattern, but you can’t recover it either: in the first version vault data isn’t included in iCloud or computer backups. An encrypted backup option is planned."
+    a: "The thief can’t open it without your pattern, but you can only get it back from an encrypted backup file you made before the trip: vault data isn’t included in iCloud or computer backups."
   - q: "Is it safe to lend my iPhone to someone abroad?"
     a: "It’s usually fine for a quick call or map check. Start Guided Access first so they stay in that one app, and keep the phone in sight."
 ---
@@ -60,16 +60,16 @@ Travel puts your phone in more hands and more places than everyday life. You use
 
 Velcrypt keeps private photos, videos and documents in encrypted vaults stored only on your iPhone. A vault opens with a pattern you draw on a 5×5 grid — not with your passcode or Face ID. If a thief has learned your passcode, that alone doesn’t open your vault. Why a pattern is used instead of biometrics is explained in [pattern vs PIN vs Face ID](id:pattern-lock-vs-pin-vs-face-id).
 
-Every pattern opens its own vault, and an unknown pattern opens an empty one without any error. That lets you keep a [decoy vault](id:what-is-a-decoy-vault) with harmless travel photos and keep your private vault behind a different pattern. The app also auto-locks when it goes to the background, and its content is hidden in the app switcher.
+Every pattern opens its own vault, and an unknown pattern opens an empty one without any error. With Premium, which allows more than one vault, that lets you keep a [decoy vault](id:what-is-a-decoy-vault) with harmless travel photos and keep your private vault behind a different pattern. The app also auto-locks when it goes to the background, and its content is hidden in the app switcher.
 
 There’s no account and nothing is uploaded, so there’s no cloud login to phish or reset while you’re on the road.
 
 ## Honest limits
 
-- **No backup in the first version.** Vault data is excluded from iCloud and computer backups. If the phone is lost or stolen, so is the vault — no one can recover it. An encrypted backup option is planned. For travel, keep a second copy of anything irreplaceable somewhere safe.
+- **No automatic backup.** Vault data is excluded from iCloud and computer backups. If the phone is lost or stolen, so is the vault — unless you saved an encrypted backup file in Settings → Backup before you left. Keep that file, or a second copy of anything irreplaceable, somewhere safe, and remember its backup password.
 - **Originals stay in Photos until you delete them.** Importing copies a photo. [Delete the original](id:delete-original-photos-after-import) and empty Recently Deleted.
 - **Someone watching you draw** your pattern could learn it.
 - **The app icon is visible** on the Home Screen unless you use iOS 18’s option to hide apps.
-- **A vault isn’t a legal shield.** At a border, the rules of the country apply; the duress pattern is a planned Premium feature (coming soon), not available today.
+- **A vault isn’t a legal shield.** At a border, the rules of the country apply; the duress pattern is planned for a future update and not available today.
 
 Travel light, travel prepared: a locked-down phone means losing it is an inconvenience, not a crisis.

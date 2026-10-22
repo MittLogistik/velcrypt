@@ -9,11 +9,11 @@ keyFacts:
   - "Elk apparaat dat met jouw Apple Account is ingelogd en iCloud-foto's aan heeft, toont je hele bibliotheek, inclusief het album Verborgen."
   - "De gedeelde iCloud-fotobibliotheek (iOS 16.1 en later) deelt foto's met maximaal vijf anderen en kan ze automatisch toevoegen."
   - "Met Delen met gezin houdt iedereen een eigen Apple Account en deel je toch aankopen en abonnementen."
-  - "Velcrypt-kluizen blijven alleen op je iPhone: geen account, geen synchronisatie, in de eerste versie niet in iCloud-backups."
+  - "Velcrypt-kluizen blijven alleen op je iPhone: geen account, geen synchronisatie, niet in iCloud-back-ups."
 primaryKeyword: "iphone foto's verschijnen op ipad"
 keywords: ["foto's niet meer synchroniseren met ipad gezin", "gedeelde apple id foto's", "gedeelde icloud-fotobibliotheek privacy", "icloud-foto's scheiden gezin", "foto's op ander apparaat zichtbaar"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Waarom je iPhone-foto's op een gezins-iPad of Mac verschijnen, hoe je gedeelde accounts en bibliotheken ontwart en waar privéfoto's horen."
 group: everyday
 schemaType: Article
@@ -27,7 +27,7 @@ faq:
   - q: "Hoe voorkom ik dat foto's automatisch in de gedeelde bibliotheek komen?"
     a: "In de instellingen van Foto's kun je onder Gedeelde bibliotheek het automatisch delen vanuit de Camera uitzetten, of de Camera laten opslaan in je persoonlijke bibliotheek. Je kunt ook losse foto's terugzetten naar je persoonlijke bibliotheek."
   - q: "Synchroniseren Velcrypt-kluizen met mijn iPad of Mac?"
-    a: "Nee. Velcrypt werkt alleen op iPhone, heeft geen account en geen cloudsynchronisatie. In de eerste versie zitten kluisgegevens ook niet in iCloud- en computerbackups."
+    a: "Nee. Velcrypt werkt alleen op iPhone, heeft geen account en geen cloudsynchronisatie. Kluisgegevens zitten ook niet in iCloud- en computerback-ups."
 ---
 
 Het begint vaak met een verbaasd „Mam, wat is dit?” vanaf de bank. Een foto die je met je iPhone hebt gemaakt, staat ineens op de gezins-iPad, of op de Mac in de keuken. Niemand heeft iets fout gedaan: de apparaten doen precies waarvoor ze zijn ingesteld. Het ontwarren kost een paar instellingen en een kort gesprek met het gezin.
@@ -69,7 +69,7 @@ Importeren kopieert een foto naar de kluis. Om hem van elk gesynchroniseerd appa
 ## Eerlijke beperkingen
 
 - Omdat kluizen niet synchroniseren, kun je kluisitems niet op een iPad of Mac bekijken. Velcrypt is een iPhone-app.
-- In de eerste versie zitten kluisgegevens niet in iCloud- of computerbackups. Raak je je iPhone kwijt of vergeet je het patroon, dan is de kluis niet te herstellen. Een versleutelde back-upoptie is gepland.
+- Kluisgegevens zitten niet in iCloud- of computerback-ups. Vergeet je het patroon, dan is de kluis niet te herstellen. Tegen een verloren iPhone maak je via Instellingen → Back-up een versleuteld back-upbestand; bewaar je dat in iCloud Drive, kies dan een back-upwachtwoord dat je gezin niet kent.
 - Alles wat al gedeeld was, met een gedeelde bibliotheek, een gedeeld album of in een bericht, kan nog op andere apparaten staan. Controleer die plekken ook.
 - Het Velcrypt-symbool is zichtbaar op je beginscherm, tenzij je de optie van iOS 18 gebruikt om apps te verbergen.
 

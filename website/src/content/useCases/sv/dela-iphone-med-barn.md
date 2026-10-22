@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "dölja bilder för barn iphone"
 keywords: ["barn använder min telefon bilder", "låna ut iphone till barn", "guidad åtkomst barn", "skärmtid barn iphone", "barn bläddrar bland bilder"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Låt barnen spela på din iPhone utan att de hamnar bland privata bilder: Guidad åtkomst, Skärmtid och ett valv som förblir stängt."
 group: everyday
 schemaType: Article
@@ -81,6 +81,6 @@ Valvet öppnas genom att du ritar ett [mönster på ett 5×5-rutnät](id:pattern
 - Om barnet ser dig rita ditt mönster kan det komma ihåg det. Rita det utom synhåll och välj ett längre mönster.
 - Lämnar du över telefonen med valvet öppet och appen i förgrunden syns innehållet tills appen hamnar i bakgrunden.
 - Velcrypt-symbolen syns på hemskärmen. iOS 18 och senare låter dig gömma appar bakom Face ID i en dold mapp; det är en iOS-funktion, ingen del av Velcrypt.
-- I den första versionen ingår valvdata inte i iCloud- eller datorsäkerhetskopior. Om telefonen försvinner eller går sönder, eller om du glömmer mönstret, kan valvet inte återställas. Spara kopior av oersättliga bilder på ett säkert ställe.
+- Valvdata ingår inte i iCloud- eller datorsäkerhetskopior. Om telefonen försvinner eller går sönder, eller om du glömmer mönstret, kan valvet inte återställas. Skapa en krypterad säkerhetskopia av oersättliga bilder och spara den på ett säkert ställe.
 
 För de flesta familjer är den bästa kombinationen enkel: Guidad åtkomst varje gång du lämnar över telefonen, och ett valv för de få saker som aldrig ska ligga ett svep bort.

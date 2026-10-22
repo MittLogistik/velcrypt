@@ -9,11 +9,11 @@ keyFacts:
   - "Alla enheter som är inloggade med ditt Apple-konto och har iCloud-bilder på visar hela ditt bibliotek, även albumet Gömda."
   - "Delat iCloud-bildbibliotek (iOS 16.1 och senare) delar bilder med upp till fem andra personer och kan lägga till dem automatiskt."
   - "Med Familjedelning behåller alla sitt eget Apple-konto men delar köp och prenumerationer."
-  - "Valv i Velcrypt stannar bara i din iPhone: inget konto, ingen synkning, inte i iCloud-säkerhetskopior i den första versionen."
+  - "Valv i Velcrypt stannar bara i din iPhone: inget konto, ingen synkning, inte i iCloud-säkerhetskopior."
 primaryKeyword: "iphone bilder syns på ipad"
 keywords: ["stoppa bildsynk till familjens ipad", "delat apple-id bilder", "delat icloud-bildbibliotek integritet", "separera icloud-bilder familj", "bilder syns på annan enhet"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Varför bilder från din iPhone syns på familjens iPad eller Mac, hur du reder ut delade konton och bibliotek, och var privata bilder hör hemma."
 group: everyday
 schemaType: Article
@@ -27,7 +27,7 @@ faq:
   - q: "Hur hindrar jag att bilder hamnar i det delade biblioteket automatiskt?"
     a: "I inställningarna för Bilder under Delat bibliotek kan du stänga av automatisk delning från Kamera, eller låta Kamera spara till ditt personliga bibliotek. Du kan också flytta enskilda bilder tillbaka till ditt personliga bibliotek."
   - q: "Synkas valv i Velcrypt till min iPad eller Mac?"
-    a: "Nej. Velcrypt finns bara för iPhone och har inget konto och ingen molnsynkning. I den första versionen undantas valvdata också från iCloud- och datorsäkerhetskopior."
+    a: "Nej. Velcrypt finns bara för iPhone och har inget konto och ingen molnsynkning. Valvdata undantas också från iCloud- och datorsäkerhetskopior."
 ---
 
 Det börjar ofta med ett förvånat ”Mamma, vad är det här?” från soffan. En bild du tagit med din iPhone har dykt upp på familjens iPad, eller på Macen i köket. Ingen har gjort något fel; enheterna gör precis det de ställts in för. Att reda ut det kräver några inställningar och ett kort familjesamtal.
@@ -69,7 +69,7 @@ Import kopierar en bild till valvet. För att ta bort den från alla synkade enh
 ## Ärliga begränsningar
 
 - Eftersom valven inte synkas kan du inte visa valvobjekt på en iPad eller Mac. Velcrypt är en iPhone-app.
-- I den första versionen ingår valvdata inte i iCloud- eller datorsäkerhetskopior. Om din iPhone försvinner eller du glömmer mönstret kan valvet inte återställas. En krypterad säkerhetskopia är planerad.
+- Valvdata ingår inte i iCloud- eller datorsäkerhetskopior. Ett glömt mönster kan inte återställas, och om din iPhone försvinner är valvet borta om du inte har skapat en krypterad säkerhetskopia under Inställningar → Säkerhetskopiering.
 - Det som redan delats, till ett delat bibliotek, ett delat album eller i ett meddelande, kan fortfarande finnas på andra enheter. Kontrollera de platserna också.
 - Velcrypt-symbolen syns på hemskärmen om du inte använder iOS 18:s alternativ för att gömma appar.
 

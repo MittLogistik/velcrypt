@@ -20,7 +20,7 @@ keywords:
   - "foto tresor nur auf dem iphone"
   - "foto tresor ohne internet"
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Was du mit einem Foto-Tresor ohne Konto und Cloud gewinnst, was du verlierst – und einfache Tests, ob eine App wirklich offline bleibt."
 category: choosing
 order: 23
@@ -125,6 +125,6 @@ Nichts davon macht eine App schlecht. Es bedeutet nur, dass sie nicht die Art Tr
 
 Velcrypt ist als Tresor ohne Konto direkt auf dem Gerät gebaut. Keine Registrierung, keine E-Mail, keine Server, keine Uploads und keine Analyse dessen, was du speicherst ([offline, ohne Konto](id:offline-no-account)). Fotos, Videos und Dokumente werden auf dem iPhone mit AES-256-GCM verschlüsselt, mit Schlüsseln, die aus dem gezeichneten Muster abgeleitet werden ([Verschlüsselung](id:encryption)).
 
-Damit bringt die App auch die oben beschriebenen Kompromisse mit. In der ersten Version sind Tresorinhalte von iCloud- und Computer-Backups ausgeschlossen. Verlierst du das Handy oder vergisst das Muster, lassen sich die Inhalte nicht wiederherstellen – weder von dir noch von uns. Was du dann tun kannst und was du nicht erwarten solltest, erklärt [Tresor-Muster vergessen?](id:forgot-vault-pattern). Eine verschlüsselte Backup-Option ist für die Zukunft geplant.
+Damit bringt die App auch die oben beschriebenen Kompromisse mit. Tresorinhalte sind von iCloud- und Computer-Backups ausgeschlossen. Verlierst du das Handy, hilft nur ein verschlüsseltes Backup, das du vorher selbst erstellt hast; ein vergessenes Muster lässt sich nicht wiederherstellen – weder von dir noch von uns. Was du dann tun kannst und was du nicht erwarten solltest, erklärt [Tresor-Muster vergessen?](id:forgot-vault-pattern). Das verschlüsselte Backup ist kostenlos: eine passwortgeschützte Datei, die du selbst speicherst und die Velcrypt nie erhält.
 
 Bevor du etwas, das du nicht verlieren darfst, in irgendeinen Offline-Tresor legst, bewahre eine separate Kopie unter deiner Kontrolle auf. Und egal welche App du wählst: Geh sie mit unserer [Sicherheits-Checkliste für Foto-Tresore](id:are-photo-vault-apps-safe) durch.

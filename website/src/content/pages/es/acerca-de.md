@@ -10,11 +10,12 @@ keyFacts:
   - "Sin Face ID ni Touch ID por diseño: un patrón solo existe en tu memoria."
   - "Sin anuncios y sin venta de datos."
   - "Honesta sobre sus límites, incluido que un patrón olvidado no se puede recuperar."
-  - "Previsto: patrón de coacción (próximamente) y copia de seguridad cifrada."
+  - "Copia de seguridad cifrada incluida y gratuita; patrón de coacción previsto para una actualización futura."
+  - "Publicada por Swedish Treats AB, Suecia."
 primaryKeyword: "acerca de velcrypt"
 keywords: ["app velcrypt", "quién desarrolla velcrypt", "principios de velcrypt", "bóveda de fotos privada iphone"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 schemaType: AboutPage
 order: 4
 related: [security, features, offline-no-account, pricing, press]
@@ -22,9 +23,9 @@ faq:
   - q: "¿Por qué Velcrypt no guarda nada en la nube?"
     a: "Porque los datos que nunca salen de tu teléfono no pueden quedar expuestos por una brecha en un servidor, un requerimiento judicial a un proveedor o una contraseña reutilizada. La contrapartida es que no hay recuperación si pierdes el teléfono u olvidas el patrón."
   - q: "¿Velcrypt gana dinero con mis datos?"
-    a: "No. Velcrypt no recopila el contenido de tus bóvedas ni analítica sobre él y no muestra anuncios. El plan es una versión gratuita con una mejora Premium de pago opcional."
+    a: "No. Velcrypt no recopila el contenido de tus bóvedas ni analítica sobre él y no muestra anuncios. Velcrypt tiene una versión gratuita y una mejora Premium de pago opcional."
   - q: "¿En qué está trabajando Velcrypt ahora?"
-    a: "Entre lo previsto están un patrón de coacción (próximamente) y una opción de copia de seguridad cifrada, ambos dentro de Premium. Ninguno tiene todavía fecha de lanzamiento."
+    a: "Lo principal que está previsto es un patrón de coacción, para una actualización futura y todavía sin fecha. La copia de seguridad cifrada ya está disponible y es gratuita."
 ---
 
 <!-- TODO: add founder/company details -->
@@ -57,17 +58,15 @@ Las herramientas de privacidad fallan a la gente cuando prometen demasiado. Pref
 
 ### Sin anuncios ni venta de datos
 
-Velcrypt no muestra publicidad ni vende datos. No recopila el contenido de tus bóvedas ni analítica sobre él, así que no hay nada que vender. Velcrypt se financiará con una mejora Premium opcional; consulta los [precios](id:pricing).
+Velcrypt no muestra publicidad ni vende datos. No recopila el contenido de tus bóvedas ni analítica sobre él, así que no hay nada que vender. Velcrypt se financia con una mejora Premium opcional; consulta los [precios](id:pricing).
 
 ## Lo que viene
 
-Estos elementos están previstos. Hoy no están en la app y no les pondremos fecha hasta que estén listos.
+Esto está previsto. Hoy no está en la app y no le pondremos fecha hasta que esté listo. La copia de seguridad cifrada ya está disponible y es gratuita.
 
 | Elemento | Estado |
 |---|---|
-| [Patrón de coacción](id:duress-pattern): abre una bóveda elegida y retira en silencio el acceso a las demás | Próximamente (Premium) |
-| Opción de copia de seguridad cifrada y recuperación | Prevista (Premium) |
-| Más bóvedas y elementos ilimitados | Previsto (Premium) |
+| [Patrón de coacción](id:duress-pattern): abre una bóveda elegida y retira en silencio el acceso a las demás | Previsto para una actualización futura |
 
 Todo lo que añadamos seguirá los mismos principios: en el dispositivo por defecto, sin cuenta y con una explicación clara de las contrapartidas.
 

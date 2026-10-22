@@ -20,7 +20,7 @@ keywords:
   - "cofre de fotos no aparelho iphone"
   - "cofre de fotos sem internet"
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "O que você ganha ao escolher um cofre de fotos sem conta nem nuvem, o que perde e testes simples para conferir se um app fica mesmo offline."
 category: choosing
 order: 23
@@ -127,6 +127,6 @@ Nada disso torna um app ruim. Só significa que ele não é o tipo de cofre de q
 
 O Velcrypt foi feito como um cofre no aparelho e sem conta. Não há cadastro, e-mail, servidores nem uploads, e nenhuma análise sobre o que você guarda ([offline, sem conta](id:offline-no-account)). Fotos, vídeos e documentos são criptografados no iPhone com AES-256-GCM, usando chaves derivadas do padrão que você desenha ([criptografia](id:encryption)).
 
-Isso significa que ele também tem as contrapartidas descritas acima. Na primeira versão, o conteúdo do cofre fica fora dos backups do iCloud e do computador, então, se você perder o celular ou esquecer o padrão, o conteúdo não pode ser recuperado, nem por você nem por nós. Explicamos o que fazer e o que não esperar em [esqueceu o padrão do cofre?](id:forgot-vault-pattern). Uma opção de backup criptografado está planejada para o futuro.
+Isso significa que ele também tem as contrapartidas descritas acima. O conteúdo do cofre fica fora dos backups do iCloud e do computador, então, se você esquecer o padrão, ou perder o celular sem ter um backup, o conteúdo não pode ser recuperado, nem por você nem por nós. Explicamos o que fazer e o que não esperar em [esqueceu o padrão do cofre?](id:forgot-vault-pattern). Para ter uma cópia sem criar conta, use o backup criptografado grátis em Ajustes → Backup: um arquivo protegido por senha que você guarda onde quiser.
 
 Antes de colocar em qualquer cofre offline algo que você não pode perder, mantenha uma cópia separada sob o seu controle. E, seja qual for o app escolhido, passe-o pela nossa [lista de segurança para cofres de fotos](id:are-photo-vault-apps-safe).

@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "fotos vor kindern verstecken iphone"
 keywords: ["kind spielt am handy fotos", "iphone mit kindern teilen", "geführter zugriff kinder", "bildschirmzeit kinder iphone", "kind wischt durch fotos"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Kinder auf deinem iPhone spielen lassen, ohne dass sie in private Fotos geraten: Geführter Zugriff, Bildschirmzeit und ein Tresor, der zu bleibt."
 group: everyday
 schemaType: Article
@@ -79,6 +79,6 @@ Die [automatische Sperre](id:auto-lock) schließt den Tresor, sobald die App in 
 - Sieht dein Kind dir beim Zeichnen deines Musters zu, merkt es sich das vielleicht. Zeichne es unbeobachtet und wähl ein längeres.
 - Gibst du das Handy mit offenem Tresor und der App im Vordergrund weiter, sind die Inhalte sichtbar, bis die App in den Hintergrund geht.
 - Das Velcrypt-Symbol ist auf deinem Home-Bildschirm sichtbar. Ab iOS 18 kannst du Apps in einem ausgeblendeten Ordner hinter Face ID verstecken; das ist eine iOS-Funktion, kein Teil von Velcrypt.
-- In der ersten Version sind Tresordaten nicht in iCloud- oder Computer-Backups enthalten. Geht das Handy verloren oder kaputt oder vergisst du das Muster, lässt sich der Tresor nicht wiederherstellen. Bewahr Kopien unersetzlicher Fotos an einem sicheren Ort auf.
+- Tresordaten sind nicht in iCloud- oder Computer-Backups enthalten. Geht das Handy verloren oder kaputt, hilft nur ein verschlüsseltes Backup, das du vorher unter Einstellungen → Backup erstellt hast; ein vergessenes Muster lässt sich nicht wiederherstellen. Bewahr Kopien unersetzlicher Fotos an einem sicheren Ort auf.
 
 Für die meisten Familien ist die beste Kombination einfach: Geführter Zugriff, jedes Mal wenn du das Handy weitergibst, und ein Tresor für die paar Dinge, die nie nur einen Wisch entfernt sein sollten.

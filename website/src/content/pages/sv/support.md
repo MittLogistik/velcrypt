@@ -8,13 +8,13 @@ answer: "Mejla support@velcrypt.app med din iOS-version, Velcrypt-version och en
 keyFacts:
   - "Kontakt: support@velcrypt.app."
   - "Ange iPhone-modell, iOS-version, Velcrypt-version och stegen som ledde till problemet."
-  - "Supporten kan inte återställa mönster eller valv – vi har ingen åtkomst till dem."
+  - "Supporten kan inte återställa mönster, valv eller lösenord för säkerhetskopior – vi har ingen åtkomst till dem."
   - "Ett oväntat tomt valv betyder oftast att ett något annorlunda mönster ritades."
   - "Skicka aldrig ditt mönster eller skärmdumpar av privat innehåll till oss."
 primaryKeyword: "velcrypt support"
 keywords: ["kontakta velcrypt", "velcrypt hjälp", "velcrypt öppnar inte valvet", "velcrypt felsökning", "velcrypt e-post"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 schemaType: ContactPage
 order: 5
 related: [faq, forgot-vault-pattern, auto-lock, security, privacy]
@@ -25,6 +25,8 @@ faq:
     a: "Troligen ritade du ett mönster som skiljer sig från ditt vanliga med en punkt eller en riktning. Velcrypt behandlar varje mönster som ett eget valv, så ett nytt mönster öppnar ett nytt, tomt valv utan felmeddelande."
   - q: "Hur snabbt svarar Velcrypt på supportmejl?"
     a: "Vi läser varje meddelande och svarar så snart vi kan. Vi erbjuder ingen garanterad svarstid i nuläget."
+  - q: "Hur får jag tillbaka Premium på en ny iPhone?"
+    a: "Logga in med samma Apple-konto, öppna Velcrypt och tryck på Återställ köp. Prenumerationer säger du upp i inställningarna för ditt Apple-konto, och återbetalningar hanteras av Apple."
   - q: "Ska jag skicka mitt mönster till supporten?"
     a: "Aldrig. Ingen hos Velcrypt behöver ditt mönster, och vi kommer aldrig att be om det. Beskriv problemet i stället."
 ---
@@ -54,7 +56,8 @@ Skicka **inte** ditt mönster och bifoga inga skärmdumpar som visar privat inne
 Velcrypt är byggt så att ingen annan än du kan öppna dina valv – inte heller vi. Därför **kan** supporten inte:
 
 - återställa eller nollställa ett glömt mönster,
-- återskapa ett valv från en förlorad, trasig eller återställd iPhone,
+- återskapa ett valv från en förlorad, trasig eller återställd iPhone (det går bara med en krypterad säkerhetskopia som du själv har skapat),
+- återställa ett glömt lösenord för en säkerhetskopia,
 - berätta hur många valv som finns på en enhet,
 - dekryptera filer eller hämta innehåll åt dig.
 
@@ -79,3 +82,7 @@ Krypterade kopior tar ungefär lika mycket plats som originalen. Kontrollera led
 ### Jag hittar inte en fil jag har importerat
 
 Titta i andra album i samma valv och kontrollera att du öppnade det valv du tror. Objekt i ett valv syns aldrig från ett annat.
+
+### Jag har bytt iPhone
+
+Valv följer inte med automatiskt. Om du skapade en krypterad säkerhetskopia under Inställningar › Säkerhetskopiering på den gamla telefonen öppnar du ett valv på den nya, väljer Återställ från säkerhetskopia och anger lösenordet för säkerhetskopian. Har du Premium trycker du på Återställ köp med samma Apple-konto.

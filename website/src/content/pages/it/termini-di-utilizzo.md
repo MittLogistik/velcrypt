@@ -7,14 +7,14 @@ navTitle: "Termini di utilizzo"
 answer: "Puoi usare Velcrypt per scopi personali e leciti secondo questi termini e il Contratto di licenza standard di Apple per le applicazioni concesse in licenza (EULA). Poiché Velcrypt non può recuperare dati persi, sei responsabile di ricordare le tue sequenze e di conservare copie di tutto ciò che è importante."
 keyFacts:
   - "All’app si applica il Contratto di licenza standard di Apple per l’utente finale (EULA)."
-  - "Velcrypt non può recuperare sequenze dimenticate né casseforti perse."
-  - "Sei responsabile di conservare copie dei file importanti."
-  - "Gli acquisti si effettuano e si gestiscono tramite Apple."
+  - "Velcrypt non può recuperare sequenze dimenticate né password di backup dimenticate."
+  - "Sei responsabile di conservare copie dei file importanti, per esempio con un backup cifrato."
+  - "Gli acquisti passano da Apple; gli abbonamenti si rinnovano automaticamente finché non li annulli."
   - "Bozza: richiede revisione legale prima del lancio."
 primaryKeyword: "velcrypt termini di utilizzo"
 keywords: ["velcrypt termini", "velcrypt eula", "velcrypt termini e condizioni"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 schemaType: WebPage
 order: 7
 related: [privacy, support, pricing, forgot-vault-pattern]
@@ -25,9 +25,9 @@ faq: []
 
 **Bozza, richiede revisione legale prima del lancio.** Questi termini sono una bozza di lavoro e saranno rivisti; potrebbero cambiare prima del rilascio di Velcrypt.
 
-**Data di efficacia:** 21 ottobre 2026
+**Data di efficacia:** 22 ottobre 2026
 
-Questi Termini di utilizzo (“Termini”) regolano l’uso dell’app Velcrypt per iPhone (l’“App”) e del sito velcrypt.app (il “Sito”), forniti da Velcrypt (“noi”). Scaricando o usando l’App, o usando il Sito, accetti questi Termini.
+Questi Termini di utilizzo (“Termini”) regolano l’uso dell’app Velcrypt per iPhone (l’“App”) e del sito velcrypt.app (il “Sito”), forniti da Swedish Treats AB, Svezia (“noi”). Scaricando o usando l’App, o usando il Sito, accetti questi Termini.
 
 ## 1. L’App e l’EULA di Apple
 
@@ -52,15 +52,25 @@ Poiché i contenuti delle tue casseforti restano sul tuo dispositivo e sono cifr
 Velcrypt è progettato perché nessuno tranne te possa aprire le tue casseforti. Usandolo, ne accetti le conseguenze:
 
 - **Non possiamo recuperare i tuoi dati.** Le tue sequenze e chiavi non ci vengono mai inviate. Se dimentichi una sequenza, la cassaforte che apre non può essere recuperata né da te né da noi.
-- **Dispositivo perso significa casseforti perse.** Nella versione attuale, i dati delle casseforti sono esclusi dai backup iCloud e sul computer. Se il dispositivo viene perso, rubato, danneggiato o inizializzato, le sue casseforti sono perse.
-- **Conserva le tue copie.** Sei responsabile di conservare copie di qualsiasi file che non puoi permetterti di perdere, in un luogo di cui ti fidi.
+- **Le casseforti non sono nei backup del dispositivo.** I dati delle casseforti sono esclusi dai backup iCloud e sul computer. Se il dispositivo viene perso, rubato, danneggiato o inizializzato, le sue casseforti sono perse, a meno che tu non abbia prima creato un backup cifrato in Impostazioni → Backup e non l’abbia salvato altrove.
+- **La password del backup non è recuperabile.** Un backup è protetto da una password scelta da te. Non riceviamo né la password né il file di backup. Se dimentichi la password, il backup non può essere aperto.
+- **Conserva le tue copie.** Sei responsabile di conservare copie di qualsiasi file che non puoi permetterti di perdere, in un luogo di cui ti fidi, insieme ai tuoi file di backup.
 - **Tieni privata la tua sequenza.** Chiunque conosca o osservi la tua sequenza può aprire quella cassaforte.
 
 Leggi [hai dimenticato la sequenza?](id:forgot-vault-pattern) e i limiti elencati nella pagina sul [modello di sicurezza](id:security) prima di affidare a Velcrypt file importanti.
 
 ## 5. Acquisti
 
-Qualsiasi acquisto, compreso l’upgrade Premium facoltativo, avviene tramite l’App Store ed è soggetto ai termini di Apple. Apple elabora il pagamento e le richieste di rimborso sono gestite da Apple secondo le sue regole. I prezzi sono mostrati nell’App Store prima dell’acquisto. Le funzioni descritte come in programma o in arrivo non sono garantite finché non vengono rilasciate.
+Velcrypt Premium è offerto come abbonamento settimanale o annuale e come acquisto unico A vita. Qualsiasi acquisto avviene tramite l’App Store ed è soggetto ai termini di Apple. I prezzi sono mostrati nell’app e nell’App Store prima dell’acquisto e possono variare in base al paese.
+
+- **Pagamento.** Il pagamento viene addebitato sul tuo Account Apple alla conferma dell’acquisto. Apple elabora il pagamento; non riceviamo i tuoi dati di pagamento.
+- **Rinnovo automatico.** Gli abbonamenti si rinnovano automaticamente al prezzo in vigore se non vengono annullati almeno 24 ore prima della fine del periodo in corso. Gestisci e annulli gli abbonamenti nelle impostazioni del tuo Account Apple.
+- **Prova gratuita.** Una prova gratuita, come quella dell’abbonamento annuale, diventa automaticamente un abbonamento a pagamento se non la annulli almeno 24 ore prima della sua fine.
+- **A vita.** L’acquisto A vita è un pagamento unico e non si rinnova.
+- **Rimborsi.** Le richieste di rimborso sono gestite da Apple secondo le sue regole.
+- **Ripristina acquisti.** Su un dispositivo nuovo o inizializzato, usa «Ripristina acquisti» nell’app con lo stesso Account Apple per riavere il Premium.
+
+Le funzioni descritte come in programma non sono garantite finché non vengono rilasciate e non fanno parte di alcun acquisto.
 
 ## 6. Modifiche all’App
 
@@ -74,13 +84,13 @@ Alcuni ordinamenti non consentono determinate esclusioni di garanzia, quindi par
 
 ## 8. Limitazione di responsabilità
 
-Nella misura massima consentita dalla legge, non siamo responsabili di danni indiretti, incidentali, speciali, consequenziali o punitivi, né di perdite di dati, contenuti, profitti o avviamento derivanti dall’uso o dall’impossibilità di usare l’App o il Sito, compresi i dati persi a causa di una sequenza dimenticata, di un dispositivo perso o inizializzato o di file eliminati. La nostra responsabilità complessiva per qualsiasi pretesa è limitata all’importo che hai pagato per l’App nei dodici mesi precedenti la pretesa.
+Nella misura massima consentita dalla legge, non siamo responsabili di danni indiretti, incidentali, speciali, consequenziali o punitivi, né di perdite di dati, contenuti, profitti o avviamento derivanti dall’uso o dall’impossibilità di usare l’App o il Sito, compresi i dati persi a causa di una sequenza o di una password di backup dimenticata, di un dispositivo perso o inizializzato o di file eliminati. La nostra responsabilità complessiva per qualsiasi pretesa è limitata all’importo che hai pagato per l’App nei dodici mesi precedenti la pretesa.
 
 Nulla in questi Termini limita responsabilità che per legge non possono essere limitate.
 
 ## 9. Cessazione
 
-Puoi smettere di usare l’App in qualsiasi momento eliminandola; eliminare l’App elimina le sue casseforti. Possiamo revocare la tua licenza in caso di violazione sostanziale di questi Termini.
+Puoi smettere di usare l’App in qualsiasi momento eliminandola; eliminare l’App elimina le sue casseforti. I file di backup salvati fuori dall’app restano dove li hai messi. Un abbonamento attivo va annullato separatamente nelle impostazioni del tuo Account Apple. Possiamo revocare la tua licenza in caso di violazione sostanziale di questi Termini.
 
 ## 10. Modifiche a questi Termini
 
@@ -88,7 +98,7 @@ Possiamo aggiornare questi Termini. Pubblicheremo qui la versione aggiornata e c
 
 ## 11. Legge applicabile
 
-Questi Termini sono regolati dalle leggi di [giurisdizione da definire], senza riguardo alle norme sui conflitti di legge. Restano applicabili le norme imperative a tutela dei consumatori del tuo Paese di residenza.
+Questi Termini sono regolati dalla legge svedese, senza riguardo alle norme sui conflitti di legge. Restano applicabili le norme imperative a tutela dei consumatori del tuo Paese di residenza.
 
 ## 12. Contatti
 

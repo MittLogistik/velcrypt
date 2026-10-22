@@ -10,11 +10,11 @@ keyFacts:
   - "Da iOS 16 l’album Nascosti è bloccato per impostazione predefinita con Face ID, Touch ID o il codice del dispositivo."
   - "Chiunque conosca il codice del tuo iPhone può aprire l’album Nascosti."
   - "Le foto nascoste si sincronizzano con Foto di iCloud; sono cifrate end-to-end solo con la Protezione avanzata dei dati attiva."
-  - "Velcrypt usa una sequenza separata, tiene le casseforti solo sul dispositivo e nella v1 le esclude dai backup."
+  - "Velcrypt usa una sequenza separata, tiene le casseforti solo sul dispositivo e le esclude dai backup di iCloud; il backup cifrato è manuale."
 primaryKeyword: "album nascosti iphone vs velcrypt"
 keywords: ["nascondere foto iphone", "album nascosti iphone è sicuro", "alternativa album nascosti", "album nascosti face id", "foto nascoste icloud"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "L’album Nascosti integrato di Apple contro una cassaforte cifrata separata: cosa protegge ciascuno, dove si sincronizzano le foto e chi può aprirle."
 competitor: "Album Nascosti dell’iPhone"
 lastChecked: "ottobre 2026"
@@ -51,13 +51,13 @@ Se Foto di iCloud è attivo, gli elementi nascosti si sincronizzano come tutto i
 |---|---|---|
 | Dettagli della cifratura sul dispositivo pubblicati | Sì: AES-256-GCM, chiavi derivate dalla tua sequenza | Protezione dati di iOS, documentata da Apple |
 | Account richiesto | No | Parte di Foto; serve un Account Apple per la sincronizzazione iCloud |
-| Backup cloud | No (v1); backup cifrato in programma | Sì, con Foto di iCloud o Backup iCloud |
+| Backup cloud | Nessuna sincronizzazione; backup cifrato manuale gratuito in un file | Sì, con Foto di iCloud o Backup iCloud |
 | Metodo di sblocco | Sequenza su griglia 5×5, separata dal codice | Face ID, Touch ID o codice del dispositivo |
 | Biometria | Non offerta, per scelta | Sì |
-| Esca / più casseforti | Ogni sequenza è una cassaforte a sé | Un solo album Nascosti |
-| Sequenza di emergenza | In arrivo (Premium) | No |
+| Esca / più casseforti | Ogni sequenza è una cassaforte a sé (più casseforti con Premium) | Un solo album Nascosti |
+| Sequenza di emergenza | Prevista per un aggiornamento futuro | No |
 | Recupero se dimentichi il codice | Nessuno | Codice del dispositivo e recupero dell’Account Apple |
-| Costo | Versione gratuita più Premium facoltativo | Incluso in iOS |
+| Costo | Gratuita (1 cassaforte, 50 elementi) più Premium facoltativo da 1,99 $/settimana, 19,99 $/anno o 39,99 $ a vita (USD) | Incluso in iOS |
 | Piattaforme | iPhone (iOS 17+) | iPhone, iPad e Mac |
 | Documenti | Sì, dall’app File | Solo foto e video |
 
@@ -75,7 +75,7 @@ Nascondere una foto non la sposta da nessuna parte: è ancora nella libreria, an
 
 <!-- TODO verify -->
 
-Velcrypt funziona al contrario. Una foto importata viene copiata in una cassaforte cifrata sull’iPhone, e nella versione 1 i dati delle casseforti sono esclusi dai backup iCloud e sul computer. Dopo l’importazione elimini l’originale da Foto e svuoti Eliminati di recente, altrimenti resta lì per circa 30 giorni. Leggi [eliminare gli originali dopo l’importazione](id:delete-original-photos-after-import).
+Velcrypt funziona al contrario. Una foto importata viene copiata in una cassaforte cifrata sull’iPhone, e i dati delle casseforti sono esclusi dai backup iCloud e sul computer (un backup cifrato lo crei tu, se lo vuoi). Dopo l’importazione elimini l’originale da Foto e svuoti Eliminati di recente, altrimenti resta lì per circa 30 giorni. Leggi [eliminare gli originali dopo l’importazione](id:delete-original-photos-after-import).
 
 ## Negabilità
 
@@ -95,4 +95,4 @@ Esiste un solo album Nascosti, e la sua esistenza è evidente a chiunque apra Fo
 - **Vuoi esche o più spazi privati.** Ogni sequenza è una cassaforte a sé.
 - **Devi proteggere anche documenti.** Importa PDF e file dall’app File.
 
-Il compromesso, detto onestamente: con Velcrypt v1, un telefono perso o una sequenza dimenticata significano che la cassaforte non si può recuperare. Decidi quale rischio ti preoccupa di più.
+Il compromesso, detto onestamente: con Velcrypt una sequenza dimenticata significa che la cassaforte non si può recuperare, e un telefono perso anche, a meno che tu non abbia creato un backup cifrato. Decidi quale rischio ti preoccupa di più.

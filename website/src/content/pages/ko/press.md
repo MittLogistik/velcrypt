@@ -8,13 +8,13 @@ answer: "Velcrypt는 비공개 사진, 동영상, 문서를 기기 안의 패턴
 keyFacts:
   - "태그라인: “Well Encrypted. Truly Private.”"
   - "플랫폼: iPhone, iOS 17 이상."
-  - "가격 모델: 무료 + 선택형 Premium, 가격은 추후 발표."
+  - "가격 모델: 무료 + 선택형 Premium(주 1.99달러, 연 19.99달러, 평생 39.99달러, USD)."
   - "다운로드: 로고와 심볼(투명 PNG), 1024px 앱 아이콘."
   - "언론 문의: press@velcrypt.app."
 primaryKeyword: "velcrypt 보도 자료"
 keywords: ["velcrypt 로고", "velcrypt 미디어 키트", "velcrypt 팩트 시트", "velcrypt 브랜드 색상"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 schemaType: WebPage
 order: 8
 related: [about, security, features, pricing]
@@ -47,12 +47,14 @@ Velcrypt는 비공개 사진, 동영상, 문서를 기기 안의 암호화된 �
 | 태그라인 | Well Encrypted. Truly Private. |
 | 플랫폼 | iPhone, iOS 17 이상 |
 | 카테고리 | 개인정보 보호 / 유틸리티 — 암호화 사진·동영상·문서 금고 |
-| 가격 모델 | 무료 + 선택형 Premium, 가격 미정 |
+| 가격 모델 | 무료(금고 1개, 항목 50개) + 선택형 Premium: 주 1.99달러, 연 19.99달러(3일 무료 체험), 평생 39.99달러(USD, 국가마다 다름) |
+| 개발사 | Swedish Treats AB(스웨덴) |
 | 잠금 해제 | 5×5 점 격자 패턴, 설계상 Face ID·Touch ID 없음 |
 | 금고 | 패턴마다 각각의 금고, 금고 목록 없음 |
 | 암호화 | AES-256-GCM(Apple CryptoKit), PBKDF2-HMAC-SHA512 키 파생 |
 | 데이터 | 100% 기기 내 처리, 계정·클라우드 동기화·광고 없음 |
-| 계획 | 강압 패턴(출시 예정), 암호화 백업 |
+| 백업 | 무료 수동 암호화 백업 파일(.velcrypt), 사용자가 정한 암호로 보호 |
+| 계획 | 강압 패턴(향후 업데이트) |
 | 언론 문의 | press@velcrypt.app |
 
 기술적인 세부 사항은 [보안 모델](id:security)로, 기능 개요는 [기능](id:features)으로 링크해 주세요.
@@ -82,11 +84,11 @@ Velcrypt는 비공개 사진, 동영상, 문서를 기기 안의 암호화된 �
 정확한 보도를 위해 몇 가지를 참고해 주세요.
 
 - Velcrypt는 독립적인 감사를 **받지 않았습니다**. 감사를 받은 것으로 표현하지 말아 주세요.
-- 강압 패턴과 암호화 백업은 계획 단계이며 아직 제공되지 않습니다.
+- 강압 패턴은 계획 단계이며 아직 제공되지 않습니다. 암호화 백업은 제공되며 무료입니다.
 - Velcrypt는 잊어버린 패턴을 복구할 수 없습니다. 계정이나 서버가 없다는 설계의 의도된 결과입니다.
 - 아직 인용할 언론 보도가 없으며, 사용자 수나 평점은 공개하지 않습니다.
 
-앱의 원칙은 [Velcrypt 소개](id:about)에서, Premium에 포함될 계획인 항목은 [가격](id:pricing)에서 확인하세요.
+앱의 원칙은 [Velcrypt 소개](id:about)에서, Premium에 포함된 항목과 가격은 [가격](id:pricing)에서 확인하세요.
 
 ## 언론 문의
 

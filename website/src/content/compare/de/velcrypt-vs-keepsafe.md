@@ -7,14 +7,14 @@ navTitle: "Velcrypt vs Keepsafe"
 answer: "Velcrypt hält alles ohne Konto auf deinem iPhone und entsperrt mit einem gezeichneten Muster, während Keepsafe laut App-Store-Eintrag ein Konto nutzt und ein Cloud-Backup anbietet. Wähle Velcrypt für rein lokale Speicherung und glaubhafte Abstreitbarkeit; Keepsafe passt womöglich besser, wenn du Backup und Synchronisierung willst."
 keyFacts:
   - "Velcrypt braucht kein Konto, keine E-Mail und keine Registrierung; Keepsafe nutzt laut Store-Eintrag ein Konto."
-  - "Keepsafe bietet ein optionales Cloud-Backup; Velcrypt v1 speichert Tresore nur auf deinem iPhone."
+  - "Keepsafe bietet ein optionales Cloud-Backup; Velcrypt speichert Tresore nur auf deinem iPhone, plus manuelles verschlüsseltes Backup."
   - "Velcrypt entsperrt mit einem Muster auf einem 5×5-Raster und verzichtet bewusst auf Face ID und Touch ID."
   - "In Velcrypt öffnet jedes Muster einen eigenen Tresor, unbekannte Muster öffnen einen leeren."
-  - "Vergisst du dein Velcrypt-Muster oder verlierst du das iPhone, lässt sich der Tresor nicht wiederherstellen."
+  - "Ein vergessenes Velcrypt-Muster lässt sich nicht wiederherstellen; ein verlorenes iPhone nur mit eigenem Backup."
 primaryKeyword: "velcrypt vs keepsafe"
 keywords: ["keepsafe vs velcrypt", "keepsafe vergleich", "keepsafe foto tresor alternative", "foto tresor ohne konto", "keepsafe cloud backup"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Rein lokaler Tresor ohne Konto gegen kontobasierten Tresor mit Cloud-Backup. Wo welcher passt – direkt nebeneinander."
 competitor: "Keepsafe"
 lastChecked: "Oktober 2026"
@@ -24,9 +24,9 @@ faq:
   - q: "Braucht Keepsafe ein Konto?"
     a: "Laut App-Store-Eintrag nutzt Keepsafe zum Zeitpunkt des Schreibens ein an eine E-Mail-Adresse gebundenes Konto, das Funktionen wie das Cloud-Backup ermöglicht. Velcrypt hat überhaupt kein Konto; nichts über dich oder deinen Tresor verlässt das iPhone."
   - q: "Kann Velcrypt meinen Tresor wie die Keepsafe-Cloud sichern?"
-    a: "In der ersten Version nicht. Velcrypt schließt Tresordaten von iCloud- und Computer-Backups aus; ein verlorenes iPhone oder ein vergessenes Muster bedeutet also, dass der Tresor weg ist. Eine verschlüsselte Backup-Option ist geplant, ohne festes Datum."
+    a: "Kein Cloud-Backup. Velcrypt schließt Tresordaten von iCloud- und Computer-Backups aus, bietet aber ein kostenloses verschlüsseltes Backup: eine .velcrypt-Datei mit eigenem Passwort, die du selbst speicherst und auf einem neuen iPhone wiederherstellst. Ein vergessenes Muster lässt sich nicht wiederherstellen."
   - q: "Welche der beiden Apps hat einen Köder-Tresor?"
-    a: "Beide bieten eine Form davon. Keepsafe hat eine Fake- bzw. Köder-PIN als Premium-Funktion beschrieben. In Velcrypt kann jedes Muster ein eigener Tresor sein – du kannst also einen harmlosen Köder-Tresor führen, und unbekannte Muster öffnen einfach einen leeren Tresor."
+    a: "Beide bieten eine Form davon. Keepsafe hat eine Fake- bzw. Köder-PIN als Premium-Funktion beschrieben. In Velcrypt kann mit Premium jedes Muster ein eigener Tresor sein – du kannst also einen harmlosen Köder-Tresor führen, und unbekannte Muster öffnen einfach einen leeren Tresor."
   - q: "Kann ich von Keepsafe zu Velcrypt wechseln?"
     a: "Grundsätzlich ja: Exportiere deine Fotos aus Keepsafe zurück in die Fotos-App oder in „Dateien“, importiere sie in Velcrypt, lösche danach die exportierten Kopien und leere „Zuletzt gelöscht“. Die genauen Export-Schritte hängen von der aktuellen Keepsafe-Version ab."
 ---
@@ -49,14 +49,14 @@ Keiner der beiden Ansätze ist grundsätzlich besser. Der eine tauscht Komfort g
 |---|---|---|
 | Details zur Verschlüsselung auf dem Gerät veröffentlicht | Ja: AES-256-GCM, Schlüsselableitung mit PBKDF2-HMAC-SHA512 (siehe [Verschlüsselung](id:encryption)) | Nicht im Detail öffentlich angegeben |
 | Konto erforderlich | Kein Konto, keine E-Mail | Ja, laut Store-Eintrag |
-| Cloud-Backup | Nein (v1); verschlüsseltes Backup geplant | Optionale „Private Cloud“ mit Premium |
+| Cloud-Backup | Nein; kostenloses manuelles verschlüsseltes Backup | Optionale „Private Cloud“ mit Premium |
 | Entsperren | Muster auf einem 5×5-Raster | PIN oder Code |
 | Biometrie (Face ID / Touch ID) | Bewusst nicht angeboten | Unterstützt, laut Store-Eintrag |
-| Köder- / mehrere Tresore | Jedes Muster ist ein eigener Tresor | Fake-/Köder-PIN in Premium |
-| Notfallmuster | Demnächst (Premium) | Nicht öffentlich angegeben |
+| Köder- / mehrere Tresore | Jedes Muster ist ein eigener Tresor (mehrere Tresore mit Premium) | Fake-/Köder-PIN in Premium |
+| Notfallmuster | Geplant, noch nicht verfügbar | Nicht öffentlich angegeben |
 | Einbruchswarnungen | Nicht angeboten | In Premium angeboten |
 | Wiederherstellung bei vergessenem Code | Keine; Tresor nicht wiederherstellbar | Unterschiedlich; kontobasierte Wiederherstellung womöglich verfügbar |
-| Geschäftsmodell | Kostenlose Version plus optionales Premium (siehe [Preise](id:pricing)) | Kostenlose Stufe plus Premium-Abo |
+| Geschäftsmodell | Kostenlos: 1 Tresor, bis zu 50 Objekte; Premium als Abo oder einmaliger Kauf (siehe [Preise](id:pricing)) | Kostenlose Stufe plus Premium-Abo |
 | Plattformen | iPhone (iOS 17+) | iOS und Android |
 
 <!-- TODO verify -->
@@ -65,7 +65,7 @@ Keiner der beiden Ansätze ist grundsätzlich besser. Der eine tauscht Komfort g
 
 Ein Konto ist eine Komfortfunktion. Es erlaubt einer App, deinen Tresor auf einem neuen iPhone wiederherzustellen und geräteübergreifend zu synchronisieren. Es bedeutet aber auch, dass ein Unternehmen eine Kennung von dir hat – und wenn du das Cloud-Backup nutzt, liegt eine Kopie deiner Dateien auf Servern, die du nicht kontrollierst, geschützt durch die Verschlüsselung und Zugriffsregeln dieses Dienstes.
 
-Velcrypt nimmt die Gegenposition ein. Es gibt keine Registrierung, keine E-Mail und keinen Server, wie unter [offline, ohne Konto](id:offline-no-account) erklärt. In Version 1 sind Tresordaten von iCloud- und Finder-Backups ausgeschlossen. Die ehrliche Konsequenz: Niemand kann sie für dich wiederherstellen – nicht Apple, nicht Velcrypt, nicht du. Wenn dich das beunruhigt, lies [Tresormuster vergessen](id:forgot-vault-pattern), bevor du dich entscheidest.
+Velcrypt nimmt die Gegenposition ein. Es gibt keine Registrierung, keine E-Mail und keinen Server, wie unter [offline, ohne Konto](id:offline-no-account) erklärt. Tresordaten sind von iCloud- und Finder-Backups ausgeschlossen. Die ehrliche Konsequenz: Ohne ein verschlüsseltes Backup, das du selbst erstellt hast, kann sie niemand für dich wiederherstellen – nicht Apple, nicht Velcrypt, nicht du. Wenn dich das beunruhigt, lies [Tresormuster vergessen](id:forgot-vault-pattern), bevor du dich entscheidest.
 
 ## Entsperren: Muster statt PIN und Biometrie
 
@@ -81,11 +81,11 @@ Viele Tresor-Apps bieten einen zweiten, falschen Code, der einen harmlosen Treso
 
 <!-- TODO verify -->
 
-Bei Velcrypt ist das Prinzip Teil der Architektur statt ein Zusatz. Jedes Muster ist ein eigener Tresor, es gibt keine Tresorliste, und ein Muster, das die App noch nie gesehen hat, öffnet einfach ohne Fehlermeldung einen leeren Tresor. Nichts auf dem Bildschirm beweist, dass weitere Tresore existieren. Genau das bedeuten [versteckte Tresore](id:hidden-vaults) und [glaubhafte Abstreitbarkeit](id:plausible-deniability-explained) in der Praxis. Ein Notfallmuster, das einen gewählten Tresor öffnet und still den Zugriff auf die anderen entfernt, ist für Premium geplant und kommt demnächst.
+Bei Velcrypt ist das Prinzip Teil der Architektur statt ein Zusatz. Jedes Muster ist ein eigener Tresor, es gibt keine Tresorliste, und ein Muster, das die App noch nie gesehen hat, öffnet einfach ohne Fehlermeldung einen leeren Tresor. Nichts auf dem Bildschirm beweist, dass weitere Tresore existieren. Genau das bedeuten [versteckte Tresore](id:hidden-vaults) und [glaubhafte Abstreitbarkeit](id:plausible-deniability-explained) in der Praxis. Ein Notfallmuster, das einen gewählten Tresor öffnet und still den Zugriff auf die anderen entfernt, ist für ein künftiges Update geplant und kommt demnächst.
 
 ## Wann Keepsafe besser passen kann
 
-- **Du willst Backup und Synchronisierung.** Wenn ein verlorenes iPhone auf keinen Fall verlorene Fotos bedeuten darf, ist ein kontobasiertes Cloud-Backup heute die einfachere Lösung. Velcrypt v1 bietet das nicht.
+- **Du willst Backup und Synchronisierung.** Wenn ein verlorenes iPhone auf keinen Fall verlorene Fotos bedeuten darf, ist ein kontobasiertes Cloud-Backup die einfachere Lösung. Velcrypt sichert nicht automatisch; du musst selbst daran denken, ein Backup zu erstellen.
 - **Du nutzt auch Android.** Keepsafe ist laut Store-Einträgen auf mehr als einer Plattform verfügbar; Velcrypt gibt es nur fürs iPhone.
 - **Du bevorzugst Face ID.** Ist dir biometrischer Komfort wichtiger als die Sorge vor erzwungenem Entsperren – Velcrypt bietet das bewusst nicht an.
 - **Du willst Einbruchswarnungen.** Velcrypt macht keine Fotos von Eindringlingen.

@@ -10,21 +10,21 @@ keyFacts:
   - "Niente Face ID né Touch ID per scelta: una sequenza esiste solo nella tua memoria."
   - "Nessuna pubblicità e nessuna vendita di dati."
   - "Trasparente sui limiti, compreso il fatto che una sequenza dimenticata non si recupera."
-  - "In programma: sequenza di emergenza (in arrivo) e backup cifrato."
+  - "Backup cifrato gratuito; la sequenza di emergenza è prevista per un aggiornamento futuro."
 primaryKeyword: "velcrypt chi siamo"
 keywords: ["app velcrypt", "chi sviluppa velcrypt", "principi velcrypt", "cassaforte foto privata iphone"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 schemaType: AboutPage
 order: 4
 related: [security, features, offline-no-account, pricing, press]
 faq:
   - q: "Perché Velcrypt non salva nulla nel cloud?"
-    a: "Perché i dati che non lasciano mai il telefono non possono essere esposti da una violazione di un server, da una richiesta legale a un fornitore o da una password riutilizzata. Il rovescio della medaglia: se perdi il telefono o dimentichi la sequenza, non c’è modo di recuperarli."
+    a: "Perché i dati che non lasciano mai il telefono non possono essere esposti da una violazione di un server, da una richiesta legale a un fornitore o da una password riutilizzata. Il rovescio della medaglia: se dimentichi la sequenza non c’è modo di recuperarli, e se perdi il telefono li recuperi solo da un backup cifrato creato da te."
   - q: "Velcrypt guadagna con i miei dati?"
-    a: "No. Velcrypt non raccoglie i contenuti delle tue casseforti né dati analitici su di essi e non mostra pubblicità. Il modello previsto è una versione gratuita con un upgrade Premium facoltativo a pagamento."
+    a: "No. Velcrypt non raccoglie i contenuti delle tue casseforti né dati analitici su di essi e non mostra pubblicità. Il modello è una versione gratuita con un upgrade Premium facoltativo a pagamento."
   - q: "A cosa sta lavorando Velcrypt?"
-    a: "Tra le novità in programma ci sono una sequenza di emergenza (in arrivo) e un’opzione di backup cifrato, entrambe nel Premium. Nessuna delle due ha ancora una data di uscita."
+    a: "Il backup cifrato è già disponibile e gratuito. Tra le novità previste c’è una sequenza di emergenza, pensata per un aggiornamento futuro; non ha ancora una data di uscita."
 ---
 
 <!-- TODO: add founder/company details -->
@@ -57,17 +57,15 @@ Gli strumenti per la privacy deludono quando promettono troppo. Preferiamo dirti
 
 ### Niente pubblicità, niente vendita di dati
 
-Velcrypt non mostra pubblicità e non vende dati. Non raccoglie i contenuti delle casseforti né statistiche su di essi, quindi non c’è nulla da vendere. Velcrypt sarà finanziato da un upgrade Premium facoltativo: vedi i [prezzi](id:pricing).
+Velcrypt non mostra pubblicità e non vende dati. Non raccoglie i contenuti delle casseforti né statistiche su di essi, quindi non c’è nulla da vendere. Velcrypt è finanziato da un upgrade Premium facoltativo: vedi i [prezzi](id:pricing).
 
 ## Cosa arriverà
 
-Queste novità sono in programma. Oggi non sono nell’app e non indicheremo date finché non saranno pronte.
+Il backup cifrato, più casseforti ed elementi illimitati sono già nell’app. La novità qui sotto è prevista: oggi non è nell’app e non indicheremo date finché non sarà pronta.
 
 | Novità | Stato |
 |---|---|
-| [Sequenza di emergenza](id:duress-pattern): apre una cassaforte scelta e rimuove in silenzio l’accesso alle altre | In arrivo (Premium) |
-| Backup cifrato e opzione di recupero | In programma (Premium) |
-| Più casseforti ed elementi illimitati | In programma (Premium) |
+| [Sequenza di emergenza](id:duress-pattern): apre una cassaforte scelta e rimuove in silenzio l’accesso alle altre | Prevista per un aggiornamento futuro |
 
 Qualsiasi aggiunta seguirà gli stessi principi: tutto sul dispositivo per impostazione predefinita, nessun account e una spiegazione chiara dei compromessi.
 

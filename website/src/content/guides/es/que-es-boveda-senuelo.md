@@ -4,17 +4,18 @@ title: "¿Qué es una bóveda señuelo? Cómo crear una creíble"
 description: "Una bóveda señuelo es una segunda bóveda inofensiva que puedes abrir bajo presión. Cómo funciona, cómo hacerla creíble en Velcrypt y dónde se queda corta."
 h1: "¿Qué es una bóveda señuelo y cómo se hace creíble?"
 navTitle: "¿Qué es una bóveda señuelo?"
-answer: "Una bóveda señuelo es una segunda bóveda, que se abre con otro secreto, con contenido inofensivo pero verosímil. Si alguien te presiona para abrir tu bóveda, puedes abrir el señuelo. En Velcrypt, cualquier patrón nuevo abre su propia bóveda, así que un señuelo es simplemente un segundo patrón que llenas de fotos y documentos corrientes."
+answer: "Una bóveda señuelo es una segunda bóveda, que se abre con otro secreto, con contenido inofensivo pero verosímil. Si alguien te presiona para abrir tu bóveda, puedes abrir el señuelo. En Velcrypt Premium, cualquier patrón nuevo abre su propia bóveda, así que un señuelo es simplemente un segundo patrón que llenas de fotos y documentos corrientes."
 keyFacts:
   - "Una bóveda señuelo es una bóveda real y funcional con contenido de poca importancia que no te importa enseñar."
   - "En Velcrypt, cada patrón es su propia bóveda y no existe ninguna lista de bóvedas que delate a las demás."
   - "Un señuelo vacío resulta sospechoso; uno con uso real, álbumes y elementos recientes resulta convincente."
   - "Un señuelo protege frente a curiosos y presiones informales, no frente a un análisis forense ni a quien te vio dibujar."
-  - "Un patrón de coacción que además quite el acceso a las otras bóvedas es una función Premium prevista (próximamente)."
+  - "La versión gratuita tiene una bóveda; un señuelo, como segunda bóveda, requiere Premium."
+  - "Un patrón de coacción que además quite el acceso a las otras bóvedas está previsto para una actualización futura."
 primaryKeyword: "bóveda señuelo"
 keywords: ["qué es una bóveda señuelo", "contraseña señuelo bóveda de fotos", "app de bóveda falsa", "patrón señuelo", "segunda bóveda iphone"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Qué es una bóveda señuelo, cómo crear una que parezca usada con un segundo patrón de Velcrypt y qué límites debes conocer."
 category: security
 order: 41
@@ -23,7 +24,7 @@ howTo:
   name: "Crear una bóveda señuelo en Velcrypt"
   steps:
     - name: "Elige un segundo patrón"
-      text: "Elige un patrón nuevo de al menos 6 puntos con al menos un cambio de dirección, claramente distinto de tu patrón real en forma y punto de partida."
+      text: "Con Premium activo, elige un patrón nuevo de al menos 6 puntos con al menos un cambio de dirección, claramente distinto de tu patrón real en forma y punto de partida."
     - name: "Dibújalo en la pantalla de desbloqueo"
       text: "Velcrypt abre una bóveda nueva y vacía para cualquier patrón que no haya visto antes. No hace falta ningún ajuste adicional."
     - name: "Decide un propósito creíble"
@@ -36,11 +37,11 @@ faq:
   - q: "¿Qué es una contraseña señuelo en una app de bóveda de fotos?"
     a: "Una contraseña señuelo (o un PIN o patrón señuelo) es un segundo secreto que abre un conjunto de contenido aparte e inofensivo. Te permite aparentar que accedes a abrir la app sin revelar lo que de verdad mantienes en privado."
   - q: "¿Cómo creo una bóveda señuelo en Velcrypt?"
-    a: "Dibuja un segundo patrón que nunca hayas usado. Velcrypt abre para él una bóveda nueva y vacía. Añade contenido cotidiano creíble, como tickets, capturas y fotos corrientes, y ese patrón abrirá a partir de entonces tu señuelo."
+    a: "Con Premium, dibuja un segundo patrón que nunca hayas usado. Velcrypt abre para él una bóveda nueva y vacía. Añade contenido cotidiano creíble, como tickets, capturas y fotos corrientes, y ese patrón abrirá a partir de entonces tu señuelo."
   - q: "¿Alguien puede saber que una bóveda es un señuelo?"
     a: "Desde dentro de la app, no: Velcrypt no guarda ninguna lista de bóvedas ni da pistas de que existan otras. Lo que puede delatar un señuelo es su contenido, por ejemplo si está vacío, desactualizado o claramente preparado."
   - q: "¿Una bóveda señuelo es lo mismo que un patrón de coacción?"
-    a: "No. Un señuelo simplemente abre otra bóveda. Un patrón de coacción, una función Premium de Velcrypt prevista que llegará próximamente, abriría una bóveda elegida y además quitaría en silencio el acceso a las demás."
+    a: "No. Un señuelo simplemente abre otra bóveda. Un patrón de coacción, una función de Velcrypt prevista para una actualización futura, abriría una bóveda elegida y además quitaría en silencio el acceso a las demás."
   - q: "¿Debería usar una bóveda señuelo con la policía o en la frontera?"
     a: "Esta guía no puede dar asesoramiento jurídico. Engañar a funcionarios puede ser un delito en muchos países. Un señuelo sirve sobre todo para curiosos del día a día y presiones informales; en situaciones oficiales, infórmate de tus derechos y habla con un abogado."
 ---
@@ -63,7 +64,7 @@ La mayoría de las apps tratan el señuelo como un ajuste especial: un PIN real 
 - Un patrón que Velcrypt nunca ha visto abre una bóveda nueva y vacía.
 - No hay ningún mensaje de error de «patrón incorrecto», y nada demuestra que existan otras bóvedas.
 
-Así que una bóveda señuelo en Velcrypt no es una función que se activa. Es solo un segundo patrón que decides usar como señuelo. Tu bóveda real y tu señuelo se ven y se comportan exactamente igual, porque son lo mismo. La página de [bóvedas ocultas](id:hidden-vaults) explica el modelo con más detalle.
+Así que una bóveda señuelo en Velcrypt no es una función que se activa. Es solo un segundo patrón que decides usar como señuelo. Como la versión gratuita tiene una bóveda, la segunda requiere [Premium](id:pricing). Tu bóveda real y tu señuelo se ven y se comportan exactamente igual, porque son lo mismo. La página de [bóvedas ocultas](id:hidden-vaults) explica el modelo con más detalle.
 
 ## Cómo crear un señuelo creíble, paso a paso
 
@@ -93,7 +94,7 @@ Una bóveda señuelo es una herramienta social respaldada por buena criptografí
 
 ## Bóveda señuelo frente a patrón de coacción
 
-Un señuelo abre otra bóveda y deja todo lo demás intacto. Un **patrón de coacción** va un paso más allá: abre una bóveda que has elegido y, al mismo tiempo, quita en silencio el acceso a las demás. En Velcrypt, el [patrón de coacción](id:duress-pattern) es una función Premium prevista y llegará próximamente. Hasta entonces, un señuelo bien mantenido cubre la mayoría de las situaciones cotidianas, como una pareja curiosa, un amigo que pasa fotos en tu teléfono o un compañero de trabajo entrometido.
+Un señuelo abre otra bóveda y deja todo lo demás intacto. Un **patrón de coacción** va un paso más allá: abre una bóveda que has elegido y, al mismo tiempo, quita en silencio el acceso a las demás. En Velcrypt, el [patrón de coacción](id:duress-pattern) está previsto para una actualización futura. Hasta entonces, un señuelo bien mantenido cubre la mayoría de las situaciones cotidianas, como una pareja curiosa, un amigo que pasa fotos en tu teléfono o un compañero de trabajo entrometido.
 
 ## Dónde encaja Velcrypt
 

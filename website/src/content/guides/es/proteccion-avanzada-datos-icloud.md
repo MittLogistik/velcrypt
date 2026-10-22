@@ -21,7 +21,7 @@ keywords:
   - "clave de recuperación protección de datos avanzada"
   - "protección de datos avanzada reino unido"
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Qué cifra la Protección de datos avanzada, qué sigue siendo estándar, los requisitos de recuperación, las contrapartidas y cómo activarla."
 category: apple
 order: 12
@@ -138,6 +138,6 @@ Si no ves la opción en tus ajustes de iCloud, o aparece atenuada, consulta el [
 
 La Protección de datos avanzada y una bóveda en el dispositivo resuelven problemas distintos. ADP hace que tus datos de iCloud sean ilegibles para Apple sin dejar de sincronizarse y de poder recuperarse con tu propio método de recuperación. Una bóveda en el dispositivo evita que ciertos archivos lleguen a la nube y pone un secreto aparte entre ellos y cualquiera que pueda desbloquear tu teléfono.
 
-Velcrypt pertenece a la segunda categoría. Las fotos, los videos y los documentos que importas se cifran con AES-256-GCM en el iPhone, con claves derivadas de un patrón que dibujas ([cómo funciona el cifrado](id:encryption)). No hay cuenta y no se sube nada ([en el dispositivo, sin cuenta](id:offline-no-account)). En la primera versión, el contenido de la bóveda queda totalmente excluido de las copias de seguridad de iCloud y del ordenador, lo que significa que no hay nada que recuperar si pierdes el teléfono; está prevista una opción de copia de seguridad cifrada.
+Velcrypt pertenece a la segunda categoría. Las fotos, los videos y los documentos que importas se cifran con AES-256-GCM en el iPhone, con claves derivadas de un patrón que dibujas ([cómo funciona el cifrado](id:encryption)). No hay cuenta y no se sube nada ([en el dispositivo, sin cuenta](id:offline-no-account)). El contenido de la bóveda queda totalmente excluido de las copias de seguridad de iCloud y del ordenador, así que, si pierdes el teléfono, solo puedes recuperarlo desde una copia de seguridad cifrada de Velcrypt que hayas creado tú, protegida con tu propia contraseña.
 
 Mucha gente, con buen criterio, usa ambas cosas: ADP para su fototeca y sus copias de seguridad del día a día, y una bóveda para los pocos archivos que no deberían sincronizarse en ningún sitio. Si estás valorando términos de cifrado, nuestra [explicación de AES-256](id:aes-256-encryption-explained) y [¿se guardan las fotos ocultas en iCloud?](id:are-hidden-photos-saved-to-icloud) son buenas lecturas para seguir.

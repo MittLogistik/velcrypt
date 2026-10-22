@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "delete photos after importing to vault"
 keywords: ["delete original photos after import", "empty recently deleted iphone", "permanently delete photos iphone", "recently deleted ios 18", "delete photos from iphone but not vault", "vault app copy or move"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Copy vs move, deleting originals from Photos, emptying Recently Deleted, and the iCloud and chat copies that remain."
 category: practical
 order: 30
@@ -121,4 +121,4 @@ For particularly sensitive images, the guide to [storing intimate photos safely]
 
 Velcrypt follows the copy model described above. When you [import photos](id:hide-photos) or [videos](id:hide-videos), the vault encrypts its own copy with AES-256-GCM and leaves the original in Photos, so deleting the original and emptying Recently Deleted is up to you.
 
-Before you do, weigh one limit honestly. Velcrypt’s vault data is stored only on your iPhone and is excluded from iCloud and computer backups. Once the originals are gone, the vault holds the only copy on that device. If you lose the phone or [forget the pattern](id:forgot-vault-pattern), those files cannot be recovered by you or by Velcrypt. An encrypted backup option is planned; until then, keep a separate copy of anything irreplaceable somewhere you trust.
+Before you do, weigh one limit honestly. Velcrypt’s vault data is stored only on your iPhone and is excluded from iCloud and computer backups. Once the originals are gone, the vault holds the only copy on that device. If you [forget the pattern](id:forgot-vault-pattern), those files cannot be recovered by you or by Velcrypt. To protect against a lost phone, create an encrypted backup in Settings → Backup and save the file somewhere you trust, such as Files, iCloud Drive or a computer.

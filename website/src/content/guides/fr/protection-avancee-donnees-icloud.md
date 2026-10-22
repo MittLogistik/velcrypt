@@ -21,7 +21,7 @@ keywords:
   - "clé de secours protection avancée"
   - "protection avancée des données royaume-uni"
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Ce que chiffre la Protection avancée des données, ce qui reste standard, les exigences de récupération, les contreparties et l’activation."
 category: apple
 order: 12
@@ -138,6 +138,6 @@ Si vous ne voyez pas l’option dans vos réglages iCloud, ou si elle est grisé
 
 La Protection avancée des données et un coffre-fort sur l’appareil répondent à des problèmes différents. La première rend vos données iCloud illisibles pour Apple tout en permettant leur synchronisation et leur récupération grâce à votre propre méthode de récupération. Le second empêche certains fichiers d’aller dans le cloud et place un secret distinct entre eux et quiconque peut déverrouiller votre téléphone.
 
-Velcrypt appartient à la seconde catégorie. Les photos, vidéos et documents importés sont chiffrés en AES-256-GCM sur l’iPhone, avec des clés dérivées d’un schéma que vous tracez ([comment fonctionne le chiffrement](id:encryption)). Pas de compte, rien n’est envoyé ([sur l’appareil, sans compte](id:offline-no-account)). Dans la première version, le contenu du coffre est entièrement exclu des sauvegardes iCloud et sur ordinateur : il n’y a donc rien à récupérer si le téléphone est perdu ; une option de sauvegarde chiffrée est prévue.
+Velcrypt appartient à la seconde catégorie. Les photos, vidéos et documents importés sont chiffrés en AES-256-GCM sur l’iPhone, avec des clés dérivées d’un schéma que vous tracez ([comment fonctionne le chiffrement](id:encryption)). Pas de compte, rien n’est envoyé ([sur l’appareil, sans compte](id:offline-no-account)). Le contenu du coffre est entièrement exclu des sauvegardes iCloud et sur ordinateur. Pour pouvoir le récupérer si le téléphone est perdu, vous créez une sauvegarde chiffrée dans Réglages → Sauvegarde : le fichier est protégé par votre mot de passe de sauvegarde, même si vous l’enregistrez dans iCloud Drive sans Protection avancée des données.
 
 Beaucoup de gens utilisent judicieusement les deux : la Protection avancée pour leur photothèque et leurs sauvegardes du quotidien, et un coffre pour la poignée de fichiers qui ne devraient se synchroniser nulle part. Si vous comparez les notions de chiffrement, [le chiffrement AES-256 expliqué](id:aes-256-encryption-explained) et [les photos masquées sont-elles enregistrées dans iCloud ?](id:are-hidden-photos-saved-to-icloud) sont de bonnes lectures pour la suite.

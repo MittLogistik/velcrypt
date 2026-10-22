@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "borrar fotos después de importarlas a una bóveda"
 keywords: ["borrar fotos originales después de importar", "vaciar eliminado iphone", "borrar fotos definitivamente iphone", "eliminado ios 18", "borrar fotos del iphone pero no de la bóveda", "app de bóveda copia o mueve"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Copiar frente a mover, borrar los originales de Fotos, vaciar Eliminado y las copias de iCloud y de los chats que siguen existiendo."
 category: practical
 order: 30
@@ -123,4 +123,4 @@ Para imágenes especialmente delicadas, la guía para [guardar fotos íntimas de
 
 Velcrypt sigue el modelo de copia descrito arriba. Cuando [importas fotos](id:hide-photos) o [videos](id:hide-videos), la bóveda cifra su propia copia con AES-256-GCM y deja el original en Fotos, así que borrar el original y vaciar Eliminado depende de ti.
 
-Antes de hacerlo, valora con honestidad un límite. Los datos de las bóvedas de Velcrypt se guardan solo en tu iPhone y están excluidos de las copias de seguridad de iCloud y del ordenador. Una vez borrados los originales, la bóveda contiene la única copia en ese dispositivo. Si pierdes el teléfono u [olvidas el patrón](id:forgot-vault-pattern), esos archivos no se pueden recuperar, ni por ti ni por Velcrypt. Está prevista una opción de copia de seguridad cifrada; hasta entonces, guarda una copia aparte de todo lo irremplazable en un sitio de tu confianza.
+Antes de hacerlo, valora con honestidad un límite. Los datos de las bóvedas de Velcrypt se guardan solo en tu iPhone y están excluidos de las copias de seguridad de iCloud y del ordenador. Una vez borrados los originales, la bóveda contiene la única copia en ese dispositivo. Si [olvidas el patrón](id:forgot-vault-pattern) o pierdes el teléfono, esos archivos no se pueden recuperar, ni por ti ni por Velcrypt, salvo desde una copia de seguridad. Antes de borrar algo irremplazable, crea una copia de seguridad cifrada en Ajustes → Copia de seguridad y guárdala fuera del iPhone.

@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "musterstärke prüfen"
 keywords: ["entsperrmuster sicherheit", "wie sicher ist mein muster", "mustersperre sicherheit", "5x5 mustersperre", "sicheres entsperrmuster ideen", "muster passwort stärke"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Zeichne ein Testmuster auf ein 5×5-Raster und sieh eine grobe Stärkebewertung. Läuft lokal. Nutze nie dein echtes Muster."
 toolName: "Musterstärke-Prüfer"
 schemaType: WebPage
@@ -43,7 +43,7 @@ faq:
   - q: "Schützt ein starkes Muster davor, dass mir jemand zusieht?"
     a: "Nein. Sieht dir jemand beim Zeichnen zu, spielt die Stärke keine Rolle. Schirm den Bildschirm ab und zeichne das Muster dort, wo du nicht beobachtet oder gefilmt werden kannst."
   - q: "Was, wenn ich ein kompliziertes Muster vergesse?"
-    a: "In der ersten Version von Velcrypt lässt sich ein vergessenes Muster weder von dir noch von Velcrypt wiederherstellen. Wähle etwas Komplexes, aber Einprägsames, und übe es, bevor du dich darauf verlässt."
+    a: "In Velcrypt lässt sich ein vergessenes Muster weder von dir noch von Velcrypt wiederherstellen. Nur ein vorher erstelltes verschlüsseltes Backup bringt die Inhalte zurück. Wähle etwas Komplexes, aber Einprägsames, und übe es, bevor du dich darauf verlässt."
 ---
 
 ## So funktioniert es
@@ -90,4 +90,4 @@ Dieser Prüfer speichert oder überträgt nichts, aber die Gewohnheit ist wichti
 
 In Velcrypt ist dein Muster der Schlüssel: Die Verschlüsselungsschlüssel werden daraus mit PBKDF2-HMAC-SHA512 und mindestens 600.000 Iterationen abgeleitet, was jeden Rateversuch verlangsamt. Siehe [Verschlüsselung](id:encryption). Außerdem öffnet jedes Muster einen eigenen Tresor, wie unter [versteckte Tresore](id:hidden-vaults) und [Mustersperre](id:pattern-lock) erklärt.
 
-Ein starkes Muster schützt nicht vor jemandem, der dir beim Zeichnen zusieht, vor einem iPhone, das mit offenem Tresor übergeben wird, oder vor einem vergessenen Muster. In der ersten Version gibt es keine Wiederherstellung – lies also [Tresormuster vergessen](id:forgot-vault-pattern), bevor du etwas wählst, das du womöglich vergisst.
+Ein starkes Muster schützt nicht vor jemandem, der dir beim Zeichnen zusieht, vor einem iPhone, das mit offenem Tresor übergeben wird, oder vor einem vergessenen Muster. Ein vergessenes Muster lässt sich nicht wiederherstellen – lies also [Tresormuster vergessen](id:forgot-vault-pattern), bevor du etwas wählst, das du womöglich vergisst.

@@ -10,21 +10,21 @@ keyFacts:
   - "Pas de Face ID ni de Touch ID, par choix — un motif n’existe que dans votre mémoire."
   - "Ni publicité ni revente de données."
   - "Honnête sur ses limites, y compris l’impossibilité de récupérer un motif oublié."
-  - "Prévu : motif de contrainte (bientôt disponible) et sauvegarde chiffrée."
+  - "Sauvegarde chiffrée gratuite ; motif de contrainte prévu pour une prochaine mise à jour."
 primaryKeyword: "à propos de velcrypt"
 keywords: ["app velcrypt", "qui développe velcrypt", "principes velcrypt", "coffre-fort photo privé iphone"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 schemaType: AboutPage
 order: 4
 related: [security, features, offline-no-account, pricing, press]
 faq:
   - q: "Pourquoi Velcrypt ne stocke-t-il rien dans le cloud ?"
-    a: "Parce que des données qui ne quittent jamais votre téléphone ne peuvent pas être exposées par la fuite d’un serveur, une réquisition adressée à un prestataire ou un mot de passe réutilisé. La contrepartie : aucune récupération n’est possible si vous perdez le téléphone ou oubliez le motif."
+    a: "Parce que des données qui ne quittent jamais votre téléphone ne peuvent pas être exposées par la fuite d’un serveur, une réquisition adressée à un prestataire ou un mot de passe réutilisé. La contrepartie : un motif oublié ne peut pas être récupéré, et pour ne pas perdre vos coffres avec le téléphone, vous créez vous-même une sauvegarde chiffrée."
   - q: "Velcrypt gagne-t-il de l’argent avec mes données ?"
-    a: "Non. Velcrypt ne collecte ni le contenu de vos coffres ni de données d’analyse à son sujet, et n’affiche aucune publicité. Le modèle prévu : une version gratuite avec une option Premium payante."
+    a: "Non. Velcrypt ne collecte ni le contenu de vos coffres ni de données d’analyse à son sujet, et n’affiche aucune publicité. Velcrypt est gratuit, avec une option Premium payante via l’App Store."
   - q: "Sur quoi Velcrypt travaille-t-il ensuite ?"
-    a: "Parmi les éléments prévus figurent un motif de contrainte (bientôt disponible) et une option de sauvegarde chiffrée, tous deux dans le Premium. Aucun n’a encore de date de sortie."
+    a: "Le prochain élément prévu est un motif de contrainte. Il n’a pas encore de date de sortie. La sauvegarde chiffrée, elle, est déjà disponible et gratuite."
 ---
 
 <!-- TODO: add founder/company details -->
@@ -57,17 +57,17 @@ Les outils de confidentialité déçoivent quand ils promettent trop. Nous préf
 
 ### Ni publicité ni revente de données
 
-Velcrypt n’affiche aucune publicité et ne vend pas de données. Il ne collecte ni le contenu de vos coffres ni de données d’analyse à son sujet : il n’y a donc rien à vendre. Velcrypt sera financé par une option Premium — voir les [tarifs](id:pricing).
+Velcrypt n’affiche aucune publicité et ne vend pas de données. Il ne collecte ni le contenu de vos coffres ni de données d’analyse à son sujet : il n’y a donc rien à vendre. Velcrypt est financé par une option Premium — voir les [tarifs](id:pricing).
 
 ## La suite
 
-Ces éléments sont prévus. Ils ne figurent pas encore dans l’app, et nous n’annoncerons pas de date avant qu’ils soient prêts.
-
 | Élément | Statut |
 |---|---|
-| [Motif de contrainte](id:duress-pattern) — ouvre un coffre choisi et retire discrètement l’accès aux autres | Bientôt disponible (Premium) |
-| Option de sauvegarde et de récupération chiffrée | Prévue (Premium) |
-| Plus de coffres et éléments illimités | Prévu (Premium) |
+| Sauvegarde et restauration chiffrées | Disponible, gratuit |
+| Plus de coffres, éléments illimités et icônes d’app alternatives | Disponible (Premium) |
+| [Motif de contrainte](id:duress-pattern) — ouvrirait un coffre choisi et retirerait discrètement l’accès aux autres | Prévu pour une prochaine mise à jour |
+
+Le motif de contrainte ne figure pas encore dans l’app, et nous n’annoncerons pas de date avant qu’il soit prêt.
 
 Tout ce que nous ajouterons suivra les mêmes principes : sur l’appareil par défaut, sans compte, et avec une explication claire des compromis.
 

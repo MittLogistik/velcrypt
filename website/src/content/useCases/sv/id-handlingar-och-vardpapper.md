@@ -10,11 +10,11 @@ keyFacts:
   - "Dokument i kamerarullen synkas till alla enheter med iCloud-bilder och kan dyka upp i widgetar och Minnen."
   - "Velcrypt importerar dokument från appen Filer och bilder från ditt bibliotek till krypterade valv."
   - "Importerade objekt är kopior; radera originalen och töm Nyligen raderade efteråt."
-  - "Valv i Velcrypt ingår inte i iCloud- eller datorsäkerhetskopior i den första versionen, så ha en andra kopia av viktiga dokument."
+  - "Valv i Velcrypt ingår inte i iCloud- eller datorsäkerhetskopior, så skapa en krypterad säkerhetskopia eller ha en andra kopia av viktiga dokument."
 primaryKeyword: "spara id-handlingar säkert iphone"
 keywords: ["bild på passet i iphone säkert", "dölja medicinska bilder iphone", "spara försäkringskort iphone", "privata dokument iphone", "integritet bilder på recept"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Pass, försäkringskort och medicinska bilder förtjänar bättre än kamerarullen. Var de läcker i iPhone och hur du håller dem privata."
 group: sensitive
 schemaType: Article
@@ -28,7 +28,7 @@ faq:
   - q: "Kan jag lägga PDF:er i Velcrypt?"
     a: "Ja. Velcrypt importerar dokument från appen Filer, så PDF:er som recept, brev från försäkringsbolaget eller provsvar kan förvaras i ett valv tillsammans med bilder."
   - q: "Vad händer om jag tappar bort telefonen med mina id-handlingar i Velcrypt?"
-    a: "Utan ditt mönster kan ingen öppna valvet. Men i den första versionen säkerhetskopieras inte valvdata, så dokumenten är också borta. Spara originalen eller en andra kopia på ett säkert ställe."
+    a: "Utan ditt mönster kan ingen öppna valvet. Men valvdata ingår inte i iCloud-säkerhetskopior, så dokumenten är också borta om du inte har skapat en krypterad säkerhetskopia. Spara den, eller originalen, på ett säkert ställe."
 ---
 
 De flesta av oss har gjort det: fotograferat passet vid incheckningsdisken, knäppt en bild på försäkringskortet till en blankett eller fotat ett utslag för att visa läkaren. Det är praktiskt. Men bilderna ligger sedan kvar i kamerarullen, bredvid semesterbilder och memes, i åratal.
@@ -65,7 +65,7 @@ När du behöver skicka ett dokument, till en läkare eller ett visumkontor, kan
 
 ## Ärliga begränsningar
 
-- **Ingen säkerhetskopia i den första versionen.** Valvdata undantas från iCloud- och datorsäkerhetskopior. Om telefonen försvinner eller du glömmer ditt mönster kan dokumenten inte återställas. För viktiga dokument bör du behålla originalen eller en andra kopia som du själv kontrollerar. En krypterad säkerhetskopia är planerad.
+- **Ingen automatisk säkerhetskopia.** Valvdata undantas från iCloud- och datorsäkerhetskopior. Om telefonen försvinner eller du glömmer ditt mönster kan dokumenten inte återställas från valvet. Skapa en krypterad säkerhetskopia under Inställningar → Säkerhetskopiering och behåll originalen eller en andra kopia som du själv kontrollerar.
 - **Kopior på andra ställen skyddas inte.** E-post, bilagor i chattar och kopior i iCloud ligger kvar tills du tar bort dem. Se [att radera originalen efter import](id:delete-original-photos-after-import).
 - **Allt du exporterar** lämnar valvet och är bara så privat som platsen där det hamnar.
 - **Någon som ser** dig rita ditt mönster, eller en telefon som lämnas över med valvet öppet, sätter låset ur spel.

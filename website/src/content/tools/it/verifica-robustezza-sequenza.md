@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "verifica sicurezza sequenza di sblocco"
 keywords: ["sequenza di sblocco sicura", "quanto è sicura la mia sequenza", "sicurezza blocco a sequenza", "sequenza 5x5", "idee sequenza sicura", "robustezza sequenza password"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Disegna una sequenza di prova su una griglia 5×5 e vedi una valutazione indicativa. Funziona in locale. Non usare mai la tua sequenza vera."
 toolName: "Verifica robustezza sequenza"
 schemaType: WebPage
@@ -43,7 +43,7 @@ faq:
   - q: "Una sequenza robusta mi protegge da chi mi guarda?"
     a: "No. Se qualcuno ti vede disegnarla, la robustezza non conta. Copri lo schermo e disegnala dove non puoi essere osservato o ripreso."
   - q: "E se dimentico una sequenza complicata?"
-    a: "Nella prima versione di Velcrypt una sequenza dimenticata non può essere recuperata né da te né da Velcrypt. Scegline una complessa ma memorabile e allenati prima di farci affidamento."
+    a: "In Velcrypt una sequenza dimenticata non può essere recuperata né da te né da Velcrypt. Scegline una complessa ma memorabile e allenati prima di farci affidamento."
 ---
 
 ## Come funziona
@@ -90,4 +90,4 @@ Questo strumento non salva né trasmette nulla, ma l’abitudine conta più di q
 
 In Velcrypt la tua sequenza è la chiave: le chiavi di cifratura ne vengono derivate con PBKDF2-HMAC-SHA512 con almeno 600.000 iterazioni, il che rende lento ogni tentativo. Vedi [cifratura](id:encryption). Ogni sequenza apre anche la propria cassaforte, come spiegato in [casseforti nascoste](id:hidden-vaults) e [sblocco a sequenza](id:pattern-lock).
 
-Una sequenza robusta non può proteggerti da chi ti guarda mentre la disegni, da un telefono consegnato con la cassaforte aperta o da una sequenza dimenticata. Nella prima versione non c’è recupero, quindi leggi [hai dimenticato la sequenza?](id:forgot-vault-pattern) prima di scegliere qualcosa che potresti non ricordare.
+Una sequenza robusta non può proteggerti da chi ti guarda mentre la disegni, da un telefono consegnato con la cassaforte aperta o da una sequenza dimenticata. Non c’è recupero della sequenza, quindi leggi [hai dimenticato la sequenza?](id:forgot-vault-pattern) prima di scegliere qualcosa che potresti non ricordare.

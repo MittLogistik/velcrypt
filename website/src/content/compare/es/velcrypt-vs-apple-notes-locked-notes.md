@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "ocultar fotos en notas bloqueadas"
 keywords: ["bloquear fotos en notas iphone", "notas bloqueadas fotos iphone", "app notas fotos privadas", "nota bloqueada o app bóveda", "proteger fotos con contraseña en notas"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Ocultar fotos en una nota bloqueada de Notas frente a una bóveda cifrada dedicada: comodidad, capacidad, sincronización y quién puede abrirlas."
 competitor: "Notas bloqueadas de la app Notas"
 lastChecked: "octubre de 2026"
@@ -51,14 +51,14 @@ Puedes añadir fotos de tu fototeca, hacer una foto dentro de la nota o escanear
 |---|---|---|
 | Detalles del cifrado en el dispositivo publicados | Sí: AES-256-GCM, PBKDF2-HMAC-SHA512 | Descritos en la documentación de seguridad de plataformas de Apple |
 | Requiere cuenta | No | No para notas en el dispositivo; Cuenta de Apple para sincronizar con iCloud |
-| Copia de seguridad en la nube | No (v1); copia cifrada prevista | Sí, con Notas en iCloud |
+| Copia de seguridad en la nube | No; copia de seguridad cifrada manual y gratuita en un archivo que guardas tú | Sí, con Notas en iCloud |
 | Método de desbloqueo | Patrón en una cuadrícula de 5×5 | Código del dispositivo o contraseña aparte de Notas |
 | Biometría | No disponible, por diseño | Face ID / Touch ID opcional |
-| Señuelo / varias bóvedas | Cada patrón es su propia bóveda | No; todas las notas bloqueadas comparten una contraseña |
-| Patrón de coacción | Próximamente (Premium) | No |
-| Recuperación si olvidas el código | Ninguna | La opción del código evita una contraseña aparte; las contraseñas antiguas de Notas no se pueden recuperar |
+| Señuelo / varias bóvedas | Cada patrón es su propia bóveda (con Premium) | No; todas las notas bloqueadas comparten una contraseña |
+| Patrón de coacción | Previsto para una actualización futura | No |
+| Recuperación si olvidas el código | Ninguna; solo restaurar una copia de seguridad propia | La opción del código evita una contraseña aparte; las contraseñas antiguas de Notas no se pueden recuperar |
 | Gestión de fotos y vídeos | Álbumes, visor con zoom y deslizamiento, vídeos | Imágenes dentro de una nota; la compatibilidad con vídeo varía |
-| Coste | Versión gratuita más Premium opcional | Incluido en iOS |
+| Coste | Gratis (1 bóveda, 50 elementos) o Premium desde 1,99 US$ a la semana | Incluido en iOS |
 | Plataformas | iPhone (iOS 17+) | iPhone, iPad, Mac e iCloud.com |
 
 <!-- TODO verify -->
@@ -83,7 +83,7 @@ La otra diferencia es el secreto. Si bloqueas las notas con el código del dispo
 ## Cuándo puede encajarte mejor Velcrypt
 
 - **Tienes una colección de verdad.** Muchas fotos, vídeos y documentos, organizados en álbumes.
-- **No quieres nada en la nube.** En la v1, los datos de las bóvedas se quedan en el teléfono y fuera de las copias de seguridad.
+- **No quieres nada en la nube.** Los datos de las bóvedas se quedan en el teléfono y fuera de las copias de iCloud; solo una copia de seguridad cifrada que tú crees sale del dispositivo.
 - **Necesitas espacios privados separados.** Cada patrón es su propia bóveda.
 - **Otra persona conoce tu código.** El patrón es un secreto independiente.
 

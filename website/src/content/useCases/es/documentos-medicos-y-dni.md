@@ -10,11 +10,11 @@ keyFacts:
   - "Los documentos del carrete se sincronizan con todos los dispositivos que usan Fotos de iCloud y pueden salir en widgets y Recuerdos."
   - "Velcrypt importa documentos desde la app Archivos y fotos desde tu fototeca a bóvedas cifradas."
   - "Lo importado son copias; después borra los originales y vacía el álbum Eliminado."
-  - "En la primera versión, las bóvedas de Velcrypt no están en las copias de iCloud ni del ordenador, así que guarda otra copia de los documentos vitales."
+  - "Las bóvedas de Velcrypt no están en las copias de iCloud ni del ordenador, así que crea una copia de seguridad cifrada de los documentos vitales."
 primaryKeyword: "guardar dni en el iphone de forma segura"
 keywords: ["foto del pasaporte en el iphone es seguro", "ocultar fotos médicas iphone", "guardar tarjeta sanitaria en el iphone", "documentos privados iphone", "privacidad fotos de recetas"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "El pasaporte, la tarjeta del seguro y las fotos médicas merecen algo mejor que el carrete. Dónde se filtran en el iPhone y cómo protegerlos."
 group: sensitive
 schemaType: Article
@@ -28,7 +28,7 @@ faq:
   - q: "¿Puedo guardar PDF en Velcrypt?"
     a: "Sí. Velcrypt importa documentos desde la app Archivos, así que puedes guardar en una bóveda PDF como recetas, cartas del seguro o resultados de análisis junto a tus fotos."
   - q: "¿Y si pierdo el móvil con mis documentos en Velcrypt?"
-    a: "Sin tu patrón, nadie puede abrir la bóveda. Pero en la primera versión no se hace copia de seguridad de la bóveda, así que los documentos también se pierden. Guarda los originales o una segunda copia en un lugar seguro."
+    a: "Sin tu patrón, nadie puede abrir la bóveda. Pero la bóveda no está en las copias de iCloud, así que los documentos se pierden con el teléfono, salvo que hayas creado una copia de seguridad cifrada en Ajustes → Copia de seguridad y la hayas guardado fuera del iPhone."
 ---
 
 Casi todos lo hemos hecho: fotografiar el pasaporte en el mostrador del aeropuerto, hacer una foto a la tarjeta del seguro para rellenar un formulario o sacarle una foto a una erupción para enseñársela al médico. Es práctico. Pero luego esas fotos viven durante años en el carrete, junto a las de las vacaciones y los memes.
@@ -65,7 +65,7 @@ Cuando necesites enviar un documento, a tu médico o a una oficina de visados, p
 
 ## Límites, con honestidad
 
-- **Sin copia de seguridad en la primera versión.** Los datos de la bóveda quedan fuera de las copias de iCloud y del ordenador. Si pierdes el móvil u olvidas tu patrón, los documentos no se pueden recuperar. Para los documentos vitales, conserva los originales o una segunda copia que controles. Hay prevista una opción de copia de seguridad cifrada.
+- **Copia de seguridad solo si la creas tú.** Los datos de la bóveda quedan fuera de las copias de iCloud y del ordenador. Si olvidas tu patrón, los documentos no se pueden recuperar; si pierdes el móvil, solo desde una copia de seguridad cifrada. Para los documentos vitales, conserva los originales y crea una copia de seguridad en Ajustes → Copia de seguridad.
 - **Las copias que haya en otros sitios no están protegidas.** Correos, adjuntos de chats y copias en iCloud siguen ahí hasta que los elimines. Consulta [borrar los originales tras importarlos](id:delete-original-photos-after-import).
 - **Todo lo que exportes** sale de la bóveda y es tan privado como el lugar al que vaya.
 - **Alguien que te vea** dibujar tu patrón, o un móvil prestado con la bóveda abierta, anulan el bloqueo.

@@ -20,7 +20,7 @@ keywords:
   - "alternatives à keepsafe"
   - "app photos cachées iphone"
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Sept critères pour choisir un coffre-fort photo et un regard honnête sur les outils d’Apple, Keepsafe, Private Photo Vault, les calculatrices et Velcrypt."
 category: choosing
 order: 20
@@ -72,10 +72,10 @@ Précision importante : Velcrypt est notre app. Nous avons essayé de la décrir
 | --- | --- | --- | --- | --- | --- | --- |
 | Secret distinct du code de l’appareil | Non | Facultatif | Oui | Oui | Oui | Oui |
 | Compte requis | Compte Apple pour iCloud | Compte Apple pour iCloud | Oui (e-mail) | Pas pour l’usage de base | Variable | Non |
-| Sauvegarde / synchronisation cloud | Via Photos iCloud | Via iCloud | Cloud premium facultatif | Variable | Variable | Non (sauvegarde chiffrée prévue) |
+| Sauvegarde / synchronisation cloud | Via Photos iCloud | Via iCloud | Cloud premium facultatif | Variable | Variable | Non (sauvegarde chiffrée manuelle, gratuite) |
 | Face ID / Touch ID | Oui | Oui | Oui | Oui | Variable | Non, volontairement |
-| Fonction leurre | Non | Non | Faux code PIN (premium) | Mot de passe leurre | Variable | Chaque schéma ouvre son propre coffre |
-| Déguisement en autre app | Non | Non | Non | Non | Oui | Non |
+| Fonction leurre | Non | Non | Faux code PIN (premium) | Mot de passe leurre | Variable | Chaque schéma ouvre son propre coffre (Premium) |
+| Déguisement en autre app | Non | Non | Non | Non | Oui | Non (icônes alternatives en Premium) |
 
 <!-- TODO verify -->
 
@@ -121,9 +121,9 @@ Velcrypt est une app iPhone native qui stocke photos, vidéos et documents dans 
 
 Ses limites sont volontaires, mais bien réelles :
 
-- **Pas de sauvegarde dans la première version.** Le contenu du coffre est exclu des sauvegardes iCloud et sur ordinateur. Perdez le téléphone ou oubliez le schéma, et les fichiers sont irrécupérables, par vous comme par nous. Une option de sauvegarde chiffrée est prévue.
+- **Sauvegarde manuelle uniquement.** Le contenu du coffre est exclu des sauvegardes iCloud et sur ordinateur. Une sauvegarde chiffrée gratuite (un fichier protégé par mot de passe que vous enregistrez vous-même) permet de restaurer un coffre sur un autre iPhone ; sans elle, un téléphone perdu emporte ses coffres. Un schéma oublié est irrécupérable, par vous comme par nous.
 - **Pas de Face ID**, volontairement : le déverrouillage est donc plus lent qu’un simple regard.
-- **Pas de déguisement.** Sur l’écran d’accueil, l’app ressemble à ce qu’elle est.
+- **Pas de déguisement.** L’app ne se fait pas passer pour une autre ; Premium permet seulement de choisir une icône alternative pour l’écran d’accueil.
 - **Pas de synchronisation cloud, de liens de partage ni d’app iPad/Mac.**
 
 Pour qui : les personnes qui veulent que leurs fichiers restent strictement sur le téléphone, sans compte, et qui acceptent d’être responsables de leurs propres copies.

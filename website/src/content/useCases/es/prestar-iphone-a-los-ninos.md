@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "ocultar fotos a los niños iphone"
 keywords: ["mi hijo usa mi móvil y ve mis fotos", "esconder fotos de los niños iphone", "acceso guiado para niños", "tiempo de uso niños iphone", "prestar el móvil a un niño privacidad"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Deja que los niños jueguen con tu iPhone sin que acaben en tus fotos privadas: Acceso Guiado, Tiempo de uso y una bóveda que sigue cerrada."
 group: everyday
 schemaType: Article
@@ -79,6 +79,6 @@ El [bloqueo automático](id:auto-lock) cierra la bóveda en cuanto la app pasa a
 - Si tu hijo te ve dibujar tu patrón, puede que lo recuerde. Dibújalo donde no te vea y elige uno más largo.
 - Si prestas el teléfono con la bóveda abierta y la app en primer plano, el contenido es visible hasta que la app pasa a segundo plano.
 - El icono de Velcrypt se ve en tu pantalla de inicio. iOS 18 y posteriores permiten ocultar apps tras Face ID en una carpeta oculta; es una función de iOS, no de Velcrypt.
-- En la primera versión, los datos de la bóveda no se incluyen en las copias de iCloud ni del ordenador. Si el teléfono se pierde o se rompe, o si olvidas el patrón, la bóveda no se puede recuperar. Guarda copias de las fotos irreemplazables en un lugar seguro.
+- Los datos de la bóveda no se incluyen en las copias de iCloud ni del ordenador. Si el teléfono se pierde o se rompe, solo una copia de seguridad cifrada (Ajustes → Copia de seguridad) conserva el contenido; si olvidas el patrón, la bóveda no se puede recuperar.
 
 Para la mayoría de las familias, la mejor combinación es sencilla: Acceso Guiado cada vez que prestas el teléfono, y una bóveda para ese puñado de cosas que nunca deberían estar a un gesto de distancia.

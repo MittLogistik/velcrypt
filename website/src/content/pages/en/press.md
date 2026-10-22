@@ -8,13 +8,13 @@ answer: "Velcrypt is an iPhone app (iOS 17 or later) that stores private photos,
 keyFacts:
   - "Tagline: “Well Encrypted. Truly Private.”"
   - "Platform: iPhone, iOS 17 or later."
-  - "Pricing model: free with optional Premium; pricing to be announced."
+  - "Pricing: free (1 vault, 50 items); Premium $1.99/week, $19.99/year or $39.99 lifetime (USD)."
   - "Downloads: logo and mark (transparent PNG) and 1024 px app icon."
   - "Press contact: press@velcrypt.app."
 primaryKeyword: "velcrypt press kit"
 keywords: ["velcrypt logo", "velcrypt media kit", "velcrypt fact sheet", "velcrypt brand colors"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 schemaType: WebPage
 order: 8
 related: [about, security, features, pricing]
@@ -47,12 +47,13 @@ Velcrypt is a native iPhone app that keeps private photos, videos and documents 
 | Tagline | Well Encrypted. Truly Private. |
 | Platform | iPhone, iOS 17 or later |
 | Category | Privacy / utilities — encrypted photo, video and document vault |
-| Pricing model | Free with optional Premium; pricing TBA |
+| Pricing model | Free (1 vault, up to 50 items) with optional Premium: $1.99/week, $19.99/year with a 3-day free trial, $39.99 lifetime (USD; prices vary by country) |
 | Unlock | Pattern on a 5×5 dot grid; no Face ID or Touch ID by design |
 | Vaults | Every pattern is its own vault; no vault list |
 | Encryption | AES-256-GCM (Apple CryptoKit); PBKDF2-HMAC-SHA512 key derivation |
-| Data | 100% on-device; no account, no cloud sync, no ads |
-| Planned | Duress pattern (coming soon), encrypted backup |
+| Data | 100% on-device; no account, no cloud sync, no ads; free encrypted backup file the user stores |
+| Publisher | Swedish Treats AB, Sweden |
+| Planned | Duress pattern (future update) |
 | Press contact | press@velcrypt.app |
 
 For technical detail, link to the [security model](id:security); for a feature overview, see [features](id:features).
@@ -82,11 +83,11 @@ Please use the assets as supplied: keep enough clear space around the logo, don�
 A few points help keep coverage accurate:
 
 - Velcrypt has **not** been independently audited. Please don’t describe it as audited.
-- The duress pattern and encrypted backup are planned, not available.
+- Encrypted backup is available and free. The duress pattern is planned, not available.
 - Velcrypt can’t recover forgotten patterns; that’s a deliberate consequence of having no account or server.
 - There is no press coverage to cite yet, and we don’t publish user numbers or ratings.
 
-Read [about Velcrypt](id:about) for the principles behind the app, and [pricing](id:pricing) for what Premium is planned to include.
+Read [about Velcrypt](id:about) for the principles behind the app, and [pricing](id:pricing) for what Premium includes.
 
 ## Press contact
 

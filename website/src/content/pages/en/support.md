@@ -8,13 +8,13 @@ answer: "Email support@velcrypt.app with your iOS version, Velcrypt version and 
 keyFacts:
   - "Contact: support@velcrypt.app."
   - "Include your iPhone model, iOS version, Velcrypt version and the steps that led to the problem."
-  - "Support cannot recover patterns or vaults — we have no access to them."
+  - "Support cannot recover patterns, vaults or backup passwords."
   - "An unexpected empty vault usually means a slightly different pattern was drawn."
   - "Never send us your pattern or screenshots of private content."
 primaryKeyword: "velcrypt support"
 keywords: ["contact velcrypt", "velcrypt help", "velcrypt not opening vault", "velcrypt troubleshooting", "velcrypt email"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 schemaType: ContactPage
 order: 5
 related: [faq, forgot-vault-pattern, auto-lock, security, privacy]
@@ -53,8 +53,8 @@ Please **don’t** send your pattern, and don’t attach screenshots that show p
 
 Velcrypt is built so that nobody but you can open your vaults — including us. That means support **cannot**:
 
-- recover or reset a forgotten pattern,
-- restore a vault from a lost, broken or reset iPhone,
+- recover or reset a forgotten pattern or backup password,
+- restore a vault from a lost, broken or reset iPhone — only your own encrypted backup file can do that,
 - tell you how many vaults exist on a device,
 - decrypt files or retrieve content for you.
 

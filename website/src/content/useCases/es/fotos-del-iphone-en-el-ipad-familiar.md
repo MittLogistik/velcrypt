@@ -9,11 +9,11 @@ keyFacts:
   - "Cualquier dispositivo con tu Cuenta de Apple y Fotos de iCloud activado muestra toda tu fototeca, incluido el álbum Oculto."
   - "La Fototeca compartida de iCloud (iOS 16.1 y posteriores) comparte fotos con hasta otras cinco personas y puede añadirlas automáticamente."
   - "En familia permite que cada persona tenga su propia Cuenta de Apple y compartir compras y suscripciones."
-  - "Las bóvedas de Velcrypt se quedan solo en tu iPhone: sin cuenta, sin sincronización y, en la primera versión, fuera de las copias de iCloud."
+  - "Las bóvedas de Velcrypt se quedan solo en tu iPhone: sin cuenta, sin sincronización y fuera de las copias de iCloud."
 primaryKeyword: "fotos del iphone aparecen en el ipad"
 keywords: ["dejar de sincronizar fotos con el ipad familiar", "fotos con id de apple compartido", "privacidad fototeca compartida de icloud", "separar fotos de icloud en familia", "mis fotos aparecen en otro dispositivo"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Por qué las fotos de tu iPhone aparecen en el iPad o el Mac familiar, cómo separar cuentas y fototecas y dónde deben ir las fotos privadas."
 group: everyday
 schemaType: Article
@@ -27,7 +27,7 @@ faq:
   - q: "¿Cómo evito que las fotos vayan automáticamente a la fototeca compartida?"
     a: "En los ajustes de Fotos, en el apartado de Fototeca compartida, puedes desactivar el uso compartido automático desde la Cámara o hacer que la Cámara guarde en tu Fototeca personal. También puedes devolver fotos concretas a tu Fototeca personal."
   - q: "¿Las bóvedas de Velcrypt se sincronizan con mi iPad o mi Mac?"
-    a: "No. Velcrypt es solo para iPhone, no tiene cuenta ni sincronización en la nube. En la primera versión, los datos de la bóveda también quedan fuera de las copias de iCloud y del ordenador."
+    a: "No. Velcrypt es solo para iPhone, no tiene cuenta ni sincronización en la nube. Los datos de la bóveda también quedan fuera de las copias de iCloud y del ordenador, así que no aparecen en el iPad familiar."
 ---
 
 A menudo empieza con un «Mamá, ¿esto qué es?» desde el sofá. Una foto que hiciste con tu iPhone ha aparecido en el iPad familiar o en el Mac de la cocina. Nadie ha hecho nada mal: los dispositivos hacen exactamente aquello para lo que se configuraron. Desenredarlo lleva unos cuantos ajustes y una breve charla en familia.
@@ -71,7 +71,7 @@ Importar copia la foto en la bóveda. Para quitarla de todos los dispositivos si
 ## Límites, con honestidad
 
 - Como las bóvedas no se sincronizan, no puedes ver su contenido en un iPad o un Mac. Velcrypt es una app para iPhone.
-- En la primera versión, los datos de la bóveda no están en las copias de iCloud ni del ordenador. Si pierdes el iPhone u olvidas el patrón, la bóveda no se puede recuperar. Hay prevista una opción de copia de seguridad cifrada.
+- Los datos de la bóveda no están en las copias de iCloud ni del ordenador. Si olvidas el patrón, la bóveda no se puede recuperar; si pierdes el iPhone, solo desde una copia de seguridad cifrada que hayas creado en Ajustes → Copia de seguridad.
 - Todo lo que ya se compartió, en una Fototeca compartida, un álbum compartido o un mensaje, puede seguir existiendo en otros dispositivos. Revisa también esos lugares.
 - El icono de Velcrypt se ve en tu pantalla de inicio, salvo que uses la opción de iOS 18 para ocultar apps.
 

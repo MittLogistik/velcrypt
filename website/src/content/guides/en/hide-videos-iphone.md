@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "how to hide videos on iphone"
 keywords: ["hide videos on iphone", "hide video iphone", "private videos iphone", "hide screen recordings iphone", "stop whatsapp saving videos to photos", "hidden videos iphone"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Hide videos on iPhone, keep chat apps from saving clips to your camera roll, and manage the storage that large private videos take up."
 category: hiding
 order: 3
@@ -91,4 +91,4 @@ For short-term privacy around friends and family, the Hidden album is usually fi
 
 Velcrypt stores videos in an encrypted vault on the device, with the same protection it gives photos: AES-256-GCM encryption, a pattern lock that is separate from your iPhone passcode, and no uploads or account. Inside the vault you can sort clips into [albums](id:albums) and play them in the built-in viewer. The page on [hiding videos with Velcrypt](id:hide-videos) has the details.
 
-Two honest notes for video in particular. Importing copies the file, so storage use doubles until you remove the original from Photos and Recently Deleted. And vault data is not included in iCloud or computer backups, so if you lose the phone or forget the pattern, the videos in the vault are gone. Keep that in mind before deleting the only other copy of something you want to keep.
+Two honest notes for video in particular. Importing copies the file, so storage use doubles until you remove the original from Photos and Recently Deleted. And vault data is not included in iCloud or computer backups, so if you lose the phone without an encrypted backup file, or forget the pattern, the videos in the vault are gone. Keep that in mind before deleting the only other copy of something you want to keep.

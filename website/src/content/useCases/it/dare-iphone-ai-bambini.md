@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "nascondere foto ai bambini iphone"
 keywords: ["bambini che usano il mio telefono foto", "prestare iphone ai figli", "accesso guidato bambini", "tempo di utilizzo bambini iphone", "figli che scorrono le foto"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Lascia giocare i bambini sul tuo iPhone senza che finiscano tra le foto private: Accesso Guidato, Tempo di utilizzo e una cassaforte chiusa."
 group: everyday
 schemaType: Article
@@ -79,6 +79,6 @@ Il [blocco automatico](id:auto-lock) chiude la cassaforte non appena l'app passa
 - Se tuo figlio ti guarda disegnare la sequenza, potrebbe ricordarla. Disegnala lontano dai suoi occhi e scegline una più lunga.
 - Se passi il telefono con la cassaforte aperta e l'app in primo piano, il contenuto è visibile finché l'app non va in background.
 - L'icona di Velcrypt è visibile nella schermata Home. Da iOS 18 puoi nascondere le app dietro Face ID in una cartella nascosta; è una funzione di iOS, non di Velcrypt.
-- Nella prima versione i dati delle casseforti non sono inclusi nei backup di iCloud o del computer. Se il telefono si perde o si rompe, o se dimentichi la sequenza, la cassaforte non si può recuperare. Tieni le foto insostituibili anche in un posto sicuro.
+- I dati delle casseforti non sono inclusi nei backup di iCloud o del computer. Se il telefono si perde o si rompe senza un backup cifrato, o se dimentichi la sequenza, la cassaforte non si può recuperare. Per le foto insostituibili crea un backup cifrato in Impostazioni → Backup.
 
 Per la maggior parte delle famiglie la combinazione migliore è semplice: Accesso Guidato ogni volta che passi il telefono e una cassaforte per quelle poche cose che non dovrebbero mai essere a portata di uno scorrimento.

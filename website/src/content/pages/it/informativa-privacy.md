@@ -1,20 +1,21 @@
 ---
 pageId: privacy
 title: "Informativa sulla privacy di Velcrypt"
-description: "Informativa privacy di Velcrypt: l’app non raccoglie dati personali, i contenuti non lasciano mai l’iPhone e il sito non usa cookie né tracciamento."
+description: "Informativa privacy di Velcrypt: nessun dato personale raccolto, contenuti solo sull’iPhone o nei tuoi backup, nessun cookie né tracciamento sul sito."
 h1: "Informativa sulla privacy"
 navTitle: "Informativa sulla privacy"
-answer: "L’app Velcrypt non raccoglie dati personali: non c’è un account, i contenuti delle casseforti non lasciano mai il tuo iPhone e non ci sono pubblicità né statistiche su ciò che conservi. Il sito web non imposta cookie e non esegue script di tracciamento."
+answer: "L’app Velcrypt non raccoglie dati personali: non c’è un account, i contenuti delle casseforti non ci vengono mai inviati e restano sul tuo iPhone o nei backup cifrati che salvi tu, e non ci sono pubblicità né statistiche su ciò che conservi. Il sito web non imposta cookie e non esegue script di tracciamento."
 keyFacts:
   - "L’app non raccoglie dati personali e non richiede un account."
   - "I contenuti delle casseforti sono cifrati sul tuo iPhone e non ci vengono mai inviati."
+  - "I backup cifrati restano dove li salvi tu; Velcrypt non li riceve mai."
   - "Gli acquisti sono gestiti da Apple; non riceviamo dati di pagamento."
   - "Il sito web non usa cookie né script di analisi o tracciamento."
-  - "Data di efficacia: 21 ottobre 2026 (bozza in attesa di revisione legale)."
+  - "Data di efficacia: 22 ottobre 2026 (bozza in attesa di revisione legale)."
 primaryKeyword: "velcrypt informativa privacy"
 keywords: ["velcrypt privacy", "velcrypt raccolta dati", "velcrypt raccoglie dati", "informativa privacy app cassaforte foto"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 schemaType: WebPage
 order: 6
 related: [terms, security, offline-no-account, support, about]
@@ -31,9 +32,9 @@ faq:
 
 **Bozza, in attesa di revisione legale.** Questa informativa descrive con precisione le nostre pratiche attuali, ma il testo non è ancora stato esaminato da un avvocato e potrebbe cambiare prima del lancio.
 
-**Data di efficacia:** 21 ottobre 2026
+**Data di efficacia:** 22 ottobre 2026
 
-Questa Informativa sulla privacy spiega quali informazioni Velcrypt (“noi”) tratta quando usi l’app Velcrypt per iPhone e il sito velcrypt.app. In breve: l’app è progettata in modo che non riceviamo mai i tuoi contenuti, e altrove raccogliamo il meno possibile.
+Questa Informativa sulla privacy spiega quali informazioni Swedish Treats AB, Svezia, editore di Velcrypt (“noi”), tratta quando usi l’app Velcrypt per iPhone e il sito velcrypt.app. In breve: l’app è progettata in modo che non riceviamo mai i tuoi contenuti, e altrove raccogliamo il meno possibile.
 
 ## L’app Velcrypt
 
@@ -43,7 +44,11 @@ L’app Velcrypt non raccoglie dati personali. Non c’è account, registrazione
 
 ### I contenuti restano sul tuo dispositivo
 
-Foto, video e documenti che aggiungi a Velcrypt vengono cifrati sul tuo iPhone e salvati lì. Non vengono mai caricati da noi né su alcun server che gestiamo, e non abbiamo modo di visualizzarli, decifrarli o recuperarli. Nella versione attuale, i dati delle casseforti sono anche esclusi dai backup iCloud e dai backup sul computer. Il funzionamento della cifratura è descritto nella pagina sul [modello di sicurezza](id:security).
+Foto, video e documenti che aggiungi a Velcrypt vengono cifrati sul tuo iPhone e salvati lì. Non vengono mai caricati da noi né su alcun server che gestiamo, e non abbiamo modo di visualizzarli, decifrarli o recuperarli. I dati delle casseforti sono anche esclusi dai backup iCloud e dai backup sul computer.
+
+### Backup cifrati
+
+Se crei un backup in Impostazioni → Backup, Velcrypt genera sul tuo iPhone un file `.velcrypt` cifrato con una password del backup scelta da te. Il file resta dove lo salvi tu, per esempio in File, iCloud Drive o su un computer. Velcrypt non riceve mai il file né la password e non può aprirlo né recuperarlo. Se lo salvi su iCloud Drive o su un altro servizio, quel servizio conserva il file cifrato secondo le proprie condizioni. Il funzionamento della cifratura è descritto nella pagina sul [modello di sicurezza](id:security).
 
 ### Nessuna analisi dei contenuti, nessuna pubblicità
 
@@ -51,7 +56,7 @@ L’app non contiene pubblicità e non raccoglie statistiche sui contenuti delle
 
 ### Acquisti
 
-Qualsiasi acquisto, come l’upgrade Premium facoltativo, è elaborato da Apple tramite l’App Store. Apple gestisce il pagamento; noi non riceviamo il tuo nome, il numero della carta né l’indirizzo di fatturazione. L’App Store conferma l’acquisto all’app sul tuo dispositivo, così da sbloccare le funzioni corrispondenti. Il trattamento dei tuoi dati da parte di Apple è descritto su [apple.com/privacy](https://www.apple.com/privacy/).
+Qualsiasi acquisto, come un abbonamento Premium o l’acquisto A vita, è elaborato da Apple tramite l’App Store e addebitato sul tuo Account Apple. Apple gestisce il pagamento, i rinnovi e i rimborsi; noi non riceviamo il tuo nome, il numero della carta né l’indirizzo di fatturazione. L’App Store conferma l’acquisto all’app sul tuo dispositivo, così da sbloccare le funzioni corrispondenti. Il trattamento dei tuoi dati da parte di Apple è descritto su [apple.com/privacy](https://www.apple.com/privacy/).
 
 ### Informazioni che Apple può condividere con noi
 

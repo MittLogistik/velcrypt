@@ -19,7 +19,7 @@ keywords:
   - "álbum ocultos face id"
   - "alguém pode ver minhas fotos ocultas"
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "O que o álbum Ocultos protege de verdade, quem ainda consegue abri-lo e como a sincronização do iCloud e a Proteção Avançada de Dados mudam o quadro."
 category: apple
 order: 10
@@ -122,4 +122,4 @@ O álbum Ocultos foi pensado para organização e privacidade leve, não para si
 
 O Velcrypt segue essa abordagem. Cada cofre abre com um padrão desenhado numa grade de 5×5, e não com Face ID ou o código do aparelho, e o conteúdo é criptografado com AES-256-GCM usando chaves derivadas desse padrão ([como a criptografia funciona](id:encryption)). Cada padrão abre o próprio cofre, e um padrão desconhecido simplesmente abre um cofre vazio, então nada revela quantos cofres existem ([cofres ocultos](id:hidden-vaults)). Tudo fica no aparelho, sem conta e sem cópia na nuvem.
 
-Isso também traz contrapartidas honestas. O conteúdo do cofre não entra nos backups do iCloud nem do computador na primeira versão, então, se você perder o celular ou esquecer o padrão, o conteúdo não pode ser recuperado. E importar uma foto a copia, então você ainda precisa remover o original do Fotos e de Apagados. Para uma comparação lado a lado, leia [Velcrypt vs. álbum Ocultos do iPhone](id:velcrypt-vs-iphone-hidden-album).
+Isso também traz contrapartidas honestas. O conteúdo do cofre não entra nos backups do iCloud nem do computador, então, se você esquecer o padrão, ou perder o celular sem ter criado um backup criptografado, o conteúdo não pode ser recuperado. E importar uma foto a copia, então você ainda precisa remover o original do Fotos e de Apagados. Para uma comparação lado a lado, leia [Velcrypt vs. álbum Ocultos do iPhone](id:velcrypt-vs-iphone-hidden-album).

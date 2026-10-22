@@ -9,12 +9,12 @@ keyFacts:
   - "Gli screenshot nel rullino possono essere visti, cancellati o sincronizzati da chiunque abbia il tuo codice o il tuo Account Apple."
   - "Controllo di sicurezza (Impostazioni › Privacy e sicurezza, iOS 16+) ti aiuta a vedere chi ha accesso al tuo iPhone e al tuo account."
   - "Le prove sono utili solo se sopravvivono: tienine almeno due copie, in posti a cui l'altra persona non può accedere."
-  - "Nella prima versione Velcrypt non ha backup, quindi non dovrebbe mai contenere la tua unica copia."
+  - "Le casseforti Velcrypt non sono nei backup di iCloud, quindi non dovrebbero mai contenere la tua unica copia."
   - "Le organizzazioni di supporto locali e le forze dell'ordine possono indicarti quali registrazioni sono utili dove vivi."
 primaryKeyword: "salvare prove di molestie iphone"
 keywords: ["tenere privati gli screenshot delle molestie", "conservare prove su iphone", "documentare prove di abusi telefono", "nascondere screenshot a chi maltratta", "sicurezza prove di molestie"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Un approccio attento, con la sicurezza al primo posto, per tenere screenshot e foto di molestie privati, integri e con una copia al sicuro."
 group: sensitive
 schemaType: Article
@@ -26,7 +26,7 @@ faq:
   - q: "Chi mi maltratta può vedere le mie foto se condividiamo un Account Apple?"
     a: "Sì. Con Foto di iCloud attivo, le foto si sincronizzano su ogni dispositivo collegato a quell'account, album Nascosti compreso. Controllo di sicurezza e un Account Apple separato possono aiutare, ma pensa alla tua sicurezza prima di fare modifiche che potrebbe notare."
   - q: "Velcrypt basta per conservare le prove di molestie?"
-    a: "Può tenere una copia privata sul tuo iPhone, ma non dovrebbe essere la tua unica copia. Nella prima versione i dati delle casseforti non finiscono nei backup, quindi un telefono perso, rotto o sottratto significa che la cassaforte è persa."
+    a: "Può tenere una copia privata sul tuo iPhone, ma non dovrebbe essere la tua unica copia. I dati delle casseforti non finiscono nei backup di iCloud, quindi senza un backup cifrato di Velcrypt un telefono perso, rotto o sottratto significa che la cassaforte è persa."
   - q: "Questa è una consulenza legale?"
     a: "No. Le regole sulle prove cambiano da Paese a Paese. Un'organizzazione di supporto locale, un avvocato o la polizia possono dirti quali registrazioni sono utili dove vivi."
 ---
@@ -68,7 +68,7 @@ Le casseforti si aprono con una sequenza disegnata su una griglia 5×5, non con 
 
 ## Limiti, detti con onestà: leggili con attenzione
 
-- **Velcrypt non deve essere la tua unica copia.** Nella prima versione i dati delle casseforti non sono inclusi nei backup di iCloud o del computer. Se il telefono viene perso, si rompe o ti viene sottratto, o se dimentichi la sequenza, nessuno può recuperare la cassaforte.
+- **Velcrypt non deve essere la tua unica copia.** I dati delle casseforti non sono inclusi nei backup di iCloud o del computer. Se il telefono viene perso, si rompe o ti viene sottratto senza un backup cifrato, o se dimentichi la sequenza, nessuno può recuperare la cassaforte.
 - **L'app è visibile.** L'icona di Velcrypt compare nella schermata Home. iOS 18 ti permette di nascondere le app dietro Face ID in una cartella nascosta, ma chi controlla con attenzione potrebbe comunque notare un'app. Valuta se questo potrebbe metterti a rischio.
 - **Qualcuno che ti guarda** disegnare la sequenza, o che ti prende il telefono mentre la cassaforte è aperta, vanifica il blocco.
 - **Un software di monitoraggio** su un telefono con jailbreak o manomesso può vedere ciò che è sullo schermo. Se lo sospetti, un'organizzazione di supporto può consigliarti; usare un dispositivo a cui quella persona non ha mai avuto accesso può essere più sicuro.

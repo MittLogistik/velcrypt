@@ -19,7 +19,7 @@ keywords:
   - "iPhone 扫描文稿到文件"
   - "iPhone 扫描的文件存在哪里"
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "扫描身份证件、合同和病历，又不塞满“照片”或 iCloud，然后把它们锁起来并删除残留副本。"
 category: practical
 order: 34
@@ -126,7 +126,7 @@ App Store 上的很多扫描 App 提供文字识别、云端存储或自动同�
 
 Velcrypt 可以把“文件”App 中的文档导入加密保险箱（[私密文档](id:private-documents)）。文件在设备上用 AES-256-GCM 加密，密钥从你的解锁图案派生，不会上传任何东西（[离线、免账户](id:offline-no-account)）。Velcrypt 没有内置扫描仪或相机，所以你需要先用“文件”或“备忘录”扫描，再导入 PDF。
 
-请记住，在第一个版本中，保险箱内容不包含在 iCloud 或电脑备份中。如果原始文件无法替代，请保留纸质版本，或者在你能掌控的地方另存一份。我们关于 [医疗和身份证件](id:medical-and-id-documents) 的使用场景讲到了如何权衡。
+请记住，保险箱内容不包含在 iCloud 或电脑备份中。如果原始文件无法替代，请保留纸质版本，在“设置”→“备份”中创建加密备份文件，或者在你能掌控的地方另存一份。我们关于 [医疗和身份证件](id:medical-and-id-documents) 的使用场景讲到了如何权衡。
 
 ## 清理残留
 

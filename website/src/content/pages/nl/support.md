@@ -8,13 +8,13 @@ answer: "Mail naar support@velcrypt.app met je iOS-versie, je Velcrypt-versie en
 keyFacts:
   - "Contact: support@velcrypt.app."
   - "Vermeld je iPhone-model, iOS-versie, Velcrypt-versie en de stappen die tot het probleem leidden."
-  - "Support kan geen patronen of kluizen herstellen — we hebben er geen toegang toe."
+  - "Support kan geen patronen, kluizen of back-upwachtwoorden herstellen."
   - "Een onverwacht lege kluis betekent meestal dat je een net iets ander patroon hebt getekend."
   - "Stuur ons nooit je patroon of schermafbeeldingen van privé-inhoud."
 primaryKeyword: "velcrypt support"
 keywords: ["contact velcrypt", "velcrypt hulp", "velcrypt kluis gaat niet open", "velcrypt probleem oplossen", "velcrypt e-mail"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 schemaType: ContactPage
 order: 5
 related: [faq, forgot-vault-pattern, auto-lock, security, privacy]
@@ -53,8 +53,8 @@ Stuur **geen** patroon mee, en voeg geen schermafbeeldingen toe waarop privé-in
 
 Velcrypt is zo gebouwd dat niemand behalve jij je kluizen kan openen — ook wij niet. Daarom kan support **niet**:
 
-- een vergeten patroon herstellen of resetten,
-- een kluis terugzetten van een verloren, kapotte of gewiste iPhone,
+- een vergeten patroon of back-upwachtwoord herstellen of resetten,
+- een kluis terugzetten van een verloren, kapotte of gewiste iPhone — dat kan alleen je eigen versleutelde back-upbestand,
 - vertellen hoeveel kluizen er op een apparaat staan,
 - bestanden ontsleutelen of inhoud voor je ophalen.
 

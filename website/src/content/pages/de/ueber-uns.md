@@ -10,21 +10,21 @@ keyFacts:
   - "Bewusst kein Face ID oder Touch ID – ein Muster existiert nur in deinem Kopf."
   - "Keine Werbung und kein Datenverkauf."
   - "Ehrlich bei den Grenzen, etwa: keine Wiederherstellung vergessener Muster."
-  - "Geplant: Notfallmuster (demnächst) und verschlüsseltes Backup."
+  - "Verschlüsseltes Backup kostenlos; Notfallmuster für ein künftiges Update geplant."
 primaryKeyword: "über velcrypt"
 keywords: ["velcrypt app", "wer steckt hinter velcrypt", "velcrypt prinzipien", "privater foto tresor iphone"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 schemaType: AboutPage
 order: 4
 related: [security, features, offline-no-account, pricing, press]
 faq:
   - q: "Warum speichert Velcrypt nichts in der Cloud?"
-    a: "Weil Daten, die dein iPhone nie verlassen, weder durch einen gehackten Server noch durch eine behördliche Anfrage beim Anbieter oder ein wiederverwendetes Passwort offengelegt werden können. Der Preis dafür: Verlierst du das iPhone oder vergisst du das Muster, gibt es keine Wiederherstellung."
+    a: "Weil Daten, die dein iPhone nie verlassen, weder durch einen gehackten Server noch durch eine behördliche Anfrage beim Anbieter oder ein wiederverwendetes Passwort offengelegt werden können. Der Preis dafür: Ein vergessenes Muster lässt sich nicht wiederherstellen, und damit deine Tresore einen Geräteverlust überstehen, erstellst du selbst ein verschlüsseltes Backup."
   - q: "Verdient Velcrypt Geld mit meinen Daten?"
-    a: "Nein. Velcrypt erhebt weder deine Tresorinhalte noch Analysedaten darüber und zeigt keine Werbung. Geplant ist eine kostenlose Version mit optionalem, kostenpflichtigem Premium-Upgrade."
+    a: "Nein. Velcrypt erhebt weder deine Tresorinhalte noch Analysedaten darüber und zeigt keine Werbung. Velcrypt ist kostenlos, mit einem optionalen, kostenpflichtigen Premium-Upgrade über den App Store."
   - q: "Woran arbeitet Velcrypt als Nächstes?"
-    a: "Geplant sind ein Notfallmuster (demnächst) und eine verschlüsselte Backup-Option, beide als Teil von Premium. Für keines davon gibt es bereits ein Veröffentlichungsdatum."
+    a: "Als Nächstes ist ein Notfallmuster geplant. Ein Veröffentlichungsdatum gibt es noch nicht. Das verschlüsselte Backup ist bereits verfügbar und kostenlos."
 ---
 
 <!-- TODO: add founder/company details -->
@@ -61,13 +61,13 @@ Velcrypt zeigt keine Werbung und verkauft keine Daten. Es erhebt weder deine Tre
 
 ## Wie es weitergeht
 
-Diese Punkte sind geplant. Sie sind heute noch nicht in der App, und wir nennen erst Termine, wenn sie fertig sind.
-
 | Punkt | Status |
 |---|---|
-| [Notfallmuster](id:duress-pattern) – öffnet einen gewählten Tresor und entfernt still den Zugriff auf die anderen | Demnächst (Premium) |
-| Verschlüsseltes Backup und Wiederherstellung | Geplant (Premium) |
-| Mehr Tresore und unbegrenzte Objekte | Geplant (Premium) |
+| Verschlüsseltes Backup und Wiederherstellung | Verfügbar, kostenlos |
+| Mehr Tresore, unbegrenzte Objekte und alternative App-Symbole | Verfügbar (Premium) |
+| [Notfallmuster](id:duress-pattern) – würde einen gewählten Tresor öffnen und still den Zugriff auf die anderen entfernen | Geplant für ein künftiges Update |
+
+Das Notfallmuster ist noch nicht in der App, und wir nennen erst einen Termin, wenn es fertig ist.
 
 Alles, was dazukommt, folgt denselben Prinzipien: standardmäßig auf dem Gerät, kein Konto und eine klare Erklärung der Abwägungen.
 

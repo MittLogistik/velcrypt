@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "velcrypt suporte"
 keywords: ["contato velcrypt", "ajuda velcrypt", "velcrypt não abre o cofre", "problemas velcrypt", "e-mail velcrypt"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 schemaType: ContactPage
 order: 5
 related: [faq, forgot-vault-pattern, auto-lock, security, privacy]
@@ -25,6 +25,8 @@ faq:
     a: "O mais provável é que você tenha desenhado um padrão que difere do habitual por um ponto ou uma direção. O Velcrypt trata cada padrão como um cofre próprio, então um padrão novo abre um cofre novo e vazio, sem nenhum erro."
   - q: "Em quanto tempo o Velcrypt responde aos e-mails de suporte?"
     a: "Lemos todas as mensagens e respondemos assim que possível. Neste momento, não oferecemos um prazo de resposta garantido."
+  - q: "Comprei o Premium, mas ele não aparece no meu novo iPhone. O que faço?"
+    a: "Entre com a mesma Conta Apple usada na compra e toque em Restaurar Compras no Velcrypt. Assinaturas são gerenciadas e reembolsos são solicitados pela Apple, nos ajustes da sua Conta Apple."
   - q: "Devo enviar meu padrão para o suporte?"
     a: "Nunca. Ninguém no Velcrypt precisa do seu padrão, e nunca vamos pedi-lo. Descreva o problema em vez disso."
 ---
@@ -54,9 +56,12 @@ Por favor, **não** envie seu padrão e não anexe capturas de tela que mostrem 
 O Velcrypt foi construído para que ninguém além de você consiga abrir seus cofres — nem nós. Isso significa que o suporte **não pode**:
 
 - recuperar ou redefinir um padrão esquecido,
-- restaurar um cofre de um iPhone perdido, quebrado ou redefinido,
+- restaurar um cofre de um iPhone perdido, quebrado ou redefinido se você não tiver criado um backup,
+- recuperar uma senha de backup esquecida,
 - dizer quantos cofres existem em um aparelho,
 - descriptografar arquivos ou recuperar conteúdo para você.
+
+Também não processamos pagamentos: as compras, os cancelamentos e os reembolsos são feitos pela Apple.
 
 Não se trata de uma política que poderíamos mudar a pedido; é assim que a criptografia funciona. O [modelo de segurança](id:security) explica o porquê, e [esqueceu o padrão do cofre](id:forgot-vault-pattern) mostra o que você ainda pode tentar por conta própria.
 
@@ -79,3 +84,11 @@ As cópias criptografadas ocupam mais ou menos o mesmo espaço que os originais.
 ### Não encontro um arquivo que importei
 
 Confira os outros álbuns do mesmo cofre e verifique se você abriu mesmo o cofre que imagina. Os itens de um cofre nunca aparecem em outro.
+
+### Quero levar meus cofres para um novo iPhone
+
+Os cofres não entram nos backups do iCloud nem do computador. No iPhone antigo, abra cada cofre, vá em Ajustes → Backup, crie o backup e salve o arquivo no iCloud Drive ou em um computador. No novo iPhone, abra o Velcrypt, abra um cofre e restaure o arquivo com a senha de backup. Os itens do backup são adicionados ao cofre aberto, e nada é apagado.
+
+### O Premium não aparece depois da compra
+
+Confira se você está com a mesma Conta Apple usada na compra e toque em Restaurar Compras no Velcrypt. Para gerenciar ou cancelar uma assinatura, use os ajustes da sua Conta Apple.

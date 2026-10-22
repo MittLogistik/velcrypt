@@ -19,7 +19,7 @@ keywords:
   - "photo vault privacy"
   - "secret photo app safe"
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "A practical checklist for judging any photo vault: encryption, privacy label, account, cloud, ads, uninstall behaviour and recovery."
 category: choosing
 order: 21
@@ -115,7 +115,7 @@ For transparency, here is how our own app measures up:
 - **Encryption:** AES-256-GCM via Apple CryptoKit. Keys come from your pattern via PBKDF2-HMAC-SHA512 with at least 600,000 iterations, each vault has its own random master key, and iOS Data Protection is applied on top. Details on our [security page](id:security) and [encryption feature page](id:encryption).
 - **Secret:** a pattern on a 5×5 grid, separate from your device passcode; no Face ID by design.
 - **Account and cloud:** none. No sign-up, no servers, no uploads ([offline, no account](id:offline-no-account)).
-- **Recovery:** none in the first version. Vault content is excluded from iCloud and computer backups, so losing the phone or forgetting the pattern means the content can’t be recovered. An encrypted backup option is planned.
+- **Recovery:** no account recovery. Vault content is excluded from iCloud and computer backups, and a forgotten pattern can’t be recovered. To protect against a lost phone, you can create a free encrypted backup file in Settings → Backup and restore it on any iPhone with the backup password you chose.
 - **Originals:** importing copies an item; you remove the original yourself.
 
 If a vault you’re considering can answer these points as clearly, that’s a good sign. For a broader comparison of options, see [the best private photo vault apps for iPhone](id:best-private-photo-vault-apps-iphone).

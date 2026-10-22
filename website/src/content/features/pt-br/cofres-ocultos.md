@@ -10,11 +10,11 @@ keyFacts:
   - "O Velcrypt nunca mostra uma lista de cofres."
   - "Um padrão desconhecido abre um cofre vazio, sem mensagem de erro."
   - "Você pode manter um cofre de fachada com conteúdo comum."
-  - "Mais cofres fazem parte do upgrade Premium opcional planejado."
+  - "A versão grátis tem 1 cofre; mais cofres fazem parte do Premium opcional."
 primaryKeyword: "app cofre oculto iphone"
 keywords: ["cofre secreto iphone", "app com vários cofres de fotos", "cofre falso iphone", "cofre de fachada", "negação plausível cofre de fotos", "segundo cofre oculto"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Cada padrão é um cofre próprio. Sem lista de cofres, sem erro para padrões desconhecidos e com espaço para um cofre de fachada convincente."
 status: available
 schemaType: WebPage
@@ -75,7 +75,9 @@ Um cofre de fachada é um cofre cheio de conteúdo inofensivo, mas convincente, 
 
 Um cofre de fachada funciona melhor quando parece usado. Um cofre vazio levanta a pergunta “por que instalar um app de cofre para nada?”, enquanto um cofre com algumas dezenas de itens comuns raramente levanta. O guia sobre [o que é um cofre de fachada](id:what-is-a-decoy-vault) mostra como deixá-lo convincente.
 
-O Velcrypt também planeja um [padrão de coação](id:duress-pattern) para o upgrade Premium opcional (em breve). A ideia é ir um passo além do cofre de fachada: abrir um cofre escolhido e remover em silêncio o acesso aos outros.
+Como a versão grátis tem um cofre, um cofre de fachada ao lado do seu cofre verdadeiro exige o [Premium](id:pricing).
+
+O Velcrypt também planeja um [padrão de coação](id:duress-pattern) para uma atualização futura. A ideia é ir um passo além do cofre de fachada: abrir um cofre escolhido e remover em silêncio o acesso aos outros.
 
 ## Como cada cofre continua separado
 

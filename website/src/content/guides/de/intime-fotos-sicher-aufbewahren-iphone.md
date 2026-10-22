@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "intime fotos sicher aufbewahren iphone"
 keywords: ["private fotos iphone wo aufbewahren", "nacktbilder iphone sicher verstecken", "private fotos sicherheit", "intime bilder datenschutz", "private bilder sicher aufbewahren"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Ein respektvoller Schutzplan Schritt für Schritt für intime Fotos auf dem iPhone – und was du tun kannst, wenn jemand droht, deine Bilder zu verbreiten."
 category: practical
 order: 32
@@ -38,7 +38,7 @@ faq:
   - q: "Ist das Album „Ausgeblendet“ sicher für intime Fotos?"
     a: "Es hält Fotos aus dem Hauptraster heraus und sperrt das Album ab iOS 16 mit Face ID, Touch ID oder deinem Code. Aber wer deinen Gerätecode kennt, kann es öffnen, und ausgeblendete Fotos werden weiterhin über iCloud-Fotos mit deinen anderen Geräten synchronisiert."
   - q: "Werden meine privaten Fotos in iCloud gesichert?"
-    a: "Wenn iCloud-Fotos aktiv ist, ja – auch ausgeblendete. Sie sind verschlüsselt, Ende-zu-Ende aber nur mit aktiviertem Erweitertem Datenschutz. Fotos in Velcrypt sind in der ersten Version nicht in iCloud- oder Computer-Backups enthalten."
+    a: "Wenn iCloud-Fotos aktiv ist, ja – auch ausgeblendete. Sie sind verschlüsselt, Ende-zu-Ende aber nur mit aktiviertem Erweitertem Datenschutz. Fotos in Velcrypt sind nicht in iCloud- oder Computer-Backups enthalten."
   - q: "Jemand droht, meine intimen Fotos zu verbreiten. Was soll ich tun?"
     a: "Zahle nicht und schicke keine weiteren Bilder, sichere Beweise der Drohungen und hol dir Unterstützung. Über StopNCII.org können Erwachsene auf dem eigenen Gerät digitale Fingerabdrücke von Bildern erstellen, damit teilnehmende Plattformen sie blockieren. Du kannst den Vorfall auch der Plattform und der Polizei vor Ort oder einer Beratungsstelle melden."
   - q: "Kann ich intime Fotos sicher verschicken?"
@@ -117,6 +117,6 @@ Bist du unter 18, sprich bitte sofort mit einer erwachsenen Vertrauensperson ode
 
 ## Wo Velcrypt ins Spiel kommt
 
-Velcrypt ist genau für die Lücke gebaut, die das Album „Ausgeblendet“ lässt: Inhalte, die auf diesem iPhone bleiben sollen, hinter einem Geheimnis, das nur du kennst. Fotos und Videos, die du [in Velcrypt versteckst](id:hide-photos), werden auf dem Gerät mit AES-256-GCM verschlüsselt, bleiben in der ersten Version aus iCloud- und Computer-Backups heraus und berühren nie einen Server. Jedes Muster öffnet einen eigenen Tresor, es gibt kein Face ID, das jemand nutzen könnte, während du schläfst, und in der App-Übersicht sind die Inhalte verborgen.
+Velcrypt ist genau für die Lücke gebaut, die das Album „Ausgeblendet“ lässt: Inhalte, die auf diesem iPhone bleiben sollen, hinter einem Geheimnis, das nur du kennst. Fotos und Videos, die du [in Velcrypt versteckst](id:hide-photos), werden auf dem Gerät mit AES-256-GCM verschlüsselt, bleiben aus iCloud- und Computer-Backups heraus und berühren nie einen Server. Jedes Muster öffnet einen eigenen Tresor, es gibt kein Face ID, das jemand nutzen könnte, während du schläfst, und in der App-Übersicht sind die Inhalte verborgen.
 
 Ehrliche Grenzen gelten trotzdem: Velcrypt erreicht keine Kopien auf dem Handy einer anderen Person, kann nicht verhindern, dass dir jemand beim Zeichnen des Musters zusieht, und ein vergessenes Muster lässt sich nicht wiederherstellen. Ist eine Beziehung zu Ende gegangen, findest du auf der Seite [Nach einer Trennung](id:after-a-breakup) weitere Ideen.

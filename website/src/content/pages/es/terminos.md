@@ -1,20 +1,22 @@
 ---
 pageId: terms
 title: "Términos de uso de Velcrypt"
-description: "Términos de uso de Velcrypt: licencia, uso aceptable, tu responsabilidad sobre el patrón y las copias, sin garantía, responsabilidad y compras vía Apple."
+description: "Términos de uso de Velcrypt: licencia, uso aceptable, tu patrón y tus copias, suscripciones y compras vía Apple, sin garantía y ley sueca."
 h1: "Términos de uso"
 navTitle: "Términos de uso"
 answer: "Puedes usar Velcrypt con fines personales y lícitos conforme a estos términos y al Contrato de licencia de usuario final estándar de Apple para aplicaciones con licencia. Como Velcrypt no puede recuperar datos perdidos, tú eres responsable de recordar tus patrones y de guardar copias de todo lo importante."
 keyFacts:
   - "A la app se le aplica el Contrato de licencia de usuario final de Apple para aplicaciones con licencia."
   - "Velcrypt no puede recuperar patrones olvidados ni bóvedas perdidas."
-  - "Eres responsable de guardar copias de tus archivos importantes."
+  - "Eres responsable de guardar copias de tus archivos importantes, por ejemplo con una copia de seguridad cifrada."
+  - "Las suscripciones se renuevan automáticamente salvo que se cancelen al menos 24 horas antes del final del periodo."
   - "Las compras se realizan y gestionan a través de Apple."
+  - "Proveedor: Swedish Treats AB (Suecia); se aplica la legislación sueca."
   - "Borrador: requiere revisión legal antes del lanzamiento."
 primaryKeyword: "términos de uso velcrypt"
 keywords: ["condiciones de velcrypt", "eula velcrypt", "términos y condiciones velcrypt"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 schemaType: WebPage
 order: 7
 related: [privacy, support, pricing, forgot-vault-pattern]
@@ -25,9 +27,9 @@ faq: []
 
 **Borrador: requiere revisión legal antes del lanzamiento.** Estos términos son un borrador de trabajo; se revisarán y pueden cambiar antes de que se lance Velcrypt.
 
-**Fecha de entrada en vigor:** 21 de octubre de 2026
+**Fecha de entrada en vigor:** 22 de octubre de 2026
 
-Estos Términos de uso («Términos») regulan tu uso de la app Velcrypt para iPhone (la «App») y del sitio web velcrypt.app (el «Sitio web»), proporcionados por Velcrypt («nosotros»). Al descargar o usar la App o al usar el Sitio web, aceptas estos Términos.
+Estos Términos de uso («Términos») regulan tu uso de la app Velcrypt para iPhone (la «App») y del sitio web velcrypt.app (el «Sitio web»), proporcionados por Swedish Treats AB, una empresa con sede en Suecia («nosotros»). Al descargar o usar la App o al usar el Sitio web, aceptas estos Términos.
 
 ## 1. La App y el EULA de Apple
 
@@ -52,15 +54,24 @@ Como el contenido de tus bóvedas se queda en tu dispositivo y está cifrado, no
 Velcrypt está diseñada para que nadie más que tú pueda abrir tus bóvedas. Eso tiene consecuencias que aceptas al usarla:
 
 - **No podemos recuperar tus datos.** Tus patrones y claves nunca se nos envían. Si olvidas un patrón, la bóveda que abre no puede ser recuperada ni por ti ni por nosotros.
-- **Perder el dispositivo es perder las bóvedas.** En la versión actual, los datos de las bóvedas se excluyen de las copias de seguridad de iCloud y del ordenador. Si tu dispositivo se pierde, es robado, se daña o se restablece, sus bóvedas desaparecen.
-- **Guarda tus propias copias.** Eres responsable de conservar copias de cualquier archivo que no puedas permitirte perder, guardadas en un lugar de confianza.
+- **Perder el dispositivo es perder las bóvedas, salvo que tengas una copia de seguridad.** Los datos de las bóvedas se excluyen de las copias de seguridad de iCloud y del ordenador. Si tu dispositivo se pierde, es robado, se daña o se restablece, sus bóvedas desaparecen, a menos que hayas creado una copia de seguridad cifrada en Ajustes → Copia de seguridad y la hayas guardado fuera del dispositivo.
+- **Las contraseñas de copia de seguridad no se pueden recuperar.** Cada copia de seguridad está protegida con una contraseña que tú eliges. Si la olvidas, ni tú ni nosotros podremos abrir esa copia.
+- **Guarda tus propias copias.** Eres responsable de crear y conservar copias de seguridad, o copias de cualquier archivo que no puedas permitirte perder, en un lugar de confianza.
 - **Mantén tu patrón en privado.** Cualquiera que conozca u observe tu patrón puede abrir esa bóveda.
 
 Lee [olvidé el patrón de mi bóveda](id:forgot-vault-pattern) y los límites que aparecen en la página del [modelo de seguridad](id:security) antes de confiar archivos importantes a Velcrypt.
 
 ## 5. Compras
 
-Cualquier compra, incluida la mejora Premium opcional, se realiza a través del App Store y está sujeta a los términos de Apple. Apple procesa el pago y gestiona las solicitudes de reembolso según sus políticas. Los precios se muestran en el App Store antes de comprar. Las funciones descritas como previstas o próximamente no están garantizadas hasta que se lancen.
+Cualquier compra, incluida la mejora Premium opcional, se realiza a través del App Store y está sujeta a los términos de Apple. Los precios se muestran en el App Store antes de comprar y pueden variar según el país.
+
+- **Suscripciones.** Premium se ofrece como suscripción semanal o anual. El pago se carga en tu cuenta de Apple al confirmar la compra. Las suscripciones se renuevan automáticamente salvo que se cancelen al menos 24 horas antes del final del periodo actual, y la renovación se cobra en las 24 horas anteriores al final del periodo. Puedes gestionar o cancelar las suscripciones en los ajustes de tu cuenta de Apple.
+- **Prueba gratuita.** Si se ofrece una prueba gratuita, se convierte en una suscripción de pago al terminar, salvo que la canceles al menos 24 horas antes de que acabe.
+- **Vitalicio.** La opción vitalicia es un pago único que no se renueva.
+- **Reembolsos.** Apple procesa el pago y gestiona las solicitudes de reembolso según sus políticas. No podemos emitir reembolsos directamente.
+- **Restaurar compras.** Si reinstalas la App o cambias de dispositivo, usa Restaurar compras en la App para recuperar Premium con la misma cuenta de Apple.
+
+Las funciones descritas como previstas no están garantizadas hasta que se lancen.
 
 ## 6. Cambios en la App
 
@@ -88,7 +99,7 @@ Podemos actualizar estos Términos. Publicaremos aquí la versión actualizada y
 
 ## 11. Legislación aplicable
 
-Estos Términos se rigen por las leyes de [jurisdicción por determinar], sin tener en cuenta las normas sobre conflicto de leyes. Las leyes imperativas de protección de los consumidores de tu país de residencia siguen siendo aplicables.
+Estos Términos se rigen por las leyes de Suecia, sin tener en cuenta las normas sobre conflicto de leyes. Las leyes imperativas de protección de los consumidores de tu país de residencia siguen siendo aplicables.
 
 ## 12. Contacto
 

@@ -4,18 +4,18 @@ title: "Velcrypts säkerhet: så fungerar krypteringen"
 description: "Så skyddar Velcrypt dina valv: PBKDF2-nyckelhärledning, huvudnyckel per valv, AES-256-GCM, iOS Dataskydd – och vad appen inte kan skydda mot."
 h1: "Så fungerar Velcrypt: säkerhetsmodellen"
 navTitle: "Säkerhetsmodell"
-answer: "Velcrypt gör om mönstret du ritar till en nyckel med PBKDF2-HMAC-SHA512 (minst 600 000 iterationer), använder den för att skydda en slumpmässig 256-bitars huvudnyckel för valvet och krypterar varje fil med AES-256-GCM på din iPhone. Inget laddas upp, och det finns varken konto eller någon reservkopia av dina nycklar."
+answer: "Velcrypt gör om mönstret du ritar till en nyckel med PBKDF2-HMAC-SHA512 (minst 600 000 iterationer), använder den för att skydda en slumpmässig 256-bitars huvudnyckel för valvet och krypterar varje fil med AES-256-GCM på din iPhone. Inget laddas upp, och det finns varken konto eller någon reservkopia av dina nycklar. Krypterade säkerhetskopior skapar du själv, skyddade av ett separat lösenord."
 keyFacts:
   - "Mönster → PBKDF2-HMAC-SHA512, minst 600 000 iterationer, slumpmässigt salt per enhet i iOS-nyckelringen."
   - "Varje valv har en egen slumpmässig 256-bitars huvudnyckel; nycklar per fil härleds med HKDF."
   - "Filerna krypteras med AES-256-GCM via Apple CryptoKit, plus iOS Dataskydd (fullständig skyddsklass)."
   - "Ett okänt mönster öppnar ett tomt valv – ingen valvlista, inget meddelande om ”fel mönster”."
-  - "Inget nätverk, inget konto, ingen analys av valvinnehållet; valvdata undantas från iCloud- och datorsäkerhetskopior i v1."
+  - "Inget nätverk, inget konto, ingen analys av valvinnehållet; valvdata undantas från iCloud- och datorsäkerhetskopior."
   - "Velcrypt har ännu inte granskats av en oberoende säkerhetsrevision."
 primaryKeyword: "krypterat fotovalv iphone säkerhet"
 keywords: ["velcrypt säkerhet", "kryptering fotovalv iphone", "hur fungerar velcrypts kryptering", "aes-256-gcm fotovalv", "pbkdf2 mönsterlås", "trovärdigt förnekande valvapp"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 schemaType: WebPage
 order: 1
 related: [encryption, pattern-lock, hidden-vaults, aes-256-encryption-explained, plausible-deniability-explained, forgot-vault-pattern]
@@ -38,7 +38,7 @@ Den här sidan förklarar på vanlig svenska vad som händer med dina bilder, vi
 
 Velcrypt är en iPhone-app som förvarar privata filer i krypterade valv på din enhet. Du öppnar ett valv genom att rita ett mönster på ett 5×5-rutnät av punkter. Mönstret sparas aldrig någonstans. I stället körs det genom en långsam nyckelhärledningsfunktion som skapar en nyckel, och det är den nyckeln som skyddar valvets innehåll.
 
-Allt sker på själva iPhonen. Velcrypt har inget konto, inga servrar och ingen uppladdning, så det finns ingen kopia av ditt valv – eller av dina nycklar – någon annanstans. Det är både styrkan och den största begränsningen: om mönstret glöms bort eller telefonen försvinner kan valvet inte återställas.
+Allt sker på själva iPhonen. Velcrypt har inget konto, inga servrar och ingen uppladdning, så det finns ingen kopia av ditt valv – eller av dina nycklar – någon annanstans. Det är både styrkan och den största begränsningen: om mönstret glöms bort eller telefonen försvinner kan valvet inte återställas, om du inte själv har skapat en krypterad säkerhetskopia.
 
 ## Från mönster till nyckel
 
@@ -88,11 +88,13 @@ Velcrypt låses automatiskt när appen går till bakgrunden, efter en fördröjn
 
 Det finns ingen upplåsning med Face ID eller Touch ID, med avsikt. Ett ansikte eller ett finger kan användas utan ditt samtycke – medan du sover eller under press. Ett mönster finns bara i ditt minne.
 
-## Inget nätverk, inget konto, inga säkerhetskopior
+## Inget nätverk, inget konto, inga automatiska säkerhetskopior
 
 Velcrypt fungerar helt offline. Det finns ingen registrering, ingen e-postadress, ingen server och ingen uppladdning av valvinnehåll, och ingen analysdata samlas in om det du sparar. Sidan [offline utan konto](id:offline-no-account) beskriver vad det innebär i praktiken.
 
-I första versionen **undantas valvdata dessutom från iCloud- och datorsäkerhetskopior (Finder)**. Det håller dina krypterade filer borta från Apples servrar och från datorer du synkar med, men det har en verklig följd: om din iPhone försvinner, går sönder eller återställs försvinner valven med den. Ett alternativ för krypterad säkerhetskopiering är planerat, utan datum.
+Valvdata **undantas dessutom från iCloud- och datorsäkerhetskopior (Finder)**. Det håller dina krypterade filer borta från Apples servrar och från datorer du synkar med, men det har en verklig följd: om din iPhone försvinner, går sönder eller återställs försvinner valven med den.
+
+Därför kan du själv skapa en **krypterad säkerhetskopia** under Inställningar → Säkerhetskopiering. Den samlar det öppna valvet i en .velcrypt-fil som du sparar i Filer, iCloud Drive eller på en dator och kan återställa på vilken iPhone som helst. Filen krypteras med AES-256-GCM och en nyckel som härleds från ett lösenord du väljer, med PBKDF2-HMAC-SHA512 och minst 600 000 iterationer. Mönstret används inte, eftersom en fil som kan angripas offline behöver en längre hemlighet. Välj ett långt lösenord: den som får tag i filen kan försöka gissa det. En säkerhetskopia omfattar bara det öppna valvet, så den avslöjar inte att andra valv finns. Glömmer du lösenordet kan säkerhetskopian inte öppnas.
 
 ## Hotmodellen i korthet
 
@@ -103,11 +105,12 @@ I första versionen **undantas valvdata dessutom från iCloud- och datorsäkerhe
 | Någon försöker bevisa att du har fler valv | Till stor del | Ingen valvlista, inget ”fel mönster”-meddelande; antalet valv visas inte i appen. |
 | Stöld av en låst iPhone | Ja | iOS Dataskydd plus Velcrypts egen AES-256-GCM-kryptering. |
 | Brute force mot mönstret ur utdragna filer | Försvårad | PBKDF2 med 600 000+ iterationer och salt per enhet; ett långt mönster gör skillnad. |
-| Intrång i ett molnkonto | Ja | Valvdata laddas inte upp och undantas från iCloud-säkerhetskopior i v1. |
+| Intrång i ett molnkonto | Ja | Valvdata laddas inte upp och undantas från iCloud-säkerhetskopior. En säkerhetskopia du sparar i iCloud Drive är krypterad med ditt lösenord. |
 | Manipulation av krypterade filer | Upptäcks | Autentiseringen i AES-256-GCM avvisar ändrade data. |
 | Någon ser dig rita mönstret | Nej | Se nedan. |
 | Skadlig kod eller jailbreakad enhet | Nej | Se nedan. |
-| Glömt mönster eller förlorad telefon | Nej | Ingen återställning är möjlig. |
+| Glömt mönster | Nej | Mönstret kan inte återställas; innehållet bara från en tidigare säkerhetskopia. |
+| Förlorad telefon | Bara med säkerhetskopia | Utan en krypterad säkerhetskopia är valven borta. |
 
 <a id="what-velcrypt-does-not-protect-against"></a>
 ## Vad Velcrypt inte skyddar mot
@@ -115,12 +118,12 @@ I första versionen **undantas valvdata dessutom från iCloud- och datorsäkerhe
 Alla säkerhetsverktyg har begränsningar, och du bör känna till Velcrypts innan du förlitar dig på appen.
 
 - **Någon som tittar över axeln.** Om någon ser dig rita mönstret, på plats eller via en kamera, kan personen öppna det valvet. Rita det utom synhåll och välj gärna ett mönster som inte liknar en enkel bokstav eller form.
-- **Tvång att låsa upp.** Velcrypt kan inte hindra någon från att tvinga dig att rita ett mönster. Ett lockvalv kan hjälpa; ett tvångsmönster (kommer snart, Premium) är planerat för att öppna ett valt valv och i tysthet ta bort åtkomsten till de andra.
+- **Tvång att låsa upp.** Velcrypt kan inte hindra någon från att tvinga dig att rita ett mönster. Ett lockvalv kan hjälpa (ett andra valv kräver Premium). Ett [tvångsmönster](id:duress-pattern) som öppnar ett valt valv och i tysthet tar bort åtkomsten till de andra är planerat till en framtida uppdatering.
 - **En telefon som lämnas över med valvet öppet.** Medan ett valv är upplåst kan den som håller telefonen se det du ser. Lås valvet innan du räcker över telefonen till någon.
 - **Komprometterade eller jailbreakade enheter och skadlig kod.** Programvara som kan läsa skärmen, logga tryck eller granska appminnet på en komprometterad enhet kan kringgå all kryptering på appnivå.
 - **Skärmdumpar eller foton av skärmen.** Velcrypt kan inte hindra en annan kamera från att fotografera din skärm.
 - **Kopior på andra ställen.** Import kopierar en bild; originalet ligger kvar i Bilder tills du raderar det och hamnar sedan i Nyligen raderade i cirka 30 dagar. Kopior kan också finnas i iCloud-bilder, chattappar, e-post eller på någon annans telefon. Följ guiden om att [radera original efter import](id:delete-original-photos-after-import).
-- **Förlorad telefon eller glömt mönster.** Båda innebär att data är borta. Det finns ingen återställningsfras och ingen nollställning. Läs [glömt valvmönstret](id:forgot-vault-pattern).
+- **Förlorad telefon eller glömt mönster.** Utan en egen krypterad säkerhetskopia innebär båda att data är borta. Det finns ingen återställningsfras och ingen nollställning, och ett glömt lösenord för en säkerhetskopia kan inte heller återställas. Läs [glömt valvmönstret](id:forgot-vault-pattern).
 - **Att det syns att Velcrypt används.** Appikonen syns, och forensiska verktyg kan eventuellt se att Velcrypt innehåller krypterade data och ungefär hur mycket. Velcrypt påstår inte att det döljs – bara antalet valv och deras innehåll.
 - **Svaga eller lättgissade mönster.** Ett kort mönster, eller ett som är format som L, Z eller en kvadrat, är mycket lättare att gissa. Testa en liknande form med [mönsterkontrollen](id:pattern-strength-checker) – aldrig ditt riktiga mönster.
 

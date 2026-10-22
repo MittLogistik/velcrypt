@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "pattern lock vs pin"
 keywords: ["pin vs face id security", "is a pattern lock secure", "pattern vs password", "face id vs passcode", "most secure phone lock", "compelled biometrics"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Search-space math, shoulder surfing, smudges and compelled biometrics: an honest comparison of the four common ways to lock private data."
 category: security
 order: 40
@@ -118,4 +118,4 @@ You don’t have to pick one lock for everything. A sensible setup for most peop
 
 Velcrypt makes a deliberate choice: the only way into a vault is a pattern on a 5×5 grid of dots, one continuous line through at least 6 dots with at least one change of direction. Longer patterns of 8–12 dots are recommended. There is no Face ID or Touch ID, because a pattern can’t be lifted from your body.
 
-The design also changes what “guessing” means. Every pattern is its own vault, and a pattern Velcrypt has never seen simply opens an empty vault, with no error message. That means a wrong guess doesn’t announce itself as wrong, and you can keep a [decoy vault](id:what-is-a-decoy-vault) under a second pattern. The [hidden vaults](id:hidden-vaults) page explains the model, and the [security overview](id:security) lists what it can’t protect against, including someone watching you draw.
+The design also changes what “guessing” means. Every pattern is its own vault, and a pattern Velcrypt has never seen simply opens an empty vault, with no error message. That means a wrong guess doesn’t announce itself as wrong, and with Premium you can keep a [decoy vault](id:what-is-a-decoy-vault) under a second pattern. The [hidden vaults](id:hidden-vaults) page explains the model, and the [security overview](id:security) lists what it can’t protect against, including someone watching you draw.

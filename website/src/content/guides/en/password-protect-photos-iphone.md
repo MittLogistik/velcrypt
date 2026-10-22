@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "password protect photos on iphone"
 keywords: ["password protect individual photos iphone", "put password on photos iphone", "password protect pictures iphone", "lock individual photos iphone", "photo password iphone"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Why iOS has no per-photo password, and three practical ways to put a real lock on specific photos instead."
 category: hiding
 order: 4
@@ -105,4 +105,4 @@ Whichever lock you choose, a protected copy does not help if an unprotected copy
 
 Velcrypt answers the second need, a secret only you know. Instead of a typed password, you draw a [pattern](id:pattern-lock) on a 5×5 grid of dots. It has to pass through at least six dots with at least one change of direction, and patterns of eight to twelve dots are recommended. Velcrypt does not use Face ID or Touch ID at all, so your iPhone passcode and your face cannot open it.
 
-Each pattern opens its own vault, and the photos inside are [encrypted](id:encryption) with AES-256-GCM using keys derived from that pattern. Because everything stays on the device and is excluded from backups, there is no way to reset a forgotten pattern. If you would rather have a password you can recover, that limitation is worth weighing honestly before you move anything important.
+Each pattern opens its own vault, and the photos inside are [encrypted](id:encryption) with AES-256-GCM using keys derived from that pattern. Because everything stays on the device and is excluded from iCloud and computer backups, there is no way to reset a forgotten pattern. An optional encrypted backup file protects against a lost phone, but it is locked with a backup password that can’t be reset either. If you would rather have a password you can recover, that limitation is worth weighing honestly before you move anything important.

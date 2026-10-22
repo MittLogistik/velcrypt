@@ -20,7 +20,7 @@ keywords:
   - "cassaforte foto sul dispositivo iphone"
   - "cassaforte foto senza internet"
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Cosa guadagni scegliendo una cassaforte per foto senza account né cloud, cosa perdi e test semplici per verificare che un’app resti davvero offline."
 category: choosing
 order: 23
@@ -127,6 +127,6 @@ Nessuno di questi segnali rende un’app cattiva. Significano solo che non è il
 
 Velcrypt è pensata come cassaforte sul dispositivo e senza account. Non c’è registrazione, email, server o caricamento online, e nessuna analisi di ciò che conservi ([offline, senza account](id:offline-no-account)). Foto, video e documenti vengono cifrati sull’iPhone con AES-256-GCM usando chiavi derivate dalla sequenza che disegni ([crittografia](id:encryption)).
 
-Questo significa che porta con sé anche i compromessi descritti sopra. Nella prima versione i contenuti della cassaforte sono esclusi dai backup di iCloud e del computer, quindi se perdi il telefono o dimentichi la sequenza, i contenuti non si possono recuperare, né da te né da noi. Spieghiamo cosa fare e cosa non aspettarsi in [hai dimenticato la sequenza della cassaforte?](id:forgot-vault-pattern). Per il futuro è prevista un’opzione di backup cifrato.
+Questo significa che porta con sé anche i compromessi descritti sopra. I contenuti della cassaforte sono esclusi dai backup di iCloud e del computer: se dimentichi la sequenza i contenuti non si possono recuperare, né da te né da noi, e se perdi il telefono li recuperi solo da un backup cifrato creato da te. Spieghiamo cosa fare e cosa non aspettarsi in [hai dimenticato la sequenza della cassaforte?](id:forgot-vault-pattern). Il backup cifrato è gratuito: crei un file protetto da una password che scegli tu e lo salvi dove vuoi.
 
 Prima di spostare in una qualsiasi cassaforte offline qualcosa che non puoi permetterti di perdere, conservane una copia separata che controlli tu. E qualunque app tu scelga, passala al vaglio della nostra [checklist di sicurezza per le casseforti foto](id:are-photo-vault-apps-safe).

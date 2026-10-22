@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "negación plausible cifrado"
 keywords: ["qué es la negación plausible", "cifrado negable", "volumen oculto explicado", "negación plausible bóveda de fotos", "bóveda negable iphone"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "El concepto detrás de los volúmenes ocultos y las bóvedas señuelo, cómo lo usa Velcrypt con los patrones desconocidos y lo que honestamente no puede hacer."
 category: security
 order: 42
@@ -60,7 +60,7 @@ Velcrypt adapta el principio a una bóveda de fotos y documentos en el iPhone. N
 
 La consecuencia es que un patrón equivocado y una bóveda válida pero vacía se ven exactamente igual. Si abres una bóveda delante de alguien, nada en la interfaz muestra que existan otras. Eso convierte la [bóveda señuelo](id:what-is-a-decoy-vault) en una forma natural de uso y no en un modo especial. La página de la función de [bóvedas ocultas](id:hidden-vaults) muestra cómo funciona en la práctica.
 
-Una función Premium prevista, el [patrón de coacción](id:duress-pattern) (próximamente), lo amplía: un patrón especial abriría una bóveda elegida y quitaría en silencio el acceso a las demás.
+Una función prevista para una actualización futura, el [patrón de coacción](id:duress-pattern), lo ampliaría: un patrón especial abriría una bóveda elegida y quitaría en silencio el acceso a las demás.
 
 ## Los límites, con honestidad
 

@@ -21,7 +21,7 @@ keywords:
   - "erweiterter datenschutz wiederherstellungsschlüssel"
   - "advanced data protection deutsch"
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Was der Erweiterte Datenschutz verschlüsselt, was beim Standard bleibt, welche Wiederherstellung nötig ist, die Kompromisse und wie du ihn einschaltest."
 category: apple
 order: 12
@@ -138,6 +138,6 @@ Siehst du die Option in deinen iCloud-Einstellungen nicht oder ist sie ausgegrau
 
 Der Erweiterte Datenschutz und ein Tresor auf dem Gerät lösen unterschiedliche Probleme. ADP macht deine iCloud-Daten für Apple unlesbar, lässt sie aber weiterhin synchronisieren und über deine eigene Wiederherstellungsmethode wiederherstellen. Ein Tresor auf dem Gerät hält bestimmte Dateien ganz aus der Cloud heraus und stellt ein separates Geheimnis zwischen sie und jeden, der dein Handy entsperren kann.
 
-Velcrypt gehört zur zweiten Kategorie. Fotos, Videos und Dokumente, die du importierst, werden auf dem iPhone mit AES-256-GCM verschlüsselt, mit Schlüsseln, die aus einem von dir gezeichneten Muster abgeleitet werden ([so funktioniert die Verschlüsselung](id:encryption)). Es gibt kein Konto, und nichts wird hochgeladen ([auf dem Gerät, ohne Konto](id:offline-no-account)). In der ersten Version sind Tresorinhalte vollständig von iCloud- und Computer-Backups ausgeschlossen – geht das Handy verloren, gibt es also nichts wiederherzustellen; eine verschlüsselte Backup-Option ist geplant.
+Velcrypt gehört zur zweiten Kategorie. Fotos, Videos und Dokumente, die du importierst, werden auf dem iPhone mit AES-256-GCM verschlüsselt, mit Schlüsseln, die aus einem von dir gezeichneten Muster abgeleitet werden ([so funktioniert die Verschlüsselung](id:encryption)). Es gibt kein Konto, und nichts wird hochgeladen ([auf dem Gerät, ohne Konto](id:offline-no-account)). Tresorinhalte sind vollständig von iCloud- und Computer-Backups ausgeschlossen. Geht das Handy verloren, kannst du nur wiederherstellen, was du vorher als verschlüsseltes Backup gespeichert hast – eine passwortgeschützte Datei, die du selbst aufbewahrst.
 
 Viele nutzen sinnvollerweise beides: ADP für die alltägliche Mediathek und Backups, einen Tresor für die Handvoll Dateien, die nirgendwohin synchronisiert werden sollen. Wenn du Verschlüsselungsbegriffe abwägst, lies als Nächstes unsere [Erklärung zu AES-256](id:aes-256-encryption-explained) und [Landen ausgeblendete Fotos in iCloud?](id:are-hidden-photos-saved-to-icloud).

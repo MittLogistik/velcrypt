@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "plausible deniability encryption"
 keywords: ["what is plausible deniability", "deniable encryption", "hidden volume explained", "plausible deniability photo vault", "deniable vault iphone"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "The concept behind hidden volumes and decoy vaults, how Velcrypt’s unknown-pattern design uses it, and what it honestly can’t do."
 category: security
 order: 42
@@ -60,7 +60,7 @@ Velcrypt adapts the principle to a photo and document vault on iPhone. There is 
 
 The consequence is that a wrong pattern and a valid-but-empty vault look identical. If you open a vault for someone, there is nothing in the interface that shows other vaults exist. That makes a [decoy vault](id:what-is-a-decoy-vault) a natural pattern of use rather than a special mode. The [hidden vaults](id:hidden-vaults) feature page shows how it works in practice.
 
-A planned Premium feature, the [duress pattern](id:duress-pattern) (coming soon), extends this: a special pattern would open a chosen vault and silently remove access to the others.
+A [duress pattern](id:duress-pattern), planned for a future update, would extend this: a special pattern would open a chosen vault and silently remove access to the others.
 
 ## The honest limits
 

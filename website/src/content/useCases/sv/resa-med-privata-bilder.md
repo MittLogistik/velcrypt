@@ -10,11 +10,11 @@ keyFacts:
   - "Borttappade telefoner, utlånade telefoner och delade hotellrum är de vanligaste riskerna på resan."
   - "Guidad åtkomst håller en utlånad iPhone låst till en app, till exempel Kartor eller Telefon."
   - "Ett valv i Velcrypt öppnas bara med ditt mönster; ett okänt mönster öppnar ett tomt valv."
-  - "Valvdata i Velcrypt ingår inte i iCloud- eller datorsäkerhetskopior i den första versionen, så planera en andra kopia."
+  - "Valvdata i Velcrypt ingår inte i iCloud- eller datorsäkerhetskopior, så skapa en krypterad säkerhetskopia innan du reser."
 primaryKeyword: "resa med privata bilder iphone"
 keywords: ["skydda bilder på resan", "iphone stulen utomlands bilder", "skydd för stulen enhet resa", "låna ut telefonen utomlands integritet", "integritetstips mobil på resa"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Borttappade telefoner, att låna ut din iPhone och gränskontroller: så reser du med privata bilder och dokument utan oro."
 group: travel
 schemaType: Article
@@ -26,7 +26,7 @@ faq:
   - q: "Bör jag ha bilder på passet i telefonen när jag reser?"
     a: "En kopia kan vara användbar om passet försvinner, men låt den inte ligga i kamerarullen. Förvara den i ett krypterat valv eller på en annan skyddad plats, och ha en separat kopia som du når om telefonen försvinner."
   - q: "Vad händer med mitt valv i Velcrypt om telefonen blir stulen utomlands?"
-    a: "Tjuven kan inte öppna det utan ditt mönster, men du kan inte heller återställa det: i den första versionen ingår valvdata inte i iCloud- eller datorsäkerhetskopior. En krypterad säkerhetskopia är planerad."
+    a: "Tjuven kan inte öppna det utan ditt mönster, och valvdata ingår inte i iCloud- eller datorsäkerhetskopior. Har du skapat en krypterad säkerhetskopia i Velcrypt före resan kan du återställa valvet på en ny iPhone."
   - q: "Är det säkert att låna ut min iPhone till någon utomlands?"
     a: "Oftast går det bra för ett snabbt samtal eller en titt på kartan. Starta Guidad åtkomst först så att personen stannar i den appen, och håll telefonen inom synhåll."
 ---
@@ -45,7 +45,7 @@ På resan hamnar telefonen i fler händer och på fler platser än i vardagen. D
 
 1. **Aktivera Skydd för stulen enhet.** Inställningar › Face ID och lösenkod › Skydd för stulen enhet (iOS 17.3 och senare). Borta från välbekanta platser kräver det Face ID eller Touch ID, inte bara lösenkoden, för åtgärder som att ändra lösenordet till ditt Apple-konto, och lägger till en fördröjning för vissa ändringar.
 2. **Använd en stark lösenkod.** En sexsiffrig eller alfanumerisk kod är svårare att snappa upp över axeln än fyra siffror. Skyla skärmen när du skriver in den offentligt.
-3. **Säkerhetskopiera telefonen.** Se till att din iCloud- eller datorsäkerhetskopia är aktuell.
+3. **Säkerhetskopiera telefonen.** Se till att din iCloud- eller datorsäkerhetskopia är aktuell, och skapa en krypterad säkerhetskopia av dina valv i Velcrypt, eftersom de inte ingår i den vanliga.
 4. **Kontrollera Hitta.** Bekräfta att det är aktiverat så att du kan hitta, låsa eller radera en borttappad telefon.
 5. **Flytta privata bilder och dokument ut ur Bilder.** Passkopior, försäkringskort och personliga bilder ska inte ligga ett svep från semesterbilderna. Se [vård- och id-handlingar](id:medical-and-id-documents).
 6. **Ha nödkopior på annat håll.** En kopia av passet och försäkringsuppgifterna som du når från en annan enhet hjälper om telefonen är borta.
@@ -62,16 +62,16 @@ På resan hamnar telefonen i fler händer och på fler platser än i vardagen. D
 
 Velcrypt förvarar privata bilder, videor och dokument i krypterade valv som bara lagras i din iPhone. Ett valv öppnas med ett mönster som du ritar på ett 5×5-rutnät, inte med din lösenkod eller Face ID. Om en tjuv har lärt sig din lösenkod räcker det inte för att öppna valvet. Varför ett mönster används i stället för biometri förklaras i [mönster, PIN eller Face ID](id:pattern-lock-vs-pin-vs-face-id).
 
-Varje mönster öppnar sitt eget valv, och ett okänt mönster öppnar ett tomt valv utan felmeddelande. Därför kan du ha ett [lockbetesvalv](id:what-is-a-decoy-vault) med harmlösa resebilder och hålla ditt privata valv bakom ett annat mönster. Appen låses också automatiskt när den går till bakgrunden, och innehållet döljs i appväxlaren.
+Varje mönster öppnar sitt eget valv, och ett okänt mönster öppnar ett tomt valv utan felmeddelande. Därför kan du, med Premium, ha ett [lockbetesvalv](id:what-is-a-decoy-vault) med harmlösa resebilder och hålla ditt privata valv bakom ett annat mönster. Appen låses också automatiskt när den går till bakgrunden, och innehållet döljs i appväxlaren.
 
 Det finns inget konto och inget laddas upp, så det finns ingen molninloggning att nätfiska eller återställa medan du är på resande fot.
 
 ## Ärliga begränsningar
 
-- **Ingen säkerhetskopia i den första versionen.** Valvdata undantas från iCloud- och datorsäkerhetskopior. Försvinner eller stjäls telefonen försvinner valvet också, och ingen kan återställa det. En krypterad säkerhetskopia är planerad. På resan bör du ha en andra kopia av allt oersättligt på ett säkert ställe.
+- **Ingen automatisk säkerhetskopia.** Valvdata undantas från iCloud- och datorsäkerhetskopior. Försvinner eller stjäls telefonen försvinner valvet också, om du inte har skapat en krypterad säkerhetskopia under Inställningar → Säkerhetskopiering och sparat den utanför telefonen.
 - **Originalen ligger kvar i Bilder tills du raderar dem.** Import kopierar en bild. [Radera originalet](id:delete-original-photos-after-import) och töm Nyligen raderade.
 - **Någon som ser dig rita** ditt mönster kan lära sig det.
 - **Appsymbolen syns** på hemskärmen om du inte använder iOS 18:s alternativ för att gömma appar.
-- **Ett valv är ingen juridisk sköld.** Vid en gräns gäller landets regler; tvångsmönstret är en planerad Premium-funktion (kommer snart) och finns inte i dag.
+- **Ett valv är ingen juridisk sköld.** Vid en gräns gäller landets regler; tvångsmönstret är planerat till en framtida uppdatering och finns inte i dag.
 
 Res lätt, res förberedd: med en ordentligt låst telefon blir det ett besvär att förlora den, inte en kris.

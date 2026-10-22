@@ -10,12 +10,12 @@ keyFacts:
   - "Chaque coffre a sa propre clé maîtresse aléatoire de 256 bits ; les clés par fichier sont dérivées avec HKDF."
   - "Les fichiers sont chiffrés en AES-256-GCM via Apple CryptoKit, avec en plus la protection des données iOS (classe de protection complète)."
   - "Un motif inconnu ouvre un coffre vide — aucune liste de coffres, aucun message « motif incorrect »."
-  - "Ni réseau, ni compte, ni analyse du contenu des coffres ; les données des coffres sont exclues des sauvegardes iCloud et ordinateur en v1."
+  - "Ni réseau, ni compte, ni analyse du contenu des coffres ; données exclues des sauvegardes iCloud et ordinateur, sauvegarde chiffrée manuelle possible."
   - "Velcrypt n’a pas encore fait l’objet d’un audit de sécurité indépendant."
 primaryKeyword: "sécurité velcrypt"
 keywords: ["chiffrement coffre-fort photo iphone", "comment fonctionne le chiffrement velcrypt", "coffre-fort photo aes-256-gcm", "verrouillage par motif pbkdf2", "modèle de menace coffre-fort photo", "app coffre-fort déni plausible"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 schemaType: WebPage
 order: 1
 related: [encryption, pattern-lock, hidden-vaults, aes-256-encryption-explained, plausible-deniability-explained, forgot-vault-pattern]
@@ -38,7 +38,7 @@ Cette page explique simplement ce qui arrive à vos photos, vidéos et documents
 
 Velcrypt est une app iPhone qui conserve vos fichiers privés dans des coffres chiffrés sur votre appareil. Vous ouvrez un coffre en traçant un motif sur une grille de 5×5 points. Ce motif n’est enregistré nulle part. Il passe par une fonction de dérivation de clé volontairement lente qui produit une clé, et c’est cette clé qui protège le contenu du coffre.
 
-Tout se passe sur l’iPhone lui-même. Velcrypt n’a ni compte, ni serveur, ni étape d’envoi : il n’existe aucune copie de votre coffre, ni de vos clés, ailleurs. C’est sa force, et aussi sa principale limite : si le motif est oublié ou si le téléphone est perdu, le coffre ne peut pas être récupéré.
+Tout se passe sur l’iPhone lui-même. Velcrypt n’a ni compte, ni serveur, ni étape d’envoi : il n’existe aucune copie de votre coffre, ni de vos clés, ailleurs, sauf une sauvegarde chiffrée que vous créez vous-même. C’est sa force, et aussi sa principale limite : si le motif est oublié, le coffre ne peut pas être récupéré, et si le téléphone est perdu sans sauvegarde, le coffre est perdu.
 
 ## Du motif à la clé
 
@@ -88,11 +88,13 @@ Velcrypt se verrouille automatiquement lorsqu’il passe en arrière-plan, aprè
 
 Il n’y a pas de déverrouillage par Face ID ou Touch ID, par choix. Un visage ou un doigt peut être utilisé sans votre consentement — pendant votre sommeil, ou sous la pression. Un motif n’existe que dans votre mémoire.
 
-## Ni réseau, ni compte, ni sauvegarde
+## Ni réseau, ni compte, ni sauvegarde automatique
 
 Velcrypt fonctionne entièrement hors ligne. Pas d’inscription, pas d’adresse e-mail, pas de serveur, aucun envoi du contenu des coffres, et aucune donnée d’analyse n’est collectée sur ce que vous stockez. La page [hors ligne, sans compte](id:offline-no-account) détaille ce que cela implique concrètement.
 
-Dans la première version, les données des coffres sont aussi **exclues des sauvegardes iCloud et ordinateur (Finder)**. Vos fichiers chiffrés restent ainsi en dehors des serveurs d’Apple et de tout ordinateur synchronisé, mais avec une conséquence bien réelle : si votre iPhone est perdu, cassé ou réinitialisé, les coffres disparaissent avec lui. Une option de sauvegarde chiffrée est prévue, sans date.
+Les données des coffres sont aussi **exclues des sauvegardes iCloud et ordinateur (Finder)**. Vos fichiers chiffrés restent ainsi en dehors des serveurs d’Apple et de tout ordinateur synchronisé, mais avec une conséquence bien réelle : si votre iPhone est perdu, cassé ou réinitialisé, les coffres disparaissent avec lui.
+
+Pour vous en prémunir, Velcrypt propose une **sauvegarde chiffrée manuelle**, gratuite. Dans Réglages → Sauvegarde, vous créez un fichier `.velcrypt` pour le coffre ouvert, protégé par un mot de passe de sauvegarde que vous choisissez. Chaque coffre est sauvegardé séparément : une sauvegarde ne révèle jamais vos autres coffres. Vous enregistrez le fichier où vous voulez (Fichiers, iCloud Drive, un ordinateur) et le restaurez sur n’importe quel iPhone. Velcrypt ne reçoit jamais ce fichier, et un mot de passe de sauvegarde oublié ne peut pas être récupéré.
 
 ## Le modèle de menace en un coup d’œil
 
@@ -103,11 +105,11 @@ Dans la première version, les données des coffres sont aussi **exclues des sau
 | Quelqu’un tente de prouver que vous avez d’autres coffres | En grande partie | Aucune liste de coffres, aucun message « motif incorrect » ; le nombre de coffres n’apparaît pas dans l’app. |
 | Vol d’un iPhone verrouillé | Oui | Protection des données iOS plus le chiffrement AES-256-GCM propre à Velcrypt. |
 | Attaque par force brute du motif à partir de fichiers extraits | Ralentie | PBKDF2 avec plus de 600 000 itérations et un sel propre à l’appareil ; un motif long fait la différence. |
-| Piratage d’un compte cloud | Oui | Les données des coffres ne sont pas envoyées et sont exclues des sauvegardes iCloud en v1. |
+| Piratage d’un compte cloud | Oui | Les données des coffres ne sont pas envoyées et sont exclues des sauvegardes iCloud. Une sauvegarde chiffrée que vous placez dans iCloud Drive reste protégée par votre mot de passe de sauvegarde. |
 | Altération des fichiers chiffrés | Détectée | L’authentification d’AES-256-GCM rejette les données modifiées. |
 | Quelqu’un vous regarde tracer le motif | Non | Voir ci-dessous. |
 | Logiciel malveillant ou appareil jailbreaké | Non | Voir ci-dessous. |
-| Motif oublié ou téléphone perdu | Non | Aucune récupération n’est possible. |
+| Motif oublié ou téléphone perdu | Non | Aucune récupération d’un motif oublié ; après la perte du téléphone, seule une sauvegarde chiffrée permet de restaurer un coffre. |
 
 <a id="what-velcrypt-does-not-protect-against"></a>
 ## Ce contre quoi Velcrypt ne protège pas
@@ -115,12 +117,12 @@ Dans la première version, les données des coffres sont aussi **exclues des sau
 Tout outil de sécurité a ses limites, et vous devez connaître celles de Velcrypt avant de vous y fier.
 
 - **Les regards indiscrets.** Si quelqu’un vous voit tracer votre motif, en personne ou par caméra, il peut ouvrir ce coffre. Tracez-le à l’abri des regards et choisissez un motif qui ne ressemble pas à une lettre ou à une forme simple.
-- **La contrainte à déverrouiller.** Velcrypt ne peut pas empêcher quelqu’un de vous forcer à tracer un motif. Un coffre leurre peut aider ; un motif de contrainte (bientôt disponible, Premium) est prévu pour ouvrir un coffre choisi et retirer discrètement l’accès aux autres.
+- **La contrainte à déverrouiller.** Velcrypt ne peut pas empêcher quelqu’un de vous forcer à tracer un motif. Un coffre leurre peut aider ; un motif de contrainte, prévu pour une prochaine mise à jour, ouvrirait un coffre choisi et retirerait discrètement l’accès aux autres.
 - **Un téléphone tendu avec le coffre ouvert.** Tant qu’un coffre est déverrouillé, quiconque tient le téléphone voit ce que vous voyez. Verrouillez-le avant de prêter votre téléphone.
 - **Appareils compromis ou jailbreakés et logiciels malveillants.** Un logiciel capable de lire l’écran, d’enregistrer les touches ou d’inspecter la mémoire des apps sur un appareil compromis peut contourner tout chiffrement au niveau d’une app.
 - **Captures d’écran ou photos de l’écran.** Velcrypt ne peut pas empêcher un autre appareil photo de photographier votre écran.
 - **Les copies ailleurs.** Importer une photo en crée une copie ; l’original reste dans Photos jusqu’à ce que vous le supprimiez, puis séjourne environ 30 jours dans « Suppressions récentes ». Des copies peuvent aussi exister dans Photos iCloud, dans des messageries, dans vos e-mails ou sur le téléphone de quelqu’un d’autre. Suivez [supprimer les originaux après l’import](id:delete-original-photos-after-import).
-- **La perte du téléphone ou l’oubli du motif.** Dans les deux cas, les données sont perdues. Il n’existe ni phrase de récupération ni réinitialisation. Voir [motif de coffre oublié](id:forgot-vault-pattern).
+- **La perte du téléphone ou l’oubli du motif.** Un motif oublié ne peut pas être récupéré, et un téléphone perdu emporte ses coffres, sauf si vous en avez créé une sauvegarde chiffrée. Il n’existe ni phrase de récupération ni réinitialisation, et un mot de passe de sauvegarde oublié est lui aussi irrécupérable. Voir [motif de coffre oublié](id:forgot-vault-pattern).
 - **La détection de l’usage de Velcrypt.** L’icône de l’app est visible, et des outils d’investigation peuvent révéler que Velcrypt contient des données chiffrées, et leur volume approximatif. Velcrypt ne prétend pas le cacher — seulement le nombre de coffres et leur contenu.
 - **Les motifs faibles ou faciles à deviner.** Un motif court, ou en forme de L, de Z ou de carré, se devine bien plus facilement. Testez une forme similaire avec le [testeur de robustesse de motif](id:pattern-strength-checker) — jamais votre vrai motif.
 

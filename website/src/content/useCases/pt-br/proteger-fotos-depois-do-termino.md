@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "ex tem acesso às minhas fotos iphone"
 keywords: ["trocar código do iphone depois do término", "remover ex do álbum compartilhado", "verificação de segurança iphone", "ex sabe meu código do iphone", "sair da fototeca compartilhada do icloud"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Um checklist tranquilo para as semanas depois de um término: código novo, Verificação de Segurança, álbuns compartilhados e um lugar privado para as fotos."
 group: everyday
 schemaType: Article
@@ -68,7 +68,7 @@ Depois de importar, [apague os originais](id:delete-original-photos-after-import
 
 - Nada no seu celular consegue remover as cópias que o seu ex já tem: fotos que você enviou, salvas de um álbum compartilhado ou nos backups dele.
 - Um cofre não ajuda se alguém vê você desenhar o padrão, ou se o celular é tomado com o cofre aberto.
-- Na primeira versão, os dados do cofre não entram nos backups do iCloud nem do computador. Se você perder o celular ou esquecer o padrão, o cofre não pode ser recuperado. Guarde uma segunda cópia de tudo o que for insubstituível em um lugar seguro.
+- Os dados do cofre não entram nos backups do iCloud nem do computador. Se você esquecer o padrão, ou perder o celular sem ter criado um backup criptografado, o cofre não pode ser recuperado. Guarde uma segunda cópia de tudo o que for insubstituível em um lugar seguro.
 - O ícone do app aparece na Tela de Início, a não ser que você use a opção do iOS 18 de ocultar apps.
 
 ## Se a situação for além

@@ -19,7 +19,7 @@ keywords:
   - "garder des photos hors d’icloud"
   - "photos masquées sur icloud.com"
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Les photos masquées passent par Photos iCloud et peuvent finir dans la sauvegarde iCloud. Chiffrement et solutions pour garder une photo hors d’iCloud."
 category: apple
 order: 11
@@ -105,9 +105,9 @@ Cela arrête les nouveaux envois, mais aussi la synchronisation de tout le reste
 
 ### Option 2 : garder la photo dans une app qui ne synchronise pas
 
-Certaines apps stockent les fichiers uniquement dans leur propre espace sur l’appareil et les excluent des sauvegardes. Velcrypt est conçu ainsi : les photos, vidéos et documents importés sont chiffrés sur l’iPhone et, dans la première version, exclus des sauvegardes iCloud et sur ordinateur. Pas de compte, rien n’est envoyé ([sur l’appareil, sans compte](id:offline-no-account)).
+Certaines apps stockent les fichiers uniquement dans leur propre espace sur l’appareil et les excluent des sauvegardes. Velcrypt est conçu ainsi : les photos, vidéos et documents importés sont chiffrés sur l’iPhone et exclus des sauvegardes iCloud et sur ordinateur. Pas de compte, rien n’est envoyé ([sur l’appareil, sans compte](id:offline-no-account)).
 
-La contrepartie, en toute honnêteté : si la photo n’existe que dans un tel coffre et que vous perdez le téléphone ou oubliez votre schéma, il n’existe aucune copie à restaurer. Une option de sauvegarde chiffrée est prévue pour Velcrypt, mais elle ne fait pas partie de la première version.
+La contrepartie, en toute honnêteté : si la photo n’existe que dans un tel coffre et que vous perdez le téléphone ou oubliez votre schéma, il n’existe aucune copie à restaurer. Pour la perte du téléphone, Velcrypt propose une sauvegarde chiffrée que vous créez vous-même : le fichier n’est envoyé nulle part, sauf là où vous choisissez de l’enregistrer, par exemple iCloud Drive.
 
 ### Option 3 : supprimer correctement la copie iCloud
 

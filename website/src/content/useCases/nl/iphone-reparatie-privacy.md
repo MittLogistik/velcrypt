@@ -10,11 +10,11 @@ keyFacts:
   - "Recente iOS-versies hebben een reparatiemodus waarbij Zoek mijn aan kan blijven; vraag je reparateur wat nodig is."
   - "De toegangscode van je toestel ontgrendelt Foto's, het album Verborgen, Bestanden en alles wat ermee is vergrendeld."
   - "Een Velcrypt-kluis vraagt een apart patroon, dus alleen een toegangscode opent hem niet."
-  - "Velcrypt-kluisgegevens zitten in de eerste versie niet in iCloud- of computerbackups, dus een gewiste telefoon betekent een verloren kluis."
+  - "Velcrypt-kluisgegevens zitten niet in iCloud- of computerback-ups; maak vóór de reparatie een versleutelde back-up, anders betekent een gewiste telefoon een verloren kluis."
 primaryKeyword: "iphone reparatie privacy foto's"
 keywords: ["foto's verbergen voor reparatie", "kan reparateur mijn foto's zien", "toegangscode iphone reparatie", "gegevens beschermen iphone reparatie", "privacytips telefoon reparatie"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Wat een monteur op je iPhone zou kunnen zien, hoe je je voorbereidt en waarom een back-upplan voor je kluis belangrijk is voordat je hem afgeeft."
 group: everyday
 schemaType: Article
@@ -26,7 +26,7 @@ faq:
   - q: "Moet ik Zoek mijn uitzetten voor een iPhone-reparatie?"
     a: "Dat hangt af van de reparatie en de reparateur. Recente iOS-versies hebben een reparatiemodus waarbij Zoek mijn tijdens de reparatie aan blijft. Volg de instructies van je reparateur en kijk bij Apple Support als je twijfelt."
   - q: "Overleeft mijn Velcrypt-kluis een reparatie?"
-    a: "Komt de telefoon terug met dezelfde gegevens, dan wel. Wordt het toestel gewist of vervangen, dan is de kluis weg: in de eerste versie zitten kluisgegevens niet in iCloud- en computerbackups. Een versleutelde back-upoptie is gepland."
+    a: "Komt de telefoon terug met dezelfde gegevens, dan wel. Wordt het toestel gewist of vervangen, dan is de kluis weg, tenzij je vooraf een versleuteld back-upbestand hebt gemaakt: kluisgegevens zitten niet in iCloud- en computerback-ups. Met dat bestand en je back-upwachtwoord zet je de kluis terug."
   - q: "Moet ik de monteur mijn toegangscode geven?"
     a: "Alleen als de reparatie het echt vereist. Voor veel hardwarereparaties is dat niet nodig. Deel je hem toch, wijzig hem dan zodra je je telefoon terug hebt."
 ---
@@ -65,10 +65,10 @@ Geïmporteerde foto's zijn kopieën, dus vergeet niet [de originelen te verwijde
 
 ## De eerlijke afweging: back-ups
 
-Dit moet je goed afwegen. In de eerste versie zitten Velcrypt-kluisgegevens **niet in iCloud- en computerbackups**. Dat is bewust, want er verlaat niets je toestel, maar het betekent:
+Dit moet je goed afwegen. Velcrypt-kluisgegevens zitten **niet in iCloud- en computerback-ups**. Dat is bewust, want er verlaat niets je toestel, maar het betekent:
 
 - Eindigt de reparatie met een gewiste of vervangen iPhone, dan kan je kluis niet worden teruggezet, niet door jou en niet door Velcrypt.
-- Een versleutelde back-up- en herstelfunctie is gepland, maar nog niet beschikbaar.
+- Maak daarom vóór de reparatie via Instellingen → Back-up een versleuteld back-upbestand van elke kluis, en bewaar het ergens anders dan op de telefoon, bijvoorbeeld op een computer.
 
 Bewaar dus van alles wat onvervangbaar is een tweede kopie op een plek die je vertrouwt voordat je naar de reparatie gaat, bijvoorbeeld op een versleutelde schijf die je zelf beheert. Hetzelfde geldt als je ooit [je patroon vergeet](id:forgot-vault-pattern). Meer over deze ontwerpkeuzes lees je op de [beveiligingspagina](id:security).
 

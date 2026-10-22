@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "iPhone 文件夹设置密码"
 keywords: ["iPhone 文件 App 上锁", "苹果手机文件夹加密", "iPhone 文件夹上锁", "iPhone 文件加密码", "iPhone 加密文件夹", "iPhone 隐藏文件"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "“文件”App 能锁什么、不能锁什么，以及在 iPhone 上保护一个文档文件夹的实用方法。"
 category: hiding
 order: 6
@@ -107,4 +107,4 @@ Apple“备忘录”可以锁定单条备忘录、对其加密，并用一个独
 
 Velcrypt 把 [私密文档](id:private-documents) 和照片、视频一起存放在同样的加密保险箱中。你从“文件”App 导入它们，它们会在设备上用从你的解锁图案派生出的密钥以 AES-256-GCM 加密。不需要账户，也不会有任何东西发到服务器；[离线、无需账户的存储](id:offline-no-account) 页面解释了这在实际中意味着什么。
 
-由于保险箱数据不包含在 iCloud 和电脑备份中，对于任何你承受不起丢失的文档，请在你信任的地方另外保留一份独立副本。如果手机丢失或忘记图案，任何人都无法打开保险箱，包括 Velcrypt。
+由于保险箱数据不包含在 iCloud 和电脑备份中，对于任何你承受不起丢失的文档，请在“设置”→“备份”中创建加密备份文件，或在你信任的地方另外保留一份独立副本。如果忘记图案，任何人都无法打开保险箱，包括 Velcrypt。

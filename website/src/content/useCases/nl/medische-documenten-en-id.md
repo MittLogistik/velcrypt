@@ -10,11 +10,11 @@ keyFacts:
   - "Documenten in je filmrol synchroniseren met iCloud-foto's naar elk apparaat en kunnen in widgets en Herinneringen verschijnen."
   - "Velcrypt importeert documenten uit de Bestanden-app en foto's uit je bibliotheek in versleutelde kluizen."
   - "Geïmporteerde items zijn kopieën; verwijder daarna de originelen en leeg Recent verwijderd."
-  - "Velcrypt-kluizen zitten in de eerste versie niet in iCloud- of computerbackups, dus bewaar een tweede kopie van belangrijke documenten."
+  - "Velcrypt-kluizen zitten niet in iCloud- of computerback-ups, dus maak een versleutelde back-up of bewaar een tweede kopie van belangrijke documenten."
 primaryKeyword: "identiteitsbewijs veilig bewaren iphone"
 keywords: ["foto paspoort op iphone veilig", "medische foto's verbergen iphone", "zorgpas bewaren iphone", "privédocumenten iphone", "privacy foto's van recepten"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Paspoorten, zorgpassen en medische foto's verdienen beter dan je filmrol. Waar ze op de iPhone uitlekken en hoe je ze privé houdt."
 group: sensitive
 schemaType: Article
@@ -28,7 +28,7 @@ faq:
   - q: "Kan ik pdf's in Velcrypt zetten?"
     a: "Ja. Velcrypt importeert documenten uit de Bestanden-app, dus pdf's zoals recepten, brieven van je verzekeraar of labuitslagen kun je naast foto's in een kluis bewaren."
   - q: "Wat als ik mijn telefoon kwijtraak met mijn documenten in Velcrypt?"
-    a: "Zonder je patroon kan niemand de kluis openen. Maar in de eerste versie worden kluisgegevens niet geback-upt, dus dan zijn de documenten ook weg. Bewaar de originelen of een tweede kopie op een veilige plek."
+    a: "Zonder je patroon kan niemand de kluis openen. Kluisgegevens zitten niet in iCloud- of computerback-ups, dus zonder een versleuteld back-upbestand zijn de documenten dan ook weg. Maak via Instellingen → Back-up een back-up, of bewaar de originelen op een veilige plek."
 ---
 
 De meesten van ons hebben het wel eens gedaan: een paspoort gefotografeerd aan de balie op het vliegveld, snel een foto van een zorgpas gemaakt voor een formulier, of een foto van huiduitslag genomen om aan de huisarts te laten zien. Het is praktisch. Maar die foto's staan daarna jarenlang in je filmrol, tussen vakantiefoto's en memes.
@@ -65,7 +65,7 @@ Moet je een document versturen, naar een arts of een visumloket, dan gebruik je 
 
 ## Eerlijke beperkingen
 
-- **Geen back-up in de eerste versie.** Kluisgegevens zitten niet in iCloud- en computerbackups. Raak je je telefoon kwijt of vergeet je je patroon, dan zijn de documenten niet te herstellen. Bewaar van belangrijke documenten de originelen of een tweede kopie die je zelf beheert. Een versleutelde back-upoptie is gepland.
+- **Geen automatische back-up.** Kluisgegevens zitten niet in iCloud- en computerback-ups. Vergeet je je patroon, dan zijn de documenten niet te herstellen; raak je je telefoon kwijt, dan alleen met een versleuteld back-upbestand dat je zelf hebt gemaakt. Bewaar van belangrijke documenten ook de originelen.
 - **Kopieën elders zijn niet beschermd.** E-mails, chatbijlagen en iCloud-kopieën blijven staan tot je ze weghaalt. Zie [originelen verwijderen na het importeren](id:delete-original-photos-after-import).
 - **Alles wat je exporteert**, verlaat de kluis en is maar zo privé als de plek waar het terechtkomt.
 - **Iemand die meekijkt** terwijl je je patroon tekent, of een telefoon die je met open kluis uit handen geeft, maakt het slot zinloos.

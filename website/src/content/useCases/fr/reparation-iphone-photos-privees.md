@@ -10,11 +10,11 @@ keyFacts:
   - "Les versions récentes d’iOS proposent un mode réparation qui permet de laisser Localiser activé ; demandez à votre réparateur ce dont il a besoin."
   - "Le code de votre appareil déverrouille Photos, l’album « Masqués », Fichiers et tout ce qui est verrouillé avec lui."
   - "Un coffre Velcrypt exige un schéma distinct : le code seul ne l’ouvre pas."
-  - "Dans la première version, les coffres Velcrypt ne sont pas dans les sauvegardes iCloud ou sur ordinateur : un téléphone effacé signifie un coffre perdu."
+  - "Les coffres Velcrypt ne sont pas dans les sauvegardes iCloud ou sur ordinateur : avant la réparation, créez une sauvegarde chiffrée."
 primaryKeyword: "réparation iphone photos privées"
 keywords: ["cacher ses photos avant une réparation", "le réparateur peut-il voir mes photos", "code iphone réparation", "protéger ses données réparation iphone", "confidentialité réparation téléphone"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Ce qu’un réparateur pourrait voir sur votre iPhone, comment vous préparer et pourquoi prévoir la sauvegarde du coffre avant de le confier."
 group: everyday
 schemaType: Article
@@ -26,7 +26,7 @@ faq:
   - q: "Faut-il désactiver Localiser avant une réparation d’iPhone ?"
     a: "Cela dépend de la réparation et du réparateur. Les versions récentes d’iOS proposent un mode réparation qui laisse Localiser activé pendant l’intervention. Suivez les consignes de votre réparateur et consultez l’assistance Apple en cas de doute."
   - q: "Mon coffre Velcrypt survivra-t-il à une réparation ?"
-    a: "Si le téléphone revient avec les mêmes données, oui. Si l’appareil est effacé ou remplacé, le coffre est perdu : dans la première version, les données des coffres sont exclues des sauvegardes iCloud et sur ordinateur, et une option de sauvegarde chiffrée est prévue."
+    a: "Si le téléphone revient avec les mêmes données, oui. Si l’appareil est effacé ou remplacé, le coffre ne revient que si vous avez créé une sauvegarde chiffrée Velcrypt avant la réparation : les données des coffres sont exclues des sauvegardes iCloud et sur ordinateur."
   - q: "Dois-je donner mon code au réparateur ?"
     a: "Seulement si la réparation l’exige vraiment. Beaucoup de réparations matérielles n’en ont pas besoin. Si vous le communiquez, changez-le dès que vous récupérez le téléphone."
 ---
@@ -65,12 +65,12 @@ Les photos importées sont des copies : pensez à [supprimer les originaux](id:d
 
 ## La contrepartie honnête : les sauvegardes
 
-Voici ce qu’il faut peser avec soin. Dans la première version, les données des coffres Velcrypt sont **exclues des sauvegardes iCloud et sur ordinateur**. C’est volontaire — rien ne quitte votre appareil —, mais cela signifie que :
+Voici ce qu’il faut peser avec soin. Les données des coffres Velcrypt sont **exclues des sauvegardes iCloud et sur ordinateur**. C’est volontaire — rien ne quitte votre appareil sans que vous le décidiez —, mais cela signifie que :
 
-- Si la réparation se termine par un iPhone effacé ou remplacé, votre coffre ne peut pas être restauré, ni par vous ni par Velcrypt.
-- Une option de sauvegarde et de récupération chiffrées est prévue, mais pas encore disponible.
+- Si la réparation se termine par un iPhone effacé ou remplacé, votre coffre ne peut pas être restauré à partir de la sauvegarde de l’iPhone.
+- Seule une sauvegarde chiffrée Velcrypt, créée avant la réparation dans Réglages → Sauvegarde et enregistrée hors de l’iPhone, permet de le restaurer. Notez bien votre mot de passe de sauvegarde : il ne peut pas être récupéré.
 
-Pour tout ce qui est irremplaçable, gardez donc une seconde copie dans un endroit de confiance avant la réparation — par exemple sur un disque chiffré que vous contrôlez. Il en va de même si vous [oubliez votre schéma](id:forgot-vault-pattern). Pour en savoir plus sur ces choix de conception, consultez la [page sécurité](id:security).
+Pour tout ce qui est irremplaçable, créez donc une sauvegarde chiffrée de chaque coffre avant la réparation et enregistrez-la par exemple dans iCloud Drive ou sur un ordinateur. Il en va de même si vous [oubliez votre schéma](id:forgot-vault-pattern). Pour en savoir plus sur ces choix de conception, consultez la [page sécurité](id:security).
 
 ## Autres limites à garder en tête
 

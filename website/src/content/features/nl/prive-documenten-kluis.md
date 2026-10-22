@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "documenten beveiligen iphone"
 keywords: ["pdf versleutelen iphone", "identiteitsbewijs veilig bewaren iphone", "documentenkluis iphone", "documenten verbergen iphone", "paspoort scan versleutelen"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Importeer pdf's, scans en ID-kopieën uit Bestanden in een versleutelde kluis, bekijk ze offline en exporteer alleen als het nodig is."
 status: available
 schemaType: WebPage
@@ -24,11 +24,11 @@ faq:
   - q: "Welke documenten kan ik in Velcrypt bewaren?"
     a: "Documenten die je in de iOS-app Bestanden kunt bereiken, zoals pdf's en gescande pagina's, en ook afbeeldingen van documenten. Typische voorbeelden zijn kopieën van je paspoort of ID-kaart, medische brieven, contracten en belastingpapieren."
   - q: "Kan ik een document rechtstreeks in Velcrypt scannen?"
-    a: "Velcrypt heeft geen ingebouwde scanner of camera. Scan met een app die in Bestanden opslaat, importeer de scan in Velcrypt en verwijder daarna het bestand dat die app heeft gemaakt."
+    a: "Velcrypt heeft geen ingebouwde documentscanner. Met de camera in de kluis kun je wel een foto van een document maken die direct versleuteld wordt bewaard. Voor een echte scan gebruik je een app die in Bestanden opslaat, importeer de scan in Velcrypt en verwijder daarna het bestand dat die app heeft gemaakt."
   - q: "Kan ik een document uit mijn kluis naar iemand sturen?"
     a: "Ja, door het te exporteren. Exporteren zet een ontsleutelde kopie buiten de kluis, bijvoorbeeld in Bestanden of via het deelmenu. Die kopie wordt niet meer door Velcrypt beschermd, dus verwijder hem als je klaar bent."
   - q: "Worden mijn beveiligde documenten geüpload of gesynchroniseerd?"
-    a: "Nee. Velcrypt heeft geen servers, geen account en geen cloudsynchronisatie. Documenten blijven versleuteld op je iPhone en zitten in de eerste versie niet in iCloud- en computerbackups."
+    a: "Nee. Velcrypt heeft geen servers, geen account en geen cloudsynchronisatie. Documenten blijven versleuteld op je iPhone en zitten niet in iCloud- en computerback-ups, tenzij je zelf een versleuteld back-upbestand bewaart."
 ---
 
 Paspoorten, zorgpassen, medische brieven en ondertekende contracten belanden vaak als losse bestanden in Downloads of als foto's in je filmrol. Velcrypt geeft ze een eigen, versleutelde plek op je iPhone, los van alles waar je dagelijks doorheen bladert.
@@ -48,7 +48,7 @@ Elk document wordt op het toestel versleuteld met AES-256-GCM, met een eigen sle
 
 ## Privé scannen
 
-Velcrypt heeft geen camera of scanner. De veiligste werkwijze: scan met een hulpmiddel dat in Bestanden opslaat, importeer het resultaat in Velcrypt en verwijder de scan daarna van de oorspronkelijke plek. Heeft de scanner ook een kopie in Foto's of in een cloudmap gezet, verwijder die dan ook.
+Velcrypt heeft geen documentscanner. Een foto van een document maak je met de camera in de kluis, die hem direct versleuteld bewaart. Voor een scan is de veiligste werkwijze: scan met een hulpmiddel dat in Bestanden opslaat, importeer het resultaat in Velcrypt en verwijder de scan daarna van de oorspronkelijke plek. Heeft de scanner ook een kopie in Foto's of in een cloudmap gezet, verwijder die dan ook.
 
 De gids over [documenten privé scannen op iPhone](id:scan-documents-privately-iphone) vergelijkt de ingebouwde scanopties van iOS en laat zien waar elke optie het resultaat bewaart.
 
@@ -87,5 +87,5 @@ Twijfel je tussen deze opties, dan bespreekt [een map beveiligen met een wachtwo
 
 ## Goed om te weten
 
-- Kluisgegevens zitten in de eerste versie niet in iCloud- of computerbackups. Bewaar een tweede kopie van onvervangbare originelen, zoals een scan van je paspoort, op een plek die je vertrouwt.
+- Kluisgegevens zitten niet in iCloud- of computerback-ups. Maak van onvervangbare documenten, zoals een scan van je paspoort, een versleuteld back-upbestand via Instellingen → Back-up en bewaar dat op een plek die je vertrouwt.
 - Een kluis kan een document niet beschermen tegen iemand die het fotografeert terwijl het open op je scherm staat.

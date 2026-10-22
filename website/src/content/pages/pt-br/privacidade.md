@@ -10,11 +10,11 @@ keyFacts:
   - "O conteúdo dos cofres é criptografado no seu iPhone e nunca é enviado para nós."
   - "As compras são processadas pela Apple; não recebemos dados de pagamento."
   - "O site não usa cookies nem scripts de análise ou rastreamento."
-  - "Data de vigência: 21 de outubro de 2026 (rascunho pendente de revisão jurídica)."
+  - "Data de vigência: 22 de outubro de 2026 (rascunho pendente de revisão jurídica)."
 primaryKeyword: "velcrypt política de privacidade"
 keywords: ["privacidade velcrypt", "coleta de dados velcrypt", "o velcrypt coleta dados", "política de privacidade cofre de fotos"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 schemaType: WebPage
 order: 6
 related: [terms, security, offline-no-account, support, about]
@@ -31,9 +31,9 @@ faq:
 
 **Rascunho — pendente de revisão jurídica.** Esta política descreve com precisão nossas práticas atuais, mas o texto ainda não foi revisado por um advogado e pode mudar antes do lançamento.
 
-**Data de vigência:** 21 de outubro de 2026
+**Data de vigência:** 22 de outubro de 2026
 
-Esta Política de Privacidade explica quais informações o Velcrypt (“nós”) trata quando você usa o app Velcrypt para iPhone e o site velcrypt.app. Em resumo: o app foi projetado para que nunca recebamos o seu conteúdo, e coletamos o mínimo possível em todo o resto.
+Esta Política de Privacidade explica quais informações a Swedish Treats AB, Suécia, editora do Velcrypt (“nós”), trata quando você usa o app Velcrypt para iPhone e o site velcrypt.app. Em resumo: o app foi projetado para que nunca recebamos o seu conteúdo, e coletamos o mínimo possível em todo o resto.
 
 ## O app Velcrypt
 
@@ -43,7 +43,11 @@ O app Velcrypt não coleta dados pessoais. Não há conta, cadastro, endereço d
 
 ### O conteúdo dos cofres fica no seu aparelho
 
-Fotos, vídeos e documentos que você adiciona ao Velcrypt são criptografados no seu iPhone e armazenados nele. Eles nunca são enviados para nós nem para qualquer servidor que operamos, e não temos como visualizá-los, descriptografá-los ou recuperá-los. Na versão atual, os dados dos cofres também ficam fora dos backups do iCloud e do computador. O funcionamento da criptografia está descrito na página do [modelo de segurança](id:security).
+Fotos, vídeos e documentos que você adiciona ao Velcrypt são criptografados no seu iPhone e armazenados nele. Eles nunca são enviados para nós nem para qualquer servidor que operamos, e não temos como visualizá-los, descriptografá-los ou recuperá-los. Os dados dos cofres também ficam fora dos backups do iCloud e do computador. O funcionamento da criptografia está descrito na página do [modelo de segurança](id:security).
+
+### Backups criptografados
+
+Se você criar um backup em Ajustes → Backup, o Velcrypt gera no seu iPhone um arquivo .velcrypt criptografado, protegido por uma senha de backup que você escolhe. O arquivo fica onde você o salvar, como no app Arquivos, no iCloud Drive ou em um computador. O Velcrypt nunca recebe o arquivo nem a senha, e não temos como abri-lo ou recuperar uma senha esquecida. Se você salvar o backup em um serviço de terceiros, como o iCloud Drive, esse serviço armazena o arquivo criptografado de acordo com a política de privacidade dele.
 
 ### Sem análises de conteúdo, sem anúncios
 
@@ -51,7 +55,7 @@ O app não contém publicidade e não coleta análises sobre o conteúdo dos seu
 
 ### Compras
 
-Qualquer compra, como o upgrade Premium opcional, é processada pela Apple por meio da App Store. A Apple cuida do seu pagamento; não recebemos seu nome, número do cartão nem endereço de cobrança. A App Store confirma a compra para o app no seu aparelho, para que ele possa liberar os recursos correspondentes. A forma como a própria Apple trata seus dados está descrita em [apple.com/privacy](https://www.apple.com/privacy/).
+Qualquer compra, como as assinaturas ou a compra vitalícia do Velcrypt Premium, é processada pela Apple por meio da App Store. A Apple cuida do seu pagamento, das renovações e dos reembolsos; não recebemos seu nome, número do cartão nem endereço de cobrança. A App Store confirma a compra para o app no seu aparelho, para que ele possa liberar os recursos correspondentes. A forma como a própria Apple trata seus dados está descrita em [apple.com/privacy](https://www.apple.com/privacy/).
 
 ### Informações que a Apple pode compartilhar conosco
 

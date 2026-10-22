@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "álbum secreto iphone"
 keywords: ["carpeta secreta iphone", "álbum privado iphone", "carpeta oculta iphone", "crear álbum privado en iphone", "fotos secretas iphone", "álbum secreto de fotos"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Crea un álbum de fotos realmente secreto en el iPhone y evita los trucos habituales que solo parecen secretos."
 category: hiding
 order: 5
@@ -104,4 +104,4 @@ Velcrypt aborda el álbum secreto desde el lado de «nadie puede abrirlo». Dent
 
 Lo poco habitual es cómo funcionan las bóvedas. Cada patrón que dibujas en la cuadrícula de 5×5 es su propia bóveda, y la app no guarda ninguna lista de ellas. Un patrón que Velcrypt nunca ha visto simplemente abre una bóveda nueva y vacía, sin ningún mensaje de error. Eso significa que nada en la app revela cuántas [bóvedas ocultas](id:hidden-vaults) tienes, y puedes mantener una inofensiva como señuelo.
 
-Los límites, con honestidad: el propio icono de Velcrypt se ve salvo que uses la función de iOS para ocultar apps, y nada protege una bóveda si alguien te ve dibujar el patrón o se lleva el teléfono con la bóveda abierta. Como los datos de la bóveda no tienen copia de seguridad, un patrón olvidado significa un álbum perdido.
+Los límites, con honestidad: el propio icono de Velcrypt se ve salvo que uses la función de iOS para ocultar apps, y nada protege una bóveda si alguien te ve dibujar el patrón o se lleva el teléfono con la bóveda abierta. Como los datos de la bóveda no están en las copias de iCloud, un patrón olvidado significa un álbum perdido, salvo que antes hayas creado una copia de seguridad cifrada.

@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "cacher des photos iphone"
 keywords: ["app pour cacher des photos iphone", "coffre-fort photo chiffré iphone", "album photo privé app", "masquer des photos iphone", "verrouiller des photos app", "coffre-fort photo secret"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Importez vos photos en copies chiffrées, effacez les originaux et les « Suppressions récentes », puis parcourez-les en albums."
 status: available
 schemaType: WebPage
@@ -79,6 +79,6 @@ L’album « Masqués » est pratique et suffit à beaucoup de gens. Ses limites
 
 ## Bon à savoir
 
-- Velcrypt n’a pas d’appareil photo intégré. Prenez la photo avec l’app Appareil photo, importez-la, puis supprimez l’original.
+- L’appareil photo intégré au coffre enregistre une nouvelle photo directement dans le coffre, sans jamais passer par votre photothèque. Il n’y a alors aucun original à supprimer.
 - Les photos peuvent contenir des données de localisation et d’appareil. Si vous comptez les partager plus tard, [supprimez d’abord leurs métadonnées](id:remove-photo-metadata-iphone).
-- Dans la première version, les coffres ne sont pas sauvegardés. Si une photo est irremplaçable, gardez-en une seconde copie dans un endroit de confiance.
+- Les coffres ne figurent pas dans les sauvegardes iCloud ou ordinateur. Si une photo est irremplaçable, créez une sauvegarde chiffrée dans Réglages → Sauvegarde et enregistrez le fichier hors de l’iPhone.

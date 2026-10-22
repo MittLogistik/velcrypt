@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "ocultar videos iphone"
 keywords: ["cómo ocultar videos en iphone", "esconder videos iphone", "videos privados iphone", "ocultar grabaciones de pantalla iphone", "evitar que whatsapp guarde videos en fotos", "videos ocultos iphone"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Oculta videos en el iPhone, evita que las apps de chat guarden clips en tu carrete y gestiona el espacio que ocupan los videos privados."
 category: hiding
 order: 3
@@ -95,4 +95,4 @@ Para tener algo de privacidad a corto plazo con amigos y familia, el álbum Ocul
 
 Velcrypt guarda videos en una bóveda cifrada en el dispositivo, con la misma protección que da a las fotos: cifrado AES-256-GCM, un bloqueo por patrón independiente del código de tu iPhone y sin subidas ni cuenta. Dentro de la bóveda puedes ordenar los clips en [álbumes](id:albums) y reproducirlos en el visor integrado. La página sobre [ocultar videos con Velcrypt](id:hide-videos) tiene los detalles.
 
-Dos notas honestas, en particular para los videos. Importar copia el archivo, así que el espacio ocupado se duplica hasta que eliminas el original de Fotos y de Eliminado. Y los datos de la bóveda no se incluyen en las copias de seguridad de iCloud ni del ordenador, así que si pierdes el teléfono u olvidas el patrón, los videos de la bóveda se pierden. Tenlo en cuenta antes de borrar la única otra copia de algo que quieras conservar.
+Dos notas honestas, en particular para los videos. Importar copia el archivo, así que el espacio ocupado se duplica hasta que eliminas el original de Fotos y de Eliminado. Y los datos de la bóveda no se incluyen en las copias de seguridad de iCloud ni del ordenador, así que si olvidas el patrón, o pierdes el teléfono sin tener una copia de seguridad cifrada, los videos de la bóveda se pierden. Tenlo en cuenta antes de borrar la única otra copia de algo que quieras conservar.

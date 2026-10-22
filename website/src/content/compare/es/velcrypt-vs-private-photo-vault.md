@@ -10,11 +10,11 @@ keyFacts:
   - "Velcrypt se desbloquea con un patrón en una cuadrícula de 5×5; cada patrón es una bóveda distinta."
   - "Velcrypt publica el diseño de su cifrado: AES-256-GCM con derivación de claves PBKDF2-HMAC-SHA512."
   - "Velcrypt no hace fotos de intrusos ni usa Face ID, por diseño."
-  - "Velcrypt v1 no tiene copia de seguridad: si olvidas el patrón o pierdes el teléfono, la bóveda desaparece."
+  - "Velcrypt no tiene nube: solo una copia de seguridad cifrada manual protege ante un teléfono perdido; un patrón olvidado no se recupera."
 primaryKeyword: "velcrypt vs private photo vault"
 keywords: ["alternativa a private photo vault", "private photo vault comparativa", "private photo vault opiniones", "bóveda de fotos contraseña señuelo", "bóveda de fotos con patrón"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Bóveda con PIN, señuelo e informes de intrusión frente a una bóveda cifrada con patrón y sin cuenta. Comparativa neutral."
 competitor: "Private Photo Vault"
 lastChecked: "octubre de 2026"
@@ -49,14 +49,14 @@ Velcrypt es una bóveda en el dispositivo bloqueada con patrón. Un patrón es u
 |---|---|---|
 | Detalles del cifrado en el dispositivo publicados | Sí: AES-256-GCM, claves por bóveda y por archivo | No se detallan públicamente |
 | Requiere cuenta | No | No se indica públicamente |
-| Copia de seguridad en la nube | No (v1); copia cifrada prevista | Depende; consulta la ficha actual |
+| Copia de seguridad en la nube | No; copia de seguridad cifrada manual y gratuita en un archivo que guardas tú | Depende; consulta la ficha actual |
 | Método de desbloqueo | Patrón en una cuadrícula de 5×5 | PIN / código |
 | Biometría (Face ID / Touch ID) | No disponible, por diseño | Depende |
-| Señuelo / varias bóvedas | Cada patrón es su propia bóveda | Contraseña señuelo |
-| Patrón de coacción | Próximamente (Premium) | No se indica públicamente |
+| Señuelo / varias bóvedas | Cada patrón es su propia bóveda (con Premium) | Contraseña señuelo |
+| Patrón de coacción | Previsto para una actualización futura | No se indica públicamente |
 | Informes de intrusión | No disponibles | Disponibles, según su ficha |
-| Recuperación si olvidas el código | Ninguna | No se indica públicamente |
-| Modelo de negocio | Versión gratuita más Premium opcional | Versión gratuita más mejora de pago |
+| Recuperación si olvidas el código | Ninguna; solo restaurar una copia de seguridad propia | No se indica públicamente |
+| Modelo de negocio | Gratis (1 bóveda, 50 elementos) o Premium desde 1,99 US$ a la semana | Versión gratuita más mejora de pago |
 | Plataformas | iPhone (iOS 17+) | Depende; consulta las fichas de las tiendas |
 
 <!-- TODO verify -->
@@ -69,7 +69,7 @@ Los señuelos funcionan de otra forma. La contraseña señuelo de Private Photo 
 
 <!-- TODO verify -->
 
-En Velcrypt, los señuelos no son un modo especial. Simplemente creas otra bóveda con otro patrón y guardas en ella algo sin importancia. Como cualquier patrón no visto abre una bóveda nueva y vacía sin error, quien revise la app no puede saber cuántas bóvedas tienes. La guía sobre [bóvedas señuelo](id:what-is-a-decoy-vault) explica por qué es importante.
+En Velcrypt, los señuelos no son un modo especial. Con Premium, simplemente creas otra bóveda con otro patrón y guardas en ella algo sin importancia. Como cualquier patrón no visto abre una bóveda nueva y vacía sin error, quien revise la app no puede saber cuántas bóvedas tienes. La guía sobre [bóvedas señuelo](id:what-is-a-decoy-vault) explica por qué es importante.
 
 ## Cifrado y transparencia
 
@@ -83,7 +83,7 @@ En el caso de Private Photo Vault, no encontramos una descripción técnica púb
 
 - **Quieres informes de intrusión.** Si te importa saber que alguien intentó abrir tu bóveda, Velcrypt no lo ofrece.
 - **Prefieres un código numérico o Face ID.** Hay quien encuentra un PIN más rápido que dibujar un patrón.
-- **Quieres una opción de copia o transferencia.** Si la versión que usas la ofrece, es algo que Velcrypt v1 no tiene.
+- **Quieres una opción de copia o transferencia.** Si la versión que usas la ofrece, puede ser más cómoda que la copia de seguridad manual de Velcrypt.
 - **Ya estás instalado en ella.** Mover una fototeca grande cuesta esfuerzo; cambiar solo tiene sentido si las diferencias te importan.
 
 <!-- TODO verify -->

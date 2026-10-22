@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "mon ex a accès à mes photos iphone"
 keywords: ["changer de code après une rupture", "retirer son ex d’un album partagé", "contrôle de sécurité iphone", "mon ex connaît mon code iphone", "quitter la photothèque partagée icloud", "protéger ses photos après une rupture"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Une liste de contrôle sereine pour les semaines qui suivent une rupture : nouveau code, Contrôle de sécurité, partages et un endroit privé pour vos photos."
 group: everyday
 schemaType: Article
@@ -68,7 +68,7 @@ Après l’import, [supprimez les originaux](id:delete-original-photos-after-imp
 
 - Rien sur votre téléphone ne peut supprimer les copies que votre ex possède déjà : photos envoyées, enregistrées depuis un album partagé ou présentes dans ses sauvegardes.
 - Un coffre n’aide pas si quelqu’un vous regarde tracer votre schéma, ni si le téléphone vous est pris pendant que le coffre est ouvert.
-- Dans la première version, les données des coffres ne sont incluses ni dans les sauvegardes iCloud ni dans celles sur ordinateur. Si vous perdez le téléphone ou oubliez votre schéma, le coffre ne peut pas être récupéré. Gardez une seconde copie de tout ce qui est irremplaçable en lieu sûr.
+- Les données des coffres ne sont incluses ni dans les sauvegardes iCloud ni dans celles sur ordinateur. Si vous oubliez votre schéma, le coffre ne peut pas être récupéré ; si vous perdez le téléphone, seule une sauvegarde chiffrée permet de le restaurer. Pour tout ce qui est irremplaçable, créez une sauvegarde chiffrée dans Réglages → Sauvegarde et gardez le fichier en lieu sûr, hors de portée de votre ex.
 - L’icône de l’app est visible sur votre écran d’accueil, sauf si vous utilisez l’option d’iOS 18 pour masquer des apps.
 
 ## Si cela va plus loin

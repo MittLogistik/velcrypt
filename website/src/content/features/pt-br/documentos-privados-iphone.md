@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "guardar documentos no iphone com segurança"
 keywords: ["proteger pdf com senha iphone", "cofre de documentos iphone", "esconder documentos iphone", "guardar rg e cnh no celular", "passaporte digitalizado seguro iphone"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Importe PDFs, digitalizações e cópias de documentos do Arquivos para um cofre criptografado, veja offline e exporte só quando precisar."
 status: available
 schemaType: WebPage
@@ -24,11 +24,11 @@ faq:
   - q: "Quais documentos posso guardar no Velcrypt?"
     a: "Documentos que você acessa pelo app Arquivos do iOS, como PDFs e páginas digitalizadas, além de imagens de documentos. Exemplos típicos são cópias de passaporte, RG e CNH, laudos médicos, contratos e papéis do imposto de renda."
   - q: "Posso digitalizar um documento direto no Velcrypt?"
-    a: "O Velcrypt não tem scanner nem câmera próprios. Digitalize com um app que salve no Arquivos, importe a digitalização para o Velcrypt e depois apague o arquivo que foi criado."
+    a: "O Velcrypt não tem scanner de documentos. Você pode fotografar uma página com a câmera do cofre, que salva a foto direto no cofre, ou digitalizar com um app que salve no Arquivos, importar a digitalização para o Velcrypt e depois apagar o arquivo que foi criado."
   - q: "Posso enviar um documento do meu cofre para alguém?"
     a: "Sim, exportando-o. A exportação coloca uma cópia descriptografada fora do cofre, por exemplo no Arquivos ou em um destino do menu Compartilhar. Essa cópia não é mais protegida pelo Velcrypt, então apague-a quando terminar."
   - q: "É seguro guardar documentos no iPhone com o Velcrypt? Eles são enviados ou sincronizados?"
-    a: "Não são enviados nem sincronizados. O Velcrypt não tem servidores, conta nem sincronização na nuvem. Os documentos ficam criptografados no seu iPhone e, na primeira versão, fora dos backups do iCloud e do computador."
+    a: "Não são enviados nem sincronizados. O Velcrypt não tem servidores, conta nem sincronização na nuvem. Os documentos ficam criptografados no seu iPhone, fora dos backups do iCloud e do computador. Para ter uma cópia, crie um backup criptografado em Ajustes → Backup."
 ---
 
 Passaportes, carteirinhas do plano de saúde, laudos médicos e contratos assinados costumam acabar como arquivos soltos em Downloads ou como fotos no rolo da câmera. O Velcrypt dá a eles um lugar próprio e criptografado no seu iPhone, separado de tudo o que você navega no dia a dia.
@@ -48,7 +48,7 @@ Cada documento é criptografado no aparelho com AES-256-GCM, usando uma chave pr
 
 ## Digitalizando com privacidade
 
-O Velcrypt não inclui câmera nem scanner. O caminho mais seguro é digitalizar com uma ferramenta que salve no Arquivos, importar o resultado para o Velcrypt e depois apagar a digitalização do local original. Se o scanner também salvou uma cópia no Fotos ou em uma pasta na nuvem, apague essa também.
+O Velcrypt não inclui um scanner de documentos, mas a câmera do cofre pode fotografar uma página direto para o cofre, sem passar pela fototeca. Para um PDF digitalizado, o caminho mais seguro é usar uma ferramenta que salve no Arquivos, importar o resultado para o Velcrypt e depois apagar a digitalização do local original. Se o scanner também salvou uma cópia no Fotos ou em uma pasta na nuvem, apague essa também.
 
 O guia sobre [digitalizar documentos com privacidade no iPhone](id:scan-documents-privately-iphone) compara as opções de digitalização nativas do iOS e onde cada uma guarda o resultado.
 
@@ -87,5 +87,5 @@ Se você está escolhendo entre essas opções, [como proteger uma pasta com sen
 
 ## Bom saber
 
-- Os dados do cofre não entram nos backups do iCloud nem do computador na primeira versão. Guarde uma segunda cópia dos originais insubstituíveis, como a digitalização do seu passaporte, em um lugar de sua confiança.
+- Os dados do cofre não entram nos backups do iCloud nem do computador. Crie um backup criptografado em Ajustes → Backup e guarde o arquivo fora do iPhone, ou mantenha uma segunda cópia dos originais insubstituíveis, como a digitalização do seu passaporte, em um lugar de sua confiança.
 - Um cofre não protege um documento que alguém fotografa enquanto ele está aberto na sua tela.

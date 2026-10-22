@@ -9,12 +9,12 @@ keyFacts:
   - "Cualquiera con tu código o tu Cuenta de Apple puede ver, borrar o sincronizar las capturas del carrete."
   - "Comprobación de seguridad (Ajustes › Privacidad y seguridad, iOS 16+) te ayuda a ver quién tiene acceso a tu iPhone y a tu cuenta."
   - "Una prueba solo sirve si se conserva: guarda al menos dos copias, en lugares a los que la otra persona no pueda acceder."
-  - "Velcrypt no tiene copia de seguridad en la primera versión, así que nunca debe guardar tu única copia."
+  - "Velcrypt no debe guardar tu única copia: sus bóvedas no están en las copias de iCloud, así que crea también una copia de seguridad cifrada."
   - "Las organizaciones de apoyo y las fuerzas de seguridad de tu zona pueden orientarte sobre qué registros son útiles donde vives."
 primaryKeyword: "cómo guardar pruebas de acoso en el iphone"
 keywords: ["guardar capturas de acoso en privado", "guardar pruebas en el iphone", "documentar pruebas de maltrato en el móvil", "ocultar capturas al agresor", "seguridad de las pruebas de acoso"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Un enfoque cuidadoso, con la seguridad primero, para mantener privadas, íntegras y respaldadas las capturas y fotos de un acoso."
 group: sensitive
 schemaType: Article
@@ -26,7 +26,7 @@ faq:
   - q: "¿Puede un agresor ver mis fotos si compartimos una Cuenta de Apple?"
     a: "Sí. Con Fotos de iCloud activado, las fotos se sincronizan con todos los dispositivos que usan esa cuenta, incluido el álbum Oculto. Comprobación de seguridad y una Cuenta de Apple propia pueden ayudar, pero piensa en tu seguridad antes de hacer cambios que pueda notar."
   - q: "¿Basta con Velcrypt para guardar pruebas?"
-    a: "Puede mantener una copia privada en tu iPhone, pero no debería ser tu única copia. En la primera versión no se hace copia de seguridad de la bóveda, así que si el teléfono se pierde, se rompe o te lo quitan, la bóveda desaparece."
+    a: "Puede mantener una copia privada en tu iPhone, pero no debería ser tu única copia. La bóveda no está en las copias de iCloud, así que si el teléfono se pierde, se rompe o te lo quitan, la bóveda desaparece, salvo que hayas guardado una copia de seguridad cifrada fuera del teléfono."
   - q: "¿Esto es asesoramiento legal?"
     a: "No. Las normas sobre pruebas varían entre países. Una organización de apoyo, un abogado o la policía pueden decirte qué tipo de registros son útiles donde vives."
 ---
@@ -68,7 +68,7 @@ Las bóvedas se abren con un patrón dibujado en una cuadrícula 5×5, no con el
 
 ## Límites, con honestidad: léelos, por favor
 
-- **Velcrypt no debe ser tu única copia.** En la primera versión, los datos de la bóveda no se incluyen en las copias de iCloud ni del ordenador. Si el teléfono se pierde, se rompe o te lo quitan, o si olvidas el patrón, nadie puede recuperar la bóveda.
+- **Velcrypt no debe ser tu única copia.** Los datos de la bóveda no se incluyen en las copias de iCloud ni del ordenador. Si el teléfono se pierde, se rompe o te lo quitan, solo una copia de seguridad cifrada que hayas guardado en otro sitio (Ajustes → Copia de seguridad) conserva el contenido. Si olvidas el patrón, nadie puede abrir la bóveda.
 - **La app es visible.** El icono de Velcrypt aparece en tu pantalla de inicio. iOS 18 permite ocultar apps tras Face ID en una carpeta oculta, pero alguien que revise con atención puede notar igualmente una app. Piensa si eso podría ponerte en riesgo.
 - **Alguien que te vea** dibujar tu patrón, o que te quite el teléfono con la bóveda abierta, anula el bloqueo.
 - **El software de vigilancia** en un teléfono con jailbreak o manipulado puede ver lo que aparece en pantalla. Si lo sospechas, una organización de apoyo puede orientarte; usar un dispositivo al que esa persona nunca haya tenido acceso puede ser más seguro.

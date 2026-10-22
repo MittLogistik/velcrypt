@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "ex heeft toegang tot mijn foto's iphone"
 keywords: ["toegangscode wijzigen na relatiebreuk", "ex verwijderen uit gedeeld album", "veiligheidscontrole iphone", "ex kent mijn toegangscode", "gedeelde icloud-fotobibliotheek verlaten"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Een rustige checklist voor de weken na een relatiebreuk: nieuwe toegangscode, Veiligheidscontrole, gedeelde albums en een privéplek voor foto's."
 group: everyday
 schemaType: Article
@@ -68,7 +68,7 @@ Velcrypt bewaart foto's, video's en documenten in versleutelde kluizen op je iPh
 
 - Niets op je telefoon kan kopieën verwijderen die je ex al heeft: foto's die je hebt gestuurd, die uit een gedeeld album zijn bewaard of die in diens back-ups staan.
 - Een kluis helpt niet als iemand meekijkt terwijl je je patroon tekent, of als je telefoon wordt afgepakt terwijl de kluis open is.
-- In de eerste versie zitten kluisgegevens niet in iCloud- of computerbackups. Raak je je telefoon kwijt of vergeet je je patroon, dan is de kluis niet te herstellen. Bewaar een tweede kopie van alles wat onvervangbaar is op een veilige plek.
+- Kluisgegevens zitten niet in iCloud- of computerback-ups. Vergeet je je patroon, dan is de kluis niet te herstellen. Maak via Instellingen → Back-up een versleuteld back-upbestand en bewaar dat op een veilige plek, ergens anders dan op de telefoon.
 - Het app-symbool is zichtbaar op je beginscherm, tenzij je de optie van iOS 18 gebruikt om apps te verbergen.
 
 ## Als het verder gaat

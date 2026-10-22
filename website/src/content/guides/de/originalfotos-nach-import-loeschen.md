@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "fotos nach import in tresor löschen"
 keywords: ["originalfotos nach import löschen", "zuletzt gelöscht leeren iphone", "fotos endgültig löschen iphone", "zuletzt gelöscht ios 18", "fotos vom iphone löschen aber nicht aus tresor", "tresor app kopieren oder verschieben"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Kopieren vs. Verschieben, Originale aus „Fotos“ löschen, „Zuletzt gelöscht“ leeren – und die iCloud- und Chat-Kopien, die übrig bleiben."
 category: practical
 order: 30
@@ -125,4 +125,4 @@ Für besonders sensible Bilder geht der Ratgeber [Intime Fotos sicher aufbewahre
 
 Velcrypt folgt dem oben beschriebenen Kopiermodell. Wenn du [Fotos](id:hide-photos) oder [Videos](id:hide-videos) importierst, verschlüsselt der Tresor seine eigene Kopie mit AES-256-GCM und lässt das Original in „Fotos“. Das Original zu löschen und „Zuletzt gelöscht“ zu leeren, liegt also bei dir.
 
-Bevor du das tust, wäge eine Grenze ehrlich ab: Velcrypts Tresordaten liegen nur auf deinem iPhone und sind von iCloud- und Computer-Backups ausgeschlossen. Sind die Originale weg, hält der Tresor die einzige Kopie auf diesem Gerät. Verlierst du das Handy oder [vergisst das Muster](id:forgot-vault-pattern), können weder du noch Velcrypt diese Dateien wiederherstellen. Eine verschlüsselte Backup-Option ist geplant; bis dahin bewahre von allem Unersetzlichen eine separate Kopie an einem vertrauenswürdigen Ort auf.
+Bevor du das tust, wäge eine Grenze ehrlich ab: Velcrypts Tresordaten liegen nur auf deinem iPhone und sind von iCloud- und Computer-Backups ausgeschlossen. Sind die Originale weg, hält der Tresor die einzige Kopie auf diesem Gerät. Verlierst du das Handy oder [vergisst das Muster](id:forgot-vault-pattern), können weder du noch Velcrypt diese Dateien wiederherstellen. Erstelle deshalb unter Einstellungen → Backup ein verschlüsseltes Backup und speichere es außerhalb des iPhones, oder bewahre von allem Unersetzlichen eine separate Kopie an einem vertrauenswürdigen Ort auf.

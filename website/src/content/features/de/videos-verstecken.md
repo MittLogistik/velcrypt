@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "videos verstecken iphone app"
 keywords: ["video tresor iphone", "verschlüsselte videos iphone", "private videos app iphone", "videos sperren iphone", "videos aus mediathek verstecken"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Videos als verschlüsselte Kopien importieren, im Tresor abspielen und Originale entfernen, ohne dass der Speicher vollläuft."
 status: available
 schemaType: WebPage
@@ -26,7 +26,7 @@ faq:
   - q: "Warum ist mein freier Speicher nach dem Videoimport gesunken?"
     a: "Der Import erstellt eine Kopie. Bis du das Original aus Fotos löschst und „Zuletzt gelöscht“ leerst, existiert das Video zweimal. Sobald das Original weg ist, wird der Platz frei."
   - q: "Sind meine Tresorvideos im iCloud-Backup enthalten?"
-    a: "Nein. In der ersten Version sind Tresordaten von iCloud- und Computer-Backups ausgeschlossen. Videos im Tresor existieren nur auf deinem iPhone."
+    a: "Nein. Tresordaten sind von iCloud- und Computer-Backups ausgeschlossen. Videos im Tresor existieren nur auf deinem iPhone, bis du selbst ein verschlüsseltes Backup unter Einstellungen → Backup erstellst."
   - q: "Werden Videos in Velcrypt mit meinen anderen Geräten synchronisiert?"
     a: "Nein. Velcrypt hat keine Cloud-Synchronisierung und läuft nur auf dem iPhone. Ein Video in deinem Tresor bleibt auf dem einen Handy, auf dem du es importiert hast."
 ---
@@ -79,9 +79,9 @@ Behalte drei Dinge im Kopf:
 
 ## Gut zu wissen
 
-- Velcrypt hat keine integrierte Kamera. Nimm mit der Kamera-App auf, importiere das Video und lösch dann das Original.
-- Verschiedene Muster öffnen verschiedene [versteckte Tresore](id:hidden-vaults). Sollen manche Videos nie neben anderen liegen, gib ihnen einen eigenen Tresor statt nur ein eigenes Album.
-- Tresordaten werden in der ersten Version nicht gesichert. Bewahr von unersetzlichen Videos eine zweite Kopie an einem Ort auf, dem du vertraust.
+- Mit der Kamera im Tresor nimmst du Videos direkt im Tresor auf. Sie landen nie in deiner Fotomediathek, es gibt also kein Original zu löschen.
+- Verschiedene Muster öffnen verschiedene [versteckte Tresore](id:hidden-vaults). Sollen manche Videos nie neben anderen liegen, gib ihnen mit Premium einen eigenen Tresor statt nur ein eigenes Album.
+- Tresordaten sind nicht in iCloud- oder Computer-Backups enthalten. Sichere unersetzliche Videos mit einem verschlüsselten Backup unter Einstellungen → Backup und bewahr die Datei an einem Ort auf, dem du vertraust.
 - Wurde ein Video je in einem Chat verschickt oder in ein geteiltes Album gestellt, liegen diese Kopien außerhalb des Tresors. Die Anleitung [intime Fotos sicher aufbewahren](id:store-intimate-photos-safely-iphone) geht ausführlicher auf dieses Risiko ein.
 
 Einen breiteren Blick auf alle integrierten Möglichkeiten und Apps von Drittanbietern bietet [Videos verstecken am iPhone](id:hide-videos-iphone).

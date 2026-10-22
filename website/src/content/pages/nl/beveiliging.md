@@ -10,12 +10,13 @@ keyFacts:
   - "Elke kluis heeft een eigen willekeurige 256-bits hoofdsleutel; sleutels per bestand worden afgeleid met HKDF."
   - "Bestanden worden versleuteld met AES-256-GCM via Apple CryptoKit, plus iOS-gegevensbescherming (klasse ‘volledige bescherming’)."
   - "Een onbekend patroon opent een lege kluis — geen kluizenlijst, geen melding ‘verkeerd patroon’."
-  - "Geen netwerk, geen account, geen analyse van kluisinhoud; in v1 zijn kluisgegevens uitgesloten van iCloud- en computerback-ups."
+  - "Geen netwerk, geen account, geen analyse van kluisinhoud; kluisgegevens zijn uitgesloten van iCloud- en computerback-ups."
+  - "Optionele versleutelde back-up: een .velcrypt-bestand, beveiligd met een back-upwachtwoord dat je zelf kiest."
   - "Velcrypt is nog niet onafhankelijk op beveiliging gecontroleerd (geen audit)."
 primaryKeyword: "velcrypt beveiliging"
 keywords: ["fotokluis versleuteling iphone", "hoe werkt velcrypt versleuteling", "aes-256-gcm fotokluis", "pbkdf2 patroonvergrendeling", "dreigingsmodel fotokluis", "plausibele ontkenning kluis-app"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 schemaType: WebPage
 order: 1
 related: [encryption, pattern-lock, hidden-vaults, aes-256-encryption-explained, plausible-deniability-explained, forgot-vault-pattern]
@@ -38,7 +39,7 @@ Deze pagina legt in gewone taal uit wat er met je foto’s, video’s en documen
 
 Velcrypt is een iPhone-app die privébestanden in versleutelde kluizen op je apparaat bewaart. Je opent een kluis door een patroon te tekenen op een raster van 5×5 stippen. Dat patroon wordt nergens opgeslagen. In plaats daarvan gaat het door een trage sleutelafleidingsfunctie die er een sleutel van maakt, en die sleutel beschermt de inhoud van de kluis.
 
-Alles gebeurt op de iPhone zelf. Velcrypt heeft geen account, geen servers en geen uploadstap, dus er bestaat nergens anders een kopie van je kluis of van je sleutels. Dat is de bron van de kracht en tegelijk de belangrijkste beperking: als je het patroon vergeet of de telefoon kwijtraakt, kan de kluis niet worden hersteld.
+Alles gebeurt op de iPhone zelf. Velcrypt heeft geen account, geen servers en geen uploadstap, dus er bestaat nergens anders een kopie van je kluis of van je sleutels. Dat is de bron van de kracht en tegelijk de belangrijkste beperking: als je het patroon vergeet, kan de kluis niet worden hersteld, en als je de telefoon kwijtraakt, kan alleen een versleuteld back-upbestand dat je zelf hebt gemaakt de kluis terugbrengen.
 
 ## Van patroon naar sleutel
 
@@ -88,11 +89,15 @@ Velcrypt vergrendelt automatisch wanneer het naar de achtergrond gaat, na een ve
 
 Ontgrendelen met Face ID of Touch ID kan bewust niet. Een gezicht of vinger kan zonder je toestemming worden gebruikt — terwijl je slaapt of onder druk. Een patroon bestaat alleen in je geheugen.
 
-## Geen netwerk, geen account, geen back-ups
+## Geen netwerk, geen account, geen automatische back-ups
 
 Velcrypt werkt volledig offline. Er is geen registratie, geen e-mailadres, geen server en geen upload van kluisinhoud, en er worden geen analysegegevens verzameld over wat je bewaart. Op de pagina [offline, zonder account](id:offline-no-account) lees je wat dat in de praktijk betekent.
 
-In de eerste versie zijn kluisgegevens ook **uitgesloten van iCloud- en computerback-ups (Finder)**. Zo blijven je versleutelde bestanden van de servers van Apple en van elke computer waarmee je synchroniseert, maar dat heeft een echt gevolg: als je iPhone kwijtraakt, kapotgaat of wordt gewist, gaan de kluizen mee. Een versleutelde back-upoptie is gepland, zonder datum.
+Kluisgegevens zijn ook **uitgesloten van iCloud- en computerback-ups (Finder)**. Zo blijven je versleutelde bestanden van de servers van Apple en van elke computer waarmee je synchroniseert, maar dat heeft een echt gevolg: als je iPhone kwijtraakt, kapotgaat of wordt gewist, gaan de kluizen mee — tenzij je zelf een back-up hebt gemaakt.
+
+### Versleutelde back-up
+
+Via Instellingen → Back-up maak je een versleuteld `.velcrypt`-bestand van de kluis die open is, beveiligd met een **back-upwachtwoord** dat je zelf kiest. Jij bepaalt waar het bestand komt — in Bestanden, iCloud Drive of op een computer — en je kunt het op elke iPhone terugzetten. De back-up is een apart bestand dat je handmatig maakt: Velcrypt uploadt het nooit en ontvangt het nooit. Kies een sterk back-upwachtwoord, want wie zowel het bestand als het wachtwoord heeft, kan de kluis terugzetten, en een vergeten back-upwachtwoord kan niet worden hersteld.
 
 ## Het dreigingsmodel in één oogopslag
 
@@ -103,11 +108,12 @@ In de eerste versie zijn kluisgegevens ook **uitgesloten van iCloud- en computer
 | Iemand probeert te bewijzen dat je meer kluizen hebt | Grotendeels | Geen kluizenlijst, geen melding ‘verkeerd patroon’; het aantal kluizen staat nergens in de app. |
 | Diefstal van een vergrendelde iPhone | Ja | iOS-gegevensbescherming plus de eigen AES-256-GCM-versleuteling van Velcrypt. |
 | Het patroon kraken vanuit uitgelezen bestanden | Vertraagd | PBKDF2 met 600.000+ iteraties en een salt per apparaat; een lang patroon maakt verschil. |
-| Inbraak in een cloudaccount | Ja | Kluisgegevens worden niet geüpload en zijn in v1 uitgesloten van iCloud-back-ups. |
+| Inbraak in een cloudaccount | Ja | Kluisgegevens worden niet geüpload en zijn uitgesloten van iCloud-back-ups. Een back-upbestand dat je in de cloud bewaart, blijft versleuteld met je back-upwachtwoord. |
 | Knoeien met versleutelde bestanden | Gedetecteerd | De authenticatie van AES-256-GCM weigert gewijzigde gegevens. |
 | Iemand kijkt mee terwijl je het patroon tekent | Nee | Zie hieronder. |
 | Malware of een gejailbreakt apparaat | Nee | Zie hieronder. |
-| Vergeten patroon of verloren telefoon | Nee | Herstel is niet mogelijk. |
+| Vergeten patroon of back-upwachtwoord | Nee | Herstel is niet mogelijk. |
+| Verloren of kapotte telefoon | Alleen met een back-up | Zet een versleuteld back-upbestand terug dat je eerder hebt gemaakt. |
 
 <a id="what-velcrypt-does-not-protect-against"></a>
 ## Waartegen Velcrypt niet beschermt
@@ -115,12 +121,12 @@ In de eerste versie zijn kluisgegevens ook **uitgesloten van iCloud- en computer
 Elk beveiligingsmiddel heeft grenzen, en je hoort die van Velcrypt te kennen voordat je erop vertrouwt.
 
 - **Meekijken.** Als iemand ziet hoe je je patroon tekent, live of via een camera, kan diegene die kluis openen. Teken het uit het zicht en kies een patroon dat niet op een simpele letter of vorm lijkt.
-- **Gedwongen ontgrendelen.** Velcrypt kan niet voorkomen dat iemand je dwingt een patroon te tekenen. Een lokkluis kan helpen; een dwangpatroon (binnenkort, Premium) is gepland om een gekozen kluis te openen en stilletjes de toegang tot de andere te verwijderen.
+- **Gedwongen ontgrendelen.** Velcrypt kan niet voorkomen dat iemand je dwingt een patroon te tekenen. Een lokkluis kan helpen; een dwangpatroon, gepland voor een toekomstige update, zou een gekozen kluis openen en stilletjes de toegang tot de andere verwijderen.
 - **Een telefoon die met open kluis wordt doorgegeven.** Zolang een kluis ontgrendeld is, ziet iedereen die de telefoon vasthoudt wat jij ziet. Vergrendel hem voordat je je telefoon aan iemand geeft.
 - **Gecompromitteerde of gejailbreakte apparaten en malware.** Software die op een gecompromitteerd apparaat het scherm kan lezen, aanrakingen kan registreren of het geheugen van apps kan inspecteren, kan elke versleuteling op app-niveau omzeilen.
 - **Schermafbeeldingen of foto’s van het scherm.** Velcrypt kan niet voorkomen dat een andere camera je scherm fotografeert.
 - **Kopieën elders.** Importeren kopieert een foto; het origineel blijft in Foto’s tot je het verwijdert, en staat daarna nog ongeveer 30 dagen in Recent verwijderd. Kopieën kunnen ook bestaan in iCloud-foto’s, chatapps, e-mail of op de telefoon van iemand anders. Volg [originelen verwijderen na het importeren](id:delete-original-photos-after-import).
-- **Een verloren telefoon of een vergeten patroon.** In beide gevallen zijn de gegevens weg. Er is geen herstelzin en geen reset. Zie [kluispatroon vergeten](id:forgot-vault-pattern).
+- **Een vergeten patroon, of een verloren telefoon zonder back-up.** In beide gevallen zijn de gegevens weg. Er is geen herstelzin en geen reset, en ook een vergeten back-upwachtwoord kan niet worden hersteld. Zie [kluispatroon vergeten](id:forgot-vault-pattern).
 - **Ontdekken dat je Velcrypt gebruikt.** Het app-symbool is zichtbaar, en forensische tools kunnen mogelijk zien dat Velcrypt versleutelde gegevens bevat en ongeveer hoeveel. Velcrypt beweert niet dat te verbergen — alleen het aantal kluizen en wat erin zit.
 - **Zwakke of raadbare patronen.** Een kort patroon, of een in de vorm van een L, Z of vierkant, is veel makkelijker te raden. Test een vergelijkbare vorm met de [patroonsterktetest](id:pattern-strength-checker) — nooit je echte patroon.
 

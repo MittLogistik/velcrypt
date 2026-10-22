@@ -10,11 +10,11 @@ keyFacts:
   - "I Velcrypt är varje mönster ett eget valv, och det finns ingen valvlista som avslöjar de andra."
   - "Ett tomt lockbete väcker misstankar; ett levande lockbete med album och nya objekt övertygar."
   - "Ett lockbete skyddar mot snokande och tillfällig press, inte mot forensisk analys eller någon som såg dig rita."
-  - "Ett tvångsmönster som också tar bort åtkomsten till andra valv är en planerad Premium-funktion (kommer snart)."
+  - "Gratisversionen har ett valv, så ett lockbete kräver Premium. Ett tvångsmönster är planerat till en framtida uppdatering."
 primaryKeyword: "lockbetesvalv"
 keywords: ["vad är ett lockbetesvalv", "lockbetes-lösenord fotovalv", "falskt valv app", "lockbetesmönster", "andra valv iphone"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Vad ett lockbetesvalv är, hur du bygger ett som ser levande ut med ett andra mönster i Velcrypt och vilka gränser du bör känna till."
 category: security
 order: 41
@@ -40,7 +40,7 @@ faq:
   - q: "Kan någon se att ett valv är ett lockbete?"
     a: "Inte inifrån appen: Velcrypt sparar ingen lista över valv och visar ingen antydan om att andra finns. Det som kan avslöja ett lockbete är innehållet, till exempel om det är tomt, inaktuellt eller tydligt arrangerat."
   - q: "Är ett lockbetesvalv samma sak som ett tvångsmönster?"
-    a: "Nej. Ett lockbete öppnar helt enkelt ett annat valv. Ett tvångsmönster, en planerad Premium-funktion i Velcrypt som kommer snart, ska öppna ett valt valv och samtidigt tyst ta bort åtkomsten till de andra."
+    a: "Nej. Ett lockbete öppnar helt enkelt ett annat valv. Ett tvångsmönster, en planerad funktion i Velcrypt för en framtida uppdatering, ska öppna ett valt valv och samtidigt tyst ta bort åtkomsten till de andra."
   - q: "Ska jag använda ett lockbetesvalv mot polis eller gränstjänstemän?"
     a: "Den här guiden kan inte ge juridisk rådgivning. Att vilseleda tjänstemän kan vara ett brott i många länder. Ett lockbete är främst till för vardagligt snokande och informell press; i officiella situationer, ta reda på dina rättigheter och prata med en advokat."
 ---
@@ -63,7 +63,7 @@ De flesta appar behandlar lockbetet som en särskild inställning: en riktig PIN
 - Ett mönster som Velcrypt aldrig har sett öppnar ett nytt, tomt valv.
 - Det finns inget felmeddelande om ”fel mönster”, och ingenting bevisar att andra valv finns.
 
-Ett lockbetesvalv i Velcrypt är alltså ingen funktion som du slår på. Det är bara ett andra mönster som du väljer att använda som lockbete. Ditt riktiga valv och ditt lockbete ser ut och beter sig exakt likadant, eftersom de är samma sorts sak. Sidan om [dolda valv](id:hidden-vaults) förklarar modellen närmare.
+Ett lockbetesvalv i Velcrypt är alltså ingen funktion som du slår på. Det är bara ett andra mönster som du väljer att använda som lockbete. Ditt riktiga valv och ditt lockbete ser ut och beter sig exakt likadant, eftersom de är samma sorts sak. Sidan om [dolda valv](id:hidden-vaults) förklarar modellen närmare. Gratisversionen har ett valv, så för att fylla ett andra valv som lockbete behöver du [Premium](id:pricing).
 
 ## Skapa ett trovärdigt lockbete, steg för steg
 
@@ -93,7 +93,7 @@ Ett lockbetesvalv är ett socialt verktyg med bra kryptografi i botten. Det är 
 
 ## Lockbetesvalv och tvångsmönster
 
-Ett lockbete öppnar ett annat valv och lämnar allt annat orört. Ett **tvångsmönster** går ett steg längre: det öppnar ett valv du har valt och tar samtidigt tyst bort åtkomsten till de andra. I Velcrypt är [tvångsmönstret](id:duress-pattern) en planerad Premium-funktion som kommer snart. Till dess täcker ett välskött lockbete de flesta vardagssituationer, som en nyfiken partner, en vän som scrollar i din telefon eller en snokig kollega.
+Ett lockbete öppnar ett annat valv och lämnar allt annat orört. Ett **tvångsmönster** går ett steg längre: det öppnar ett valv du har valt och tar samtidigt tyst bort åtkomsten till de andra. I Velcrypt är [tvångsmönstret](id:duress-pattern) planerat till en framtida uppdatering. Till dess täcker ett välskött lockbete de flesta vardagssituationer, som en nyfiken partner, en vän som scrollar i din telefon eller en snokig kollega.
 
 ## Var Velcrypt passar in
 

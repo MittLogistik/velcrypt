@@ -10,21 +10,22 @@ keyFacts:
   - "Sem Face ID nem Touch ID por design — um padrão existe apenas na sua memória."
   - "Sem anúncios e sem venda de dados."
   - "Honesto sobre os limites, inclusive a impossibilidade de recuperar padrões esquecidos."
-  - "Planejado: padrão de coação (em breve) e backup criptografado."
+  - "Backup criptografado grátis; o padrão de coação está planejado para uma atualização futura."
+  - "Publicado pela Swedish Treats AB, Suécia."
 primaryKeyword: "sobre o velcrypt"
 keywords: ["app velcrypt", "quem faz o velcrypt", "princípios do velcrypt", "cofre de fotos privado iphone"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 schemaType: AboutPage
 order: 4
 related: [security, features, offline-no-account, pricing, press]
 faq:
   - q: "Por que o Velcrypt não guarda nada na nuvem?"
-    a: "Porque dados que nunca saem do seu celular não podem ser expostos por uma invasão de servidor, por uma ordem judicial a um provedor ou por uma senha reutilizada. A contrapartida é que não há recuperação se você perder o celular ou esquecer o padrão."
+    a: "Porque dados que nunca saem do seu celular não podem ser expostos por uma invasão de servidor, por uma ordem judicial a um provedor ou por uma senha reutilizada. A contrapartida é que não há recuperação se você esquecer o padrão, e um celular perdido só pode ser recuperado a partir de um backup criptografado que você mesmo criou."
   - q: "O Velcrypt ganha dinheiro com os meus dados?"
-    a: "Não. O Velcrypt não coleta o conteúdo dos seus cofres nem análises sobre ele e não mostra anúncios. O plano é ter uma versão grátis com um upgrade Premium pago e opcional."
+    a: "Não. O Velcrypt não coleta o conteúdo dos seus cofres nem análises sobre ele e não mostra anúncios. O Velcrypt tem uma versão grátis e um upgrade Premium pago e opcional."
   - q: "No que o Velcrypt está trabalhando agora?"
-    a: "Os itens planejados incluem um padrão de coação (em breve) e uma opção de backup criptografado, ambos como parte do Premium. Nenhum dos dois tem data de lançamento ainda."
+    a: "O backup criptografado já está no app e é grátis. O próximo item planejado é um padrão de coação, que ainda não tem data de lançamento."
 ---
 
 <!-- TODO: add founder/company details -->
@@ -57,19 +58,21 @@ Ferramentas de privacidade falham com as pessoas quando prometem demais. Preferi
 
 ### Sem anúncios, sem venda de dados
 
-O Velcrypt não mostra publicidade e não vende dados. Ele não coleta o conteúdo dos seus cofres nem análises sobre ele, então não há nada para vender. O Velcrypt será financiado por um upgrade Premium opcional — veja [preços](id:pricing).
+O Velcrypt não mostra publicidade e não vende dados. Ele não coleta o conteúdo dos seus cofres nem análises sobre ele, então não há nada para vender. O Velcrypt é financiado por um upgrade Premium opcional — veja [preços](id:pricing).
 
 ## O que vem por aí
 
-Estes itens estão planejados. Eles não estão no app hoje, e não vamos definir datas até que estejam prontos.
+O backup criptografado, os cofres adicionais e os itens ilimitados já fazem parte do app: o backup é grátis, e mais cofres e itens ilimitados vêm com o Premium. O item abaixo está planejado. Ele não está no app hoje, e não vamos definir uma data até que esteja pronto.
 
 | Item | Status |
 |---|---|
-| [Padrão de coação](id:duress-pattern) — abre um cofre escolhido e remove silenciosamente o acesso aos outros | Em breve (Premium) |
-| Opção de backup e recuperação criptografados | Planejado (Premium) |
-| Mais cofres e itens ilimitados | Planejado (Premium) |
+| [Padrão de coação](id:duress-pattern) — abre um cofre escolhido e remove silenciosamente o acesso aos outros | Planejado para uma atualização futura |
 
 Tudo o que acrescentarmos seguirá os mesmos princípios: no aparelho por padrão, sem conta e com uma explicação clara das vantagens e desvantagens.
+
+## Quem somos
+
+O Velcrypt é publicado pela Swedish Treats AB, uma empresa da Suécia.
 
 ## Fale com a gente
 

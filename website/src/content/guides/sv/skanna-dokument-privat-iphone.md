@@ -19,7 +19,7 @@ keywords:
   - "skanna dokument till filer iphone"
   - "var sparas skannade dokument iphone"
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Skanna id-handlingar, avtal och vårdpapper utan att fylla Bilder eller iCloud, lås in dem och ta bort kvarvarande kopior."
 category: practical
 order: 34
@@ -124,7 +124,7 @@ Att låsa en anteckning eller ha en PDF i På min iPhone är en bra början, men
 
 Velcrypt kan importera dokument från appen Filer till ett krypterat valv ([privata dokument](id:private-documents)). Filerna krypteras med AES-256-GCM på enheten med nycklar som härleds från ditt upplåsningsmönster, och ingenting laddas upp ([offline utan konto](id:offline-no-account)). Velcrypt har ingen inbyggd skanner eller kamera, så du skannar med Filer eller Anteckningar först och importerar sedan PDF:en.
 
-Tänk på att valvinnehållet i den första versionen inte ingår i iCloud- eller datorsäkerhetskopior. Om ett originaldokument inte går att ersätta, behåll pappersversionen eller en annan kopia på ett ställe du har kontroll över. Vårt [användningsfall om id-handlingar och vårdpapper](id:medical-and-id-documents) tar upp den avvägningen.
+Tänk på att valvinnehållet inte ingår i iCloud- eller datorsäkerhetskopior. Om ett originaldokument inte går att ersätta, skapa en krypterad säkerhetskopia under Inställningar → Säkerhetskopiering eller behåll pappersversionen på ett ställe du har kontroll över. Vårt [användningsfall om id-handlingar och vårdpapper](id:medical-and-id-documents) tar upp den avvägningen.
 
 ## Städa bort det som blir kvar
 

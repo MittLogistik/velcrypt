@@ -10,11 +10,11 @@ keyFacts:
   - "Perder el móvil, prestarlo y compartir habitación de hotel son las exposiciones más habituales en un viaje."
   - "Acceso Guiado mantiene un iPhone prestado fijado en una sola app, como Mapas o Teléfono."
   - "Una bóveda de Velcrypt solo se abre con tu patrón; un patrón desconocido abre una bóveda vacía."
-  - "En la primera versión, los datos de Velcrypt no están en las copias de iCloud ni del ordenador, así que prevé una segunda copia."
+  - "Los datos de Velcrypt no están en las copias de iCloud ni del ordenador, así que crea una copia de seguridad cifrada antes de salir."
 primaryKeyword: "viajar con fotos privadas iphone"
 keywords: ["proteger fotos en un viaje", "me robaron el iphone en el extranjero fotos", "protección en caso de robo viaje", "prestar el móvil en el extranjero privacidad", "consejos de privacidad del móvil para viajar"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Móviles perdidos, prestar el iPhone y controles fronterizos: cómo viajar con fotos y documentos privados sin preocuparte por ellos."
 group: travel
 schemaType: Article
@@ -26,7 +26,7 @@ faq:
   - q: "¿Debería llevar fotos del pasaporte en el móvil cuando viajo?"
     a: "Una copia puede ser útil si pierdes el pasaporte, pero no la dejes en el carrete. Guárdala en una bóveda cifrada u otro lugar protegido, y ten otra copia aparte a la que puedas acceder si pierdes el móvil."
   - q: "¿Qué pasa con mi bóveda de Velcrypt si me roban el móvil en el extranjero?"
-    a: "El ladrón no puede abrirla sin tu patrón, pero tú tampoco puedes recuperarla: en la primera versión, los datos de la bóveda no se incluyen en las copias de iCloud ni del ordenador. Hay prevista una opción de copia de seguridad cifrada."
+    a: "El ladrón no puede abrirla sin tu patrón. Tú solo puedes recuperar el contenido si antes creaste una copia de seguridad cifrada en Ajustes → Copia de seguridad, porque los datos de la bóveda no se incluyen en las copias de iCloud ni del ordenador."
   - q: "¿Es seguro prestar mi iPhone a alguien en el extranjero?"
     a: "Normalmente no hay problema para una llamada rápida o consultar un mapa. Inicia antes Acceso Guiado para que se quede en esa app y no pierdas el móvil de vista."
 ---
@@ -62,16 +62,16 @@ Cuando viajas, tu móvil pasa por más manos y más lugares que en el día a dí
 
 Velcrypt guarda fotos, vídeos y documentos privados en bóvedas cifradas almacenadas solo en tu iPhone. Una bóveda se abre con un patrón que dibujas en una cuadrícula 5×5, no con tu código ni con Face ID. Si un ladrón ha visto tu código, eso por sí solo no abre tu bóveda. Por qué se usa un patrón en lugar de biometría se explica en [patrón vs PIN vs Face ID](id:pattern-lock-vs-pin-vs-face-id).
 
-Cada patrón abre su propia bóveda, y un patrón desconocido abre una vacía sin ningún error. Eso te permite tener una [bóveda señuelo](id:what-is-a-decoy-vault) con fotos inofensivas del viaje y mantener tu bóveda privada detrás de otro patrón. La app también se bloquea automáticamente al pasar a segundo plano, y su contenido se oculta en el selector de apps.
+Cada patrón abre su propia bóveda, y un patrón desconocido abre una vacía sin ningún error. Con Premium, eso te permite tener una [bóveda señuelo](id:what-is-a-decoy-vault) con fotos inofensivas del viaje y mantener tu bóveda privada detrás de otro patrón. La app también se bloquea automáticamente al pasar a segundo plano, y su contenido se oculta en el selector de apps.
 
 No hay cuenta y no se sube nada, así que no existe un inicio de sesión en la nube que alguien pueda robar con phishing o restablecer mientras viajas.
 
 ## Límites, con honestidad
 
-- **Sin copia de seguridad en la primera versión.** Los datos de la bóveda quedan fuera de las copias de iCloud y del ordenador. Si pierdes el móvil o te lo roban, la bóveda se va con él: nadie puede recuperarla. Hay prevista una opción de copia de seguridad cifrada. Para viajar, guarda una segunda copia de todo lo irreemplazable en un lugar seguro.
+- **Copia de seguridad solo si la creas tú.** Los datos de la bóveda quedan fuera de las copias de iCloud y del ordenador. Si pierdes el móvil o te lo roban, la bóveda se va con él, salvo que hayas guardado una copia de seguridad cifrada fuera del teléfono. Antes de viajar, crea una en Ajustes → Copia de seguridad.
 - **Los originales siguen en Fotos hasta que los borres.** Importar copia la foto. [Borra el original](id:delete-original-photos-after-import) y vacía el álbum Eliminado.
 - **Alguien que te vea dibujar** tu patrón podría aprenderlo.
 - **El icono de la app se ve** en la pantalla de inicio, salvo que uses la opción de iOS 18 para ocultar apps.
-- **Una bóveda no es un escudo legal.** En una frontera se aplican las normas del país; el patrón de coacción es una función Premium prevista (próximamente), no disponible hoy.
+- **Una bóveda no es un escudo legal.** En una frontera se aplican las normas del país; el patrón de coacción está previsto para una actualización futura y no está disponible hoy.
 
 Viaja ligero y preparado: con un móvil bien protegido, perderlo es una molestia, no una crisis.

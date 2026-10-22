@@ -10,21 +10,21 @@ keyFacts:
   - "Bewust geen Face ID of Touch ID — een patroon bestaat alleen in je geheugen."
   - "Geen advertenties en geen verkoop van gegevens."
   - "Eerlijk over grenzen, ook over het feit dat een vergeten patroon niet te herstellen is."
-  - "Gepland: dwangpatroon (binnenkort) en versleutelde back-up."
+  - "Gratis versleutelde back-up als apart bestand dat jij beheert; een dwangpatroon is gepland."
 primaryKeyword: "over velcrypt"
 keywords: ["velcrypt app", "wie maakt velcrypt", "principes velcrypt", "privé fotokluis iphone"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 schemaType: AboutPage
 order: 4
 related: [security, features, offline-no-account, pricing, press]
 faq:
   - q: "Waarom bewaart Velcrypt niets in de cloud?"
-    a: "Omdat gegevens die je telefoon nooit verlaten niet kunnen uitlekken via een serverlek, een vordering bij een provider of een hergebruikt wachtwoord. De keerzijde is dat er geen herstel mogelijk is als je de telefoon kwijtraakt of het patroon vergeet."
+    a: "Omdat gegevens die je telefoon nooit verlaten niet kunnen uitlekken via een serverlek, een vordering bij een provider of een hergebruikt wachtwoord. De keerzijde is dat een vergeten patroon niet te herstellen is, en dat je bij een verloren telefoon alleen terug kunt naar een versleuteld back-upbestand dat je zelf hebt gemaakt."
   - q: "Verdient Velcrypt geld aan mijn gegevens?"
-    a: "Nee. Velcrypt verzamelt je kluisinhoud en analyses daarover niet en toont geen advertenties. Het plan is een gratis versie met een optionele betaalde Premium-upgrade."
+    a: "Nee. Velcrypt verzamelt je kluisinhoud en analyses daarover niet en toont geen advertenties. Er is een gratis versie met een optionele betaalde Premium-upgrade."
   - q: "Waar werkt Velcrypt hierna aan?"
-    a: "Gepland zijn onder meer een dwangpatroon (binnenkort) en een versleutelde back-upoptie, allebei als onderdeel van Premium. Voor geen van beide is er al een releasedatum."
+    a: "Een dwangpatroon staat gepland voor een toekomstige update. Er is nog geen releasedatum, en we beloven er ook geen tot het klaar is."
 ---
 
 <!-- TODO: add founder/company details -->
@@ -41,7 +41,7 @@ Velcrypt is die app. Hij bewaart foto’s, video’s en documenten in versleutel
 
 ### Altijd op het apparaat
 
-Je kluisinhoud wordt versleuteld en opgeslagen op je iPhone en nergens anders. Er zijn geen servers voor je bestanden en geen uploads. De pagina [offline, zonder account](id:offline-no-account) legt uit wat dat in het dagelijks gebruik betekent.
+Je kluisinhoud wordt versleuteld en opgeslagen op je iPhone en nergens anders. Er zijn geen servers voor je bestanden en geen uploads. Een versleuteld back-upbestand maak je alleen als jij dat wilt, en je bepaalt zelf waar het komt. De pagina [offline, zonder account](id:offline-no-account) legt uit wat dat in het dagelijks gebruik betekent.
 
 ### Geen account
 
@@ -61,16 +61,14 @@ Velcrypt toont geen reclame en verkoopt geen gegevens. Het verzamelt je kluisinh
 
 ## Wat er nog komt
 
-Deze onderdelen zijn gepland. Ze zitten nu nog niet in de app, en we hangen er pas data aan als ze klaar zijn.
+Versleutelde back-up, meer kluizen en een onbeperkt aantal onderdelen zitten al in versie 1.0. Wat nog gepland is, staat hieronder. Het zit nu nog niet in de app, en we hangen er pas een datum aan als het klaar is.
 
 | Onderdeel | Status |
 |---|---|
-| [Dwangpatroon](id:duress-pattern) — opent een gekozen kluis en verwijdert stilletjes de toegang tot de andere | Binnenkort (Premium) |
-| Versleutelde back-up- en herstelmogelijkheid | Gepland (Premium) |
-| Meer kluizen en een onbeperkt aantal items | Gepland (Premium) |
+| [Dwangpatroon](id:duress-pattern) — opent een gekozen kluis en verwijdert stilletjes de toegang tot de andere | Gepland voor een toekomstige update |
 
 Alles wat we toevoegen, volgt dezelfde principes: standaard op het apparaat, geen account en een duidelijke uitleg van de afwegingen.
 
 ## Contact
 
-Vragen, feedback of een beveiligingsprobleem? Je bereikt ons via [support](id:support). Journalisten vinden logo’s, kleuren en een factsheet in de [perskit](id:press).
+Vragen, feedback of een beveiligingsprobleem? Je bereikt ons via [support](id:support). Velcrypt wordt uitgegeven door Swedish Treats AB in Zweden. Journalisten vinden logo’s, kleuren en een factsheet in de [perskit](id:press).

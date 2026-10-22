@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "mettere password foto iphone"
 keywords: ["proteggere foto con password iphone", "password singole foto iphone", "mettere password alle immagini iphone", "bloccare singole foto iphone", "password foto iphone"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Perché iOS non ha una password per singola foto e tre modi pratici per mettere un vero blocco su foto specifiche."
 category: hiding
 order: 4
@@ -109,4 +109,4 @@ Qualunque blocco tu scelga, una copia protetta non serve se ne esiste ancora una
 
 Velcrypt risponde alla seconda esigenza: un segreto che conosci solo tu. Invece di digitare una password, disegni una [sequenza](id:pattern-lock) su una griglia 5×5 di punti. Deve passare per almeno sei punti con almeno un cambio di direzione, e sono consigliate sequenze da otto a dodici punti. Velcrypt non usa affatto Face ID né Touch ID, quindi né il codice del tuo iPhone né il tuo volto possono aprirla.
 
-Ogni sequenza apre una cassaforte propria, e le foto al suo interno sono [cifrate](id:encryption) con AES-256-GCM usando chiavi derivate da quella sequenza. Poiché tutto resta sul dispositivo ed è escluso dai backup, non c’è modo di reimpostare una sequenza dimenticata. Se preferisci una password recuperabile, vale la pena valutare con onestà questo limite prima di spostare qualcosa di importante.
+Ogni sequenza apre una cassaforte propria, e le foto al suo interno sono [cifrate](id:encryption) con AES-256-GCM usando chiavi derivate da quella sequenza. Poiché tutto resta sul dispositivo ed è escluso dai backup di iCloud, non c’è modo di reimpostare una sequenza dimenticata (puoi però creare tu un backup cifrato dei contenuti). Se preferisci una password recuperabile, vale la pena valutare con onestà questo limite prima di spostare qualcosa di importante.

@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "protéger ses documents sur iphone"
 keywords: ["chiffrer un pdf iphone", "stocker ses papiers d’identité iphone", "coffre-fort documents iphone", "cacher des documents iphone", "scan passeport chiffré iphone", "app documents privés iphone"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Importez PDF, scans et pièces d’identité depuis Fichiers dans un coffre chiffré, consultez-les hors ligne et n’exportez qu’au besoin."
 status: available
 schemaType: WebPage
@@ -24,11 +24,11 @@ faq:
   - q: "Quels documents puis-je stocker dans Velcrypt ?"
     a: "Les documents accessibles dans l’app Fichiers d’iOS, comme les PDF et les pages scannées, ainsi que des images de documents. Exemples typiques : copies de passeport et de carte d’identité, courriers médicaux, contrats et papiers fiscaux."
   - q: "Puis-je scanner un document directement dans Velcrypt ?"
-    a: "Velcrypt n’a ni scanner ni appareil photo intégré. Scannez avec une app qui enregistre dans Fichiers, importez le scan dans Velcrypt, puis supprimez le fichier créé."
+    a: "Velcrypt n’a pas de scanner de documents. Vous pouvez photographier une page avec l’appareil photo intégré au coffre, ou, pour un vrai scan, utiliser une app qui enregistre dans Fichiers, importer le scan dans Velcrypt, puis supprimer le fichier créé."
   - q: "Puis-je envoyer un document de mon coffre à quelqu’un ?"
     a: "Oui, en l’exportant. L’export place une copie déchiffrée hors du coffre, par exemple dans Fichiers ou vers une destination de la feuille de partage. Cette copie n’est plus protégée par Velcrypt : supprimez-la une fois terminé."
   - q: "Mes documents sont-ils envoyés ou synchronisés ?"
-    a: "Non. Velcrypt n’a ni serveurs, ni compte, ni synchronisation cloud. Les documents restent chiffrés sur votre iPhone et, dans la première version, sont exclus des sauvegardes iCloud et sur ordinateur."
+    a: "Non. Velcrypt n’a ni serveurs, ni compte, ni synchronisation cloud. Les documents restent chiffrés sur votre iPhone et sont exclus des sauvegardes iCloud et sur ordinateur. Vous pouvez créer vous-même une sauvegarde chiffrée dans Réglages → Sauvegarde."
 ---
 
 Passeports, cartes de mutuelle, courriers médicaux et contrats signés finissent souvent en fichiers épars dans les Téléchargements ou en photos dans la pellicule. Velcrypt leur réserve un espace dédié et chiffré sur votre iPhone, à l’écart de tout ce que vous consultez au quotidien.
@@ -48,7 +48,7 @@ Chaque document est chiffré sur l’appareil en AES-256-GCM, avec sa propre cl�
 
 ## Scanner en toute confidentialité
 
-Velcrypt n’inclut ni appareil photo ni scanner. La méthode la plus sûre consiste à scanner avec un outil qui enregistre dans Fichiers, à importer le résultat dans Velcrypt, puis à supprimer le scan de son emplacement d’origine. Si l’outil a aussi enregistré une copie dans Photos ou dans un dossier cloud, supprimez-la également.
+Velcrypt n’inclut pas de scanner de documents. Son appareil photo intégré au coffre peut photographier une page directement dans le coffre, sans passer par la photothèque, mais sans recadrage ni redressement. Pour un vrai scan, la méthode la plus sûre consiste à scanner avec un outil qui enregistre dans Fichiers, à importer le résultat dans Velcrypt, puis à supprimer le scan de son emplacement d’origine. Si l’outil a aussi enregistré une copie dans Photos ou dans un dossier cloud, supprimez-la également.
 
 Le guide [scanner des documents en privé sur iPhone](id:scan-documents-privately-iphone) compare les options de numérisation intégrées à iOS et l’endroit où chacune enregistre ses fichiers.
 
@@ -87,5 +87,5 @@ Si vous hésitez entre ces options, [comment protéger un dossier par mot de pas
 
 ## Bon à savoir
 
-- Dans la première version, les données des coffres ne sont incluses ni dans les sauvegardes iCloud ni dans celles sur ordinateur. Gardez une seconde copie des originaux irremplaçables, comme le scan de votre passeport, dans un endroit de confiance.
+- Les données des coffres ne sont incluses ni dans les sauvegardes iCloud ni dans celles sur ordinateur. Pour les documents irremplaçables, comme le scan de votre passeport, créez une sauvegarde chiffrée dans Réglages → Sauvegarde et conservez le fichier dans un endroit de confiance.
 - Un coffre ne peut pas protéger un document que quelqu’un photographie pendant qu’il est affiché à l’écran.

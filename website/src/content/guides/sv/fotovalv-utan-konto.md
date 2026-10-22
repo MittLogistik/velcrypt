@@ -20,7 +20,7 @@ keywords:
   - "fotovalv på enheten iphone"
   - "fotovalv utan internet"
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Vad du vinner på ett fotovalv utan konto eller moln, vad du förlorar och enkla tester för att kontrollera att en app verkligen stannar offline."
 category: choosing
 order: 23
@@ -127,6 +127,6 @@ Inget av detta gör en app dålig. Det betyder bara att den inte är den sortens
 
 Velcrypt är byggt som ett valv på enheten utan konto. Det finns ingen registrering, ingen e-post, inga servrar och inga uppladdningar, och ingen analys av det du lagrar ([offline, utan konto](id:offline-no-account)). Bilder, videor och dokument krypteras på iPhonen med AES-256-GCM med nycklar som härleds från mönstret du ritar ([kryptering](id:encryption)).
 
-Det betyder att appen också har de avvägningar som beskrivs ovan. I den första versionen undantas valvinnehållet från säkerhetskopior till iCloud och dator, så om du tappar bort telefonen eller glömmer mönstret kan innehållet inte återställas, varken av dig eller av oss. Vi förklarar vad du kan göra och vad du inte ska förvänta dig i [glömt mönstret till valvet?](id:forgot-vault-pattern). Ett alternativ för krypterad säkerhetskopiering är planerat för framtiden.
+Det betyder att appen också har de avvägningar som beskrivs ovan. Valvinnehållet undantas från säkerhetskopior till iCloud och dator, och ett glömt mönster kan inte återställas, varken av dig eller av oss. Vi förklarar vad du kan göra och vad du inte ska förvänta dig i [glömt mönstret till valvet?](id:forgot-vault-pattern). För att skydda dig mot en förlorad telefon kan du själv skapa en krypterad säkerhetskopia, skyddad av ett lösenord du väljer, under Inställningar → Säkerhetskopiering.
 
 Innan du flyttar något du inte har råd att förlora till ett offlinevalv, behåll en separat kopia som du själv kontrollerar. Och vilken app du än väljer, kör den genom vår [säkerhetschecklista för fotovalv](id:are-photo-vault-apps-safe).

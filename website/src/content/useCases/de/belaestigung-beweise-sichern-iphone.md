@@ -9,12 +9,12 @@ keyFacts:
   - "Screenshots in der Mediathek kann jeder mit deinem Code oder Apple-Account sehen, löschen oder synchronisieren."
   - "Die Sicherheitsprüfung (Einstellungen › Datenschutz & Sicherheit, ab iOS 16) zeigt, wer Zugriff auf dein iPhone und deinen Account hat."
   - "Beweise nützen nur, wenn sie erhalten bleiben: Bewahr mindestens zwei Kopien an Orten auf, auf die die andere Person keinen Zugriff hat."
-  - "Velcrypt hat in der ersten Version kein Backup und darf daher nie deine einzige Kopie enthalten."
+  - "Velcrypt sichert nicht automatisch und sollte daher nie deine einzige Kopie enthalten."
   - "Beratungsstellen und Polizei vor Ort können sagen, welche Aufzeichnungen dort, wo du lebst, nützlich sind."
 primaryKeyword: "beweise belästigung sichern iphone"
 keywords: ["screenshots belästigung privat aufbewahren", "beweise auf dem iphone speichern", "beweise häusliche gewalt handy", "screenshots vor täter verstecken", "belästigung beweise sicherheit"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Ein behutsamer Ansatz mit Sicherheit zuerst: Screenshots und Fotos von Belästigung privat, unverändert und an einem sicheren Ort gesichert aufbewahren."
 group: sensitive
 schemaType: Article
@@ -26,7 +26,7 @@ faq:
   - q: "Kann ein Täter meine Fotos sehen, wenn wir einen Apple-Account teilen?"
     a: "Ja. Mit iCloud-Fotos werden Fotos auf jedes Gerät synchronisiert, das mit diesem Account angemeldet ist, einschließlich „Ausgeblendet“. Die Sicherheitsprüfung und ein eigener Apple-Account können helfen, aber denk vor Änderungen, die bemerkt werden könnten, an deine Sicherheit."
   - q: "Reicht Velcrypt zum Aufbewahren von Beweisen?"
-    a: "Es kann eine Kopie privat auf deinem iPhone halten, sollte aber nicht deine einzige Kopie sein. In der ersten Version werden Tresordaten nicht gesichert – ist das Handy verloren, kaputt oder weggenommen, ist der Tresor weg."
+    a: "Es kann eine Kopie privat auf deinem iPhone halten, sollte aber nicht deine einzige Kopie sein. Tresordaten werden nicht automatisch gesichert – ist das Handy verloren, kaputt oder weggenommen, ist der Tresor weg, es sei denn, du hast ein verschlüsseltes Backup außerhalb des Handys gespeichert."
   - q: "Ist das eine Rechtsberatung?"
     a: "Nein. Die Regeln für Beweise unterscheiden sich von Land zu Land. Eine Beratungsstelle, eine Anwältin oder ein Anwalt oder die Polizei kann dir sagen, welche Aufzeichnungen dort, wo du lebst, nützlich sind."
 ---
@@ -68,7 +68,7 @@ Tresore öffnen sich mit einem Muster auf einem 5×5-Raster, nicht mit deinem Ge
 
 ## Ehrliche Grenzen – bitte lesen
 
-- **Velcrypt darf nicht deine einzige Kopie sein.** In der ersten Version sind Tresordaten nicht in iCloud- oder Computer-Backups enthalten. Ist das Handy verloren, kaputt oder weggenommen oder vergisst du das Muster, kann niemand den Tresor wiederherstellen.
+- **Velcrypt darf nicht deine einzige Kopie sein.** Tresordaten sind nicht in iCloud- oder Computer-Backups enthalten. Ein verschlüsseltes Backup (Einstellungen → Backup) hilft nur, wenn du es selbst erstellt und an einem sicheren Ort gespeichert hast. Vergisst du das Muster, kann niemand den Tresor wiederherstellen.
 - **Die App ist sichtbar.** Das Velcrypt-Symbol erscheint auf deinem Home-Bildschirm. Ab iOS 18 kannst du Apps in einem ausgeblendeten Ordner hinter Face ID verstecken, doch wer genau hinsieht, bemerkt eine App womöglich trotzdem. Überleg, ob dich das gefährden könnte.
 - **Jemand, der zusieht,** wie du dein Muster zeichnest, oder dir das Handy bei offenem Tresor wegnimmt, hebelt die Sperre aus.
 - **Überwachungssoftware** auf einem gejailbreakten oder manipulierten Handy kann sehen, was auf dem Bildschirm ist. Hast du diesen Verdacht, kann eine Beratungsstelle helfen; ein Gerät, auf das die Person nie Zugriff hatte, ist womöglich sicherer.

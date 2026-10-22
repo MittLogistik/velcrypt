@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "hide videos iphone app"
 keywords: ["encrypted video vault iphone", "private video app iphone", "lock videos iphone", "secret video vault", "hide videos from camera roll"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Import videos as encrypted copies, play them inside the vault, and clear the originals without running out of storage."
 status: available
 schemaType: WebPage
@@ -26,7 +26,7 @@ faq:
   - q: "Why did my free storage drop after importing videos?"
     a: "Importing creates a copy, so until you delete the original from Photos and empty Recently Deleted, the video exists twice. Once the original is gone, the space is freed."
   - q: "Are my vault videos included in iCloud Backup?"
-    a: "No. In the first version, vault data is excluded from iCloud and computer backups. Videos in the vault exist only on your iPhone."
+    a: "No. Vault data is excluded from iCloud and computer backups. Videos in the vault exist only on your iPhone, unless you create an encrypted backup file yourself in Settings → Backup."
   - q: "Do videos in Velcrypt sync to my other devices?"
     a: "No. Velcrypt has no cloud sync and runs only on iPhone. A video in your vault stays on the one phone where you imported it."
 ---
@@ -77,9 +77,9 @@ Keep three things in mind:
 
 ## Good to know
 
-- Velcrypt has no built-in camera. Record with the Camera app, import the video, then delete the original.
+- The in-vault camera records videos straight into the vault, so they never reach your Photos library. For videos you already recorded, import them, then delete the original.
 - Different patterns open different [hidden vaults](id:hidden-vaults). If some videos should never sit next to others, give them a vault of their own rather than just a separate album.
-- Vault data is not backed up in the first version. For irreplaceable videos, keep a second copy somewhere you trust.
+- Vault data is not included in iCloud or computer backups. For irreplaceable videos, create an encrypted backup in Settings → Backup and keep the file somewhere you trust.
 - If a video was ever sent in a chat or posted to a shared album, those copies are outside the vault. The guide on [storing intimate photos safely](id:store-intimate-photos-safely-iphone) covers that risk in more depth.
 
 For a broader look at every built-in and third-party option, see [how to hide videos on iPhone](id:hide-videos-iphone).

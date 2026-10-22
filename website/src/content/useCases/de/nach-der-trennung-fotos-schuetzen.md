@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "ex hat zugriff auf meine fotos iphone"
 keywords: ["code ändern nach trennung", "ex aus geteiltem album entfernen", "sicherheitsprüfung iphone", "ex kennt meinen iphone code", "geteilte icloud fotomediathek verlassen"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Eine ruhige Checkliste für die Wochen nach einer Trennung: neuer Code, Sicherheitsprüfung, geteilte Alben und Mediatheken und ein privater Ort für Fotos."
 group: everyday
 schemaType: Article
@@ -68,7 +68,7 @@ Lösch nach dem Import die [Originale](id:delete-original-photos-after-import) i
 
 - Nichts auf deinem Handy kann Kopien entfernen, die dein Ex schon hat: Fotos, die du geschickt hast, die aus einem geteilten Album gespeichert wurden oder in Backups liegen.
 - Ein Tresor hilft nicht, wenn dir jemand beim Zeichnen des Musters zusieht oder das Handy bei offenem Tresor weggenommen wird.
-- In der ersten Version sind Tresordaten nicht in iCloud- oder Computer-Backups enthalten. Verlierst du das Handy oder vergisst du dein Muster, lässt sich der Tresor nicht wiederherstellen. Bewahr eine zweite Kopie von allem Unersetzlichen an einem sicheren Ort auf.
+- Tresordaten sind nicht in iCloud- oder Computer-Backups enthalten. Verlierst du das Handy, hilft nur ein verschlüsseltes Backup, das du selbst erstellt hast; ein vergessenes Muster lässt sich nicht wiederherstellen. Bewahr eine zweite Kopie von allem Unersetzlichen an einem sicheren Ort auf.
 - Das App-Symbol ist auf deinem Home-Bildschirm sichtbar, es sei denn, du nutzt die iOS-18-Option zum Ausblenden von Apps.
 
 ## Wenn es weitergeht

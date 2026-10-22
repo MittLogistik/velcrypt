@@ -9,12 +9,12 @@ keyFacts:
   - "Jedes Muster ist ein eigener Tresor mit eigenem Verschlüsselungsschlüssel."
   - "Velcrypt zeigt nie eine Liste der Tresore."
   - "Ein unbekanntes Muster öffnet einen leeren Tresor, ohne Fehlermeldung."
-  - "Du kannst einen Köder-Tresor mit gewöhnlichen Inhalten anlegen."
-  - "Mehr Tresore sind als Teil des optionalen Premium-Upgrades geplant."
+  - "Mit Premium kannst du einen Köder-Tresor mit gewöhnlichen Inhalten anlegen."
+  - "Die kostenlose Version hat einen Tresor; mehr Tresore gehören zu Premium."
 primaryKeyword: "versteckter tresor app iphone"
 keywords: ["mehrere tresore foto app", "köder tresor iphone", "geheimer tresor app", "glaubhafte abstreitbarkeit foto tresor", "zweiter versteckter tresor"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Jedes Muster ist ein eigener Tresor. Keine Tresorliste, kein Fehler bei unbekannten Mustern und Platz für einen glaubwürdigen Köder."
 status: available
 schemaType: WebPage
@@ -28,7 +28,7 @@ faq:
   - q: "Kann jemand erkennen, dass ich mehr als einen Tresor habe?"
     a: "Nicht über die Oberfläche der App. Es gibt keine Liste, keinen Zähler und keine Fehlermeldung, die andere Tresore verrät. Velcrypt kann aber nicht verbergen, dass die App installiert ist, und nicht verhindern, dass dir jemand beim Zeichnen zusieht."
   - q: "Was ist ein Köder-Tresor?"
-    a: "Ein Köder-Tresor ist ein Tresor mit gewöhnlichen, glaubwürdigen Inhalten, den du öffnen kannst, wenn du unter Druck zeigen sollst, was in der App ist. Dein echter Tresor bleibt hinter einem anderen Muster."
+    a: "Ein Köder-Tresor ist ein Tresor mit gewöhnlichen, glaubwürdigen Inhalten, den du öffnen kannst, wenn du unter Druck zeigen sollst, was in der App ist. Dein echter Tresor bleibt hinter einem anderen Muster. Weil dafür ein zweiter Tresor nötig ist, braucht ein Köder-Tresor Premium."
 howTo:
   name: "Einen zweiten versteckten Tresor in Velcrypt anlegen"
   steps:
@@ -64,6 +64,8 @@ Praktisch hat das eine Nebenwirkung. Vertust du dich beim Muster, landest du in 
 
 ## So legst du einen zweiten Tresor an
 
+Die kostenlose Version hat einen Tresor mit bis zu 50 Objekten. Für einen zweiten Tresor brauchst du [Premium](id:pricing).
+
 1. **Velcrypt sperren.** Verlasse den aktuellen Tresor, damit das Musterraster erscheint.
 2. **Neues Muster zeichnen.** Nimm eins, das du noch nie benutzt hast, nach den üblichen Regeln: mindestens 6 Punkte und mindestens ein Richtungswechsel.
 3. **Etwas hinzufügen.** Ein leerer Tresor öffnet sich. Importiere ein Foto, Video oder Dokument, um ihn zu nutzen.
@@ -75,7 +77,7 @@ Ein Köder-Tresor ist ein Tresor mit harmlosen, aber glaubwürdigen Inhalten, et
 
 Ein Köder wirkt am besten, wenn er benutzt aussieht. Ein leerer Tresor provoziert die Frage „Warum installierst du eine Tresor-App für nichts?“, ein Tresor mit ein paar Dutzend gewöhnlichen Dateien kaum. Die Anleitung [Was ist ein Köder-Tresor?](id:what-is-a-decoy-vault) zeigt, wie du ihn überzeugend gestaltest.
 
-Für das optionale Premium-Upgrade plant Velcrypt außerdem ein [Notfallmuster](id:duress-pattern) (bald verfügbar). Es soll einen Schritt weiter gehen als ein Köder: Es öffnet einen gewählten Tresor und entfernt still den Zugriff auf die anderen.
+Für ein künftiges Update plant Velcrypt außerdem ein [Notfallmuster](id:duress-pattern). Es soll einen Schritt weiter gehen als ein Köder: Es öffnet einen gewählten Tresor und entfernt still den Zugriff auf die anderen.
 
 ## Wie jeder Tresor getrennt bleibt
 

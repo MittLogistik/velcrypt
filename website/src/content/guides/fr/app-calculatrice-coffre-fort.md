@@ -19,7 +19,7 @@ keywords:
   - "app calculatrice photos cachées"
   - "comment trouver une app calculatrice cachée"
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Comment fonctionnent les coffres déguisés en calculatrice, pourquoi un déguisement n’est pas un chiffrement, et quand l’astuce reste utile."
 category: choosing
 order: 22
@@ -114,6 +114,6 @@ Ce dernier point piège les utilisateurs de tous les types de coffres. L’origi
 
 ## L’approche de Velcrypt
 
-Velcrypt ne se fait pas passer pour autre chose. Il n’a ni déguisement en calculatrice ni icône alternative. Il se concentre plutôt sur ce qui se passe une fois l’app ouverte. Chaque coffre s’ouvre avec son propre schéma tracé sur une grille de 5×5 points, et tout schéma que l’app n’a jamais vu ouvre simplement un coffre vide, sans erreur et sans rien qui prouve l’existence d’autres coffres ([coffres cachés](id:hidden-vaults)). Les fichiers sont chiffrés en AES-256-GCM avec des clés dérivées du schéma ([chiffrement](id:encryption)), et tout reste sur l’appareil.
+Velcrypt ne se fait pas passer pour autre chose. Il n’a pas de déguisement en calculatrice fonctionnelle ; Premium propose seulement des icônes d’écran d’accueil alternatives (calculatrice, minuteur, règle…), et l’app s’ouvre toujours sur la grille de schéma. Il se concentre plutôt sur ce qui se passe une fois l’app ouverte. Chaque coffre s’ouvre avec son propre schéma tracé sur une grille de 5×5 points, et tout schéma que l’app n’a jamais vu ouvre simplement un coffre vide, sans erreur et sans rien qui prouve l’existence d’autres coffres ([coffres cachés](id:hidden-vaults)). Les fichiers sont chiffrés en AES-256-GCM avec des clés dérivées du schéma ([chiffrement](id:encryption)), et tout reste sur l’appareil.
 
-La contrepartie : l’app est visible sur votre écran d’accueil, sauf si vous utilisez la fonction de masquage d’apps d’iOS. Et dans la première version, le contenu du coffre n’est sauvegardé nulle part : un téléphone perdu ou un schéma oublié signifie un contenu perdu. Pour une comparaison directe, voir [Velcrypt ou les apps calculatrice coffre-fort](id:velcrypt-vs-calculator-vault-apps).
+La contrepartie : l’app est visible sur votre écran d’accueil, sauf si vous utilisez la fonction de masquage d’apps d’iOS. Et le contenu du coffre n’est pas inclus dans les sauvegardes iCloud ou sur ordinateur : un schéma oublié signifie un contenu perdu, et un téléphone perdu aussi, sauf si vous avez créé une sauvegarde chiffrée. Pour une comparaison directe, voir [Velcrypt ou les apps calculatrice coffre-fort](id:velcrypt-vs-calculator-vault-apps).

@@ -10,11 +10,11 @@ keyFacts:
   - "Avec Photos iCloud, les documents de la pellicule se synchronisent sur tous vos appareils et peuvent apparaître dans les widgets et les Souvenirs."
   - "Velcrypt importe les documents de l’app Fichiers et les photos de votre photothèque dans des coffres chiffrés."
   - "Les éléments importés sont des copies : supprimez ensuite les originaux et videz « Suppressions récentes »."
-  - "Dans la première version, les coffres Velcrypt ne sont pas dans les sauvegardes iCloud ou sur ordinateur : gardez une seconde copie des documents essentiels."
+  - "Les coffres Velcrypt ne sont pas dans les sauvegardes iCloud ou sur ordinateur : créez une sauvegarde chiffrée des documents essentiels."
 primaryKeyword: "stocker ses papiers d’identité sur iphone"
 keywords: ["photo de passeport sur iphone sécurisée", "cacher des photos médicales iphone", "carte vitale sur iphone", "documents privés iphone", "ordonnance photo confidentialité", "protéger ses papiers d’identité iphone"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Passeports, cartes d’assurance et photos médicales méritent mieux que la pellicule. Où ils fuient sur iPhone et comment les protéger."
 group: sensitive
 schemaType: Article
@@ -28,7 +28,7 @@ faq:
   - q: "Puis-je mettre des PDF dans Velcrypt ?"
     a: "Oui. Velcrypt importe des documents depuis l’app Fichiers : des PDF comme des ordonnances, des courriers d’assurance ou des résultats d’analyses peuvent être stockés dans un coffre à côté des photos."
   - q: "Que se passe-t-il si je perds mon téléphone avec mes documents dans Velcrypt ?"
-    a: "Sans votre schéma, personne ne peut ouvrir le coffre. Mais dans la première version, les coffres ne sont pas sauvegardés : les documents sont donc perdus eux aussi. Gardez les originaux ou une seconde copie en lieu sûr."
+    a: "Sans votre schéma, personne ne peut ouvrir le coffre. Mais les coffres ne figurent pas dans les sauvegardes de l’iPhone : sans sauvegarde chiffrée Velcrypt créée à l’avance, les documents sont perdus eux aussi. Gardez une sauvegarde chiffrée ou les originaux en lieu sûr."
 ---
 
 Nous l’avons presque tous fait : photographier un passeport au comptoir de l’aéroport, prendre en photo une carte d’assurance pour un formulaire, ou photographier une éruption cutanée pour la montrer au médecin. C’est pratique. Mais ces photos vivent ensuite dans la pellicule, à côté des photos de vacances et des mèmes, pendant des années.
@@ -65,7 +65,7 @@ Quand vous devez envoyer un document — à un médecin ou à un service des vis
 
 ## Des limites honnêtes
 
-- **Pas de sauvegarde dans la première version.** Les données des coffres sont exclues des sauvegardes iCloud et sur ordinateur. Si vous perdez votre téléphone ou oubliez votre schéma, les documents ne peuvent pas être récupérés. Pour les documents essentiels, gardez les originaux ou une seconde copie que vous contrôlez. Une option de sauvegarde chiffrée est prévue.
+- **Pas de sauvegarde automatique.** Les données des coffres sont exclues des sauvegardes iCloud et sur ordinateur. Si vous oubliez votre schéma, les documents ne peuvent pas être récupérés ; si vous perdez le téléphone, seule une sauvegarde chiffrée permet de les restaurer. Pour les documents essentiels, créez une sauvegarde chiffrée dans Réglages → Sauvegarde, ou gardez les originaux en lieu sûr.
 - **Les copies ailleurs ne sont pas protégées.** E-mails, pièces jointes de conversations et copies iCloud restent en place tant que vous ne les supprimez pas. Voir [supprimer les originaux après l’import](id:delete-original-photos-after-import).
 - **Tout ce que vous exportez** quitte le coffre et n’est plus privé qu’à la mesure de l’endroit où il arrive.
 - **Quelqu’un qui vous regarde** tracer votre schéma, ou un téléphone tendu avec le coffre ouvert, rend le verrou inutile.

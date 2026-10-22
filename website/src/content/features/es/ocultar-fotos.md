@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "app para ocultar fotos iphone"
 keywords: ["bóveda de fotos cifrada iphone", "app álbum de fotos privado", "esconder fotos iphone", "app para bloquear fotos", "bóveda de fotos secreta"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Importa fotos como copias cifradas, borra los originales y el álbum Eliminado y míralas en álbumes con zoom y deslizamiento."
 status: available
 schemaType: WebPage
@@ -79,6 +79,6 @@ El álbum Oculto es cómodo y suficiente para mucha gente. Sus límites se expli
 
 ## Conviene saber
 
-- Velcrypt no tiene cámara integrada. Haz la foto con la app Cámara, impórtala y después borra el original.
+- Con la cámara de la bóveda, las fotos nuevas van directamente a la bóveda y nunca llegan a tu fototeca. Si haces la foto con la app Cámara, impórtala y después borra el original.
 - Las fotos pueden llevar datos de ubicación y del dispositivo. Si piensas compartirlas más adelante, [elimina antes los metadatos](id:remove-photo-metadata-iphone).
-- En la primera versión no se hace copia de seguridad de la bóveda. Si una foto es irreemplazable, guarda una segunda copia en un lugar de confianza.
+- La bóveda no se incluye en las copias de iCloud ni del ordenador. Si una foto es irreemplazable, crea una copia de seguridad cifrada en Ajustes → Copia de seguridad y guárdala fuera del iPhone.

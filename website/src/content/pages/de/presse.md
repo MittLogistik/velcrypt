@@ -8,13 +8,13 @@ answer: "Velcrypt ist eine iPhone-App (iOS 17 oder neuer), die private Fotos, Vi
 keyFacts:
   - "Tagline: „Well Encrypted. Truly Private.“"
   - "Plattform: iPhone, iOS 17 oder neuer."
-  - "Preismodell: kostenlos mit optionalem Premium; Preise folgen."
+  - "Preismodell: kostenlos (1 Tresor, 50 Objekte); Premium 1,99 $/Woche, 19,99 $/Jahr oder 39,99 $ einmalig (USD)."
   - "Downloads: Logo und Bildmarke (transparentes PNG) sowie App-Symbol mit 1024 px."
   - "Pressekontakt: press@velcrypt.app."
 primaryKeyword: "velcrypt pressekit"
 keywords: ["velcrypt logo", "velcrypt presse", "velcrypt faktenblatt", "velcrypt markenfarben"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 schemaType: WebPage
 order: 8
 related: [about, security, features, pricing]
@@ -47,12 +47,14 @@ Velcrypt ist eine native iPhone-App, die private Fotos, Videos und Dokumente in 
 | Tagline | Well Encrypted. Truly Private. |
 | Plattform | iPhone, iOS 17 oder neuer |
 | Kategorie | Datenschutz / Dienstprogramme – verschlüsselter Tresor für Fotos, Videos und Dokumente |
-| Preismodell | Kostenlos mit optionalem Premium; Preise folgen |
+| Preismodell | Kostenlos: 1 Tresor mit bis zu 50 Objekten. Premium (unbegrenzte Objekte, mehr Tresore, alternative App-Symbole): 1,99 $/Woche, 19,99 $/Jahr mit 3 Tagen Gratistest oder 39,99 $ einmalig (USD; Preise variieren je nach Land) |
 | Entsperren | Muster auf einem 5×5-Punkteraster; bewusst kein Face ID oder Touch ID |
 | Tresore | Jedes Muster ist ein eigener Tresor; keine Tresorliste |
 | Verschlüsselung | AES-256-GCM (Apple CryptoKit); Schlüsselableitung mit PBKDF2-HMAC-SHA512 |
 | Daten | 100 % auf dem Gerät; kein Konto, keine Cloud-Synchronisierung, keine Werbung |
-| Geplant | Notfallmuster (demnächst), verschlüsseltes Backup |
+| Backup | Kostenloses, manuelles verschlüsseltes Backup als passwortgeschützte .velcrypt-Datei |
+| Geplant | Notfallmuster (künftiges Update) |
+| Herausgeber | Swedish Treats AB, Schweden |
 | Pressekontakt | press@velcrypt.app |
 
 Für technische Details verlinke bitte das [Sicherheitsmodell](id:security); einen Funktionsüberblick bieten die [Funktionen](id:features).
@@ -82,11 +84,11 @@ Bitte verwende die Dateien so, wie sie bereitgestellt werden: Lass genug Freirau
 Ein paar Punkte helfen, die Berichterstattung korrekt zu halten:
 
 - Velcrypt wurde **nicht** unabhängig auditiert. Bitte bezeichne die App nicht als auditiert.
-- Das Notfallmuster und das verschlüsselte Backup sind geplant, nicht verfügbar.
+- Das Notfallmuster ist geplant, nicht verfügbar. Das verschlüsselte Backup ist verfügbar und kostenlos.
 - Velcrypt kann vergessene Muster nicht wiederherstellen; das ist eine bewusste Folge davon, dass es weder Konto noch Server gibt.
 - Es gibt noch keine Presseberichte zum Zitieren, und wir veröffentlichen keine Nutzerzahlen oder Bewertungen.
 
-Lies [Über Velcrypt](id:about) für die Prinzipien hinter der App und [Preise](id:pricing) für das, was Premium enthalten soll.
+Lies [Über Velcrypt](id:about) für die Prinzipien hinter der App und [Preise](id:pricing) für das, was Premium enthält.
 
 ## Pressekontakt
 

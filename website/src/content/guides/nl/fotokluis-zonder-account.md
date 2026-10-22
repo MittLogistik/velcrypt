@@ -20,7 +20,7 @@ keywords:
   - "fotokluis op het apparaat iphone"
   - "fotokluis zonder internet"
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Wat je wint met een fotokluis zonder account of cloud, wat je verliest en eenvoudige tests om te checken of een app echt offline blijft."
 category: choosing
 order: 23
@@ -127,6 +127,6 @@ Geen van deze maakt een app slecht. Ze betekenen alleen dat het niet het soort k
 
 Velcrypt is gebouwd als kluis op het apparaat, zonder account. Er is geen registratie, geen e-mail, geen servers en geen uploads, en geen analyse van wat je bewaart ([offline, zonder account](id:offline-no-account)). Foto's, video's en documenten worden op de iPhone versleuteld met AES-256-GCM, met sleutels die zijn afgeleid van het patroon dat je tekent ([versleuteling](id:encryption)).
 
-Dat betekent ook dat de app de hierboven beschreven afwegingen meedraagt. In de eerste versie valt kluisinhoud buiten iCloud- en computerback-ups. Verlies je de telefoon of vergeet je je patroon, dan is de inhoud niet te herstellen, niet door jou en niet door ons. We leggen uit wat je dan kunt doen en wat je niet moet verwachten in [kluispatroon vergeten?](id:forgot-vault-pattern). Een optie voor versleutelde back-ups is gepland voor de toekomst.
+Dat betekent ook dat de app de hierboven beschreven afwegingen meedraagt. Kluisinhoud valt buiten iCloud- en computerback-ups. Vergeet je je patroon, dan is de inhoud niet te herstellen, niet door jou en niet door ons; verlies je de telefoon, dan helpt alleen een versleuteld back-upbestand dat je zelf hebt gemaakt. We leggen uit wat je dan kunt doen en wat je niet moet verwachten in [kluispatroon vergeten?](id:forgot-vault-pattern). Zo'n back-up is gratis: via Instellingen → Back-up maak je een .velcrypt-bestand, beveiligd met een back-upwachtwoord dat je zelf kiest en dat Velcrypt nooit ontvangt.
 
 Bewaar een aparte kopie die jij beheert voordat je iets wat je niet kwijt mag raken in een offline kluis zet. En welke app je ook kiest, haal hem door onze [veiligheidschecklist voor fotokluizen](id:are-photo-vault-apps-safe).

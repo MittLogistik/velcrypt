@@ -10,11 +10,11 @@ keyFacts:
   - "I documenti nel rullino si sincronizzano su ogni dispositivo con Foto di iCloud e possono comparire nei widget e nei Ricordi."
   - "Velcrypt importa documenti dall'app File e foto dalla libreria in casseforti cifrate."
   - "Gli elementi importati sono copie: poi elimina gli originali e svuota «Eliminati di recente»."
-  - "Nella prima versione le casseforti Velcrypt non sono nei backup di iCloud o del computer, quindi tieni una seconda copia dei documenti importanti."
+  - "Le casseforti Velcrypt non sono nei backup di iCloud o del computer: crea un backup cifrato o tieni una seconda copia dei documenti importanti."
 primaryKeyword: "conservare documenti d'identità su iphone"
 keywords: ["foto del passaporto su iphone sicura", "nascondere foto mediche iphone", "tessera sanitaria su iphone", "documenti privati iphone", "privacy foto ricette mediche"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Passaporti, tessere sanitarie e foto mediche meritano più del rullino. Dove trapelano su iPhone e come tenerli privati."
 group: sensitive
 schemaType: Article
@@ -28,7 +28,7 @@ faq:
   - q: "Posso mettere dei PDF in Velcrypt?"
     a: "Sì. Velcrypt importa documenti dall'app File, quindi PDF come ricette, lettere dell'assicurazione o referti di laboratorio possono stare in una cassaforte insieme alle foto."
   - q: "E se perdo il telefono con i miei documenti in Velcrypt?"
-    a: "Senza la tua sequenza nessuno può aprire la cassaforte. Ma nella prima versione i dati delle casseforti non finiscono nei backup, quindi anche i documenti vanno persi. Tieni gli originali o una seconda copia in un posto sicuro."
+    a: "Senza la tua sequenza nessuno può aprire la cassaforte. Ma i dati delle casseforti non finiscono nei backup di iCloud, quindi senza un backup cifrato di Velcrypt anche i documenti vanno persi. Crea un backup o tieni gli originali in un posto sicuro."
 ---
 
 È capitato a quasi tutti: fotografare il passaporto al banco del check-in, scattare una foto alla tessera sanitaria per un modulo o fotografare un'irritazione cutanea da mostrare al medico. È pratico. Ma poi quelle foto restano nel rullino per anni, accanto alle foto delle vacanze e ai meme.
@@ -65,7 +65,7 @@ Quando devi inviare un documento, al medico o a un ufficio visti, puoi usare l'e
 
 ## Limiti, detti con onestà
 
-- **Nessun backup nella prima versione.** I dati delle casseforti sono esclusi dai backup di iCloud e del computer. Se perdi il telefono o dimentichi la sequenza, i documenti non si possono recuperare. Per i documenti importanti tieni gli originali o una seconda copia sotto il tuo controllo. È prevista un'opzione di backup cifrato.
+- **Backup solo manuale.** I dati delle casseforti sono esclusi dai backup di iCloud e del computer. Se perdi il telefono senza un backup cifrato, o dimentichi la sequenza, la cassaforte non si può recuperare. Per i documenti importanti crea un backup cifrato in Impostazioni → Backup o tieni gli originali sotto il tuo controllo.
 - **Le copie altrove non sono protette.** Email, allegati delle chat e copie su iCloud restano dove sono finché non le rimuovi. Vedi [come eliminare gli originali dopo l'importazione](id:delete-original-photos-after-import).
 - **Tutto ciò che esporti** esce dalla cassaforte ed è privato solo quanto il posto in cui finisce.
 - **Qualcuno che ti guarda** disegnare la sequenza, o un telefono consegnato con la cassaforte aperta, vanifica il blocco.

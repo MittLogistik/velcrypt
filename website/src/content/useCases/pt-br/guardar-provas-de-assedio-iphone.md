@@ -9,12 +9,12 @@ keyFacts:
   - "Prints no rolo da câmera podem ser vistos, apagados ou sincronizados por qualquer pessoa com o seu código ou a sua Conta Apple."
   - "A Verificação de Segurança (Ajustes › Privacidade e Segurança, iOS 16+) ajuda a ver quem tem acesso ao seu iPhone e à sua conta."
   - "Uma prova só é útil se sobreviver: tenha pelo menos duas cópias, em lugares que a outra pessoa não acesse."
-  - "O Velcrypt não tem backup na primeira versão, então nunca deve guardar a sua única cópia."
+  - "Os cofres do Velcrypt ficam fora dos backups do iCloud, então o cofre nunca deve ser a sua única cópia."
   - "Organizações de apoio e a polícia da sua região podem orientar sobre quais registros são úteis onde você mora."
 primaryKeyword: "como guardar provas de assédio no celular"
 keywords: ["guardar prints de assédio em sigilo", "salvar provas no iphone", "registrar provas de abuso no celular", "esconder prints do agressor", "segurança de provas de assédio"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Um jeito cuidadoso, com a segurança em primeiro lugar, de manter prints e fotos de assédio privados, intactos e com cópia em lugar seguro."
 group: sensitive
 schemaType: Article
@@ -26,7 +26,7 @@ faq:
   - q: "Um agressor consegue ver minhas fotos se compartilhamos uma Conta Apple?"
     a: "Sim. Com as Fotos do iCloud ativadas, as fotos sincronizam com todos os aparelhos conectados àquela conta, incluindo o álbum Ocultos. A Verificação de Segurança e uma Conta Apple separada podem ajudar, mas pense na sua segurança antes de fazer mudanças que a pessoa possa perceber."
   - q: "O Velcrypt basta para guardar provas?"
-    a: "Ele pode manter uma cópia privada no seu iPhone, mas não deve ser a sua única cópia. Na primeira versão, os dados do cofre não têm backup, então um celular perdido, quebrado ou tomado significa que o cofre se foi."
+    a: "Ele pode manter uma cópia privada no seu iPhone, mas não deve ser a sua única cópia. Os dados do cofre não entram nos backups do iCloud nem do computador, então um celular perdido, quebrado ou tomado significa que o cofre se foi, a menos que você tenha um backup criptografado guardado em outro lugar."
   - q: "Isto é aconselhamento jurídico?"
     a: "Não. As regras sobre provas variam de país para país. Uma organização de apoio, um advogado ou a polícia podem dizer que tipo de registro é útil onde você mora."
 ---
@@ -70,7 +70,7 @@ Os cofres abrem com um padrão desenhado em uma grade 5×5, não com o código d
 
 ## Limites honestos — leia, por favor
 
-- **O Velcrypt não pode ser a sua única cópia.** Na primeira versão, os dados do cofre não entram nos backups do iCloud nem do computador. Se o celular for perdido, quebrar ou for tomado, ou se você esquecer o padrão, ninguém consegue recuperar o cofre.
+- **O Velcrypt não pode ser a sua única cópia.** Os dados do cofre não entram nos backups do iCloud nem do computador. Se o celular for perdido, quebrar ou for tomado, ou se você esquecer o padrão, ninguém consegue recuperar o cofre. Um backup criptografado (Ajustes → Backup) guardado fora do celular ajuda, mas provas importantes também devem ficar com alguém de confiança.
 - **O app fica visível.** O ícone do Velcrypt aparece na Tela de Início. O iOS 18 permite ocultar apps atrás do Face ID em uma pasta oculta, mas alguém que olhe com atenção ainda pode notar um app. Avalie se isso pode colocar você em risco.
 - **Alguém observando** você desenhar o padrão, ou tomando o celular com o cofre aberto, anula a proteção.
 - **Softwares de monitoramento** em um celular com jailbreak ou adulterado conseguem ver o que está na tela. Se você suspeitar disso, uma organização de apoio pode orientar; usar um aparelho ao qual a pessoa nunca teve acesso pode ser mais seguro.

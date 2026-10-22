@@ -10,11 +10,11 @@ keyFacts:
   - "Velcrypt se déverrouille avec un motif sur une grille 5×5 ; chaque motif est un coffre distinct."
   - "Velcrypt publie la conception de son chiffrement : AES-256-GCM avec dérivation de clé PBKDF2-HMAC-SHA512."
   - "Velcrypt n’a ni photos d’intrus ni Face ID, par choix."
-  - "Velcrypt v1 n’a pas de sauvegarde : un motif oublié ou un téléphone perdu signifie que le coffre est perdu."
+  - "Velcrypt n’a pas de sauvegarde cloud, mais une sauvegarde chiffrée manuelle et gratuite ; un motif oublié reste irrécupérable."
 primaryKeyword: "velcrypt vs private photo vault"
 keywords: ["alternative à private photo vault", "comparatif private photo vault", "private photo vault avis", "coffre-fort photo mot de passe leurre", "coffre-fort photo verrouillage par motif"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Un coffre à code PIN avec leurre et rapports d’intrusion face à un coffre chiffré par motif, sans compte. Comparatif neutre."
 competitor: "Private Photo Vault"
 lastChecked: "octobre 2026"
@@ -49,14 +49,14 @@ Velcrypt est un coffre sur l’appareil verrouillé par motif. Un motif est une 
 |---|---|---|
 | Détails du chiffrement sur l’appareil publiés | Oui : AES-256-GCM, clés par coffre et par fichier | Pas détaillés publiquement |
 | Compte requis | Non | Non indiqué publiquement |
-| Sauvegarde cloud | Non (v1) ; sauvegarde chiffrée prévue | Variable ; vérifiez la fiche actuelle |
+| Sauvegarde cloud | Non ; sauvegarde chiffrée manuelle et gratuite (fichier protégé par mot de passe) | Variable ; vérifiez la fiche actuelle |
 | Méthode de déverrouillage | Motif sur une grille 5×5 | Code PIN / code d’accès |
 | Biométrie (Face ID / Touch ID) | Non proposée, par choix | Variable |
 | Leurre / plusieurs coffres | Chaque motif est son propre coffre | Mot de passe leurre |
-| Motif de contrainte | Bientôt disponible (Premium) | Non indiqué publiquement |
+| Motif de contrainte | Prévu, pas encore disponible | Non indiqué publiquement |
 | Rapports d’intrusion | Non proposés | Proposés, d’après sa fiche |
 | Récupération en cas d’oubli du code | Aucune | Non indiqué publiquement |
-| Modèle économique | Version gratuite plus option Premium | Version gratuite plus mise à niveau payante |
+| Modèle économique | Gratuit (1 coffre, 50 éléments) ; Premium en abonnement ou achat unique | Version gratuite plus mise à niveau payante |
 | Plateformes | iPhone (iOS 17+) | Variable ; vérifiez les fiches des stores |
 
 <!-- TODO verify -->
@@ -83,7 +83,7 @@ Pour Private Photo Vault, nous n’avons pas trouvé de description technique pu
 
 - **Vous voulez des rapports d’intrusion.** Si savoir que quelqu’un a tenté d’ouvrir votre coffre compte pour vous, Velcrypt ne le propose pas.
 - **Vous préférez un code numérique ou Face ID.** Certaines personnes trouvent un code PIN plus rapide que tracer un motif.
-- **Vous voulez une option de sauvegarde ou de transfert.** Si la version que vous utilisez en propose une, c’est quelque chose que Velcrypt v1 n’a pas.
+- **Vous voulez une option de sauvegarde ou de transfert.** Velcrypt propose une sauvegarde chiffrée manuelle, mais ni sauvegarde cloud automatique ni transfert direct entre appareils.
 - **Vous êtes déjà bien installé.** Déplacer une grande photothèque demande des efforts ; changer n’a de sens que si les différences comptent pour vous.
 
 <!-- TODO verify -->

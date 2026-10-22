@@ -7,14 +7,14 @@ navTitle: "Velcrypt vs Keepsafe"
 answer: "Velcrypt houdt alles op je iPhone, zonder account, en ontgrendelt met een getekend patroon, terwijl Keepsafe volgens de App Store-vermelding een account gebruikt en een cloudback-up aanbiedt. Kies Velcrypt voor alleen lokale opslag en plausibele ontkenning; Keepsafe past mogelijk beter als je back-up en synchronisatie wilt."
 keyFacts:
   - "Velcrypt heeft geen account, e-mail of registratie nodig; Keepsafe gebruikt volgens de vermelding een account."
-  - "Keepsafe biedt een optionele cloudback-up; Velcrypt v1 bewaart kluizen alleen op je iPhone."
+  - "Keepsafe biedt een optionele cloudback-up; Velcrypt bewaart kluizen op je iPhone, met een gratis versleuteld back-upbestand dat je zelf bewaart."
   - "Velcrypt ontgrendelt met een patroon op een raster van 5×5 en heeft bewust geen Face ID of Touch ID."
   - "In Velcrypt opent elk patroon een eigen kluis, en onbekende patronen openen een lege."
-  - "Vergeet je je Velcrypt-patroon of raak je de telefoon kwijt, dan kan de kluis niet worden hersteld."
+  - "Vergeet je je Velcrypt-patroon, dan kan de kluis niet worden hersteld."
 primaryKeyword: "velcrypt vs keepsafe"
 keywords: ["keepsafe vs velcrypt", "keepsafe vergelijking", "keepsafe fotokluis alternatief", "fotokluis zonder account", "keepsafe cloudback-up"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Een lokale kluis zonder account tegenover een kluis met account en cloudback-up. Waar elk van beide past, naast elkaar gezet."
 competitor: "Keepsafe"
 lastChecked: "oktober 2026"
@@ -24,7 +24,7 @@ faq:
   - q: "Heb je voor Keepsafe een account nodig?"
     a: "Volgens de App Store-vermelding op het moment van schrijven gebruikt Keepsafe een account dat aan een e-mailadres is gekoppeld, wat functies zoals cloudback-up mogelijk maakt. Velcrypt heeft helemaal geen account; niets over jou of je kluis verlaat de telefoon."
   - q: "Kan Velcrypt mijn kluis back-uppen zoals de cloud van Keepsafe?"
-    a: "Niet in de eerste versie. Velcrypt sluit kluisgegevens uit van iCloud- en computerback-ups, dus bij een verloren telefoon of vergeten patroon is de kluis weg. Een versleutelde back-upoptie is gepland, zonder vaste datum."
+    a: "Niet automatisch. Velcrypt sluit kluisgegevens uit van iCloud- en computerback-ups. Je kunt wel gratis via Instellingen → Back-up een versleuteld .velcrypt-bestand maken en dat zelf in iCloud Drive, Bestanden of op een computer bewaren. Een vergeten patroon of back-upwachtwoord is niet te herstellen."
   - q: "Welke van de twee heeft een lokkluis?"
     a: "Allebei bieden ze een vorm van lokkluis. Keepsafe heeft een nep- of lokpincode beschreven als premiumfunctie. In Velcrypt kan elk patroon een eigen kluis zijn, dus je kunt een onschuldige lokkluis aanhouden, en onbekende patronen openen gewoon een lege kluis."
   - q: "Kan ik overstappen van Keepsafe naar Velcrypt?"
@@ -49,14 +49,14 @@ Geen van beide benaderingen is altijd beter. De ene ruilt gemak in voor zo min m
 |---|---|---|
 | Details over versleuteling op het apparaat gepubliceerd | Ja: AES-256-GCM, sleutelafleiding met PBKDF2-HMAC-SHA512 (zie [versleuteling](id:encryption)) | Niet in detail openbaar |
 | Account nodig | Geen account, geen e-mail | Ja, volgens de vermelding |
-| Cloudback-up | Nee (v1); versleutelde back-up gepland | Optionele “Private Cloud” met premium |
+| Cloudback-up | Geen automatische; gratis versleuteld back-upbestand dat je zelf bewaart | Optionele “Private Cloud” met premium |
 | Ontgrendelen | Patroon op een raster van 5×5 | Pincode of toegangscode |
 | Biometrie (Face ID / Touch ID) | Bewust niet aangeboden | Ondersteund, volgens de vermelding |
-| Lokkluis / meerdere kluizen | Elk patroon is een eigen kluis | Nep-/lokpincode in premium |
-| Dwangpatroon | Binnenkort (Premium) | Niet openbaar vermeld |
+| Lokkluis / meerdere kluizen | Elk patroon is een eigen kluis (tweede kluis met Premium) | Nep-/lokpincode in premium |
+| Dwangpatroon | Gepland voor een toekomstige update | Niet openbaar vermeld |
 | Meldingen bij inbraakpogingen | Niet aangeboden | Aangeboden in premium |
 | Herstel als je de code vergeet | Geen; de kluis kan niet worden hersteld | Verschilt; herstel via het account is mogelijk beschikbaar |
-| Verdienmodel | Gratis versie plus optioneel Premium (zie [prijzen](id:pricing)) | Gratis versie plus premiumabonnement |
+| Verdienmodel | Gratis (1 kluis, tot 50 onderdelen); Premium vanaf $ 1,99 per week (zie [prijzen](id:pricing)) | Gratis versie plus premiumabonnement |
 | Platforms | iPhone (iOS 17+) | iOS en Android |
 
 <!-- TODO verify -->
@@ -81,11 +81,11 @@ Veel kluis-apps bieden een tweede, valse code die een onschuldige kluis opent. K
 
 <!-- TODO verify -->
 
-Bij Velcrypt zit dat in de structuur, niet in een extraatje. Elk patroon is een eigen kluis, er is geen lijst van kluizen, en een patroon dat de app nog nooit heeft gezien, opent gewoon een lege kluis zonder foutmelding. Niets op het scherm bewijst dat er andere kluizen bestaan. Dat is wat [verborgen kluizen](id:hidden-vaults) en [plausibele ontkenning](id:plausible-deniability-explained) in de praktijk betekenen. Een dwangpatroon, dat een gekozen kluis zou openen en stilletjes de toegang tot de andere zou verwijderen, is gepland voor Premium en komt binnenkort.
+Bij Velcrypt zit dat in de structuur, niet in een extraatje. Elk patroon is een eigen kluis, er is geen lijst van kluizen, en een patroon dat de app nog nooit heeft gezien, opent gewoon een lege kluis zonder foutmelding. Niets op het scherm bewijst dat er andere kluizen bestaan. Dat is wat [verborgen kluizen](id:hidden-vaults) en [plausibele ontkenning](id:plausible-deniability-explained) in de praktijk betekenen. Een tweede kluis vraagt om Premium. Een dwangpatroon, dat een gekozen kluis zou openen en stilletjes de toegang tot de andere zou verwijderen, is gepland voor een toekomstige update.
 
 ## Wanneer Keepsafe misschien beter bij je past
 
-- **Je wilt back-up en synchronisatie.** Als een verloren telefoon niet mag betekenen dat je je foto’s kwijt bent, is een cloudback-up met account vandaag het eenvoudigste antwoord. Velcrypt v1 biedt die niet.
+- **Je wilt back-up en synchronisatie.** Als een verloren telefoon niet mag betekenen dat je je foto’s kwijt bent, is een cloudback-up met account vandaag het eenvoudigste antwoord. Velcrypt biedt alleen een handmatig back-upbestand, dat je zelf moet maken en bijhouden.
 - **Je gebruikt ook Android.** Keepsafe is volgens de winkelvermeldingen op meer dan één platform beschikbaar; Velcrypt is alleen voor iPhone.
 - **Je hebt liever Face ID.** Weegt het gemak van biometrie voor jou zwaarder dan de zorg over gedwongen ontgrendelen, dan biedt Velcrypt dat bewust niet.
 - **Je wilt meldingen bij inbraakpogingen.** Velcrypt maakt geen foto’s van indringers.

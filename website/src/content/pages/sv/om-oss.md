@@ -10,21 +10,21 @@ keyFacts:
   - "Ingen Face ID eller Touch ID, med avsikt – ett mönster finns bara i ditt minne."
   - "Inga annonser och ingen försäljning av data."
   - "Ärliga om begränsningarna, bland annat att glömda mönster inte kan återställas."
-  - "Planerat: tvångsmönster (kommer snart) och krypterad säkerhetskopiering."
+  - "Krypterad säkerhetskopiering ingår gratis; ett tvångsmönster är planerat."
 primaryKeyword: "om velcrypt"
 keywords: ["velcrypt app", "vem står bakom velcrypt", "velcrypts principer", "privat fotovalv iphone"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 schemaType: AboutPage
 order: 4
 related: [security, features, offline-no-account, pricing, press]
 faq:
   - q: "Varför sparar Velcrypt ingenting i molnet?"
-    a: "För att data som aldrig lämnar din telefon inte kan exponeras genom ett serverintrång, ett myndighetskrav mot en leverantör eller ett återanvänt lösenord. Baksidan är att det inte finns någon återställning om du tappar bort telefonen eller glömmer mönstret."
+    a: "För att data som aldrig lämnar din telefon inte kan exponeras genom ett serverintrång, ett myndighetskrav mot en leverantör eller ett återanvänt lösenord. Baksidan är att ingen kan återställa ett glömt mönster, och att en förlorad telefon tar valven med sig om du inte själv har skapat en krypterad säkerhetskopia."
   - q: "Tjänar Velcrypt pengar på mina data?"
-    a: "Nej. Velcrypt samlar inte in ditt valvinnehåll eller analysdata om det och visar inga annonser. Planen är en gratisversion med en valfri betald Premium-uppgradering."
+    a: "Nej. Velcrypt samlar inte in ditt valvinnehåll eller analysdata om det och visar inga annonser. Appen finansieras genom en gratisversion med en valfri betald Premium-uppgradering."
   - q: "Vad arbetar Velcrypt med härnäst?"
-    a: "Planerat är bland annat ett tvångsmönster (kommer snart) och ett alternativ för krypterad säkerhetskopiering, båda som en del av Premium. Inget av dem har något releasedatum ännu."
+    a: "Ett tvångsmönster är planerat till en framtida uppdatering. Det har inget releasedatum ännu. Krypterad säkerhetskopiering och Premium finns redan i appen."
 ---
 
 <!-- TODO: add founder/company details -->
@@ -57,20 +57,18 @@ Integritetsverktyg sviker människor när de lovar för mycket. Vi berättar hel
 
 ### Inga annonser, ingen dataförsäljning
 
-Velcrypt visar ingen reklam och säljer inga data. Appen samlar inte in ditt valvinnehåll eller analysdata om det, så det finns ingenting att sälja. Velcrypt ska finansieras genom en valfri Premium-uppgradering – se [priser](id:pricing).
+Velcrypt visar ingen reklam och säljer inga data. Appen samlar inte in ditt valvinnehåll eller analysdata om det, så det finns ingenting att sälja. Velcrypt finansieras genom en valfri Premium-uppgradering – se [priser](id:pricing).
 
 ## Det här kommer härnäst
 
-Följande är planerat. Det finns inte i appen i dag, och vi sätter inga datum förrän det är klart.
+Krypterad säkerhetskopiering och återställning finns redan i appen och är gratis. Premium, med fler valv, obegränsat antal objekt och alternativa appikoner, finns också. Följande är planerat. Det finns inte i appen i dag, och vi sätter inga datum förrän det är klart.
 
 | Funktion | Status |
 |---|---|
-| [Tvångsmönster](id:duress-pattern) – öppnar ett valt valv och tar i tysthet bort åtkomsten till de andra | Kommer snart (Premium) |
-| Krypterad säkerhetskopiering och återställning | Planerat (Premium) |
-| Fler valv och obegränsat antal objekt | Planerat (Premium) |
+| [Tvångsmönster](id:duress-pattern) – öppnar ett valt valv och tar i tysthet bort åtkomsten till de andra | Planerat till en framtida uppdatering |
 
 Allt vi lägger till följer samma principer: på enheten som standard, inget konto och en tydlig förklaring av avvägningarna.
 
 ## Kontakta oss
 
-Frågor, synpunkter eller en säkerhetsfråga? Nå oss via [support](id:support). Journalister hittar logotyper, färger och ett faktablad i [pressrummet](id:press).
+Velcrypt ges ut av Swedish Treats AB i Sverige. Frågor, synpunkter eller en säkerhetsfråga? Nå oss via [support](id:support). Journalister hittar logotyper, färger och ett faktablad i [pressrummet](id:press).

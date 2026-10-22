@@ -10,11 +10,11 @@ keyFacts:
   - "Celular perdido, celular emprestado e quartos de hotel compartilhados são as exposições mais comuns em viagem."
   - "O Acesso Guiado mantém um iPhone emprestado travado em um só app, como o Mapas ou o Telefone."
   - "Um cofre do Velcrypt só abre com o seu padrão; um padrão desconhecido abre um cofre vazio."
-  - "Os dados do cofre do Velcrypt não entram nos backups do iCloud nem do computador na primeira versão, então planeje uma segunda cópia."
+  - "Os dados do cofre do Velcrypt não entram nos backups do iCloud nem do computador, então crie um backup criptografado antes de viajar."
 primaryKeyword: "viajar com fotos privadas iphone"
 keywords: ["proteger fotos em viagem", "iphone roubado no exterior fotos", "proteção de dispositivo roubado viagem", "emprestar celular no exterior privacidade", "dicas de privacidade do celular em viagem"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Celular perdido, iPhone emprestado e revistas na fronteira: como viajar com fotos e documentos privados sem se preocupar com eles."
 group: travel
 schemaType: Article
@@ -26,7 +26,7 @@ faq:
   - q: "Devo levar fotos do passaporte no celular quando viajo?"
     a: "Uma cópia pode ser útil se você perder o passaporte, mas não a deixe no rolo da câmera. Guarde-a em um cofre criptografado ou em outro lugar protegido, e mantenha uma cópia separada que você consiga acessar se o celular for perdido."
   - q: "O que acontece com o meu cofre do Velcrypt se o celular for roubado no exterior?"
-    a: "O ladrão não consegue abri-lo sem o seu padrão, mas você também não consegue recuperá-lo: na primeira versão, os dados do cofre não entram nos backups do iCloud nem do computador. Uma opção de backup criptografado está planejada."
+    a: "O ladrão não consegue abri-lo sem o seu padrão, mas você também só consegue recuperá-lo se tiver criado um backup criptografado em Ajustes → Backup, porque os dados do cofre não entram nos backups do iCloud nem do computador."
   - q: "É seguro emprestar o iPhone para alguém no exterior?"
     a: "Normalmente não tem problema para uma ligação rápida ou para conferir um mapa. Inicie antes o Acesso Guiado para que a pessoa fique só naquele app, e mantenha o celular à vista."
 ---
@@ -62,16 +62,16 @@ Em viagem, o seu celular passa por mais mãos e mais lugares do que no dia a dia
 
 O Velcrypt guarda fotos, vídeos e documentos privados em cofres criptografados armazenados apenas no seu iPhone. Um cofre abre com um padrão que você desenha em uma grade 5×5 — não com o código nem com o Face ID. Se um ladrão descobriu o seu código, só isso não abre o seu cofre. O motivo de usar um padrão em vez de biometria está explicado em [padrão x PIN x Face ID](id:pattern-lock-vs-pin-vs-face-id).
 
-Cada padrão abre o seu próprio cofre, e um padrão desconhecido abre um cofre vazio, sem nenhum erro. Assim, você pode manter um [cofre de fachada](id:what-is-a-decoy-vault) com fotos de viagem inofensivas e deixar o cofre privado atrás de outro padrão. O app também se bloqueia automaticamente quando vai para o segundo plano, e o conteúdo fica oculto no seletor de apps.
+Cada padrão abre o seu próprio cofre, e um padrão desconhecido abre um cofre vazio, sem nenhum erro. Assim, com o Premium, você pode manter um [cofre de fachada](id:what-is-a-decoy-vault) com fotos de viagem inofensivas e deixar o cofre privado atrás de outro padrão. O app também se bloqueia automaticamente quando vai para o segundo plano, e o conteúdo fica oculto no seletor de apps.
 
 Não há conta e nada é enviado, então não existe login na nuvem para alguém roubar com phishing ou redefinir enquanto você está na estrada.
 
 ## Limites honestos
 
-- **Sem backup na primeira versão.** Os dados do cofre ficam fora dos backups do iCloud e do computador. Se o celular for perdido ou roubado, o cofre vai junto — ninguém consegue recuperá-lo. Uma opção de backup criptografado está planejada. Em viagem, guarde uma segunda cópia de tudo o que for insubstituível em um lugar seguro.
+- **Sem backup automático.** Os dados do cofre ficam fora dos backups do iCloud e do computador. Se o celular for perdido ou roubado, o cofre vai junto, a menos que você tenha criado antes um backup criptografado em Ajustes → Backup e o salvo fora do celular. Em viagem, guarde uma segunda cópia de tudo o que for insubstituível em um lugar seguro.
 - **Os originais ficam no Fotos até você apagá-los.** Importar copia a foto. [Apague o original](id:delete-original-photos-after-import) e esvazie Apagados.
 - **Alguém que veja você desenhar** o padrão pode aprendê-lo.
 - **O ícone do app fica visível** na Tela de Início, a não ser que você use a opção do iOS 18 de ocultar apps.
-- **Um cofre não é um escudo legal.** Na fronteira, valem as regras do país; o padrão de coação é um recurso Premium planejado (em breve), não disponível hoje.
+- **Um cofre não é um escudo legal.** Na fronteira, valem as regras do país; o padrão de coação está planejado para uma atualização futura e não está disponível hoje.
 
 Viaje leve e viaje preparado: com o celular bem protegido, perdê-lo vira um contratempo, não uma crise.

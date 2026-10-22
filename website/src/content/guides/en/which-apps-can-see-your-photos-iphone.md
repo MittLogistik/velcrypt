@@ -20,7 +20,7 @@ keywords:
   - "check which apps have access to photos"
   - "add photos only permission"
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "How to see which apps can read your photo library, what Full, Limited and Add-only access mean, and how to tighten them in a few minutes."
 category: apple
 order: 13
@@ -107,6 +107,6 @@ Permissions decide which apps can read your library on the phone. They don’t c
 
 If some photos shouldn’t be readable by any app with Full Access, the cleanest fix is to take them out of the photo library altogether. Files stored inside another app’s private storage are not part of your photo library, so other apps’ photo permissions don’t reach them.
 
-Velcrypt works this way. You import photos and videos into an encrypted vault on the device ([hide photos](id:hide-photos)), and the vault content is encrypted with keys derived from your unlock pattern. Importing copies an item, so the original remains in Photos until you delete it and empty Recently Deleted, which our [guide to deleting originals](id:delete-original-photos-after-import) walks through. Velcrypt has no account and doesn’t upload anything ([on-device, no account](id:offline-no-account)).
+Velcrypt works this way. You import photos and videos into an encrypted vault on the device ([hide photos](id:hide-photos)), and the vault content is encrypted with keys derived from your unlock pattern. Importing copies an item, so the original remains in Photos until you delete it and empty Recently Deleted, which our [guide to deleting originals](id:delete-original-photos-after-import) walks through. Photos and videos taken with Velcrypt’s in-vault camera go straight into the vault and never into Photos. Velcrypt has no account and doesn’t upload anything ([on-device, no account](id:offline-no-account)).
 
 Whichever vault you consider, check what it asks for and why. Our checklist on [whether photo vault apps are safe](id:are-photo-vault-apps-safe) explains what to look for in permissions, privacy labels and storage.

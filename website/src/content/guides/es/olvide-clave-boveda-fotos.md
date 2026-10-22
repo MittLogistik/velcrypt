@@ -4,17 +4,17 @@ title: "¿Olvidaste la contraseña o el patrón de tu bóveda de fotos?"
 description: "¿Olvidaste la contraseña o el patrón de tu bóveda de fotos? Qué probar primero, por qué Velcrypt no se puede restablecer y cómo evitar quedarte sin acceso."
 h1: "¿Olvidaste la contraseña o el patrón de tu bóveda de fotos? Qué puedes y qué no puedes hacer"
 navTitle: "Olvidé el patrón de la bóveda"
-answer: "En Velcrypt, un patrón olvidado no se puede restablecer ni recuperar, ni por ti ni por Velcrypt, porque la clave solo existe en tu memoria y ningún servidor guarda una copia. Lo que sí puedes hacer es probar con calma variaciones cercanas del patrón. Otras apps de bóveda pueden ofrecer recuperación por correo o cuenta; comprueba qué usa la tuya."
+answer: "En Velcrypt, un patrón olvidado no se puede restablecer ni recuperar, ni por ti ni por Velcrypt, porque la clave solo existe en tu memoria y ningún servidor guarda una copia. Lo que sí puedes hacer es probar con calma variaciones cercanas del patrón y, si creaste una copia de seguridad cifrada, restaurar su contenido. Otras apps de bóveda pueden ofrecer recuperación por correo o cuenta; comprueba qué usa la tuya."
 keyFacts:
   - "Velcrypt no tiene restablecimiento, ni correo de recuperación, ni frase de recuperación: las claves se derivan de tu patrón en el dispositivo."
   - "En Velcrypt, un patrón equivocado abre una bóveda vacía en lugar de mostrar un error, así que una bóveda vacía suele significar un patrón ligeramente distinto."
-  - "En la primera versión, los datos de la bóveda están excluidos de las copias de seguridad de iCloud y del ordenador."
-  - "Está prevista una opción de copia de seguridad cifrada / recuperación, sin fecha prometida."
-  - "Si perder algo sería insoportable, guarda una copia en otro sitio de tu confianza."
+  - "Los datos de la bóveda están excluidos de las copias de seguridad de iCloud y del ordenador."
+  - "Una copia de seguridad cifrada creada antes en Ajustes → Copia de seguridad conserva el contenido aunque olvides el patrón."
+  - "Una contraseña de copia de seguridad olvidada tampoco se puede recuperar."
 primaryKeyword: "olvidé la contraseña de la bóveda de fotos"
 keywords: ["olvidé el patrón de la bóveda", "recuperar bóveda de fotos", "olvidé el pin de la app de fotos ocultas", "restablecer patrón bóveda", "no puedo entrar en mi bóveda de fotos"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Qué probar primero, por qué Velcrypt no puede restablecer un patrón olvidado, cómo gestionan la recuperación otras apps y hábitos para no quedarte fuera."
 category: security
 order: 44
@@ -28,8 +28,8 @@ faq:
     a: "No. Borrar la app borra del dispositivo sus datos cifrados. Reinstalarla te da una app limpia, no acceso a las bóvedas antiguas. Bórrala solo si has asumido que el contenido se ha perdido."
   - q: "¿Cómo gestionan otras apps de bóveda un PIN olvidado?"
     a: "Muchas apps con cuenta te permiten restablecer el PIN por correo o a través de una cuenta en la nube, lo que significa que existe una vía de recuperación fuera de tu memoria. Revisa las páginas de ayuda de tu app antes de necesitarlo, y ten en cuenta que una vía de recuperación también puede ser una puerta de entrada para otra persona."
-  - q: "¿Velcrypt añadirá una opción de recuperación?"
-    a: "Está prevista una opción de copia de seguridad cifrada y recuperación, pero no tiene fecha de lanzamiento. Hasta que exista, trata tu patrón como la única llave."
+  - q: "¿Una copia de seguridad de Velcrypt me ayuda si olvido el patrón?"
+    a: "Sí, si la creaste antes. La copia de seguridad tiene su propia contraseña, así que puedes restaurarla en una bóveda que sí puedas abrir con Ajustes → Copia de seguridad → Restaurar copia de seguridad. Sin copia ni contraseña, no hay vuelta atrás."
 ---
 
 Esa sensación de vértigo cuando la forma que has dibujado cien veces de repente no funciona es real. Antes que nada: no borres ni reinstales la app. La mayoría de los patrones «olvidados» resultan ser patrones recordados con un pequeño error, y hay cosas sensatas que probar primero.
@@ -57,9 +57,13 @@ No es una decisión de política que se pueda saltar. Es cómo funciona el cifra
 - Velcrypt no tiene cuenta, ni correo, ni servidor. Consulta [sin conexión, sin cuenta](id:offline-no-account).
 - Las claves de tu bóveda se desbloquean con una clave derivada de tu patrón en el dispositivo, mediante PBKDF2 y una sal guardada en el llavero de iOS. Sin el patrón, esa clave no se puede generar.
 - Los datos de la bóveda se cifran con AES-256-GCM, que no se puede romper por fuerza bruta. La [explicación de AES-256](id:aes-256-encryption-explained) cuenta por qué.
-- En la primera versión, los datos de la bóveda están excluidos de las copias de seguridad de iCloud y del Finder/iTunes, así que no hay ninguna copia anterior desde la que restaurar.
+- Los datos de la bóveda están excluidos de las copias de seguridad de iCloud y del Finder/iTunes, así que esas copias no sirven para restaurarla.
 
 Las mismas propiedades que hacen privada tu bóveda hacen definitivo un patrón olvidado. Un sistema con un botón de «¿olvidaste el patrón?» necesariamente conserva una forma de entrar que no depende solo de ti.
+
+### ¿Creaste una copia de seguridad?
+
+La única excepción es una copia de seguridad cifrada que hayas creado antes en Ajustes → Copia de seguridad. Esa copia está protegida con su propia contraseña, no con tu patrón, así que su contenido no se pierde. Abre una bóveda a la que sí tengas acceso (o dibuja un patrón nuevo; restaurar una copia nunca requiere Premium), ve a Ajustes → Copia de seguridad → Restaurar copia de seguridad, elige el archivo e introduce la contraseña. Los elementos se añaden a la bóveda abierta. Recuperarás lo que hubiera en la bóveda cuando creaste la copia, no lo añadido después. Si también has olvidado la contraseña de la copia, Velcrypt no puede recuperarla.
 
 ### ¿Y las otras bóvedas?
 
@@ -89,9 +93,9 @@ Prueba una forma parecida (no la real) con el [comprobador de seguridad de patro
 - Evita cambiar el patrón justo antes de una época de estrés, como un viaje.
 - Si tienes varias bóvedas, haz que sus patrones sean claramente distintos para no mezclarlos.
 
-### Conserva los originales cuando perderlos dolería
+### Crea copias de seguridad cifradas
 
-Si perder una foto o un documento sería realmente insoportable, una bóveda no debería ser el único sitio donde existe. Para lo irremplazable, guarda una copia adicional en un sitio de tu confianza, como una unidad cifrada guardada en un lugar seguro. Es una contrapartida consciente: cada copia extra es un sitio más que proteger.
+Si perder una foto o un documento sería realmente insoportable, una bóveda en un solo teléfono no debería ser el único sitio donde existe. Crea con regularidad una copia de seguridad en Ajustes → Copia de seguridad, guárdala fuera del iPhone (en iCloud Drive o en un ordenador) y elige una contraseña larga que no vayas a olvidar. Es una contrapartida consciente: cada copia extra es un sitio más que proteger, aunque esté cifrada.
 
 ### No apuntes el patrón cerca del teléfono
 
@@ -110,4 +114,4 @@ La [guía sobre bóvedas de fotos sin cuenta](id:photo-vault-without-account) ex
 
 ## Dónde encaja Velcrypt
 
-Velcrypt es, por diseño, una bóveda solo en el dispositivo: sin cuenta, sin servidor, sin frase de recuperación y sin ninguna copia de tus claves en otro sitio. Está prevista una opción de copia de seguridad cifrada y recuperación como parte de una mejora Premium opcional, sin fecha prometida. Si tienes dudas, el [soporte](id:support) puede explicarte cómo se comporta la app, pero nadie allí puede abrirte una bóveda.
+Velcrypt es, por diseño, una bóveda solo en el dispositivo: sin cuenta, sin servidor, sin frase de recuperación y sin ninguna copia de tus claves en otro sitio. La única vía de recuperación es la copia de seguridad cifrada, gratuita, que tú creas y guardas. Si tienes dudas, el [soporte](id:support) puede explicarte cómo se comporta la app, pero nadie allí puede abrirte una bóveda.

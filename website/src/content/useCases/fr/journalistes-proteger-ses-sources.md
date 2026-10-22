@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "journaliste protéger ses sources iphone"
 keywords: ["protection des sources journaliste téléphone", "sécurité numérique journaliste", "protéger les photos d’une source", "documents de sources iphone confidentialité", "modèle de menace journaliste", "sécurité smartphone reporter"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Modèle de menace, minimisation et métadonnées pour les reporters, et la place d’un coffre iPhone chiffré dans la protection des sources."
 group: professional
 schemaType: Article
@@ -63,7 +63,7 @@ Les réponses déterminent vos outils. Surprotéger un sujet à faible risque fa
 
 Velcrypt est une couche de ce dispositif. Il stocke photos, vidéos et documents dans des coffres chiffrés sur votre iPhone, en AES-256-GCM, avec des clés dérivées de votre schéma. Pas de compte, pas de serveur, pas de synchronisation et aucune statistique sur le contenu des coffres : il n’y a donc rien sur un serveur que quiconque pourrait réclamer.
 
-Les coffres s’ouvrent avec un schéma tracé sur une grille 5×5. Velcrypt ne prend volontairement pas en charge Face ID ni Touch ID, car la biométrie peut être utilisée sans votre consentement ; un schéma n’existe que dans votre mémoire. Le raisonnement est détaillé dans [schéma, code PIN ou Face ID](id:pattern-lock-vs-pin-vs-face-id). Chaque schéma ouvre son propre coffre, et un schéma inconnu ouvre un coffre vide sans erreur, ce qui favorise le [déni plausible](id:plausible-deniability-explained). Un schéma de contrainte qui supprime l’accès aux autres coffres est une fonction Premium prévue, bientôt disponible.
+Les coffres s’ouvrent avec un schéma tracé sur une grille 5×5. Velcrypt ne prend volontairement pas en charge Face ID ni Touch ID, car la biométrie peut être utilisée sans votre consentement ; un schéma n’existe que dans votre mémoire. Le raisonnement est détaillé dans [schéma, code PIN ou Face ID](id:pattern-lock-vs-pin-vs-face-id). Chaque schéma ouvre son propre coffre, et un schéma inconnu ouvre un coffre vide sans erreur, ce qui favorise le [déni plausible](id:plausible-deniability-explained). Plusieurs coffres nécessitent Premium. Un schéma de contrainte qui supprimerait l’accès aux autres coffres est prévu pour une prochaine mise à jour.
 
 ## Des limites honnêtes
 
@@ -74,6 +74,6 @@ Un coffre n’est pas, à lui seul, une stratégie de protection des sources :
 - **Les appareils compromis.** Un logiciel malveillant sur un téléphone jailbreaké ou ciblé peut voir ce qui s’affiche à l’écran.
 - **L’observation.** Quelqu’un qui vous regarde tracer votre schéma, ou des caméras dans la pièce, le rendent inutile.
 - **Une app visible.** L’icône Velcrypt figure sur votre écran d’accueil, sauf si vous utilisez l’option d’iOS 18 pour masquer des apps.
-- **Aucune récupération.** Dans la première version, les coffres ne sont pas sauvegardés. Perdez le téléphone ou oubliez le schéma, et tout disparaît — un atout pour la minimisation, un risque pour les contenus que vous devez conserver. Consultez la [page sécurité](id:security) pour une vue d’ensemble.
+- **Aucune récupération sans sauvegarde.** Les coffres ne sont pas dans les sauvegardes de l’iPhone. Oubliez le schéma, ou perdez le téléphone sans sauvegarde chiffrée, et tout disparaît — un atout pour la minimisation, un risque pour les contenus que vous devez conserver. Une sauvegarde chiffrée est une copie de plus : ne la créez que si vous savez où elle sera conservée. Consultez la [page sécurité](id:security) pour une vue d’ensemble.
 
 Protéger ses sources est avant tout une affaire d’habitudes. De bons outils aident, mais c’est la décision de garder moins, de partager moins et d’anticiper qui fait l’essentiel du travail.

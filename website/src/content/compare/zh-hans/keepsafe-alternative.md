@@ -10,11 +10,11 @@ keyFacts:
   - "Velcrypt 无需账户，加密保险箱只保存在你的 iPhone 上。"
   - "Apple 的“已隐藏”相簿和锁定备忘录是免费的自带选项，可通过 iCloud 同步。"
   - "迁移意味着导出、导入，然后删除残留并清空“最近删除”。"
-  - "Velcrypt 首个版本没有备份：忘记图案或丢失手机，保险箱就没了。"
+  - "Velcrypt 没有云备份，但你可以免费创建加密备份文件；忘记图案就无法打开该保险箱。"
 primaryKeyword: "Keepsafe 替代"
 keywords: ["Keepsafe 替代 iPhone", "类似 Keepsafe 的 App", "从 Keepsafe 迁移", "Keepsafe 换什么", "不用注册的私密相册"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "为什么有人寻找 Keepsafe 替代方案，任何照片保险箱该检查什么，以及如何迁移照片而不留下副本。"
 competitor: "Keepsafe"
 lastChecked: "2026 年 10 月"
@@ -28,7 +28,7 @@ faq:
   - q: "删除 Keepsafe 会删除我的云备份吗？"
     a: "不一定。删除 App 通常不会注销账户或移除服务器上的数据。请查看 Keepsafe 的帮助或账户设置，了解如何删除账户和云端数据。"
   - q: "有带云备份的 Keepsafe 替代方案吗？"
-    a: "有，一些保险箱 App 提供云功能，Apple 的“已隐藏”相簿也会通过 iCloud 照片同步。Velcrypt 首个版本没有云备份；加密备份选项已在计划中。"
+    a: "有，一些保险箱 App 提供云功能，Apple 的“已隐藏”相簿也会通过 iCloud 照片同步。Velcrypt 没有云备份，但你可以在“设置”→“备份”中创建加密备份文件，自己存放到“文件”、iCloud 云盘或电脑上。"
 ---
 
 *最近核实：2026 年 10 月。产品细节会变化，请以各 App 在 App Store 的最新页面为准。*
@@ -61,14 +61,14 @@ Keepsafe 是最知名的照片保险箱 App 之一，很多人用得很满意。
 
 | 选项 | 账户 | 云端副本 | 独立的秘密 | 说明 |
 |---|---|---|---|---|
-| Velcrypt | 无 | 无（首个版本） | 是，图案 | 隐藏保险箱、文档、不用面容 ID |
+| Velcrypt | 无 | 无云备份；可手动创建加密备份文件 | 是，图案 | 隐藏保险箱、文档、不用面容 ID |
 | iPhone“已隐藏”相簿 | iCloud 需要 Apple 账户 | 开启 iCloud 照片时有 | 否，使用设备密码 | 免费，系统自带 |
 | Apple 备忘录锁定备忘录 | iCloud 需要 Apple 账户 | 开启 iCloud 备忘录时有 | 可选的备忘录密码 | 最适合少量项目 |
 | 其他保险箱 App | 因 App 而异 | 因 App 而异 | 因 App 而异 | 请逐一查看商店页面 |
 
 <!-- TODO verify -->
 
-**Velcrypt** 把一切都保存在 iPhone 上，没有账户，没有服务器。你通过在 5×5 点阵上画图案解锁，每个图案打开各自的保险箱；未知图案会打开一个空保险箱，这为你提供了[合理推诿](id:plausible-deniability-explained)。文件以 AES-256-GCM 加密。坦白说其中的取舍是：首个版本中保险箱数据不包含在备份里，所以手机丢失或忘记图案都无法挽回。[与 Keepsafe 的直接对比](id:velcrypt-vs-keepsafe)把两者放在一起逐项比较。
+**Velcrypt** 把一切都保存在 iPhone 上，没有账户，没有服务器。你通过在 5×5 点阵上画图案解锁，每个图案打开各自的保险箱；未知图案会打开一个空保险箱，这为你提供了[合理推诿](id:plausible-deniability-explained)。文件以 AES-256-GCM 加密。坦白说其中的取舍是：保险箱数据不包含在 iCloud 和电脑备份里，所以除非你事先创建了加密备份文件，手机丢失就无法挽回；忘记图案也无法找回。[与 Keepsafe 的直接对比](id:velcrypt-vs-keepsafe)把两者放在一起逐项比较。
 
 **Apple 的自带功能**不花一分钱。[“已隐藏”相簿](id:velcrypt-vs-iphone-hidden-album)简单易用且能同步，但用你的设备密码就能打开。[锁定备忘录](id:velcrypt-vs-apple-notes-locked-notes)适合少量敏感图片或扫描件。
 
@@ -76,7 +76,7 @@ Keepsafe 是最知名的照片保险箱 App 之一，很多人用得很满意。
 
 ## 什么情况下继续用 Keepsafe 也许更合理
 
-如果云备份是你最依赖的功能，而且你不介意使用账户，Keepsafe 可能仍然更适合你。Velcrypt 首个版本不提供备份或同步，也没有安卓版。
+如果云备份是你最依赖的功能，而且你不介意使用账户，Keepsafe 可能仍然更适合你。Velcrypt 不提供云备份或同步（只有你手动创建、自己存放的加密备份文件），也没有安卓版。
 
 ## 如何迁移而不留下副本
 

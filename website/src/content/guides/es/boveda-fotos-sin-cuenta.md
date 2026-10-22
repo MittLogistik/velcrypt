@@ -20,7 +20,7 @@ keywords:
   - "bóveda de fotos en el dispositivo iphone"
   - "ocultar fotos sin internet"
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Qué ganas al elegir una bóveda de fotos sin cuenta ni nube, qué pierdes y pruebas sencillas para comprobar que una app no se conecta."
 category: choosing
 order: 23
@@ -127,6 +127,6 @@ Nada de esto convierte a una app en mala. Solo significa que no es el tipo de b�
 
 Velcrypt está diseñada como una bóveda en el dispositivo y sin cuenta. No hay registro, ni correo, ni servidores, ni subidas, ni analítica sobre lo que guardas ([sin conexión, sin cuenta](id:offline-no-account)). Las fotos, los videos y los documentos se cifran en el iPhone con AES-256-GCM mediante claves derivadas del patrón que dibujas ([cifrado](id:encryption)).
 
-Eso significa que también tiene las contrapartidas descritas arriba. En la primera versión, el contenido de la bóveda está excluido de las copias de seguridad de iCloud y del ordenador, así que si pierdes el teléfono u olvidas tu patrón, el contenido no se puede recuperar, ni por ti ni por nosotros. Explicamos qué hacer y qué no esperar en [¿olvidaste el patrón de tu bóveda?](id:forgot-vault-pattern). Está prevista una opción de copia de seguridad cifrada para el futuro.
+Eso significa que también tiene las contrapartidas descritas arriba. El contenido de la bóveda está excluido de las copias de seguridad de iCloud y del ordenador, así que si olvidas tu patrón, el contenido no se puede recuperar, ni por ti ni por nosotros. Para no perderlo con el teléfono, Velcrypt ofrece una copia de seguridad cifrada y gratuita, sin cuenta: un archivo protegido con tu propia contraseña que guardas donde quieras. Explicamos qué hacer y qué no esperar en [¿olvidaste el patrón de tu bóveda?](id:forgot-vault-pattern).
 
 Antes de mover a cualquier bóveda sin conexión algo que no te puedas permitir perder, guarda una copia aparte que controles tú. Y elijas la app que elijas, pásala por nuestra [lista de seguridad para bóvedas de fotos](id:are-photo-vault-apps-safe).

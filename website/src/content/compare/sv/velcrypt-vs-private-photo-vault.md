@@ -10,11 +10,11 @@ keyFacts:
   - "Velcrypt låses upp med ett mönster på ett 5×5-rutnät; varje mönster är ett separat valv."
   - "Velcrypt publicerar sin krypteringsdesign: AES-256-GCM med nyckelhärledning via PBKDF2-HMAC-SHA512."
   - "Velcrypt har inga intrångsbilder och ingen Face ID, med avsikt."
-  - "Velcrypt v1 har ingen säkerhetskopiering: ett glömt mönster eller en förlorad telefon innebär att valvet är borta."
+  - "Velcrypt har ingen molnbackup, men du kan själv skapa en krypterad säkerhetskopia. Ett glömt mönster kan inte återställas."
 primaryKeyword: "velcrypt vs private photo vault"
 keywords: ["alternativ till private photo vault", "private photo vault jämförelse", "private photo vault vs", "fotovalv med lockkod", "fotovalv med mönsterlås"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "PIN-baserat valv med lockkod och intrångsfunktioner mot ett mönsterbaserat, kontofritt krypterat valv. Neutral jämförelse sida vid sida."
 competitor: "Private Photo Vault"
 lastChecked: "oktober 2026"
@@ -49,14 +49,14 @@ Velcrypt är ett mönsterlåst valv på enheten. Ett mönster är en sammanhäng
 |---|---|---|
 | Publicerade detaljer om kryptering på enheten | Ja: AES-256-GCM, nycklar per valv och per fil | Inte offentligt beskrivet i detalj |
 | Kräver konto | Nej | Inte offentligt angivet |
-| Molnbackup | Nej (v1); krypterad säkerhetskopiering planerad | Varierar; se aktuell App Store-sida |
+| Molnbackup | Nej; manuell krypterad säkerhetskopia (gratis) | Varierar; se aktuell App Store-sida |
 | Upplåsning | Mönster på ett 5×5-rutnät | PIN-kod / lösenkod |
 | Biometri (Face ID / Touch ID) | Erbjuds inte, med avsikt | Varierar |
 | Lockvalv / flera valv | Varje mönster är ett eget valv | Lösenord som lockbete |
-| Tvångsmönster | Kommer snart (Premium) | Inte offentligt angivet |
+| Tvångsmönster | Planerat till en framtida uppdatering | Inte offentligt angivet |
 | Intrångsrapporter | Erbjuds inte | Erbjuds, enligt App Store-sidan |
 | Återställning om du glömmer koden | Ingen | Inte offentligt angivet |
-| Affärsmodell | Gratisversion plus valfri Premium | Gratisversion plus betald uppgradering |
+| Affärsmodell | Gratis (ett valv, 50 objekt) plus valfri Premium | Gratisversion plus betald uppgradering |
 | Plattformar | iPhone (iOS 17+) | Varierar; se butikssidorna |
 
 <!-- TODO verify -->
@@ -83,7 +83,7 @@ För Private Photo Vault hittade vi i skrivande stund ingen motsvarande offentli
 
 - **Du vill ha intrångsrapporter.** Om det är viktigt för dig att veta att någon har försökt öppna ditt valv erbjuder Velcrypt inte det.
 - **Du föredrar en sifferkod eller Face ID.** Vissa tycker att en PIN-kod går snabbare än att rita ett mönster.
-- **Du vill kunna säkerhetskopiera eller flytta.** Om versionen du använder har en sådan funktion är det något Velcrypt v1 saknar.
+- **Du vill ha automatisk molnbackup eller synk.** Om versionen du använder har en sådan funktion är det något Velcrypt saknar; Velcrypt har bara en manuell krypterad säkerhetskopia.
 - **Du har redan kommit på plats.** Att flytta ett stort bibliotek kräver arbete; ett byte är bara rimligt om skillnaderna spelar roll för dig.
 
 <!-- TODO verify -->

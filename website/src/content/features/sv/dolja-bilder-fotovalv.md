@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "dölja bilder iphone app"
 keywords: ["fotovalv iphone", "krypterat fotovalv", "privat fotoalbum app", "dölja foton iphone", "låsa bilder app", "hemligt fotovalv"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Importera bilder som krypterade kopior, rensa originalen och Nyligen raderade, och bläddra sedan i album med zoom och svep."
 status: available
 schemaType: WebPage
@@ -79,6 +79,6 @@ Albumet Gömda är bekvämt och räcker för många. Dess begränsningar tas upp
 
 ## Bra att veta
 
-- Velcrypt har ingen inbyggd kamera. Ta bilden med appen Kamera, importera den och radera sedan originalet.
+- Med kameran i valvet hamnar nya bilder direkt i valvet och aldrig i bildbiblioteket. Bilder du redan har tagit med appen Kamera importerar du och raderar sedan originalet.
 - Bilder kan innehålla plats- och enhetsdata. Om du tänker dela dem senare bör du först [ta bort bildens metadata](id:remove-photo-metadata-iphone).
-- Valvdata säkerhetskopieras inte i den första versionen. Är en bild oersättlig, spara en andra kopia någonstans du litar på.
+- Valvdata ingår inte i iCloud- eller datorsäkerhetskopior. Är en bild oersättlig, skapa en krypterad säkerhetskopia under Inställningar → Säkerhetskopiering och spara filen någonstans du litar på.

@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "photo vault encryption iphone"
 keywords: ["aes-256-gcm photo vault", "encrypted photo vault iphone", "pbkdf2 vault app", "how is my vault encrypted", "authenticated encryption explained"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "AES-256-GCM per file, keys derived from your pattern with PBKDF2-HMAC-SHA512 and HKDF, plus iOS Data Protection."
 status: available
 schemaType: WebPage
@@ -72,7 +72,7 @@ The two layers are independent. Even if one were somehow bypassed, the other wou
 
 Velcrypt is [fully offline with no account](id:offline-no-account). There are no servers, no uploads and no copy of your keys outside your phone. That design removes a whole category of risk: there is no database to breach and no company employee who could decrypt your files.
 
-It also has a cost. Because the keys exist only on the device and only through your pattern, nobody can recover a vault if the pattern is forgotten or the phone is lost. An encrypted backup option is planned, but it does not exist in the first version.
+It also has a cost. Because the keys exist only on the device and only through your pattern, nobody can recover a vault if the pattern is forgotten. If the phone is lost, only an encrypted backup file you created yourself in Settings → Backup can bring the vault back, and it needs the backup password you chose.
 
 ## What encryption does not cover
 

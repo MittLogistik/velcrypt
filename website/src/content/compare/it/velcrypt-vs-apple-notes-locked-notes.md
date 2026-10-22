@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "note bloccate iphone vs cassaforte foto"
 keywords: ["nascondere foto nelle note bloccate", "bloccare foto con note iphone", "note bloccate iphone foto", "app note foto private", "nota bloccata vs app cassaforte"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Nascondere foto in una nota bloccata di Apple contro una cassaforte cifrata dedicata: comodità, capienza, sincronizzazione e chi può aprirle."
 competitor: "Note bloccate di Apple"
 lastChecked: "ottobre 2026"
@@ -51,14 +51,14 @@ Puoi aggiungere foto dalla libreria, scattare una foto dentro la nota o scansion
 |---|---|---|
 | Dettagli della cifratura sul dispositivo pubblicati | Sì: AES-256-GCM, PBKDF2-HMAC-SHA512 | Descritti nella documentazione di Apple sulla sicurezza della piattaforma |
 | Account richiesto | No | No per le note sul dispositivo; Account Apple per la sincronizzazione iCloud |
-| Backup cloud | No (v1); backup cifrato in programma | Sì, con Note di iCloud |
+| Backup cloud | Nessuna sincronizzazione; backup cifrato manuale gratuito in un file | Sì, con Note di iCloud |
 | Metodo di sblocco | Sequenza su griglia 5×5 | Codice del dispositivo o password di Note separata |
 | Biometria | Non offerta, per scelta | Face ID / Touch ID facoltativi |
-| Esca / più casseforti | Ogni sequenza è una cassaforte a sé | Non supportato; tutte le note bloccate condividono una password |
-| Sequenza di emergenza | In arrivo (Premium) | No |
+| Esca / più casseforti | Ogni sequenza è una cassaforte a sé (più casseforti con Premium) | Non supportato; tutte le note bloccate condividono una password |
+| Sequenza di emergenza | Prevista per un aggiornamento futuro | No |
 | Recupero se dimentichi il codice | Nessuno | L’opzione con codice evita una password separata; le vecchie password di Note non si recuperano |
 | Gestione di foto e video | Album, visualizzatore con zoom e scorrimento, video | Immagini dentro una nota; supporto video variabile |
-| Costo | Versione gratuita più Premium facoltativo | Incluso in iOS |
+| Costo | Gratuita (1 cassaforte, 50 elementi) più Premium facoltativo da 1,99 $/settimana, 19,99 $/anno o 39,99 $ a vita (USD) | Incluso in iOS |
 | Piattaforme | iPhone (iOS 17+) | iPhone, iPad, Mac e iCloud.com |
 
 <!-- TODO verify -->
@@ -83,7 +83,7 @@ L’altra differenza è il segreto. Se blocchi le note con il codice del disposi
 ## Quando Velcrypt potrebbe fare più al caso tuo
 
 - **Hai una vera raccolta.** Molte foto, video e documenti, organizzati in album.
-- **Non vuoi nulla nel cloud.** Nella v1 i dati delle casseforti restano sul telefono e fuori dai backup.
+- **Non vuoi nulla nel cloud.** I dati delle casseforti restano sul telefono e fuori dai backup di iCloud; un backup cifrato esiste solo se lo crei tu.
 - **Ti servono spazi privati separati.** Ogni sequenza è una cassaforte a sé.
 - **Qualcun altro conosce il tuo codice.** La sequenza è un segreto separato.
 

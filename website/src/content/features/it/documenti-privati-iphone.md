@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "app documenti privati iphone"
 keywords: ["proteggere pdf iphone", "conservare documenti identità iphone", "cassaforte documenti iphone", "nascondere documenti iphone", "scansione passaporto cifrata iphone"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Importa PDF, scansioni e copie di documenti d'identità da File in una cassaforte cifrata, aprili offline ed esporta solo se serve."
 status: available
 schemaType: WebPage
@@ -24,11 +24,11 @@ faq:
   - q: "Quali documenti posso conservare in Velcrypt?"
     a: "I documenti che raggiungi dall'app File di iOS, come PDF e pagine scansionate, oltre alle immagini di documenti. Esempi tipici sono copie di passaporto e carta d'identità, referti medici, contratti e documenti fiscali."
   - q: "Posso scansionare un documento direttamente in Velcrypt?"
-    a: "Velcrypt non ha uno scanner né una fotocamera integrati. Scansiona con un'app che salva in File, importa la scansione in Velcrypt e poi elimina il file creato."
+    a: "Velcrypt non ha uno scanner di documenti integrato. La fotocamera nella cassaforte scatta foto, ma per un PDF pulito scansiona con un'app che salva in File, importa la scansione in Velcrypt e poi elimina il file creato."
   - q: "Posso inviare a qualcuno un documento dalla mia cassaforte?"
     a: "Sì, esportandolo. L'esportazione crea una copia decifrata fuori dalla cassaforte, per esempio in File o in una destinazione del menu di condivisione. Quella copia non è più protetta da Velcrypt, quindi eliminala quando hai finito."
   - q: "I miei documenti privati su iPhone vengono caricati o sincronizzati?"
-    a: "No. Velcrypt non ha server, account né sincronizzazione cloud. I documenti restano cifrati sul tuo iPhone e nella prima versione sono esclusi dai backup di iCloud e del computer."
+    a: "No. Velcrypt non ha server, account né sincronizzazione cloud. I documenti restano cifrati sul tuo iPhone e sono esclusi dai backup di iCloud e del computer; puoi crearne tu un backup cifrato."
 ---
 
 Passaporti, tessere sanitarie, referti medici e contratti firmati finiscono spesso come file sparsi nei Download o come foto nel rullino. Velcrypt dà loro un posto dedicato e cifrato sul tuo iPhone, separato da tutto ciò che sfogli ogni giorno.
@@ -48,7 +48,7 @@ Ogni documento viene cifrato sul dispositivo con AES-256-GCM, usando una propria
 
 ## Scansionare in modo riservato
 
-Velcrypt non include una fotocamera né uno scanner. Il flusso più sicuro è scansionare con uno strumento che salva in File, importare il risultato in Velcrypt e poi eliminare la scansione dalla posizione originale. Se lo scanner ha salvato una copia anche in Foto o in una cartella cloud, elimina anche quella.
+Velcrypt non include uno scanner di documenti. Il flusso più sicuro è scansionare con uno strumento che salva in File, importare il risultato in Velcrypt e poi eliminare la scansione dalla posizione originale. Se lo scanner ha salvato una copia anche in Foto o in una cartella cloud, elimina anche quella.
 
 La guida su [come scansionare documenti in modo riservato su iPhone](id:scan-documents-privately-iphone) confronta le opzioni di scansione integrate in iOS e dove ciascuna salva i risultati.
 
@@ -87,5 +87,5 @@ Se stai decidendo tra queste opzioni, [come proteggere una cartella con password
 
 ## Buono a sapersi
 
-- Nella prima versione i dati delle casseforti non sono inclusi nei backup di iCloud o del computer. Tieni una seconda copia degli originali insostituibili, come la scansione del passaporto, in un posto di cui ti fidi.
+- I dati delle casseforti non sono inclusi nei backup di iCloud o del computer. Crea un backup cifrato in Impostazioni → Backup o tieni una seconda copia degli originali insostituibili, come la scansione del passaporto, in un posto di cui ti fidi.
 - Una cassaforte non può proteggere un documento che qualcuno fotografa mentre è aperto sul tuo schermo.

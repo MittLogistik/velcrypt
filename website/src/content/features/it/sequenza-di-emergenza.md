@@ -1,28 +1,28 @@
 ---
 pageId: duress-pattern
-title: "Sequenza di emergenza (in arrivo): proteggi le casseforti"
-description: "La sequenza di emergenza è una funzione Premium di Velcrypt in arrivo: una sequenza apre una cassaforte scelta e toglie in silenzio l'accesso alle altre."
-h1: "Sequenza di emergenza (in arrivo)"
-navTitle: "Sequenza di emergenza (in arrivo)"
-answer: "La sequenza di emergenza è una funzione Premium prevista e in arrivo. Potrai impostare una sequenza speciale che apre una cassaforte a tua scelta e rimuove in silenzio l'accesso alle altre, per i momenti in cui vieni costretto a sbloccare l'app."
+title: "Sequenza di emergenza (prevista): proteggi le casseforti"
+description: "La sequenza di emergenza è una funzione di Velcrypt prevista per un aggiornamento futuro: apre una cassaforte scelta e toglie l'accesso alle altre."
+h1: "Sequenza di emergenza (prevista)"
+navTitle: "Sequenza di emergenza (prevista)"
+answer: "La sequenza di emergenza è una funzione prevista per un aggiornamento futuro e non è ancora nell'app. L'idea è che tu possa impostare una sequenza speciale che apre una cassaforte a tua scelta e rimuove in silenzio l'accesso alle altre, per i momenti in cui vieni costretto a sbloccare l'app."
 keyFacts:
-  - "Stato: prevista per l'upgrade Premium facoltativo, in arrivo. Non è ancora nell'app."
-  - "Una sequenza speciale aprirà una cassaforte scelta da te."
-  - "Allo stesso tempo rimuoverà in silenzio l'accesso alle altre casseforti."
+  - "Stato: prevista per un aggiornamento futuro. Non è ancora nell'app."
+  - "Una sequenza speciale aprirebbe una cassaforte scelta da te."
+  - "Allo stesso tempo rimuoverebbe in silenzio l'accesso alle altre casseforti."
   - "Non può recuperare le copie che esistono fuori da Velcrypt."
   - "È uno strumento per la privacy, non una consulenza legale né un modo per aggirare ordini legittimi."
 primaryKeyword: "sequenza di emergenza app cassaforte"
 keywords: ["password antipanico iphone", "sequenza antipanico cassaforte foto", "codice di coercizione app", "protezione sblocco forzato", "sequenza autodistruzione cassaforte"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
-summary: "In arrivo con Premium: una sequenza speciale che apre una cassaforte scelta e toglie in silenzio l'accesso alle altre."
+dateModified: 2026-10-22
+summary: "Prevista per un aggiornamento futuro: una sequenza speciale che apre una cassaforte scelta e toglie in silenzio l'accesso alle altre."
 status: coming-soon
 schemaType: WebPage
 order: 3
 related: [hidden-vaults, pattern-lock, what-is-a-decoy-vault, plausible-deniability-explained, phone-privacy-border-crossing]
 faq:
   - q: "La sequenza di emergenza è già disponibile in Velcrypt?"
-    a: "No. È una funzione prevista per l'upgrade Premium facoltativo ed è in arrivo. Nel frattempo puoi usare le casseforti nascoste e una cassaforte esca, che sono già disponibili."
+    a: "No. È prevista per un aggiornamento futuro e non ha ancora una data. Nel frattempo puoi usare le casseforti nascoste e una cassaforte esca, già disponibili con il Premium."
   - q: "Cosa succederà quando qualcuno inserisce la sequenza di emergenza?"
     a: "L'idea è che apra una cassaforte scelta in anticipo e, nello stesso momento, rimuova in silenzio l'accesso alle altre casseforti. Nulla sullo schermo segnalerà che è successo altro."
   - q: "La sequenza di emergenza può cancellare foto che ho già condiviso?"
@@ -31,9 +31,9 @@ faq:
     a: "Dipende da dove ti trovi e dalla situazione. In alcuni Paesi rimuovere dati mentre le autorità ispezionano legittimamente un dispositivo può essere un reato. Velcrypt non può fornire consulenza legale: se per te è importante, parlane con un avvocato."
 ---
 
-A volte il rischio non è un telefono rubato, ma una persona davanti a te che ti chiede di aprire l'app. La sequenza di emergenza è la risposta che Velcrypt prevede per quel momento. Non è ancora disponibile: è una **funzione in arrivo** dell'upgrade Premium facoltativo e questa pagina descrive cosa è progettata per fare.
+A volte il rischio non è un telefono rubato, ma una persona davanti a te che ti chiede di aprire l'app. La sequenza di emergenza è la risposta che Velcrypt prevede per quel momento. Non è ancora disponibile: è una **funzione prevista per un aggiornamento futuro** e questa pagina descrive cosa è progettata per fare.
 
-## Cosa farà la sequenza di emergenza
+## Cosa farebbe la sequenza di emergenza
 
 Una sequenza di emergenza è una sequenza di sblocco speciale da usare quando subisci pressioni o costrizioni. In Velcrypt è previsto che funzioni così:
 
@@ -46,7 +46,7 @@ Dall'esterno non succede niente di insolito. Nessun avviso, nessuna animazione, 
 
 ## Come si basa sulle casseforti nascoste
 
-Velcrypt ti offre già le [casseforti nascoste](id:hidden-vaults): ogni sequenza apre la propria cassaforte, non c'è un elenco e una sequenza sconosciuta apre una cassaforte vuota senza errori. Questo rende già difficile dimostrare che esistono altre casseforti.
+Velcrypt ti offre già le [casseforti nascoste](id:hidden-vaults) (più casseforti fanno parte del Premium): ogni sequenza apre la propria cassaforte, non c'è un elenco e una sequenza sconosciuta apre una cassaforte vuota senza errori. Questo rende già difficile dimostrare che esistono altre casseforti.
 
 La sequenza di emergenza aggiunge un secondo livello. Un'esca funziona solo se l'altra persona ti crede. La sequenza di emergenza è pensata per i casi in cui questo potrebbe non bastare, per esempio se ti aspetti domande ripetute o che ti venga chiesta la sequenza vera in un secondo momento. Una volta usata, le altre casseforti non sono più raggiungibili su quel telefono. L'idea dietro entrambe le funzioni è spiegata in [negabilità plausibile, spiegata](id:plausible-deniability-explained).
 
@@ -67,7 +67,7 @@ Una sequenza di emergenza è uno strumento potente e ha limiti altrettanto reali
 
 **Non può annullare le copie.** Agisce solo sulle casseforti di Velcrypt su quel dispositivo. Se una foto è ancora nella libreria di Foto, in «Eliminati di recente», in Foto di iCloud, in una chat o sul telefono di qualcun altro, lì rimane. Elimina gli originali dopo l'importazione; la guida su [come eliminare gli originali dopo l'importazione](id:delete-original-photos-after-import) spiega come fare.
 
-**Consideralo definitivo.** Nella prima versione i dati delle casseforti non sono inclusi nei backup di iCloud o del computer, quindi devi presumere che l'accesso, una volta rimosso, non possa essere ripristinato. Usala solo se accetti davvero di perdere quei file.
+**Consideralo definitivo.** I dati delle casseforti non sono inclusi nei backup di iCloud o del computer, quindi sul telefono devi presumere che l'accesso, una volta rimosso, non possa essere ripristinato. Un backup cifrato che hai creato in Impostazioni → Backup e salvato altrove è un file separato: tienilo presente, perché resta dove l'hai messo. Usala solo se accetti davvero di perdere quei file sul dispositivo.
 
 **Non ferma chi osserva.** Se qualcuno ti ha visto disegnare la sequenza vera o ha filmato lo schermo, la sequenza di emergenza non cambia ciò che ha visto.
 
@@ -75,6 +75,6 @@ Una sequenza di emergenza è uno strumento potente e ha limiti altrettanto reali
 
 **Non è una consulenza legale.** Le leggi su perquisizioni dei dispositivi, sblocco forzato e distruzione di dati cambiano da Paese a Paese e da situazione a situazione. In alcuni luoghi rimuovere dati durante un controllo ufficiale può essere di per sé un reato. Velcrypt non può dirti cosa è lecito dove ti trovi; se la posta in gioco è alta, chiedi a un avvocato prima di viaggiare o di agire.
 
-## In attesa del suo arrivo
+## Nel frattempo
 
-Puoi già prepararti con le funzioni disponibili oggi. Crea una cassaforte esca credibile, scegli una [sequenza](id:pattern-lock) robusta per la cassaforte vera e tieni gli originali sensibili fuori dal rullino. Quando la sequenza di emergenza arriverà, si inserirà in questa configurazione.
+Puoi già prepararti con le funzioni disponibili oggi. Con il Premium crea una cassaforte esca credibile, scegli una [sequenza](id:pattern-lock) robusta per la cassaforte vera e tieni gli originali sensibili fuori dal rullino. Se e quando la sequenza di emergenza sarà disponibile, si inserirà in questa configurazione.

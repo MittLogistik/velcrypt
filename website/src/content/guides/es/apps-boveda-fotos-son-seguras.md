@@ -19,7 +19,7 @@ keywords:
   - "privacidad bóveda de fotos"
   - "app de fotos secretas segura"
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Una lista práctica para evaluar cualquier bóveda de fotos: cifrado, etiqueta de privacidad, cuenta, nube, anuncios, desinstalación y recuperación."
 category: choosing
 order: 21
@@ -117,7 +117,7 @@ Por transparencia, así se mide nuestra propia app:
 - **Cifrado:** AES-256-GCM mediante Apple CryptoKit. Las claves se obtienen de tu patrón mediante PBKDF2-HMAC-SHA512 con al menos 600.000 iteraciones, cada bóveda tiene su propia clave maestra aleatoria y además se aplica la protección de datos de iOS. Detalles en nuestra [página de seguridad](id:security) y en la [página de la función de cifrado](id:encryption).
 - **Secreto:** un patrón en una cuadrícula de 5×5, distinto del código del dispositivo; sin Face ID, por diseño.
 - **Cuenta y nube:** ninguna. Sin registro, sin servidores, sin subidas ([sin conexión, sin cuenta](id:offline-no-account)).
-- **Recuperación:** ninguna en la primera versión. El contenido de la bóveda está excluido de las copias de seguridad de iCloud y del ordenador, así que perder el teléfono u olvidar el patrón significa que el contenido no se puede recuperar. Está prevista una opción de copia de seguridad cifrada.
+- **Recuperación:** solo con una copia de seguridad cifrada que tú crees. El contenido de la bóveda está excluido de las copias de seguridad de iCloud y del ordenador, pero en Ajustes → Copia de seguridad puedes crear un archivo cifrado con una contraseña propia y restaurarlo en otro iPhone. Un patrón o una contraseña de copia olvidados no se pueden recuperar.
 - **Originales:** importar copia el elemento; el original lo eliminas tú.
 
 Si una bóveda que estás valorando puede responder a estos puntos con la misma claridad, es buena señal. Para una comparación más amplia de opciones, consulta [las mejores apps de bóveda de fotos para iPhone](id:best-private-photo-vault-apps-iphone).

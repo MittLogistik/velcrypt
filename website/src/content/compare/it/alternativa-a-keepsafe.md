@@ -10,11 +10,11 @@ keyFacts:
   - "Velcrypt non richiede un account e conserva le casseforti cifrate solo sul tuo iPhone."
   - "L’album Nascosti e le note bloccate di Apple sono opzioni gratuite e integrate, con sincronizzazione iCloud."
   - "Cambiare significa esportare, importare, poi eliminare gli avanzi e svuotare Eliminati di recente."
-  - "Velcrypt v1 non ha backup: con una sequenza dimenticata o un telefono perso la cassaforte è persa."
+  - "Velcrypt non ha backup cloud: offre un backup cifrato manuale e gratuito, e una sequenza dimenticata non si recupera."
 primaryKeyword: "alternativa a keepsafe"
 keywords: ["alternativa keepsafe iphone", "app come keepsafe", "passare da keepsafe", "sostituto di keepsafe", "cassaforte foto senza account"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Perché si cerca un’alternativa a Keepsafe, cosa controllare in una cassaforte foto e come spostare le foto senza lasciare copie in giro."
 competitor: "Keepsafe"
 lastChecked: "ottobre 2026"
@@ -28,7 +28,7 @@ faq:
   - q: "Eliminare Keepsafe cancella il backup nel cloud?"
     a: "Non necessariamente. Eliminare un’app di solito non chiude l’account né rimuove i dati sui server. Controlla l’aiuto o le impostazioni dell’account di Keepsafe per sapere come eliminare account e dati nel cloud."
   - q: "Esiste un’alternativa a Keepsafe con backup cloud?"
-    a: "Sì, diverse app cassaforte offrono funzioni cloud e l’album Nascosti di Apple si sincronizza con Foto di iCloud. Velcrypt v1 no; un’opzione di backup cifrato è in programma."
+    a: "Sì, diverse app cassaforte offrono funzioni cloud e l’album Nascosti di Apple si sincronizza con Foto di iCloud. Velcrypt no: non sincronizza, ma offre un backup cifrato manuale e gratuito in un file che salvi dove vuoi."
 ---
 
 *Ultimo controllo: ottobre 2026. Le caratteristiche dei prodotti cambiano; verifica la scheda di ciascuna app sull’App Store per la versione attuale.*
@@ -61,14 +61,14 @@ Una cassaforte per foto è un’app che conserva foto e video selezionati separa
 
 | Opzione | Account | Copia nel cloud | Segreto separato | Note |
 |---|---|---|---|---|
-| Velcrypt | Nessuno | No (v1) | Sì, una sequenza | Casseforti nascoste, documenti, niente Face ID |
+| Velcrypt | Nessuno | No; backup cifrato manuale | Sì, una sequenza | Casseforti nascoste, documenti, niente Face ID |
 | Album Nascosti dell’iPhone | Account Apple per iCloud | Con Foto di iCloud | No, codice del dispositivo | Gratuito, integrato |
 | Note bloccate di Apple | Account Apple per iCloud | Con Note di iCloud | Password di Note facoltativa | Ideale per pochi elementi |
 | Altre app cassaforte | Variabile | Variabile | Variabile | Controlla ogni scheda |
 
 <!-- TODO verify -->
 
-**Velcrypt** tiene tutto sull’iPhone, senza account e senza server. Sblocchi disegnando una sequenza su una griglia 5×5 e ogni sequenza apre la propria cassaforte; una sequenza sconosciuta ne apre una vuota, il che ti dà la [negabilità plausibile](id:plausible-deniability-explained). I file sono cifrati con AES-256-GCM. Il compromesso, detto onestamente: nella v1 i dati delle casseforti non sono inclusi nei backup, quindi un telefono perso o una sequenza dimenticata non si possono rimediare. Il [confronto diretto con Keepsafe](id:velcrypt-vs-keepsafe) le mette fianco a fianco.
+**Velcrypt** tiene tutto sull’iPhone, senza account e senza server. Sblocchi disegnando una sequenza su una griglia 5×5 e ogni sequenza apre la propria cassaforte; una sequenza sconosciuta ne apre una vuota, il che ti dà la [negabilità plausibile](id:plausible-deniability-explained). I file sono cifrati con AES-256-GCM. Il compromesso, detto onestamente: i dati delle casseforti non sono inclusi nei backup di iCloud o del computer, quindi una sequenza dimenticata non si può rimediare e un telefono perso solo con un backup cifrato creato da te. Il [confronto diretto con Keepsafe](id:velcrypt-vs-keepsafe) le mette fianco a fianco.
 
 **Le opzioni integrate di Apple** non costano nulla. L’[album Nascosti](id:velcrypt-vs-iphone-hidden-album) è semplice e si sincronizza, ma si apre con il codice del dispositivo. Le [note bloccate](id:velcrypt-vs-apple-notes-locked-notes) vanno bene per poche immagini o scansioni delicate.
 
@@ -76,7 +76,7 @@ Una cassaforte per foto è un’app che conserva foto e video selezionati separa
 
 ## Quando restare con Keepsafe può avere senso
 
-Se il backup cloud è la funzione su cui conti di più e un account non ti crea problemi, Keepsafe potrebbe essere ancora la scelta migliore. Velcrypt v1 non offre backup né sincronizzazione e non è disponibile su Android.
+Se il backup cloud è la funzione su cui conti di più e un account non ti crea problemi, Keepsafe potrebbe essere ancora la scelta migliore. Velcrypt non offre backup cloud né sincronizzazione (solo un backup cifrato manuale) e non è disponibile su Android.
 
 ## Come cambiare senza lasciare copie
 

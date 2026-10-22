@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "cofre de fotos criptografado iphone"
 keywords: ["criptografia de fotos iphone", "cofre de fotos aes-256-gcm", "app cofre pbkdf2", "como meu cofre é criptografado", "criptografia autenticada explicada"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "AES-256-GCM por arquivo, chaves derivadas do seu padrão com PBKDF2-HMAC-SHA512 e HKDF, mais a Proteção de Dados do iOS."
 status: available
 schemaType: WebPage
@@ -72,7 +72,7 @@ As duas camadas são independentes. Mesmo que uma fosse contornada de alguma for
 
 O Velcrypt é [totalmente offline e sem conta](id:offline-no-account). Não há servidores, uploads nem cópia das suas chaves fora do seu celular. Esse design elimina toda uma categoria de risco: não existe banco de dados para ser invadido nem funcionário da empresa que possa descriptografar seus arquivos.
 
-Isso também tem um custo. Como as chaves só existem no aparelho e só por meio do seu padrão, ninguém consegue recuperar um cofre se o padrão for esquecido ou o celular for perdido. Uma opção de backup criptografado está planejada, mas não existe na primeira versão.
+Isso também tem um custo. Como as chaves só existem no aparelho e só por meio do seu padrão, ninguém consegue recuperar um cofre se o padrão for esquecido ou o celular for perdido, a menos que você tenha criado antes um backup criptografado em Ajustes → Backup. Esse backup é um arquivo protegido por uma senha que você escolhe, e uma senha de backup esquecida também não pode ser recuperada.
 
 ## O que a criptografia não cobre
 

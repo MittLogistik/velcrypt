@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "déni plausible chiffrement"
 keywords: ["qu’est-ce que le déni plausible", "chiffrement niable", "volume caché expliqué", "déni plausible coffre-fort photo", "coffre niable iphone"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Le concept derrière les volumes cachés et les coffres leurres, comment Velcrypt l’utilise avec les schémas inconnus, et ce qu’il ne peut pas faire."
 category: security
 order: 42
@@ -60,7 +60,7 @@ Velcrypt adapte le principe à un coffre-fort de photos et de documents sur iPho
 
 Conséquence : un mauvais schéma et un coffre valide mais vide sont identiques. Si vous ouvrez un coffre devant quelqu’un, rien dans l’interface ne montre que d’autres coffres existent. Le [coffre leurre](id:what-is-a-decoy-vault) devient ainsi un usage naturel plutôt qu’un mode spécial. La page de la fonction [coffres cachés](id:hidden-vaults) montre comment cela fonctionne en pratique.
 
-Une fonction Premium prévue, le [schéma de contrainte](id:duress-pattern) (bientôt disponible), prolonge cette logique : un schéma spécial ouvrirait un coffre choisi et retirerait discrètement l’accès aux autres.
+Une fonction prévue pour une prochaine mise à jour, le [schéma de contrainte](id:duress-pattern), prolongerait cette logique : un schéma spécial ouvrirait un coffre choisi et retirerait discrètement l’accès aux autres.
 
 ## Les limites, en toute honnêteté
 

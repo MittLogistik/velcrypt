@@ -10,11 +10,11 @@ keyFacts:
   - "Téléphone perdu, téléphone prêté et chambre d’hôtel partagée sont les expositions les plus courantes en voyage."
   - "L’Accès guidé bloque un iPhone prêté sur une seule app, comme Plans ou Téléphone."
   - "Un coffre Velcrypt ne s’ouvre qu’avec votre schéma ; un schéma inconnu ouvre un coffre vide."
-  - "Dans la première version, les coffres Velcrypt ne sont pas dans les sauvegardes iCloud ou sur ordinateur : prévoyez une seconde copie."
+  - "Les coffres Velcrypt ne sont pas dans les sauvegardes iCloud ou sur ordinateur : créez une sauvegarde chiffrée avant de partir."
 primaryKeyword: "voyager avec des photos privées iphone"
 keywords: ["protéger ses photos en voyage", "iphone volé à l’étranger photos", "protection en cas de vol de l’appareil voyage", "prêter son téléphone à l’étranger", "conseils confidentialité téléphone voyage"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Téléphone perdu, iPhone prêté, contrôles aux frontières : voyager avec vos photos et documents privés sans vous inquiéter."
 group: travel
 schemaType: Article
@@ -26,7 +26,7 @@ faq:
   - q: "Faut-il garder une photo de son passeport sur son téléphone en voyage ?"
     a: "Une copie peut servir si vous perdez votre passeport, mais ne la laissez pas dans la pellicule. Gardez-la dans un coffre chiffré ou un autre endroit protégé, et conservez une copie séparée accessible si le téléphone est perdu."
   - q: "Que devient mon coffre Velcrypt si mon iPhone est volé à l’étranger ?"
-    a: "Le voleur ne peut pas l’ouvrir sans votre schéma, mais vous ne pouvez pas non plus le récupérer : dans la première version, les données des coffres ne sont incluses ni dans les sauvegardes iCloud ni dans celles sur ordinateur. Une option de sauvegarde chiffrée est prévue."
+    a: "Le voleur ne peut pas l’ouvrir sans votre schéma, et vous ne pouvez le récupérer que si vous avez créé une sauvegarde chiffrée Velcrypt avant le vol : les données des coffres ne sont incluses ni dans les sauvegardes iCloud ni dans celles sur ordinateur."
   - q: "Est-ce prudent de prêter mon iPhone à quelqu’un à l’étranger ?"
     a: "En général oui, pour un appel rapide ou pour consulter une carte. Lancez d’abord l’Accès guidé pour que la personne reste dans cette seule app, et gardez le téléphone à l’œil."
 ---
@@ -60,16 +60,16 @@ En voyage, votre téléphone passe entre plus de mains et par plus d’endroits 
 
 Velcrypt conserve vos photos, vidéos et documents privés dans des coffres chiffrés stockés uniquement sur votre iPhone. Un coffre s’ouvre avec un schéma tracé sur une grille 5×5 — pas avec votre code ni Face ID. Si un voleur a appris votre code, cela ne suffit pas à ouvrir votre coffre. Pourquoi un schéma plutôt que la biométrie ? C’est expliqué dans [schéma, code PIN ou Face ID](id:pattern-lock-vs-pin-vs-face-id).
 
-Chaque schéma ouvre son propre coffre, et un schéma inconnu ouvre un coffre vide sans la moindre erreur. Vous pouvez ainsi garder un [coffre leurre](id:what-is-a-decoy-vault) avec des photos de voyage anodines, et votre coffre privé derrière un autre schéma. L’app se verrouille aussi automatiquement quand elle passe en arrière-plan, et son contenu est masqué dans le sélecteur d’apps.
+Chaque schéma ouvre son propre coffre, et un schéma inconnu ouvre un coffre vide sans la moindre erreur. Avec Premium, vous pouvez ainsi garder un [coffre leurre](id:what-is-a-decoy-vault) avec des photos de voyage anodines, et votre coffre privé derrière un autre schéma. L’app se verrouille aussi automatiquement quand elle passe en arrière-plan, et son contenu est masqué dans le sélecteur d’apps.
 
 Pas de compte et aucun envoi : il n’y a donc aucun identifiant cloud à hameçonner ou à réinitialiser pendant que vous êtes sur la route.
 
 ## Des limites honnêtes
 
-- **Pas de sauvegarde dans la première version.** Les données des coffres sont exclues des sauvegardes iCloud et sur ordinateur. Si le téléphone est perdu ou volé, le coffre l’est aussi — personne ne peut le récupérer. Une option de sauvegarde chiffrée est prévue. En voyage, gardez une seconde copie de tout ce qui est irremplaçable en lieu sûr.
+- **Pas de sauvegarde automatique.** Les données des coffres sont exclues des sauvegardes iCloud et sur ordinateur. Si le téléphone est perdu ou volé sans sauvegarde chiffrée, le coffre l’est aussi — personne ne peut le récupérer. Avant de partir, créez une sauvegarde chiffrée dans Réglages → Sauvegarde et laissez le fichier ailleurs que sur l’iPhone.
 - **Les originaux restent dans Photos tant que vous ne les supprimez pas.** L’import copie une photo. [Supprimez l’original](id:delete-original-photos-after-import) et videz « Suppressions récentes ».
 - **Quelqu’un qui vous regarde tracer** votre schéma pourrait l’apprendre.
 - **L’icône de l’app est visible** sur l’écran d’accueil, sauf si vous utilisez l’option d’iOS 18 pour masquer des apps.
-- **Un coffre n’est pas un bouclier juridique.** À une frontière, ce sont les règles du pays qui s’appliquent ; le schéma de contrainte est une fonction Premium prévue (bientôt disponible), pas encore proposée.
+- **Un coffre n’est pas un bouclier juridique.** À une frontière, ce sont les règles du pays qui s’appliquent ; le schéma de contrainte est prévu pour une prochaine mise à jour et pas encore proposé.
 
 Voyagez léger, voyagez préparé : avec un téléphone bien verrouillé, le perdre devient un désagrément, pas une crise.

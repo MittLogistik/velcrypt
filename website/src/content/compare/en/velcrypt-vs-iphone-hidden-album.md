@@ -10,11 +10,11 @@ keyFacts:
   - "On iOS 16 and later the Hidden album is locked with Face ID, Touch ID or the device passcode by default."
   - "Anyone who knows your iPhone passcode can open the Hidden album."
   - "Hidden photos sync with iCloud Photos; they are end-to-end encrypted only with Advanced Data Protection on."
-  - "Velcrypt uses a separate pattern, keeps vaults on the device only and excludes them from backups in v1."
+  - "Velcrypt uses a separate pattern, keeps vaults on the device and excludes them from iCloud backups."
 primaryKeyword: "velcrypt vs iphone hidden album"
 keywords: ["iphone hidden album vs vault app", "is hidden album secure", "hidden album alternative", "hidden album face id", "hidden photos icloud"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Apple’s built-in Hidden album versus a separate encrypted vault: what each protects, where photos sync, and who can open them."
 competitor: "iPhone Hidden album"
 lastChecked: "October 2026"
@@ -49,13 +49,13 @@ If iCloud Photos is on, hidden items sync like everything else. They’re encryp
 |---|---|---|
 | On-device encryption details published | Yes: AES-256-GCM, keys derived from your pattern | iOS Data Protection, documented by Apple |
 | Account required | No | Part of Photos; Apple Account needed for iCloud sync |
-| Cloud backup | No (v1); encrypted backup planned | Yes, with iCloud Photos or iCloud Backup |
+| Cloud backup | No cloud; optional encrypted backup file you store yourself (free) | Yes, with iCloud Photos or iCloud Backup |
 | Unlock method | Pattern on a 5×5 grid, separate from passcode | Face ID, Touch ID or device passcode |
 | Biometrics | Not offered, by design | Yes |
-| Decoy / multiple vaults | Every pattern is its own vault | One Hidden album |
-| Duress pattern | Coming soon (Premium) | No |
+| Decoy / multiple vaults | Every pattern is its own vault (a second vault needs Premium) | One Hidden album |
+| Duress pattern | Planned for a future update | No |
 | Recovery if you forget the code | None | Device passcode and Apple Account recovery |
-| Cost | Free version plus optional Premium | Included with iOS |
+| Cost | Free version (1 vault, up to 50 items) plus optional Premium | Included with iOS |
 | Platforms | iPhone (iOS 17+) | iPhone, iPad and Mac |
 | Documents | Yes, from the Files app | Photos and videos only |
 
@@ -73,7 +73,7 @@ Hiding a photo doesn’t move it anywhere; it’s still in your library, still i
 
 <!-- TODO verify -->
 
-Velcrypt works the other way. An imported photo is copied into an encrypted vault on the iPhone, and vault data is excluded from iCloud and computer backups in version 1. After importing, you delete the original from Photos and empty Recently Deleted, otherwise it stays there for about 30 days. Read [delete original photos after import](id:delete-original-photos-after-import).
+Velcrypt works the other way. An imported photo is copied into an encrypted vault on the iPhone, and vault data is excluded from iCloud and computer backups. After importing, you delete the original from Photos and empty Recently Deleted, otherwise it stays there for about 30 days. Read [delete original photos after import](id:delete-original-photos-after-import).
 
 ## Deniability
 
@@ -93,4 +93,4 @@ There is exactly one Hidden album, and its existence is obvious to anyone who op
 - **You want decoys or several private spaces.** Every pattern is its own vault.
 - **You also need to keep documents private.** Import PDFs and files from the Files app.
 
-The honest trade-off: with Velcrypt v1, a lost phone or a forgotten pattern means the vault can’t be recovered. Decide which risk worries you more.
+The honest trade-off: with Velcrypt, a forgotten pattern means the vault can’t be recovered, and a lost phone does too unless you made an encrypted backup file in Settings → Backup. Decide which risk worries you more.

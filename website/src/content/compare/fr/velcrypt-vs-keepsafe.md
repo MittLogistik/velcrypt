@@ -7,14 +7,14 @@ navTitle: "Velcrypt vs Keepsafe"
 answer: "Velcrypt garde tout sur votre iPhone, sans compte, et se déverrouille avec un motif tracé, tandis que Keepsafe, d’après sa fiche App Store, utilise un compte et propose une sauvegarde cloud. Choisissez Velcrypt pour un stockage uniquement local et le déni plausible ; Keepsafe peut mieux vous convenir si vous voulez sauvegarde et synchronisation."
 keyFacts:
   - "Velcrypt ne demande ni compte, ni e-mail, ni inscription ; Keepsafe utilise un compte, d’après sa fiche."
-  - "Keepsafe propose une sauvegarde cloud facultative ; Velcrypt v1 conserve les coffres uniquement sur votre iPhone."
+  - "Keepsafe propose une sauvegarde cloud facultative ; Velcrypt garde les coffres sur votre iPhone, avec une sauvegarde chiffrée manuelle et gratuite."
   - "Velcrypt se déverrouille avec un motif sur une grille 5×5 et n’a volontairement ni Face ID ni Touch ID."
   - "Dans Velcrypt, chaque motif ouvre son propre coffre, et un motif inconnu ouvre un coffre vide."
   - "Si vous oubliez votre motif Velcrypt ou perdez le téléphone, le coffre ne peut pas être récupéré."
 primaryKeyword: "velcrypt vs keepsafe"
 keywords: ["keepsafe vs velcrypt", "comparatif keepsafe", "alternative à keepsafe coffre-fort photo", "coffre-fort photo sans compte", "sauvegarde cloud keepsafe"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Un coffre local sans compte face à un coffre avec compte et sauvegarde cloud. Ce qui convient à qui, côte à côte."
 competitor: "Keepsafe"
 lastChecked: "octobre 2026"
@@ -24,7 +24,7 @@ faq:
   - q: "Keepsafe nécessite-t-il un compte ?"
     a: "D’après sa fiche App Store au moment de la rédaction, Keepsafe utilise un compte lié à une adresse e-mail, ce qui permet des fonctions comme la sauvegarde cloud. Velcrypt n’a aucun compte : rien sur vous ni sur votre coffre ne quitte le téléphone."
   - q: "Velcrypt peut-il sauvegarder mon coffre comme le cloud de Keepsafe ?"
-    a: "Pas dans la première version. Velcrypt exclut les données des coffres des sauvegardes iCloud et ordinateur : un téléphone perdu ou un motif oublié signifie que le coffre est perdu. Une option de sauvegarde chiffrée est prévue, sans date fixée."
+    a: "Pas automatiquement. Velcrypt exclut les données des coffres des sauvegardes iCloud et ordinateur, mais vous pouvez créer gratuitement une sauvegarde chiffrée dans Réglages → Sauvegarde : un fichier protégé par un mot de passe de sauvegarde, que vous enregistrez par exemple dans iCloud Drive. Velcrypt ne le reçoit jamais."
   - q: "Lequel propose un coffre leurre ?"
     a: "Les deux proposent une forme de leurre. Keepsafe a présenté un faux code PIN (code leurre) comme fonction premium. Dans Velcrypt, n’importe quel motif peut être son propre coffre : vous pouvez garder un coffre leurre anodin, et un motif inconnu ouvre simplement un coffre vide."
   - q: "Puis-je passer de Keepsafe à Velcrypt ?"
@@ -49,14 +49,14 @@ Aucune approche n’est meilleure dans l’absolu. L’une sacrifie du confort p
 |---|---|---|
 | Détails du chiffrement sur l’appareil publiés | Oui : AES-256-GCM, dérivation de clé PBKDF2-HMAC-SHA512 (voir [chiffrement](id:encryption)) | Pas détaillés publiquement |
 | Compte requis | Ni compte ni e-mail | Oui, d’après sa fiche |
-| Sauvegarde cloud | Non (v1) ; sauvegarde chiffrée prévue | « Private Cloud » facultatif avec premium |
+| Sauvegarde cloud | Non ; sauvegarde chiffrée manuelle et gratuite (fichier protégé par mot de passe) | « Private Cloud » facultatif avec premium |
 | Méthode de déverrouillage | Motif sur une grille 5×5 | Code PIN ou code d’accès |
 | Biométrie (Face ID / Touch ID) | Non proposée, par choix | Prise en charge, d’après sa fiche |
-| Leurre / plusieurs coffres | Chaque motif est son propre coffre | Faux code PIN (leurre) en premium |
-| Motif de contrainte | Bientôt disponible (Premium) | Non indiqué publiquement |
+| Leurre / plusieurs coffres | Chaque motif est son propre coffre (Premium) | Faux code PIN (leurre) en premium |
+| Motif de contrainte | Prévu, pas encore disponible | Non indiqué publiquement |
 | Alertes d’intrusion | Non proposées | Proposées en premium |
 | Récupération en cas d’oubli du code | Aucune ; le coffre ne peut pas être récupéré | Variable ; une récupération via le compte peut exister |
-| Modèle économique | Version gratuite plus option Premium (voir [tarifs](id:pricing)) | Offre gratuite plus abonnement premium |
+| Modèle économique | Gratuit (1 coffre, 50 éléments) ; Premium en abonnement ou achat unique (voir [tarifs](id:pricing)) | Offre gratuite plus abonnement premium |
 | Plateformes | iPhone (iOS 17+) | iOS et Android |
 
 <!-- TODO verify -->
@@ -65,7 +65,7 @@ Aucune approche n’est meilleure dans l’absolu. L’une sacrifie du confort p
 
 Un compte est une fonction de confort. Il permet à une app de restaurer votre coffre sur un nouveau téléphone et de le synchroniser entre appareils. Cela signifie aussi qu’une entreprise détient un identifiant vous concernant et, si vous utilisez la sauvegarde cloud, qu’une copie de vos fichiers se trouve sur des serveurs que vous ne contrôlez pas, protégée par le chiffrement et les règles d’accès propres à ce service.
 
-Velcrypt prend le parti inverse. Ni inscription, ni e-mail, ni serveur, comme expliqué sur [hors ligne, sans compte](id:offline-no-account). En version 1, les données des coffres sont exclues des sauvegardes iCloud et Finder. La conséquence, en toute honnêteté : personne ne peut les restaurer pour vous — ni Apple, ni Velcrypt, ni vous. Si cela vous inquiète, lisez [motif de coffre oublié](id:forgot-vault-pattern) avant de décider.
+Velcrypt prend le parti inverse. Ni inscription, ni e-mail, ni serveur, comme expliqué sur [hors ligne, sans compte](id:offline-no-account). Les données des coffres sont exclues des sauvegardes iCloud et Finder. La conséquence, en toute honnêteté : sans sauvegarde chiffrée que vous avez créée vous-même, personne ne peut les restaurer pour vous — ni Apple, ni Velcrypt, ni vous. Si cela vous inquiète, lisez [motif de coffre oublié](id:forgot-vault-pattern) avant de décider.
 
 ## Déverrouillage : motif contre code PIN et biométrie
 
@@ -81,11 +81,11 @@ De nombreuses apps coffre-fort proposent un second code, factice, qui ouvre un c
 
 <!-- TODO verify -->
 
-Chez Velcrypt, ce modèle fait partie de la structure, ce n’est pas une option. Chaque motif est son propre coffre, il n’existe aucune liste de coffres, et un motif que l’app n’a jamais vu ouvre simplement un coffre vide, sans erreur. Rien à l’écran ne prouve que d’autres coffres existent. C’est concrètement le sens des [coffres cachés](id:hidden-vaults) et du [déni plausible](id:plausible-deniability-explained). Un motif de contrainte, qui ouvrirait un coffre choisi et retirerait discrètement l’accès aux autres, est prévu dans le Premium et bientôt disponible.
+Chez Velcrypt, ce modèle fait partie de la structure, ce n’est pas une option. Chaque motif est son propre coffre, il n’existe aucune liste de coffres, et un motif que l’app n’a jamais vu ouvre simplement un coffre vide, sans erreur. Rien à l’écran ne prouve que d’autres coffres existent. C’est concrètement le sens des [coffres cachés](id:hidden-vaults) et du [déni plausible](id:plausible-deniability-explained). Un motif de contrainte, qui ouvrirait un coffre choisi et retirerait discrètement l’accès aux autres, est prévu pour une prochaine mise à jour. Plusieurs coffres, et donc un leurre, nécessitent Premium.
 
 ## Quand Keepsafe peut mieux vous convenir
 
-- **Vous voulez sauvegarde et synchronisation.** Si perdre votre téléphone ne doit pas signifier perdre vos photos, une sauvegarde cloud liée à un compte est aujourd’hui la solution la plus simple. Velcrypt v1 ne la propose pas.
+- **Vous voulez sauvegarde et synchronisation.** Si perdre votre téléphone ne doit pas signifier perdre vos photos, une sauvegarde cloud automatique liée à un compte est la solution la plus simple. Velcrypt ne propose qu’une sauvegarde chiffrée manuelle.
 - **Vous utilisez aussi Android.** Keepsafe est disponible sur plusieurs plateformes, d’après ses fiches ; Velcrypt est réservé à l’iPhone.
 - **Vous préférez Face ID.** Si le confort de la biométrie compte plus pour vous que le risque de déverrouillage forcé, Velcrypt ne le proposera volontairement pas.
 - **Vous voulez des alertes d’intrusion.** Velcrypt ne prend pas de photo des intrus.

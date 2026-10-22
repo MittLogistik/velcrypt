@@ -19,7 +19,7 @@ keywords:
   - "privacidade cofre de fotos"
   - "app de fotos secretas é seguro"
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Uma lista prática para avaliar qualquer cofre de fotos: criptografia, rótulo de privacidade, conta, nuvem, anúncios, desinstalação e recuperação."
 category: choosing
 order: 21
@@ -117,7 +117,7 @@ Por transparência, veja como o nosso próprio app se sai:
 - **Criptografia:** AES-256-GCM via Apple CryptoKit. As chaves vêm do seu padrão via PBKDF2-HMAC-SHA512 com pelo menos 600.000 iterações, cada cofre tem a própria chave mestra aleatória e a Proteção de Dados do iOS é aplicada por cima. Detalhes na nossa [página de segurança](id:security) e na [página do recurso de criptografia](id:encryption).
 - **Segredo:** um padrão numa grade de 5×5, separado do código do aparelho; sem Face ID, de propósito.
 - **Conta e nuvem:** nenhuma. Sem cadastro, sem servidores, sem uploads ([offline, sem conta](id:offline-no-account)).
-- **Recuperação:** nenhuma na primeira versão. O conteúdo do cofre fica fora dos backups do iCloud e do computador, então perder o celular ou esquecer o padrão significa que o conteúdo não pode ser recuperado. Uma opção de backup criptografado está planejada.
+- **Recuperação:** só por um backup criptografado que você mesmo cria. O conteúdo do cofre fica fora dos backups do iCloud e do computador, mas em Ajustes → Backup você pode criar um arquivo protegido por senha e guardá-lo onde quiser. Sem esse backup, perder o celular ou esquecer o padrão significa que o conteúdo não pode ser recuperado, e uma senha de backup esquecida também não tem volta.
 - **Originais:** importar copia o item; você mesmo remove o original.
 
 Se um cofre que você está considerando consegue responder a esses pontos com a mesma clareza, é um bom sinal. Para uma comparação mais ampla das opções, veja [os melhores apps de cofre de fotos para iPhone](id:best-private-photo-vault-apps-iphone).

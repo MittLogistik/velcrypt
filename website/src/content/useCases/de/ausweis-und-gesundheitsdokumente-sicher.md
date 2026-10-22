@@ -10,11 +10,11 @@ keyFacts:
   - "Dokumente in der Mediathek landen mit iCloud-Fotos auf jedem Gerät und können in Widgets und Rückblicken erscheinen."
   - "Velcrypt importiert Dokumente aus der Dateien-App und Fotos aus deiner Mediathek in verschlüsselte Tresore."
   - "Importierte Objekte sind Kopien; lösch danach die Originale und leere „Zuletzt gelöscht“."
-  - "Velcrypt-Tresore sind in der ersten Version nicht in iCloud- oder Computer-Backups, bewahr also eine zweite Kopie wichtiger Dokumente auf."
+  - "Velcrypt-Tresore sind nicht in iCloud- oder Computer-Backups; erstelle ein verschlüsseltes Backup oder bewahr eine zweite Kopie wichtiger Dokumente auf."
 primaryKeyword: "ausweis sicher speichern iphone"
 keywords: ["reisepass foto auf dem iphone sicher", "medizinische fotos verstecken iphone", "versichertenkarte iphone speichern", "private dokumente iphone", "rezepte fotos datenschutz"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Reisepass, Versichertenkarte und medizinische Fotos verdienen mehr als die Mediathek. Wo sie am iPhone durchsickern und wie sie privat bleiben."
 group: sensitive
 schemaType: Article
@@ -28,7 +28,7 @@ faq:
   - q: "Kann ich PDFs in Velcrypt ablegen?"
     a: "Ja. Velcrypt importiert Dokumente aus der Dateien-App, sodass PDFs wie Rezepte, Schreiben der Krankenkasse oder Laborbefunde neben Fotos in einem Tresor liegen können."
   - q: "Was, wenn ich das Handy mit meinen Dokumenten in Velcrypt verliere?"
-    a: "Ohne dein Muster kann niemand den Tresor öffnen. In der ersten Version werden Tresordaten aber nicht gesichert, die Dokumente sind also auch weg. Bewahr Originale oder eine zweite Kopie an einem sicheren Ort auf."
+    a: "Ohne dein Muster kann niemand den Tresor öffnen. Tresordaten werden aber nicht automatisch gesichert. Hast du vorher ein verschlüsseltes Backup erstellt, stellst du die Dokumente auf einem neuen iPhone wieder her; sonst sind sie weg. Bewahr Originale oder eine zweite Kopie an einem sicheren Ort auf."
 ---
 
 Die meisten von uns haben es schon getan: den Reisepass am Flughafenschalter abfotografiert, die Versichertenkarte für ein Formular geknipst oder einen Ausschlag fotografiert, um ihn der Ärztin zu zeigen. Das ist praktisch. Doch diese Fotos liegen danach jahrelang in der Mediathek, zwischen Urlaubsbildern und Memes.
@@ -65,7 +65,7 @@ Musst du ein Dokument verschicken – an eine Arztpraxis oder ein Visumbüro –
 
 ## Ehrliche Grenzen
 
-- **Kein Backup in der ersten Version.** Tresordaten sind von iCloud- und Computer-Backups ausgeschlossen. Verlierst du dein Handy oder vergisst du dein Muster, lassen sich die Dokumente nicht wiederherstellen. Bewahr für wichtige Dokumente die Originale oder eine zweite Kopie unter deiner Kontrolle auf. Eine verschlüsselte Backup-Option ist geplant.
+- **Kein automatisches Backup.** Tresordaten sind von iCloud- und Computer-Backups ausgeschlossen. Erstelle unter Einstellungen → Backup ein verschlüsseltes Backup und speichere es außerhalb des iPhones; ohne Backup lassen sich die Dokumente nach einem Geräteverlust nicht wiederherstellen, und ein vergessenes Muster oder Backup-Passwort nie. Bewahr für wichtige Dokumente die Originale oder eine zweite Kopie unter deiner Kontrolle auf.
 - **Kopien anderswo sind nicht geschützt.** E-Mails, Chat-Anhänge und iCloud-Kopien bleiben, wo sie sind, bis du sie entfernst. Siehe [Originale nach dem Import löschen](id:delete-original-photos-after-import).
 - **Alles, was du exportierst,** verlässt den Tresor und ist nur so privat wie der Ort, an dem es landet.
 - **Jemand, der zusieht,** wie du dein Muster zeichnest, oder ein Handy, das mit offenem Tresor weitergegeben wird, hebelt die Sperre aus.

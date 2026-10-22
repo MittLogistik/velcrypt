@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "velcrypt assistenza"
 keywords: ["contattare velcrypt", "velcrypt aiuto", "velcrypt non apre la cassaforte", "velcrypt problemi", "email velcrypt"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 schemaType: ContactPage
 order: 5
 related: [faq, forgot-vault-pattern, auto-lock, security, privacy]
@@ -54,7 +54,8 @@ Ti preghiamo di **non** inviare la tua sequenza e di non allegare screenshot che
 Velcrypt è progettato perché nessuno tranne te possa aprire le tue casseforti, noi compresi. Per questo l’assistenza **non può**:
 
 - recuperare o reimpostare una sequenza dimenticata,
-- ripristinare una cassaforte da un iPhone perso, rotto o inizializzato,
+- ripristinare una cassaforte da un iPhone perso, rotto o inizializzato senza un tuo backup cifrato,
+- recuperare una password del backup dimenticata,
 - dirti quante casseforti esistono su un dispositivo,
 - decifrare file o recuperare contenuti al posto tuo.
 
@@ -75,6 +76,14 @@ Velcrypt si blocca quando passa in background, dopo un ritardo che puoi impostar
 ### L’importazione non riesce o lo spazio finisce
 
 Le copie cifrate occupano più o meno lo stesso spazio degli originali. Controlla lo spazio libero in Impostazioni › Generali › Spazio iPhone. Ricorda che importare non rimuove gli originali da Foto: eliminarli, e svuotare Eliminati di recente, libera spazio. Vedi [eliminare gli originali dopo l’importazione](id:delete-original-photos-after-import).
+
+### Voglio spostare le casseforti su un nuovo iPhone
+
+Sul vecchio iPhone apri ogni cassaforte e crea un backup in Impostazioni → Backup, poi salva il file `.velcrypt` in iCloud Drive o su un computer. Sul nuovo iPhone apri Velcrypt, apri una cassaforte e ripristina il backup da Impostazioni → Backup con la password del backup. Gli elementi vengono aggiunti alla cassaforte aperta e non viene eliminato nulla.
+
+### Il Premium non compare su un nuovo iPhone
+
+Tocca Ripristina acquisti nella schermata Premium, usando lo stesso Account Apple dell’acquisto. Gli abbonamenti si gestiscono e si annullano nelle impostazioni del tuo Account Apple; per i rimborsi rivolgiti ad Apple.
 
 ### Non trovo un file che ho importato
 

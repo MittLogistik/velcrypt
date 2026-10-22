@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "video's verbergen iphone app"
 keywords: ["versleutelde videokluis iphone", "privé video app iphone", "video's vergrendelen iphone", "geheime videokluis", "video's verbergen uit filmrol"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Importeer video's als versleutelde kopieën, speel ze af in de kluis en wis de originelen zonder dat je opslag volloopt."
 status: available
 schemaType: WebPage
@@ -26,7 +26,7 @@ faq:
   - q: "Waarom is mijn vrije opslag kleiner na het importeren van video's?"
     a: "Importeren maakt een kopie. Tot je het origineel uit Foto's verwijdert en Recent verwijderd leegt, bestaat de video dus twee keer. Zodra het origineel weg is, komt de ruimte vrij."
   - q: "Zitten mijn verborgen video's in de iCloud-reservekopie?"
-    a: "Nee. In de eerste versie zitten kluisgegevens niet in iCloud- en computerbackups. Video's in de kluis staan alleen op je iPhone."
+    a: "Nee. Kluisgegevens zitten niet in iCloud- en computerback-ups. Video's in de kluis staan alleen op je iPhone, tenzij je zelf een versleuteld back-upbestand bewaart."
   - q: "Synchroniseren video's in Velcrypt met mijn andere apparaten?"
     a: "Nee. Velcrypt heeft geen cloudsynchronisatie en werkt alleen op iPhone. Een video in je kluis blijft op de ene telefoon waarop je hem hebt geïmporteerd."
 ---
@@ -79,9 +79,9 @@ Houd rekening met drie dingen:
 
 ## Goed om te weten
 
-- Velcrypt heeft geen ingebouwde camera. Film met de Camera-app, importeer de video en verwijder dan het origineel.
+- Film je met de Camera-app van de iPhone, importeer de video dan en verwijder het origineel. Met de camera in de kluis gaat een video direct versleuteld de kluis in en komt hij nooit in je fotobibliotheek.
 - Verschillende patronen openen verschillende [verborgen kluizen](id:hidden-vaults). Moeten sommige video's nooit naast andere staan, geef ze dan een eigen kluis in plaats van alleen een apart album.
-- Kluisgegevens worden in de eerste versie niet geback-upt. Bewaar van onvervangbare video's een tweede kopie op een plek die je vertrouwt.
+- Kluisgegevens zitten niet in iCloud- of computerback-ups. Maak voor onvervangbare video's via Instellingen → Back-up een versleuteld back-upbestand en bewaar dat op een plek die je vertrouwt.
 - Is een video ooit in een chat verstuurd of in een gedeeld album gezet, dan staan die kopieën buiten de kluis. De gids over [intieme foto's veilig bewaren](id:store-intimate-photos-safely-iphone) gaat dieper in op dat risico.
 
 Voor een breder overzicht van alle ingebouwde opties en apps van derden, zie [video's verbergen op je iPhone](id:hide-videos-iphone).

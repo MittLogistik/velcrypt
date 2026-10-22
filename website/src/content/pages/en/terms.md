@@ -7,14 +7,15 @@ navTitle: "Terms of Use"
 answer: "You may use Velcrypt for lawful, personal purposes under these terms and Apple’s standard Licensed Application End User License Agreement. Because Velcrypt cannot recover lost data, you are responsible for remembering your patterns and keeping copies of anything important."
 keyFacts:
   - "Apple’s Licensed Application End User License Agreement applies to the app."
-  - "Velcrypt cannot recover forgotten patterns or lost vaults."
-  - "You are responsible for keeping copies of important files."
+  - "Velcrypt cannot recover forgotten patterns or forgotten backup passwords."
+  - "You are responsible for keeping copies, such as an encrypted backup file."
+  - "Subscriptions renew automatically until cancelled in Apple Account settings."
   - "Purchases are made and handled through Apple."
   - "Draft — needs legal review before launch."
 primaryKeyword: "velcrypt terms of use"
 keywords: ["velcrypt terms", "velcrypt eula", "velcrypt terms and conditions"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 schemaType: WebPage
 order: 7
 related: [privacy, support, pricing, forgot-vault-pattern]
@@ -25,9 +26,9 @@ faq: []
 
 **Draft — needs legal review before launch.** These terms are a working draft and will be reviewed and may change before Velcrypt is released.
 
-**Effective date:** 21 October 2026
+**Effective date:** 22 October 2026
 
-These Terms of Use (“Terms”) govern your use of the Velcrypt iPhone app (the “App”) and the velcrypt.app website (the “Website”), provided by Velcrypt (“we”, “us”). By downloading or using the App or using the Website, you agree to these Terms.
+These Terms of Use (“Terms”) govern your use of the Velcrypt iPhone app (the “App”) and the velcrypt.app website (the “Website”), provided by Swedish Treats AB, a company based in Sweden that operates Velcrypt (“we”, “us”). By downloading or using the App or using the Website, you agree to these Terms.
 
 ## 1. The App and Apple’s EULA
 
@@ -52,7 +53,8 @@ Because your vault content stays on your device and is encrypted, we cannot see 
 Velcrypt is designed so that no one but you can open your vaults. That has consequences you accept by using it:
 
 - **We cannot recover your data.** Your patterns and keys are never sent to us. If you forget a pattern, the vault it opens cannot be recovered by you or by us.
-- **Lost devices mean lost vaults.** In the current version, vault data is excluded from iCloud and computer backups. If your device is lost, stolen, damaged or reset, its vaults are gone.
+- **Lost devices mean lost vaults, unless you made a backup.** Vault data is excluded from iCloud and computer backups. If your device is lost, stolen, damaged or reset, its vaults are gone. You can create an encrypted backup file of a vault in Settings → Backup and store it wherever you choose; creating it, keeping it up to date and keeping it safe is your responsibility.
+- **We cannot recover backup passwords.** A backup file can only be restored with the backup password you chose. If you forget it, the backup cannot be opened by you or by us.
 - **Keep your own copies.** You are responsible for keeping copies of any file you cannot afford to lose, stored somewhere you trust.
 - **Keep your pattern private.** Anyone who knows or observes your pattern can open that vault.
 
@@ -60,7 +62,11 @@ Read [forgot your vault pattern](id:forgot-vault-pattern) and the limits listed 
 
 ## 5. Purchases
 
-Any purchase, including the optional Premium upgrade, is made through the App Store and is subject to Apple’s terms. Apple processes payment, and refund requests are handled by Apple according to its policies. Prices are shown in the App Store before you buy. Features described as planned or coming soon are not guaranteed until they are released.
+Any purchase, including the optional Premium upgrade, is made through the App Store and is subject to Apple’s terms. Apple processes payment, and refund requests are handled by Apple according to its policies. Prices are shown in the App Store before you buy and may vary by country. Features described as planned are not guaranteed until they are released.
+
+**Subscriptions.** Premium is offered as weekly and yearly auto-renewing subscriptions and as a one-time lifetime purchase. Payment is charged to your Apple Account when you confirm the purchase. A subscription renews automatically for the same period unless you cancel it at least 24 hours before the end of the current period, and your account is charged for the renewal within the 24 hours before the period ends. You can manage or cancel subscriptions in your Apple Account settings; cancelling stops future renewals, and Premium stays active until the end of the period you have paid for. If the yearly plan includes a free trial, the trial converts to a paid yearly subscription when it ends unless you cancel at least 24 hours before the end of the trial. The lifetime purchase is a one-time payment and does not renew.
+
+Purchases are tied to the Apple Account used to make them and can be restored on another device signed in to the same Apple Account with **Restore Purchases** in the App. Refunds are handled by Apple, not by us.
 
 ## 6. Changes to the App
 
@@ -88,7 +94,7 @@ We may update these Terms. We will post the updated version here and change the 
 
 ## 11. Governing law
 
-These Terms are governed by the laws of [jurisdiction TBD], without regard to conflict-of-law rules. Mandatory consumer protection laws of your country of residence continue to apply.
+These Terms are governed by the laws of Sweden, without regard to conflict-of-law rules. Mandatory consumer protection laws of your country of residence continue to apply.
 
 ## 12. Contact
 

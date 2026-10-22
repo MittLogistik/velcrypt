@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "app per nascondere foto iphone"
 keywords: ["nascondere foto iphone", "cassaforte foto cifrata iphone", "album foto privato app", "bloccare foto iphone", "cassaforte foto segreta"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Importa le foto come copie cifrate, elimina gli originali e svuota «Eliminati di recente», poi sfogliale in album con zoom e scorrimento."
 status: available
 schemaType: WebPage
@@ -79,6 +79,6 @@ L'album Nascosti è comodo e per molte persone basta. I suoi limiti sono descrit
 
 ## Buono a sapersi
 
-- Velcrypt non ha una fotocamera integrata. Scatta la foto con l'app Fotocamera, importala e poi elimina l'originale.
+- Con la fotocamera nella cassaforte scatti foto direttamente in Velcrypt, senza che finiscano nella libreria di Foto. Se la foto è già in Foto, importala e poi elimina l'originale.
 - Le foto possono contenere dati sulla posizione e sul dispositivo. Se pensi di condividerle in seguito, [rimuovi prima i metadati](id:remove-photo-metadata-iphone).
-- Nella prima versione i dati delle casseforti non finiscono nei backup. Se una foto è insostituibile, tienine una seconda copia in un posto di cui ti fidi.
+- I dati delle casseforti non finiscono nei backup di iCloud o del computer. Se una foto è insostituibile, crea un backup cifrato in Impostazioni → Backup e salvalo in un posto di cui ti fidi.

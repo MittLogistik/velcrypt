@@ -19,7 +19,7 @@ keywords:
   - "tirar fotos do icloud"
   - "fotos ocultas no icloud.com"
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Fotos ocultas sincronizam pelas Fotos do iCloud e podem ir para o Backup do iCloud. Veja a criptografia em cada caso e como manter uma foto fora do iCloud."
 category: apple
 order: 11
@@ -105,9 +105,9 @@ Isso interrompe os novos envios, mas também interrompe a sincronização de tod
 
 ### Opção 2: guardar a foto num app que não sincroniza
 
-Alguns apps guardam os arquivos só no próprio armazenamento do aparelho e os excluem dos backups. O Velcrypt foi feito assim: as fotos, os vídeos e os documentos que você importa são criptografados no iPhone e, na primeira versão, ficam fora dos backups do iCloud e do computador. Não há conta e nada é enviado ([no aparelho, sem conta](id:offline-no-account)).
+Alguns apps guardam os arquivos só no próprio armazenamento do aparelho e os excluem dos backups. O Velcrypt foi feito assim: as fotos, os vídeos e os documentos que você importa são criptografados no iPhone e ficam fora dos backups do iCloud e do computador. Não há conta e nada é enviado ([no aparelho, sem conta](id:offline-no-account)).
 
-A contrapartida honesta: se a foto existe só dentro de um cofre assim e você perde o celular ou esquece o padrão, não há cópia em lugar nenhum para restaurar. Uma opção de backup criptografado está planejada para o Velcrypt, mas não faz parte da primeira versão.
+A contrapartida honesta: se a foto existe só dentro de um cofre assim e você perde o celular ou esquece o padrão, não há cópia automática para restaurar. No Velcrypt, a saída é criar você mesmo um backup criptografado em Ajustes → Backup: um arquivo protegido por senha que você pode salvar no iCloud Drive ou num computador sem que a Apple consiga ler o conteúdo.
 
 ### Opção 3: apagar direito a cópia do iCloud
 

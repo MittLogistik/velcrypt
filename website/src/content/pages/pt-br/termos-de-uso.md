@@ -1,20 +1,21 @@
 ---
 pageId: terms
 title: "Termos de Uso do Velcrypt"
-description: "Termos de uso do Velcrypt: licença, uso aceitável, sua responsabilidade pelo padrão e pelas cópias, garantia, responsabilidade e compras pela Apple."
+description: "Termos de uso do Velcrypt: licença, uso aceitável, seu padrão e seus backups, assinaturas pela Apple, garantia e lei aplicável."
 h1: "Termos de Uso"
 navTitle: "Termos de Uso"
-answer: "Você pode usar o Velcrypt para fins pessoais e lícitos, de acordo com estes termos e o Contrato de Licença de Usuário Final de Aplicativo Licenciado padrão da Apple. Como o Velcrypt não consegue recuperar dados perdidos, você é responsável por lembrar seus padrões e manter cópias de tudo o que for importante."
+answer: "Você pode usar o Velcrypt para fins pessoais e lícitos, de acordo com estes termos e o Contrato de Licença de Usuário Final de Aplicativo Licenciado padrão da Apple. Como o Velcrypt não consegue recuperar dados perdidos, você é responsável por lembrar seus padrões e suas senhas de backup e por manter cópias de tudo o que for importante. As compras e assinaturas passam pela Apple."
 keyFacts:
   - "O Contrato de Licença de Usuário Final de Aplicativo Licenciado da Apple se aplica ao app."
-  - "O Velcrypt não consegue recuperar padrões esquecidos nem cofres perdidos."
-  - "Você é responsável por manter cópias dos arquivos importantes."
-  - "As compras são feitas e processadas pela Apple."
+  - "O Velcrypt não consegue recuperar padrões nem senhas de backup esquecidos."
+  - "Você é responsável por criar backups e manter cópias dos arquivos importantes."
+  - "As assinaturas são renovadas automaticamente até serem canceladas nos ajustes da Conta Apple."
+  - "O app é fornecido pela Swedish Treats AB, Suécia, e os Termos seguem a lei sueca."
   - "Rascunho — precisa de revisão jurídica antes do lançamento."
 primaryKeyword: "velcrypt termos de uso"
 keywords: ["termos velcrypt", "eula velcrypt", "termos e condições velcrypt"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 schemaType: WebPage
 order: 7
 related: [privacy, support, pricing, forgot-vault-pattern]
@@ -25,9 +26,9 @@ faq: []
 
 **Rascunho — precisa de revisão jurídica antes do lançamento.** Estes termos são uma versão de trabalho e serão revisados, podendo mudar antes do lançamento do Velcrypt.
 
-**Data de vigência:** 21 de outubro de 2026
+**Data de vigência:** 22 de outubro de 2026
 
-Estes Termos de Uso (“Termos”) regem o uso do app Velcrypt para iPhone (o “App”) e do site velcrypt.app (o “Site”), fornecidos pelo Velcrypt (“nós”). Ao baixar ou usar o App, ou ao usar o Site, você concorda com estes Termos.
+Estes Termos de Uso (“Termos”) regem o uso do app Velcrypt para iPhone (o “App”) e do site velcrypt.app (o “Site”), fornecidos pela Swedish Treats AB, Suécia (“nós”). Ao baixar ou usar o App, ou ao usar o Site, você concorda com estes Termos.
 
 ## 1. O App e o EULA da Apple
 
@@ -52,7 +53,8 @@ Como o conteúdo dos seus cofres fica no seu aparelho e é criptografado, não c
 O Velcrypt foi projetado para que ninguém além de você consiga abrir seus cofres. Isso tem consequências que você aceita ao usá-lo:
 
 - **Não conseguimos recuperar seus dados.** Seus padrões e chaves nunca são enviados para nós. Se você esquecer um padrão, o cofre que ele abre não pode ser recuperado, nem por você nem por nós.
-- **Aparelho perdido significa cofres perdidos.** Na versão atual, os dados dos cofres ficam fora dos backups do iCloud e do computador. Se o seu aparelho for perdido, roubado, danificado ou redefinido, os cofres dele deixam de existir.
+- **Aparelho perdido significa cofres perdidos, a menos que você tenha um backup.** Os dados dos cofres ficam fora dos backups do iCloud e do computador. Se o seu aparelho for perdido, roubado, danificado ou redefinido, os cofres dele deixam de existir. Em Ajustes → Backup, você pode criar um arquivo de backup criptografado de um cofre e guardá-lo onde quiser. Criar, guardar e manter esses arquivos atualizados é responsabilidade sua.
+- **Não conseguimos recuperar uma senha de backup.** Se você esquecer a senha de um backup, esse arquivo não pode ser aberto, nem por você nem por nós.
 - **Mantenha suas próprias cópias.** Você é responsável por manter cópias de qualquer arquivo que não possa perder, guardadas em um lugar de confiança.
 - **Mantenha seu padrão em sigilo.** Qualquer pessoa que conheça ou observe seu padrão pode abrir aquele cofre.
 
@@ -60,7 +62,17 @@ Leia [esqueceu o padrão do cofre](id:forgot-vault-pattern) e os limites listado
 
 ## 5. Compras
 
-Qualquer compra, incluindo o upgrade Premium opcional, é feita pela App Store e está sujeita aos termos da Apple. A Apple processa o pagamento, e os pedidos de reembolso são tratados pela Apple conforme as políticas dela. Os preços são mostrados na App Store antes da compra. Recursos descritos como planejados ou em breve não são garantidos até serem lançados.
+O Velcrypt Premium opcional é vendido pela App Store e está sujeito aos termos da Apple. Ele é oferecido como assinatura semanal, assinatura anual ou compra vitalícia. Os preços são mostrados no App e na App Store antes da compra e podem variar por país.
+
+- **Pagamento.** O pagamento é cobrado na sua Conta Apple quando você confirma a compra.
+- **Renovação automática.** As assinaturas são renovadas automaticamente, a menos que sejam canceladas pelo menos 24 horas antes do fim do período atual.
+- **Teste grátis.** Se uma assinatura incluir um teste grátis, ela se converte em assinatura paga ao fim do teste, a menos que você cancele antes.
+- **Gerenciar e cancelar.** Você gerencia ou cancela assinaturas nos ajustes da sua Conta Apple. O cancelamento vale a partir do fim do período atual.
+- **Vitalício.** A compra vitalícia é um pagamento único e não é renovada.
+- **Reembolsos.** A Apple processa o pagamento, e os pedidos de reembolso são tratados pela Apple conforme as políticas dela.
+- **Restaurar Compras.** Em outro aparelho com a mesma Conta Apple, toque em Restaurar Compras no App para recuperar o Premium.
+
+Recursos descritos como planejados não são garantidos até serem lançados.
 
 ## 6. Alterações no App
 
@@ -88,7 +100,7 @@ Podemos atualizar estes Termos. Publicaremos a versão atualizada aqui e alterar
 
 ## 11. Lei aplicável
 
-Estes Termos são regidos pelas leis de [jurisdição a definir], sem considerar regras de conflito de leis. As leis obrigatórias de proteção ao consumidor do seu país de residência continuam se aplicando.
+Estes Termos são regidos pelas leis da Suécia, sem considerar regras de conflito de leis. As leis obrigatórias de proteção ao consumidor do seu país de residência continuam se aplicando.
 
 ## 12. Contato
 

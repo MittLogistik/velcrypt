@@ -10,11 +10,11 @@ keyFacts:
   - "En iOS 16 y posteriores el álbum Oculto se bloquea por defecto con Face ID, Touch ID o el código del dispositivo."
   - "Cualquiera que conozca el código de tu iPhone puede abrir el álbum Oculto."
   - "Las fotos ocultas se sincronizan con Fotos en iCloud; solo tienen cifrado de extremo a extremo con la Protección de datos avanzada activada."
-  - "Velcrypt usa un patrón independiente, guarda las bóvedas solo en el dispositivo y las excluye de las copias en la v1."
+  - "Velcrypt usa un patrón independiente, guarda las bóvedas solo en el dispositivo y las excluye de las copias de iCloud."
 primaryKeyword: "álbum oculto iphone vs velcrypt"
 keywords: ["ocultar fotos iphone álbum oculto", "es seguro el álbum oculto", "alternativa al álbum oculto", "álbum oculto face id", "fotos ocultas icloud"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "El álbum Oculto integrado de Apple frente a una bóveda cifrada aparte: qué protege cada uno, dónde se sincronizan las fotos y quién puede abrirlas."
 competitor: "Álbum Oculto del iPhone"
 lastChecked: "octubre de 2026"
@@ -51,13 +51,13 @@ Si Fotos en iCloud está activado, los elementos ocultos se sincronizan como tod
 |---|---|---|
 | Detalles del cifrado en el dispositivo publicados | Sí: AES-256-GCM, claves derivadas de tu patrón | Protección de datos de iOS, documentada por Apple |
 | Requiere cuenta | No | Forma parte de Fotos; hace falta Cuenta de Apple para sincronizar con iCloud |
-| Copia de seguridad en la nube | No (v1); copia cifrada prevista | Sí, con Fotos en iCloud o la copia de seguridad de iCloud |
+| Copia de seguridad en la nube | No; copia de seguridad cifrada manual y gratuita en un archivo que guardas tú | Sí, con Fotos en iCloud o la copia de seguridad de iCloud |
 | Método de desbloqueo | Patrón en una cuadrícula de 5×5, independiente del código | Face ID, Touch ID o código del dispositivo |
 | Biometría | No disponible, por diseño | Sí |
-| Señuelo / varias bóvedas | Cada patrón es su propia bóveda | Un único álbum Oculto |
-| Patrón de coacción | Próximamente (Premium) | No |
-| Recuperación si olvidas el código | Ninguna | Código del dispositivo y recuperación de la Cuenta de Apple |
-| Coste | Versión gratuita más Premium opcional | Incluido en iOS |
+| Señuelo / varias bóvedas | Cada patrón es su propia bóveda (con Premium) | Un único álbum Oculto |
+| Patrón de coacción | Previsto para una actualización futura | No |
+| Recuperación si olvidas el código | Ninguna; solo restaurar una copia de seguridad propia | Código del dispositivo y recuperación de la Cuenta de Apple |
+| Coste | Gratis (1 bóveda, 50 elementos) o Premium desde 1,99 US$ a la semana | Incluido en iOS |
 | Plataformas | iPhone (iOS 17+) | iPhone, iPad y Mac |
 | Documentos | Sí, desde la app Archivos | Solo fotos y vídeos |
 
@@ -75,7 +75,7 @@ Ocultar una foto no la mueve a ningún sitio: sigue en tu fototeca, sigue en Fot
 
 <!-- TODO verify -->
 
-Velcrypt funciona al revés. Una foto importada se copia en una bóveda cifrada en el iPhone, y en la versión 1 los datos de las bóvedas se excluyen de las copias de seguridad de iCloud y del ordenador. Después de importar, borras el original de Fotos y vacías «Eliminado»; si no, permanece allí unos 30 días. Lee [borrar las fotos originales después de importar](id:delete-original-photos-after-import).
+Velcrypt funciona al revés. Una foto importada se copia en una bóveda cifrada en el iPhone, y los datos de las bóvedas se excluyen de las copias de seguridad de iCloud y del ordenador; solo sale una copia de seguridad cifrada si tú la creas. Después de importar, borras el original de Fotos y vacías «Eliminado»; si no, permanece allí unos 30 días. Lee [borrar las fotos originales después de importar](id:delete-original-photos-after-import).
 
 ## Negación plausible
 
@@ -92,7 +92,7 @@ Hay exactamente un álbum Oculto, y su existencia es evidente para cualquiera qu
 
 - **Otra persona conoce tu código.** Un patrón independiente la mantiene fuera.
 - **No quieres una copia en la nube.** Las bóvedas se quedan en el teléfono.
-- **Quieres señuelos o varios espacios privados.** Cada patrón es su propia bóveda.
+- **Quieres señuelos o varios espacios privados.** Con Premium, cada patrón es su propia bóveda.
 - **También necesitas mantener documentos en privado.** Importa PDF y archivos desde la app Archivos.
 
-La contrapartida honesta: con Velcrypt v1, si pierdes el teléfono u olvidas el patrón, la bóveda no se puede recuperar. Decide qué riesgo te preocupa más.
+La contrapartida honesta: con Velcrypt, un patrón olvidado no se puede recuperar, y si pierdes el teléfono solo te salva una copia de seguridad cifrada que hayas creado antes. Decide qué riesgo te preocupa más.

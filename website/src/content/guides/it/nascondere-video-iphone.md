@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "nascondere video iphone"
 keywords: ["come nascondere video su iphone", "video privati iphone", "nascondere registrazioni schermo iphone", "whatsapp non salvare video in foto", "video nascosti iphone", "nascondere un video iphone"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Nascondi i video su iPhone, impedisci alle chat di salvarli nel rullino e gestisci lo spazio occupato dai video privati più pesanti."
 category: hiding
 order: 3
@@ -99,4 +99,4 @@ Per una privacy di breve periodo con amici e familiari, l’album Nascosti di so
 
 Velcrypt conserva i video in una cassaforte cifrata sul dispositivo, con la stessa protezione che dà alle foto: crittografia AES-256-GCM, un blocco a sequenza separato dal codice dell’iPhone, nessun caricamento online e nessun account. Dentro la cassaforte puoi ordinare le clip in [album](id:albums) e riprodurle nel visualizzatore integrato. La pagina su come [nascondere i video con Velcrypt](id:hide-videos) contiene i dettagli.
 
-Due note oneste, specifiche per i video. L’importazione copia il file, quindi lo spazio occupato raddoppia finché non rimuovi l’originale da Foto e da Eliminati di recente. E i dati della cassaforte non sono inclusi nei backup di iCloud o del computer: se perdi il telefono o dimentichi la sequenza, i video nella cassaforte sono persi. Tienilo a mente prima di eliminare l’unica altra copia di qualcosa che vuoi conservare.
+Due note oneste, specifiche per i video. L’importazione copia il file, quindi lo spazio occupato raddoppia finché non rimuovi l’originale da Foto e da Eliminati di recente. E i dati della cassaforte non sono inclusi nei backup di iCloud o del computer: se perdi il telefono senza un backup cifrato, o dimentichi la sequenza, i video nella cassaforte sono persi. Tienilo a mente prima di eliminare l’unica altra copia di qualcosa che vuoi conservare.

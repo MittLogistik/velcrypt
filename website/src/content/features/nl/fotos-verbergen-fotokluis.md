@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "foto's verbergen iphone app"
 keywords: ["fotokluis iphone", "versleutelde fotokluis", "privé fotoalbum app", "foto's vergrendelen app", "geheime fotokluis"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Importeer foto's als versleutelde kopieën, wis de originelen en Recent verwijderd, en blader door albums met zoomen en vegen."
 status: available
 schemaType: WebPage
@@ -79,6 +79,6 @@ Het album Verborgen is handig en voor veel mensen goed genoeg. De beperkingen er
 
 ## Goed om te weten
 
-- Velcrypt heeft geen ingebouwde camera. Maak de foto met de Camera-app, importeer hem en verwijder dan het origineel.
+- Maak je de foto met de Camera-app van de iPhone, importeer hem dan en verwijder het origineel. Met de camera in de kluis kom je niet in die situatie: zulke foto’s gaan direct versleuteld de kluis in en komen nooit in je fotobibliotheek.
 - Foto's kunnen locatie- en toestelgegevens bevatten. Wil je ze later delen, [verwijder dan eerst de metadata](id:remove-photo-metadata-iphone).
-- Kluisgegevens worden in de eerste versie niet geback-upt. Is een foto onvervangbaar, bewaar dan een tweede kopie op een plek die je vertrouwt.
+- Kluisgegevens zitten niet in iCloud- of computerback-ups. Is een foto onvervangbaar, maak dan via Instellingen → Back-up een versleuteld back-upbestand en bewaar dat op een plek die je vertrouwt.

@@ -20,7 +20,7 @@ keywords:
   - "keepsafe alternatives"
   - "hidden photo app iphone"
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Seven criteria for choosing a photo vault and an honest look at Apple’s tools, Keepsafe, Private Photo Vault, calculator vaults and Velcrypt."
 category: choosing
 order: 20
@@ -70,10 +70,10 @@ A quick disclosure: Velcrypt is our app. We’ve tried to describe it with the s
 | --- | --- | --- | --- | --- | --- | --- |
 | Separate secret from device passcode | No | Optional | Yes | Yes | Yes | Yes |
 | Account required | Apple Account for iCloud | Apple Account for iCloud | Yes (email) | Not required for basic use | Varies | No |
-| Cloud backup / sync | Via iCloud Photos | Via iCloud | Optional premium cloud | Varies | Varies | No (planned encrypted backup) |
+| Cloud backup / sync | Via iCloud Photos | Via iCloud | Optional premium cloud | Varies | Varies | No sync; free encrypted backup file you store yourself |
 | Face ID / Touch ID | Yes | Yes | Yes | Yes | Varies | No, by design |
-| Decoy feature | No | No | Fake PIN (premium) | Decoy password | Varies | Every pattern opens its own vault |
-| Disguise as another app | No | No | No | No | Yes | No |
+| Decoy feature | No | No | Fake PIN (premium) | Decoy password | Varies | Every pattern opens its own vault (extra vaults with Premium) |
+| Disguise as another app | No | No | No | No | Yes | Alternate app icons (Premium) |
 
 <!-- TODO verify -->
 
@@ -115,13 +115,13 @@ We’re not aware of a widely used, actively maintained open-source photo vault 
 
 ## Velcrypt
 
-Velcrypt is a native iPhone app that stores photos, videos and documents in encrypted vaults on the device. You unlock a vault by drawing a pattern on a 5×5 grid ([pattern lock](id:pattern-lock)). Every pattern opens its own vault, and an unfamiliar pattern simply opens an empty one, so the app never reveals how many vaults exist ([hidden vaults](id:hidden-vaults)). Files are encrypted with AES-256-GCM using keys derived from the pattern ([encryption](id:encryption)). There is no account, no server and no upload ([offline, no account](id:offline-no-account)). It comes as a free version plus an optional Premium upgrade.
+Velcrypt is a native iPhone app that stores photos, videos and documents in encrypted vaults on the device. You unlock a vault by drawing a pattern on a 5×5 grid ([pattern lock](id:pattern-lock)). Every pattern opens its own vault, and an unfamiliar pattern simply opens an empty one, so the app never reveals how many vaults exist ([hidden vaults](id:hidden-vaults)). Files are encrypted with AES-256-GCM using keys derived from the pattern ([encryption](id:encryption)). There is no account, no server and no upload ([offline, no account](id:offline-no-account)). It comes as a free version with one vault and up to 50 items, plus an optional Premium upgrade with unlimited items, more vaults and alternate app icons.
 
 Its limits are deliberate but real:
 
-- **No backup in the first version.** Vault content is excluded from iCloud and computer backups. Lose the phone or forget the pattern and the files can’t be recovered by you or by us. An encrypted backup option is planned.
+- **Backup is manual.** Vault content is excluded from iCloud and computer backups. Velcrypt’s free encrypted backup creates a file you save yourself; without one, a lost phone means lost files. A forgotten pattern or backup password can’t be recovered by you or by us.
 - **No Face ID**, by design, so unlocking is slower than a glance.
-- **No disguise.** The app looks like what it is on your Home Screen.
+- **No full disguise.** Premium offers alternate Home Screen icons, such as a calculator or timer, but the app doesn’t pretend to be a working calculator.
 - **No cloud sync, sharing links or iPad/Mac apps.**
 
 Who it may suit: people who want files to stay strictly on the phone, without an account, and who can live with being responsible for their own copies.

@@ -21,7 +21,7 @@ keywords:
   - "avancerat dataskydd återställningsnyckel"
   - "avancerat dataskydd storbritannien"
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Vad Avancerat dataskydd krypterar, vad som har kvar standardskydd, kraven på återställning, avvägningarna och hur du slår på det."
 category: apple
 order: 12
@@ -138,6 +138,6 @@ Ser du inte alternativet i dina iCloud-inställningar, eller är det gråmarkera
 
 Avancerat dataskydd och ett valv på enheten löser olika problem. Avancerat dataskydd gör dina iCloud-data oläsbara för Apple men låter dem fortfarande synkas och återställas med din egen återställningsmetod. Ett valv på enheten hindrar vissa filer från att nå molnet över huvud taget och sätter en separat hemlighet mellan dem och alla som kan låsa upp din telefon.
 
-Velcrypt hör till den andra kategorin. Bilder, videor och dokument du importerar krypteras med AES-256-GCM på iPhonen, med nycklar som härleds från ett mönster du ritar ([så fungerar krypteringen](id:encryption)). Det finns inget konto och ingenting laddas upp ([på enheten, utan konto](id:offline-no-account)). I den första versionen är valvinnehållet helt undantaget från säkerhetskopior till iCloud och dator, vilket betyder att det inte finns något att återställa om telefonen försvinner; ett alternativ för krypterad säkerhetskopiering är planerat.
+Velcrypt hör till den andra kategorin. Bilder, videor och dokument du importerar krypteras med AES-256-GCM på iPhonen, med nycklar som härleds från ett mönster du ritar ([så fungerar krypteringen](id:encryption)). Det finns inget konto och ingenting laddas upp ([på enheten, utan konto](id:offline-no-account)). Valvinnehållet är helt undantaget från säkerhetskopior till iCloud och dator. Vill du ha en kopia skapar du själv en krypterad säkerhetskopia, skyddad av ett lösenord du väljer, och sparar den till exempel i iCloud Drive.
 
 Många använder klokt nog båda: Avancerat dataskydd för vardagsbiblioteket och säkerhetskopiorna, och ett valv för de få filer som inte ska synkas någonstans. Om du väger olika krypteringsbegrepp mot varandra är vår [förklaring av AES-256](id:aes-256-encryption-explained) och [sparas gömda bilder i iCloud?](id:are-hidden-photos-saved-to-icloud) bra att läsa härnäst.

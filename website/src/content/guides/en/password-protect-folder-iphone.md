@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "password protect a folder on iphone"
 keywords: ["lock files app iphone", "password protect folder iphone", "lock folder iphone", "password protect files iphone", "secure folder iphone", "hide files iphone"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "What the Files app can and cannot lock, and the practical ways to protect a folder of documents on iPhone."
 category: hiding
 order: 6
@@ -105,4 +105,4 @@ For identity documents and health records specifically, the use case on [medical
 
 Velcrypt keeps [private documents](id:private-documents) in the same encrypted vaults as photos and videos. You import them from the Files app, and they are encrypted on the device with AES-256-GCM under keys derived from your unlock pattern. There is no account and nothing goes to a server; the page on [offline, no-account storage](id:offline-no-account) explains what that means in practice.
 
-Because vault data is excluded from iCloud and computer backups, keep an independent copy of any document you can’t afford to lose, stored somewhere you trust. If the phone is lost or the pattern forgotten, the vault cannot be opened by anyone, including Velcrypt.
+Because vault data is excluded from iCloud and computer backups, create an encrypted backup in Settings → Backup for any document you can’t afford to lose, and store the `.velcrypt` file somewhere you trust. If the pattern is forgotten, or the phone is lost without a backup, the vault cannot be opened by anyone, including Velcrypt.

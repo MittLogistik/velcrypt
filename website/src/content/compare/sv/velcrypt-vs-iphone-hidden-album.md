@@ -10,11 +10,11 @@ keyFacts:
   - "I iOS 16 och senare är albumet Gömda som standard låst med Face ID, Touch ID eller enhetens lösenkod."
   - "Den som kan din iPhones lösenkod kan öppna albumet Gömda."
   - "Dolda bilder synkas med iCloud-bilder; de är end-to-end-krypterade bara med Avancerat dataskydd påslaget."
-  - "Velcrypt använder ett separat mönster, håller valven bara på enheten och undantar dem från säkerhetskopior i v1."
+  - "Velcrypt använder ett separat mönster, håller valven bara på enheten och undantar dem från iCloud- och datorsäkerhetskopior."
 primaryKeyword: "dölja bilder iphone gömda album"
 keywords: ["albumet gömda vs valvapp", "är albumet gömda säkert", "alternativ till albumet gömda", "gömda album face id", "dolda bilder icloud"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Apples inbyggda album Gömda mot ett separat krypterat valv: vad vart och ett skyddar, var bilderna synkas och vem som kan öppna dem."
 competitor: "iPhones album Gömda"
 lastChecked: "oktober 2026"
@@ -51,13 +51,13 @@ Om iCloud-bilder är påslaget synkas dolda objekt som allt annat. De är krypte
 |---|---|---|
 | Publicerade detaljer om kryptering på enheten | Ja: AES-256-GCM, nycklar som härleds från ditt mönster | iOS Dataskydd, dokumenterat av Apple |
 | Kräver konto | Nej | Del av Bilder; Apple-konto krävs för iCloud-synk |
-| Molnbackup | Nej (v1); krypterad säkerhetskopiering planerad | Ja, med iCloud-bilder eller iCloud-säkerhetskopiering |
+| Molnbackup | Nej; manuell krypterad säkerhetskopia (gratis) | Ja, med iCloud-bilder eller iCloud-säkerhetskopiering |
 | Upplåsning | Mönster på ett 5×5-rutnät, skilt från lösenkoden | Face ID, Touch ID eller enhetens lösenkod |
 | Biometri | Erbjuds inte, med avsikt | Ja |
 | Lockvalv / flera valv | Varje mönster är ett eget valv | Ett album Gömda |
-| Tvångsmönster | Kommer snart (Premium) | Nej |
+| Tvångsmönster | Planerat till en framtida uppdatering | Nej |
 | Återställning om du glömmer koden | Ingen | Enhetens lösenkod och återställning av Apple-kontot |
-| Kostnad | Gratisversion plus valfri Premium | Ingår i iOS |
+| Kostnad | Gratis (ett valv, 50 objekt) plus valfri Premium | Ingår i iOS |
 | Plattformar | iPhone (iOS 17+) | iPhone, iPad och Mac |
 | Dokument | Ja, från appen Filer | Bara bilder och videor |
 
@@ -75,7 +75,7 @@ Att dölja en bild flyttar den ingenstans; den finns kvar i ditt bibliotek, kvar
 
 <!-- TODO verify -->
 
-Velcrypt fungerar tvärtom. En importerad bild kopieras till ett krypterat valv på iPhonen, och valvdata undantas från iCloud- och datorsäkerhetskopior i version 1. Efter importen raderar du originalet i Bilder och tömmer Nyligen raderade, annars ligger det kvar där i cirka 30 dagar. Läs [radera originalbilder efter import](id:delete-original-photos-after-import).
+Velcrypt fungerar tvärtom. En importerad bild kopieras till ett krypterat valv på iPhonen, och valvdata undantas från iCloud- och datorsäkerhetskopior. Efter importen raderar du originalet i Bilder och tömmer Nyligen raderade, annars ligger det kvar där i cirka 30 dagar. Läs [radera originalbilder efter import](id:delete-original-photos-after-import).
 
 ## Förnekbarhet
 
@@ -95,4 +95,4 @@ Det finns exakt ett album Gömda, och att det finns är uppenbart för alla som 
 - **Du vill ha lockvalv eller flera privata utrymmen.** Varje mönster är ett eget valv.
 - **Du behöver även hålla dokument privata.** Importera PDF:er och filer från appen Filer.
 
-Den ärliga avvägningen: med Velcrypt v1 innebär en förlorad telefon eller ett glömt mönster att valvet inte kan återställas. Avgör vilken risk som oroar dig mest.
+Den ärliga avvägningen: med Velcrypt kan ett glömt mönster inte återställas, och en förlorad telefon innebär ett förlorat valv om du inte själv har skapat en krypterad säkerhetskopia. Avgör vilken risk som oroar dig mest.

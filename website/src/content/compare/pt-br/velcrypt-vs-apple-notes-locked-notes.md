@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "esconder fotos no app notas"
 keywords: ["esconder fotos em nota bloqueada", "bloquear fotos no app notas", "notas bloqueadas iphone fotos", "app notas fotos privadas", "nota bloqueada vs app cofre"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Esconder fotos em uma nota bloqueada da Apple versus um cofre criptografado dedicado: praticidade, capacidade, sincronização e quem consegue abrir."
 competitor: "Notas bloqueadas do app Notas"
 lastChecked: "outubro de 2026"
@@ -51,14 +51,14 @@ Você pode adicionar fotos da fototeca, tirar uma foto dentro da nota ou digital
 |---|---|---|
 | Detalhes da criptografia no aparelho publicados | Sim: AES-256-GCM, PBKDF2-HMAC-SHA512 | Descritos na documentação de segurança das plataformas da Apple |
 | Exige conta | Não | Não para notas no aparelho; Conta Apple para sincronizar pelo iCloud |
-| Backup na nuvem | Não (v1); backup criptografado planejado | Sim, com as Notas do iCloud |
+| Backup na nuvem | Não; backup criptografado manual em arquivo (grátis) | Sim, com as Notas do iCloud |
 | Forma de desbloqueio | Padrão em uma grade 5×5 | Código do aparelho ou senha separada do Notas |
 | Biometria | Não oferecida, por design | Face ID / Touch ID opcional |
-| Fachada / vários cofres | Cada padrão é um cofre próprio | Não; todas as notas bloqueadas usam a mesma senha |
-| Padrão de coação | Em breve (Premium) | Não |
+| Fachada / vários cofres | Cada padrão é um cofre próprio (mais de um cofre exige o Premium) | Não; todas as notas bloqueadas usam a mesma senha |
+| Padrão de coação | Planejado para uma atualização futura | Não |
 | Recuperação se você esquecer o código | Nenhuma | A opção do código evita uma senha separada; senhas antigas do Notas não podem ser recuperadas |
 | Fotos e vídeos | Álbuns, visualizador com zoom e deslize, vídeos | Imagens dentro de uma nota; suporte a vídeo varia |
-| Custo | Versão grátis e Premium opcional | Incluído no iOS |
+| Custo | Grátis (1 cofre, 50 itens) e Premium opcional | Incluído no iOS |
 | Plataformas | iPhone (iOS 17+) | iPhone, iPad, Mac e iCloud.com |
 
 <!-- TODO verify -->
@@ -83,7 +83,7 @@ A outra diferença é o segredo. Se você bloqueia as notas com o código do apa
 ## Quando o Velcrypt pode ser melhor para você
 
 - **Você tem uma coleção de verdade.** Muitas fotos, vídeos e documentos, organizados em álbuns.
-- **Você não quer nada na nuvem.** Na v1, os dados do cofre ficam no celular e fora dos backups.
+- **Você não quer nada na nuvem.** Os dados do cofre ficam no celular e fora dos backups do iCloud; um backup criptografado só existe se você mesmo o criar.
 - **Você precisa de espaços privados separados.** Cada padrão é um cofre próprio.
 - **Outra pessoa sabe o seu código.** O padrão é um segredo separado.
 

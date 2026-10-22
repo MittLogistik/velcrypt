@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "foto's verwijderen na importeren in kluis"
 keywords: ["originele foto's verwijderen na import", "recent verwijderd leegmaken iphone", "foto's definitief verwijderen iphone", "recent verwijderd ios 18", "foto's van iphone verwijderen maar niet uit kluis", "kluisapp kopiëren of verplaatsen"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Kopiëren vs verplaatsen, originelen uit Foto's verwijderen, Recent verwijderd leegmaken en de kopieën in iCloud en chats die overblijven."
 category: practical
 order: 30
@@ -123,4 +123,4 @@ Voor bijzonder gevoelige beelden loopt de gids over [intieme foto's veilig bewar
 
 Velcrypt volgt het hierboven beschreven kopieermodel. Als je [foto's](id:hide-photos) of [video's](id:hide-videos) importeert, versleutelt de kluis een eigen kopie met AES-256-GCM en laat hij het origineel in Foto's staan. Het origineel verwijderen en Recent verwijderd leegmaken is dus aan jou.
 
-Weeg voordat je dat doet één grens eerlijk af. De kluisgegevens van Velcrypt staan alleen op je iPhone en vallen buiten iCloud- en computerback-ups. Zodra de originelen weg zijn, bevat de kluis de enige kopie op dat apparaat. Verlies je de telefoon of [vergeet je het patroon](id:forgot-vault-pattern), dan kunnen jij noch Velcrypt die bestanden herstellen. Een optie voor versleutelde back-ups is gepland; bewaar tot die tijd een aparte kopie van alles wat onvervangbaar is op een plek die je vertrouwt.
+Weeg voordat je dat doet één grens eerlijk af. De kluisgegevens van Velcrypt staan alleen op je iPhone en vallen buiten iCloud- en computerback-ups. Zodra de originelen weg zijn, bevat de kluis de enige kopie op dat apparaat. Verlies je de telefoon of [vergeet je het patroon](id:forgot-vault-pattern), dan kunnen jij noch Velcrypt die bestanden herstellen, tenzij je een back-up hebt. Maak daarom via Instellingen → Back-up een versleuteld back-upbestand van de kluis en bewaar het op een plek die je vertrouwt, ergens anders dan op de telefoon.

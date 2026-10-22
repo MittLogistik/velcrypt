@@ -1,20 +1,20 @@
 ---
 pageId: forgot-vault-pattern
 title: "Glömt lösenord eller mönster till ditt fotovalv?"
-description: "Glömt lösenordet eller mönstret till ditt fotovalv? Vad du kan prova först, varför Velcrypt saknar återställning och hur du undviker att låsas ute."
+description: "Glömt lösenordet eller mönstret till ditt fotovalv? Vad du kan prova först, varför Velcrypt inte kan nollställa mönster och hur en säkerhetskopia hjälper."
 h1: "Glömt lösenord eller mönster till fotovalvet? Det här kan du göra – och inte"
 navTitle: "Glömt mönstret till valvet"
-answer: "I Velcrypt kan ett glömt mönster inte nollställas eller återställas, varken av dig eller av Velcrypt, eftersom nyckeln bara finns i ditt minne och ingen server har en kopia. Det du kan göra är att lugnt prova närliggande varianter av mönstret. Andra valvappar kan erbjuda återställning via e-post eller konto; kontrollera vad din app använder."
+answer: "I Velcrypt kan ett glömt mönster inte nollställas eller återställas, varken av dig eller av Velcrypt, eftersom nyckeln bara finns i ditt minne och ingen server har en kopia. Du kan lugnt prova närliggande varianter, eller återställa innehållet från en krypterad säkerhetskopia om du har skapat en. Andra valvappar kan erbjuda återställning via e-post eller konto; kontrollera vad din app använder."
 keyFacts:
   - "Velcrypt har ingen återställning, ingen e-post för återställning och ingen återställningsfras: nycklarna härleds från ditt mönster på enheten."
   - "Ett felaktigt mönster i Velcrypt öppnar ett tomt valv i stället för att visa ett fel, så ett tomt valv betyder ofta ett något annorlunda mönster."
-  - "Valvdata undantas från iCloud- och datorsäkerhetskopior i den första versionen."
-  - "En krypterad säkerhetskopia och återställning är planerad, utan utlovat datum."
-  - "Om en förlust vore outhärdlig bör du ha en kopia på ett annat ställe du litar på."
+  - "Valvdata undantas från iCloud- och datorsäkerhetskopior."
+  - "Har du skapat en krypterad säkerhetskopia kan innehållet återställas från den, men bara med lösenordet för säkerhetskopian."
+  - "Om en förlust vore outhärdlig, skapa en krypterad säkerhetskopia och spara den på ett ställe du litar på."
 primaryKeyword: "glömt lösenord fotovalv"
 keywords: ["glömt mönster valv", "återställa fotovalv", "glömt pin-kod fotovalv app", "nollställa valvmönster", "utelåst från fotovalv"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Vad du provar först, varför Velcrypt inte kan nollställa ett glömt mönster, hur andra appar hanterar återställning och vanor som förebygger utelåsning."
 category: security
 order: 44
@@ -28,8 +28,8 @@ faq:
     a: "Nej. Om du raderar appen raderas dess krypterade data från enheten. En ominstallation ger dig en ren app, inte åtkomst till de gamla valven. Radera den bara om du har accepterat att innehållet är borta."
   - q: "Hur hanterar andra fotovalv-appar en glömd PIN-kod?"
     a: "Många kontobaserade appar låter dig nollställa PIN-koden via e-post eller ett molnkonto, vilket betyder att det finns en återställningsväg utanför ditt minne. Kontrollera appens hjälpsidor innan du behöver dem, och tänk på att en återställningsväg också kan vara en väg in för någon annan."
-  - q: "Kommer Velcrypt att lägga till en återställningsmöjlighet?"
-    a: "En krypterad säkerhetskopia med återställning är planerad, men det finns inget lanseringsdatum. Tills den finns bör du behandla ditt mönster som den enda nyckeln."
+  - q: "Kan en säkerhetskopia rädda ett valv med glömt mönster?"
+    a: "Innehållet, ja, om du skapade en krypterad säkerhetskopia innan du glömde mönstret. Öppna ett valv med ett nytt mönster, välj Återställ från säkerhetskopia och ange lösenordet för säkerhetskopian. Du får tillbaka innehållet så som det var när säkerhetskopian skapades. Glömmer du lösenordet kan den inte heller öppnas."
 ---
 
 Den sjunkande känslan när formen du har ritat hundra gånger plötsligt inte fungerar är verklig. Först av allt: radera inte appen och installera inte om den. De flesta ”glömda” mönster visar sig vara mönster du minns lite fel, och det finns förnuftiga saker att prova först.
@@ -50,16 +50,20 @@ Gå lugnt igenom de här stegen:
 
 ## Om det verkligen är borta
 
-Om inget av det fungerar är det ärliga svaret att innehållet inte kan återställas. Inte av dig, inte av Velcrypt, inte av någon.
+Om inget av det fungerar är det ärliga svaret att mönstret inte kan återställas. Inte av dig, inte av Velcrypt, inte av någon. Det enda undantaget gäller innehållet: har du skapat en krypterad säkerhetskopia kan du återställa det därifrån (se nedan).
 
 Det är inget policybeslut som kan kringgås. Det är så krypteringen fungerar:
 
 - Velcrypt har inget konto, ingen e-post och ingen server. Läs mer om [offline utan konto](id:offline-no-account).
 - Dina valvnycklar låses upp av en nyckel som härleds från ditt mönster på enheten, med PBKDF2 och ett salt som förvaras i iOS-nyckelringen. Utan mönstret kan den nyckeln inte tas fram.
 - Valvets data är krypterad med AES-256-GCM, som inte kan knäckas med totalsökning. Varför förklaras i [AES-256-kryptering förklarad](id:aes-256-encryption-explained).
-- I den första versionen undantas valvdata från iCloud- och Finder/iTunes-säkerhetskopior, så det finns ingen äldre kopia att återställa från.
+- Valvdata undantas från iCloud- och Finder/iTunes-säkerhetskopior, så det finns ingen automatisk äldre kopia att återställa från.
 
 Samma egenskaper som gör ditt valv privat gör ett glömt mönster slutgiltigt. Ett system med en knapp för ”Glömt mönstret?” behåller nödvändigtvis en väg in som inte bara beror på dig.
+
+### Om du har en krypterad säkerhetskopia
+
+Om du någon gång har skapat en krypterad säkerhetskopia av valvet under Inställningar → Säkerhetskopiering finns innehållet kvar i den filen. Rita ett nytt mönster för att öppna ett valv, välj Återställ från säkerhetskopia, välj filen och ange lösenordet för säkerhetskopian. Du får tillbaka det som fanns i valvet när säkerhetskopian skapades, inte det som lades till senare. Lösenordet för säkerhetskopian kan inte heller återställas, så glömmer du det är filen oanvändbar.
 
 ### Och de andra valven?
 
@@ -110,4 +114,4 @@ Guiden om [fotovalv utan konto](id:photo-vault-without-account) förklarar avvä
 
 ## Var Velcrypt passar in
 
-Velcrypt är av princip ett valv som bara finns på enheten: inget konto, ingen server, ingen återställningsfras, ingen kopia av dina nycklar någon annanstans. En krypterad säkerhetskopia med återställning är planerad som en del av en valfri Premium-uppgradering, utan utlovat datum. Om du är osäker kan [supporten](id:support) förklara hur appen beter sig, men ingen där kan öppna ett valv åt dig.
+Velcrypt är av princip ett valv som bara finns på enheten: inget konto, ingen server, ingen återställningsfras, ingen kopia av dina nycklar någon annanstans. Det enda skyddsnätet är en krypterad säkerhetskopia som du själv skapar och sparar, gratis i alla versioner. Om du är osäker kan [supporten](id:support) förklara hur appen beter sig, men ingen där kan öppna ett valv åt dig.

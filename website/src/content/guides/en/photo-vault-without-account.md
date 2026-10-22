@@ -20,7 +20,7 @@ keywords:
   - "on device photo vault iphone"
   - "photo vault without internet"
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "What you gain by choosing a photo vault with no account or cloud, what you lose, and simple tests to check an app really stays offline."
 category: choosing
 order: 23
@@ -123,6 +123,6 @@ None of these make an app bad. They just mean it isn’t the kind of vault this 
 
 Velcrypt is built as an on-device, no-account vault. There is no sign-up, no email, no servers and no uploads, and no analytics on what you store ([offline, no account](id:offline-no-account)). Photos, videos and documents are encrypted on the iPhone with AES-256-GCM using keys derived from the pattern you draw ([encryption](id:encryption)).
 
-That means it also carries the trade-offs described above. In the first version, vault content is excluded from iCloud and computer backups, so if you lose the phone or forget your pattern, the content can’t be recovered, by you or by us. We explain what to do and what not to expect in [forgot your vault pattern?](id:forgot-vault-pattern). An encrypted backup option is planned for the future.
+That means it also carries the trade-offs described above. Vault content is excluded from iCloud and computer backups, so if you forget your pattern, the content can’t be recovered, by you or by us. We explain what to do and what not to expect in [forgot your vault pattern?](id:forgot-vault-pattern). To protect against a lost phone, Velcrypt has a free encrypted backup: Settings → Backup creates a `.velcrypt` file protected by a backup password you choose, which you store in Files, iCloud Drive or on a computer and can restore on any iPhone. Nothing is sent to us, and a forgotten backup password can’t be recovered either.
 
 Before moving anything you can’t afford to lose into any offline vault, keep a separate copy you control. And whichever app you choose, run it through our [photo vault safety checklist](id:are-photo-vault-apps-safe).

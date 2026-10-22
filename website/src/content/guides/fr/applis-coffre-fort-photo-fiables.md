@@ -19,7 +19,7 @@ keywords:
   - "confidentialité coffre-fort photo"
   - "app photo secrète fiable"
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Une liste concrète pour juger un coffre-fort photo : chiffrement, étiquette de confidentialité, compte, cloud, pub, désinstallation et récupération."
 category: choosing
 order: 21
@@ -117,7 +117,7 @@ Par souci de transparence, voici comment notre propre app se situe :
 - **Chiffrement :** AES-256-GCM via Apple CryptoKit. Les clés sont dérivées de votre schéma par PBKDF2-HMAC-SHA512 avec au moins 600 000 itérations, chaque coffre a sa propre clé maîtresse aléatoire, et la Protection des données d’iOS s’applique en plus. Détails sur notre [page sécurité](id:security) et sur la [page de la fonction de chiffrement](id:encryption).
 - **Secret :** un schéma sur une grille de 5×5 points, distinct du code de l’appareil ; pas de Face ID, volontairement.
 - **Compte et cloud :** aucun. Pas d’inscription, pas de serveurs, aucun envoi ([hors ligne, sans compte](id:offline-no-account)).
-- **Récupération :** aucune dans la première version. Le contenu du coffre est exclu des sauvegardes iCloud et sur ordinateur : perdre le téléphone ou oublier le schéma rend le contenu irrécupérable. Une option de sauvegarde chiffrée est prévue.
+- **Récupération :** par une sauvegarde chiffrée que vous créez vous-même. Le contenu du coffre est exclu des sauvegardes iCloud et sur ordinateur ; Réglages → Sauvegarde crée un fichier protégé par un mot de passe de sauvegarde, à restaurer sur n’importe quel iPhone. Un schéma ou un mot de passe de sauvegarde oublié reste irrécupérable.
 - **Originaux :** l’import copie un élément ; vous supprimez vous-même l’original.
 
 Si un coffre que vous envisagez répond aussi clairement à ces points, c’est bon signe. Pour une comparaison plus large, voir [les meilleures apps coffre-fort photo pour iPhone](id:best-private-photo-vault-apps-iphone).

@@ -10,21 +10,21 @@ keyFacts:
   - "No Face ID or Touch ID by design — a pattern lives only in your memory."
   - "No ads and no selling of data."
   - "Honest about limits, including no recovery of forgotten patterns."
-  - "Planned: duress pattern (coming soon) and encrypted backup."
+  - "Free encrypted backup; a duress pattern is planned for a future update."
 primaryKeyword: "about velcrypt"
 keywords: ["velcrypt app", "who makes velcrypt", "velcrypt principles", "private photo vault iphone"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 schemaType: AboutPage
 order: 4
 related: [security, features, offline-no-account, pricing, press]
 faq:
   - q: "Why doesn’t Velcrypt store anything in the cloud?"
-    a: "Because data that never leaves your phone can’t be exposed by a server breach, a subpoena to a provider or a reused password. The trade-off is that there’s no recovery if you lose the phone or forget the pattern."
+    a: "Because data that never leaves your phone can’t be exposed by a server breach, a subpoena to a provider or a reused password. The trade-off is that a forgotten pattern can’t be recovered, and a lost phone can only be restored from an encrypted backup file you made yourself."
   - q: "Does Velcrypt make money from my data?"
-    a: "No. Velcrypt doesn’t collect your vault content or analytics about it and shows no ads. The plan is a free version with an optional paid Premium upgrade."
+    a: "No. Velcrypt doesn’t collect your vault content or analytics about it and shows no ads. Velcrypt is funded by an optional paid Premium upgrade, and the free version stays fully encrypted."
   - q: "What is Velcrypt working on next?"
-    a: "Planned items include a duress pattern (coming soon) and an encrypted backup option, both as part of Premium. Neither has a release date yet."
+    a: "A duress pattern is planned for a future update. It has no release date yet, and we won’t attach one until it’s ready."
 ---
 
 <!-- TODO: add founder/company details -->
@@ -57,17 +57,15 @@ Privacy tools fail people when they overpromise. We would rather tell you up fro
 
 ### No ads, no selling data
 
-Velcrypt shows no advertising and doesn’t sell data. It doesn’t collect your vault content or analytics about it, so there is nothing to sell. Velcrypt will be funded by an optional Premium upgrade — see [pricing](id:pricing).
+Velcrypt shows no advertising and doesn’t sell data. It doesn’t collect your vault content or analytics about it, so there is nothing to sell. Velcrypt is funded by an optional Premium upgrade — see [pricing](id:pricing).
 
 ## What’s next
 
-These items are planned. They are not in the app today, and we won’t attach dates until they are ready.
+Velcrypt 1.0 includes free encrypted backup and an optional Premium upgrade with unlimited items, more vaults and alternate app icons. The item below is planned. It is not in the app today, and we won’t attach a date until it is ready.
 
 | Item | Status |
 |---|---|
-| [Duress pattern](id:duress-pattern) — opens a chosen vault and silently removes access to the others | Coming soon (Premium) |
-| Encrypted backup and recovery option | Planned (Premium) |
-| More vaults and unlimited items | Planned (Premium) |
+| [Duress pattern](id:duress-pattern) — opens a chosen vault and silently removes access to the others | Planned for a future update |
 
 Anything we add will follow the same principles: on-device by default, no account, and a clear explanation of the trade-offs.
 

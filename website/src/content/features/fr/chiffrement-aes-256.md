@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "coffre-fort photo chiffré iphone"
 keywords: ["chiffrement coffre-fort photo", "coffre-fort photo aes-256-gcm", "chiffrer ses photos iphone", "app coffre pbkdf2", "comment mon coffre est-il chiffré", "chiffrement authentifié expliqué"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "AES-256-GCM pour chaque fichier, clés dérivées de votre schéma via PBKDF2-HMAC-SHA512 et HKDF, plus la protection des données d’iOS."
 status: available
 schemaType: WebPage
@@ -72,7 +72,7 @@ Les deux couches sont indépendantes. Même si l’une était contournée, l’a
 
 Velcrypt fonctionne [entièrement hors ligne, sans compte](id:offline-no-account). Pas de serveurs, pas d’envoi de fichiers, aucune copie de vos clés en dehors de votre téléphone. Cette conception supprime toute une catégorie de risques : il n’y a aucune base de données à pirater ni aucun employé capable de déchiffrer vos fichiers.
 
-Cela a aussi un prix. Comme les clés n’existent que sur l’appareil et uniquement grâce à votre schéma, personne ne peut récupérer un coffre si le schéma est oublié ou le téléphone perdu. Une option de sauvegarde chiffrée est prévue, mais elle n’existe pas dans la première version.
+Cela a aussi un prix. Comme les clés n’existent que sur l’appareil et uniquement grâce à votre schéma, personne ne peut récupérer un coffre si le schéma est oublié. Pour ne pas perdre un coffre avec le téléphone, créez une sauvegarde chiffrée dans Réglages → Sauvegarde : un fichier protégé par un mot de passe de sauvegarde que vous choisissez, et que Velcrypt ne reçoit jamais.
 
 ## Ce que le chiffrement ne couvre pas
 

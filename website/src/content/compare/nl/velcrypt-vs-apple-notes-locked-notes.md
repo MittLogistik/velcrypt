@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "foto’s vergrendelen in notities iphone"
 keywords: ["foto’s verbergen in vergrendelde notitie", "apple notities foto’s vergrendelen", "vergrendelde notities iphone foto’s", "notities app privéfoto’s", "vergrendelde notitie vs kluis-app"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Foto’s verbergen in een vergrendelde notitie tegenover een aparte versleutelde kluis: gemak, capaciteit, synchronisatie en wie ze kan openen."
 competitor: "Vergrendelde notities in Apple Notities"
 lastChecked: "oktober 2026"
@@ -51,14 +51,14 @@ Je kunt foto’s uit je bibliotheek toevoegen, een foto in de notitie zelf maken
 |---|---|---|
 | Details over versleuteling op het apparaat gepubliceerd | Ja: AES-256-GCM, PBKDF2-HMAC-SHA512 | Beschreven in de platformbeveiligingsdocumentatie van Apple |
 | Account nodig | Nee | Niet voor notities op het apparaat; Apple Account voor iCloud-synchronisatie |
-| Cloudback-up | Nee (v1); versleutelde back-up gepland | Ja, met Notities in iCloud |
+| Cloudback-up | Geen automatische; gratis versleuteld back-upbestand dat je zelf bewaart | Ja, met Notities in iCloud |
 | Ontgrendelen | Patroon op een raster van 5×5 | Toegangscode van het toestel of apart Notities-wachtwoord |
 | Biometrie | Bewust niet aangeboden | Optioneel Face ID / Touch ID |
-| Lokkluis / meerdere kluizen | Elk patroon is een eigen kluis | Niet ondersteund; alle vergrendelde notities delen één wachtwoord |
+| Lokkluis / meerdere kluizen | Elk patroon is een eigen kluis (tweede kluis met Premium) | Niet ondersteund; alle vergrendelde notities delen één wachtwoord |
 | Herstel als je de code vergeet | Geen | Optie met toegangscode voorkomt een apart wachtwoord; oude Notities-wachtwoorden zijn niet te herstellen |
-| Dwangpatroon | Binnenkort (Premium) | Nee |
+| Dwangpatroon | Gepland voor een toekomstige update | Nee |
 | Omgang met foto’s en video’s | Albums, viewer met zoomen en vegen, video’s | Afbeeldingen in een notitie; ondersteuning voor video verschilt |
-| Kosten | Gratis versie plus optioneel Premium | Inbegrepen bij iOS |
+| Kosten | Gratis (1 kluis, tot 50 onderdelen); Premium vanaf $ 1,99 per week | Inbegrepen bij iOS |
 | Platforms | iPhone (iOS 17+) | iPhone, iPad, Mac en iCloud.com |
 
 <!-- TODO verify -->
@@ -77,13 +77,13 @@ Het andere verschil is het geheim. Vergrendel je notities met de toegangscode va
 
 - **Je hebt maar een paar items.** Een vergrendelde notitie is simpeler dan iets installeren.
 - **Je wilt synchroniseren tussen iPhone, iPad en Mac.** Velcrypt is alleen voor iPhone en synchroniseert niet.
-- **Je wilt dat herstel mogelijk is.** Met iCloud overleven je vergrendelde notities een verloren telefoon.
+- **Je wilt dat herstel vanzelf gaat.** Met iCloud overleven je vergrendelde notities een verloren telefoon zonder dat je zelf een back-up hoeft te maken.
 - **Je houdt van het gemak van Face ID.** Velcrypt biedt dat bewust niet.
 
 ## Wanneer Velcrypt misschien beter bij je past
 
 - **Je hebt een echte verzameling.** Veel foto’s, video’s en documenten, geordend in albums.
-- **Je wilt niets in de cloud.** Kluisgegevens blijven op de telefoon en in v1 buiten back-ups.
+- **Je wilt niets in de cloud.** Kluisgegevens blijven op de telefoon en buiten iCloud- en computerback-ups.
 - **Je hebt aparte privéruimtes nodig.** Elk patroon is een eigen kluis.
 - **Iemand anders kent je toegangscode.** Het patroon is een apart geheim.
 

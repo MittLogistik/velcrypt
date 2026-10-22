@@ -10,12 +10,12 @@ keyFacts:
   - "Jeder Tresor hat einen eigenen zufälligen 256-Bit-Hauptschlüssel; Schlüssel pro Datei werden mit HKDF abgeleitet."
   - "Dateien werden mit AES-256-GCM über Apple CryptoKit verschlüsselt, zusätzlich mit iOS-Datenschutz (Schutzklasse „Complete“)."
   - "Ein unbekanntes Muster öffnet einen leeren Tresor – keine Tresorliste, keine Meldung „falsches Muster“."
-  - "Kein Netzwerk, kein Konto, keine Analyse von Tresorinhalten; Tresordaten sind in v1 von iCloud- und Computer-Backups ausgeschlossen."
+  - "Kein Netzwerk, kein Konto, keine Analyse von Tresorinhalten; Tresordaten sind von iCloud- und Computer-Backups ausgeschlossen, ein manuelles verschlüsseltes Backup ist möglich."
   - "Velcrypt wurde bisher keinem unabhängigen Sicherheitsaudit unterzogen."
 primaryKeyword: "velcrypt sicherheit"
 keywords: ["foto tresor verschlüsselung iphone", "wie funktioniert velcrypt verschlüsselung", "aes-256-gcm foto tresor", "pbkdf2 mustersperre", "foto tresor bedrohungsmodell", "tresor app glaubhafte abstreitbarkeit"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 schemaType: WebPage
 order: 1
 related: [encryption, pattern-lock, hidden-vaults, aes-256-encryption-explained, plausible-deniability-explained, forgot-vault-pattern]
@@ -88,11 +88,13 @@ Velcrypt sperrt sich automatisch, sobald die App in den Hintergrund wechselt –
 
 Ein Entsperren per Face ID oder Touch ID gibt es bewusst nicht. Ein Gesicht oder ein Finger lässt sich ohne deine Zustimmung benutzen – während du schläfst oder unter Druck. Ein Muster existiert nur in deinem Kopf.
 
-## Kein Netzwerk, kein Konto, keine Backups
+## Kein Netzwerk, kein Konto, keine automatischen Backups
 
 Velcrypt funktioniert komplett offline. Es gibt keine Registrierung, keine E-Mail-Adresse, keinen Server und keinen Upload von Tresorinhalten, und es werden keine Analysedaten darüber erhoben, was du speicherst. Was das praktisch bedeutet, steht auf der Seite [offline, ohne Konto](id:offline-no-account).
 
-In der ersten Version sind Tresordaten außerdem **von iCloud- und Computer-Backups (Finder) ausgeschlossen**. So landen deine verschlüsselten Dateien weder auf Apples Servern noch auf einem Computer, mit dem du synchronisierst. Das hat aber eine echte Konsequenz: Geht dein iPhone verloren, kaputt oder wird es zurückgesetzt, sind die Tresore mit ihm weg. Eine verschlüsselte Backup-Option ist geplant, ohne festes Datum.
+Tresordaten sind außerdem **von iCloud- und Computer-Backups (Finder) ausgeschlossen**. So landen deine verschlüsselten Dateien weder auf Apples Servern noch auf einem Computer, mit dem du synchronisierst. Das hat aber eine echte Konsequenz: Geht dein iPhone verloren, kaputt oder wird es zurückgesetzt, sind die Tresore mit ihm weg.
+
+Dagegen bietet Velcrypt ein **manuelles verschlüsseltes Backup**, kostenlos. Unter Einstellungen → Backup erstellst du eine `.velcrypt`-Datei für den geöffneten Tresor, geschützt mit einem Backup-Passwort, das du selbst wählst. Jeder Tresor wird einzeln gesichert, sodass ein Backup deine anderen Tresore nie verrät. Du speicherst die Datei, wo du willst („Dateien“, iCloud Drive, ein Computer), und stellst sie auf jedem iPhone wieder her. Velcrypt erhält diese Datei nie, und ein vergessenes Backup-Passwort lässt sich nicht wiederherstellen.
 
 ## Das Bedrohungsmodell im Überblick
 
@@ -103,11 +105,11 @@ In der ersten Version sind Tresordaten außerdem **von iCloud- und Computer-Back
 | Jemand will beweisen, dass du weitere Tresore hast | Weitgehend | Keine Tresorliste, keine Meldung „falsches Muster“; die Anzahl der Tresore wird in der App nicht angezeigt. |
 | Diebstahl eines gesperrten iPhones | Ja | iOS-Datenschutz plus eigene AES-256-GCM-Verschlüsselung von Velcrypt. |
 | Brute-Force-Angriff auf das Muster mit ausgelesenen Dateien | Verlangsamt | PBKDF2 mit 600.000+ Iterationen und gerätespezifischem Salt; ein langes Muster zählt. |
-| Ein Cloud-Konto wird gehackt | Ja | Tresordaten werden nicht hochgeladen und sind in v1 von iCloud-Backups ausgeschlossen. |
+| Ein Cloud-Konto wird gehackt | Ja | Tresordaten werden nicht hochgeladen und sind von iCloud-Backups ausgeschlossen. Ein verschlüsseltes Backup, das du in iCloud Drive ablegst, bleibt durch dein Backup-Passwort geschützt. |
 | Manipulation verschlüsselter Dateien | Erkannt | Die Authentifizierung von AES-256-GCM weist veränderte Daten zurück. |
 | Jemand sieht dir beim Zeichnen des Musters zu | Nein | Siehe unten. |
 | Schadsoftware oder ein gejailbreaktes Gerät | Nein | Siehe unten. |
-| Vergessenes Muster oder verlorenes iPhone | Nein | Eine Wiederherstellung ist nicht möglich. |
+| Vergessenes Muster oder verlorenes iPhone | Nein | Ein vergessenes Muster lässt sich nicht wiederherstellen; nach einem Geräteverlust hilft nur ein verschlüsseltes Backup. |
 
 <a id="what-velcrypt-does-not-protect-against"></a>
 ## Wovor Velcrypt nicht schützt
@@ -115,12 +117,12 @@ In der ersten Version sind Tresordaten außerdem **von iCloud- und Computer-Back
 Jedes Sicherheitswerkzeug hat Grenzen, und du solltest die von Velcrypt kennen, bevor du dich darauf verlässt.
 
 - **Über die Schulter schauen.** Sieht jemand, wie du dein Muster zeichnest – persönlich oder über eine Kamera –, kann diese Person den Tresor öffnen. Zeichne es unbeobachtet und wähle am besten ein Muster, das nicht wie ein einfacher Buchstabe oder eine Form aussieht.
-- **Zwang zum Entsperren.** Velcrypt kann niemanden daran hindern, dich zum Zeichnen eines Musters zu zwingen. Ein Köder-Tresor kann helfen; ein Notfallmuster (demnächst, Premium) soll einen gewählten Tresor öffnen und still den Zugriff auf die anderen entfernen.
+- **Zwang zum Entsperren.** Velcrypt kann niemanden daran hindern, dich zum Zeichnen eines Musters zu zwingen. Ein Köder-Tresor kann helfen; ein Notfallmuster, geplant für ein künftiges Update, würde einen gewählten Tresor öffnen und still den Zugriff auf die anderen entfernen.
 - **Ein iPhone, das mit offenem Tresor übergeben wird.** Solange ein Tresor entsperrt ist, sieht jeder, der das iPhone hält, was du siehst. Sperre ihn, bevor du dein iPhone weitergibst.
 - **Kompromittierte oder gejailbreakte Geräte und Schadsoftware.** Software, die auf einem kompromittierten Gerät den Bildschirm auslesen, Berührungen mitschneiden oder den App-Speicher untersuchen kann, hebelt jede Verschlüsselung auf App-Ebene aus.
 - **Screenshots oder Fotos vom Bildschirm.** Velcrypt kann nicht verhindern, dass eine andere Kamera dein Display abfotografiert.
 - **Kopien an anderen Orten.** Beim Import wird ein Foto kopiert; das Original bleibt in „Fotos“, bis du es löschst, und liegt danach etwa 30 Tage in „Zuletzt gelöscht“. Kopien können auch in iCloud-Fotos, Chat-Apps, E-Mails oder auf dem Handy einer anderen Person existieren. Folge der Anleitung zum [Löschen der Originale nach dem Import](id:delete-original-photos-after-import).
-- **Verlust des iPhones oder ein vergessenes Muster.** Beides bedeutet: Die Daten sind weg. Es gibt keine Wiederherstellungsphrase und kein Zurücksetzen. Siehe [Tresormuster vergessen](id:forgot-vault-pattern).
+- **Verlust des iPhones oder ein vergessenes Muster.** Ein vergessenes Muster lässt sich nicht wiederherstellen, und ein verlorenes iPhone nimmt seine Tresore mit, sofern du kein verschlüsseltes Backup erstellt hast. Es gibt keine Wiederherstellungsphrase und kein Zurücksetzen, und auch ein vergessenes Backup-Passwort ist nicht wiederherstellbar. Siehe [Tresormuster vergessen](id:forgot-vault-pattern).
 - **Erkennen, dass Velcrypt genutzt wird.** Das App-Symbol ist sichtbar, und forensische Werkzeuge können womöglich erkennen, dass Velcrypt verschlüsselte Daten enthält und ungefähr wie viele. Velcrypt behauptet nicht, das zu verbergen – nur die Anzahl der Tresore und ihre Inhalte.
 - **Schwache oder leicht zu erratende Muster.** Ein kurzes Muster oder eines in Form eines L, Z oder Quadrats ist viel leichter zu erraten. Teste eine ähnliche Form mit dem [Musterstärke-Prüfer](id:pattern-strength-checker) – niemals dein echtes Muster.
 

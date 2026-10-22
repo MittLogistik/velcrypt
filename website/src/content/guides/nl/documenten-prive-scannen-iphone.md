@@ -19,7 +19,7 @@ keywords:
   - "documenten scannen naar bestanden iphone"
   - "waar worden gescande documenten opgeslagen iphone"
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Scan identiteitsbewijzen, contracten en medische papieren zonder Foto's of iCloud te vullen, sluit ze daarna af en ruim de overgebleven kopieën op."
 category: practical
 order: 34
@@ -124,7 +124,7 @@ Een notitie vergrendelen of een pdf in Op mijn iPhone bewaren is een goed begin,
 
 Velcrypt kan documenten uit de Bestanden-app importeren in een versleutelde kluis ([privédocumenten](id:private-documents)). Bestanden worden op het apparaat versleuteld met AES-256-GCM, met sleutels die van je ontgrendelpatroon zijn afgeleid, en er wordt niets geüpload ([offline, zonder account](id:offline-no-account)). Velcrypt heeft geen ingebouwde scanner of camera, dus je scant eerst met Bestanden of Notities en importeert daarna de pdf.
 
-Bedenk dat kluisinhoud in de eerste versie niet in iCloud- of computerback-ups zit. Is een origineel document onvervangbaar, bewaar dan de papieren versie of een andere kopie op een plek die jij beheert. Onze [toepassing over medische en identiteitsdocumenten](id:medical-and-id-documents) behandelt die afweging.
+Bedenk dat kluisinhoud niet in iCloud- of computerback-ups zit. Is een origineel document onvervangbaar, bewaar dan de papieren versie of maak via Instellingen → Back-up een versleuteld back-upbestand en bewaar dat op een plek die jij beheert. Onze [toepassing over medische en identiteitsdocumenten](id:medical-and-id-documents) behandelt die afweging.
 
 ## De restjes opruimen
 

@@ -9,12 +9,12 @@ keyFacts:
   - "Cada patrón es una bóveda propia con su propia clave de cifrado."
   - "Velcrypt nunca muestra una lista de bóvedas."
   - "Un patrón desconocido abre una bóveda vacía, sin mensaje de error."
-  - "Puedes tener una bóveda señuelo con contenido corriente."
-  - "Más bóvedas forman parte prevista de la mejora Premium opcional."
+  - "Con Premium puedes tener una bóveda señuelo con contenido corriente."
+  - "La versión gratuita tiene una bóveda; más bóvedas forman parte de Premium."
 primaryKeyword: "app bóveda oculta iphone"
 keywords: ["app de fotos con varias bóvedas", "bóveda señuelo iphone", "app bóveda secreta", "negación plausible bóveda de fotos", "segunda bóveda oculta"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Cada patrón es su propia bóveda. Sin lista de bóvedas, sin error ante patrones desconocidos y con espacio para una bóveda señuelo creíble."
 status: available
 schemaType: WebPage
@@ -28,12 +28,12 @@ faq:
   - q: "¿Puede alguien saber que tengo más de una bóveda?"
     a: "No a partir de la interfaz de la app. No hay lista, contador ni mensaje de error que revele otras bóvedas. Velcrypt no puede ocultar que la app está instalada ni impedir que alguien te vea dibujar un patrón."
   - q: "¿Qué es una bóveda señuelo?"
-    a: "Una bóveda señuelo es una bóveda con contenido corriente y creíble que puedes abrir si te presionan para enseñar lo que hay en la app. Tu bóveda real sigue detrás de otro patrón."
+    a: "Una bóveda señuelo es una bóveda con contenido corriente y creíble que puedes abrir si te presionan para enseñar lo que hay en la app. Tu bóveda real sigue detrás de otro patrón. Como necesitas una segunda bóveda, requiere Premium."
 howTo:
   name: "Crear una segunda bóveda oculta en Velcrypt"
   steps:
     - name: "Bloquea Velcrypt"
-      text: "Sal de la bóveda en la que estás para que aparezca la cuadrícula del patrón."
+      text: "Con Premium activo, sal de la bóveda en la que estás para que aparezca la cuadrícula del patrón."
     - name: "Dibuja un patrón nuevo"
       text: "Dibuja un patrón que no hayas usado antes, con al menos 6 puntos y al menos un cambio de dirección. Se abre una bóveda vacía."
     - name: "Añade contenido"
@@ -64,6 +64,8 @@ También tiene un efecto práctico. Si te equivocas al dibujar el patrón, llega
 
 ## Cómo crear una segunda bóveda
 
+La versión gratuita incluye una bóveda. Para que otros patrones abran sus propias bóvedas necesitas [Premium](id:pricing).
+
 1. **Bloquea Velcrypt.** Sal de la bóveda en la que estás para que aparezca la cuadrícula del patrón.
 2. **Dibuja un patrón nuevo.** Usa uno que no hayas usado antes, con las reglas de siempre: al menos 6 puntos y al menos un cambio de dirección.
 3. **Añade algo.** Se abre una bóveda vacía. Importa una foto, un vídeo o un documento para empezar a usarla.
@@ -75,7 +77,7 @@ Una bóveda señuelo es una bóveda llena de contenido inofensivo pero creíble,
 
 Un señuelo funciona mejor cuando parece usado. Una bóveda vacía invita a preguntar «¿para qué instalas una app de bóveda si no guardas nada?», mientras que una con unas cuantas docenas de elementos corrientes rara vez lo hace. La guía sobre [qué es una bóveda señuelo](id:what-is-a-decoy-vault) explica cómo hacerla convincente.
 
-Velcrypt también prepara un [patrón de coacción](id:duress-pattern) para la mejora Premium opcional (próximamente). La idea es ir un paso más allá que un señuelo: abrir una bóveda elegida y retirar en silencio el acceso a las demás.
+Velcrypt también tiene previsto un [patrón de coacción](id:duress-pattern) para una actualización futura. La idea es ir un paso más allá que un señuelo: abrir una bóveda elegida y retirar en silencio el acceso a las demás.
 
 ## Cómo se mantiene separada cada bóveda
 

@@ -10,11 +10,11 @@ keyFacts:
   - "Vanaf iOS 16 is het album Verborgen standaard vergrendeld met Face ID, Touch ID of de toegangscode van het toestel."
   - "Iedereen die de toegangscode van je iPhone kent, kan het album Verborgen openen."
   - "Verborgen foto’s synchroniseren met iCloud-foto’s; alleen met Geavanceerde databescherming zijn ze end-to-end versleuteld."
-  - "Velcrypt gebruikt een apart patroon, houdt kluizen alleen op het apparaat en sluit ze in v1 uit van back-ups."
+  - "Velcrypt gebruikt een apart patroon, houdt kluizen alleen op het apparaat en sluit ze uit van iCloud-back-ups."
 primaryKeyword: "foto’s verbergen iphone album verborgen"
 keywords: ["album verborgen iphone vs kluis-app", "is album verborgen veilig", "alternatief album verborgen", "album verborgen face id", "verborgen foto’s icloud"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Het ingebouwde album Verborgen van Apple tegenover een aparte versleutelde kluis: wat elk beschermt, waar foto’s synchroniseren en wie ze kan openen."
 competitor: "Album Verborgen (iPhone)"
 lastChecked: "oktober 2026"
@@ -51,13 +51,13 @@ Als iCloud-foto’s aanstaat, synchroniseren verborgen items net als al het ande
 |---|---|---|
 | Details over versleuteling op het apparaat gepubliceerd | Ja: AES-256-GCM, sleutels afgeleid van je patroon | iOS-gegevensbescherming, gedocumenteerd door Apple |
 | Account nodig | Nee | Onderdeel van Foto’s; Apple Account nodig voor iCloud-synchronisatie |
-| Cloudback-up | Nee (v1); versleutelde back-up gepland | Ja, met iCloud-foto’s of iCloud-reservekopie |
+| Cloudback-up | Geen automatische; gratis versleuteld back-upbestand dat je zelf bewaart | Ja, met iCloud-foto’s of iCloud-reservekopie |
 | Ontgrendelen | Patroon op een raster van 5×5, los van de toegangscode | Face ID, Touch ID of toegangscode van het toestel |
 | Biometrie | Bewust niet aangeboden | Ja |
-| Lokkluis / meerdere kluizen | Elk patroon is een eigen kluis | Eén album Verborgen |
-| Dwangpatroon | Binnenkort (Premium) | Nee |
+| Lokkluis / meerdere kluizen | Elk patroon is een eigen kluis (tweede kluis met Premium) | Eén album Verborgen |
+| Dwangpatroon | Gepland voor een toekomstige update | Nee |
 | Herstel als je de code vergeet | Geen | Herstel van toegangscode en Apple Account |
-| Kosten | Gratis versie plus optioneel Premium | Inbegrepen bij iOS |
+| Kosten | Gratis (1 kluis, tot 50 onderdelen); Premium vanaf $ 1,99 per week | Inbegrepen bij iOS |
 | Platforms | iPhone (iOS 17+) | iPhone, iPad en Mac |
 | Documenten | Ja, uit de app Bestanden | Alleen foto’s en video’s |
 
@@ -95,4 +95,4 @@ Er is precies één album Verborgen, en het bestaan ervan is duidelijk voor iede
 - **Je wilt lokkluizen of meerdere privéruimtes.** Elk patroon is een eigen kluis.
 - **Je wilt ook documenten privé houden.** Importeer pdf’s en bestanden uit de app Bestanden.
 
-De eerlijke afweging: met Velcrypt v1 betekent een verloren telefoon of een vergeten patroon dat de kluis niet kan worden hersteld. Bepaal welk risico je het meest zorgen baart.
+De eerlijke afweging: met Velcrypt betekent een vergeten patroon dat de kluis niet kan worden hersteld, en een verloren telefoon is alleen op te vangen met een versleuteld back-upbestand dat je zelf hebt gemaakt. Bepaal welk risico je het meest zorgen baart.

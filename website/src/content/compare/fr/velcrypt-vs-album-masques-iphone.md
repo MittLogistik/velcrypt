@@ -10,11 +10,11 @@ keyFacts:
   - "Depuis iOS 16, l’album Masqués est verrouillé par défaut avec Face ID, Touch ID ou le code de l’appareil."
   - "Toute personne qui connaît le code de votre iPhone peut ouvrir l’album Masqués."
   - "Les photos masquées se synchronisent avec Photos iCloud ; elles ne sont chiffrées de bout en bout qu’avec la protection avancée des données."
-  - "Velcrypt utilise un motif distinct, garde les coffres uniquement sur l’appareil et les exclut des sauvegardes en v1."
+  - "Velcrypt utilise un motif distinct, garde les coffres uniquement sur l’appareil et les exclut des sauvegardes iCloud."
 primaryKeyword: "album masqué iphone vs coffre-fort photo"
 keywords: ["album masqués iphone sécurisé", "cacher des photos iphone album masqué", "alternative album masqués", "album masqués face id", "photos masquées icloud"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "L’album Masqués intégré d’Apple face à un coffre chiffré distinct : ce que chacun protège, où se synchronisent les photos, qui peut les ouvrir."
 competitor: "Album Masqués de l’iPhone"
 lastChecked: "octobre 2026"
@@ -50,13 +50,13 @@ Si Photos iCloud est activé, les éléments masqués se synchronisent comme tou
 |---|---|---|
 | Détails du chiffrement sur l’appareil publiés | Oui : AES-256-GCM, clés dérivées de votre motif | Protection des données iOS, documentée par Apple |
 | Compte requis | Non | Fait partie de Photos ; compte Apple nécessaire pour la synchronisation iCloud |
-| Sauvegarde cloud | Non (v1) ; sauvegarde chiffrée prévue | Oui, avec Photos iCloud ou la sauvegarde iCloud |
+| Sauvegarde cloud | Non ; sauvegarde chiffrée manuelle et gratuite (fichier protégé par mot de passe) | Oui, avec Photos iCloud ou la sauvegarde iCloud |
 | Méthode de déverrouillage | Motif sur une grille 5×5, distinct du code | Face ID, Touch ID ou code de l’appareil |
 | Biométrie | Non proposée, par choix | Oui |
 | Leurre / plusieurs coffres | Chaque motif est son propre coffre | Un seul album Masqués |
-| Motif de contrainte | Bientôt disponible (Premium) | Non |
+| Motif de contrainte | Prévu, pas encore disponible | Non |
 | Récupération en cas d’oubli du code | Aucune | Code de l’appareil et récupération du compte Apple |
-| Coût | Version gratuite plus option Premium | Inclus dans iOS |
+| Coût | Gratuit (1 coffre, 50 éléments) ; Premium en abonnement ou achat unique | Inclus dans iOS |
 | Plateformes | iPhone (iOS 17+) | iPhone, iPad et Mac |
 | Documents | Oui, depuis l’app Fichiers | Photos et vidéos uniquement |
 
@@ -74,7 +74,7 @@ Masquer une photo ne la déplace nulle part : elle reste dans votre photothèque
 
 <!-- TODO verify -->
 
-Velcrypt fonctionne à l’inverse. Une photo importée est copiée dans un coffre chiffré sur l’iPhone, et les données des coffres sont exclues des sauvegardes iCloud et ordinateur en version 1. Après l’import, supprimez l’original dans Photos et videz « Suppressions récentes », sinon il y reste environ 30 jours. Lisez [supprimer les photos originales après l’import](id:delete-original-photos-after-import).
+Velcrypt fonctionne à l’inverse. Une photo importée est copiée dans un coffre chiffré sur l’iPhone, et les données des coffres sont exclues des sauvegardes iCloud et ordinateur ; seule une sauvegarde chiffrée que vous créez vous-même dans Réglages → Sauvegarde en garde une copie. Après l’import, supprimez l’original dans Photos et videz « Suppressions récentes », sinon il y reste environ 30 jours. Lisez [supprimer les photos originales après l’import](id:delete-original-photos-after-import).
 
 ## Le déni plausible
 
@@ -94,4 +94,4 @@ Il n’existe qu’un seul album Masqués, et son existence saute aux yeux de qu
 - **Vous voulez des leurres ou plusieurs espaces privés.** Chaque motif est son propre coffre.
 - **Vous devez aussi protéger des documents.** Importez des PDF et des fichiers depuis l’app Fichiers.
 
-Le compromis, en toute honnêteté : avec Velcrypt v1, un téléphone perdu ou un motif oublié signifie que le coffre ne peut pas être récupéré. À vous de voir quel risque vous inquiète le plus.
+Le compromis, en toute honnêteté : avec Velcrypt, un motif oublié signifie que le coffre ne peut pas être récupéré, et un téléphone perdu aussi, sauf si vous avez créé une sauvegarde chiffrée. À vous de voir quel risque vous inquiète le plus.

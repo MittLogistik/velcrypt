@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "krypterat fotovalv iphone"
 keywords: ["fotovalv kryptering", "aes-256-gcm fotovalv", "pbkdf2 valvapp", "hur krypteras mitt valv", "autentiserad kryptering förklarad"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "AES-256-GCM per fil, nycklar härledda ur ditt mönster med PBKDF2-HMAC-SHA512 och HKDF, plus iOS dataskydd."
 status: available
 schemaType: WebPage
@@ -72,7 +72,7 @@ De två lagren är oberoende av varandra. Även om det ena på något sätt krin
 
 Velcrypt är [helt offline utan konto](id:offline-no-account). Det finns inga servrar, inga uppladdningar och ingen kopia av dina nycklar utanför telefonen. Den utformningen tar bort en hel kategori av risker: det finns ingen databas att bryta sig in i och ingen anställd som skulle kunna dekryptera dina filer.
 
-Det har också ett pris. Eftersom nycklarna bara finns på enheten och bara via ditt mönster kan ingen återställa ett valv om mönstret glöms bort eller telefonen försvinner. En krypterad säkerhetskopia är planerad, men den finns inte i den första versionen.
+Det har också ett pris. Eftersom nycklarna bara finns på enheten och bara via ditt mönster kan ingen återställa ett valv om mönstret glöms bort eller telefonen försvinner. Därför kan du själv skapa en krypterad säkerhetskopia, skyddad av ett lösenord du väljer, under Inställningar → Säkerhetskopiering.
 
 ## Vad krypteringen inte täcker
 

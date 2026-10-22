@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "patrón de desbloqueo seguro"
 keywords: ["solidez del patrón de desbloqueo", "qué tan seguro es mi patrón", "seguridad del bloqueo con patrón", "patrón de desbloqueo 5x5", "ideas de patrones seguros", "comprobar patrón de desbloqueo"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Dibuja un patrón de prueba en una cuadrícula de 5×5 y mira una valoración aproximada de su solidez. Funciona en local. Nunca uses tu patrón real."
 toolName: "Comprobador de solidez de patrones"
 schemaType: WebPage
@@ -43,7 +43,7 @@ faq:
   - q: "¿Un patrón fuerte me protege si alguien me está mirando?"
     a: "No. Si alguien te ve dibujarlo, la solidez da igual. Tapa la pantalla y dibújalo donde nadie pueda verte ni grabarte."
   - q: "¿Y si olvido un patrón complicado?"
-    a: "En la primera versión de Velcrypt, un patrón olvidado no puede recuperarse, ni por ti ni por Velcrypt. Elige algo complejo pero fácil de recordar y practícalo antes de confiar en él."
+    a: "En Velcrypt, un patrón olvidado no puede recuperarse, ni por ti ni por Velcrypt. Elige algo complejo pero fácil de recordar y practícalo antes de confiar en él."
 ---
 
 ## Cómo funciona
@@ -90,4 +90,4 @@ Este comprobador no guarda ni transmite nada, pero el hábito importa más que e
 
 En Velcrypt, tu patrón es la llave: las claves de cifrado se derivan de él con PBKDF2-HMAC-SHA512 con al menos 600.000 iteraciones, lo que hace que cada intento sea lento. Consulta [cifrado](id:encryption). Además, cada patrón abre su propia bóveda, como se explica en [bóvedas ocultas](id:hidden-vaults) y [bloqueo con patrón](id:pattern-lock).
 
-Un patrón sólido no puede protegerte de alguien que te vea dibujarlo, de entregar el teléfono con la bóveda abierta ni de olvidar el patrón. En la primera versión no hay recuperación, así que lee [olvidé el patrón de mi bóveda](id:forgot-vault-pattern) antes de elegir algo que quizá no recuerdes.
+Un patrón sólido no puede protegerte de alguien que te vea dibujarlo, de entregar el teléfono con la bóveda abierta ni de olvidar el patrón. No hay recuperación del patrón, así que lee [olvidé el patrón de mi bóveda](id:forgot-vault-pattern) antes de elegir algo que quizá no recuerdes.

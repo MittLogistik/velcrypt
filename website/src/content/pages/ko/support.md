@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "velcrypt 고객 지원"
 keywords: ["velcrypt 문의", "velcrypt 도움말", "velcrypt 금고가 안 열려요", "velcrypt 문제 해결", "velcrypt 이메일"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 schemaType: ContactPage
 order: 5
 related: [faq, forgot-vault-pattern, auto-lock, security, privacy]
@@ -54,7 +54,8 @@ Velcrypt에 대한 대부분의 질문은 [FAQ](id:faq)에서 답을 찾을 수 
 Velcrypt는 저희를 포함해 본인 외에는 아무도 금고를 열 수 없도록 만들어졌습니다. 따라서 지원팀은 다음을 **할 수 없습니다**.
 
 - 잊어버린 패턴 복구 또는 초기화
-- 잃어버리거나 고장 나거나 초기화된 iPhone의 금고 복원
+- 잃어버리거나 고장 나거나 초기화된 iPhone의 금고 복원(직접 만든 암호화 백업 파일이 있다면 앱에서 직접 복원할 수 있습니다)
+- 잊어버린 백업 암호 복구
 - 기기에 금고가 몇 개 있는지 알려 드리기
 - 파일 복호화 또는 콘텐츠 대신 꺼내 드리기
 
@@ -75,6 +76,14 @@ Velcrypt는 백그라운드로 전환되면 설정한 지연 시간 후 잠깁�
 ### 가져오기가 실패하거나 저장 공간이 부족해요
 
 암호화된 사본은 원본과 비슷한 용량을 차지합니다. 설정 › 일반 › iPhone 저장 공간에서 남은 공간을 확인하세요. 가져오기는 사진 앱에서 원본을 지우지 않는다는 점을 기억하세요. 원본을 삭제하고 최근 삭제된 항목을 비우면 공간이 확보됩니다. [가져온 뒤 원본 삭제하기](id:delete-original-photos-after-import)를 참고하세요.
+
+### 새 iPhone으로 금고를 옮기고 싶어요
+
+금고는 iCloud 및 컴퓨터 백업에 포함되지 않으므로 자동으로 옮겨지지 않습니다. 기존 iPhone에서 금고를 열고 설정 → 백업에서 백업을 만든 뒤, 파일을 파일 앱, iCloud Drive 또는 컴퓨터에 저장하세요. 새 iPhone에서 Velcrypt를 설정하고 패턴으로 금고를 연 다음, 설정 → 백업 → ‘백업에서 복원’을 선택하고 백업 암호를 입력하면 백업의 항목이 열린 금고에 추가됩니다. 금고마다 따로 백업해야 합니다.
+
+### Premium이 사라졌어요
+
+기기를 바꾸거나 앱을 다시 설치했다면 같은 Apple 계정으로 로그인한 상태에서 앱의 ‘구입 항목 복원’을 탭하세요. 구독 해지, 결제, 환불은 Apple이 처리하므로 Apple 계정 설정이나 Apple의 지원 페이지에서 관리하세요.
 
 ### 가져온 파일을 찾을 수 없어요
 

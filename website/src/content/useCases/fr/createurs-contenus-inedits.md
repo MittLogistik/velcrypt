@@ -10,11 +10,11 @@ keyFacts:
   - "Avec Photos iCloud activé, la pellicule se synchronise sur tous les appareils de votre compte Apple."
   - "Les métadonnées d’une photo peuvent révéler le lieu, la date et l’appareil d’une séance ; supprimez-les avant de publier."
   - "Velcrypt conserve photos, vidéos et documents dans des coffres chiffrés sur votre iPhone, classés en albums."
-  - "Velcrypt n’a ni synchronisation cloud ni sauvegarde dans la première version : gardez vos fichiers maîtres dans votre propre archive."
+  - "Velcrypt n’a pas de synchronisation cloud, seulement une sauvegarde chiffrée manuelle : gardez vos fichiers maîtres dans votre propre archive."
 primaryKeyword: "protéger ses photos clients iphone"
 keywords: ["stocker des photos clients en privé iphone", "photographe confidentialité clients téléphone", "cacher des photos de travail iphone", "créateur de contenu vie privée", "garder des contenus inédits privés", "protéger des photos non publiées"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Photographes, artistes et créateurs : gardez vos créations inédites et contenus clients privés sur iPhone, et ne les partagez que volontairement."
 group: professional
 schemaType: Article
@@ -28,7 +28,7 @@ faq:
   - q: "Puis-je organiser mes projets dans Velcrypt ?"
     a: "Oui. Les coffres contiennent des albums : vous pouvez créer un album par projet ou par client, sélectionner plusieurs éléments et les déplacer d’un album à l’autre."
   - q: "Velcrypt remplace-t-il mon archive photo ?"
-    a: "Non. Velcrypt garde vos copies de travail privées sur votre iPhone. Il n’a pas de synchronisation cloud et, dans la première version, les coffres ne sont pas sauvegardés : vos fichiers maîtres doivent rester dans votre propre archive."
+    a: "Non. Velcrypt garde vos copies de travail privées sur votre iPhone. Il n’a pas de synchronisation cloud, et les coffres ne sont sauvegardés que si vous créez vous-même une sauvegarde chiffrée : vos fichiers maîtres doivent rester dans votre propre archive."
 ---
 
 Si vous créez pour en vivre — ou par passion —, votre iPhone contient sans doute des travaux qui ne sont pas prêts à être vus. Des retouches en cours, une séance sous embargo, les épreuves d’un client, des croquis pour une commande ou du contenu destiné à une plateforme d’abonnement. Pour les créateurs de contenu pour adultes en particulier, une fuite n’est pas qu’un désagrément : elle peut toucher leurs revenus, leur sécurité et la vie privée d’autres personnes. Quoi que vous créiez, le principe est le même : c’est vous qui décidez quand et comment votre travail est vu.
@@ -69,7 +69,7 @@ L’export sécurisé vous permet de sortir un seul fichier au moment de livrer 
 
 ## Des limites honnêtes
 
-- **Ce n’est pas une archive.** Pas de synchronisation cloud et, dans la première version, pas de sauvegarde : si le téléphone est perdu ou si vous oubliez le schéma, le coffre ne peut pas être récupéré. Gardez vos fichiers maîtres ailleurs.
+- **Ce n’est pas une archive.** Pas de synchronisation cloud ni de sauvegarde automatique : si vous oubliez le schéma, le coffre ne peut pas être récupéré, et si le téléphone est perdu, seule une sauvegarde chiffrée créée à l’avance permet de le restaurer. Gardez vos fichiers maîtres ailleurs.
 - **Les exports quittent le coffre.** Une fois envoyé, un fichier n’est pas plus privé que l’appareil du destinataire.
 - **Les captures d’écran par d’autres.** Un coffre ne peut pas empêcher quelqu’un de photographier votre écran, ni un destinataire de faire une capture de ce que vous envoyez.
 - **Vérifiez vous-même les métadonnées.** Ne supposez pas qu’un export retire la localisation ou les données d’appareil ; passez les fichiers dans un outil dédié avant de publier.

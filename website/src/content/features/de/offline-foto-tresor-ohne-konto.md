@@ -4,17 +4,18 @@ title: "Offline-Foto-Tresor ohne Konto, ohne Cloud, ohne Server"
 description: "Velcrypt läuft komplett auf deinem iPhone: kein Konto, keine E-Mail, keine Server, keine Uploads, keine Analyse von Tresorinhalten."
 h1: "Komplett offline, ohne Konto"
 navTitle: "Offline, ohne Konto"
-answer: "Velcrypt läuft vollständig auf deinem iPhone. Es gibt kein Konto, keine Registrierung, keine E-Mail, keinen Server, keinen Upload und keine Analyse dessen, was du speicherst. In der ersten Version sind Tresordaten auch von iCloud- und Computer-Backups ausgeschlossen – ein verlorenes Handy oder vergessenes Muster lässt sich daher nicht wiederherstellen."
+answer: "Velcrypt läuft vollständig auf deinem iPhone. Es gibt kein Konto, keine Registrierung, keine E-Mail, keinen Server, keinen Upload und keine Analyse dessen, was du speicherst. Tresordaten sind von iCloud- und Computer-Backups ausgeschlossen. Gegen Geräteverlust hilft nur ein verschlüsseltes Backup, das du selbst erstellst; ein vergessenes Muster lässt sich nicht wiederherstellen."
 keyFacts:
   - "Kein Konto, keine Registrierung, keine E-Mail-Adresse."
   - "Keine Server und keine Uploads; Tresordateien verlassen nie das Handy."
   - "Keine Analyse von Tresorinhalten."
-  - "Tresordaten sind in der ersten Version von iCloud- und Finder/iTunes-Backups ausgeschlossen."
-  - "Kehrseite: keine Wiederherstellung bei verlorenem Handy oder vergessenem Muster. Ein verschlüsseltes Backup ist geplant."
+  - "Tresordaten sind von iCloud- und Finder/iTunes-Backups ausgeschlossen."
+  - "Kostenloses verschlüsseltes Backup als Datei mit eigenem Passwort, die du selbst speicherst."
+  - "Kehrseite: keine Wiederherstellung bei vergessenem Muster oder Backup-Passwort."
 primaryKeyword: "foto tresor ohne konto"
 keywords: ["foto tresor offline", "private foto app ohne cloud", "offline tresor iphone", "foto tresor ohne anmeldung", "foto tresor nur lokal"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Kein Konto, keine Server, keine Uploads, keine Inhaltsanalyse. Alles bleibt auf deinem iPhone – mit einer ehrlichen Kehrseite bei der Wiederherstellung."
 status: available
 schemaType: WebPage
@@ -24,11 +25,11 @@ faq:
   - q: "Braucht Velcrypt ein Konto oder eine E-Mail-Adresse?"
     a: "Nein. Keine Registrierung, kein Login, keine E-Mail. Du öffnest die App und zeichnest ein Muster, das ist alles."
   - q: "Werden meine Tresordateien in iCloud gesichert?"
-    a: "Nein. In der ersten Version sind Tresordaten von iCloud und von Computer-Backups über Finder oder iTunes ausgeschlossen. Deine Dateien existieren nur auf deinem iPhone."
+    a: "Nein. Tresordaten sind von iCloud und von Computer-Backups über Finder oder iTunes ausgeschlossen. Eine Sicherung gibt es nur, wenn du selbst ein verschlüsseltes Backup erstellst und speicherst."
   - q: "Was passiert mit meinem Tresor, wenn ich mein Handy verliere?"
-    a: "Der Tresor geht mit verloren. Weil nichts auf einem Server oder in einem Backup liegt, können weder du noch Velcrypt ihn wiederherstellen. Bewahr Kopien von allem Unersetzlichen an einem Ort auf, dem du vertraust."
-  - q: "Wird Velcrypt irgendwann Backups anbieten?"
-    a: "Eine verschlüsselte Backup- und Wiederherstellungsoption ist geplant, voraussichtlich als Teil des optionalen Premium-Upgrades. Ein Termin steht noch nicht fest, und die erste Version enthält sie nicht."
+    a: "Hast du vorher ein verschlüsseltes Backup erstellt und außerhalb des Handys gespeichert, stellst du es auf einem neuen iPhone mit deinem Backup-Passwort wieder her. Ohne Backup geht der Tresor mit verloren, denn Velcrypt hat keine Kopie."
+  - q: "Bietet Velcrypt Backups an?"
+    a: "Ja, kostenlos. Unter Einstellungen → Backup erstellst du eine .velcrypt-Datei für den geöffneten Tresor, geschützt mit einem Backup-Passwort, das du wählst. Du speicherst sie in „Dateien“, iCloud Drive oder auf einem Computer; Velcrypt erhält sie nie."
 ---
 
 Viele Tresor-Apps fragen als Erstes nach deiner E-Mail. Velcrypt fragt nach gar nichts. Es gibt nichts zu registrieren, nichts zum Einloggen und nichts auf einem Server, das durchsickern könnte – denn es gibt keinen Server. Diese Seite erklärt, was das in der Praxis bedeutet, auch die Kehrseite.
@@ -53,31 +54,32 @@ Es bedeutet auch, dass Velcrypt deine Dateien nicht herausgeben kann, weil es ke
 
 ## Von iCloud- und Computer-Backups ausgeschlossen
 
-In der ersten Version sind Tresordaten vom iCloud-Backup und von Computer-Backups über Finder oder iTunes ausgeschlossen. Das ist Absicht: Ein Backup ist eine weitere Kopie an einem Ort, den du nicht vollständig kontrollierst, und Velcrypt hält die Zahl der Kopien bei eins.
+Tresordaten sind vom iCloud-Backup und von Computer-Backups über Finder oder iTunes ausgeschlossen. Das ist Absicht: Ein automatisches Backup ist eine weitere Kopie an einem Ort, den du nicht vollständig kontrollierst, deshalb legt Velcrypt keine Kopie an, ohne dass du es entscheidest.
 
 Das unterscheidet sich von Apples eigenem Album „Ausgeblendet“, das über iCloud-Fotos synchronisiert wird, wenn diese Funktion aktiviert ist. Wenn du nicht sicher bist, wie deine vorhandenen Fotos gespeichert werden, lies [Landen ausgeblendete Fotos in iCloud?](id:are-hidden-photos-saved-to-icloud)
 
-## Die ehrliche Kehrseite: keine Wiederherstellung
+## Die ehrliche Kehrseite: Wiederherstellung nur mit eigenem Backup
 
 Alles auf einem einzigen Gerät zu halten, hat einen klaren Preis, und den solltest du offen sehen:
 
 | Situation | Lässt sich der Tresor wiederherstellen? |
 | --- | --- |
 | Du vergisst dein Muster | Nein |
-| Dein Handy geht verloren oder wird gestohlen | Nein |
-| Dein Handy ist irreparabel kaputt | Nein |
-| Du richtest ein neues Handy aus einem Backup ein | Nein, Tresordaten sind nicht im Backup |
+| Dein Handy geht verloren oder wird gestohlen | Nur mit einem verschlüsselten Velcrypt-Backup |
+| Dein Handy ist irreparabel kaputt | Nur mit einem verschlüsselten Velcrypt-Backup |
+| Du richtest ein neues Handy aus einem iCloud- oder Computer-Backup ein | Nein, Tresordaten sind nicht darin; stell stattdessen dein Velcrypt-Backup wieder her |
+| Du vergisst dein Backup-Passwort | Nein, das Backup lässt sich dann nicht öffnen |
 | Du löschst Velcrypt vom Handy | Nein, beim Löschen einer iOS-App werden ihre Daten entfernt |
 
-Niemand kann helfen, auch Velcrypt nicht, weil niemand sonst je eine Kopie hatte. Bevor du unersetzliche Dateien in einen Tresor verschiebst, überleg dir, wo eine zweite Kopie liegen soll, zum Beispiel auf einem verschlüsselten Laufwerk zu Hause. Die Anleitung [Tresor-Muster vergessen – was tun?](id:forgot-vault-pattern) erklärt, welche Möglichkeiten bleiben.
+Velcrypt kann nicht helfen, weil es nie eine Kopie hatte. Bevor du unersetzliche Dateien in einen Tresor verschiebst, überleg dir, wo dein verschlüsseltes Backup liegen soll, zum Beispiel in iCloud Drive oder auf einem Computer zu Hause. Die Anleitung [Tresor-Muster vergessen – was tun?](id:forgot-vault-pattern) erklärt, welche Möglichkeiten bleiben.
 
-## Geplant: verschlüsseltes Backup
+## Verschlüsseltes Backup, das du selbst aufbewahrst
 
-Eine verschlüsselte Backup- und Wiederherstellungsoption ist für eine spätere Version geplant, als Teil des optionalen Premium-Upgrades. Ziel ist, dass du eine geschützte Kopie behalten kannst, ohne das Prinzip aufzugeben, dass nur du die Schlüssel hast. Einen Termin gibt es noch nicht, und nichts auf dieser Seite ist als Versprechen zu verstehen, wann sie kommt.
+Das verschlüsselte Backup ist kostenlos und manuell. Unter Einstellungen → Backup erstellt Velcrypt eine `.velcrypt`-Datei für den geöffneten Tresor, geschützt mit einem Backup-Passwort, das du selbst wählst. Jeder Tresor wird einzeln gesichert, ein Backup verrät also deine anderen Tresore nicht. Du speicherst die Datei in „Dateien“, iCloud Drive oder auf einem Computer und stellst sie auf jedem iPhone wieder her. Velcrypt erhält weder die Datei noch das Passwort, und ein vergessenes Backup-Passwort lässt sich nicht wiederherstellen.
 
 ## Gute Gewohnheiten für einen Offline-Tresor
 
 - **Wähl ein Muster, das du dir merkst,** und üb es in den ersten Tagen.
-- **Bewahr eine separate Kopie von allem Unersetzlichen auf,** etwa Ausweisscans oder Familienfotos, an einem Ort, dem du vertraust.
+- **Erstelle regelmäßig ein verschlüsseltes Backup** von allem Unersetzlichen, etwa Ausweisscans oder Familienfotos, und speichere es an einem Ort, dem du vertraust.
 - **Lösch Originale bewusst,** sobald eine Kopie im Tresor liegt, auch aus „Zuletzt gelöscht“. Siehe [Originale nach dem Import löschen](id:delete-original-photos-after-import).
 - **Halte die Verzögerung der [automatischen Sperre](id:auto-lock) kurz,** damit ein offener Tresor nicht offen bleibt, wenn du das Handy weglegst.

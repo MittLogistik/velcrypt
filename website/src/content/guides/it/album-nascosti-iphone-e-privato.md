@@ -19,7 +19,7 @@ keywords:
   - "album nascosti face id"
   - "qualcuno può vedere le mie foto nascoste"
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Cosa protegge davvero l’album Nascosti, chi può ancora aprirlo e come cambiano le cose con iCloud e la Protezione avanzata dei dati."
 category: apple
 order: 10
@@ -122,4 +122,4 @@ L’album Nascosti è pensato per l’ordine e per una privacy leggera, non per 
 
 Velcrypt segue questo approccio. Ogni cassaforte si apre con una sequenza disegnata su una griglia 5×5 invece che con Face ID o il codice del dispositivo, e i contenuti sono cifrati con AES-256-GCM usando chiavi derivate da quella sequenza ([come funziona la crittografia](id:encryption)). Ogni sequenza apre una cassaforte propria e una sequenza sconosciuta apre semplicemente una cassaforte vuota, quindi nulla rivela quante casseforti esistono ([casseforti nascoste](id:hidden-vaults)). Tutto resta sul dispositivo, senza account e senza copia nel cloud.
 
-Questo comporta anche compromessi onesti. Nella prima versione i contenuti della cassaforte non sono inclusi nei backup di iCloud o del computer, quindi se perdi il telefono o dimentichi la sequenza non si possono recuperare. E importare una foto la copia, quindi devi comunque rimuovere l’originale da Foto e da Eliminati di recente. Per un confronto diretto, leggi [Velcrypt vs album Nascosti dell’iPhone](id:velcrypt-vs-iphone-hidden-album).
+Questo comporta anche compromessi onesti. I contenuti della cassaforte non sono inclusi nei backup di iCloud o del computer: se dimentichi la sequenza non si possono recuperare, e se perdi il telefono li recuperi solo da un backup cifrato creato da te. E importare una foto la copia, quindi devi comunque rimuovere l’originale da Foto e da Eliminati di recente. Per un confronto diretto, leggi [Velcrypt vs album Nascosti dell’iPhone](id:velcrypt-vs-iphone-hidden-album).

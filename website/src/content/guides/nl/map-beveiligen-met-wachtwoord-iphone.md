@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "map beveiligen met wachtwoord iphone"
 keywords: ["bestanden app vergrendelen iphone", "map vergrendelen iphone", "wachtwoord op map iphone", "bestanden beveiligen iphone", "beveiligde map iphone", "bestanden verbergen iphone"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Wat de Bestanden-app wel en niet kan vergrendelen, en praktische manieren om een map met documenten op je iPhone te beschermen."
 category: hiding
 order: 6
@@ -111,4 +111,4 @@ Speciaal voor identiteitsbewijzen en medische gegevens geeft de toepassing [medi
 
 Velcrypt bewaart [privédocumenten](id:private-documents) in dezelfde versleutelde kluizen als foto's en video's. Je importeert ze uit de Bestanden-app, en ze worden op het apparaat versleuteld met AES-256-GCM, met sleutels die van je ontgrendelpatroon zijn afgeleid. Er is geen account en er gaat niets naar een server; de pagina over [offline opslag zonder account](id:offline-no-account) legt uit wat dat in de praktijk betekent.
 
-Omdat kluisgegevens buiten iCloud- en computerback-ups vallen, bewaar je van elk document dat je niet kwijt mag raken een onafhankelijke kopie op een plek die je vertrouwt. Raak je de telefoon kwijt of vergeet je het patroon, dan kan niemand de kluis openen, ook Velcrypt niet.
+Omdat kluisgegevens buiten iCloud- en computerback-ups vallen, maak je van elk document dat je niet kwijt mag raken via Instellingen → Back-up een versleuteld back-upbestand, of bewaar je een onafhankelijke kopie op een plek die je vertrouwt. Vergeet je het patroon, dan kan niemand de kluis openen, ook Velcrypt niet.

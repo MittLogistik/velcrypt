@@ -1,37 +1,37 @@
 ---
 pageId: duress-pattern
-title: "Duress Pattern (Coming Soon): Protect Vaults Under Pressure"
-description: "The duress pattern is a planned Velcrypt Premium feature, coming soon: one pattern opens a chosen vault and silently removes access to the others."
-h1: "Duress pattern (coming soon)"
-navTitle: "Duress pattern (coming soon)"
-answer: "The duress pattern is a planned Premium feature, coming soon. You will be able to set a special pattern that opens a vault you choose and silently removes access to your other vaults, for moments when you are pressured to unlock the app."
+title: "Duress Pattern (Planned): Protect Vaults Under Pressure"
+description: "The duress pattern is a planned Velcrypt feature for a future update: one pattern opens a chosen vault and silently removes access to the others."
+h1: "Duress pattern (planned)"
+navTitle: "Duress pattern (planned)"
+answer: "The duress pattern is a planned Velcrypt feature for a future update and isn’t in the app yet. It is designed to let you set a special pattern that opens a vault you choose and silently removes access to your other vaults, for moments when you are pressured to unlock the app."
 keyFacts:
-  - "Status: planned for the optional Premium upgrade, coming soon. Not in the app yet."
+  - "Status: planned for a future update. Not in the app yet."
   - "A special pattern will open a chosen vault."
   - "At the same time it will silently remove access to the other vaults."
-  - "It cannot recall copies that exist outside Velcrypt."
+  - "It cannot recall copies that exist outside Velcrypt, including backup files."
   - "It is a privacy tool, not legal advice or a way around lawful orders."
 primaryKeyword: "duress pattern vault app"
 keywords: ["duress password iphone", "panic pattern photo vault", "duress code app", "coerced unlock protection", "self-destruct vault pattern"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
-summary: "Coming soon to Premium: a special pattern that opens a chosen vault and silently removes access to the others."
+dateModified: 2026-10-22
+summary: "Planned for a future update: a special pattern that opens a chosen vault and silently removes access to the others."
 status: coming-soon
 schemaType: WebPage
 order: 3
 related: [hidden-vaults, pattern-lock, what-is-a-decoy-vault, plausible-deniability-explained, phone-privacy-border-crossing]
 faq:
   - q: "Is the duress pattern available in Velcrypt now?"
-    a: "No. It is a planned feature for the optional Premium upgrade and is coming soon. Until then, you can use hidden vaults and a decoy vault, which are available today."
+    a: "No. It is planned for a future update, and there is no release date yet. Until then, you can use hidden vaults and a decoy vault, which are available today."
   - q: "What will happen when someone enters the duress pattern?"
     a: "The plan is that it opens a vault you chose in advance and, at the same time, silently removes access to your other vaults. Nothing on screen will signal that anything else happened."
   - q: "Can the duress pattern delete photos I already shared?"
-    a: "No. It can only affect what is inside Velcrypt on that phone. Copies in your Photos library, iCloud, chats, email or another person's device are out of its reach."
+    a: "No. It can only affect what is inside Velcrypt on that phone. Copies in your Photos library, iCloud, chats, email, a Velcrypt backup file or another person's device are out of its reach."
   - q: "Is it legal to use a duress pattern?"
     a: "That depends on where you are and the situation. Removing data while authorities are lawfully inspecting a device may be an offence in some countries. Velcrypt cannot give legal advice; if this matters to you, speak to a lawyer."
 ---
 
-Sometimes the risk is not a stolen phone but a person standing in front of you, asking you to open the app. The duress pattern is Velcrypt's planned answer to that moment. It is not available yet: it is a **coming-soon feature** of the optional Premium upgrade, and this page describes what it is designed to do.
+Sometimes the risk is not a stolen phone but a person standing in front of you, asking you to open the app. The duress pattern is Velcrypt's planned answer to that moment. It is not available yet: it is **planned for a future update**, and this page describes what it is designed to do.
 
 ## What the duress pattern will do
 
@@ -65,9 +65,9 @@ In each case, the goal is the same: give you a way to comply on the surface whil
 
 A duress pattern is a strong tool, and it comes with equally real limits. It is better to know them now than to discover them later.
 
-**It cannot undo copies.** It only acts on Velcrypt's own vaults on that device. If a photo is still in your Photos library, in Recently Deleted, in iCloud Photos, in a chat or on someone else's phone, it stays there. Clean up originals after importing; the guide on [deleting originals after import](id:delete-original-photos-after-import) shows how.
+**It cannot undo copies.** It only acts on Velcrypt's own vaults on that device. If a photo is still in your Photos library, in Recently Deleted, in iCloud Photos, in a chat or on someone else's phone, it stays there. The same goes for any encrypted Velcrypt backup file you have saved elsewhere. Clean up originals after importing; the guide on [deleting originals after import](id:delete-original-photos-after-import) shows how.
 
-**Treat it as permanent.** Vault data is not included in iCloud or computer backups in the first version, so you should assume that access, once removed, cannot be restored. Use it only when you truly accept losing those files.
+**Treat it as permanent.** Vault data is not included in iCloud or computer backups, so you should assume that access, once removed from that phone, cannot be restored there. Use it only when you truly accept losing those files.
 
 **It does not stop observation.** If someone has watched you draw your real pattern, or filmed the screen, the duress pattern does not change what they saw.
 

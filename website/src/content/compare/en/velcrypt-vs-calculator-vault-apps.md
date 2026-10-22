@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "calculator vault app vs velcrypt"
 keywords: ["calculator vault app", "calculator hide photos app", "fake calculator vault iphone", "calculator vault alternative", "secret calculator app"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Disguise versus encryption: how calculator-style vault apps compare with Velcrypt’s pattern-based hidden vaults."
 competitor: "Calculator vault apps"
 lastChecked: "October 2026"
@@ -49,15 +49,15 @@ Both can be useful. The question is what you’re protecting against. A disguise
 |---|---|---|
 | On-device encryption details published | Yes: AES-256-GCM, PBKDF2-HMAC-SHA512 | Varies; often not stated publicly |
 | Account required | No | Varies |
-| Cloud backup | No (v1); encrypted backup planned | Varies; some offer cloud features |
+| Cloud backup | No cloud; optional encrypted backup file you store yourself (free) | Varies; some offer cloud features |
 | Unlock method | Pattern on a 5×5 grid | Numeric code typed as a calculation |
 | Biometrics (Face ID / Touch ID) | Not offered, by design | Varies |
 | Disguise | None; visible as Velcrypt | Looks like a working calculator |
-| Decoy / multiple vaults | Every pattern is its own vault | Varies; some offer a decoy code |
-| Duress pattern | Coming soon (Premium) | Varies |
+| Decoy / multiple vaults | Every pattern is its own vault (a second vault needs Premium) | Varies; some offer a decoy code |
+| Duress pattern | Planned for a future update | Varies |
 | Break-in photos | Not offered | Common, but varies |
 | Recovery if you forget the code | None | Varies; some offer email or security-question recovery |
-| Business model | Free version plus optional Premium | Varies; some free versions show ads |
+| Business model | Free version (1 vault, up to 50 items) plus optional Premium | Varies; some free versions show ads |
 | Platforms | iPhone (iOS 17+) | Varies; many on iOS and Android |
 
 <!-- TODO verify -->
@@ -80,7 +80,7 @@ If you also want the app out of sight, iOS 18 and later let you hide any app in 
 
 - **You mainly want the app itself to look ordinary.** If a visible vault app on your phone is the problem, a disguise addresses that directly, and Velcrypt doesn’t.
 - **You want break-in photos.** Many calculator apps offer them; Velcrypt does not.
-- **You want a recovery option.** Some apps offer a way back in if you forget your code. Velcrypt v1 has none.
+- **You want a recovery option.** Some apps offer a way back in if you forget your code. Velcrypt has none.
 - **You use Android as well.** Many calculator vault apps exist on both platforms.
 
 <!-- TODO verify -->

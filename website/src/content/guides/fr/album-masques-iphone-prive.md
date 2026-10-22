@@ -19,7 +19,7 @@ keywords:
   - "album masqué face id"
   - "quelqu’un peut-il voir mes photos masquées"
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Ce que l’album Masqués protège réellement, qui peut encore l’ouvrir, et ce que changent la synchronisation iCloud et la Protection avancée."
 category: apple
 order: 10
@@ -122,4 +122,4 @@ L’album Masqués est conçu pour le rangement et une discrétion légère, pas
 
 C’est l’approche de Velcrypt. Chaque coffre s’ouvre avec un schéma tracé sur une grille de 5×5 points, et non avec Face ID ou le code de l’appareil, et son contenu est chiffré en AES-256-GCM avec des clés dérivées de ce schéma ([comment fonctionne le chiffrement](id:encryption)). Chaque schéma ouvre son propre coffre et un schéma inconnu ouvre simplement un coffre vide : rien ne révèle combien de coffres existent ([coffres cachés](id:hidden-vaults)). Tout reste sur l’appareil, sans compte ni copie dans le cloud.
 
-Cela implique aussi des contreparties, en toute honnêteté. Le contenu du coffre n’est pas inclus dans les sauvegardes iCloud ou sur ordinateur dans la première version : si vous perdez le téléphone ou oubliez le schéma, il est irrécupérable. Et importer une photo la copie, si bien qu’il faut toujours retirer l’original de Photos et de Suppressions récentes. Pour une comparaison point par point, lisez [Velcrypt ou l’album Masqués de l’iPhone](id:velcrypt-vs-iphone-hidden-album).
+Cela implique aussi des contreparties, en toute honnêteté. Le contenu du coffre n’est pas inclus dans les sauvegardes iCloud ou sur ordinateur : un schéma oublié le rend irrécupérable, et si vous perdez le téléphone, seule une sauvegarde chiffrée créée dans Réglages → Sauvegarde permet de le restaurer. Et importer une photo la copie, si bien qu’il faut toujours retirer l’original de Photos et de Suppressions récentes. Pour une comparaison point par point, lisez [Velcrypt ou l’album Masqués de l’iPhone](id:velcrypt-vs-iphone-hidden-album).

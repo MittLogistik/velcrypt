@@ -10,12 +10,13 @@ keyFacts:
   - "Each vault has its own random 256-bit master key; per-file keys are derived with HKDF."
   - "Files are encrypted with AES-256-GCM via Apple CryptoKit, plus iOS Data Protection (complete protection class)."
   - "An unknown pattern opens an empty vault — no list of vaults, no “wrong pattern” message."
-  - "No network, no account, no analytics on vault content; vault data is excluded from iCloud and computer backups in v1."
+  - "No network, no account, no analytics on vault content; vault data is excluded from iCloud and computer backups."
+  - "Optional encrypted backup: a .velcrypt file protected by a backup password you choose."
   - "Velcrypt has not had an independent security audit yet."
 primaryKeyword: "velcrypt security"
 keywords: ["photo vault encryption iphone", "how velcrypt encryption works", "aes-256-gcm photo vault", "pbkdf2 pattern lock", "photo vault threat model", "plausible deniability vault app"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 schemaType: WebPage
 order: 1
 related: [encryption, pattern-lock, hidden-vaults, aes-256-encryption-explained, plausible-deniability-explained, forgot-vault-pattern]
@@ -38,7 +39,7 @@ This page explains, in plain language, what happens to your photos, videos and d
 
 Velcrypt is an iPhone app that keeps private files in encrypted vaults on your device. You open a vault by drawing a pattern on a 5×5 grid of dots. That pattern is never saved anywhere. Instead, it is fed through a slow key-derivation function to produce a key, and that key is what protects the vault’s contents.
 
-Everything happens on the iPhone itself. Velcrypt has no account, no servers and no upload step, so there is no copy of your vault, or of your keys, anywhere else. That is the source of its strength and also its main limitation: if the pattern is forgotten or the phone is lost, the vault cannot be recovered.
+Everything happens on the iPhone itself. Velcrypt has no account, no servers and no upload step, so there is no copy of your vault, or of your keys, anywhere else. That is the source of its strength and also its main limitation: if the pattern is forgotten, the vault cannot be recovered, and if the phone is lost, only an encrypted backup file you made yourself can bring the vault back.
 
 ## From pattern to key
 
@@ -88,11 +89,15 @@ Velcrypt locks automatically when it goes to the background, after a delay you c
 
 There is no Face ID or Touch ID unlock, by design. A face or a finger can be used without your consent — while you sleep, or under pressure. A pattern exists only in your memory.
 
-## No network, no account, no backups
+## No network, no account, no automatic backups
 
 Velcrypt works entirely offline. There is no sign-up, no email address, no server and no upload of vault content, and no analytics are collected on what you store. The [offline, no-account](id:offline-no-account) page lists what that means in practice.
 
-In the first version, vault data is also **excluded from iCloud and computer (Finder) backups**. That keeps your encrypted files off Apple’s servers and off any computer you sync with, but it has a real consequence: if your iPhone is lost, broken or reset, the vaults go with it. An encrypted backup option is planned, without a date.
+Vault data is also **excluded from iCloud and computer (Finder) backups**. That keeps your encrypted files off Apple’s servers and off any computer you sync with, but it has a real consequence: if your iPhone is lost, broken or reset, the vaults go with it — unless you made a backup yourself.
+
+### Encrypted backup
+
+In Settings → Backup you can create an encrypted `.velcrypt` file for the vault that is open, protected by a **backup password** you choose. You decide where the file goes — Files, iCloud Drive or a computer — and you can restore it on any iPhone. The backup is a separate, manual file: Velcrypt never uploads it and never receives it. Choose a strong backup password, because anyone who has both the file and the password can restore the vault, and a forgotten backup password cannot be recovered.
 
 ## Threat model at a glance
 
@@ -103,23 +108,24 @@ In the first version, vault data is also **excluded from iCloud and computer (Fi
 | Someone tries to prove you have more vaults | Largely | No vault list, no “wrong pattern” message; vault count isn’t shown in the app. |
 | Theft of a locked iPhone | Yes | iOS Data Protection plus Velcrypt’s own AES-256-GCM encryption. |
 | Brute-forcing the pattern from extracted files | Slowed | PBKDF2 with 600,000+ iterations and a per-device salt; a long pattern matters. |
-| Cloud account breach | Yes | Vault data isn’t uploaded and is excluded from iCloud backups in v1. |
+| Cloud account breach | Yes | Vault data isn’t uploaded and is excluded from iCloud backups. A backup file you store in the cloud stays encrypted with your backup password. |
 | Tampering with encrypted files | Detected | AES-256-GCM authentication rejects modified data. |
 | Someone watching you draw the pattern | No | See below. |
 | Malware or a jailbroken device | No | See below. |
-| Forgotten pattern or lost phone | No | No recovery is possible. |
+| Forgotten pattern or backup password | No | No recovery is possible. |
+| Lost or broken phone | Only with a backup | Restore from an encrypted backup file you made earlier. |
 
 ## What Velcrypt does not protect against
 
 Every security tool has limits, and you should know Velcrypt’s before you rely on it.
 
 - **Shoulder-surfing.** If someone sees you draw your pattern, in person or on camera, they can open that vault. Draw it out of sight, and consider a pattern that doesn’t look like a simple letter or shape.
-- **Being forced to unlock.** Velcrypt cannot stop someone from coercing you into drawing a pattern. A decoy vault can help; a duress pattern (coming soon, Premium) is planned to open a chosen vault and silently remove access to the others.
+- **Being forced to unlock.** Velcrypt cannot stop someone from coercing you into drawing a pattern. A decoy vault can help; a duress pattern, planned for a future update, would open a chosen vault and silently remove access to the others.
 - **A phone handed over with the vault open.** While a vault is unlocked, anyone holding the phone can see what you see. Lock it before passing your phone to anyone.
 - **Compromised or jailbroken devices and malware.** Software that can read the screen, log touches or inspect app memory on a compromised device can defeat any app-level encryption.
 - **Screenshots or photos of the screen.** Velcrypt can’t stop another camera from photographing your display.
 - **Copies elsewhere.** Importing copies a photo; the original stays in Photos until you delete it, and then sits in Recently Deleted for about 30 days. Copies may also exist in iCloud Photos, chat apps, email or on someone else’s phone. Follow [deleting originals after import](id:delete-original-photos-after-import).
-- **Loss of the phone or a forgotten pattern.** Both mean the data is gone. There is no recovery phrase and no reset. See [forgot your vault pattern](id:forgot-vault-pattern).
+- **A forgotten pattern, or a lost phone without a backup.** Both mean the data is gone. There is no recovery phrase and no reset, and a forgotten backup password can’t be recovered either. See [forgot your vault pattern](id:forgot-vault-pattern).
 - **Detection that Velcrypt is in use.** The app icon is visible, and forensic tools may be able to see that Velcrypt holds encrypted data and roughly how much. Velcrypt doesn’t claim to hide that — only the number of vaults and their contents.
 - **Weak or guessable patterns.** A short pattern, or one shaped like an L, Z or square, is much easier to guess. Test a similar shape with the [pattern strength checker](id:pattern-strength-checker) — never your real one.
 

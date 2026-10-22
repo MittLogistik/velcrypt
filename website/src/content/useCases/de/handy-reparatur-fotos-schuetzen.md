@@ -10,11 +10,11 @@ keyFacts:
   - "Neuere iOS-Versionen unterstützen einen Reparaturmodus, bei dem „Wo ist?“ aktiv bleiben kann; frag deinen Dienstleister, was er braucht."
   - "Dein Gerätecode entsperrt Fotos, das Album „Ausgeblendet“, „Dateien“ und alles, was damit gesperrt ist."
   - "Ein Velcrypt-Tresor braucht ein eigenes Muster, der Code allein öffnet ihn nicht."
-  - "Velcrypt-Tresordaten sind in der ersten Version nicht in iCloud- oder Computer-Backups – ein gelöschtes Handy heißt ein verlorener Tresor."
+  - "Velcrypt-Tresordaten sind nicht in iCloud- oder Computer-Backups – erstelle vor der Reparatur ein verschlüsseltes Backup, sonst heißt ein gelöschtes Handy ein verlorener Tresor."
 primaryKeyword: "handy reparatur fotos schützen"
 keywords: ["fotos verstecken vor handy reparatur", "sieht die werkstatt meine fotos", "iphone reparatur code", "daten schützen iphone reparatur", "handy reparatur datenschutz tipps"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Worauf ein Techniker bei der Reparatur auf deinem iPhone zugreifen könnte, wie du dich vorbereitest und warum ein Backup-Plan für den Tresor zählt."
 group: everyday
 schemaType: Article
@@ -26,7 +26,7 @@ faq:
   - q: "Muss ich „Wo ist?“ vor einer iPhone-Reparatur ausschalten?"
     a: "Das hängt von der Reparatur und vom Anbieter ab. Neuere iOS-Versionen bieten einen Reparaturmodus, bei dem „Wo ist?“ während des Service aktiv bleibt. Folge den Anweisungen deines Reparaturdienstes und schau im Apple Support nach, wenn du unsicher bist."
   - q: "Übersteht mein Velcrypt-Tresor eine Reparatur?"
-    a: "Kommt das Handy mit denselben Daten zurück, ja. Wird das Gerät gelöscht oder ausgetauscht, ist der Tresor weg: In der ersten Version sind Tresordaten von iCloud- und Computer-Backups ausgeschlossen; eine verschlüsselte Backup-Option ist geplant."
+    a: "Kommt das Handy mit denselben Daten zurück, ja. Wird das Gerät gelöscht oder ausgetauscht, ist der Tresor weg, denn Tresordaten sind von iCloud- und Computer-Backups ausgeschlossen. Erstelle deshalb vorher unter Einstellungen → Backup ein verschlüsseltes Backup und speichere es außerhalb des Handys."
   - q: "Soll ich dem Techniker meinen Code geben?"
     a: "Nur wenn die Reparatur ihn wirklich erfordert. Viele Hardware-Reparaturen brauchen ihn nicht. Gibst du ihn weiter, ändere ihn, sobald du das Handy zurückhast."
 ---
@@ -67,10 +67,10 @@ Importierte Fotos sind Kopien. Denk also daran, vor der Reparatur die [Originale
 
 ## Die ehrliche Abwägung: Backups
 
-Das musst du sorgfältig abwägen. In der ersten Version sind Velcrypt-Tresordaten **von iCloud- und Computer-Backups ausgeschlossen**. Das ist Absicht – nichts verlässt dein Gerät –, bedeutet aber:
+Das musst du sorgfältig abwägen. Velcrypt-Tresordaten sind **von iCloud- und Computer-Backups ausgeschlossen**. Das ist Absicht – nichts verlässt dein Gerät –, bedeutet aber:
 
 - Endet die Reparatur mit einem gelöschten oder ausgetauschten iPhone, lässt sich dein Tresor nicht wiederherstellen, weder von dir noch von Velcrypt.
-- Eine verschlüsselte Backup- und Wiederherstellungsoption ist geplant, aber noch nicht verfügbar.
+- Die Lösung ist ein verschlüsseltes Backup: Unter Einstellungen → Backup erstellst du für jeden Tresor eine passwortgeschützte .velcrypt-Datei. Speichere sie vor der Reparatur in iCloud Drive oder auf einem Computer, dann kannst du sie danach im geöffneten Tresor wiederherstellen. Vergiss das Backup-Passwort nicht – es lässt sich nicht wiederherstellen.
 
 Bewahr daher von allem Unersetzlichen vor der Reparatur eine zweite Kopie an einem Ort auf, dem du vertraust – zum Beispiel auf einem verschlüsselten Laufwerk unter deiner Kontrolle. Dasselbe gilt, falls du jemals [dein Muster vergisst](id:forgot-vault-pattern). Mehr zu den Designentscheidungen steht auf der [Sicherheitsseite](id:security).
 

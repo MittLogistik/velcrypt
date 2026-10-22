@@ -19,7 +19,7 @@ keywords:
   - "evitar que las fotos se suban a icloud"
   - "fotos ocultas en icloud.com"
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Las fotos ocultas se sincronizan con Fotos en iCloud y pueden acabar en la copia de iCloud. Cómo se cifran en cada caso y cómo dejar una foto fuera de iCloud."
 category: apple
 order: 11
@@ -105,9 +105,9 @@ Esto detiene las subidas nuevas, pero también la sincronización de todo lo dem
 
 ### Opción 2: guardar la foto en una app que no se sincronice
 
-Algunas apps guardan los archivos solo en su propio almacenamiento del dispositivo y los excluyen de las copias de seguridad. Velcrypt está hecha así: las fotos, los videos y los documentos que importas se cifran en el iPhone y, en la primera versión, quedan excluidos de las copias de seguridad de iCloud y del ordenador. No hay cuenta y no se sube nada ([en el dispositivo, sin cuenta](id:offline-no-account)).
+Algunas apps guardan los archivos solo en su propio almacenamiento del dispositivo y los excluyen de las copias de seguridad. Velcrypt está hecha así: las fotos, los videos y los documentos que importas se cifran en el iPhone y quedan excluidos de las copias de seguridad de iCloud y del ordenador. No hay cuenta y no se sube nada ([en el dispositivo, sin cuenta](id:offline-no-account)).
 
-La contrapartida, con honestidad: si la foto solo existe dentro de una bóveda así y pierdes el teléfono u olvidas tu patrón, no hay ninguna copia que restaurar. Está prevista una opción de copia de seguridad cifrada para Velcrypt, pero no forma parte de la primera versión.
+La contrapartida, con honestidad: si la foto solo existe dentro de una bóveda así y pierdes el teléfono u olvidas tu patrón, no hay ninguna copia de iCloud que restaurar. Velcrypt ofrece una copia de seguridad cifrada manual: un archivo protegido con tu propia contraseña que tú decides dónde guardar. Si lo guardas en iCloud Drive, llega a iCloud, pero cifrado con una clave que Apple no tiene.
 
 ### Opción 3: borrar bien la copia de iCloud
 

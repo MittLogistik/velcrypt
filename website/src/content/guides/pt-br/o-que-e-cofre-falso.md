@@ -4,17 +4,18 @@ title: "O que é um cofre falso? Como criar um que convença"
 description: "Um cofre falso é um segundo cofre, inofensivo, que você abre sob pressão. Como funciona, como torná-lo convincente no Velcrypt e onde ele falha."
 h1: "O que é um cofre falso e como torná-lo convincente?"
 navTitle: "O que é um cofre falso?"
-answer: "Um cofre falso é um segundo cofre, aberto com outro segredo, com conteúdo inofensivo mas plausível. Se alguém pressionar você a abrir seu cofre, você pode abrir o falso no lugar. No Velcrypt, qualquer padrão novo abre o próprio cofre, então um cofre falso é simplesmente um segundo padrão que você enche de fotos e documentos comuns."
+answer: "Um cofre falso é um segundo cofre, aberto com outro segredo, com conteúdo inofensivo mas plausível. Se alguém pressionar você a abrir seu cofre, você pode abrir o falso no lugar. No Velcrypt, qualquer padrão novo abre o próprio cofre, então um cofre falso é simplesmente um segundo padrão que você enche de fotos e documentos comuns. Um segundo cofre exige o Premium."
 keyFacts:
   - "Um cofre falso é um cofre real e funcional, cheio de conteúdo de baixo risco que você não se importa de mostrar."
   - "No Velcrypt, cada padrão é um cofre próprio e não existe lista de cofres que entregue os outros."
   - "Um cofre falso vazio levanta suspeita; um cofre com álbuns e itens recentes, com cara de usado, convence."
   - "Um cofre falso protege contra bisbilhotice e pressão casual, não contra análise forense ou alguém que viu você desenhar."
-  - "Um padrão de coação que também remove o acesso aos outros cofres é um recurso Premium planejado (em breve)."
+  - "No Velcrypt, um segundo cofre (e portanto um cofre falso) exige o Premium."
+  - "Um padrão de coação que também removeria o acesso aos outros cofres está planejado para uma atualização futura."
 primaryKeyword: "cofre falso"
 keywords: ["o que é cofre falso", "senha falsa cofre de fotos", "app de cofre falso", "padrão falso", "segundo cofre iphone"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "O que é um cofre falso, como montar um com cara de usado usando um segundo padrão no Velcrypt e os limites que você deve conhecer."
 category: security
 order: 41
@@ -36,11 +37,11 @@ faq:
   - q: "O que é uma senha falsa num app de cofre de fotos?"
     a: "Uma senha falsa (ou PIN ou padrão falso) é um segundo segredo que abre um conjunto separado e inofensivo de conteúdo. Ela permite parecer que você atendeu ao pedido de abrir o app sem revelar o que realmente mantém em privado."
   - q: "Como criar um cofre falso no Velcrypt?"
-    a: "Desenhe um segundo padrão que você nunca usou. O Velcrypt abre um cofre novo e vazio para ele. Adicione conteúdo cotidiano e crível, como recibos, capturas de tela e fotos comuns, e esse padrão passa a abrir o seu cofre falso."
+    a: "Desenhe um segundo padrão que você nunca usou. O Velcrypt abre um cofre novo e vazio para ele. Adicione conteúdo cotidiano e crível, como recibos, capturas de tela e fotos comuns, e esse padrão passa a abrir o seu cofre falso. Como a versão grátis tem um cofre, você precisa do Premium para isso."
   - q: "Alguém consegue perceber que um cofre é falso?"
     a: "Não por dentro do app: o Velcrypt não guarda lista de cofres e não dá nenhuma pista de que existem outros. O que pode entregar um cofre falso é o conteúdo, por exemplo se ele estiver vazio, parado no tempo ou claramente montado."
   - q: "Cofre falso é a mesma coisa que padrão de coação?"
-    a: "Não. Um cofre falso simplesmente abre um cofre diferente. Um padrão de coação, recurso Premium planejado do Velcrypt que chega em breve, abriria um cofre escolhido e também removeria em silêncio o acesso aos outros."
+    a: "Não. Um cofre falso simplesmente abre um cofre diferente. Um padrão de coação, recurso do Velcrypt planejado para uma atualização futura, abriria um cofre escolhido e também removeria em silêncio o acesso aos outros."
   - q: "Devo usar um cofre falso com a polícia ou na imigração?"
     a: "Este guia não pode dar orientação jurídica. Enganar autoridades pode ser crime em muitos países. Um cofre falso serve principalmente para bisbilhotice do dia a dia e pressão informal; em situações oficiais, conheça seus direitos e fale com um advogado."
 ---
@@ -63,7 +64,7 @@ A maioria dos apps trata o cofre falso como um ajuste especial: um PIN real, um 
 - Um padrão que o Velcrypt nunca viu abre um cofre novo e vazio.
 - Não há mensagem de “padrão errado”, e nada prova que existem outros cofres.
 
-Então, no Velcrypt, um cofre falso não é um recurso que você ativa. É só um segundo padrão que você decide usar como cofre falso. Seu cofre real e o falso parecem e se comportam exatamente igual, porque são o mesmo tipo de coisa. A página de [cofres ocultos](id:hidden-vaults) explica o modelo em mais detalhes.
+Então, no Velcrypt, um cofre falso não é um recurso que você ativa. É só um segundo padrão que você decide usar como cofre falso. Como a versão grátis tem um cofre, um segundo cofre exige o [Premium](id:pricing). Seu cofre real e o falso parecem e se comportam exatamente igual, porque são o mesmo tipo de coisa. A página de [cofres ocultos](id:hidden-vaults) explica o modelo em mais detalhes.
 
 ## Como montar um cofre falso convincente, passo a passo
 
@@ -93,7 +94,7 @@ Um cofre falso é uma ferramenta social apoiada por boa criptografia. Não é m�
 
 ## Cofre falso vs. padrão de coação
 
-Um cofre falso abre um cofre diferente e deixa todo o resto intocado. Um **padrão de coação** vai um passo além: ele abre um cofre que você escolheu e, ao mesmo tempo, remove em silêncio o acesso aos outros. No Velcrypt, o [padrão de coação](id:duress-pattern) é um recurso Premium planejado e chega em breve. Até lá, um cofre falso bem cuidado dá conta da maioria das situações do dia a dia, como um parceiro curioso, um amigo rolando o seu celular ou um colega intrometido.
+Um cofre falso abre um cofre diferente e deixa todo o resto intocado. Um **padrão de coação** vai um passo além: ele abre um cofre que você escolheu e, ao mesmo tempo, remove em silêncio o acesso aos outros. No Velcrypt, o [padrão de coação](id:duress-pattern) está planejado para uma atualização futura e ainda não está no app. Até lá, um cofre falso bem cuidado dá conta da maioria das situações do dia a dia, como um parceiro curioso, um amigo rolando o seu celular ou um colega intrometido.
 
 ## Onde o Velcrypt se encaixa
 

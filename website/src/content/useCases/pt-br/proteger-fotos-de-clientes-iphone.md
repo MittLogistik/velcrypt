@@ -10,11 +10,11 @@ keyFacts:
   - "Os itens do rolo da câmera sincronizam com todos os aparelhos da sua Conta Apple quando as Fotos do iCloud estão ativadas."
   - "Os metadados podem revelar o local, a data e a câmera de um ensaio; remova-os antes de postar."
   - "O Velcrypt guarda fotos, vídeos e documentos em cofres criptografados no seu iPhone, organizados em álbuns."
-  - "O Velcrypt não tem sincronização na nuvem nem backup na primeira versão, então mantenha os originais no seu próprio arquivo."
+  - "O Velcrypt não tem sincronização na nuvem, só um backup criptografado manual, então mantenha os originais no seu próprio arquivo."
 primaryKeyword: "proteger fotos de clientes iphone"
 keywords: ["guardar fotos de clientes com privacidade", "privacidade de clientes fotógrafo celular", "esconder fotos de trabalho iphone", "privacidade para criadores de conteúdo", "manter conteúdo inédito privado"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Para fotógrafos, artistas e criadores: mantenha trabalhos inéditos e material de clientes privados no iPhone e compartilhe só de propósito."
 group: professional
 schemaType: Article
@@ -28,7 +28,7 @@ faq:
   - q: "Posso organizar projetos dentro do Velcrypt?"
     a: "Sim. Os cofres têm álbuns, então você pode manter um álbum separado por projeto ou cliente, selecionar vários itens e movê-los entre álbuns."
   - q: "O Velcrypt substitui o meu arquivo de fotos?"
-    a: "Não. O Velcrypt mantém cópias de trabalho privadas no seu iPhone. Ele não tem sincronização na nuvem e, na primeira versão, os dados do cofre não têm backup, então seus arquivos originais devem ficar no seu próprio arquivo."
+    a: "Não. O Velcrypt mantém cópias de trabalho privadas no seu iPhone. Ele não tem sincronização na nuvem, e os dados do cofre só têm backup se você mesmo criar um, então seus arquivos originais devem ficar no seu próprio arquivo."
 ---
 
 Se você cria coisas por profissão — ou por paixão —, seu iPhone provavelmente guarda trabalhos que ainda não estão prontos para serem vistos. Edições em andamento, um ensaio sob embargo, as provas de um cliente, esboços de uma encomenda ou conteúdo para uma plataforma de assinatura. Para criadores de conteúdo adulto, principalmente, um vazamento não é só um incômodo; pode afetar a renda, a segurança e a privacidade de outras pessoas. Seja o que for que você crie, o princípio é o mesmo: é você quem decide quando e como o seu trabalho é visto.
@@ -69,7 +69,7 @@ A exportação segura permite tirar um único arquivo quando chega a hora de ent
 
 ## Limites honestos
 
-- **Não é um arquivo de longo prazo.** Sem sincronização na nuvem e, na primeira versão, sem backup: se o celular for perdido ou você esquecer o padrão, o cofre não pode ser recuperado. Mantenha os originais em outro lugar.
+- **Não é um arquivo de longo prazo.** Sem sincronização na nuvem e sem backup automático: se você esquecer o padrão, ou perder o celular sem um backup criptografado, o cofre não pode ser recuperado. Mantenha os originais em outro lugar.
 - **Exportações saem do cofre.** Depois que um arquivo é enviado, ele só é tão privado quanto o aparelho de quem recebe.
 - **Capturas feitas por outras pessoas.** Um cofre não impede que alguém fotografe a sua tela, nem que quem recebe faça um print do que você enviou.
 - **Confira os metadados você mesmo.** Não presuma que qualquer exportação remove a localização ou os dados da câmera; passe os arquivos por uma ferramenta específica antes de publicar.

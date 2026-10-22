@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "pattern strength checker"
 keywords: ["unlock pattern strength", "how strong is my pattern", "pattern lock security", "5x5 pattern lock", "secure pattern ideas", "pattern password strength"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Draw a test pattern on a 5×5 grid and see a rough strength rating. Runs locally. Never use your real pattern."
 toolName: "Pattern Strength Checker"
 schemaType: WebPage
@@ -43,7 +43,7 @@ faq:
   - q: "Can a strong pattern protect against someone watching me?"
     a: "No. If someone sees you draw it, strength doesn’t matter. Shield the screen, and draw it where you can’t be observed or filmed."
   - q: "What if I forget a complicated pattern?"
-    a: "In Velcrypt’s first version, a forgotten pattern can’t be recovered by you or by Velcrypt. Choose something complex but memorable, and practise it before relying on it."
+    a: "In Velcrypt, a forgotten pattern can’t be recovered by you or by Velcrypt. Choose something complex but memorable, and practise it before relying on it."
 ---
 
 ## How it works
@@ -90,4 +90,4 @@ This checker doesn’t store or transmit anything, but the habit matters more th
 
 In Velcrypt, your pattern is the key: encryption keys are derived from it with PBKDF2-HMAC-SHA512 using at least 600,000 iterations, which makes each guess slow. See [encryption](id:encryption). Every pattern also opens its own vault, as explained in [hidden vaults](id:hidden-vaults) and [pattern lock](id:pattern-lock).
 
-A strong pattern can’t protect against someone watching you draw it, a phone handed over with the vault open, or a forgotten pattern. In the first version there is no recovery, so read [forgot your vault pattern](id:forgot-vault-pattern) before choosing something you might not remember.
+A strong pattern can’t protect against someone watching you draw it, a phone handed over with the vault open, or a forgotten pattern. There is no pattern recovery, so read [forgot your vault pattern](id:forgot-vault-pattern) before choosing something you might not remember.

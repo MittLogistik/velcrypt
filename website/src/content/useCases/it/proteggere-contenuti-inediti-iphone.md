@@ -10,11 +10,11 @@ keyFacts:
   - "Con Foto di iCloud attivo, gli elementi del rullino si sincronizzano su ogni dispositivo del tuo Account Apple."
   - "I metadati di una foto possono rivelare luogo, data e fotocamera di uno shooting; rimuovili prima di pubblicare."
   - "Velcrypt conserva foto, video e documenti in casseforti cifrate sul tuo iPhone, organizzati in album."
-  - "Nella prima versione Velcrypt non ha sincronizzazione cloud né backup, quindi tieni gli originali nel tuo archivio."
+  - "Velcrypt non ha sincronizzazione cloud e il suo backup cifrato è manuale, quindi tieni gli originali nel tuo archivio."
 primaryKeyword: "proteggere foto inedite iphone"
 keywords: ["conservare foto dei clienti iphone", "privacy clienti fotografo telefono", "nascondere foto di lavoro iphone", "privacy contenuti creator", "tenere privati contenuti inediti"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Per fotografi, artisti e creator: tieni privati su iPhone lavori inediti e materiale dei clienti e condividili solo di proposito."
 group: professional
 schemaType: Article
@@ -28,7 +28,7 @@ faq:
   - q: "Posso organizzare i progetti dentro Velcrypt?"
     a: "Sì. Le casseforti contengono album, quindi puoi tenere un album separato per ogni progetto o cliente, selezionare più elementi e spostarli tra album."
   - q: "Velcrypt può sostituire il mio archivio fotografico?"
-    a: "No. Velcrypt tiene private sul tuo iPhone le copie di lavoro. Non ha sincronizzazione cloud e nella prima versione i dati delle casseforti non finiscono nei backup, quindi i file originali devono stare nel tuo archivio."
+    a: "No. Velcrypt tiene private sul tuo iPhone le copie di lavoro. Non ha sincronizzazione cloud e i dati delle casseforti non finiscono nei backup di iCloud (solo in un backup cifrato manuale), quindi i file originali devono stare nel tuo archivio."
 ---
 
 Se crei qualcosa per lavoro, o per passione, il tuo iPhone probabilmente contiene lavori che non sono ancora pronti per essere visti. Modifiche in corso, uno shooting sotto embargo, i provini di un cliente, bozzetti per una commissione o contenuti per una piattaforma in abbonamento. Per chi crea contenuti per adulti, in particolare, una fuga di materiale non è solo un fastidio: può incidere su reddito, sicurezza e privacy di altre persone. Qualunque cosa tu crei, il principio è lo stesso: decidi tu quando e come il tuo lavoro viene visto.
@@ -69,7 +69,7 @@ L'esportazione sicura ti permette di estrarre un singolo file quando è il momen
 
 ## Limiti, detti con onestà
 
-- **Non è un archivio.** Niente sincronizzazione cloud e, nella prima versione, niente backup: se perdi il telefono o dimentichi la sequenza, la cassaforte non si può recuperare. Tieni gli originali altrove.
+- **Non è un archivio.** Niente sincronizzazione cloud e solo un backup cifrato manuale. Se perdi il telefono senza un backup cifrato, o dimentichi la sequenza, la cassaforte non si può recuperare. Tieni gli originali altrove.
 - **Le esportazioni escono dalla cassaforte.** Una volta inviato, un file è privato solo quanto il dispositivo del destinatario.
 - **Catture dello schermo da parte di altri.** Una cassaforte non può impedire a qualcuno di fotografare il tuo schermo, né a un destinatario di fare uno screenshot di ciò che invii.
 - **Controlla tu i metadati.** Non dare per scontato che un'esportazione rimuova posizione o dati della fotocamera; prima di pubblicare passa i file in uno strumento dedicato.

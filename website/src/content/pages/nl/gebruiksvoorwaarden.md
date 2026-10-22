@@ -1,20 +1,21 @@
 ---
 pageId: terms
 title: "Gebruiksvoorwaarden van Velcrypt"
-description: "De gebruiksvoorwaarden van Velcrypt: licentie, toegestaan gebruik, jouw verantwoordelijkheid voor patroon en kopieën, geen garantie, aansprakelijkheid."
+description: "De gebruiksvoorwaarden van Velcrypt: licentie, toegestaan gebruik, je verantwoordelijkheid voor patroon en kopieën, aansprakelijkheid, aankopen via Apple."
 h1: "Gebruiksvoorwaarden"
 navTitle: "Gebruiksvoorwaarden"
 answer: "Je mag Velcrypt gebruiken voor wettige, persoonlijke doeleinden onder deze voorwaarden en de standaard Licensed Application End User License Agreement van Apple. Omdat Velcrypt verloren gegevens niet kan herstellen, ben je zelf verantwoordelijk voor het onthouden van je patronen en het bewaren van kopieën van alles wat belangrijk is."
 keyFacts:
   - "De Licensed Application End User License Agreement van Apple is van toepassing op de app."
-  - "Velcrypt kan vergeten patronen of verloren kluizen niet herstellen."
-  - "Je bent zelf verantwoordelijk voor kopieën van belangrijke bestanden."
+  - "Velcrypt kan vergeten patronen en vergeten back-upwachtwoorden niet herstellen."
+  - "Je bent zelf verantwoordelijk voor kopieën, zoals een versleuteld back-upbestand."
+  - "Abonnementen worden automatisch verlengd tot je ze opzegt in de instellingen van je Apple Account."
   - "Aankopen worden gedaan en afgehandeld via Apple."
   - "Concept — juridische controle nodig vóór de lancering."
 primaryKeyword: "velcrypt gebruiksvoorwaarden"
 keywords: ["velcrypt voorwaarden", "velcrypt eula", "velcrypt algemene voorwaarden"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 schemaType: WebPage
 order: 7
 related: [privacy, support, pricing, forgot-vault-pattern]
@@ -25,9 +26,9 @@ faq: []
 
 **Concept — juridische controle nodig vóór de lancering.** Deze voorwaarden zijn een werkversie; ze worden nog beoordeeld en kunnen veranderen voordat Velcrypt uitkomt.
 
-**Ingangsdatum:** 21 oktober 2026
+**Ingangsdatum:** 22 oktober 2026
 
-Deze gebruiksvoorwaarden (“Voorwaarden”) regelen je gebruik van de Velcrypt-app voor iPhone (de “App”) en de website velcrypt.app (de “Website”), aangeboden door Velcrypt (“wij”, “ons”). Door de App te downloaden of te gebruiken of de Website te gebruiken, ga je akkoord met deze Voorwaarden.
+Deze gebruiksvoorwaarden (“Voorwaarden”) regelen je gebruik van de Velcrypt-app voor iPhone (de “App”) en de website velcrypt.app (de “Website”), aangeboden door Swedish Treats AB, een in Zweden gevestigd bedrijf dat Velcrypt exploiteert (“wij”, “ons”). Door de App te downloaden of te gebruiken of de Website te gebruiken, ga je akkoord met deze Voorwaarden.
 
 ## 1. De App en de EULA van Apple
 
@@ -52,7 +53,8 @@ Omdat je kluisinhoud op je apparaat blijft en versleuteld is, kunnen wij die nie
 Velcrypt is zo ontworpen dat niemand behalve jij je kluizen kan openen. Dat heeft gevolgen die je door het gebruik aanvaardt:
 
 - **We kunnen je gegevens niet herstellen.** Je patronen en sleutels worden nooit naar ons gestuurd. Vergeet je een patroon, dan kan de kluis die het opent niet worden hersteld, niet door jou en niet door ons.
-- **Verloren apparaten betekenen verloren kluizen.** In de huidige versie zijn kluisgegevens uitgesloten van iCloud- en computerback-ups. Als je apparaat kwijtraakt, wordt gestolen, beschadigd raakt of wordt gewist, zijn de kluizen erop weg.
+- **Verloren apparaten betekenen verloren kluizen, tenzij je een back-up hebt gemaakt.** Kluisgegevens zijn uitgesloten van iCloud- en computerback-ups. Als je apparaat kwijtraakt, wordt gestolen, beschadigd raakt of wordt gewist, zijn de kluizen erop weg. Je kunt via Instellingen → Back-up een versleuteld back-upbestand van een kluis maken en dat bewaren waar je wilt; het maken, actueel houden en veilig bewaren ervan is jouw verantwoordelijkheid.
+- **We kunnen back-upwachtwoorden niet herstellen.** Een back-upbestand kan alleen worden teruggezet met het back-upwachtwoord dat je hebt gekozen. Vergeet je dat, dan kan de back-up niet worden geopend, niet door jou en niet door ons.
 - **Bewaar je eigen kopieën.** Je bent zelf verantwoordelijk voor kopieën van elk bestand dat je niet kunt missen, op een plek die je vertrouwt.
 - **Houd je patroon geheim.** Iedereen die je patroon kent of ziet, kan die kluis openen.
 
@@ -60,7 +62,11 @@ Lees [kluispatroon vergeten](id:forgot-vault-pattern) en de grenzen op de pagina
 
 ## 5. Aankopen
 
-Elke aankoop, ook de optionele Premium-upgrade, wordt gedaan via de App Store en valt onder de voorwaarden van Apple. Apple verwerkt de betaling, en verzoeken om terugbetaling worden door Apple behandeld volgens zijn eigen beleid. Prijzen staan in de App Store voordat je koopt. Functies die als gepland of binnenkort worden beschreven, zijn niet gegarandeerd tot ze zijn uitgebracht.
+Elke aankoop, ook de optionele Premium-upgrade, wordt gedaan via de App Store en valt onder de voorwaarden van Apple. Apple verwerkt de betaling, en verzoeken om terugbetaling worden door Apple behandeld volgens zijn eigen beleid. Prijzen staan in de App Store voordat je koopt en kunnen per land verschillen. Functies die als gepland worden beschreven, zijn niet gegarandeerd tot ze zijn uitgebracht.
+
+**Abonnementen.** Premium wordt aangeboden als automatisch verlengend week- en jaarabonnement en als eenmalige levenslange aankoop. De betaling wordt bij het bevestigen van de aankoop in rekening gebracht via je Apple Account. Een abonnement wordt automatisch voor dezelfde periode verlengd, tenzij je het ten minste 24 uur voor het einde van de lopende periode opzegt; de verlenging wordt binnen de 24 uur voor het einde van de periode in rekening gebracht. Je kunt abonnementen beheren of opzeggen in de instellingen van je Apple Account; opzeggen stopt toekomstige verlengingen, en Premium blijft actief tot het einde van de periode waarvoor je hebt betaald. Als het jaarabonnement een gratis proefperiode bevat, gaat die na afloop over in een betaald jaarabonnement, tenzij je ten minste 24 uur voor het einde van de proefperiode opzegt. De levenslange aankoop is een eenmalige betaling en wordt niet verlengd.
+
+Aankopen zijn gekoppeld aan het Apple Account waarmee ze zijn gedaan en kunnen op een ander apparaat dat met hetzelfde Apple Account is ingelogd worden teruggezet met **Herstel aankopen** in de App. Terugbetalingen worden door Apple afgehandeld, niet door ons.
 
 ## 6. Wijzigingen in de App
 
@@ -88,7 +94,7 @@ We kunnen deze Voorwaarden bijwerken. We plaatsen de bijgewerkte versie hier en 
 
 ## 11. Toepasselijk recht
 
-Op deze Voorwaarden is het recht van [rechtsgebied nog te bepalen] van toepassing, zonder rekening te houden met conflictregels. Dwingende consumentenbeschermingswetten van je land van verblijf blijven van toepassing.
+Op deze Voorwaarden is het Zweedse recht van toepassing, zonder rekening te houden met conflictregels. Dwingende consumentenbeschermingswetten van je land van verblijf blijven van toepassing.
 
 ## 12. Contact
 

@@ -19,7 +19,7 @@ keywords:
   - "scanner des documents dans fichiers iphone"
   - "où sont enregistrés les documents scannés iphone"
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Scannez pièces d’identité, contrats et documents médicaux sans remplir Photos ni iCloud, puis mettez-les sous clé et supprimez les copies restantes."
 category: practical
 order: 34
@@ -122,9 +122,9 @@ Beaucoup d’apps de scan de l’App Store proposent la reconnaissance de texte,
 
 Verrouiller une note ou garder un PDF dans Sur mon iPhone est un bon début, mais quiconque peut déverrouiller votre téléphone peut quand même ouvrir Fichiers. Pour les pièces d’identité, les dossiers médicaux et tout ce dont la fuite vous serait insupportable, placer le scan dans un coffre-fort chiffré ajoute un secret distinct.
 
-Velcrypt peut importer des documents depuis l’app Fichiers dans un coffre chiffré ([documents privés](id:private-documents)). Les fichiers sont chiffrés sur l’appareil en AES-256-GCM avec des clés dérivées de votre schéma de déverrouillage, et rien n’est envoyé en ligne ([hors ligne, sans compte](id:offline-no-account)). Velcrypt n’a ni scanner ni appareil photo intégrés : vous scannez d’abord avec Fichiers ou Notes, puis vous importez le PDF.
+Velcrypt peut importer des documents depuis l’app Fichiers dans un coffre chiffré ([documents privés](id:private-documents)). Les fichiers sont chiffrés sur l’appareil en AES-256-GCM avec des clés dérivées de votre schéma de déverrouillage, et rien n’est envoyé en ligne ([hors ligne, sans compte](id:offline-no-account)). Velcrypt n’a pas de scanner de documents : vous scannez d’abord avec Fichiers ou Notes, puis vous importez le PDF. Son appareil photo intégré au coffre peut aussi photographier une page directement dans le coffre, sans recadrage.
 
-Gardez en tête que, dans la première version, le contenu du coffre n’est pas inclus dans les sauvegardes iCloud ou sur ordinateur. Si un document original est irremplaçable, conservez la version papier ou une autre copie dans un endroit que vous contrôlez. Notre [cas d’usage sur les documents médicaux et d’identité](id:medical-and-id-documents) aborde cet équilibre.
+Gardez en tête que le contenu du coffre n’est pas inclus dans les sauvegardes iCloud ou sur ordinateur. Si un document original est irremplaçable, créez une sauvegarde chiffrée dans Réglages → Sauvegarde, ou conservez la version papier dans un endroit que vous contrôlez. Notre [cas d’usage sur les documents médicaux et d’identité](id:medical-and-id-documents) aborde cet équilibre.
 
 ## Nettoyer les restes
 

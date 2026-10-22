@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "giornalisti proteggere le fonti iphone"
 keywords: ["proteggere foto delle fonti telefono", "sicurezza telefono giornalisti", "documenti delle fonti privacy iphone", "sicurezza dispositivi reporter", "modello di minaccia giornalisti"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Modello di minaccia, minimizzazione e metadati per chi fa informazione, e dove si colloca una cassaforte cifrata per iPhone nella tutela delle fonti."
 group: professional
 schemaType: Article
@@ -63,7 +63,7 @@ Le risposte determinano gli strumenti. Proteggere in modo eccessivo una storia a
 
 Velcrypt è un livello di questo piano. Conserva foto, video e documenti in casseforti cifrate sul tuo iPhone, con AES-256-GCM e chiavi derivate dalla tua sequenza. Non ci sono account, server, sincronizzazione né analisi dei contenuti, quindi su nessun server c'è qualcosa che qualcuno possa richiedere.
 
-Le casseforti si aprono con una sequenza su una griglia 5×5. Velcrypt non supporta di proposito Face ID né Touch ID, perché la biometria può essere usata senza il tuo consenso; una sequenza vive solo nella tua memoria. Il ragionamento è in [sequenza, PIN o Face ID](id:pattern-lock-vs-pin-vs-face-id). Ogni sequenza apre la propria cassaforte e una sequenza sconosciuta ne apre una vuota senza errori, il che favorisce la [negabilità plausibile](id:plausible-deniability-explained). Una sequenza di emergenza che rimuove l'accesso alle altre casseforti è una funzione Premium prevista, in arrivo.
+Le casseforti si aprono con una sequenza su una griglia 5×5. Velcrypt non supporta di proposito Face ID né Touch ID, perché la biometria può essere usata senza il tuo consenso; una sequenza vive solo nella tua memoria. Il ragionamento è in [sequenza, PIN o Face ID](id:pattern-lock-vs-pin-vs-face-id). Ogni sequenza apre la propria cassaforte e una sequenza sconosciuta ne apre una vuota senza errori, il che favorisce la [negabilità plausibile](id:plausible-deniability-explained). Una sequenza di emergenza che rimuova l'accesso alle altre casseforti è prevista per un aggiornamento futuro.
 
 ## Limiti, detti con onestà
 
@@ -74,6 +74,6 @@ Una cassaforte, da sola, non è una strategia di tutela delle fonti:
 - **Dispositivi compromessi.** Un malware su un telefono con jailbreak o preso di mira può vedere ciò che è sullo schermo.
 - **Osservazione.** Qualcuno che ti guarda disegnare la sequenza, o delle telecamere nella stanza, la vanificano.
 - **App visibile.** L'icona di Velcrypt è nella schermata Home, a meno che tu non usi l'opzione di iOS 18 per nascondere le app.
-- **Nessun recupero.** Nella prima versione i dati delle casseforti non finiscono nei backup. Perdi il telefono o dimentichi la sequenza e il contenuto è perso: può essere un vantaggio per la minimizzazione e un rischio per il materiale che devi conservare. Vedi la [pagina sulla sicurezza](id:security) per il quadro completo.
+- **Nessun recupero automatico.** I dati delle casseforti non finiscono nei backup di iCloud; esiste solo il backup cifrato che crei tu. Perdi il telefono senza backup o dimentichi la sequenza e il contenuto è perso: può essere un vantaggio per la minimizzazione e un rischio per il materiale che devi conservare. Vedi la [pagina sulla sicurezza](id:security) per il quadro completo.
 
 Proteggere le fonti è soprattutto una questione di abitudini. I buoni strumenti aiutano, ma la scelta di conservare meno, condividere meno e pianificare in anticipo fa la maggior parte del lavoro.

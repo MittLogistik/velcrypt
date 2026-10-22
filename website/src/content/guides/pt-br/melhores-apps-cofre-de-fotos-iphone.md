@@ -20,7 +20,7 @@ keywords:
   - "alternativas ao keepsafe"
   - "app de fotos ocultas iphone"
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Sete critérios para escolher um cofre de fotos e uma análise honesta das ferramentas da Apple, Keepsafe, Private Photo Vault, calculadoras e Velcrypt."
 category: choosing
 order: 20
@@ -70,10 +70,10 @@ Um aviso rápido: o Velcrypt é o nosso app. Tentamos descrevê-lo com a mesma n
 | --- | --- | --- | --- | --- | --- | --- |
 | Segredo separado do código do aparelho | Não | Opcional | Sim | Sim | Sim | Sim |
 | Exige conta | Conta Apple para o iCloud | Conta Apple para o iCloud | Sim (e-mail) | Não exigida no uso básico | Varia | Não |
-| Backup / sincronização na nuvem | Pelas Fotos do iCloud | Pelo iCloud | Nuvem premium opcional | Varia | Varia | Não (backup criptografado planejado) |
+| Backup / sincronização na nuvem | Pelas Fotos do iCloud | Pelo iCloud | Nuvem premium opcional | Varia | Varia | Sem sincronização; backup criptografado manual em arquivo (grátis) |
 | Face ID / Touch ID | Sim | Sim | Sim | Sim | Varia | Não, de propósito |
-| Recurso de cofre falso | Não | Não | PIN falso (premium) | Senha falsa | Varia | Cada padrão abre o próprio cofre |
-| Disfarce de outro app | Não | Não | Não | Não | Sim | Não |
+| Recurso de cofre falso | Não | Não | PIN falso (premium) | Senha falsa | Varia | Cada padrão abre o próprio cofre (mais de um cofre no Premium) |
+| Disfarce de outro app | Não | Não | Não | Não | Sim | Só ícones alternativos (Premium) |
 
 <!-- TODO verify -->
 
@@ -115,11 +115,11 @@ Não conhecemos um cofre de fotos de código aberto amplamente usado e mantido a
 
 ## Velcrypt
 
-O Velcrypt é um app nativo de iPhone que guarda fotos, vídeos e documentos em cofres criptografados no aparelho. Você desbloqueia um cofre desenhando um padrão numa grade de 5×5 ([bloqueio por padrão](id:pattern-lock)). Cada padrão abre o próprio cofre, e um padrão desconhecido simplesmente abre um cofre vazio, então o app nunca revela quantos cofres existem ([cofres ocultos](id:hidden-vaults)). Os arquivos são criptografados com AES-256-GCM usando chaves derivadas do padrão ([criptografia](id:encryption)). Não há conta, servidor nem upload ([offline, sem conta](id:offline-no-account)). Ele terá uma versão gratuita e uma atualização Premium opcional.
+O Velcrypt é um app nativo de iPhone que guarda fotos, vídeos e documentos em cofres criptografados no aparelho. Você desbloqueia um cofre desenhando um padrão numa grade de 5×5 ([bloqueio por padrão](id:pattern-lock)). Cada padrão abre o próprio cofre, e um padrão desconhecido simplesmente abre um cofre vazio, então o app nunca revela quantos cofres existem ([cofres ocultos](id:hidden-vaults)). Os arquivos são criptografados com AES-256-GCM usando chaves derivadas do padrão ([criptografia](id:encryption)). Não há conta, servidor nem upload ([offline, sem conta](id:offline-no-account)). Ele tem uma versão gratuita (1 cofre, até 50 itens) e um Premium opcional, semanal, anual ou vitalício, com itens ilimitados, mais cofres e ícones alternativos.
 
 Os limites são deliberados, mas reais:
 
-- **Sem backup na primeira versão.** O conteúdo do cofre fica fora dos backups do iCloud e do computador. Perca o celular ou esqueça o padrão e os arquivos não podem ser recuperados, nem por você nem por nós. Uma opção de backup criptografado está planejada.
+- **Só backup manual.** O conteúdo do cofre fica fora dos backups do iCloud e do computador, e não há sincronização. Você pode criar um backup criptografado em arquivo, mas precisa lembrar de fazê-lo. Esqueça o padrão, ou perca o celular sem backup, e os arquivos não podem ser recuperados, nem por você nem por nós.
 - **Sem Face ID**, de propósito, então desbloquear é mais lento que uma olhada.
 - **Sem disfarce.** O app aparece como o que é na sua Tela de Início.
 - **Sem sincronização na nuvem, links de compartilhamento nem apps para iPad/Mac.**

@@ -8,13 +8,13 @@ answer: "Velcrypt è un’app per iPhone (iOS 17 o successivo) che conserva foto
 keyFacts:
   - "Tagline: “Well Encrypted. Truly Private.”"
   - "Piattaforma: iPhone, iOS 17 o successivo."
-  - "Modello di prezzo: gratuito con Premium facoltativo; prezzi da annunciare."
+  - "Modello di prezzo: gratuito; Premium a 1,99 $/settimana, 19,99 $/anno o 39,99 $ a vita (USD)."
   - "Download: logo e simbolo (PNG trasparente) e icona dell’app da 1024 px."
   - "Contatto stampa: press@velcrypt.app."
 primaryKeyword: "velcrypt press kit"
 keywords: ["logo velcrypt", "velcrypt cartella stampa", "scheda informativa velcrypt", "colori brand velcrypt"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 schemaType: WebPage
 order: 8
 related: [about, security, features, pricing]
@@ -47,12 +47,14 @@ Velcrypt è un’app nativa per iPhone che conserva foto, video e documenti priv
 | Tagline | Well Encrypted. Truly Private. |
 | Piattaforma | iPhone, iOS 17 o successivo |
 | Categoria | Privacy / utility: cassaforte cifrata per foto, video e documenti |
-| Modello di prezzo | Gratuito con Premium facoltativo; prezzi da annunciare |
+| Modello di prezzo | Gratuito (1 cassaforte, fino a 50 elementi); Premium a 1,99 $/settimana, 19,99 $/anno con 3 giorni di prova gratuita o 39,99 $ a vita (USD, i prezzi variano in base al paese) |
 | Sblocco | Sequenza su una griglia di 5×5 punti; niente Face ID né Touch ID per scelta |
 | Casseforti | Ogni sequenza è una cassaforte a sé; nessun elenco di casseforti |
 | Cifratura | AES-256-GCM (Apple CryptoKit); derivazione delle chiavi con PBKDF2-HMAC-SHA512 |
 | Dati | 100% sul dispositivo; nessun account, nessuna sincronizzazione cloud, nessuna pubblicità |
-| In programma | Sequenza di emergenza (in arrivo), backup cifrato |
+| Backup | Backup cifrato gratuito in un file .velcrypt protetto da password |
+| Editore | Swedish Treats AB, Svezia |
+| In programma | Sequenza di emergenza (aggiornamento futuro) |
 | Contatto stampa | press@velcrypt.app |
 
 Per i dettagli tecnici rimanda al [modello di sicurezza](id:security); per una panoramica delle funzioni, alle [funzionalità](id:features).
@@ -82,11 +84,11 @@ Usa i file così come sono: lascia abbastanza spazio libero attorno al logo, non
 Alcuni punti per una copertura accurata:
 
 - Velcrypt **non** è stato sottoposto a un audit indipendente. Non descriverlo come verificato da un audit.
-- La sequenza di emergenza e il backup cifrato sono in programma, non disponibili.
+- Il backup cifrato è disponibile e gratuito. La sequenza di emergenza è prevista per un aggiornamento futuro, non disponibile.
 - Velcrypt non può recuperare sequenze dimenticate: è una conseguenza voluta dell’assenza di account e server.
 - Non ci sono ancora articoli da citare e non pubblichiamo numeri di utenti né valutazioni.
 
-Leggi [chi siamo](id:about) per i principi alla base dell’app e i [prezzi](id:pricing) per sapere cosa includerà il Premium.
+Leggi [chi siamo](id:about) per i principi alla base dell’app e i [prezzi](id:pricing) per sapere cosa include il Premium.
 
 ## Contatto stampa
 

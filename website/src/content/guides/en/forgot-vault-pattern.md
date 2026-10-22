@@ -8,13 +8,13 @@ answer: "In Velcrypt, a forgotten pattern can’t be reset or recovered, by you 
 keyFacts:
   - "Velcrypt has no reset, no recovery email and no recovery phrase: keys are derived from your pattern on the device."
   - "A wrong pattern in Velcrypt opens an empty vault rather than showing an error, so an empty vault often means a slightly different pattern."
-  - "Vault data is excluded from iCloud and computer backups in the first version."
-  - "An encrypted backup / recovery option is planned, with no date promised."
+  - "Vault data is excluded from iCloud and computer backups."
+  - "A Velcrypt encrypted backup protects against a lost phone, but restoring it still needs its backup password."
   - "If losing something would be unbearable, keep a copy somewhere else you trust."
 primaryKeyword: "forgot photo vault password"
 keywords: ["forgot vault pattern", "recover photo vault", "photo vault app forgot pin", "reset vault pattern", "locked out of photo vault"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "What to try first, why Velcrypt can’t reset a forgotten pattern, how other apps handle recovery, and habits that prevent lockouts."
 category: security
 order: 44
@@ -28,8 +28,8 @@ faq:
     a: "No. Deleting the app deletes its encrypted data from the device. Reinstalling gives you a clean app, not access to the old vaults. Only delete it if you have accepted that the content is gone."
   - q: "How do other photo vault apps handle a forgotten PIN?"
     a: "Many account-based apps let you reset the PIN by email or through a cloud account, which means some recovery path exists outside your memory. Check your app’s help pages before you need it, and understand that a recovery path can also be a way in for someone else."
-  - q: "Will Velcrypt add a recovery option?"
-    a: "An encrypted backup and recovery option is planned, but there is no release date. Until it exists, treat your pattern as the only key."
+  - q: "Can a Velcrypt backup help if I forget my pattern?"
+    a: "Velcrypt has free encrypted backup: Settings → Backup saves a .velcrypt file protected by a backup password you choose. Restoring it needs that password, and a backup only exists if you made one before you got locked out. A forgotten backup password can’t be recovered either."
 ---
 
 That sinking feeling when the shape you have drawn a hundred times suddenly doesn’t work is real. Before anything else: don’t delete or reinstall the app. Most “forgotten” patterns turn out to be slightly misremembered ones, and there are sensible things to try first.
@@ -57,7 +57,7 @@ That isn’t a policy choice that could be overridden. It is how the encryption 
 - Velcrypt has no account, no email and no server. See [offline, no account](id:offline-no-account).
 - Your vault keys are unlocked by a key derived from your pattern on the device, using PBKDF2 and a salt stored in the iOS Keychain. Without the pattern, that key can’t be produced.
 - The vault’s data is encrypted with AES-256-GCM, which can’t be brute-forced. The [AES-256 explainer](id:aes-256-encryption-explained) explains why.
-- In the first version, vault data is excluded from iCloud and Finder/iTunes backups, so there is no older copy to restore from.
+- Vault data is excluded from iCloud and Finder/iTunes backups, so there is no automatic older copy to restore from. The only exception is a Velcrypt backup file you created yourself, which you restore with its backup password.
 
 The same properties that make your vault private make a forgotten pattern final. A system with a “forgot pattern?” button necessarily keeps a way in that doesn’t depend on you alone.
 
@@ -91,7 +91,7 @@ Test a similar shape (not your real one) with the [pattern strength checker](id:
 
 ### Keep originals where loss would hurt
 
-If losing a photo or document would be truly unbearable, a vault should not be the only place it lives. For irreplaceable items, keep an additional copy somewhere you trust, such as an encrypted drive in a safe place. This is a conscious trade-off: every extra copy is one more place to protect.
+If losing a photo or document would be truly unbearable, a vault should not be the only place it lives. For irreplaceable items, create an encrypted backup in Settings → Backup and store the `.velcrypt` file somewhere you trust, such as Files, iCloud Drive or a computer. Use a backup password you will remember — it can’t be reset either. This is a conscious trade-off: every extra copy is one more place to protect.
 
 ### Don’t write the pattern down near the phone
 
@@ -110,4 +110,4 @@ The [guide to photo vaults without an account](id:photo-vault-without-account) e
 
 ## Where Velcrypt fits
 
-Velcrypt is a device-only vault by design: no account, no server, no recovery phrase, no copy of your keys anywhere else. An encrypted backup and recovery option is planned as part of an optional Premium upgrade, without a promised date. If you are unsure, [support](id:support) can explain how the app behaves, but nobody there can open a vault for you.
+Velcrypt is a device-only vault by design: no account, no server, no recovery phrase, no copy of your keys anywhere else. The only copy is the one you choose to make: a free, encrypted backup file protected by your own backup password. If you are unsure, [support](id:support) can explain how the app behaves, but nobody there can open a vault for you.

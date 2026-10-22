@@ -10,11 +10,11 @@ keyFacts:
   - "O Velcrypt desbloqueia com um padrão em uma grade 5×5; cada padrão é um cofre separado."
   - "O Velcrypt publica o design da sua criptografia: AES-256-GCM com derivação de chave PBKDF2-HMAC-SHA512."
   - "O Velcrypt não tira fotos de intrusos e não tem Face ID, por design."
-  - "O Velcrypt v1 não tem backup: um padrão esquecido ou um celular perdido significa perder o cofre."
+  - "O Velcrypt não tem nuvem; o backup é um arquivo criptografado manual, e um padrão esquecido não pode ser recuperado."
 primaryKeyword: "velcrypt vs private photo vault"
 keywords: ["alternativa ao private photo vault", "private photo vault é seguro", "private photo vault comparação", "cofre de fotos com senha falsa", "cofre de fotos com padrão"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Cofre com PIN, senha de fachada e alerta de invasão versus cofre criptografado por padrão e sem conta. Comparação neutra, lado a lado."
 competitor: "Private Photo Vault"
 lastChecked: "outubro de 2026"
@@ -49,14 +49,14 @@ O Velcrypt é um cofre no aparelho bloqueado por padrão. Um padrão é uma linh
 |---|---|---|
 | Detalhes da criptografia no aparelho publicados | Sim: AES-256-GCM, chaves por cofre e por arquivo | Não detalhados publicamente |
 | Exige conta | Não | Não informado publicamente |
-| Backup na nuvem | Não (v1); backup criptografado planejado | Varia; confira a página atual |
+| Backup na nuvem | Não; backup criptografado manual em arquivo (grátis) | Varia; confira a página atual |
 | Forma de desbloqueio | Padrão em uma grade 5×5 | PIN / código |
 | Biometria (Face ID / Touch ID) | Não oferecida, por design | Varia |
-| Fachada / vários cofres | Cada padrão é um cofre próprio | Senha de fachada |
-| Padrão de coação | Em breve (Premium) | Não informado publicamente |
+| Fachada / vários cofres | Cada padrão é um cofre próprio (mais de um cofre exige o Premium) | Senha de fachada |
+| Padrão de coação | Planejado para uma atualização futura | Não informado publicamente |
 | Relatórios de invasão | Não oferecidos | Oferecidos, segundo sua página na loja |
 | Recuperação se você esquecer o código | Nenhuma | Não informado publicamente |
-| Modelo de negócio | Versão grátis e Premium opcional | Versão grátis e upgrade pago |
+| Modelo de negócio | Grátis (1 cofre, 50 itens) e Premium opcional | Versão grátis e upgrade pago |
 | Plataformas | iPhone (iOS 17+) | Varia; confira as páginas nas lojas |
 
 <!-- TODO verify -->
@@ -83,7 +83,7 @@ Para o Private Photo Vault, não encontramos uma descrição técnica pública e
 
 - **Você quer relatórios de invasão.** Se saber que alguém tentou abrir seu cofre é importante para você, o Velcrypt não oferece isso.
 - **Você prefere um código numérico ou Face ID.** Algumas pessoas acham um PIN mais rápido do que desenhar um padrão.
-- **Você quer uma opção de backup ou transferência.** Se a versão que você usa oferece isso, é algo que o Velcrypt v1 não tem.
+- **Você quer backup ou transferência automáticos.** Se a versão que você usa oferece isso, é algo que o Velcrypt não tem: o backup dele é um arquivo criptografado que você cria manualmente.
 - **Você já está acostumado.** Migrar uma biblioteca grande dá trabalho; trocar só faz sentido se as diferenças importarem para você.
 
 <!-- TODO verify -->

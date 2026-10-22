@@ -10,11 +10,11 @@ keyFacts:
   - "Le versioni recenti di iOS hanno una modalità riparazione che permette di lasciare attivo Dov'è; chiedi al centro assistenza cosa serve."
   - "Il codice del dispositivo sblocca Foto, l'album Nascosti, File e tutto ciò che è protetto con esso."
   - "Una cassaforte Velcrypt richiede una sequenza separata, quindi il codice da solo non la apre."
-  - "Nella prima versione i dati delle casseforti Velcrypt non sono nei backup di iCloud o del computer: un telefono inizializzato significa una cassaforte persa."
+  - "Le casseforti Velcrypt non sono nei backup di iCloud o del computer: prima della riparazione crea un backup cifrato."
 primaryKeyword: "riparazione iphone privacy foto"
 keywords: ["nascondere foto prima della riparazione", "il centro riparazioni vede le mie foto", "codice iphone in riparazione", "proteggere i dati iphone in riparazione", "consigli privacy riparazione telefono"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Cosa potrebbe vedere un tecnico sul tuo iPhone, come prepararti e perché serve un piano di backup prima di consegnarlo."
 group: everyday
 schemaType: Article
@@ -26,7 +26,7 @@ faq:
   - q: "Devo disattivare Dov'è prima di riparare l'iPhone?"
     a: "Dipende dalla riparazione e dal centro assistenza. Le versioni recenti di iOS offrono una modalità riparazione che mantiene attivo Dov'è durante l'intervento. Segui le istruzioni del tuo centro assistenza e, se hai dubbi, consulta il Supporto Apple."
   - q: "La mia cassaforte Velcrypt sopravvive a una riparazione?"
-    a: "Se il telefono torna con gli stessi dati, sì. Se il dispositivo viene inizializzato o sostituito, la cassaforte è persa: nella prima versione i dati delle casseforti sono esclusi dai backup di iCloud e del computer, ed è prevista un'opzione di backup cifrato."
+    a: "Se il telefono torna con gli stessi dati, sì. Se il dispositivo viene inizializzato o sostituito, la cassaforte è persa, perché i dati delle casseforti sono esclusi dai backup di iCloud e del computer, a meno che prima tu non abbia creato un backup cifrato in Impostazioni → Backup."
   - q: "Devo dare il codice al tecnico?"
     a: "Solo se la riparazione lo richiede davvero. Molte riparazioni hardware non ne hanno bisogno. Se lo comunichi, cambialo appena ti restituiscono il telefono."
 ---
@@ -65,10 +65,10 @@ Le foto importate sono copie, quindi ricordati di [eliminare gli originali](id:d
 
 ## Il compromesso, detto con onestà: i backup
 
-Ecco cosa devi valutare con attenzione. Nella prima versione i dati delle casseforti Velcrypt sono **esclusi dai backup di iCloud e del computer**. È voluto, perché nulla lascia il dispositivo, ma significa che:
+Ecco cosa devi valutare con attenzione. I dati delle casseforti Velcrypt sono **esclusi dai backup di iCloud e del computer**. È voluto, perché nulla lascia il dispositivo, ma significa che:
 
-- Se la riparazione termina con un iPhone inizializzato o sostituito, la cassaforte non può essere ripristinata, né da te né da Velcrypt.
-- È prevista un'opzione di backup e recupero cifrati, ma non è ancora disponibile.
+- Se la riparazione termina con un iPhone inizializzato o sostituito, la cassaforte non può essere ripristinata da Velcrypt né da un backup di iCloud.
+- Prima di consegnare il telefono, crea un backup cifrato di ogni cassaforte in Impostazioni → Backup e salva i file fuori dall'iPhone, per esempio su un computer. Dopo la riparazione li ripristini con la password del backup.
 
 Quindi, per tutto ciò che è insostituibile, tieni una seconda copia in un posto di cui ti fidi prima della riparazione, per esempio un disco cifrato sotto il tuo controllo. Lo stesso vale se un giorno [dimentichi la sequenza](id:forgot-vault-pattern). Approfondisci le scelte di progettazione nella [pagina sulla sicurezza](id:security).
 

@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "bóveda de fotos cifrada iphone"
 keywords: ["bóveda de fotos aes-256-gcm", "cifrado de fotos iphone", "app bóveda pbkdf2", "cómo se cifra mi bóveda", "cifrado autenticado explicado"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "AES-256-GCM por archivo, claves derivadas de tu patrón con PBKDF2-HMAC-SHA512 y HKDF, más la protección de datos de iOS."
 status: available
 schemaType: WebPage
@@ -72,7 +72,7 @@ Las dos capas son independientes. Aunque de algún modo se sorteara una, la otra
 
 Velcrypt funciona [totalmente sin conexión y sin cuenta](id:offline-no-account). No hay servidores, ni subidas, ni ninguna copia de tus claves fuera de tu teléfono. Ese diseño elimina toda una categoría de riesgos: no hay base de datos que vulnerar ni empleado de una empresa que pueda descifrar tus archivos.
 
-También tiene un coste. Como las claves solo existen en el dispositivo y solo a través de tu patrón, nadie puede recuperar una bóveda si se olvida el patrón o se pierde el teléfono. Hay prevista una opción de copia de seguridad cifrada, pero no existe en la primera versión.
+También tiene un coste. Como las claves solo existen en el dispositivo y solo a través de tu patrón, nadie puede recuperar una bóveda si se olvida el patrón o se pierde el teléfono. La única vía es una copia de seguridad cifrada que tú crees en Ajustes → Copia de seguridad, protegida con su propia contraseña.
 
 ## Qué no cubre el cifrado
 

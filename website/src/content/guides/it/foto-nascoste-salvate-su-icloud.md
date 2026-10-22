@@ -19,7 +19,7 @@ keywords:
   - "tenere le foto fuori da icloud"
   - "foto nascoste su icloud.com"
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Le foto nascoste si sincronizzano con iCloud Foto e possono finire nel backup di iCloud. Come funziona la crittografia e come tenerne fuori una foto."
 category: apple
 order: 11
@@ -105,9 +105,9 @@ Così fermi i nuovi caricamenti, ma fermi anche la sincronizzazione di tutto il 
 
 ### Opzione 2: tenere la foto in un’app che non si sincronizza
 
-Alcune app conservano i file solo nel proprio spazio sul dispositivo e li escludono dai backup. Velcrypt è fatta così: foto, video e documenti che importi vengono cifrati sull’iPhone e, nella prima versione, sono esclusi dai backup di iCloud e del computer. Non c’è nessun account e niente viene caricato ([sul dispositivo, senza account](id:offline-no-account)).
+Alcune app conservano i file solo nel proprio spazio sul dispositivo e li escludono dai backup. Velcrypt è fatta così: foto, video e documenti che importi vengono cifrati sull’iPhone e sono esclusi dai backup di iCloud e del computer. Non c’è nessun account e niente viene caricato ([sul dispositivo, senza account](id:offline-no-account)).
 
-Il compromesso onesto: se la foto esiste solo dentro una cassaforte del genere e perdi il telefono o dimentichi la sequenza, non c’è una copia da nessuna parte da ripristinare. Per Velcrypt è prevista un’opzione di backup cifrato, ma non fa parte della prima versione.
+Il compromesso onesto: se la foto esiste solo dentro una cassaforte del genere e perdi il telefono o dimentichi la sequenza, non c’è una copia da nessuna parte da ripristinare. Velcrypt offre per questo un backup cifrato gratuito: un file protetto da una password scelta da te, che salvi dove vuoi (anche su iCloud Drive, dove resta cifrato).
 
 ### Opzione 3: eliminare correttamente la copia su iCloud
 

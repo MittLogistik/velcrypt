@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "ex has access to my iphone photos"
 keywords: ["change passcode after breakup", "remove ex from shared album", "safety check iphone", "ex knows my iphone passcode", "leave icloud shared photo library"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "A calm checklist for the weeks after a breakup: new passcode, Safety Check, shared albums and libraries, and a private place for photos."
 group: everyday
 schemaType: Article
@@ -66,7 +66,7 @@ After importing, [delete the originals](id:delete-original-photos-after-import) 
 
 - Nothing on your phone can remove copies your ex already has: photos you sent, saved from a shared album, or in their backups.
 - A vault doesn’t help if someone watches you draw your pattern, or if the phone is taken while the vault is open.
-- In the first version, vault data isn’t included in iCloud or computer backups. If you lose the phone or forget your pattern, the vault can’t be recovered. Keep a second copy of anything irreplaceable somewhere safe.
+- Vault data isn’t included in iCloud or computer backups. If you forget your pattern, the vault can’t be recovered; if you lose the phone, only an encrypted backup you made in Settings → Backup can bring it back. Keep a backup or a second copy of anything irreplaceable somewhere safe.
 - The app icon is visible on your Home Screen unless you use iOS 18’s option to hide apps.
 
 ## If it goes further

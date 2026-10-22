@@ -1,12 +1,12 @@
 ---
 pageId: duress-pattern
-title: "Notfallmuster (bald verfügbar): Tresore unter Druck schützen"
-description: "Das Notfallmuster ist eine geplante Premium-Funktion von Velcrypt, bald verfügbar: Ein Muster öffnet einen Tresor und sperrt still die anderen."
-h1: "Notfallmuster (bald verfügbar)"
-navTitle: "Notfallmuster (bald verfügbar)"
-answer: "Das Notfallmuster ist eine geplante Premium-Funktion und bald verfügbar. Du wirst ein spezielles Muster festlegen können, das einen Tresor deiner Wahl öffnet und still den Zugriff auf deine anderen Tresore entfernt – für Momente, in denen du gedrängt wirst, die App zu entsperren."
+title: "Notfallmuster (geplant): Tresore unter Druck schützen"
+description: "Das Notfallmuster ist eine geplante Funktion von Velcrypt für ein künftiges Update: Ein Muster öffnet einen Tresor und sperrt still die anderen."
+h1: "Notfallmuster (geplant)"
+navTitle: "Notfallmuster (geplant)"
+answer: "Das Notfallmuster ist eine geplante Funktion für ein künftiges Update und noch nicht in der App. Die Idee: Du legst ein spezielles Muster fest, das einen Tresor deiner Wahl öffnet und still den Zugriff auf deine anderen Tresore entfernt – für Momente, in denen du gedrängt wirst, die App zu entsperren."
 keyFacts:
-  - "Status: geplant für das optionale Premium-Upgrade, bald verfügbar. Noch nicht in der App."
+  - "Status: geplant für ein künftiges Update. Noch nicht in der App."
   - "Ein spezielles Muster soll einen gewählten Tresor öffnen."
   - "Gleichzeitig soll es still den Zugriff auf die anderen Tresore entfernen."
   - "Kopien außerhalb von Velcrypt kann es nicht zurückholen."
@@ -14,15 +14,15 @@ keyFacts:
 primaryKeyword: "panik muster tresor app"
 keywords: ["panik passwort iphone", "notfall pin foto tresor", "duress code app", "schutz bei erzwungenem entsperren", "tresor selbstzerstörung muster"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
-summary: "Bald in Premium: ein spezielles Muster, das einen gewählten Tresor öffnet und still den Zugriff auf die anderen entfernt."
+dateModified: 2026-10-22
+summary: "Geplant für ein künftiges Update: ein spezielles Muster, das einen gewählten Tresor öffnet und still den Zugriff auf die anderen entfernt."
 status: coming-soon
 schemaType: WebPage
 order: 3
 related: [hidden-vaults, pattern-lock, what-is-a-decoy-vault, plausible-deniability-explained, phone-privacy-border-crossing]
 faq:
   - q: "Gibt es das Notfallmuster in Velcrypt schon?"
-    a: "Nein. Es ist eine geplante Funktion für das optionale Premium-Upgrade und bald verfügbar. Bis dahin kannst du versteckte Tresore und einen Köder-Tresor nutzen, die es heute schon gibt."
+    a: "Nein. Es ist für ein künftiges Update geplant, ein Datum gibt es noch nicht. Schon heute kannst du mit Premium versteckte Tresore und einen Köder-Tresor nutzen."
   - q: "Was passiert, wenn jemand das Notfallmuster eingibt?"
     a: "Geplant ist, dass es einen vorher gewählten Tresor öffnet und gleichzeitig still den Zugriff auf deine anderen Tresore entfernt. Nichts auf dem Bildschirm soll darauf hinweisen, dass sonst etwas passiert ist."
   - q: "Kann das Notfallmuster bereits geteilte Fotos löschen?"
@@ -31,7 +31,7 @@ faq:
     a: "Das hängt davon ab, wo du bist und in welcher Situation. Daten zu entfernen, während Behörden ein Gerät rechtmäßig prüfen, kann in manchen Ländern strafbar sein. Velcrypt kann keine Rechtsberatung geben; wenn es für dich wichtig ist, sprich mit einer Anwältin oder einem Anwalt."
 ---
 
-Manchmal ist das Risiko kein gestohlenes Handy, sondern ein Mensch, der vor dir steht und verlangt, dass du die App öffnest. Das Notfallmuster ist Velcrypts geplante Antwort auf diesen Moment. Es ist noch nicht verfügbar: Es ist eine **bald verfügbare Funktion** des optionalen Premium-Upgrades, und diese Seite beschreibt, wofür sie gedacht ist.
+Manchmal ist das Risiko kein gestohlenes Handy, sondern ein Mensch, der vor dir steht und verlangt, dass du die App öffnest. Das Notfallmuster ist Velcrypts geplante Antwort auf diesen Moment. Es ist noch nicht verfügbar: Die Funktion ist **für ein künftiges Update geplant**, und diese Seite beschreibt, wofür sie gedacht ist.
 
 ## Was das Notfallmuster tun soll
 
@@ -46,7 +46,7 @@ Von außen passiert nichts Ungewöhnliches. Kein Hinweis, keine Animation und ke
 
 ## Wie es auf versteckten Tresoren aufbaut
 
-Velcrypt bietet bereits [versteckte Tresore](id:hidden-vaults): Jedes Muster öffnet seinen eigenen Tresor, es gibt keine Tresorliste, und ein unbekanntes Muster öffnet ohne Fehler einen leeren Tresor. Damit ist es schon schwer, nachzuweisen, dass weitere Tresore existieren.
+Velcrypt bietet bereits [versteckte Tresore](id:hidden-vaults) (mehrere Tresore gehören zu Premium): Jedes Muster öffnet seinen eigenen Tresor, es gibt keine Tresorliste, und ein unbekanntes Muster öffnet ohne Fehler einen leeren Tresor. Damit ist es schon schwer, nachzuweisen, dass weitere Tresore existieren.
 
 Das Notfallmuster fügt eine zweite Ebene hinzu. Ein Köder setzt darauf, dass dir die andere Person glaubt. Das Notfallmuster ist für Situationen gedacht, in denen das nicht reichen könnte – etwa wenn du damit rechnest, wiederholt gefragt zu werden oder dass dein echtes Muster später eingefordert wird. Wurde es einmal benutzt, sind die anderen Tresore auf diesem Handy nicht mehr erreichbar. Die Idee hinter beiden Funktionen erklärt [Glaubhafte Abstreitbarkeit, erklärt](id:plausible-deniability-explained).
 
@@ -67,7 +67,7 @@ Ein Notfallmuster ist ein starkes Werkzeug, und es hat ebenso reale Grenzen. Bes
 
 **Es macht Kopien nicht rückgängig.** Es wirkt nur auf Velcrypts eigene Tresore auf diesem Gerät. Liegt ein Foto noch in deiner Fotomediathek, in „Zuletzt gelöscht“, in iCloud-Fotos, in einem Chat oder auf dem Handy einer anderen Person, bleibt es dort. Räum Originale nach dem Import auf; wie das geht, zeigt die Anleitung [Originale nach dem Import löschen](id:delete-original-photos-after-import).
 
-**Betrachte es als endgültig.** Tresordaten sind in der ersten Version nicht in iCloud- oder Computer-Backups enthalten. Geh also davon aus, dass einmal entfernter Zugriff nicht wiederhergestellt werden kann. Nutze es nur, wenn du den Verlust dieser Dateien wirklich in Kauf nimmst.
+**Betrachte es als endgültig.** Tresordaten sind nicht in iCloud- oder Computer-Backups enthalten. Geh also davon aus, dass einmal entfernter Zugriff in der App nicht wiederhergestellt werden kann. Nutze es nur, wenn du den Verlust dieser Dateien wirklich in Kauf nimmst.
 
 **Es verhindert keine Beobachtung.** Hat dich jemand beim Zeichnen deines echten Musters beobachtet oder den Bildschirm gefilmt, ändert das Notfallmuster nichts an dem, was diese Person gesehen hat.
 
@@ -77,4 +77,4 @@ Ein Notfallmuster ist ein starkes Werkzeug, und es hat ebenso reale Grenzen. Bes
 
 ## Bis es so weit ist
 
-Mit den heute vorhandenen Funktionen kannst du dich schon vorbereiten. Leg einen glaubwürdigen Köder-Tresor an, wähl ein starkes [Muster](id:pattern-lock) für deinen echten Tresor und halte sensible Originale aus deiner Fotomediathek heraus. Sobald das Notfallmuster erscheint, fügt es sich in dieses Setup ein.
+Mit den heute vorhandenen Funktionen kannst du dich schon vorbereiten. Leg mit Premium einen glaubwürdigen Köder-Tresor an, wähl ein starkes [Muster](id:pattern-lock) für deinen echten Tresor und halte sensible Originale aus deiner Fotomediathek heraus. Sobald das Notfallmuster erscheint, fügt es sich in dieses Setup ein.

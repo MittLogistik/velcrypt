@@ -1,28 +1,28 @@
 ---
 pageId: duress-pattern
-title: "Patrón de coacción (próximamente): protege tus bóvedas"
-description: "El patrón de coacción es una función Premium prevista de Velcrypt, próximamente: un patrón abre la bóveda elegida y retira en silencio el acceso al resto."
-h1: "Patrón de coacción (próximamente)"
-navTitle: "Patrón de coacción (próximamente)"
-answer: "El patrón de coacción es una función Premium prevista, disponible próximamente. Podrás configurar un patrón especial que abra la bóveda que elijas y retire en silencio el acceso a tus otras bóvedas, para los momentos en que te presionen para desbloquear la app."
+title: "Patrón de coacción (previsto): protege tus bóvedas"
+description: "El patrón de coacción es una función prevista de Velcrypt para una actualización futura: un patrón abre la bóveda elegida y retira el acceso al resto."
+h1: "Patrón de coacción (previsto)"
+navTitle: "Patrón de coacción (previsto)"
+answer: "El patrón de coacción es una función prevista para una actualización futura de Velcrypt y todavía no está disponible. Está pensado para que puedas configurar un patrón especial que abra la bóveda que elijas y retire en silencio el acceso a tus otras bóvedas, para los momentos en que te presionen para desbloquear la app."
 keyFacts:
-  - "Estado: previsto para la mejora Premium opcional, próximamente. Todavía no está en la app."
-  - "Un patrón especial abrirá la bóveda que elijas."
-  - "Al mismo tiempo, retirará en silencio el acceso a las demás bóvedas."
+  - "Estado: previsto para una actualización futura. Todavía no está en la app."
+  - "Un patrón especial abriría la bóveda que elijas."
+  - "Al mismo tiempo, retiraría en silencio el acceso a las demás bóvedas."
   - "No puede recuperar ni borrar copias que existan fuera de Velcrypt."
   - "Es una herramienta de privacidad, no asesoramiento legal ni una forma de eludir órdenes legítimas."
 primaryKeyword: "patrón de coacción app bóveda"
 keywords: ["contraseña de coacción iphone", "patrón de pánico bóveda de fotos", "código de coacción app", "protección ante desbloqueo forzado", "patrón de autodestrucción bóveda"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
-summary: "Próximamente en Premium: un patrón especial que abre una bóveda elegida y retira en silencio el acceso a las demás."
+dateModified: 2026-10-22
+summary: "Previsto para una actualización futura: un patrón especial que abre una bóveda elegida y retira en silencio el acceso a las demás."
 status: coming-soon
 schemaType: WebPage
 order: 3
 related: [hidden-vaults, pattern-lock, what-is-a-decoy-vault, plausible-deniability-explained, phone-privacy-border-crossing]
 faq:
   - q: "¿Ya está disponible el patrón de coacción en Velcrypt?"
-    a: "No. Es una función prevista para la mejora Premium opcional y llegará próximamente. Mientras tanto, puedes usar las bóvedas ocultas y una bóveda señuelo, que ya existen."
+    a: "No. Es una función prevista para una actualización futura y todavía no tiene fecha. Mientras tanto, puedes usar las bóvedas ocultas y una bóveda señuelo (con Premium), que ya existen."
   - q: "¿Qué pasará cuando alguien introduzca el patrón de coacción?"
     a: "Lo previsto es que abra una bóveda que hayas elegido de antemano y, al mismo tiempo, retire en silencio el acceso a tus otras bóvedas. Nada en pantalla indicará que haya ocurrido algo más."
   - q: "¿Puede el patrón de coacción borrar fotos que ya he compartido?"
@@ -31,7 +31,7 @@ faq:
     a: "Depende de dónde estés y de la situación. Eliminar datos mientras las autoridades inspeccionan legalmente un dispositivo puede ser un delito en algunos países. Velcrypt no puede dar asesoramiento legal; si esto te afecta, consulta con un abogado."
 ---
 
-A veces el riesgo no es un teléfono robado, sino una persona delante de ti que te pide abrir la app. El patrón de coacción es la respuesta que Velcrypt prepara para ese momento. Todavía no está disponible: es una **función que llegará próximamente** a la mejora Premium opcional, y esta página describe lo que está diseñada para hacer.
+A veces el riesgo no es un teléfono robado, sino una persona delante de ti que te pide abrir la app. El patrón de coacción es la respuesta que Velcrypt prepara para ese momento. Todavía no está disponible: es una **función prevista para una actualización futura**, y esta página describe lo que está diseñada para hacer.
 
 ## Qué hará el patrón de coacción
 
@@ -46,7 +46,7 @@ Desde fuera no ocurre nada fuera de lo normal. No hay alerta, ni animación, ni 
 
 ## Cómo se apoya en las bóvedas ocultas
 
-Velcrypt ya te ofrece [bóvedas ocultas](id:hidden-vaults): cada patrón abre su propia bóveda, no hay lista de bóvedas y un patrón desconocido abre una bóveda vacía sin error. Eso ya hace difícil que alguien demuestre que existen más bóvedas.
+Velcrypt ya te ofrece [bóvedas ocultas](id:hidden-vaults) (más de una bóveda requiere Premium): cada patrón abre su propia bóveda, no hay lista de bóvedas y un patrón desconocido abre una bóveda vacía sin error. Eso ya hace difícil que alguien demuestre que existen más bóvedas.
 
 El patrón de coacción añade una segunda capa. Un señuelo depende de que la otra persona te crea. El patrón de coacción está pensado para situaciones en las que eso puede no bastar, por ejemplo si esperas que te lo pregunten una y otra vez o que más adelante te exijan tu patrón real. Una vez usado, las otras bóvedas dejan de ser accesibles en ese teléfono. La idea detrás de ambas funciones se explica en [la negación plausible, explicada](id:plausible-deniability-explained).
 
@@ -67,7 +67,7 @@ Un patrón de coacción es una herramienta potente, y sus límites son igual de 
 
 **No puede deshacer copias.** Solo actúa sobre las bóvedas de Velcrypt en ese dispositivo. Si una foto sigue en tu fototeca, en el álbum Eliminado, en Fotos de iCloud, en un chat o en el teléfono de otra persona, ahí se queda. Limpia los originales después de importarlos; la guía sobre [borrar los originales tras importarlos](id:delete-original-photos-after-import) explica cómo.
 
-**Considéralo permanente.** En la primera versión, los datos de la bóveda no se incluyen en las copias de seguridad de iCloud ni del ordenador, así que debes asumir que el acceso, una vez retirado, no se puede restaurar. Úsalo solo cuando aceptes de verdad perder esos archivos.
+**Considéralo permanente en ese teléfono.** Los datos de la bóveda no se incluyen en las copias de seguridad de iCloud ni del ordenador, así que debes asumir que el acceso, una vez retirado, no se puede restaurar en ese dispositivo. Tampoco podría tocar una copia de seguridad cifrada que hayas guardado fuera del teléfono. Úsalo solo cuando aceptes de verdad perder esos archivos.
 
 **No impide la observación.** Si alguien te ha visto dibujar tu patrón real o ha grabado la pantalla, el patrón de coacción no cambia lo que vio.
 
@@ -77,4 +77,4 @@ Un patrón de coacción es una herramienta potente, y sus límites son igual de 
 
 ## Mientras tanto
 
-Ya puedes prepararte con funciones que existen hoy. Crea una bóveda señuelo creíble, elige un [patrón](id:pattern-lock) seguro para tu bóveda real y mantén los originales sensibles fuera de tu carrete. Cuando llegue el patrón de coacción, encajará en esa configuración.
+Ya puedes prepararte con funciones que existen hoy. Crea una bóveda señuelo creíble (requiere Premium), elige un [patrón](id:pattern-lock) seguro para tu bóveda real y mantén los originales sensibles fuera de tu carrete. Cuando llegue el patrón de coacción, encajará en esa configuración.

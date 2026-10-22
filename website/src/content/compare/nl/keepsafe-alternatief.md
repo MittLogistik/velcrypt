@@ -10,11 +10,11 @@ keyFacts:
   - "Velcrypt heeft geen account nodig en bewaart versleutelde kluizen alleen op je iPhone."
   - "Het album Verborgen en vergrendelde notities van Apple zijn gratis, ingebouwde opties met iCloud-synchronisatie."
   - "Overstappen betekent exporteren, importeren, restanten verwijderen en Recent verwijderd legen."
-  - "Velcrypt v1 heeft geen back-up: bij een vergeten patroon of verloren telefoon is de kluis weg."
+  - "Velcrypt heeft geen cloud, maar wel een gratis versleuteld back-upbestand; een vergeten patroon is niet te herstellen."
 primaryKeyword: "keepsafe alternatief"
 keywords: ["keepsafe alternatief iphone", "apps zoals keepsafe", "overstappen van keepsafe", "vervanger voor keepsafe", "fotokluis zonder account"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Waarom mensen een alternatief voor Keepsafe zoeken, wat je bij elke fotokluis checkt en hoe je je foto’s verhuist zonder kopieën achter te laten."
 competitor: "Keepsafe"
 lastChecked: "oktober 2026"
@@ -28,7 +28,7 @@ faq:
   - q: "Verwijder ik mijn cloudback-up als ik Keepsafe verwijder?"
     a: "Niet per se. Een app verwijderen sluit meestal geen account af en wist geen gegevens op de server. Kijk in de hulp of de accountinstellingen van Keepsafe hoe je je account en cloudgegevens verwijdert."
   - q: "Is er een alternatief voor Keepsafe met cloudback-up?"
-    a: "Ja, diverse kluis-apps bieden cloudfuncties, en het album Verborgen van Apple synchroniseert met iCloud-foto’s. Velcrypt v1 doet dat niet; een versleutelde back-upoptie is gepland."
+    a: "Ja, diverse kluis-apps bieden cloudfuncties, en het album Verborgen van Apple synchroniseert met iCloud-foto’s. Velcrypt synchroniseert niet, maar je kunt wel gratis een versleuteld back-upbestand maken en dat zelf in iCloud Drive of op een computer bewaren."
 ---
 
 *Laatst gecontroleerd: oktober 2026. Productdetails veranderen; bekijk de App Store-vermelding van elke app voor de actuele versie.*
@@ -61,14 +61,14 @@ Een fotokluis is een app die gekozen foto’s en video’s los van je hoofdbibli
 
 | Optie | Account | Kopie in de cloud | Apart geheim | Opmerkingen |
 |---|---|---|---|---|
-| Velcrypt | Geen | Nee (v1) | Ja, een patroon | Verborgen kluizen, documenten, geen Face ID |
+| Velcrypt | Geen | Alleen een back-upbestand dat je zelf bewaart | Ja, een patroon | Verborgen kluizen, documenten, geen Face ID |
 | Album Verborgen (iPhone) | Apple Account voor iCloud | Met iCloud-foto’s | Nee, toegangscode van het toestel | Gratis, ingebouwd |
 | Vergrendelde notities in Apple Notities | Apple Account voor iCloud | Met iCloud voor Notities | Optioneel Notities-wachtwoord | Vooral voor een paar items |
 | Andere kluis-apps | Verschilt | Verschilt | Verschilt | Check elke vermelding |
 
 <!-- TODO verify -->
 
-**Velcrypt** houdt alles op de iPhone, zonder account en zonder servers. Je ontgrendelt door een patroon te tekenen op een raster van 5×5, en elk patroon opent een eigen kluis; een onbekend patroon opent een lege, wat je [plausibele ontkenning](id:plausible-deniability-explained) geeft. Bestanden worden versleuteld met AES-256-GCM. De eerlijke afweging: in v1 zitten kluisgegevens niet in back-ups, dus een verloren telefoon of vergeten patroon is niet terug te draaien. De [rechtstreekse vergelijking met Keepsafe](id:velcrypt-vs-keepsafe) zet de twee naast elkaar.
+**Velcrypt** houdt alles op de iPhone, zonder account en zonder servers. Je ontgrendelt door een patroon te tekenen op een raster van 5×5, en elk patroon opent een eigen kluis; een onbekend patroon opent een lege, wat je [plausibele ontkenning](id:plausible-deniability-explained) geeft. Bestanden worden versleuteld met AES-256-GCM. De eerlijke afweging: kluisgegevens zitten niet in iCloud- of computerback-ups, dus een verloren telefoon is alleen op te vangen met een versleuteld back-upbestand dat je zelf hebt gemaakt, en een vergeten patroon is niet terug te draaien. De [rechtstreekse vergelijking met Keepsafe](id:velcrypt-vs-keepsafe) zet de twee naast elkaar.
 
 **De ingebouwde opties van Apple** kosten niets. Het [album Verborgen](id:velcrypt-vs-iphone-hidden-album) is makkelijk en synchroniseert, maar opent met de toegangscode van je toestel. [Vergrendelde notities](id:velcrypt-vs-apple-notes-locked-notes) zijn geschikt voor een paar gevoelige afbeeldingen of scans.
 
@@ -76,7 +76,7 @@ Een fotokluis is een app die gekozen foto’s en video’s los van je hoofdbibli
 
 ## Wanneer je beter bij Keepsafe kunt blijven
 
-Is cloudback-up de functie waar je het meest op leunt, en vind je een account geen probleem, dan past Keepsafe misschien nog steeds beter. Velcrypt v1 biedt geen back-up of synchronisatie, en is niet beschikbaar voor Android.
+Is cloudback-up de functie waar je het meest op leunt, en vind je een account geen probleem, dan past Keepsafe misschien nog steeds beter. Velcrypt biedt geen automatische back-up of synchronisatie, alleen een handmatig versleuteld back-upbestand, en is niet beschikbaar voor Android.
 
 ## Overstappen zonder kopieën achter te laten
 

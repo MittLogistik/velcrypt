@@ -19,7 +19,7 @@ keywords:
   - "taschenrechner app fotos verstecken"
   - "versteckte taschenrechner apps finden"
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Wie als Taschenrechner getarnte Tresore funktionieren, warum Tarnung nicht dasselbe ist wie Verschlüsselung und wann der Trick trotzdem sinnvoll ist."
 category: choosing
 order: 22
@@ -110,6 +110,6 @@ Der letzte Punkt erwischt viele – bei jeder Art von Tresor. Das Original bleib
 
 ## Wie Velcrypt das angeht
 
-Velcrypt gibt nicht vor, etwas anderes zu sein. Es gibt keine Taschenrechner-Tarnung und kein alternatives Symbol. Stattdessen konzentriert sich die App darauf, was passiert, wenn sie geöffnet ist. Jeder Tresor öffnet sich mit seinem eigenen Muster auf einem 5×5-Raster, und jedes Muster, das die App noch nicht kennt, öffnet einfach einen leeren Tresor – ohne Fehlermeldung und ohne etwas, das beweist, dass andere Tresore existieren ([versteckte Tresore](id:hidden-vaults)). Dateien werden mit AES-256-GCM verschlüsselt, mit Schlüsseln, die aus dem Muster abgeleitet werden ([Verschlüsselung](id:encryption)), und alles bleibt auf dem Gerät.
+Velcrypt gibt nicht vor, etwas anderes zu sein. Es gibt keine funktionierende Taschenrechner-Tarnung; mit Premium kannst du nur ein alternatives App-Symbol wählen, etwa einen Taschenrechner, einen Timer oder ein Lineal. Im Kern konzentriert sich die App darauf, was passiert, wenn sie geöffnet ist. Jeder Tresor öffnet sich mit seinem eigenen Muster auf einem 5×5-Raster, und jedes Muster, das die App noch nicht kennt, öffnet einfach einen leeren Tresor – ohne Fehlermeldung und ohne etwas, das beweist, dass andere Tresore existieren ([versteckte Tresore](id:hidden-vaults)). Dateien werden mit AES-256-GCM verschlüsselt, mit Schlüsseln, die aus dem Muster abgeleitet werden ([Verschlüsselung](id:encryption)), und alles bleibt auf dem Gerät.
 
-Der Kompromiss: Die App ist auf deinem Home-Bildschirm sichtbar, sofern du nicht die App-Ausblendung von iOS nutzt. Und in der ersten Version werden Tresorinhalte nirgendwo gesichert – ein verlorenes Handy oder vergessenes Muster bedeutet verlorene Inhalte. Den direkten Vergleich findest du unter [Velcrypt vs. Taschenrechner-Tresor-Apps](id:velcrypt-vs-calculator-vault-apps).
+Der Kompromiss: Die App ist auf deinem Home-Bildschirm sichtbar, sofern du nicht die App-Ausblendung von iOS nutzt. Und Tresorinhalte werden nicht automatisch gesichert: Ohne ein selbst erstelltes verschlüsseltes Backup bedeutet ein verlorenes Handy verlorene Inhalte, und ein vergessenes Muster lässt sich nie wiederherstellen. Den direkten Vergleich findest du unter [Velcrypt vs. Taschenrechner-Tresor-Apps](id:velcrypt-vs-calculator-vault-apps).

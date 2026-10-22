@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "esconder fotos das crianças iphone"
 keywords: ["criança mexendo no meu celular", "filho vendo minhas fotos", "acesso guiado para crianças", "tempo de uso para crianças iphone", "emprestar celular para criança com segurança"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Deixe as crianças brincarem no seu iPhone sem que elas cheguem às fotos privadas: Acesso Guiado, Tempo de Uso e um cofre que continua fechado."
 group: everyday
 schemaType: Article
@@ -81,6 +81,6 @@ O [bloqueio automático](id:auto-lock) fecha o cofre assim que o app vai para o 
 - Se a criança vê você desenhar o padrão, pode memorizá-lo. Desenhe longe dos olhos dela e escolha um padrão mais longo.
 - Se você entrega o celular com o cofre aberto e o app em primeiro plano, o conteúdo fica visível até o app ir para o segundo plano.
 - O ícone do Velcrypt aparece na Tela de Início. O iOS 18 e posteriores permitem ocultar apps atrás do Face ID em uma pasta oculta; esse é um recurso do iOS, não do Velcrypt.
-- Na primeira versão, os dados do cofre não entram nos backups do iCloud nem do computador. Se o celular for perdido ou quebrar, ou se você esquecer o padrão, o cofre não pode ser recuperado. Guarde cópias das fotos insubstituíveis em um lugar seguro.
+- Os dados do cofre não entram nos backups do iCloud nem do computador. Se você esquecer o padrão, ou se o celular for perdido ou quebrar sem que você tenha criado um backup criptografado, o cofre não pode ser recuperado. Crie um backup em Ajustes → Backup ou guarde cópias das fotos insubstituíveis em um lugar seguro.
 
 Para a maioria das famílias, a melhor combinação é simples: Acesso Guiado toda vez que você entrega o celular e um cofre para as poucas coisas que nunca deveriam estar a um deslize de distância.

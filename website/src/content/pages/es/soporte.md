@@ -8,13 +8,13 @@ answer: "Escribe a support@velcrypt.app indicando tu versión de iOS, la versió
 keyFacts:
   - "Contacto: support@velcrypt.app."
   - "Incluye el modelo de iPhone, la versión de iOS, la versión de Velcrypt y los pasos que llevaron al problema."
-  - "El soporte no puede recuperar patrones ni bóvedas: no tenemos acceso a ellos."
+  - "El soporte no puede recuperar patrones, bóvedas ni contraseñas de copia de seguridad: no tenemos acceso a ellos."
   - "Una bóveda vacía inesperada suele significar que se dibujó un patrón ligeramente distinto."
   - "Nunca nos envíes tu patrón ni capturas de contenido privado."
 primaryKeyword: "soporte velcrypt"
 keywords: ["contactar con velcrypt", "ayuda velcrypt", "velcrypt no abre la bóveda", "problemas con velcrypt", "email de velcrypt"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 schemaType: ContactPage
 order: 5
 related: [faq, forgot-vault-pattern, auto-lock, security, privacy]
@@ -25,6 +25,8 @@ faq:
     a: "Lo más probable es que hayas dibujado un patrón que se diferencia del habitual en un punto o una dirección. Velcrypt trata cada patrón como una bóveda propia, así que un patrón nuevo abre una bóveda nueva y vacía sin ningún error."
   - q: "¿Cuánto tarda Velcrypt en responder a los emails de soporte?"
     a: "Leemos todos los mensajes y respondemos lo antes posible. Por ahora no ofrecemos un tiempo de respuesta garantizado."
+  - q: "¿El soporte puede ayudarme con una compra o un reembolso?"
+    a: "Las compras y los reembolsos los gestiona Apple. Para pedir un reembolso, usa reportaproblem.apple.com. Si Premium no aparece en un iPhone nuevo, toca Restaurar compras en Velcrypt."
   - q: "¿Debo enviar mi patrón al soporte?"
     a: "Nunca. Nadie en Velcrypt necesita tu patrón y nunca te lo pediremos. Describe el problema en su lugar."
 ---
@@ -54,7 +56,8 @@ Por favor, **no** envíes tu patrón ni adjuntes capturas de pantalla que muestr
 Velcrypt está construida para que nadie más que tú pueda abrir tus bóvedas, y eso nos incluye a nosotros. Por eso el soporte **no puede**:
 
 - recuperar ni restablecer un patrón olvidado,
-- restaurar una bóveda de un iPhone perdido, roto o restablecido,
+- restaurar una bóveda de un iPhone perdido, roto o restablecido (solo puede hacerlo una copia de seguridad que hayas creado tú),
+- abrir una copia de seguridad cuya contraseña hayas olvidado,
 - decirte cuántas bóvedas hay en un dispositivo,
 - descifrar archivos ni recuperar contenido por ti.
 
@@ -75,6 +78,14 @@ Velcrypt se bloquea cuando pasa a segundo plano, tras un retardo que puedes eleg
 ### La importación falla o la app se queda sin espacio
 
 Las copias cifradas ocupan aproximadamente lo mismo que los originales. Comprueba el espacio libre en Ajustes › General › Almacenamiento del iPhone. Recuerda que importar no elimina los originales de Fotos; borrarlos y vaciar «Eliminado» libera espacio. Consulta [borrar los originales después de importar](id:delete-original-photos-after-import).
+
+### Quiero pasar mis bóvedas a un iPhone nuevo
+
+Las bóvedas no se incluyen en las copias de iCloud ni del ordenador. En el iPhone antiguo, abre cada bóveda y crea una copia de seguridad en Ajustes → Copia de seguridad; guárdala en iCloud Drive o en un ordenador. En el iPhone nuevo, abre una bóveda, ve a Ajustes → Copia de seguridad → Restaurar copia de seguridad e introduce la contraseña de la copia. Los elementos se añaden a la bóveda que tienes abierta.
+
+### Premium no aparece después de comprar
+
+Asegúrate de usar la misma cuenta de Apple con la que compraste y toca Restaurar compras en Velcrypt. Si una compra está pendiente de aprobación (por ejemplo, con En familia), Premium se desbloquea en cuanto se aprueba.
 
 ### No encuentro un archivo que importé
 

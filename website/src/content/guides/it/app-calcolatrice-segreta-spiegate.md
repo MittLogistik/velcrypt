@@ -19,7 +19,7 @@ keywords:
   - "app calcolatrice foto nascoste"
   - "come trovare app calcolatrice nascoste"
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Come funzionano le casseforti travestite da calcolatrice, perché un travestimento non equivale alla crittografia e quando il trucco ha ancora senso."
 category: choosing
 order: 22
@@ -112,6 +112,6 @@ Quest’ultimo punto coglie impreparati con qualsiasi tipo di cassaforte. L’or
 
 ## L’approccio di Velcrypt
 
-Velcrypt non finge di essere qualcos’altro. Non ha travestimenti da calcolatrice né icone alternative. Si concentra invece su ciò che succede una volta aperta l’app. Ogni cassaforte si apre con la propria sequenza disegnata su una griglia 5×5, e qualsiasi sequenza che l’app non ha mai visto apre semplicemente una cassaforte vuota, senza errori e senza nulla che dimostri l’esistenza di altre casseforti ([casseforti nascoste](id:hidden-vaults)). I file sono cifrati con AES-256-GCM usando chiavi derivate dalla sequenza ([crittografia](id:encryption)), e tutto resta sul dispositivo.
+Velcrypt non finge di essere qualcos’altro. Non ha un travestimento da calcolatrice funzionante; con il Premium puoi solo scegliere un’icona alternativa (come calcolatrice, timer o righello). Si concentra invece su ciò che succede una volta aperta l’app. Ogni cassaforte si apre con la propria sequenza disegnata su una griglia 5×5, e qualsiasi sequenza che l’app non ha mai visto apre semplicemente una cassaforte vuota, senza errori e senza nulla che dimostri l’esistenza di altre casseforti ([casseforti nascoste](id:hidden-vaults)). I file sono cifrati con AES-256-GCM usando chiavi derivate dalla sequenza ([crittografia](id:encryption)), e tutto resta sul dispositivo.
 
-Il compromesso è che l’app è visibile nella schermata Home, a meno che tu non usi la funzione di iOS per nascondere le app. E nella prima versione i contenuti della cassaforte non hanno backup da nessuna parte, quindi un telefono perso o una sequenza dimenticata significano contenuti persi. Per un confronto diretto, vedi [Velcrypt vs app calcolatrice segreta](id:velcrypt-vs-calculator-vault-apps).
+Il compromesso è che l’app è visibile nella schermata Home, a meno che tu non usi la funzione di iOS per nascondere le app. E i contenuti della cassaforte non finiscono nei backup di iCloud o del computer: una sequenza dimenticata significa contenuti persi, e un telefono perso anche, a meno che tu non abbia creato un backup cifrato. Per un confronto diretto, vedi [Velcrypt vs app calcolatrice segreta](id:velcrypt-vs-calculator-vault-apps).

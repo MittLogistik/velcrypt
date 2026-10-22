@@ -9,12 +9,12 @@ keyFacts:
   - "Screenshots in je filmrol kunnen worden gezien, verwijderd of gesynchroniseerd door iedereen met je toegangscode of Apple Account."
   - "Veiligheidscontrole (Instellingen › Privacy en beveiliging, iOS 16+) laat zien wie toegang heeft tot je iPhone en account."
   - "Bewijs heeft alleen waarde als het bewaard blijft: houd minstens twee kopieën bij, op plekken waar de ander niet bij kan."
-  - "Velcrypt heeft in de eerste versie geen back-up, dus het mag nooit je enige kopie bevatten."
+  - "Velcrypt mag nooit je enige kopie bevatten; bewaar een versleutelde back-up of een kopie elders."
   - "Lokale hulporganisaties en de politie kunnen adviseren welke gegevens nuttig zijn waar jij woont."
 primaryKeyword: "bewijs intimidatie bewaren iphone"
 keywords: ["screenshots intimidatie privé houden", "bewijs opslaan op iphone", "bewijs van misbruik vastleggen telefoon", "screenshots verbergen voor dader", "veiligheid bewijs intimidatie"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Een zorgvuldige aanpak met veiligheid voorop om screenshots en foto's van intimidatie privé, intact en veilig opgeslagen te houden."
 group: sensitive
 schemaType: Article
@@ -26,7 +26,7 @@ faq:
   - q: "Kan een dader mijn foto's zien als we een Apple Account delen?"
     a: "Ja. Met iCloud-foto's aan synchroniseren foto's naar elk apparaat dat met dat account is ingelogd, inclusief het album Verborgen. Veiligheidscontrole en een eigen Apple Account kunnen helpen, maar denk aan je veiligheid voordat je dingen verandert die de ander kan opmerken."
   - q: "Is Velcrypt genoeg om bewijs te bewaren?"
-    a: "Het kan een kopie privé houden op je iPhone, maar het mag niet je enige kopie zijn. In de eerste versie worden kluisgegevens niet geback-upt, dus een verloren, kapotte of afgepakte telefoon betekent dat de kluis weg is."
+    a: "Het kan een kopie privé houden op je iPhone, maar het mag niet je enige kopie zijn. Kluisgegevens zitten niet in iCloud- of computerback-ups, dus zonder een versleuteld back-upbestand dat je elders bewaart, betekent een verloren, kapotte of afgepakte telefoon dat de kluis weg is."
   - q: "Is dit juridisch advies?"
     a: "Nee. Regels over bewijs verschillen per land. Een lokale hulporganisatie, een advocaat of de politie kan je vertellen welke gegevens nuttig zijn waar jij woont."
 ---
@@ -68,7 +68,7 @@ Kluizen openen met een patroon op een 5×5-raster, niet met de toegangscode van 
 
 ## Eerlijke beperkingen: lees dit alsjeblieft
 
-- **Velcrypt mag niet je enige kopie zijn.** In de eerste versie zitten kluisgegevens niet in iCloud- of computerbackups. Raakt de telefoon kwijt, gaat hij kapot of wordt hij afgepakt, of vergeet je het patroon, dan kan niemand de kluis herstellen.
+- **Velcrypt mag niet je enige kopie zijn.** Kluisgegevens zitten niet in iCloud- of computerback-ups. Raakt de telefoon kwijt, gaat hij kapot of wordt hij afgepakt zonder dat je een versleutelde back-up hebt, of vergeet je het patroon, dan kan niemand de kluis herstellen. Een back-upbestand bewaar je op een plek waar degene die je lastigvalt niet bij kan.
 - **De app is zichtbaar.** Het Velcrypt-symbool staat op je beginscherm. Vanaf iOS 18 kun je apps achter Face ID in een verborgen map zetten, maar wie goed kijkt, kan een app nog steeds opmerken. Overweeg of dat je in gevaar kan brengen.
 - **Iemand die meekijkt** terwijl je je patroon tekent, of je telefoon afpakt terwijl de kluis open is, maakt het slot zinloos.
 - **Monitoringsoftware** op een gejailbreakte of gemanipuleerde telefoon kan zien wat er op het scherm staat. Vermoed je dat, dan kan een hulporganisatie je adviseren; een toestel waar de ander nooit toegang toe heeft gehad, kan veiliger zijn.

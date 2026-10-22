@@ -10,11 +10,11 @@ keyFacts:
   - "Las versiones recientes de iOS admiten un modo de reparación que permite mantener Buscar activado; pregunta qué necesita tu servicio técnico."
   - "El código del dispositivo desbloquea Fotos, el álbum Oculto, Archivos y todo lo que esté bloqueado con él."
   - "Una bóveda de Velcrypt necesita un patrón aparte, así que el código por sí solo no la abre."
-  - "En la primera versión, los datos de Velcrypt no están en las copias de iCloud ni del ordenador, así que un teléfono borrado significa una bóveda perdida."
+  - "Los datos de Velcrypt no están en las copias de iCloud ni del ordenador; crea antes una copia de seguridad cifrada de Velcrypt."
 primaryKeyword: "privacidad fotos reparar iphone"
 keywords: ["ocultar fotos antes de reparar el móvil", "el servicio técnico verá mis fotos", "dar el código del iphone al reparar", "proteger datos al reparar el iphone", "consejos de privacidad al reparar el móvil"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Qué podría ver un técnico en tu iPhone, cómo prepararte y por qué necesitas un plan de copia para tu bóveda antes de entregarlo."
 group: everyday
 schemaType: Article
@@ -26,7 +26,7 @@ faq:
   - q: "¿Tengo que desactivar Buscar antes de reparar el iPhone?"
     a: "Depende de la reparación y del servicio técnico. Las versiones recientes de iOS ofrecen un modo de reparación que mantiene Buscar activado durante el servicio. Sigue las instrucciones que te dé tu servicio técnico y consulta el Soporte de Apple si tienes dudas."
   - q: "¿Sobrevivirá mi bóveda de Velcrypt a una reparación?"
-    a: "Si el teléfono vuelve con los mismos datos, sí. Si el dispositivo se borra o se sustituye, la bóveda se pierde: en la primera versión, los datos de la bóveda quedan fuera de las copias de iCloud y del ordenador, y hay prevista una opción de copia de seguridad cifrada."
+    a: "Si el teléfono vuelve con los mismos datos, sí. Si el dispositivo se borra o se sustituye, la bóveda se pierde, porque sus datos quedan fuera de las copias de iCloud y del ordenador. Por eso, crea antes una copia de seguridad cifrada en Ajustes → Copia de seguridad y restáurala después."
   - q: "¿Debo darle mi código al técnico?"
     a: "Solo si la reparación lo requiere de verdad. Muchas reparaciones de hardware no lo necesitan. Si lo das, cámbialo en cuanto te devuelvan el teléfono."
 ---
@@ -69,12 +69,12 @@ Las fotos importadas son copias, así que acuérdate de [borrar los originales](
 
 ## La contrapartida honesta: las copias de seguridad
 
-Esto es lo que debes sopesar con cuidado. En la primera versión, los datos de las bóvedas de Velcrypt **quedan fuera de las copias de seguridad de iCloud y del ordenador**. Es deliberado, porque nada sale de tu dispositivo, pero significa que:
+Esto es lo que debes sopesar con cuidado. Los datos de las bóvedas de Velcrypt **quedan fuera de las copias de seguridad de iCloud y del ordenador**. Es deliberado, porque nada sale de tu dispositivo sin que tú lo decidas, pero significa que:
 
-- Si la reparación termina con un iPhone borrado o sustituido, tu bóveda no se puede restaurar, ni por ti ni por Velcrypt.
-- Hay prevista una opción de copia de seguridad y recuperación cifrada, pero todavía no está disponible.
+- Si la reparación termina con un iPhone borrado o sustituido, una copia de iCloud no restaura tu bóveda.
+- Solo una copia de seguridad cifrada de Velcrypt, creada en Ajustes → Copia de seguridad, permite recuperar el contenido.
 
-Así que, para todo lo irreemplazable, guarda una segunda copia en un lugar de confianza antes de la reparación, por ejemplo en un disco cifrado que controles. Lo mismo vale si alguna vez [olvidas tu patrón](id:forgot-vault-pattern). Lee más sobre estas decisiones de diseño en la [página de seguridad](id:security).
+Así que, antes de la reparación, abre cada bóveda, crea su copia de seguridad y guarda el archivo fuera del iPhone, por ejemplo en iCloud Drive o en un ordenador. Elige una contraseña que no vayas a olvidar: no se puede recuperar. Lo mismo vale si alguna vez [olvidas tu patrón](id:forgot-vault-pattern). Lee más sobre estas decisiones de diseño en la [página de seguridad](id:security).
 
 ## Otros límites que conviene tener presentes
 

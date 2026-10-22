@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "negabilità plausibile crittografia"
 keywords: ["cos’è la negabilità plausibile", "crittografia negabile", "volume nascosto spiegato", "negabilità plausibile cassaforte foto", "cassaforte negabile iphone"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Il concetto dietro volumi nascosti e casseforti esca, come lo usa Velcrypt con le sequenze sconosciute e cosa, onestamente, non può fare."
 category: security
 order: 42
@@ -60,7 +60,7 @@ Velcrypt adatta il principio a una cassaforte per foto e documenti su iPhone. No
 
 La conseguenza è che una sequenza sbagliata e una cassaforte valida ma vuota sono identiche. Se apri una cassaforte per qualcuno, nell’interfaccia non c’è nulla che mostri l’esistenza di altre casseforti. Questo rende la [cassaforte esca](id:what-is-a-decoy-vault) un uso naturale invece di una modalità speciale. La pagina della funzione [casseforti nascoste](id:hidden-vaults) mostra come funziona in pratica.
 
-Una funzione Premium prevista, la [sequenza di coercizione](id:duress-pattern) (in arrivo), estende questo concetto: una sequenza speciale aprirebbe una cassaforte scelta e rimuoverebbe in silenzio l’accesso alle altre.
+Una funzione prevista per un aggiornamento futuro, la [sequenza di emergenza](id:duress-pattern), estenderebbe questo concetto: una sequenza speciale aprirebbe una cassaforte scelta e rimuoverebbe in silenzio l’accesso alle altre.
 
 ## I limiti, con onestà
 

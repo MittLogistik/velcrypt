@@ -8,13 +8,13 @@ answer: "Rekenmachine-kluisapps vermommen zich als werkende rekenmachine en gaan
 keyFacts:
   - "Rekenmachine-kluisapps zien eruit en werken als een rekenmachine; een code die je als som intypt, opent de kluis."
   - "Details over versleuteling verschillen sterk tussen rekenmachine-kluisapps en worden vaak niet gepubliceerd."
-  - "Velcrypt heeft geen rekenmachinevermomming en geen alternatieve symbolen; de naam is zichtbaar op het beginscherm."
+  - "Velcrypt heeft geen werkende rekenmachine als vermomming; met Premium kies je wel een alternatief appsymbool, maar de naam Velcrypt blijft zichtbaar."
   - "De ontkenbaarheid van Velcrypt komt van verborgen kluizen: onbekende patronen openen een lege kluis."
   - "Vanaf iOS 18 kun je elke app, ook Velcrypt, in een verborgen map achter Face ID zetten."
 primaryKeyword: "rekenmachine kluis app"
 keywords: ["rekenmachine kluis app iphone", "foto’s verbergen rekenmachine app", "nep rekenmachine kluis iphone", "alternatief rekenmachine kluis", "geheime rekenmachine app"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Vermomming tegenover versleuteling: hoe rekenmachine-kluisapps zich verhouden tot de verborgen patroonkluizen van Velcrypt."
 competitor: "Rekenmachine-kluisapps"
 lastChecked: "oktober 2026"
@@ -24,7 +24,7 @@ faq:
   - q: "Zijn rekenmachine-kluisapps veilig?"
     a: "Dat hangt van de app af. De rekenmachinevermomming verbergt alleen dat er een kluis is; hoe goed de bestanden beschermd zijn, hangt ervan af of en hoe de app ze versleutelt, en dat documenteren veel apps niet. Bekijk de eigen privacy- en beveiligingsinformatie van elke app."
   - q: "Heeft Velcrypt een rekenmachinevermomming?"
-    a: "Nee. Velcrypt heeft geen vermomming en geen alternatieve symbolen. In plaats daarvan maakt het de inhoud ontkenbaar: elk patroon opent een eigen kluis en niets verraadt hoeveel kluizen er zijn. Vanaf iOS 18 kun je de app zelf ook verbergen met de functie voor verborgen apps van het systeem."
+    a: "Nee. Velcrypt opent nooit als werkende rekenmachine. Met Premium kun je wel een alternatief appsymbool kiezen, zoals een rekenmachine, timer of liniaal, maar de naam onder het symbool blijft Velcrypt. In plaats van een vermomming maakt het de inhoud ontkenbaar: elk patroon opent een eigen kluis en niets verraadt hoeveel kluizen er zijn. Vanaf iOS 18 kun je de app zelf ook verbergen met de functie voor verborgen apps van het systeem."
   - q: "Kan iemand zien dat een rekenmachine-app eigenlijk een kluis is?"
     a: "Soms. De naam en beschrijving van de app in de App Store, je aankoopgeschiedenis, het opslaggebruik in Instellingen en het gedrag van de app kunnen hem verraden aan iemand die weet waar hij op moet letten."
   - q: "Wat is beter voor plausibele ontkenning?"
@@ -49,15 +49,15 @@ Beide kunnen nuttig zijn. De vraag is waartegen je je beschermt. Een vermomming 
 |---|---|---|
 | Details over versleuteling op het apparaat gepubliceerd | Ja: AES-256-GCM, PBKDF2-HMAC-SHA512 | Verschilt; vaak niet openbaar vermeld |
 | Account nodig | Nee | Verschilt |
-| Cloudback-up | Nee (v1); versleutelde back-up gepland | Verschilt; sommige bieden cloudfuncties |
+| Cloudback-up | Geen automatische; gratis versleuteld back-upbestand dat je zelf bewaart | Verschilt; sommige bieden cloudfuncties |
 | Ontgrendelen | Patroon op een raster van 5×5 | Cijfercode, ingetypt als som |
 | Biometrie (Face ID / Touch ID) | Bewust niet aangeboden | Verschilt |
-| Vermomming | Geen; zichtbaar als Velcrypt | Ziet eruit als een werkende rekenmachine |
-| Lokkluis / meerdere kluizen | Elk patroon is een eigen kluis | Verschilt; sommige bieden een lokcode |
-| Dwangpatroon | Binnenkort (Premium) | Verschilt |
+| Vermomming | Geen; alternatieve appsymbolen met Premium, naam blijft Velcrypt | Ziet eruit als een werkende rekenmachine |
+| Lokkluis / meerdere kluizen | Elk patroon is een eigen kluis (tweede kluis met Premium) | Verschilt; sommige bieden een lokcode |
+| Dwangpatroon | Gepland voor een toekomstige update | Verschilt |
 | Inbraakfoto’s | Niet aangeboden | Gangbaar, maar verschilt |
 | Herstel als je de code vergeet | Geen | Verschilt; sommige bieden herstel via e-mail of een beveiligingsvraag |
-| Verdienmodel | Gratis versie plus optioneel Premium | Verschilt; sommige gratis versies tonen advertenties |
+| Verdienmodel | Gratis (1 kluis, tot 50 onderdelen); Premium vanaf $ 1,99 per week | Verschilt; sommige gratis versies tonen advertenties |
 | Platforms | iPhone (iOS 17+) | Verschilt; veel op iOS en Android |
 
 <!-- TODO verify -->
@@ -80,7 +80,7 @@ Wil je de app ook uit het zicht hebben, dan kun je vanaf iOS 18 elke app in een 
 
 - **Je wilt vooral dat de app zelf er gewoon uitziet.** Is een zichtbare kluis-app op je telefoon het probleem, dan pakt een vermomming dat direct aan, en Velcrypt niet.
 - **Je wilt inbraakfoto’s.** Veel rekenmachine-apps bieden die; Velcrypt niet.
-- **Je wilt een herstelmogelijkheid.** Sommige apps bieden een weg terug als je je code vergeet. Velcrypt v1 heeft die niet.
+- **Je wilt een herstelmogelijkheid.** Sommige apps bieden een weg terug als je je code vergeet. Velcrypt heeft die niet; een vergeten patroon is niet te herstellen.
 - **Je gebruikt ook Android.** Veel rekenmachine-kluisapps bestaan op beide platforms.
 
 <!-- TODO verify -->

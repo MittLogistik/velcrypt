@@ -1,12 +1,12 @@
 ---
 pageId: duress-pattern
-title: "Tvångsmönster (kommer snart): skydda valv under press"
-description: "Tvångsmönstret är en planerad Premium-funktion i Velcrypt som kommer snart: ett mönster öppnar ett valt valv och tar tyst bort åtkomsten till de andra."
-h1: "Tvångsmönster (kommer snart)"
-navTitle: "Tvångsmönster (kommer snart)"
-answer: "Tvångsmönstret är en planerad Premium-funktion som kommer snart. Du ska kunna ställa in ett särskilt mönster som öppnar ett valv du väljer och i tysthet tar bort åtkomsten till dina andra valv, för stunder då du pressas att låsa upp appen."
+title: "Tvångsmönster (planerat): skydda valv under press"
+description: "Tvångsmönstret är en planerad funktion i Velcrypt: ett mönster som öppnar ett valt valv och tyst tar bort åtkomsten till de andra. Finns inte än."
+h1: "Tvångsmönster (planerat)"
+navTitle: "Tvångsmönster (planerat)"
+answer: "Tvångsmönstret är en planerad funktion som ännu inte finns i appen, utan är tänkt för en framtida uppdatering. Du ska kunna ställa in ett särskilt mönster som öppnar ett valv du väljer och i tysthet tar bort åtkomsten till dina andra valv, för stunder då du pressas att låsa upp appen."
 keyFacts:
-  - "Status: planerad för den valfria Premium-uppgraderingen, kommer snart. Finns ännu inte i appen."
+  - "Status: planerad till en framtida uppdatering. Finns ännu inte i appen."
   - "Ett särskilt mönster ska öppna ett valt valv."
   - "Samtidigt ska det i tysthet ta bort åtkomsten till de andra valven."
   - "Det kan inte återkalla kopior som finns utanför Velcrypt."
@@ -14,15 +14,15 @@ keyFacts:
 primaryKeyword: "tvångsmönster valvapp"
 keywords: ["tvångslösenord iphone", "panikmönster fotovalv", "panikkod app", "skydd mot tvingad upplåsning", "självförstörande valv mönster"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
-summary: "Kommer snart till Premium: ett särskilt mönster som öppnar ett valt valv och tyst tar bort åtkomsten till de andra."
+dateModified: 2026-10-22
+summary: "Planerat: ett särskilt mönster som öppnar ett valt valv och tyst tar bort åtkomsten till de andra."
 status: coming-soon
 schemaType: WebPage
 order: 3
 related: [hidden-vaults, pattern-lock, what-is-a-decoy-vault, plausible-deniability-explained, phone-privacy-border-crossing]
 faq:
   - q: "Finns tvångsmönstret i Velcrypt redan nu?"
-    a: "Nej. Det är en planerad funktion för den valfria Premium-uppgraderingen och kommer snart. Fram till dess kan du använda dolda valv och ett lockbetesvalv, som finns redan i dag."
+    a: "Nej. Det är en planerad funktion för en framtida uppdatering, utan datum. Fram till dess kan du använda dolda valv och ett lockbetesvalv, som finns redan i dag med Premium."
   - q: "Vad händer när någon ritar tvångsmönstret?"
     a: "Planen är att det öppnar ett valv du valt i förväg och samtidigt i tysthet tar bort åtkomsten till dina andra valv. Inget på skärmen kommer att visa att något annat har hänt."
   - q: "Kan tvångsmönstret radera bilder som jag redan har delat?"
@@ -31,7 +31,7 @@ faq:
     a: "Det beror på var du befinner dig och på situationen. Att ta bort data medan myndigheter lagligen granskar en enhet kan vara ett brott i vissa länder. Velcrypt kan inte ge juridisk rådgivning; om det här är viktigt för dig, tala med en jurist."
 ---
 
-Ibland är risken inte en stulen telefon utan en person som står framför dig och ber dig öppna appen. Tvångsmönstret är Velcrypts planerade svar på den stunden. Det finns inte än: det är en **funktion som kommer snart** i den valfria Premium-uppgraderingen, och den här sidan beskriver vad den är tänkt att göra.
+Ibland är risken inte en stulen telefon utan en person som står framför dig och ber dig öppna appen. Tvångsmönstret är Velcrypts planerade svar på den stunden. Det finns inte än: det är en **planerad funktion** för en framtida uppdatering, och den här sidan beskriver vad den är tänkt att göra.
 
 ## Vad tvångsmönstret ska göra
 
@@ -46,7 +46,7 @@ Utifrån händer inget ovanligt. Det kommer ingen varning, ingen animation och i
 
 ## Så bygger det vidare på dolda valv
 
-Velcrypt ger dig redan [dolda valv](id:hidden-vaults): varje mönster öppnar sitt eget valv, det finns ingen valvlista och ett okänt mönster öppnar ett tomt valv utan felmeddelande. Det gör det redan svårt för någon att bevisa att det finns fler valv.
+Velcrypt ger dig redan [dolda valv](id:hidden-vaults): varje mönster öppnar sitt eget valv, det finns ingen valvlista och ett okänt mönster öppnar ett tomt valv utan felmeddelande. Det gör det redan svårt för någon att bevisa att det finns fler valv. Gratisversionen har ett valv, så fler valv och lockbetesvalv kräver Premium.
 
 Tvångsmönstret lägger till ett andra lager. Ett lockbete förutsätter att den andra personen tror på dig. Tvångsmönstret är tänkt för lägen där det kanske inte räcker, till exempel om du räknar med att bli tillfrågad flera gånger eller att ditt riktiga mönster ska krävas senare. När det väl har använts går de andra valven inte längre att nå på telefonen. Tanken bakom båda funktionerna förklaras i [trovärdig förnekelse, förklarat](id:plausible-deniability-explained).
 
@@ -67,7 +67,7 @@ Ett tvångsmönster är ett kraftfullt verktyg, och det har lika verkliga begrä
 
 **Det kan inte ångra kopior.** Det påverkar bara Velcrypts egna valv på den enheten. Om en bild fortfarande finns i ditt bildbibliotek, i Nyligen raderade, i iCloud-bilder, i en chatt eller i någon annans telefon ligger den kvar där. Rensa bort originalen efter importen; guiden om [att radera originalen efter import](id:delete-original-photos-after-import) visar hur.
 
-**Räkna med att det är permanent.** Valvdata ingår inte i iCloud-säkerhetskopior eller säkerhetskopior på dator i den första versionen, så du bör utgå från att åtkomst som tagits bort inte går att återställa. Använd det bara när du verkligen accepterar att förlora de filerna.
+**Räkna med att det är permanent.** Valvdata ingår inte i iCloud-säkerhetskopior eller säkerhetskopior på dator, så du bör utgå från att åtkomst som tagits bort inte går att återställa på telefonen. Använd det bara när du verkligen accepterar att förlora de filerna.
 
 **Det stoppar inte iakttagelse.** Om någon har sett dig rita ditt riktiga mönster, eller filmat skärmen, ändrar tvångsmönstret inte vad de såg.
 
@@ -77,4 +77,4 @@ Ett tvångsmönster är ett kraftfullt verktyg, och det har lika verkliga begrä
 
 ## Tills det finns på plats
 
-Du kan redan förbereda dig med funktioner som finns i dag. Skapa ett trovärdigt lockbetesvalv, välj ett starkt [mönster](id:pattern-lock) för ditt riktiga valv och håll känsliga original borta från kamerarullen. När tvångsmönstret lanseras passar det in i den uppsättningen.
+Du kan redan förbereda dig med funktioner som finns i dag. Skapa ett trovärdigt lockbetesvalv (med Premium), välj ett starkt [mönster](id:pattern-lock) för ditt riktiga valv och håll känsliga original borta från kamerarullen. Om tvångsmönstret lanseras passar det in i den uppsättningen.

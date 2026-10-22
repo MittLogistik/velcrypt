@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "jornalista proteger fontes iphone"
 keywords: ["proteger fotos de fontes no celular", "segurança do celular para jornalistas", "privacidade de documentos de fontes iphone", "segurança digital para repórteres", "modelagem de ameaças para jornalistas"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Modelagem de ameaças, minimização e metadados para repórteres, e onde um cofre criptografado no iPhone entra como uma camada de proteção das fontes."
 group: professional
 schemaType: Article
@@ -63,7 +63,7 @@ As respostas definem as suas ferramentas. Exagerar na proteção de uma pauta de
 
 O Velcrypt é uma camada desse plano. Ele guarda fotos, vídeos e documentos em cofres criptografados no seu iPhone, usando AES-256-GCM com chaves derivadas do seu padrão. Não há conta, servidor, sincronização nem análise do conteúdo do cofre, então não existe nada em um servidor para alguém solicitar.
 
-Os cofres abrem com um padrão em uma grade 5×5. O Velcrypt não oferece Face ID nem Touch ID de propósito, porque a biometria pode ser usada sem o seu consentimento; um padrão existe só na sua memória. O raciocínio está em [padrão x PIN x Face ID](id:pattern-lock-vs-pin-vs-face-id). Cada padrão abre o seu próprio cofre, e um padrão desconhecido abre um cofre vazio, sem erro, o que sustenta a [negação plausível](id:plausible-deniability-explained). Um padrão de coação que remove o acesso aos outros cofres é um recurso Premium planejado, que chega em breve.
+Os cofres abrem com um padrão em uma grade 5×5. O Velcrypt não oferece Face ID nem Touch ID de propósito, porque a biometria pode ser usada sem o seu consentimento; um padrão existe só na sua memória. O raciocínio está em [padrão x PIN x Face ID](id:pattern-lock-vs-pin-vs-face-id). Cada padrão abre o seu próprio cofre, e um padrão desconhecido abre um cofre vazio, sem erro, o que sustenta a [negação plausível](id:plausible-deniability-explained). Um padrão de coação que removeria o acesso aos outros cofres está planejado para uma atualização futura.
 
 ## Limites honestos
 
@@ -74,6 +74,6 @@ Um cofre não é, sozinho, uma estratégia de proteção de fontes:
 - **Aparelhos comprometidos.** Malware em um celular com jailbreak ou alvo de ataque consegue ver o que está na tela.
 - **Observação.** Alguém vendo você desenhar o padrão, ou câmeras no ambiente, anulam a proteção.
 - **App visível.** O ícone do Velcrypt fica na Tela de Início, a não ser que você use a opção do iOS 18 de ocultar apps.
-- **Sem recuperação.** Na primeira versão, os dados do cofre não têm backup. Perdeu o celular ou esqueceu o padrão, e eles se foram — o que pode ser uma vantagem para a minimização e um risco para material que você precisa guardar. Veja a [página de segurança](id:security) para o quadro completo.
+- **Sem recuperação automática.** Os dados do cofre não entram nos backups do iCloud nem do computador. Perdeu o celular ou esqueceu o padrão, e eles se foram — o que pode ser uma vantagem para a minimização e um risco para material que você precisa guardar. Um backup criptografado manual existe, mas lembre que qualquer arquivo de backup é mais uma cópia que pode ser encontrada. Veja a [página de segurança](id:security) para o quadro completo.
 
 Proteger fontes é, acima de tudo, uma questão de hábitos. Boas ferramentas ajudam, mas a decisão de guardar menos, compartilhar menos e se planejar com antecedência faz a maior parte do trabalho.

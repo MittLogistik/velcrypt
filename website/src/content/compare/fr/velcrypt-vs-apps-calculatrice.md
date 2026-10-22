@@ -8,13 +8,13 @@ answer: "Les apps coffre-fort calculatrice se font passer pour une calculatrice 
 keyFacts:
   - "Les apps calculatrice ressemblent à une calculatrice et en ont le fonctionnement ; un code tapé comme un calcul ouvre le coffre."
   - "Les détails de chiffrement varient beaucoup d’une app calculatrice à l’autre et sont souvent non publiés."
-  - "Velcrypt n’a ni camouflage en calculatrice ni icônes alternatives ; son nom est visible sur l’écran d’accueil."
+  - "Velcrypt ne se déguise pas en calculatrice ; Premium propose des icônes alternatives (calculatrice, minuteur, règle…), mais l’app reste Velcrypt."
   - "Le déni plausible de Velcrypt vient de ses coffres cachés : un motif inconnu ouvre un coffre vide."
   - "Depuis iOS 18, vous pouvez masquer n’importe quelle app dans un dossier masqué protégé par Face ID, Velcrypt compris."
 primaryKeyword: "app calculatrice secrète vs velcrypt"
 keywords: ["app calculatrice secrète", "calculatrice cacher photos", "fausse calculatrice coffre-fort iphone", "alternative app calculatrice coffre-fort", "calculatrice coffre-fort photo"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Camouflage contre chiffrement : les apps coffre-fort façon calculatrice comparées aux coffres cachés par motif de Velcrypt."
 competitor: "Apps coffre-fort calculatrice"
 lastChecked: "octobre 2026"
@@ -24,7 +24,7 @@ faq:
   - q: "Les apps calculatrice secrète sont-elles sûres ?"
     a: "Cela dépend de l’app. Le camouflage en calculatrice cache seulement qu’un coffre existe ; la protection réelle des fichiers dépend de la façon dont l’app les chiffre, si elle le fait, ce que beaucoup d’apps ne documentent pas. Consultez les informations de confidentialité et de sécurité de chaque app."
   - q: "Velcrypt a-t-il un camouflage en calculatrice ?"
-    a: "Non. Velcrypt n’a ni camouflage ni icônes alternatives. Il rend plutôt le contenu niable : chaque motif ouvre son propre coffre et rien ne révèle combien de coffres existent. Depuis iOS 18, vous pouvez aussi masquer l’app elle-même grâce à la fonction d’apps masquées du système."
+    a: "Non, pas de fausse calculatrice fonctionnelle. Premium propose des icônes d’écran d’accueil alternatives, dont une calculatrice, mais l’app s’ouvre toujours sur la grille de motif. Velcrypt rend plutôt le contenu niable : chaque motif ouvre son propre coffre et rien ne révèle combien de coffres existent. Depuis iOS 18, vous pouvez aussi masquer l’app elle-même grâce à la fonction d’apps masquées du système."
   - q: "Peut-on deviner qu’une app calculatrice est en réalité un coffre ?"
     a: "Parfois. Le nom et la description de l’app dans l’App Store, votre historique d’achats, l’espace utilisé affiché dans Réglages et le comportement de l’app peuvent la trahir aux yeux de quelqu’un qui sait quoi chercher."
   - q: "Lequel est le meilleur pour le déni plausible ?"
@@ -49,15 +49,15 @@ Les deux peuvent être utiles. Tout dépend de ce contre quoi vous vous protége
 |---|---|---|
 | Détails du chiffrement sur l’appareil publiés | Oui : AES-256-GCM, PBKDF2-HMAC-SHA512 | Variable ; souvent non indiqués publiquement |
 | Compte requis | Non | Variable |
-| Sauvegarde cloud | Non (v1) ; sauvegarde chiffrée prévue | Variable ; certaines proposent des fonctions cloud |
+| Sauvegarde cloud | Non ; sauvegarde chiffrée manuelle et gratuite (fichier protégé par mot de passe) | Variable ; certaines proposent des fonctions cloud |
 | Méthode de déverrouillage | Motif sur une grille 5×5 | Code numérique tapé comme un calcul |
 | Biométrie (Face ID / Touch ID) | Non proposée, par choix | Variable |
-| Camouflage | Aucun ; visible comme Velcrypt | Ressemble à une calculatrice fonctionnelle |
+| Camouflage | Pas de fausse app ; icônes alternatives en Premium | Ressemble à une calculatrice fonctionnelle |
 | Leurre / plusieurs coffres | Chaque motif est son propre coffre | Variable ; certaines proposent un code leurre |
-| Motif de contrainte | Bientôt disponible (Premium) | Variable |
+| Motif de contrainte | Prévu, pas encore disponible | Variable |
 | Photos d’intrus | Non proposées | Fréquentes, mais variable |
-| Récupération en cas d’oubli du code | Aucune | Variable ; certaines proposent une récupération par e-mail ou question de sécurité |
-| Modèle économique | Version gratuite plus option Premium | Variable ; certaines versions gratuites affichent de la publicité |
+| Récupération en cas d’oubli du code | Aucune ; une sauvegarde chiffrée peut être restaurée avec son mot de passe | Variable ; certaines proposent une récupération par e-mail ou question de sécurité |
+| Modèle économique | Gratuit (1 coffre, 50 éléments) ; Premium en abonnement ou achat unique ; sans publicité | Variable ; certaines versions gratuites affichent de la publicité |
 | Plateformes | iPhone (iOS 17+) | Variable ; beaucoup sur iOS et Android |
 
 <!-- TODO verify -->
@@ -78,9 +78,9 @@ Si vous voulez aussi faire disparaître l’app de la vue, iOS 18 et versions ul
 
 ## Quand une app calculatrice peut mieux vous convenir
 
-- **Vous voulez surtout que l’app elle-même paraisse banale.** Si la présence visible d’une app coffre-fort sur votre téléphone est le problème, un camouflage y répond directement, ce que Velcrypt ne fait pas.
+- **Vous voulez surtout que l’app elle-même paraisse banale.** Si la présence visible d’une app coffre-fort sur votre téléphone est le problème, un camouflage y répond directement ; Velcrypt ne propose qu’une icône alternative en Premium.
 - **Vous voulez des photos d’intrus.** Beaucoup d’apps calculatrice en proposent ; Velcrypt non.
-- **Vous voulez une option de récupération.** Certaines apps permettent de retrouver l’accès si vous oubliez votre code. Velcrypt v1 n’en a pas.
+- **Vous voulez une option de récupération.** Certaines apps permettent de retrouver l’accès si vous oubliez votre code. Velcrypt n’en a pas ; seule une sauvegarde chiffrée créée à l’avance permet de retrouver le contenu.
 - **Vous utilisez aussi Android.** Beaucoup d’apps calculatrice coffre-fort existent sur les deux plateformes.
 
 <!-- TODO verify -->

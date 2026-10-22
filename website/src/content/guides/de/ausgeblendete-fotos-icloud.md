@@ -19,7 +19,7 @@ keywords:
   - "fotos nicht in icloud speichern"
   - "ausgeblendete fotos icloud.com"
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Ausgeblendete Fotos synchronisieren über iCloud-Fotos und landen evtl. im iCloud-Backup. So wirkt die Verschlüsselung – und so hältst du Fotos aus iCloud."
 category: apple
 order: 11
@@ -105,9 +105,9 @@ Das stoppt neue Uploads, aber auch die Synchronisierung von allem anderen, und v
 
 ### Option 2: das Foto in einer App aufbewahren, die nicht synchronisiert
 
-Manche Apps speichern Dateien nur in ihrem eigenen Speicher auf dem Gerät und nehmen sie von Backups aus. Velcrypt ist so gebaut: Fotos, Videos und Dokumente, die du importierst, werden auf dem iPhone verschlüsselt und sind in der ersten Version von iCloud- und Computer-Backups ausgeschlossen. Es gibt kein Konto, und nichts wird hochgeladen ([auf dem Gerät, ohne Konto](id:offline-no-account)).
+Manche Apps speichern Dateien nur in ihrem eigenen Speicher auf dem Gerät und nehmen sie von Backups aus. Velcrypt ist so gebaut: Fotos, Videos und Dokumente, die du importierst, werden auf dem iPhone verschlüsselt und sind von iCloud- und Computer-Backups ausgeschlossen. Es gibt kein Konto, und nichts wird hochgeladen ([auf dem Gerät, ohne Konto](id:offline-no-account)).
 
-Der ehrliche Kompromiss: Existiert das Foto nur in einem solchen Tresor und verlierst du das Handy oder vergisst dein Muster, gibt es nirgends eine Kopie zum Wiederherstellen. Eine verschlüsselte Backup-Option ist für Velcrypt geplant, gehört aber nicht zur ersten Version.
+Der ehrliche Kompromiss: Existiert das Foto nur in einem solchen Tresor und verlierst du das Handy oder vergisst dein Muster, gibt es keine automatische Kopie zum Wiederherstellen. Velcrypt bietet dafür ein kostenloses verschlüsseltes Backup: Unter Einstellungen → Backup erstellst du eine passwortgeschützte Datei, die du selbst speicherst – sie landet nur dort, wo du sie ablegst.
 
 ### Option 3: die iCloud-Kopie richtig löschen
 

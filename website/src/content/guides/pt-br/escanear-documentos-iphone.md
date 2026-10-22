@@ -19,7 +19,7 @@ keywords:
   - "digitalizar documentos no app arquivos"
   - "onde ficam os documentos digitalizados no iphone"
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Escaneie documentos de identidade, contratos e exames sem encher o Fotos ou o iCloud, depois guarde-os bloqueados e remova as cópias que sobraram."
 category: practical
 order: 34
@@ -122,9 +122,9 @@ Muitos apps de digitalização da App Store oferecem reconhecimento de texto, ar
 
 Bloquear uma nota ou manter um PDF em No Meu iPhone é um bom começo, mas qualquer pessoa que consiga desbloquear seu celular ainda abre o Arquivos. Para documentos de identidade, registros médicos e tudo o que você detestaria ver vazado, mover a digitalização para um cofre criptografado acrescenta um segredo separado.
 
-O Velcrypt consegue importar documentos do app Arquivos para um cofre criptografado ([documentos privados](id:private-documents)). Os arquivos são criptografados com AES-256-GCM no aparelho, com chaves derivadas do seu padrão de desbloqueio, e nada é enviado ([offline, sem conta](id:offline-no-account)). O Velcrypt não tem digitalizador nem câmera integrados, então você digitaliza primeiro com o Arquivos ou o Notas e depois importa o PDF.
+O Velcrypt consegue importar documentos do app Arquivos para um cofre criptografado ([documentos privados](id:private-documents)). Os arquivos são criptografados com AES-256-GCM no aparelho, com chaves derivadas do seu padrão de desbloqueio, e nada é enviado ([offline, sem conta](id:offline-no-account)). O Velcrypt não tem digitalizador de documentos, então, para um PDF, você digitaliza primeiro com o Arquivos ou o Notas e depois importa. Para uma simples foto de uma página, a câmera do cofre do Velcrypt salva a imagem direto no cofre, sem passar pela fototeca.
 
-Lembre que, na primeira versão, o conteúdo do cofre não entra nos backups do iCloud nem do computador. Se um documento original é insubstituível, guarde a versão em papel ou outra cópia num lugar que você controla. Nosso [caso de uso sobre documentos médicos e de identidade](id:medical-and-id-documents) trata desse equilíbrio.
+Lembre que o conteúdo do cofre não entra nos backups do iCloud nem do computador. Se um documento original é insubstituível, crie um backup criptografado em Ajustes → Backup ou guarde a versão em papel ou outra cópia num lugar que você controla. Nosso [caso de uso sobre documentos médicos e de identidade](id:medical-and-id-documents) trata desse equilíbrio.
 
 ## Limpar o que sobrou
 

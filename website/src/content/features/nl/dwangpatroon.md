@@ -1,37 +1,37 @@
 ---
 pageId: duress-pattern
-title: "Dwangpatroon (binnenkort): kluizen beschermen onder druk"
-description: "Het dwangpatroon is een geplande Premium-functie van Velcrypt, binnenkort: één patroon opent een gekozen kluis en blokkeert ongemerkt de andere."
-h1: "Dwangpatroon (binnenkort)"
-navTitle: "Dwangpatroon (binnenkort)"
-answer: "Het dwangpatroon is een geplande Premium-functie die binnenkort komt. Je kunt dan een speciaal patroon instellen dat een kluis naar keuze opent en ongemerkt de toegang tot je andere kluizen verwijdert, voor momenten waarop je onder druk wordt gezet om de app te ontgrendelen."
+title: "Dwangpatroon (gepland): kluizen beschermen onder druk"
+description: "Het dwangpatroon is een geplande functie van Velcrypt voor een toekomstige update: één patroon opent een gekozen kluis en blokkeert ongemerkt de andere."
+h1: "Dwangpatroon (gepland)"
+navTitle: "Dwangpatroon (gepland)"
+answer: "Het dwangpatroon is een geplande functie van Velcrypt voor een toekomstige update en zit nog niet in de app. Het is bedoeld om je een speciaal patroon te laten instellen dat een kluis naar keuze opent en ongemerkt de toegang tot je andere kluizen verwijdert, voor momenten waarop je onder druk wordt gezet om de app te ontgrendelen."
 keyFacts:
-  - "Status: gepland voor de optionele Premium-upgrade, binnenkort. Nog niet in de app."
+  - "Status: gepland voor een toekomstige update. Nog niet in de app."
   - "Een speciaal patroon opent straks een gekozen kluis."
   - "Tegelijk verwijdert het ongemerkt de toegang tot de andere kluizen."
-  - "Het kan geen kopieën terughalen die buiten Velcrypt bestaan."
+  - "Het kan geen kopieën terughalen die buiten Velcrypt bestaan, ook geen back-upbestanden."
   - "Het is een privacyhulpmiddel, geen juridisch advies of manier om wettige bevelen te omzeilen."
 primaryKeyword: "dwangpatroon kluis app"
 keywords: ["noodwachtwoord iphone", "paniekpatroon fotokluis", "dwangcode app", "bescherming bij gedwongen ontgrendelen", "kluis wissen met patroon"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
-summary: "Binnenkort in Premium: een speciaal patroon dat een gekozen kluis opent en ongemerkt de toegang tot de andere verwijdert."
+dateModified: 2026-10-22
+summary: "Gepland voor een toekomstige update: een speciaal patroon dat een gekozen kluis opent en ongemerkt de toegang tot de andere verwijdert."
 status: coming-soon
 schemaType: WebPage
 order: 3
 related: [hidden-vaults, pattern-lock, what-is-a-decoy-vault, plausible-deniability-explained, phone-privacy-border-crossing]
 faq:
   - q: "Is het dwangpatroon nu al beschikbaar in Velcrypt?"
-    a: "Nee. Het is een geplande functie voor de optionele Premium-upgrade en komt binnenkort. Tot die tijd kun je verborgen kluizen en een lokkluis gebruiken; die zijn er nu al."
+    a: "Nee. Het staat gepland voor een toekomstige update, en er is nog geen releasedatum. Tot die tijd kun je verborgen kluizen en een lokkluis gebruiken; die zijn er nu al."
   - q: "Wat gebeurt er als iemand het dwangpatroon invoert?"
     a: "Het plan is dat het een kluis opent die je vooraf hebt gekozen en tegelijk ongemerkt de toegang tot je andere kluizen verwijdert. Niets op het scherm laat zien dat er nog iets anders is gebeurd."
   - q: "Kan het dwangpatroon foto's verwijderen die ik al heb gedeeld?"
-    a: "Nee. Het werkt alleen op wat er in Velcrypt op die telefoon staat. Kopieën in je fotobibliotheek, iCloud, chats, e-mail of op het toestel van iemand anders liggen buiten zijn bereik."
+    a: "Nee. Het werkt alleen op wat er in Velcrypt op die telefoon staat. Kopieën in je fotobibliotheek, iCloud, chats, e-mail, een back-upbestand van Velcrypt of op het toestel van iemand anders liggen buiten zijn bereik."
   - q: "Is het legaal om een dwangpatroon te gebruiken?"
     a: "Dat hangt af van waar je bent en van de situatie. Gegevens verwijderen terwijl autoriteiten een toestel rechtmatig inspecteren, kan in sommige landen strafbaar zijn. Velcrypt kan geen juridisch advies geven; is dit belangrijk voor je, praat dan met een advocaat."
 ---
 
-Soms is het risico geen gestolen telefoon, maar iemand die voor je staat en eist dat je de app opent. Het dwangpatroon is het geplande antwoord van Velcrypt op dat moment. Het is nog niet beschikbaar: het is een **functie die binnenkort komt** in de optionele Premium-upgrade, en deze pagina beschrijft wat ze moet gaan doen.
+Soms is het risico geen gestolen telefoon, maar iemand die voor je staat en eist dat je de app opent. Het dwangpatroon is het geplande antwoord van Velcrypt op dat moment. Het is nog niet beschikbaar: het staat **gepland voor een toekomstige update**, en deze pagina beschrijft wat ze moet gaan doen.
 
 ## Wat het dwangpatroon gaat doen
 
@@ -65,9 +65,9 @@ Het doel is steeds hetzelfde: je een manier geven om ogenschijnlijk mee te werke
 
 Een dwangpatroon is een krachtig hulpmiddel, met even reële beperkingen. Je kunt ze beter nu kennen dan ze later ontdekken.
 
-**Het kan kopieën niet ongedaan maken.** Het werkt alleen op de eigen kluizen van Velcrypt op dat toestel. Staat een foto nog in je fotobibliotheek, in Recent verwijderd, in iCloud-foto's, in een chat of op de telefoon van iemand anders, dan blijft die daar. Ruim originelen op na het importeren; de gids over [originelen verwijderen na het importeren](id:delete-original-photos-after-import) laat zien hoe.
+**Het kan kopieën niet ongedaan maken.** Het werkt alleen op de eigen kluizen van Velcrypt op dat toestel. Staat een foto nog in je fotobibliotheek, in Recent verwijderd, in iCloud-foto's, in een chat of op de telefoon van iemand anders, dan blijft die daar. Hetzelfde geldt voor een versleuteld back-upbestand van Velcrypt dat je ergens anders hebt bewaard. Ruim originelen op na het importeren; de gids over [originelen verwijderen na het importeren](id:delete-original-photos-after-import) laat zien hoe.
 
-**Ga uit van permanent.** Kluisgegevens zitten in de eerste versie niet in iCloud- of computerbackups. Ga er dus van uit dat verwijderde toegang niet meer te herstellen is. Gebruik het alleen als je het verlies van die bestanden echt accepteert.
+**Ga uit van permanent.** Kluisgegevens zitten niet in iCloud- of computerback-ups. Ga er dus van uit dat toegang die op die telefoon is verwijderd, daar niet meer te herstellen is. Gebruik het alleen als je het verlies van die bestanden echt accepteert.
 
 **Het houdt meekijken niet tegen.** Heeft iemand je je echte patroon zien tekenen of het scherm gefilmd, dan verandert het dwangpatroon niets aan wat diegene heeft gezien.
 
@@ -77,4 +77,4 @@ Een dwangpatroon is een krachtig hulpmiddel, met even reële beperkingen. Je kun
 
 ## Tot het zover is
 
-Je kunt je nu al voorbereiden met functies die er vandaag zijn. Maak een geloofwaardige lokkluis, kies een sterk [patroon](id:pattern-lock) voor je echte kluis en houd gevoelige originelen uit je filmrol. Zodra het dwangpatroon er is, past het naadloos in die opzet.
+Je kunt je nu al voorbereiden met functies die er vandaag zijn. Maak met Premium een geloofwaardige lokkluis, kies een sterk [patroon](id:pattern-lock) voor je echte kluis en houd gevoelige originelen uit je filmrol. Zodra het dwangpatroon er is, past het naadloos in die opzet.

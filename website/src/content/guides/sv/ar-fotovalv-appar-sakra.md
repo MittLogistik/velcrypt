@@ -19,7 +19,7 @@ keywords:
   - "fotovalv integritet"
   - "är hemlig bildapp säker"
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "En praktisk checklista för att bedöma alla fotovalv: kryptering, integritetsetikett, konto, moln, annonser, avinstallation och återställning."
 category: choosing
 order: 21
@@ -117,7 +117,7 @@ För öppenhetens skull, så här står sig vår egen app:
 - **Kryptering:** AES-256-GCM via Apple CryptoKit. Nycklarna kommer från ditt mönster via PBKDF2-HMAC-SHA512 med minst 600 000 iterationer, varje valv har en egen slumpmässig huvudnyckel och iOS dataskydd läggs på ovanpå. Detaljer finns på vår [säkerhetssida](id:security) och [sidan om kryptering](id:encryption).
 - **Hemlighet:** ett mönster på ett rutnät med 5×5 punkter, skilt från enhetens lösenkod; medvetet inget Face ID.
 - **Konto och moln:** inget av dem. Ingen registrering, inga servrar, inga uppladdningar ([offline, utan konto](id:offline-no-account)).
-- **Återställning:** ingen i den första versionen. Valvinnehållet undantas från säkerhetskopior till iCloud och dator, så om du tappar bort telefonen eller glömmer mönstret kan innehållet inte återställas. Ett alternativ för krypterad säkerhetskopiering är planerat.
+- **Återställning:** ingen automatisk. Valvinnehållet undantas från säkerhetskopior till iCloud och dator, och ett glömt mönster kan inte återställas. Du kan själv skapa en krypterad säkerhetskopia, skyddad av ett lösenord du väljer, och återställa den på en annan iPhone.
 - **Original:** import kopierar ett objekt; du tar själv bort originalet.
 
 Om ett valv du överväger kan besvara de här punkterna lika tydligt är det ett gott tecken. En bredare jämförelse av alternativen finns i [bästa fotovalv-apparna för iPhone](id:best-private-photo-vault-apps-iphone).

@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "versleutelde fotokluis iphone"
 keywords: ["aes-256-gcm fotokluis", "foto's versleutelen iphone", "pbkdf2 kluis app", "hoe wordt mijn kluis versleuteld", "geauthenticeerde versleuteling uitgelegd"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "AES-256-GCM per bestand, sleutels uit je patroon via PBKDF2-HMAC-SHA512 en HKDF, plus iOS-gegevensbescherming."
 status: available
 schemaType: WebPage
@@ -72,7 +72,7 @@ De twee lagen zijn onafhankelijk. Zelfs als de ene op de een of andere manier zo
 
 Velcrypt werkt [volledig offline, zonder account](id:offline-no-account). Er zijn geen servers, geen uploads en geen kopie van je sleutels buiten je telefoon. Dat ontwerp schrapt een hele categorie risico's: er is geen database om te hacken en geen medewerker die je bestanden zou kunnen ontsleutelen.
 
-Het heeft ook een prijs. Omdat de sleutels alleen op het toestel en alleen via je patroon bestaan, kan niemand een kluis herstellen als het patroon vergeten is of de telefoon kwijt is. Een versleutelde back-upoptie is gepland, maar zit niet in de eerste versie.
+Het heeft ook een prijs. Omdat de sleutels alleen op het toestel en alleen via je patroon bestaan, kan niemand een kluis herstellen als het patroon vergeten is. Raak je de telefoon kwijt, dan helpt alleen een versleuteld back-upbestand dat je zelf hebt gemaakt. Dat bestand is beveiligd met een eigen back-upwachtwoord, dat evenmin te herstellen is.
 
 ## Wat versleuteling niet afdekt
 

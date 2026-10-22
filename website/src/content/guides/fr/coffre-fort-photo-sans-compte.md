@@ -20,7 +20,7 @@ keywords:
   - "coffre-fort photo local iphone"
   - "coffre-fort photo sans internet"
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Ce que vous gagnez avec un coffre-fort photo sans compte ni cloud, ce que vous perdez, et des tests simples pour vérifier qu’une app reste hors ligne."
 category: choosing
 order: 23
@@ -127,6 +127,6 @@ Rien de tout cela ne rend une app mauvaise. Cela signifie simplement qu’elle n
 
 Velcrypt est conçu comme un coffre sur l’appareil, sans compte. Pas d’inscription, pas d’e-mail, pas de serveurs, aucun envoi, et aucune analyse de ce que vous stockez ([hors ligne, sans compte](id:offline-no-account)). Photos, vidéos et documents sont chiffrés sur l’iPhone en AES-256-GCM avec des clés dérivées du schéma que vous tracez ([chiffrement](id:encryption)).
 
-Il porte donc aussi les contreparties décrites plus haut. Dans la première version, le contenu du coffre est exclu des sauvegardes iCloud et sur ordinateur : si vous perdez le téléphone ou oubliez votre schéma, le contenu est irrécupérable, par vous comme par nous. Nous expliquons quoi faire et à quoi ne pas s’attendre dans [schéma de coffre oublié ?](id:forgot-vault-pattern). Une option de sauvegarde chiffrée est prévue à l’avenir.
+Il porte donc aussi les contreparties décrites plus haut. Le contenu du coffre est exclu des sauvegardes iCloud et sur ordinateur : si vous oubliez votre schéma, le contenu est irrécupérable, par vous comme par nous. Nous expliquons quoi faire et à quoi ne pas s’attendre dans [schéma de coffre oublié ?](id:forgot-vault-pattern). Contre la perte du téléphone, Velcrypt propose une sauvegarde chiffrée gratuite : un fichier protégé par un mot de passe de sauvegarde, que vous créez dans Réglages → Sauvegarde et enregistrez où vous voulez. Velcrypt ne le reçoit jamais.
 
 Avant de placer dans un coffre hors ligne quoi que ce soit que vous ne pouvez pas vous permettre de perdre, gardez une copie distincte que vous contrôlez. Et quelle que soit l’app choisie, passez-la au crible de notre [liste de vérification de sécurité des coffres-forts photo](id:are-photo-vault-apps-safe).

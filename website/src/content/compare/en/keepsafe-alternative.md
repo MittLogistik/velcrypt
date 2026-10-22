@@ -10,11 +10,11 @@ keyFacts:
   - "Velcrypt needs no account and stores encrypted vaults only on your iPhone."
   - "Apple’s Hidden album and locked notes are free, built-in options with iCloud sync."
   - "Switching means exporting, importing, then deleting leftovers and emptying Recently Deleted."
-  - "Velcrypt v1 has no backup: a forgotten pattern or lost phone means the vault is gone."
+  - "A forgotten Velcrypt pattern can’t be recovered; a lost phone needs an encrypted backup."
 primaryKeyword: "keepsafe alternative"
 keywords: ["keepsafe alternative iphone", "apps like keepsafe", "switch from keepsafe", "keepsafe replacement", "photo vault without account"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Why people look for a Keepsafe alternative, what to check in any photo vault, and how to move your photos without leaving copies behind."
 competitor: "Keepsafe"
 lastChecked: "October 2026"
@@ -28,7 +28,7 @@ faq:
   - q: "Will deleting Keepsafe delete my cloud backup?"
     a: "Not necessarily. Deleting an app usually doesn’t close an account or remove server-side data. Check Keepsafe’s help or account settings for how to delete your account and cloud data."
   - q: "Is there a Keepsafe alternative with cloud backup?"
-    a: "Yes, several vault apps offer cloud features, and Apple’s Hidden album syncs with iCloud Photos. Velcrypt v1 does not; an encrypted backup option is planned."
+    a: "Yes, several vault apps offer cloud features, and Apple’s Hidden album syncs with iCloud Photos. Velcrypt has no cloud sync, but it offers a free encrypted backup file that you store wherever you choose, such as iCloud Drive."
 ---
 
 *Last checked: October 2026. Product details change; check each app's App Store listing for the current version.*
@@ -61,14 +61,14 @@ A photo vault is an app that stores selected photos and videos separately from y
 
 | Option | Account | Cloud copy | Separate secret | Notes |
 |---|---|---|---|---|
-| Velcrypt | None | No (v1) | Yes, a pattern | Hidden vaults, documents, no Face ID |
+| Velcrypt | None | Only an encrypted backup file you save yourself | Yes, a pattern | Hidden vaults, documents, no Face ID |
 | iPhone Hidden album | Apple Account for iCloud | With iCloud Photos | No, device passcode | Free, built in |
 | Apple Notes locked notes | Apple Account for iCloud | With iCloud Notes | Optional Notes password | Best for a few items |
 | Other vault apps | Varies | Varies | Varies | Check each listing |
 
 <!-- TODO verify -->
 
-**Velcrypt** keeps everything on the iPhone, with no account and no servers. You unlock by drawing a pattern on a 5×5 grid, and every pattern opens its own vault; an unknown pattern opens an empty one, which gives you [plausible deniability](id:plausible-deniability-explained). Files are encrypted with AES-256-GCM. The honest trade-off: vault data isn’t included in backups in v1, so a lost phone or forgotten pattern can’t be undone. The [direct comparison with Keepsafe](id:velcrypt-vs-keepsafe) sets the two side by side.
+**Velcrypt** keeps everything on the iPhone, with no account and no servers. You unlock by drawing a pattern on a 5×5 grid, and every pattern opens its own vault; an unknown pattern opens an empty one, which gives you [plausible deniability](id:plausible-deniability-explained). Files are encrypted with AES-256-GCM. The honest trade-off: vault data isn’t included in iCloud or computer backups and a forgotten pattern can’t be undone; to survive a lost phone, you create an encrypted backup file yourself in Settings → Backup. The [direct comparison with Keepsafe](id:velcrypt-vs-keepsafe) sets the two side by side.
 
 **Apple’s built-ins** cost nothing. The [Hidden album](id:velcrypt-vs-iphone-hidden-album) is easy and syncs, but opens with your device passcode. [Locked notes](id:velcrypt-vs-apple-notes-locked-notes) suit a few sensitive images or scans.
 
@@ -76,7 +76,7 @@ A photo vault is an app that stores selected photos and videos separately from y
 
 ## When staying with Keepsafe may make sense
 
-If cloud backup is the feature you rely on most, and you’re comfortable with an account, Keepsafe may still be the better fit. Velcrypt v1 doesn’t offer backup or sync, and it isn’t available on Android.
+If cloud backup is the feature you rely on most, and you’re comfortable with an account, Keepsafe may still be the better fit. Velcrypt doesn’t offer automatic cloud backup or sync — only a manual encrypted backup file — and it isn’t available on Android.
 
 ## How to switch without leaving copies
 

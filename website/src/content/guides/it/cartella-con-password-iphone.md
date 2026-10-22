@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "cartella con password iphone"
 keywords: ["bloccare app file iphone", "proteggere cartella con password iphone", "bloccare cartella iphone", "proteggere file con password iphone", "cartella sicura iphone", "nascondere file iphone"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Cosa può e non può bloccare l’app File, e i modi pratici per proteggere una cartella di documenti su iPhone."
 category: hiding
 order: 6
@@ -111,4 +111,4 @@ Per documenti d’identità e dati sanitari in particolare, il caso d’uso su [
 
 Velcrypt conserva i [documenti privati](id:private-documents) nelle stesse casseforti cifrate di foto e video. Li importi dall’app File e vengono cifrati sul dispositivo con AES-256-GCM, con chiavi derivate dalla tua sequenza di sblocco. Non c’è nessun account e niente va su un server; la pagina sull’[archiviazione offline senza account](id:offline-no-account) spiega cosa significa in pratica.
 
-Poiché i dati della cassaforte sono esclusi dai backup di iCloud e del computer, conserva una copia indipendente di ogni documento che non puoi permetterti di perdere, in un posto di cui ti fidi. Se perdi il telefono o dimentichi la sequenza, nessuno può aprire la cassaforte, nemmeno Velcrypt.
+Poiché i dati della cassaforte sono esclusi dai backup di iCloud e del computer, crea un backup cifrato in Impostazioni → Backup per ogni documento che non puoi permetterti di perdere e conservalo in un posto di cui ti fidi. Se dimentichi la sequenza, nessuno può aprire la cassaforte, nemmeno Velcrypt.

@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "tester robustesse schéma de déverrouillage"
 keywords: ["robustesse motif de déverrouillage", "mon schéma est-il sûr", "sécurité verrouillage par schéma", "schéma de déverrouillage 5x5", "idées de schéma sécurisé", "force d’un motif de déverrouillage"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Tracez un motif de test sur une grille 5×5 et obtenez une évaluation approximative de sa robustesse. En local. N’utilisez jamais votre vrai motif."
 toolName: "Testeur de robustesse de motif"
 schemaType: WebPage
@@ -43,7 +43,7 @@ faq:
   - q: "Un motif robuste protège-t-il contre quelqu’un qui me regarde ?"
     a: "Non. Si quelqu’un vous voit le tracer, sa robustesse ne compte plus. Masquez l’écran, et tracez-le là où vous ne pouvez être ni observé ni filmé."
   - q: "Et si j’oublie un motif compliqué ?"
-    a: "Dans la première version de Velcrypt, un motif oublié ne peut être récupéré ni par vous ni par Velcrypt. Choisissez un motif complexe mais mémorisable, et entraînez-vous avant de vous y fier."
+    a: "Dans Velcrypt, un motif oublié ne peut être récupéré ni par vous ni par Velcrypt. Choisissez un motif complexe mais mémorisable, et entraînez-vous avant de vous y fier."
 ---
 
 ## Comment ça fonctionne
@@ -90,4 +90,4 @@ Ce testeur ne stocke ni ne transmet rien, mais l’habitude compte plus que cett
 
 Dans Velcrypt, votre motif est la clé : les clés de chiffrement en sont dérivées avec PBKDF2-HMAC-SHA512 et au moins 600 000 itérations, ce qui rend chaque essai lent. Voir [chiffrement](id:encryption). Chaque motif ouvre aussi son propre coffre, comme l’expliquent [coffres cachés](id:hidden-vaults) et [verrouillage par motif](id:pattern-lock).
 
-Un motif robuste ne protège pas contre quelqu’un qui vous regarde le tracer, un téléphone tendu avec le coffre ouvert, ni un motif oublié. Dans la première version, aucune récupération n’est possible : lisez [motif de coffre oublié](id:forgot-vault-pattern) avant de choisir un motif que vous risqueriez d’oublier.
+Un motif robuste ne protège pas contre quelqu’un qui vous regarde le tracer, un téléphone tendu avec le coffre ouvert, ni un motif oublié. Aucune récupération n’est possible, sauf à partir d’une sauvegarde chiffrée créée à l’avance : lisez [motif de coffre oublié](id:forgot-vault-pattern) avant de choisir un motif que vous risqueriez d’oublier.

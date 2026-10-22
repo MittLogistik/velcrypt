@@ -10,11 +10,11 @@ keyFacts:
   - "Documents in the camera roll sync to every device with iCloud Photos and can appear in widgets and Memories."
   - "Velcrypt imports documents from the Files app and photos from your library into encrypted vaults."
   - "Imported items are copies; delete the originals and empty Recently Deleted afterwards."
-  - "Velcrypt vaults aren’t in iCloud or computer backups in the first version, so keep a second copy of vital documents."
+  - "Velcrypt vaults aren’t in iCloud or computer backups; make an encrypted backup or keep a second copy."
 primaryKeyword: "store id documents securely iphone"
 keywords: ["passport photo on iphone safe", "hide medical photos iphone", "store insurance card iphone", "private documents iphone", "prescription photos privacy"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Passports, insurance cards and medical photos deserve better than the camera roll. Where they leak on iPhone and how to keep them private."
 group: sensitive
 schemaType: Article
@@ -28,7 +28,7 @@ faq:
   - q: "Can I put PDFs in Velcrypt?"
     a: "Yes. Velcrypt imports documents from the Files app, so PDFs such as prescriptions, insurance letters or lab results can be stored in a vault alongside photos."
   - q: "What if I lose the phone with my documents in Velcrypt?"
-    a: "Without your pattern, nobody can open the vault. But in the first version vault data isn’t backed up, so the documents are gone too. Keep originals or a second copy somewhere safe."
+    a: "Without your pattern, nobody can open the vault. But vault data isn’t in iCloud or computer backups, so the documents are gone too unless you saved an encrypted backup file in Settings → Backup. Keep a backup, the originals or a second copy somewhere safe."
 ---
 
 Most of us have done it: photographed a passport at the airport desk, snapped an insurance card for a form, or taken a picture of a rash to show a doctor. It’s practical. But those photos then live in the camera roll, next to holiday pictures and memes, for years.
@@ -65,7 +65,7 @@ When you need to send a document — to a doctor or a visa office — you can us
 
 ## Honest limits
 
-- **No backup in the first version.** Vault data is excluded from iCloud and computer backups. If your phone is lost or you forget your pattern, the documents can’t be recovered. For vital documents, keep the originals or a second copy you control. An encrypted backup option is planned.
+- **No automatic backup.** Vault data is excluded from iCloud and computer backups. If you forget your pattern, the documents can’t be recovered, and a lost phone can only be recovered from an encrypted backup file you made in Settings → Backup. For vital documents, keep a backup, the originals or a second copy you control.
 - **Copies elsewhere aren’t protected.** Emails, chat attachments and iCloud copies stay where they are until you remove them. See [deleting originals after import](id:delete-original-photos-after-import).
 - **Anything you export** leaves the vault and is only as private as wherever it goes.
 - **Someone watching** you draw your pattern, or a phone handed over with the vault open, defeats the lock.

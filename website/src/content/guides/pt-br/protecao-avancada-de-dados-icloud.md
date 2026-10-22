@@ -21,7 +21,7 @@ keywords:
   - "chave de recuperação proteção avançada de dados"
   - "proteção avançada de dados reino unido"
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "O que a Proteção Avançada de Dados criptografa, o que continua padrão, os requisitos de recuperação, as contrapartidas e como ativá-la."
 category: apple
 order: 12
@@ -138,6 +138,6 @@ Se a opção não aparece nos seus ajustes do iCloud, ou aparece acinzentada, co
 
 A Proteção Avançada de Dados e um cofre no aparelho resolvem problemas diferentes. A Proteção Avançada de Dados mantém seus dados do iCloud ilegíveis para a Apple e ainda permite que eles sincronizem e sejam recuperados pelo seu próprio método de recuperação. Um cofre no aparelho impede que certos arquivos vão para a nuvem e coloca um segredo separado entre eles e qualquer pessoa que consiga desbloquear seu celular.
 
-O Velcrypt está na segunda categoria. As fotos, os vídeos e os documentos que você importa são criptografados com AES-256-GCM no iPhone, com chaves derivadas de um padrão que você desenha ([como a criptografia funciona](id:encryption)). Não há conta e nada é enviado ([no aparelho, sem conta](id:offline-no-account)). Na primeira versão, o conteúdo do cofre fica totalmente fora dos backups do iCloud e do computador, o que significa que não há nada a recuperar se o celular for perdido; uma opção de backup criptografado está planejada.
+O Velcrypt está na segunda categoria. As fotos, os vídeos e os documentos que você importa são criptografados com AES-256-GCM no iPhone, com chaves derivadas de um padrão que você desenha ([como a criptografia funciona](id:encryption)). Não há conta e nada é enviado ([no aparelho, sem conta](id:offline-no-account)). O conteúdo do cofre fica totalmente fora dos backups do iCloud e do computador, o que significa que não há nada a recuperar se o celular for perdido, a menos que você mesmo tenha criado um backup criptografado em Ajustes → Backup. Esse arquivo é criptografado com uma senha de backup que você escolhe, então ele pode ficar no iCloud Drive sem depender da Proteção Avançada de Dados.
 
 Muita gente, com bom senso, usa os dois: a Proteção Avançada de Dados para a biblioteca e os backups do dia a dia, e um cofre para os poucos arquivos que não devem sincronizar com lugar nenhum. Se você está avaliando termos de criptografia, nosso [explicador sobre AES-256](id:aes-256-encryption-explained) e [as fotos ocultas vão para o iCloud?](id:are-hidden-photos-saved-to-icloud) são boas próximas leituras.

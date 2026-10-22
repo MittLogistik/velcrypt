@@ -21,7 +21,7 @@ keywords:
   - "chiave di recupero protezione avanzata dei dati"
   - "protezione avanzata dei dati regno unito"
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Cosa cifra la Protezione avanzata dei dati, cosa resta standard, i requisiti di recupero, i compromessi e come attivarla."
 category: apple
 order: 12
@@ -138,6 +138,6 @@ Se non vedi l’opzione nelle impostazioni di iCloud, o è in grigio, controlla 
 
 La Protezione avanzata dei dati e una cassaforte sul dispositivo risolvono problemi diversi. ADP rende i tuoi dati iCloud illeggibili per Apple, continuando a permetterne la sincronizzazione e il recupero tramite il tuo metodo di recupero. Una cassaforte sul dispositivo impedisce a certi file di andare nel cloud e mette un segreto separato tra loro e chiunque possa sbloccare il tuo telefono.
 
-Velcrypt rientra nella seconda categoria. Foto, video e documenti che importi vengono cifrati con AES-256-GCM sull’iPhone, con chiavi derivate da una sequenza che disegni ([come funziona la crittografia](id:encryption)). Non c’è nessun account e niente viene caricato ([sul dispositivo, senza account](id:offline-no-account)). Nella prima versione i contenuti della cassaforte sono del tutto esclusi dai backup di iCloud e del computer, quindi non c’è nulla da recuperare se perdi il telefono; è prevista un’opzione di backup cifrato.
+Velcrypt rientra nella seconda categoria. Foto, video e documenti che importi vengono cifrati con AES-256-GCM sull’iPhone, con chiavi derivate da una sequenza che disegni ([come funziona la crittografia](id:encryption)). Non c’è nessun account e niente viene caricato ([sul dispositivo, senza account](id:offline-no-account)). I contenuti della cassaforte sono del tutto esclusi dai backup di iCloud e del computer, quindi se perdi il telefono puoi recuperare solo ciò che hai salvato in un backup cifrato creato da te.
 
 Molte persone, con buon senso, usano entrambe: ADP per la libreria e i backup di tutti i giorni, e una cassaforte per i pochi file che non devono sincronizzarsi da nessuna parte. Se stai valutando i termini della crittografia, la nostra [guida ad AES-256](id:aes-256-encryption-explained) e [le foto nascoste vengono salvate su iCloud?](id:are-hidden-photos-saved-to-icloud) sono buone letture successive.

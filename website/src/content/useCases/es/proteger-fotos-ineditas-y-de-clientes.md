@@ -10,11 +10,11 @@ keyFacts:
   - "Lo que está en el carrete se sincroniza con todos los dispositivos de tu Cuenta de Apple si Fotos de iCloud está activado."
   - "Los metadatos de una foto pueden revelar el lugar, la fecha y la cámara de una sesión; elimínalos antes de publicar."
   - "Velcrypt guarda fotos, vídeos y documentos en bóvedas cifradas en tu iPhone, organizados en álbumes."
-  - "Velcrypt no tiene sincronización en la nube ni copia de seguridad en la primera versión, así que guarda los originales en tu propio archivo."
+  - "Velcrypt no tiene sincronización en la nube, solo una copia de seguridad cifrada manual, así que guarda los originales en tu propio archivo."
 primaryKeyword: "proteger fotos inéditas iphone"
 keywords: ["guardar fotos de clientes en privado iphone", "fotógrafo privacidad de clientes en el móvil", "ocultar fotos de trabajo iphone", "privacidad para creadores de contenido", "mantener privado el contenido inédito"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Para fotógrafos, artistas y creadores: mantén privado en el iPhone tu trabajo inédito y el de tus clientes, y compártelo solo a propósito."
 group: professional
 schemaType: Article
@@ -28,7 +28,7 @@ faq:
   - q: "¿Puedo organizar proyectos dentro de Velcrypt?"
     a: "Sí. Las bóvedas contienen álbumes, así que puedes tener un álbum por proyecto o por cliente, seleccionar varios elementos a la vez y moverlos entre álbumes."
   - q: "¿Sustituye Velcrypt a mi archivo de fotos?"
-    a: "No. Velcrypt mantiene privadas en tu iPhone las copias de trabajo. No tiene sincronización en la nube y, en la primera versión, no se hace copia de seguridad de la bóveda, así que tus archivos maestros deberían estar en tu propio archivo."
+    a: "No. Velcrypt mantiene privadas en tu iPhone las copias de trabajo. No tiene sincronización en la nube y la bóveda no está en las copias de iCloud, así que tus archivos maestros deberían estar en tu propio archivo."
 ---
 
 Si creas cosas para ganarte la vida, o por pura pasión, seguramente tu iPhone guarda trabajo que todavía no está listo para verse. Ediciones a medias, una sesión bajo embargo, las pruebas de un cliente, bocetos de un encargo o contenido para una plataforma de suscripción. Para quienes crean contenido para adultos, en particular, una filtración no es solo un contratiempo: puede afectar a sus ingresos, a su seguridad y a la privacidad de otras personas. Crees lo que crees, el principio es el mismo: tú decides cuándo y cómo se ve tu trabajo.
@@ -69,7 +69,7 @@ La exportación segura te permite sacar un único archivo cuando llega el moment
 
 ## Límites, con honestidad
 
-- **No es un archivo.** No hay sincronización en la nube y, en la primera versión, tampoco copia de seguridad: si pierdes el móvil u olvidas el patrón, la bóveda no se puede recuperar. Guarda los originales en otro sitio.
+- **No es un archivo.** No hay sincronización en la nube, solo una copia de seguridad cifrada que creas tú: si olvidas el patrón, la bóveda no se puede recuperar, y si pierdes el móvil, solo desde esa copia. Guarda los originales en otro sitio.
 - **Lo exportado sale de la bóveda.** Una vez enviado, un archivo es tan privado como el dispositivo de quien lo recibe.
 - **Capturas de pantalla ajenas.** Una bóveda no puede impedir que alguien fotografíe tu pantalla ni que el destinatario haga una captura de lo que le envías.
 - **Revisa tú los metadatos.** No des por hecho que cualquier exportación elimina la ubicación o los datos de la cámara; pasa los archivos por una herramienta específica antes de publicar.

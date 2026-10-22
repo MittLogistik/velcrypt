@@ -19,7 +19,7 @@ keywords:
   - "hidden album face id"
   - "can someone see my hidden photos"
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "What the Hidden album really protects, who can still open it, and how iCloud sync and Advanced Data Protection change the picture."
 category: apple
 order: 10
@@ -120,4 +120,4 @@ The Hidden album is designed for tidiness and light privacy, not for situations 
 
 Velcrypt takes that approach. Each vault opens with a pattern drawn on a 5×5 grid rather than with Face ID or your device passcode, and its contents are encrypted with AES-256-GCM using keys derived from that pattern ([how the encryption works](id:encryption)). Every pattern opens its own vault and an unfamiliar pattern simply opens an empty one, so nothing reveals how many vaults exist ([hidden vaults](id:hidden-vaults)). Everything stays on the device, with no account and no cloud copy.
 
-That also brings honest trade-offs. Vault content is not included in iCloud or computer backups in the first version, so if you lose the phone or forget the pattern, the content can’t be recovered. And importing a photo copies it, so you still need to remove the original from Photos and Recently Deleted. For a side-by-side view, read [Velcrypt vs the iPhone Hidden album](id:velcrypt-vs-iphone-hidden-album).
+That also brings honest trade-offs. Vault content is not included in iCloud or computer backups, so if you forget the pattern, or lose the phone without having made an encrypted backup file, the content can’t be recovered. And importing a photo copies it, so you still need to remove the original from Photos and Recently Deleted. For a side-by-side view, read [Velcrypt vs the iPhone Hidden album](id:velcrypt-vs-iphone-hidden-album).

@@ -1,20 +1,21 @@
 ---
 pageId: privacy
 title: "Velcrypt Datenschutzerklärung"
-description: "Datenschutzerklärung von Velcrypt: Die App erhebt keine personenbezogenen Daten, Tresorinhalte verlassen nie dein iPhone, die Website nutzt keine Cookies."
+description: "Datenschutzerklärung von Velcrypt: Die App erhebt keine personenbezogenen Daten, Tresorinhalte werden nie an uns gesendet, keine Cookies."
 h1: "Datenschutzerklärung"
 navTitle: "Datenschutz"
-answer: "Die Velcrypt-App erhebt keine personenbezogenen Daten: Es gibt kein Konto, Tresorinhalte verlassen nie dein iPhone, und es gibt weder Werbung noch Analysen zu dem, was du speicherst. Die Website setzt keine Cookies und verwendet keine Tracking-Skripte."
+answer: "Die Velcrypt-App erhebt keine personenbezogenen Daten: Es gibt kein Konto, Tresorinhalte werden nie an uns gesendet, und es gibt weder Werbung noch Analysen zu dem, was du speicherst. Die Website setzt keine Cookies und verwendet keine Tracking-Skripte."
 keyFacts:
   - "Die App erhebt keine personenbezogenen Daten und braucht kein Konto."
   - "Tresorinhalte werden auf deinem iPhone verschlüsselt und nie an uns gesendet."
+  - "Backup-Dateien bleiben dort, wo du sie speicherst; wir erhalten sie nie."
   - "Käufe wickelt Apple ab; wir erhalten keine Zahlungsdaten."
   - "Die Website nutzt keine Cookies und keine Analyse- oder Tracking-Skripte."
-  - "Gültig ab: 21. Oktober 2026 (Entwurf, rechtliche Prüfung ausstehend)."
+  - "Gültig ab: 22. Oktober 2026 (Entwurf, rechtliche Prüfung ausstehend)."
 primaryKeyword: "velcrypt datenschutz"
 keywords: ["velcrypt datenschutzerklärung", "velcrypt datenerhebung", "sammelt velcrypt daten", "foto tresor app datenschutz"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 schemaType: WebPage
 order: 6
 related: [terms, security, offline-no-account, support, about]
@@ -31,9 +32,9 @@ faq:
 
 **Entwurf – rechtliche Prüfung ausstehend.** Diese Erklärung beschreibt unsere aktuelle Praxis zutreffend, ihr Wortlaut wurde aber noch nicht anwaltlich geprüft und kann sich vor dem Start ändern.
 
-**Gültig ab:** 21. Oktober 2026
+**Gültig ab:** 22. Oktober 2026
 
-Diese Datenschutzerklärung erklärt, welche Informationen Velcrypt („wir“, „uns“) verarbeitet, wenn du die Velcrypt-App für das iPhone und die Website velcrypt.app nutzt. Kurz gesagt: Die App ist so gebaut, dass wir deine Inhalte nie erhalten, und überall sonst erheben wir so wenig wie möglich.
+Diese Datenschutzerklärung erklärt, welche Informationen Swedish Treats AB, Schweden, Herausgeber von Velcrypt („wir“, „uns“), verarbeitet, wenn du die Velcrypt-App für das iPhone und die Website velcrypt.app nutzt. Kurz gesagt: Die App ist so gebaut, dass wir deine Inhalte nie erhalten, und überall sonst erheben wir so wenig wie möglich.
 
 ## Die Velcrypt-App
 
@@ -43,7 +44,11 @@ Die Velcrypt-App erhebt keine personenbezogenen Daten. Es gibt kein Konto, keine
 
 ### Tresorinhalte bleiben auf deinem Gerät
 
-Fotos, Videos und Dokumente, die du zu Velcrypt hinzufügst, werden auf deinem iPhone verschlüsselt und dort gespeichert. Sie werden nie zu uns oder auf einen von uns betriebenen Server hochgeladen, und wir haben keine Möglichkeit, sie anzusehen, zu entschlüsseln oder wiederherzustellen. In der aktuellen Version sind Tresordaten außerdem von iCloud- und Computer-Backups ausgeschlossen. Wie die Verschlüsselung funktioniert, beschreibt die Seite zum [Sicherheitsmodell](id:security).
+Fotos, Videos und Dokumente, die du zu Velcrypt hinzufügst, werden auf deinem iPhone verschlüsselt und dort gespeichert. Sie werden nie zu uns oder auf einen von uns betriebenen Server hochgeladen, und wir haben keine Möglichkeit, sie anzusehen, zu entschlüsseln oder wiederherzustellen. Tresordaten sind außerdem von iCloud- und Computer-Backups ausgeschlossen. Wie die Verschlüsselung funktioniert, beschreibt die Seite zum [Sicherheitsmodell](id:security).
+
+### Verschlüsselte Backups
+
+Wenn du unter Einstellungen → Backup ein verschlüsseltes Backup erstellst, erzeugt Velcrypt auf deinem iPhone eine `.velcrypt`-Datei, geschützt mit einem Backup-Passwort, das du wählst. Die Datei bleibt dort, wo du sie speicherst, etwa in „Dateien“, in iCloud Drive oder auf einem Computer. Velcrypt erhält sie nie und kennt dein Backup-Passwort nicht. Speicherst du sie in iCloud Drive, bewahrt Apple sie gemäß den Bedingungen deines Apple Accounts auf.
 
 ### Keine Analyse von Inhalten, keine Werbung
 
@@ -51,7 +56,7 @@ Die App enthält keine Werbung und erhebt keine Analysedaten zu deinen Tresorinh
 
 ### Käufe
 
-Käufe, etwa das optionale Premium-Upgrade, werden von Apple über den App Store abgewickelt. Apple verarbeitet deine Zahlung; wir erhalten weder deinen Namen noch deine Kartennummer oder Rechnungsadresse. Der App Store bestätigt den Kauf gegenüber der App auf deinem Gerät, damit die entsprechenden Funktionen freigeschaltet werden können. Wie Apple selbst mit deinen Daten umgeht, ist unter [apple.com/privacy](https://www.apple.com/privacy/) beschrieben.
+Käufe, etwa ein Premium-Abo oder der lebenslange Kauf, werden von Apple über den App Store abgewickelt. Apple verarbeitet deine Zahlung, Verlängerungen und Erstattungen; wir erhalten weder deinen Namen noch deine Kartennummer oder Rechnungsadresse. Der App Store bestätigt den Kauf gegenüber der App auf deinem Gerät, damit die entsprechenden Funktionen freigeschaltet werden können. Wie Apple selbst mit deinen Daten umgeht, ist unter [apple.com/privacy](https://www.apple.com/privacy/) beschrieben.
 
 ### Informationen, die Apple mit uns teilen kann
 

@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "poner contraseña a una carpeta iphone"
 keywords: ["bloquear app archivos iphone", "carpeta con contraseña iphone", "bloquear carpeta iphone", "proteger archivos con contraseña iphone", "carpeta segura iphone", "ocultar archivos iphone"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Lo que la app Archivos puede y no puede bloquear, y las formas prácticas de proteger una carpeta de documentos en el iPhone."
 category: hiding
 order: 6
@@ -111,4 +111,4 @@ Para documentos de identidad e historiales de salud en concreto, el caso de uso 
 
 Velcrypt guarda [documentos privados](id:private-documents) en las mismas bóvedas cifradas que las fotos y los videos. Los importas desde la app Archivos y se cifran en el dispositivo con AES-256-GCM mediante claves derivadas de tu patrón de desbloqueo. No hay cuenta y nada va a un servidor; la página sobre [almacenamiento sin conexión y sin cuenta](id:offline-no-account) explica qué significa eso en la práctica.
 
-Como los datos de la bóveda están excluidos de las copias de seguridad de iCloud y del ordenador, guarda una copia independiente de cualquier documento que no te puedas permitir perder, en un sitio de tu confianza. Si pierdes el teléfono u olvidas el patrón, nadie podrá abrir la bóveda, tampoco Velcrypt.
+Como los datos de la bóveda están excluidos de las copias de seguridad de iCloud y del ordenador, crea una copia de seguridad cifrada en Ajustes → Copia de seguridad de cualquier documento que no te puedas permitir perder y guárdala en un sitio de tu confianza. Si olvidas el patrón, nadie podrá abrir la bóveda, tampoco Velcrypt.

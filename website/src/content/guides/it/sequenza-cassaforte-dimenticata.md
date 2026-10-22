@@ -4,17 +4,18 @@ title: "Password o sequenza della cassaforte foto dimenticata?"
 description: "Hai dimenticato password o sequenza della cassaforte foto? Cosa provare prima, perché Velcrypt non ha reset, come gestiscono il recupero le altre app."
 h1: "Hai dimenticato la password o la sequenza della cassaforte foto? Cosa puoi e non puoi fare"
 navTitle: "Sequenza dimenticata"
-answer: "In Velcrypt una sequenza dimenticata non si può reimpostare né recuperare, né da te né da Velcrypt, perché la chiave esiste solo nella tua memoria e nessun server ne conserva una copia. Quello che puoi fare è riprovare con calma piccole varianti della sequenza. Altre app cassaforte possono offrire il recupero tramite email o account: controlla quale usa la tua."
+answer: "In Velcrypt una sequenza dimenticata non si può reimpostare né recuperare, né da te né da Velcrypt, perché nessun server ne conserva una copia. Puoi riprovare con calma piccole varianti e, se avevi creato un backup cifrato di quella cassaforte, ripristinarne i contenuti con la password del backup. Altre app possono offrire il recupero tramite email o account."
 keyFacts:
   - "Velcrypt non ha reset, email di recupero né frase di recupero: le chiavi derivano dalla tua sequenza sul dispositivo."
   - "In Velcrypt una sequenza sbagliata apre una cassaforte vuota invece di mostrare un errore, quindi una cassaforte vuota spesso indica una sequenza leggermente diversa."
-  - "Nella prima versione i dati della cassaforte sono esclusi dai backup di iCloud e del computer."
-  - "È prevista un’opzione di backup / recupero cifrato, senza date promesse."
-  - "Se perdere qualcosa sarebbe insopportabile, conservane una copia in un altro posto di cui ti fidi."
+  - "I dati della cassaforte sono esclusi dai backup di iCloud e del computer."
+  - "Un backup cifrato creato in Impostazioni → Backup si apre con la sua password, non con la sequenza."
+  - "Anche una password del backup dimenticata non si può recuperare."
+  - "Se perdere qualcosa sarebbe insopportabile, crea un backup cifrato e conservalo in un posto di cui ti fidi."
 primaryKeyword: "password cassaforte foto dimenticata"
 keywords: ["sequenza cassaforte dimenticata", "recuperare cassaforte foto", "app cassaforte foto pin dimenticato", "reimpostare sequenza cassaforte", "bloccato fuori dalla cassaforte foto"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Cosa provare prima, perché Velcrypt non può reimpostare una sequenza dimenticata, come gestiscono il recupero le altre app e le abitudini che evitano i blocchi."
 category: security
 order: 44
@@ -25,11 +26,11 @@ faq:
   - q: "La mia cassaforte all’improvviso sembra vuota. I miei dati sono spariti?"
     a: "Probabilmente no. In Velcrypt una sequenza che l’app non ha mai visto apre una nuova cassaforte vuota, quindi una cassaforte vuota di solito significa che hai disegnato una sequenza leggermente diversa. Chiudi l’app e riprova con attenzione, ed evita di aggiungere qualcosa alla cassaforte vuota."
   - q: "Reinstallare Velcrypt mi permette di ricominciare e tenere le foto?"
-    a: "No. Eliminare l’app elimina dal dispositivo i suoi dati cifrati. Reinstallarla ti dà un’app pulita, non l’accesso alle vecchie casseforti. Eliminala solo se hai accettato che il contenuto è perso."
+    a: "No. Eliminare l’app elimina dal dispositivo i suoi dati cifrati. Reinstallarla ti dà un’app pulita, non l’accesso alle vecchie casseforti. Solo un backup cifrato salvato fuori dall’app sopravvive. Eliminala solo se hai accettato che il contenuto è perso."
   - q: "Come gestiscono un PIN dimenticato le altre app cassaforte per foto?"
     a: "Molte app basate su account ti permettono di reimpostare il PIN via email o tramite un account cloud, il che significa che esiste una via di recupero al di fuori della tua memoria. Consulta le pagine di aiuto della tua app prima che ti serva, e tieni presente che una via di recupero può essere anche un accesso per qualcun altro."
-  - q: "Velcrypt aggiungerà un’opzione di recupero?"
-    a: "È prevista un’opzione di backup e recupero cifrato, ma non c’è una data di uscita. Finché non esiste, considera la tua sequenza come l’unica chiave."
+  - q: "Un backup di Velcrypt può aiutarmi se ho dimenticato la sequenza?"
+    a: "Sì, se lo avevi creato prima. Il backup si apre con la password del backup, non con la sequenza: apri una cassaforte con una nuova sequenza e ripristina il backup da Impostazioni → Backup. Senza backup, o senza la sua password, il contenuto non si può recuperare."
 ---
 
 Quella sensazione di vuoto quando la forma che hai disegnato cento volte all’improvviso non funziona è reale. Prima di tutto: non eliminare né reinstallare l’app. La maggior parte delle sequenze «dimenticate» si rivela ricordata leggermente male, e ci sono cose sensate da provare prima.
@@ -50,14 +51,14 @@ Procedi con calma:
 
 ## Se è davvero persa
 
-Se niente di tutto questo funziona, ecco la risposta onesta: il contenuto non si può recuperare. Né da te, né da Velcrypt, né da nessun altro.
+Se niente di tutto questo funziona, ecco la risposta onesta: la sequenza non si può recuperare. Né da te, né da Velcrypt, né da nessun altro. L’unica eccezione riguarda i contenuti: se avevi creato un backup cifrato di quella cassaforte e ricordi la password del backup, puoi ripristinarlo in una cassaforte con una nuova sequenza.
 
 Non è una regola che si possa aggirare. È il modo in cui funziona la crittografia:
 
 - Velcrypt non ha account, email né server. Vedi [offline, senza account](id:offline-no-account).
 - Le chiavi delle tue casseforti vengono sbloccate da una chiave derivata dalla tua sequenza sul dispositivo, usando PBKDF2 e un salt conservato nel Portachiavi di iOS. Senza la sequenza, quella chiave non si può ottenere.
 - I dati della cassaforte sono cifrati con AES-256-GCM, che non si può violare per forza bruta. La [guida ad AES-256](id:aes-256-encryption-explained) spiega perché.
-- Nella prima versione i dati della cassaforte sono esclusi dai backup di iCloud e di Finder/iTunes, quindi non c’è una copia precedente da cui ripristinare.
+- I dati della cassaforte sono esclusi dai backup di iCloud e di Finder/iTunes, quindi da lì non c’è una copia precedente da ripristinare. Esiste solo il backup cifrato che hai eventualmente creato tu.
 
 Le stesse proprietà che rendono privata la tua cassaforte rendono definitiva una sequenza dimenticata. Un sistema con un pulsante «hai dimenticato la sequenza?» conserva per forza una via d’accesso che non dipende solo da te.
 
@@ -91,7 +92,7 @@ Prova una forma simile (non quella vera) con il [verificatore di robustezza dell
 
 ### Conserva gli originali quando una perdita farebbe male
 
-Se perdere una foto o un documento sarebbe davvero insopportabile, una cassaforte non dovrebbe essere l’unico posto in cui si trova. Per gli elementi insostituibili, conserva una copia aggiuntiva in un posto di cui ti fidi, come un’unità cifrata in un luogo sicuro. È un compromesso consapevole: ogni copia in più è un posto in più da proteggere.
+Se perdere una foto o un documento sarebbe davvero insopportabile, una cassaforte non dovrebbe essere l’unico posto in cui si trova. Per gli elementi insostituibili, crea un backup cifrato in Impostazioni → Backup e conservalo in un posto di cui ti fidi, per esempio iCloud Drive o un computer, con una password del backup che ricorderai. È un compromesso consapevole: ogni copia in più è un posto in più da proteggere.
 
 ### Non scrivere la sequenza vicino al telefono
 
@@ -110,4 +111,4 @@ La [guida alle casseforti per foto senza account](id:photo-vault-without-account
 
 ## Dove si inserisce Velcrypt
 
-Velcrypt è per scelta una cassaforte solo sul dispositivo: niente account, niente server, nessuna frase di recupero, nessuna copia delle tue chiavi altrove. È prevista un’opzione di backup e recupero cifrato come parte di un upgrade Premium facoltativo, senza una data promessa. Se hai dubbi, l’[assistenza](id:support) può spiegarti come si comporta l’app, ma nessuno lì può aprire una cassaforte al posto tuo.
+Velcrypt è per scelta una cassaforte solo sul dispositivo: niente account, niente server, nessuna frase di recupero, nessuna copia delle tue chiavi altrove. Offre invece un backup cifrato gratuito, che crei tu e che si apre solo con la password del backup scelta da te. Se hai dubbi, l’[assistenza](id:support) può spiegarti come si comporta l’app, ma nessuno lì può aprire una cassaforte al posto tuo.

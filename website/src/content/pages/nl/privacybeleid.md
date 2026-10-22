@@ -10,11 +10,12 @@ keyFacts:
   - "Kluisinhoud wordt op je iPhone versleuteld en nooit naar ons gestuurd."
   - "Aankopen lopen via Apple; wij ontvangen geen betaalgegevens."
   - "De website gebruikt geen cookies en geen analyse- of trackingscripts."
-  - "Ingangsdatum: 21 oktober 2026 (concept, juridische controle volgt nog)."
+  - "Back-upbestanden staan alleen waar jij ze bewaart; wij ontvangen ze nooit."
+  - "Ingangsdatum: 22 oktober 2026 (concept, juridische controle volgt nog)."
 primaryKeyword: "velcrypt privacybeleid"
 keywords: ["velcrypt privacy", "velcrypt gegevensverzameling", "verzamelt velcrypt gegevens", "privacybeleid fotokluis"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 schemaType: WebPage
 order: 6
 related: [terms, security, offline-no-account, support, about]
@@ -31,9 +32,9 @@ faq:
 
 **Concept — juridische controle volgt nog.** Dit beleid beschrijft onze huidige werkwijze nauwkeurig, maar de formulering is nog niet door een jurist beoordeeld en kan vóór de lancering veranderen.
 
-**Ingangsdatum:** 21 oktober 2026
+**Ingangsdatum:** 22 oktober 2026
 
-Dit privacybeleid legt uit met welke informatie Velcrypt (“wij”, “ons”) omgaat wanneer je de Velcrypt-app voor iPhone en de website velcrypt.app gebruikt. De korte versie: de app is zo ontworpen dat wij je inhoud nooit ontvangen, en overal elders verzamelen we zo weinig mogelijk.
+Dit privacybeleid legt uit met welke informatie Velcrypt (“wij”, “ons”), geëxploiteerd door Swedish Treats AB in Zweden, omgaat wanneer je de Velcrypt-app voor iPhone en de website velcrypt.app gebruikt. De korte versie: de app is zo ontworpen dat wij je inhoud nooit ontvangen, en overal elders verzamelen we zo weinig mogelijk.
 
 ## De Velcrypt-app
 
@@ -43,7 +44,11 @@ De Velcrypt-app verzamelt geen persoonsgegevens. Er is geen account, geen regist
 
 ### Kluisinhoud blijft op je apparaat
 
-Foto’s, video’s en documenten die je aan Velcrypt toevoegt, worden op je iPhone versleuteld en daar opgeslagen. Ze worden nooit geüpload naar ons of naar een server die wij beheren, en we kunnen ze op geen enkele manier bekijken, ontsleutelen of herstellen. In de huidige versie zijn kluisgegevens bovendien uitgesloten van iCloud- en computerback-ups. Hoe de versleuteling werkt, staat op de pagina over het [beveiligingsmodel](id:security).
+Foto’s, video’s en documenten die je aan Velcrypt toevoegt, worden op je iPhone versleuteld en daar opgeslagen. Ze worden nooit geüpload naar ons of naar een server die wij beheren, en we kunnen ze op geen enkele manier bekijken, ontsleutelen of herstellen. Kluisgegevens zijn bovendien uitgesloten van iCloud- en computerback-ups. Hoe de versleuteling werkt, staat op de pagina over het [beveiligingsmodel](id:security).
+
+### Versleutelde back-upbestanden
+
+Als je Instellingen → Back-up gebruikt, maakt de app op je iPhone een versleuteld `.velcrypt`-bestand, beveiligd met een back-upwachtwoord dat je zelf kiest. Het bestand wordt alleen bewaard waar jij kiest — bijvoorbeeld in Bestanden, iCloud Drive of op een computer — en valt daarna onder de voorwaarden van die dienst. Velcrypt ontvangt het bestand en het back-upwachtwoord nooit, en we kunnen geen van beide openen of herstellen.
 
 ### Geen analyse van inhoud, geen advertenties
 
@@ -51,7 +56,7 @@ De app bevat geen advertenties en verzamelt geen analysegegevens over je kluisin
 
 ### Aankopen
 
-Elke aankoop, zoals de optionele Premium-upgrade, wordt door Apple verwerkt via de App Store. Apple handelt je betaling af; wij ontvangen je naam, kaartnummer of factuuradres niet. De App Store bevestigt de aankoop aan de app op je apparaat, zodat die de bijbehorende functies kan ontgrendelen. Hoe Apple zelf met je gegevens omgaat, lees je op [apple.com/privacy](https://www.apple.com/privacy/).
+Elke aankoop, zoals de optionele Premium-upgrade, wordt door Apple verwerkt via de App Store. Apple handelt je betaling af; Velcrypt ontvangt geen betaalgegevens, en wij ontvangen je naam, kaartnummer of factuuradres niet. De App Store bevestigt de aankoop aan de app op je apparaat, zodat die de bijbehorende functies kan ontgrendelen. Hoe Apple zelf met je gegevens omgaat, lees je op [apple.com/privacy](https://www.apple.com/privacy/).
 
 ### Informatie die Apple met ons kan delen
 

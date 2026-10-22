@@ -4,17 +4,17 @@ title: "Wat is een lokkluis? Zo maak je een geloofwaardige"
 description: "Een lokkluis is een tweede, onschuldige kluis die je onder druk opent. Hoe het werkt, hoe je er in Velcrypt een geloofwaardige maakt en waar het ophoudt."
 h1: "Wat is een lokkluis, en hoe maak je hem geloofwaardig?"
 navTitle: "Wat is een lokkluis?"
-answer: "Een lokkluis (of nepkluis) is een tweede kluis, geopend met een ander geheim, met onschuldige maar geloofwaardige inhoud. Zet iemand je onder druk om je kluis te openen, dan open je in plaats daarvan de lokkluis. In Velcrypt opent elk nieuw patroon een eigen kluis, dus een lokkluis is gewoon een tweede patroon dat je vult met gewone foto's en documenten."
+answer: "Een lokkluis (of nepkluis) is een tweede kluis, geopend met een ander geheim, met onschuldige maar geloofwaardige inhoud. Zet iemand je onder druk om je kluis te openen, dan open je in plaats daarvan de lokkluis. In Velcrypt opent elk nieuw patroon een eigen kluis, dus een lokkluis is gewoon een tweede patroon dat je vult met gewone foto's en documenten. Een tweede kluis vraagt om Premium."
 keyFacts:
   - "Een lokkluis is een echte, werkende kluis gevuld met onschuldige inhoud die je zonder bezwaar laat zien."
   - "In Velcrypt is elk patroon een eigen kluis en is er geen lijst van kluizen die de andere verraadt."
   - "Een lege lokkluis is verdacht; een geleefde lokkluis met albums en recente items overtuigt."
   - "Een lokkluis beschermt tegen rondsnuffelen en lichte druk, niet tegen forensisch onderzoek of iemand die je zag tekenen."
-  - "Een dwangpatroon dat ook de toegang tot andere kluizen wegneemt, is een geplande Premium-functie (binnenkort beschikbaar)."
+  - "Een tweede kluis, en dus een lokkluis, vraagt om Premium; een dwangpatroon is gepland voor een toekomstige update."
 primaryKeyword: "lokkluis"
 keywords: ["wat is een lokkluis", "nepkluis app", "lokwachtwoord fotokluis", "nep kluis app", "lokpatroon", "tweede kluis iphone"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Wat een lokkluis is, hoe je met een tweede Velcrypt-patroon een geleefde lokkluis bouwt en welke grenzen je moet kennen."
 category: security
 order: 41
@@ -25,7 +25,7 @@ howTo:
     - name: "Kies een tweede patroon"
       text: "Kies een nieuw patroon van minstens 6 stippen met minstens één richtingsverandering, duidelijk anders dan je echte patroon in vorm en beginpunt."
     - name: "Teken het op het ontgrendelscherm"
-      text: "Velcrypt opent een nieuwe, lege kluis voor elk patroon dat de app nog niet kent. Er is geen extra instelling nodig."
+      text: "Met Premium opent Velcrypt een nieuwe, lege kluis voor elk patroon dat de app nog niet kent. Er is geen extra instelling nodig."
     - name: "Bedenk een geloofwaardig doel"
       text: "Kies een alledaagse reden voor de kluis, zoals kopieën van identiteitsbewijzen, bonnetjes, schermafbeeldingen van boekingen of cadeau-ideeën."
     - name: "Voeg echte, onschuldige inhoud toe"
@@ -40,7 +40,7 @@ faq:
   - q: "Kan iemand zien dat een kluis een lokkluis is?"
     a: "Niet vanuit de app: Velcrypt houdt geen lijst van kluizen bij en geeft geen enkele hint dat er andere bestaan. Wat een lokkluis kan verraden, is de inhoud, bijvoorbeeld als hij leeg, verouderd of duidelijk in scène gezet is."
   - q: "Is een lokkluis hetzelfde als een dwangpatroon?"
-    a: "Nee. Een lokkluis opent gewoon een andere kluis. Een dwangpatroon, een geplande Premium-functie van Velcrypt die binnenkort beschikbaar komt, zou een gekozen kluis openen en tegelijk stilletjes de toegang tot de andere wegnemen."
+    a: "Nee. Een lokkluis opent gewoon een andere kluis. Een dwangpatroon, een functie die Velcrypt plant voor een toekomstige update, zou een gekozen kluis openen en tegelijk stilletjes de toegang tot de andere wegnemen."
   - q: "Moet ik een lokkluis gebruiken bij politie of grensbeambten?"
     a: "Deze gids kan geen juridisch advies geven. Ambtenaren misleiden kan in veel landen strafbaar zijn. Een lokkluis is vooral bedoeld voor alledaags rondsnuffelen en informele druk; voor officiële situaties ken je je rechten en praat je met een advocaat."
 ---
@@ -57,7 +57,7 @@ Wat een lokkluis laat werken, is niet de techniek maar het verhaal. Een lokkluis
 
 ## Hoe lokkluizen werken in Velcrypt
 
-De meeste apps behandelen de lokkluis als een speciale instelling: één echte pincode, één nep-pincode. Velcrypt kiest een eenvoudiger aanpak. Elk patroon is een eigen kluis:
+De meeste apps behandelen de lokkluis als een speciale instelling: één echte pincode, één nep-pincode. Velcrypt kiest een eenvoudiger aanpak. Elk patroon is een eigen kluis (de gratis versie heeft één kluis; meer kluizen horen bij Premium):
 
 - Er is nergens in de app een lijst van kluizen.
 - Een patroon dat Velcrypt nooit heeft gezien, opent een nieuwe, lege kluis.
@@ -68,7 +68,7 @@ Een lokkluis in Velcrypt is dus geen functie die je aanzet. Het is gewoon een tw
 ## Stap voor stap een geloofwaardige lokkluis maken
 
 1. **Kies een tweede patroon.** Het moet de gewone regels volgen (één doorlopende lijn door minstens 6 stippen op het raster van 5×5, minstens één richtingsverandering). Zorg dat je het onder stress makkelijk terugweet, maar dat het in vorm en beginpunt verschilt van je echte patroon.
-2. **Teken het op het ontgrendelscherm.** Velcrypt opent er een lege kluis voor. Verder hoef je niets in te stellen.
+2. **Teken het op het ontgrendelscherm.** Met Premium opent Velcrypt er een lege kluis voor. Verder hoef je niets in te stellen.
 3. **Geef hem een reden van bestaan.** Vraag je af waarom iemand zoals jij aannemelijk een kluis zou gebruiken. Gangbare, geloofwaardige antwoorden: kopieën van identiteitsbewijzen en verzekeringspapieren, bonnetjes en garantiebewijzen, schermafbeeldingen van boekingen, cadeau-ideeën, een verrassing die je voorbereidt.
 4. **Vul hem met echte inhoud.** Importeer een paar tientallen items, verdeeld over een paar [albums](id:albums), bijvoorbeeld „Documenten”, „Bonnetjes” en „Cadeau-ideeën”. Gebruik echt, onschuldig materiaal in plaats van willekeurige stockfoto's.
 5. **Houd hem levend.** Voeg om de paar weken iets toe. Een lokkluis waarvan het nieuwste item een jaar oud is, ziet er verlaten uit, en dat roept de vraag op: „En waar bewaar je de recente dingen dan?”
@@ -93,7 +93,7 @@ Een lokkluis is een sociaal hulpmiddel met goede cryptografie erachter. Het is g
 
 ## Lokkluis vs dwangpatroon
 
-Een lokkluis opent een andere kluis en laat al het andere ongemoeid. Een **dwangpatroon** gaat een stap verder: het opent een kluis die je hebt gekozen en neemt tegelijk stilletjes de toegang tot de andere weg. In Velcrypt is het [dwangpatroon](id:duress-pattern) een geplande Premium-functie die binnenkort beschikbaar komt. Tot die tijd dekt een goed onderhouden lokkluis de meeste alledaagse situaties, zoals een nieuwsgierige partner, een vriend die door je telefoon scrolt of een bemoeizuchtige collega.
+Een lokkluis opent een andere kluis en laat al het andere ongemoeid. Een **dwangpatroon** gaat een stap verder: het opent een kluis die je hebt gekozen en neemt tegelijk stilletjes de toegang tot de andere weg. In Velcrypt is het [dwangpatroon](id:duress-pattern) gepland voor een toekomstige update. Tot die tijd dekt een goed onderhouden lokkluis de meeste alledaagse situaties, zoals een nieuwsgierige partner, een vriend die door je telefoon scrolt of een bemoeizuchtige collega.
 
 ## Waar Velcrypt past
 

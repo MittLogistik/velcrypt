@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "låsa bilder i anteckningar iphone"
 keywords: ["dölja bilder i låsta anteckningar", "apple anteckningar låsa bilder", "låst anteckning iphone bilder", "anteckningar privata bilder", "låst anteckning vs valvapp"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Dölja bilder i en låst anteckning i Apple Anteckningar mot ett särskilt krypterat valv: bekvämlighet, kapacitet, synk och vem som kan öppna dem."
 competitor: "Låsta anteckningar i Apple Anteckningar"
 lastChecked: "oktober 2026"
@@ -51,14 +51,14 @@ Du kan lägga till bilder från ditt bibliotek, ta en bild inne i anteckningen e
 |---|---|---|
 | Publicerade detaljer om kryptering på enheten | Ja: AES-256-GCM, PBKDF2-HMAC-SHA512 | Beskrivs i Apples dokumentation om plattformssäkerhet |
 | Kräver konto | Nej | Nej för anteckningar på enheten; Apple-konto för iCloud-synk |
-| Molnbackup | Nej (v1); krypterad säkerhetskopiering planerad | Ja, med iCloud-anteckningar |
+| Molnbackup | Nej; manuell krypterad säkerhetskopia (gratis) | Ja, med iCloud-anteckningar |
 | Upplåsning | Mönster på ett 5×5-rutnät | Enhetens lösenkod eller separat lösenord för Anteckningar |
 | Biometri | Erbjuds inte, med avsikt | Valfritt Face ID / Touch ID |
 | Lockvalv / flera valv | Varje mönster är ett eget valv | Stöds inte; alla låsta anteckningar delar ett lösenord |
-| Tvångsmönster | Kommer snart (Premium) | Nej |
+| Tvångsmönster | Planerat till en framtida uppdatering | Nej |
 | Återställning om du glömmer koden | Ingen | Lösenkodsalternativet slipper ett separat lösenord; gamla lösenord för Anteckningar kan inte återställas |
 | Hantering av bilder och video | Album, visare med zoom och svep, videor | Bilder inne i en anteckning; stödet för video varierar |
-| Kostnad | Gratisversion plus valfri Premium | Ingår i iOS |
+| Kostnad | Gratis (ett valv, 50 objekt) plus valfri Premium | Ingår i iOS |
 | Plattformar | iPhone (iOS 17+) | iPhone, iPad, Mac och iCloud.com |
 
 <!-- TODO verify -->
@@ -83,7 +83,7 @@ Den andra skillnaden är hemligheten. Om du låser anteckningar med enhetens lö
 ## När Velcrypt kan passa dig bättre
 
 - **Du har en riktig samling.** Många bilder, videor och dokument, ordnade i album.
-- **Du vill inte ha något i molnet.** Valvdata stannar på telefonen och utanför säkerhetskopior i v1.
+- **Du vill inte ha något i molnet.** Valvdata stannar på telefonen och utanför iCloud- och datorsäkerhetskopior.
 - **Du behöver separata privata utrymmen.** Varje mönster är ett eget valv.
 - **Någon annan kan din lösenkod.** Mönstret är en separat hemlighet.
 

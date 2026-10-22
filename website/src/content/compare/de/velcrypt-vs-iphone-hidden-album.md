@@ -10,11 +10,11 @@ keyFacts:
   - "Ab iOS 16 ist das Album „Ausgeblendet“ standardmäßig mit Face ID, Touch ID oder dem Gerätecode gesperrt."
   - "Wer deinen iPhone-Code kennt, kann das Album „Ausgeblendet“ öffnen."
   - "Ausgeblendete Fotos synchronisieren mit iCloud-Fotos; Ende-zu-Ende-verschlüsselt sind sie nur mit erweitertem Datenschutz."
-  - "Velcrypt nutzt ein separates Muster, speichert Tresore nur auf dem Gerät und schließt sie in v1 von Backups aus."
+  - "Velcrypt nutzt ein separates Muster, speichert Tresore nur auf dem Gerät und schließt sie von iCloud-Backups aus; gesichert wird nur per manuellem, verschlüsseltem Backup."
 primaryKeyword: "iphone album ausgeblendet vs tresor app"
 keywords: ["album ausgeblendet sicher", "fotos ausblenden iphone alternative", "ausgeblendete fotos face id", "ausgeblendete fotos icloud", "fotos verstecken iphone"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-22
 summary: "Apples eingebautes Album „Ausgeblendet“ gegen einen separaten verschlüsselten Tresor: was jeweils schützt, wohin Fotos synchronisieren und wer sie öffnen kann."
 competitor: "iPhone-Album „Ausgeblendet“"
 lastChecked: "Oktober 2026"
@@ -51,13 +51,13 @@ Ist iCloud-Fotos aktiviert, werden ausgeblendete Objekte wie alles andere synchr
 |---|---|---|
 | Details zur Verschlüsselung auf dem Gerät veröffentlicht | Ja: AES-256-GCM, Schlüssel aus deinem Muster abgeleitet | iOS-Datenschutz, von Apple dokumentiert |
 | Konto erforderlich | Nein | Teil von „Fotos“; Apple Account für iCloud-Synchronisierung nötig |
-| Cloud-Backup | Nein (v1); verschlüsseltes Backup geplant | Ja, mit iCloud-Fotos oder iCloud-Backup |
+| Cloud-Backup | Nein; kostenloses manuelles verschlüsseltes Backup | Ja, mit iCloud-Fotos oder iCloud-Backup |
 | Entsperren | Muster auf einem 5×5-Raster, getrennt vom Code | Face ID, Touch ID oder Gerätecode |
 | Biometrie | Bewusst nicht angeboten | Ja |
-| Köder- / mehrere Tresore | Jedes Muster ist ein eigener Tresor | Ein Album „Ausgeblendet“ |
-| Notfallmuster | Demnächst (Premium) | Nein |
+| Köder- / mehrere Tresore | Jedes Muster ist ein eigener Tresor (mehrere Tresore mit Premium) | Ein Album „Ausgeblendet“ |
+| Notfallmuster | Geplant, noch nicht verfügbar | Nein |
 | Wiederherstellung bei vergessenem Code | Keine | Über Gerätecode und Wiederherstellung des Apple Accounts |
-| Kosten | Kostenlose Version plus optionales Premium | In iOS enthalten |
+| Kosten | Kostenlos: 1 Tresor, bis zu 50 Objekte; Premium als Abo oder einmaliger Kauf (siehe [Preise](id:pricing)) | In iOS enthalten |
 | Plattformen | iPhone (iOS 17+) | iPhone, iPad und Mac |
 | Dokumente | Ja, aus der App „Dateien“ | Nur Fotos und Videos |
 
@@ -75,11 +75,11 @@ Ein Foto auszublenden verschiebt es nirgendwohin; es ist weiter in deiner Mediat
 
 <!-- TODO verify -->
 
-Velcrypt funktioniert andersherum. Ein importiertes Foto wird in einen verschlüsselten Tresor auf dem iPhone kopiert, und Tresordaten sind in Version 1 von iCloud- und Computer-Backups ausgeschlossen. Nach dem Import löschst du das Original in „Fotos“ und leerst „Zuletzt gelöscht“, sonst bleibt es dort etwa 30 Tage. Lies [Originalfotos nach dem Import löschen](id:delete-original-photos-after-import).
+Velcrypt funktioniert andersherum. Ein importiertes Foto wird in einen verschlüsselten Tresor auf dem iPhone kopiert, und Tresordaten sind von iCloud- und Computer-Backups ausgeschlossen. Sichern kannst du sie selbst mit einem verschlüsselten Backup unter Einstellungen → Backup. Nach dem Import löschst du das Original in „Fotos“ und leerst „Zuletzt gelöscht“, sonst bleibt es dort etwa 30 Tage. Lies [Originalfotos nach dem Import löschen](id:delete-original-photos-after-import).
 
 ## Abstreitbarkeit
 
-Es gibt genau ein Album „Ausgeblendet“, und seine Existenz ist für jeden offensichtlich, der „Fotos“ öffnet (außer du blendest es aus). Velcrypt hat keine Tresorliste. Jedes Muster öffnet einen eigenen Tresor, und ein Muster, das die App noch nie gesehen hat, öffnet ohne Fehlermeldung einen leeren Tresor. So kannst du einen Köder-Tresor führen, und es lässt sich nicht beweisen, dass weitere existieren. Siehe [versteckte Tresore](id:hidden-vaults).
+Es gibt genau ein Album „Ausgeblendet“, und seine Existenz ist für jeden offensichtlich, der „Fotos“ öffnet (außer du blendest es aus). Velcrypt hat keine Tresorliste. Jedes Muster öffnet einen eigenen Tresor, und ein Muster, das die App noch nie gesehen hat, öffnet ohne Fehlermeldung einen leeren Tresor. So kannst du mit Premium einen Köder-Tresor führen, und es lässt sich nicht beweisen, dass weitere existieren. Siehe [versteckte Tresore](id:hidden-vaults).
 
 ## Wann das Album „Ausgeblendet“ besser passen kann
 
@@ -92,7 +92,7 @@ Es gibt genau ein Album „Ausgeblendet“, und seine Existenz ist für jeden of
 
 - **Jemand anderes kennt deinen Code.** Ein separates Muster hält diese Person draußen.
 - **Du willst keine Cloud-Kopie.** Tresore bleiben auf dem iPhone.
-- **Du willst Köder oder mehrere private Bereiche.** Jedes Muster ist ein eigener Tresor.
+- **Du willst Köder oder mehrere private Bereiche.** Mit Premium ist jedes Muster ein eigener Tresor.
 - **Du willst auch Dokumente privat halten.** Importiere PDFs und Dateien aus der App „Dateien“.
 
-Der ehrliche Kompromiss: Mit Velcrypt v1 bedeutet ein verlorenes iPhone oder ein vergessenes Muster, dass sich der Tresor nicht wiederherstellen lässt. Entscheide, welches Risiko dich mehr beunruhigt.
+Der ehrliche Kompromiss: Bei Velcrypt lässt sich ein vergessenes Muster nie wiederherstellen, und ein verlorenes iPhone nur dann, wenn du vorher ein verschlüsseltes Backup erstellt hast. Entscheide, welches Risiko dich mehr beunruhigt.
