@@ -4,9 +4,6 @@ import UniformTypeIdentifiers
 /// Settings → Backup: back up the open vault to a password-protected file, or restore one into it.
 struct BackupView: View {
     @Environment(VaultLibrary.self) private var library
-    @Environment(VaultSession.self) private var session
-    @Environment(PremiumStore.self) private var premium
-    @State private var paywall: PaywallView.Reason?
     @State private var showCreate = false
     @State private var showConfirmVault = false
     @State private var showPicker = false
@@ -26,10 +23,10 @@ struct BackupView: View {
                     Label("Back Up This Vault", systemImage: "arrow.up.doc.fill")
                 }
                 .disabled(library.items.isEmpty)
+                // Restoring is never limited by Premium, so moving to a new iPhone, or recovering
+                // after a forgotten pattern, always works.
                 Button {
-                    if let reason = premium.blockReason(creatingIn: library, session: session) {
-                        paywall = reason
-                    } else if library.needsCreationConfirmation {
+                    if library.needsCreationConfirmation {
                         showConfirmVault = true
                     } else {
                         showPicker = true
@@ -77,9 +74,6 @@ struct BackupView: View {
         }
         .sheet(item: $picked) { backup in
             RestoreBackupView(url: backup.url)
-        }
-        .sheet(item: $paywall) { reason in
-            PaywallView(reason: reason)
         }
     }
 }
