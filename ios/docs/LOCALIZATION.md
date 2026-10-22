@@ -64,7 +64,8 @@ Strings that point to iOS apps or menus use Apple's own localized names.
   - A forgotten pattern cannot be recovered, and that vault can never be opened again.
   - Deleting is permanent.
   - Importing copies items. Originals are not deleted unless the user deletes them.
-  - Vaults are not in backups, so losing or resetting the device loses them.
+  - Vaults are not in iCloud or computer backups. Only an encrypted backup file that the user creates can restore them on another device.
+  - A forgotten backup password cannot be recovered.
 
 ## Plurals
 
