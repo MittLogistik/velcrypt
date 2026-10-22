@@ -22,18 +22,29 @@ struct PaywallView: View {
     var body: some View {
         NavigationStack {
             ScrollView {
-                VStack(spacing: 24) {
+                VStack(spacing: 20) {
                     header
                     features
                     plans
-                    purchaseButton
-                    footer
+                    legalText
                 }
                 .padding(.horizontal, VCMetric.screenPadding)
-                .padding(.vertical, 12)
+                .padding(.bottom, 12)
             }
             .scrollIndicators(.hidden)
             .background(VCBackground())
+            // The purchase button stays on screen on every iPhone size.
+            .safeAreaInset(edge: .bottom, spacing: 0) {
+                VStack(spacing: 10) {
+                    purchaseButton
+                    links
+                }
+                .padding(.horizontal, VCMetric.screenPadding)
+                .padding(.top, 12)
+                .padding(.bottom, 4)
+                .background(VCColor.background.opacity(0.92).ignoresSafeArea(edges: .bottom))
+            }
+            .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .cancellationAction) {
                     Button {
@@ -64,18 +75,18 @@ struct PaywallView: View {
     // MARK: Sections
 
     private var header: some View {
-        VStack(spacing: 12) {
-            VelcryptMark(size: 72)
+        VStack(spacing: 6) {
+            VelcryptMark(size: 52)
             Text("Velcrypt Premium")
-                .font(VCFont.display)
+                .font(.system(.title, design: .rounded).weight(.bold))
                 .foregroundStyle(VCColor.textPrimary)
+                .padding(.top, 4)
             Text(subtitle)
                 .font(VCFont.callout)
                 .foregroundStyle(VCColor.textSecondary)
                 .multilineTextAlignment(.center)
                 .fixedSize(horizontal: false, vertical: true)
         }
-        .padding(.top, 8)
     }
 
     private var subtitle: LocalizedStringKey {
@@ -88,7 +99,7 @@ struct PaywallView: View {
     }
 
     private var features: some View {
-        VStack(alignment: .leading, spacing: 18) {
+        VStack(alignment: .leading, spacing: 14) {
             VCFeatureRow(
                 systemName: "infinity",
                 title: "Unlimited Items",
@@ -111,7 +122,7 @@ struct PaywallView: View {
     @ViewBuilder
     private var plans: some View {
         if !store.products.isEmpty {
-            VStack(spacing: 10) {
+            VStack(spacing: 8) {
                 ForEach(store.products, id: \.id) { product in
                     PlanRow(
                         product: product,
@@ -155,27 +166,27 @@ struct PaywallView: View {
         .disabled(store.product(selectedID) == nil || isPurchasing || isRestoring)
     }
 
-    private var footer: some View {
-        VStack(spacing: 14) {
-            Text("Subscriptions renew automatically unless cancelled at least 24 hours before the end of the current period. Payment is charged to your Apple Account. Manage or cancel subscriptions in your Apple Account settings. Lifetime is a one-time purchase.")
-                .font(.caption2)
-                .foregroundStyle(VCColor.textSecondary)
-                .multilineTextAlignment(.center)
-                .fixedSize(horizontal: false, vertical: true)
-            HStack(spacing: 16) {
-                Button {
-                    restore()
-                } label: {
-                    if isRestoring { ProgressView() } else { Text("Restore Purchases") }
-                }
-                .disabled(isPurchasing || isRestoring)
-                Link("Terms", destination: URL(string: "https://velcrypt.app/terms/")!)
-                Link("Privacy", destination: URL(string: "https://velcrypt.app/privacy/")!)
+    private var legalText: some View {
+        Text("Subscriptions renew automatically unless cancelled at least 24 hours before the end of the current period. Payment is charged to your Apple Account. Manage or cancel subscriptions in your Apple Account settings. Lifetime is a one-time purchase.")
+            .font(.caption2)
+            .foregroundStyle(VCColor.textSecondary)
+            .multilineTextAlignment(.center)
+            .fixedSize(horizontal: false, vertical: true)
+    }
+
+    private var links: some View {
+        HStack(spacing: 16) {
+            Button {
+                restore()
+            } label: {
+                if isRestoring { ProgressView() } else { Text("Restore Purchases") }
             }
-            .font(VCFont.caption)
-            .foregroundStyle(VCColor.accentCyan)
+            .disabled(isPurchasing || isRestoring)
+            Link("Terms", destination: URL(string: "https://velcrypt.app/terms/")!)
+            Link("Privacy", destination: URL(string: "https://velcrypt.app/privacy/")!)
         }
-        .padding(.bottom, 8)
+        .font(VCFont.caption)
+        .foregroundStyle(VCColor.accentCyan)
     }
 
     // MARK: Actions
@@ -254,7 +265,8 @@ private struct PlanRow: View {
                 }
                 Spacer(minLength: 0)
             }
-            .padding(16)
+            .padding(.horizontal, 16)
+            .padding(.vertical, 12)
             .background(
                 RoundedRectangle(cornerRadius: VCMetric.smallCornerRadius, style: .continuous)
                     .fill(VCColor.surface)
