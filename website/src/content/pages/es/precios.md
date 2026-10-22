@@ -4,10 +4,10 @@ title: "Precios de Velcrypt: versión gratuita y Premium"
 description: "Velcrypt es gratis con 1 bóveda y 50 elementos. Premium es semanal, anual con 3 días de prueba o vitalicio. Sin anuncios, sin venta de datos, sin cuenta."
 h1: "Precios de Velcrypt"
 navTitle: "Precios"
-answer: "Velcrypt es gratis con 1 bóveda de hasta 50 elementos, y la copia de seguridad cifrada también es gratis. Premium añade elementos ilimitados, más bóvedas e iconos alternativos por 1,99 US$ a la semana, 19,99 US$ al año (con 3 días de prueba gratuita) o 39,99 US$ en un pago único vitalicio. Los precios varían según el país."
+answer: "Velcrypt es gratis con 1 bóveda de hasta 50 elementos, y la copia de seguridad cifrada también es gratis. Premium añade elementos ilimitados, más bóvedas, un patrón de coacción e iconos alternativos por 1,99 US$ a la semana, 19,99 US$ al año (con 3 días de prueba gratuita) o 39,99 US$ en un pago único vitalicio. Los precios varían según el país."
 keyFacts:
   - "Gratis: 1 bóveda con hasta 50 elementos y el icono estándar de la app."
-  - "Premium: elementos ilimitados, más bóvedas e iconos alternativos de la app."
+  - "Premium: elementos ilimitados, más bóvedas, un patrón de coacción e iconos alternativos de la app."
   - "Semanal 1,99 US$, anual 19,99 US$ con 3 días gratis, vitalicio 39,99 US$ (pago único)."
   - "Los precios varían según el país y se muestran en el App Store antes de pagar."
   - "La copia de seguridad cifrada es gratis en todas las versiones."
@@ -19,20 +19,22 @@ datePublished: 2026-10-21
 dateModified: 2026-10-22
 schemaType: WebPage
 order: 2
-related: [features, hidden-vaults, security, faq]
+related: [features, hidden-vaults, duress-pattern, security, faq]
 faq:
   - q: "¿Velcrypt es gratis?"
     a: "Sí. La versión gratuita incluye 1 bóveda con hasta 50 elementos, el mismo cifrado que Premium y la copia de seguridad cifrada. Premium es opcional para quien quiera más."
   - q: "¿Cuánto cuesta Velcrypt Premium?"
     a: "En dólares estadounidenses: 1,99 US$ a la semana, 19,99 US$ al año (con 3 días de prueba gratuita) o 39,99 US$ en un pago único vitalicio. Los precios del App Store varían según el país, y siempre ves el importe en tu moneda antes de pagar."
   - q: "¿Qué desbloquea Premium?"
-    a: "Elementos ilimitados, más bóvedas (otros patrones obtienen su propia bóveda, por ejemplo una bóveda señuelo) e iconos alternativos para la pantalla de inicio. La seguridad es la misma en ambas versiones."
+    a: "Elementos ilimitados, más bóvedas (otros patrones obtienen su propia bóveda, por ejemplo una bóveda señuelo), el patrón de coacción e iconos alternativos para la pantalla de inicio. La seguridad es la misma en ambas versiones."
   - q: "¿Cómo funciona la prueba gratuita?"
     a: "El plan anual empieza con 3 días de prueba gratuita. Si no la cancelas antes de que termine, se convierte en una suscripción anual de pago. Puedes cancelarla en los ajustes de tu cuenta de Apple."
   - q: "¿Cómo cancelo una suscripción?"
     a: "Las suscripciones se renuevan automáticamente salvo que se cancelen al menos 24 horas antes del final del periodo actual. Las gestionas o cancelas en los ajustes de tu cuenta de Apple. El plan vitalicio es un pago único y no se renueva."
   - q: "¿La copia de seguridad es una función de Premium?"
     a: "No. La copia de seguridad cifrada es gratis para todos. En Ajustes → Copia de seguridad creas un archivo cifrado de la bóveda abierta, protegido con una contraseña que tú eliges."
+  - q: "¿El patrón de coacción forma parte de Premium?"
+    a: "Sí. Configurar un patrón de coacción requiere Premium, porque vive en una segunda bóveda (el señuelo). Una vez configurado, sigue funcionando aunque tu suscripción Premium termine."
   - q: "¿La versión gratuita de Velcrypt tiene anuncios?"
     a: "No. Velcrypt no tiene anuncios en ninguna versión y no recopila analítica sobre lo que guardas, así que no hay nada que vender ni con qué segmentar."
   - q: "¿La versión gratuita usa el mismo cifrado que Premium?"
@@ -56,10 +58,11 @@ Velcrypt es gratis, con una mejora Premium opcional para quien quiera más.
 | Copia de seguridad cifrada | Sí | Sí |
 | Número de elementos | Hasta 50 | Ilimitado |
 | Número de bóvedas | 1 | Más bóvedas |
+| Patrón de coacción | — | Sí |
 | Iconos alternativos de la app | — | Sí |
 | Anuncios | Ninguno | Ninguno |
 
-Con Premium, cada patrón nuevo obtiene su propia bóveda, así que una segunda bóveda (por ejemplo una [bóveda señuelo](id:hidden-vaults)) forma parte de Premium. Los iconos alternativos sustituyen el icono de la pantalla de inicio por diseños como una calculadora, un temporizador o una regla.
+Con Premium, cada patrón nuevo obtiene su propia bóveda, así que una segunda bóveda (por ejemplo una [bóveda señuelo](id:hidden-vaults)) forma parte de Premium. También el patrón de coacción, que se configura desde dentro de una bóveda señuelo. Los iconos alternativos sustituyen el icono de la pantalla de inicio por diseños como una calculadora, un temporizador o una regla.
 
 ## Planes de Premium
 
@@ -85,7 +88,7 @@ Tampoco hay cuenta en ninguna versión. No te registras, no das ninguna direcci�
 
 Una app de privacidad que gana dinero con publicidad o con datos tiene un conflicto de intereses incorporado. Velcrypt lo evita pidiendo a quienes quieren más de la app que paguen directamente por ello. El resto conserva una versión gratuita totalmente cifrada y sin letra pequeña.
 
-Ese modelo también determina qué entra en Premium. Las funciones de pago añaden capacidad (más elementos, más bóvedas) o personalización, como los iconos alternativos. Nunca desbloquean un nivel de cifrado «real» que le falte a la versión gratuita. El [patrón de coacción](id:duress-pattern) está previsto para una actualización futura y todavía no está disponible.
+Ese modelo también determina qué entra en Premium. Las funciones de pago añaden capacidad (más elementos, más bóvedas) o extras como el [patrón de coacción](id:duress-pattern) y los iconos alternativos. Nunca desbloquean un nivel de cifrado «real» que le falte a la versión gratuita, y la copia de seguridad cifrada sigue siendo gratuita para que nadie tenga que pagar por proteger sus archivos ante la pérdida del teléfono. Un patrón de coacción que ya hayas configurado sigue funcionando aunque Premium caduque; solo configurarlo requiere Premium.
 
 Si te pasas a Premium, nada cambia en tus bóvedas existentes. Tus datos se quedan en tu iPhone, cifrados de la misma forma, tanto si mejoras como si no.
 

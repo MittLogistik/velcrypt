@@ -53,7 +53,7 @@ Velcrypt è una cassaforte sul dispositivo bloccata da una sequenza. Una sequenz
 | Metodo di sblocco | Sequenza su griglia 5×5 | PIN / codice |
 | Biometria (Face ID / Touch ID) | Non offerta, per scelta | Variabile |
 | Esca / più casseforti | Ogni sequenza è una cassaforte a sé (più casseforti con Premium) | Password esca |
-| Sequenza di emergenza | Prevista per un aggiornamento futuro | Non dichiarato pubblicamente |
+| Sequenza di emergenza | Sì, con il Premium (apre un’esca, elimina le altre casseforti) | Non dichiarato pubblicamente |
 | Report di intrusione | Non offerti | Offerti, secondo la sua scheda |
 | Recupero se dimentichi il codice | Nessuno | Non dichiarato pubblicamente |
 | Modello di business | Gratuita (1 cassaforte, 50 elementi) più Premium facoltativo da 1,99 $/settimana, 19,99 $/anno o 39,99 $ a vita (USD) | Versione gratuita più upgrade a pagamento |

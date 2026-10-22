@@ -55,7 +55,7 @@ Velcrypt är en inbyggd iPhone-app som förvarar privata bilder, videor och doku
 | Data | 100 % på enheten; inget konto, ingen molnsynk, inga annonser |
 | Säkerhetskopiering | Manuell krypterad säkerhetskopia (.velcrypt-fil) med eget lösenord, gratis |
 | Språk | 11, bland annat svenska, engelska, tyska, japanska och koreanska |
-| Planerat | Tvångsmönster |
+| Nödmönster | Ja (Premium): öppnar ett lockbetesvalv och raderar de andra valven permanent |
 | Presskontakt | press@velcrypt.app |
 
 För tekniska detaljer, länka till [säkerhetsmodellen](id:security); för en översikt, se [funktioner](id:features).
@@ -85,7 +85,7 @@ Använd materialet som det levereras: lämna tillräckligt med fritt utrymme run
 Några punkter som hjälper till att hålla bevakningen korrekt:
 
 - Velcrypt har **inte** granskats av en oberoende part. Beskriv inte appen som granskad.
-- Tvångsmönstret är planerat, inte tillgängligt. Krypterad säkerhetskopiering finns och är gratis.
+- Krypterad säkerhetskopiering finns och är gratis. Nödmönstret finns med Premium; beskriv det gärna som en funktion för personlig säkerhet, inte som ett sätt att komma runt polis- eller gränskontroller.
 - Velcrypt kan inte återställa glömda mönster; det är en medveten följd av att det inte finns något konto eller någon server.
 - Det finns ingen pressbevakning att citera ännu, och vi publicerar inga användarsiffror eller betyg.
 

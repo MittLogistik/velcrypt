@@ -55,7 +55,7 @@ Puedes añadir fotos de tu fototeca, hacer una foto dentro de la nota o escanear
 | Método de desbloqueo | Patrón en una cuadrícula de 5×5 | Código del dispositivo o contraseña aparte de Notas |
 | Biometría | No disponible, por diseño | Face ID / Touch ID opcional |
 | Señuelo / varias bóvedas | Cada patrón es su propia bóveda (con Premium) | No; todas las notas bloqueadas comparten una contraseña |
-| Patrón de coacción | Previsto para una actualización futura | No |
+| Patrón de coacción | Sí, con Premium (abre un señuelo y elimina las demás bóvedas) | No |
 | Recuperación si olvidas el código | Ninguna; solo restaurar una copia de seguridad propia | La opción del código evita una contraseña aparte; las contraseñas antiguas de Notas no se pueden recuperar |
 | Gestión de fotos y vídeos | Álbumes, visor con zoom y deslizamiento, vídeos | Imágenes dentro de una nota; la compatibilidad con vídeo varía |
 | Coste | Gratis (1 bóveda, 50 elementos) o Premium desde 1,99 US$ a la semana | Incluido en iOS |

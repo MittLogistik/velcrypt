@@ -11,7 +11,7 @@ keyFacts:
   - "Un señuelo vacío resulta sospechoso; uno con uso real, álbumes y elementos recientes resulta convincente."
   - "Un señuelo protege frente a curiosos y presiones informales, no frente a un análisis forense ni a quien te vio dibujar."
   - "La versión gratuita tiene una bóveda; un señuelo, como segunda bóveda, requiere Premium."
-  - "Un patrón de coacción que además quite el acceso a las otras bóvedas está previsto para una actualización futura."
+  - "Con Premium, un patrón de coacción puede abrir el señuelo y eliminar para siempre todas las demás bóvedas del iPhone."
 primaryKeyword: "bóveda señuelo"
 keywords: ["qué es una bóveda señuelo", "contraseña señuelo bóveda de fotos", "app de bóveda falsa", "patrón señuelo", "segunda bóveda iphone"]
 datePublished: 2026-10-21
@@ -19,7 +19,7 @@ dateModified: 2026-10-22
 summary: "Qué es una bóveda señuelo, cómo crear una que parezca usada con un segundo patrón de Velcrypt y qué límites debes conocer."
 category: security
 order: 41
-related: [hidden-vaults, plausible-deniability-explained, duress-pattern, pattern-lock-vs-pin-vs-face-id, partner-scrolling-camera-roll, phone-privacy-border-crossing]
+related: [hidden-vaults, plausible-deniability-explained, duress-pattern, set-up-decoy-vault-and-duress-pattern, duress-password-explained, forced-to-unlock-phone, pattern-lock-vs-pin-vs-face-id, partner-scrolling-camera-roll, phone-privacy-border-crossing]
 howTo:
   name: "Crear una bóveda señuelo en Velcrypt"
   steps:
@@ -41,7 +41,7 @@ faq:
   - q: "¿Alguien puede saber que una bóveda es un señuelo?"
     a: "Desde dentro de la app, no: Velcrypt no guarda ninguna lista de bóvedas ni da pistas de que existan otras. Lo que puede delatar un señuelo es su contenido, por ejemplo si está vacío, desactualizado o claramente preparado."
   - q: "¿Una bóveda señuelo es lo mismo que un patrón de coacción?"
-    a: "No. Un señuelo simplemente abre otra bóveda. Un patrón de coacción, una función de Velcrypt prevista para una actualización futura, abriría una bóveda elegida y además quitaría en silencio el acceso a las demás."
+    a: "No. Un señuelo simplemente abre otra bóveda y deja las demás intactas. Un patrón de coacción, disponible con Velcrypt Premium, abre la bóveda señuelo y además elimina en silencio y de forma permanente todas las demás bóvedas del iPhone."
   - q: "¿Debería usar una bóveda señuelo con la policía o en la frontera?"
     a: "Esta guía no puede dar asesoramiento jurídico. Engañar a funcionarios puede ser un delito en muchos países. Un señuelo sirve sobre todo para curiosos del día a día y presiones informales; en situaciones oficiales, infórmate de tus derechos y habla con un abogado."
 ---
@@ -94,7 +94,7 @@ Una bóveda señuelo es una herramienta social respaldada por buena criptografí
 
 ## Bóveda señuelo frente a patrón de coacción
 
-Un señuelo abre otra bóveda y deja todo lo demás intacto. Un **patrón de coacción** va un paso más allá: abre una bóveda que has elegido y, al mismo tiempo, quita en silencio el acceso a las demás. En Velcrypt, el [patrón de coacción](id:duress-pattern) está previsto para una actualización futura. Hasta entonces, un señuelo bien mantenido cubre la mayoría de las situaciones cotidianas, como una pareja curiosa, un amigo que pasa fotos en tu teléfono o un compañero de trabajo entrometido.
+Un señuelo abre otra bóveda y deja todo lo demás intacto. Un **patrón de coacción** va un paso más allá: abre tu señuelo y, en ese mismo instante, elimina en silencio y de forma permanente todas las demás bóvedas del iPhone. En Velcrypt, el [patrón de coacción](id:duress-pattern) forma parte de Premium y se configura desde dentro de la bóveda señuelo. Encaja en situaciones en las que esperas que vuelvan a presionarte más adelante; para la curiosidad cotidiana, como una pareja, un amigo que pasa fotos en tu teléfono o un compañero de trabajo entrometido, suele bastar con un señuelo bien mantenido. Como la eliminación es permanente, haz antes una copia de seguridad cifrada de tu bóveda real. [Cómo configurar una bóveda señuelo y un patrón de coacción](id:set-up-decoy-vault-and-duress-pattern) explica ambas cosas.
 
 ## Dónde encaja Velcrypt
 

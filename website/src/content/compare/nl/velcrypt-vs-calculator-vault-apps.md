@@ -8,7 +8,7 @@ answer: "Rekenmachine-kluisapps vermommen zich als werkende rekenmachine en gaan
 keyFacts:
   - "Rekenmachine-kluisapps zien eruit en werken als een rekenmachine; een code die je als som intypt, opent de kluis."
   - "Details over versleuteling verschillen sterk tussen rekenmachine-kluisapps en worden vaak niet gepubliceerd."
-  - "Velcrypt heeft geen werkende rekenmachine als vermomming; met Premium kies je wel een alternatief appsymbool, maar de naam Velcrypt blijft zichtbaar."
+  - "Velcrypt heeft geen werkende rekenmachine als vermomming; met Premium kies je wel een alternatief appsymbool, maar de app opent nog steeds met het patroonraster."
   - "De ontkenbaarheid van Velcrypt komt van verborgen kluizen: onbekende patronen openen een lege kluis."
   - "Vanaf iOS 18 kun je elke app, ook Velcrypt, in een verborgen map achter Face ID zetten."
 primaryKeyword: "rekenmachine kluis app"
@@ -54,7 +54,7 @@ Beide kunnen nuttig zijn. De vraag is waartegen je je beschermt. Een vermomming 
 | Biometrie (Face ID / Touch ID) | Bewust niet aangeboden | Verschilt |
 | Vermomming | Geen; alternatieve appsymbolen met Premium, naam blijft Velcrypt | Ziet eruit als een werkende rekenmachine |
 | Lokkluis / meerdere kluizen | Elk patroon is een eigen kluis (tweede kluis met Premium) | Verschilt; sommige bieden een lokcode |
-| Dwangpatroon | Gepland voor een toekomstige update | Verschilt |
+| Dwangpatroon | Ja, met Premium (opent een lokkluis, verwijdert de andere kluizen) | Verschilt |
 | Inbraakfoto’s | Niet aangeboden | Gangbaar, maar verschilt |
 | Herstel als je de code vergeet | Geen | Verschilt; sommige bieden herstel via e-mail of een beveiligingsvraag |
 | Verdienmodel | Gratis (1 kluis, tot 50 onderdelen); Premium vanaf $ 1,99 per week | Verschilt; sommige gratis versies tonen advertenties |

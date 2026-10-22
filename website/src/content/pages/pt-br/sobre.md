@@ -10,7 +10,7 @@ keyFacts:
   - "Sem Face ID nem Touch ID por design — um padrão existe apenas na sua memória."
   - "Sem anúncios e sem venda de dados."
   - "Honesto sobre os limites, inclusive a impossibilidade de recuperar padrões esquecidos."
-  - "Backup criptografado grátis; o padrão de coação está planejado para uma atualização futura."
+  - "Backup criptografado grátis para todos; um padrão de coação para situações de coação, com o Premium."
   - "Publicado pela Swedish Treats AB, Suécia."
 primaryKeyword: "sobre o velcrypt"
 keywords: ["app velcrypt", "quem faz o velcrypt", "princípios do velcrypt", "cofre de fotos privado iphone"]
@@ -24,8 +24,8 @@ faq:
     a: "Porque dados que nunca saem do seu celular não podem ser expostos por uma invasão de servidor, por uma ordem judicial a um provedor ou por uma senha reutilizada. A contrapartida é que não há recuperação se você esquecer o padrão, e um celular perdido só pode ser recuperado a partir de um backup criptografado que você mesmo criou."
   - q: "O Velcrypt ganha dinheiro com os meus dados?"
     a: "Não. O Velcrypt não coleta o conteúdo dos seus cofres nem análises sobre ele e não mostra anúncios. O Velcrypt tem uma versão grátis e um upgrade Premium pago e opcional."
-  - q: "No que o Velcrypt está trabalhando agora?"
-    a: "O backup criptografado já está no app e é grátis. O próximo item planejado é um padrão de coação, que ainda não tem data de lançamento."
+  - q: "O Velcrypt tem padrão de coação?"
+    a: "Sim, no Velcrypt 1.0, com o Premium. Desenhá-lo abre um cofre de fachada e apaga em silêncio, de forma permanente, todos os outros cofres do iPhone. Ele foi feito para situações de segurança pessoal, não como um jeito de driblar ordens legais."
 ---
 
 <!-- TODO: add founder/company details -->
@@ -60,15 +60,16 @@ Ferramentas de privacidade falham com as pessoas quando prometem demais. Preferi
 
 O Velcrypt não mostra publicidade e não vende dados. Ele não coleta o conteúdo dos seus cofres nem análises sobre ele, então não há nada para vender. O Velcrypt é financiado por um upgrade Premium opcional — veja [preços](id:pricing).
 
-## O que vem por aí
+## O que há no Velcrypt 1.0
 
-O backup criptografado, os cofres adicionais e os itens ilimitados já fazem parte do app: o backup é grátis, e mais cofres e itens ilimitados vêm com o Premium. O item abaixo está planejado. Ele não está no app hoje, e não vamos definir uma data até que esteja pronto.
+O Velcrypt 1.0 inclui backup criptografado grátis e um upgrade Premium opcional com itens ilimitados, mais cofres, um padrão de coação e ícones alternativos do app.
 
 | Item | Status |
 |---|---|
-| [Padrão de coação](id:duress-pattern) — abre um cofre escolhido e remove silenciosamente o acesso aos outros | Planejado para uma atualização futura |
+| Backup criptografado — um arquivo protegido por senha que você mesmo guarda | Disponível, grátis |
+| [Padrão de coação](id:duress-pattern) — abre um cofre de fachada e apaga em silêncio, de forma permanente, todos os outros cofres do iPhone | Disponível, Premium |
 
-Tudo o que acrescentarmos seguirá os mesmos princípios: no aparelho por padrão, sem conta e com uma explicação clara das vantagens e desvantagens.
+O padrão de coação segue os mesmos princípios de todo o resto: no aparelho, sem conta e com uma explicação clara das vantagens e desvantagens. A exclusão é permanente, e ele foi feito para situações de segurança pessoal, não como um jeito de driblar ordens legais. Tudo o que acrescentarmos depois seguirá as mesmas regras.
 
 ## Quem somos
 

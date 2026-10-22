@@ -29,7 +29,7 @@ faq:
   - q: "¿Cómo gestionan otras apps de bóveda un PIN olvidado?"
     a: "Muchas apps con cuenta te permiten restablecer el PIN por correo o a través de una cuenta en la nube, lo que significa que existe una vía de recuperación fuera de tu memoria. Revisa las páginas de ayuda de tu app antes de necesitarlo, y ten en cuenta que una vía de recuperación también puede ser una puerta de entrada para otra persona."
   - q: "¿Una copia de seguridad de Velcrypt me ayuda si olvido el patrón?"
-    a: "Sí, si la creaste antes. La copia de seguridad tiene su propia contraseña, así que puedes restaurarla en una bóveda que sí puedas abrir con Ajustes → Copia de seguridad → Restaurar copia de seguridad. Sin copia ni contraseña, no hay vuelta atrás."
+    a: "Sí, si la creaste antes. La copia de seguridad tiene su propia contraseña, así que puedes restaurarla en una bóveda que sí puedas abrir con Ajustes → Copia de seguridad → Restaurar desde copia de seguridad. Sin copia ni contraseña, no hay vuelta atrás."
 ---
 
 Esa sensación de vértigo cuando la forma que has dibujado cien veces de repente no funciona es real. Antes que nada: no borres ni reinstales la app. La mayoría de los patrones «olvidados» resultan ser patrones recordados con un pequeño error, y hay cosas sensatas que probar primero.
@@ -63,7 +63,7 @@ Las mismas propiedades que hacen privada tu bóveda hacen definitivo un patrón 
 
 ### ¿Creaste una copia de seguridad?
 
-La única excepción es una copia de seguridad cifrada que hayas creado antes en Ajustes → Copia de seguridad. Esa copia está protegida con su propia contraseña, no con tu patrón, así que su contenido no se pierde. Abre una bóveda a la que sí tengas acceso (o dibuja un patrón nuevo; restaurar una copia nunca requiere Premium), ve a Ajustes → Copia de seguridad → Restaurar copia de seguridad, elige el archivo e introduce la contraseña. Los elementos se añaden a la bóveda abierta. Recuperarás lo que hubiera en la bóveda cuando creaste la copia, no lo añadido después. Si también has olvidado la contraseña de la copia, Velcrypt no puede recuperarla.
+La única excepción es una copia de seguridad cifrada que hayas creado antes en Ajustes → Copia de seguridad. Esa copia está protegida con su propia contraseña, no con tu patrón, así que su contenido no se pierde. Abre una bóveda a la que sí tengas acceso (o dibuja un patrón nuevo; restaurar una copia nunca requiere Premium), ve a Ajustes → Copia de seguridad → Restaurar desde copia de seguridad, elige el archivo e introduce la contraseña. Los elementos se añaden a la bóveda abierta. Recuperarás lo que hubiera en la bóveda cuando creaste la copia, no lo añadido después. Si también has olvidado la contraseña de la copia, Velcrypt no puede recuperarla.
 
 ### ¿Y las otras bóvedas?
 

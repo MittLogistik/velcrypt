@@ -4,10 +4,10 @@ title: "Preço do Velcrypt: versão grátis e Premium"
 description: "O Velcrypt é grátis com 1 cofre e 50 itens. O Premium é semanal, anual com 3 dias grátis ou vitalício. Sem anúncios, sem venda de dados, sem conta."
 h1: "Preços do Velcrypt"
 navTitle: "Preços"
-answer: "O Velcrypt é grátis com 1 cofre de até 50 itens, e o backup criptografado também é grátis. O Premium libera itens ilimitados, mais cofres e ícones alternativos por US$ 1,99/semana, US$ 19,99/ano (com 3 dias de teste grátis) ou US$ 39,99 vitalício, em compra única. Os preços variam por país."
+answer: "O Velcrypt é grátis com 1 cofre de até 50 itens, e o backup criptografado também é grátis. O Premium libera itens ilimitados, mais cofres, o padrão de coação e ícones alternativos por US$ 1,99/semana, US$ 19,99/ano (com 3 dias de teste grátis) ou US$ 39,99 vitalício, em compra única. Os preços variam por país."
 keyFacts:
   - "Grátis: 1 cofre com até 50 itens e o ícone padrão do app."
-  - "Premium: itens ilimitados, mais cofres e ícones alternativos do app."
+  - "Premium: itens ilimitados, mais cofres, o padrão de coação e ícones alternativos do app."
   - "Semanal US$ 1,99, anual US$ 19,99 com 3 dias grátis, vitalício US$ 39,99 (compra única)."
   - "Os preços variam por país e aparecem na App Store antes de você pagar."
   - "O backup criptografado é grátis em todas as versões."
@@ -26,7 +26,9 @@ faq:
   - q: "Quanto custa o Velcrypt Premium?"
     a: "Em dólares americanos: US$ 1,99 por semana, US$ 19,99 por ano (com 3 dias de teste grátis) ou US$ 39,99 vitalício, em compra única. Os preços na App Store variam por país, e você sempre vê o valor na sua moeda antes de pagar."
   - q: "O que o Premium libera?"
-    a: "Itens ilimitados, mais cofres (outros padrões ganham seus próprios cofres, inclusive um cofre de fachada) e ícones alternativos do app na Tela de Início. A segurança é a mesma nas duas versões."
+    a: "Itens ilimitados, mais cofres (outros padrões ganham seus próprios cofres, inclusive um cofre de fachada), o padrão de coação e ícones alternativos do app na Tela de Início. A segurança é a mesma nas duas versões."
+  - q: "O padrão de coação faz parte do Premium?"
+    a: "Sim. Configurar um padrão de coação exige o Premium, porque ele fica em um segundo cofre (o cofre de fachada). Depois de configurado, ele continua funcionando mesmo que a sua assinatura Premium termine."
   - q: "Como funciona o teste grátis?"
     a: "O plano anual começa com 3 dias de teste grátis. Se você não cancelar antes do fim do teste, ele se converte em uma assinatura anual paga. Você pode cancelar nos ajustes da sua Conta Apple."
   - q: "Como cancelo uma assinatura?"
@@ -54,8 +56,11 @@ O Velcrypt é grátis para baixar e usar. O Premium é um upgrade opcional para 
 | Backup criptografado (arquivo .velcrypt) | Sim | Sim |
 | Número de itens | Até 50 | Ilimitado |
 | Número de cofres | 1 | Mais cofres |
+| Padrão de coação | — | Sim |
 | Ícones alternativos do app | — (ícone padrão) | Sim |
 | Anúncios | Nenhum | Nenhum |
+
+Como a versão grátis tem um cofre, um segundo cofre — como um [cofre de fachada](id:what-is-a-decoy-vault) — exige o Premium. O padrão de coação também, já que você o configura de dentro de um cofre de fachada.
 
 ## Planos do Premium
 
@@ -81,7 +86,7 @@ Também não existe conta em nenhuma versão. Você não se cadastra, não infor
 
 Um app de privacidade que ganha dinheiro com publicidade ou com dados já nasce com um conflito de interesses. O Velcrypt evita isso pedindo que as pessoas que querem mais do app paguem diretamente por ele. Todo o resto continua com uma versão grátis totalmente criptografada, sem letras miúdas.
 
-Esse modelo também define o que entra no Premium. Os recursos pagos acrescentam capacidade — mais itens, mais cofres — e personalização, como os ícones alternativos. Eles nunca liberam um nível “de verdade” de criptografia que falte à versão grátis. O [padrão de coação](id:duress-pattern) está planejado para uma atualização futura e ainda não faz parte do app.
+Esse modelo também define o que entra no Premium. Os recursos pagos acrescentam capacidade — mais itens, mais cofres — e extras, como o [padrão de coação](id:duress-pattern) e os ícones alternativos. Eles nunca liberam um nível “de verdade” de criptografia que falte à versão grátis, e o backup criptografado continua grátis. Um padrão de coação já configurado continua funcionando mesmo que o Premium acabe; só a configuração exige o Premium.
 
 Se você fizer o upgrade depois de usar a versão grátis, nada muda nos seus cofres existentes. Seus dados continuam no seu iPhone, criptografados da mesma forma, com ou sem upgrade.
 

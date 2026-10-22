@@ -94,6 +94,8 @@ Velcrypt funziona completamente offline. Non c’è registrazione, indirizzo ema
 
 I dati delle casseforti sono anche **esclusi dai backup iCloud e sul computer (Finder)**. Così i tuoi file cifrati restano fuori dai server di Apple e da qualsiasi computer con cui sincronizzi, ma con una conseguenza concreta: se il tuo iPhone viene perso, si rompe o viene inizializzato, le casseforti se ne vanno con lui, a meno che tu non abbia un backup.
 
+<a id="encrypted-backup"></a>
+
 Per questo Velcrypt offre un **backup cifrato** gratuito. In Impostazioni → Backup crei un file `.velcrypt` della cassaforte aperta, cifrato con una password del backup scelta da te. Ogni cassaforte viene salvata separatamente, quindi un backup non rivela mai le altre casseforti. Il file lo salvi tu, per esempio in File, iCloud Drive o su un computer, e lo ripristini su qualsiasi iPhone. Velcrypt non riceve mai il file né la password, e una password del backup dimenticata non si può recuperare.
 
 ## Il modello di minaccia in sintesi
@@ -118,7 +120,7 @@ Per questo Velcrypt offre un **backup cifrato** gratuito. In Impostazioni → Ba
 Ogni strumento di sicurezza ha dei limiti, e dovresti conoscere quelli di Velcrypt prima di affidartici.
 
 - **Sguardi indiscreti.** Se qualcuno ti vede disegnare la sequenza, di persona o tramite una telecamera, può aprire quella cassaforte. Disegnala al riparo da sguardi e preferisci una sequenza che non somigli a una lettera o a una forma semplice.
-- **Essere costretto a sbloccare.** Velcrypt non può impedire che qualcuno ti costringa a disegnare una sequenza. Una cassaforte esca (con il Premium) può aiutare; una [sequenza di emergenza](id:duress-pattern), che aprirebbe una cassaforte scelta e rimuoverebbe in silenzio l’accesso alle altre, è prevista per un aggiornamento futuro.
+- **Essere costretto a sbloccare.** Velcrypt non può impedire che qualcuno ti costringa a disegnare una sequenza. Una cassaforte esca può aiutare e, con il Premium, una [sequenza di emergenza](id:duress-pattern) apre una cassaforte esca eliminando definitivamente le altre. Nessuna delle due può fermare chi conosce già la tua sequenza vera, e le casseforti eliminate si recuperano solo da un file di backup creato prima.
 - **Un telefono consegnato con la cassaforte aperta.** Mentre una cassaforte è sbloccata, chiunque tenga il telefono vede ciò che vedi tu. Bloccala prima di passare il telefono a qualcuno.
 - **Dispositivi compromessi o con jailbreak e malware.** Un software in grado di leggere lo schermo, registrare i tocchi o ispezionare la memoria delle app su un dispositivo compromesso può aggirare qualsiasi cifratura a livello di app.
 - **Screenshot o foto dello schermo.** Velcrypt non può impedire a un’altra fotocamera di fotografare il tuo display.

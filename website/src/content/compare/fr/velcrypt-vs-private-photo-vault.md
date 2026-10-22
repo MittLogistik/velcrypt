@@ -53,7 +53,7 @@ Velcrypt est un coffre sur l’appareil verrouillé par motif. Un motif est une 
 | Méthode de déverrouillage | Motif sur une grille 5×5 | Code PIN / code d’accès |
 | Biométrie (Face ID / Touch ID) | Non proposée, par choix | Variable |
 | Leurre / plusieurs coffres | Chaque motif est son propre coffre | Mot de passe leurre |
-| Motif de contrainte | Prévu, pas encore disponible | Non indiqué publiquement |
+| Schéma de contrainte | Oui, avec Premium (ouvre un leurre, supprime les autres coffres) | Non indiqué publiquement |
 | Rapports d’intrusion | Non proposés | Proposés, d’après sa fiche |
 | Récupération en cas d’oubli du code | Aucune | Non indiqué publiquement |
 | Modèle économique | Gratuit (1 coffre, 50 éléments) ; Premium en abonnement ou achat unique | Version gratuite plus mise à niveau payante |

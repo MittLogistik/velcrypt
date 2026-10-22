@@ -55,7 +55,7 @@ Se o Fotos do iCloud estiver ativado, os itens ocultos sincronizam como todo o r
 | Forma de desbloqueio | Padrão em uma grade 5×5, separado do código | Face ID, Touch ID ou código do aparelho |
 | Biometria | Não oferecida, por design | Sim |
 | Fachada / vários cofres | Cada padrão é um cofre próprio (mais de um cofre exige o Premium) | Um único álbum Ocultos |
-| Padrão de coação | Planejado para uma atualização futura | Não |
+| Padrão de coação | Sim, com o Premium (abre um cofre de fachada e apaga os outros cofres) | Não |
 | Recuperação se você esquecer o código | Nenhuma | Código do aparelho e recuperação da Conta Apple |
 | Custo | Grátis (1 cofre, 50 itens) e Premium opcional | Incluído no iOS |
 | Plataformas | iPhone (iOS 17+) | iPhone, iPad e Mac |

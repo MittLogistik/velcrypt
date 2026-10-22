@@ -10,7 +10,7 @@ keyFacts:
   - "Pas de Face ID ni de Touch ID, par choix — un motif n’existe que dans votre mémoire."
   - "Ni publicité ni revente de données."
   - "Honnête sur ses limites, y compris l’impossibilité de récupérer un motif oublié."
-  - "Sauvegarde chiffrée gratuite ; motif de contrainte prévu pour une prochaine mise à jour."
+  - "Sauvegarde chiffrée gratuite pour tous ; un schéma de contrainte pour les situations de coercition, avec Premium."
 primaryKeyword: "à propos de velcrypt"
 keywords: ["app velcrypt", "qui développe velcrypt", "principes velcrypt", "coffre-fort photo privé iphone"]
 datePublished: 2026-10-21
@@ -23,8 +23,8 @@ faq:
     a: "Parce que des données qui ne quittent jamais votre téléphone ne peuvent pas être exposées par la fuite d’un serveur, une réquisition adressée à un prestataire ou un mot de passe réutilisé. La contrepartie : un motif oublié ne peut pas être récupéré, et pour ne pas perdre vos coffres avec le téléphone, vous créez vous-même une sauvegarde chiffrée."
   - q: "Velcrypt gagne-t-il de l’argent avec mes données ?"
     a: "Non. Velcrypt ne collecte ni le contenu de vos coffres ni de données d’analyse à son sujet, et n’affiche aucune publicité. Velcrypt est gratuit, avec une option Premium payante via l’App Store."
-  - q: "Sur quoi Velcrypt travaille-t-il ensuite ?"
-    a: "Le prochain élément prévu est un motif de contrainte. Il n’a pas encore de date de sortie. La sauvegarde chiffrée, elle, est déjà disponible et gratuite."
+  - q: "Velcrypt a-t-il un schéma de contrainte ?"
+    a: "Oui, dans Velcrypt 1.0 avec Premium. Le tracer ouvre un coffre leurre et supprime en silence, définitivement, tous les autres coffres de l’iPhone. Il est conçu pour des situations de sécurité personnelle, pas pour contourner une injonction légale."
 ---
 
 <!-- TODO: add founder/company details -->
@@ -59,17 +59,17 @@ Les outils de confidentialité déçoivent quand ils promettent trop. Nous préf
 
 Velcrypt n’affiche aucune publicité et ne vend pas de données. Il ne collecte ni le contenu de vos coffres ni de données d’analyse à son sujet : il n’y a donc rien à vendre. Velcrypt est financé par une option Premium — voir les [tarifs](id:pricing).
 
-## La suite
+## Ce que contient Velcrypt 1.0
+
+Velcrypt 1.0 comprend la sauvegarde chiffrée gratuite et une option Premium avec éléments illimités, plus de coffres, un schéma de contrainte et des icônes d’app alternatives.
 
 | Élément | Statut |
 |---|---|
 | Sauvegarde et restauration chiffrées | Disponible, gratuit |
 | Plus de coffres, éléments illimités et icônes d’app alternatives | Disponible (Premium) |
-| [Motif de contrainte](id:duress-pattern) — ouvrirait un coffre choisi et retirerait discrètement l’accès aux autres | Prévu pour une prochaine mise à jour |
+| [Schéma de contrainte](id:duress-pattern) — ouvre un coffre leurre et supprime en silence, définitivement, tous les autres coffres de l’iPhone | Disponible (Premium) |
 
-Le motif de contrainte ne figure pas encore dans l’app, et nous n’annoncerons pas de date avant qu’il soit prêt.
-
-Tout ce que nous ajouterons suivra les mêmes principes : sur l’appareil par défaut, sans compte, et avec une explication claire des compromis.
+Le schéma de contrainte suit les mêmes principes que tout le reste : sur l’appareil, sans compte, et avec une explication claire des compromis. La suppression est définitive, et la fonction est conçue pour des situations de sécurité personnelle, pas pour contourner une injonction légale. Tout ce que nous ajouterons plus tard suivra les mêmes règles.
 
 ## Nous contacter
 

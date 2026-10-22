@@ -53,7 +53,7 @@ Aucune approche n’est meilleure dans l’absolu. L’une sacrifie du confort p
 | Méthode de déverrouillage | Motif sur une grille 5×5 | Code PIN ou code d’accès |
 | Biométrie (Face ID / Touch ID) | Non proposée, par choix | Prise en charge, d’après sa fiche |
 | Leurre / plusieurs coffres | Chaque motif est son propre coffre (Premium) | Faux code PIN (leurre) en premium |
-| Motif de contrainte | Prévu, pas encore disponible | Non indiqué publiquement |
+| Schéma de contrainte | Oui, avec Premium (ouvre un leurre, supprime les autres coffres) | Non indiqué publiquement |
 | Alertes d’intrusion | Non proposées | Proposées en premium |
 | Récupération en cas d’oubli du code | Aucune ; le coffre ne peut pas être récupéré | Variable ; une récupération via le compte peut exister |
 | Modèle économique | Gratuit (1 coffre, 50 éléments) ; Premium en abonnement ou achat unique (voir [tarifs](id:pricing)) | Offre gratuite plus abonnement premium |
@@ -81,7 +81,7 @@ De nombreuses apps coffre-fort proposent un second code, factice, qui ouvre un c
 
 <!-- TODO verify -->
 
-Chez Velcrypt, ce modèle fait partie de la structure, ce n’est pas une option. Chaque motif est son propre coffre, il n’existe aucune liste de coffres, et un motif que l’app n’a jamais vu ouvre simplement un coffre vide, sans erreur. Rien à l’écran ne prouve que d’autres coffres existent. C’est concrètement le sens des [coffres cachés](id:hidden-vaults) et du [déni plausible](id:plausible-deniability-explained). Un motif de contrainte, qui ouvrirait un coffre choisi et retirerait discrètement l’accès aux autres, est prévu pour une prochaine mise à jour. Plusieurs coffres, et donc un leurre, nécessitent Premium.
+Chez Velcrypt, ce modèle fait partie de la structure, ce n’est pas une option. Chaque motif est son propre coffre, il n’existe aucune liste de coffres, et un motif que l’app n’a jamais vu ouvre simplement un coffre vide, sans erreur. Rien à l’écran ne prouve que d’autres coffres existent. C’est concrètement le sens des [coffres cachés](id:hidden-vaults) et du [déni plausible](id:plausible-deniability-explained). Avec Premium, un [schéma de contrainte](id:duress-pattern) va plus loin : il ouvre un coffre leurre et supprime en silence, définitivement, tous les autres coffres de l’iPhone. Plusieurs coffres, et donc un leurre, nécessitent Premium.
 
 ## Quand Keepsafe peut mieux vous convenir
 

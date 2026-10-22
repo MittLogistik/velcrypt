@@ -56,7 +56,7 @@ Je kunt foto’s uit je bibliotheek toevoegen, een foto in de notitie zelf maken
 | Biometrie | Bewust niet aangeboden | Optioneel Face ID / Touch ID |
 | Lokkluis / meerdere kluizen | Elk patroon is een eigen kluis (tweede kluis met Premium) | Niet ondersteund; alle vergrendelde notities delen één wachtwoord |
 | Herstel als je de code vergeet | Geen | Optie met toegangscode voorkomt een apart wachtwoord; oude Notities-wachtwoorden zijn niet te herstellen |
-| Dwangpatroon | Gepland voor een toekomstige update | Nee |
+| Dwangpatroon | Ja, met Premium (opent een lokkluis, verwijdert de andere kluizen) | Nee |
 | Omgang met foto’s en video’s | Albums, viewer met zoomen en vegen, video’s | Afbeeldingen in een notitie; ondersteuning voor video verschilt |
 | Kosten | Gratis (1 kluis, tot 50 onderdelen); Premium vanaf $ 1,99 per week | Inbegrepen bij iOS |
 | Platforms | iPhone (iOS 17+) | iPhone, iPad, Mac en iCloud.com |

@@ -70,6 +70,6 @@ Pas de compte et aucun envoi : il n’y a donc aucun identifiant cloud à hameç
 - **Les originaux restent dans Photos tant que vous ne les supprimez pas.** L’import copie une photo. [Supprimez l’original](id:delete-original-photos-after-import) et videz « Suppressions récentes ».
 - **Quelqu’un qui vous regarde tracer** votre schéma pourrait l’apprendre.
 - **L’icône de l’app est visible** sur l’écran d’accueil, sauf si vous utilisez l’option d’iOS 18 pour masquer des apps.
-- **Un coffre n’est pas un bouclier juridique.** À une frontière, ce sont les règles du pays qui s’appliquent ; le schéma de contrainte est prévu pour une prochaine mise à jour et pas encore proposé.
+- **Un coffre n’est pas un bouclier juridique.** À une frontière, ce sont les règles du pays qui s’appliquent. N’utilisez pas le [schéma de contrainte](id:duress-pattern) pour supprimer des données lorsque des agents exigent légalement d’y accéder : cela peut constituer en soi une infraction.
 
 Voyagez léger, voyagez préparé : avec un téléphone bien verrouillé, le perdre devient un désagrément, pas une crise.

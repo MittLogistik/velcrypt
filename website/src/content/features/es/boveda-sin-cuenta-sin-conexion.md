@@ -74,7 +74,7 @@ Nadie puede ayudarte, tampoco Velcrypt, porque nadie más tiene tus claves ni tu
 
 ## Copia de seguridad cifrada, cuando tú quieras
 
-En Ajustes → Copia de seguridad, Velcrypt crea un archivo `.velcrypt` con la bóveda abierta, protegido con una contraseña que tú eliges. Cada bóveda se respalda por separado, así que una copia nunca revela tus otras bóvedas. Guarda el archivo en Archivos, en iCloud Drive o en un ordenador y restáuralo en cualquier iPhone con Ajustes → Copia de seguridad → Restaurar copia de seguridad. Es gratuita, no necesita cuenta y Velcrypt nunca recibe el archivo. Igual que el patrón, la contraseña de la copia no se puede recuperar si la olvidas.
+En Ajustes → Copia de seguridad, Velcrypt crea un archivo `.velcrypt` con la bóveda abierta, protegido con una contraseña que tú eliges. Cada bóveda se respalda por separado, así que una copia nunca revela tus otras bóvedas. Guarda el archivo en Archivos, en iCloud Drive o en un ordenador y restáuralo en cualquier iPhone con Ajustes → Copia de seguridad → Restaurar desde copia de seguridad. Es gratuita, no necesita cuenta y Velcrypt nunca recibe el archivo. Igual que el patrón, la contraseña de la copia no se puede recuperar si la olvidas.
 
 ## Buenos hábitos para una bóveda sin conexión
 

@@ -55,7 +55,7 @@ Se Foto di iCloud è attivo, gli elementi nascosti si sincronizzano come tutto i
 | Metodo di sblocco | Sequenza su griglia 5×5, separata dal codice | Face ID, Touch ID o codice del dispositivo |
 | Biometria | Non offerta, per scelta | Sì |
 | Esca / più casseforti | Ogni sequenza è una cassaforte a sé (più casseforti con Premium) | Un solo album Nascosti |
-| Sequenza di emergenza | Prevista per un aggiornamento futuro | No |
+| Sequenza di emergenza | Sì, con il Premium (apre un’esca, elimina le altre casseforti) | No |
 | Recupero se dimentichi il codice | Nessuno | Codice del dispositivo e recupero dell’Account Apple |
 | Costo | Gratuita (1 cassaforte, 50 elementi) più Premium facoltativo da 1,99 $/settimana, 19,99 $/anno o 39,99 $ a vita (USD) | Incluso in iOS |
 | Piattaforme | iPhone (iOS 17+) | iPhone, iPad e Mac |

@@ -18,7 +18,7 @@ dateModified: 2026-10-22
 summary: "Das Konzept hinter versteckten Volumes und Köder-Tresoren, wie Velcrypts Design mit unbekannten Mustern es nutzt – und was es ehrlicherweise nicht kann."
 category: security
 order: 42
-related: [what-is-a-decoy-vault, hidden-vaults, duress-pattern, aes-256-encryption-explained, phone-privacy-border-crossing, security]
+related: [what-is-a-decoy-vault, hidden-vaults, duress-pattern, duress-password-explained, self-destruct-photo-vault, aes-256-encryption-explained, phone-privacy-border-crossing, security]
 faq:
   - q: "Was bedeutet glaubhafte Abstreitbarkeit einfach erklärt?"
     a: "Dass du glaubwürdig sagen kannst „das ist alles“ und niemand das Gegenteil beweisen kann. Bei Verschlüsselung gelingt das durch Designs, bei denen versteckte Daten nicht von leerem Speicher oder nicht existierenden Daten zu unterscheiden sind."
@@ -60,7 +60,7 @@ Velcrypt überträgt das Prinzip auf einen Foto- und Dokumenten-Tresor auf dem i
 
 Die Folge: Ein falsches Muster und ein gültiger, aber leerer Tresor sehen identisch aus. Öffnest du für jemanden einen Tresor, zeigt nichts in der Oberfläche, dass es weitere gibt. Damit wird ein [Köder-Tresor](id:what-is-a-decoy-vault) zu einer natürlichen Nutzungsweise statt zu einem Sondermodus. Die Funktionsseite [versteckte Tresore](id:hidden-vaults) zeigt, wie das in der Praxis funktioniert.
 
-Das [Notfallmuster](id:duress-pattern), geplant für ein künftiges Update und noch nicht in der App, würde das erweitern: Ein spezielles Muster würde einen gewählten Tresor öffnen und still den Zugriff auf die anderen entfernen.
+Das [Notfallmuster](id:duress-pattern), verfügbar mit Premium, erweitert das: Ein spezielles Muster öffnet einen Köder-Tresor und löscht still und endgültig alle anderen Tresore auf dem iPhone. Die App zeigt nie an, ob eines eingerichtet ist, also ist auch seine Existenz abstreitbar. [Notfallpasswort erklärt](id:duress-password-explained) ordnet die Idee ein.
 
 ## Die ehrlichen Grenzen
 

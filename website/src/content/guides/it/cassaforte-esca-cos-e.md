@@ -10,7 +10,7 @@ keyFacts:
   - "In Velcrypt ogni sequenza è una cassaforte a sé e non esiste un elenco di casseforti che tradisca le altre."
   - "Un’esca vuota è sospetta; un’esca vissuta, con album ed elementi recenti, è convincente."
   - "Un’esca protegge da curiosità e pressioni occasionali, non dall’analisi forense né da chi ti ha visto disegnare."
-  - "Una sequenza di emergenza che rimuova anche l’accesso alle altre casseforti è prevista per un aggiornamento futuro."
+  - "Con il Premium, una sequenza di emergenza può aprire l’esca ed eliminare definitivamente tutte le altre casseforti sull’iPhone."
 primaryKeyword: "cassaforte esca"
 keywords: ["cos’è una cassaforte esca", "password esca app foto", "cassaforte finta app", "sequenza esca", "seconda cassaforte iphone"]
 datePublished: 2026-10-21
@@ -18,7 +18,7 @@ dateModified: 2026-10-22
 summary: "Cos’è una cassaforte esca, come costruirne una credibile con una seconda sequenza in Velcrypt e i limiti da conoscere."
 category: security
 order: 41
-related: [hidden-vaults, plausible-deniability-explained, duress-pattern, pattern-lock-vs-pin-vs-face-id, partner-scrolling-camera-roll, phone-privacy-border-crossing]
+related: [hidden-vaults, plausible-deniability-explained, duress-pattern, set-up-decoy-vault-and-duress-pattern, duress-password-explained, forced-to-unlock-phone, pattern-lock-vs-pin-vs-face-id, partner-scrolling-camera-roll, phone-privacy-border-crossing]
 howTo:
   name: "Creare una cassaforte esca in Velcrypt"
   steps:
@@ -40,7 +40,7 @@ faq:
   - q: "Qualcuno può capire che una cassaforte è un’esca?"
     a: "Non dall’interno dell’app: Velcrypt non tiene un elenco delle casseforti e non lascia intendere che ne esistano altre. Ciò che può tradire un’esca è il contenuto, per esempio se è vuota, ferma da tempo o palesemente costruita."
   - q: "Una cassaforte esca è la stessa cosa di una sequenza di emergenza?"
-    a: "No. Un’esca apre semplicemente un’altra cassaforte. Una sequenza di emergenza, prevista in Velcrypt per un aggiornamento futuro, aprirebbe una cassaforte scelta e rimuoverebbe anche, in silenzio, l’accesso alle altre."
+    a: "No. Un’esca apre semplicemente un’altra cassaforte e lascia intatte le altre. Una sequenza di emergenza, disponibile con Velcrypt Premium, apre la cassaforte esca ed elimina anche, in silenzio e definitivamente, tutte le altre casseforti sull’iPhone."
   - q: "Devo usare una cassaforte esca con la polizia o alla frontiera?"
     a: "Questa guida non può dare consulenza legale. Ingannare un pubblico ufficiale può essere reato in molti paesi. Un’esca serve soprattutto contro la curiosità quotidiana e le pressioni informali; per le situazioni ufficiali, informati sui tuoi diritti e parla con un avvocato."
 ---
@@ -93,7 +93,7 @@ Una cassaforte esca è uno strumento sociale sostenuto da una buona crittografia
 
 ## Cassaforte esca e sequenza di emergenza
 
-Un’esca apre un’altra cassaforte e lascia tutto il resto intatto. Una **sequenza di emergenza** fa un passo in più: apre una cassaforte che hai scelto e, nello stesso momento, rimuove in silenzio l’accesso alle altre. In Velcrypt la [sequenza di emergenza](id:duress-pattern) è prevista per un aggiornamento futuro. Nel frattempo, un’esca ben curata copre la maggior parte delle situazioni quotidiane, come un partner curioso, un amico che scorre il tuo telefono o un collega impiccione.
+Un’esca apre un’altra cassaforte e lascia tutto il resto intatto. Una **sequenza di emergenza** fa un passo in più: apre la tua esca e, nello stesso momento, elimina in silenzio e definitivamente tutte le altre casseforti sull’iPhone. In Velcrypt la [sequenza di emergenza](id:duress-pattern) fa parte del Premium e si configura dall’interno della cassaforte esca. È adatta alle situazioni in cui ti aspetti nuove pressioni in seguito; per la curiosità di tutti i giorni, come un partner, un amico che scorre il tuo telefono o un collega impiccione, di solito basta un’esca ben curata. Dato che l’eliminazione è definitiva, crea prima un backup cifrato della cassaforte vera. [Come configurare una cassaforte esca e una sequenza di emergenza](id:set-up-decoy-vault-and-duress-pattern) spiega entrambe le cose.
 
 ## Dove si inserisce Velcrypt
 

@@ -10,7 +10,7 @@ keyFacts:
   - "Bewust geen Face ID of Touch ID — een patroon bestaat alleen in je geheugen."
   - "Geen advertenties en geen verkoop van gegevens."
   - "Eerlijk over grenzen, ook over het feit dat een vergeten patroon niet te herstellen is."
-  - "Gratis versleutelde back-up als apart bestand dat jij beheert; een dwangpatroon is gepland."
+  - "Gratis versleutelde back-up voor iedereen; met Premium een dwangpatroon voor situaties van dwang."
 primaryKeyword: "over velcrypt"
 keywords: ["velcrypt app", "wie maakt velcrypt", "principes velcrypt", "privé fotokluis iphone"]
 datePublished: 2026-10-21
@@ -23,8 +23,8 @@ faq:
     a: "Omdat gegevens die je telefoon nooit verlaten niet kunnen uitlekken via een serverlek, een vordering bij een provider of een hergebruikt wachtwoord. De keerzijde is dat een vergeten patroon niet te herstellen is, en dat je bij een verloren telefoon alleen terug kunt naar een versleuteld back-upbestand dat je zelf hebt gemaakt."
   - q: "Verdient Velcrypt geld aan mijn gegevens?"
     a: "Nee. Velcrypt verzamelt je kluisinhoud en analyses daarover niet en toont geen advertenties. Er is een gratis versie met een optionele betaalde Premium-upgrade."
-  - q: "Waar werkt Velcrypt hierna aan?"
-    a: "Een dwangpatroon staat gepland voor een toekomstige update. Er is nog geen releasedatum, en we beloven er ook geen tot het klaar is."
+  - q: "Heeft Velcrypt een dwangpatroon?"
+    a: "Ja, in Velcrypt 1.0 met Premium. Wie het tekent, opent een lokkluis en verwijdert ongemerkt en definitief alle andere kluizen op de iPhone. Het is bedoeld voor situaties waarin je persoonlijke veiligheid op het spel staat, niet als manier om wettige bevelen te omzeilen."
 ---
 
 <!-- TODO: add founder/company details -->
@@ -59,15 +59,16 @@ Privacytools laten mensen in de steek als ze te veel beloven. We vertellen je li
 
 Velcrypt toont geen reclame en verkoopt geen gegevens. Het verzamelt je kluisinhoud en analyses daarover niet, dus er valt niets te verkopen. Velcrypt wordt gefinancierd met een optionele Premium-upgrade — zie [prijzen](id:pricing).
 
-## Wat er nog komt
+## Wat er in Velcrypt 1.0 zit
 
-Versleutelde back-up, meer kluizen en een onbeperkt aantal onderdelen zitten al in versie 1.0. Wat nog gepland is, staat hieronder. Het zit nu nog niet in de app, en we hangen er pas een datum aan als het klaar is.
+Velcrypt 1.0 bevat gratis versleutelde back-up en een optionele Premium-upgrade met onbeperkt onderdelen, meer kluizen, een dwangpatroon en alternatieve appsymbolen.
 
 | Onderdeel | Status |
 |---|---|
-| [Dwangpatroon](id:duress-pattern) — opent een gekozen kluis en verwijdert stilletjes de toegang tot de andere | Gepland voor een toekomstige update |
+| Versleutelde back-up — een met een wachtwoord beveiligd bestand dat je zelf bewaart | Beschikbaar, gratis |
+| [Dwangpatroon](id:duress-pattern) — opent een lokkluis en verwijdert ongemerkt en definitief alle andere kluizen op de iPhone | Beschikbaar, Premium |
 
-Alles wat we toevoegen, volgt dezelfde principes: standaard op het apparaat, geen account en een duidelijke uitleg van de afwegingen.
+Het dwangpatroon volgt dezelfde principes als al het andere: op het apparaat, geen account en een duidelijke uitleg van de afwegingen. Verwijderen is definitief, en het is bedoeld voor situaties waarin je persoonlijke veiligheid op het spel staat, niet als manier om wettige bevelen te omzeilen. Wat we later toevoegen, volgt dezelfde regels.
 
 ## Contact
 

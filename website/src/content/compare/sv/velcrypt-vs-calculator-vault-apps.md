@@ -54,7 +54,7 @@ Båda kan vara användbara. Frågan är vad du skyddar dig mot. En förklädnad 
 | Biometri (Face ID / Touch ID) | Erbjuds inte, med avsikt | Varierar |
 | Förklädnad | Ingen fungerande förklädnad; alternativa appikoner med Premium | Ser ut som en fungerande miniräknare |
 | Lockvalv / flera valv | Varje mönster är ett eget valv | Varierar; vissa har en lockkod |
-| Tvångsmönster | Planerat till en framtida uppdatering | Varierar |
+| Nödmönster | Ja, med Premium (öppnar ett lockbete, raderar de andra valven) | Varierar |
 | Intrångsbilder | Erbjuds inte | Vanligt, men varierar |
 | Återställning om du glömmer koden | Ingen | Varierar; vissa erbjuder återställning via e-post eller säkerhetsfråga |
 | Affärsmodell | Gratis (ett valv, 50 objekt) plus valfri Premium | Varierar; vissa gratisversioner visar annonser |

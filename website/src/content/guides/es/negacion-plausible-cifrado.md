@@ -18,7 +18,7 @@ dateModified: 2026-10-22
 summary: "El concepto detrás de los volúmenes ocultos y las bóvedas señuelo, cómo lo usa Velcrypt con los patrones desconocidos y lo que honestamente no puede hacer."
 category: security
 order: 42
-related: [what-is-a-decoy-vault, hidden-vaults, duress-pattern, aes-256-encryption-explained, phone-privacy-border-crossing, security]
+related: [what-is-a-decoy-vault, hidden-vaults, duress-pattern, duress-password-explained, self-destruct-photo-vault, aes-256-encryption-explained, phone-privacy-border-crossing, security]
 faq:
   - q: "¿Qué significa negación plausible en pocas palabras?"
     a: "Significa que puedes decir de forma creíble «esto es todo» y nadie puede demostrar lo contrario. En el cifrado se consigue con diseños en los que los datos ocultos no se distinguen del espacio vacío ni de datos que no existen."
@@ -60,7 +60,7 @@ Velcrypt adapta el principio a una bóveda de fotos y documentos en el iPhone. N
 
 La consecuencia es que un patrón equivocado y una bóveda válida pero vacía se ven exactamente igual. Si abres una bóveda delante de alguien, nada en la interfaz muestra que existan otras. Eso convierte la [bóveda señuelo](id:what-is-a-decoy-vault) en una forma natural de uso y no en un modo especial. La página de la función de [bóvedas ocultas](id:hidden-vaults) muestra cómo funciona en la práctica.
 
-Una función prevista para una actualización futura, el [patrón de coacción](id:duress-pattern), lo ampliaría: un patrón especial abriría una bóveda elegida y quitaría en silencio el acceso a las demás.
+El [patrón de coacción](id:duress-pattern), disponible con Premium, lo amplía: un patrón especial abre una bóveda señuelo y elimina en silencio y de forma permanente todas las demás bóvedas del iPhone. La app nunca muestra si hay uno configurado, así que su propia existencia también es negable. [Las contraseñas de coacción, explicadas](id:duress-password-explained) sitúa la idea en contexto.
 
 ## Los límites, con honestidad
 

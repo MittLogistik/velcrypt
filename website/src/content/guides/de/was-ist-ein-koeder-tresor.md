@@ -11,7 +11,7 @@ keyFacts:
   - "Ein leerer Köder wirkt verdächtig; ein benutzt wirkender Köder mit Alben und neuen Objekten überzeugt."
   - "Ein Köder schützt vor Herumschnüffeln und beiläufigem Druck, nicht vor forensischer Analyse oder jemandem, der dir beim Zeichnen zugesehen hat."
   - "Ein Köder braucht einen zweiten Tresor und damit Premium; die kostenlose Version hat einen Tresor."
-  - "Ein Notfallmuster, das zusätzlich den Zugriff auf andere Tresore entfernt, ist für ein künftiges Update geplant."
+  - "Mit Premium kann ein Notfallmuster den Köder öffnen und alle anderen Tresore auf dem iPhone endgültig löschen."
 primaryKeyword: "köder tresor"
 keywords: ["was ist ein köder tresor", "fake passwort foto tresor", "fake tresor app", "köder muster", "zweiter tresor iphone", "decoy tresor"]
 datePublished: 2026-10-21
@@ -19,7 +19,7 @@ dateModified: 2026-10-22
 summary: "Was ein Köder-Tresor ist, wie du mit einem zweiten Velcrypt-Muster einen benutzt wirkenden baust – und welche Grenzen du kennen solltest."
 category: security
 order: 41
-related: [hidden-vaults, plausible-deniability-explained, duress-pattern, pattern-lock-vs-pin-vs-face-id, partner-scrolling-camera-roll, phone-privacy-border-crossing]
+related: [hidden-vaults, plausible-deniability-explained, duress-pattern, set-up-decoy-vault-and-duress-pattern, duress-password-explained, forced-to-unlock-phone, pattern-lock-vs-pin-vs-face-id, partner-scrolling-camera-roll, phone-privacy-border-crossing]
 howTo:
   name: "Einen Köder-Tresor in Velcrypt einrichten"
   steps:
@@ -41,7 +41,7 @@ faq:
   - q: "Kann jemand erkennen, dass ein Tresor ein Köder ist?"
     a: "Nicht aus der App heraus: Velcrypt führt keine Tresorliste und zeigt keinen Hinweis, dass weitere existieren. Verraten kann einen Köder sein Inhalt – etwa wenn er leer, veraltet oder offensichtlich inszeniert ist."
   - q: "Ist ein Köder-Tresor dasselbe wie ein Notfallmuster?"
-    a: "Nein. Ein Köder öffnet einfach einen anderen Tresor. Ein Notfallmuster – in Velcrypt für ein künftiges Update geplant – würde einen gewählten Tresor öffnen und zugleich still den Zugriff auf die anderen entfernen."
+    a: "Nein. Ein Köder öffnet einfach einen anderen Tresor und lässt die anderen unberührt. Ein Notfallmuster, verfügbar mit Velcrypt Premium, öffnet den Köder-Tresor und löscht zugleich still und endgültig alle anderen Tresore auf dem iPhone."
   - q: "Sollte ich einen Köder-Tresor gegenüber Polizei oder Grenzbeamten nutzen?"
     a: "Diese Anleitung kann keine Rechtsberatung geben. Behörden zu täuschen kann in vielen Ländern strafbar sein. Ein Köder ist vor allem für alltägliches Herumschnüffeln und informellen Druck gedacht; in offiziellen Situationen informiere dich über deine Rechte und sprich mit einer Anwältin oder einem Anwalt."
 ---
@@ -94,7 +94,7 @@ Ein Köder-Tresor ist ein soziales Werkzeug mit guter Kryptografie dahinter. Zau
 
 ## Köder-Tresor vs. Notfallmuster
 
-Ein Köder öffnet einen anderen Tresor und lässt alles andere unberührt. Ein **Notfallmuster** geht einen Schritt weiter: Es öffnet einen von dir gewählten Tresor und entfernt gleichzeitig still den Zugriff auf die anderen. In Velcrypt ist das [Notfallmuster](id:duress-pattern) für ein künftiges Update geplant und noch nicht in der App. Bis dahin deckt ein gut gepflegter Köder die meisten Alltagssituationen ab – einen neugierigen Partner, einen Freund, der durch dein Handy scrollt, oder eine neugierige Kollegin.
+Ein Köder öffnet einen anderen Tresor und lässt alles andere unberührt. Ein **Notfallmuster** geht einen Schritt weiter: Es öffnet deinen Köder und löscht im selben Moment still und endgültig alle anderen Tresore auf dem iPhone. In Velcrypt gehört das [Notfallmuster](id:duress-pattern) zu Premium und wird aus dem Köder-Tresor heraus eingerichtet. Es passt zu Situationen, in denen du damit rechnest, später erneut unter Druck gesetzt zu werden. Bei alltäglicher Neugier – ein Partner, ein Freund, der durch dein Handy scrollt, oder eine neugierige Kollegin – reicht ein gut gepflegter Köder meist allein. Weil das Löschen endgültig ist, erstell vorher ein verschlüsseltes Backup deines echten Tresors. [Köder-Tresor und Notfallmuster einrichten](id:set-up-decoy-vault-and-duress-pattern) erklärt beides Schritt für Schritt.
 
 ## Wo Velcrypt ins Spiel kommt
 

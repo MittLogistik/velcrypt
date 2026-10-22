@@ -53,7 +53,7 @@ Velcrypt är ett mönsterlåst valv på enheten. Ett mönster är en sammanhäng
 | Upplåsning | Mönster på ett 5×5-rutnät | PIN-kod / lösenkod |
 | Biometri (Face ID / Touch ID) | Erbjuds inte, med avsikt | Varierar |
 | Lockvalv / flera valv | Varje mönster är ett eget valv | Lösenord som lockbete |
-| Tvångsmönster | Planerat till en framtida uppdatering | Inte offentligt angivet |
+| Nödmönster | Ja, med Premium (öppnar ett lockbete, raderar de andra valven) | Inte offentligt angivet |
 | Intrångsrapporter | Erbjuds inte | Erbjuds, enligt App Store-sidan |
 | Återställning om du glömmer koden | Ingen | Inte offentligt angivet |
 | Affärsmodell | Gratis (ett valv, 50 objekt) plus valfri Premium | Gratisversion plus betald uppgradering |

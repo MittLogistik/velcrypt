@@ -53,7 +53,7 @@ Velcrypt is een native iPhone-app die privéfoto’s, video’s en documenten in
 | Versleuteling | AES-256-GCM (Apple CryptoKit); sleutelafleiding met PBKDF2-HMAC-SHA512 |
 | Gegevens | 100% op het apparaat; geen account, geen cloudsynchronisatie, geen advertenties |
 | Back-up | Gratis versleuteld back-upbestand (.velcrypt) dat de gebruiker zelf bewaart |
-| Gepland | Dwangpatroon (toekomstige update) |
+| Dwangpatroon | Ja (Premium): opent een lokkluis en verwijdert de andere kluizen definitief |
 | Uitgever | Swedish Treats AB, Zweden |
 | Perscontact | press@velcrypt.app |
 
@@ -84,7 +84,7 @@ Gebruik de bestanden zoals ze worden aangeleverd: houd genoeg vrije ruimte rond 
 Een paar punten helpen om de berichtgeving correct te houden:
 
 - Velcrypt is **niet** onafhankelijk geaudit. Beschrijf de app dus niet als geaudit.
-- Het dwangpatroon is gepland, niet beschikbaar. De versleutelde back-up zit wel in de app, en is gratis.
+- Versleutelde back-up is beschikbaar en gratis. Het dwangpatroon is beschikbaar met Premium; beschrijf het als een functie voor persoonlijke veiligheid, niet als manier om politie- of grenscontroles te omzeilen.
 - Velcrypt kan vergeten patronen niet herstellen; dat is een bewust gevolg van het ontbreken van een account of server.
 - Er is nog geen persaandacht om naar te verwijzen, en we publiceren geen gebruikersaantallen of beoordelingen.
 

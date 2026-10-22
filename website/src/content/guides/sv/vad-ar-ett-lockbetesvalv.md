@@ -10,7 +10,7 @@ keyFacts:
   - "I Velcrypt är varje mönster ett eget valv, och det finns ingen valvlista som avslöjar de andra."
   - "Ett tomt lockbete väcker misstankar; ett levande lockbete med album och nya objekt övertygar."
   - "Ett lockbete skyddar mot snokande och tillfällig press, inte mot forensisk analys eller någon som såg dig rita."
-  - "Gratisversionen har ett valv, så ett lockbete kräver Premium. Ett tvångsmönster är planerat till en framtida uppdatering."
+  - "Gratisversionen har ett valv, så ett lockbete kräver Premium. Med Premium kan ett nödmönster öppna lockbetet och permanent radera alla andra valv på iPhonen."
 primaryKeyword: "lockbetesvalv"
 keywords: ["vad är ett lockbetesvalv", "lockbetes-lösenord fotovalv", "falskt valv app", "lockbetesmönster", "andra valv iphone"]
 datePublished: 2026-10-21
@@ -18,7 +18,7 @@ dateModified: 2026-10-22
 summary: "Vad ett lockbetesvalv är, hur du bygger ett som ser levande ut med ett andra mönster i Velcrypt och vilka gränser du bör känna till."
 category: security
 order: 41
-related: [hidden-vaults, plausible-deniability-explained, duress-pattern, pattern-lock-vs-pin-vs-face-id, partner-scrolling-camera-roll, phone-privacy-border-crossing]
+related: [hidden-vaults, plausible-deniability-explained, duress-pattern, set-up-decoy-vault-and-duress-pattern, duress-password-explained, forced-to-unlock-phone, pattern-lock-vs-pin-vs-face-id, partner-scrolling-camera-roll, phone-privacy-border-crossing]
 howTo:
   name: "Skapa ett lockbetesvalv i Velcrypt"
   steps:
@@ -39,8 +39,8 @@ faq:
     a: "Rita ett andra mönster som du aldrig har använt. Velcrypt öppnar ett nytt, tomt valv för det. Lägg till trovärdigt vardagsinnehåll, som kvitton, skärmbilder och vanliga bilder, så öppnar det mönstret nu ditt lockbete."
   - q: "Kan någon se att ett valv är ett lockbete?"
     a: "Inte inifrån appen: Velcrypt sparar ingen lista över valv och visar ingen antydan om att andra finns. Det som kan avslöja ett lockbete är innehållet, till exempel om det är tomt, inaktuellt eller tydligt arrangerat."
-  - q: "Är ett lockbetesvalv samma sak som ett tvångsmönster?"
-    a: "Nej. Ett lockbete öppnar helt enkelt ett annat valv. Ett tvångsmönster, en planerad funktion i Velcrypt för en framtida uppdatering, ska öppna ett valt valv och samtidigt tyst ta bort åtkomsten till de andra."
+  - q: "Är ett lockbetesvalv samma sak som ett nödmönster?"
+    a: "Nej. Ett lockbete öppnar helt enkelt ett annat valv och lämnar de andra orörda. Ett nödmönster, som finns med Velcrypt Premium, öppnar lockbetesvalvet och raderar samtidigt i tysthet och permanent alla andra valv på iPhonen."
   - q: "Ska jag använda ett lockbetesvalv mot polis eller gränstjänstemän?"
     a: "Den här guiden kan inte ge juridisk rådgivning. Att vilseleda tjänstemän kan vara ett brott i många länder. Ett lockbete är främst till för vardagligt snokande och informell press; i officiella situationer, ta reda på dina rättigheter och prata med en advokat."
 ---
@@ -91,9 +91,9 @@ Ett lockbetesvalv är ett socialt verktyg med bra kryptografi i botten. Det är 
 - **Ihållande tvång.** Ett lockbete desarmerar ett ögonblick. Det är ingen plan för en pågående situation med övergrepp; om det är din situation, kontakta lokala stödverksamheter.
 - **Rättsliga sammanhang.** Att vilseleda tjänstemän kan vara ett brott i många länder. Tänk noga efter innan du använder ett lockbete mot myndigheter, och läs [guiden om mobilen vid gränsen](id:phone-privacy-border-crossing).
 
-## Lockbetesvalv och tvångsmönster
+## Lockbetesvalv och nödmönster
 
-Ett lockbete öppnar ett annat valv och lämnar allt annat orört. Ett **tvångsmönster** går ett steg längre: det öppnar ett valv du har valt och tar samtidigt tyst bort åtkomsten till de andra. I Velcrypt är [tvångsmönstret](id:duress-pattern) planerat till en framtida uppdatering. Till dess täcker ett välskött lockbete de flesta vardagssituationer, som en nyfiken partner, en vän som scrollar i din telefon eller en snokig kollega.
+Ett lockbete öppnar ett annat valv och lämnar allt annat orört. Ett **nödmönster** går ett steg längre: det öppnar ditt lockbete och raderar i samma ögonblick, i tysthet och permanent, alla andra valv på iPhonen. I Velcrypt ingår [nödmönstret](id:duress-pattern) i Premium och ställs in inifrån lockbetesvalvet. Det passar när du räknar med att bli pressad igen senare; för vardaglig nyfikenhet, som en partner, en vän som scrollar i din telefon eller en snokig kollega, räcker oftast ett välskött lockbete. Eftersom raderingen är permanent bör du först göra en krypterad säkerhetskopia av ditt riktiga valv. [Så ställer du in ett lockbetesvalv och ett nödmönster](id:set-up-decoy-vault-and-duress-pattern) går igenom båda.
 
 ## Var Velcrypt passar in
 

@@ -70,6 +70,6 @@ Es gibt kein Konto und keine Uploads – also auch kein Cloud-Login, das unterwe
 - **Originale bleiben in Fotos, bis du sie löschst.** Der Import kopiert ein Foto. [Lösch das Original](id:delete-original-photos-after-import) und leere „Zuletzt gelöscht“.
 - **Wer dir beim Zeichnen zusieht,** kann dein Muster lernen.
 - **Das App-Symbol ist sichtbar** auf dem Home-Bildschirm, es sei denn, du nutzt die iOS-18-Option zum Ausblenden von Apps.
-- **Ein Tresor ist kein rechtlicher Schutzschild.** An der Grenze gelten die Regeln des jeweiligen Landes; das Notfallmuster ist für ein künftiges Update geplant und heute noch nicht verfügbar.
+- **Ein Tresor ist kein rechtlicher Schutzschild.** An der Grenze gelten die Regeln des jeweiligen Landes. Benutze das [Notfallmuster](id:duress-pattern) nicht, um Daten zu löschen, wenn Beamte rechtmäßig Zugriff verlangen; das kann selbst eine Straftat sein.
 
 Leicht reisen, gut vorbereitet reisen: Mit einem gut abgesicherten Handy ist ein Verlust ärgerlich, aber keine Krise.

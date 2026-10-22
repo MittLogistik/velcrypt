@@ -1,80 +1,123 @@
 ---
 pageId: duress-pattern
-title: "Schéma de contrainte (prévu) : vos coffres sous pression"
-description: "Le schéma de contrainte est une fonction prévue pour une prochaine mise à jour : un schéma ouvrira un coffre choisi et supprimera l’accès aux autres."
-h1: "Schéma de contrainte (fonction prévue)"
-navTitle: "Schéma de contrainte (prévu)"
-answer: "Le schéma de contrainte est une fonction prévue pour une prochaine mise à jour de Velcrypt ; elle ne fait pas encore partie de l’app. Il s’agira de définir un schéma spécial qui ouvre le coffre de votre choix et supprime silencieusement l’accès à vos autres coffres, pour les moments où l’on vous force à déverrouiller l’app."
+title: "Schéma de contrainte : ouvrir un leurre, effacer le reste"
+description: "Le schéma de contrainte de Velcrypt ouvre votre coffre leurre et supprime en silence, définitivement, tous les autres coffres. Fonctionnement et limites."
+h1: "Schéma de contrainte"
+navTitle: "Schéma de contrainte"
+answer: "Le schéma de contrainte est une fonction Premium de Velcrypt 1.0. Vous le configurez depuis un coffre leurre. Si vous le tracez un jour sur l’écran de verrouillage, Velcrypt ouvre ce coffre leurre et supprime en silence, définitivement, tous les autres coffres de l’iPhone. Rien à l’écran ne montre ce qui s’est passé."
 keyFacts:
-  - "Statut : prévu pour une prochaine mise à jour, sans date. Pas encore dans l’app."
-  - "Un schéma spécial ouvrira un coffre choisi à l’avance."
-  - "En même temps, il supprimera silencieusement l’accès aux autres coffres."
-  - "Il ne peut rien contre les copies qui existent en dehors de Velcrypt."
-  - "C’est un outil de confidentialité, pas un conseil juridique ni un moyen de contourner une injonction légale."
+  - "Disponible dès maintenant dans Velcrypt 1.0, avec Premium."
+  - "Se configure dans Réglages → Schéma de contrainte, depuis un coffre leurre."
+  - "Le tracer ouvre le leurre et supprime définitivement tous les autres coffres de cet iPhone."
+  - "Le déverrouillage a la même apparence et la même durée qu’un déverrouillage normal."
+  - "L’app n’indique jamais si un schéma de contrainte est configuré."
+  - "Les coffres supprimés ne se restaurent qu’à partir d’un fichier de sauvegarde chiffré créé avant."
+  - "C’est un outil de sécurité personnelle, pas un conseil juridique ni un moyen de contourner une injonction légale."
 primaryKeyword: "code de contrainte coffre-fort photo"
 keywords: ["code de panique iphone", "mot de passe de contrainte", "schéma de panique coffre-fort photo", "déverrouillage sous contrainte", "coffre autodestructeur", "code de détresse app"]
 datePublished: 2026-10-21
 dateModified: 2026-10-22
-summary: "Prévu : un schéma spécial qui ouvrira un coffre choisi et supprimera en silence l’accès aux autres."
-status: coming-soon
+summary: "Un schéma distinct qui ouvre votre coffre leurre et supprime en silence, définitivement, tous les autres coffres de l’iPhone. Premium."
+status: available
 schemaType: WebPage
 order: 3
-related: [hidden-vaults, pattern-lock, what-is-a-decoy-vault, plausible-deniability-explained, phone-privacy-border-crossing]
+related: [set-up-decoy-vault-and-duress-pattern, duress-password-explained, forced-to-unlock-phone, self-destruct-photo-vault, hidden-vaults, what-is-a-decoy-vault, plausible-deniability-explained]
+howTo:
+  name: "Configurer un schéma de contrainte dans Velcrypt"
+  steps:
+    - name: "Sauvegardez votre vrai coffre"
+      text: "Ouvrez votre vrai coffre, allez dans Réglages → Sauvegarde et enregistrez un fichier .velcrypt protégé par mot de passe en dehors de l’app, par exemple dans Fichiers ou sur un ordinateur."
+    - name: "Ouvrez votre coffre leurre"
+      text: "Tracez le schéma d’un deuxième coffre au contenu anodin et crédible. Les coffres au-delà du premier nécessitent Premium."
+    - name: "Ouvrez Réglages → Schéma de contrainte"
+      text: "Depuis le coffre leurre, ouvrez Réglages et choisissez Schéma de contrainte."
+    - name: "Tracez deux fois un nouveau schéma de contrainte"
+      text: "Tracez un schéma distinct qui n’ouvre aucun coffre, puis tracez-le une seconde fois pour le confirmer."
+    - name: "Confirmez"
+      text: "Lisez l’avertissement et confirmez. Désormais, tracer ce schéma sur l’écran de verrouillage ouvre ce leurre et supprime tous les autres coffres de l’iPhone."
 faq:
-  - q: "Le schéma de contrainte est-il déjà disponible dans Velcrypt ?"
-    a: "Non. C’est une fonction prévue pour une prochaine mise à jour, sans date annoncée. En attendant, vous pouvez utiliser les coffres cachés et un coffre leurre, qui existent déjà avec Premium."
-  - q: "Que se passera-t-il quand quelqu’un saisira le code de contrainte ?"
-    a: "Le principe prévu : il ouvre un coffre que vous avez choisi à l’avance et, en même temps, supprime silencieusement l’accès à vos autres coffres. Rien à l’écran n’indiquera qu’il s’est passé autre chose."
+  - q: "Le schéma de contrainte est-il disponible dans Velcrypt ?"
+    a: "Oui. Il est inclus dans Velcrypt 1.0, avec Premium. Vous le configurez dans Réglages → Schéma de contrainte, pendant qu’un coffre leurre est ouvert."
+  - q: "Que se passe-t-il quand quelqu’un trace le schéma de contrainte ?"
+    a: "Velcrypt ouvre le coffre leurre dans lequel il a été configuré et, au même moment, supprime en silence et définitivement tous les autres coffres de cet iPhone. Aucun message, aucune animation ni aucun délai ne le trahit."
+  - q: "Quelqu’un peut-il savoir que j’ai un schéma de contrainte ?"
+    a: "Pas à partir de l’app. Velcrypt n’indique jamais s’il en existe un. Un enregistrement chiffré de taille fixe existe toujours dans le trousseau ; sans schéma de contrainte, il est rempli d’octets aléatoires, si bien qu’il a la même apparence dans les deux cas."
+  - q: "Puis-je récupérer les coffres supprimés ?"
+    a: "Pas depuis le téléphone. Le seul moyen est un fichier de sauvegarde chiffré que vous avez créé auparavant dans Réglages → Sauvegarde et enregistré en dehors de l’app. Le schéma de contrainte ne touche pas aux fichiers de sauvegarde stockés ailleurs."
+  - q: "Faut-il rester abonné à Premium pour qu’il fonctionne ?"
+    a: "Non. Sa configuration nécessite Premium, mais un schéma de contrainte déjà configuré continue de fonctionner si Premium expire."
+  - q: "Comment désactiver le schéma de contrainte ?"
+    a: "Dans Réglages → Schéma de contrainte, touchez Désactiver le schéma de contrainte et tracez le schéma de contrainte. Le tracer à cet endroit ne fait que le désactiver ; rien n’est supprimé."
   - q: "Le schéma de contrainte peut-il effacer des photos déjà partagées ?"
-    a: "Non. Il n’agit que sur le contenu de Velcrypt sur ce téléphone. Les copies dans votre photothèque, dans iCloud, dans des conversations, des e-mails ou sur l’appareil d’une autre personne restent hors de sa portée."
-  - q: "Est-il légal d’utiliser un code de contrainte ?"
-    a: "Cela dépend du pays et de la situation. Supprimer des données pendant l’inspection légale d’un appareil par les autorités peut constituer une infraction dans certains pays. Velcrypt ne peut pas donner de conseil juridique ; si c’est important pour vous, consultez un avocat."
+    a: "Non. Il ne supprime que les coffres de Velcrypt sur ce téléphone. Les copies dans votre photothèque, dans iCloud, dans des conversations, des e-mails, un fichier de sauvegarde ou sur l’appareil d’une autre personne restent hors de sa portée."
+  - q: "Est-il légal d’utiliser un schéma de contrainte ?"
+    a: "Cela dépend du pays et de la situation. Supprimer des données alors que la police, les douanes ou un tribunal exigent légalement d’y accéder peut constituer en soi une infraction. Le schéma de contrainte est conçu pour des situations de sécurité personnelle, pas pour détruire des preuves. Si une demande légale est en jeu, consultez un avocat."
 ---
 
-Parfois, le risque n’est pas un téléphone volé, mais une personne en face de vous qui exige que vous ouvriez l’app. Le schéma de contrainte est la réponse prévue par Velcrypt pour ce moment-là. Il n’est pas encore disponible : c’est une **fonction prévue** pour une prochaine mise à jour, et cette page décrit ce qu’elle est conçue pour faire.
+Parfois, le risque n’est pas un téléphone volé, mais une personne en face de vous qui exige que vous ouvriez l’app. Un [coffre leurre](id:what-is-a-decoy-vault) aide dans bien de ces moments. Le schéma de contrainte va plus loin : il ouvre le leurre **et** supprime définitivement tous les autres coffres de l’iPhone, si bien que vos coffres privés ne peuvent plus y être ouverts, même plus tard.
 
-## Ce que fera le schéma de contrainte
+Il fait partie de Premium dans Velcrypt 1.0.
 
-Un schéma de contrainte est un schéma de déverrouillage spécial, destiné à être utilisé quand on vous met sous pression ou qu’on vous y oblige. Dans Velcrypt, il est prévu de fonctionner ainsi :
+## Ce que fait le schéma de contrainte
 
-1. À l’avance, vous définissez un schéma de contrainte et choisissez le coffre qu’il doit ouvrir, en général un [coffre leurre](id:what-is-a-decoy-vault) au contenu ordinaire.
+Un schéma de contrainte est un schéma de déverrouillage distinct, que vous n’utilisez que sous la pression. Dans Velcrypt, il fonctionne ainsi :
+
+1. Vous le configurez à l’avance, depuis un coffre leurre : un deuxième coffre rempli de contenu anodin et crédible.
 2. Si l’on vous force un jour à déverrouiller l’app, vous tracez le schéma de contrainte au lieu du vrai.
-3. Velcrypt ouvre le coffre choisi, normalement.
-4. En arrière-plan, l’app supprime silencieusement l’accès à vos autres coffres sur cet appareil.
+3. Velcrypt ouvre le coffre leurre, exactement comme lors d’un déverrouillage normal.
+4. Au même moment, il supprime en silence et définitivement tous les autres coffres de cet iPhone.
 
-Vu de l’extérieur, rien d’inhabituel ne se produit. Pas d’alerte, pas d’animation, aucun message indiquant que quelque chose a été supprimé.
+Rien à l’écran n’indique à l’autre personne ce qui s’est passé. Pas d’alerte, pas d’animation, pas de délai supplémentaire : le déverrouillage a la même apparence et prend le même temps que n’importe quel autre.
 
-## Comment il complète les coffres cachés
+## Comment le configurer
 
-Velcrypt vous offre déjà des [coffres cachés](id:hidden-vaults) (plusieurs coffres font partie de Premium) : chaque schéma ouvre son propre coffre, il n’y a pas de liste de coffres, et un schéma inconnu ouvre un coffre vide sans erreur. Il est donc déjà difficile pour quelqu’un de prouver que d’autres coffres existent.
+Il vous faut Premium, car le schéma de contrainte se trouve dans un deuxième coffre, et les coffres au-delà du premier font partie de Premium.
 
-Le schéma de contrainte ajoute une seconde couche. Un leurre suppose que l’autre personne vous croie. Le schéma de contrainte est pensé pour les situations où cela pourrait ne pas suffire, par exemple si vous vous attendez à être questionné à plusieurs reprises ou à devoir livrer votre vrai schéma plus tard. Une fois utilisé, les autres coffres ne sont plus accessibles sur ce téléphone. L’idée commune aux deux fonctions est expliquée dans [le déni plausible expliqué](id:plausible-deniability-explained).
+1. **Sauvegardez d’abord votre vrai coffre.** Ouvrez-le, allez dans **Réglages → Sauvegarde** et enregistrez le fichier .velcrypt protégé par mot de passe en dehors de l’app, par exemple dans Fichiers, sur iCloud Drive ou sur un ordinateur. C’est le seul moyen de récupérer le coffre si le schéma de contrainte est un jour utilisé.
+2. **Ouvrez votre coffre leurre.** Si vous n’en avez pas encore, tracez un nouveau schéma pour le créer et ajoutez-y du contenu ordinaire ; Velcrypt vous demande d’ajouter quelque chose avant qu’un coffre puisse recevoir un schéma de contrainte. Le [guide du coffre leurre](id:what-is-a-decoy-vault) explique comment le rendre crédible.
+3. **Allez dans Réglages → Schéma de contrainte** pendant que le coffre leurre est ouvert.
+4. **Tracez deux fois le schéma de contrainte.** Ce doit être un nouveau schéma, qui n’ouvre aucun coffre existant.
+5. **Lisez l’avertissement et confirmez.** Ensuite, entraînez-vous à ce schéma de tête, pas sur l’écran de verrouillage : l’y tracer supprimerait vos autres coffres.
 
-## Quand cela peut compter
+Le pas-à-pas complet, avec des conseils pour s’entraîner, se trouve dans [configurer un coffre leurre et un schéma de contrainte](id:set-up-decoy-vault-and-duress-pattern).
 
-On anticipe rarement la contrainte, mais certaines situations la rendent plus probable :
+### Les règles à connaître
 
-- **Une relation abusive ou contrôlante**, où un partenaire exige de voir tout le contenu de votre téléphone.
-- **Les journalistes et chercheurs** qui transportent des éléments susceptibles d’exposer leurs sources.
-- **Les voyages dans des pays aux contrôles d’appareils intrusifs**, abordés dans [protéger son téléphone au passage de la frontière](id:phone-privacy-border-crossing).
-- **Un vol ou une agression**, où quelqu’un vous force à tout déverrouiller sur-le-champ.
+- **Un seul par iPhone.** Il n’y a qu’un schéma de contrainte par appareil. En configurer un nouveau remplace l’ancien.
+- **Pour le désactiver**, il faut tracer le schéma de contrainte dans Réglages → Schéma de contrainte. Le tracer à cet endroit ne fait que le désactiver ; rien n’est supprimé.
+- **Il continue de fonctionner si Premium expire.** Seule la configuration nécessite Premium.
+- **Configurez-le dans un leurre, pas dans votre seul coffre.** Si le leurre est le seul coffre du téléphone, le schéma de contrainte n’a rien à supprimer. Velcrypt vous prévient dans ce cas.
 
-Dans chaque cas, l’objectif est le même : vous permettre d’obtempérer en apparence tout en gardant vos fichiers les plus sensibles hors d’atteinte.
+## Rien ne révèle son existence
 
-## Des limites honnêtes
+Un schéma de contrainte n’est utile que si personne ne peut savoir qu’il existe. Velcrypt n’indique jamais s’il en existe un, ni dans l’interface ni dans ses réglages. En coulisses, un enregistrement chiffré de taille fixe existe toujours dans le trousseau iOS ; sans schéma de contrainte, il contient des octets aléatoires. L’enregistrement a donc la même apparence, que vous utilisiez la fonction ou non.
 
-Un schéma de contrainte est un outil puissant, avec des limites tout aussi réelles. Mieux vaut les connaître maintenant que les découvrir plus tard.
+Cela s’appuie sur les [coffres cachés](id:hidden-vaults) : chaque schéma ouvre son propre coffre, il n’existe aucune liste de coffres, et un schéma inconnu ouvre un coffre vide sans message d’erreur. L’idée derrière les deux est expliquée dans [le déni plausible expliqué](id:plausible-deniability-explained).
 
-**Il ne peut pas effacer les copies.** Il agit uniquement sur les coffres de Velcrypt sur cet appareil. Si une photo se trouve encore dans votre photothèque, dans « Suppressions récentes », dans Photos iCloud, dans une conversation ou sur le téléphone de quelqu’un d’autre, elle y reste. Faites le ménage dans les originaux après l’import ; le guide [supprimer les originaux après l’import](id:delete-original-photos-after-import) explique comment.
+## Quand il peut aider
 
-**Considérez-le comme définitif.** Les données des coffres ne sont incluses ni dans les sauvegardes iCloud ni dans les sauvegardes sur ordinateur : partez du principe qu’un accès supprimé sur le téléphone ne peut pas y être rétabli. Gardez aussi à l’esprit qu’une sauvegarde chiffrée que vous avez créée existe en dehors de l’app et n’est pas concernée. Ne l’utilisez que si vous acceptez réellement de perdre ces fichiers.
+Le schéma de contrainte est conçu pour des situations de sécurité personnelle, par exemple :
 
-**Il n’empêche pas l’observation.** Si quelqu’un vous a vu tracer votre vrai schéma, ou a filmé l’écran, le schéma de contrainte ne change rien à ce qu’il a vu.
+- **Un partenaire contrôlant ou violent** qui exige de voir tout ce que contient votre téléphone.
+- **Un vol ou une menace**, quand quelqu’un vous force à déverrouiller vos apps sur-le-champ.
+- **Une surveillance insistante** de la part de quelqu’un qui ne se contentera pas du leurre et reviendra à la charge.
 
-**La contrainte est imprévisible.** Certaines personnes peuvent mal réagir si elles soupçonnent que quelque chose a été caché ou supprimé. Votre sécurité physique compte plus que n’importe quel fichier. Un schéma de contrainte est une option, pas une obligation, et vous êtes le mieux placé pour juger s’il est sûr de l’utiliser.
+Si vous vivez l’une de ces situations, le guide [que faire si l’on vous force à déverrouiller votre téléphone](id:forced-to-unlock-phone) donne une vue d’ensemble, y compris sur le moment de contacter des services d’aide.
 
-**Ce n’est pas un conseil juridique.** Les lois sur la fouille des appareils, le déverrouillage forcé et la destruction de données varient selon les pays et les situations. Dans certains endroits, supprimer des données lors d’un contrôle officiel peut constituer en soi une infraction. Velcrypt ne peut pas vous dire ce qui est légal là où vous êtes ; si les enjeux sont importants, consultez un avocat avant de voyager ou d’agir.
+## Les limites, en toute honnêteté
 
-## En attendant
+**C’est définitif.** Les coffres supprimés ne peuvent pas être récupérés depuis le téléphone. Les données des coffres sont exclues des sauvegardes iCloud et sur ordinateur ; le seul moyen de les retrouver est donc un fichier de sauvegarde chiffré créé auparavant. Les fichiers de sauvegarde enregistrés en dehors de l’app ne sont pas touchés.
 
-Vous pouvez déjà vous préparer avec les fonctions existantes. Avec Premium, créez un coffre leurre crédible, choisissez un [schéma](id:pattern-lock) solide pour votre vrai coffre et gardez les originaux sensibles hors de votre pellicule. Le jour où le schéma de contrainte arrivera, il s’intégrera à cette configuration.
+**La mémoire flash a ses limites.** Comme toute app, Velcrypt ne peut pas garantir que les octets supprimés sont physiquement effacés de la mémoire flash. Ce qu’il garantit, c’est que les données des coffres sont chiffrées en AES-256-GCM et que les clés sont supprimées avec les dossiers des coffres : ce qui reste n’est que du texte chiffré illisible.
+
+**Il ne peut rien contre les copies.** Si une photo se trouve encore dans votre photothèque, dans Suppressions récentes, dans Photos iCloud, dans une conversation ou sur le téléphone de quelqu’un d’autre, elle y reste. [Supprimez les originaux après l’import](id:delete-original-photos-after-import).
+
+**Il n’empêche pas l’observation.** Si quelqu’un vous a vu tracer votre vrai schéma ou a filmé l’écran, le schéma de contrainte n’y change rien. Tracez-le à l’abri des regards.
+
+**Votre sécurité passe avant tout.** Certaines personnes peuvent mal réagir si elles soupçonnent que quelque chose a été caché ou supprimé. Un schéma de contrainte est une option, jamais une obligation. Vous êtes la personne la mieux placée pour juger s’il est sûr de l’utiliser.
+
+**Ce n’est pas un moyen de contourner la loi.** Ne l’utilisez jamais pour détruire des preuves ni pour vous opposer à une demande légale de la police, des douanes ou d’un tribunal. Les lois sur la fouille des appareils et la suppression de données varient d’un pays à l’autre, et supprimer des données face à une demande légale peut constituer en soi une infraction. Si une demande légale est en jeu, consultez un avocat. Le [guide sur le passage des frontières](id:phone-privacy-border-crossing) traite des voyages.
+
+## Tarifs
+
+Le schéma de contrainte fait partie de Premium, avec les éléments illimités, des coffres supplémentaires et les icônes d’app alternatives. La sauvegarde chiffrée reste gratuite pour tout le monde. Consultez les [tarifs](id:pricing) pour les formules.

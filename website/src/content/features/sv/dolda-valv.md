@@ -77,7 +77,7 @@ Ett lockbetesvalv är ett valv fyllt med harmlöst men trovärdigt innehåll, ti
 
 Ett lockbetesvalv fungerar bäst när det ser använt ut. Ett tomt valv väcker frågan ”varför installera en valvapp för ingenting?”, medan ett valv med några dussin vardagliga saker sällan gör det. Guiden om [vad ett lockbetesvalv är](id:what-is-a-decoy-vault) visar hur du gör det övertygande.
 
-Velcrypt planerar också ett [tvångsmönster](id:duress-pattern) till en framtida uppdatering. Det är tänkt att gå ett steg längre än ett lockbete genom att öppna ett valt valv och i tysthet ta bort åtkomsten till de andra.
+Med Premium kan du också ställa in ett [nödmönster](id:duress-pattern) i lockbetet. Det går ett steg längre: att rita det öppnar lockbetet och raderar i tysthet och permanent alla andra valv på iPhonen. Guiden om [att ställa in ett lockbetesvalv och ett nödmönster](id:set-up-decoy-vault-and-duress-pattern) går igenom det.
 
 ## Så hålls varje valv åtskilt
 

@@ -77,7 +77,7 @@ Un coffre leurre est un coffre rempli de contenu anodin mais crédible, par exem
 
 Un leurre fonctionne mieux quand il a l’air utilisé. Un coffre vide appelle la question « pourquoi installer une app coffre-fort pour rien ? », alors qu’un coffre contenant quelques dizaines d’éléments ordinaires la suscite rarement. Le guide [qu’est-ce qu’un coffre leurre](id:what-is-a-decoy-vault) explique comment le rendre convaincant.
 
-Velcrypt prévoit aussi un [schéma de contrainte](id:duress-pattern) pour une prochaine mise à jour. Il doit aller plus loin qu’un leurre : ouvrir un coffre choisi et supprimer silencieusement l’accès aux autres.
+Avec Premium, vous pouvez aussi configurer un [schéma de contrainte](id:duress-pattern) dans le leurre. Il va un cran plus loin : le tracer ouvre le leurre et supprime en silence, définitivement, tous les autres coffres de l’iPhone. Le guide [configurer un coffre leurre et un schéma de contrainte](id:set-up-decoy-vault-and-duress-pattern) vous accompagne pas à pas.
 
 ## Comment chaque coffre reste séparé
 

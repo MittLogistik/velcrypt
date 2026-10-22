@@ -53,7 +53,7 @@ Inget av upplägget är bäst för alla. Det ena byter bekvämlighet mot minimal
 | Upplåsning | Mönster på ett 5×5-rutnät | PIN-kod eller lösenkod |
 | Biometri (Face ID / Touch ID) | Erbjuds inte, med avsikt | Stöds, enligt App Store-sidan |
 | Lockvalv / flera valv | Varje mönster är ett eget valv (fler valv med Premium) | Falsk lock-PIN i premium |
-| Tvångsmönster | Planerat till en framtida uppdatering | Inte offentligt angivet |
+| Nödmönster | Ja, med Premium (öppnar ett lockbete, raderar de andra valven) | Inte offentligt angivet |
 | Intrångsvarningar | Erbjuds inte | Erbjuds i premium |
 | Återställning om du glömmer koden | Ingen; valvet kan inte återställas | Varierar; kontobaserad återställning kan finnas |
 | Affärsmodell | Gratis (ett valv, 50 objekt) plus valfri Premium (se [priser](id:pricing)) | Gratisnivå plus premiumabonnemang |
@@ -81,7 +81,7 @@ Många valvappar erbjuder en andra, falsk kod som öppnar ett harmlöst valv. Ke
 
 <!-- TODO verify -->
 
-Velcrypts modell är inbyggd i strukturen snarare än ett tillägg. Varje mönster är ett eget valv, det finns ingen valvlista, och ett mönster appen aldrig sett öppnar helt enkelt ett tomt valv utan felmeddelande. Ingenting på skärmen bevisar att andra valv finns. Det är vad [dolda valv](id:hidden-vaults) och [trovärdigt förnekande](id:plausible-deniability-explained) betyder i praktiken. Ett tvångsmönster, som skulle öppna ett valt valv och i tysthet ta bort åtkomsten till de andra, är planerat till en framtida uppdatering.
+Velcrypts modell är inbyggd i strukturen snarare än ett tillägg. Varje mönster är ett eget valv, det finns ingen valvlista, och ett mönster appen aldrig sett öppnar helt enkelt ett tomt valv utan felmeddelande. Ingenting på skärmen bevisar att andra valv finns. Det är vad [dolda valv](id:hidden-vaults) och [trovärdigt förnekande](id:plausible-deniability-explained) betyder i praktiken. Med Premium går ett [nödmönster](id:duress-pattern) längre: det öppnar ett lockbetesvalv och raderar i tysthet och permanent alla andra valv på iPhonen.
 
 ## När Keepsafe kan passa dig bättre
 

@@ -4,10 +4,10 @@ title: "Prezzi Velcrypt: versione gratuita e Premium"
 description: "Velcrypt è gratuito. Premium è settimanale, annuale con 3 giorni di prova gratuita o a vita con un acquisto unico. Niente pubblicità, nessun account."
 h1: "Quanto costa Velcrypt"
 navTitle: "Prezzi"
-answer: "Velcrypt è gratuito con 1 cassaforte e fino a 50 elementi. Premium aggiunge elementi illimitati, più casseforti e icone alternative: 1,99 $ a settimana, 19,99 $ all’anno con 3 giorni di prova gratuita o 39,99 $ a vita con un acquisto unico (USD, i prezzi variano in base al paese). Il backup cifrato è gratuito."
+answer: "Velcrypt è gratuito con 1 cassaforte e fino a 50 elementi. Premium aggiunge elementi illimitati, più casseforti, una sequenza di emergenza e icone alternative: 1,99 $ a settimana, 19,99 $ all’anno con 3 giorni di prova gratuita o 39,99 $ a vita con un acquisto unico (USD, i prezzi variano in base al paese). Il backup cifrato è gratuito."
 keyFacts:
   - "Gratis: 1 cassaforte con fino a 50 elementi e l’icona standard."
-  - "Premium: elementi illimitati, più casseforti e icone alternative dell’app."
+  - "Premium: elementi illimitati, più casseforti, una sequenza di emergenza e icone alternative dell’app."
   - "Premium costa 1,99 $/settimana, 19,99 $/anno (3 giorni di prova gratuita) o 39,99 $ a vita (USD, prezzi diversi in base al paese)."
   - "Il backup cifrato è gratuito in tutte le versioni."
   - "Niente pubblicità e nessuna vendita di dati, in entrambe le versioni."
@@ -30,6 +30,8 @@ faq:
     a: "Nelle impostazioni degli abbonamenti del tuo Account Apple sull’iPhone. Gli abbonamenti si rinnovano automaticamente se non vengono annullati almeno 24 ore prima della fine del periodo in corso. L’acquisto A vita è un pagamento unico e non si rinnova."
   - q: "La versione gratuita di Velcrypt ha pubblicità?"
     a: "No. Velcrypt non ha pubblicità in nessuna versione e non raccoglie statistiche su ciò che conservi, quindi non c’è nulla da vendere o da usare per la profilazione."
+  - q: "La sequenza di emergenza fa parte del Premium?"
+    a: "Sì. Per configurare una sequenza di emergenza serve il Premium, perché vive in una seconda cassaforte (l’esca). Una volta configurata, continua a funzionare anche se l’abbonamento Premium termina."
   - q: "La versione gratuita usa la stessa cifratura del Premium?"
     a: "Sì. Ogni cassaforte usa la stessa cifratura, AES-256-GCM con chiavi derivate dalla tua sequenza, che tu passi al Premium o no. Il Premium aggiunge spazio e funzioni, non una sicurezza più forte."
   - q: "Come vengono gestiti gli acquisti in Velcrypt?"
@@ -51,6 +53,7 @@ Velcrypt è gratuito, con un upgrade Premium facoltativo.
 | Backup cifrato | Sì | Sì |
 | Numero di elementi | Fino a 50 | Illimitato |
 | Numero di casseforti | 1 | Più casseforti (ogni altra sequenza apre la propria cassaforte) |
+| Sequenza di emergenza | — | Sì |
 | Icona app | Standard | Icone alternative (calcolatrice, timer, righello e altre) |
 | Pubblicità | Nessuna | Nessuna |
 
@@ -78,7 +81,7 @@ In nessuna versione c’è un account. Non ti registri, non fornisci un indirizz
 
 Un’app per la privacy che guadagna con la pubblicità o con i dati ha un conflitto di interessi incorporato. Velcrypt lo evita chiedendo a chi vuole di più dall’app di pagarlo direttamente. Tutti gli altri mantengono una versione gratuita completamente cifrata, senza condizioni nascoste.
 
-Questo modello determina anche cosa entra nel Premium. Le funzioni a pagamento aggiungono capacità (più elementi, più casseforti) o comodità, come le icone alternative. Non sbloccano mai un livello di cifratura “vero” che manca alla versione gratuita. La [sequenza di emergenza](id:duress-pattern) è prevista per un aggiornamento futuro e non fa ancora parte dell’app.
+Questo modello determina anche cosa entra nel Premium. Le funzioni a pagamento aggiungono capacità (più elementi, più casseforti) o comodità, come la [sequenza di emergenza](id:duress-pattern) e le icone alternative. Non sbloccano mai un livello di cifratura “vero” che manca alla versione gratuita, e il backup cifrato resta gratuito, così nessuno deve pagare per proteggere i propri file dalla perdita del telefono. Una sequenza di emergenza già configurata continua a funzionare anche se il Premium scade; solo la configurazione richiede il Premium.
 
 Se passi al Premium, nelle tue casseforti esistenti non cambia nulla. I dati restano sul tuo iPhone, cifrati allo stesso modo.
 

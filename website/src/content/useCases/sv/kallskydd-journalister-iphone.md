@@ -63,7 +63,7 @@ Svaren avgör dina verktyg. Att överdimensionera skyddet för en lågriskhistor
 
 Velcrypt är ett lager i den planen. Appen förvarar bilder, videor och dokument i krypterade valv i din iPhone, med AES-256-GCM och nycklar som härleds ur ditt mönster. Det finns inget konto, ingen server, ingen synkning och ingen analys av valvinnehåll, så det finns inget på en server som någon kan begära ut.
 
-Valven öppnas med ett mönster på ett 5×5-rutnät. Velcrypt stöder medvetet inte Face ID eller Touch ID, eftersom biometri kan användas utan ditt samtycke; ett mönster finns bara i ditt minne. Resonemanget finns i [mönster, PIN eller Face ID](id:pattern-lock-vs-pin-vs-face-id). Varje mönster öppnar sitt eget valv, och ett okänt mönster öppnar ett tomt valv utan felmeddelande, vilket stöder [trovärdig förnekelse](id:plausible-deniability-explained). Ett tvångsmönster som tar bort åtkomsten till andra valv är planerat till en framtida uppdatering.
+Valven öppnas med ett mönster på ett 5×5-rutnät. Velcrypt stöder medvetet inte Face ID eller Touch ID, eftersom biometri kan användas utan ditt samtycke; ett mönster finns bara i ditt minne. Resonemanget finns i [mönster, PIN eller Face ID](id:pattern-lock-vs-pin-vs-face-id). Varje mönster öppnar sitt eget valv, och ett okänt mönster öppnar ett tomt valv utan felmeddelande, vilket stöder [trovärdig förnekelse](id:plausible-deniability-explained). Med Premium öppnar ett [nödmönster](id:duress-pattern) ett lockbetesvalv och raderar de andra permanent. Det är tänkt för situationer som gäller din personliga säkerhet, som stöld eller hot, inte för att radera material när myndigheter lagligen kräver åtkomst, vilket i sig kan vara ett brott; sök juridisk rådgivning om det är en risk för dig.
 
 ## Ärliga begränsningar
 

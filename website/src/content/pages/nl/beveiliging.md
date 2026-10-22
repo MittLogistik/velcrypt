@@ -95,6 +95,8 @@ Velcrypt werkt volledig offline. Er is geen registratie, geen e-mailadres, geen 
 
 Kluisgegevens zijn ook **uitgesloten van iCloud- en computerback-ups (Finder)**. Zo blijven je versleutelde bestanden van de servers van Apple en van elke computer waarmee je synchroniseert, maar dat heeft een echt gevolg: als je iPhone kwijtraakt, kapotgaat of wordt gewist, gaan de kluizen mee — tenzij je zelf een back-up hebt gemaakt.
 
+<a id="encrypted-backup"></a>
+
 ### Versleutelde back-up
 
 Via Instellingen → Back-up maak je een versleuteld `.velcrypt`-bestand van de kluis die open is, beveiligd met een **back-upwachtwoord** dat je zelf kiest. Jij bepaalt waar het bestand komt — in Bestanden, iCloud Drive of op een computer — en je kunt het op elke iPhone terugzetten. De back-up is een apart bestand dat je handmatig maakt: Velcrypt uploadt het nooit en ontvangt het nooit. Kies een sterk back-upwachtwoord, want wie zowel het bestand als het wachtwoord heeft, kan de kluis terugzetten, en een vergeten back-upwachtwoord kan niet worden hersteld.
@@ -121,7 +123,7 @@ Via Instellingen → Back-up maak je een versleuteld `.velcrypt`-bestand van de 
 Elk beveiligingsmiddel heeft grenzen, en je hoort die van Velcrypt te kennen voordat je erop vertrouwt.
 
 - **Meekijken.** Als iemand ziet hoe je je patroon tekent, live of via een camera, kan diegene die kluis openen. Teken het uit het zicht en kies een patroon dat niet op een simpele letter of vorm lijkt.
-- **Gedwongen ontgrendelen.** Velcrypt kan niet voorkomen dat iemand je dwingt een patroon te tekenen. Een lokkluis kan helpen; een dwangpatroon, gepland voor een toekomstige update, zou een gekozen kluis openen en stilletjes de toegang tot de andere verwijderen.
+- **Gedwongen ontgrendelen.** Velcrypt kan niet voorkomen dat iemand je dwingt een patroon te tekenen. Een lokkluis kan helpen, en met Premium opent een [dwangpatroon](id:duress-pattern) een lokkluis terwijl het de andere kluizen definitief verwijdert. Geen van beide houdt iemand tegen die je echte patroon al kent, en verwijderde kluizen zijn alleen terug te zetten uit een back-upbestand dat je eerder hebt gemaakt.
 - **Een telefoon die met open kluis wordt doorgegeven.** Zolang een kluis ontgrendeld is, ziet iedereen die de telefoon vasthoudt wat jij ziet. Vergrendel hem voordat je je telefoon aan iemand geeft.
 - **Gecompromitteerde of gejailbreakte apparaten en malware.** Software die op een gecompromitteerd apparaat het scherm kan lezen, aanrakingen kan registreren of het geheugen van apps kan inspecteren, kan elke versleuteling op app-niveau omzeilen.
 - **Schermafbeeldingen of foto’s van het scherm.** Velcrypt kan niet voorkomen dat een andere camera je scherm fotografeert.

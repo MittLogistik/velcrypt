@@ -54,7 +54,7 @@ Velcrypt è un’app nativa per iPhone che conserva foto, video e documenti priv
 | Dati | 100% sul dispositivo; nessun account, nessuna sincronizzazione cloud, nessuna pubblicità |
 | Backup | Backup cifrato gratuito in un file .velcrypt protetto da password |
 | Editore | Swedish Treats AB, Svezia |
-| In programma | Sequenza di emergenza (aggiornamento futuro) |
+| Sequenza di emergenza | Sì (Premium): apre una cassaforte esca ed elimina definitivamente le altre casseforti |
 | Contatto stampa | press@velcrypt.app |
 
 Per i dettagli tecnici rimanda al [modello di sicurezza](id:security); per una panoramica delle funzioni, alle [funzionalità](id:features).
@@ -84,7 +84,7 @@ Usa i file così come sono: lascia abbastanza spazio libero attorno al logo, non
 Alcuni punti per una copertura accurata:
 
 - Velcrypt **non** è stato sottoposto a un audit indipendente. Non descriverlo come verificato da un audit.
-- Il backup cifrato è disponibile e gratuito. La sequenza di emergenza è prevista per un aggiornamento futuro, non disponibile.
+- Il backup cifrato è disponibile e gratuito. La sequenza di emergenza è disponibile con il Premium; descrivila come una funzione per la sicurezza personale, non come un modo per aggirare controlli di polizia o di frontiera.
 - Velcrypt non può recuperare sequenze dimenticate: è una conseguenza voluta dell’assenza di account e server.
 - Non ci sono ancora articoli da citare e non pubblichiamo numeri di utenti né valutazioni.
 

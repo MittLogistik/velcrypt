@@ -55,7 +55,7 @@ Velcrypt es una app nativa para iPhone que guarda fotos, vídeos y documentos pr
 | Bóvedas | Cada patrón es su propia bóveda; no hay lista de bóvedas |
 | Cifrado | AES-256-GCM (Apple CryptoKit); derivación de claves PBKDF2-HMAC-SHA512 |
 | Datos | 100 % en el dispositivo; sin cuenta, sin sincronización en la nube, sin anuncios |
-| Previsto | Patrón de coacción (actualización futura) |
+| Patrón de coacción | Sí (Premium): abre una bóveda señuelo y elimina para siempre las demás bóvedas |
 | Contacto de prensa | press@velcrypt.app |
 
 Para los detalles técnicos, enlaza al [modelo de seguridad](id:security); para un resumen de funciones, consulta [funciones](id:features).
@@ -85,7 +85,7 @@ Usa los recursos tal como se proporcionan: deja suficiente espacio libre alreded
 Algunos puntos ayudan a que la cobertura sea precisa:
 
 - Velcrypt **no** ha sido auditada de forma independiente. Por favor, no la describas como auditada.
-- El patrón de coacción está previsto, no disponible. La copia de seguridad cifrada sí está disponible y es gratuita.
+- La copia de seguridad cifrada está disponible y es gratuita. El patrón de coacción está disponible con Premium; descríbelo como una función de seguridad personal, no como una forma de eludir controles policiales o fronterizos.
 - Velcrypt no puede recuperar patrones olvidados; es una consecuencia deliberada de no tener cuenta ni servidor.
 - Todavía no hay cobertura de prensa que citar, y no publicamos cifras de usuarios ni valoraciones.
 

@@ -18,7 +18,7 @@ dateModified: 2026-10-22
 summary: "隠しボリュームやダミー保管庫の背景にある考え方、Velcryptの未知のパターンの設計での使い方、そして正直にできないことを解説します。"
 category: security
 order: 42
-related: [what-is-a-decoy-vault, hidden-vaults, duress-pattern, aes-256-encryption-explained, phone-privacy-border-crossing, security]
+related: [what-is-a-decoy-vault, hidden-vaults, duress-pattern, duress-password-explained, self-destruct-photo-vault, aes-256-encryption-explained, phone-privacy-border-crossing, security]
 faq:
   - q: "もっともらしい否認とは、簡単に言うと何ですか？"
     a: "「これで全部です」と信じてもらえる形で言え、誰もそれを否定する証拠を示せないことです。暗号化では、隠されたデータが空き領域や存在しないデータと区別できない設計によって実現されます。"
@@ -60,7 +60,7 @@ Velcryptは、この原則をiPhoneの写真と書類の保管庫に合わせて
 
 その結果、間違ったパターンと、有効だが空の保管庫は、まったく同じに見えます。誰かのために保管庫を開いても、ほかの保管庫の存在を示すものは画面上に何もありません。そのため、[ダミーの保管庫](id:what-is-a-decoy-vault)は特別なモードではなく、ごく自然な使い方になります。実際の動作は[隠し保管庫](id:hidden-vaults)の機能ページでご覧いただけます。
 
-今後のアップデートで予定している[脅迫パターン](id:duress-pattern)は、これをさらに発展させます。特別なパターンで指定した保管庫を開き、ほかの保管庫へのアクセスを密かに削除するものです。
+Premiumで使える[緊急用パターン](id:duress-pattern)は、これをさらに発展させます。特別なパターンでダミーの保管庫を開き、iPhone上のほかの保管庫をすべて気づかれずに完全削除します。設定されているかどうかをアプリは決して表示しないため、その存在自体も否認できます。背景は[緊急用パスワードとは](id:duress-password-explained)で解説しています。
 
 ## 正直な限界
 

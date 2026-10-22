@@ -53,7 +53,7 @@ Velcrypt is een kluis op het apparaat die je met een patroon vergrendelt. Een pa
 | Ontgrendelen | Patroon op een raster van 5×5 | Pincode / toegangscode |
 | Biometrie (Face ID / Touch ID) | Bewust niet aangeboden | Verschilt |
 | Lokkluis / meerdere kluizen | Elk patroon is een eigen kluis (tweede kluis met Premium) | Lokwachtwoord |
-| Dwangpatroon | Gepland voor een toekomstige update | Niet openbaar vermeld |
+| Dwangpatroon | Ja, met Premium (opent een lokkluis, verwijdert de andere kluizen) | Niet openbaar vermeld |
 | Inbraakrapporten | Niet aangeboden | Aangeboden, volgens de vermelding |
 | Herstel als je de code vergeet | Geen | Niet openbaar vermeld |
 | Verdienmodel | Gratis (1 kluis, tot 50 onderdelen); Premium vanaf $ 1,99 per week | Gratis versie plus betaalde upgrade |

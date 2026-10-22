@@ -53,7 +53,7 @@ Nessuno dei due approcci è migliore in assoluto. Uno rinuncia a un po’ di com
 | Metodo di sblocco | Sequenza su griglia 5×5 | PIN o codice |
 | Biometria (Face ID / Touch ID) | Non offerta, per scelta | Supportata, secondo la sua scheda |
 | Esca / più casseforti | Ogni sequenza è una cassaforte a sé (più casseforti con Premium) | PIN falso/esca nel premium |
-| Sequenza di emergenza | Prevista per un aggiornamento futuro | Non dichiarato pubblicamente |
+| Sequenza di emergenza | Sì, con il Premium (apre un’esca, elimina le altre casseforti) | Non dichiarato pubblicamente |
 | Avvisi di intrusione | Non offerti | Offerti nel premium |
 | Recupero se dimentichi il codice | Nessuno; la cassaforte non si può recuperare | Variabile; può esserci un recupero tramite account |
 | Modello di business | Gratuita (1 cassaforte, 50 elementi) più Premium facoltativo da 1,99 $/settimana, 19,99 $/anno o 39,99 $ a vita (USD; vedi [prezzi](id:pricing)) | Livello gratuito più abbonamento premium |
@@ -81,7 +81,7 @@ Molte app cassaforte offrono un secondo codice falso che apre una cassaforte inn
 
 <!-- TODO verify -->
 
-Il modello di Velcrypt è strutturale, non un componente aggiuntivo. Ogni sequenza è una cassaforte a sé, non c’è un elenco di casseforti e una sequenza mai vista dall’app apre semplicemente una cassaforte vuota, senza errori. Nulla sullo schermo prova che esistano altre casseforti. È questo il significato pratico di [casseforti nascoste](id:hidden-vaults) e [negabilità plausibile](id:plausible-deniability-explained). Una sequenza di emergenza, che aprirebbe una cassaforte scelta e rimuoverebbe in silenzio l’accesso alle altre, è prevista per un aggiornamento futuro.
+Il modello di Velcrypt è strutturale, non un componente aggiuntivo. Ogni sequenza è una cassaforte a sé, non c’è un elenco di casseforti e una sequenza mai vista dall’app apre semplicemente una cassaforte vuota, senza errori. Nulla sullo schermo prova che esistano altre casseforti. È questo il significato pratico di [casseforti nascoste](id:hidden-vaults) e [negabilità plausibile](id:plausible-deniability-explained). Con il Premium, una [sequenza di emergenza](id:duress-pattern) va oltre: apre una cassaforte esca ed elimina in silenzio e definitivamente tutte le altre casseforti sull’iPhone.
 
 ## Quando Keepsafe potrebbe fare più al caso tuo
 

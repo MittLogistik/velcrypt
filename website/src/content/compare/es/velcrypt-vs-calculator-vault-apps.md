@@ -8,7 +8,7 @@ answer: "Las apps calculadora con bóveda se disfrazan de calculadora funcional 
 keyFacts:
   - "Las apps calculadora con bóveda parecen y funcionan como una calculadora; un código tecleado como operación abre la bóveda."
   - "Los detalles de cifrado varían mucho entre estas apps y a menudo no se publican."
-  - "Velcrypt no es una calculadora funcional; con Premium ofrece iconos alternativos (calculadora, temporizador, regla), pero su nombre sigue viéndose."
+  - "Velcrypt no es una calculadora funcional. Con Premium ofrece iconos alternativos (calculadora, temporizador, regla), pero la app sigue abriéndose en la cuadrícula del patrón."
   - "La negación plausible de Velcrypt viene de las bóvedas ocultas: un patrón desconocido abre una bóveda vacía."
   - "iOS 18 y posteriores permiten ocultar cualquier app en una carpeta oculta protegida con Face ID, también Velcrypt."
 primaryKeyword: "app calculadora para ocultar fotos"
@@ -24,7 +24,7 @@ faq:
   - q: "¿Son seguras las apps calculadora para ocultar fotos?"
     a: "Depende de la app. El disfraz de calculadora solo oculta que existe una bóveda; lo bien protegidos que estén los archivos depende de si la app los cifra y cómo, algo que muchas apps no documentan. Revisa la información de privacidad y seguridad de cada app."
   - q: "¿Velcrypt tiene disfraz de calculadora?"
-    a: "No es una calculadora funcional. Con Premium puedes cambiar el icono por otro, como una calculadora, un temporizador o una regla, pero el nombre Velcrypt sigue visible. Su protección principal es que el contenido sea negable: cada patrón abre su propia bóveda y nada revela cuántas bóvedas existen. En iOS 18 y posteriores también puedes ocultar la propia app con la función del sistema para ocultar apps."
+    a: "No es una calculadora funcional. Con Premium puedes cambiar el icono por otro, como una calculadora, un temporizador o una regla, pero la app sigue abriéndose en su cuadrícula de patrón y el nombre Velcrypt sigue visible. Su protección principal es que el contenido sea negable: cada patrón abre su propia bóveda y nada revela cuántas bóvedas existen. En iOS 18 y posteriores también puedes ocultar la propia app con la función del sistema para ocultar apps."
   - q: "¿Se puede saber que una app calculadora es en realidad una bóveda?"
     a: "A veces. El nombre y la descripción de la app en el App Store, tu historial de compras, el espacio que ocupa en Ajustes y su comportamiento pueden delatarla ante alguien que sepa qué buscar."
   - q: "¿Qué es mejor para la negación plausible?"
@@ -52,9 +52,9 @@ Ambas cosas pueden ser útiles. La cuestión es contra qué te proteges. Un disf
 | Copia de seguridad en la nube | No; copia de seguridad cifrada manual y gratuita en un archivo que guardas tú | Depende; algunas ofrecen funciones en la nube |
 | Método de desbloqueo | Patrón en una cuadrícula de 5×5 | Código numérico tecleado como operación |
 | Biometría (Face ID / Touch ID) | No disponible, por diseño | Depende |
-| Disfraz | Iconos alternativos con Premium; el nombre Velcrypt sigue visible | Parece una calculadora funcional |
+| Disfraz | Iconos alternativos con Premium; se abre en la cuadrícula del patrón y el nombre Velcrypt sigue visible | Parece una calculadora funcional |
 | Señuelo / varias bóvedas | Cada patrón es su propia bóveda (con Premium) | Depende; algunas ofrecen un código señuelo |
-| Patrón de coacción | Previsto para una actualización futura | Depende |
+| Patrón de coacción | Sí, con Premium (abre un señuelo y elimina las demás bóvedas) | Depende |
 | Fotos de intrusos | No disponibles | Habituales, pero depende |
 | Recuperación si olvidas el código | Ninguna; solo restaurar una copia de seguridad propia | Depende; algunas ofrecen recuperación por email o pregunta de seguridad |
 | Modelo de negocio | Gratis (1 bóveda, 50 elementos) o Premium desde 1,99 US$ a la semana | Depende; algunas versiones gratuitas muestran anuncios |

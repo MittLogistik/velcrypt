@@ -18,7 +18,7 @@ dateModified: 2026-10-22
 summary: "隐藏卷和诱饵保险箱背后的概念、Velcrypt“未知图案”设计如何运用它，以及它坦白说做不到的事。"
 category: security
 order: 42
-related: [what-is-a-decoy-vault, hidden-vaults, duress-pattern, aes-256-encryption-explained, phone-privacy-border-crossing, security]
+related: [what-is-a-decoy-vault, hidden-vaults, duress-pattern, duress-password-explained, self-destruct-photo-vault, aes-256-encryption-explained, phone-privacy-border-crossing, security]
 faq:
   - q: "用简单的话说，合理否认是什么意思？"
     a: "意思是你可以可信地说“这就是全部”，而且没有人能证明并非如此。在加密中，这是通过特定设计实现的：隐藏的数据与空白空间、或与根本不存在的数据无法区分。"
@@ -60,7 +60,7 @@ Velcrypt 把这一原则改造后用在 iPhone 上的照片和文档保险箱里
 
 结果是：画错的图案，和一个有效但为空的保险箱，看起来一模一样。如果你为别人打开一个保险箱，界面上没有任何东西能显示其他保险箱存在。这让 [诱饵保险箱](id:what-is-a-decoy-vault) 成为一种自然的使用方式，而不是一个特殊模式。[隐藏保险箱](id:hidden-vaults) 功能页面展示了它在实际中如何运作。
 
-计划在未来更新中推出的 [胁迫图案](id:duress-pattern) 进一步延伸了这一点：一个特殊图案会打开指定的保险箱，并悄悄移除对其他保险箱的访问。
+Premium 提供的[胁迫图案](id:duress-pattern)进一步延伸了这一点：一个特殊图案会打开诱饵保险箱，并悄悄、永久地删除这部 iPhone 上的其他所有保险箱。App 从不显示是否设置了胁迫图案，所以它的存在本身也可以否认。[胁迫密码详解](id:duress-password-explained)介绍了这一思路的来龙去脉。
 
 ## 坦诚的局限
 

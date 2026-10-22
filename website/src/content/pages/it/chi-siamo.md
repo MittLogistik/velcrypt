@@ -10,7 +10,7 @@ keyFacts:
   - "Niente Face ID né Touch ID per scelta: una sequenza esiste solo nella tua memoria."
   - "Nessuna pubblicità e nessuna vendita di dati."
   - "Trasparente sui limiti, compreso il fatto che una sequenza dimenticata non si recupera."
-  - "Backup cifrato gratuito; la sequenza di emergenza è prevista per un aggiornamento futuro."
+  - "Backup cifrato gratuito per tutti; con il Premium, una sequenza di emergenza per le situazioni di costrizione."
 primaryKeyword: "velcrypt chi siamo"
 keywords: ["app velcrypt", "chi sviluppa velcrypt", "principi velcrypt", "cassaforte foto privata iphone"]
 datePublished: 2026-10-21
@@ -23,8 +23,8 @@ faq:
     a: "Perché i dati che non lasciano mai il telefono non possono essere esposti da una violazione di un server, da una richiesta legale a un fornitore o da una password riutilizzata. Il rovescio della medaglia: se dimentichi la sequenza non c’è modo di recuperarli, e se perdi il telefono li recuperi solo da un backup cifrato creato da te."
   - q: "Velcrypt guadagna con i miei dati?"
     a: "No. Velcrypt non raccoglie i contenuti delle tue casseforti né dati analitici su di essi e non mostra pubblicità. Il modello è una versione gratuita con un upgrade Premium facoltativo a pagamento."
-  - q: "A cosa sta lavorando Velcrypt?"
-    a: "Il backup cifrato è già disponibile e gratuito. Tra le novità previste c’è una sequenza di emergenza, pensata per un aggiornamento futuro; non ha ancora una data di uscita."
+  - q: "Velcrypt ha una sequenza di emergenza?"
+    a: "Sì, in Velcrypt 1.0 con il Premium. Disegnarla apre una cassaforte esca ed elimina in silenzio e definitivamente tutte le altre casseforti sull’iPhone. È pensata per situazioni di sicurezza personale, non come modo per aggirare ordini legittimi."
 ---
 
 <!-- TODO: add founder/company details -->
@@ -59,15 +59,16 @@ Gli strumenti per la privacy deludono quando promettono troppo. Preferiamo dirti
 
 Velcrypt non mostra pubblicità e non vende dati. Non raccoglie i contenuti delle casseforti né statistiche su di essi, quindi non c’è nulla da vendere. Velcrypt è finanziato da un upgrade Premium facoltativo: vedi i [prezzi](id:pricing).
 
-## Cosa arriverà
+## Cosa c’è in Velcrypt 1.0
 
-Il backup cifrato, più casseforti ed elementi illimitati sono già nell’app. La novità qui sotto è prevista: oggi non è nell’app e non indicheremo date finché non sarà pronta.
+Velcrypt 1.0 include il backup cifrato gratuito e un upgrade Premium facoltativo con elementi illimitati, più casseforti, una sequenza di emergenza e icone alternative dell’app.
 
 | Novità | Stato |
 |---|---|
-| [Sequenza di emergenza](id:duress-pattern): apre una cassaforte scelta e rimuove in silenzio l’accesso alle altre | Prevista per un aggiornamento futuro |
+| Backup cifrato: un file protetto da password che conservi tu | Disponibile, gratuito |
+| [Sequenza di emergenza](id:duress-pattern): apre una cassaforte esca ed elimina in silenzio e definitivamente tutte le altre casseforti sull’iPhone | Disponibile, Premium |
 
-Qualsiasi aggiunta seguirà gli stessi principi: tutto sul dispositivo per impostazione predefinita, nessun account e una spiegazione chiara dei compromessi.
+La sequenza di emergenza segue gli stessi principi di tutto il resto: sul dispositivo, nessun account e una spiegazione chiara dei compromessi. L’eliminazione è definitiva, ed è pensata per situazioni di sicurezza personale, non come modo per aggirare ordini legittimi. Qualsiasi aggiunta futura seguirà le stesse regole.
 
 ## Contattaci
 

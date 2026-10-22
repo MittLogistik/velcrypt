@@ -4,10 +4,10 @@ title: "Tarifs Velcrypt : version gratuite et Premium"
 description: "Velcrypt est gratuit. Premium existe à la semaine, à l’année avec 3 jours d’essai gratuit ou à vie en achat unique. Sans publicité, sans compte."
 h1: "Tarifs de Velcrypt"
 navTitle: "Tarifs"
-answer: "Velcrypt est gratuit avec 1 coffre et jusqu’à 50 éléments. Premium ajoute les éléments illimités, plus de coffres et des icônes alternatives : 1,99 $ par semaine, 19,99 $ par an avec 3 jours d’essai gratuit, ou 39,99 $ à vie en achat unique (USD, les prix varient selon le pays). La sauvegarde chiffrée est gratuite."
+answer: "Velcrypt est gratuit avec 1 coffre et jusqu’à 50 éléments. Premium ajoute les éléments illimités, plus de coffres, un schéma de contrainte et des icônes alternatives : 1,99 $ par semaine, 19,99 $ par an avec 3 jours d’essai gratuit, ou 39,99 $ à vie en achat unique (USD, les prix varient selon le pays). La sauvegarde chiffrée est gratuite."
 keyFacts:
   - "Gratuit : 1 coffre avec jusqu’à 50 éléments et l’icône standard."
-  - "Premium : éléments illimités, plus de coffres et icônes d’app alternatives."
+  - "Premium : éléments illimités, plus de coffres, schéma de contrainte et icônes d’app alternatives."
   - "Premium coûte 1,99 $/semaine, 19,99 $/an (3 jours d’essai gratuit) ou 39,99 $ à vie (USD, prix variables selon le pays)."
   - "La sauvegarde chiffrée est gratuite dans toutes les versions."
   - "Ni publicité ni revente de données, dans aucune version."
@@ -24,6 +24,8 @@ faq:
     a: "Oui. La version gratuite offre 1 coffre avec jusqu’à 50 éléments, le même chiffrement que Premium et la sauvegarde chiffrée. Premium est facultatif."
   - q: "Combien coûte Velcrypt Premium ?"
     a: "En dollars américains : 1,99 $ par semaine, 19,99 $ par an avec 3 jours d’essai gratuit, ou 39,99 $ à vie en achat unique. Les prix varient selon le pays ; le prix exact dans votre devise s’affiche dans l’App Store avant tout paiement."
+  - q: "Le schéma de contrainte fait-il partie de Premium ?"
+    a: "Oui. Configurer un schéma de contrainte nécessite Premium, car il se trouve dans un deuxième coffre (le leurre). Une fois configuré, il continue de fonctionner même si votre abonnement Premium prend fin."
   - q: "Comment fonctionne l’essai gratuit ?"
     a: "L’abonnement annuel commence par 3 jours gratuits. Si vous ne résiliez pas au moins 24 heures avant la fin de l’essai, il se transforme automatiquement en abonnement annuel payant. Vous pouvez résilier dans les réglages de votre compte Apple."
   - q: "Comment résilier un abonnement Velcrypt ?"
@@ -51,6 +53,7 @@ Velcrypt est gratuit, avec une option Premium.
 | Sauvegarde chiffrée | Oui | Oui |
 | Nombre d’éléments | Jusqu’à 50 | Illimité |
 | Nombre de coffres | 1 | Plus de coffres (chaque autre motif ouvre son propre coffre) |
+| Schéma de contrainte | — | Oui |
 | Icône de l’app | Standard | Icônes alternatives (calculatrice, minuteur, règle et plus) |
 | Publicité | Aucune | Aucune |
 
@@ -70,7 +73,7 @@ Les prix de l’App Store varient selon le pays et la devise. Le prix exact pour
 
 La sécurité n’est pas une option payante. Chaque coffre, gratuit ou Premium, suit la conception décrite sur la page [modèle de sécurité](id:security) : clés dérivées de votre motif avec PBKDF2, clé maîtresse aléatoire par coffre et chiffrement AES-256-GCM via Apple CryptoKit. La sauvegarde chiffrée est elle aussi gratuite pour tous : dans Réglages → Sauvegarde, vous créez un fichier `.velcrypt` pour le coffre ouvert, protégé par un mot de passe de sauvegarde que vous choisissez.
 
-Comme la version gratuite comprend un seul coffre, les [coffres cachés](id:hidden-vaults) — où chaque autre motif ouvre son propre coffre, par exemple un coffre leurre — nécessitent Premium.
+Comme la version gratuite comprend un seul coffre, les [coffres cachés](id:hidden-vaults) — où chaque autre motif ouvre son propre coffre, par exemple un coffre leurre — nécessitent Premium. Le schéma de contrainte aussi, puisqu’il se configure depuis un coffre leurre.
 
 Aucune version ne demande de compte. Vous ne vous inscrivez pas, vous ne donnez pas d’adresse e-mail, et le contenu de vos coffres ne quitte votre iPhone que si vous créez vous-même une sauvegarde ou un export.
 
@@ -78,7 +81,7 @@ Aucune version ne demande de compte. Vous ne vous inscrivez pas, vous ne donnez 
 
 Une app de confidentialité qui gagne de l’argent grâce à la publicité ou aux données porte en elle un conflit d’intérêts. Velcrypt l’évite en demandant à celles et ceux qui veulent davantage de payer directement. Tous les autres gardent une version gratuite entièrement chiffrée, sans contrepartie.
 
-Ce modèle détermine aussi le contenu du Premium. Les fonctions payantes ajoutent de la capacité — plus d’éléments, plus de coffres — ou du confort, comme les icônes alternatives. Elles ne débloquent jamais un « vrai » niveau de chiffrement dont la version gratuite serait privée. Le [motif de contrainte](id:duress-pattern) est prévu pour une prochaine mise à jour et ne fait pas encore partie de l’app.
+Ce modèle détermine aussi le contenu du Premium. Les fonctions payantes ajoutent de la capacité — plus d’éléments, plus de coffres — ou des extras comme le [schéma de contrainte](id:duress-pattern) et les icônes alternatives. Elles ne débloquent jamais un « vrai » niveau de chiffrement dont la version gratuite serait privée, et la sauvegarde chiffrée reste gratuite pour que personne n’ait à payer pour protéger ses fichiers contre la perte du téléphone. Un schéma de contrainte déjà configuré continue de fonctionner même si Premium expire ; seule sa configuration nécessite Premium.
 
 Si vous passez au Premium, rien ne change pour vos coffres existants. Vos données restent sur votre iPhone, chiffrées de la même façon.
 

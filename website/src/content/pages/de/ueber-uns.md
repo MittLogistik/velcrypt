@@ -10,7 +10,7 @@ keyFacts:
   - "Bewusst kein Face ID oder Touch ID – ein Muster existiert nur in deinem Kopf."
   - "Keine Werbung und kein Datenverkauf."
   - "Ehrlich bei den Grenzen, etwa: keine Wiederherstellung vergessener Muster."
-  - "Verschlüsseltes Backup kostenlos; Notfallmuster für ein künftiges Update geplant."
+  - "Verschlüsseltes Backup kostenlos für alle; ein Notfallmuster für Situationen unter Zwang, mit Premium."
 primaryKeyword: "über velcrypt"
 keywords: ["velcrypt app", "wer steckt hinter velcrypt", "velcrypt prinzipien", "privater foto tresor iphone"]
 datePublished: 2026-10-21
@@ -23,8 +23,8 @@ faq:
     a: "Weil Daten, die dein iPhone nie verlassen, weder durch einen gehackten Server noch durch eine behördliche Anfrage beim Anbieter oder ein wiederverwendetes Passwort offengelegt werden können. Der Preis dafür: Ein vergessenes Muster lässt sich nicht wiederherstellen, und damit deine Tresore einen Geräteverlust überstehen, erstellst du selbst ein verschlüsseltes Backup."
   - q: "Verdient Velcrypt Geld mit meinen Daten?"
     a: "Nein. Velcrypt erhebt weder deine Tresorinhalte noch Analysedaten darüber und zeigt keine Werbung. Velcrypt ist kostenlos, mit einem optionalen, kostenpflichtigen Premium-Upgrade über den App Store."
-  - q: "Woran arbeitet Velcrypt als Nächstes?"
-    a: "Als Nächstes ist ein Notfallmuster geplant. Ein Veröffentlichungsdatum gibt es noch nicht. Das verschlüsselte Backup ist bereits verfügbar und kostenlos."
+  - q: "Hat Velcrypt ein Notfallmuster?"
+    a: "Ja, in Velcrypt 1.0 mit Premium. Zeichnest du es, öffnet sich ein Köder-Tresor, und alle anderen Tresore auf dem iPhone werden still und endgültig gelöscht. Es ist für Situationen gedacht, in denen es um deine persönliche Sicherheit geht, nicht als Weg, rechtmäßige Anordnungen zu umgehen."
 ---
 
 <!-- TODO: add founder/company details -->
@@ -59,17 +59,17 @@ Datenschutz-Tools lassen Menschen im Stich, wenn sie zu viel versprechen. Wir sa
 
 Velcrypt zeigt keine Werbung und verkauft keine Daten. Es erhebt weder deine Tresorinhalte noch Analysedaten darüber, es gibt also nichts zu verkaufen. Finanziert wird Velcrypt über ein optionales Premium-Upgrade – siehe [Preise](id:pricing).
 
-## Wie es weitergeht
+## Was in Velcrypt 1.0 steckt
+
+Velcrypt 1.0 enthält das kostenlose verschlüsselte Backup und ein optionales Premium-Upgrade mit unbegrenzten Objekten, mehr Tresoren, einem Notfallmuster und alternativen App-Symbolen.
 
 | Punkt | Status |
 |---|---|
-| Verschlüsseltes Backup und Wiederherstellung | Verfügbar, kostenlos |
+| Verschlüsseltes Backup – eine passwortgeschützte Datei, die du selbst aufbewahrst | Verfügbar, kostenlos |
 | Mehr Tresore, unbegrenzte Objekte und alternative App-Symbole | Verfügbar (Premium) |
-| [Notfallmuster](id:duress-pattern) – würde einen gewählten Tresor öffnen und still den Zugriff auf die anderen entfernen | Geplant für ein künftiges Update |
+| [Notfallmuster](id:duress-pattern) – öffnet einen Köder-Tresor und löscht still und endgültig alle anderen Tresore auf dem iPhone | Verfügbar (Premium) |
 
-Das Notfallmuster ist noch nicht in der App, und wir nennen erst einen Termin, wenn es fertig ist.
-
-Alles, was dazukommt, folgt denselben Prinzipien: standardmäßig auf dem Gerät, kein Konto und eine klare Erklärung der Abwägungen.
+Das Notfallmuster folgt denselben Prinzipien wie alles andere: auf dem Gerät, kein Konto und eine klare Erklärung der Abwägungen. Das Löschen ist endgültig, und es ist für Situationen gedacht, in denen es um deine persönliche Sicherheit geht, nicht als Weg, rechtmäßige Anordnungen zu umgehen. Alles, was später dazukommt, folgt denselben Regeln.
 
 ## Kontakt
 

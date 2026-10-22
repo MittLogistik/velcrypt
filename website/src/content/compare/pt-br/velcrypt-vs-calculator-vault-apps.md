@@ -54,7 +54,7 @@ Os dois podem ser úteis. A questão é contra o que você está se protegendo. 
 | Biometria (Face ID / Touch ID) | Não oferecida, por design | Varia |
 | Disfarce | Ícones alternativos no Premium (calculadora, timer, régua e outros); sem calculadora funcional | Parece uma calculadora funcional |
 | Fachada / vários cofres | Cada padrão é um cofre próprio (mais de um cofre exige o Premium) | Varia; alguns oferecem código de fachada |
-| Padrão de coação | Planejado para uma atualização futura | Varia |
+| Padrão de coação | Sim, com o Premium (abre um cofre de fachada e apaga os outros cofres) | Varia |
 | Fotos de intrusos | Não oferecidas | Comuns, mas varia |
 | Recuperação se você esquecer o código | Nenhuma | Varia; alguns oferecem recuperação por e-mail ou pergunta de segurança |
 | Modelo de negócio | Grátis (1 cofre, 50 itens) e Premium opcional | Varia; algumas versões grátis mostram anúncios |

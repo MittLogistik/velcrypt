@@ -77,7 +77,7 @@ Una bóveda señuelo es una bóveda llena de contenido inofensivo pero creíble,
 
 Un señuelo funciona mejor cuando parece usado. Una bóveda vacía invita a preguntar «¿para qué instalas una app de bóveda si no guardas nada?», mientras que una con unas cuantas docenas de elementos corrientes rara vez lo hace. La guía sobre [qué es una bóveda señuelo](id:what-is-a-decoy-vault) explica cómo hacerla convincente.
 
-Velcrypt también tiene previsto un [patrón de coacción](id:duress-pattern) para una actualización futura. La idea es ir un paso más allá que un señuelo: abrir una bóveda elegida y retirar en silencio el acceso a las demás.
+Con Premium también puedes configurar un [patrón de coacción](id:duress-pattern) dentro del señuelo. Va un paso más allá: al dibujarlo se abre el señuelo y se eliminan en silencio y de forma permanente todas las demás bóvedas del iPhone. La guía sobre [cómo configurar una bóveda señuelo y un patrón de coacción](id:set-up-decoy-vault-and-duress-pattern) explica el proceso.
 
 ## Cómo se mantiene separada cada bóveda
 

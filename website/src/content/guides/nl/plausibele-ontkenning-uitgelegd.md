@@ -18,7 +18,7 @@ dateModified: 2026-10-22
 summary: "Het concept achter verborgen volumes en lokkluizen, hoe Velcrypts ontwerp met onbekende patronen het gebruikt en wat het eerlijk gezegd niet kan."
 category: security
 order: 42
-related: [what-is-a-decoy-vault, hidden-vaults, duress-pattern, aes-256-encryption-explained, phone-privacy-border-crossing, security]
+related: [what-is-a-decoy-vault, hidden-vaults, duress-pattern, duress-password-explained, self-destruct-photo-vault, aes-256-encryption-explained, phone-privacy-border-crossing, security]
 faq:
   - q: "Wat betekent plausibele ontkenning in gewone taal?"
     a: "Dat je geloofwaardig kunt zeggen „dit is alles” en niemand het tegendeel kan bewijzen. Bij versleuteling bereik je dat met ontwerpen waarin verborgen gegevens niet te onderscheiden zijn van lege ruimte of van gegevens die niet bestaan."
@@ -60,7 +60,7 @@ Velcrypt past het principe toe op een kluis voor foto's en documenten op de iPho
 
 Het gevolg is dat een verkeerd patroon en een geldige maar lege kluis er precies hetzelfde uitzien. Open je een kluis voor iemand, dan toont niets in de interface dat er andere kluizen bestaan. Daardoor is een [lokkluis](id:what-is-a-decoy-vault) een natuurlijke manier van gebruiken in plaats van een speciale modus. De functiepagina over [verborgen kluizen](id:hidden-vaults) laat zien hoe het in de praktijk werkt.
 
-Een geplande functie voor een toekomstige update, het [dwangpatroon](id:duress-pattern), breidt dit uit: een speciaal patroon zou een gekozen kluis openen en stilletjes de toegang tot de andere wegnemen.
+Het [dwangpatroon](id:duress-pattern), beschikbaar met Premium, breidt dit uit: één speciaal patroon opent een lokkluis en verwijdert ongemerkt en definitief alle andere kluizen op de iPhone. De app laat nooit zien of er een is ingesteld, dus ook het bestaan ervan is ontkenbaar. [Noodwachtwoorden uitgelegd](id:duress-password-explained) plaatst het idee in context.
 
 ## De eerlijke grenzen
 

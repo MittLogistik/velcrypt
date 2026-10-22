@@ -10,7 +10,7 @@ keyFacts:
   - "在 Velcrypt 中，每个图案都是一个独立的保险箱，也没有会暴露其他保险箱的保险箱列表。"
   - "空的诱饵保险箱会引人怀疑；有相簿、有近期内容、看起来常用的诱饵保险箱才有说服力。"
   - "诱饵保险箱能防范窥探和随意施加的压力，但无法对抗取证分析，也挡不住看过你画图案的人。"
-  - "同时移除其他保险箱访问权限的胁迫图案，计划在未来更新中推出。"
+  - "使用 Premium，胁迫图案可以打开诱饵保险箱，并永久删除这部 iPhone 上的其他所有保险箱。"
 primaryKeyword: "诱饵保险箱"
 keywords: ["诱饵保险箱是什么", "私密相册 伪装密码", "假保险箱 App", "诱饵图案", "iPhone 第二个保险箱"]
 datePublished: 2026-10-21
@@ -18,7 +18,7 @@ dateModified: 2026-10-22
 summary: "诱饵保险箱是什么、如何用 Velcrypt 的第二个图案打造一个看起来常用的诱饵，以及你应该了解的局限。"
 category: security
 order: 41
-related: [hidden-vaults, plausible-deniability-explained, duress-pattern, pattern-lock-vs-pin-vs-face-id, partner-scrolling-camera-roll, phone-privacy-border-crossing]
+related: [hidden-vaults, plausible-deniability-explained, duress-pattern, set-up-decoy-vault-and-duress-pattern, duress-password-explained, forced-to-unlock-phone, pattern-lock-vs-pin-vs-face-id, partner-scrolling-camera-roll, phone-privacy-border-crossing]
 howTo:
   name: "在 Velcrypt 中设置诱饵保险箱"
   steps:
@@ -40,7 +40,7 @@ faq:
   - q: "别人能看出一个保险箱是诱饵吗？"
     a: "从 App 内部看不出来：Velcrypt 不保存保险箱列表，也不会提示还有其他保险箱。可能暴露诱饵的是它的内容，比如它是空的、很久没更新，或者明显是摆拍的。"
   - q: "诱饵保险箱和胁迫图案是一回事吗？"
-    a: "不是。诱饵只是打开另一个保险箱。胁迫图案是 Velcrypt 计划在未来更新中推出的功能；它会打开一个指定的保险箱，同时悄悄移除对其他保险箱的访问。"
+    a: "不是。诱饵只是打开另一个保险箱，其他保险箱保持不变。胁迫图案是 Velcrypt Premium 的功能，它会打开诱饵保险箱，同时悄悄、永久地删除这部 iPhone 上的其他所有保险箱。"
   - q: "面对警察或边检人员时，应该用诱饵保险箱吗？"
     a: "本指南无法提供法律建议。在许多国家，误导执法人员可能构成违法。诱饵保险箱主要用于应对日常窥探和非正式的压力；遇到官方场合，请了解你的权利并咨询律师。"
 ---
@@ -93,7 +93,7 @@ faq:
 
 ## 诱饵保险箱与胁迫图案
 
-诱饵会打开另一个保险箱，而其他一切保持不变。**胁迫图案** 则更进一步：它会打开一个你选定的保险箱，同时悄悄移除对其他保险箱的访问。在 Velcrypt 中，[胁迫图案](id:duress-pattern) 计划在未来的更新中推出，目前尚不可用。在那之前，一个精心维护的诱饵足以应对大多数日常情况，比如好奇的伴侣、翻你手机的朋友，或者爱打听的同事。
+诱饵会打开另一个保险箱，而其他一切保持不变。**胁迫图案** 则更进一步：它会打开你的诱饵保险箱，同时悄悄、永久地删除这部 iPhone 上的其他所有保险箱。在 Velcrypt 中，[胁迫图案](id:duress-pattern)属于 Premium，需要在诱饵保险箱内设置。它适合你预计之后还会被追问的情况；对于日常的好奇，比如伴侣、翻你手机的朋友或爱打听的同事，一个精心维护的诱饵通常就足够了。由于删除是永久性的，请先为真正的保险箱创建加密备份。[如何设置诱饵保险箱和胁迫图案](id:set-up-decoy-vault-and-duress-pattern)介绍了这两者的设置方法。
 
 ## Velcrypt 的定位
 

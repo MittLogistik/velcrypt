@@ -94,6 +94,8 @@ Velcrypt fungerar helt offline. Det finns ingen registrering, ingen e-postadress
 
 Valvdata **undantas dessutom från iCloud- och datorsäkerhetskopior (Finder)**. Det håller dina krypterade filer borta från Apples servrar och från datorer du synkar med, men det har en verklig följd: om din iPhone försvinner, går sönder eller återställs försvinner valven med den.
 
+<a id="encrypted-backup"></a>
+
 Därför kan du själv skapa en **krypterad säkerhetskopia** under Inställningar → Säkerhetskopiering. Den samlar det öppna valvet i en .velcrypt-fil som du sparar i Filer, iCloud Drive eller på en dator och kan återställa på vilken iPhone som helst. Filen krypteras med AES-256-GCM och en nyckel som härleds från ett lösenord du väljer, med PBKDF2-HMAC-SHA512 och minst 600 000 iterationer. Mönstret används inte, eftersom en fil som kan angripas offline behöver en längre hemlighet. Välj ett långt lösenord: den som får tag i filen kan försöka gissa det. En säkerhetskopia omfattar bara det öppna valvet, så den avslöjar inte att andra valv finns. Glömmer du lösenordet kan säkerhetskopian inte öppnas.
 
 ## Hotmodellen i korthet
@@ -118,7 +120,7 @@ Därför kan du själv skapa en **krypterad säkerhetskopia** under Inställning
 Alla säkerhetsverktyg har begränsningar, och du bör känna till Velcrypts innan du förlitar dig på appen.
 
 - **Någon som tittar över axeln.** Om någon ser dig rita mönstret, på plats eller via en kamera, kan personen öppna det valvet. Rita det utom synhåll och välj gärna ett mönster som inte liknar en enkel bokstav eller form.
-- **Tvång att låsa upp.** Velcrypt kan inte hindra någon från att tvinga dig att rita ett mönster. Ett lockvalv kan hjälpa (ett andra valv kräver Premium). Ett [tvångsmönster](id:duress-pattern) som öppnar ett valt valv och i tysthet tar bort åtkomsten till de andra är planerat till en framtida uppdatering.
+- **Tvång att låsa upp.** Velcrypt kan inte hindra någon från att tvinga dig att rita ett mönster. Ett lockvalv kan hjälpa (ett andra valv kräver Premium). Med Premium öppnar ett [nödmönster](id:duress-pattern) ett lockbetesvalv och raderar samtidigt de andra permanent. Inget av dem kan stoppa någon som redan känner till ditt riktiga mönster, och raderade valv kan bara återställas från en säkerhetskopia som du gjort tidigare.
 - **En telefon som lämnas över med valvet öppet.** Medan ett valv är upplåst kan den som håller telefonen se det du ser. Lås valvet innan du räcker över telefonen till någon.
 - **Komprometterade eller jailbreakade enheter och skadlig kod.** Programvara som kan läsa skärmen, logga tryck eller granska appminnet på en komprometterad enhet kan kringgå all kryptering på appnivå.
 - **Skärmdumpar eller foton av skärmen.** Velcrypt kan inte hindra en annan kamera från att fotografera din skärm.

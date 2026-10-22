@@ -55,7 +55,7 @@ Você pode adicionar fotos da fototeca, tirar uma foto dentro da nota ou digital
 | Forma de desbloqueio | Padrão em uma grade 5×5 | Código do aparelho ou senha separada do Notas |
 | Biometria | Não oferecida, por design | Face ID / Touch ID opcional |
 | Fachada / vários cofres | Cada padrão é um cofre próprio (mais de um cofre exige o Premium) | Não; todas as notas bloqueadas usam a mesma senha |
-| Padrão de coação | Planejado para uma atualização futura | Não |
+| Padrão de coação | Sim, com o Premium (abre um cofre de fachada e apaga os outros cofres) | Não |
 | Recuperação se você esquecer o código | Nenhuma | A opção do código evita uma senha separada; senhas antigas do Notas não podem ser recuperadas |
 | Fotos e vídeos | Álbuns, visualizador com zoom e deslize, vídeos | Imagens dentro de uma nota; suporte a vídeo varia |
 | Custo | Grátis (1 cofre, 50 itens) e Premium opcional | Incluído no iOS |

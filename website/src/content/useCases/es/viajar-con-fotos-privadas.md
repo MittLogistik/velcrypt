@@ -72,6 +72,6 @@ No hay cuenta y no se sube nada, así que no existe un inicio de sesión en la n
 - **Los originales siguen en Fotos hasta que los borres.** Importar copia la foto. [Borra el original](id:delete-original-photos-after-import) y vacía el álbum Eliminado.
 - **Alguien que te vea dibujar** tu patrón podría aprenderlo.
 - **El icono de la app se ve** en la pantalla de inicio, salvo que uses la opción de iOS 18 para ocultar apps.
-- **Una bóveda no es un escudo legal.** En una frontera se aplican las normas del país; el patrón de coacción está previsto para una actualización futura y no está disponible hoy.
+- **Una bóveda no es un escudo legal.** En una frontera se aplican las normas del país. No uses el [patrón de coacción](id:duress-pattern) para borrar datos cuando los agentes exigen legalmente el acceso; eso puede ser un delito en sí mismo.
 
 Viaja ligero y preparado: con un móvil bien protegido, perderlo es una molestia, no una crisis.

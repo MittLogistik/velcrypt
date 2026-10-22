@@ -55,7 +55,7 @@ Du kannst Fotos aus deiner Mediathek hinzufügen, in der Notiz ein Foto aufnehme
 | Entsperren | Muster auf einem 5×5-Raster | Gerätecode oder separates Notizen-Passwort |
 | Biometrie | Bewusst nicht angeboten | Optional Face ID / Touch ID |
 | Köder- / mehrere Tresore | Jedes Muster ist ein eigener Tresor (mehrere Tresore mit Premium) | Nicht unterstützt; alle gesperrten Notizen teilen ein Passwort |
-| Notfallmuster | Geplant, noch nicht verfügbar | Nein |
+| Notfallmuster | Ja, mit Premium (öffnet einen Köder, löscht die anderen Tresore) | Nein |
 | Wiederherstellung bei vergessenem Code | Keine | Mit Gerätecode entfällt ein separates Passwort; alte Notizen-Passwörter lassen sich nicht wiederherstellen |
 | Umgang mit Fotos und Videos | Alben, Anzeige mit Zoomen und Wischen, Videos | Bilder in einer Notiz; Videounterstützung unterschiedlich |
 | Kosten | Kostenlos: 1 Tresor, bis zu 50 Objekte; Premium als Abo oder einmaliger Kauf (siehe [Preise](id:pricing)) | In iOS enthalten |

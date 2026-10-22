@@ -70,6 +70,6 @@ Non c'è un account e nulla viene caricato, quindi non esiste un login cloud che
 - **Gli originali restano in Foto finché non li elimini.** Importare copia una foto. [Elimina l'originale](id:delete-original-photos-after-import) e svuota «Eliminati di recente».
 - **Chi ti guarda disegnare** la sequenza potrebbe impararla.
 - **L'icona dell'app è visibile** nella schermata Home, a meno che tu non usi l'opzione di iOS 18 per nascondere le app.
-- **Una cassaforte non è uno scudo legale.** Alla frontiera valgono le regole del Paese; la sequenza di emergenza è prevista per un aggiornamento futuro e oggi non è disponibile.
+- **Una cassaforte non è uno scudo legale.** Alla frontiera valgono le regole del Paese. Non usare la [sequenza di emergenza](id:duress-pattern) per eliminare dati quando i funzionari chiedono legittimamente l'accesso: può essere di per sé un reato.
 
 Viaggia leggero, viaggia preparato: con un telefono ben protetto, perderlo diventa un fastidio, non una crisi.

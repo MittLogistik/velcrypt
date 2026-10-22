@@ -75,7 +75,7 @@ Una cassaforte esca è una cassaforte riempita di contenuti innocui ma credibili
 
 Un'esca funziona meglio quando sembra vissuta. Una cassaforte vuota fa nascere la domanda «perché installare un'app cassaforte per niente?», mentre una con qualche decina di elementi ordinari raramente la suscita. La guida su [cos'è una cassaforte esca](id:what-is-a-decoy-vault) spiega come renderla convincente.
 
-Per un aggiornamento futuro Velcrypt prevede anche una [sequenza di emergenza](id:duress-pattern). È pensata per andare un passo oltre l'esca: apre una cassaforte scelta e rimuove in silenzio l'accesso alle altre.
+Con il Premium puoi anche configurare una [sequenza di emergenza](id:duress-pattern) all'interno dell'esca. Va un passo oltre: disegnarla apre l'esca ed elimina in silenzio e definitivamente tutte le altre casseforti sull'iPhone. La guida su [come configurare una cassaforte esca e una sequenza di emergenza](id:set-up-decoy-vault-and-duress-pattern) ti accompagna passo per passo.
 
 ## Come ogni cassaforte resta separata
 

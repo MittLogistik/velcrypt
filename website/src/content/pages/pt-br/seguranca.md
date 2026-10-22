@@ -95,6 +95,8 @@ O Velcrypt funciona totalmente offline. Não há cadastro, endereço de e-mail, 
 
 Os dados do cofre também ficam **fora dos backups do iCloud e do computador (Finder)**. Isso mantém seus arquivos criptografados longe dos servidores da Apple e de qualquer computador com o qual você sincronize, mas tem uma consequência real: se o seu iPhone for perdido, quebrar ou for redefinido, os cofres vão junto.
 
+<a id="encrypted-backup"></a>
+
 Para se proteger disso, você pode criar um **backup criptografado** em Ajustes → Backup. Ele gera um único arquivo .velcrypt do cofre aberto, protegido por uma senha de backup que você escolhe. Cada cofre tem seu próprio backup, então um backup nunca revela seus outros cofres. Você decide onde guardar o arquivo (app Arquivos, iCloud Drive ou um computador), e o Velcrypt nunca o recebe. O Velcrypt não consegue recuperar uma senha de backup esquecida: sem ela, o backup não pode ser aberto. Escolha uma senha longa, porque qualquer pessoa com o arquivo e a senha consegue restaurar o conteúdo.
 
 ## Modelo de ameaças em resumo
@@ -119,7 +121,7 @@ Para se proteger disso, você pode criar um **backup criptografado** em Ajustes 
 Toda ferramenta de segurança tem limites, e você deve conhecer os do Velcrypt antes de depender dele.
 
 - **Olhares por cima do ombro.** Se alguém vir você desenhar seu padrão, pessoalmente ou por uma câmera, poderá abrir aquele cofre. Desenhe longe dos olhos dos outros e prefira um padrão que não pareça uma letra ou forma simples.
-- **Ser obrigado a desbloquear.** O Velcrypt não consegue impedir que alguém force você a desenhar um padrão. Um cofre de fachada pode ajudar; um padrão de coação está planejado para uma atualização futura, para abrir um cofre escolhido e remover silenciosamente o acesso aos outros.
+- **Ser obrigado a desbloquear.** O Velcrypt não consegue impedir que alguém force você a desenhar um padrão. Um cofre de fachada pode ajudar, e com o Premium um [padrão de coação](id:duress-pattern) abre um cofre de fachada enquanto apaga de forma permanente os outros. Nenhum dos dois impede alguém que já conhece o seu padrão verdadeiro, e cofres apagados só podem ser restaurados de um arquivo de backup feito antes.
 - **Celular entregue com o cofre aberto.** Enquanto um cofre está desbloqueado, qualquer pessoa com o celular na mão vê o que você vê. Bloqueie antes de passar o celular para alguém.
 - **Aparelhos comprometidos ou com jailbreak e malware.** Um software capaz de ler a tela, registrar toques ou inspecionar a memória dos apps em um aparelho comprometido pode derrotar qualquer criptografia no nível do app.
 - **Capturas de tela ou fotos da tela.** O Velcrypt não consegue impedir que outra câmera fotografe sua tela.

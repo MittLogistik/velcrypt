@@ -55,7 +55,7 @@ Vous pouvez ajouter des photos de votre photothèque, prendre une photo depuis l
 | Méthode de déverrouillage | Motif sur une grille 5×5 | Code de l’appareil ou mot de passe Notes distinct |
 | Biométrie | Non proposée, par choix | Face ID / Touch ID en option |
 | Leurre / plusieurs coffres | Chaque motif est son propre coffre | Non pris en charge ; toutes les notes verrouillées partagent un même mot de passe |
-| Motif de contrainte | Prévu, pas encore disponible | Non |
+| Schéma de contrainte | Oui, avec Premium (ouvre un leurre, supprime les autres coffres) | Non |
 | Récupération en cas d’oubli du code | Aucune | L’option du code évite un mot de passe distinct ; les anciens mots de passe Notes ne sont pas récupérables |
 | Gestion des photos et vidéos | Albums, visionneuse avec zoom et balayage, vidéos | Images dans une note ; prise en charge des vidéos variable |
 | Coût | Gratuit (1 coffre, 50 éléments) ; Premium en abonnement ou achat unique | Inclus dans iOS |

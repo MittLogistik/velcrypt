@@ -72,6 +72,6 @@ Er is geen account en er wordt niets geüpload, dus er is geen cloudlogin die on
 - **Originelen blijven in Foto's tot je ze verwijdert.** Importeren kopieert een foto. [Verwijder het origineel](id:delete-original-photos-after-import) en leeg Recent verwijderd.
 - **Iemand die meekijkt** terwijl je je patroon tekent, kan het leren.
 - **Het app-symbool is zichtbaar** op je beginscherm, tenzij je de optie van iOS 18 gebruikt om apps te verbergen.
-- **Een kluis is geen juridisch schild.** Aan de grens gelden de regels van het land; het dwangpatroon is gepland voor een toekomstige update en nu nog niet beschikbaar.
+- **Een kluis is geen juridisch schild.** Aan de grens gelden de regels van het land. Gebruik het [dwangpatroon](id:duress-pattern) niet om gegevens te verwijderen wanneer ambtenaren rechtmatig toegang eisen; dat kan zelf strafbaar zijn.
 
 Reis licht, reis voorbereid: met een goed beveiligde telefoon is verlies vervelend, maar geen crisis.

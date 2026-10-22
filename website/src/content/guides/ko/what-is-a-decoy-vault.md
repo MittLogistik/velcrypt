@@ -10,7 +10,7 @@ keyFacts:
   - "Velcrypt에서는 패턴마다 각각의 금고이며, 다른 금고를 드러낼 금고 목록이 없습니다."
   - "빈 위장 금고는 의심을 사고, 앨범과 최근 항목이 있는 실제로 쓰는 것 같은 위장 금고는 설득력이 있습니다."
   - "위장 금고는 훔쳐보기와 가벼운 압박을 막아 주지만, 포렌식 분석이나 패턴 그리는 모습을 본 사람은 막지 못합니다."
-  - "Velcrypt에서 두 번째 금고(위장 금고)에는 Premium이 필요합니다. 강압 패턴은 향후 업데이트로 계획되어 있습니다."
+  - "Velcrypt에서 두 번째 금고(위장 금고)에는 Premium이 필요합니다. Premium의 비상 패턴은 위장 금고를 열면서 iPhone의 다른 금고를 모두 영구 삭제할 수 있습니다."
 primaryKeyword: "위장 금고"
 keywords: ["위장 금고란", "사진 금고 가짜 비밀번호", "가짜 금고 앱", "위장 패턴", "아이폰 두 번째 금고"]
 datePublished: 2026-10-21
@@ -18,7 +18,7 @@ dateModified: 2026-10-22
 summary: "위장 금고의 의미, Velcrypt의 두 번째 패턴으로 실제로 쓰는 것처럼 보이는 금고를 만드는 법, 그리고 알아 둘 한계."
 category: security
 order: 41
-related: [hidden-vaults, plausible-deniability-explained, duress-pattern, pattern-lock-vs-pin-vs-face-id, partner-scrolling-camera-roll, phone-privacy-border-crossing]
+related: [hidden-vaults, plausible-deniability-explained, duress-pattern, set-up-decoy-vault-and-duress-pattern, duress-password-explained, forced-to-unlock-phone, pattern-lock-vs-pin-vs-face-id, partner-scrolling-camera-roll, phone-privacy-border-crossing]
 howTo:
   name: "Velcrypt에서 위장 금고 만들기"
   steps:
@@ -39,8 +39,8 @@ faq:
     a: "한 번도 쓰지 않은 두 번째 패턴을 그리세요. Velcrypt가 그 패턴으로 새 빈 금고를 엽니다. 영수증, 스크린샷, 평범한 사진 같은 그럴듯한 일상 콘텐츠를 추가하면, 이제 그 패턴이 위장 금고를 엽니다."
   - q: "금고가 위장 금고라는 걸 다른 사람이 알 수 있나요?"
     a: "앱 안에서는 알 수 없습니다. Velcrypt는 금고 목록을 보관하지 않고 다른 금고가 있다는 힌트도 보여 주지 않습니다. 위장 금고를 들키게 하는 것은 콘텐츠입니다. 비어 있거나, 오래 방치되었거나, 누가 봐도 꾸민 것 같을 때입니다."
-  - q: "위장 금고와 강압 패턴은 같은 건가요?"
-    a: "아니요. 위장 금고는 다른 금고를 열 뿐입니다. 강압 패턴은 향후 업데이트로 계획된 Velcrypt 기능으로, 지정한 금고를 열면서 다른 금고에 대한 접근을 조용히 제거하도록 설계될 예정입니다."
+  - q: "위장 금고와 비상 패턴은 같은 건가요?"
+    a: "아니요. 위장 금고는 다른 금고를 열 뿐이고 나머지 금고는 그대로 둡니다. Velcrypt Premium의 비상 패턴은 위장 금고를 열면서 iPhone의 다른 금고를 모두 조용히, 영구적으로 삭제합니다."
   - q: "경찰이나 국경 당국 앞에서 위장 금고를 써도 되나요?"
     a: "이 가이드는 법률 조언을 할 수 없습니다. 많은 나라에서 당국을 오도하는 것은 범죄가 될 수 있습니다. 위장 금고는 주로 일상적인 훔쳐보기와 비공식적인 압박을 위한 것이며, 공적인 상황에서는 자신의 권리를 알아보고 변호사와 상담하세요."
 ---
@@ -91,9 +91,9 @@ faq:
 - **지속적인 강요.** 위장 금고는 한순간을 넘기게 해 줄 뿐입니다. 계속되는 학대 상황에 대한 계획은 아닙니다. 그런 상황이라면 지역의 지원 기관에 도움을 요청해 주세요.
 - **법적 상황.** 많은 나라에서 당국을 오도하는 것은 범죄가 될 수 있습니다. 당국 앞에서 위장 금고를 쓰기 전에 신중히 생각하고, [국경 통과 가이드](id:phone-privacy-border-crossing)를 참고하세요.
 
-## 위장 금고 vs 강압 패턴
+## 위장 금고 vs 비상 패턴
 
-위장 금고는 다른 금고를 열고 나머지는 그대로 둡니다. **강압 패턴**은 한 걸음 더 나아갑니다. 지정한 금고를 열면서 동시에 다른 금고에 대한 접근을 조용히 제거합니다. Velcrypt에서 [강압 패턴](id:duress-pattern)은 향후 업데이트로 계획되어 있으며 아직 제공되지 않습니다. 그때까지는 잘 관리한 위장 금고로 호기심 많은 연인, 휴대폰을 넘겨 보는 친구, 참견하는 동료 같은 대부분의 일상적인 상황에 대응할 수 있습니다.
+위장 금고는 다른 금고를 열고 나머지는 그대로 둡니다. **비상 패턴**은 한 걸음 더 나아갑니다. 위장 금고를 열면서 같은 순간 iPhone의 다른 금고를 모두 조용히, 영구적으로 삭제합니다. Velcrypt에서 [비상 패턴](id:duress-pattern)은 Premium 기능이며 위장 금고 안에서 설정합니다. 나중에 다시 추궁받을 것으로 예상되는 상황에 적합하며, 호기심 많은 연인, 휴대폰을 넘겨 보는 친구, 참견하는 동료 같은 일상적인 상황에는 대개 잘 관리한 위장 금고만으로 충분합니다. 삭제는 영구적이므로 먼저 실제 금고를 암호화 백업하세요. [위장 금고와 비상 패턴 설정 방법](id:set-up-decoy-vault-and-duress-pattern)에서 두 가지를 모두 안내합니다.
 
 ## Velcrypt의 경우
 

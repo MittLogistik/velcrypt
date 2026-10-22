@@ -53,7 +53,7 @@ Velcrypt ist ein Tresor auf dem Gerät mit Mustersperre. Ein Muster ist eine dur
 | Entsperren | Muster auf einem 5×5-Raster | PIN / Code |
 | Biometrie (Face ID / Touch ID) | Bewusst nicht angeboten | Unterschiedlich |
 | Köder- / mehrere Tresore | Jedes Muster ist ein eigener Tresor (mehrere Tresore mit Premium) | Köder-Passwort |
-| Notfallmuster | Geplant, noch nicht verfügbar | Nicht öffentlich angegeben |
+| Notfallmuster | Ja, mit Premium (öffnet einen Köder, löscht die anderen Tresore) | Nicht öffentlich angegeben |
 | Einbruchsberichte | Nicht angeboten | Angeboten, laut Store-Eintrag |
 | Wiederherstellung bei vergessenem Code | Keine | Nicht öffentlich angegeben |
 | Geschäftsmodell | Kostenlos: 1 Tresor, bis zu 50 Objekte; Premium als Abo oder einmaliger Kauf (siehe [Preise](id:pricing)) | Kostenlose Version plus kostenpflichtiges Upgrade |

@@ -18,7 +18,7 @@ dateModified: 2026-10-22
 summary: "Le concept derrière les volumes cachés et les coffres leurres, comment Velcrypt l’utilise avec les schémas inconnus, et ce qu’il ne peut pas faire."
 category: security
 order: 42
-related: [what-is-a-decoy-vault, hidden-vaults, duress-pattern, aes-256-encryption-explained, phone-privacy-border-crossing, security]
+related: [what-is-a-decoy-vault, hidden-vaults, duress-pattern, duress-password-explained, self-destruct-photo-vault, aes-256-encryption-explained, phone-privacy-border-crossing, security]
 faq:
   - q: "Que veut dire déni plausible, en termes simples ?"
     a: "Cela signifie que vous pouvez dire de façon crédible « c’est tout » et que personne ne peut prouver le contraire. En chiffrement, on y parvient avec des conceptions où les données cachées sont impossibles à distinguer d’un espace vide ou de données inexistantes."
@@ -60,7 +60,7 @@ Velcrypt adapte le principe à un coffre-fort de photos et de documents sur iPho
 
 Conséquence : un mauvais schéma et un coffre valide mais vide sont identiques. Si vous ouvrez un coffre devant quelqu’un, rien dans l’interface ne montre que d’autres coffres existent. Le [coffre leurre](id:what-is-a-decoy-vault) devient ainsi un usage naturel plutôt qu’un mode spécial. La page de la fonction [coffres cachés](id:hidden-vaults) montre comment cela fonctionne en pratique.
 
-Une fonction prévue pour une prochaine mise à jour, le [schéma de contrainte](id:duress-pattern), prolongerait cette logique : un schéma spécial ouvrirait un coffre choisi et retirerait discrètement l’accès aux autres.
+Le [schéma de contrainte](id:duress-pattern), disponible avec Premium, prolonge cette logique : un schéma spécial ouvre un coffre leurre et supprime en silence, définitivement, tous les autres coffres de l’iPhone. L’app n’indique jamais s’il en existe un, si bien que son existence est elle aussi niable. [Le mot de passe de contrainte expliqué](id:duress-password-explained) replace l’idée dans son contexte.
 
 ## Les limites, en toute honnêteté
 

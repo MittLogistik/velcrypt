@@ -18,7 +18,7 @@ dateModified: 2026-10-22
 summary: "O conceito por trás de volumes ocultos e cofres falsos, como o design de padrões desconhecidos do Velcrypt o usa e o que ele não consegue fazer."
 category: security
 order: 42
-related: [what-is-a-decoy-vault, hidden-vaults, duress-pattern, aes-256-encryption-explained, phone-privacy-border-crossing, security]
+related: [what-is-a-decoy-vault, hidden-vaults, duress-pattern, duress-password-explained, self-destruct-photo-vault, aes-256-encryption-explained, phone-privacy-border-crossing, security]
 faq:
   - q: "O que significa negação plausível, em termos simples?"
     a: "Significa que você pode dizer, com credibilidade, “isso é tudo”, e ninguém consegue provar o contrário. Na criptografia, isso é alcançado com designs em que os dados escondidos são indistinguíveis de espaço vazio ou de dados que não existem."
@@ -60,7 +60,7 @@ O Velcrypt adapta o princípio a um cofre de fotos e documentos no iPhone. Não 
 
 A consequência é que um padrão errado e um cofre válido, mas vazio, parecem idênticos. Se você abrir um cofre para alguém, nada na interface mostra que existem outros cofres. Isso faz de um [cofre falso](id:what-is-a-decoy-vault) uma forma natural de uso, e não um modo especial. A página do recurso de [cofres ocultos](id:hidden-vaults) mostra como isso funciona na prática.
 
-Um recurso planejado para uma atualização futura, o [padrão de coação](id:duress-pattern), ampliaria isso: um padrão especial abriria um cofre escolhido e removeria em silêncio o acesso aos outros.
+O [padrão de coação](id:duress-pattern), disponível com o Premium, amplia isso: um padrão especial abre um cofre de fachada e apaga em silêncio, de forma permanente, todos os outros cofres do iPhone. O app nunca mostra se há um configurado, então a existência dele também é negável. [Senha de coação, explicada](id:duress-password-explained) coloca a ideia em contexto.
 
 ## Os limites honestos
 

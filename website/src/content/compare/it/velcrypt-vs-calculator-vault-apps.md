@@ -8,7 +8,7 @@ answer: "Le app cassaforte a forma di calcolatrice si travestono da calcolatrice
 keyFacts:
   - "Le app calcolatrice segreta sembrano e funzionano come una calcolatrice; un codice digitato come calcolo apre la cassaforte."
   - "I dettagli della cifratura variano molto tra queste app e spesso non vengono pubblicati."
-  - "Velcrypt non ha un travestimento da calcolatrice funzionante; le icone alternative sono nel Premium, il nome resta visibile."
+  - "Velcrypt non ha un travestimento da calcolatrice funzionante. Il Premium offre icone alternative, ma l’app si apre comunque sulla griglia della sequenza."
   - "La negabilità di Velcrypt deriva dalle casseforti nascoste: le sequenze sconosciute aprono una cassaforte vuota."
   - "Da iOS 18 puoi nascondere qualsiasi app in una cartella nascosta protetta da Face ID, Velcrypt compreso."
 primaryKeyword: "app calcolatrice segreta vs velcrypt"
@@ -24,7 +24,7 @@ faq:
   - q: "Le app calcolatrice segreta sono sicure?"
     a: "Dipende dall’app. Il travestimento da calcolatrice nasconde solo l’esistenza della cassaforte; quanto siano protetti i file dipende da se e come l’app li cifra, cosa che molte app non documentano. Controlla le informazioni su privacy e sicurezza di ciascuna app."
   - q: "Velcrypt ha un travestimento da calcolatrice?"
-    a: "Non come calcolatrice funzionante. Con il Premium puoi scegliere un’icona alternativa (per esempio calcolatrice, timer o righello), ma l’app resta Velcrypt. Rende invece negabile il contenuto: ogni sequenza apre la propria cassaforte e nulla rivela quante casseforti esistono. Da iOS 18 puoi anche nascondere l’app stessa con la funzione di sistema per le app nascoste."
+    a: "Non come calcolatrice funzionante. Con il Premium puoi scegliere un’icona alternativa (per esempio calcolatrice, timer o righello), ma l’app si apre comunque sulla sua griglia della sequenza. Invece di una finta facciata, rende negabile il contenuto: ogni sequenza apre la propria cassaforte e nulla rivela quante casseforti esistono. Da iOS 18 puoi anche nascondere l’app stessa con la funzione di sistema per le app nascoste."
   - q: "Si può capire che una calcolatrice è in realtà una cassaforte?"
     a: "A volte sì. Il nome e la descrizione dell’app sull’App Store, la cronologia degli acquisti, lo spazio occupato in Impostazioni e il comportamento dell’app possono tradirla a chi sa cosa cercare."
   - q: "Quale è meglio per la negabilità plausibile?"
@@ -54,7 +54,7 @@ Entrambi possono essere utili. La domanda è da cosa ti stai proteggendo. Un tra
 | Biometria (Face ID / Touch ID) | Non offerta, per scelta | Variabile |
 | Travestimento | Icone alternative (Premium); nessuna app travestita funzionante | Sembra una calcolatrice funzionante |
 | Esca / più casseforti | Ogni sequenza è una cassaforte a sé (più casseforti con Premium) | Variabile; alcune offrono un codice esca |
-| Sequenza di emergenza | Prevista per un aggiornamento futuro | Variabile |
+| Sequenza di emergenza | Sì, con il Premium (apre un’esca, elimina le altre casseforti) | Variabile |
 | Foto degli intrusi | Non offerte | Comuni, ma variabile |
 | Recupero se dimentichi il codice | Nessuno | Variabile; alcune offrono recupero via email o domanda di sicurezza |
 | Modello di business | Gratuita (1 cassaforte, 50 elementi) più Premium facoltativo da 1,99 $/settimana, 19,99 $/anno o 39,99 $ a vita (USD) | Variabile; alcune versioni gratuite mostrano pubblicità |

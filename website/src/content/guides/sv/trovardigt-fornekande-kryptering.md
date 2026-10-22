@@ -18,7 +18,7 @@ dateModified: 2026-10-22
 summary: "Idén bakom dolda volymer och lockbetesvalv, hur Velcrypts design med okända mönster använder den och vad den ärligt talat inte kan göra."
 category: security
 order: 42
-related: [what-is-a-decoy-vault, hidden-vaults, duress-pattern, aes-256-encryption-explained, phone-privacy-border-crossing, security]
+related: [what-is-a-decoy-vault, hidden-vaults, duress-pattern, duress-password-explained, self-destruct-photo-vault, aes-256-encryption-explained, phone-privacy-border-crossing, security]
 faq:
   - q: "Vad betyder trovärdigt förnekande på enkel svenska?"
     a: "Det betyder att du trovärdigt kan säga ”det här är allt” och att ingen kan bevisa motsatsen. Inom kryptering uppnås det med konstruktioner där dold data inte går att skilja från tomt utrymme eller från data som inte finns."
@@ -60,7 +60,7 @@ Velcrypt anpassar principen till ett valv för bilder och dokument i iPhone. Det
 
 Följden är att ett felaktigt mönster och ett giltigt men tomt valv ser likadana ut. Om du öppnar ett valv för någon finns det ingenting i gränssnittet som visar att andra valv finns. Det gör ett [lockbetesvalv](id:what-is-a-decoy-vault) till ett naturligt sätt att använda appen snarare än ett specialläge. Funktionssidan om [dolda valv](id:hidden-vaults) visar hur det fungerar i praktiken.
 
-En planerad funktion för en framtida uppdatering, [tvångsmönstret](id:duress-pattern), bygger vidare på detta: ett särskilt mönster ska öppna ett valt valv och tyst ta bort åtkomsten till de andra.
+Ett [nödmönster](id:duress-pattern), som finns med Premium, bygger vidare på detta: ett särskilt mönster öppnar ett lockbetesvalv och raderar i tysthet och permanent alla andra valv på iPhonen. Appen visar aldrig om ett är inställt, så även dess existens går att förneka. [Nödlösenord, förklarat](id:duress-password-explained) sätter idén i ett sammanhang.
 
 ## De ärliga gränserna
 

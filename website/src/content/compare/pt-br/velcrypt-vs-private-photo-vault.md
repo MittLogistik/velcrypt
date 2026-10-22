@@ -53,7 +53,7 @@ O Velcrypt é um cofre no aparelho bloqueado por padrão. Um padrão é uma linh
 | Forma de desbloqueio | Padrão em uma grade 5×5 | PIN / código |
 | Biometria (Face ID / Touch ID) | Não oferecida, por design | Varia |
 | Fachada / vários cofres | Cada padrão é um cofre próprio (mais de um cofre exige o Premium) | Senha de fachada |
-| Padrão de coação | Planejado para uma atualização futura | Não informado publicamente |
+| Padrão de coação | Sim, com o Premium (abre um cofre de fachada e apaga os outros cofres) | Não informado publicamente |
 | Relatórios de invasão | Não oferecidos | Oferecidos, segundo sua página na loja |
 | Recuperação se você esquecer o código | Nenhuma | Não informado publicamente |
 | Modelo de negócio | Grátis (1 cofre, 50 itens) e Premium opcional | Versão grátis e upgrade pago |

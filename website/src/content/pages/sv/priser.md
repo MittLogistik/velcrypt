@@ -4,10 +4,10 @@ title: "Velcrypt pris: gratisversion och Premium"
 description: "Velcrypt är gratis med ett valv och 50 objekt. Premium kostar 1,99 USD i veckan, 19,99 USD om året eller 39,99 USD en gång. Inga annonser."
 h1: "Velcrypts priser"
 navTitle: "Priser"
-answer: "Velcrypt är gratis med ett valv och upp till 50 objekt. Premium ger obegränsat antal objekt, fler valv och alternativa appikoner för 1,99 USD i veckan, 19,99 USD om året (med 3 dagars gratis provperiod) eller 39,99 USD som engångsköp. Priserna varierar mellan länder och visas i App Store. Ingen version visar annonser."
+answer: "Velcrypt är gratis med ett valv och upp till 50 objekt. Premium ger obegränsat antal objekt, fler valv, ett nödmönster och alternativa appikoner för 1,99 USD i veckan, 19,99 USD om året (med 3 dagars gratis provperiod) eller 39,99 USD som engångsköp. Priserna varierar mellan länder och visas i App Store. Ingen version visar annonser."
 keyFacts:
   - "Gratis: ett valv med upp till 50 objekt och standardikonen."
-  - "Premium: obegränsat antal objekt, fler valv och alternativa appikoner."
+  - "Premium: obegränsat antal objekt, fler valv, ett nödmönster och alternativa appikoner."
   - "Priser i USD: 1,99/vecka, 19,99/år med 3 dagars gratis provperiod, 39,99 för livstid (engångsköp)."
   - "Priserna varierar mellan länder och visas i App Store innan du köper."
   - "Krypterad säkerhetskopiering ingår gratis i alla versioner."
@@ -18,14 +18,16 @@ datePublished: 2026-10-21
 dateModified: 2026-10-22
 schemaType: WebPage
 order: 2
-related: [features, hidden-vaults, security, faq, support]
+related: [features, hidden-vaults, duress-pattern, security, faq, support]
 faq:
   - q: "Är Velcrypt gratis?"
     a: "Ja. Gratisversionen ger dig ett krypterat valv med upp till 50 objekt, samma kryptering som Premium och krypterad säkerhetskopiering. Premium är en valfri uppgradering för dig som vill ha mer."
   - q: "Vad kostar Velcrypt Premium?"
     a: "I USD kostar Premium 1,99 i veckan, 19,99 om året eller 39,99 som engångsköp för livstid. Årsplanen börjar med 3 dagars gratis provperiod. Priserna varierar mellan länder, och App Store visar ditt pris innan du köper."
   - q: "Vad ingår i Premium?"
-    a: "Obegränsat antal objekt, fler valv (andra mönster får egna valv) och alternativa appikoner för hemskärmen, till exempel miniräknare, timer och linjal. Krypteringen är densamma som i gratisversionen."
+    a: "Obegränsat antal objekt, fler valv (andra mönster får egna valv), nödmönstret och alternativa appikoner för hemskärmen, till exempel miniräknare, timer och linjal. Krypteringen är densamma som i gratisversionen."
+  - q: "Ingår nödmönstret i Premium?"
+    a: "Ja. Det krävs Premium för att ställa in ett nödmönster, eftersom det hör till ett andra valv (ett lockbetesvalv). När det väl är inställt fortsätter det att fungera även om din Premium-prenumeration upphör."
   - q: "Hur säger jag upp prenumerationen?"
     a: "Prenumerationer förnyas automatiskt om du inte säger upp dem minst 24 timmar innan den aktuella perioden slutar. Du hanterar och säger upp dem i inställningarna för ditt Apple-konto. Livstidsköpet är en engångsbetalning och förnyas inte."
   - q: "Har gratisversionen av Velcrypt annonser?"
@@ -51,6 +53,7 @@ Velcrypt är gratis att ladda ned och använda. Premium är en valfri uppgraderi
 | Krypterad säkerhetskopiering | Ja | Ja |
 | Antal objekt | Upp till 50 | Obegränsat |
 | Antal valv | 1 | Fler valv |
+| Nödmönster | – | Ja |
 | Alternativa appikoner | – | Ja |
 | Annonser | Inga | Inga |
 
@@ -78,9 +81,9 @@ Det finns heller inget konto i någon version. Du registrerar dig inte, du lämn
 
 En integritetsapp som tjänar pengar på reklam eller data har en inbyggd intressekonflikt. Velcrypt undviker det genom att låta dem som vill få ut mer av appen betala direkt för det. Alla andra behåller en fullt krypterad gratisversion utan några villkor.
 
-Den modellen styr också vad som hamnar i Premium. Betalfunktioner ger mer kapacitet – fler objekt, fler valv – eller bekvämlighet som alternativa appikoner. De låser aldrig upp någon ”riktig” krypteringsnivå som gratisversionen saknar.
+Den modellen styr också vad som hamnar i Premium. Betalfunktioner ger mer kapacitet – fler objekt, fler valv – eller extra funktioner som [nödmönstret](id:duress-pattern) och alternativa appikoner. De låser aldrig upp någon ”riktig” krypteringsnivå som gratisversionen saknar. Ett nödmönster som du redan har ställt in fortsätter att fungera även om Premium upphör; det är bara inställningen som kräver Premium.
 
-Gratisversionen har ett valv. Vill du använda [dolda valv](id:hidden-vaults) – där andra mönster öppnar egna valv, till exempel ett skenvalv – behöver du Premium.
+Gratisversionen har ett valv. Vill du använda [dolda valv](id:hidden-vaults) – där andra mönster öppnar egna valv, till exempel ett lockbetesvalv – behöver du Premium. Det gäller också nödmönstret, som du ställer in inifrån ett lockbetesvalv.
 
 Uppgraderar du ändras ingenting i dina befintliga valv. Dina data stannar på din iPhone, krypterade på samma sätt.
 

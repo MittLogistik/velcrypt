@@ -77,7 +77,7 @@ Um cofre de fachada funciona melhor quando parece usado. Um cofre vazio levanta 
 
 Como a versão grátis tem um cofre, um cofre de fachada ao lado do seu cofre verdadeiro exige o [Premium](id:pricing).
 
-O Velcrypt também planeja um [padrão de coação](id:duress-pattern) para uma atualização futura. A ideia é ir um passo além do cofre de fachada: abrir um cofre escolhido e remover em silêncio o acesso aos outros.
+Com o Premium, você também pode configurar um [padrão de coação](id:duress-pattern) dentro do cofre de fachada. Ele vai um passo além: desenhá-lo abre o cofre de fachada e apaga em silêncio, de forma permanente, todos os outros cofres do iPhone. O guia sobre [como configurar um cofre de fachada e um padrão de coação](id:set-up-decoy-vault-and-duress-pattern) mostra o passo a passo.
 
 ## Como cada cofre continua separado
 

@@ -53,7 +53,7 @@ Keiner der beiden Ansätze ist grundsätzlich besser. Der eine tauscht Komfort g
 | Entsperren | Muster auf einem 5×5-Raster | PIN oder Code |
 | Biometrie (Face ID / Touch ID) | Bewusst nicht angeboten | Unterstützt, laut Store-Eintrag |
 | Köder- / mehrere Tresore | Jedes Muster ist ein eigener Tresor (mehrere Tresore mit Premium) | Fake-/Köder-PIN in Premium |
-| Notfallmuster | Geplant, noch nicht verfügbar | Nicht öffentlich angegeben |
+| Notfallmuster | Ja, mit Premium (öffnet einen Köder, löscht die anderen Tresore) | Nicht öffentlich angegeben |
 | Einbruchswarnungen | Nicht angeboten | In Premium angeboten |
 | Wiederherstellung bei vergessenem Code | Keine; Tresor nicht wiederherstellbar | Unterschiedlich; kontobasierte Wiederherstellung womöglich verfügbar |
 | Geschäftsmodell | Kostenlos: 1 Tresor, bis zu 50 Objekte; Premium als Abo oder einmaliger Kauf (siehe [Preise](id:pricing)) | Kostenlose Stufe plus Premium-Abo |
@@ -81,7 +81,7 @@ Viele Tresor-Apps bieten einen zweiten, falschen Code, der einen harmlosen Treso
 
 <!-- TODO verify -->
 
-Bei Velcrypt ist das Prinzip Teil der Architektur statt ein Zusatz. Jedes Muster ist ein eigener Tresor, es gibt keine Tresorliste, und ein Muster, das die App noch nie gesehen hat, öffnet einfach ohne Fehlermeldung einen leeren Tresor. Nichts auf dem Bildschirm beweist, dass weitere Tresore existieren. Genau das bedeuten [versteckte Tresore](id:hidden-vaults) und [glaubhafte Abstreitbarkeit](id:plausible-deniability-explained) in der Praxis. Ein Notfallmuster, das einen gewählten Tresor öffnet und still den Zugriff auf die anderen entfernt, ist für ein künftiges Update geplant und kommt demnächst.
+Bei Velcrypt ist das Prinzip Teil der Architektur statt ein Zusatz. Jedes Muster ist ein eigener Tresor, es gibt keine Tresorliste, und ein Muster, das die App noch nie gesehen hat, öffnet einfach ohne Fehlermeldung einen leeren Tresor. Nichts auf dem Bildschirm beweist, dass weitere Tresore existieren. Genau das bedeuten [versteckte Tresore](id:hidden-vaults) und [glaubhafte Abstreitbarkeit](id:plausible-deniability-explained) in der Praxis. Mit Premium geht ein [Notfallmuster](id:duress-pattern) noch weiter: Es öffnet einen Köder-Tresor und löscht still und endgültig alle anderen Tresore auf dem iPhone.
 
 ## Wann Keepsafe besser passen kann
 

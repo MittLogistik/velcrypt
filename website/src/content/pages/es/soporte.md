@@ -81,7 +81,7 @@ Las copias cifradas ocupan aproximadamente lo mismo que los originales. Comprueb
 
 ### Quiero pasar mis bóvedas a un iPhone nuevo
 
-Las bóvedas no se incluyen en las copias de iCloud ni del ordenador. En el iPhone antiguo, abre cada bóveda y crea una copia de seguridad en Ajustes → Copia de seguridad; guárdala en iCloud Drive o en un ordenador. En el iPhone nuevo, abre una bóveda, ve a Ajustes → Copia de seguridad → Restaurar copia de seguridad e introduce la contraseña de la copia. Los elementos se añaden a la bóveda que tienes abierta.
+Las bóvedas no se incluyen en las copias de iCloud ni del ordenador. En el iPhone antiguo, abre cada bóveda y crea una copia de seguridad en Ajustes → Copia de seguridad; guárdala en iCloud Drive o en un ordenador. En el iPhone nuevo, abre una bóveda, ve a Ajustes → Copia de seguridad → Restaurar desde copia de seguridad e introduce la contraseña de la copia. Los elementos se añaden a la bóveda que tienes abierta.
 
 ### Premium no aparece después de comprar
 

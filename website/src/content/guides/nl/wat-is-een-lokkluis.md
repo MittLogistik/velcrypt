@@ -10,7 +10,8 @@ keyFacts:
   - "In Velcrypt is elk patroon een eigen kluis en is er geen lijst van kluizen die de andere verraadt."
   - "Een lege lokkluis is verdacht; een geleefde lokkluis met albums en recente items overtuigt."
   - "Een lokkluis beschermt tegen rondsnuffelen en lichte druk, niet tegen forensisch onderzoek of iemand die je zag tekenen."
-  - "Een tweede kluis, en dus een lokkluis, vraagt om Premium; een dwangpatroon is gepland voor een toekomstige update."
+  - "Een tweede kluis, en dus een lokkluis, vraagt om Premium; de gratis versie heeft één kluis."
+  - "Met Premium kan een dwangpatroon de lokkluis openen en alle andere kluizen op de iPhone definitief verwijderen."
 primaryKeyword: "lokkluis"
 keywords: ["wat is een lokkluis", "nepkluis app", "lokwachtwoord fotokluis", "nep kluis app", "lokpatroon", "tweede kluis iphone"]
 datePublished: 2026-10-21
@@ -18,7 +19,7 @@ dateModified: 2026-10-22
 summary: "Wat een lokkluis is, hoe je met een tweede Velcrypt-patroon een geleefde lokkluis bouwt en welke grenzen je moet kennen."
 category: security
 order: 41
-related: [hidden-vaults, plausible-deniability-explained, duress-pattern, pattern-lock-vs-pin-vs-face-id, partner-scrolling-camera-roll, phone-privacy-border-crossing]
+related: [hidden-vaults, plausible-deniability-explained, duress-pattern, set-up-decoy-vault-and-duress-pattern, duress-password-explained, forced-to-unlock-phone, pattern-lock-vs-pin-vs-face-id, partner-scrolling-camera-roll, phone-privacy-border-crossing]
 howTo:
   name: "Een lokkluis instellen in Velcrypt"
   steps:
@@ -40,7 +41,7 @@ faq:
   - q: "Kan iemand zien dat een kluis een lokkluis is?"
     a: "Niet vanuit de app: Velcrypt houdt geen lijst van kluizen bij en geeft geen enkele hint dat er andere bestaan. Wat een lokkluis kan verraden, is de inhoud, bijvoorbeeld als hij leeg, verouderd of duidelijk in scène gezet is."
   - q: "Is een lokkluis hetzelfde als een dwangpatroon?"
-    a: "Nee. Een lokkluis opent gewoon een andere kluis. Een dwangpatroon, een functie die Velcrypt plant voor een toekomstige update, zou een gekozen kluis openen en tegelijk stilletjes de toegang tot de andere wegnemen."
+    a: "Nee. Een lokkluis opent gewoon een andere kluis en laat de rest ongemoeid. Een dwangpatroon, beschikbaar met Velcrypt Premium, opent de lokkluis en verwijdert daarnaast ongemerkt en definitief alle andere kluizen op de iPhone."
   - q: "Moet ik een lokkluis gebruiken bij politie of grensbeambten?"
     a: "Deze gids kan geen juridisch advies geven. Ambtenaren misleiden kan in veel landen strafbaar zijn. Een lokkluis is vooral bedoeld voor alledaags rondsnuffelen en informele druk; voor officiële situaties ken je je rechten en praat je met een advocaat."
 ---
@@ -93,7 +94,7 @@ Een lokkluis is een sociaal hulpmiddel met goede cryptografie erachter. Het is g
 
 ## Lokkluis vs dwangpatroon
 
-Een lokkluis opent een andere kluis en laat al het andere ongemoeid. Een **dwangpatroon** gaat een stap verder: het opent een kluis die je hebt gekozen en neemt tegelijk stilletjes de toegang tot de andere weg. In Velcrypt is het [dwangpatroon](id:duress-pattern) gepland voor een toekomstige update. Tot die tijd dekt een goed onderhouden lokkluis de meeste alledaagse situaties, zoals een nieuwsgierige partner, een vriend die door je telefoon scrolt of een bemoeizuchtige collega.
+Een lokkluis opent een andere kluis en laat al het andere ongemoeid. Een **dwangpatroon** gaat een stap verder: het opent je lokkluis en verwijdert op hetzelfde moment ongemerkt en definitief alle andere kluizen op de iPhone. In Velcrypt hoort het [dwangpatroon](id:duress-pattern) bij Premium en stel je het in vanuit de lokkluis (in de app: Instellingen → Noodpatroon). Het past bij situaties waarin je verwacht later opnieuw onder druk te worden gezet; voor alledaagse nieuwsgierigheid, zoals een partner, een vriend die door je telefoon scrolt of een bemoeizuchtige collega, is een goed onderhouden lokkluis meestal genoeg. Omdat verwijderen definitief is, maak je eerst een versleutelde back-up van je echte kluis. [Een lokkluis en dwangpatroon instellen](id:set-up-decoy-vault-and-duress-pattern) loopt beide stap voor stap door.
 
 ## Waar Velcrypt past
 

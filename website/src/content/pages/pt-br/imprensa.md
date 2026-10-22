@@ -55,7 +55,7 @@ O Velcrypt é um app nativo para iPhone que guarda fotos, vídeos e documentos p
 | Criptografia | AES-256-GCM (Apple CryptoKit); derivação de chave PBKDF2-HMAC-SHA512 |
 | Dados | 100% no aparelho; sem conta, sem sincronização na nuvem, sem anúncios |
 | Backup | Arquivo .velcrypt criptografado e protegido por senha, criado manualmente; grátis |
-| Planejado | Padrão de coação |
+| Padrão de coação | Sim (Premium): abre um cofre de fachada e apaga de forma permanente os outros cofres |
 | Contato para imprensa | press@velcrypt.app |
 
 Para detalhes técnicos, use o link do [modelo de segurança](id:security); para uma visão geral, veja os [recursos](id:features).
@@ -85,7 +85,7 @@ Use os arquivos como fornecidos: mantenha espaço livre suficiente ao redor do l
 Alguns pontos ajudam a manter a cobertura precisa:
 
 - O Velcrypt **não** passou por auditoria independente. Por favor, não o descreva como auditado.
-- O backup criptografado está disponível e é grátis. O padrão de coação está planejado, não disponível.
+- O backup criptografado está disponível e é grátis. O padrão de coação está disponível com o Premium; descreva-o como um recurso de segurança pessoal, não como um jeito de driblar a polícia ou o controle de fronteira.
 - O Velcrypt não consegue recuperar padrões esquecidos; isso é uma consequência deliberada de não haver conta nem servidor.
 - Ainda não há cobertura de imprensa para citar, e não divulgamos número de usuários nem avaliações.
 

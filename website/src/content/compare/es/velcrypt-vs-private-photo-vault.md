@@ -53,7 +53,7 @@ Velcrypt es una bóveda en el dispositivo bloqueada con patrón. Un patrón es u
 | Método de desbloqueo | Patrón en una cuadrícula de 5×5 | PIN / código |
 | Biometría (Face ID / Touch ID) | No disponible, por diseño | Depende |
 | Señuelo / varias bóvedas | Cada patrón es su propia bóveda (con Premium) | Contraseña señuelo |
-| Patrón de coacción | Previsto para una actualización futura | No se indica públicamente |
+| Patrón de coacción | Sí, con Premium (abre un señuelo y elimina las demás bóvedas) | No se indica públicamente |
 | Informes de intrusión | No disponibles | Disponibles, según su ficha |
 | Recuperación si olvidas el código | Ninguna; solo restaurar una copia de seguridad propia | No se indica públicamente |
 | Modelo de negocio | Gratis (1 bóveda, 50 elementos) o Premium desde 1,99 US$ a la semana | Versión gratuita más mejora de pago |

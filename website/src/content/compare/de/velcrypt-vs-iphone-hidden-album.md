@@ -55,7 +55,7 @@ Ist iCloud-Fotos aktiviert, werden ausgeblendete Objekte wie alles andere synchr
 | Entsperren | Muster auf einem 5×5-Raster, getrennt vom Code | Face ID, Touch ID oder Gerätecode |
 | Biometrie | Bewusst nicht angeboten | Ja |
 | Köder- / mehrere Tresore | Jedes Muster ist ein eigener Tresor (mehrere Tresore mit Premium) | Ein Album „Ausgeblendet“ |
-| Notfallmuster | Geplant, noch nicht verfügbar | Nein |
+| Notfallmuster | Ja, mit Premium (öffnet einen Köder, löscht die anderen Tresore) | Nein |
 | Wiederherstellung bei vergessenem Code | Keine | Über Gerätecode und Wiederherstellung des Apple Accounts |
 | Kosten | Kostenlos: 1 Tresor, bis zu 50 Objekte; Premium als Abo oder einmaliger Kauf (siehe [Preise](id:pricing)) | In iOS enthalten |
 | Plattformen | iPhone (iOS 17+) | iPhone, iPad und Mac |

@@ -10,7 +10,7 @@ keyFacts:
   - "Sin Face ID ni Touch ID por diseño: un patrón solo existe en tu memoria."
   - "Sin anuncios y sin venta de datos."
   - "Honesta sobre sus límites, incluido que un patrón olvidado no se puede recuperar."
-  - "Copia de seguridad cifrada incluida y gratuita; patrón de coacción previsto para una actualización futura."
+  - "Copia de seguridad cifrada gratuita para todos; patrón de coacción para situaciones de coacción, con Premium."
   - "Publicada por Swedish Treats AB, Suecia."
 primaryKeyword: "acerca de velcrypt"
 keywords: ["app velcrypt", "quién desarrolla velcrypt", "principios de velcrypt", "bóveda de fotos privada iphone"]
@@ -24,8 +24,8 @@ faq:
     a: "Porque los datos que nunca salen de tu teléfono no pueden quedar expuestos por una brecha en un servidor, un requerimiento judicial a un proveedor o una contraseña reutilizada. La contrapartida es que no hay recuperación si pierdes el teléfono u olvidas el patrón."
   - q: "¿Velcrypt gana dinero con mis datos?"
     a: "No. Velcrypt no recopila el contenido de tus bóvedas ni analítica sobre él y no muestra anuncios. Velcrypt tiene una versión gratuita y una mejora Premium de pago opcional."
-  - q: "¿En qué está trabajando Velcrypt ahora?"
-    a: "Lo principal que está previsto es un patrón de coacción, para una actualización futura y todavía sin fecha. La copia de seguridad cifrada ya está disponible y es gratuita."
+  - q: "¿Velcrypt tiene patrón de coacción?"
+    a: "Sí, en Velcrypt 1.0 con Premium. Al dibujarlo se abre una bóveda señuelo y se eliminan en silencio y de forma permanente todas las demás bóvedas del iPhone. Está pensado para situaciones de seguridad personal, no como una forma de eludir órdenes legítimas."
 ---
 
 <!-- TODO: add founder/company details -->
@@ -60,15 +60,16 @@ Las herramientas de privacidad fallan a la gente cuando prometen demasiado. Pref
 
 Velcrypt no muestra publicidad ni vende datos. No recopila el contenido de tus bóvedas ni analítica sobre él, así que no hay nada que vender. Velcrypt se financia con una mejora Premium opcional; consulta los [precios](id:pricing).
 
-## Lo que viene
+## Qué incluye Velcrypt 1.0
 
-Esto está previsto. Hoy no está en la app y no le pondremos fecha hasta que esté listo. La copia de seguridad cifrada ya está disponible y es gratuita.
+Velcrypt 1.0 incluye copia de seguridad cifrada gratuita y una mejora Premium opcional con elementos ilimitados, más bóvedas, un patrón de coacción e iconos alternativos de la app.
 
 | Elemento | Estado |
 |---|---|
-| [Patrón de coacción](id:duress-pattern): abre una bóveda elegida y retira en silencio el acceso a las demás | Previsto para una actualización futura |
+| Copia de seguridad cifrada: un archivo protegido con contraseña que guardas tú | Disponible, gratis |
+| [Patrón de coacción](id:duress-pattern): abre una bóveda señuelo y elimina en silencio y de forma permanente todas las demás bóvedas del iPhone | Disponible, Premium |
 
-Todo lo que añadamos seguirá los mismos principios: en el dispositivo por defecto, sin cuenta y con una explicación clara de las contrapartidas.
+El patrón de coacción sigue los mismos principios que todo lo demás: en el dispositivo, sin cuenta y con una explicación clara de las contrapartidas. La eliminación es permanente, y está pensado para situaciones de seguridad personal, no como una forma de eludir órdenes legítimas. Todo lo que añadamos más adelante seguirá las mismas reglas.
 
 ## Contacto
 

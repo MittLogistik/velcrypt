@@ -11,7 +11,7 @@ keyFacts:
   - "Um cofre falso vazio levanta suspeita; um cofre com álbuns e itens recentes, com cara de usado, convence."
   - "Um cofre falso protege contra bisbilhotice e pressão casual, não contra análise forense ou alguém que viu você desenhar."
   - "No Velcrypt, um segundo cofre (e portanto um cofre falso) exige o Premium."
-  - "Um padrão de coação que também removeria o acesso aos outros cofres está planejado para uma atualização futura."
+  - "Com o Premium, um padrão de coação pode abrir o cofre falso e apagar de forma permanente todos os outros cofres do iPhone."
 primaryKeyword: "cofre falso"
 keywords: ["o que é cofre falso", "senha falsa cofre de fotos", "app de cofre falso", "padrão falso", "segundo cofre iphone"]
 datePublished: 2026-10-21
@@ -19,7 +19,7 @@ dateModified: 2026-10-22
 summary: "O que é um cofre falso, como montar um com cara de usado usando um segundo padrão no Velcrypt e os limites que você deve conhecer."
 category: security
 order: 41
-related: [hidden-vaults, plausible-deniability-explained, duress-pattern, pattern-lock-vs-pin-vs-face-id, partner-scrolling-camera-roll, phone-privacy-border-crossing]
+related: [hidden-vaults, plausible-deniability-explained, duress-pattern, set-up-decoy-vault-and-duress-pattern, duress-password-explained, forced-to-unlock-phone, pattern-lock-vs-pin-vs-face-id, partner-scrolling-camera-roll, phone-privacy-border-crossing]
 howTo:
   name: "Criar um cofre falso no Velcrypt"
   steps:
@@ -41,7 +41,7 @@ faq:
   - q: "Alguém consegue perceber que um cofre é falso?"
     a: "Não por dentro do app: o Velcrypt não guarda lista de cofres e não dá nenhuma pista de que existem outros. O que pode entregar um cofre falso é o conteúdo, por exemplo se ele estiver vazio, parado no tempo ou claramente montado."
   - q: "Cofre falso é a mesma coisa que padrão de coação?"
-    a: "Não. Um cofre falso simplesmente abre um cofre diferente. Um padrão de coação, recurso do Velcrypt planejado para uma atualização futura, abriria um cofre escolhido e também removeria em silêncio o acesso aos outros."
+    a: "Não. Um cofre falso simplesmente abre um cofre diferente e deixa os outros intocados. Um padrão de coação, disponível no Velcrypt Premium, abre o cofre falso e também apaga em silêncio, de forma permanente, todos os outros cofres do iPhone."
   - q: "Devo usar um cofre falso com a polícia ou na imigração?"
     a: "Este guia não pode dar orientação jurídica. Enganar autoridades pode ser crime em muitos países. Um cofre falso serve principalmente para bisbilhotice do dia a dia e pressão informal; em situações oficiais, conheça seus direitos e fale com um advogado."
 ---
@@ -94,7 +94,7 @@ Um cofre falso é uma ferramenta social apoiada por boa criptografia. Não é m�
 
 ## Cofre falso vs. padrão de coação
 
-Um cofre falso abre um cofre diferente e deixa todo o resto intocado. Um **padrão de coação** vai um passo além: ele abre um cofre que você escolheu e, ao mesmo tempo, remove em silêncio o acesso aos outros. No Velcrypt, o [padrão de coação](id:duress-pattern) está planejado para uma atualização futura e ainda não está no app. Até lá, um cofre falso bem cuidado dá conta da maioria das situações do dia a dia, como um parceiro curioso, um amigo rolando o seu celular ou um colega intrometido.
+Um cofre falso abre um cofre diferente e deixa todo o resto intocado. Um **padrão de coação** vai um passo além: ele abre o seu cofre falso e, no mesmo instante, apaga em silêncio e de forma permanente todos os outros cofres do iPhone. No Velcrypt, o [padrão de coação](id:duress-pattern) faz parte do Premium e é configurado de dentro do cofre falso. Ele serve para situações em que você espera ser pressionado de novo mais tarde; para a curiosidade do dia a dia, como um parceiro, um amigo rolando o seu celular ou um colega intrometido, um cofre falso bem cuidado costuma bastar. Como a exclusão é permanente, faça antes um backup criptografado do seu cofre verdadeiro. [Como configurar um cofre de fachada e um padrão de coação](id:set-up-decoy-vault-and-duress-pattern) mostra os dois passos.
 
 ## Onde o Velcrypt se encaixa
 

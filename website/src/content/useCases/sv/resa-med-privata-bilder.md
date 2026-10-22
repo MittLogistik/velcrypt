@@ -72,6 +72,6 @@ Det finns inget konto och inget laddas upp, så det finns ingen molninloggning a
 - **Originalen ligger kvar i Bilder tills du raderar dem.** Import kopierar en bild. [Radera originalet](id:delete-original-photos-after-import) och töm Nyligen raderade.
 - **Någon som ser dig rita** ditt mönster kan lära sig det.
 - **Appsymbolen syns** på hemskärmen om du inte använder iOS 18:s alternativ för att gömma appar.
-- **Ett valv är ingen juridisk sköld.** Vid en gräns gäller landets regler; tvångsmönstret är planerat till en framtida uppdatering och finns inte i dag.
+- **Ett valv är ingen juridisk sköld.** Vid en gräns gäller landets regler. Använd inte [nödmönstret](id:duress-pattern) för att radera data när tjänstemän lagligen kräver åtkomst; det kan i sig vara ett brott.
 
 Res lätt, res förberedd: med en ordentligt låst telefon blir det ett besvär att förlora den, inte en kris.

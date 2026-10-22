@@ -63,7 +63,7 @@ As respostas definem as suas ferramentas. Exagerar na proteção de uma pauta de
 
 O Velcrypt é uma camada desse plano. Ele guarda fotos, vídeos e documentos em cofres criptografados no seu iPhone, usando AES-256-GCM com chaves derivadas do seu padrão. Não há conta, servidor, sincronização nem análise do conteúdo do cofre, então não existe nada em um servidor para alguém solicitar.
 
-Os cofres abrem com um padrão em uma grade 5×5. O Velcrypt não oferece Face ID nem Touch ID de propósito, porque a biometria pode ser usada sem o seu consentimento; um padrão existe só na sua memória. O raciocínio está em [padrão x PIN x Face ID](id:pattern-lock-vs-pin-vs-face-id). Cada padrão abre o seu próprio cofre, e um padrão desconhecido abre um cofre vazio, sem erro, o que sustenta a [negação plausível](id:plausible-deniability-explained). Um padrão de coação que removeria o acesso aos outros cofres está planejado para uma atualização futura.
+Os cofres abrem com um padrão em uma grade 5×5. O Velcrypt não oferece Face ID nem Touch ID de propósito, porque a biometria pode ser usada sem o seu consentimento; um padrão existe só na sua memória. O raciocínio está em [padrão x PIN x Face ID](id:pattern-lock-vs-pin-vs-face-id). Cada padrão abre o seu próprio cofre, e um padrão desconhecido abre um cofre vazio, sem erro, o que sustenta a [negação plausível](id:plausible-deniability-explained). Com o Premium, um [padrão de coação](id:duress-pattern) abre um cofre de fachada e apaga de forma permanente os outros. Ele foi feito para situações de segurança pessoal, como furto ou ameaças, e não para apagar material quando autoridades exigem acesso legalmente, o que pode ser crime por si só; procure orientação jurídica se esse for um risco para você.
 
 ## Limites honestos
 

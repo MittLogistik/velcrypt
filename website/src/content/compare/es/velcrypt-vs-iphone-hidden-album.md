@@ -55,7 +55,7 @@ Si Fotos en iCloud está activado, los elementos ocultos se sincronizan como tod
 | Método de desbloqueo | Patrón en una cuadrícula de 5×5, independiente del código | Face ID, Touch ID o código del dispositivo |
 | Biometría | No disponible, por diseño | Sí |
 | Señuelo / varias bóvedas | Cada patrón es su propia bóveda (con Premium) | Un único álbum Oculto |
-| Patrón de coacción | Previsto para una actualización futura | No |
+| Patrón de coacción | Sí, con Premium (abre un señuelo y elimina las demás bóvedas) | No |
 | Recuperación si olvidas el código | Ninguna; solo restaurar una copia de seguridad propia | Código del dispositivo y recuperación de la Cuenta de Apple |
 | Coste | Gratis (1 bóveda, 50 elementos) o Premium desde 1,99 US$ a la semana | Incluido en iOS |
 | Plataformas | iPhone (iOS 17+) | iPhone, iPad y Mac |

@@ -61,7 +61,7 @@ Isso não é uma política que alguém possa contornar. É como a criptografia f
 
 ### Se você tem um backup criptografado
 
-Se você criou um backup do cofre em Ajustes → Backup antes de esquecer o padrão, ainda pode recuperar o conteúdo. Desenhe um padrão novo (de preferência um que você vá lembrar), que abre um cofre vazio, vá em Ajustes → Backup, escolha Restaurar Backup e digite a senha escolhida quando o backup foi criado. Os itens do backup são adicionados ao cofre aberto. O backup só contém o que havia no cofre no momento em que foi criado, e o Velcrypt não consegue recuperar uma senha de backup esquecida.
+Se você criou um backup do cofre em Ajustes → Backup antes de esquecer o padrão, ainda pode recuperar o conteúdo. Desenhe um padrão novo (de preferência um que você vá lembrar), que abre um cofre vazio, vá em Ajustes → Backup, escolha Restaurar do Backup e digite a senha escolhida quando o backup foi criado. Os itens do backup são adicionados ao cofre aberto. O backup só contém o que havia no cofre no momento em que foi criado, e o Velcrypt não consegue recuperar uma senha de backup esquecida.
 
 As mesmas propriedades que tornam o seu cofre privado tornam definitivo um padrão esquecido. Um sistema com um botão “esqueceu o padrão?” necessariamente mantém uma porta de entrada que não depende só de você.
 

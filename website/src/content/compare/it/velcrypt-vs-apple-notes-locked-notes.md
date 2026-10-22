@@ -55,7 +55,7 @@ Puoi aggiungere foto dalla libreria, scattare una foto dentro la nota o scansion
 | Metodo di sblocco | Sequenza su griglia 5×5 | Codice del dispositivo o password di Note separata |
 | Biometria | Non offerta, per scelta | Face ID / Touch ID facoltativi |
 | Esca / più casseforti | Ogni sequenza è una cassaforte a sé (più casseforti con Premium) | Non supportato; tutte le note bloccate condividono una password |
-| Sequenza di emergenza | Prevista per un aggiornamento futuro | No |
+| Sequenza di emergenza | Sì, con il Premium (apre un’esca, elimina le altre casseforti) | No |
 | Recupero se dimentichi il codice | Nessuno | L’opzione con codice evita una password separata; le vecchie password di Note non si recuperano |
 | Gestione di foto e video | Album, visualizzatore con zoom e scorrimento, video | Immagini dentro una nota; supporto video variabile |
 | Costo | Gratuita (1 cassaforte, 50 elementi) più Premium facoltativo da 1,99 $/settimana, 19,99 $/anno o 39,99 $ a vita (USD) | Incluso in iOS |

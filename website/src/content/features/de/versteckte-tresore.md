@@ -77,7 +77,7 @@ Ein Köder-Tresor ist ein Tresor mit harmlosen, aber glaubwürdigen Inhalten, et
 
 Ein Köder wirkt am besten, wenn er benutzt aussieht. Ein leerer Tresor provoziert die Frage „Warum installierst du eine Tresor-App für nichts?“, ein Tresor mit ein paar Dutzend gewöhnlichen Dateien kaum. Die Anleitung [Was ist ein Köder-Tresor?](id:what-is-a-decoy-vault) zeigt, wie du ihn überzeugend gestaltest.
 
-Für ein künftiges Update plant Velcrypt außerdem ein [Notfallmuster](id:duress-pattern). Es soll einen Schritt weiter gehen als ein Köder: Es öffnet einen gewählten Tresor und entfernt still den Zugriff auf die anderen.
+Mit Premium kannst du im Köder außerdem ein [Notfallmuster](id:duress-pattern) einrichten. Es geht einen Schritt weiter: Zeichnest du es, öffnet sich der Köder, und alle anderen Tresore auf dem iPhone werden still und endgültig gelöscht. Die Anleitung [Köder-Tresor und Notfallmuster einrichten](id:set-up-decoy-vault-and-duress-pattern) führt dich durch die Schritte.
 
 ## Wie jeder Tresor getrennt bleibt
 

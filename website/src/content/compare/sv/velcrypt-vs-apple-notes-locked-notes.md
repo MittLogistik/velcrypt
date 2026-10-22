@@ -55,7 +55,7 @@ Du kan lägga till bilder från ditt bibliotek, ta en bild inne i anteckningen e
 | Upplåsning | Mönster på ett 5×5-rutnät | Enhetens lösenkod eller separat lösenord för Anteckningar |
 | Biometri | Erbjuds inte, med avsikt | Valfritt Face ID / Touch ID |
 | Lockvalv / flera valv | Varje mönster är ett eget valv | Stöds inte; alla låsta anteckningar delar ett lösenord |
-| Tvångsmönster | Planerat till en framtida uppdatering | Nej |
+| Nödmönster | Ja, med Premium (öppnar ett lockbete, raderar de andra valven) | Nej |
 | Återställning om du glömmer koden | Ingen | Lösenkodsalternativet slipper ett separat lösenord; gamla lösenord för Anteckningar kan inte återställas |
 | Hantering av bilder och video | Album, visare med zoom och svep, videor | Bilder inne i en anteckning; stödet för video varierar |
 | Kostnad | Gratis (ett valv, 50 objekt) plus valfri Premium | Ingår i iOS |

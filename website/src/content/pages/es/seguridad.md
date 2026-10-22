@@ -95,6 +95,8 @@ Velcrypt funciona totalmente sin conexión. No hay registro, ni dirección de em
 
 Los datos de las bóvedas también se **excluyen de las copias de seguridad de iCloud y del ordenador (Finder)**. Así tus archivos cifrados no acaban en los servidores de Apple ni en ningún ordenador con el que sincronices sin que tú lo decidas, pero tiene una consecuencia real: si tu iPhone se pierde, se rompe o se restablece, las bóvedas desaparecen con él, salvo que tengas una copia de seguridad.
 
+<a id="encrypted-backup"></a>
+
 ### Copia de seguridad cifrada
 
 En Ajustes → Copia de seguridad, Velcrypt crea un archivo `.velcrypt` con la bóveda abierta, protegido con una **contraseña de copia de seguridad** que tú eliges. Cada bóveda se respalda por separado, así que una copia nunca revela tus otras bóvedas. Tú decides dónde guardarla (Archivos, iCloud Drive o un ordenador) y puedes restaurarla en cualquier iPhone; los elementos se añaden a la bóveda que tengas abierta. Velcrypt nunca recibe el archivo. Como con el patrón, una contraseña de copia de seguridad olvidada no se puede recuperar, y quien tenga el archivo solo puede intentar adivinarla, así que elige una contraseña larga.
@@ -121,7 +123,7 @@ En Ajustes → Copia de seguridad, Velcrypt crea un archivo `.velcrypt` con la b
 Toda herramienta de seguridad tiene límites, y conviene que conozcas los de Velcrypt antes de confiar en ella.
 
 - **Mirar por encima del hombro.** Si alguien te ve dibujar el patrón, en persona o con una cámara, puede abrir esa bóveda. Dibújalo donde nadie te vea y piensa en un patrón que no parezca una letra o una forma simple.
-- **Que te obliguen a desbloquearla.** Velcrypt no puede impedir que alguien te coaccione para dibujar un patrón. Una bóveda señuelo (con Premium) puede ayudar; un patrón de coacción, previsto para una actualización futura, abriría una bóveda elegida y retiraría en silencio el acceso a las demás.
+- **Que te obliguen a desbloquearla.** Velcrypt no puede impedir que alguien te coaccione para dibujar un patrón. Una bóveda señuelo puede ayudar y, con Premium, un [patrón de coacción](id:duress-pattern) abre una bóveda señuelo mientras elimina para siempre las demás. Ninguno de los dos puede frenar a alguien que ya conoce tu patrón real, y las bóvedas eliminadas solo se pueden restaurar desde una copia de seguridad que hayas hecho antes.
 - **Entregar el teléfono con la bóveda abierta.** Mientras una bóveda está desbloqueada, cualquiera que tenga el teléfono ve lo mismo que tú. Bloquéala antes de dejarle el móvil a nadie.
 - **Dispositivos comprometidos o con jailbreak y malware.** Un software capaz de leer la pantalla, registrar toques o inspeccionar la memoria de las apps en un dispositivo comprometido puede burlar cualquier cifrado a nivel de app.
 - **Capturas de pantalla o fotos de la pantalla.** Velcrypt no puede impedir que otra cámara fotografíe tu pantalla.

@@ -18,7 +18,7 @@ dateModified: 2026-10-22
 summary: "숨겨진 볼륨과 위장 금고에 담긴 개념, Velcrypt의 모르는 패턴 설계가 이를 활용하는 방식, 그리고 솔직히 할 수 없는 것."
 category: security
 order: 42
-related: [what-is-a-decoy-vault, hidden-vaults, duress-pattern, aes-256-encryption-explained, phone-privacy-border-crossing, security]
+related: [what-is-a-decoy-vault, hidden-vaults, duress-pattern, duress-password-explained, self-destruct-photo-vault, aes-256-encryption-explained, phone-privacy-border-crossing, security]
 faq:
   - q: "그럴듯한 부인 가능성을 쉽게 말하면 무엇인가요?"
     a: "“이게 전부예요”라고 믿을 만하게 말할 수 있고, 아무도 그렇지 않다고 증명할 수 없다는 뜻입니다. 암호화에서는 숨겨진 데이터를 빈 공간이나 존재하지 않는 데이터와 구별할 수 없게 만드는 설계로 이를 구현합니다."
@@ -60,7 +60,7 @@ Velcrypt는 이 원리를 iPhone의 사진·문서 금고에 맞게 응용합니
 
 결과적으로 틀린 패턴과 유효하지만 비어 있는 금고는 똑같아 보입니다. 누군가에게 금고를 열어 보여 주더라도, 인터페이스에는 다른 금고가 있다는 것을 보여 주는 것이 아무것도 없습니다. 그래서 [위장 금고](id:what-is-a-decoy-vault)는 특별한 모드가 아니라 자연스러운 사용 방식이 됩니다. [숨겨진 금고](id:hidden-vaults) 기능 페이지에서 실제 작동 방식을 볼 수 있습니다.
 
-향후 업데이트로 계획된 [강압 패턴](id:duress-pattern)은 이를 확장할 예정입니다. 특별한 패턴 하나가 지정한 금고를 열고, 다른 금고에 대한 접근을 조용히 제거하는 방식입니다.
+Premium에서 사용할 수 있는 [비상 패턴](id:duress-pattern)은 이를 확장합니다. 특별한 패턴 하나가 위장 금고를 열고, iPhone의 다른 금고를 모두 조용히, 영구적으로 삭제합니다. 앱은 비상 패턴이 설정되어 있는지 절대 표시하지 않으므로 그 존재 역시 부인할 수 있습니다. [비상 비밀번호 설명](id:duress-password-explained)에서 이 개념을 더 넓은 맥락에서 다룹니다.
 
 ## 솔직한 한계
 

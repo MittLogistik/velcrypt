@@ -53,7 +53,7 @@ Velcrypt est une app iPhone native qui conserve photos, vidéos et documents pri
 | Chiffrement | AES-256-GCM (Apple CryptoKit) ; dérivation de clé PBKDF2-HMAC-SHA512 |
 | Données | 100 % sur l’appareil ; sans compte, sans synchronisation cloud, sans publicité ; sauvegarde chiffrée manuelle et gratuite |
 | Éditeur | Swedish Treats AB, Suède |
-| Prévu | Motif de contrainte |
+| Schéma de contrainte | Oui (Premium) : ouvre un coffre leurre et supprime définitivement les autres coffres |
 | Contact presse | press@velcrypt.app |
 
 Pour le détail technique, renvoyez vers le [modèle de sécurité](id:security) ; pour une vue d’ensemble, voir les [fonctionnalités](id:features).
@@ -83,7 +83,7 @@ Merci d’utiliser les fichiers tels quels : laissez suffisamment d’espace aut
 Quelques points pour garantir une couverture exacte :
 
 - Velcrypt n’a **pas** fait l’objet d’un audit indépendant. Merci de ne pas le présenter comme audité.
-- La sauvegarde chiffrée est disponible et gratuite ; le motif de contrainte est prévu, pas disponible.
+- La sauvegarde chiffrée est disponible et gratuite. Le schéma de contrainte est disponible avec Premium ; merci de le présenter comme une fonction de sécurité personnelle, et non comme un moyen d’échapper aux contrôles de police ou aux frontières.
 - Velcrypt ne peut pas récupérer un motif oublié ; c’est une conséquence voulue de l’absence de compte et de serveur.
 - Il n’existe pas encore d’article de presse à citer, et nous ne publions ni nombre d’utilisateurs ni notes.
 

@@ -77,7 +77,7 @@ Een lokkluis is een kluis met onschuldige maar geloofwaardige inhoud, bijvoorbee
 
 Een lokkluis werkt het best als hij er gebruikt uitziet. Een lege kluis roept de vraag op „waarom installeer je een kluis-app voor niks?”, terwijl een kluis met een paar dozijn gewone items die vraag zelden oproept. De gids over [wat een lokkluis is](id:what-is-a-decoy-vault) legt uit hoe je er een overtuigend maakt.
 
-Velcrypt plant ook een [dwangpatroon](id:duress-pattern) voor een toekomstige update. Dat gaat een stap verder dan een lokkluis: het opent een gekozen kluis en ontneemt ongemerkt de toegang tot de andere.
+Met Premium kun je in de lokkluis ook een [dwangpatroon](id:duress-pattern) instellen. Dat gaat een stap verder: wie het tekent, opent de lokkluis en verwijdert ongemerkt en definitief alle andere kluizen op de iPhone. De gids [een lokkluis en dwangpatroon instellen](id:set-up-decoy-vault-and-duress-pattern) loopt het stap voor stap door.
 
 ## Zo blijft elke kluis gescheiden
 

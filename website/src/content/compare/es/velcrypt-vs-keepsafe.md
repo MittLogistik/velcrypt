@@ -53,7 +53,7 @@ Ningún enfoque es mejor para todo el mundo. Uno sacrifica comodidad a cambio de
 | Método de desbloqueo | Patrón en una cuadrícula de 5×5 | PIN o código |
 | Biometría (Face ID / Touch ID) | No disponible, por diseño | Compatible, según su ficha |
 | Señuelo / varias bóvedas | Cada patrón es su propia bóveda (con Premium) | PIN falso/señuelo en premium |
-| Patrón de coacción | Previsto para una actualización futura | No se indica públicamente |
+| Patrón de coacción | Sí, con Premium (abre un señuelo y elimina las demás bóvedas) | No se indica públicamente |
 | Alertas de intrusión | No disponibles | Disponibles en premium |
 | Recuperación si olvidas el código | Ninguna; la bóveda no se puede recuperar | Depende; puede haber recuperación mediante la cuenta |
 | Modelo de negocio | Gratis (1 bóveda, 50 elementos) o Premium semanal, anual o vitalicio (ver [precios](id:pricing)) | Nivel gratuito más suscripción premium |
@@ -81,7 +81,7 @@ Muchas apps de bóveda ofrecen un segundo código falso que abre una bóveda ino
 
 <!-- TODO verify -->
 
-En Velcrypt, el modelo forma parte de la estructura en lugar de ser un añadido. Cada patrón es su propia bóveda, no hay lista de bóvedas y un patrón que la app nunca ha visto simplemente abre una bóveda vacía, sin ningún error. Nada en pantalla demuestra que existan otras bóvedas. Eso es lo que significan en la práctica las [bóvedas ocultas](id:hidden-vaults) y la [negación plausible](id:plausible-deniability-explained). Un patrón de coacción, que abriría una bóveda elegida y retiraría en silencio el acceso a las demás, está previsto para una actualización futura.
+En Velcrypt, el modelo forma parte de la estructura en lugar de ser un añadido. Cada patrón es su propia bóveda, no hay lista de bóvedas y un patrón que la app nunca ha visto simplemente abre una bóveda vacía, sin ningún error. Nada en pantalla demuestra que existan otras bóvedas. Eso es lo que significan en la práctica las [bóvedas ocultas](id:hidden-vaults) y la [negación plausible](id:plausible-deniability-explained). Con Premium, un [patrón de coacción](id:duress-pattern) va más allá: abre una bóveda señuelo y elimina en silencio y de forma permanente todas las demás bóvedas del iPhone.
 
 ## Cuándo puede encajarte mejor Keepsafe
 

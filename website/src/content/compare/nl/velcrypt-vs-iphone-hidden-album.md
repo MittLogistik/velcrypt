@@ -55,7 +55,7 @@ Als iCloud-foto’s aanstaat, synchroniseren verborgen items net als al het ande
 | Ontgrendelen | Patroon op een raster van 5×5, los van de toegangscode | Face ID, Touch ID of toegangscode van het toestel |
 | Biometrie | Bewust niet aangeboden | Ja |
 | Lokkluis / meerdere kluizen | Elk patroon is een eigen kluis (tweede kluis met Premium) | Eén album Verborgen |
-| Dwangpatroon | Gepland voor een toekomstige update | Nee |
+| Dwangpatroon | Ja, met Premium (opent een lokkluis, verwijdert de andere kluizen) | Nee |
 | Herstel als je de code vergeet | Geen | Herstel van toegangscode en Apple Account |
 | Kosten | Gratis (1 kluis, tot 50 onderdelen); Premium vanaf $ 1,99 per week | Inbegrepen bij iOS |
 | Platforms | iPhone (iOS 17+) | iPhone, iPad en Mac |

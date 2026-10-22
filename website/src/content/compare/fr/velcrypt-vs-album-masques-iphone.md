@@ -54,7 +54,7 @@ Si Photos iCloud est activé, les éléments masqués se synchronisent comme tou
 | Méthode de déverrouillage | Motif sur une grille 5×5, distinct du code | Face ID, Touch ID ou code de l’appareil |
 | Biométrie | Non proposée, par choix | Oui |
 | Leurre / plusieurs coffres | Chaque motif est son propre coffre | Un seul album Masqués |
-| Motif de contrainte | Prévu, pas encore disponible | Non |
+| Schéma de contrainte | Oui, avec Premium (ouvre un leurre, supprime les autres coffres) | Non |
 | Récupération en cas d’oubli du code | Aucune | Code de l’appareil et récupération du compte Apple |
 | Coût | Gratuit (1 coffre, 50 éléments) ; Premium en abonnement ou achat unique | Inclus dans iOS |
 | Plateformes | iPhone (iOS 17+) | iPhone, iPad et Mac |

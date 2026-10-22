@@ -18,7 +18,7 @@ dateModified: 2026-10-22
 summary: "Il concetto dietro volumi nascosti e casseforti esca, come lo usa Velcrypt con le sequenze sconosciute e cosa, onestamente, non può fare."
 category: security
 order: 42
-related: [what-is-a-decoy-vault, hidden-vaults, duress-pattern, aes-256-encryption-explained, phone-privacy-border-crossing, security]
+related: [what-is-a-decoy-vault, hidden-vaults, duress-pattern, duress-password-explained, self-destruct-photo-vault, aes-256-encryption-explained, phone-privacy-border-crossing, security]
 faq:
   - q: "Cosa significa negabilità plausibile in parole semplici?"
     a: "Significa che puoi dire in modo credibile «questo è tutto» e nessuno può dimostrare il contrario. Nella crittografia si ottiene con design in cui i dati nascosti sono indistinguibili dallo spazio vuoto o da dati che non esistono."
@@ -60,7 +60,7 @@ Velcrypt adatta il principio a una cassaforte per foto e documenti su iPhone. No
 
 La conseguenza è che una sequenza sbagliata e una cassaforte valida ma vuota sono identiche. Se apri una cassaforte per qualcuno, nell’interfaccia non c’è nulla che mostri l’esistenza di altre casseforti. Questo rende la [cassaforte esca](id:what-is-a-decoy-vault) un uso naturale invece di una modalità speciale. La pagina della funzione [casseforti nascoste](id:hidden-vaults) mostra come funziona in pratica.
 
-Una funzione prevista per un aggiornamento futuro, la [sequenza di emergenza](id:duress-pattern), estenderebbe questo concetto: una sequenza speciale aprirebbe una cassaforte scelta e rimuoverebbe in silenzio l’accesso alle altre.
+La [sequenza di emergenza](id:duress-pattern), disponibile con il Premium, estende questo concetto: una sequenza speciale apre una cassaforte esca ed elimina in silenzio e definitivamente tutte le altre casseforti sull’iPhone. L’app non mostra mai se ne è impostata una, quindi anche la sua esistenza è negabile. [La password di emergenza, spiegata](id:duress-password-explained) mette l’idea nel suo contesto.
 
 ## I limiti, con onestà
 

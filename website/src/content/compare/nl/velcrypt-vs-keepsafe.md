@@ -53,7 +53,7 @@ Geen van beide benaderingen is altijd beter. De ene ruilt gemak in voor zo min m
 | Ontgrendelen | Patroon op een raster van 5×5 | Pincode of toegangscode |
 | Biometrie (Face ID / Touch ID) | Bewust niet aangeboden | Ondersteund, volgens de vermelding |
 | Lokkluis / meerdere kluizen | Elk patroon is een eigen kluis (tweede kluis met Premium) | Nep-/lokpincode in premium |
-| Dwangpatroon | Gepland voor een toekomstige update | Niet openbaar vermeld |
+| Dwangpatroon | Ja, met Premium (opent een lokkluis, verwijdert de andere kluizen) | Niet openbaar vermeld |
 | Meldingen bij inbraakpogingen | Niet aangeboden | Aangeboden in premium |
 | Herstel als je de code vergeet | Geen; de kluis kan niet worden hersteld | Verschilt; herstel via het account is mogelijk beschikbaar |
 | Verdienmodel | Gratis (1 kluis, tot 50 onderdelen); Premium vanaf $ 1,99 per week (zie [prijzen](id:pricing)) | Gratis versie plus premiumabonnement |
@@ -81,7 +81,7 @@ Veel kluis-apps bieden een tweede, valse code die een onschuldige kluis opent. K
 
 <!-- TODO verify -->
 
-Bij Velcrypt zit dat in de structuur, niet in een extraatje. Elk patroon is een eigen kluis, er is geen lijst van kluizen, en een patroon dat de app nog nooit heeft gezien, opent gewoon een lege kluis zonder foutmelding. Niets op het scherm bewijst dat er andere kluizen bestaan. Dat is wat [verborgen kluizen](id:hidden-vaults) en [plausibele ontkenning](id:plausible-deniability-explained) in de praktijk betekenen. Een tweede kluis vraagt om Premium. Een dwangpatroon, dat een gekozen kluis zou openen en stilletjes de toegang tot de andere zou verwijderen, is gepland voor een toekomstige update.
+Bij Velcrypt zit dat in de structuur, niet in een extraatje. Elk patroon is een eigen kluis, er is geen lijst van kluizen, en een patroon dat de app nog nooit heeft gezien, opent gewoon een lege kluis zonder foutmelding. Niets op het scherm bewijst dat er andere kluizen bestaan. Dat is wat [verborgen kluizen](id:hidden-vaults) en [plausibele ontkenning](id:plausible-deniability-explained) in de praktijk betekenen. Een tweede kluis vraagt om Premium. Met Premium gaat een [dwangpatroon](id:duress-pattern) nog verder: het opent een lokkluis en verwijdert ongemerkt en definitief alle andere kluizen op de iPhone.
 
 ## Wanneer Keepsafe misschien beter bij je past
 

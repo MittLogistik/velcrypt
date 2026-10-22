@@ -94,6 +94,8 @@ Velcrypt funktioniert komplett offline. Es gibt keine Registrierung, keine E-Mai
 
 Tresordaten sind außerdem **von iCloud- und Computer-Backups (Finder) ausgeschlossen**. So landen deine verschlüsselten Dateien weder auf Apples Servern noch auf einem Computer, mit dem du synchronisierst. Das hat aber eine echte Konsequenz: Geht dein iPhone verloren, kaputt oder wird es zurückgesetzt, sind die Tresore mit ihm weg.
 
+<a id="encrypted-backup"></a>
+
 Dagegen bietet Velcrypt ein **manuelles verschlüsseltes Backup**, kostenlos. Unter Einstellungen → Backup erstellst du eine `.velcrypt`-Datei für den geöffneten Tresor, geschützt mit einem Backup-Passwort, das du selbst wählst. Jeder Tresor wird einzeln gesichert, sodass ein Backup deine anderen Tresore nie verrät. Du speicherst die Datei, wo du willst („Dateien“, iCloud Drive, ein Computer), und stellst sie auf jedem iPhone wieder her. Velcrypt erhält diese Datei nie, und ein vergessenes Backup-Passwort lässt sich nicht wiederherstellen.
 
 ## Das Bedrohungsmodell im Überblick
@@ -117,7 +119,7 @@ Dagegen bietet Velcrypt ein **manuelles verschlüsseltes Backup**, kostenlos. Un
 Jedes Sicherheitswerkzeug hat Grenzen, und du solltest die von Velcrypt kennen, bevor du dich darauf verlässt.
 
 - **Über die Schulter schauen.** Sieht jemand, wie du dein Muster zeichnest – persönlich oder über eine Kamera –, kann diese Person den Tresor öffnen. Zeichne es unbeobachtet und wähle am besten ein Muster, das nicht wie ein einfacher Buchstabe oder eine Form aussieht.
-- **Zwang zum Entsperren.** Velcrypt kann niemanden daran hindern, dich zum Zeichnen eines Musters zu zwingen. Ein Köder-Tresor kann helfen; ein Notfallmuster, geplant für ein künftiges Update, würde einen gewählten Tresor öffnen und still den Zugriff auf die anderen entfernen.
+- **Zwang zum Entsperren.** Velcrypt kann niemanden daran hindern, dich zum Zeichnen eines Musters zu zwingen. Ein Köder-Tresor kann helfen, und mit Premium öffnet ein [Notfallmuster](id:duress-pattern) einen Köder-Tresor und löscht dabei die anderen endgültig. Keines von beiden hilft gegen jemanden, der dein echtes Muster schon kennt, und gelöschte Tresore lassen sich nur aus einer vorher erstellten Backup-Datei wiederherstellen.
 - **Ein iPhone, das mit offenem Tresor übergeben wird.** Solange ein Tresor entsperrt ist, sieht jeder, der das iPhone hält, was du siehst. Sperre ihn, bevor du dein iPhone weitergibst.
 - **Kompromittierte oder gejailbreakte Geräte und Schadsoftware.** Software, die auf einem kompromittierten Gerät den Bildschirm auslesen, Berührungen mitschneiden oder den App-Speicher untersuchen kann, hebelt jede Verschlüsselung auf App-Ebene aus.
 - **Screenshots oder Fotos vom Bildschirm.** Velcrypt kann nicht verhindern, dass eine andere Kamera dein Display abfotografiert.

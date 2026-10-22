@@ -53,7 +53,7 @@ Nenhuma das abordagens é melhor para todo mundo. Uma troca conveniência por ex
 | Forma de desbloqueio | Padrão em uma grade 5×5 | PIN ou código |
 | Biometria (Face ID / Touch ID) | Não oferecida, por design | Compatível, segundo sua página na loja |
 | Fachada / vários cofres | Cada padrão é um cofre próprio (mais de um cofre exige o Premium) | PIN falso/de fachada no premium |
-| Padrão de coação | Planejado para uma atualização futura | Não informado publicamente |
+| Padrão de coação | Sim, com o Premium (abre um cofre de fachada e apaga os outros cofres) | Não informado publicamente |
 | Alertas de invasão | Não oferecidos | Oferecidos no premium |
 | Recuperação se você esquecer o código | Nenhuma; o cofre não pode ser recuperado | Varia; pode haver recuperação pela conta |
 | Modelo de negócio | Grátis (1 cofre, 50 itens) e Premium opcional (veja [preços](id:pricing)) | Plano grátis e assinatura premium |
@@ -81,7 +81,7 @@ Muitos apps de cofre oferecem um segundo código, falso, que abre um cofre inofe
 
 <!-- TODO verify -->
 
-No Velcrypt, esse modelo é estrutural, não um complemento. Cada padrão é um cofre próprio, não existe lista de cofres, e um padrão que o app nunca viu simplesmente abre um cofre vazio, sem erro. Nada na tela prova que existem outros cofres. É isso que [cofres ocultos](id:hidden-vaults) e [negação plausível](id:plausible-deniability-explained) significam na prática. Mais de um cofre exige o Premium. Um padrão de coação, que abriria um cofre escolhido e removeria silenciosamente o acesso aos outros, está planejado para uma atualização futura.
+No Velcrypt, esse modelo é estrutural, não um complemento. Cada padrão é um cofre próprio, não existe lista de cofres, e um padrão que o app nunca viu simplesmente abre um cofre vazio, sem erro. Nada na tela prova que existem outros cofres. É isso que [cofres ocultos](id:hidden-vaults) e [negação plausível](id:plausible-deniability-explained) significam na prática. Mais de um cofre exige o Premium. Com o Premium, um [padrão de coação](id:duress-pattern) vai além: ele abre um cofre de fachada e apaga em silêncio, de forma permanente, todos os outros cofres do iPhone.
 
 ## Quando o Keepsafe pode ser melhor para você
 

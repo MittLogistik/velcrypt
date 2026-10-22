@@ -94,6 +94,8 @@ Velcrypt fonctionne entièrement hors ligne. Pas d’inscription, pas d’adress
 
 Les données des coffres sont aussi **exclues des sauvegardes iCloud et ordinateur (Finder)**. Vos fichiers chiffrés restent ainsi en dehors des serveurs d’Apple et de tout ordinateur synchronisé, mais avec une conséquence bien réelle : si votre iPhone est perdu, cassé ou réinitialisé, les coffres disparaissent avec lui.
 
+<a id="encrypted-backup"></a>
+
 Pour vous en prémunir, Velcrypt propose une **sauvegarde chiffrée manuelle**, gratuite. Dans Réglages → Sauvegarde, vous créez un fichier `.velcrypt` pour le coffre ouvert, protégé par un mot de passe de sauvegarde que vous choisissez. Chaque coffre est sauvegardé séparément : une sauvegarde ne révèle jamais vos autres coffres. Vous enregistrez le fichier où vous voulez (Fichiers, iCloud Drive, un ordinateur) et le restaurez sur n’importe quel iPhone. Velcrypt ne reçoit jamais ce fichier, et un mot de passe de sauvegarde oublié ne peut pas être récupéré.
 
 ## Le modèle de menace en un coup d’œil
@@ -117,7 +119,7 @@ Pour vous en prémunir, Velcrypt propose une **sauvegarde chiffrée manuelle**, 
 Tout outil de sécurité a ses limites, et vous devez connaître celles de Velcrypt avant de vous y fier.
 
 - **Les regards indiscrets.** Si quelqu’un vous voit tracer votre motif, en personne ou par caméra, il peut ouvrir ce coffre. Tracez-le à l’abri des regards et choisissez un motif qui ne ressemble pas à une lettre ou à une forme simple.
-- **La contrainte à déverrouiller.** Velcrypt ne peut pas empêcher quelqu’un de vous forcer à tracer un motif. Un coffre leurre peut aider ; un motif de contrainte, prévu pour une prochaine mise à jour, ouvrirait un coffre choisi et retirerait discrètement l’accès aux autres.
+- **La contrainte à déverrouiller.** Velcrypt ne peut pas empêcher quelqu’un de vous forcer à tracer un motif. Un coffre leurre peut aider et, avec Premium, un [schéma de contrainte](id:duress-pattern) ouvre un coffre leurre tout en supprimant définitivement les autres. Ni l’un ni l’autre n’arrête quelqu’un qui connaît déjà votre vrai motif, et les coffres supprimés ne se restaurent qu’à partir d’un fichier de sauvegarde créé auparavant.
 - **Un téléphone tendu avec le coffre ouvert.** Tant qu’un coffre est déverrouillé, quiconque tient le téléphone voit ce que vous voyez. Verrouillez-le avant de prêter votre téléphone.
 - **Appareils compromis ou jailbreakés et logiciels malveillants.** Un logiciel capable de lire l’écran, d’enregistrer les touches ou d’inspecter la mémoire des apps sur un appareil compromis peut contourner tout chiffrement au niveau d’une app.
 - **Captures d’écran ou photos de l’écran.** Velcrypt ne peut pas empêcher un autre appareil photo de photographier votre écran.

@@ -10,7 +10,7 @@ keyFacts:
   - "Ingen Face ID eller Touch ID, med avsikt – ett mönster finns bara i ditt minne."
   - "Inga annonser och ingen försäljning av data."
   - "Ärliga om begränsningarna, bland annat att glömda mönster inte kan återställas."
-  - "Krypterad säkerhetskopiering ingår gratis; ett tvångsmönster är planerat."
+  - "Krypterad säkerhetskopiering ingår gratis för alla; ett nödmönster för tvångssituationer finns med Premium."
 primaryKeyword: "om velcrypt"
 keywords: ["velcrypt app", "vem står bakom velcrypt", "velcrypts principer", "privat fotovalv iphone"]
 datePublished: 2026-10-21
@@ -23,8 +23,8 @@ faq:
     a: "För att data som aldrig lämnar din telefon inte kan exponeras genom ett serverintrång, ett myndighetskrav mot en leverantör eller ett återanvänt lösenord. Baksidan är att ingen kan återställa ett glömt mönster, och att en förlorad telefon tar valven med sig om du inte själv har skapat en krypterad säkerhetskopia."
   - q: "Tjänar Velcrypt pengar på mina data?"
     a: "Nej. Velcrypt samlar inte in ditt valvinnehåll eller analysdata om det och visar inga annonser. Appen finansieras genom en gratisversion med en valfri betald Premium-uppgradering."
-  - q: "Vad arbetar Velcrypt med härnäst?"
-    a: "Ett tvångsmönster är planerat till en framtida uppdatering. Det har inget releasedatum ännu. Krypterad säkerhetskopiering och Premium finns redan i appen."
+  - q: "Har Velcrypt ett nödmönster?"
+    a: "Ja, i Velcrypt 1.0 med Premium. Att rita det öppnar ett lockbetesvalv och raderar i tysthet och permanent alla andra valv på iPhonen. Det är tänkt för situationer som gäller din personliga säkerhet, inte som ett sätt att kringgå lagliga krav."
 ---
 
 <!-- TODO: add founder/company details -->
@@ -59,15 +59,16 @@ Integritetsverktyg sviker människor när de lovar för mycket. Vi berättar hel
 
 Velcrypt visar ingen reklam och säljer inga data. Appen samlar inte in ditt valvinnehåll eller analysdata om det, så det finns ingenting att sälja. Velcrypt finansieras genom en valfri Premium-uppgradering – se [priser](id:pricing).
 
-## Det här kommer härnäst
+## Det här finns i Velcrypt 1.0
 
-Krypterad säkerhetskopiering och återställning finns redan i appen och är gratis. Premium, med fler valv, obegränsat antal objekt och alternativa appikoner, finns också. Följande är planerat. Det finns inte i appen i dag, och vi sätter inga datum förrän det är klart.
+Velcrypt 1.0 har gratis krypterad säkerhetskopiering och en valfri Premium-uppgradering med obegränsat antal objekt, fler valv, ett nödmönster och alternativa appikoner.
 
 | Funktion | Status |
 |---|---|
-| [Tvångsmönster](id:duress-pattern) – öppnar ett valt valv och tar i tysthet bort åtkomsten till de andra | Planerat till en framtida uppdatering |
+| Krypterad säkerhetskopiering – en lösenordsskyddad fil som du sparar själv | Finns, gratis |
+| [Nödmönster](id:duress-pattern) – öppnar ett lockbetesvalv och raderar i tysthet och permanent alla andra valv på iPhonen | Finns, Premium |
 
-Allt vi lägger till följer samma principer: på enheten som standard, inget konto och en tydlig förklaring av avvägningarna.
+Nödmönstret följer samma principer som allt annat: på enheten, inget konto och en tydlig förklaring av avvägningarna. Raderingen är permanent, och funktionen är tänkt för situationer som gäller din personliga säkerhet, inte som ett sätt att kringgå lagliga krav. Allt vi lägger till senare följer samma regler.
 
 ## Kontakta oss
 

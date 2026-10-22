@@ -72,6 +72,6 @@ Não há conta e nada é enviado, então não existe login na nuvem para alguém
 - **Os originais ficam no Fotos até você apagá-los.** Importar copia a foto. [Apague o original](id:delete-original-photos-after-import) e esvazie Apagados.
 - **Alguém que veja você desenhar** o padrão pode aprendê-lo.
 - **O ícone do app fica visível** na Tela de Início, a não ser que você use a opção do iOS 18 de ocultar apps.
-- **Um cofre não é um escudo legal.** Na fronteira, valem as regras do país; o padrão de coação está planejado para uma atualização futura e não está disponível hoje.
+- **Um cofre não é um escudo legal.** Na fronteira, valem as regras do país. Não use o [padrão de coação](id:duress-pattern) para apagar dados quando agentes exigirem acesso legalmente; isso pode ser crime por si só.
 
 Viaje leve e viaje preparado: com o celular bem protegido, perdê-lo vira um contratempo, não uma crise.

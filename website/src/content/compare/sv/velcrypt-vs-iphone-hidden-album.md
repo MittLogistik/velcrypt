@@ -55,7 +55,7 @@ Om iCloud-bilder är påslaget synkas dolda objekt som allt annat. De är krypte
 | Upplåsning | Mönster på ett 5×5-rutnät, skilt från lösenkoden | Face ID, Touch ID eller enhetens lösenkod |
 | Biometri | Erbjuds inte, med avsikt | Ja |
 | Lockvalv / flera valv | Varje mönster är ett eget valv | Ett album Gömda |
-| Tvångsmönster | Planerat till en framtida uppdatering | Nej |
+| Nödmönster | Ja, med Premium (öppnar ett lockbete, raderar de andra valven) | Nej |
 | Återställning om du glömmer koden | Ingen | Enhetens lösenkod och återställning av Apple-kontot |
 | Kostnad | Gratis (ett valv, 50 objekt) plus valfri Premium | Ingår i iOS |
 | Plattformar | iPhone (iOS 17+) | iPhone, iPad och Mac |

@@ -4,10 +4,10 @@ title: "Prijzen van Velcrypt: gratis versie en Premium"
 description: "Velcrypt is gratis met één kluis en tot 50 onderdelen. Premium kost $ 1,99 per week, $ 19,99 per jaar of $ 39,99 eenmalig. Geen advertenties, geen account."
 h1: "Wat kost Velcrypt?"
 navTitle: "Prijzen"
-answer: "Velcrypt is gratis met één kluis, tot 50 onderdelen en versleutelde back-up. Premium voegt onbeperkt onderdelen, meer kluizen en alternatieve appsymbolen toe voor $ 1,99 per week, $ 19,99 per jaar (met 3 dagen gratis proberen) of eenmalig $ 39,99 voor altijd. Prijzen in USD; ze verschillen per land. Geen enkele versie toont advertenties."
+answer: "Velcrypt is gratis met één kluis, tot 50 onderdelen en versleutelde back-up. Premium voegt onbeperkt onderdelen, meer kluizen, een dwangpatroon en alternatieve appsymbolen toe voor $ 1,99 per week, $ 19,99 per jaar (met 3 dagen gratis proberen) of eenmalig $ 39,99 voor altijd. Prijzen in USD; ze verschillen per land. Geen enkele versie toont advertenties."
 keyFacts:
   - "Gratis versie: 1 kluis met tot 50 onderdelen en het standaard appsymbool."
-  - "Premium: onbeperkt onderdelen, meer kluizen en alternatieve appsymbolen."
+  - "Premium: onbeperkt onderdelen, meer kluizen, een dwangpatroon en alternatieve appsymbolen."
   - "Prijzen (USD): $ 1,99 per week, $ 19,99 per jaar met 3 dagen gratis proberen, $ 39,99 eenmalig."
   - "Versleutelde back-up is voor iedereen gratis."
   - "Geen advertenties en geen verkoop van gegevens, in geen enkele versie."
@@ -18,7 +18,7 @@ datePublished: 2026-10-21
 dateModified: 2026-10-22
 schemaType: WebPage
 order: 2
-related: [features, hidden-vaults, security, faq]
+related: [features, hidden-vaults, duress-pattern, security, faq]
 faq:
   - q: "Is Velcrypt gratis?"
     a: "Ja. De gratis versie geeft je één kluis met tot 50 onderdelen, dezelfde versleuteling als Premium en versleutelde back-up. Premium is een optionele upgrade voor wie meer wil."
@@ -30,6 +30,8 @@ faq:
     a: "Ja. Elke kluis gebruikt dezelfde versleuteling — AES-256-GCM met sleutels die uit je patroon worden afgeleid — of je nu upgradet of niet. Premium voegt ruimte en functies toe, geen sterkere beveiliging."
   - q: "Is versleutelde back-up een Premium-functie?"
     a: "Nee. Versleutelde back-up is voor iedereen gratis. Via Instellingen → Back-up maak je een versleuteld .velcrypt-bestand van de geopende kluis, beveiligd met een back-upwachtwoord dat je zelf kiest."
+  - q: "Hoort het dwangpatroon bij Premium?"
+    a: "Ja. Een dwangpatroon instellen vraagt om Premium, omdat het in een tweede kluis (de lokkluis) woont. Is het eenmaal ingesteld, dan blijft het werken, ook als je Premium-abonnement afloopt."
   - q: "Hoe zeg ik een abonnement op Velcrypt op?"
     a: "Abonnementen worden automatisch verlengd, tenzij je ten minste 24 uur voor het einde van de lopende periode opzegt. Je beheert en annuleert ze in de instellingen van je Apple Account. Levenslang is een eenmalige aankoop en wordt niet verlengd."
   - q: "Hoe verlopen aankopen bij Velcrypt?"
@@ -51,10 +53,11 @@ Velcrypt is gratis te downloaden, met een optionele Premium-upgrade.
 | Versleutelde back-up | Ja | Ja |
 | Aantal onderdelen | Tot 50 | Onbeperkt |
 | Aantal kluizen | 1 | Meer kluizen (elk patroon opent een eigen kluis) |
+| Dwangpatroon | — | Ja |
 | Alternatieve appsymbolen | — | Ja |
 | Advertenties | Geen | Geen |
 
-Omdat de gratis versie één kluis heeft, heb je voor een tweede kluis — zoals een [afleidingskluis](id:hidden-vaults) — Premium nodig.
+Omdat de gratis versie één kluis heeft, heb je voor een tweede kluis — zoals een [lokkluis](id:hidden-vaults) — Premium nodig. Dat geldt ook voor het dwangpatroon, dat je vanuit een lokkluis instelt.
 
 ## Prijzen van Premium
 
@@ -78,7 +81,7 @@ Ook heeft geen enkele versie een account. Je registreert je niet, je geeft geen 
 
 Een privacy-app die geld verdient aan advertenties of gegevens, heeft een ingebouwd belangenconflict. Velcrypt voorkomt dat door mensen die meer uit de app willen halen daar rechtstreeks voor te laten betalen. Alle anderen houden een volledig versleutelde gratis versie zonder kleine lettertjes.
 
-Dat model bepaalt ook wat er in Premium komt. Betaalde functies voegen ruimte toe — meer onderdelen, meer kluizen — of extra's zoals alternatieve appsymbolen. Ze ontgrendelen nooit een ‘echt’ niveau van versleuteling dat de gratis versie mist, en versleutelde back-up blijft gratis, zodat niemand hoeft te betalen om zijn bestanden te beschermen tegen een verloren telefoon. Een [dwangpatroon](id:duress-pattern) staat gepland voor een toekomstige update.
+Dat model bepaalt ook wat er in Premium komt. Betaalde functies voegen ruimte toe — meer onderdelen, meer kluizen — of extra's zoals het [dwangpatroon](id:duress-pattern) en alternatieve appsymbolen. Ze ontgrendelen nooit een ‘echt’ niveau van versleuteling dat de gratis versie mist, en versleutelde back-up blijft gratis, zodat niemand hoeft te betalen om zijn bestanden te beschermen tegen een verloren telefoon. Een dwangpatroon dat je al hebt ingesteld, blijft werken als Premium afloopt; alleen het instellen vraagt om Premium.
 
 Als je later upgradet, verandert er niets aan je bestaande kluis. Je gegevens blijven op je iPhone, op dezelfde manier versleuteld, of je nu upgradet of niet.
 
