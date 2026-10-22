@@ -18,10 +18,14 @@ ios/
 │   ├── Authentication/    UnlockPattern, PatternGrid, VaultKeyring, VaultSession, lock screen
 │   ├── Encryption/        AES-GCM + HKDF (CryptoKit), PBKDF2 (CommonCrypto)
 │   ├── SecureStorage/     Keychain SecretStore, VaultFileStore
-│   ├── Vault/             Dashboard
-│   ├── Settings/          Settings, change pattern, delete/erase vaults
-│   └── Resources/         Asset catalog (app icon, colors)
-└── VelcryptTests/         Unit tests (crypto, patterns, keyring, vault session)
+│   ├── Vault/             Dashboard, item grids, notes, VaultStore and VaultLibrary
+│   ├── Albums/            Album list and management
+│   ├── MediaImport/       Photos, Files and camera import
+│   ├── MediaViewer/       Photo and video viewer
+│   ├── Backup/            Password-protected backup and restore
+│   ├── Settings/          Settings, change pattern, app icons, delete/erase vaults
+│   └── Resources/         Asset catalog, String Catalogs (11 languages)
+└── VelcryptTests/         Unit tests (crypto, patterns, keyring, storage, notes, backup)
 ```
 
 ## Building without a Mac (GitHub Actions)
@@ -64,7 +68,7 @@ cd ios && xcodegen generate && open Velcrypt.xcodeproj
 |---|---|---|
 | 1 | Project, design system, navigation, onboarding | ✅ |
 | 2 | 5×5 pattern unlock, one vault per pattern, key hierarchy, auto-lock | ✅ |
-| 3 | Photo/video/document import, encrypted storage, viewer, albums | ⏳ |
+| 3 | Photo/video/document import, encrypted storage, viewer, albums, camera, notes, encrypted backup | ✅ |
 | 4 | Full settings, error handling, accessibility pass, integration tests | ⏳ |
 | 5 | StoreKit 2, paywall, duress pattern (Premium) | ⏳ |
 
@@ -75,13 +79,8 @@ cd ios && xcodegen generate && open Velcrypt.xcodeproj
   - normal signing, which in turn needs at least one registered device
   - migrating vault storage into the App Group container
 - **Duress pattern** (Premium). A designated pattern opens a chosen vault and removes access to all other vaults.
-- **Encrypted backup** or transfer to a new iPhone.
 - **StoreKit 2 paywall** (Milestone 5).
 
 ## Known limitations before App Store submission
 
-- Import, viewer and albums arrive in Milestone 3; the + button explains this for now.
-- Privacy policy, terms and support URLs point to velcrypt.app pages that don't exist yet.
 - `ITSAppUsesNonExemptEncryption = false`: the app only uses Apple's built-in encryption to protect the user's own data. Confirm this export-compliance answer before release.
-- English only. Localization comes later.
-- The UI has not yet been checked on a physical device.

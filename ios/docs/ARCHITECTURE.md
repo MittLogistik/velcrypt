@@ -78,6 +78,29 @@ swapping. Nonces are fresh and random, and keys are per item.
 * Decrypted temp files (video playback, export) will live in `tmp/Decrypted/` and
   are deleted on lock, on backgrounding and at launch (M3).
 
+## Encrypted backup
+
+Settings → Backup writes the open vault to one `.velcrypt` file (UTType `com.velcrypt.backup`)
+that can be restored on any iPhone:
+
+```
+header    "VCB1" | version u8 | rounds u32 | salt (32)
+entries   per item: VCF1 stream under HKDF(BK, "velcrypt.backup.item.v1", salt = uuid),
+          then its thumbnail, AES-GCM under HKDF(BK, "velcrypt.backup.thumbnail.v1", salt = uuid)
+manifest  AES-GCM(HKDF(BK, "velcrypt.backup.manifest.v1"), JSON {albums, items, offsets}), AAD = header
+trailer   manifest length u64
+```
+
+* `BK = PBKDF2-HMAC-SHA512(NFC(password), salt, rounds)`, with rounds calibrated to about 1 s
+  (at least 600,000). The pattern is not used, because the device salt never leaves the
+  iPhone and a pattern is too short to protect a file that can be attacked offline.
+* Items are re-encrypted chunk by chunk from the item key to the backup key, so plaintext never
+  reaches disk. Chunk AADs are unchanged, so tampering, truncation and swapping are still detected.
+* A backup covers only the open vault, so it never reveals that other vaults exist. Restoring adds
+  the backup's albums and items to the open vault. It skips items that are already there and
+  counts damaged items as failed without stopping.
+* A forgotten backup password cannot be recovered.
+
 ## Duress pattern (planned, Premium)
 
 A designated pattern that opens a chosen vault and silently deletes the key
@@ -106,5 +129,6 @@ Keychain items survive app deletion. On the first launch after an install
   deleted bytes are physically erased.
 * Imported originals stay in the Photos library and its iCloud backups until the
   user deletes them.
-* There is no recovery: a forgotten pattern means that vault is lost.
+* There is no recovery: a forgotten pattern means that vault is lost, unless the user
+  has a backup and remembers its password.
 * Not independently audited.

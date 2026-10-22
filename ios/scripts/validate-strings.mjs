@@ -29,7 +29,7 @@ const ALLOWED_PLURAL = { ja: ['other'], ko: ['other'], 'zh-Hans': ['other'] };
 const SAME_AS_EN_OK = new Set([
   'OK', '%@ · %@', 'Album', 'Albums', '1 album', '1 item', 'Photo', 'Photo, %@', 'Photos', 'Documents',
   'Document, %@', 'Version', 'System', 'Videos', 'Video, %@, %@', 'Name', 'Info', 'Layout',
-  '%lld albums', 'Import', 'Camera', 'Timer', 'Memo',
+  '%lld albums', 'Import', 'Camera', 'Timer', 'Memo', 'Backup',
 ]);
 
 const here = path.dirname(fileURLToPath(import.meta.url));
