@@ -42,7 +42,15 @@ struct PaywallView: View {
                 .padding(.horizontal, VCMetric.screenPadding)
                 .padding(.top, 12)
                 .padding(.bottom, 4)
-                .background(VCColor.background.opacity(0.92).ignoresSafeArea(edges: .bottom))
+                // Opaque, so plan rows scrolling underneath don't show through the button; a short fade
+                // above it softens the edge.
+                .background(VCColor.background.ignoresSafeArea(edges: .bottom))
+                .background(alignment: .top) {
+                    LinearGradient(colors: [VCColor.background.opacity(0), VCColor.background], startPoint: .top, endPoint: .bottom)
+                        .frame(height: 24)
+                        .offset(y: -24)
+                        .allowsHitTesting(false)
+                }
             }
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
