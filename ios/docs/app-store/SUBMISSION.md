@@ -13,7 +13,7 @@ This is the checklist and the copy-paste answers for App Store Connect. Metadata
 - [ ] **App version 1.0.0** has been created (Distribution → iOS App → "+" or the version shown). It must match `MARKETING_VERSION` in `project.yml`.
 - [ ] **Build** is selected: a TestFlight build with version 1.0.0.
 - [ ] **Metadata** has been pasted for every locale: name, subtitle, keywords, promotional text, description and What's New.
-- [ ] **Screenshots** are uploaded for 6.9" iPhone (1320 × 2868 or 1290 × 2796). Up to 10, the first 3 matter most.
+- [ ] **Screenshots** are uploaded for "iPhone with Dynamic Island (medium display)", 6.1"/6.3": 1206 × 2622 or 1179 × 2556, RGB PNG without alpha. Up to 10, the first 3 matter most. In-app purchase review screenshots use the same size.
 - [ ] **URLs** are filled in (see below).
 - [ ] **App Privacy** is answered (see below).
 - [ ] **Age rating** questionnaire is answered (see below).
