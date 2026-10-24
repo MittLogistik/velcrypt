@@ -71,8 +71,16 @@ WHAT TO TRY
 • Settings → App Icon offers alternate icons (Premium).
 
 PREMIUM (IN-APP PURCHASES)
-The free version allows one vault with up to 50 items. Velcrypt Premium (weekly or yearly subscription with a 3-day free trial on yearly, or a lifetime purchase) unlocks unlimited items, more vaults and alternate app icons.
-The paywall appears: once after onboarding; from Settings → "Upgrade to Premium"; when adding a 51st item; when saving into a second vault (draw a new pattern, then tap "+"); and when choosing an alternate icon. "Restore Purchases" is on the paywall.
+The free version allows one vault with up to 50 items. Velcrypt Premium (weekly or yearly subscription with a 3-day free trial on yearly, or a lifetime purchase) unlocks unlimited items, more vaults, the duress pattern and alternate app icons.
+The paywall appears: once after onboarding; from Settings → "Upgrade to Premium"; when adding a 51st item; when saving into a second vault (draw a new pattern, then tap "+"); when setting up a duress pattern; and when choosing an alternate icon. "Restore Purchases" is on the paywall.
+
+DURESS PATTERN (PREMIUM, OPTIONAL, USER-INITIATED)
+A safety feature for people who are forced to unlock their phone, for example by an abusive partner. The user sets up a separate duress pattern inside a decoy vault. Drawing it on the lock screen opens that decoy vault and permanently deletes every other vault on the device, with no visible sign. It never runs unless the user has set it up and then draws that exact pattern. Setup requires drawing it twice and confirming a warning that names the deletion. For safety, the app never shows whether a duress pattern is set.
+To test (needs Premium; the sandbox purchase is free):
+1. Draw pattern A and add a photo (your "real" vault). Lock the app.
+2. Draw a different pattern B and add a photo (the decoy). Settings → Duress Pattern → Set Up Duress Pattern, draw pattern C twice, tap "Turn On". Lock the app.
+3. Draw pattern C: the decoy vault (B) opens. Lock and draw pattern A: it now opens an empty vault, because vault A was deleted.
+Turning it off: Settings → Duress Pattern → Turn Off, then draw the duress pattern.
 
 DELETING ORIGINALS FROM PHOTOS (OPTIONAL, USER-INITIATED)
 Importing makes an encrypted copy; it never removes anything by itself. After an import from the Photos picker, the app asks whether the user also wants to remove the originals. Only if the user taps "Delete Originals" does the app request Photos access and call PHAssetChangeRequest.deleteAssets for exactly the items the user just picked. iOS then shows its own system confirmation, and the items go to Recently Deleted for 30 days. Nothing is hidden or deleted without that explicit two-step confirmation, and the user can turn the offer off in Settings → Import. This mirrors what users would otherwise do by hand in the Photos app after moving files into a vault.

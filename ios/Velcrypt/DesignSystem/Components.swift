@@ -52,7 +52,21 @@ struct VCSecondaryButtonStyle: ButtonStyle {
                             .strokeBorder(VCColor.stroke)
                     )
             )
-            .opacity(configuration.isPressed ? 0.7 : 1)
+            .opacity(configuration.isPressed ? 0.8 : 1)
+            .scaleEffect(configuration.isPressed ? 0.97 : 1)
+            .animation(.spring(response: 0.25, dampingFraction: 0.7), value: configuration.isPressed)
+    }
+}
+
+/// Unstyled button that shrinks slightly while pressed and springs back: tiles, thumbnails, icon buttons.
+struct VCPressableButtonStyle: ButtonStyle {
+    var scale: CGFloat = 0.96
+
+    func makeBody(configuration: Configuration) -> some View {
+        configuration.label
+            .scaleEffect(configuration.isPressed ? scale : 1)
+            .brightness(configuration.isPressed ? -0.03 : 0)
+            .animation(.spring(response: 0.25, dampingFraction: 0.65), value: configuration.isPressed)
     }
 }
 
@@ -62,6 +76,11 @@ extension ButtonStyle where Self == VCPrimaryButtonStyle {
 
 extension ButtonStyle where Self == VCSecondaryButtonStyle {
     static var vcSecondary: VCSecondaryButtonStyle { VCSecondaryButtonStyle() }
+}
+
+extension ButtonStyle where Self == VCPressableButtonStyle {
+    static var vcPressable: VCPressableButtonStyle { VCPressableButtonStyle() }
+    static func vcPressable(scale: CGFloat) -> VCPressableButtonStyle { VCPressableButtonStyle(scale: scale) }
 }
 
 // MARK: - Card
@@ -98,11 +117,17 @@ struct VCIconBadge: View {
     let systemName: String
     var size: CGFloat = 44
     var tint: Color = VCColor.accent
+    /// Bounces the symbol once when it appears, e.g. on a "done" screen.
+    var bouncesOnAppear = false
+
+    @State private var appeared = false
 
     var body: some View {
         Image(systemName: systemName)
             .font(.system(size: size * 0.42, weight: .semibold))
             .foregroundStyle(tint)
+            .symbolEffect(.bounce, value: appeared)
+            .onAppear { if bouncesOnAppear { appeared = true } }
             .frame(width: size, height: size)
             .background(
                 RoundedRectangle(cornerRadius: size * 0.3, style: .continuous)

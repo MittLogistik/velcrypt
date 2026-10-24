@@ -28,7 +28,7 @@ struct AlbumsView: View {
                             NavigationLink(value: VaultRoute.items(.album(album.id))) {
                                 AlbumCard(album: album)
                             }
-                            .buttonStyle(.plain)
+                            .buttonStyle(.vcPressable)
                             .contextMenu {
                                 Button {
                                     renameText = album.name

@@ -282,7 +282,7 @@ private struct PlanRow: View {
                     )
             )
         }
-        .buttonStyle(.plain)
+        .buttonStyle(.vcPressable(scale: 0.98))
         .accessibilityAddTraits(isSelected ? [.isButton, .isSelected] : .isButton)
     }
 

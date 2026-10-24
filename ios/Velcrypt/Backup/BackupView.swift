@@ -208,7 +208,7 @@ struct CreateBackupView: View {
     private func readyContent(_ url: URL) -> some View {
         Section {
             VStack(spacing: 12) {
-                VCIconBadge(systemName: "checkmark.shield.fill", size: 64, tint: VCColor.success)
+                VCIconBadge(systemName: "checkmark.shield.fill", size: 64, tint: VCColor.success, bouncesOnAppear: true)
                 Text("Backup Ready")
                     .font(VCFont.title)
                     .foregroundStyle(VCColor.textPrimary)
@@ -361,7 +361,8 @@ struct RestoreBackupView: View {
                 VCIconBadge(
                     systemName: result.failed == 0 ? "checkmark.shield.fill" : "exclamationmark.shield.fill",
                     size: 64,
-                    tint: result.failed == 0 ? VCColor.success : VCColor.warning
+                    tint: result.failed == 0 ? VCColor.success : VCColor.warning,
+                    bouncesOnAppear: true
                 )
                 Text("Backup Restored")
                     .font(VCFont.title)

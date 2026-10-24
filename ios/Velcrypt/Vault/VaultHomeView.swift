@@ -98,6 +98,7 @@ struct VaultHomeView: View {
                 .background(Circle().fill(VCColor.surface))
                 .overlay(Circle().strokeBorder(VCColor.stroke))
         }
+        .buttonStyle(.vcPressable(scale: 0.9))
         .accessibilityLabel(Text(label))
     }
 
@@ -119,7 +120,7 @@ struct VaultHomeView: View {
                 )
             }
         }
-        .buttonStyle(.plain)
+        .buttonStyle(.vcPressable)
     }
 
     @ViewBuilder
@@ -146,7 +147,7 @@ struct VaultHomeView: View {
                                 ItemThumbnail(item: item, cornerRadius: 14)
                                     .frame(width: 96, height: 96)
                             }
-                            .buttonStyle(.plain)
+                            .buttonStyle(.vcPressable)
                         }
                     }
                 }
@@ -186,6 +187,7 @@ struct VaultHomeView: View {
                 .background(Circle().fill(VCColor.accentGradient))
                 .shadow(color: VCColor.accent.opacity(0.5), radius: 16, y: 6)
         }
+        .buttonStyle(.vcPressable(scale: 0.9))
         .accessibilityLabel("Add to vault")
     }
 
@@ -211,6 +213,8 @@ struct CollectionTile: View {
                     Text(subtitle)
                         .font(VCFont.caption)
                         .foregroundStyle(VCColor.textSecondary)
+                        .contentTransition(.numericText())
+                        .animation(.snappy, value: subtitle)
                 }
             }
         }
@@ -231,6 +235,8 @@ struct SecurityStatusCard: View {
                     Image(systemName: "checkmark.shield.fill")
                         .font(.system(size: 26))
                         .foregroundStyle(VCColor.success)
+                        // A small bounce each time something new is encrypted into the vault.
+                        .symbolEffect(.bounce, value: itemCount)
                 }
                 .frame(width: 56, height: 56)
                 .accessibilityHidden(true)
@@ -241,6 +247,8 @@ struct SecurityStatusCard: View {
                     Text("AES-256 encrypted · \(itemCount) items · \(ByteCountFormatter.string(fromByteCount: storageBytes, countStyle: .file))")
                         .font(VCFont.caption)
                         .foregroundStyle(VCColor.textSecondary)
+                        .contentTransition(.numericText(value: Double(itemCount)))
+                        .animation(.snappy, value: itemCount)
                 }
                 Spacer(minLength: 0)
             }

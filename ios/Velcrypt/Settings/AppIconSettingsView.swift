@@ -59,7 +59,7 @@ struct AppIconSettingsView: View {
                 LazyVGrid(columns: columns, spacing: 18) {
                     ForEach(AppIconOption.allCases) { option in
                         Button { choose(option) } label: { tile(option) }
-                            .buttonStyle(.plain)
+                            .buttonStyle(.vcPressable)
                     }
                 }
                 .padding(.vertical, 8)

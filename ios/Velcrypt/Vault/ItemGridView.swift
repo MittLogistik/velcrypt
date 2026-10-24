@@ -108,7 +108,7 @@ struct ItemGridView: View {
                             ItemThumbnail(item: item)
                                 .overlay(alignment: .topTrailing) { selectionMark(item) }
                         }
-                        .buttonStyle(.plain)
+                        .buttonStyle(.vcPressable(scale: 0.95))
                         .contextMenu { contextMenu(for: item) }
                     }
                 }
