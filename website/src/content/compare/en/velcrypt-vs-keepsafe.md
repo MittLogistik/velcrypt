@@ -19,7 +19,7 @@ summary: "Local-only, account-free vault versus an account-based vault with clou
 competitor: "Keepsafe"
 lastChecked: "October 2026"
 order: 1
-related: [keepsafe-alternative, photo-vault-without-account, offline-no-account, hidden-vaults, best-private-photo-vault-apps-iphone, encryption]
+related: [keepsafe-alternative, vaultaire-vs-keepsafe, photo-vault-without-account, offline-no-account, hidden-vaults, best-private-photo-vault-apps-iphone, encryption]
 faq:
   - q: "Does Keepsafe require an account?"
     a: "According to its App Store listing at the time of writing, Keepsafe uses an account tied to an email address, which supports features like cloud backup. Velcrypt has no account at all; nothing about you or your vault leaves the phone."

@@ -19,7 +19,7 @@ summary: "계정 없이 기기에만 보관하는 금고와, 계정 기반에 �
 competitor: "Keepsafe"
 lastChecked: "2026년 10월"
 order: 1
-related: [keepsafe-alternative, photo-vault-without-account, offline-no-account, hidden-vaults, best-private-photo-vault-apps-iphone, encryption]
+related: [keepsafe-alternative, vaultaire-vs-keepsafe, photo-vault-without-account, offline-no-account, hidden-vaults, best-private-photo-vault-apps-iphone, encryption]
 faq:
   - q: "Keepsafe는 계정이 필요한가요?"
     a: "작성 시점의 App Store 설명에 따르면 Keepsafe는 이메일 주소에 연결된 계정을 사용하며, 이를 통해 클라우드 백업 같은 기능을 지원합니다. Velcrypt에는 계정이 전혀 없으며, 사용자나 금고에 관한 어떤 정보도 휴대폰을 떠나지 않습니다."

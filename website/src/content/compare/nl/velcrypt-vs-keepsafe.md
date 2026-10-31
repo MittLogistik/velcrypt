@@ -19,7 +19,7 @@ summary: "Een lokale kluis zonder account tegenover een kluis met account en clo
 competitor: "Keepsafe"
 lastChecked: "oktober 2026"
 order: 1
-related: [keepsafe-alternative, photo-vault-without-account, offline-no-account, hidden-vaults, best-private-photo-vault-apps-iphone, encryption]
+related: [keepsafe-alternative, vaultaire-vs-keepsafe, photo-vault-without-account, offline-no-account, hidden-vaults, best-private-photo-vault-apps-iphone, encryption]
 faq:
   - q: "Heb je voor Keepsafe een account nodig?"
     a: "Volgens de App Store-vermelding op het moment van schrijven gebruikt Keepsafe een account dat aan een e-mailadres is gekoppeld, wat functies zoals cloudback-up mogelijk maakt. Velcrypt heeft helemaal geen account; niets over jou of je kluis verlaat de telefoon."

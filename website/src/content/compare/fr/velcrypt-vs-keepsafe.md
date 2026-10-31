@@ -19,7 +19,7 @@ summary: "Un coffre local sans compte face à un coffre avec compte et sauvegard
 competitor: "Keepsafe"
 lastChecked: "octobre 2026"
 order: 1
-related: [keepsafe-alternative, photo-vault-without-account, offline-no-account, hidden-vaults, best-private-photo-vault-apps-iphone, encryption]
+related: [keepsafe-alternative, vaultaire-vs-keepsafe, photo-vault-without-account, offline-no-account, hidden-vaults, best-private-photo-vault-apps-iphone, encryption]
 faq:
   - q: "Keepsafe nécessite-t-il un compte ?"
     a: "D’après sa fiche App Store au moment de la rédaction, Keepsafe utilise un compte lié à une adresse e-mail, ce qui permet des fonctions comme la sauvegarde cloud. Velcrypt n’a aucun compte : rien sur vous ni sur votre coffre ne quitte le téléphone."

@@ -19,7 +19,7 @@ summary: "Keepsafeの代わりを探す理由、写真保管庫アプリで確�
 competitor: "Keepsafe"
 lastChecked: "2026年10月"
 order: 6
-related: [velcrypt-vs-keepsafe, photo-vault-without-account, best-private-photo-vault-apps-iphone, delete-original-photos-after-import, are-photo-vault-apps-safe, offline-no-account]
+related: [velcrypt-vs-keepsafe, vaultaire-vs-keepsafe, photo-vault-without-account, best-private-photo-vault-apps-iphone, delete-original-photos-after-import, are-photo-vault-apps-safe, offline-no-account]
 faq:
   - q: "アカウント不要でKeepsafeの代わりになるアプリは？"
     a: "Velcryptは、アカウントもメールも登録もなしで使えるよう設計されており、すべてがiPhone上で暗号化されたまま保存されます。Appleの「非表示」アルバムやロックしたメモも別のアカウントなしで使えますが、有効にしていればiCloudを利用します。"

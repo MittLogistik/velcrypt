@@ -19,7 +19,7 @@ summary: "Varför folk letar efter ett alternativ till Keepsafe, vad du ska kont
 competitor: "Keepsafe"
 lastChecked: "oktober 2026"
 order: 6
-related: [velcrypt-vs-keepsafe, photo-vault-without-account, best-private-photo-vault-apps-iphone, delete-original-photos-after-import, are-photo-vault-apps-safe, offline-no-account]
+related: [velcrypt-vs-keepsafe, vaultaire-vs-keepsafe, photo-vault-without-account, best-private-photo-vault-apps-iphone, delete-original-photos-after-import, are-photo-vault-apps-safe, offline-no-account]
 faq:
   - q: "Vilket är ett bra alternativ till Keepsafe utan konto?"
     a: "Velcrypt är utformat för att fungera helt utan konto, e-post eller registrering; allt stannar krypterat på din iPhone. Apples album Gömda och låsta anteckningar fungerar också utan ett separat konto, men de använder iCloud om du har det påslaget."

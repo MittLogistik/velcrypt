@@ -19,7 +19,7 @@ summary: "纯本地、无需账户的保险箱，对比基于账户、带云备�
 competitor: "Keepsafe"
 lastChecked: "2026 年 10 月"
 order: 1
-related: [keepsafe-alternative, photo-vault-without-account, offline-no-account, hidden-vaults, best-private-photo-vault-apps-iphone, encryption]
+related: [keepsafe-alternative, vaultaire-vs-keepsafe, photo-vault-without-account, offline-no-account, hidden-vaults, best-private-photo-vault-apps-iphone, encryption]
 faq:
   - q: "Keepsafe 需要注册账户吗？"
     a: "根据撰写本文时其 App Store 页面的信息，Keepsafe 使用与邮箱地址关联的账户，以支持云备份等功能。Velcrypt 完全没有账户；关于你或你保险箱的任何信息都不会离开手机。"

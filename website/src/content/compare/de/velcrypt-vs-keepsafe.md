@@ -19,7 +19,7 @@ summary: "Rein lokaler Tresor ohne Konto gegen kontobasierten Tresor mit Cloud-B
 competitor: "Keepsafe"
 lastChecked: "Oktober 2026"
 order: 1
-related: [keepsafe-alternative, photo-vault-without-account, offline-no-account, hidden-vaults, best-private-photo-vault-apps-iphone, encryption]
+related: [keepsafe-alternative, vaultaire-vs-keepsafe, photo-vault-without-account, offline-no-account, hidden-vaults, best-private-photo-vault-apps-iphone, encryption]
 faq:
   - q: "Braucht Keepsafe ein Konto?"
     a: "Laut App-Store-Eintrag nutzt Keepsafe zum Zeitpunkt des Schreibens ein an eine E-Mail-Adresse gebundenes Konto, das Funktionen wie das Cloud-Backup ermöglicht. Velcrypt hat überhaupt kein Konto; nichts über dich oder deinen Tresor verlässt das iPhone."

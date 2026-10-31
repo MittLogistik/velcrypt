@@ -19,7 +19,7 @@ summary: "Bóveda solo local y sin cuenta frente a una bóveda con cuenta y copi
 competitor: "Keepsafe"
 lastChecked: "octubre de 2026"
 order: 1
-related: [keepsafe-alternative, photo-vault-without-account, offline-no-account, hidden-vaults, best-private-photo-vault-apps-iphone, encryption]
+related: [keepsafe-alternative, vaultaire-vs-keepsafe, photo-vault-without-account, offline-no-account, hidden-vaults, best-private-photo-vault-apps-iphone, encryption]
 faq:
   - q: "¿Keepsafe obliga a crear una cuenta?"
     a: "Según su ficha del App Store en el momento de escribir esto, Keepsafe usa una cuenta vinculada a una dirección de email, que permite funciones como la copia en la nube. Velcrypt no tiene ninguna cuenta; nada sobre ti ni sobre tu bóveda sale del teléfono."
