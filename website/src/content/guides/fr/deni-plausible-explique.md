@@ -1,7 +1,7 @@
 ---
 pageId: plausible-deniability-explained
-title: "Le déni plausible en chiffrement, expliqué simplement"
-description: "Ce que signifie le déni plausible en chiffrement, comment les volumes cachés l’ont inventé, comment Velcrypt l’applique et ses limites honnêtes."
+title: "Déni plausible : définition simple et usage en chiffrement"
+description: "Le déni plausible : nul ne peut prouver qu’il existe d’autres données cachées. Définition, origine (volumes cachés), usage dans Velcrypt et limites."
 h1: "Le déni plausible en chiffrement, expliqué"
 navTitle: "Le déni plausible expliqué"
 answer: "En chiffrement, le déni plausible signifie que, même après avoir déverrouillé quelque chose, personne ne peut prouver qu’il existe d’autres données cachées. Velcrypt l’applique en laissant chaque schéma ouvrir son propre coffre et en affichant un coffre vide, et non une erreur, pour les schémas inconnus. Il ne cache pas l’existence de données chiffrées sur l’appareil."
@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "déni plausible chiffrement"
 keywords: ["qu’est-ce que le déni plausible", "chiffrement niable", "volume caché expliqué", "déni plausible coffre-fort photo", "coffre niable iphone"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-10-31
 summary: "Le concept derrière les volumes cachés et les coffres leurres, comment Velcrypt l’utilise avec les schémas inconnus, et ce qu’il ne peut pas faire."
 category: security
 order: 42

@@ -1,7 +1,7 @@
 ---
 pageId: is-iphone-hidden-album-private
-title: "¿Es privado el álbum Oculto del iPhone? Lo que protege"
-description: "El álbum Oculto saca las fotos de tu fototeca y se bloquea con Face ID, pero tu código lo abre y se sincroniza con iCloud. Esto es lo que implica."
+title: "¿Es privado el álbum Oculto del iPhone? No del todo: por qué"
+description: "En parte: el álbum Oculto se bloquea con Face ID, pero tu código lo abre y se sincroniza con iCloud. Qué protege, qué no y qué alternativas tienes."
 h1: "¿Es privado el álbum Oculto del iPhone?"
 navTitle: "¿Es privado el álbum Oculto?"
 answer: "En parte. El álbum Oculto saca las fotos de tu fototeca principal y, en iOS 16 y posteriores, se bloquea con Face ID, Touch ID o tu código. Pero cualquiera que conozca el código del dispositivo puede abrirlo, se sincroniza con Fotos en iCloud y en iCloud solo tiene cifrado de extremo a extremo si activas la Protección de datos avanzada."
@@ -19,7 +19,7 @@ keywords:
   - "álbum oculto face id"
   - "pueden ver mis fotos ocultas"
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-10-31
 summary: "Lo que protege de verdad el álbum Oculto, quién puede seguir abriéndolo y cómo cambian las cosas con iCloud y la Protección de datos avanzada."
 category: apple
 order: 10

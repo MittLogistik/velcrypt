@@ -1,7 +1,7 @@
 ---
 pageId: calculator-vault-apps-explained
-title: "App calculadora secreta: disfarce vs. criptografia"
-description: "Apps de calculadora secreta escondem fotos atrás de uma calculadora falsa. Veja como funciona o disfarce, por que não é criptografia e onde o iOS o revela."
+title: "App calculadora secreta: como funciona e onde ela se entrega"
+description: "A calculadora secreta esconde fotos atrás de uma calculadora falsa até você digitar um código. Por que isso não é criptografia e onde o iOS revela o app."
 h1: "App calculadora secreta: como funciona o cofre disfarçado"
 navTitle: "Calculadora secreta explicada"
 answer: "Uma calculadora secreta é um cofre de fotos que parece e funciona como calculadora até você digitar um código secreto como se fosse uma conta. O disfarce engana uma olhada rápida, mas não é criptografia, e o iOS revela a identidade real do app em lugares como a busca da Biblioteca de Apps, o Spotlight, o Armazenamento do iPhone e as suas compras na App Store."
@@ -19,7 +19,7 @@ keywords:
   - "calculadora falsa fotos ocultas"
   - "como descobrir calculadora secreta no celular"
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-10-31
 summary: "Como funcionam os cofres disfarçados de calculadora, por que disfarce não é criptografia e quando o truque ainda faz sentido."
 category: choosing
 order: 22

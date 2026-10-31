@@ -58,6 +58,8 @@ howTo:
 
 Din iPhone är en kapabel skanner, vilket är praktiskt för en passida, ett hyresavtal eller ett provsvar. Problemet är att det självklara sättet, att ta en bild, lägger en kopia av dokumentet i bildbiblioteket, i iCloud och kanske i Minnen eller ett delat album. Några små ändringar i hur du skannar håller känsliga papper där du vill ha dem.
 
+Behöver du bara grunderna för att skanna ett dokument börjar du med vår allmänna guide om [hur du skannar dokument med iPhone](id:how-to-scan-documents-iphone).
+
 ## Varför inte bara ta en bild?
 
 En bild av ett dokument behandlas som vilken bild som helst. Den syns i kamerarullen, synkas via iCloud-bilder, kan plockas upp av sökningen (iOS känner igen text i bilder) och kan läsas av varje app med full åtkomst till bilder. Gömmer du den sedan synkas den ändå, vilket förklaras i [sparas gömda bilder i iCloud?](id:are-hidden-photos-saved-to-icloud)
@@ -122,7 +124,7 @@ Många skannerappar i App Store erbjuder textigenkänning, molnlagring eller aut
 
 Att låsa en anteckning eller ha en PDF i På min iPhone är en bra början, men den som kan låsa upp din telefon kan ändå öppna Filer. För id-handlingar, journaler och allt du skulle hata att se läcka lägger ett krypterat valv till en separat hemlighet.
 
-Velcrypt kan importera dokument från appen Filer till ett krypterat valv ([privata dokument](id:private-documents)). Filerna krypteras med AES-256-GCM på enheten med nycklar som härleds från ditt upplåsningsmönster, och ingenting laddas upp ([offline utan konto](id:offline-no-account)). Velcrypt har ingen inbyggd skanner eller kamera, så du skannar med Filer eller Anteckningar först och importerar sedan PDF:en.
+Velcrypt kan importera dokument från appen Filer till ett krypterat valv ([privata dokument](id:private-documents)). Filerna krypteras med AES-256-GCM på enheten med nycklar som härleds från ditt upplåsningsmönster, och ingenting laddas upp ([offline utan konto](id:offline-no-account)). Velcrypt har ingen inbyggd dokumentskanner. Kameran i valvet kan fotografera ett dokument direkt in i valvet, men för en riktig PDF-skanning använder du Filer eller Anteckningar först och importerar sedan PDF:en.
 
 Tänk på att valvinnehållet inte ingår i iCloud- eller datorsäkerhetskopior. Om ett originaldokument inte går att ersätta, skapa en krypterad säkerhetskopia under Inställningar → Säkerhetskopiering eller behåll pappersversionen på ett ställe du har kontroll över. Vårt [användningsfall om id-handlingar och vårdpapper](id:medical-and-id-documents) tar upp den avvägningen.
 

@@ -1,7 +1,7 @@
 ---
 pageId: forgot-vault-pattern
-title: "¿Olvidaste la contraseña o el patrón de tu bóveda de fotos?"
-description: "¿Olvidaste la contraseña o el patrón de tu bóveda de fotos? Qué probar primero, por qué Velcrypt no se puede restablecer y cómo evitar quedarte sin acceso."
+title: "¿Olvidaste la contraseña de tu bóveda de fotos? Qué hacer"
+description: "Qué probar primero si olvidaste la contraseña o el patrón de tu bóveda de fotos, cuándo hay recuperación y cuándo no, y cómo no volver a quedarte fuera."
 h1: "¿Olvidaste la contraseña o el patrón de tu bóveda de fotos? Qué puedes y qué no puedes hacer"
 navTitle: "Olvidé el patrón de la bóveda"
 answer: "En Velcrypt, un patrón olvidado no se puede restablecer ni recuperar, ni por ti ni por Velcrypt, porque la clave solo existe en tu memoria y ningún servidor guarda una copia. Lo que sí puedes hacer es probar con calma variaciones cercanas del patrón y, si creaste una copia de seguridad cifrada, restaurar su contenido. Otras apps de bóveda pueden ofrecer recuperación por correo o cuenta; comprueba qué usa la tuya."
@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "olvidé la contraseña de la bóveda de fotos"
 keywords: ["olvidé el patrón de la bóveda", "recuperar bóveda de fotos", "olvidé el pin de la app de fotos ocultas", "restablecer patrón bóveda", "no puedo entrar en mi bóveda de fotos"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-10-31
 summary: "Qué probar primero, por qué Velcrypt no puede restablecer un patrón olvidado, cómo gestionan la recuperación otras apps y hábitos para no quedarte fuera."
 category: security
 order: 44

@@ -134,6 +134,8 @@ ADP is niet gegarandeerd overal beschikbaar. In februari 2025 stopte Apple met h
 
 Zie je de optie niet in je iCloud-instellingen, of is hij grijs, controleer dan op [Apple Support](https://support.apple.com/) de actuele status in jouw regio in plaats van op oudere artikelen te vertrouwen.
 
+De volledige tijdlijn voor het VK en wat daar end-to-end versleuteld blijft, lees je in [Geavanceerde databescherming in het VK](id:advanced-data-protection-uk); hoe ADP iCloud.com verandert, staat in [Toegang tot iCloud-gegevens op het web](id:icloud-access-data-on-web).
+
 ## Waar versleuteling op het apparaat past
 
 Geavanceerde databescherming en een kluis op het apparaat lossen verschillende problemen op. ADP houdt je iCloud-gegevens onleesbaar voor Apple, terwijl ze nog synchroniseren en via je eigen herstelmethode te herstellen zijn. Een kluis op het apparaat houdt bepaalde bestanden helemaal uit de cloud en zet een apart geheim tussen die bestanden en iedereen die je telefoon kan ontgrendelen.

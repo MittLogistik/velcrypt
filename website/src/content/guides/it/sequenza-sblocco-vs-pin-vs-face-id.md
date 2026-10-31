@@ -1,7 +1,7 @@
 ---
 pageId: pattern-lock-vs-pin-vs-face-id
-title: "Sequenza di sblocco, PIN o Face ID: cosa è più sicuro?"
-description: "Sequenza, PIN, password o Face ID? Confronta combinazioni, sguardi indiscreti, ditate e sblocco forzato per scegliere il blocco giusto per i dati privati."
+title: "Sequenza di sblocco vs PIN vs Face ID: qual è più sicuro?"
+description: "Nessun blocco vince ovunque: un PIN a 6 cifre batte uno a 4 di 100 volte, Face ID resiste agli sguardi ma si può usare senza consenso. Confronto completo."
 h1: "Sequenza di sblocco, PIN, password o Face ID: cosa è più sicuro?"
 navTitle: "Sequenza vs PIN vs Face ID"
 answer: "Nessun blocco vince su tutti i fronti. Una password lunga e casuale resiste meglio ai tentativi; Face ID e Touch ID resistono meglio agli sguardi indiscreti ma possono essere usati senza il tuo consenso; un PIN a 6 cifre batte uno a 4 cifre di un fattore 100; e una sequenza è forte quanto la forma che una persona sceglie davvero: le sequenze lunghe e irregolari vanno bene, lettere semplici e angoli no."
@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "sequenza di sblocco vs pin"
 keywords: ["pin o face id sicurezza", "la sequenza di sblocco è sicura", "sequenza o password", "face id o codice", "blocco telefono più sicuro", "sblocco biometrico forzato"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-31
 summary: "Calcolo delle combinazioni, sguardi indiscreti, ditate e biometria forzata: un confronto onesto tra i quattro modi più comuni di bloccare i dati privati."
 category: security
 order: 40

@@ -1,7 +1,7 @@
 ---
 pageId: hidden-photos-search-memories-iphone
-title: "Do Hidden Photos Show in Search, Memories or Widgets?"
-description: "What the iPhone Hidden album keeps out of Search, Memories, Featured Photos and widgets, where hidden photos can still surface, and settings to fix it."
+title: "Do Hidden Photos Show Up in Memories or Search? Usually Not"
+description: "Normally no: hidden photos stay out of Search, Memories, Featured Photos and widgets. Where they can still surface and the settings that close the gaps."
 h1: "Do hidden photos show up in Search, Memories and widgets?"
 navTitle: "Hidden photos in Search & Memories"
 answer: "Normally, no. Photos you hide on iPhone are designed to be left out of your library grid, Photos search, Memories, Featured Photos and the Photos widget. They can still surface through copies made before you hid them, such as wallpapers, saved memory videos, shared albums, a Shared Library or chats, and on your other devices via iCloud Photos."
@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "do hidden photos show up in memories"
 keywords: ["hidden photos search iphone", "hidden photos in memories", "hidden photos widget", "stop photos appearing in memories", "show featured content iphone", "featured photos hide"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-31
 summary: "Where hidden photos stay hidden on iPhone, where they can still leak, and the settings that close the gaps."
 category: hiding
 order: 7

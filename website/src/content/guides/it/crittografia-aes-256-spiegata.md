@@ -82,7 +82,7 @@ I computer quantistici minacciano gravemente una parte della crittografia e solo
 - **Gli algoritmi a chiave pubblica** come RSA e la crittografia a curve ellittiche potrebbero essere violati dall’algoritmo di Shor su un computer quantistico abbastanza grande. Per questo lo scambio di chiavi post-quantistico si sta diffondendo in tutto il settore.
 - **I cifrari simmetrici** come AES devono fare i conti con l’algoritmo di Grover, che offre un’accelerazione quadratica della ricerca a forza bruta. In pratica, questo dimezza circa la lunghezza effettiva della chiave: AES-256 offrirebbe circa 128 bit di sicurezza contro un attaccante quantistico.
 
-Una sicurezza a 128 bit è ancora considerata robusta. È uno dei motivi per cui AES-256 è consigliato per i dati che devono restare riservati a lungo.
+Una sicurezza a 128 bit è ancora considerata robusta. È uno dei motivi per cui AES-256 è consigliato per i dati che devono restare riservati a lungo. I conti dietro questi numeri, gli attacchi noti e la posizione del NIST e delle agenzie nazionali sono in [AES-256 si può violare?](id:can-aes-256-be-cracked).
 
 ## Idee sbagliate comuni
 

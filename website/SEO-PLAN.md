@@ -1,6 +1,6 @@
 # Velcrypt SEO and content plan
 
-Last updated: 22 October 2026. Scope: velcrypt.app. 11 live locales (en + wave 1: es, de, fr, pt-BR, it, nl, sv, ja, ko, zh-Hans); the system is built for about 30.
+Last updated: 31 October 2026. Scope: velcrypt.app. 11 live locales (en + wave 1: es, de, fr, pt-BR, it, nl, sv, ja, ko, zh-Hans); the system is built for about 30.
 
 ## 1. Strategy in five lines
 
@@ -52,15 +52,15 @@ Primary keywords come from each page's `primaryKeyword` frontmatter. Secondary p
 | password protect photos on iphone | /guides/password-protect-photos-iphone/ | How to Password Protect Photos on iPhone |
 | secret photo album iphone | /guides/secret-photo-album-iphone/ | Secret Photo Album on iPhone: What Actually Works |
 | password protect a folder on iphone | /guides/password-protect-folder-iphone/ | How to Password Protect a Folder on iPhone |
-| do hidden photos show up in memories | /guides/hidden-photos-search-memories-iphone/ | Do Hidden Photos Show in Search, Memories or Widgets? |
+| do hidden photos show up in memories | /guides/hidden-photos-search-memories-iphone/ | Do Hidden Photos Show Up in Memories or Search? Usually Not |
 | show one photo on iphone without swiping | /guides/guided-access-show-one-photo/ | Show One Photo on iPhone Without Swiping |
 | is the iphone hidden album private | /guides/is-iphone-hidden-album-private/ | Is the iPhone Hidden Album Private? What It Protects |
-| are hidden photos saved to icloud | /guides/are-hidden-photos-saved-to-icloud/ | Are Hidden Photos Saved to iCloud? How Sync Really Works |
+| are hidden photos saved to icloud | /guides/are-hidden-photos-saved-to-icloud/ | Are Hidden Photos Saved to iCloud? Yes – How to Opt Out |
 | icloud advanced data protection | /guides/icloud-advanced-data-protection-explained/ | iCloud Advanced Data Protection Explained (2026) |
 | which apps can see my photos iphone | /guides/which-apps-can-see-your-photos-iphone/ | Which Apps Can See My Photos on iPhone? How to Check |
 | best private photo vault apps for iphone | /guides/best-private-photo-vault-apps-iphone/ | Best Private Photo Vault Apps for iPhone: How to Choose |
 | are photo vault apps safe | /guides/are-photo-vault-apps-safe/ | Are Photo Vault Apps Safe? A 9-Point Checklist |
-| calculator vault apps | /guides/calculator-vault-apps-explained/ | Calculator Vault Apps Explained: Disguise vs Encryption |
+| calculator vault apps | /guides/calculator-vault-apps-explained/ | Calculator Vault Apps: How They Work and What Exposes Them |
 | photo vault no account | /guides/photo-vault-without-account/ | Photo Vault Without an Account: Offline Vaults Explained |
 | delete photos after importing to vault | /guides/delete-original-photos-after-import/ | Delete Original Photos After Importing to a Vault |
 | remove exif data iphone | /guides/remove-photo-metadata-iphone/ | How to Remove EXIF and Location Data from iPhone Photos |
@@ -72,6 +72,13 @@ Primary keywords come from each page's `primaryKeyword` frontmatter. Secondary p
 | plausible deniability encryption | /guides/plausible-deniability-explained/ | Plausible Deniability in Encryption, Explained |
 | aes-256 encryption explained | /guides/aes-256-encryption-explained/ | AES-256 Encryption Explained (GCM, PBKDF2, Quantum) |
 | forgot photo vault password | /guides/forgot-vault-pattern/ | Forgot Your Photo Vault Password or Pattern? |
+| icloud shared photo library privacy | /guides/icloud-shared-photo-library-privacy/ | iCloud Shared Photo Library: What Others Can See |
+| how to see where a photo was taken iphone | /guides/see-where-photo-was-taken-iphone/ | How to See Where a Photo Was Taken on iPhone |
+| how to scan documents on iphone | /guides/how-to-scan-documents-iphone/ | How to Scan Documents on iPhone: Notes, Files & Preview |
+| advanced data protection uk | /guides/advanced-data-protection-uk/ | Advanced Data Protection in the UK: Status (Oct 2026) |
+| access icloud data on the web | /guides/icloud-access-data-on-web/ | Access iCloud Data on the Web: Should It Be On? |
+| can aes 256 be cracked | /guides/can-aes-256-be-cracked/ | Can AES-256 Be Cracked? Brute Force, Quantum and GCM |
+| how to lock apps on iphone | /guides/lock-hide-apps-iphone/ | How to Lock and Hide Apps on iPhone (and App Folders) |
 
 ### useCases
 
@@ -92,12 +99,12 @@ Primary keywords come from each page's `primaryKeyword` frontmatter. Secondary p
 
 | Target keyword | URL | Title |
 |---|---|---|
-| velcrypt vs keepsafe | /compare/velcrypt-vs-keepsafe/ | Velcrypt vs Keepsafe: On-Device Vault vs Cloud Vault |
+| velcrypt vs keepsafe | /compare/velcrypt-vs-keepsafe/ | Velcrypt vs Keepsafe: Which iPhone Photo Vault Fits You? |
 | velcrypt vs private photo vault | /compare/velcrypt-vs-private-photo-vault/ | Velcrypt vs Private Photo Vault: Side-by-Side (2026) |
 | calculator vault app vs velcrypt | /compare/velcrypt-vs-calculator-vault-apps/ | Velcrypt vs Calculator Vault Apps: Disguise or Encryption |
 | velcrypt vs iphone hidden album | /compare/velcrypt-vs-iphone-hidden-album/ | Velcrypt vs iPhone Hidden Album: What’s the Difference? |
 | apple notes locked notes vs photo vault | /compare/velcrypt-vs-apple-notes-locked-notes/ | Velcrypt vs Apple Notes Locked Notes for Private Photos |
-| keepsafe alternative | /compare/keepsafe-alternative/ | Keepsafe Alternative for iPhone: What to Look For |
+| keepsafe alternative | /compare/keepsafe-alternative/ | Keepsafe Alternative for iPhone: Options Without an Account |
 
 ### tools
 
@@ -159,16 +166,27 @@ Regenerate with `node scripts/keyword-map.mjs`. The target keyword is each page�
 | are-photo-vault-apps-safe | are photo vault apps safe | /guides/are-photo-vault-apps-safe/ |
 | calculator-vault-apps-explained | calculator vault apps | /guides/calculator-vault-apps-explained/ |
 | photo-vault-without-account | photo vault no account | /guides/photo-vault-without-account/ |
+| self-destruct-photo-vault | self-destruct photo vault iphone | /guides/self-destruct-photo-vault/ |
 | delete-original-photos-after-import | delete photos after importing to vault | /guides/delete-original-photos-after-import/ |
 | remove-photo-metadata-iphone | remove exif data iphone | /guides/remove-photo-metadata-iphone/ |
 | store-intimate-photos-safely-iphone | store intimate photos safely iphone | /guides/store-intimate-photos-safely-iphone/ |
 | phone-privacy-border-crossing | can customs search my phone | /guides/phone-privacy-border-crossing/ |
 | scan-documents-privately-iphone | scan documents privately on iphone | /guides/scan-documents-privately-iphone/ |
+| forced-to-unlock-phone | what to do if someone forces you to unlock your phone | /guides/forced-to-unlock-phone/ |
 | pattern-lock-vs-pin-vs-face-id | pattern lock vs pin | /guides/pattern-lock-vs-pin-vs-face-id/ |
 | what-is-a-decoy-vault | decoy vault | /guides/what-is-a-decoy-vault/ |
 | plausible-deniability-explained | plausible deniability encryption | /guides/plausible-deniability-explained/ |
 | aes-256-encryption-explained | aes-256 encryption explained | /guides/aes-256-encryption-explained/ |
 | forgot-vault-pattern | forgot photo vault password | /guides/forgot-vault-pattern/ |
+| duress-password-explained | duress password | /guides/duress-password-explained/ |
+| set-up-decoy-vault-and-duress-pattern | how to set up a decoy vault | /guides/set-up-decoy-vault-and-duress-pattern/ |
+| icloud-shared-photo-library-privacy | icloud shared photo library privacy | /guides/icloud-shared-photo-library-privacy/ |
+| see-where-photo-was-taken-iphone | how to see where a photo was taken iphone | /guides/see-where-photo-was-taken-iphone/ |
+| how-to-scan-documents-iphone | how to scan documents on iphone | /guides/how-to-scan-documents-iphone/ |
+| advanced-data-protection-uk | advanced data protection uk | /guides/advanced-data-protection-uk/ |
+| icloud-access-data-on-web | access icloud data on the web | /guides/icloud-access-data-on-web/ |
+| can-aes-256-be-cracked | can aes 256 be cracked | /guides/can-aes-256-be-cracked/ |
+| lock-hide-apps-iphone | how to lock apps on iphone | /guides/lock-hide-apps-iphone/ |
 | sharing-phone-with-kids | sharing iphone with kids privacy | /use-cases/sharing-phone-with-kids/ |
 | partner-scrolling-camera-roll | partner looking through my phone photos | /use-cases/partner-scrolling-camera-roll/ |
 | phone-repair-privacy | iphone repair privacy photos | /use-cases/phone-repair-privacy/ |
@@ -180,6 +198,7 @@ Regenerate with `node scripts/keyword-map.mjs`. The target keyword is each page�
 | creators-unreleased-content | protect unreleased photos iphone | /use-cases/creators-unreleased-content/ |
 | journalists-protecting-sources | journalist protect sources iphone | /use-cases/journalists-protecting-sources/ |
 | velcrypt-vs-keepsafe | velcrypt vs keepsafe | /compare/velcrypt-vs-keepsafe/ |
+| vaultaire-vs-keepsafe | vaultaire vs keepsafe | /compare/vaultaire-vs-keepsafe/ |
 | velcrypt-vs-private-photo-vault | velcrypt vs private photo vault | /compare/velcrypt-vs-private-photo-vault/ |
 | velcrypt-vs-calculator-vault-apps | calculator vault app vs velcrypt | /compare/velcrypt-vs-calculator-vault-apps/ |
 | velcrypt-vs-iphone-hidden-album | velcrypt vs iphone hidden album | /compare/velcrypt-vs-iphone-hidden-album/ |
@@ -226,16 +245,27 @@ Regenerate with `node scripts/keyword-map.mjs`. The target keyword is each page�
 | are-photo-vault-apps-safe | son seguras las apps de bóveda de fotos | /es/guias/apps-boveda-fotos-son-seguras/ |
 | calculator-vault-apps-explained | app calculadora secreta | /es/guias/apps-calculadora-secreta/ |
 | photo-vault-without-account | bóveda de fotos sin cuenta | /es/guias/boveda-fotos-sin-cuenta/ |
+| self-destruct-photo-vault | bóveda de fotos autodestrucción iphone | /es/guias/boveda-de-fotos-autodestruccion/ |
 | delete-original-photos-after-import | borrar fotos después de importarlas a una bóveda | /es/guias/borrar-fotos-originales-tras-importar/ |
 | remove-photo-metadata-iphone | eliminar metadatos fotos iphone | /es/guias/eliminar-metadatos-fotos-iphone/ |
 | store-intimate-photos-safely-iphone | guardar fotos íntimas iphone | /es/guias/guardar-fotos-intimas-iphone/ |
 | phone-privacy-border-crossing | pueden revisar mi móvil en la aduana | /es/guias/revisar-telefono-aduana/ |
 | scan-documents-privately-iphone | escanear documentos iphone de forma privada | /es/guias/escanear-documentos-privado-iphone/ |
+| forced-to-unlock-phone | qué hacer si te obligan a desbloquear el móvil | /es/guias/me-obligan-a-desbloquear-el-movil/ |
 | pattern-lock-vs-pin-vs-face-id | patrón vs pin | /es/guias/patron-vs-pin-vs-face-id/ |
 | what-is-a-decoy-vault | bóveda señuelo | /es/guias/que-es-boveda-senuelo/ |
 | plausible-deniability-explained | negación plausible cifrado | /es/guias/negacion-plausible-cifrado/ |
 | aes-256-encryption-explained | cifrado aes-256 explicado | /es/guias/cifrado-aes-256-explicado/ |
 | forgot-vault-pattern | olvidé la contraseña de la bóveda de fotos | /es/guias/olvide-clave-boveda-fotos/ |
+| duress-password-explained | contraseña de coacción | /es/guias/contrasena-de-coaccion/ |
+| set-up-decoy-vault-and-duress-pattern | cómo configurar una bóveda señuelo | /es/guias/configurar-boveda-senuelo-y-patron-de-coaccion/ |
+| icloud-shared-photo-library-privacy | fototeca compartida icloud | /es/guias/fototeca-compartida-icloud-privacidad/ |
+| see-where-photo-was-taken-iphone | ver donde se tomó una foto iphone | /es/guias/ver-donde-se-tomo-una-foto-iphone/ |
+| how-to-scan-documents-iphone | cómo escanear documentos con el iphone | /es/guias/como-escanear-documentos-iphone/ |
+| advanced-data-protection-uk | protección de datos avanzada reino unido | /es/guias/proteccion-avanzada-datos-reino-unido/ |
+| icloud-access-data-on-web | acceso a los datos de icloud en internet | /es/guias/acceso-datos-icloud-internet/ |
+| can-aes-256-be-cracked | se puede romper aes 256 | /es/guias/se-puede-romper-aes-256/ |
+| lock-hide-apps-iphone | bloquear apps iphone | /es/guias/bloquear-ocultar-apps-iphone/ |
 | sharing-phone-with-kids | ocultar fotos a los niños iphone | /es/casos-de-uso/prestar-iphone-a-los-ninos/ |
 | partner-scrolling-camera-roll | mi pareja mira mis fotos del móvil | /es/casos-de-uso/mi-pareja-mira-mis-fotos/ |
 | phone-repair-privacy | privacidad fotos reparar iphone | /es/casos-de-uso/privacidad-al-reparar-el-iphone/ |
@@ -247,6 +277,7 @@ Regenerate with `node scripts/keyword-map.mjs`. The target keyword is each page�
 | creators-unreleased-content | proteger fotos inéditas iphone | /es/casos-de-uso/proteger-fotos-ineditas-y-de-clientes/ |
 | journalists-protecting-sources | periodistas proteger fuentes iphone | /es/casos-de-uso/periodistas-proteger-fuentes/ |
 | velcrypt-vs-keepsafe | velcrypt vs keepsafe | /es/comparativas/velcrypt-vs-keepsafe/ |
+| vaultaire-vs-keepsafe | vaultaire vs keepsafe | /es/comparativas/vaultaire-vs-keepsafe/ |
 | velcrypt-vs-private-photo-vault | velcrypt vs private photo vault | /es/comparativas/velcrypt-vs-private-photo-vault/ |
 | velcrypt-vs-calculator-vault-apps | app calculadora para ocultar fotos | /es/comparativas/velcrypt-vs-calculator-vault-apps/ |
 | velcrypt-vs-iphone-hidden-album | álbum oculto iphone vs velcrypt | /es/comparativas/velcrypt-vs-iphone-hidden-album/ |
@@ -269,7 +300,7 @@ Regenerate with `node scripts/keyword-map.mjs`. The target keyword is each page�
 | press | velcrypt pressekit | /de/presse/ |
 | pattern-lock | muster sperre app iphone | /de/funktionen/muster-sperre-app-iphone/ |
 | hidden-vaults | versteckter tresor app iphone | /de/funktionen/versteckte-tresore/ |
-| duress-pattern | panik muster tresor app | /de/funktionen/notfallmuster/ |
+| duress-pattern | notfallmuster tresor app | /de/funktionen/notfallmuster/ |
 | encryption | foto tresor verschlüsselung iphone | /de/funktionen/verschluesselung/ |
 | offline-no-account | foto tresor ohne konto | /de/funktionen/offline-foto-tresor-ohne-konto/ |
 | hide-photos | fotos verstecken iphone app | /de/funktionen/fotos-verstecken/ |
@@ -293,16 +324,27 @@ Regenerate with `node scripts/keyword-map.mjs`. The target keyword is each page�
 | are-photo-vault-apps-safe | sind foto tresor apps sicher | /de/anleitungen/sind-foto-tresor-apps-sicher/ |
 | calculator-vault-apps-explained | taschenrechner tresor app | /de/anleitungen/taschenrechner-tresor-apps-erklaert/ |
 | photo-vault-without-account | foto tresor ohne konto | /de/anleitungen/foto-tresor-ohne-konto/ |
+| self-destruct-photo-vault | foto tresor selbstzerstörung iphone | /de/anleitungen/foto-tresor-selbstzerstoerung/ |
 | delete-original-photos-after-import | fotos nach import in tresor löschen | /de/anleitungen/originalfotos-nach-import-loeschen/ |
 | remove-photo-metadata-iphone | exif daten entfernen iphone | /de/anleitungen/foto-metadaten-entfernen-iphone/ |
 | store-intimate-photos-safely-iphone | intime fotos sicher aufbewahren iphone | /de/anleitungen/intime-fotos-sicher-aufbewahren-iphone/ |
 | phone-privacy-border-crossing | handy kontrolle zoll | /de/anleitungen/handy-kontrolle-grenze-privatsphaere/ |
 | scan-documents-privately-iphone | dokumente scannen iphone privat | /de/anleitungen/dokumente-privat-scannen-iphone/ |
+| forced-to-unlock-phone | gezwungen handy zu entsperren | /de/anleitungen/zum-entsperren-des-handys-gezwungen/ |
 | pattern-lock-vs-pin-vs-face-id | muster oder pin sicherer | /de/anleitungen/muster-pin-oder-face-id/ |
 | what-is-a-decoy-vault | köder tresor | /de/anleitungen/was-ist-ein-koeder-tresor/ |
 | plausible-deniability-explained | glaubhafte abstreitbarkeit verschlüsselung | /de/anleitungen/glaubhafte-abstreitbarkeit-erklaert/ |
 | aes-256-encryption-explained | aes-256 verschlüsselung erklärt | /de/anleitungen/aes-256-verschluesselung-erklaert/ |
 | forgot-vault-pattern | foto tresor passwort vergessen | /de/anleitungen/tresor-muster-vergessen/ |
+| duress-password-explained | notfallpasswort | /de/anleitungen/notfallpasswort-erklaert/ |
+| set-up-decoy-vault-and-duress-pattern | köder tresor einrichten | /de/anleitungen/koeder-tresor-und-notfallmuster-einrichten/ |
+| icloud-shared-photo-library-privacy | geteilte icloud-fotomediathek | /de/anleitungen/geteilte-icloud-fotomediathek/ |
+| see-where-photo-was-taken-iphone | wo wurde das foto aufgenommen iphone | /de/anleitungen/aufnahmeort-foto-iphone-anzeigen/ |
+| how-to-scan-documents-iphone | dokument einscannen iphone | /de/anleitungen/dokument-einscannen-iphone/ |
+| advanced-data-protection-uk | erweiterter datenschutz großbritannien | /de/anleitungen/erweiterter-datenschutz-grossbritannien/ |
+| icloud-access-data-on-web | über das internet auf icloud-daten zugreifen | /de/anleitungen/icloud-daten-internetzugriff/ |
+| can-aes-256-be-cracked | 256 bit verschlüsselung knacken dauer | /de/anleitungen/aes-256-knacken-wie-lange/ |
+| lock-hide-apps-iphone | apps sperren iphone | /de/anleitungen/apps-sperren-ausblenden-iphone/ |
 | sharing-phone-with-kids | fotos vor kindern verstecken iphone | /de/anwendungsfaelle/handy-mit-kindern-teilen/ |
 | partner-scrolling-camera-roll | partner schaut mein handy durch | /de/anwendungsfaelle/partner-schaut-fotos-durch/ |
 | phone-repair-privacy | handy reparatur fotos schützen | /de/anwendungsfaelle/handy-reparatur-fotos-schuetzen/ |
@@ -314,6 +356,7 @@ Regenerate with `node scripts/keyword-map.mjs`. The target keyword is each page�
 | creators-unreleased-content | unveröffentlichte fotos schützen iphone | /de/anwendungsfaelle/unveroeffentlichte-inhalte-schuetzen/ |
 | journalists-protecting-sources | quellenschutz journalisten iphone | /de/anwendungsfaelle/quellenschutz-journalisten-iphone/ |
 | velcrypt-vs-keepsafe | velcrypt vs keepsafe | /de/vergleich/velcrypt-vs-keepsafe/ |
+| vaultaire-vs-keepsafe | vaultaire vs keepsafe | /de/vergleich/vaultaire-vs-keepsafe/ |
 | velcrypt-vs-private-photo-vault | velcrypt vs private photo vault | /de/vergleich/velcrypt-vs-private-photo-vault/ |
 | velcrypt-vs-calculator-vault-apps | taschenrechner tresor app | /de/vergleich/velcrypt-vs-calculator-vault-apps/ |
 | velcrypt-vs-iphone-hidden-album | iphone album ausgeblendet vs tresor app | /de/vergleich/velcrypt-vs-iphone-hidden-album/ |
@@ -360,16 +403,27 @@ Regenerate with `node scripts/keyword-map.mjs`. The target keyword is each page�
 | are-photo-vault-apps-safe | app coffre-fort photo sûre | /fr/guides/applis-coffre-fort-photo-fiables/ |
 | calculator-vault-apps-explained | app calculatrice coffre-fort | /fr/guides/app-calculatrice-coffre-fort/ |
 | photo-vault-without-account | coffre-fort photo sans compte | /fr/guides/coffre-fort-photo-sans-compte/ |
+| self-destruct-photo-vault | coffre-fort photo autodestruction iphone | /fr/guides/coffre-fort-photo-autodestruction/ |
 | delete-original-photos-after-import | supprimer photos après import coffre-fort | /fr/guides/supprimer-photos-originales-apres-import/ |
 | remove-photo-metadata-iphone | supprimer données exif iphone | /fr/guides/supprimer-metadonnees-photo-iphone/ |
 | store-intimate-photos-safely-iphone | protéger photos intimes iphone | /fr/guides/proteger-photos-intimes-iphone/ |
 | phone-privacy-border-crossing | douane fouille téléphone | /fr/guides/telephone-controle-frontiere/ |
 | scan-documents-privately-iphone | scanner des documents iphone confidentialité | /fr/guides/scanner-documents-iphone-confidentiel/ |
+| forced-to-unlock-phone | forcé à déverrouiller son téléphone | /fr/guides/force-a-deverrouiller-son-telephone/ |
 | pattern-lock-vs-pin-vs-face-id | schéma ou code pin | /fr/guides/schema-code-ou-face-id/ |
 | what-is-a-decoy-vault | coffre-fort leurre | /fr/guides/coffre-fort-leurre/ |
 | plausible-deniability-explained | déni plausible chiffrement | /fr/guides/deni-plausible-explique/ |
 | aes-256-encryption-explained | chiffrement aes-256 expliqué | /fr/guides/chiffrement-aes-256-explique/ |
 | forgot-vault-pattern | mot de passe coffre-fort photo oublié | /fr/guides/schema-coffre-oublie/ |
+| duress-password-explained | mot de passe de contrainte | /fr/guides/mot-de-passe-de-contrainte-explique/ |
+| set-up-decoy-vault-and-duress-pattern | créer un coffre leurre | /fr/guides/configurer-coffre-leurre-et-schema-de-contrainte/ |
+| icloud-shared-photo-library-privacy | photothèque partagée icloud | /fr/guides/phototheque-partagee-icloud/ |
+| see-where-photo-was-taken-iphone | voir où une photo a été prise iphone | /fr/guides/voir-ou-photo-a-ete-prise-iphone/ |
+| how-to-scan-documents-iphone | scanner un document avec iphone | /fr/guides/comment-scanner-document-iphone/ |
+| advanced-data-protection-uk | protection avancée des données royaume-uni | /fr/guides/protection-avancee-donnees-royaume-uni/ |
+| icloud-access-data-on-web | accéder aux données icloud sur le web | /fr/guides/acceder-donnees-icloud-sur-le-web/ |
+| can-aes-256-be-cracked | peut-on casser l’aes 256 | /fr/guides/peut-on-casser-aes-256/ |
+| lock-hide-apps-iphone | verrouiller une app iphone | /fr/guides/verrouiller-masquer-apps-iphone/ |
 | sharing-phone-with-kids | prêter son iphone à un enfant | /fr/cas-usage/preter-son-iphone-aux-enfants/ |
 | partner-scrolling-camera-roll | mon partenaire fouille dans mes photos | /fr/cas-usage/partenaire-fouille-mes-photos/ |
 | phone-repair-privacy | réparation iphone photos privées | /fr/cas-usage/reparation-iphone-photos-privees/ |
@@ -381,6 +435,7 @@ Regenerate with `node scripts/keyword-map.mjs`. The target keyword is each page�
 | creators-unreleased-content | protéger ses photos clients iphone | /fr/cas-usage/createurs-contenus-inedits/ |
 | journalists-protecting-sources | journaliste protéger ses sources iphone | /fr/cas-usage/journalistes-proteger-ses-sources/ |
 | velcrypt-vs-keepsafe | velcrypt vs keepsafe | /fr/comparatifs/velcrypt-vs-keepsafe/ |
+| vaultaire-vs-keepsafe | vaultaire vs keepsafe | /fr/comparatifs/vaultaire-vs-keepsafe/ |
 | velcrypt-vs-private-photo-vault | velcrypt vs private photo vault | /fr/comparatifs/velcrypt-vs-private-photo-vault/ |
 | velcrypt-vs-calculator-vault-apps | app calculatrice secrète vs velcrypt | /fr/comparatifs/velcrypt-vs-apps-calculatrice/ |
 | velcrypt-vs-iphone-hidden-album | album masqué iphone vs coffre-fort photo | /fr/comparatifs/velcrypt-vs-album-masques-iphone/ |
@@ -427,16 +482,27 @@ Regenerate with `node scripts/keyword-map.mjs`. The target keyword is each page�
 | are-photo-vault-apps-safe | apps de cofre de fotos são seguros | /pt-br/guias/apps-cofre-de-fotos-sao-seguros/ |
 | calculator-vault-apps-explained | app calculadora secreta | /pt-br/guias/app-calculadora-secreta-como-funciona/ |
 | photo-vault-without-account | cofre de fotos sem conta | /pt-br/guias/cofre-de-fotos-sem-conta/ |
+| self-destruct-photo-vault | cofre de fotos autodestrutivo iphone | /pt-br/guias/cofre-de-fotos-autodestrutivo-iphone/ |
 | delete-original-photos-after-import | apagar fotos depois de importar para o cofre | /pt-br/guias/apagar-fotos-originais-apos-importar/ |
 | remove-photo-metadata-iphone | remover dados exif iphone | /pt-br/guias/remover-metadados-fotos-iphone/ |
 | store-intimate-photos-safely-iphone | guardar fotos íntimas com segurança iphone | /pt-br/guias/guardar-fotos-intimas-com-seguranca/ |
 | phone-privacy-border-crossing | imigração pode revistar meu celular | /pt-br/guias/imigracao-revistar-celular-fronteira/ |
 | scan-documents-privately-iphone | escanear documentos no iphone | /pt-br/guias/escanear-documentos-iphone/ |
+| forced-to-unlock-phone | obrigado a desbloquear o celular | /pt-br/guias/obrigado-a-desbloquear-o-celular/ |
 | pattern-lock-vs-pin-vs-face-id | padrão vs pin | /pt-br/guias/padrao-vs-pin-vs-face-id/ |
 | what-is-a-decoy-vault | cofre falso | /pt-br/guias/o-que-e-cofre-falso/ |
 | plausible-deniability-explained | negação plausível criptografia | /pt-br/guias/negacao-plausivel-o-que-e/ |
 | aes-256-encryption-explained | criptografia aes-256 | /pt-br/guias/criptografia-aes-256-o-que-e/ |
 | forgot-vault-pattern | esqueci a senha do cofre de fotos | /pt-br/guias/esqueci-padrao-do-cofre/ |
+| duress-password-explained | senha de coação | /pt-br/guias/senha-de-coacao-o-que-e/ |
+| set-up-decoy-vault-and-duress-pattern | como configurar um cofre de fachada | /pt-br/guias/configurar-cofre-de-fachada-e-padrao-de-coacao/ |
+| icloud-shared-photo-library-privacy | fototeca compartilhada icloud | /pt-br/guias/fototeca-compartilhada-icloud/ |
+| see-where-photo-was-taken-iphone | ver localização da foto iphone | /pt-br/guias/ver-localizacao-metadados-foto-iphone/ |
+| how-to-scan-documents-iphone | como escanear no iphone | /pt-br/guias/como-escanear-no-iphone/ |
+| advanced-data-protection-uk | proteção avançada de dados reino unido | /pt-br/guias/protecao-avancada-de-dados-reino-unido/ |
+| icloud-access-data-on-web | acessar os dados do icloud na web | /pt-br/guias/acessar-dados-icloud-na-web/ |
+| can-aes-256-be-cracked | aes 256 pode ser quebrado | /pt-br/guias/aes-256-pode-ser-quebrado/ |
+| lock-hide-apps-iphone | bloquear apps iphone | /pt-br/guias/bloquear-ocultar-apps-iphone/ |
 | sharing-phone-with-kids | esconder fotos das crianças iphone | /pt-br/casos-de-uso/emprestar-celular-para-criancas/ |
 | partner-scrolling-camera-roll | namorado mexe nas minhas fotos | /pt-br/casos-de-uso/parceiro-mexendo-nas-suas-fotos/ |
 | phone-repair-privacy | assistência técnica pode ver minhas fotos | /pt-br/casos-de-uso/privacidade-iphone-assistencia-tecnica/ |
@@ -448,6 +514,7 @@ Regenerate with `node scripts/keyword-map.mjs`. The target keyword is each page�
 | creators-unreleased-content | proteger fotos de clientes iphone | /pt-br/casos-de-uso/proteger-fotos-de-clientes-iphone/ |
 | journalists-protecting-sources | jornalista proteger fontes iphone | /pt-br/casos-de-uso/jornalistas-protegendo-fontes/ |
 | velcrypt-vs-keepsafe | velcrypt vs keepsafe | /pt-br/comparativos/velcrypt-vs-keepsafe/ |
+| vaultaire-vs-keepsafe | vaultaire vs keepsafe | /pt-br/comparativos/vaultaire-vs-keepsafe/ |
 | velcrypt-vs-private-photo-vault | velcrypt vs private photo vault | /pt-br/comparativos/velcrypt-vs-private-photo-vault/ |
 | velcrypt-vs-calculator-vault-apps | app calculadora secreta | /pt-br/comparativos/velcrypt-vs-calculator-vault-apps/ |
 | velcrypt-vs-iphone-hidden-album | esconder fotos iphone álbum ocultos | /pt-br/comparativos/velcrypt-vs-iphone-hidden-album/ |
@@ -470,7 +537,7 @@ Regenerate with `node scripts/keyword-map.mjs`. The target keyword is each page�
 | press | velcrypt プレスキット | /ja/press/ |
 | pattern-lock | パターンロック アプリ iPhone | /ja/features/pattern-lock/ |
 | hidden-vaults | 隠し 保管庫 アプリ iPhone | /ja/features/hidden-vaults/ |
-| duress-pattern | 脅迫パターン 保管庫 アプリ | /ja/features/duress-pattern/ |
+| duress-pattern | 緊急用パターン 保管庫 アプリ | /ja/features/duress-pattern/ |
 | encryption | 写真 暗号化 iPhone アプリ | /ja/features/encryption/ |
 | offline-no-account | 写真保管庫 アカウント不要 | /ja/features/offline-no-account/ |
 | hide-photos | 写真 隠す iPhone アプリ | /ja/features/hide-photos/ |
@@ -494,16 +561,27 @@ Regenerate with `node scripts/keyword-map.mjs`. The target keyword is each page�
 | are-photo-vault-apps-safe | 写真保管庫アプリ 安全 | /ja/guides/are-photo-vault-apps-safe/ |
 | calculator-vault-apps-explained | 電卓 アプリ 写真 隠す | /ja/guides/calculator-vault-apps-explained/ |
 | photo-vault-without-account | 写真保管庫 アカウント不要 | /ja/guides/photo-vault-without-account/ |
+| self-destruct-photo-vault | 写真 保管庫 自動削除 iphone | /ja/guides/self-destruct-photo-vault/ |
 | delete-original-photos-after-import | 保管庫 読み込み 元の写真 削除 | /ja/guides/delete-original-photos-after-import/ |
 | remove-photo-metadata-iphone | iphone 写真 位置情報 削除 | /ja/guides/remove-photo-metadata-iphone/ |
 | store-intimate-photos-safely-iphone | iphone プライベート 写真 安全 保管 | /ja/guides/store-intimate-photos-safely-iphone/ |
 | phone-privacy-border-crossing | 入国審査 スマホ 調べられる | /ja/guides/phone-privacy-border-crossing/ |
 | scan-documents-privately-iphone | iphone 書類 スキャン 写真に保存しない | /ja/guides/scan-documents-privately-iphone/ |
+| forced-to-unlock-phone | スマホ ロック解除 強要されたら | /ja/guides/forced-to-unlock-phone/ |
 | pattern-lock-vs-pin-vs-face-id | パターンロック pin どっちが安全 | /ja/guides/pattern-lock-vs-pin-vs-face-id/ |
 | what-is-a-decoy-vault | ダミー 保管庫 | /ja/guides/what-is-a-decoy-vault/ |
 | plausible-deniability-explained | もっともらしい否認 暗号化 | /ja/guides/plausible-deniability-explained/ |
 | aes-256-encryption-explained | aes-256 暗号化 とは | /ja/guides/aes-256-encryption-explained/ |
 | forgot-vault-pattern | 写真保管庫 パスワード 忘れた | /ja/guides/forgot-vault-pattern/ |
+| duress-password-explained | 緊急用パスワード | /ja/guides/duress-password-explained/ |
+| set-up-decoy-vault-and-duress-pattern | ダミー保管庫 作り方 | /ja/guides/set-up-decoy-vault-and-duress-pattern/ |
+| icloud-shared-photo-library-privacy | icloud共有写真ライブラリ 家族に見られる | /ja/guides/icloud-shared-photo-library-privacy/ |
+| see-where-photo-was-taken-iphone | 写真 位置情報 確認 iphone | /ja/guides/see-where-photo-was-taken-iphone/ |
+| how-to-scan-documents-iphone | iphone 書類 スキャン | /ja/guides/how-to-scan-documents-iphone/ |
+| advanced-data-protection-uk | 高度なデータ保護 イギリス | /ja/guides/advanced-data-protection-uk/ |
+| icloud-access-data-on-web | icloud データアクセスを許可 | /ja/guides/icloud-access-data-on-web/ |
+| can-aes-256-be-cracked | aes 256 解読 | /ja/guides/can-aes-256-be-cracked/ |
+| lock-hide-apps-iphone | アプリ ロック iphone | /ja/guides/lock-hide-apps-iphone/ |
 | sharing-phone-with-kids | 子供 スマホ 貸す 写真 見られる | /ja/use-cases/sharing-phone-with-kids/ |
 | partner-scrolling-camera-roll | 彼氏 スマホ 写真 見られる | /ja/use-cases/partner-scrolling-camera-roll/ |
 | phone-repair-privacy | iPhone 修理 写真 見られる | /ja/use-cases/phone-repair-privacy/ |
@@ -515,6 +593,7 @@ Regenerate with `node scripts/keyword-map.mjs`. The target keyword is each page�
 | creators-unreleased-content | 未公開 写真 守る iPhone | /ja/use-cases/creators-unreleased-content/ |
 | journalists-protecting-sources | ジャーナリスト 情報源 保護 iPhone | /ja/use-cases/journalists-protecting-sources/ |
 | velcrypt-vs-keepsafe | velcrypt keepsafe 比較 | /ja/compare/velcrypt-vs-keepsafe/ |
+| vaultaire-vs-keepsafe | vaultaire vs keepsafe | /ja/compare/vaultaire-vs-keepsafe/ |
 | velcrypt-vs-private-photo-vault | velcrypt private photo vault 比較 | /ja/compare/velcrypt-vs-private-photo-vault/ |
 | velcrypt-vs-calculator-vault-apps | 電卓 写真 隠す アプリ | /ja/compare/velcrypt-vs-calculator-vault-apps/ |
 | velcrypt-vs-iphone-hidden-album | iphone 写真 隠す 非表示 アルバム | /ja/compare/velcrypt-vs-iphone-hidden-album/ |
@@ -561,16 +640,27 @@ Regenerate with `node scripts/keyword-map.mjs`. The target keyword is each page�
 | are-photo-vault-apps-safe | app cassaforte foto sono sicure | /it/guide/app-cassaforte-foto-sono-sicure/ |
 | calculator-vault-apps-explained | app calcolatrice segreta | /it/guide/app-calcolatrice-segreta-spiegate/ |
 | photo-vault-without-account | cassaforte foto senza account | /it/guide/cassaforte-foto-senza-account/ |
+| self-destruct-photo-vault | cassaforte foto autodistruzione iphone | /it/guide/cassaforte-foto-autodistruzione/ |
 | delete-original-photos-after-import | eliminare foto dopo importazione in cassaforte | /it/guide/eliminare-foto-originali-dopo-importazione/ |
 | remove-photo-metadata-iphone | rimuovere dati exif iphone | /it/guide/rimuovere-dati-exif-foto-iphone/ |
 | store-intimate-photos-safely-iphone | conservare foto intime iphone | /it/guide/conservare-foto-intime-iphone/ |
 | phone-privacy-border-crossing | la dogana può controllare il telefono | /it/guide/controllo-telefono-alla-dogana/ |
 | scan-documents-privately-iphone | scansionare documenti iphone | /it/guide/scansionare-documenti-iphone-privato/ |
+| forced-to-unlock-phone | costretto a sbloccare il telefono | /it/guide/costretto-a-sbloccare-il-telefono/ |
 | pattern-lock-vs-pin-vs-face-id | sequenza di sblocco vs pin | /it/guide/sequenza-sblocco-vs-pin-vs-face-id/ |
 | what-is-a-decoy-vault | cassaforte esca | /it/guide/cassaforte-esca-cos-e/ |
 | plausible-deniability-explained | negabilità plausibile crittografia | /it/guide/negabilita-plausibile-crittografia/ |
 | aes-256-encryption-explained | crittografia aes-256 spiegata | /it/guide/crittografia-aes-256-spiegata/ |
 | forgot-vault-pattern | password cassaforte foto dimenticata | /it/guide/sequenza-cassaforte-dimenticata/ |
+| duress-password-explained | password di emergenza | /it/guide/password-di-emergenza-spiegata/ |
+| set-up-decoy-vault-and-duress-pattern | come configurare una cassaforte esca | /it/guide/configurare-cassaforte-esca-e-sequenza-di-emergenza/ |
+| icloud-shared-photo-library-privacy | libreria foto condivisa icloud | /it/guide/libreria-foto-condivisa-icloud/ |
+| see-where-photo-was-taken-iphone | vedere dove è stata scattata una foto iphone | /it/guide/vedere-dove-e-stata-scattata-foto-iphone/ |
+| how-to-scan-documents-iphone | come scansionare un documento con iphone | /it/guide/come-scansionare-documento-iphone/ |
+| advanced-data-protection-uk | protezione avanzata dei dati regno unito | /it/guide/protezione-avanzata-dati-regno-unito/ |
+| icloud-access-data-on-web | accedi ai dati di icloud sul web | /it/guide/accedere-dati-icloud-sul-web/ |
+| can-aes-256-be-cracked | aes 256 si può violare | /it/guide/aes-256-si-puo-violare/ |
+| lock-hide-apps-iphone | bloccare app iphone | /it/guide/bloccare-nascondere-app-iphone/ |
 | sharing-phone-with-kids | nascondere foto ai bambini iphone | /it/casi-d-uso/dare-iphone-ai-bambini/ |
 | partner-scrolling-camera-roll | il mio ragazzo guarda le mie foto | /it/casi-d-uso/partner-guarda-le-mie-foto/ |
 | phone-repair-privacy | riparazione iphone privacy foto | /it/casi-d-uso/riparazione-iphone-privacy-foto/ |
@@ -582,6 +672,7 @@ Regenerate with `node scripts/keyword-map.mjs`. The target keyword is each page�
 | creators-unreleased-content | proteggere foto inedite iphone | /it/casi-d-uso/proteggere-contenuti-inediti-iphone/ |
 | journalists-protecting-sources | giornalisti proteggere le fonti iphone | /it/casi-d-uso/giornalisti-proteggere-fonti/ |
 | velcrypt-vs-keepsafe | velcrypt vs keepsafe | /it/confronti/velcrypt-vs-keepsafe/ |
+| vaultaire-vs-keepsafe | vaultaire vs keepsafe | /it/confronti/vaultaire-vs-keepsafe/ |
 | velcrypt-vs-private-photo-vault | velcrypt vs private photo vault | /it/confronti/velcrypt-vs-private-photo-vault/ |
 | velcrypt-vs-calculator-vault-apps | app calcolatrice segreta vs velcrypt | /it/confronti/velcrypt-vs-calculator-vault-apps/ |
 | velcrypt-vs-iphone-hidden-album | album nascosti iphone vs velcrypt | /it/confronti/velcrypt-vs-iphone-hidden-album/ |
@@ -604,7 +695,7 @@ Regenerate with `node scripts/keyword-map.mjs`. The target keyword is each page�
 | press | velcrypt 보도 자료 | /ko/press/ |
 | pattern-lock | 아이폰 패턴 잠금 앱 | /ko/features/pattern-lock/ |
 | hidden-vaults | 아이폰 비밀 금고 앱 | /ko/features/hidden-vaults/ |
-| duress-pattern | 강압 패턴 금고 앱 | /ko/features/duress-pattern/ |
+| duress-pattern | 비상 패턴 금고 앱 | /ko/features/duress-pattern/ |
 | encryption | 아이폰 사진 암호화 앱 | /ko/features/encryption/ |
 | offline-no-account | 계정 없는 사진 금고 앱 | /ko/features/offline-no-account/ |
 | hide-photos | 아이폰 사진 숨기기 앱 | /ko/features/hide-photos/ |
@@ -628,16 +719,27 @@ Regenerate with `node scripts/keyword-map.mjs`. The target keyword is each page�
 | are-photo-vault-apps-safe | 사진 금고 앱 안전 | /ko/guides/are-photo-vault-apps-safe/ |
 | calculator-vault-apps-explained | 계산기 금고 앱 | /ko/guides/calculator-vault-apps-explained/ |
 | photo-vault-without-account | 계정 없는 사진 금고 | /ko/guides/photo-vault-without-account/ |
+| self-destruct-photo-vault | 자동 삭제 사진 금고 | /ko/guides/self-destruct-photo-vault/ |
 | delete-original-photos-after-import | 금고 가져온 후 원본 사진 삭제 | /ko/guides/delete-original-photos-after-import/ |
 | remove-photo-metadata-iphone | 아이폰 사진 위치 정보 삭제 | /ko/guides/remove-photo-metadata-iphone/ |
 | store-intimate-photos-safely-iphone | 아이폰 은밀한 사진 안전하게 보관 | /ko/guides/store-intimate-photos-safely-iphone/ |
 | phone-privacy-border-crossing | 입국 심사 휴대폰 검사 | /ko/guides/phone-privacy-border-crossing/ |
 | scan-documents-privately-iphone | 아이폰 문서 스캔 사진 저장 안 하기 | /ko/guides/scan-documents-privately-iphone/ |
+| forced-to-unlock-phone | 휴대폰 잠금 해제 강요 | /ko/guides/forced-to-unlock-phone/ |
 | pattern-lock-vs-pin-vs-face-id | 패턴 잠금 PIN 비교 | /ko/guides/pattern-lock-vs-pin-vs-face-id/ |
 | what-is-a-decoy-vault | 위장 금고 | /ko/guides/what-is-a-decoy-vault/ |
 | plausible-deniability-explained | 그럴듯한 부인 가능성 암호화 | /ko/guides/plausible-deniability-explained/ |
 | aes-256-encryption-explained | AES-256 암호화란 | /ko/guides/aes-256-encryption-explained/ |
 | forgot-vault-pattern | 사진 금고 비밀번호 분실 | /ko/guides/forgot-vault-pattern/ |
+| duress-password-explained | 비상 비밀번호 | /ko/guides/duress-password-explained/ |
+| set-up-decoy-vault-and-duress-pattern | 위장 금고 만드는 법 | /ko/guides/set-up-decoy-vault-and-duress-pattern/ |
+| icloud-shared-photo-library-privacy | icloud 공유 사진 보관함 | /ko/guides/icloud-shared-photo-library-privacy/ |
+| see-where-photo-was-taken-iphone | 아이폰 사진 위치 확인 | /ko/guides/see-where-photo-was-taken-iphone/ |
+| how-to-scan-documents-iphone | 아이폰 문서 스캔 | /ko/guides/how-to-scan-documents-iphone/ |
+| advanced-data-protection-uk | 고급 데이터 보호 영국 | /ko/guides/advanced-data-protection-uk/ |
+| icloud-access-data-on-web | 웹에서 icloud 데이터에 접근 | /ko/guides/icloud-access-data-on-web/ |
+| can-aes-256-be-cracked | AES 256 해독 | /ko/guides/can-aes-256-be-cracked/ |
+| lock-hide-apps-iphone | 아이폰 앱 잠금 | /ko/guides/lock-hide-apps-iphone/ |
 | sharing-phone-with-kids | 아이에게 휴대폰 빌려줄 때 사진 숨기기 | /ko/use-cases/sharing-phone-with-kids/ |
 | partner-scrolling-camera-roll | 애인이 내 폰 사진 볼 때 | /ko/use-cases/partner-scrolling-camera-roll/ |
 | phone-repair-privacy | 아이폰 수리 사진 개인정보 | /ko/use-cases/phone-repair-privacy/ |
@@ -649,6 +751,7 @@ Regenerate with `node scripts/keyword-map.mjs`. The target keyword is each page�
 | creators-unreleased-content | 아이폰 미공개 사진 보호 | /ko/use-cases/creators-unreleased-content/ |
 | journalists-protecting-sources | 기자 취재원 보호 아이폰 | /ko/use-cases/journalists-protecting-sources/ |
 | velcrypt-vs-keepsafe | keepsafe 비교 | /ko/compare/velcrypt-vs-keepsafe/ |
+| vaultaire-vs-keepsafe | vaultaire vs keepsafe | /ko/compare/vaultaire-vs-keepsafe/ |
 | velcrypt-vs-private-photo-vault | private photo vault 비교 | /ko/compare/velcrypt-vs-private-photo-vault/ |
 | velcrypt-vs-calculator-vault-apps | 계산기 사진 숨기기 앱 | /ko/compare/velcrypt-vs-calculator-vault-apps/ |
 | velcrypt-vs-iphone-hidden-album | 아이폰 사진 숨기기 | /ko/compare/velcrypt-vs-iphone-hidden-album/ |
@@ -695,16 +798,27 @@ Regenerate with `node scripts/keyword-map.mjs`. The target keyword is each page�
 | are-photo-vault-apps-safe | 私密相册 App 安全吗 | /zh-hans/guides/are-photo-vault-apps-safe/ |
 | calculator-vault-apps-explained | 计算器隐藏相册 App | /zh-hans/guides/calculator-vault-apps-explained/ |
 | photo-vault-without-account | 免注册私密相册 | /zh-hans/guides/photo-vault-without-account/ |
+| self-destruct-photo-vault | iPhone 自毁相册保险箱 | /zh-hans/guides/self-destruct-photo-vault/ |
 | delete-original-photos-after-import | 导入保险箱后删除原图 | /zh-hans/guides/delete-original-photos-after-import/ |
 | remove-photo-metadata-iphone | iPhone 照片去除位置信息 | /zh-hans/guides/remove-photo-metadata-iphone/ |
 | store-intimate-photos-safely-iphone | iPhone 私密照片安全存放 | /zh-hans/guides/store-intimate-photos-safely-iphone/ |
 | phone-privacy-border-crossing | 海关会检查手机吗 | /zh-hans/guides/phone-privacy-border-crossing/ |
 | scan-documents-privately-iphone | iPhone 私密扫描文件 | /zh-hans/guides/scan-documents-privately-iphone/ |
+| forced-to-unlock-phone | 被迫解锁手机怎么办 | /zh-hans/guides/forced-to-unlock-phone/ |
 | pattern-lock-vs-pin-vs-face-id | 图案锁和数字密码哪个安全 | /zh-hans/guides/pattern-lock-vs-pin-vs-face-id/ |
 | what-is-a-decoy-vault | 诱饵保险箱 | /zh-hans/guides/what-is-a-decoy-vault/ |
 | plausible-deniability-explained | 合理否认 加密 | /zh-hans/guides/plausible-deniability-explained/ |
 | aes-256-encryption-explained | AES-256 加密是什么 | /zh-hans/guides/aes-256-encryption-explained/ |
 | forgot-vault-pattern | 私密相册密码忘了怎么办 | /zh-hans/guides/forgot-vault-pattern/ |
+| duress-password-explained | 胁迫密码 | /zh-hans/guides/duress-password-explained/ |
+| set-up-decoy-vault-and-duress-pattern | 如何设置诱饵保险箱 | /zh-hans/guides/set-up-decoy-vault-and-duress-pattern/ |
+| icloud-shared-photo-library-privacy | icloud 共享照片图库 隐私 | /zh-hans/guides/icloud-shared-photo-library-privacy/ |
+| see-where-photo-was-taken-iphone | iphone 查看照片拍摄地点 | /zh-hans/guides/see-where-photo-was-taken-iphone/ |
+| how-to-scan-documents-iphone | iphone 扫描文件 | /zh-hans/guides/how-to-scan-documents-iphone/ |
+| advanced-data-protection-uk | 高级数据保护 英国 | /zh-hans/guides/advanced-data-protection-uk/ |
+| icloud-access-data-on-web | 在网页上访问 icloud 数据 | /zh-hans/guides/icloud-access-data-on-web/ |
+| can-aes-256-be-cracked | AES-256 能被破解吗 | /zh-hans/guides/can-aes-256-be-cracked/ |
+| lock-hide-apps-iphone | iphone app 上锁 | /zh-hans/guides/lock-hide-apps-iphone/ |
 | sharing-phone-with-kids | 孩子玩手机 照片隐私 | /zh-hans/use-cases/sharing-phone-with-kids/ |
 | partner-scrolling-camera-roll | 另一半翻我手机相册 | /zh-hans/use-cases/partner-scrolling-camera-roll/ |
 | phone-repair-privacy | iPhone 维修 照片隐私 | /zh-hans/use-cases/phone-repair-privacy/ |
@@ -716,6 +830,7 @@ Regenerate with `node scripts/keyword-map.mjs`. The target keyword is each page�
 | creators-unreleased-content | iPhone 未发布照片 隐私保护 | /zh-hans/use-cases/creators-unreleased-content/ |
 | journalists-protecting-sources | 记者 保护消息来源 手机 | /zh-hans/use-cases/journalists-protecting-sources/ |
 | velcrypt-vs-keepsafe | Velcrypt Keepsafe 对比 | /zh-hans/compare/velcrypt-vs-keepsafe/ |
+| vaultaire-vs-keepsafe | vaultaire vs keepsafe | /zh-hans/compare/vaultaire-vs-keepsafe/ |
 | velcrypt-vs-private-photo-vault | Velcrypt Private Photo Vault 对比 | /zh-hans/compare/velcrypt-vs-private-photo-vault/ |
 | velcrypt-vs-calculator-vault-apps | 计算器隐藏照片 App | /zh-hans/compare/velcrypt-vs-calculator-vault-apps/ |
 | velcrypt-vs-iphone-hidden-album | iPhone 隐藏照片 安全吗 | /zh-hans/compare/velcrypt-vs-iphone-hidden-album/ |
@@ -762,16 +877,27 @@ Regenerate with `node scripts/keyword-map.mjs`. The target keyword is each page�
 | are-photo-vault-apps-safe | zijn fotokluis apps veilig | /nl/gidsen/zijn-fotokluis-apps-veilig/ |
 | calculator-vault-apps-explained | rekenmachine kluis app | /nl/gidsen/rekenmachine-kluis-apps-uitgelegd/ |
 | photo-vault-without-account | fotokluis zonder account | /nl/gidsen/fotokluis-zonder-account/ |
+| self-destruct-photo-vault | zelfvernietigende fotokluis iphone | /nl/gidsen/zelfvernietigende-fotokluis-iphone/ |
 | delete-original-photos-after-import | foto's verwijderen na importeren in kluis | /nl/gidsen/originele-fotos-verwijderen-na-import/ |
 | remove-photo-metadata-iphone | exif gegevens verwijderen iphone | /nl/gidsen/exif-locatie-verwijderen-iphone-fotos/ |
 | store-intimate-photos-safely-iphone | intieme foto's veilig bewaren iphone | /nl/gidsen/intieme-fotos-veilig-bewaren-iphone/ |
 | phone-privacy-border-crossing | mag de douane mijn telefoon doorzoeken | /nl/gidsen/douane-telefoon-doorzoeken/ |
 | scan-documents-privately-iphone | documenten scannen iphone privé | /nl/gidsen/documenten-prive-scannen-iphone/ |
+| forced-to-unlock-phone | iemand dwingt me mijn telefoon te ontgrendelen | /nl/gidsen/gedwongen-telefoon-ontgrendelen/ |
 | pattern-lock-vs-pin-vs-face-id | patroonslot vs pincode | /nl/gidsen/patroon-vs-pincode-vs-face-id/ |
 | what-is-a-decoy-vault | lokkluis | /nl/gidsen/wat-is-een-lokkluis/ |
 | plausible-deniability-explained | plausibele ontkenning versleuteling | /nl/gidsen/plausibele-ontkenning-uitgelegd/ |
 | aes-256-encryption-explained | aes-256 versleuteling uitgelegd | /nl/gidsen/aes-256-versleuteling-uitgelegd/ |
 | forgot-vault-pattern | fotokluis wachtwoord vergeten | /nl/gidsen/fotokluis-wachtwoord-patroon-vergeten/ |
+| duress-password-explained | noodwachtwoord | /nl/gidsen/noodwachtwoord-uitgelegd/ |
+| set-up-decoy-vault-and-duress-pattern | lokkluis instellen | /nl/gidsen/lokkluis-en-dwangpatroon-instellen/ |
+| icloud-shared-photo-library-privacy | gedeelde icloud-fotobibliotheek | /nl/gidsen/gedeelde-icloud-fotobibliotheek/ |
+| see-where-photo-was-taken-iphone | locatie foto achterhalen iphone | /nl/gidsen/locatie-foto-achterhalen-iphone/ |
+| how-to-scan-documents-iphone | document scannen met iphone | /nl/gidsen/document-scannen-met-iphone/ |
+| advanced-data-protection-uk | geavanceerde databescherming verenigd koninkrijk | /nl/gidsen/geavanceerde-databescherming-verenigd-koninkrijk/ |
+| icloud-access-data-on-web | toegang tot icloud-gegevens op het web | /nl/gidsen/toegang-icloud-gegevens-op-het-web/ |
+| can-aes-256-be-cracked | kan aes 256 gekraakt worden | /nl/gidsen/kan-aes-256-gekraakt-worden/ |
+| lock-hide-apps-iphone | apps vergrendelen iphone | /nl/gidsen/apps-vergrendelen-verbergen-iphone/ |
 | sharing-phone-with-kids | foto's verbergen voor kinderen iphone | /nl/toepassingen/telefoon-delen-met-kinderen/ |
 | partner-scrolling-camera-roll | partner kijkt in mijn telefoon foto's | /nl/toepassingen/partner-kijkt-in-je-fotos/ |
 | phone-repair-privacy | iphone reparatie privacy foto's | /nl/toepassingen/iphone-reparatie-privacy/ |
@@ -783,6 +909,7 @@ Regenerate with `node scripts/keyword-map.mjs`. The target keyword is each page�
 | creators-unreleased-content | klantfoto's veilig bewaren iphone | /nl/toepassingen/onuitgebracht-werk-beschermen/ |
 | journalists-protecting-sources | journalist bronbescherming telefoon | /nl/toepassingen/journalisten-bronnen-beschermen/ |
 | velcrypt-vs-keepsafe | velcrypt vs keepsafe | /nl/vergelijken/velcrypt-vs-keepsafe/ |
+| vaultaire-vs-keepsafe | vaultaire vs keepsafe | /nl/vergelijken/vaultaire-vs-keepsafe/ |
 | velcrypt-vs-private-photo-vault | velcrypt vs private photo vault | /nl/vergelijken/velcrypt-vs-private-photo-vault/ |
 | velcrypt-vs-calculator-vault-apps | rekenmachine kluis app | /nl/vergelijken/velcrypt-vs-calculator-vault-apps/ |
 | velcrypt-vs-iphone-hidden-album | foto’s verbergen iphone album verborgen | /nl/vergelijken/velcrypt-vs-iphone-hidden-album/ |
@@ -805,7 +932,7 @@ Regenerate with `node scripts/keyword-map.mjs`. The target keyword is each page�
 | press | velcrypt pressmaterial | /sv/press/ |
 | pattern-lock | mönsterlås app iphone | /sv/funktioner/monsterlas-app-iphone/ |
 | hidden-vaults | dolda valv app iphone | /sv/funktioner/dolda-valv/ |
-| duress-pattern | tvångsmönster valvapp | /sv/funktioner/tvangsmonster/ |
+| duress-pattern | nödmönster valvapp | /sv/funktioner/tvangsmonster/ |
 | encryption | krypterat fotovalv iphone | /sv/funktioner/kryptering-fotovalv/ |
 | offline-no-account | fotovalv utan konto | /sv/funktioner/offline-fotovalv-utan-konto/ |
 | hide-photos | dölja bilder iphone app | /sv/funktioner/dolja-bilder-fotovalv/ |
@@ -829,16 +956,27 @@ Regenerate with `node scripts/keyword-map.mjs`. The target keyword is each page�
 | are-photo-vault-apps-safe | är fotovalv-appar säkra | /sv/guider/ar-fotovalv-appar-sakra/ |
 | calculator-vault-apps-explained | miniräknare app dölja bilder | /sv/guider/miniraknare-valv-appar/ |
 | photo-vault-without-account | fotovalv utan konto | /sv/guider/fotovalv-utan-konto/ |
+| self-destruct-photo-vault | självförstörande fotovalv iphone | /sv/guider/sjalvforstorande-fotovalv-iphone/ |
 | delete-original-photos-after-import | radera bilder efter import till valv | /sv/guider/radera-originalbilder-efter-import/ |
 | remove-photo-metadata-iphone | ta bort exif data iphone | /sv/guider/ta-bort-platsdata-bilder-iphone/ |
 | store-intimate-photos-safely-iphone | spara intima bilder säkert iphone | /sv/guider/spara-intima-bilder-sakert-iphone/ |
 | phone-privacy-border-crossing | får tullen kolla min mobil | /sv/guider/far-tullen-kolla-mobilen/ |
 | scan-documents-privately-iphone | skanna dokument privat iphone | /sv/guider/skanna-dokument-privat-iphone/ |
+| forced-to-unlock-phone | vad gör man om någon tvingar en att låsa upp mobilen | /sv/guider/tvingad-att-lasa-upp-mobilen/ |
 | pattern-lock-vs-pin-vs-face-id | mönsterlås eller pin-kod | /sv/guider/monsterlas-pin-eller-face-id/ |
 | what-is-a-decoy-vault | lockbetesvalv | /sv/guider/vad-ar-ett-lockbetesvalv/ |
 | plausible-deniability-explained | trovärdigt förnekande kryptering | /sv/guider/trovardigt-fornekande-kryptering/ |
 | aes-256-encryption-explained | aes-256 kryptering | /sv/guider/aes-256-kryptering-forklarad/ |
 | forgot-vault-pattern | glömt lösenord fotovalv | /sv/guider/glomt-monster-fotovalv/ |
+| duress-password-explained | nödlösenord | /sv/guider/nodlosenord-forklarat/ |
+| set-up-decoy-vault-and-duress-pattern | ställa in lockbetesvalv | /sv/guider/stalla-in-lockbetesvalv-och-nodmonster/ |
+| icloud-shared-photo-library-privacy | delat icloud-bildbibliotek | /sv/guider/delat-icloud-bildbibliotek/ |
+| see-where-photo-was-taken-iphone | se var bild är tagen iphone | /sv/guider/se-var-bild-ar-tagen-iphone/ |
+| how-to-scan-documents-iphone | skanna dokument iphone | /sv/guider/skanna-dokument-iphone/ |
+| advanced-data-protection-uk | avancerat dataskydd storbritannien | /sv/guider/avancerat-dataskydd-storbritannien/ |
+| icloud-access-data-on-web | kom åt icloud-data på webben | /sv/guider/kom-at-icloud-data-pa-webben/ |
+| can-aes-256-be-cracked | kan aes 256 knäckas | /sv/guider/kan-aes-256-knackas/ |
+| lock-hide-apps-iphone | låsa appar iphone | /sv/guider/lasa-gomma-appar-iphone/ |
 | sharing-phone-with-kids | dölja bilder för barn iphone | /sv/anvandningsfall/dela-iphone-med-barn/ |
 | partner-scrolling-camera-roll | partner kollar mina bilder i telefonen | /sv/anvandningsfall/partner-kollar-mina-bilder/ |
 | phone-repair-privacy | iphone reparation bilder integritet | /sv/anvandningsfall/iphone-reparation-skydda-bilder/ |
@@ -850,6 +988,7 @@ Regenerate with `node scripts/keyword-map.mjs`. The target keyword is each page�
 | creators-unreleased-content | skydda opublicerade bilder iphone | /sv/anvandningsfall/skydda-opublicerat-material/ |
 | journalists-protecting-sources | källskydd journalist iphone | /sv/anvandningsfall/kallskydd-journalister-iphone/ |
 | velcrypt-vs-keepsafe | velcrypt vs keepsafe | /sv/jamfor/velcrypt-vs-keepsafe/ |
+| vaultaire-vs-keepsafe | vaultaire vs keepsafe | /sv/jamfor/vaultaire-vs-keepsafe/ |
 | velcrypt-vs-private-photo-vault | velcrypt vs private photo vault | /sv/jamfor/velcrypt-vs-private-photo-vault/ |
 | velcrypt-vs-calculator-vault-apps | kalkylator app dölja bilder | /sv/jamfor/velcrypt-vs-calculator-vault-apps/ |
 | velcrypt-vs-iphone-hidden-album | dölja bilder iphone gömda album | /sv/jamfor/velcrypt-vs-iphone-hidden-album/ |

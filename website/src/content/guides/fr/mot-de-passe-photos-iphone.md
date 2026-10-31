@@ -1,7 +1,7 @@
 ---
 pageId: password-protect-photos-iphone
-title: "Mettre un mot de passe sur ses photos iPhone"
-description: "iOS ne permet pas de mot de passe par photo. Voici les vraies solutions pour protéger certaines photos sur iPhone, et ce que chacune protège vraiment."
+title: "Mettre un mot de passe sur ses photos iPhone : 3 solutions"
+description: "iOS ne verrouille pas une photo seule. 3 vraies solutions : album Masqués avec Face ID, note verrouillée ou coffre-fort chiffré, et ce que chacune protège."
 h1: "Comment mettre un mot de passe sur des photos iPhone"
 navTitle: "Mot de passe sur ses photos"
 answer: "iOS ne peut pas mettre de mot de passe sur une photo précise. Les options intégrées les plus proches sont de la masquer dans l’album Masqués verrouillé par Face ID, ou de l’ajouter à une note verrouillée avec son propre mot de passe Notes. Pour protéger certaines photos avec un secret autre que le code de l’appareil, copiez-les dans une app de coffre-fort chiffré et supprimez les originaux."
@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "mettre un mot de passe sur ses photos iphone"
 keywords: ["mot de passe photos iphone", "protéger une photo par mot de passe iphone", "mettre un code sur une photo iphone", "verrouiller une photo iphone", "photo protégée par mot de passe iphone"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-31
 summary: "Pourquoi iOS n’a pas de mot de passe par photo, et trois façons concrètes de mettre un vrai verrou sur certaines photos."
 category: hiding
 order: 4

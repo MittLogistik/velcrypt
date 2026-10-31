@@ -1,7 +1,7 @@
 ---
 pageId: duress-password-explained
-title: "Noodwachtwoord uitgelegd: wat een paniekcode doet"
-description: "Wat een noodwachtwoord, paniekcode of dwangcode is, waar het idee vandaan komt, hoe apps het gebruiken en hoe het dwangpatroon van Velcrypt werkt."
+title: "Noodwachtwoord: betekenis, codewoorden en noodpincodes"
+description: "Wat een noodwachtwoord betekent, hoe codewoorden en overvalcodes van alarmen werken, de mythe van de omgekeerde pincode en wat iPhone en Android bieden."
 h1: "Noodwachtwoorden, paniekcodes en dwangpatronen uitgelegd"
 navTitle: "Noodwachtwoorden uitgelegd"
 answer: "Een noodwachtwoord (ook paniekcode of dwangcode genoemd) is een tweede geheim dat je alleen gebruikt als iemand je dwingt iets te ontgrendelen. Het lijkt een gewone ontgrendeling, maar zet ongemerkt een beschermende actie in gang, zoals een stil alarm of het verwijderen van gevoelige gegevens. In Velcrypt opent het dwangpatroon een lokkluis en verwijdert het definitief alle andere kluizen op de iPhone."
@@ -12,11 +12,12 @@ keyFacts:
   - "In Velcrypt opent het dwangpatroon een lokkluis en verwijdert het definitief alle andere kluizen."
   - "Verwijderen is onomkeerbaar; alleen een eerder gemaakt back-upbestand brengt gegevens terug."
   - "Het is een hulpmiddel voor persoonlijke veiligheid, nooit een manier om bewijs te vernietigen of wettige bevelen te negeren."
+  - "De iPhone heeft geen ingebouwde dwangcode en de meeste Android-telefoons ook niet; GrapheneOS biedt een noodpincode die de telefoon wist."
 primaryKeyword: "noodwachtwoord"
-keywords: ["paniekcode", "dwangcode", "wat is een noodwachtwoord", "paniekwachtwoord telefoon", "dwangpatroon", "noodcode pincode"]
+keywords: ["paniekcode", "dwangcode", "wat is een noodwachtwoord", "noodwachtwoord betekenis", "codewoord bij gevaar", "codewoord voorbeelden", "overvalcode alarm", "noodpincode", "pincode omgekeerd intoetsen mythe", "dwangvingerafdruk", "dwangcode telefoon", "android duress pin", "grapheneos duress pin", "paniekwachtwoord telefoon", "dwangpatroon", "noodcode pincode"]
 datePublished: 2026-10-22
-dateModified: 2026-10-22
-summary: "Wat noodwachtwoorden en paniekcodes zijn, waar ze vandaan komen, hoe telefoonapps ze gebruiken en hoe het dwangpatroon van Velcrypt werkt."
+dateModified: 2026-10-31
+summary: "Wat noodwachtwoorden, codewoorden en noodpincodes zijn, wat iPhone en Android bieden en hoe het dwangpatroon van Velcrypt werkt."
 category: security
 order: 45
 related: [duress-pattern, what-is-a-decoy-vault, plausible-deniability-explained, forced-to-unlock-phone, self-destruct-photo-vault, set-up-decoy-vault-and-duress-pattern]
@@ -27,13 +28,17 @@ faq:
     a: "Ja, in het dagelijks gebruik betekenen ze hetzelfde. ‘Dwangcode’ of ‘overvalcode’ hoor je vaak bij alarmsystemen, ‘paniekcode’ of ‘noodwachtwoord’ bij apps en apparaten. Velcrypt gebruikt een patroon in plaats van een pincode en noemt zijn versie daarom een dwangpatroon."
   - q: "Belt je pincode omgekeerd intoetsen bij een geldautomaat de politie?"
     a: "Nee. Het verhaal over de ‘omgekeerde pincode’ is een hardnekkige mythe. Banken hebben zulke ideeën onderzocht en er zelfs patenten op aangevraagd, maar geldautomaten werken over het algemeen niet zo. Reken er niet op."
+  - q: "Wat is een codewoord bij gevaar?"
+    a: "Een codewoord is een gewoon klinkend woord of zinnetje, vooraf afgesproken, dat iemand laat weten dat je in de problemen zit zonder dat de persoon die je onder druk zet het merkt. Werkplekken, horeca (zoals de Britse actie ‘Ask for Angela’) en gezinnen gebruiken ze, elk met een afgesproken reactie."
+  - q: "Hebben iPhone of Android een ingebouwde noodpincode?"
+    a: "De iPhone heeft geen dwangcode. De zijknop en een volumeknop ingedrukt houden schakelt alleen Face ID uit tot de toegangscode wordt ingevoerd. De meeste Android-telefoons hebben er ook geen, al schakelt Lockdown de biometrie uit. GrapheneOS biedt een noodpincode die de hele telefoon wist."
   - q: "Wat doet het dwangpatroon van Velcrypt?"
     a: "Teken je het op het vergrendelscherm, dan opent het de lokkluis waarin je het hebt ingesteld en verwijdert het tegelijk ongemerkt en definitief alle andere kluizen op die iPhone. Het ontgrendelen ziet er hetzelfde uit en duurt even lang als normaal."
   - q: "Mag ik een noodwachtwoord gebruiken als politie of grensambtenaren toegang vragen?"
     a: "Gebruik het in die situatie niet om gegevens te verwijderen. Wetten verschillen per land, en gegevens verwijderen na een wettige eis kan zelf strafbaar zijn, bijvoorbeeld als vernietiging van bewijs of belemmering van het onderzoek. Vraag in plaats daarvan juridisch advies."
 ---
 
-De meeste beveiliging draait om vreemden buiten houden. Een noodwachtwoord gaat over een ander moment: als iemand naast je staat en je dwingt hem binnen te laten. Deze gids legt uit wat noodwachtwoorden zijn, waar het idee vandaan komt, hoe telefoonapps het gebruiken en hoe het dwangpatroon van Velcrypt werkt, inclusief de grenzen.
+De meeste beveiliging draait om vreemden buiten houden. Een noodwachtwoord gaat over een ander moment: als iemand naast je staat en je dwingt hem binnen te laten. Deze gids legt uit wat noodwachtwoorden zijn, waar het idee vandaan komt, hoe codewoorden werken, wat iPhone en Android bieden, hoe telefoonapps het gebruiken en hoe het dwangpatroon van Velcrypt werkt, inclusief de grenzen.
 
 ## Wat een noodwachtwoord is
 
@@ -53,15 +58,57 @@ Het bepalende kenmerk is dat de reactie **stil** is. Zou de code een sirene, een
 
 Veel alarmpanelen voor huizen en bedrijven ondersteunen een dwangcode. Je toetst hem in en het alarm gaat gewoon uit, zodat een indringer die je dwong het uit te schakelen niets vreemds ziet. Tegelijk waarschuwt het paneel ongemerkt de meldkamer dat je in de problemen zit.
 
+Overvalcodes van alarmsystemen werken meestal alleen met een aansluiting op een professionele meldkamer, en wie er een invoert, vraagt om een echte noodrespons, ook als het maar een test is. Alarmbedrijven en politie waarschuwen bovendien dat een code die te veel op je gewone code lijkt, vals alarm geeft. Kies er dus een die je niet kunt verwarren.
+
 ### Banken en beveiligde gebouwen
 
 Bankpersoneel heeft al lang stille alarmen en noodsignalen: een knop, een codewoord of een code die de beveiliging waarschuwt zonder dat de overvaller het merkt. Het doel is hetzelfde als bij alarmpanelen: aan de oppervlakte meewerken, eronder om hulp vragen.
 
-Misschien heb je gehoord dat je pincode omgekeerd intoetsen bij een geldautomaat de politie belt. Dat is een mythe. Het idee is besproken en zelfs gepatenteerd, maar geldautomaten werken over het algemeen niet zo, dus reken er niet op.
+Misschien heb je gehoord dat je pincode omgekeerd intoetsen bij een geldautomaat de politie belt. Dat is een mythe. Het idee gaat terug op een patent uit de jaren negentig voor een ‘noodpincode’, maar een rapport uit 2010 van medewerkers van de Amerikaanse Federal Trade Commission (FTC) stelde vast dat zulke systemen nooit bij geldautomaten in gebruik zijn genomen, en factcheckers hebben het kettingbericht al vaak ontkracht. Word je bij een geldautomaat beroofd, geef dan wat er gevraagd wordt als dat je veilig houdt, en bel daarna de politie en je bank.
 
 ### Versleutelingssoftware
 
 Programma's voor schijfversleuteling voegden een verwant idee toe: een tweede wachtwoord dat een geloofwaardig buitenste volume opent, terwijl een verborgen volume uit het zicht blijft. Dat is strikt genomen geen dwangcode, omdat er niets in gang wordt gezet, maar het deelt het doel om ‘gedeeltelijk toegeven’ veilig te maken. [Plausibele ontkenning uitgelegd](id:plausible-deniability-explained) vertelt die geschiedenis.
+
+## Codewoorden: de gesproken versie
+
+Een **codewoord** bij gevaar (Engels: *duress code word*) is een noodwachtwoord dat je uitspreekt in plaats van intoetst: een gewoon klinkend woord of zinnetje, vooraf afgesproken, dat betekent ‘het gaat niet goed, maar ik kan het niet zeggen’. Wie toevallig meeluistert, hoort een gewoon praatje. Wie de code kent, hoort een hulpvraag, en weet al wat te doen.
+
+Waar codewoorden worden gebruikt:
+
+- **Werkplekken en beveiligingsteams.** Banken, winkels, ziekenhuizen en beveiligers spreken vaak een zin af die je aan de telefoon of via de portofoon kunt zeggen waar een agressor bij staat, zodat een collega ongemerkt hulp haalt.
+- **Publieke veiligheidsacties.** In het Verenigd Koninkrijk doen veel bars en uitgaansgelegenheden mee aan ‘Ask for Angela’: wie zich onveilig voelt tijdens een date of een avond uit, vraagt het personeel naar ‘Angela’, en getraind personeel helpt discreet, bijvoorbeeld door een taxi te bellen. Deze code is bewust openbaar, zodat zaken er posters voor kunnen ophangen. Ook in andere landen bestaan vergelijkbare acties.
+- **Familie en vrienden.** Sommige gezinnen spreken een woord af dat een kind of familielid kan appen of aan de telefoon kan zeggen om ‘kom me halen’ of ‘haal hulp’ te bedoelen zonder iets uit te leggen. Veel gezinnen gebruiken tegenwoordig ook een *veiligheidswoord* om te controleren of een paniekerig telefoontje echt van een familielid komt en niet van een oplichter met een gekloonde stem. Dat is eerder een controlewoord dan een dwangcode, maar dezelfde regels gelden.
+
+Voorbeelden van het *soort* zin dat werkt (bedenk liever je eigen dan deze over te nemen):
+
+- vragen naar iemand die niet bestaat, zoals ‘Werkt Angela vanavond?’;
+- een vraag over een huisdier, familielid of klusje waarvan de luisteraar weet dat het niet klopt;
+- een ongewoon detail in een verder normale zin, zoals een kleur of een gerecht dat je nooit noemt.
+
+Een goed codewoord klinkt natuurlijk in het gesprek waarin je het zou gebruiken, valt nooit per ongeluk, hoort bij een afgesproken reactie (wie belt wie, en wat gebeurt er dan) en wordt af en toe geoefend zodat niemand het vergeet. Houd het voor jezelf: een code die online staat of bekend is bij de persoon voor wie je bang bent, werkt niet meer.
+
+## Noodpincodes op telefoons: wat iPhone en Android bieden
+
+Wie zoekt naar een ‘dwangcode voor de telefoon’, een ‘noodpincode’ of een ‘dwangvingerafdruk’, wil meestal weten of de eigen telefoon er een ingebouwd heeft. Het korte antwoord: de iPhone niet, en de meeste Android-telefoons ook niet.
+
+### iPhone
+
+- **Geen dwangcode.** iOS heeft geen tweede toegangscode die een lokruimte opent, een melding verstuurt of de telefoon wist.
+- **Noodmelding SOS schakelt Face ID uit.** Houd je de zijknop en een van de volumeknoppen ongeveer twee seconden ingedrukt, dan verschijnt het scherm voor uitschakelen en Noodmelding SOS. <!-- TODO verify iOS label --> Vanaf dan blijven Face ID en Touch ID uit tot de toegangscode wordt ingevoerd, zodat niemand de telefoon kan ontgrendelen door hem voor je gezicht te houden. Tik op Annuleer als je niet wilt bellen; afhankelijk van je instellingen kan langer vasthouden een noodoproep starten. [Wat je doet als iemand je dwingt je telefoon te ontgrendelen](id:forced-to-unlock-phone) legt dit verder uit.
+- **Wis gegevens is geen dwangcode.** De optie Wis gegevens in Instellingen → Face ID en toegangscode <!-- TODO verify iOS label --> wist de iPhone na 10 mislukte pogingen om de code in te voeren. Dat helpt tegen raden, niet tegen iemand die naast je staat en je code eist.
+- **Noodfuncties zitten in apps.** Omdat iOS geen systeembrede noodpincode heeft, hoort elke noodfunctie op de iPhone bij één app en bereikt die alleen de gegevens van die app. Het dwangpatroon van Velcrypt, hieronder, is een voorbeeld.
+
+### Android
+
+- **Lockdown.** Vanaf Android 9 bieden veel telefoons Lockdown aan in het aan/uit-menu; bij sommige merken zet je het eerst aan in de instellingen. <!-- TODO verify: Android label and Samsung One UI changes --> Het vergrendelt de telefoon en schakelt ontgrendelen met vingerafdruk en gezicht uit tot de pincode, het patroon of het wachtwoord wordt ingevoerd.
+- **Geen noodpincode in standaard-Android.** Android zoals Google, Samsung en de meeste andere fabrikanten het leveren, heeft geen ingebouwde noodpincode. <!-- TODO verify -->
+- **Noodpincode van GrapheneOS.** GrapheneOS, een op beveiliging gericht besturingssysteem voor ondersteunde Google Pixel-telefoons, heeft een noodpincode en een noodwachtwoord (*duress PIN*). Voer je een van beide in op een plek waar de telefoon om zijn inloggegevens vraagt, dan wordt het hele toestel inclusief eSIM's direct en onherroepelijk gewist. Dat beschermt de gegevens, maar daarna is duidelijk dat de telefoon is gereset.
+- **Apps van derden.** Enkele opensource-apps voor Android, zoals Duress en Wasted op F-Droid, letten op een noodwachtwoord op het vergrendelscherm en vergrendelen of wissen dan de telefoon, met toegankelijkheids- en apparaatbeheerdersrechten. Hoe betrouwbaar dat werkt, hangt af van de telefoon en de Android-versie. <!-- TODO verify -->
+
+### Wat een ‘dwangvingerafdruk’ betekent
+
+Een **dwangvingerafdruk** (*duress fingerprint*) is een specifieke vinger die als stil alarm is geregistreerd. Sommige biometrische toegangssystemen ondersteunen dat: je scant die vinger, de deur gaat gewoon open en er gaat een dwangalarm naar de beveiliging. Gangbare telefoons bieden dit niet. <!-- TODO verify --> Op een telefoon is biometrie onder dwang juist de zwakke plek, omdat iemand de telefoon voor je gezicht kan houden of je vinger op de sensor kan drukken. Daarom is het belangrijk dat je Face ID snel kunt uitschakelen, en daarom heeft Velcrypt [bewust geen ontgrendeling met Face ID](id:pattern-lock-vs-pin-vs-face-id).
 
 ## Hoe telefoonapps dwangcodes gebruiken
 

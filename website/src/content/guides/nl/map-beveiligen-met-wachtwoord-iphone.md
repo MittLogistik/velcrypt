@@ -53,7 +53,7 @@ iOS 18 voegde het vergrendelen van apps toe, waarmee elke keer dat een app opent
 
 Nu vraagt Bestanden om Face ID voordat er iets wordt getoond. Dit beschermt elke map in Bestanden, niet maar één, wat een voordeel of een ergernis is, afhankelijk van hoe vaak je de app gebruikt.
 
-De grenzen zijn de gebruikelijke voor ingebouwde sloten. Het alternatief is je toegangscode, dus wie die kent, opent Bestanden. Het slot geldt ook alleen voor de Bestanden-app; andere apps die bij dezelfde opslag kunnen, zoals cloudopslagapps of apps met eigen documentmappen, worden er niet door geraakt. Apples eigen apps kun je meestal niet naar de map met verborgen apps verplaatsen, dus Bestanden blijft zichtbaar op het apparaat.
+De grenzen zijn de gebruikelijke voor ingebouwde sloten. Het alternatief is je toegangscode, dus wie die kent, opent Bestanden. Het slot geldt ook alleen voor de Bestanden-app; andere apps die bij dezelfde opslag kunnen, zoals cloudopslagapps of apps met eigen documentmappen, worden er niet door geraakt. Apples eigen apps kun je meestal niet naar de map met verborgen apps verplaatsen, dus Bestanden blijft zichtbaar op het apparaat. Hoe appvergrendeling werkt voor andere apps, en waarom mappen op het beginscherm niet op slot kunnen, lees je in [apps vergrendelen en verbergen op je iPhone](id:lock-hide-apps-iphone).
 
 ## Optie 2: een vergrendelde notitie
 

@@ -134,6 +134,8 @@ No está garantizado que ADP esté disponible en todas partes. En febrero de 202
 
 Si no ves la opción en tus ajustes de iCloud, o aparece atenuada, consulta el [Soporte de Apple](https://support.apple.com/) para conocer el estado actual en tu región en lugar de fiarte de artículos antiguos.
 
+Para la cronología completa en Reino Unido y lo que sigue cifrado allí, consulta [Protección de datos avanzada en Reino Unido](id:advanced-data-protection-uk); para ver cómo cambia iCloud.com con ADP, lee [Acceso a los datos de iCloud en internet](id:icloud-access-data-on-web).
+
 ## Dónde encaja el cifrado en el dispositivo
 
 La Protección de datos avanzada y una bóveda en el dispositivo resuelven problemas distintos. ADP hace que tus datos de iCloud sean ilegibles para Apple sin dejar de sincronizarse y de poder recuperarse con tu propio método de recuperación. Una bóveda en el dispositivo evita que ciertos archivos lleguen a la nube y pone un secreto aparte entre ellos y cualquiera que pueda desbloquear tu teléfono.

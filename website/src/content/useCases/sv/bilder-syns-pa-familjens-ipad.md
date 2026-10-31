@@ -42,7 +42,7 @@ Många familjer ställer in den första iPaden med en förälders Apple-konto. �
 
 ### Delat iCloud-bildbibliotek
 
-Delat iCloud-bildbibliotek (iOS 16.1 och senare) är ett separat bibliotek som delas med upp till fem andra personer. Alla kan lägga till, redigera och radera. Beroende på dina inställningar kan Kamera lägga till bilder automatiskt, till exempel när familjemedlemmar är i närheten. Det är härligt för semesterbilder och mindre härligt för en skärmbild av ett recept.
+Delat iCloud-bildbibliotek (iOS 16.1 och senare) är ett separat bibliotek som delas med upp till fem andra personer. Alla kan lägga till, redigera och radera. Beroende på dina inställningar kan Kamera lägga till bilder automatiskt, till exempel när familjemedlemmar är i närheten. Det är härligt för semesterbilder och mindre härligt för en skärmbild av ett recept. I [guiden om delat iCloud-bildbibliotek](id:icloud-shared-photo-library-privacy) går vi igenom vad de andra deltagarna ser och hur du håller privata bilder utanför.
 
 ## Så skiljer du dem åt
 

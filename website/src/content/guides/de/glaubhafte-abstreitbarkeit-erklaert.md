@@ -1,7 +1,7 @@
 ---
 pageId: plausible-deniability-explained
-title: "Glaubhafte Abstreitbarkeit bei Verschlüsselung erklärt"
-description: "Was glaubhafte Abstreitbarkeit bei Verschlüsselung bedeutet, wie versteckte Volumes sie prägten, wie Velcrypt sie nutzt und wo die Idee ehrlich endet."
+title: "Glaubhafte Abstreitbarkeit (Plausible Deniability) erklärt"
+description: "Glaubhafte Abstreitbarkeit (engl. plausible deniability): Niemand kann beweisen, ob weitere versteckte Daten existieren. Bedeutung, Herkunft und Grenzen."
 h1: "Glaubhafte Abstreitbarkeit bei Verschlüsselung – einfach erklärt"
 navTitle: "Glaubhafte Abstreitbarkeit erklärt"
 answer: "Glaubhafte Abstreitbarkeit bei Verschlüsselung bedeutet: Selbst nachdem du etwas entsperrt hast, kann niemand beweisen, ob weitere versteckte Daten existieren. Velcrypt setzt das um, indem jedes Muster einen eigenen Tresor öffnet und unbekannte Muster einen leeren Tresor zeigen statt eines Fehlers. Dass verschlüsselte Daten auf dem Gerät liegen, verbirgt Velcrypt nicht."
@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "glaubhafte abstreitbarkeit verschlüsselung"
 keywords: ["was ist glaubhafte abstreitbarkeit", "abstreitbare verschlüsselung", "verstecktes volume erklärt", "plausible deniability foto tresor", "abstreitbarer tresor iphone"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-10-31
 summary: "Das Konzept hinter versteckten Volumes und Köder-Tresoren, wie Velcrypts Design mit unbekannten Mustern es nutzt – und was es ehrlicherweise nicht kann."
 category: security
 order: 42

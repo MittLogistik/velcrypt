@@ -1,7 +1,7 @@
 ---
 pageId: are-hidden-photos-saved-to-icloud
-title: "Sparas gömda bilder i iCloud? Så fungerar synken"
-description: "Med iCloud-bilder på synkas gömda bilder som alla andra. Se hur krypteringen skiljer sig, vad säkerhetskopian innehåller och hur du väljer bort."
+title: "Sparas gömda bilder i iCloud? Ja – så håller du dem borta"
+description: "Ja: med iCloud-bilder på laddas gömda bilder upp och synkas som alla andra. När de är totalsträckskrypterade och hur du håller dem utanför iCloud."
 h1: "Sparas gömda bilder i iCloud?"
 navTitle: "Gömda bilder och iCloud"
 answer: "Ja. Om iCloud-bilder är påslaget laddas gömda bilder och videor upp till iCloud och synkas till alla dina enheter, precis som resten av biblioteket. Med iCloud-bilder avstängt kan de ändå hamna i iCloud-säkerhetskopian. De är totalsträckskrypterade i iCloud bara när Avancerat dataskydd är aktiverat."
@@ -19,7 +19,7 @@ keywords:
   - "hålla bilder borta från icloud"
   - "gömda bilder på icloud.com"
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-10-31
 summary: "Gömda bilder synkas via iCloud-bilder och kan hamna i iCloud-säkerhetskopian. Så fungerar krypteringen i varje fall och så håller du en bild borta från iCloud."
 category: apple
 order: 11
@@ -92,7 +92,7 @@ Säkerhetskopior på datorn är en tredje väg. En säkerhetskopia som görs med
 
 Två funktioner kan flytta en bild utanför ditt personliga utrymme utan att du tänker på det som att ”ladda upp”:
 
-- **Delat bildbibliotek i iCloud** lägger utvalda bilder i ett bibliotek som upp till fem andra personer kan se och redigera. Ligger en bild i det delade biblioteket kan de andra deltagarna se den. Göm privata bilder först när du har säkerställt att de ligger i ditt personliga bibliotek. Vår [guide om iCloud i familjen](id:family-shared-icloud) går igenom detta.
+- **Delat bildbibliotek i iCloud** lägger utvalda bilder i ett bibliotek som upp till fem andra personer kan se och redigera. Ligger en bild i det delade biblioteket kan de andra deltagarna se den. Göm privata bilder först när du har säkerställt att de ligger i ditt personliga bibliotek. Vår [guide om iCloud i familjen](id:family-shared-icloud) går igenom detta. Vad de andra deltagarna kan se och göra går vi igenom i [guiden om delat iCloud-bildbibliotek](id:icloud-shared-photo-library-privacy).
 - **Delade album** är en separat funktion som enligt Apple inte omfattas av Avancerat dataskydd. Allt du lägger där bör betraktas som synligt för alla i albumet.
 
 ## Så håller du en bild borta från iCloud

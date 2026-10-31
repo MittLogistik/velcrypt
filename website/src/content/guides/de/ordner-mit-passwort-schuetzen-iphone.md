@@ -1,7 +1,7 @@
 ---
 pageId: password-protect-folder-iphone
-title: "Ordner mit Passwort schützen auf dem iPhone"
-description: "Die Dateien-App kann keine Ordner mit Passwort schützen. Sperre die App ab iOS 18, nutze gesperrte Notizen oder bewahre Dokumente in einem Tresor auf."
+title: "Ordner mit Passwort schützen auf dem iPhone: 3 echte Wege"
+description: "Die Dateien-App kann Ordner nicht mit Passwort schützen. Diese 3 Wege funktionieren: App sperren ab iOS 18, gesperrte Notiz oder verschlüsselter Tresor."
 h1: "Einen Ordner auf dem iPhone mit Passwort schützen"
 navTitle: "Ordner mit Passwort schützen"
 answer: "In der Dateien-App des iPhones kannst du keinen Ordner mit einem Passwort versehen. Am nächsten kommen das Sperren der ganzen Dateien-App mit „Face ID anfordern“ (ab iOS 18) oder eine gesperrte Notiz mit eigenem Passwort. Für Dokumente, die eine vom Code unabhängige Sperre brauchen, nutzt du eine verschlüsselte Tresor-App, die aus „Dateien“ importiert."
@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "ordner mit passwort schützen iphone"
 keywords: ["dateien app sperren iphone", "ordner sperren iphone", "ordner passwort iphone", "dateien mit passwort schützen iphone", "sicherer ordner iphone", "dateien verstecken iphone"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-31
 summary: "Was die Dateien-App sperren kann und was nicht – und praktische Wege, einen Ordner mit Dokumenten auf dem iPhone zu schützen."
 category: hiding
 order: 6
@@ -53,7 +53,7 @@ Mit iOS 18 kam die App-Sperre, die vor jedem Öffnen einer App eine Authentifizi
 
 Jetzt fragt „Dateien“ nach Face ID, bevor etwas angezeigt wird. Das schützt alle Ordner in „Dateien“, nicht nur einen – je nachdem, wie oft du die App nutzt, ist das ein Vorteil oder lästig.
 
-Die Grenzen sind die üblichen eingebauter Sperren. Die Alternative ist dein Gerätecode, wer ihn kennt, öffnet also auch „Dateien“. Außerdem gilt die Sperre nur für die Dateien-App; andere Apps mit Zugriff auf denselben Speicher, etwa Cloud-Speicher-Apps oder Apps mit eigenen Dokumentordnern, bleiben unberührt. Apples eigene Apps lassen sich in der Regel nicht in den Ordner für ausgeblendete Apps verschieben, „Dateien“ bleibt also auf dem Gerät sichtbar.
+Die Grenzen sind die üblichen eingebauter Sperren. Die Alternative ist dein Gerätecode, wer ihn kennt, öffnet also auch „Dateien“. Außerdem gilt die Sperre nur für die Dateien-App; andere Apps mit Zugriff auf denselben Speicher, etwa Cloud-Speicher-Apps oder Apps mit eigenen Dokumentordnern, bleiben unberührt. Apples eigene Apps lassen sich in der Regel nicht in den Ordner für ausgeblendete Apps verschieben, „Dateien“ bleibt also auf dem Gerät sichtbar. Wie die App-Sperre bei anderen Apps funktioniert und warum sich Ordner auf dem Home-Bildschirm nicht sperren lassen, erklärt [Apps auf dem iPhone sperren und ausblenden](id:lock-hide-apps-iphone).
 
 ## Option 2: eine gesperrte Notiz
 

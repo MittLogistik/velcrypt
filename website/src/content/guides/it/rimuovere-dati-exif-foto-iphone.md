@@ -45,6 +45,8 @@ faq:
 
 Ogni foto che scatti con l’iPhone porta con sé un piccolo file di informazioni nascoste. Il più delle volte è utile: Foto può ordinare le immagini per luogo e data. Ma quando condividi una foto con uno sconosciuto, un acquirente o su internet, può rivelare molto più di quanto volevi, compreso il punto esatto in cui abiti.
 
+Per controllare prima cosa rivela una foto, vedi [come vedere dove è stata scattata una foto](id:see-where-photo-was-taken-iphone).
+
 ## Cosa contengono i metadati EXIF
 
 EXIF (Exchangeable Image File Format) è uno standard per conservare informazioni dentro un file immagine, accanto ai pixel. In una foto dell’iPhone può includere:

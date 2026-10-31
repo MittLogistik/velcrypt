@@ -134,6 +134,8 @@ Não há garantia de que o recurso esteja disponível em todo lugar. Em fevereir
 
 Se a opção não aparece nos seus ajustes do iCloud, ou aparece acinzentada, consulte o [Suporte da Apple](https://support.apple.com/) para saber o status atual na sua região, em vez de confiar em artigos antigos.
 
+Para a cronologia completa no Reino Unido e o que continua com criptografia de ponta a ponta por lá, veja [Proteção Avançada de Dados no Reino Unido](id:advanced-data-protection-uk); para saber como a ADP muda o iCloud.com, leia [Acessar os Dados do iCloud na Web](id:icloud-access-data-on-web).
+
 ## Onde entra a criptografia no aparelho
 
 A Proteção Avançada de Dados e um cofre no aparelho resolvem problemas diferentes. A Proteção Avançada de Dados mantém seus dados do iCloud ilegíveis para a Apple e ainda permite que eles sincronizem e sejam recuperados pelo seu próprio método de recuperação. Um cofre no aparelho impede que certos arquivos vão para a nuvem e coloca um segredo separado entre eles e qualquer pessoa que consiga desbloquear seu celular.

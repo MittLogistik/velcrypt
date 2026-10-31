@@ -82,7 +82,7 @@ Kvantdatorer hotar viss kryptografi allvarligt och annan bara lite.
 - **Asymmetriska algoritmer** som RSA och elliptisk kurvkryptografi skulle kunna knäckas med Shors algoritm på en tillräckligt stor kvantdator. Därför rullas kvantsäkert nyckelutbyte ut i hela branschen.
 - **Symmetriska chiffer** som AES möter Grovers algoritm, som ger en kvadratisk uppsnabbning av totalsökning. I praktiken halveras ungefär den effektiva nyckellängden: AES-256 skulle ge omkring 128-bitars säkerhet mot en kvantangripare.
 
-128-bitars säkerhet räknas fortfarande som starkt. Det är ett skäl till att AES-256 rekommenderas för data som måste förbli konfidentiell länge.
+128-bitars säkerhet räknas fortfarande som starkt. Det är ett skäl till att AES-256 rekommenderas för data som måste förbli konfidentiell länge. Räkneexemplet bakom siffrorna, kända attacker och vad NIST och nationella myndigheter säger finns i [kan AES-256 knäckas?](id:can-aes-256-be-cracked).
 
 ## Vanliga missuppfattningar
 

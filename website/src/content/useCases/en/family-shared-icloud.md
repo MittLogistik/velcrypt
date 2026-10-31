@@ -42,7 +42,7 @@ Many families set up the first iPad with a parent’s Apple Account. If iCloud P
 
 ### iCloud Shared Photo Library
 
-iCloud Shared Photo Library (iOS 16.1 and later) is a separate library shared with up to five other people. Everyone can add, edit and delete. Depending on your settings, the Camera can add photos to it automatically — for example when family members are nearby. That’s lovely for holiday photos and less lovely for a screenshot of a prescription.
+iCloud Shared Photo Library (iOS 16.1 and later) is a separate library shared with up to five other people. Everyone can add, edit and delete. Depending on your settings, the Camera can add photos to it automatically — for example when family members are nearby. That’s lovely for holiday photos and less lovely for a screenshot of a prescription. Our guide to [iCloud Shared Photo Library privacy](id:icloud-shared-photo-library-privacy) shows exactly what other participants can see and how to keep private photos out.
 
 ## How to separate things
 

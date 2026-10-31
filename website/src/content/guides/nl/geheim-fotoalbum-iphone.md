@@ -1,7 +1,7 @@
 ---
 pageId: secret-photo-album-iphone
-title: "Geheim fotoalbum op je iPhone: wat echt werkt"
-description: "Zo maak je een geheim fotoalbum of geheime map op je iPhone: het album Verborgen, het uit beeld halen, waarom gewone albums niet op slot kunnen en kluizen."
+title: "Geheim fotoalbum op iPhone: zo verberg en vergrendel je het"
+description: "Het album Verborgen is het geheime album van je iPhone. Zo haal je het uit beeld, waarom eigen albums niet op slot kunnen en wanneer je een kluis wilt."
 h1: "Een geheim fotoalbum maken op je iPhone"
 navTitle: "Geheim fotoalbum op iPhone"
 answer: "Het ingebouwde geheime album van de iPhone is het album Verborgen: verberg foto's via Meer (•••) › Verberg en zet daarna Toon album Verborgen uit in de instellingen van Foto's, zodat het album uit beeld verdwijnt. Gewone albums die je zelf maakt, kun je niet verbergen of vergrendelen. Voor een geheime map die niemand met je toegangscode opent, gebruik je een versleutelde kluisapp."
@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "geheim fotoalbum iphone"
 keywords: ["geheime map iphone", "geheim album iphone", "verborgen map iphone", "privéalbum maken op iphone", "geheime foto's iphone", "privé album iphone"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-10-31
 summary: "Maak een echt geheim fotoalbum op je iPhone en vermijd de bekende trucs die alleen geheim lijken."
 category: hiding
 order: 5

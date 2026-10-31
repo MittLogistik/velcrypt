@@ -1,7 +1,7 @@
 ---
 pageId: are-hidden-photos-saved-to-icloud
-title: "Are Hidden Photos Saved to iCloud? How Sync Really Works"
-description: "With iCloud Photos on, hidden photos sync like any other. See how encryption differs by setting, what iCloud Backup includes and how to opt out."
+title: "Are Hidden Photos Saved to iCloud? Yes – How to Opt Out"
+description: "Yes. With iCloud Photos on, hidden photos upload and sync to all devices and can land in iCloud Backup. When they're encrypted and how to keep them out."
 h1: "Are hidden photos saved to iCloud?"
 navTitle: "Hidden photos and iCloud"
 answer: "Yes. If iCloud Photos is turned on, hidden photos and videos upload to iCloud and sync to all your devices, just like the rest of your library. With iCloud Photos off, they can still end up in iCloud Backup. They are end-to-end encrypted in iCloud only when Advanced Data Protection is enabled."
@@ -19,7 +19,7 @@ keywords:
   - "keep photos off icloud"
   - "hidden photos on icloud.com"
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-10-31
 summary: "Hidden photos sync through iCloud Photos and can land in iCloud Backup. Here is how encryption works in each case and how to keep a photo off iCloud."
 category: apple
 order: 11
@@ -88,7 +88,7 @@ Computer backups are a third route. A backup made with Finder on a Mac or with A
 
 Two features can move a photo outside your personal space without you thinking of it as “uploading”:
 
-- **iCloud Shared Photo Library** puts selected photos into a library that up to five other people can see and edit. If a photo is in the Shared Library, the other participants can see it. Hide private photos only after making sure they are in your Personal Library. Our [family iCloud guide](id:family-shared-icloud) covers this.
+- **iCloud Shared Photo Library** puts selected photos into a library that up to five other people can see and edit. If a photo is in the Shared Library, the other participants can see it. Hide private photos only after making sure they are in your Personal Library. Our [family iCloud guide](id:family-shared-icloud) covers this. For what the other participants can see and do, read [iCloud Shared Photo Library privacy](id:icloud-shared-photo-library-privacy).
 - **Shared Albums** are a separate feature and, according to Apple, are not covered by Advanced Data Protection. Anything you add there should be considered visible to everyone in the album.
 
 ## How to keep a photo out of iCloud

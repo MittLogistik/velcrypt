@@ -45,6 +45,8 @@ faq:
 
 Elke foto die je met een iPhone maakt, draagt een klein bestandje verborgen informatie mee. Meestal is dat handig: Foto's kan je afbeeldingen sorteren op plaats en datum. Deel je een foto met een onbekende, een koper of het internet, dan kan hij veel meer verraden dan je wilde, zoals precies waar je woont.
 
+Wil je eerst nagaan wat een foto verraadt, lees dan [hoe je de locatie van een foto achterhaalt](id:see-where-photo-was-taken-iphone).
+
 ## Wat EXIF-metadata bevat
 
 EXIF (Exchangeable Image File Format) is een standaard om informatie naast de pixels in een afbeeldingsbestand op te slaan. In een iPhone-foto kan het bevatten:

@@ -1,7 +1,7 @@
 ---
 pageId: are-hidden-photos-saved-to-icloud
-title: "Staan verborgen foto's in iCloud? Zo werkt de sync"
-description: "Met iCloud-foto's aan synchroniseren verborgen foto's als alle andere. Zo verschilt versleuteling per instelling en zo houd je foto's uit iCloud."
+title: "Staan verborgen foto's in iCloud? Ja – zo houd je ze eruit"
+description: "Ja: met iCloud-foto's aan worden verborgen foto's geüpload en gesynchroniseerd. Wanneer ze end-to-end versleuteld zijn en hoe je ze uit iCloud houdt."
 h1: "Worden verborgen foto's in iCloud opgeslagen?"
 navTitle: "Verborgen foto's en iCloud"
 answer: "Ja. Staat iCloud-foto's aan, dan worden verborgen foto's en video's naar iCloud geüpload en synchroniseren ze naar al je apparaten, net als de rest van je bibliotheek. Met iCloud-foto's uit kunnen ze nog in de iCloud-reservekopie belanden. Ze zijn in iCloud alleen end-to-end versleuteld als Geavanceerde databescherming aanstaat."
@@ -19,7 +19,7 @@ keywords:
   - "foto's niet in icloud zetten"
   - "verborgen foto's op icloud.com"
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-10-31
 summary: "Verborgen foto's synchroniseren via iCloud-foto's en kunnen in de iCloud-reservekopie belanden. Zo werkt versleuteling en zo houd je een foto uit iCloud."
 category: apple
 order: 11
@@ -92,7 +92,7 @@ Computerback-ups zijn een derde route. Een back-up die je maakt met de Finder op
 
 Twee functies kunnen een foto buiten je persoonlijke ruimte brengen zonder dat je het als „uploaden” ziet:
 
-- **Gedeelde iCloud-fotobibliotheek** zet geselecteerde foto's in een bibliotheek die maximaal vijf andere mensen kunnen zien en bewerken. Staat een foto in de gedeelde bibliotheek, dan zien de andere deelnemers hem. Verberg privéfoto's pas nadat je hebt gecontroleerd dat ze in je persoonlijke bibliotheek staan. Onze [gids over iCloud in het gezin](id:family-shared-icloud) behandelt dit.
+- **Gedeelde iCloud-fotobibliotheek** zet geselecteerde foto's in een bibliotheek die maximaal vijf andere mensen kunnen zien en bewerken. Staat een foto in de gedeelde bibliotheek, dan zien de andere deelnemers hem. Verberg privéfoto's pas nadat je hebt gecontroleerd dat ze in je persoonlijke bibliotheek staan. Onze [gids over iCloud in het gezin](id:family-shared-icloud) behandelt dit. Wat de andere deelnemers precies kunnen zien en doen, lees je in [onze gids over de gedeelde iCloud-fotobibliotheek](id:icloud-shared-photo-library-privacy).
 - **Gedeelde albums** zijn een aparte functie en vallen volgens Apple niet onder Geavanceerde databescherming. Beschouw alles wat je daar toevoegt als zichtbaar voor iedereen in het album.
 
 ## Een foto uit iCloud houden

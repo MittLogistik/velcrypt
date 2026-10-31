@@ -1,7 +1,7 @@
 ---
 pageId: are-hidden-photos-saved-to-icloud
-title: "Le foto nascoste finiscono su iCloud? Come funziona"
-description: "Con iCloud Foto attivo, le foto nascoste si sincronizzano come le altre. Come cambia la crittografia, cosa include il backup iCloud e come evitarlo."
+title: "Le foto nascoste finiscono su iCloud? Sì: ecco come evitarlo"
+description: "Sì: con iCloud Foto attivo le foto nascoste vengono caricate e sincronizzate come le altre. Quando sono cifrate end-to-end e come tenerle fuori da iCloud."
 h1: "Le foto nascoste vengono salvate su iCloud?"
 navTitle: "Foto nascoste e iCloud"
 answer: "Sì. Se iCloud Foto è attivo, foto e video nascosti vengono caricati su iCloud e sincronizzati su tutti i tuoi dispositivi, esattamente come il resto della libreria. Con iCloud Foto disattivato possono comunque finire nel backup di iCloud. Su iCloud sono cifrati end-to-end solo se la Protezione avanzata dei dati è attiva."
@@ -19,7 +19,7 @@ keywords:
   - "tenere le foto fuori da icloud"
   - "foto nascoste su icloud.com"
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-10-31
 summary: "Le foto nascoste si sincronizzano con iCloud Foto e possono finire nel backup di iCloud. Come funziona la crittografia e come tenerne fuori una foto."
 category: apple
 order: 11
@@ -92,7 +92,7 @@ I backup sul computer sono una terza via. Un backup fatto con il Finder su Mac o
 
 Due funzioni possono portare una foto fuori dal tuo spazio personale senza che tu lo consideri un «caricamento»:
 
-- **La Libreria foto condivisa di iCloud** mette le foto selezionate in una libreria che fino a cinque altre persone possono vedere e modificare. Se una foto è nella Libreria condivisa, gli altri partecipanti la vedono. Nascondi le foto private solo dopo esserti assicurato che siano nella tua Libreria personale. La nostra [guida a iCloud in famiglia](id:family-shared-icloud) ne parla.
+- **La Libreria foto condivisa di iCloud** mette le foto selezionate in una libreria che fino a cinque altre persone possono vedere e modificare. Se una foto è nella Libreria condivisa, gli altri partecipanti la vedono. Nascondi le foto private solo dopo esserti assicurato che siano nella tua Libreria personale. La nostra [guida a iCloud in famiglia](id:family-shared-icloud) ne parla. Cosa possono vedere e fare gli altri partecipanti lo spieghiamo nella [guida alla Libreria foto condivisa su iCloud](id:icloud-shared-photo-library-privacy).
 - **Gli album condivisi** sono una funzione separata e, secondo Apple, non sono coperti dalla Protezione avanzata dei dati. Tutto ciò che aggiungi lì va considerato visibile a tutti i membri dell’album.
 
 ## Come tenere una foto fuori da iCloud

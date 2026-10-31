@@ -53,7 +53,7 @@ iOS 18 ha aggiunto il blocco delle app, che mette una richiesta di autenticazion
 
 Ora File chiede Face ID prima di mostrare qualsiasi cosa. Questo protegge tutte le cartelle di File, non solo una: un vantaggio o un fastidio, a seconda di quanto spesso lo usi.
 
-I limiti sono quelli tipici dei blocchi integrati. L’alternativa è il codice del dispositivo, quindi chi lo conosce può aprire File. Il blocco vale inoltre solo per l’app File; le altre app che accedono agli stessi spazi, come le app di archiviazione cloud o le app con cartelle di documenti proprie, non sono interessate. Le app di Apple in genere non si possono spostare nella cartella delle app nascoste, quindi File resta visibile sul dispositivo.
+I limiti sono quelli tipici dei blocchi integrati. L’alternativa è il codice del dispositivo, quindi chi lo conosce può aprire File. Il blocco vale inoltre solo per l’app File; le altre app che accedono agli stessi spazi, come le app di archiviazione cloud o le app con cartelle di documenti proprie, non sono interessate. Le app di Apple in genere non si possono spostare nella cartella delle app nascoste, quindi File resta visibile sul dispositivo. Come funziona il blocco per le altre app, e perché le cartelle della schermata Home non si possono bloccare, lo spieghiamo in [come bloccare e nascondere le app su iPhone](id:lock-hide-apps-iphone).
 
 ## Opzione 2: una nota protetta
 

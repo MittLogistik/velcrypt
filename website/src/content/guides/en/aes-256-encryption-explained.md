@@ -82,7 +82,7 @@ Quantum computers threaten some cryptography badly and other cryptography only m
 - **Public-key algorithms** like RSA and elliptic-curve cryptography could be broken by Shor’s algorithm on a sufficiently large quantum computer. That is why post-quantum key exchange is being rolled out across the industry.
 - **Symmetric ciphers** like AES face Grover’s algorithm, which offers a quadratic speed-up for brute-force search. In practice, that roughly halves the effective key length: AES-256 would offer about 128-bit security against a quantum attacker.
 
-128-bit security is still considered strong. That is one reason AES-256 is recommended for data that needs to stay confidential for a long time.
+128-bit security is still considered strong. That is one reason AES-256 is recommended for data that needs to stay confidential for a long time. The arithmetic behind these numbers, the known attacks and what NIST and national agencies say are in [can AES-256 be cracked?](id:can-aes-256-be-cracked).
 
 ## Common misconceptions
 

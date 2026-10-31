@@ -58,6 +58,8 @@ howTo:
 
 Il tuo iPhone è uno scanner capace, comodo per la pagina di un passaporto, un contratto d’affitto o un referto. Il problema è che il modo più ovvio per farlo, scattare una foto, mette una copia del documento nella libreria foto, su iCloud e magari nei Ricordi o in un album condiviso. Qualche piccolo cambiamento nel modo in cui scansioni tiene i documenti delicati dove vuoi tu.
 
+Se ti servono solo i passaggi di base per scansionare un documento qualsiasi, parti dalla nostra guida generale su [come scansionare un documento con iPhone](id:how-to-scan-documents-iphone).
+
 ## Perché non scattare semplicemente una foto?
 
 Una foto di un documento viene trattata come qualsiasi altra foto. Compare nel rullino, si sincronizza tramite iCloud Foto, può essere trovata dalla ricerca (iOS riconosce il testo nelle foto) e qualsiasi app con accesso completo alle foto può leggerla. Anche se poi la nascondi, si sincronizza comunque, come spiegato in [le foto nascoste vengono salvate su iCloud?](id:are-hidden-photos-saved-to-icloud)

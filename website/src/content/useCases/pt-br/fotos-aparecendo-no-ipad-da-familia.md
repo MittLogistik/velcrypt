@@ -42,7 +42,7 @@ Muitas famílias configuram o primeiro iPad com a Conta Apple de um dos pais. Se
 
 ### Fototeca Compartilhada do iCloud
 
-A Fototeca Compartilhada do iCloud (iOS 16.1 e posteriores) é uma biblioteca separada, compartilhada com até cinco outras pessoas. Todo mundo pode adicionar, editar e apagar. Dependendo dos seus ajustes, a Câmera pode adicionar fotos a ela automaticamente — por exemplo, quando outros membros da família estão por perto. Isso é ótimo para fotos de férias e nem tanto para o print de uma receita médica.
+A Fototeca Compartilhada do iCloud (iOS 16.1 e posteriores) é uma biblioteca separada, compartilhada com até cinco outras pessoas. Todo mundo pode adicionar, editar e apagar. Dependendo dos seus ajustes, a Câmera pode adicionar fotos a ela automaticamente — por exemplo, quando outros membros da família estão por perto. Isso é ótimo para fotos de férias e nem tanto para o print de uma receita médica. O [guia da Fototeca Compartilhada do iCloud](id:icloud-shared-photo-library-privacy) mostra o que os outros participantes veem e como deixar as fotos privadas de fora.
 
 ## Como separar as coisas
 

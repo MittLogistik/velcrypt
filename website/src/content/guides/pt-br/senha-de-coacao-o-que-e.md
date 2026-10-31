@@ -1,7 +1,7 @@
 ---
 pageId: duress-password-explained
-title: "Senha de coação: o que é e para que serve a senha de pânico"
-description: "O que é uma senha de coação, senha de pânico ou código de coação, de onde vem a ideia, como os apps de celular a usam e como funciona o padrão de coação."
+title: "Senha de coação: o que é, como funciona e quando usar"
+description: "Senha de coação (ou senha de pânico) é um segundo segredo para quando forçam você a desbloquear algo. De onde vem, como apps a usam e o padrão de coação."
 h1: "Senha de coação, senha de pânico e padrão de coação, explicados"
 navTitle: "Senha de coação explicada"
 answer: "Uma senha de coação (também chamada de senha de pânico ou código de coação) é um segundo segredo que você só usa quando alguém obriga você a desbloquear algo. Ela parece um desbloqueio normal, mas dispara em silêncio uma ação de proteção, como um alarme silencioso ou a exclusão de dados sensíveis. No Velcrypt, o padrão de coação abre um cofre de fachada e apaga de forma permanente todos os outros cofres do iPhone."
@@ -12,11 +12,12 @@ keyFacts:
   - "No Velcrypt, o padrão de coação abre um cofre de fachada e apaga de forma permanente todos os outros cofres."
   - "A exclusão é irreversível; só um arquivo de backup feito antes traz os dados de volta."
   - "É uma ferramenta de segurança pessoal, nunca um jeito de destruir provas ou desafiar ordens legais."
+  - "O iPhone não tem senha de coação nativa e a maioria dos Android também não; o GrapheneOS oferece um PIN de coação que apaga o celular."
 primaryKeyword: "senha de coação"
-keywords: ["senha de pânico", "código de coação", "o que é senha de coação", "senha de pânico celular", "padrão de coação"]
+keywords: ["senha de pânico", "código de coação", "o que é senha de coação", "senha de coação significado", "palavra-código de coação", "exemplos de palavra-código de emergência", "pin de coação", "senha de coação alarme", "senha invertida caixa eletrônico mito", "digital de coação", "senha de coação celular", "pin de coação android", "grapheneos pin de coação", "senha de pânico celular", "padrão de coação"]
 datePublished: 2026-10-22
-dateModified: 2026-10-22
-summary: "O que são senhas de coação e senhas de pânico, de onde vêm, como os apps de celular as usam e como funciona o padrão de coação do Velcrypt."
+dateModified: 2026-10-31
+summary: "O que são senhas, palavras-código e PINs de coação, o que iPhone e Android oferecem e como funciona o padrão de coação do Velcrypt."
 category: security
 order: 45
 related: [duress-pattern, what-is-a-decoy-vault, plausible-deniability-explained, forced-to-unlock-phone, self-destruct-photo-vault, set-up-decoy-vault-and-duress-pattern]
@@ -27,13 +28,17 @@ faq:
     a: "Sim, no uso do dia a dia os termos querem dizer a mesma coisa. “Código de coação” é comum em sistemas de alarme; “senha de pânico” ou “PIN de coação”, em apps e aparelhos. O Velcrypt usa um padrão em vez de um PIN, então chama a sua versão de padrão de coação."
   - q: "Digitar a senha do cartão ao contrário no caixa eletrônico chama a polícia?"
     a: "Não. A história da “senha invertida” é um mito antigo. Bancos já estudaram e patentearam ideias parecidas, mas os caixas eletrônicos em geral não funcionam assim. Não conte com isso."
+  - q: "O que é uma palavra-código de coação?"
+    a: "É uma palavra ou frase de aparência comum, combinada antes, que avisa alguém de que você está em perigo sem que a pessoa que está pressionando perceba. Locais de trabalho, bares (como a campanha britânica “Ask for Angela”) e famílias usam palavras assim, cada um com uma resposta combinada."
+  - q: "O iPhone ou o Android têm um PIN de coação nativo?"
+    a: "O iPhone não tem senha de coação. Manter pressionados o botão lateral e um botão de volume só desativa o Face ID até que o código seja digitado. A maioria dos Android também não tem, embora o modo de bloqueio desative a biometria. O GrapheneOS oferece um PIN de coação que apaga o celular inteiro."
   - q: "O que o padrão de coação do Velcrypt faz?"
     a: "Desenhá-lo na tela de bloqueio abre o cofre de fachada em que ele foi configurado e, ao mesmo tempo, apaga em silêncio e de forma permanente todos os outros cofres daquele iPhone. O desbloqueio parece igual e leva o mesmo tempo que o normal."
   - q: "Posso usar uma senha de coação quando a polícia ou agentes de fronteira pedem acesso?"
     a: "Você não deve usá-la para apagar dados nessa situação. As leis variam conforme o país, e apagar dados diante de uma exigência legal pode ser crime por si só, como destruição de provas ou obstrução. Procure orientação jurídica."
 ---
 
-A maior parte da segurança serve para manter estranhos do lado de fora. Uma senha de coação trata de outro momento: quando alguém está do seu lado e obriga você a deixá-lo entrar. Este guia explica o que são senhas de coação, de onde vem a ideia, como os apps de celular a usam e como funciona o padrão de coação do Velcrypt, incluindo os limites.
+A maior parte da segurança serve para manter estranhos do lado de fora. Uma senha de coação trata de outro momento: quando alguém está do seu lado e obriga você a deixá-lo entrar. Este guia explica o que são senhas de coação, de onde vem a ideia, como funcionam as palavras-código de coação, o que o iPhone e o Android oferecem, como os apps de celular a usam e como funciona o padrão de coação do Velcrypt, incluindo os limites.
 
 ## O que é uma senha de coação
 
@@ -53,15 +58,57 @@ A característica que define tudo é que a resposta é **silenciosa**. Se digita
 
 Muitas centrais de alarme residenciais e comerciais aceitam um código de coação. Você o digita no teclado e o alarme desliga como sempre, então um invasor que obrigou você a desarmá-lo não vê nada de estranho. Ao mesmo tempo, a central avisa discretamente a empresa de monitoramento de que você está em apuros.
 
+Senhas de coação de alarme normalmente só funcionam com monitoramento profissional, e digitar uma pede um atendimento de emergência de verdade, mesmo que seja só um teste. Empresas de alarme e a polícia também alertam que um código muito parecido com o normal causa alarmes falsos, então escolha um que você não vá confundir.
+
 ### Bancos e instalações de segurança
 
 Funcionários de banco há muito tempo contam com alarmes silenciosos e sinais de coação: um botão, uma palavra-código ou um código que alerta a segurança sem alertar o assaltante. O objetivo é o mesmo das centrais de alarme: cooperar na aparência e pedir ajuda por baixo.
 
-Talvez você já tenha ouvido que digitar a senha do cartão ao contrário no caixa eletrônico chama a polícia. É mito. A ideia já foi discutida e até patenteada, mas os caixas eletrônicos em geral não funcionam assim, então não conte com isso.
+Talvez você já tenha ouvido que digitar a senha do cartão ao contrário no caixa eletrônico chama a polícia. É mito. A ideia vem de uma patente dos anos 1990 para uma “senha de emergência”, mas um relatório de 2010 da equipe da Comissão Federal de Comércio dos EUA (FTC) concluiu que esse tipo de sistema nunca foi instalado em caixas eletrônicos, e checadores de fatos já desmentiram a corrente muitas vezes. Se você for assaltado no caixa, entregue o que pedirem se isso mantiver você em segurança e, depois, ligue para a polícia e para o seu banco.
 
 ### Software de criptografia
 
 Ferramentas de criptografia de disco trouxeram uma ideia parecida: uma segunda senha que abre um volume externo convincente enquanto um volume oculto fica fora de vista. Isso não é um código de coação no sentido estrito, porque nada é disparado, mas tem o mesmo objetivo de tornar seguro “ceder em parte”. [Negação plausível, explicada](id:plausible-deniability-explained) conta essa história.
+
+## Palavras-código de coação: a versão falada
+
+Uma **palavra-código de coação** é uma senha de coação que você fala em vez de digitar: uma palavra ou frase de aparência comum, combinada antes, que quer dizer “não estou bem, mas não posso falar”. Quem ouve por acaso escuta uma conversa qualquer. Quem conhece o código escuta um pedido de ajuda, e já sabe o que fazer.
+
+Onde elas são usadas:
+
+- **Locais de trabalho e equipes de segurança.** Bancos, lojas, hospitais e seguranças costumam combinar uma frase que pode ser dita ao telefone ou pelo rádio na frente de um agressor, para que um colega peça ajuda sem ninguém perceber.
+- **Campanhas de segurança pública.** No Reino Unido, muitos bares e casas noturnas participam da campanha “Ask for Angela”: quem se sente inseguro num encontro ou numa noitada pergunta à equipe pela “Angela”, e funcionários treinados ajudam com discrição, por exemplo chamando um táxi. Esse código é público de propósito, para que os locais possam divulgá-lo em cartazes. Campanhas inspiradas nele existem em outros países.
+- **Famílias e amigos.** Algumas famílias combinam uma palavra que um filho ou parente pode mandar por mensagem ou dizer numa ligação para dizer “venha me buscar” ou “peça ajuda” sem explicar o motivo. Muitas famílias também usam hoje uma *palavra de segurança* para confirmar que uma ligação desesperada vem mesmo de um parente, e não de um golpista que clona vozes. É mais uma palavra de verificação do que um código de coação, mas as mesmas regras valem.
+
+Exemplos do *tipo* de frase que funciona (crie a sua em vez de copiar estas):
+
+- perguntar por uma pessoa que não existe, como “A Angela está trabalhando hoje?”;
+- uma pergunta sobre um bicho de estimação, um parente ou uma tarefa que quem ouve sabe que está errada;
+- um detalhe estranho numa frase normal, como uma cor ou uma comida que você nunca menciona.
+
+Uma boa palavra-código de coação soa natural na conversa em que você a usaria, nunca aparece por acaso, vem com uma resposta combinada (quem liga para quem e o que acontece depois) e é relembrada de vez em quando para ninguém esquecer. Guarde-a só para quem precisa: um código publicado na internet, ou conhecido pela pessoa de quem você tem medo, deixa de funcionar.
+
+## PIN de coação no celular: o que o iPhone e o Android oferecem
+
+Quem procura por “código de coação no celular”, “PIN de coação” ou “digital de coação” geralmente quer saber se o próprio aparelho já vem com isso. A resposta curta: o iPhone não, e a maioria dos Android também não.
+
+### iPhone
+
+- **Sem senha de coação.** O iOS não tem um segundo código que abra uma fachada, dispare um alerta ou apague o celular.
+- **O SOS de Emergência desativa o Face ID.** Manter pressionados o botão lateral e qualquer um dos botões de volume por cerca de dois segundos abre a tela de desligar e de SOS de Emergência. <!-- TODO verify iOS label --> A partir daí, o Face ID e o Touch ID ficam desativados até que o código seja digitado, então ninguém consegue desbloquear o celular apontando-o para o seu rosto. Toque em Cancelar se não quiser ligar; dependendo dos seus ajustes, segurar por mais tempo pode iniciar uma ligação de emergência. [O que fazer se alguém obrigar você a desbloquear o celular](id:forced-to-unlock-phone) explica isso em mais detalhes.
+- **Apagar Dados não é uma senha de coação.** A opção Apagar Dados, em Ajustes → Face ID e Código <!-- TODO verify iOS label -->, apaga o iPhone depois de 10 tentativas erradas de código. Ela protege contra quem tenta adivinhar, não contra alguém ao seu lado exigindo o código.
+- **Funções de coação ficam dentro dos apps.** Como o iOS não tem um PIN de coação para o sistema todo, qualquer função de coação no iPhone pertence a um único app e só alcança os dados dele. O padrão de coação do Velcrypt, mais abaixo, é um exemplo.
+
+### Android
+
+- **Modo de bloqueio.** No Android 9 e posteriores, muitos celulares oferecem o modo de bloqueio (“Lockdown”) no menu de desligar; em algumas marcas é preciso ativá-lo antes nas configurações. <!-- TODO verify: Android label and Samsung One UI changes --> Ele bloqueia o celular e desativa o desbloqueio por digital e por rosto até que o PIN, o padrão ou a senha sejam digitados.
+- **Sem PIN de coação no Android padrão.** O Android que vem nos aparelhos do Google, da Samsung e da maioria dos fabricantes não tem PIN de coação nativo. <!-- TODO verify -->
+- **PIN de coação do GrapheneOS.** O GrapheneOS, um sistema operacional focado em segurança para celulares Google Pixel compatíveis, tem um PIN e uma senha de coação. Digitar qualquer um deles em qualquer lugar onde o celular peça as credenciais apaga o aparelho inteiro, incluindo eSIMs, na hora e de forma irreversível. Isso protege os dados, mas depois fica óbvio que o celular foi redefinido.
+- **Apps de terceiros.** Alguns apps Android de código aberto, como Duress e Wasted no F-Droid, observam se uma senha de coação é digitada na tela de bloqueio e então bloqueiam ou apagam o celular, usando permissões de acessibilidade e de administrador do dispositivo. A confiabilidade depende do aparelho e da versão do Android. <!-- TODO verify -->
+
+### O que significa “digital de coação”
+
+Uma **digital de coação** é um dedo específico cadastrado como alarme silencioso. Alguns sistemas biométricos de controle de acesso oferecem isso: você escaneia esse dedo, a porta abre normalmente e um alarme de coação vai para a segurança. Os celulares comuns não oferecem isso. <!-- TODO verify --> No celular, a biometria é justamente o ponto fraco sob coação, porque alguém pode apontar o aparelho para o seu rosto ou pressionar seu dedo no sensor. Por isso vale saber desativar o Face ID rápido, e por isso o Velcrypt [não tem desbloqueio por Face ID, de propósito](id:pattern-lock-vs-pin-vs-face-id).
 
 ## Como os apps de celular usam códigos de coação
 

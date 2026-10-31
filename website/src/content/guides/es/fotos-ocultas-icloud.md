@@ -1,7 +1,7 @@
 ---
 pageId: are-hidden-photos-saved-to-icloud
-title: "¿Las fotos ocultas se guardan en iCloud? Así se sincronizan"
-description: "Con Fotos en iCloud activado, las fotos ocultas se sincronizan como las demás. Cómo cambia el cifrado, qué incluye la copia y cómo evitarlo."
+title: "¿Las fotos ocultas se guardan en iCloud? Sí, y así lo evitas"
+description: "Sí: con Fotos en iCloud activado, las fotos ocultas se suben y se sincronizan. Cuándo van cifradas de extremo a extremo y cómo dejarlas fuera de iCloud."
 h1: "¿Las fotos ocultas se guardan en iCloud?"
 navTitle: "Fotos ocultas e iCloud"
 answer: "Sí. Si Fotos en iCloud está activado, las fotos y los videos ocultos se suben a iCloud y se sincronizan con todos tus dispositivos, igual que el resto de tu fototeca. Con Fotos en iCloud desactivado, aun así pueden acabar en la copia de seguridad de iCloud. En iCloud solo tienen cifrado de extremo a extremo si la Protección de datos avanzada está activada."
@@ -19,7 +19,7 @@ keywords:
   - "evitar que las fotos se suban a icloud"
   - "fotos ocultas en icloud.com"
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-10-31
 summary: "Las fotos ocultas se sincronizan con Fotos en iCloud y pueden acabar en la copia de iCloud. Cómo se cifran en cada caso y cómo dejar una foto fuera de iCloud."
 category: apple
 order: 11
@@ -92,7 +92,7 @@ Las copias de seguridad en el ordenador son una tercera vía. Una copia hecha co
 
 Dos funciones pueden sacar una foto de tu espacio personal sin que lo percibas como «subirla»:
 
-- **La fototeca compartida de iCloud** pone las fotos seleccionadas en una fototeca que hasta otras cinco personas pueden ver y editar. Si una foto está en la fototeca compartida, los demás participantes pueden verla. Oculta las fotos privadas solo después de asegurarte de que están en tu fototeca personal. Nuestra [guía de iCloud en familia](id:family-shared-icloud) lo explica.
+- **La fototeca compartida de iCloud** pone las fotos seleccionadas en una fototeca que hasta otras cinco personas pueden ver y editar. Si una foto está en la fototeca compartida, los demás participantes pueden verla. Oculta las fotos privadas solo después de asegurarte de que están en tu fototeca personal. Nuestra [guía de iCloud en familia](id:family-shared-icloud) lo explica. Qué pueden ver y hacer exactamente los demás lo explicamos en [la guía de la fototeca compartida de iCloud](id:icloud-shared-photo-library-privacy).
 - **Los álbumes compartidos** son una función aparte y, según Apple, no están cubiertos por la Protección de datos avanzada. Todo lo que añadas ahí debe considerarse visible para todos los miembros del álbum.
 
 ## Cómo dejar una foto fuera de iCloud

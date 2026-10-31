@@ -1,7 +1,7 @@
 ---
 pageId: phone-privacy-border-crossing
-title: "海关能查我的手机吗？过境隐私指南"
-description: "边检人员能检查你的手机吗？一份总体概览、出行前的 iPhone 准备清单、诱饵保险箱的适用范围，以及不该越过的道德底线。"
+title: "海关会检查手机吗？出入境前的iPhone隐私清单"
+description: "在许多国家，边检检查手机的权力比国内警察更大。出发前的iPhone准备清单、检查时该怎么做、诱饵保险箱何时适用，以及不该越过的道德底线。"
 h1: "海关能检查我的手机吗？过境时的手机隐私"
 navTitle: "过境时的手机隐私"
 answer: "在许多国家，边检人员检查手机的权力比国内警察更大，而且各国规定差异很大。你可以通过少带数据、关闭生物识别、在检查前关机，来减少可能暴露的内容。不要对执法人员撒谎；了解自己的权利，在关键时刻寻求法律意见。"
@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "海关会检查手机吗"
 keywords: ["入境查手机", "过海关手机隐私", "出国旅行手机隐私清单", "海关检查 iPhone", "快速关闭面容 ID"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-31
 summary: "边境设备检查的总体情况、iPhone 准备清单、诱饵保险箱的适用范围，以及不应越过的道德底线。"
 category: practical
 order: 33

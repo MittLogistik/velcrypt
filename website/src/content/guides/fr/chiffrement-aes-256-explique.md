@@ -82,7 +82,7 @@ Les ordinateurs quantiques menacent gravement certaines cryptographies, et d’a
 - **Les algorithmes à clé publique** comme RSA et la cryptographie sur courbes elliptiques pourraient être cassés par l’algorithme de Shor sur un ordinateur quantique suffisamment puissant. C’est pourquoi l’échange de clés post-quantique se déploie dans tout le secteur.
 - **Les chiffrements symétriques** comme l’AES font face à l’algorithme de Grover, qui accélère quadratiquement la recherche par force brute. En pratique, cela divise à peu près par deux la longueur effective de la clé : l’AES-256 offrirait environ 128 bits de sécurité face à un attaquant quantique.
 
-Une sécurité de 128 bits reste considérée comme solide. C’est l’une des raisons pour lesquelles l’AES-256 est recommandé pour les données qui doivent rester confidentielles longtemps.
+Une sécurité de 128 bits reste considérée comme solide. C’est l’une des raisons pour lesquelles l’AES-256 est recommandé pour les données qui doivent rester confidentielles longtemps. Le calcul derrière ces chiffres, les attaques connues et la position du NIST et des agences nationales sont détaillés dans [peut-on casser l’AES-256 ?](id:can-aes-256-be-cracked).
 
 ## Idées reçues
 

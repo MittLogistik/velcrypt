@@ -58,6 +58,8 @@ howTo:
 
 Je iPhone is een prima scanner, handig voor een paspoortpagina, een huurcontract of een labuitslag. Het probleem is dat de voor de hand liggende manier, een foto maken, een kopie van dat document in je fotobibliotheek zet, in iCloud, en mogelijk in Herinneringen of een gedeeld album. Een paar kleine aanpassingen in hoe je scant, houden gevoelige papieren waar jij ze wilt hebben.
 
+Zoek je alleen de basisstappen om een document te scannen, begin dan met onze algemene gids over [een document scannen met je iPhone](id:how-to-scan-documents-iphone).
+
 ## Waarom niet gewoon een foto maken?
 
 Een foto van een document wordt behandeld als elke andere foto. Hij verschijnt in je camerarol, synchroniseert via iCloud-foto's, kan door zoeken worden gevonden (iOS herkent tekst in foto's) en elke app met volledige toegang tot je foto's kan hem lezen. Verberg je hem daarna, dan synchroniseert hij nog steeds, zoals uitgelegd in [worden verborgen foto's in iCloud opgeslagen?](id:are-hidden-photos-saved-to-icloud)
@@ -122,7 +124,7 @@ Veel scannerapps in de App Store bieden tekstherkenning, cloudopslag of automati
 
 Een notitie vergrendelen of een pdf in Op mijn iPhone bewaren is een goed begin, maar iedereen die je telefoon kan ontgrendelen, kan Bestanden nog openen. Voor identiteitsbewijzen, medische dossiers en alles wat je absoluut niet uitgelekt wilt zien, voegt een versleutelde kluis een apart geheim toe.
 
-Velcrypt kan documenten uit de Bestanden-app importeren in een versleutelde kluis ([privédocumenten](id:private-documents)). Bestanden worden op het apparaat versleuteld met AES-256-GCM, met sleutels die van je ontgrendelpatroon zijn afgeleid, en er wordt niets geüpload ([offline, zonder account](id:offline-no-account)). Velcrypt heeft geen ingebouwde scanner of camera, dus je scant eerst met Bestanden of Notities en importeert daarna de pdf.
+Velcrypt kan documenten uit de Bestanden-app importeren in een versleutelde kluis ([privédocumenten](id:private-documents)). Bestanden worden op het apparaat versleuteld met AES-256-GCM, met sleutels die van je ontgrendelpatroon zijn afgeleid, en er wordt niets geüpload ([offline, zonder account](id:offline-no-account)). Velcrypt heeft geen ingebouwde documentscanner. Met de camera in de kluis kun je een document direct in de kluis fotograferen, maar voor een echte pdf-scan gebruik je eerst Bestanden of Notities en importeer je daarna de pdf.
 
 Bedenk dat kluisinhoud niet in iCloud- of computerback-ups zit. Is een origineel document onvervangbaar, bewaar dan de papieren versie of maak via Instellingen → Back-up een versleuteld back-upbestand en bewaar dat op een plek die jij beheert. Onze [toepassing over medische en identiteitsdocumenten](id:medical-and-id-documents) behandelt die afweging.
 

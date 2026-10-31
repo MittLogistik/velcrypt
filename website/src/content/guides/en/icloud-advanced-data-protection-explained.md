@@ -132,6 +132,8 @@ ADP isn’t guaranteed to be available everywhere. In February 2025 Apple stoppe
 
 If you don’t see the option in your iCloud settings, or it is greyed out, check [Apple Support](https://support.apple.com/) for the current status in your region rather than relying on older articles.
 
+For the full UK timeline and what stays end-to-end encrypted there, see [Advanced Data Protection in the UK](id:advanced-data-protection-uk); for how ADP changes iCloud.com, see [Access iCloud Data on the Web](id:icloud-access-data-on-web).
+
 ## Where on-device encryption fits
 
 Advanced Data Protection and an on-device vault solve different problems. ADP keeps your iCloud data unreadable to Apple while still letting it sync and be recovered through your own recovery method. An on-device vault keeps certain files from going to the cloud at all and puts a separate secret between them and anyone who can unlock your phone.

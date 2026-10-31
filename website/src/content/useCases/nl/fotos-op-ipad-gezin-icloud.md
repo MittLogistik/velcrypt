@@ -42,7 +42,7 @@ Veel gezinnen stellen de eerste iPad in met het Apple Account van een ouder. Sta
 
 ### Gedeelde iCloud-fotobibliotheek
 
-De gedeelde iCloud-fotobibliotheek (iOS 16.1 en later) is een aparte bibliotheek die je deelt met maximaal vijf andere mensen. Iedereen kan toevoegen, bewerken en verwijderen. Afhankelijk van je instellingen kan de Camera er automatisch foto's aan toevoegen, bijvoorbeeld als gezinsleden in de buurt zijn. Heel fijn voor vakantiefoto's, minder fijn voor een screenshot van een recept.
+De gedeelde iCloud-fotobibliotheek (iOS 16.1 en later) is een aparte bibliotheek die je deelt met maximaal vijf andere mensen. Iedereen kan toevoegen, bewerken en verwijderen. Afhankelijk van je instellingen kan de Camera er automatisch foto's aan toevoegen, bijvoorbeeld als gezinsleden in de buurt zijn. Heel fijn voor vakantiefoto's, minder fijn voor een screenshot van een recept. In [onze gids over de gedeelde iCloud-fotobibliotheek](id:icloud-shared-photo-library-privacy) lees je wat de andere deelnemers zien en hoe je privéfoto's erbuiten houdt.
 
 ## Zo haal je alles uit elkaar
 

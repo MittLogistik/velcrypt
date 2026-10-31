@@ -51,7 +51,7 @@ iOS 18 added app locking, which puts an authentication prompt in front of an app
 
 Now Files asks for Face ID before showing anything. This protects every folder in Files, not just one, which is either a feature or an annoyance depending on how often you use it.
 
-The limits are the usual ones for built-in locks. The fallback is your device passcode, so anyone who knows it can open Files. The lock also applies only to the Files app; other apps that can access the same storage, such as cloud storage apps or apps with their own document folders, are unaffected. Apple’s own apps generally can’t be moved into the Hidden apps folder, so Files remains visible on the device.
+The limits are the usual ones for built-in locks. The fallback is your device passcode, so anyone who knows it can open Files. The lock also applies only to the Files app; other apps that can access the same storage, such as cloud storage apps or apps with their own document folders, are unaffected. Apple’s own apps generally can’t be moved into the Hidden apps folder, so Files remains visible on the device. How app locking works for other apps, and why Home Screen folders can’t be locked, is covered in [how to lock and hide apps on iPhone](id:lock-hide-apps-iphone).
 
 ## Option 2: a locked note
 

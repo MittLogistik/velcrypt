@@ -42,7 +42,7 @@ Beaucoup de familles configurent le premier iPad avec le compte Apple d’un par
 
 ### La Photothèque partagée iCloud
 
-La Photothèque partagée iCloud (iOS 16.1 et ultérieur) est une photothèque distincte, partagée avec jusqu’à cinq autres personnes. Chacun peut ajouter, modifier et supprimer. Selon vos réglages, l’Appareil photo peut y ajouter des photos automatiquement — par exemple quand des membres de la famille sont à proximité. C’est formidable pour les photos de vacances, beaucoup moins pour la capture d’écran d’une ordonnance.
+La Photothèque partagée iCloud (iOS 16.1 et ultérieur) est une photothèque distincte, partagée avec jusqu’à cinq autres personnes. Chacun peut ajouter, modifier et supprimer. Selon vos réglages, l’Appareil photo peut y ajouter des photos automatiquement — par exemple quand des membres de la famille sont à proximité. C’est formidable pour les photos de vacances, beaucoup moins pour la capture d’écran d’une ordonnance. Notre [guide de la photothèque partagée iCloud](id:icloud-shared-photo-library-privacy) détaille ce que voient les autres participants et comment garder vos photos privées à l’écart.
 
 ## Comment séparer les choses
 

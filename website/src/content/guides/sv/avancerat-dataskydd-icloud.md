@@ -134,6 +134,8 @@ Avancerat dataskydd är inte garanterat tillgängligt överallt. I februari 2025
 
 Ser du inte alternativet i dina iCloud-inställningar, eller är det gråmarkerat, kontrollera [Apple Support](https://support.apple.com/) för aktuell status i din region i stället för att lita på äldre artiklar.
 
+Hela tidslinjen för Storbritannien och vad som fortfarande är totalsträckskrypterat där hittar du i [Avancerat dataskydd i Storbritannien](id:advanced-data-protection-uk); hur ADP påverkar iCloud.com förklarar vi i [Kom åt iCloud-data på webben](id:icloud-access-data-on-web).
+
 ## Var kryptering på enheten passar in
 
 Avancerat dataskydd och ett valv på enheten löser olika problem. Avancerat dataskydd gör dina iCloud-data oläsbara för Apple men låter dem fortfarande synkas och återställas med din egen återställningsmetod. Ett valv på enheten hindrar vissa filer från att nå molnet över huvud taget och sätter en separat hemlighet mellan dem och alla som kan låsa upp din telefon.

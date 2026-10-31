@@ -53,7 +53,7 @@ O iOS 18 trouxe o bloqueio de apps, que coloca um pedido de autenticação na fr
 
 Agora o Arquivos pede Face ID antes de mostrar qualquer coisa. Isso protege todas as pastas do Arquivos, não só uma, o que é vantagem ou incômodo dependendo de quanto você usa o app.
 
-Os limites são os de sempre dos bloqueios nativos. A alternativa é o código do aparelho, então quem sabe esse código abre o Arquivos. O bloqueio também vale só para o app Arquivos; outros apps que acessam o mesmo armazenamento, como apps de nuvem ou apps com pastas de documentos próprias, não são afetados. Os apps da própria Apple em geral não podem ir para a pasta de apps ocultos, então o Arquivos continua visível no aparelho.
+Os limites são os de sempre dos bloqueios nativos. A alternativa é o código do aparelho, então quem sabe esse código abre o Arquivos. O bloqueio também vale só para o app Arquivos; outros apps que acessam o mesmo armazenamento, como apps de nuvem ou apps com pastas de documentos próprias, não são afetados. Os apps da própria Apple em geral não podem ir para a pasta de apps ocultos, então o Arquivos continua visível no aparelho. Como o bloqueio funciona em outros apps, e por que pastas da Tela de Início não podem ser bloqueadas, está em [como bloquear e ocultar apps no iPhone](id:lock-hide-apps-iphone).
 
 ## Opção 2: uma nota bloqueada
 

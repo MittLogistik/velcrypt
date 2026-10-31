@@ -82,7 +82,7 @@ Quantencomputer bedrohen manche Kryptografie stark, andere nur wenig.
 - **Public-Key-Verfahren** wie RSA und elliptische Kurven könnten mit Shors Algorithmus auf einem ausreichend großen Quantencomputer gebrochen werden. Deshalb wird branchenweit Post-Quanten-Schlüsselaustausch eingeführt.
 - **Symmetrische Chiffren** wie AES haben es mit Grovers Algorithmus zu tun, der die Brute-Force-Suche quadratisch beschleunigt. Praktisch halbiert das ungefähr die effektive Schlüssellänge: AES-256 böte gegen einen Quantenangreifer etwa 128-Bit-Sicherheit.
 
-128-Bit-Sicherheit gilt weiterhin als stark. Das ist ein Grund, warum AES-256 für Daten empfohlen wird, die lange vertraulich bleiben müssen.
+128-Bit-Sicherheit gilt weiterhin als stark. Das ist ein Grund, warum AES-256 für Daten empfohlen wird, die lange vertraulich bleiben müssen. Die Rechnung dahinter, bekannte Angriffe und die Position von NIST und BSI findest du unter [Kann man AES-256 knacken?](id:can-aes-256-be-cracked).
 
 ## Verbreitete Irrtümer
 

@@ -1,7 +1,7 @@
 ---
 pageId: auto-lock
-title: "Automatische Sperre: Tresor sperrt beim Verlassen der App"
-description: "Velcrypt sperrt deinen Tresor, wenn die App in den Hintergrund geht, nach einer wählbaren Verzögerung, und verbirgt Inhalte im App-Umschalter."
+title: "Automatische Sperre der App: sofort oder mit Verzögerung"
+description: "Velcrypt sperrt deinen Tresor, sobald die App in den Hintergrund geht – sofort oder nach einer Verzögerung – und verbirgt Inhalte im App-Umschalter."
 h1: "Automatische Sperre: Der Tresor schließt, wenn du gehst"
 navTitle: "Automatische Sperre"
 answer: "Velcrypt sperrt den offenen Tresor automatisch, wenn die App in den Hintergrund geht – nach einer Verzögerung, die du einstellen kannst. Tresorinhalte werden außerdem im App-Umschalter des iPhone verborgen, sodass ein kurzes Wischen nach oben nicht verrät, was du dir angesehen hast."
@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "app automatisch sperren iphone"
 keywords: ["foto tresor automatische sperre", "app umschalter vorschau verbergen", "app sperrt beim schließen iphone", "tresor im hintergrund sperren", "verzögerung automatische sperre"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-31
 summary: "Der Tresor sperrt, wenn die App in den Hintergrund geht, nach einer Verzögerung deiner Wahl, und bleibt im App-Umschalter leer."
 status: available
 schemaType: WebPage

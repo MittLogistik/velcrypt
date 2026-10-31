@@ -58,6 +58,8 @@ howTo:
 
 Tu iPhone es un escáner muy capaz, algo práctico para la página de un pasaporte, un contrato de alquiler o unos análisis. El problema es que la forma obvia de hacerlo, sacar una foto, mete una copia de ese documento en tu fototeca, en iCloud y quizá en Recuerdos o en un álbum compartido. Unos pequeños cambios en la forma de escanear mantienen los papeles delicados donde tú quieres.
 
+Si solo necesitas los pasos básicos para escanear cualquier documento, empieza por nuestra guía general sobre [cómo escanear documentos con el iPhone](id:how-to-scan-documents-iphone).
+
 ## ¿Por qué no hacer simplemente una foto?
 
 Una foto de un documento se trata como cualquier otra foto. Aparece en tu carrete, se sincroniza con Fotos en iCloud, puede aparecer en las búsquedas (iOS reconoce el texto de las fotos) y cualquier app con acceso total a las fotos puede leerla. Si luego la ocultas, sigue sincronizándose, como se explica en [¿se guardan las fotos ocultas en iCloud?](id:are-hidden-photos-saved-to-icloud)

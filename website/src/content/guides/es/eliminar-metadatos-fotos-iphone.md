@@ -45,6 +45,8 @@ faq:
 
 Cada foto que haces con un iPhone lleva un pequeño archivo de información oculta. La mayor parte del tiempo es útil: Fotos puede ordenar tus imágenes por lugar y fecha. Pero cuando compartes una foto con un desconocido, un comprador o con todo internet, puede revelar mucho más de lo que pretendías, incluido exactamente dónde vives.
 
+Si antes quieres comprobar qué revela una foto, consulta [cómo ver dónde se tomó una foto](id:see-where-photo-was-taken-iphone).
+
 ## Qué contienen los metadatos EXIF
 
 EXIF (Exchangeable Image File Format) es un estándar para guardar información dentro de un archivo de imagen, junto a los píxeles. En una foto de iPhone puede incluir:

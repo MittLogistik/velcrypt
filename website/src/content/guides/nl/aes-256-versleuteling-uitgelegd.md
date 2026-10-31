@@ -82,7 +82,7 @@ Quantumcomputers bedreigen sommige cryptografie ernstig en andere maar licht.
 - **Publieke-sleutelalgoritmen** zoals RSA en elliptische-curvecryptografie zouden met het algoritme van Shor op een voldoende grote quantumcomputer gebroken kunnen worden. Daarom wordt post-quantum sleuteluitwisseling in de hele sector uitgerold.
 - **Symmetrische algoritmen** zoals AES krijgen te maken met het algoritme van Grover, dat een kwadratische versnelling biedt bij uitproberen. In de praktijk halveert dat ruwweg de effectieve sleutellengte: AES-256 zou tegen een quantumaanvaller ongeveer 128 bits beveiliging bieden.
 
-128 bits beveiliging geldt nog steeds als sterk. Dat is een van de redenen waarom AES-256 wordt aangeraden voor gegevens die lang vertrouwelijk moeten blijven.
+128 bits beveiliging geldt nog steeds als sterk. Dat is een van de redenen waarom AES-256 wordt aangeraden voor gegevens die lang vertrouwelijk moeten blijven. De rekensom achter deze cijfers, bekende aanvallen en wat NIST en nationale instanties zeggen, lees je in [kan AES-256 gekraakt worden?](id:can-aes-256-be-cracked).
 
 ## Veelvoorkomende misverstanden
 

@@ -1,7 +1,7 @@
 ---
 pageId: duress-password-explained
-title: "Nödlösenord och paniklösenord: så fungerar de"
-description: "Vad ett nödlösenord, paniklösenord eller en tvångskod är, var idén kommer ifrån, hur mobilappar använder den och hur Velcrypts nödmönster fungerar."
+title: "Nödlösenord: betydelse, kodord, överfallskoder och mobilen"
+description: "Vad ett nödlösenord betyder, hur kodord och överfallskoder i larm fungerar, myten om PIN-koden baklänges och vad iPhone och Android faktiskt erbjuder."
 h1: "Nödlösenord, panikkoder och nödmönster, förklarat"
 navTitle: "Nödlösenord förklarat"
 answer: "Ett nödlösenord (även kallat paniklösenord eller tvångskod) är en andra hemlighet som du bara använder när någon tvingar dig att låsa upp något. Det ser ut som en vanlig upplåsning men sätter i tysthet i gång en skyddsåtgärd, till exempel ett tyst larm eller radering av känsliga data. I Velcrypt öppnar nödmönstret ett lockbetesvalv och raderar permanent alla andra valv på iPhonen."
@@ -12,11 +12,12 @@ keyFacts:
   - "I Velcrypt öppnar nödmönstret ett lockbetesvalv och raderar permanent alla andra valv."
   - "Raderingen går inte att ångra; bara en säkerhetskopia som gjorts tidigare ger tillbaka data."
   - "Det är ett verktyg för personlig säkerhet, aldrig ett sätt att förstöra bevis eller trotsa lagliga krav."
+  - "iPhone har ingen inbyggd nödkod och de flesta Android-mobiler saknar också en; GrapheneOS har en nöd-PIN som raderar telefonen."
 primaryKeyword: "nödlösenord"
-keywords: ["paniklösenord", "panikkod", "tvångskod", "vad är ett nödlösenord", "nödmönster"]
+keywords: ["paniklösenord", "panikkod", "tvångskod", "vad är ett nödlösenord", "nödlösenord betydelse", "kodord vid fara", "kodord exempel", "överfallskod larm", "nöd-pin", "pin-kod baklänges bankomat myt", "tvångsfingeravtryck", "nödkod mobil", "android duress pin", "grapheneos duress pin", "nödmönster"]
 datePublished: 2026-10-22
-dateModified: 2026-10-22
-summary: "Vad nödlösenord och panikkoder är, var de kommer ifrån, hur mobilappar använder dem och hur Velcrypts nödmönster fungerar."
+dateModified: 2026-10-31
+summary: "Vad nödlösenord, kodord och nöd-PIN är, vad iPhone och Android erbjuder och hur Velcrypts nödmönster fungerar."
 category: security
 order: 45
 related: [duress-pattern, what-is-a-decoy-vault, plausible-deniability-explained, forced-to-unlock-phone, self-destruct-photo-vault, set-up-decoy-vault-and-duress-pattern]
@@ -27,13 +28,17 @@ faq:
     a: "Ja, i vardagligt tal betyder orden samma sak. ”Överfallskod” är vanligt för larmsystem, ”paniklösenord” eller ”nödkod” för appar och enheter. Velcrypt använder ett mönster i stället för en PIN-kod, så appen kallar sin variant för nödmönster."
   - q: "Larmar det polisen om man slår sin PIN-kod baklänges i en bankomat?"
     a: "Nej. Historien om ”PIN-koden baklänges” är en seglivad myt. Banker har studerat och patenterat liknande idéer, men bankomater fungerar i regel inte så. Lita inte på det."
+  - q: "Vad är ett kodord vid fara?"
+    a: "Ett kodord är ett vardagligt ord eller en fras, bestämd i förväg, som talar om för någon att du är i knipa utan att den som pressar dig märker det. Arbetsplatser, krogar (som den brittiska kampanjen ”Ask for Angela”) och familjer använder dem, var och en med en överenskommen reaktion."
+  - q: "Har iPhone eller Android en inbyggd nöd-PIN?"
+    a: "iPhone har ingen nödkod. Att hålla in sidoknappen och en volymknapp stänger bara av Face ID tills lösenkoden anges. De flesta Android-mobiler saknar också en, men låsläget (Lockdown) stänger av biometrin. GrapheneOS har en nöd-PIN som raderar hela telefonen."
   - q: "Vad gör Velcrypts nödmönster?"
     a: "Att rita det på låsskärmen öppnar lockbetesvalvet som du ställde in det i och raderar samtidigt, i tysthet och permanent, alla andra valv på den iPhonen. Upplåsningen ser ut och tar lika lång tid som vanligt."
   - q: "Kan jag använda ett nödlösenord när polis eller gränstjänstemän begär åtkomst?"
     a: "Du bör inte använda det för att radera data i den situationen. Lagarna skiljer sig mellan länder, och att radera data när det finns ett lagligt krav kan i sig vara ett brott, till exempel bevisförstöring eller att försvåra en utredning. Sök juridisk rådgivning i stället."
 ---
 
-Det mesta inom säkerhet handlar om att hålla främlingar ute. Ett nödlösenord handlar om en annan stund: när någon står bredvid dig och tvingar dig att släppa in dem. Den här guiden förklarar vad nödlösenord är, var idén kommer ifrån, hur mobilappar använder den och hur Velcrypts nödmönster fungerar, inklusive dess begränsningar.
+Det mesta inom säkerhet handlar om att hålla främlingar ute. Ett nödlösenord handlar om en annan stund: när någon står bredvid dig och tvingar dig att släppa in dem. Den här guiden förklarar vad nödlösenord är, var idén kommer ifrån, hur kodord fungerar, vad iPhone och Android erbjuder, hur mobilappar använder den och hur Velcrypts nödmönster fungerar, inklusive dess begränsningar.
 
 ## Vad ett nödlösenord är
 
@@ -53,15 +58,57 @@ Det avgörande är att reaktionen är **tyst**. Om koden utlöste en siren, ett 
 
 Många larmcentraler för hem och företag har stöd för en överfallskod. Du slår den på knappsatsen och larmet stängs av som vanligt, så en inkräktare som tvingade dig att larma av ser inget ovanligt. Samtidigt skickar centralen tyst en signal till larmcentralen om att du är i fara.
 
+Överfallskoder i larm fungerar oftast bara med professionell larmövervakning, och att slå en betyder en riktig utryckning, även om det bara är ett test. Larmbolag och polis varnar också för att en kod som liknar din vanliga för mycket ger falsklarm, så välj en som du inte kan blanda ihop.
+
 ### Banker och skyddade lokaler
 
 Bankpersonal har länge haft tysta larm och överfallssignaler: en knapp, ett kodord eller en kod som larmar vakter utan att rånaren märker det. Målet är detsamma som med larmcentralerna: gå med på kraven på ytan och kalla på hjälp under ytan.
 
-Du har kanske hört att polisen larmas om du slår din PIN-kod baklänges i en bankomat. Det är en myt. Idén har diskuterats och till och med patenterats, men bankomater fungerar i regel inte så, så räkna inte med det.
+Du har kanske hört att polisen larmas om du slår din PIN-kod baklänges i en bankomat. Det är en myt. Idén går tillbaka på ett patent från 1990-talet på en ”nöd-PIN”, men en rapport från 2010 av tjänstemän vid amerikanska Federal Trade Commission (FTC) konstaterade att sådana system aldrig har införts i bankomater, och faktagranskare har avfärdat kedjebrevet många gånger. Blir du rånad vid en bankomat, lämna över det som krävs om det håller dig säker, och ring sedan polisen och din bank.
 
 ### Krypteringsprogram
 
 Program för diskkryptering lade till en besläktad idé: ett andra lösenord som öppnar en trovärdig yttre volym medan en dold volym förblir osynlig. Det är ingen nödkod i strikt mening, eftersom inget utlöses, men målet är detsamma: att göra det säkert att ”ge med sig delvis”. [Trovärdigt förnekande, förklarat](id:plausible-deniability-explained) går igenom den historien.
+
+## Kodord: nödlösenordet man säger högt
+
+Ett **kodord** vid fara (på engelska *duress code word*) är ett nödlösenord som du säger i stället för att skriva: ett vardagligt ord eller en fras, bestämd i förväg, som betyder ”jag mår inte bra, men jag kan inte säga det”. Den som råkar höra det uppfattar småprat. Den som kan koden hör en begäran om hjälp, och vet redan vad som ska göras.
+
+Var kodord används:
+
+- **Arbetsplatser och väktare.** Banker, butiker, sjukhus och säkerhetspersonal kommer ofta överens om en fras som kan sägas i telefon eller radio inför en angripare, så att en kollega kan kalla på hjälp utan att någon märker det.
+- **Offentliga trygghetskampanjer.** I Storbritannien deltar många barer och nattklubbar i ”Ask for Angela”: den som känner sig otrygg på en dejt eller en utekväll frågar personalen efter ”Angela”, och utbildad personal hjälper diskret, till exempel genom att ringa en taxi. Den koden är offentlig med flit, så att ställena kan sätta upp affischer. Liknande kampanjer finns i andra länder.
+- **Familj och vänner.** Vissa familjer bestämmer ett ord som ett barn eller en anhörig kan sms:a eller säga i telefon för att betyda ”kom och hämta mig” eller ”ring efter hjälp” utan att förklara varför. Många familjer har numera också ett *säkerhetsord* för att kontrollera att ett panikartat samtal verkligen kommer från en anhörig och inte från en bedragare med klonad röst. Det är mer ett kontrollord än en nödkod, men samma regler gäller.
+
+Exempel på den *typ* av fras som fungerar (hitta på en egen i stället för att kopiera dessa):
+
+- att fråga efter en person som inte finns, som ”Jobbar Angela i kväll?”;
+- en fråga om ett husdjur, en släkting eller en syssla som mottagaren vet är fel;
+- en ovanlig detalj i en annars vanlig mening, som en färg eller en maträtt du aldrig nämner.
+
+Ett bra kodord låter naturligt i det samtal där du skulle använda det, dyker aldrig upp av en slump, hör ihop med en överenskommen reaktion (vem ringer vem och vad händer sedan) och repeteras då och då så att ingen glömmer det. Håll det för dig själv: en kod som står på nätet, eller som den du är rädd för känner till, slutar fungera.
+
+## Nöd-PIN i mobilen: vad iPhone och Android erbjuder
+
+Den som söker efter ”nödkod till mobilen”, ”nöd-PIN” eller ”tvångsfingeravtryck” vill oftast veta om den egna telefonen har något sådant inbyggt. Det korta svaret: iPhone har det inte, och de flesta Android-mobiler har det inte heller.
+
+### iPhone
+
+- **Ingen nödkod.** iOS har ingen andra lösenkod som öppnar ett lockbete, skickar ett larm eller raderar telefonen.
+- **Nöd-SOS stänger av Face ID.** Håller du in sidoknappen och någon av volymknapparna i ungefär två sekunder visas skärmen för att stänga av och för Nöd-SOS. <!-- TODO verify iOS label --> Därefter är Face ID och Touch ID avstängda tills lösenkoden anges, så ingen kan låsa upp telefonen genom att hålla den framför ditt ansikte. Tryck på Avbryt om du inte vill ringa; beroende på dina inställningar kan ett längre tryck starta ett nödsamtal. [Vad du gör om någon tvingar dig att låsa upp mobilen](id:forced-to-unlock-phone) beskriver det närmare.
+- **Radera data är ingen nödkod.** Alternativet Radera data under Inställningar → Face ID och lösenkod <!-- TODO verify iOS label --> raderar iPhonen efter 10 felaktiga försök med lösenkoden. Det skyddar mot gissningar, inte mot någon som står bredvid dig och kräver lösenkoden.
+- **Nödfunktioner finns i appar.** Eftersom iOS saknar en nöd-PIN för hela systemet hör varje nödfunktion på iPhone till en enskild app och når bara den appens data. Velcrypts nödmönster, längre ned, är ett exempel.
+
+### Android
+
+- **Låsläge (Lockdown).** Från Android 9 erbjuder många mobiler ett låsläge i av/på-menyn; på vissa märken måste du först slå på det i inställningarna. <!-- TODO verify: Android label and Samsung One UI changes --> Det låser telefonen och stänger av upplåsning med fingeravtryck och ansikte tills PIN-kod, mönster eller lösenord anges.
+- **Ingen nöd-PIN i vanlig Android.** Android så som Google, Samsung och de flesta andra tillverkare levererar det har ingen inbyggd nöd-PIN. <!-- TODO verify -->
+- **GrapheneOS nöd-PIN.** GrapheneOS, ett säkerhetsinriktat operativsystem för Google Pixel-mobiler som stöds, har en nöd-PIN och ett nödlösenord (*duress PIN*). Anger du någon av dem var som helst där telefonen ber om sina inloggningsuppgifter raderas hela enheten, eSIM-kort inräknade, direkt och oåterkalleligt. Det skyddar data, men efteråt är det uppenbart att telefonen har återställts.
+- **Appar från tredje part.** Några Android-appar med öppen källkod, som Duress och Wasted på F-Droid, håller utkik efter ett nödlösenord på låsskärmen och låser eller raderar sedan telefonen, med hjälp av behörigheter för tillgänglighet och enhetsadministratör. Hur pålitligt det fungerar beror på telefonen och Android-versionen. <!-- TODO verify -->
+
+### Vad ”tvångsfingeravtryck” betyder
+
+Ett **tvångsfingeravtryck** (*duress fingerprint*) är ett särskilt finger som registreras som tyst larm. Vissa biometriska passersystem har stöd för det: du skannar det fingret, dörren öppnas som vanligt och ett överfallslarm går till väktarna. Vanliga mobiler erbjuder inte detta. <!-- TODO verify --> I en mobil är biometrin snarare den svaga punkten under tvång, eftersom någon kan hålla telefonen framför ditt ansikte eller trycka ditt finger mot sensorn. Därför är det viktigt att snabbt kunna stänga av Face ID, och därför har Velcrypt [medvetet ingen upplåsning med Face ID](id:pattern-lock-vs-pin-vs-face-id).
 
 ## Så använder mobilappar nödkoder
 

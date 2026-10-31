@@ -58,6 +58,8 @@ howTo:
 
 Votre iPhone est un scanner efficace, bien pratique pour une page de passeport, un bail ou un résultat d’analyse. Le problème, c’est que la méthode la plus évidente, prendre une photo, place une copie du document dans votre photothèque, dans iCloud, et peut-être dans les Souvenirs ou un album partagé. Quelques petits changements dans votre façon de scanner gardent les papiers sensibles là où vous le voulez.
 
+Si vous cherchez simplement les étapes de base pour scanner n’importe quel document, commencez par notre guide général : [comment scanner un document avec un iPhone](id:how-to-scan-documents-iphone).
+
 ## Pourquoi ne pas simplement prendre une photo ?
 
 Une photo de document est traitée comme n’importe quelle autre photo. Elle apparaît dans votre pellicule, se synchronise via Photos iCloud, peut être trouvée par la recherche (iOS reconnaît le texte dans les photos), et toute app ayant un accès complet aux photos peut la lire. Même masquée, elle se synchronise toujours, comme l’explique [les photos masquées sont-elles enregistrées dans iCloud ?](id:are-hidden-photos-saved-to-icloud)

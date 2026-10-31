@@ -1,7 +1,7 @@
 ---
 pageId: calculator-vault-apps-explained
-title: "Apps de calculadora secreta: camuflaje frente a cifrado"
-description: "Las apps de calculadora secreta esconden fotos tras una calculadora falsa. Cómo funciona el camuflaje, por qué no es cifrado y dónde iOS delata la app."
+title: "App calculadora secreta: cómo funciona y qué no oculta"
+description: "Una calculadora secreta esconde fotos tras una calculadora falsa hasta que tecleas un código. Por qué no es cifrado y dónde iOS delata la app."
 h1: "Las apps de calculadora secreta, explicadas"
 navTitle: "Apps de calculadora secreta"
 answer: "Una calculadora secreta es una bóveda de fotos que parece y funciona como una calculadora hasta que escribes un código secreto como si fuera una operación. El camuflaje puede engañar a una mirada rápida, pero no es cifrado, e iOS revela la identidad real de la app en lugares como la búsqueda de la biblioteca de apps, Spotlight, Almacenamiento del iPhone y tus compras del App Store."
@@ -19,7 +19,7 @@ keywords:
   - "calculadora bóveda de fotos"
   - "cómo encontrar apps de calculadora ocultas"
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-10-31
 summary: "Cómo funcionan las bóvedas camufladas de calculadora, por qué camuflar no es lo mismo que cifrar y cuándo el truco sigue teniendo sentido."
 category: choosing
 order: 22

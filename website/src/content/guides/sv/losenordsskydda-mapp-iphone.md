@@ -53,7 +53,7 @@ iOS 18 införde applåsning, som sätter en autentiseringsfråga framför en app
 
 Nu ber Filer om Face ID innan något visas. Det skyddar alla mappar i Filer, inte bara en, vilket är en fördel eller ett irritationsmoment beroende på hur ofta du använder appen.
 
-Begränsningarna är de vanliga för inbyggda lås. Reservalternativet är enhetens lösenkod, så den som kan den kan öppna Filer. Låset gäller dessutom bara appen Filer; andra appar som kommer åt samma lagring, som molnlagringsappar eller appar med egna dokumentmappar, påverkas inte. Apples egna appar kan i regel inte flyttas till mappen med gömda appar, så Filer syns fortfarande på enheten.
+Begränsningarna är de vanliga för inbyggda lås. Reservalternativet är enhetens lösenkod, så den som kan den kan öppna Filer. Låset gäller dessutom bara appen Filer; andra appar som kommer åt samma lagring, som molnlagringsappar eller appar med egna dokumentmappar, påverkas inte. Apples egna appar kan i regel inte flyttas till mappen med gömda appar, så Filer syns fortfarande på enheten. Hur applåset fungerar för andra appar, och varför mappar på hemskärmen inte går att låsa, går vi igenom i [låsa och gömma appar på iPhone](id:lock-hide-apps-iphone).
 
 ## Alternativ 2: en låst anteckning
 

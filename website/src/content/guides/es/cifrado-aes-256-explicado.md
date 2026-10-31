@@ -82,7 +82,7 @@ Los ordenadores cuánticos amenazan seriamente a una parte de la criptografía y
 - **Los algoritmos de clave pública** como RSA y la criptografía de curva elíptica podrían romperse con el algoritmo de Shor en un ordenador cuántico suficientemente grande. Por eso la industria está desplegando el intercambio de claves poscuántico.
 - **Los cifrados simétricos** como AES se enfrentan al algoritmo de Grover, que ofrece una aceleración cuadrática de la búsqueda por fuerza bruta. En la práctica, eso reduce aproximadamente a la mitad la longitud efectiva de la clave: AES-256 ofrecería unos 128 bits de seguridad frente a un atacante cuántico.
 
-128 bits de seguridad se siguen considerando sólidos. Es una de las razones por las que se recomienda AES-256 para datos que deben seguir siendo confidenciales durante mucho tiempo.
+128 bits de seguridad se siguen considerando sólidos. Es una de las razones por las que se recomienda AES-256 para datos que deben seguir siendo confidenciales durante mucho tiempo. Las cuentas detrás de estas cifras, los ataques conocidos y lo que dicen el NIST y las agencias nacionales están en [¿se puede romper AES-256?](id:can-aes-256-be-cracked).
 
 ## Ideas equivocadas habituales
 

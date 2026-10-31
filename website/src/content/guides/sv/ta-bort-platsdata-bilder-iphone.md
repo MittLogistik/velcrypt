@@ -45,6 +45,8 @@ faq:
 
 Varje bild du tar med en iPhone bär med sig en liten fil med dold information. Oftast är det användbart: Bilder kan sortera dina bilder efter plats och datum. Men när du delar en bild med en främling, en köpare eller hela internet kan den avslöja mycket mer än du tänkt, till exempel exakt var du bor.
 
+Vill du först kontrollera vad en bild avslöjar, läs [så ser du var en bild är tagen](id:see-where-photo-was-taken-iphone).
+
 ## Vad EXIF-metadata innehåller
 
 EXIF (Exchangeable Image File Format) är en standard för att spara information inuti en bildfil vid sidan av pixlarna. I en bild från iPhone kan den innehålla:

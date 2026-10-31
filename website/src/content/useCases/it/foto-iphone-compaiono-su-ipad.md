@@ -42,7 +42,7 @@ Molte famiglie configurano il primo iPad con l'Account Apple di un genitore. Se 
 
 ### Libreria foto condivisa di iCloud
 
-La Libreria foto condivisa di iCloud (iOS 16.1 e successivi) è una libreria separata condivisa con un massimo di altre cinque persone. Tutti possono aggiungere, modificare ed eliminare. A seconda delle impostazioni, la Fotocamera può aggiungervi foto automaticamente, per esempio quando i familiari sono nelle vicinanze. È bellissimo per le foto delle vacanze, meno per lo screenshot di una ricetta medica.
+La Libreria foto condivisa di iCloud (iOS 16.1 e successivi) è una libreria separata condivisa con un massimo di altre cinque persone. Tutti possono aggiungere, modificare ed eliminare. A seconda delle impostazioni, la Fotocamera può aggiungervi foto automaticamente, per esempio quando i familiari sono nelle vicinanze. È bellissimo per le foto delle vacanze, meno per lo screenshot di una ricetta medica. La [guida alla Libreria foto condivisa su iCloud](id:icloud-shared-photo-library-privacy) spiega cosa vedono gli altri partecipanti e come tenere fuori le foto private.
 
 ## Come separare le cose
 

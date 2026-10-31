@@ -1,7 +1,7 @@
 ---
 pageId: are-hidden-photos-saved-to-icloud
-title: "Ausgeblendete Fotos in iCloud? So funktioniert der Sync"
-description: "Mit iCloud-Fotos synchronisieren ausgeblendete Fotos wie alle anderen. Wie die Verschlüsselung variiert, was im Backup landet und wie du gegensteuerst."
+title: "Ausgeblendete Fotos in iCloud? Ja – so hältst du sie raus"
+description: "Ja: Mit iCloud-Fotos werden ausgeblendete Fotos hochgeladen und synchronisiert. Wann sie Ende-zu-Ende-verschlüsselt sind und wie du sie heraushältst."
 h1: "Werden ausgeblendete Fotos in iCloud gespeichert?"
 navTitle: "Ausgeblendete Fotos und iCloud"
 answer: "Ja. Ist iCloud-Fotos aktiv, werden ausgeblendete Fotos und Videos wie der Rest deiner Mediathek in iCloud hochgeladen und mit all deinen Geräten synchronisiert. Ist iCloud-Fotos aus, können sie trotzdem im iCloud-Backup landen. Ende-zu-Ende-verschlüsselt sind sie in iCloud nur mit aktiviertem Erweitertem Datenschutz."
@@ -19,7 +19,7 @@ keywords:
   - "fotos nicht in icloud speichern"
   - "ausgeblendete fotos icloud.com"
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-10-31
 summary: "Ausgeblendete Fotos synchronisieren über iCloud-Fotos und landen evtl. im iCloud-Backup. So wirkt die Verschlüsselung – und so hältst du Fotos aus iCloud."
 category: apple
 order: 11
@@ -92,7 +92,7 @@ Computer-Backups sind ein dritter Weg. Ein Backup mit dem Finder auf dem Mac ode
 
 Zwei Funktionen können ein Foto aus deinem persönlichen Bereich bringen, ohne dass du an „Hochladen“ denkst:
 
-- Die **geteilte iCloud-Fotomediathek** legt ausgewählte Fotos in eine Mediathek, die bis zu fünf weitere Personen sehen und bearbeiten können. Liegt ein Foto in der geteilten Mediathek, sehen es die anderen Teilnehmenden. Blende private Fotos erst aus, wenn sicher ist, dass sie in deiner persönlichen Mediathek liegen. Unser [Ratgeber zu iCloud in der Familie](id:family-shared-icloud) erklärt das.
+- Die **geteilte iCloud-Fotomediathek** legt ausgewählte Fotos in eine Mediathek, die bis zu fünf weitere Personen sehen und bearbeiten können. Liegt ein Foto in der geteilten Mediathek, sehen es die anderen Teilnehmenden. Blende private Fotos erst aus, wenn sicher ist, dass sie in deiner persönlichen Mediathek liegen. Unser [Ratgeber zu iCloud in der Familie](id:family-shared-icloud) erklärt das. Was die anderen Teilnehmenden genau sehen und tun können, erklärt [unsere Anleitung zur geteilten iCloud-Fotomediathek](id:icloud-shared-photo-library-privacy).
 - **Geteilte Alben** sind eine eigene Funktion und laut Apple nicht vom Erweiterten Datenschutz abgedeckt. Alles, was du dort hinzufügst, solltest du als sichtbar für alle im Album betrachten.
 
 ## So hältst du ein Foto aus iCloud heraus

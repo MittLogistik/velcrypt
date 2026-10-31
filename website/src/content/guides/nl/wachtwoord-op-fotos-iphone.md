@@ -1,7 +1,7 @@
 ---
 pageId: password-protect-photos-iphone
-title: "Wachtwoord op foto's zetten op je iPhone"
-description: "iOS heeft geen wachtwoord per foto. Dit zijn de echte opties om losse foto's op je iPhone met een wachtwoord te beveiligen, en wat elke optie beschermt."
+title: "Wachtwoord op foto's iPhone: 3 opties die echt werken"
+description: "iOS kent geen wachtwoord per foto. Zo beveilig je foto's toch: het album Verborgen met Face ID, een vergrendelde notitie of een versleutelde kluisapp."
 h1: "Een wachtwoord op foto's zetten op je iPhone"
 navTitle: "Wachtwoord op foto's zetten"
 answer: "iOS kan geen wachtwoord op een losse foto zetten. De ingebouwde opties die er het dichtst bij komen: de foto verbergen in het met Face ID vergrendelde album Verborgen, of hem toevoegen aan een vergrendelde notitie met een eigen Notities-wachtwoord. Wil je specifieke foto's beveiligen met een geheim dat niet je toegangscode is, kopieer ze dan naar een versleutelde kluisapp en verwijder de originelen."
@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "wachtwoord op foto's iphone"
 keywords: ["foto's beveiligen met wachtwoord iphone", "wachtwoord op foto zetten iphone", "losse foto's vergrendelen iphone", "afbeeldingen beveiligen iphone", "foto wachtwoord iphone"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-31
 summary: "Waarom iOS geen wachtwoord per foto kent, en drie praktische manieren om specifieke foto's toch echt af te sluiten."
 category: hiding
 order: 4

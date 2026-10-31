@@ -58,6 +58,8 @@ howTo:
 
 Dein iPhone ist ein fähiger Scanner – praktisch für eine Reisepassseite, einen Mietvertrag oder einen Laborbefund. Das Problem: Der naheliegende Weg, ein Foto zu machen, legt eine Kopie des Dokuments in deine Fotomediathek, in iCloud und womöglich in Rückblicke oder ein geteiltes Album. Ein paar kleine Änderungen beim Scannen halten sensible Papiere dort, wo du sie haben willst.
 
+Wenn du nur die Grundlagen zum Scannen beliebiger Dokumente brauchst, fang mit unserer allgemeinen Anleitung zum [Einscannen von Dokumenten mit dem iPhone](id:how-to-scan-documents-iphone) an.
+
 ## Warum nicht einfach ein Foto machen?
 
 Ein Foto eines Dokuments wird wie jedes andere Foto behandelt. Es erscheint in deiner Mediathek, synchronisiert über iCloud-Fotos, kann über die Suche gefunden werden (iOS erkennt Text in Fotos), und jede App mit vollem Fotozugriff kann es lesen. Blendest du es aus, wird es trotzdem synchronisiert, wie [Landen ausgeblendete Fotos in iCloud?](id:are-hidden-photos-saved-to-icloud) erklärt.

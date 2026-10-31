@@ -1,7 +1,7 @@
 ---
 pageId: which-apps-can-see-your-photos-iphone
-title: "Welke apps zien mijn foto's op de iPhone? Zo check je"
-description: "Ontdek welke iPhone-apps volledige, beperkte of alleen-toevoegen-toegang tot je foto's hebben, hoe de fotokiezer werkt en hoe je toegang controleert."
+title: "Welke apps hebben toegang tot je foto's? Check het op iPhone"
+description: "Zo zie je in één scherm welke iPhone-apps volledige, beperkte of alleen-toevoegen-toegang tot je foto's hebben, en hoe je die toegang intrekt of beperkt."
 h1: "Welke apps kunnen je foto's zien op je iPhone?"
 navTitle: "Welke apps je foto's zien"
 answer: "Open Instellingen › Privacy en beveiliging › Foto's om elke app te zien die om toegang tot foto's heeft gevraagd, met het niveau: Volledige toegang, Beperkte toegang, Alleen foto's toevoegen of Geen. Apps met volledige toegang kunnen je hele bibliotheek lezen; apps die de fotokiezer van het systeem gebruiken, krijgen alleen de items die jij kiest en hebben geen toestemming nodig."
@@ -20,7 +20,7 @@ keywords:
   - "controleren welke apps toegang hebben tot foto's"
   - "alleen foto's toevoegen"
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-10-31
 summary: "Zo zie je welke apps je fotobibliotheek kunnen lezen, wat volledige, beperkte en alleen-toevoegen-toegang betekenen en hoe je ze snel aanscherpt."
 category: apple
 order: 13

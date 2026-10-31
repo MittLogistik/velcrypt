@@ -134,6 +134,8 @@ La Protection avancée des données n’est pas forcément disponible partout. E
 
 Si vous ne voyez pas l’option dans vos réglages iCloud, ou si elle est grisée, consultez [l’assistance Apple](https://support.apple.com/) pour connaître l’état actuel dans votre région plutôt que de vous fier à d’anciens articles.
 
+Pour la chronologie complète au Royaume-Uni et ce qui y reste chiffré de bout en bout, lisez [la Protection avancée des données au Royaume-Uni](id:advanced-data-protection-uk) ; pour l’effet de l’ADP sur iCloud.com, voyez [Accéder aux données iCloud sur le Web](id:icloud-access-data-on-web).
+
 ## La place du chiffrement sur l’appareil
 
 La Protection avancée des données et un coffre-fort sur l’appareil répondent à des problèmes différents. La première rend vos données iCloud illisibles pour Apple tout en permettant leur synchronisation et leur récupération grâce à votre propre méthode de récupération. Le second empêche certains fichiers d’aller dans le cloud et place un secret distinct entre eux et quiconque peut déverrouiller votre téléphone.

@@ -42,7 +42,7 @@ Viele Familien richten das erste iPad mit dem Apple-Account eines Elternteils ei
 
 ### Geteilte iCloud-Fotomediathek
 
-Die geteilte iCloud-Fotomediathek (ab iOS 16.1) ist eine separate Mediathek, die du mit bis zu fünf weiteren Personen teilst. Alle können hinzufügen, bearbeiten und löschen. Je nach Einstellung kann die Kamera Fotos automatisch hinzufügen – etwa wenn Familienmitglieder in der Nähe sind. Für Urlaubsfotos ist das schön, für den Screenshot eines Rezepts weniger.
+Die geteilte iCloud-Fotomediathek (ab iOS 16.1) ist eine separate Mediathek, die du mit bis zu fünf weiteren Personen teilst. Alle können hinzufügen, bearbeiten und löschen. Je nach Einstellung kann die Kamera Fotos automatisch hinzufügen – etwa wenn Familienmitglieder in der Nähe sind. Für Urlaubsfotos ist das schön, für den Screenshot eines Rezepts weniger. Was die anderen genau sehen und wie private Fotos draußen bleiben, zeigt [unsere Anleitung zur geteilten iCloud-Fotomediathek](id:icloud-shared-photo-library-privacy).
 
 ## So trennst du die Dinge
 

@@ -134,6 +134,8 @@ ADP ist nicht garantiert überall verfügbar. Im Februar 2025 hat Apple den Erwe
 
 Siehst du die Option in deinen iCloud-Einstellungen nicht oder ist sie ausgegraut, prüfe beim [Apple Support](https://support.apple.com/) den aktuellen Stand für deine Region, statt dich auf ältere Artikel zu verlassen.
 
+Die ganze Chronologie für Großbritannien und was dort Ende-zu-Ende-verschlüsselt bleibt, findest du unter [Erweiterter Datenschutz in Großbritannien](id:advanced-data-protection-uk); wie ADP iCloud.com verändert, erklärt [Internetzugriff auf iCloud-Daten](id:icloud-access-data-on-web).
+
 ## Wo Verschlüsselung auf dem Gerät ins Spiel kommt
 
 Der Erweiterte Datenschutz und ein Tresor auf dem Gerät lösen unterschiedliche Probleme. ADP macht deine iCloud-Daten für Apple unlesbar, lässt sie aber weiterhin synchronisieren und über deine eigene Wiederherstellungsmethode wiederherstellen. Ein Tresor auf dem Gerät hält bestimmte Dateien ganz aus der Cloud heraus und stellt ein separates Geheimnis zwischen sie und jeden, der dein Handy entsperren kann.

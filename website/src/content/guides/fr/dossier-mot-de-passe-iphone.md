@@ -53,7 +53,7 @@ iOS 18 a introduit le verrouillage d’apps, qui place une demande d’authentif
 
 Fichiers demande désormais Face ID avant d’afficher quoi que ce soit. Cela protège tous les dossiers de Fichiers, pas un seul, ce qui est un avantage ou une gêne selon la fréquence à laquelle vous l’utilisez.
 
-Les limites sont celles de tout verrou intégré. Le recours est le code de l’appareil : quiconque le connaît peut ouvrir Fichiers. Le verrou ne s’applique qu’à l’app Fichiers ; les autres apps qui accèdent au même stockage, comme les apps de stockage en ligne ou celles qui ont leurs propres dossiers de documents, ne sont pas concernées. Les apps d’Apple ne peuvent généralement pas être placées dans le dossier des apps masquées, si bien que Fichiers reste visible sur l’appareil.
+Les limites sont celles de tout verrou intégré. Le recours est le code de l’appareil : quiconque le connaît peut ouvrir Fichiers. Le verrou ne s’applique qu’à l’app Fichiers ; les autres apps qui accèdent au même stockage, comme les apps de stockage en ligne ou celles qui ont leurs propres dossiers de documents, ne sont pas concernées. Les apps d’Apple ne peuvent généralement pas être placées dans le dossier des apps masquées, si bien que Fichiers reste visible sur l’appareil. Le fonctionnement du verrouillage pour les autres apps, et la raison pour laquelle les dossiers de l’écran d’accueil ne se verrouillent pas, sont détaillés dans [verrouiller et masquer une app sur iPhone](id:lock-hide-apps-iphone).
 
 ## Option 2 : une note verrouillée
 

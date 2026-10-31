@@ -1,7 +1,7 @@
 ---
 pageId: duress-password-explained
-title: "Contraseña de coacción: qué hace un código de pánico"
-description: "Qué es una contraseña de coacción o de pánico, de dónde viene la idea, cómo la usan las apps del móvil y cómo funciona el patrón de coacción de Velcrypt."
+title: "Contraseña de coacción: significado, palabras clave y PIN"
+description: "Qué significa una contraseña de coacción, cómo funcionan las palabras clave y los PIN de coacción, el mito del PIN al revés y qué ofrecen iPhone y Android."
 h1: "Contraseñas de coacción, códigos de pánico y patrones de coacción, explicados"
 navTitle: "Contraseñas de coacción, explicadas"
 answer: "Una contraseña de coacción (también llamada contraseña de pánico o código de coacción) es un segundo secreto que solo usas cuando alguien te obliga a desbloquear algo. Parece un desbloqueo normal, pero activa en silencio una acción protectora, como una alarma o el borrado de datos sensibles. En Velcrypt, el patrón de coacción abre una bóveda señuelo y elimina para siempre todas las demás bóvedas del iPhone."
@@ -12,11 +12,12 @@ keyFacts:
   - "En Velcrypt, el patrón de coacción abre una bóveda señuelo y elimina para siempre todas las demás."
   - "El borrado es irreversible; solo una copia de seguridad hecha antes recupera los datos."
   - "Es una herramienta de seguridad personal, nunca una forma de destruir pruebas ni de desobedecer órdenes legítimas."
+  - "El iPhone no tiene un código de coacción integrado y la mayoría de los Android tampoco; GrapheneOS ofrece un PIN de coacción que borra el teléfono."
 primaryKeyword: "contraseña de coacción"
-keywords: ["contraseña de pánico", "código de coacción", "qué es una contraseña de coacción", "pin de pánico móvil", "patrón de coacción"]
+keywords: ["contraseña de pánico", "código de coacción", "qué es una contraseña de coacción", "contraseña de coacción significado", "palabra clave de coacción", "ejemplos de palabras clave de coacción", "pin de coacción", "código de coacción alarma", "pin al revés cajero mito", "huella de coacción", "código de coacción móvil", "pin de coacción android", "grapheneos pin de coacción", "pin de pánico móvil", "patrón de coacción"]
 datePublished: 2026-10-22
-dateModified: 2026-10-22
-summary: "Qué son las contraseñas de coacción y los códigos de pánico, de dónde vienen, cómo los usan las apps y cómo funciona el patrón de coacción de Velcrypt."
+dateModified: 2026-10-31
+summary: "Qué son las contraseñas, palabras clave y PIN de coacción, qué ofrecen iPhone y Android y cómo funciona el patrón de coacción de Velcrypt."
 category: security
 order: 45
 related: [duress-pattern, what-is-a-decoy-vault, plausible-deniability-explained, forced-to-unlock-phone, self-destruct-photo-vault, set-up-decoy-vault-and-duress-pattern]
@@ -27,13 +28,17 @@ faq:
     a: "Sí, en el uso cotidiano significan lo mismo. «Código de coacción» es habitual en los sistemas de alarma; «contraseña de pánico» o «PIN de coacción», en apps y dispositivos. Velcrypt usa un patrón en lugar de un PIN, así que llama a su versión patrón de coacción."
   - q: "¿Si tecleo el PIN al revés en un cajero se avisa a la policía?"
     a: "No. La historia del «PIN invertido» es un mito muy extendido. Los bancos han estudiado e incluso patentado ideas parecidas, pero los cajeros no funcionan así por lo general. No te fíes de ello."
+  - q: "¿Qué es una palabra clave de coacción?"
+    a: "Es una palabra o frase de apariencia corriente, acordada de antemano, que avisa a alguien de que estás en apuros sin que lo note la persona que te presiona. La usan lugares de trabajo, locales (como el programa británico «Ask for Angela») y familias, cada uno con una respuesta acordada."
+  - q: "¿El iPhone o Android tienen un PIN de coacción integrado?"
+    a: "El iPhone no tiene código de coacción. Mantener pulsados el botón lateral y un botón de volumen solo desactiva Face ID hasta que se introduce el código. La mayoría de los Android tampoco lo tienen, aunque el modo de bloqueo desactiva la biometría. GrapheneOS ofrece un PIN de coacción que borra todo el teléfono."
   - q: "¿Qué hace el patrón de coacción de Velcrypt?"
     a: "Al dibujarlo en la pantalla de desbloqueo se abre la bóveda señuelo en la que lo configuraste y, al mismo tiempo, se eliminan en silencio y de forma permanente todas las demás bóvedas de ese iPhone. El desbloqueo tiene el mismo aspecto y tarda lo mismo que uno normal."
   - q: "¿Puedo usar una contraseña de coacción cuando la policía o los agentes de frontera piden acceso?"
     a: "No deberías usarla para borrar datos en esa situación. Las leyes varían según el país, y eliminar datos en respuesta a un requerimiento legítimo puede ser un delito en sí mismo, como la destrucción de pruebas o la obstrucción. Busca asesoramiento jurídico."
 ---
 
-La mayor parte de la seguridad consiste en mantener fuera a los desconocidos. Una contraseña de coacción sirve para otro momento: cuando alguien está a tu lado obligándote a dejarle entrar. Esta guía explica qué son las contraseñas de coacción, de dónde viene la idea, cómo la usan las apps del móvil y cómo funciona el patrón de coacción de Velcrypt, incluidos sus límites.
+La mayor parte de la seguridad consiste en mantener fuera a los desconocidos. Una contraseña de coacción sirve para otro momento: cuando alguien está a tu lado obligándote a dejarle entrar. Esta guía explica qué son las contraseñas de coacción, de dónde viene la idea, cómo funcionan las palabras clave de coacción, qué ofrecen iPhone y Android, cómo la usan las apps del móvil y cómo funciona el patrón de coacción de Velcrypt, incluidos sus límites.
 
 ## Qué es una contraseña de coacción
 
@@ -53,15 +58,57 @@ Lo que la define es que la respuesta es **silenciosa**. Si introducir el código
 
 Muchas centralitas de alarma de casas y negocios admiten un código de coacción. Lo introduces en el teclado y la alarma se desactiva como siempre, así que un intruso que te haya obligado a desconectarla no ve nada raro. Al mismo tiempo, la centralita avisa discretamente a la central receptora de que estás en apuros.
 
+Los códigos de coacción de las alarmas suelen funcionar solo con monitorización profesional, e introducir uno solicita una respuesta de emergencia real, aunque sea de prueba. Las empresas de alarmas y la policía también advierten que un código demasiado parecido al normal provoca falsas alarmas, así que elige uno que no puedas confundir.
+
 ### Bancos e instalaciones seguras
 
 El personal de los bancos lleva mucho tiempo contando con alarmas silenciosas y señales de coacción: un botón, una palabra clave o un código que alerta a seguridad sin alertar al atracador. El objetivo es el mismo que con las alarmas: ceder en apariencia y pedir ayuda por debajo.
 
-Quizá hayas oído que teclear el PIN del cajero al revés avisa a la policía. Es un mito. La idea se ha debatido e incluso patentado, pero los cajeros no funcionan así por lo general, así que no cuentes con ello.
+Quizá hayas oído que teclear el PIN del cajero al revés avisa a la policía. Es un mito. La idea viene de una patente de los años noventa para un «PIN de emergencia», pero un informe de 2010 del personal de la Comisión Federal de Comercio de EE. UU. (FTC) concluyó que ese sistema nunca se había instalado en cajeros, y los verificadores de datos han desmentido el bulo muchas veces. Si te atracan en un cajero, entrega lo que te pidan si eso te mantiene a salvo, y después llama a la policía y a tu banco.
 
 ### Software de cifrado
 
 Las herramientas de cifrado de disco añadieron una idea relacionada: una segunda contraseña que abre un volumen exterior creíble mientras un volumen oculto queda fuera de la vista. No es un código de coacción en sentido estricto, porque no se activa nada, pero comparte el objetivo de que «ceder en parte» sea una opción segura. [La negación plausible, explicada](id:plausible-deniability-explained) cuenta esa historia.
+
+## Palabras clave de coacción: la versión hablada
+
+Una **palabra clave de coacción** es una contraseña de coacción que se dice en lugar de teclearse: una palabra o frase de apariencia corriente, acordada de antemano, que significa «no estoy bien, pero no puedo decirlo». Quien la oye por casualidad solo escucha una charla normal. Quien conoce el código escucha una petición de ayuda, y ya sabe qué hacer.
+
+Dónde se usan:
+
+- **Lugares de trabajo y equipos de seguridad.** Bancos, tiendas, hospitales y vigilantes suelen acordar una frase que se puede decir por teléfono o por radio delante de un agresor, para que un compañero pida ayuda sin que nadie lo note.
+- **Programas de seguridad pública.** En el Reino Unido, muchos bares y locales participan en «Ask for Angela»: quien se siente inseguro en una cita o una noche de fiesta pregunta al personal por «Angela», y el personal formado le ayuda con discreción, por ejemplo llamando a un taxi. Este código es público a propósito, para que los locales puedan anunciarlo con carteles.
+- **Familias y amigos.** Algunas familias acuerdan una palabra que un hijo o un familiar puede escribir o decir en una llamada para indicar «ven a buscarme» o «pide ayuda» sin dar explicaciones. Muchas familias usan además una *palabra de seguridad* para comprobar que una llamada angustiada viene de verdad de un familiar y no de un estafador que clona voces. Es una palabra de verificación más que un código de coacción, pero se aplican las mismas reglas.
+
+Ejemplos del *tipo* de frase que funciona (inventa la tuya en lugar de copiarlas):
+
+- preguntar por una persona que no existe, como «¿Está Angela esta noche?»;
+- una pregunta sobre una mascota, un familiar o una tarea que quien escucha sabe que es falsa;
+- un detalle extraño en una frase normal, como un color o una comida que nunca mencionas.
+
+Una buena palabra clave de coacción suena natural en la conversación en la que la usarías, nunca sale por casualidad, va unida a una respuesta acordada (quién llama a quién y qué pasa después) y se repasa de vez en cuando para que nadie la olvide. Mantenla en privado: un código publicado en internet, o que conoce la persona que te da miedo, deja de funcionar.
+
+## PIN de coacción en el móvil: qué ofrecen iPhone y Android
+
+Quien busca un «código de coacción para el móvil», un «PIN de coacción» o una «huella de coacción» suele querer saber si su teléfono trae uno de serie. La respuesta corta: el iPhone no, y la mayoría de los Android tampoco.
+
+### iPhone
+
+- **Sin código de coacción.** iOS no tiene un segundo código que abra un señuelo, envíe una alerta o borre el teléfono.
+- **Emergencia SOS desactiva Face ID.** Mantener pulsados el botón lateral y cualquiera de los botones de volumen durante unos dos segundos abre la pantalla de apagado y Emergencia SOS. <!-- TODO verify iOS label --> A partir de ahí, Face ID y Touch ID quedan desactivados hasta que se introduce el código, así que nadie puede desbloquear el móvil acercándolo a tu cara. Toca Cancelar si no quieres llamar; según tus ajustes, mantener pulsado más tiempo puede iniciar una llamada de emergencia. [Qué hacer si alguien te obliga a desbloquear el móvil](id:forced-to-unlock-phone) lo explica con más detalle.
+- **Borrar datos no es un código de coacción.** La opción Borrar datos de Ajustes → Face ID y código <!-- TODO verify iOS label --> borra el iPhone tras 10 intentos fallidos de código. Protege frente a quien intenta adivinarlo, no frente a alguien que está a tu lado exigiéndote el código.
+- **Las funciones de coacción viven dentro de las apps.** Como iOS no tiene un PIN de coacción para todo el sistema, cualquier función de coacción en el iPhone pertenece a una sola app y solo alcanza sus datos. El patrón de coacción de Velcrypt, más abajo, es un ejemplo.
+
+### Android
+
+- **Modo de bloqueo.** En Android 9 y posteriores, muchos móviles ofrecen el modo de bloqueo («Lockdown») en el menú de apagado; en algunas marcas hay que activarlo antes en los ajustes. <!-- TODO verify: Android label and Samsung One UI changes --> Bloquea el teléfono y desactiva el desbloqueo con huella y con la cara hasta que se introduce el PIN, el patrón o la contraseña.
+- **Sin PIN de coacción en Android estándar.** El Android que traen los móviles de Google, Samsung y la mayoría de los fabricantes no incluye un PIN de coacción. <!-- TODO verify -->
+- **PIN de coacción de GrapheneOS.** GrapheneOS, un sistema operativo centrado en la seguridad para móviles Google Pixel compatibles, tiene un PIN y una contraseña de coacción. Introducir cualquiera de los dos en cualquier lugar donde el teléfono pida sus credenciales borra todo el dispositivo, eSIM incluidas, al instante y de forma irreversible. Protege los datos, pero después es evidente que el móvil se ha restablecido.
+- **Apps de terceros.** Algunas apps Android de código abierto, como Duress y Wasted en F-Droid, vigilan si se introduce una contraseña de coacción en la pantalla de bloqueo y entonces bloquean o borran el teléfono, usando permisos de accesibilidad y de administrador del dispositivo. Su fiabilidad depende del móvil y de la versión de Android. <!-- TODO verify -->
+
+### Qué significa «huella de coacción»
+
+Una **huella de coacción** es un dedo concreto registrado como alarma silenciosa. Algunos sistemas biométricos de control de acceso lo admiten: escaneas ese dedo, la puerta se abre como siempre y se envía una alarma de coacción a seguridad. Los móviles convencionales no lo ofrecen. <!-- TODO verify --> En un teléfono, la biometría es justamente el punto débil bajo coacción, porque alguien puede acercarte el móvil a la cara o presionar tu dedo contra el sensor. Por eso importa desactivar Face ID rápido, y por eso Velcrypt [no tiene desbloqueo con Face ID, por diseño](id:pattern-lock-vs-pin-vs-face-id).
 
 ## Cómo implementan las apps del móvil los códigos de coacción
 

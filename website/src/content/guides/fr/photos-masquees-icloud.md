@@ -1,7 +1,7 @@
 ---
 pageId: are-hidden-photos-saved-to-icloud
-title: "Photos masquées et iCloud : sont-elles synchronisées ?"
-description: "Avec Photos iCloud activé, les photos masquées se synchronisent comme les autres. Chiffrement selon le réglage, sauvegarde iCloud et solutions."
+title: "Photos masquées dans iCloud ? Oui, et comment l’éviter"
+description: "Oui : avec Photos iCloud activé, les photos masquées se synchronisent comme les autres. Quand elles sont chiffrées et comment les garder hors d’iCloud."
 h1: "Les photos masquées sont-elles enregistrées dans iCloud ?"
 navTitle: "Photos masquées et iCloud"
 answer: "Oui. Si Photos iCloud est activé, les photos et vidéos masquées sont envoyées dans iCloud et synchronisées sur tous vos appareils, comme le reste de votre photothèque. Avec Photos iCloud désactivé, elles peuvent encore se retrouver dans la sauvegarde iCloud. Elles ne sont chiffrées de bout en bout dans iCloud que si la Protection avancée des données est activée."
@@ -19,7 +19,7 @@ keywords:
   - "garder des photos hors d’icloud"
   - "photos masquées sur icloud.com"
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-10-31
 summary: "Les photos masquées passent par Photos iCloud et peuvent finir dans la sauvegarde iCloud. Chiffrement et solutions pour garder une photo hors d’iCloud."
 category: apple
 order: 11
@@ -92,7 +92,7 @@ Les sauvegardes sur ordinateur sont une troisième voie. Une sauvegarde faite av
 
 Deux fonctions peuvent faire sortir une photo de votre espace personnel sans que vous y pensiez comme à un « envoi » :
 
-- **La Photothèque partagée iCloud** place les photos choisies dans une photothèque que jusqu’à cinq autres personnes peuvent voir et modifier. Si une photo se trouve dans la Photothèque partagée, les autres participants la voient. Ne masquez des photos privées qu’après vous être assuré qu’elles sont dans votre Photothèque personnelle. Notre [guide iCloud en famille](id:family-shared-icloud) aborde ce point.
+- **La Photothèque partagée iCloud** place les photos choisies dans une photothèque que jusqu’à cinq autres personnes peuvent voir et modifier. Si une photo se trouve dans la Photothèque partagée, les autres participants la voient. Ne masquez des photos privées qu’après vous être assuré qu’elles sont dans votre Photothèque personnelle. Notre [guide iCloud en famille](id:family-shared-icloud) aborde ce point. Ce que les autres participants voient et peuvent faire est détaillé dans [notre guide de la photothèque partagée iCloud](id:icloud-shared-photo-library-privacy).
 - **Les albums partagés** sont une fonction distincte et, selon Apple, ne sont pas couverts par la Protection avancée des données. Considérez que tout ce que vous y ajoutez est visible par tous les membres de l’album.
 
 ## Comment garder une photo hors d’iCloud

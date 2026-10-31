@@ -58,6 +58,8 @@ howTo:
 
 Your iPhone is a capable scanner, which is handy for a passport page, a lease or a lab result. The problem is that the obvious way to do it, taking a photo, puts a copy of that document into your photo library, into iCloud, and possibly into Memories or a shared album. A few small changes in how you scan keep sensitive papers where you want them.
 
+If you just need the basic steps for scanning any document, start with our general guide on [how to scan documents on iPhone](id:how-to-scan-documents-iphone).
+
 ## Why not just take a photo?
 
 A photo of a document is treated like any other photo. It appears in your camera roll, it syncs through iCloud Photos, it may be picked up by search (iOS recognises text in photos), and any app with full photo access can read it. If you then hide it, it still syncs, as explained in [are hidden photos saved to iCloud?](id:are-hidden-photos-saved-to-icloud)

@@ -134,6 +134,8 @@ Non è garantito che ADP sia disponibile ovunque. Nel febbraio 2025 Apple ha sme
 
 Se non vedi l’opzione nelle impostazioni di iCloud, o è in grigio, controlla sul [Supporto Apple](https://support.apple.com/) lo stato attuale nel tuo paese invece di affidarti ad articoli datati.
 
+Per la cronologia completa nel Regno Unito e ciò che lì resta cifrato end-to-end, leggi [la Protezione avanzata dei dati nel Regno Unito](id:advanced-data-protection-uk); per come l’ADP cambia iCloud.com, vedi [Accedi ai dati di iCloud sul web](id:icloud-access-data-on-web).
+
 ## Dove si inserisce la crittografia sul dispositivo
 
 La Protezione avanzata dei dati e una cassaforte sul dispositivo risolvono problemi diversi. ADP rende i tuoi dati iCloud illeggibili per Apple, continuando a permetterne la sincronizzazione e il recupero tramite il tuo metodo di recupero. Una cassaforte sul dispositivo impedisce a certi file di andare nel cloud e mette un segreto separato tra loro e chiunque possa sbloccare il tuo telefono.

@@ -1,7 +1,7 @@
 ---
 pageId: secret-photo-album-iphone
-title: "Hemligt fotoalbum på iPhone: det här fungerar"
-description: "Så skapar du ett hemligt fotoalbum eller en hemlig mapp på iPhone: albumet Gömda, att dölja det, varför vanliga album inte går att låsa och valvalternativ."
+title: "Hemligt fotoalbum på iPhone: så döljer och låser du bilder"
+description: "Albumet Gömda är iPhonens inbyggda hemliga album. Så döljer du det helt, varför egna album inte går att låsa och när du behöver en krypterad valvapp."
 h1: "Så skapar du ett hemligt fotoalbum på iPhone"
 navTitle: "Hemligt fotoalbum på iPhone"
 answer: "iPhonens inbyggda hemliga album är albumet Gömda: göm bilder med Mer (•••) › Göm och stäng sedan av Visa albumet Gömda i inställningarna för Bilder så att albumet försvinner ur vyn. Vanliga album som du skapar själv kan inte döljas eller låsas. För en hemlig mapp som ingen kan öppna med din lösenkod behöver du en krypterad valvapp."
@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "hemligt fotoalbum iphone"
 keywords: ["hemlig mapp iphone", "hemligt album iphone", "dold mapp iphone", "skapa privat album på iphone", "hemliga bilder iphone", "privat album iphone"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-10-31
 summary: "Skapa ett verkligt hemligt fotoalbum på iPhone och undvik de vanliga knepen som bara ser hemliga ut."
 category: hiding
 order: 5
