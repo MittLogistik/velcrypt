@@ -33,13 +33,13 @@ npm run og         # Open Graph images (SVG -> PNG) in public/og/
 
 Everything lives in `src/config/site.ts`:
 
-- `APP_STORE_URL`: the single App Store link, currently a placeholder (`id0000000000`).
-- `APP_LIVE = false`:
+- `APP_STORE_URL`: the single App Store link (`id6825482326`).
+- `APP_LIVE` has been `true` since 2026-11-05. When it was `false`:
   - CTAs read "Coming soon to the App Store" and "Get notified" and link to `/support/#get-notified`, which offers a mailto.
   - The MobileApplication JSON-LD carries no download URL.
   - llms.txt says "coming soon".
 
-To launch, set `APP_STORE_URL` to the real listing, set `APP_LIVE = true` and rebuild. Every CTA then links to the store with a campaign token, for example `?ct=web_home_hero`, `web_header`, `web_footer` or `web_gu_<guide-id>`, via `appStoreLink()`.
+With `APP_LIVE = true`, every CTA links to the store with a campaign token, for example `?ct=web_home_hero`, `web_header`, `web_footer` or `web_gu_<guide-id>`, via `appStoreLink()`.
 
 ## Project structure
 
