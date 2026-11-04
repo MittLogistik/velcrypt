@@ -7,10 +7,10 @@ export const SITE_NAME = 'Velcrypt';
 export const TAGLINE = 'Well Encrypted. Truly Private.';
 
 /** Set to true once the App Store listing is public. Controls all CTA wording. */
-export const APP_LIVE = false;
+export const APP_LIVE = true;
 
 /** Single source of truth for the App Store listing. */
-export const APP_STORE_URL = 'https://apps.apple.com/app/velcrypt/id0000000000';
+export const APP_STORE_URL = 'https://apps.apple.com/app/velcrypt/id6825482326';
 
 /** Contact addresses (placeholders until the mailboxes exist). */
 export const SUPPORT_EMAIL = 'support@velcrypt.app';
