@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "album masqué iphone vs coffre-fort photo"
 keywords: ["album masqués iphone sécurisé", "cacher des photos iphone album masqué", "alternative album masqués", "album masqués face id", "photos masquées icloud"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "L’album Masqués intégré d’Apple face à un coffre chiffré distinct : ce que chacun protège, où se synchronisent les photos, qui peut les ouvrir."
 competitor: "Album Masqués de l’iPhone"
 lastChecked: "octobre 2026"
@@ -52,7 +52,7 @@ Si Photos iCloud est activé, les éléments masqués se synchronisent comme tou
 | Compte requis | Non | Fait partie de Photos ; compte Apple nécessaire pour la synchronisation iCloud |
 | Sauvegarde cloud | Non ; sauvegarde chiffrée manuelle et gratuite (fichier protégé par mot de passe) | Oui, avec Photos iCloud ou la sauvegarde iCloud |
 | Méthode de déverrouillage | Motif sur une grille 5×5, distinct du code | Face ID, Touch ID ou code de l’appareil |
-| Biométrie | Non proposée, par choix | Oui |
+| Biométrie | Facultative, désactivée par défaut (par coffre) | Oui |
 | Leurre / plusieurs coffres | Chaque motif est son propre coffre | Un seul album Masqués |
 | Schéma de contrainte | Oui, avec Premium (ouvre un leurre, supprime les autres coffres) | Non |
 | Récupération en cas d’oubli du code | Aucune | Code de l’appareil et récupération du compte Apple |
@@ -66,7 +66,7 @@ Si Photos iCloud est activé, les éléments masqués se synchronisent comme tou
 
 La principale différence pratique, c’est qui peut entrer. L’album Masqués fait confiance au code de votre appareil. C’est raisonnable face à des inconnus, mais beaucoup de gens partagent leur code avec un partenaire, un enfant ou un proche, ou l’ont tapé devant eux. Toute personne qui connaît le code peut ouvrir l’album Masqués, même si Face ID est configuré, car le code est toujours accepté en solution de repli.
 
-Le motif de Velcrypt est un secret distinct. Connaître votre code, ou placer votre visage devant le téléphone, n’ouvre pas un coffre. C’est aussi pourquoi Velcrypt n’a volontairement pas de Face ID : un visage ou un doigt peut être utilisé sans votre consentement. Voir [verrouillage par motif](id:pattern-lock).
+Le motif de Velcrypt est un secret distinct. Connaître votre code n’ouvre pas un coffre : il n’y a aucune solution de repli par code. Face ID n’ouvre un coffre que si vous l’avez activé pour ce coffre, et il est désactivé par défaut, car un visage ou un doigt peut être utilisé sans votre consentement. Gardez votre coffre le plus privé sur son seul motif. Voir [verrouillage par motif](id:pattern-lock).
 
 ## Les copies et le cloud
 
@@ -78,7 +78,7 @@ Velcrypt fonctionne à l’inverse. Une photo importée est copiée dans un coff
 
 ## Le déni plausible
 
-Il n’existe qu’un seul album Masqués, et son existence saute aux yeux de quiconque ouvre Photos (sauf si vous désactivez son affichage). Velcrypt n’a aucune liste de coffres. Chaque motif ouvre son propre coffre, et un motif que l’app n’a jamais vu ouvre un coffre vide sans erreur. Vous pouvez ainsi garder un coffre leurre, et il devient impossible de prouver que d’autres existent. Voir [coffres cachés](id:hidden-vaults).
+Il n’existe qu’un seul album Masqués, et son existence saute aux yeux de quiconque ouvre Photos (sauf si vous désactivez son affichage). Velcrypt n’affiche aucune liste de coffres, hormis ceux que vous ajoutez vous-même à la liste Face ID. Chaque motif ouvre son propre coffre, et un motif que l’app n’a jamais vu ouvre un coffre vide sans erreur. Vous pouvez ainsi garder un coffre leurre, et il devient impossible de prouver que d’autres existent. Voir [coffres cachés](id:hidden-vaults).
 
 ## Quand l’album Masqués peut mieux vous convenir
 

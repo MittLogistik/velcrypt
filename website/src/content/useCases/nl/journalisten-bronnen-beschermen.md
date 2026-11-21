@@ -9,12 +9,12 @@ keyFacts:
   - "Een dreigingsmodel maken betekent nagaan wie het materiaal zou willen hebben, wat die kan doen en wat er gebeurt als die het krijgt."
   - "Minimalisatie, minder bewaren en korter, is vaak de sterkste bescherming voor bronnen."
   - "Fotometadata kan verraden waar en wanneer een foto is gemaakt, en met welk toestel."
-  - "Velcrypt heeft geen account, geen servers en geen synchronisatie; kluizen openen met een patroon, niet met Face ID."
+  - "Velcrypt heeft geen account, geen servers en geen synchronisatie; kluizen openen met een patroon, en Face ID staat standaard uit."
   - "Een kluis beschermt geen kopieën in iCloud, berichtenapps, e-mail of op de telefoon van een bron."
 primaryKeyword: "journalist bronbescherming telefoon"
 keywords: ["bronfoto's beschermen telefoon", "beveiliging telefoon journalist", "brondocumenten iphone privacy", "digitale veiligheid verslaggever", "dreigingsmodel journalisten"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Dreigingsmodellen, minimalisatie en metadata voor verslaggevers, en waar een versleutelde iPhone-kluis past als één laag bronbescherming."
 group: professional
 schemaType: Article
@@ -26,7 +26,7 @@ faq:
   - q: "Hoe verwijder ik metadata van een foto van een bron?"
     a: "Gebruik een hulpmiddel dat de afbeelding opnieuw opslaat zonder ingesloten gegevens, zoals onze Fotometadata-verwijderaar in de browser, die EXIF en GPS weglaat. Onthoud dat de zichtbare inhoud, zoals gezichten, borden of reflecties, nog steeds een plek of persoon kan verraden."
   - q: "Kan een kluis-app bronnen beschermen als mijn telefoon in beslag wordt genomen?"
-    a: "Het voegt een laag toe: een Velcrypt-kluis opent alleen met jouw patroon, en een onbekend patroon toont een lege kluis. Het gaat niet boven de wet, voorkomt geen druk om te ontgrendelen en beschermt geen kopieën die elders staan."
+    a: "Het voegt een laag toe: een Velcrypt-kluis opent met jouw patroon (of met Face ID, maar alleen als je dat zelf voor die kluis aanzet), en een onbekend patroon toont een lege kluis. Het gaat niet boven de wet, voorkomt geen druk om te ontgrendelen en beschermt geen kopieën die elders staan."
   - q: "Waar vinden journalisten training in digitale veiligheid?"
     a: "Persvrijheidsorganisaties en journalistenverenigingen publiceren gidsen over digitale veiligheid en bieden soms persoonlijke hulp. Het beveiligingsteam van je redactie, als je dat hebt, is een goed eerste aanspreekpunt."
 ---
@@ -63,7 +63,7 @@ De antwoorden bepalen je hulpmiddelen. Een verhaal met weinig risico overdreven 
 
 Velcrypt is één laag in dat plan. Het bewaart foto's, video's en documenten in versleutelde kluizen op je iPhone, met AES-256-GCM en sleutels die van je patroon zijn afgeleid. Er is geen account, geen server, geen synchronisatie en geen analytics op kluisinhoud, dus er staat niets op een server dat iemand kan opvragen.
 
-Kluizen openen met een patroon op een 5×5-raster. Velcrypt ondersteunt bewust geen Face ID of Touch ID, omdat biometrie zonder jouw toestemming kan worden gebruikt; een patroon bestaat alleen in je geheugen. De redenering lees je in [patroon vs pincode vs Face ID](id:pattern-lock-vs-pin-vs-face-id). Elk patroon opent een eigen kluis, en een onbekend patroon opent zonder foutmelding een lege kluis, wat [plausibele ontkenning](id:plausible-deniability-explained) ondersteunt. Meer kluizen horen bij Premium. Met Premium opent een [dwangpatroon](id:duress-pattern) een lokkluis en verwijdert het de andere kluizen definitief. Het is bedoeld voor situaties waarin je persoonlijke veiligheid op het spel staat, zoals diefstal of bedreiging, niet om materiaal te verwijderen wanneer autoriteiten rechtmatig toegang eisen; dat kan zelf strafbaar zijn. Vraag juridisch advies als dat voor jou een risico is.
+Kluizen openen met een patroon op een 5×5-raster. Face ID en Touch ID staan in Velcrypt standaard uit, omdat biometrie zonder jouw toestemming kan worden gebruikt; een patroon bestaat alleen in je geheugen. Laat Face ID uit voor kluizen met bronmateriaal, want wie je naar je telefoon laat kijken, kan elke kluis in de Face ID-lijst zien en openen. De redenering lees je in [patroon vs pincode vs Face ID](id:pattern-lock-vs-pin-vs-face-id). Elk patroon opent een eigen kluis, en een onbekend patroon opent zonder foutmelding een lege kluis, wat [plausibele ontkenning](id:plausible-deniability-explained) ondersteunt. Meer kluizen horen bij Premium. Met Premium opent een [dwangpatroon](id:duress-pattern) een lokkluis en verwijdert het de andere kluizen definitief. Het is bedoeld voor situaties waarin je persoonlijke veiligheid op het spel staat, zoals diefstal of bedreiging, niet om materiaal te verwijderen wanneer autoriteiten rechtmatig toegang eisen; dat kan zelf strafbaar zijn. Vraag juridisch advies als dat voor jou een risico is.
 
 ## Eerlijke beperkingen
 

@@ -20,7 +20,7 @@ keywords:
   - "sair da fototeca compartilhada"
   - "fotos de família criptografadas"
 datePublished: 2026-10-31
-dateModified: 2026-10-31
+dateModified: 2026-11-21
 summary: "Quem pode ver, editar e apagar o quê na Fototeca Compartilhada do iCloud, como fotos entram sozinhas e como manter as privadas de fora."
 category: apple
 order: 60
@@ -136,7 +136,7 @@ Se você procura “fotos de família criptografadas”, a resposta honesta é e
 
 A Fototeca Compartilhada foi feita para compartilhar. Para as fotos que você nunca quer compartilhar, o mais confiável é tirá-las por completo da fototeca do Fotos.
 
-O Velcrypt é um cofre para iPhone feito exatamente para isso. Fotos, vídeos e documentos importados são criptografados no iPhone com AES-256-GCM e abertos com um padrão desenhado numa grade de 5×5, não com o código do aparelho nem com o Face ID. [Não há conta, servidor nem sincronização](id:offline-no-account), e os dados do cofre ficam fora dos backups do iCloud e do computador, então nada do cofre pode aparecer numa Fototeca Compartilhada, num álbum compartilhado ou no iPad da família. Cada padrão abre o próprio cofre, então você também pode manter um cofre falso inofensivo.
+O Velcrypt é um cofre para iPhone feito exatamente para isso. Fotos, vídeos e documentos importados são criptografados no iPhone com AES-256-GCM e abertos com um padrão desenhado numa grade de 5×5, não com o código do aparelho (o Face ID só se você o ativar para um cofre). [Não há conta, servidor nem sincronização](id:offline-no-account), e os dados do cofre ficam fora dos backups do iCloud e do computador, então nada do cofre pode aparecer numa Fototeca Compartilhada, num álbum compartilhado ou no iPad da família. Cada padrão abre o próprio cofre, então você também pode manter um cofre falso inofensivo.
 
 Importar cria uma cópia criptografada; o original continua lá. Depois, apague o original no Fotos e esvazie Apagados. Se a foto estava na Fototeca Compartilhada, mova-a antes para a sua Fototeca Pessoal ou apague-a lá, e lembre que só quem a adicionou pode apagá-la de vez em Apagados.
 

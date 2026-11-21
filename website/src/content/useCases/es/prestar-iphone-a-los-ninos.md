@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "ocultar fotos a los niños iphone"
 keywords: ["mi hijo usa mi móvil y ve mis fotos", "esconder fotos de los niños iphone", "acceso guiado para niños", "tiempo de uso niños iphone", "prestar el móvil a un niño privacidad"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Deja que los niños jueguen con tu iPhone sin que acaben en tus fotos privadas: Acceso Guiado, Tiempo de uso y una bóveda que sigue cerrada."
 group: everyday
 schemaType: Article
@@ -69,7 +69,7 @@ Saca del carrete documentos como el pasaporte o recetas médicas, revisa qué ap
 
 Velcrypt es una bóveda privada para fotos, vídeos y documentos que vive por completo en tu iPhone. Cuando importas algo, se copia en una bóveda cifrada; una vez que [borras el original](id:delete-original-photos-after-import) (y vacías el álbum Eliminado), ya no está en tu fototeca, ni en Recuerdos, ni en los widgets, ni en el selector de fotos de ninguna app.
 
-La bóveda se abre dibujando un [patrón en una cuadrícula 5×5](id:pattern-lock), no con el código del dispositivo ni con Face ID. Así que ni siquiera un niño que conozca tu código puede abrirla. Si abre la app y dibuja algo, simplemente verá una bóveda vacía: sin mensaje de error y sin nada que sugiera que dentro hay más.
+La bóveda se abre dibujando un [patrón en una cuadrícula 5×5](id:pattern-lock), no con el código del dispositivo, y Face ID solo funciona en las bóvedas en las que tú lo actives. Así que ni siquiera un niño que conozca tu código puede abrirla. Si abre la app y dibuja algo, simplemente verá una bóveda vacía: sin mensaje de error y sin nada que sugiera que dentro hay más.
 
 El [bloqueo automático](id:auto-lock) cierra la bóveda en cuanto la app pasa a segundo plano, y su contenido se oculta en el selector de apps. Si estás mirando un documento y prestas el teléfono, al cambiar de app se bloquea.
 

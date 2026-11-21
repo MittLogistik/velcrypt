@@ -10,11 +10,11 @@ keyFacts:
   - "Door mensen gekozen patronen zijn veel zwakker dan het theoretische maximum: mensen kiezen hoeken, letters en korte vormen."
   - "Biometrie is handig en moeilijk af te kijken, maar een gezicht of vinger kan worden gebruikt terwijl je slaapt, wordt vastgehouden of wordt gedwongen."
   - "Vegen op het scherm verraden patronen makkelijker dan pincodes."
-  - "Velcrypt gebruikt een patroon op een raster van 5×5 (minstens 6 stippen) en heeft bewust geen Face ID of Touch ID."
+  - "Velcrypt gebruikt een patroon op een raster van 5×5 (minstens 6 stippen); Face ID of Touch ID is optioneel, per kluis, en staat standaard uit."
 primaryKeyword: "patroonslot vs pincode"
 keywords: ["pincode vs face id veiligheid", "is een patroonslot veilig", "patroon vs wachtwoord", "face id vs toegangscode", "veiligste telefoonslot", "gedwongen biometrie"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-11-21
 summary: "Rekenwerk aan combinaties, meekijken, vegen op het scherm en gedwongen biometrie: een eerlijke vergelijking van vier manieren om privédata af te sluiten."
 category: security
 order: 40
@@ -28,8 +28,8 @@ faq:
     a: "Een pincode van 6 cijfers heeft 1.000.000 mogelijke combinaties (000000 tot 999999), tegenover 10.000 voor een pincode van 4 cijfers. Veelgebruikte keuzes als 123456 of geboortedatums maken het echte aantal veel kleiner."
   - q: "Kan iemand mijn patroon raden aan de hand van vegen op het scherm?"
     a: "Soms. In het juiste licht kunnen vingersporen op een glazen scherm het pad van een patroon verraden. Het scherm schoonvegen, een matte screenprotector gebruiken en een patroon kiezen dat zichzelf kruist, maken zulke aanvallen allemaal moeilijker."
-  - q: "Waarom biedt Velcrypt geen Face ID?"
-    a: "Bewust. Een gezicht of vingerafdruk kan worden gebruikt om een apparaat te ontgrendelen zonder dat je ermee instemt, terwijl een patroon alleen in je geheugen bestaat. Velcrypt koos voor een patroon zodat het openen van een kluis altijd vraagt dat jij besluit hem te openen."
+  - q: "Gebruikt Velcrypt Face ID?"
+    a: "Alleen als jij het aanzet. Face ID staat standaard uit en zet je per kluis aan via Instellingen › Face ID. Na Face ID kies je uit de kluizen waarvoor je het hebt aangezet; het patroon opent nog steeds elke kluis. Omdat een gezicht zonder je toestemming kan worden gebruikt, houd je je meest privékluis het best op alleen het patroon."
 ---
 
 Elk slot is een afweging tussen hoe moeilijk het te raden is, hoe makkelijk het af te kijken is en hoe makkelijk iemand je kan dwingen het te openen. De meeste vergelijkingen kijken alleen naar het eerste. Deze gids kijkt naar alle drie, met echte getallen waar die bestaan en eerlijke kanttekeningen waar niet.
@@ -116,6 +116,8 @@ Je hoeft niet één slot voor alles te kiezen. Een verstandige opzet voor de mee
 
 ## Waar Velcrypt past
 
-Velcrypt maakt een bewuste keuze: de enige weg naar een kluis is een patroon op een raster van 5×5 stippen, één doorlopende lijn door minstens 6 stippen met minstens één richtingsverandering. Langere patronen van 8 tot 12 stippen worden aangeraden. Er is geen Face ID of Touch ID, omdat een patroon niet van je lichaam kan worden afgenomen.
+In Velcrypt opent een patroon op een raster van 5×5 stippen elke kluis: één doorlopende lijn door minstens 6 stippen met minstens één richtingsverandering. Langere patronen van 8 tot 12 stippen worden aangeraden.
 
-Het ontwerp verandert ook wat „raden” betekent. Elk patroon is een eigen kluis, en een patroon dat Velcrypt nooit heeft gezien, opent gewoon een lege kluis, zonder foutmelding. Een verkeerde gok kondigt zichzelf dus niet als fout aan, en je kunt een [lokkluis](id:what-is-a-decoy-vault) onder een tweede patroon bewaren. De pagina over [verborgen kluizen](id:hidden-vaults) legt het model uit, en het [beveiligingsoverzicht](id:security) noemt waar het niet tegen beschermt, zoals iemand die toekijkt terwijl je tekent.
+Face ID of Touch ID is optioneel en staat standaard uit, voor elke kluis. Om de reden hierboven: een gezicht of vinger kan zonder je toestemming worden gebruikt, een patroon niet. Wil je het gemak, dan zet je Face ID per kluis aan vanuit die kluis (Instellingen › Face ID). Op het vergrendelscherm verschijnt dan ‘Ontgrendel met Face ID’, en na een geslaagde scan kies je uit de kluizen waarvoor je het hebt aangezet. Er is geen terugval op de toegangscode van je iPhone, en de Face ID-sleutel blijft alleen op dit apparaat. De afweging is eerlijk: wie je naar je telefoon kan laten kijken, kan elke kluis in die lijst zien en openen. Houd je meest privékluis dus op alleen het patroon, en gebruik Face ID voor kluizen waar gemak zwaarder weegt. Het dwangpatroon werkt alleen met patronen, niet via de Face ID-lijst.
+
+Het ontwerp verandert ook wat „raden” betekent. Elk patroon is een eigen kluis, en een patroon dat Velcrypt nooit heeft gezien, opent gewoon een lege kluis, zonder foutmelding. Afgezien van de kluizen die je zelf aan de Face ID-lijst toevoegt, toont Velcrypt nergens welke kluizen er bestaan. Een verkeerde gok kondigt zichzelf dus niet als fout aan, en je kunt een [lokkluis](id:what-is-a-decoy-vault) onder een tweede patroon bewaren. De pagina over [verborgen kluizen](id:hidden-vaults) legt het model uit, en het [beveiligingsoverzicht](id:security) noemt waar het niet tegen beschermt, zoals iemand die toekijkt terwijl je tekent.

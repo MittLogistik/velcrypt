@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "riparazione iphone privacy foto"
 keywords: ["nascondere foto prima della riparazione", "il centro riparazioni vede le mie foto", "codice iphone in riparazione", "proteggere i dati iphone in riparazione", "consigli privacy riparazione telefono"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Cosa potrebbe vedere un tecnico sul tuo iPhone, come prepararti e perché serve un piano di backup prima di consegnarlo."
 group: everyday
 schemaType: Article
@@ -59,7 +59,7 @@ La maggior parte dei tecnici sono professionisti che non hanno alcun interesse p
 
 ## Come ti aiuta Velcrypt
 
-Velcrypt conserva foto, video e documenti in casseforti cifrate sul tuo iPhone. La cassaforte non si apre con il codice del dispositivo o Face ID: serve la [sequenza che disegni su una griglia 5×5](id:pattern-lock). Quindi, anche se un tecnico ha il tuo codice e apre Velcrypt, disegnando qualsiasi cosa diversa dalla tua sequenza vede solo una cassaforte vuota, senza errori e senza indizi sull'esistenza di altre casseforti.
+Velcrypt conserva foto, video e documenti in casseforti cifrate sul tuo iPhone. La cassaforte non si apre con il codice del dispositivo: serve la [sequenza che disegni su una griglia 5×5](id:pattern-lock), e Face ID si usa solo se lo attivi tu per quella cassaforte. Quindi, anche se un tecnico ha il tuo codice e apre Velcrypt, disegnando qualsiasi cosa diversa dalla tua sequenza vede solo una cassaforte vuota, senza errori e senza indizi sull'esistenza di altre casseforti.
 
 Le foto importate sono copie, quindi ricordati di [eliminare gli originali](id:delete-original-photos-after-import) e svuotare «Eliminati di recente» prima della riparazione. Altrimenti sono ancora in Foto.
 

@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "iPhone 隐藏照片"
 keywords: ["iPhone 怎么隐藏照片", "iPhone 已隐藏相簿", "苹果手机隐藏照片", "隐藏相簿怎么隐藏", "iPhone 隐藏相册加锁", "iOS 18 隐藏照片"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-11-21
 summary: "用“照片”App 的隐藏功能，锁定并隐藏“已隐藏”相簿，并弄清隐藏保护不了什么。"
 category: hiding
 order: 1
@@ -117,6 +117,6 @@ howTo:
 
 ## Velcrypt 的定位
 
-Velcrypt 就是第二种方式的一个例子。你在 5×5 的点阵上画出图案来解锁，而不是用 Face ID 或设备密码，所以知道你的 iPhone 密码也打不开它。文件在设备上用 AES-256-GCM 加密，不需要账户，保险箱数据也不会包含在 iCloud 备份中。每个图案都会打开各自独立的保险箱，没见过的图案只会打开一个空保险箱；[隐藏保险箱](id:hidden-vaults) 页面解释了这为什么重要。
+Velcrypt 就是第二种方式的一个例子。你在 5×5 的点阵上画出图案来解锁，而不是用设备密码，所以知道你的 iPhone 密码也打不开它；Face ID 只会用在你主动为其开启的保险箱上（默认关闭）。文件在设备上用 AES-256-GCM 加密，不需要账户，保险箱数据也不会包含在 iCloud 备份中。每个图案都会打开各自独立的保险箱，没见过的图案只会打开一个空保险箱；[隐藏保险箱](id:hidden-vaults) 页面解释了这为什么重要。
 
 把照片导入 Velcrypt 是复制而不是移动，所以原图会一直留在“照片”里，直到你自己删除它，包括从“最近删除”中删除。[导入后删除原图](id:delete-original-photos-after-import) 的指南会一步步带你完成。想了解这款 App 在照片方面的功能，请看 [用 Velcrypt 隐藏照片](id:hide-photos)；想看并排对比，请看 [Velcrypt 与 iPhone“已隐藏”相簿对比](id:velcrypt-vs-iphone-hidden-album)。

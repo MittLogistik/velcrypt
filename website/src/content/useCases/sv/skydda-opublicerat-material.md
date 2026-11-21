@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "skydda opublicerade bilder iphone"
 keywords: ["spara kundbilder privat iphone", "fotograf kundintegritet mobil", "dölja jobbilder iphone", "kreatör integritet innehåll", "hålla opublicerat innehåll privat"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "För fotografer, konstnärer och kreatörer: håll opublicerat material och kundmaterial privat i iPhone, och dela det bara med avsikt."
 group: professional
 schemaType: Article
@@ -63,7 +63,7 @@ När du fotograferar någon förvaltar du en del av hens integritet. God praxis,
 
 Velcrypt förvarar bilder, [videor](id:hide-videos) och dokument i krypterade valv i din iPhone, utan konto och utan att något laddas upp. I ett valv kan du skapa [album](id:albums) per projekt eller kund, använda flerval, flytta objekt mellan album och visa bilder och videor med zoom och svep.
 
-Valven öppnas med ett mönster som ritas på ett 5×5-rutnät, inte med din lösenkod eller Face ID. Varje mönster öppnar sitt eget valv, så du kan ha kundarbeten i ett valv, privata bilder i ett annat och ett valv för att visa en portfolio som bara innehåller det du gärna låter vem som helst se. Ett okänt mönster öppnar helt enkelt ett tomt valv.
+Valven öppnas med ett mönster som ritas på ett 5×5-rutnät, inte med din lösenkod, och med Face ID bara om du slår på det för ett valv. Varje mönster öppnar sitt eget valv, så du kan ha kundarbeten i ett valv, privata bilder i ett annat och ett valv för att visa en portfolio som bara innehåller det du gärna låter vem som helst se. Ett okänt mönster öppnar helt enkelt ett tomt valv.
 
 Med säker export kan du ta ut en enskild fil när det är dags att leverera eller publicera. Appen låses automatiskt när den går till bakgrunden och döljer innehållet i appväxlaren, vilket hjälper när du byter till en meddelandeapp mitt i ett samtal.
 

@@ -20,7 +20,7 @@ keywords:
   - "delat bibliotek eller delat album"
   - "krypterade familjebilder"
 datePublished: 2026-10-31
-dateModified: 2026-10-31
+dateModified: 2026-11-21
 summary: "Vem som kan se, redigera och radera vad i ett delat iCloud-bildbibliotek, hur bilder hamnar där automatiskt och hur du håller privata bilder utanför."
 category: apple
 order: 60
@@ -136,7 +136,7 @@ Söker du efter "krypterade familjebilder" är det här det ärliga svaret: det 
 
 Det delade biblioteket är byggt för att dela. För bilder du aldrig vill dela är det säkrare att ta bort dem helt från bildbiblioteket i Bilder.
 
-Velcrypt är ett fotovalv för iPhone som är gjort just för det. Bilder, videor och dokument du importerar krypteras på iPhonen med AES-256-GCM och öppnas med ett mönster som du ritar på ett rutnät med 5×5 punkter, inte med enhetens lösenkod eller Face ID. Det finns [inget konto, ingen server och ingen synkning](id:offline-no-account), och valvdata undantas från iCloud- och datorsäkerhetskopior, så inget i ett valv kan dyka upp i ett delat bibliotek, ett delat album eller på familjens iPad. Varje mönster öppnar sitt eget valv, så du kan också ha ett harmlöst lockbetesvalv.
+Velcrypt är ett fotovalv för iPhone som är gjort just för det. Bilder, videor och dokument du importerar krypteras på iPhonen med AES-256-GCM och öppnas med ett mönster som du ritar på ett rutnät med 5×5 punkter, inte med enhetens lösenkod (Face ID bara om du slår på det för ett valv). Det finns [inget konto, ingen server och ingen synkning](id:offline-no-account), och valvdata undantas från iCloud- och datorsäkerhetskopior, så inget i ett valv kan dyka upp i ett delat bibliotek, ett delat album eller på familjens iPad. Varje mönster öppnar sitt eget valv, så du kan också ha ett harmlöst lockbetesvalv.
 
 Importen skapar en krypterad kopia; originalet ligger kvar. Radera originalet i Bilder efteråt och töm Nyligen raderade. Om bilden låg i det delade biblioteket flyttar du den först till ditt personliga bibliotek eller raderar den där, och kom ihåg att bara den som bidrog med den kan radera den för gott från Nyligen raderade.
 

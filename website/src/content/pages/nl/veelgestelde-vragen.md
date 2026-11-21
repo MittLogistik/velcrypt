@@ -10,11 +10,11 @@ keyFacts:
   - "Elk patroon opent een eigen kluis; onbekende patronen openen een lege."
   - "AES-256-GCM-versleuteling, alleen op het apparaat, geen account."
   - "Geen herstel bij een vergeten patroon; gratis versleutelde back-up tegen een verloren telefoon."
-  - "Gratis: 1 kluis, tot 50 onderdelen. Premium vanaf $ 1,99 per week (USD)."
+  - "Gratis: 1 kluis, tot 50 onderdelen; een lege kluis telt niet mee. Premium vanaf $ 1,99 per week (USD)."
 primaryKeyword: "velcrypt veelgestelde vragen"
 keywords: ["velcrypt vragen", "hoe werkt velcrypt", "fotokluis app vragen", "velcrypt patroon hulp", "velcrypt back-up"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 schemaType: FAQPage
 order: 3
 related: [security, pricing, support, pattern-lock, forgot-vault-pattern, hidden-vaults]
@@ -39,17 +39,17 @@ faqGroups:
       - q: "Hoe maak ik een tweede kluis?"
         a: "Met Premium teken je een nieuw patroon dat je nog niet eerder hebt gebruikt. Elk patroon is een eigen kluis, dus een nieuw patroon opent een nieuwe, lege kluis die je kunt gaan vullen. De gratis versie heeft één kluis."
       - q: "Waarom opende mijn patroon een lege kluis?"
-        a: "Waarschijnlijk heb je een net iets ander patroon getekend, en dat ziet Velcrypt als een andere kluis. Probeer het rustig opnieuw; de app toont bewust nooit een melding ‘verkeerd patroon’."
+        a: "Waarschijnlijk heb je een net iets ander patroon getekend, en dat ziet Velcrypt als een andere kluis. Probeer het rustig opnieuw; de app toont bewust nooit een melding ‘verkeerd patroon’. Zo’n lege kluis gebruikt je gratis kluis niet op, en de uitleg ‘Zo werkt Velcrypt’ kun je altijd opnieuw openen vanaf het vergrendelscherm, het beginscherm van de kluis of Instellingen."
       - q: "Kan ik een lijst van mijn kluizen zien?"
-        a: "Nee. Velcrypt houdt geen lijst van kluizen bij, dus niets in de app verraadt hoeveel er zijn. Je moet elk patroon zelf onthouden."
+        a: "Nee. Velcrypt houdt geen lijst van kluizen bij, dus niets in de app verraadt hoeveel er zijn. De enige uitzondering is de Face ID-lijst, met alleen de kluizen waarvoor je zelf Face ID hebt aangezet. Je moet elk patroon zelf onthouden."
       - q: "Wat is een lokkluis?"
         a: "Een lokkluis is een gewoon ogende kluis met onschuldige inhoud die je kunt openen als iemand je onder druk zet, terwijl je privékluis achter een ander patroon blijft. Niets in Velcrypt bewijst dat de tweede kluis bestaat. Voor een tweede kluis heb je Premium nodig."
       - q: "Wat is het dwangpatroon?"
         a: "Een Premium-functie die je vanuit een lokkluis instelt via Instellingen → Noodpatroon. Teken je het op het vergrendelscherm, dan opent het die lokkluis en verwijdert het ongemerkt en definitief alle andere kluizen op de iPhone. Verwijderde kluizen zijn alleen terug te zetten uit een versleuteld back-upbestand dat je eerder hebt gemaakt."
       - q: "Kan ik items in een kluis ordenen?"
         a: "Ja. Elke kluis kan albums bevatten, en je kunt meerdere items selecteren en ze binnen die kluis tussen albums verplaatsen."
-      - q: "Waarom gebruikt Velcrypt geen Face ID of Touch ID?"
-        a: "Bewust. Een gezicht of vinger kan zonder je toestemming worden gebruikt, bijvoorbeeld terwijl je slaapt of onder druk, terwijl een patroon alleen in je geheugen bestaat."
+      - q: "Gebruikt Velcrypt Face ID of Touch ID?"
+        a: "Alleen als je het zelf aanzet. Het staat standaard uit en je zet het per kluis aan via Instellingen › Face ID. Op het vergrendelscherm tik je dan op ‘Ontgrendel met Face ID’ en kies je uit de kluizen waarvoor je het hebt aangezet. Een gezicht kan zonder je toestemming worden gebruikt, dus houd je meest privékluis op alleen het patroon."
   - title: "Beveiliging en versleuteling"
     items:
       - q: "Hoe versleutelt Velcrypt mijn bestanden?"
@@ -95,7 +95,7 @@ faqGroups:
   - title: "Prijzen en beschikbaarheid"
     items:
       - q: "Is Velcrypt gratis?"
-        a: "Ja. De gratis versie heeft één kluis met tot 50 onderdelen, volledige versleuteling en versleutelde back-up. Premium is optioneel: $ 1,99 per week, $ 19,99 per jaar met 3 dagen gratis proberen, of eenmalig $ 39,99 voor altijd (USD; prijzen verschillen per land)."
+        a: "Ja. De gratis versie heeft één kluis met tot 50 onderdelen, volledige versleuteling en versleutelde back-up. Een kluis telt pas mee zodra er iets in staat. Premium is optioneel: $ 1,99 per week, $ 19,99 per jaar met 3 dagen gratis proberen, of eenmalig $ 39,99 voor altijd (USD; prijzen verschillen per land)."
       - q: "Wat zit er in Premium?"
         a: "Onbeperkt onderdelen, meer kluizen (elk extra patroon opent een eigen kluis), het dwangpatroon en alternatieve appsymbolen. Abonnementen worden automatisch verlengd tot je ze opzegt in de instellingen van je Apple Account."
       - q: "Waar kan ik Velcrypt krijgen?"

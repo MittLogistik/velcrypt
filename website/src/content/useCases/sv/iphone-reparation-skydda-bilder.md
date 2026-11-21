@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "iphone reparation bilder integritet"
 keywords: ["dölja bilder före mobilreparation", "kan verkstaden se mina bilder", "iphone reparation lösenkod", "skydda data vid iphone-reparation", "integritetstips mobilreparation"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Vad en reparationstekniker kan komma åt i din iPhone, hur du förbereder dig och varför valvet behöver en plan för säkerhetskopior."
 group: everyday
 schemaType: Article
@@ -61,7 +61,7 @@ De flesta reparationstekniker är yrkespersoner utan något intresse för dina b
 
 ## Så hjälper Velcrypt
 
-Velcrypt förvarar bilder, videor och dokument i krypterade valv i din iPhone. Valvet öppnas inte med enhetens lösenkod eller Face ID; det kräver [mönstret du ritar på ett 5×5-rutnät](id:pattern-lock). Även om en tekniker har din lösenkod och öppnar Velcrypt visar allt annat än ditt mönster bara ett tomt valv, utan felmeddelande och utan antydan om att andra valv finns.
+Velcrypt förvarar bilder, videor och dokument i krypterade valv i din iPhone. Valvet öppnas aldrig med enhetens lösenkod, och Face ID bara om du själv har slagit på det för det valvet; annars krävs [mönstret du ritar på ett 5×5-rutnät](id:pattern-lock). Även om en tekniker har din lösenkod och öppnar Velcrypt visar allt annat än ditt mönster bara ett tomt valv, utan felmeddelande och utan antydan om att andra valv finns.
 
 Importerade bilder är kopior, så kom ihåg att [radera originalen](id:delete-original-photos-after-import) och tömma Nyligen raderade före reparationen. Annars ligger de kvar i Bilder.
 

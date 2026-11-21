@@ -9,14 +9,14 @@ keyFacts:
   - "Pattern → PBKDF2-HMAC-SHA512, at least 600,000 iterations, per-device random salt kept in the iOS Keychain."
   - "Each vault has its own random 256-bit master key; per-file keys are derived with HKDF."
   - "Files are encrypted with AES-256-GCM via Apple CryptoKit, plus iOS Data Protection (complete protection class)."
-  - "An unknown pattern opens an empty vault — no list of vaults, no “wrong pattern” message."
+  - "An unknown pattern opens an empty vault — no list of vaults (except an optional Face ID list), no “wrong pattern” message."
   - "No network, no account, no analytics on vault content; vault data is excluded from iCloud and computer backups."
   - "Optional encrypted backup: a .velcrypt file protected by a backup password you choose."
   - "Velcrypt has not had an independent security audit yet."
 primaryKeyword: "velcrypt security"
 keywords: ["photo vault encryption iphone", "how velcrypt encryption works", "aes-256-gcm photo vault", "pbkdf2 pattern lock", "photo vault threat model", "plausible deniability vault app"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 schemaType: WebPage
 order: 1
 related: [encryption, pattern-lock, hidden-vaults, aes-256-encryption-explained, plausible-deniability-explained, forgot-vault-pattern]
@@ -77,7 +77,7 @@ On top of Velcrypt’s own encryption, vault files are written with iOS Data Pro
 
 Most apps check your password against something stored — a hash, a verifier, a “correct answer” — and then say *wrong password*. Velcrypt deliberately does not do this.
 
-There is no list of vaults and no stored value that confirms whether a pattern is “correct”. When you draw a pattern, Velcrypt derives a key and tries to open the vault that belongs to it. If no vault matches, the app simply opens a new, empty vault for that pattern. To the person holding the phone, a never-used pattern and a real-but-empty vault look the same.
+There is no list of vaults (apart from the optional Face ID list, which holds only the vaults you add) and no stored value that confirms whether a pattern is “correct”. When you draw a pattern, Velcrypt derives a key and tries to open the vault that belongs to it. If no vault matches, the app simply opens a new, empty vault for that pattern. To the person holding the phone, a never-used pattern and a real-but-empty vault look the same.
 
 This gives you **plausible deniability**: the ability to credibly say there is nothing more to see, because nothing in the app proves otherwise. You can keep a decoy vault with ordinary photos and a separate vault for what is genuinely private. The [hidden vaults](id:hidden-vaults) page and our guides to [decoy vaults](id:what-is-a-decoy-vault) and [plausible deniability](id:plausible-deniability-explained) go into more detail.
 
@@ -85,9 +85,13 @@ A practical side effect: if you misremember your pattern by one dot, you will la
 
 ## Locking and the app switcher
 
-Velcrypt locks automatically when it goes to the background, after a delay you can configure. When it locks, the vault keys are dropped from memory and the pattern has to be drawn again. Vault content is also hidden in the iOS app switcher, so a glance at your recent apps doesn’t show a thumbnail of a private photo. See [auto-lock](id:auto-lock) for the settings.
+Velcrypt locks automatically when it goes to the background, after a delay you can configure. When it locks, the vault keys are dropped from memory and the pattern has to be drawn again (or Face ID used, for vaults you turned it on for). Vault content is also hidden in the iOS app switcher, so a glance at your recent apps doesn’t show a thumbnail of a private photo. See [auto-lock](id:auto-lock) for the settings.
 
-There is no Face ID or Touch ID unlock, by design. A face or a finger can be used without your consent — while you sleep, or under pressure. A pattern exists only in your memory.
+### Optional Face ID
+
+Face ID or Touch ID is optional and off by default for every vault. If you turn it on for a vault (Settings › Face ID, from inside that vault), Velcrypt keeps a copy of that vault’s key in the iPhone’s Keychain, on this device only — not in iCloud, not in backups — tied to the faces and fingerprints enrolled at that moment. Your iPhone passcode can’t stand in for Face ID. If a face or fingerprint is added or Face ID is reset, Face ID turns off for those vaults until you open them with the pattern and turn it on again.
+
+It is off by default because a face or a finger can be used without your consent — while you sleep, or under pressure — and anyone who can get you to look at your phone can see and open every vault in the Face ID list. A pattern exists only in your memory, so keep your most private vault on its pattern only. The duress pattern works through patterns only; the Face ID list does not trigger it.
 
 ## No network, no account, no automatic backups
 
@@ -105,7 +109,7 @@ In Settings → Backup you can create an encrypted `.velcrypt` file for the vaul
 |---|---|---|
 | Someone scrolls your Photos library | Yes | Items you import and then delete from Photos (including Recently Deleted) are only in Velcrypt. |
 | Someone picks up your unlocked phone and opens Velcrypt | Yes | They need your pattern; a wrong one shows an empty vault. |
-| Someone tries to prove you have more vaults | Largely | No vault list, no “wrong pattern” message; vault count isn’t shown in the app. |
+| Someone tries to prove you have more vaults | Largely | No vault list, no “wrong pattern” message; vault count isn’t shown in the app. Vaults you add to Face ID are the exception. |
 | Theft of a locked iPhone | Yes | iOS Data Protection plus Velcrypt’s own AES-256-GCM encryption. |
 | Brute-forcing the pattern from extracted files | Slowed | PBKDF2 with 600,000+ iterations and a per-device salt; a long pattern matters. |
 | Cloud account breach | Yes | Vault data isn’t uploaded and is excluded from iCloud backups. A backup file you store in the cloud stays encrypted with your backup password. |
@@ -120,13 +124,13 @@ In Settings → Backup you can create an encrypted `.velcrypt` file for the vaul
 Every security tool has limits, and you should know Velcrypt’s before you rely on it.
 
 - **Shoulder-surfing.** If someone sees you draw your pattern, in person or on camera, they can open that vault. Draw it out of sight, and consider a pattern that doesn’t look like a simple letter or shape.
-- **Being forced to unlock.** Velcrypt cannot stop someone from coercing you into drawing a pattern. A decoy vault can help, and with Premium a [duress pattern](id:duress-pattern) opens a decoy vault while permanently deleting the others. Neither can stop someone who already knows your real pattern, and deleted vaults can only be restored from a backup file you made earlier.
+- **Being forced to unlock.** Velcrypt cannot stop someone from coercing you into drawing a pattern, or from holding the phone up to your face to open vaults you added to Face ID. A decoy vault can help, and with Premium a [duress pattern](id:duress-pattern) opens a decoy vault while permanently deleting the others. Neither can stop someone who already knows your real pattern, and deleted vaults can only be restored from a backup file you made earlier.
 - **A phone handed over with the vault open.** While a vault is unlocked, anyone holding the phone can see what you see. Lock it before passing your phone to anyone.
 - **Compromised or jailbroken devices and malware.** Software that can read the screen, log touches or inspect app memory on a compromised device can defeat any app-level encryption.
 - **Screenshots or photos of the screen.** Velcrypt can’t stop another camera from photographing your display.
 - **Copies elsewhere.** Importing copies a photo; the original stays in Photos until you delete it, and then sits in Recently Deleted for about 30 days. Copies may also exist in iCloud Photos, chat apps, email or on someone else’s phone. Follow [deleting originals after import](id:delete-original-photos-after-import).
 - **A forgotten pattern, or a lost phone without a backup.** Both mean the data is gone. There is no recovery phrase and no reset, and a forgotten backup password can’t be recovered either. See [forgot your vault pattern](id:forgot-vault-pattern).
-- **Detection that Velcrypt is in use.** The app icon is visible, and forensic tools may be able to see that Velcrypt holds encrypted data and roughly how much. Velcrypt doesn’t claim to hide that — only the number of vaults and their contents.
+- **Detection that Velcrypt is in use.** The app icon is visible, and forensic tools may be able to see that Velcrypt holds encrypted data and roughly how much. Velcrypt doesn’t claim to hide that — only the number of vaults and their contents, apart from the vaults you add to the Face ID list.
 - **Weak or guessable patterns.** A short pattern, or one shaped like an L, Z or square, is much easier to guess. Test a similar shape with the [pattern strength checker](id:pattern-strength-checker) — never your real one.
 
 ## Independent review

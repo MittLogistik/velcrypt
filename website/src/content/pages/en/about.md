@@ -1,20 +1,20 @@
 ---
 pageId: about
 title: "About Velcrypt: Private by Design"
-description: "Why Velcrypt exists and the principles behind it: on-device encryption, no account, no biometrics by design, honest limits, no ads or data selling."
+description: "Why Velcrypt exists and the principles behind it: on-device encryption, no account, Face ID only if you opt in, honest limits, no ads or data selling."
 h1: "About Velcrypt"
 navTitle: "About"
-answer: "Velcrypt exists to give iPhone users a simple, honest place for private photos, videos and documents: encrypted on the device, opened only by a pattern you remember, with no account, no cloud and no ads."
+answer: "Velcrypt exists to give iPhone users a simple, honest place for private photos, videos and documents: encrypted on the device, opened by a pattern you remember, with no account, no cloud and no ads."
 keyFacts:
   - "Built around on-device encryption with no account and no servers for your content."
-  - "No Face ID or Touch ID by design — a pattern lives only in your memory."
+  - "Face ID or Touch ID is optional and off by default — a pattern lives only in your memory."
   - "No ads and no selling of data."
   - "Honest about limits, including no recovery of forgotten patterns."
   - "Free encrypted backup for everyone; a duress pattern for situations of coercion, with Premium."
 primaryKeyword: "about velcrypt"
 keywords: ["velcrypt app", "who makes velcrypt", "velcrypt principles", "private photo vault iphone"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 schemaType: AboutPage
 order: 4
 related: [security, features, offline-no-account, pricing, press]
@@ -35,7 +35,7 @@ Your phone holds things you would never hand to a stranger: a scan of your passp
 
 Many vault apps ask you to create an account, push your files to a cloud, or wrap a simple PIN in marketing language. We wanted something narrower and easier to trust: a native iPhone app that encrypts your files on the device, opens with a pattern only you know, and tells you plainly what it cannot do.
 
-Velcrypt is that app. It stores photos, videos and documents in encrypted vaults, each opened by its own pattern on a 5×5 grid. A pattern it has never seen opens an empty vault, so nothing in the app reveals how many vaults you have. The details are on the [security model](id:security) page.
+Velcrypt is that app. It stores photos, videos and documents in encrypted vaults, each opened by its own pattern on a 5×5 grid. A pattern it has never seen opens an empty vault, so nothing in the app reveals how many vaults you have, apart from any you choose to add to Face ID. The details are on the [security model](id:security) page.
 
 ## Our principles
 
@@ -47,9 +47,9 @@ Your vault content is encrypted and stored on your iPhone and nowhere else. Ther
 
 There is no sign-up, no email address and no password reset flow. An account would be one more thing that could be breached or used to link you to your data.
 
-### No biometrics, by design
+### Face ID only if you choose it
 
-Velcrypt deliberately doesn’t offer Face ID or Touch ID. Biometrics are convenient, but a face or a finger can be used without your consent. A pattern exists only in your memory. You can read the reasoning in [pattern lock vs PIN vs Face ID](id:pattern-lock-vs-pin-vs-face-id).
+Every vault opens with a pattern, and Face ID or Touch ID is optional and off by default. Biometrics are convenient, but a face or a finger can be used without your consent, so you decide per vault whether to turn it on, and your most private vault can stay on its pattern only. A pattern exists only in your memory. You can read the reasoning in [pattern lock vs PIN vs Face ID](id:pattern-lock-vs-pin-vs-face-id).
 
 ### Honest limits
 

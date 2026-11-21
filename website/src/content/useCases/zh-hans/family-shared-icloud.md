@@ -13,7 +13,7 @@ keyFacts:
 primaryKeyword: "iPhone 照片同步到 iPad"
 keywords: ["照片 不同步到家人 iPad", "共用 Apple ID 照片", "iCloud 共享图库 隐私", "家人 iCloud 照片 分开", "照片出现在另一台设备"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "为什么 iPhone 照片会出现在家里的 iPad 或 Mac 上，如何理清共用账户与图库，以及私密照片该放在哪里。"
 group: everyday
 schemaType: Article
@@ -64,7 +64,7 @@ iCloud 照片是加密的，但默认情况下由 Apple 持有密钥。开启[�
 
 Velcrypt 走的是另一条路：它把私密照片、视频和文档只保存在你 iPhone 上的加密保险箱中。[没有账户、没有服务器、也没有同步](id:offline-no-account)，因此你放进保险箱的任何内容都不会出现在家里的 iPad、Mac 或共享图库中。
 
-导入会把照片复制进保险箱。要把它从所有同步设备上移除，请从「照片」中[删除原件](id:delete-original-photos-after-import)并清空「最近删除」；开启 iCloud 照片时，这一删除也会同步到你的其他设备。保险箱通过 5×5 网格上的图案打开，而不是设备密码或面容 ID。
+导入会把照片复制进保险箱。要把它从所有同步设备上移除，请从「照片」中[删除原件](id:delete-original-photos-after-import)并清空「最近删除」；开启 iCloud 照片时，这一删除也会同步到你的其他设备。保险箱通过 5×5 网格上的图案打开，而不是设备密码；面容 ID 可选，默认关闭。
 
 ## 坦诚说明局限
 

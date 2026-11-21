@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "app calculatrice secrète vs velcrypt"
 keywords: ["app calculatrice secrète", "calculatrice cacher photos", "fausse calculatrice coffre-fort iphone", "alternative app calculatrice coffre-fort", "calculatrice coffre-fort photo"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Camouflage contre chiffrement : les apps coffre-fort façon calculatrice comparées aux coffres cachés par motif de Velcrypt."
 competitor: "Apps coffre-fort calculatrice"
 lastChecked: "octobre 2026"
@@ -51,7 +51,7 @@ Les deux peuvent être utiles. Tout dépend de ce contre quoi vous vous protége
 | Compte requis | Non | Variable |
 | Sauvegarde cloud | Non ; sauvegarde chiffrée manuelle et gratuite (fichier protégé par mot de passe) | Variable ; certaines proposent des fonctions cloud |
 | Méthode de déverrouillage | Motif sur une grille 5×5 | Code numérique tapé comme un calcul |
-| Biométrie (Face ID / Touch ID) | Non proposée, par choix | Variable |
+| Biométrie (Face ID / Touch ID) | Facultative, désactivée par défaut (par coffre) | Variable |
 | Camouflage | Pas de fausse app ; icônes alternatives en Premium | Ressemble à une calculatrice fonctionnelle |
 | Leurre / plusieurs coffres | Chaque motif est son propre coffre | Variable ; certaines proposent un code leurre |
 | Schéma de contrainte | Oui, avec Premium (ouvre un leurre, supprime les autres coffres) | Variable |
@@ -70,7 +70,7 @@ Une icône de calculatrice peut faire illusion au premier regard. Mais un camouf
 
 ## Le déni plausible à la manière de Velcrypt
 
-Velcrypt ne se fait pas passer pour autre chose. Son déni plausible se trouve à l’intérieur de l’app. Chaque motif dérive sa propre clé et ouvre son propre coffre. Il n’y a aucune liste de coffres, et un motif que l’app n’a jamais vu ouvre simplement un coffre vide : pas d’erreur, rien qui suggère l’existence d’autres coffres. Vous pouvez garder un coffre leurre pour le quotidien et un coffre privé, et personne ne peut prouver que le second existe. Les pages [coffres cachés](id:hidden-vaults) et [déni plausible](id:plausible-deniability-explained) expliquent ce modèle.
+Velcrypt ne se fait pas passer pour autre chose. Son déni plausible se trouve à l’intérieur de l’app. Chaque motif dérive sa propre clé et ouvre son propre coffre. Il n’y a aucune liste de coffres (sauf ceux que vous ajoutez vous-même à la liste Face ID), et un motif que l’app n’a jamais vu ouvre simplement un coffre vide : pas d’erreur, rien qui suggère l’existence d’autres coffres. Vous pouvez garder un coffre leurre pour le quotidien et un coffre privé, et personne ne peut prouver que le second existe. Les pages [coffres cachés](id:hidden-vaults) et [déni plausible](id:plausible-deniability-explained) expliquent ce modèle.
 
 Le contenu est chiffré en AES-256-GCM, avec des clés dérivées de votre motif par PBKDF2-HMAC-SHA512 (au moins 600 000 itérations) et un sel propre à l’appareil conservé dans le trousseau iOS. Les détails figurent sur la page [chiffrement](id:encryption).
 
@@ -88,7 +88,7 @@ Si vous voulez aussi faire disparaître l’app de la vue, iOS 18 et versions ul
 ## Quand Velcrypt peut mieux vous convenir
 
 - **Ce qui compte le plus pour vous, c’est le contenu.** Un chiffrement documenté vous importe plus qu’un déguisement.
-- **Vous voulez des coffres impossibles à dénombrer.** Aucune liste, aucune erreur pour un motif inconnu.
+- **Vous voulez des coffres impossibles à dénombrer.** Aucune liste (hors coffres que vous mettez dans la liste Face ID), aucune erreur pour un motif inconnu.
 - **Vous ne voulez ni compte ni cloud.** Voir [hors ligne, sans compte](id:offline-no-account).
 - **Vous préférez la fonction d’apps masquées d’iOS** à un camouflage.
 

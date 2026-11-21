@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "geheim fotoalbum iphone"
 keywords: ["geheime map iphone", "geheim album iphone", "verborgen map iphone", "privéalbum maken op iphone", "geheime foto's iphone", "privé album iphone"]
 datePublished: 2026-10-21
-dateModified: 2026-10-31
+dateModified: 2026-11-21
 summary: "Maak een echt geheim fotoalbum op je iPhone en vermijd de bekende trucs die alleen geheim lijken."
 category: hiding
 order: 5
@@ -102,6 +102,6 @@ Wat geen enkele kluis volledig kan verbergen, is zijn eigen bestaan. Het appsymb
 
 Velcrypt benadert het geheime album vanuit de kant „niemand kan het openen”. In een kluis maak je zoveel [albums](id:albums) als je wilt en verplaats je foto's en video's daartussen, allemaal op het apparaat versleuteld met AES-256-GCM.
 
-Het ongewone zit in hoe kluizen werken. Elk patroon dat je op het raster van 5×5 tekent, is een eigen kluis, en de app houdt er geen lijst van bij. Een patroon dat Velcrypt nooit heeft gezien, opent gewoon een nieuwe, lege kluis, zonder foutmelding. Er is dus niets in de app dat verraadt hoeveel [verborgen kluizen](id:hidden-vaults) je hebt, en je kunt een onschuldige als lokkluis houden.
+Het ongewone zit in hoe kluizen werken. Elk patroon dat je op het raster van 5×5 tekent, is een eigen kluis, en de app houdt er geen lijst van bij, behalve van de kluizen die je zelf aan de Face ID-lijst toevoegt. Een patroon dat Velcrypt nooit heeft gezien, opent gewoon een nieuwe, lege kluis, zonder foutmelding. Er is dus niets in de app dat verraadt hoeveel [verborgen kluizen](id:hidden-vaults) je hebt, en je kunt een onschuldige als lokkluis houden.
 
 De eerlijke grenzen: het symbool van Velcrypt zelf is zichtbaar, tenzij je de app-verberging van iOS gebruikt, en niets beschermt een kluis als iemand je het patroon ziet tekenen of de telefoon pakt terwijl de kluis open is. Omdat een vergeten patroon niet te herstellen is, betekent het een verloren album, tenzij je eerder een versleutelde back-up hebt gemaakt.

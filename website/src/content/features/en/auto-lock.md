@@ -9,12 +9,12 @@ keyFacts:
   - "The vault locks when Velcrypt goes to the background."
   - "The delay before locking is configurable."
   - "Vault content is hidden in the app switcher preview."
-  - "After locking, your pattern is needed to open the vault again."
+  - "After locking, your pattern (or Face ID, if you turned it on for that vault) opens the vault again."
   - "A shorter delay is safer; a longer one is more convenient."
 primaryKeyword: "auto lock vault app iphone"
 keywords: ["photo vault auto lock", "hide app switcher preview", "app locks when closed iphone", "lock vault in background", "auto lock delay"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-11-21
 summary: "The vault locks when the app goes to the background, after a delay you choose, and stays blank in the app switcher."
 status: available
 schemaType: WebPage
@@ -64,7 +64,7 @@ Velcrypt hides vault content in the app switcher. The preview does not reveal wh
 
 ## Why locking matters more with a pattern
 
-Velcrypt deliberately has no Face ID or Touch ID, so reopening a locked vault always means drawing your pattern. That can feel like friction, and it is tempting to pick a long delay to avoid it. Resist that a little: the pattern only protects the vault while the vault is locked. A short delay, combined with a pattern you can draw quickly by feel, gives you both privacy and comfort.
+Face ID is optional and off by default in Velcrypt, so for most vaults reopening means drawing your pattern. That can feel like friction, and it is tempting to pick a long delay to avoid it. Resist that a little: the pattern only protects the vault while the vault is locked. A short delay, combined with a pattern you can draw quickly by feel, gives you both privacy and comfort.
 
 ## Practical tips
 

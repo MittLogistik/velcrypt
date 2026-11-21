@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "velcrypt domande frequenti"
 keywords: ["velcrypt faq", "come funziona velcrypt", "app cassaforte foto domande", "velcrypt aiuto sequenza", "velcrypt backup"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 schemaType: FAQPage
 order: 3
 related: [security, pricing, support, pattern-lock, forgot-vault-pattern, hidden-vaults]
@@ -37,19 +37,19 @@ faqGroups:
       - q: "Come deve essere una sequenza valida in Velcrypt?"
         a: "Una linea continua che passa per almeno 6 punti della griglia 5×5, con almeno un cambio di direzione. Si consigliano sequenze più lunghe, da 8 a 12 punti."
       - q: "Come creo una seconda cassaforte?"
-        a: "Disegna una sequenza nuova che non hai mai usato. Ogni sequenza è una cassaforte a sé, quindi una sequenza nuova apre una cassaforte nuova e vuota che puoi iniziare a riempire. La versione gratuita ha una cassaforte; le casseforti aggiuntive fanno parte del Premium."
+        a: "Disegna una sequenza nuova che non hai mai usato. Ogni sequenza è una cassaforte a sé, quindi una sequenza nuova apre una cassaforte nuova e vuota che puoi iniziare a riempire. La versione gratuita ha una cassaforte; le casseforti aggiuntive fanno parte del Premium. Una cassaforte vuota non conta: diventa la tua cassaforte gratuita solo quando contiene almeno un elemento."
       - q: "Perché la mia sequenza ha aperto una cassaforte vuota?"
-        a: "Molto probabilmente hai disegnato una sequenza leggermente diversa, che Velcrypt considera un’altra cassaforte. Riprova con calma; per scelta, l’app non mostra mai un messaggio di “sequenza errata”."
+        a: "Molto probabilmente hai disegnato una sequenza leggermente diversa, che Velcrypt considera un’altra cassaforte. Riprova con calma; per scelta, l’app non mostra mai un messaggio di “sequenza errata”. Una cassaforte rimasta vuota non consuma la tua cassaforte gratuita."
       - q: "Posso vedere l’elenco delle mie casseforti?"
-        a: "No. Velcrypt non tiene alcun elenco di casseforti, quindi nulla nell’app rivela quante ne esistono. Devi ricordare tu ogni sequenza."
+        a: "No. Velcrypt non elenca le casseforti, quindi nulla nell’app rivela quante ne esistono. L’unica eccezione è l’elenco Face ID, con le sole casseforti per cui hai attivato Face ID. Per tutte le altre devi ricordare tu la sequenza."
       - q: "Cos’è una cassaforte esca?"
         a: "Una cassaforte esca è una cassaforte dall’aspetto normale con contenuti innocui, che puoi aprire se vieni messo sotto pressione, mentre quella privata resta dietro un’altra sequenza. Nulla in Velcrypt prova che la seconda esista. Poiché serve una seconda cassaforte, la cassaforte esca richiede il Premium."
       - q: "Cos’è la sequenza di emergenza?"
         a: "Una funzione Premium che configuri in Impostazioni → Sequenza di emergenza dall’interno di una cassaforte esca. Disegnarla nella schermata di blocco apre quell’esca ed elimina in silenzio e definitivamente tutte le altre casseforti sull’iPhone. Le casseforti eliminate si recuperano solo da un file di backup cifrato creato prima."
       - q: "Posso organizzare gli elementi all’interno di una cassaforte?"
         a: "Sì. Ogni cassaforte può contenere album, e puoi selezionare più elementi e spostarli tra gli album di quella cassaforte."
-      - q: "Perché Velcrypt non usa Face ID né Touch ID?"
-        a: "Per scelta. Un volto o un dito possono essere usati senza il tuo consenso, per esempio mentre dormi o sotto pressione, mentre una sequenza esiste solo nella tua memoria."
+      - q: "Velcrypt usa Face ID o Touch ID?"
+        a: "Solo se lo vuoi. È gratuito e disattivato per impostazione predefinita: lo attivi per una singola cassaforte da Impostazioni › Face ID al suo interno. Nella schermata di blocco tocchi “Sblocca con Face ID” e scegli tra le casseforti attivate; la sequenza continua ad aprirle tutte. Un volto può essere usato senza il tuo consenso, quindi tieni la cassaforte più privata solo con la sequenza."
   - title: "Sicurezza e cifratura"
     items:
       - q: "Come cifra i miei file Velcrypt?"
@@ -93,7 +93,7 @@ faqGroups:
   - title: "Prezzi e disponibilità"
     items:
       - q: "Velcrypt è gratis?"
-        a: "Sì. La versione gratuita ha 1 cassaforte con fino a 50 elementi e il backup cifrato. Il Premium costa 1,99 $ a settimana, 19,99 $ all’anno con 3 giorni di prova gratuita o 39,99 $ a vita (USD; i prezzi variano in base al paese e sono indicati nell’App Store)."
+        a: "Sì. La versione gratuita ha 1 cassaforte con fino a 50 elementi e il backup cifrato; una cassaforte conta solo quando contiene almeno un elemento. Il Premium costa 1,99 $ a settimana, 19,99 $ all’anno con 3 giorni di prova gratuita o 39,99 $ a vita (USD; i prezzi variano in base al paese e sono indicati nell’App Store)."
       - q: "Cosa include il Premium?"
         a: "Elementi illimitati, più casseforti (le altre sequenze ottengono le proprie casseforti), la sequenza di emergenza e icone alternative dell’app. Gli abbonamenti si rinnovano automaticamente se non li annulli almeno 24 ore prima della fine del periodo nelle impostazioni del tuo Account Apple."
       - q: "Dove posso scaricare Velcrypt?"

@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "guardar fotos íntimas com segurança iphone"
 keywords: ["onde guardar fotos privadas no iphone", "esconder nudes iphone com segurança", "segurança de fotos privadas", "privacidade de imagens íntimas", "proteger fotos pessoais"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Um plano de segurança respeitoso, passo a passo, para fotos íntimas no iPhone, e o que fazer se alguém ameaçar divulgar suas imagens."
 category: practical
 order: 32
@@ -117,6 +117,6 @@ Se você tem menos de 18 anos, converse logo com um adulto de confiança ou com 
 
 ## Onde o Velcrypt se encaixa
 
-O Velcrypt foi feito exatamente para a brecha que o álbum Ocultos deixa: conteúdo que deve ficar neste iPhone, atrás de um segredo que só você sabe. As fotos e os vídeos que você [esconde no Velcrypt](id:hide-photos) são criptografados no aparelho com AES-256-GCM, ficam fora dos backups do iCloud e do computador e nunca passam por um servidor do Velcrypt. Cada padrão abre o próprio cofre, não há Face ID que alguém possa usar enquanto você dorme e o conteúdo fica escondido no seletor de apps.
+O Velcrypt foi feito exatamente para a brecha que o álbum Ocultos deixa: conteúdo que deve ficar neste iPhone, atrás de um segredo que só você sabe. As fotos e os vídeos que você [esconde no Velcrypt](id:hide-photos) são criptografados no aparelho com AES-256-GCM, ficam fora dos backups do iCloud e do computador e nunca passam por um servidor do Velcrypt. Cada padrão abre o próprio cofre, o Face ID vem desativado (então, a menos que você o ative, ninguém pode usar o seu rosto enquanto você dorme) e o conteúdo fica escondido no seletor de apps.
 
 Os limites honestos continuam valendo: o Velcrypt não alcança cópias no celular de outra pessoa, não impede que alguém veja você desenhar o padrão, e um padrão esquecido não pode ser recuperado. Se um relacionamento terminou, a página [depois de um término](id:after-a-breakup) traz mais ideias.

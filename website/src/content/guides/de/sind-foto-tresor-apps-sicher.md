@@ -19,7 +19,7 @@ keywords:
   - "foto tresor datenschutz"
   - "geheime foto app sicher"
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Eine praktische Checkliste für jeden Foto-Tresor: Verschlüsselung, Datenschutzangaben, Konto, Cloud, Werbung, Deinstallation und Wiederherstellung."
 category: choosing
 order: 21
@@ -113,7 +113,7 @@ Selbst ein gut gebauter Tresor hat Grenzen, und eine ehrliche App sagt das. Er k
 Der Transparenz halber hier unsere eigene App im Check:
 
 - **Verschlüsselung:** AES-256-GCM über Apple CryptoKit. Schlüssel entstehen aus deinem Muster per PBKDF2-HMAC-SHA512 mit mindestens 600.000 Iterationen, jeder Tresor hat einen eigenen zufälligen Hauptschlüssel, und darüber liegt der iOS-Datenschutz. Details auf unserer [Sicherheitsseite](id:security) und der [Seite zur Verschlüsselung](id:encryption).
-- **Geheimnis:** ein Muster auf einem 5×5-Raster, getrennt von deinem Gerätecode; bewusst kein Face ID.
+- **Geheimnis:** ein Muster auf einem 5×5-Raster, getrennt von deinem Gerätecode; Face ID optional, standardmäßig aus und ohne Ausweich-Code.
 - **Konto und Cloud:** keine. Keine Registrierung, keine Server, keine Uploads ([offline, ohne Konto](id:offline-no-account)).
 - **Wiederherstellung:** nur über ein Backup unter deiner Kontrolle. Tresorinhalte sind von iCloud- und Computer-Backups ausgeschlossen; mit dem kostenlosen verschlüsselten Backup erstellst du selbst eine passwortgeschützte Datei, die du auf einem neuen iPhone wiederherstellst. Ein vergessenes Muster oder Backup-Passwort lässt sich nicht wiederherstellen.
 - **Originale:** Beim Import wird ein Objekt kopiert; das Original entfernst du selbst.

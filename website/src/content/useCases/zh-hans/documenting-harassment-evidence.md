@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "iPhone 保存骚扰证据"
 keywords: ["骚扰截图 私密保存", "iPhone 存证", "手机 保存家暴证据", "截图 不让施暴者看到", "骚扰证据 安全"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "谨慎且以安全为先的做法：让骚扰的截图和照片保持私密、完整，并在安全的地方留有备份。"
 group: sensitive
 schemaType: Article
@@ -66,7 +66,7 @@ faq:
 
 Velcrypt 可以在你的 iPhone 上私密地保存截图、照片和文档的副本，与「照片」图库分开。在你从「照片」中[删除原件](id:delete-original-photos-after-import)并清空「最近删除」后，它们就不会出现在相机胶卷里，不会同步到共享账户，也不会出现在「回忆」中。
 
-保险箱通过在 5×5 网格上绘制的图案打开，而不是设备密码或面容 ID，所以只知道你的密码是不够的。[每个图案都会打开各自的保险箱](id:hidden-vaults)，画错的图案会打开一个空保险箱而不报错。这意味着屏幕上没有任何东西能证明你的证据保险箱存在，[合理推诿](id:plausible-deniability-explained)一文对此有详细解释。离开 App 时它会[自动锁定](id:auto-lock)，其内容在 App 切换器中也会被隐藏。
+保险箱通过在 5×5 网格上绘制的图案打开，而不是设备密码，所以只知道你的密码是不够的。面容 ID 默认关闭；证据保险箱最好只用图案，因为开启了面容 ID 的保险箱会出现在面容 ID 列表中。[每个图案都会打开各自的保险箱](id:hidden-vaults)，画错的图案会打开一个空保险箱而不报错。这意味着屏幕上没有任何东西能证明你的证据保险箱存在，[合理推诿](id:plausible-deniability-explained)一文对此有详细解释。离开 App 时它会[自动锁定](id:auto-lock)，其内容在 App 切换器中也会被隐藏。
 
 ## 坦诚说明局限——请务必阅读
 

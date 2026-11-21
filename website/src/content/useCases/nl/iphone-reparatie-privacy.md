@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "iphone reparatie privacy foto's"
 keywords: ["foto's verbergen voor reparatie", "kan reparateur mijn foto's zien", "toegangscode iphone reparatie", "gegevens beschermen iphone reparatie", "privacytips telefoon reparatie"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Wat een monteur op je iPhone zou kunnen zien, hoe je je voorbereidt en waarom een back-upplan voor je kluis belangrijk is voordat je hem afgeeft."
 group: everyday
 schemaType: Article
@@ -59,7 +59,7 @@ De meeste monteurs zijn professionals die geen enkele interesse hebben in je fot
 
 ## Hoe Velcrypt helpt
 
-Velcrypt bewaart foto's, video's en documenten in versleutelde kluizen op je iPhone. De kluis opent niet met de toegangscode van je toestel of Face ID; daarvoor heb je het [patroon nodig dat je op een 5×5-raster tekent](id:pattern-lock). Zelfs als een monteur je toegangscode heeft en Velcrypt opent, toont elk ander patroon dan het jouwe gewoon een lege kluis: geen foutmelding, geen hint dat er andere kluizen bestaan.
+Velcrypt bewaart foto's, video's en documenten in versleutelde kluizen op je iPhone. De kluis opent niet met de toegangscode van je toestel, en Face ID alleen als je het zelf voor die kluis aanzet; daarvoor heb je het [patroon nodig dat je op een 5×5-raster tekent](id:pattern-lock). Zelfs als een monteur je toegangscode heeft en Velcrypt opent, toont elk ander patroon dan het jouwe gewoon een lege kluis: geen foutmelding, geen hint dat er andere kluizen bestaan.
 
 Geïmporteerde foto's zijn kopieën, dus vergeet niet [de originelen te verwijderen](id:delete-original-photos-after-import) en Recent verwijderd te legen voor de reparatie. Anders staan ze nog gewoon in Foto's.
 

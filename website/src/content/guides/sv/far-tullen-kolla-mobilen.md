@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "får tullen kolla min mobil"
 keywords: ["tullen söker igenom mobilen", "integritet mobil vid gränsen", "checklista mobil integritet resa", "tullkontroll iphone", "stänga av face id snabbt"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-11-21
 summary: "En allmän översikt över genomsökning av enheter vid gränsen, en checklista för iPhone, var ett lockbetesvalv passar in och etiska gränser du inte ska passera."
 category: practical
 order: 33
@@ -109,6 +109,6 @@ Integritet vid gränsen är en legitim angelägenhet. De flesta vill helt enkelt
 
 ## Var Velcrypt passar in
 
-Velcrypt är en förnuftig del av en reseuppsättning för personligt innehåll som du vill ha kvar i din iPhone. Valven krypteras på enheten med AES-256-GCM, det finns inget konto eller någon server, och det finns inget Face ID som kan användas för att öppna ett valv utan din medverkan. Varje mönster öppnar ett eget [dolt valv](id:hidden-vaults), så du kan ha ett levande lockbete för vardagligt snokande.
+Velcrypt är en förnuftig del av en reseuppsättning för personligt innehåll som du vill ha kvar i din iPhone. Valven krypteras på enheten med AES-256-GCM, det finns inget konto eller någon server, och Face ID är avstängt som standard. Slår du på det för ett valv kan det valvet öppnas med ditt ansikte, så låt valv du reser med känsligt innehåll i bara ha sitt mönster. Varje mönster öppnar ett eget [dolt valv](id:hidden-vaults), så du kan ha ett levande lockbete för vardagligt snokande.
 
 Velcrypt kan inte skydda mot att någon ser dig rita ditt mönster, mot kopior som ligger kvar i Bilder, iCloud eller chattar, eller mot rättsliga skyldigheter i landet du reser in i. Använd det tillsammans med checklistan ovan, inte i stället för den.

@@ -20,7 +20,7 @@ keywords:
   - "keepsafe alternativen"
   - "app zum fotos verstecken iphone"
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Sieben Kriterien für die Wahl eines Foto-Tresors und ein ehrlicher Blick auf Apples Werkzeuge, Keepsafe, Private Photo Vault, Rechner-Tresore und Velcrypt."
 category: choosing
 order: 20
@@ -71,7 +71,7 @@ Kurzer Hinweis vorab: Velcrypt ist unsere App. Wir haben versucht, sie genauso n
 | Geheimnis getrennt vom Gerätecode | Nein | Optional | Ja | Ja | Ja | Ja |
 | Konto nötig | Apple Account für iCloud | Apple Account für iCloud | Ja (E-Mail) | Für die Grundnutzung nicht nötig | Unterschiedlich | Nein |
 | Cloud-Backup / Sync | Über iCloud-Fotos | Über iCloud | Optionale Premium-Cloud | Unterschiedlich | Unterschiedlich | Kein Sync; manuelles verschlüsseltes Backup, kostenlos |
-| Face ID / Touch ID | Ja | Ja | Ja | Ja | Unterschiedlich | Nein, bewusst |
+| Face ID / Touch ID | Ja | Ja | Ja | Ja | Unterschiedlich | Optional, standardmäßig aus (pro Tresor) |
 | Köder-Funktion | Nein | Nein | Fake-PIN (Premium) | Köder-Passwort | Unterschiedlich | Jedes Muster öffnet einen eigenen Tresor |
 | Tarnung als andere App | Nein | Nein | Nein | Nein | Ja | Alternative App-Symbole (Premium) |
 
@@ -115,12 +115,12 @@ Uns ist kein weit verbreiteter, aktiv gepflegter Open-Source-Foto-Tresor im iOS 
 
 ## Velcrypt
 
-Velcrypt ist eine native iPhone-App, die Fotos, Videos und Dokumente in verschlüsselten Tresoren auf dem Gerät speichert. Du entsperrst einen Tresor, indem du ein Muster auf ein 5×5-Raster zeichnest ([Mustersperre](id:pattern-lock)). Jedes Muster öffnet einen eigenen Tresor, und ein unbekanntes Muster öffnet einfach einen leeren – die App verrät also nie, wie viele Tresore es gibt ([versteckte Tresore](id:hidden-vaults)). Dateien werden mit AES-256-GCM verschlüsselt, mit Schlüsseln, die aus dem Muster abgeleitet werden ([Verschlüsselung](id:encryption)). Es gibt kein Konto, keinen Server und keinen Upload ([offline, ohne Konto](id:offline-no-account)). Die kostenlose Version hat einen Tresor mit bis zu 50 Objekten; Premium bringt unbegrenzte Objekte, mehr Tresore und alternative App-Symbole (siehe [Preise](id:pricing)).
+Velcrypt ist eine native iPhone-App, die Fotos, Videos und Dokumente in verschlüsselten Tresoren auf dem Gerät speichert. Du entsperrst einen Tresor, indem du ein Muster auf ein 5×5-Raster zeichnest ([Mustersperre](id:pattern-lock)). Jedes Muster öffnet einen eigenen Tresor, und ein unbekanntes Muster öffnet einfach einen leeren – die App verrät also nie, wie viele Tresore es gibt, außer denen, die du selbst in die Face-ID-Liste aufnimmst ([versteckte Tresore](id:hidden-vaults)). Dateien werden mit AES-256-GCM verschlüsselt, mit Schlüsseln, die aus dem Muster abgeleitet werden ([Verschlüsselung](id:encryption)). Es gibt kein Konto, keinen Server und keinen Upload ([offline, ohne Konto](id:offline-no-account)). Die kostenlose Version hat einen Tresor mit bis zu 50 Objekten; Premium bringt unbegrenzte Objekte, mehr Tresore und alternative App-Symbole (siehe [Preise](id:pricing)).
 
 Ihre Grenzen sind gewollt, aber real:
 
 - **Kein automatisches Backup.** Tresorinhalte sind von iCloud- und Computer-Backups ausgeschlossen. Gegen Geräteverlust hilft nur das manuelle verschlüsselte Backup, das du selbst erstellst und aufbewahrst. Ein vergessenes Muster oder Backup-Passwort können weder du noch wir wiederherstellen.
-- **Kein Face ID** – bewusst, deshalb dauert das Entsperren länger als ein Blick.
+- **Face ID nur pro Tresor** – standardmäßig aus und ohne Ausweich-Code; wer es nicht einschaltet, zeichnet jedes Mal das Muster.
 - **Keine echte Tarnung.** Mit Premium kannst du ein alternatives App-Symbol wählen (etwa Taschenrechner oder Timer), doch die App gibt sich nicht als andere App aus; iOS zeigt ihren Namen weiterhin an Stellen wie Einstellungen und Speicher.
 - **Keine Cloud-Synchronisierung, keine Freigabelinks, keine Apps für iPad oder Mac.**
 

@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "prêter son iphone à un enfant"
 keywords: ["cacher des photos à ses enfants iphone", "mon enfant regarde mes photos", "accès guidé enfant iphone", "temps d’écran enfant iphone", "bloquer l’iphone sur une app pour un enfant"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Laissez vos enfants jouer sur votre iPhone sans qu’ils tombent sur vos photos privées : Accès guidé, Temps d’écran et un coffre qui reste fermé."
 group: everyday
 schemaType: Article
@@ -69,7 +69,7 @@ Sortez de la pellicule les documents comme les passeports ou les ordonnances, v�
 
 Velcrypt est un coffre privé pour photos, vidéos et documents, qui fonctionne entièrement sur votre iPhone. Quand vous importez un fichier, il est copié dans un coffre chiffré ; une fois [l’original supprimé](id:delete-original-photos-after-import) (et « Suppressions récentes » vidé), il n’apparaît plus dans votre photothèque, ni dans les Souvenirs, les widgets ou le sélecteur de photos d’une app.
 
-Le coffre s’ouvre en traçant un [schéma sur une grille 5×5](id:pattern-lock), pas avec le code de votre appareil ni Face ID. Même un enfant qui connaît votre code ne peut donc pas l’ouvrir. S’il ouvre l’app et dessine quelque chose, il voit simplement un coffre vide — aucun message d’erreur, rien qui laisse penser qu’il y a autre chose.
+Le coffre s’ouvre en traçant un [schéma sur une grille 5×5](id:pattern-lock), jamais avec le code de votre appareil, et Face ID uniquement si vous l’activez pour ce coffre (il est désactivé par défaut). Même un enfant qui connaît votre code ne peut donc pas l’ouvrir. S’il ouvre l’app et dessine quelque chose, il voit simplement un coffre vide — aucun message d’erreur, rien qui laisse penser qu’il y a autre chose.
 
 Le [verrouillage automatique](id:auto-lock) ferme le coffre dès que l’app passe en arrière-plan, et son contenu est masqué dans le sélecteur d’apps. Si vous consultez un document puis tendez le téléphone, passer à une autre app le verrouille.
 

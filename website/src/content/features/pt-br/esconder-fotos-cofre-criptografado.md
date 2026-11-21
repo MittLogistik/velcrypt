@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "app para esconder fotos iphone"
 keywords: ["esconder fotos iphone", "cofre de fotos iphone", "cofre de fotos criptografado", "ocultar fotos iphone", "app para trancar fotos", "álbum secreto de fotos"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Importe fotos como cópias criptografadas, limpe os originais e Apagados e navegue por elas em álbuns com zoom e deslize."
 status: available
 schemaType: WebPage
@@ -71,7 +71,7 @@ As fotos abrem no visualizador do Velcrypt. Você pode fazer o movimento de pin�
 | | Álbum Ocultos do iPhone | Cofre do Velcrypt |
 | --- | --- | --- |
 | Onde a foto fica | Na sua biblioteca do Fotos | Em um cofre criptografado no app |
-| Como é desbloqueado | Face ID, Touch ID ou código do aparelho | Seu padrão do Velcrypt |
+| Como é desbloqueado | Face ID, Touch ID ou código do aparelho | Seu padrão do Velcrypt (ou Face ID, se você o ativar para aquele cofre) |
 | iCloud | Sincroniza com as Fotos do iCloud, se ativado | Não entra nos backups do iCloud nem do computador |
 | Coleções separadas | Um único álbum Ocultos | Um cofre separado para cada padrão |
 

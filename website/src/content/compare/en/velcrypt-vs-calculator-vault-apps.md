@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "calculator vault app vs velcrypt"
 keywords: ["calculator vault app", "calculator hide photos app", "fake calculator vault iphone", "calculator vault alternative", "secret calculator app"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Disguise versus encryption: how calculator-style vault apps compare with Velcrypt’s pattern-based hidden vaults."
 competitor: "Calculator vault apps"
 lastChecked: "October 2026"
@@ -51,7 +51,7 @@ Both can be useful. The question is what you’re protecting against. A disguise
 | Account required | No | Varies |
 | Cloud backup | No cloud; optional encrypted backup file you store yourself (free) | Varies; some offer cloud features |
 | Unlock method | Pattern on a 5×5 grid | Numeric code typed as a calculation |
-| Biometrics (Face ID / Touch ID) | Not offered, by design | Varies |
+| Biometrics (Face ID / Touch ID) | Optional, off by default (per vault) | Varies |
 | Disguise | None; visible as Velcrypt | Looks like a working calculator |
 | Decoy / multiple vaults | Every pattern is its own vault (a second vault needs Premium) | Varies; some offer a decoy code |
 | Duress pattern | Yes, with Premium (opens a decoy, deletes the other vaults) | Varies |
@@ -70,7 +70,7 @@ A calculator icon can be convincing at a glance. But a disguise has to hold up a
 
 ## Velcrypt’s kind of deniability
 
-Velcrypt doesn’t pretend to be something else. Its deniability lives inside the app. Every pattern derives its own key and opens its own vault. There is no vault list, and a pattern the app has never seen simply opens an empty vault: no error, nothing to suggest other vaults exist. You can keep an everyday decoy vault and a private one, and nobody can prove the second exists. [Hidden vaults](id:hidden-vaults) and [plausible deniability](id:plausible-deniability-explained) explain the model.
+Velcrypt doesn’t pretend to be something else. Its deniability lives inside the app. Every pattern derives its own key and opens its own vault. There is no vault list, except the vaults you deliberately add to the Face ID list, and a pattern the app has never seen simply opens an empty vault: no error, nothing to suggest other vaults exist. You can keep an everyday decoy vault and a private one, and nobody can prove the second exists. [Hidden vaults](id:hidden-vaults) and [plausible deniability](id:plausible-deniability-explained) explain the model.
 
 The contents are encrypted with AES-256-GCM, with keys derived from your pattern using PBKDF2-HMAC-SHA512 (at least 600,000 iterations) and a per-device salt in the iOS Keychain. Details are on the [encryption](id:encryption) page.
 
@@ -88,7 +88,7 @@ If you also want the app out of sight, iOS 18 and later let you hide any app in 
 ## When Velcrypt may suit you better
 
 - **You care most about what’s inside.** Documented encryption matters more to you than a costume.
-- **You want vaults that can’t be counted.** No list, no error on unknown patterns.
+- **You want vaults that can’t be counted.** No list (unless you add vaults to Face ID), no error on unknown patterns.
 - **You want no account and no cloud.** See [offline, no account](id:offline-no-account).
 - **You’d rather use iOS’s own hidden apps feature** than rely on a disguise.
 

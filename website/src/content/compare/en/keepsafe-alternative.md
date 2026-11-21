@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "keepsafe alternative"
 keywords: ["keepsafe alternative iphone", "apps like keepsafe", "switch from keepsafe", "keepsafe replacement", "photo vault without account"]
 datePublished: 2026-10-21
-dateModified: 2026-10-31
+dateModified: 2026-11-21
 summary: "Why people look for a Keepsafe alternative, what to check in any photo vault, and how to move your photos without leaving copies behind."
 competitor: "Keepsafe"
 lastChecked: "October 2026"
@@ -61,7 +61,7 @@ A photo vault is an app that stores selected photos and videos separately from y
 
 | Option | Account | Cloud copy | Separate secret | Notes |
 |---|---|---|---|---|
-| Velcrypt | None | Only an encrypted backup file you save yourself | Yes, a pattern | Hidden vaults, documents, no Face ID |
+| Velcrypt | None | Only an encrypted backup file you save yourself | Yes, a pattern | Hidden vaults, documents, optional Face ID (off by default) |
 | iPhone Hidden album | Apple Account for iCloud | With iCloud Photos | No, device passcode | Free, built in |
 | Apple Notes locked notes | Apple Account for iCloud | With iCloud Notes | Optional Notes password | Best for a few items |
 | Other vault apps | Varies | Varies | Varies | Check each listing |

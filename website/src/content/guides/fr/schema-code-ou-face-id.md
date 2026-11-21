@@ -10,11 +10,11 @@ keyFacts:
   - "Les schémas choisis par des humains sont bien plus faibles que le maximum théorique : on privilégie les coins, les lettres et les formes courtes."
   - "La biométrie est pratique et difficile à espionner, mais un visage ou un doigt peut être utilisé pendant votre sommeil, sous la contrainte ou par la force."
   - "Les traces de doigts sur l’écran trahissent plus facilement un schéma qu’un code PIN."
-  - "Velcrypt utilise un schéma sur une grille de 5×5 points (au moins 6 points) et n’a volontairement ni Face ID ni Touch ID."
+  - "Velcrypt utilise un schéma sur une grille de 5×5 points (au moins 6 points) ; Face ID et Touch ID sont facultatifs, désactivés par défaut et à activer coffre par coffre."
 primaryKeyword: "schéma ou code pin"
 keywords: ["code pin ou face id sécurité", "le schéma de déverrouillage est-il sûr", "schéma ou mot de passe", "face id ou code", "verrouillage téléphone le plus sûr", "biométrie déverrouillage forcé"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-11-21
 summary: "Nombre de combinaisons, regards indiscrets, traces de doigts et biométrie forcée : une comparaison honnête des quatre verrous courants."
 category: security
 order: 40
@@ -28,8 +28,8 @@ faq:
     a: "Un code à 6 chiffres offre 1 000 000 de combinaisons possibles (de 000000 à 999999), contre 10 000 pour un code à 4 chiffres. Les choix courants comme 123456 ou les dates de naissance réduisent considérablement le nombre réel."
   - q: "Peut-on deviner mon schéma grâce aux traces sur l’écran ?"
     a: "Parfois. Sous un bon éclairage, les traces de doigt sur un écran en verre peuvent révéler le tracé d’un schéma. Essuyer l’écran, utiliser une protection mate et choisir un schéma qui se croise compliquent ces attaques."
-  - q: "Pourquoi Velcrypt ne propose-t-il pas Face ID ?"
-    a: "C’est volontaire. Un visage ou une empreinte peut servir à déverrouiller un appareil sans votre accord, alors qu’un schéma n’existe que dans votre mémoire. Velcrypt a choisi le schéma pour qu’ouvrir un coffre exige toujours votre décision."
+  - q: "Velcrypt utilise-t-il Face ID ?"
+    a: "Seulement si vous l’activez. Face ID est gratuit et désactivé par défaut pour chaque coffre ; vous l’activez depuis le coffre, dans Réglages › Face ID. Le schéma ouvre toujours chaque coffre. Comme un visage peut servir sans votre accord, toute personne qui vous fait regarder le téléphone peut ouvrir les coffres de la liste Face ID : gardez votre coffre le plus privé sur son seul schéma."
 ---
 
 Chaque verrou est un compromis entre la difficulté à le deviner, la facilité à l’observer et la facilité avec laquelle on peut vous forcer à l’ouvrir. La plupart des comparatifs ne regardent que le premier point. Ce guide examine les trois, avec de vrais chiffres quand il y en a et des réserves honnêtes quand il n’y en a pas.
@@ -116,6 +116,15 @@ Inutile de choisir un seul verrou pour tout. Une configuration raisonnable pour 
 
 ## La place de Velcrypt
 
-Velcrypt fait un choix délibéré : la seule façon d’entrer dans un coffre est un schéma sur une grille de 5×5 points, une ligne continue passant par au moins 6 points avec au moins un changement de direction. Des schémas plus longs, de 8 à 12 points, sont recommandés. Il n’y a ni Face ID ni Touch ID, car un schéma ne peut pas être prélevé sur votre corps.
+Dans Velcrypt, chaque coffre s’ouvre avec un schéma sur une grille de 5×5 points, une ligne continue passant par au moins 6 points avec au moins un changement de direction. Des schémas plus longs, de 8 à 12 points, sont recommandés. Un schéma ne peut pas être prélevé sur votre corps, et c’est pour cette raison que Face ID et Touch ID sont désactivés par défaut.
 
-Cette conception change aussi ce que « deviner » veut dire. Chaque schéma correspond à son propre coffre, et un schéma que Velcrypt n’a jamais vu ouvre simplement un coffre vide, sans message d’erreur. Un mauvais essai ne se signale donc pas comme tel, et vous pouvez garder un [coffre leurre](id:what-is-a-decoy-vault) sous un second schéma. La page sur les [coffres cachés](id:hidden-vaults) explique le modèle, et la [présentation de la sécurité](id:security) liste ce contre quoi il ne protège pas, notamment quelqu’un qui vous regarde tracer votre schéma.
+Vous pouvez néanmoins les activer, gratuitement, pour les coffres de votre choix : ouvrez le coffre avec son schéma, puis allez dans Réglages › Face ID et donnez-lui un nom pour la liste Face ID. Dès qu’un coffre utilise Face ID, l’écran de verrouillage affiche un bouton « Déverrouiller avec Face ID ». Après la reconnaissance, vous choisissez parmi les coffres pour lesquels vous l’avez activé ; s’il n’y en a qu’un, il s’ouvre directement. Le schéma continue d’ouvrir chaque coffre.
+
+Ce confort a les limites décrites plus haut, et Velcrypt les assume :
+
+- **Le compromis du déverrouillage forcé s’applique.** Quiconque peut vous faire regarder votre téléphone peut voir et ouvrir chaque coffre de la liste Face ID. Les coffres sans Face ID n’y figurent jamais. Utilisez Face ID pour les coffres de confort et gardez votre coffre le plus privé sur son seul schéma.
+- **Pas de repli sur le code.** Le code de l’iPhone ne peut jamais remplacer Face ID dans Velcrypt.
+- **Lié à cet iPhone.** La copie de la clé utilisée par Face ID reste dans le trousseau de cet appareil uniquement, ni dans iCloud ni dans les sauvegardes, et elle est liée aux visages et empreintes enregistrés à ce moment-là. Si vous en ajoutez un ou réinitialisez Face ID, Face ID se désactive pour ces coffres jusqu’à ce que vous le réactiviez après les avoir ouverts avec leur schéma.
+- **La contrainte passe par les schémas.** Le [schéma de contrainte](id:duress-pattern) ne se déclenche que par un schéma, jamais depuis la liste Face ID. Quand il s’exécute, les coffres supprimés disparaissent aussi de la liste Face ID.
+
+Cette conception change aussi ce que « deviner » veut dire. Chaque schéma correspond à son propre coffre, et un schéma que Velcrypt n’a jamais vu ouvre simplement un coffre vide, sans message d’erreur. Hormis les coffres que vous ajoutez vous-même à la liste Face ID, l’app n’en liste aucun. Un mauvais essai ne se signale donc pas comme tel, et vous pouvez garder un [coffre leurre](id:what-is-a-decoy-vault) sous un second schéma. La page sur les [coffres cachés](id:hidden-vaults) explique le modèle, et la [présentation de la sécurité](id:security) liste ce contre quoi il ne protège pas, notamment quelqu’un qui vous regarde tracer votre schéma.

@@ -7,7 +7,7 @@ navTitle: "O que é um cofre falso?"
 answer: "Um cofre falso é um segundo cofre, aberto com outro segredo, com conteúdo inofensivo mas plausível. Se alguém pressionar você a abrir seu cofre, você pode abrir o falso no lugar. No Velcrypt, qualquer padrão novo abre o próprio cofre, então um cofre falso é simplesmente um segundo padrão que você enche de fotos e documentos comuns. Um segundo cofre exige o Premium."
 keyFacts:
   - "Um cofre falso é um cofre real e funcional, cheio de conteúdo de baixo risco que você não se importa de mostrar."
-  - "No Velcrypt, cada padrão é um cofre próprio e não existe lista de cofres que entregue os outros."
+  - "No Velcrypt, cada padrão é um cofre próprio e nenhuma lista entrega os outros, exceto a lista do Face ID, se você colocar cofres nela."
   - "Um cofre falso vazio levanta suspeita; um cofre com álbuns e itens recentes, com cara de usado, convence."
   - "Um cofre falso protege contra bisbilhotice e pressão casual, não contra análise forense ou alguém que viu você desenhar."
   - "No Velcrypt, um segundo cofre (e portanto um cofre falso) exige o Premium."
@@ -15,7 +15,7 @@ keyFacts:
 primaryKeyword: "cofre falso"
 keywords: ["o que é cofre falso", "senha falsa cofre de fotos", "app de cofre falso", "padrão falso", "segundo cofre iphone"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "O que é um cofre falso, como montar um com cara de usado usando um segundo padrão no Velcrypt e os limites que você deve conhecer."
 category: security
 order: 41
@@ -39,7 +39,7 @@ faq:
   - q: "Como criar um cofre falso no Velcrypt?"
     a: "Desenhe um segundo padrão que você nunca usou. O Velcrypt abre um cofre novo e vazio para ele. Adicione conteúdo cotidiano e crível, como recibos, capturas de tela e fotos comuns, e esse padrão passa a abrir o seu cofre falso. Como a versão grátis tem um cofre, você precisa do Premium para isso."
   - q: "Alguém consegue perceber que um cofre é falso?"
-    a: "Não por dentro do app: o Velcrypt não guarda lista de cofres e não dá nenhuma pista de que existem outros. O que pode entregar um cofre falso é o conteúdo, por exemplo se ele estiver vazio, parado no tempo ou claramente montado."
+    a: "Não por dentro do app: o Velcrypt não guarda lista de cofres e não dá nenhuma pista de que existem outros, exceto os cofres que você colocar na lista opcional do Face ID. O que pode entregar um cofre falso é o conteúdo, por exemplo se ele estiver vazio, parado no tempo ou claramente montado."
   - q: "Cofre falso é a mesma coisa que padrão de coação?"
     a: "Não. Um cofre falso simplesmente abre um cofre diferente e deixa os outros intocados. Um padrão de coação, disponível no Velcrypt Premium, abre o cofre falso e também apaga em silêncio, de forma permanente, todos os outros cofres do iPhone."
   - q: "Devo usar um cofre falso com a polícia ou na imigração?"
@@ -60,7 +60,7 @@ O que faz um cofre falso funcionar não é a tecnologia, e sim a história. Ele 
 
 A maioria dos apps trata o cofre falso como um ajuste especial: um PIN real, um PIN falso. O Velcrypt segue um caminho mais simples. Cada padrão é um cofre próprio:
 
-- Não existe lista de cofres em lugar nenhum do app.
+- Não existe lista de cofres em lugar nenhum do app, exceto a lista opcional do Face ID com os cofres que você adiciona.
 - Um padrão que o Velcrypt nunca viu abre um cofre novo e vazio.
 - Não há mensagem de “padrão errado”, e nada prova que existem outros cofres.
 
@@ -98,4 +98,4 @@ Um cofre falso abre um cofre diferente e deixa todo o resto intocado. Um **padr�
 
 ## Onde o Velcrypt se encaixa
 
-O Velcrypt foi projetado para que cofres falsos sejam naturais, e não um remendo: cada padrão é um cofre próprio, não há lista de cofres, um padrão desconhecido não mostra erro e não existe Face ID que alguém pudesse usar para pular a pergunta. Cada cofre é criptografado no seu iPhone com AES-256-GCM sob a própria chave, então o cofre falso e o real são igualmente protegidos; a única diferença é o que você coloca neles. Leia mais na [visão geral de segurança](id:security).
+O Velcrypt foi projetado para que cofres falsos sejam naturais, e não um remendo: cada padrão é um cofre próprio, não há lista de cofres exceto os que você coloca de propósito na lista do Face ID, e um padrão desconhecido não mostra erro. O Face ID vem desativado; se você usá-lo, deixe o cofre real fora da lista para que ninguém possa pular a pergunta com o seu rosto. Cada cofre é criptografado no seu iPhone com AES-256-GCM sob a própria chave, então o cofre falso e o real são igualmente protegidos; a única diferença é o que você coloca neles. Leia mais na [visão geral de segurança](id:security).

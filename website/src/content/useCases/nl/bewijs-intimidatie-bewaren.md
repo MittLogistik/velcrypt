@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "bewijs intimidatie bewaren iphone"
 keywords: ["screenshots intimidatie privé houden", "bewijs opslaan op iphone", "bewijs van misbruik vastleggen telefoon", "screenshots verbergen voor dader", "veiligheid bewijs intimidatie"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Een zorgvuldige aanpak met veiligheid voorop om screenshots en foto's van intimidatie privé, intact en veilig opgeslagen te houden."
 group: sensitive
 schemaType: Article
@@ -64,7 +64,7 @@ Bewijs dat verloren kan gaan, heeft weinig waarde. Telefoons gaan kapot, worden 
 
 Velcrypt kan een privékopie van screenshots, foto's en documenten op je iPhone bewaren, los van de fotobibliotheek. Zodra je [de originelen verwijdert](id:delete-original-photos-after-import) uit Foto's en Recent verwijderd leegt, verschijnen ze niet meer in je filmrol, synchroniseren ze niet naar een gedeeld account en duiken ze niet op in Herinneringen.
 
-Kluizen openen met een patroon op een 5×5-raster, niet met de toegangscode van je toestel of Face ID, dus je toegangscode kennen is niet genoeg. [Elk patroon opent een eigen kluis](id:hidden-vaults), en een verkeerd patroon opent zonder foutmelding een lege kluis. Niets op het scherm bewijst dus dat je bewijskluis bestaat; dat wordt uitgelegd bij [plausibele ontkenning](id:plausible-deniability-explained). De app [vergrendelt automatisch](id:auto-lock) als je hem verlaat, en de inhoud is verborgen in de appkiezer.
+Kluizen openen met een patroon op een 5×5-raster, niet met de toegangscode van je toestel, dus je toegangscode kennen is niet genoeg. Face ID staat standaard uit; laat het voor je bewijskluis uit, zodat die niet in de Face ID-lijst verschijnt. [Elk patroon opent een eigen kluis](id:hidden-vaults), en een verkeerd patroon opent zonder foutmelding een lege kluis. Niets op het scherm bewijst dus dat je bewijskluis bestaat; dat wordt uitgelegd bij [plausibele ontkenning](id:plausible-deniability-explained). De app [vergrendelt automatisch](id:auto-lock) als je hem verlaat, en de inhoud is verborgen in de appkiezer.
 
 ## Eerlijke beperkingen: lees dit alsjeblieft
 

@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "iPhone 私密照片安全存放"
 keywords: ["iPhone 私密照片放哪里", "私密照片怎么保存安全", "私人照片安全", "私密影像隐私", "保护私人照片"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "一份尊重隐私、循序渐进的 iPhone 私密照片安全方案，以及有人威胁散布你的照片时该怎么做。"
 category: practical
 order: 32
@@ -115,6 +115,6 @@ iCloud 共享照片图库（iOS 16 及更高版本）允许最多六个人共享
 
 ## Velcrypt 的定位
 
-Velcrypt 正是为“已隐藏”相簿留下的空白而打造的：那些应该留在这部 iPhone 上、藏在只有你知道的“秘密”之后的内容。你 [在 Velcrypt 中隐藏](id:hide-photos) 的照片和视频会在设备上用 AES-256-GCM 加密，不包含在 iCloud 和电脑备份中，也从不接触任何服务器。每个图案都会打开各自的保险箱，没有能在你睡着时被别人利用的 Face ID，内容在 App 切换器中也会被隐藏。
+Velcrypt 正是为“已隐藏”相簿留下的空白而打造的：那些应该留在这部 iPhone 上、藏在只有你知道的“秘密”之后的内容。你 [在 Velcrypt 中隐藏](id:hide-photos) 的照片和视频会在设备上用 AES-256-GCM 加密，不包含在 iCloud 和电脑备份中，也从不接触任何服务器。每个图案都会打开各自的保险箱。Face ID 默认关闭，只要你不为这个保险箱开启，就没有能在你睡着时被别人利用的 Face ID；内容在 App 切换器中也会被隐藏。
 
 坦诚的局限依然存在：Velcrypt 触及不到别人手机上的副本，无法阻止有人看着你画图案，忘记的图案也无法找回。如果一段关系已经结束，[分手之后](id:after-a-breakup) 页面有更多建议。

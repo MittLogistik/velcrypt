@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "app automatisch sperren iphone"
 keywords: ["foto tresor automatische sperre", "app umschalter vorschau verbergen", "app sperrt beim schließen iphone", "tresor im hintergrund sperren", "verzögerung automatische sperre"]
 datePublished: 2026-10-21
-dateModified: 2026-10-31
+dateModified: 2026-11-21
 summary: "Der Tresor sperrt, wenn die App in den Hintergrund geht, nach einer Verzögerung deiner Wahl, und bleibt im App-Umschalter leer."
 status: available
 schemaType: WebPage
@@ -64,7 +64,7 @@ Velcrypt verbirgt Tresorinhalte im App-Umschalter. Die Vorschau verrät nicht, w
 
 ## Warum Sperren mit Muster noch wichtiger ist
 
-Velcrypt hat bewusst kein Face ID und kein Touch ID. Einen gesperrten Tresor öffnest du also immer, indem du dein Muster zeichnest. Das kann sich nach Aufwand anfühlen, und es ist verlockend, eine lange Verzögerung zu wählen, um ihn zu vermeiden. Widersteh dem ein wenig: Das Muster schützt den Tresor nur, solange er gesperrt ist. Eine kurze Verzögerung plus ein Muster, das du schnell nach Gefühl zeichnest, bringt dir Privatsphäre und Komfort zugleich.
+Face ID und Touch ID sind in Velcrypt standardmäßig aus. Solange du sie für einen Tresor nicht einschaltest, öffnest du ihn nach dem Sperren also, indem du dein Muster zeichnest. Das kann sich nach Aufwand anfühlen, und es ist verlockend, eine lange Verzögerung zu wählen, um ihn zu vermeiden. Widersteh dem ein wenig: Das Muster schützt den Tresor nur, solange er gesperrt ist. Eine kurze Verzögerung plus ein Muster, das du schnell nach Gefühl zeichnest, bringt dir Privatsphäre und Komfort zugleich.
 
 ## Praktische Tipps
 

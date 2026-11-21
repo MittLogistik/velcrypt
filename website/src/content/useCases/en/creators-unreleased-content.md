@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "protect unreleased photos iphone"
 keywords: ["store client photos privately iphone", "photographer client privacy phone", "hide work photos iphone", "creator content privacy", "keep unreleased content private"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "For photographers, artists and creators: keep unreleased work and client material private on iPhone, and share it only on purpose."
 group: professional
 schemaType: Article
@@ -63,7 +63,7 @@ When you photograph someone, you hold part of their privacy. Good practice, rega
 
 Velcrypt stores photos, [videos](id:hide-videos) and documents in encrypted vaults on your iPhone, with no account and nothing uploaded. Inside a vault you can create [albums](id:albums) per project or client, use multi-select, move items between albums, and view photos and videos with zoom and swipe.
 
-Vaults open with a pattern drawn on a 5×5 grid, not your passcode or Face ID. Every pattern opens its own vault, so you can keep client work in one vault and personal photos in another, and a vault for showing a portfolio that contains only what you’re happy for anyone to see. An unknown pattern simply opens an empty vault.
+Vaults open with a pattern drawn on a 5×5 grid, not your passcode; Face ID is optional and off by default. Every pattern opens its own vault, so you can keep client work in one vault and personal photos in another, and a vault for showing a portfolio that contains only what you’re happy for anyone to see. An unknown pattern simply opens an empty vault.
 
 Secure export lets you take a single file out when it’s time to deliver or publish. The app locks automatically when it goes to the background and hides its content in the app switcher, which helps when you switch to a messaging app mid-conversation.
 

@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "assistance velcrypt"
 keywords: ["contacter velcrypt", "aide velcrypt", "velcrypt n’ouvre pas mon coffre", "dépannage velcrypt", "e-mail velcrypt"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 schemaType: ContactPage
 order: 5
 related: [faq, forgot-vault-pattern, auto-lock, security, privacy]
@@ -67,7 +67,7 @@ Ce n’est pas une règle que nous pourrions modifier sur demande ; c’est ains
 
 C’est la question la plus fréquente. Velcrypt n’affiche pas de message « motif incorrect » : tout motif qu’il n’a jamais vu ouvre simplement un nouveau coffre vide. Si vous attendiez vos photos, vous avez très probablement tracé un motif légèrement différent — un point en trop, un coin oublié ou un autre point de départ.
 
-Verrouillez l’app, puis retracez votre motif lentement et posément. Essayez les variantes proches dont vous vous souvenez. Votre coffre d’origine est toujours là, intact ; le coffre vide ne le remplace pas.
+Verrouillez l’app, puis retracez votre motif lentement et posément. Essayez les variantes proches dont vous vous souvenez. Votre coffre d’origine est toujours là, intact ; le coffre vide ne le remplace pas, et tant qu’il reste vide, il n’entame pas votre coffre gratuit. Pour revoir les bases, « Fonctionnement de Velcrypt » se rouvre à tout moment depuis l’écran de verrouillage, l’écran d’accueil du coffre et les Réglages.
 
 ### L’app se verrouille trop vite
 

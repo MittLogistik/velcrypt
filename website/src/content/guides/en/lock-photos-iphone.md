@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "how to lock photos on iphone"
 keywords: ["lock photos on iphone", "lock photos app iphone", "require face id photos", "lock hidden album", "lock pictures iphone", "face id lock photos ios 18"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-11-21
 summary: "Four ways to lock photos on iPhone, from the Hidden album to app locking and locked notes, compared side by side."
 category: hiding
 order: 2
@@ -97,6 +97,6 @@ It is also worth thinking about biometrics. Face ID is quick, but a face can be 
 
 ## Where Velcrypt fits
 
-Velcrypt is a vault in the fourth category. It deliberately has no Face ID or Touch ID: you unlock it by drawing a [pattern](id:pattern-lock) on a 5×5 grid of dots, at least six dots with at least one change of direction, and longer patterns are better. That pattern exists only in your memory and is unrelated to your iPhone passcode.
+Velcrypt is a vault in the fourth category. You unlock it by drawing a [pattern](id:pattern-lock) on a 5×5 grid of dots, at least six dots with at least one change of direction, and longer patterns are better. That pattern exists only in your memory and is unrelated to your iPhone passcode. Face ID or Touch ID is optional and off by default; you can turn it on per vault, but the iPhone passcode can never stand in for it.
 
 Content is encrypted on the device with AES-256-GCM, the vault [locks automatically](id:auto-lock) when you leave the app, and nothing is uploaded. The cost of that design is that there is no recovery: if you forget the pattern, neither you nor Velcrypt can open the vault. Like any lock, it also cannot help if someone watches you draw the pattern or you hand over the phone with the vault already open.

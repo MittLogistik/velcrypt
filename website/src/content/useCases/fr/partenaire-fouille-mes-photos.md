@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "mon partenaire fouille dans mes photos"
 keywords: ["mon copain regarde mes photos", "ma copine fouille mon téléphone", "cacher des photos à son conjoint iphone", "garder ses photos privées en couple", "vie privée téléphone couple", "cacher des photos à son copain"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-11-21
 summary: "Les limites autour du téléphone dans un couple, comment des photos sont vues par accident, et comment garder quelques images à part."
 group: everyday
 schemaType: Article
@@ -62,7 +62,7 @@ Si le contrôle de votre téléphone vous semble exigeant, fréquent ou effrayan
 
 Velcrypt conserve vos photos, vidéos et documents privés dans un coffre chiffré sur votre iPhone, séparé de la photothèque. Une fois la photo importée et [l’original supprimé](id:delete-original-photos-after-import), elle n’apparaît plus ni au défilement, ni dans les Souvenirs, les widgets ou la recherche.
 
-Le coffre s’ouvre avec un schéma tracé sur une grille 5×5, pas avec votre code ni Face ID. Connaître votre code ne permet pas de l’ouvrir. Et comme [chaque schéma ouvre son propre coffre](id:hidden-vaults), il n’existe aucune liste de coffres : un schéma inconnu ouvre simplement un coffre vide, sans erreur. Vous gardez ainsi un espace privé sans transformer votre téléphone en forteresse visible, comme l’explique [le déni plausible](id:plausible-deniability-explained).
+Le coffre s’ouvre avec un schéma tracé sur une grille 5×5, jamais avec votre code ; Face ID n’entre en jeu que si vous l’activez pour ce coffre, alors laissez-le désactivé pour votre coffre privé. Connaître votre code ne permet pas de l’ouvrir. Et comme [chaque schéma ouvre son propre coffre](id:hidden-vaults), il n’existe aucune liste de coffres en dehors de la liste Face ID que vous choisissez : un schéma inconnu ouvre simplement un coffre vide, sans erreur. Vous gardez ainsi un espace privé sans transformer votre téléphone en forteresse visible, comme l’explique [le déni plausible](id:plausible-deniability-explained).
 
 Pour les photos intimes en particulier, [ce guide](id:store-intimate-photos-safely-iphone) détaille les précautions supplémentaires qu’elles méritent.
 

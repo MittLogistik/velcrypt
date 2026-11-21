@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "la dogana può controllare il telefono"
 keywords: ["controllo telefono alla frontiera", "privacy telefono frontiera", "checklist privacy telefono viaggio", "controllo telefono dogana iphone", "disattivare face id velocemente"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-11-21
 summary: "Una panoramica generale sui controlli dei dispositivi alla frontiera, una checklist per preparare l’iPhone, il ruolo di una cassaforte esca e i limiti etici."
 category: practical
 order: 33
@@ -107,6 +107,6 @@ La privacy alla frontiera è una preoccupazione legittima. La maggior parte dell
 
 ## Dove si inserisce Velcrypt
 
-Velcrypt è una parte sensata di un assetto da viaggio per i contenuti personali che vuoi tenere sull’iPhone. Le casseforti sono cifrate sul dispositivo con AES-256-GCM, non c’è un account né un server, e non c’è un Face ID che possa essere usato per aprire una cassaforte senza il tuo coinvolgimento. Ogni sequenza apre la propria [cassaforte nascosta](id:hidden-vaults), quindi puoi tenere un’esca vissuta contro la curiosità di tutti i giorni.
+Velcrypt è una parte sensata di un assetto da viaggio per i contenuti personali che vuoi tenere sull’iPhone. Le casseforti sono cifrate sul dispositivo con AES-256-GCM, non c’è un account né un server, e Face ID è disattivato per impostazione predefinita, quindi non può essere usato per aprire una cassaforte senza il tuo coinvolgimento, a meno che tu non lo abbia attivato per quella cassaforte. In viaggio, tieni le casseforti delicate solo con la sequenza. Ogni sequenza apre la propria [cassaforte nascosta](id:hidden-vaults), quindi puoi tenere un’esca vissuta contro la curiosità di tutti i giorni.
 
 Non può proteggerti da chi ti guarda mentre disegni la sequenza, dalle copie lasciate in Foto, su iCloud o nelle chat, né dagli obblighi di legge del paese in cui stai entrando. Usala insieme alla checklist qui sopra, non al suo posto.

@@ -1,13 +1,13 @@
 ---
 pageId: about
 title: "Acerca de Velcrypt: privada por diseño"
-description: "Por qué existe Velcrypt y sus principios: cifrado en el dispositivo, sin cuenta, sin biometría, límites honestos y sin anuncios ni venta de datos."
+description: "Por qué existe Velcrypt y sus principios: cifrado en el dispositivo, sin cuenta, Face ID solo si lo eliges, límites honestos y sin anuncios."
 h1: "Acerca de Velcrypt"
 navTitle: "Acerca de"
 answer: "Velcrypt existe para dar a quienes usan iPhone un lugar sencillo y honesto para sus fotos, vídeos y documentos privados: cifrados en el dispositivo, abiertos solo con un patrón que recuerdas, sin cuenta, sin nube y sin anuncios."
 keyFacts:
   - "Basada en el cifrado en el dispositivo, sin cuenta y sin servidores para tu contenido."
-  - "Sin Face ID ni Touch ID por diseño: un patrón solo existe en tu memoria."
+  - "Face ID o Touch ID es opcional y viene desactivado: un patrón solo existe en tu memoria."
   - "Sin anuncios y sin venta de datos."
   - "Honesta sobre sus límites, incluido que un patrón olvidado no se puede recuperar."
   - "Copia de seguridad cifrada gratuita para todos; patrón de coacción para situaciones de coacción, con Premium."
@@ -15,7 +15,7 @@ keyFacts:
 primaryKeyword: "acerca de velcrypt"
 keywords: ["app velcrypt", "quién desarrolla velcrypt", "principios de velcrypt", "bóveda de fotos privada iphone"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 schemaType: AboutPage
 order: 4
 related: [security, features, offline-no-account, pricing, press]
@@ -36,7 +36,7 @@ Tu teléfono guarda cosas que nunca le darías a un desconocido: el escaneo de t
 
 Muchas apps de bóveda te piden crear una cuenta, envían tus archivos a una nube o envuelven un simple PIN en lenguaje de marketing. Queríamos algo más acotado y más fácil de confiar: una app nativa para iPhone que cifre tus archivos en el dispositivo, se abra con un patrón que solo tú conoces y te diga con claridad lo que no puede hacer.
 
-Velcrypt es esa app. Guarda fotos, vídeos y documentos en bóvedas cifradas, cada una abierta con su propio patrón en una cuadrícula de 5×5. Un patrón que nunca ha visto abre una bóveda vacía, así que nada en la app revela cuántas bóvedas tienes. Los detalles están en la página del [modelo de seguridad](id:security).
+Velcrypt es esa app. Guarda fotos, vídeos y documentos en bóvedas cifradas, cada una abierta con su propio patrón en una cuadrícula de 5×5. Un patrón que nunca ha visto abre una bóveda vacía, así que nada en la app revela cuántas bóvedas tienes, salvo las que decidas añadir a Face ID. Los detalles están en la página del [modelo de seguridad](id:security).
 
 ## Nuestros principios
 
@@ -48,9 +48,9 @@ El contenido de tus bóvedas se cifra y se guarda en tu iPhone y en ningún otro
 
 No hay registro, ni dirección de email, ni proceso para restablecer contraseñas. Una cuenta sería una cosa más que podría filtrarse o usarse para vincularte con tus datos.
 
-### Sin biometría, por diseño
+### Face ID solo si tú lo eliges
 
-Velcrypt no ofrece Face ID ni Touch ID a propósito. La biometría es cómoda, pero una cara o un dedo pueden usarse sin tu consentimiento. Un patrón solo existe en tu memoria. Puedes leer el razonamiento en [patrón frente a PIN frente a Face ID](id:pattern-lock-vs-pin-vs-face-id).
+Toda bóveda se abre con un patrón, y Face ID o Touch ID es opcional y viene desactivado. La biometría es cómoda, pero una cara o un dedo pueden usarse sin tu consentimiento, así que decides bóveda por bóveda si lo activas, y tu bóveda más privada puede quedarse solo con su patrón. Un patrón solo existe en tu memoria. Puedes leer el razonamiento en [patrón frente a PIN frente a Face ID](id:pattern-lock-vs-pin-vs-face-id).
 
 ### Límites honestos
 

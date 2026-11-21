@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "app per nascondere foto iphone"
 keywords: ["nascondere foto iphone", "cassaforte foto cifrata iphone", "album foto privato app", "bloccare foto iphone", "cassaforte foto segreta"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Importa le foto come copie cifrate, elimina gli originali e svuota «Eliminati di recente», poi sfogliale in album con zoom e scorrimento."
 status: available
 schemaType: WebPage
@@ -71,7 +71,7 @@ Le foto si aprono nel visualizzatore integrato di Velcrypt. Puoi allargare con d
 | | Album Nascosti dell'iPhone | Cassaforte Velcrypt |
 | --- | --- | --- |
 | Dove si trova la foto | Nella libreria di Foto | In una cassaforte cifrata nell'app |
-| Come si sblocca | Face ID, Touch ID o codice del dispositivo | La tua sequenza Velcrypt |
+| Come si sblocca | Face ID, Touch ID o codice del dispositivo | La tua sequenza Velcrypt; Face ID solo se lo attivi per quella cassaforte |
 | iCloud | Si sincronizza con Foto di iCloud se attivo | Non inclusa nei backup di iCloud o del computer |
 | Raccolte separate | Un solo album Nascosti | Una cassaforte separata per ogni sequenza |
 

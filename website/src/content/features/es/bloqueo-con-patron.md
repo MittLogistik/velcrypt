@@ -1,21 +1,21 @@
 ---
 pageId: pattern-lock
 title: "Bloqueo con patrón: abre tu bóveda en una cuadrícula 5×5"
-description: "Velcrypt se desbloquea con un patrón dibujado en una cuadrícula de 5×5 puntos. Conoce las reglas, cómo crear un patrón seguro y por qué no hay Face ID."
+description: "Velcrypt se desbloquea con un patrón dibujado en una cuadrícula de 5×5 puntos. Reglas, cómo crear un patrón seguro y cómo funciona Face ID opcional."
 h1: "Bloqueo con patrón: una cuadrícula 5×5 que solo tu memoria puede abrir"
 navTitle: "Bloqueo con patrón"
-answer: "Velcrypt se abre con un patrón que dibujas en una cuadrícula de 5×5 puntos: una línea continua que pase por al menos 6 puntos y cambie de dirección al menos una vez. Se recomiendan patrones de 8 a 12 puntos y, a propósito, no hay Face ID ni Touch ID."
+answer: "Velcrypt se abre con un patrón que dibujas en una cuadrícula de 5×5 puntos: una línea continua que pase por al menos 6 puntos y cambie de dirección al menos una vez. Se recomiendan patrones de 8 a 12 puntos. Face ID o Touch ID es opcional y viene desactivado; puedes activarlo por bóveda, y el patrón sigue abriendo todas."
 keyFacts:
   - "Desbloqueas dibujando una línea continua en una cuadrícula de 25 puntos (5×5)."
   - "Reglas mínimas: al menos 6 puntos y al menos un cambio de dirección."
   - "Longitud recomendada: de 8 a 12 puntos."
-  - "Sin Face ID ni Touch ID por diseño, porque la biometría se puede forzar."
+  - "Face ID o Touch ID es opcional, viene desactivado y se activa por bóveda, porque la biometría se puede forzar."
   - "Tu patrón también es la base de la clave de cifrado de la bóveda."
 primaryKeyword: "app bloqueo con patrón iphone"
 keywords: ["bóveda de fotos con patrón", "bloqueo con patrón 5x5", "bóveda de fotos sin face id", "desbloquear app con patrón iphone", "patrón de desbloqueo seguro"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
-summary: "Desbloquea con un patrón en una cuadrícula 5×5. Mínimo 6 puntos y un giro; se recomiendan 8–12 puntos. Sin Face ID, por diseño."
+dateModified: 2026-11-21
+summary: "Desbloquea con un patrón en una cuadrícula 5×5. Mínimo 6 puntos y un giro; se recomiendan 8–12 puntos. Face ID es opcional y viene desactivado."
 status: available
 schemaType: WebPage
 order: 1
@@ -23,8 +23,8 @@ related: [hidden-vaults, encryption, pattern-strength-checker, pattern-lock-vs-p
 faq:
   - q: "¿Cuántos puntos necesita un patrón de Velcrypt?"
     a: "Al menos 6 puntos, dibujados como una sola línea continua con al menos un cambio de dirección. Para una mejor protección, usa de 8 a 12 puntos e incluye varios giros."
-  - q: "¿Por qué Velcrypt no usa Face ID ni Touch ID?"
-    a: "Tu cara o tu huella se pueden usar sin tu consentimiento, por ejemplo mientras duermes o si alguien te retiene. Un patrón existe solo en tu memoria, así que nadie puede quitártelo físicamente. Velcrypt deja fuera la biometría a propósito."
+  - q: "¿Velcrypt usa Face ID o Touch ID?"
+    a: "Solo si lo activas. Viene desactivado, es gratis y lo activas por bóveda en los Ajustes de esa bóveda. Tu cara o tu huella se pueden usar sin tu consentimiento, así que quien consiga que mires el teléfono puede abrir todas las bóvedas que añadiste. Deja tu bóveda más privada solo con su patrón."
   - q: "¿Qué pasa si olvido mi patrón?"
     a: "La bóveda ya no se puede volver a abrir, ni por ti ni por Velcrypt. El patrón forma parte de cómo se deriva la clave de cifrado y no hay frase de recuperación ni cuenta para restablecerlo. Elige un patrón que puedas recordar con seguridad."
   - q: "¿Es más seguro un patrón 5×5 que uno de 3×3 como el de algunos móviles?"
@@ -69,11 +69,13 @@ Algunos consejos prácticos:
 
 Si quieres una segunda opinión, el [comprobador de seguridad de patrones](id:pattern-strength-checker) ofrece una valoración aproximada y una estimación en bits según la longitud, los giros, los cruces y la parte de la cuadrícula que cubre. Es una heurística, no una garantía, y deberías probar un patrón parecido al tuyo, nunca el real.
 
-## Por qué no hay Face ID ni Touch ID
+## Face ID opcional, desactivado de forma predeterminada
 
-Velcrypt no tiene desbloqueo biométrico, y es una decisión deliberada. La biometría es cómoda precisamente porque siempre la llevas encima, y esa es también su debilidad: alguien puede poner el iPhone delante de tu cara o presionar tu dedo sobre el sensor sin tu permiso.
+Face ID o Touch ID es opcional, gratuito y viene desactivado en todas las bóvedas. Para activarlo, abre la bóveda con su patrón y ve a Ajustes › Face ID; le das a la bóveda un nombre para la lista de Face ID. En cuanto al menos una bóveda tiene Face ID, aparece el botón «Desbloquear con Face ID» en la pantalla de bloqueo. Tras Face ID eliges entre las bóvedas que añadiste, o la bóveda se abre directamente si solo hay una. Las bóvedas sin Face ID nunca aparecen, y el patrón sigue abriendo todas las bóvedas.
 
-Un patrón existe solo en tu cabeza. Nadie puede sacártelo de la mano ni apuntar el teléfono a tu cara para obtenerlo. En una bóveda pensada para proteger tus archivos más privados, esa diferencia importa más que ahorrar un segundo al desbloquear. Las ventajas y desventajas se comparan con más detalle en [patrón vs PIN vs Face ID](id:pattern-lock-vs-pin-vs-face-id).
+No hay alternativa con el código: el código de tu iPhone no puede sustituir a Face ID dentro de Velcrypt. La copia de la clave de una bóveda para Face ID se queda solo en el llavero de este iPhone, no en iCloud ni en copias de seguridad, y está ligada a las caras y huellas registradas cuando lo activaste. Si alguien añade una cara o una huella, o se restablece Face ID, Face ID se desactiva en esas bóvedas hasta que las abras con el patrón y vuelvas a activarlo.
+
+¿Por qué viene desactivado? La biometría es cómoda precisamente porque siempre la llevas encima, y esa es también su debilidad: alguien puede poner el iPhone delante de tu cara o presionar tu dedo sobre el sensor sin tu permiso. Quien consiga que mires el teléfono puede ver y abrir todas las bóvedas de la lista de Face ID. Un patrón existe solo en tu cabeza; nadie puede sacártelo de la mano. Así que deja tu bóveda más privada solo con su patrón y usa Face ID, si lo quieres, para las bóvedas de uso cómodo. El [patrón de coacción](id:duress-pattern) funciona solo con patrones y la lista de Face ID no lo activa. Las ventajas y desventajas se comparan con más detalle en [patrón vs PIN vs Face ID](id:pattern-lock-vs-pin-vs-face-id).
 
 ## Tu patrón y la clave de cifrado
 

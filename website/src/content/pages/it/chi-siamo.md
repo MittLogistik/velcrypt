@@ -1,20 +1,20 @@
 ---
 pageId: about
 title: "Chi siamo: Velcrypt, privacy by design"
-description: "Perché esiste Velcrypt e i principi che lo guidano: cifratura sul dispositivo, nessun account, niente biometria, limiti dichiarati, zero pubblicità."
+description: "Perché esiste Velcrypt e i principi che lo guidano: cifratura sul dispositivo, nessun account, Face ID solo se lo vuoi, limiti dichiarati, zero pubblicità."
 h1: "Chi siamo"
 navTitle: "Chi siamo"
-answer: "Velcrypt nasce per offrire a chi usa iPhone un posto semplice e onesto per foto, video e documenti privati: cifrati sul dispositivo, aperti solo da una sequenza che ricordi tu, senza account, senza cloud e senza pubblicità."
+answer: "Velcrypt nasce per offrire a chi usa iPhone un posto semplice e onesto per foto, video e documenti privati: cifrati sul dispositivo, aperti da una sequenza che ricordi tu, senza account, senza cloud e senza pubblicità."
 keyFacts:
   - "Basato sulla cifratura sul dispositivo, senza account e senza server per i tuoi contenuti."
-  - "Niente Face ID né Touch ID per scelta: una sequenza esiste solo nella tua memoria."
+  - "Face ID e Touch ID facoltativi e spenti di base: una sequenza esiste solo nella tua memoria, un volto no."
   - "Nessuna pubblicità e nessuna vendita di dati."
   - "Trasparente sui limiti, compreso il fatto che una sequenza dimenticata non si recupera."
   - "Backup cifrato gratuito per tutti; con il Premium, una sequenza di emergenza per le situazioni di costrizione."
 primaryKeyword: "velcrypt chi siamo"
 keywords: ["app velcrypt", "chi sviluppa velcrypt", "principi velcrypt", "cassaforte foto privata iphone"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 schemaType: AboutPage
 order: 4
 related: [security, features, offline-no-account, pricing, press]
@@ -35,7 +35,7 @@ Sul telefono tieni cose che non daresti mai in mano a uno sconosciuto: la scansi
 
 Molte app cassaforte ti chiedono di creare un account, spostano i tuoi file in un cloud o presentano un semplice PIN con parole altisonanti. Noi volevamo qualcosa di più essenziale e più facile da fidarsi: un’app nativa per iPhone che cifra i file sul dispositivo, si apre con una sequenza che conosci solo tu e ti dice chiaramente cosa non può fare.
 
-Velcrypt è quell’app. Conserva foto, video e documenti in casseforti cifrate, ognuna aperta dalla propria sequenza su una griglia 5×5. Una sequenza mai vista apre una cassaforte vuota, quindi nulla nell’app rivela quante casseforti hai. I dettagli sono nella pagina sul [modello di sicurezza](id:security).
+Velcrypt è quell’app. Conserva foto, video e documenti in casseforti cifrate, ognuna aperta dalla propria sequenza su una griglia 5×5. Una sequenza mai vista apre una cassaforte vuota, quindi nulla nell’app rivela quante casseforti hai, a parte quelle che scegli tu di aggiungere all’elenco Face ID. I dettagli sono nella pagina sul [modello di sicurezza](id:security).
 
 ## I nostri principi
 
@@ -47,9 +47,9 @@ I contenuti delle tue casseforti vengono cifrati e salvati sul tuo iPhone e da n
 
 Niente registrazione, niente indirizzo email, niente procedura di reimpostazione della password. Un account sarebbe un’altra cosa che può essere violata o usata per collegarti ai tuoi dati.
 
-### Niente biometria, per scelta
+### Biometria solo se la scegli tu
 
-Velcrypt non offre volutamente Face ID né Touch ID. La biometria è comoda, ma un volto o un dito possono essere usati senza il tuo consenso. Una sequenza esiste solo nella tua memoria. Trovi il ragionamento completo in [sequenza, PIN o Face ID](id:pattern-lock-vs-pin-vs-face-id).
+In Velcrypt Face ID e Touch ID sono facoltativi e disattivati per impostazione predefinita: li attivi tu, cassaforte per cassaforte. La biometria è comoda, ma un volto o un dito possono essere usati senza il tuo consenso, mentre una sequenza esiste solo nella tua memoria. Per questo la sequenza apre sempre ogni cassaforte, e ti consigliamo di tenere la più privata solo con la sequenza. Trovi il ragionamento completo in [sequenza, PIN o Face ID](id:pattern-lock-vs-pin-vs-face-id).
 
 ### Limiti dichiarati
 

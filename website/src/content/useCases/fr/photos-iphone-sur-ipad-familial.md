@@ -13,7 +13,7 @@ keyFacts:
 primaryKeyword: "photos iphone sur ipad"
 keywords: ["empêcher la synchronisation des photos sur l’ipad familial", "identifiant apple partagé photos", "photothèque partagée icloud confidentialité", "séparer les photos icloud en famille", "mes photos apparaissent sur un autre appareil"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Pourquoi vos photos d’iPhone apparaissent sur l’iPad ou le Mac familial, comment démêler comptes et photothèques partagés, et où ranger vos photos privées."
 group: everyday
 schemaType: Article
@@ -64,7 +64,7 @@ Photos iCloud est chiffré, mais par défaut c’est Apple qui détient les clé
 
 Velcrypt emprunte une autre voie : il conserve vos photos, vidéos et documents privés dans un coffre chiffré, uniquement sur votre iPhone. [Pas de compte, pas de serveur, pas de synchronisation](id:offline-no-account) : rien de ce que vous placez dans un coffre ne peut apparaître sur l’iPad familial, le Mac ou une photothèque partagée.
 
-L’import copie une photo dans le coffre. Pour la retirer de tous les appareils synchronisés, [supprimez l’original](id:delete-original-photos-after-import) dans Photos et videz « Suppressions récentes » ; avec Photos iCloud activé, cette suppression se propage aussi à vos autres appareils. Le coffre s’ouvre avec un schéma tracé sur une grille 5×5, pas avec le code de l’appareil ni Face ID.
+L’import copie une photo dans le coffre. Pour la retirer de tous les appareils synchronisés, [supprimez l’original](id:delete-original-photos-after-import) dans Photos et videz « Suppressions récentes » ; avec Photos iCloud activé, cette suppression se propage aussi à vos autres appareils. Le coffre s’ouvre avec un schéma tracé sur une grille 5×5, jamais avec le code de l’appareil ; Face ID seulement si vous l’activez pour ce coffre.
 
 ## Des limites honnêtes
 

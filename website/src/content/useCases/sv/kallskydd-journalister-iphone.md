@@ -9,12 +9,12 @@ keyFacts:
   - "Hotmodellering innebär att fråga vem som kan vilja åt materialet, vad de kan göra och vad som händer om de får tag på det."
   - "Dataminimering, att spara mindre under kortare tid, är ofta det starkaste skyddet för källor."
   - "Bildens metadata kan avslöja var och när en bild togs, och med vilken enhet."
-  - "Velcrypt har inget konto, inga servrar och ingen synkning; valven öppnas med ett mönster, inte Face ID."
+  - "Velcrypt har inget konto, inga servrar och ingen synkning; valven öppnas med ett mönster, och Face ID är avstängt som standard."
   - "Ett valv skyddar inte kopior i iCloud, meddelandeappar, e-post eller i källans egen telefon."
 primaryKeyword: "källskydd journalist iphone"
 keywords: ["skydda källors bilder mobil", "journalist mobilsäkerhet", "källdokument iphone integritet", "reporter enhetssäkerhet", "hotmodellering journalister"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Hotmodellering, dataminimering och metadata för reportrar, och var ett krypterat iPhone-valv passar in som ett lager i källskyddet."
 group: professional
 schemaType: Article
@@ -63,7 +63,7 @@ Svaren avgör dina verktyg. Att överdimensionera skyddet för en lågriskhistor
 
 Velcrypt är ett lager i den planen. Appen förvarar bilder, videor och dokument i krypterade valv i din iPhone, med AES-256-GCM och nycklar som härleds ur ditt mönster. Det finns inget konto, ingen server, ingen synkning och ingen analys av valvinnehåll, så det finns inget på en server som någon kan begära ut.
 
-Valven öppnas med ett mönster på ett 5×5-rutnät. Velcrypt stöder medvetet inte Face ID eller Touch ID, eftersom biometri kan användas utan ditt samtycke; ett mönster finns bara i ditt minne. Resonemanget finns i [mönster, PIN eller Face ID](id:pattern-lock-vs-pin-vs-face-id). Varje mönster öppnar sitt eget valv, och ett okänt mönster öppnar ett tomt valv utan felmeddelande, vilket stöder [trovärdig förnekelse](id:plausible-deniability-explained). Med Premium öppnar ett [nödmönster](id:duress-pattern) ett lockbetesvalv och raderar de andra permanent. Det är tänkt för situationer som gäller din personliga säkerhet, som stöld eller hot, inte för att radera material när myndigheter lagligen kräver åtkomst, vilket i sig kan vara ett brott; sök juridisk rådgivning om det är en risk för dig.
+Valven öppnas med ett mönster på ett 5×5-rutnät. Face ID och Touch ID är avstängda som standard, eftersom biometri kan användas utan ditt samtycke; ett mönster finns bara i ditt minne. Du kan slå på Face ID per valv, men ett valv med källmaterial bör bara ha sitt mönster. Resonemanget finns i [mönster, PIN eller Face ID](id:pattern-lock-vs-pin-vs-face-id). Varje mönster öppnar sitt eget valv, och ett okänt mönster öppnar ett tomt valv utan felmeddelande, vilket stöder [trovärdig förnekelse](id:plausible-deniability-explained). Med Premium öppnar ett [nödmönster](id:duress-pattern) ett lockbetesvalv och raderar de andra permanent. Det är tänkt för situationer som gäller din personliga säkerhet, som stöld eller hot, inte för att radera material när myndigheter lagligen kräver åtkomst, vilket i sig kan vara ett brott; sök juridisk rådgivning om det är en risk för dig.
 
 ## Ärliga begränsningar
 

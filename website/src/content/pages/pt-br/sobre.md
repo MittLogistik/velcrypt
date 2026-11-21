@@ -1,13 +1,13 @@
 ---
 pageId: about
 title: "Sobre o Velcrypt: privacidade desde a concepção"
-description: "Por que o Velcrypt existe e seus princípios: criptografia no aparelho, sem conta, sem biometria, limites honestos, sem anúncios nem venda de dados."
+description: "Por que o Velcrypt existe e seus princípios: criptografia no aparelho, sem conta, Face ID só se você quiser, limites honestos e sem anúncios."
 h1: "Sobre o Velcrypt"
 navTitle: "Sobre"
 answer: "O Velcrypt existe para dar a quem usa iPhone um lugar simples e honesto para fotos, vídeos e documentos privados: criptografados no aparelho, abertos só por um padrão que você memoriza, sem conta, sem nuvem e sem anúncios."
 keyFacts:
   - "Construído em torno da criptografia no aparelho, sem conta e sem servidores para o seu conteúdo."
-  - "Sem Face ID nem Touch ID por design — um padrão existe apenas na sua memória."
+  - "Face ID ou Touch ID opcional e desativado por padrão — um padrão existe apenas na sua memória."
   - "Sem anúncios e sem venda de dados."
   - "Honesto sobre os limites, inclusive a impossibilidade de recuperar padrões esquecidos."
   - "Backup criptografado grátis para todos; um padrão de coação para situações de coação, com o Premium."
@@ -15,7 +15,7 @@ keyFacts:
 primaryKeyword: "sobre o velcrypt"
 keywords: ["app velcrypt", "quem faz o velcrypt", "princípios do velcrypt", "cofre de fotos privado iphone"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 schemaType: AboutPage
 order: 4
 related: [security, features, offline-no-account, pricing, press]
@@ -36,7 +36,7 @@ Seu celular guarda coisas que você nunca entregaria a um desconhecido: a digita
 
 Muitos apps de cofre pedem que você crie uma conta, mandam seus arquivos para uma nuvem ou embrulham um simples PIN em linguagem de marketing. Queríamos algo mais focado e mais fácil de confiar: um app nativo para iPhone que criptografa seus arquivos no aparelho, abre com um padrão que só você conhece e diz com clareza o que não consegue fazer.
 
-O Velcrypt é esse app. Ele guarda fotos, vídeos e documentos em cofres criptografados, cada um aberto por seu próprio padrão em uma grade 5×5. Um padrão que ele nunca viu abre um cofre vazio, então nada no app revela quantos cofres você tem. Os detalhes estão na página do [modelo de segurança](id:security).
+O Velcrypt é esse app. Ele guarda fotos, vídeos e documentos em cofres criptografados, cada um aberto por seu próprio padrão em uma grade 5×5. Um padrão que ele nunca viu abre um cofre vazio, então nada no app revela quantos cofres você tem, exceto os que você decidir colocar no Face ID. Os detalhes estão na página do [modelo de segurança](id:security).
 
 ## Nossos princípios
 
@@ -48,9 +48,9 @@ O conteúdo dos seus cofres é criptografado e armazenado no seu iPhone e em nen
 
 Não há cadastro, endereço de e-mail nem fluxo de redefinição de senha. Uma conta seria mais uma coisa que poderia ser invadida ou usada para ligar você aos seus dados.
 
-### Sem biometria, por design
+### Face ID só se você escolher
 
-O Velcrypt, de propósito, não oferece Face ID nem Touch ID. A biometria é prática, mas um rosto ou um dedo pode ser usado sem o seu consentimento. Um padrão existe apenas na sua memória. Você pode ler o raciocínio em [padrão vs PIN vs Face ID](id:pattern-lock-vs-pin-vs-face-id).
+Todo cofre abre com um padrão, e o Face ID ou Touch ID é opcional e vem desativado. A biometria é prática, mas um rosto ou um dedo pode ser usado sem o seu consentimento, então você decide, cofre por cofre, se quer ativá-lo, e o seu cofre mais privado pode ficar só com o padrão. Um padrão existe apenas na sua memória. Você pode ler o raciocínio em [padrão vs PIN vs Face ID](id:pattern-lock-vs-pin-vs-face-id).
 
 ### Limites honestos
 

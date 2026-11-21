@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "keepsafe alternatief"
 keywords: ["keepsafe alternatief iphone", "apps zoals keepsafe", "overstappen van keepsafe", "vervanger voor keepsafe", "fotokluis zonder account"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Waarom mensen een alternatief voor Keepsafe zoeken, wat je bij elke fotokluis checkt en hoe je je foto’s verhuist zonder kopieën achter te laten."
 competitor: "Keepsafe"
 lastChecked: "oktober 2026"
@@ -61,7 +61,7 @@ Een fotokluis is een app die gekozen foto’s en video’s los van je hoofdbibli
 
 | Optie | Account | Kopie in de cloud | Apart geheim | Opmerkingen |
 |---|---|---|---|---|
-| Velcrypt | Geen | Alleen een back-upbestand dat je zelf bewaart | Ja, een patroon | Verborgen kluizen, documenten, geen Face ID |
+| Velcrypt | Geen | Alleen een back-upbestand dat je zelf bewaart | Ja, een patroon | Verborgen kluizen, documenten, Face ID optioneel (standaard uit) |
 | Album Verborgen (iPhone) | Apple Account voor iCloud | Met iCloud-foto’s | Nee, toegangscode van het toestel | Gratis, ingebouwd |
 | Vergrendelde notities in Apple Notities | Apple Account voor iCloud | Met iCloud voor Notities | Optioneel Notities-wachtwoord | Vooral voor een paar items |
 | Andere kluis-apps | Verschilt | Verschilt | Verschilt | Check elke vermelding |

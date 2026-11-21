@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "come nascondere foto su iphone"
 keywords: ["nascondere foto iphone", "album nascosti iphone", "nascondere immagini iphone", "nascondere album nascosti iphone", "bloccare album nascosti iphone", "nascondere foto ios 18"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-11-21
 summary: "Usa la funzione Nascondi dell’app Foto, blocca e nascondi l’album Nascosti e scopri cosa non protegge davvero."
 category: hiding
 order: 1
@@ -119,6 +119,6 @@ Il rovescio della medaglia è la responsabilità. Una cassaforte che tiene i dat
 
 ## Dove si inserisce Velcrypt
 
-Velcrypt è un esempio di questo secondo approccio. La sblocchi disegnando una sequenza su una griglia 5×5 di punti invece di usare Face ID o il codice del dispositivo, quindi conoscere il codice del tuo iPhone non basta ad aprirla. I file sono cifrati con AES-256-GCM sul dispositivo, non c’è nessun account e i dati della cassaforte non finiscono nei backup di iCloud. Ogni sequenza apre una cassaforte separata, e una sequenza sconosciuta apre semplicemente una cassaforte vuota; la pagina sulle [casseforti nascoste](id:hidden-vaults) spiega perché è importante.
+Velcrypt è un esempio di questo secondo approccio. La sblocchi disegnando una sequenza su una griglia 5×5 di punti invece di usare il codice del dispositivo, quindi conoscere il codice del tuo iPhone non basta ad aprirla. Face ID è facoltativo e si usa solo per le casseforti per cui lo attivi. I file sono cifrati con AES-256-GCM sul dispositivo, non c’è nessun account e i dati della cassaforte non finiscono nei backup di iCloud. Ogni sequenza apre una cassaforte separata, e una sequenza sconosciuta apre semplicemente una cassaforte vuota; la pagina sulle [casseforti nascoste](id:hidden-vaults) spiega perché è importante.
 
 Importare in Velcrypt copia la foto invece di spostarla: l’originale resta in Foto finché non lo elimini tu, anche da Eliminati di recente. La guida su come [eliminare gli originali dopo l’importazione](id:delete-original-photos-after-import) ti accompagna passo per passo. Per una panoramica della parte foto dell’app, vedi [nascondere foto con Velcrypt](id:hide-photos), e per un confronto diretto, [Velcrypt vs album Nascosti dell’iPhone](id:velcrypt-vs-iphone-hidden-album).

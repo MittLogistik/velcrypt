@@ -8,13 +8,13 @@ answer: "Velcrypt garde tout sur votre iPhone, sans compte, et se déverrouille 
 keyFacts:
   - "Velcrypt ne demande ni compte, ni e-mail, ni inscription ; Keepsafe utilise un compte, d’après sa fiche."
   - "Keepsafe propose une sauvegarde cloud facultative ; Velcrypt garde les coffres sur votre iPhone, avec une sauvegarde chiffrée manuelle et gratuite."
-  - "Velcrypt se déverrouille avec un motif sur une grille 5×5 et n’a volontairement ni Face ID ni Touch ID."
+  - "Velcrypt se déverrouille avec un motif sur une grille 5×5 ; Face ID est facultatif et désactivé par défaut, coffre par coffre."
   - "Dans Velcrypt, chaque motif ouvre son propre coffre, et un motif inconnu ouvre un coffre vide."
   - "Si vous oubliez votre motif Velcrypt ou perdez le téléphone, le coffre ne peut pas être récupéré."
 primaryKeyword: "velcrypt vs keepsafe"
 keywords: ["keepsafe vs velcrypt", "comparatif keepsafe", "alternative à keepsafe coffre-fort photo", "coffre-fort photo sans compte", "sauvegarde cloud keepsafe"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Un coffre local sans compte face à un coffre avec compte et sauvegarde cloud. Ce qui convient à qui, côte à côte."
 competitor: "Keepsafe"
 lastChecked: "octobre 2026"
@@ -51,7 +51,7 @@ Aucune approche n’est meilleure dans l’absolu. L’une sacrifie du confort p
 | Compte requis | Ni compte ni e-mail | Oui, d’après sa fiche |
 | Sauvegarde cloud | Non ; sauvegarde chiffrée manuelle et gratuite (fichier protégé par mot de passe) | « Private Cloud » facultatif avec premium |
 | Méthode de déverrouillage | Motif sur une grille 5×5 | Code PIN ou code d’accès |
-| Biométrie (Face ID / Touch ID) | Non proposée, par choix | Prise en charge, d’après sa fiche |
+| Biométrie (Face ID / Touch ID) | Facultative, désactivée par défaut (par coffre) | Prise en charge, d’après sa fiche |
 | Leurre / plusieurs coffres | Chaque motif est son propre coffre (Premium) | Faux code PIN (leurre) en premium |
 | Schéma de contrainte | Oui, avec Premium (ouvre un leurre, supprime les autres coffres) | Non indiqué publiquement |
 | Alertes d’intrusion | Non proposées | Proposées en premium |
@@ -73,7 +73,7 @@ Keepsafe utilise un code de type PIN et, d’après sa fiche, peut utiliser Face
 
 <!-- TODO verify -->
 
-Velcrypt utilise un motif tracé sur une grille 5×5 : une ligne continue passant par au moins six points avec au moins un changement de direction. Il renonce volontairement à Face ID et Touch ID, car un visage ou un doigt peut être utilisé sans votre consentement, alors qu’un motif n’existe que dans votre mémoire. Le comparatif [motif, code PIN ou Face ID](id:pattern-lock-vs-pin-vs-face-id) approfondit ces compromis.
+Velcrypt utilise un motif tracé sur une grille 5×5 : une ligne continue passant par au moins six points avec au moins un changement de direction. Face ID et Touch ID sont facultatifs et désactivés par défaut, car un visage ou un doigt peut être utilisé sans votre consentement, alors qu’un motif n’existe que dans votre mémoire. Vous pouvez les activer pour les coffres de votre choix ; le motif continue d’ouvrir chaque coffre. Le comparatif [motif, code PIN ou Face ID](id:pattern-lock-vs-pin-vs-face-id) approfondit ces compromis.
 
 ## Leurres et déni plausible
 
@@ -81,13 +81,13 @@ De nombreuses apps coffre-fort proposent un second code, factice, qui ouvre un c
 
 <!-- TODO verify -->
 
-Chez Velcrypt, ce modèle fait partie de la structure, ce n’est pas une option. Chaque motif est son propre coffre, il n’existe aucune liste de coffres, et un motif que l’app n’a jamais vu ouvre simplement un coffre vide, sans erreur. Rien à l’écran ne prouve que d’autres coffres existent. C’est concrètement le sens des [coffres cachés](id:hidden-vaults) et du [déni plausible](id:plausible-deniability-explained). Avec Premium, un [schéma de contrainte](id:duress-pattern) va plus loin : il ouvre un coffre leurre et supprime en silence, définitivement, tous les autres coffres de l’iPhone. Plusieurs coffres, et donc un leurre, nécessitent Premium.
+Chez Velcrypt, ce modèle fait partie de la structure, ce n’est pas une option. Chaque motif est son propre coffre, il n’existe aucune liste de coffres (hormis ceux que vous ajoutez à la liste Face ID), et un motif que l’app n’a jamais vu ouvre simplement un coffre vide, sans erreur. Rien à l’écran ne prouve que d’autres coffres existent. C’est concrètement le sens des [coffres cachés](id:hidden-vaults) et du [déni plausible](id:plausible-deniability-explained). Avec Premium, un [schéma de contrainte](id:duress-pattern) va plus loin : il ouvre un coffre leurre et supprime en silence, définitivement, tous les autres coffres de l’iPhone. Plusieurs coffres, et donc un leurre, nécessitent Premium.
 
 ## Quand Keepsafe peut mieux vous convenir
 
 - **Vous voulez sauvegarde et synchronisation.** Si perdre votre téléphone ne doit pas signifier perdre vos photos, une sauvegarde cloud automatique liée à un compte est la solution la plus simple. Velcrypt ne propose qu’une sauvegarde chiffrée manuelle.
 - **Vous utilisez aussi Android.** Keepsafe est disponible sur plusieurs plateformes, d’après ses fiches ; Velcrypt est réservé à l’iPhone.
-- **Vous préférez Face ID.** Si le confort de la biométrie compte plus pour vous que le risque de déverrouillage forcé, Velcrypt ne le proposera volontairement pas.
+- **Vous voulez Face ID partout, sans réglage.** Keepsafe associe Face ID à son code PIN, d’après sa fiche. Dans Velcrypt, Face ID est désactivé par défaut et s’active coffre par coffre.
 - **Vous voulez des alertes d’intrusion.** Velcrypt ne prend pas de photo des intrus.
 
 <!-- TODO verify -->

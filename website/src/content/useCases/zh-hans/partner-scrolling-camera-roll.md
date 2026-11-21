@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "另一半翻我手机相册"
 keywords: ["男朋友翻我相册", "女朋友查我手机", "iPhone 照片 不让对象看到", "对伴侣隐藏照片", "恋爱 手机隐私"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-11-21
 summary: "恋爱关系中的手机边界、照片是如何被无意看到的，以及如何为几张私密照片留出专属空间。"
 group: everyday
 schemaType: Article
@@ -62,7 +62,7 @@ faq:
 
 Velcrypt 把私密照片、视频和文档保存在你 iPhone 上的加密保险箱中，与「照片」图库分开。导入照片并[删除原件](id:delete-original-photos-after-import)后，它就不会再出现在左右滑动、「回忆」、小组件或搜索中。
 
-保险箱通过你在 5×5 网格上绘制的图案打开，而不是设备密码或 Face ID。知道你的密码也打不开它。而且由于[每个图案都会打开各自的保险箱](id:hidden-vaults)，并不存在保险箱列表：陌生图案只会打开一个空保险箱，且不报错。这让你拥有隐私空间，又不会把手机变成一座显眼的堡垒，[合理推诿](id:plausible-deniability-explained)一文对此有详细解释。
+保险箱通过你在 5×5 网格上绘制的图案打开，而不是设备密码，知道你的密码也打不开它。Face ID 是可选的，默认关闭。而且由于[每个图案都会打开各自的保险箱](id:hidden-vaults)，并不存在保险箱列表（你主动开启 Face ID 的保险箱除外）：陌生图案只会打开一个空保险箱，且不报错。这让你拥有隐私空间，又不会把手机变成一座显眼的堡垒，[合理推诿](id:plausible-deniability-explained)一文对此有详细解释。
 
 如果涉及私密照片，[这篇指南](id:store-intimate-photos-safely-iphone)介绍了它们值得的额外关照。
 

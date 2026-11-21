@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "velcrypt vs iphone hidden album"
 keywords: ["iphone hidden album vs vault app", "is hidden album secure", "hidden album alternative", "hidden album face id", "hidden photos icloud"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Apple’s built-in Hidden album versus a separate encrypted vault: what each protects, where photos sync, and who can open them."
 competitor: "iPhone Hidden album"
 lastChecked: "October 2026"
@@ -51,7 +51,7 @@ If iCloud Photos is on, hidden items sync like everything else. They’re encryp
 | Account required | No | Part of Photos; Apple Account needed for iCloud sync |
 | Cloud backup | No cloud; optional encrypted backup file you store yourself (free) | Yes, with iCloud Photos or iCloud Backup |
 | Unlock method | Pattern on a 5×5 grid, separate from passcode | Face ID, Touch ID or device passcode |
-| Biometrics | Not offered, by design | Yes |
+| Biometrics | Optional, off by default (per vault) | Yes |
 | Decoy / multiple vaults | Every pattern is its own vault (a second vault needs Premium) | One Hidden album |
 | Duress pattern | Yes, with Premium (opens a decoy, deletes the other vaults) | No |
 | Recovery if you forget the code | None | Device passcode and Apple Account recovery |
@@ -65,7 +65,7 @@ If iCloud Photos is on, hidden items sync like everything else. They’re encryp
 
 The biggest practical difference is who can get in. The Hidden album trusts your device passcode. That is reasonable against strangers, but many people share their passcode with a partner, a child or a family member, or have typed it in front of them. Anyone with the passcode can open the Hidden album, even with Face ID set up, because the passcode is always accepted as a fallback.
 
-Velcrypt’s pattern is a separate secret. Knowing your passcode, or having your face in front of the phone, doesn’t open a vault. That is also why Velcrypt deliberately has no Face ID: a face or finger can be used without your consent. See [pattern lock](id:pattern-lock).
+Velcrypt’s pattern is a separate secret. Knowing your passcode doesn’t open a vault, and there is no passcode fallback. Face ID is only used if you turn it on for a vault, and it is off by default, because a face or finger can be used without your consent. See [pattern lock](id:pattern-lock).
 
 ## Copies and the cloud
 
@@ -77,7 +77,7 @@ Velcrypt works the other way. An imported photo is copied into an encrypted vaul
 
 ## Deniability
 
-There is exactly one Hidden album, and its existence is obvious to anyone who opens Photos (unless you turn off showing it). Velcrypt has no vault list. Each pattern opens its own vault, and a pattern the app has never seen opens an empty vault without an error. That lets you keep a decoy vault and makes it impossible to prove others exist. See [hidden vaults](id:hidden-vaults).
+There is exactly one Hidden album, and its existence is obvious to anyone who opens Photos (unless you turn off showing it). Velcrypt has no vault list, apart from the vaults you deliberately add to the Face ID list. Each pattern opens its own vault, and a pattern the app has never seen opens an empty vault without an error. That lets you keep a decoy vault and makes it impossible to prove others exist. See [hidden vaults](id:hidden-vaults).
 
 ## When the Hidden album may suit you better
 

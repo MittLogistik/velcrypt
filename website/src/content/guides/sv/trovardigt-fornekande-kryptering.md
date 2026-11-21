@@ -8,13 +8,13 @@ answer: "Trovärdigt förnekande (plausible deniability) inom kryptering betyder
 keyFacts:
   - "Trovärdigt förnekande handlar om vad som kan bevisas, inte om att dölja att en app eller krypterad data finns."
   - "Program för diskkryptering banade väg för idén med dolda volymer inuti vanliga krypterade volymer."
-  - "I Velcrypt öppnar varje okänt mönster ett tomt valv, utan felmeddelande och utan valvlista."
+  - "I Velcrypt öppnar varje okänt mönster ett tomt valv, utan felmeddelande och utan valvlista (utom valv du själv lägger i Face ID-listan)."
   - "Lagringsstorlek och forensisk analys kan visa att krypterad data finns, även om den inte kan läsas."
   - "Förnekbarhet skyddar mot snokande och informell press; den är ingen juridisk sköld."
 primaryKeyword: "trovärdigt förnekande kryptering"
 keywords: ["vad är plausible deniability", "förnekbar kryptering", "dold volym förklarad", "plausible deniability fotovalv", "förnekbart valv iphone"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Idén bakom dolda volymer och lockbetesvalv, hur Velcrypts design med okända mönster använder den och vad den ärligt talat inte kan göra."
 category: security
 order: 42
@@ -55,7 +55,7 @@ Under åren har samma forskare och praktiker även dokumenterat gränserna: oper
 Velcrypt anpassar principen till ett valv för bilder och dokument i iPhone. Det finns ingen yttre och inre volym; i stället gäller:
 
 - **Varje mönster är ett eget valv.** Varje valv har en egen slumpmässig 256-bitars huvudnyckel, som låses upp av en nyckel härledd från just det mönstret.
-- **Det finns ingen lista över valv.** Appen sparar ingenting som räknar upp hur många valv som finns.
+- **Det finns ingen lista över valv.** Appen sparar ingenting som räknar upp hur många valv som finns. Det enda undantaget är Face ID-listan, som bara visar valv du själv har slagit på Face ID för, så förnekbarheten gäller alla valv utan Face ID.
 - **Okända mönster öppnar ett tomt valv.** Rita ett mönster Velcrypt aldrig har sett, så hamnar du i ett nytt, tomt valv. Det finns inget meddelande om ”fel mönster”.
 
 Följden är att ett felaktigt mönster och ett giltigt men tomt valv ser likadana ut. Om du öppnar ett valv för någon finns det ingenting i gränssnittet som visar att andra valv finns. Det gör ett [lockbetesvalv](id:what-is-a-decoy-vault) till ett naturligt sätt att använda appen snarare än ett specialläge. Funktionssidan om [dolda valv](id:hidden-vaults) visar hur det fungerar i praktiken.

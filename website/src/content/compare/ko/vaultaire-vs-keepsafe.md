@@ -4,7 +4,7 @@ title: "Vaultaire vs Keepsafe: 어떤 iPhone 사진 금고가 나을까?"
 description: "Vaultaire와 Keepsafe 비교: 계정, 잠금 해제, 위장 금고와 비상 금고, 백업, 복구, 가격, 그리고 Velcrypt의 위치까지 중립적으로 나란히 살펴봅니다."
 h1: "Vaultaire vs Keepsafe 비교"
 navTitle: "Vaultaire vs Keepsafe"
-answer: "Vaultaire와 Keepsafe는 모두 iPhone에서 사진을 숨겨 주지만 접근 방식이 다릅니다. 웹사이트에 따르면 Vaultaire는 5×5 패턴 잠금, 계정 없음, 여러 개의 숨겨진 금고, 암호화된 iCloud 백업을 제공합니다. App Store 설명에 따르면 Keepsafe는 계정, Face ID를 지원하는 PIN, 선택형 Private Cloud를 사용합니다. Velcrypt는 세 번째 선택지입니다. Vaultaire처럼 패턴 기반이지만 클라우드도, 데이터 수집도 전혀 없습니다."
+answer: "Vaultaire와 Keepsafe는 모두 iPhone에서 사진을 숨겨 주지만 접근 방식이 다릅니다. 웹사이트에 따르면 Vaultaire는 5×5 패턴 잠금, 계정 없음, 여러 개의 숨겨진 금고, 암호화된 iCloud 백업을 제공합니다. App Store 설명에 따르면 Keepsafe는 계정, Face ID를 지원하는 PIN, 선택형 Private Cloud를 사용합니다. Velcrypt는 세 번째 선택지입니다. Vaultaire처럼 패턴 기반이지만 클라우드도, 데이터 수집도 전혀 없고, Face ID는 원하는 금고에만 켜는 선택 사항입니다."
 keyFacts:
   - "Vaultaire는 계정이 필요 없으며, 설명에 따르면 Keepsafe는 이메일 주소에 연결된 계정을 사용합니다."
   - "Vaultaire는 5×5 격자 패턴으로 잠금을 해제하고 설계상 Face ID가 없으며, Keepsafe는 PIN을 사용하고 Face ID를 지원합니다."
@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "vaultaire vs keepsafe"
 keywords: ["keepsafe vs vaultaire", "vaultaire 후기", "vaultaire 대안", "keepsafe 대안", "아이폰 사진 금고 앱 비교", "아이폰 사진 숨기기 앱 추천"]
 datePublished: 2026-10-31
-dateModified: 2026-10-31
+dateModified: 2026-11-21
 summary: "인기 있는 iPhone 사진 금고 두 가지를 계정, 잠금 해제, 위장, 백업, 복구, 가격으로 나란히 비교하고 Velcrypt의 위치도 살펴봅니다."
 competitor: "Vaultaire and Keepsafe"
 lastChecked: "2026년 10월"
@@ -24,7 +24,7 @@ faq:
   - q: "Vaultaire가 Keepsafe보다 나은가요?"
     a: "무엇을 중요하게 여기느냐에 따라 다릅니다. 웹사이트에 따르면 Vaultaire는 계정이 필요 없고, 패턴으로 잠금을 해제하며, 여러 개의 숨겨진 금고와 암호화된 iCloud 백업을 지원합니다. Keepsafe는 계정, 선택형 Face ID를 지원하는 PIN, 프리미엄 클라우드를 사용하며 Android에서도 쓸 수 있습니다. 모두에게 더 나은 쪽은 없습니다."
   - q: "Vaultaire에 Face ID가 있나요?"
-    a: "아니요. Vaultaire 웹사이트에 따르면 생체 인증은 동의 없이 사용될 수 있기 때문에 의도적으로 Face ID, Touch ID, PIN을 넣지 않았습니다. 패턴을 그려서 잠금을 해제합니다. Velcrypt도 같은 선택을 했습니다. 설명에 따르면 Keepsafe는 Face ID를 지원합니다."
+    a: "아니요. Vaultaire 웹사이트에 따르면 생체 인증은 동의 없이 사용될 수 있기 때문에 의도적으로 Face ID, Touch ID, PIN을 넣지 않았습니다. 패턴을 그려서 잠금을 해제합니다. Velcrypt에서는 Face ID가 선택 사항이며 기본적으로 꺼져 있고, 금고별로 직접 켭니다. 설명에 따르면 Keepsafe는 Face ID를 지원합니다."
   - q: "비상 모드나 패닉 모드가 있는 앱은 어느 쪽인가요?"
     a: "Vaultaire는 Pro 요금제에서 비상 금고를 제공합니다. 그 패턴을 그리면 위장 금고가 열리고 기기의 다른 금고에 대한 접근이 사라집니다. Velcrypt는 Premium에서 비상 패턴을 제공하며, 위장 금고를 열고 다른 금고를 영구적으로 삭제합니다. Keepsafe는 가짜 PIN을 제공하지만, 비상 삭제 기능에 대한 공개된 설명은 찾지 못했습니다."
   - q: "패턴이나 PIN을 잊으면 어떻게 되나요?"
@@ -49,7 +49,7 @@ Vaultaire와 Keepsafe는 iPhone에서 사진을 숨기고 싶은 사람들이 �
 |---|---|---|---|
 | 계정 필요 | 아니요 | 예, 설명에 따르면 | 아니요 |
 | 잠금 해제 방식 | 5×5 격자 패턴 | PIN 또는 암호 | 5×5 격자 패턴 |
-| Face ID / Touch ID | 설계상 제공하지 않음 | 지원, 설명에 따르면 | 설계상 제공하지 않음 |
+| Face ID / Touch ID | 설계상 제공하지 않음 | 지원, 설명에 따르면 | 선택 사항, 기본값 꺼짐(금고별) |
 | 숨겨진 금고 / 위장 금고 | 패턴마다 각각의 금고, 무료로 최대 3개 | 프리미엄에서 가짜·위장 PIN | 패턴마다 각각의 금고, 2개 이상은 Premium 필요 |
 | 비상 모드 | Pro에서 비상 금고 | 공개된 정보 없음 | Premium에서 비상 패턴 |
 | 암호화 세부 정보 공개 | 예: AES-256-GCM, PBKDF2-HMAC-SHA512 | 상세하게 공개되지 않음 | 예: AES-256-GCM, PBKDF2-HMAC-SHA512([암호화](id:encryption) 참고) |
@@ -80,7 +80,7 @@ Keepsafe는 PIN 형태의 코드를 사용하며, 설명에 따르면 편의를 
 
 <!-- TODO verify -->
 
-Vaultaire와 Velcrypt는 둘 다 5×5 격자의 점을 잇는 패턴을 사용하고, 둘 다 의도적으로 Face ID를 넣지 않았습니다. 이유도 같습니다. 얼굴이나 손가락은 동의 없이 사용될 수 있지만 패턴은 기억 속에만 있습니다. 5×5 격자는 Android 휴대폰의 3×3 격자보다 가능한 경로도 훨씬 많습니다. 장단점은 [패턴 잠금 vs PIN vs Face ID](id:pattern-lock-vs-pin-vs-face-id)에서 설명합니다.
+Vaultaire와 Velcrypt는 둘 다 5×5 격자의 점을 잇는 패턴을 사용합니다. Vaultaire는 웹사이트에 따르면 의도적으로 Face ID를 넣지 않았습니다. Velcrypt에서는 Face ID가 선택 사항이며 기본적으로 꺼져 있고, 원하는 금고에만 켤 수 있습니다. 출발점이 되는 생각은 같습니다. 얼굴이나 손가락은 동의 없이 사용될 수 있지만 패턴은 기억 속에만 있으므로, Velcrypt에서는 가장 사적인 금고를 패턴만으로 두기를 권합니다. 5×5 격자는 Android 휴대폰의 3×3 격자보다 가능한 경로도 훨씬 많습니다. 장단점은 [패턴 잠금 vs PIN vs Face ID](id:pattern-lock-vs-pin-vs-face-id)에서 설명합니다.
 
 ## 위장과 비상 기능
 
@@ -88,7 +88,7 @@ Keepsafe는 무해한 위장 금고를 여는 가짜 PIN을 프리미엄 기능�
 
 <!-- TODO verify -->
 
-Vaultaire와 Velcrypt에서 위장은 부가 기능이 아니라 설계의 일부입니다. 패턴마다 각각의 금고가 열리고, 금고 목록이 없으며, 앱이 처음 보는 패턴은 오류 대신 빈 금고를 엽니다. 화면의 어떤 것도 다른 금고의 존재를 증명하지 않습니다. [숨겨진 금고](id:hidden-vaults)를 참고하세요.
+Vaultaire와 Velcrypt에서 위장은 부가 기능이 아니라 설계의 일부입니다. 패턴마다 각각의 금고가 열리고, 금고 목록이 없으며(Velcrypt에서는 직접 Face ID를 켠 금고만 예외), 앱이 처음 보는 패턴은 오류 대신 빈 금고를 엽니다. 화면의 어떤 것도 다른 금고의 존재를 증명하지 않습니다. [숨겨진 금고](id:hidden-vaults)를 참고하세요.
 
 두 앱 모두 유료 요금제에 비상 옵션이 있지만, 동작은 다릅니다.
 

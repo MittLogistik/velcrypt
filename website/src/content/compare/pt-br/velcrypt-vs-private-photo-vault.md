@@ -9,12 +9,12 @@ keyFacts:
   - "O Private Photo Vault é da Legendary Software e usa bloqueio por PIN ou código, segundo sua página na loja."
   - "O Velcrypt desbloqueia com um padrão em uma grade 5×5; cada padrão é um cofre separado."
   - "O Velcrypt publica o design da sua criptografia: AES-256-GCM com derivação de chave PBKDF2-HMAC-SHA512."
-  - "O Velcrypt não tira fotos de intrusos e não tem Face ID, por design."
+  - "O Velcrypt não tira fotos de intrusos, por design; o Face ID é opcional e vem desativado."
   - "O Velcrypt não tem nuvem; o backup é um arquivo criptografado manual, e um padrão esquecido não pode ser recuperado."
 primaryKeyword: "velcrypt vs private photo vault"
 keywords: ["alternativa ao private photo vault", "private photo vault é seguro", "private photo vault comparação", "cofre de fotos com senha falsa", "cofre de fotos com padrão"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Cofre com PIN, senha de fachada e alerta de invasão versus cofre criptografado por padrão e sem conta. Comparação neutra, lado a lado."
 competitor: "Private Photo Vault"
 lastChecked: "outubro de 2026"
@@ -28,7 +28,7 @@ faq:
   - q: "Qual dos apps divulga mais sobre a criptografia?"
     a: "O Velcrypt documenta seu design: AES-256-GCM, PBKDF2-HMAC-SHA512 com no mínimo 600.000 iterações, chaves mestras por cofre e chaves por arquivo. Para o Private Photo Vault, consulte a documentação do próprio desenvolvedor, pois não conseguimos confirmar um nível de detalhe equivalente."
   - q: "Posso usar Face ID com o Velcrypt?"
-    a: "Não. O Velcrypt evita o Face ID e o Touch ID de propósito, porque a biometria pode ser usada sem o seu consentimento. Você desbloqueia desenhando um padrão que só você conhece."
+    a: "Sim, se você ativar. O Face ID ou Touch ID vem desativado; você o ativa por cofre nos Ajustes daquele cofre, e o padrão continua abrindo todos. Como a biometria pode ser usada sem o seu consentimento, mantenha o cofre mais privado só com o padrão."
 ---
 
 *Última verificação: outubro de 2026. Os detalhes dos produtos mudam; confira a página de cada app na App Store para ver a versão atual.*
@@ -41,7 +41,7 @@ O Private Photo Vault, da Legendary Software, é um app de cofre bloqueado por P
 
 <!-- TODO verify -->
 
-O Velcrypt é um cofre no aparelho bloqueado por padrão. Um padrão é uma linha contínua desenhada por pelo menos seis pontos de uma grade 5×5, com pelo menos uma mudança de direção. Cada padrão diferente gera sua própria chave de criptografia e abre seu próprio cofre. Não há conta, nem nuvem, nem lista de cofres em nenhum lugar do app.
+O Velcrypt é um cofre no aparelho bloqueado por padrão. Um padrão é uma linha contínua desenhada por pelo menos seis pontos de uma grade 5×5, com pelo menos uma mudança de direção. Cada padrão diferente gera sua própria chave de criptografia e abre seu próprio cofre. Não há conta, nem nuvem, nem lista de cofres em nenhum lugar do app, exceto os cofres que você coloca de propósito na lista do Face ID.
 
 ## Comparação de recursos
 
@@ -51,7 +51,7 @@ O Velcrypt é um cofre no aparelho bloqueado por padrão. Um padrão é uma linh
 | Exige conta | Não | Não informado publicamente |
 | Backup na nuvem | Não; backup criptografado manual em arquivo (grátis) | Varia; confira a página atual |
 | Forma de desbloqueio | Padrão em uma grade 5×5 | PIN / código |
-| Biometria (Face ID / Touch ID) | Não oferecida, por design | Varia |
+| Biometria (Face ID / Touch ID) | Opcional, desativado por padrão (por cofre) | Varia |
 | Fachada / vários cofres | Cada padrão é um cofre próprio (mais de um cofre exige o Premium) | Senha de fachada |
 | Padrão de coação | Sim, com o Premium (abre um cofre de fachada e apaga os outros cofres) | Não informado publicamente |
 | Relatórios de invasão | Não oferecidos | Oferecidos, segundo sua página na loja |
@@ -69,7 +69,7 @@ As fachadas funcionam de outro jeito. A senha de fachada do Private Photo Vault,
 
 <!-- TODO verify -->
 
-No Velcrypt, a fachada não é um modo especial. Você simplesmente cria outro cofre com outro padrão e guarda nele algo sem importância. Como qualquer padrão nunca visto abre um cofre novo e vazio, sem erro, quem examina o app não consegue saber quantos cofres você tem. O guia sobre [cofres de fachada](id:what-is-a-decoy-vault) explica por que isso importa.
+No Velcrypt, a fachada não é um modo especial. Você simplesmente cria outro cofre com outro padrão e guarda nele algo sem importância. Como qualquer padrão nunca visto abre um cofre novo e vazio, sem erro, quem examina o app não consegue saber quantos cofres você tem, exceto os que você colocou na lista do Face ID. O guia sobre [cofres de fachada](id:what-is-a-decoy-vault) explica por que isso importa.
 
 ## Criptografia e transparência
 
@@ -82,7 +82,7 @@ Para o Private Photo Vault, não encontramos uma descrição técnica pública e
 ## Quando o Private Photo Vault pode ser melhor para você
 
 - **Você quer relatórios de invasão.** Se saber que alguém tentou abrir seu cofre é importante para você, o Velcrypt não oferece isso.
-- **Você prefere um código numérico ou Face ID.** Algumas pessoas acham um PIN mais rápido do que desenhar um padrão.
+- **Você prefere um código numérico.** Algumas pessoas acham um PIN mais rápido do que desenhar um padrão.
 - **Você quer backup ou transferência automáticos.** Se a versão que você usa oferece isso, é algo que o Velcrypt não tem: o backup dele é um arquivo criptografado que você cria manualmente.
 - **Você já está acostumado.** Migrar uma biblioteca grande dá trabalho; trocar só faz sentido se as diferenças importarem para você.
 
@@ -90,7 +90,7 @@ Para o Private Photo Vault, não encontramos uma descrição técnica pública e
 
 ## Quando o Velcrypt pode ser melhor para você
 
-- **Você quer cofres que não revelam uns aos outros.** Sem lista de cofres, sem erro para padrões desconhecidos.
+- **Você quer cofres que não revelam uns aos outros.** Sem lista de cofres (exceto os que você adicionar ao Face ID), sem erro para padrões desconhecidos.
 - **Você não quer conta nem servidores.** Veja [offline e sem conta](id:offline-no-account).
 - **Você quer criptografia documentada.** Os algoritmos e o tratamento das chaves são públicos.
 - **Você também quer guardar documentos.** O Velcrypt importa arquivos do app Arquivos, junto com fotos e vídeos.

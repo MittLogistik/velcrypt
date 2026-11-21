@@ -20,7 +20,7 @@ keywords:
   - "photothèque partagée ou album partagé"
   - "photos de famille chiffrées"
 datePublished: 2026-10-31
-dateModified: 2026-10-31
+dateModified: 2026-11-21
 summary: "Qui peut voir, modifier et supprimer quoi dans la photothèque partagée iCloud, comment des photos y entrent seules et comment garder les vôtres à l’écart."
 category: apple
 order: 60
@@ -136,7 +136,7 @@ Si vous cherchez des « photos de famille chiffrées », voici la réponse honn�
 
 La photothèque partagée est faite pour partager. Pour les photos que vous ne voulez jamais partager, le plus fiable est de les sortir complètement de la photothèque de Photos.
 
-Velcrypt est un coffre-fort pour iPhone conçu pour cela. Les photos, vidéos et documents importés sont chiffrés sur l’iPhone en AES-256-GCM et s’ouvrent avec un schéma tracé sur une grille de 5×5, pas avec le code de l’appareil ni Face ID. Il n’y a [ni compte, ni serveur, ni synchronisation](id:offline-no-account), et les données du coffre sont exclues des sauvegardes iCloud et sur ordinateur : rien de ce qui est dans un coffre ne peut apparaître dans une photothèque partagée, un album partagé ou sur l’iPad familial. Chaque schéma ouvre son propre coffre, vous pouvez donc aussi garder un coffre leurre anodin.
+Velcrypt est un coffre-fort pour iPhone conçu pour cela. Les photos, vidéos et documents importés sont chiffrés sur l’iPhone en AES-256-GCM et s’ouvrent avec un schéma tracé sur une grille de 5×5, jamais avec le code de l’appareil (Face ID seulement si vous l’activez pour un coffre). Il n’y a [ni compte, ni serveur, ni synchronisation](id:offline-no-account), et les données du coffre sont exclues des sauvegardes iCloud et sur ordinateur : rien de ce qui est dans un coffre ne peut apparaître dans une photothèque partagée, un album partagé ou sur l’iPad familial. Chaque schéma ouvre son propre coffre, vous pouvez donc aussi garder un coffre leurre anodin.
 
 L’import crée une copie chiffrée, l’original reste en place. Supprimez-le ensuite de Photos et videz Suppressions récentes. Si la photo était dans la photothèque partagée, déplacez-la d’abord vers votre photothèque personnelle ou supprimez-la là-bas, et rappelez-vous que seule la personne qui l’a ajoutée peut la supprimer définitivement de Suppressions récentes.
 

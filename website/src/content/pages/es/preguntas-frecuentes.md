@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "velcrypt preguntas frecuentes"
 keywords: ["dudas velcrypt", "cómo funciona velcrypt", "preguntas app bóveda de fotos", "ayuda patrón velcrypt", "copia de seguridad velcrypt"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 schemaType: FAQPage
 order: 3
 related: [security, pricing, support, pattern-lock, forgot-vault-pattern, hidden-vaults]
@@ -39,17 +39,17 @@ faqGroups:
       - q: "¿Cómo creo una segunda bóveda?"
         a: "Con Premium, dibuja un patrón nuevo que no hayas usado antes. Cada patrón es su propia bóveda, así que un patrón nuevo abre una bóveda nueva y vacía que puedes empezar a llenar. La versión gratuita tiene una bóveda."
       - q: "¿Por qué mi patrón ha abierto una bóveda vacía?"
-        a: "Lo más probable es que hayas dibujado un patrón ligeramente distinto, que Velcrypt trata como otra bóveda. Vuelve a intentarlo despacio; por diseño, la app nunca muestra un mensaje de «patrón incorrecto»."
+        a: "Lo más probable es que hayas dibujado un patrón ligeramente distinto, que Velcrypt trata como otra bóveda. Vuelve a intentarlo despacio; por diseño, la app nunca muestra un mensaje de «patrón incorrecto». Una bóveda vacía abierta por error no agota tu bóveda gratuita."
       - q: "¿Puedo ver una lista de mis bóvedas?"
-        a: "No. Velcrypt no guarda ninguna lista de bóvedas, así que nada en la app revela cuántas existen. Tienes que recordar cada patrón tú mismo."
+        a: "No. Velcrypt no guarda ninguna lista de bóvedas, así que nada en la app revela cuántas existen. Tienes que recordar cada patrón tú mismo. La única excepción es Face ID, que es opcional: las bóvedas en las que lo activas aparecen en la lista de Face ID, y las que no lo tienen nunca aparecen."
       - q: "¿Qué es una bóveda señuelo?"
         a: "Una bóveda señuelo es una bóveda de aspecto normal con contenido inofensivo que puedes abrir si te presionan, mientras tu bóveda privada sigue detrás de otro patrón. Nada en Velcrypt demuestra que la segunda bóveda exista. Como necesitas una segunda bóveda, la bóveda señuelo requiere Premium."
       - q: "¿Qué es el patrón de coacción?"
         a: "Una función Premium que se configura en Ajustes → Patrón de coacción desde dentro de una bóveda señuelo. Al dibujarlo en la pantalla de desbloqueo se abre ese señuelo y se eliminan en silencio y de forma permanente todas las demás bóvedas del iPhone. Las bóvedas eliminadas solo se pueden restaurar desde una copia de seguridad cifrada que hayas hecho antes."
       - q: "¿Puedo organizar los elementos dentro de una bóveda?"
         a: "Sí. Cada bóveda puede tener álbumes, y puedes seleccionar varios elementos a la vez y moverlos entre los álbumes de esa bóveda."
-      - q: "¿Por qué Velcrypt no usa Face ID ni Touch ID?"
-        a: "Por diseño. Una cara o un dedo pueden usarse sin tu consentimiento, por ejemplo mientras duermes o bajo presión, mientras que un patrón solo existe en tu memoria."
+      - q: "¿Velcrypt usa Face ID o Touch ID?"
+        a: "Solo si lo activas. Es gratis y viene desactivado; lo activas por bóveda en Ajustes › Face ID dentro de esa bóveda. Tras Face ID eliges entre las bóvedas que añadiste. Una cara o un dedo pueden usarse sin tu consentimiento, así que quien consiga que mires el teléfono puede abrir esas bóvedas. Deja tu bóveda más privada solo con su patrón."
   - title: "Seguridad y cifrado"
     items:
       - q: "¿Cómo cifra Velcrypt mis archivos?"
@@ -95,7 +95,7 @@ faqGroups:
   - title: "Precios y disponibilidad"
     items:
       - q: "¿Velcrypt es gratis?"
-        a: "Sí. La versión gratuita incluye 1 bóveda con hasta 50 elementos y la copia de seguridad cifrada. Premium cuesta 1,99 US$ a la semana, 19,99 US$ al año (con 3 días de prueba gratuita) o 39,99 US$ en un pago único vitalicio; los precios varían según el país."
+        a: "Sí. La versión gratuita incluye 1 bóveda con hasta 50 elementos y la copia de seguridad cifrada; una bóveda vacía nunca agota tu bóveda gratuita. Premium cuesta 1,99 US$ a la semana, 19,99 US$ al año (con 3 días de prueba gratuita) o 39,99 US$ en un pago único vitalicio; los precios varían según el país."
       - q: "¿Qué incluye Premium?"
         a: "Elementos ilimitados, más bóvedas (otros patrones obtienen su propia bóveda), el patrón de coacción e iconos alternativos para la pantalla de inicio, como una calculadora, un temporizador o una regla."
       - q: "¿Las suscripciones se renuevan solas?"

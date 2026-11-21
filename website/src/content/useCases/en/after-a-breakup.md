@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "ex has access to my iphone photos"
 keywords: ["change passcode after breakup", "remove ex from shared album", "safety check iphone", "ex knows my iphone passcode", "leave icloud shared photo library"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "A calm checklist for the weeks after a breakup: new passcode, Safety Check, shared albums and libraries, and a private place for photos."
 group: everyday
 schemaType: Article
@@ -58,7 +58,7 @@ If you feel unsafe, or your ex is threatening you, put your safety first and rea
 
 Some photos you’ll want to keep — memories, screenshots of messages, documents from the relationship — without them sitting in a camera roll someone else might glimpse. Velcrypt is one option for that.
 
-Velcrypt stores photos, videos and documents in encrypted vaults on your iPhone. It doesn’t use your device passcode or Face ID; a vault opens with a [pattern you draw on a 5×5 grid](id:pattern-lock), so a passcode your ex once knew doesn’t help them. [Each pattern opens its own vault](id:hidden-vaults), and an unknown pattern just opens an empty one with no error, so nothing reveals what’s stored.
+Velcrypt stores photos, videos and documents in encrypted vaults on your iPhone. It doesn’t use your device passcode, and Face ID is off unless you turn it on for a vault; a vault opens with a [pattern you draw on a 5×5 grid](id:pattern-lock), so a passcode your ex once knew doesn’t help them. [Each pattern opens its own vault](id:hidden-vaults), and an unknown pattern just opens an empty one with no error, so nothing reveals what’s stored.
 
 After importing, [delete the originals](id:delete-original-photos-after-import) from Photos and empty Recently Deleted — otherwise copies remain in your library and, with iCloud Photos on, on your other devices. If intimate photos are part of this, [this guide](id:store-intimate-photos-safely-iphone) goes into more detail.
 

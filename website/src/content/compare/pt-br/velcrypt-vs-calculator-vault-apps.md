@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "app calculadora secreta"
 keywords: ["calculadora secreta para esconder fotos", "app calculadora que esconde fotos", "calculadora falsa cofre iphone", "alternativa ao cofre calculadora", "cofre calculadora é seguro"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Disfarce versus criptografia: como os apps de cofre no estilo calculadora se comparam aos cofres ocultos por padrão do Velcrypt."
 competitor: "Apps de cofre calculadora"
 lastChecked: "outubro de 2026"
@@ -24,11 +24,11 @@ faq:
   - q: "Apps de calculadora secreta são seguros?"
     a: "Depende do app. O disfarce de calculadora só esconde que existe um cofre; a proteção dos arquivos depende de o app criptografá-los ou não, e de como faz isso — algo que muitos apps não documentam. Confira as informações de privacidade e segurança de cada app."
   - q: "O Velcrypt tem disfarce de calculadora?"
-    a: "Não como um app de calculadora funcional. O Premium permite trocar o ícone da Tela de Início por alternativas como calculadora, timer ou régua, mas o app continua abrindo a tela de padrão do Velcrypt. A proteção principal é outra: ele torna o conteúdo negável: cada padrão abre seu próprio cofre e nada revela quantos cofres existem. No iOS 18 e posterior, você também pode ocultar o próprio app com o recurso de apps ocultos do sistema."
+    a: "Não como um app de calculadora funcional. O Premium permite trocar o ícone da Tela de Início por alternativas como calculadora, timer ou régua, mas o app continua abrindo a tela de padrão do Velcrypt. A proteção principal é outra: ele torna o conteúdo negável: cada padrão abre seu próprio cofre e nada revela quantos cofres existem, exceto os que você colocar na lista do Face ID. No iOS 18 e posterior, você também pode ocultar o próprio app com o recurso de apps ocultos do sistema."
   - q: "Dá para perceber que um app de calculadora é na verdade um cofre?"
     a: "Às vezes. O nome e a descrição do app na App Store, seu histórico de compras, o uso de armazenamento nos Ajustes e o comportamento do app podem entregá-lo para quem sabe o que procurar."
   - q: "Qual é melhor para negação plausível?"
-    a: "Eles respondem a perguntas diferentes. O disfarce tenta esconder que você tem um cofre. O Velcrypt aceita que o app é visível, mas torna impossível provar o que há dentro ou quantos cofres existem."
+    a: "Eles respondem a perguntas diferentes. O disfarce tenta esconder que você tem um cofre. O Velcrypt aceita que o app é visível, mas torna impossível provar o que há dentro ou quantos cofres existem (exceto os que você colocar na lista opcional do Face ID)."
 ---
 
 *Última verificação: outubro de 2026. Os detalhes dos produtos mudam; confira a página de cada app na App Store para ver a versão atual.*
@@ -51,7 +51,7 @@ Os dois podem ser úteis. A questão é contra o que você está se protegendo. 
 | Exige conta | Não | Varia |
 | Backup na nuvem | Não; backup criptografado manual em arquivo (grátis) | Varia; alguns oferecem recursos na nuvem |
 | Forma de desbloqueio | Padrão em uma grade 5×5 | Código numérico digitado como conta |
-| Biometria (Face ID / Touch ID) | Não oferecida, por design | Varia |
+| Biometria (Face ID / Touch ID) | Opcional, desativado por padrão (por cofre) | Varia |
 | Disfarce | Ícones alternativos no Premium (calculadora, timer, régua e outros); sem calculadora funcional | Parece uma calculadora funcional |
 | Fachada / vários cofres | Cada padrão é um cofre próprio (mais de um cofre exige o Premium) | Varia; alguns oferecem código de fachada |
 | Padrão de coação | Sim, com o Premium (abre um cofre de fachada e apaga os outros cofres) | Varia |
@@ -70,7 +70,7 @@ Um ícone de calculadora pode convencer à primeira vista. Mas o disfarce precis
 
 ## O tipo de negação plausível do Velcrypt
 
-O Velcrypt não finge ser outra coisa. A negação plausível dele fica dentro do app. Cada padrão gera sua própria chave e abre seu próprio cofre. Não há lista de cofres, e um padrão que o app nunca viu simplesmente abre um cofre vazio: sem erro, sem nada que sugira a existência de outros cofres. Você pode manter um cofre de fachada para o dia a dia e um cofre privado, e ninguém consegue provar que o segundo existe. [Cofres ocultos](id:hidden-vaults) e [negação plausível](id:plausible-deniability-explained) explicam o modelo.
+O Velcrypt não finge ser outra coisa. A negação plausível dele fica dentro do app. Cada padrão gera sua própria chave e abre seu próprio cofre. Não há lista de cofres, exceto os que você coloca de propósito na lista do Face ID, e um padrão que o app nunca viu simplesmente abre um cofre vazio: sem erro, sem nada que sugira a existência de outros cofres. Você pode manter um cofre de fachada para o dia a dia e um cofre privado, e ninguém consegue provar que o segundo existe. [Cofres ocultos](id:hidden-vaults) e [negação plausível](id:plausible-deniability-explained) explicam o modelo.
 
 O conteúdo é criptografado com AES-256-GCM, com chaves derivadas do seu padrão usando PBKDF2-HMAC-SHA512 (no mínimo 600.000 iterações) e um salt por aparelho no Keychain do iOS. Os detalhes estão na página de [criptografia](id:encryption).
 
@@ -88,7 +88,7 @@ Se você também quiser o app fora de vista, o iOS 18 e posterior permitem ocult
 ## Quando o Velcrypt pode ser melhor para você
 
 - **O que mais importa é o que está dentro.** Criptografia documentada vale mais para você do que uma fantasia.
-- **Você quer cofres que não podem ser contados.** Sem lista, sem erro para padrões desconhecidos.
+- **Você quer cofres que não podem ser contados.** Sem lista (exceto a do Face ID, se você usar) e sem erro para padrões desconhecidos.
 - **Você não quer conta nem nuvem.** Veja [offline e sem conta](id:offline-no-account).
 - **Você prefere usar o recurso de apps ocultos do próprio iOS** a depender de um disfarce.
 

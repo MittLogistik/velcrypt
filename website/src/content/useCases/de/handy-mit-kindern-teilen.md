@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "fotos vor kindern verstecken iphone"
 keywords: ["kind spielt am handy fotos", "iphone mit kindern teilen", "geführter zugriff kinder", "bildschirmzeit kinder iphone", "kind wischt durch fotos"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Kinder auf deinem iPhone spielen lassen, ohne dass sie in private Fotos geraten: Geführter Zugriff, Bildschirmzeit und ein Tresor, der zu bleibt."
 group: everyday
 schemaType: Article
@@ -69,7 +69,7 @@ Hol Dokumente wie Reisepass oder Rezepte aus der Mediathek, prüf, welche Apps v
 
 Velcrypt ist ein privater Tresor für Fotos, Videos und Dokumente, der komplett auf deinem iPhone lebt. Importierst du etwas, wird es in einen verschlüsselten Tresor kopiert; sobald du das [Original löschst](id:delete-original-photos-after-import) (und „Zuletzt gelöscht“ leerst), ist es nicht mehr in deiner Fotomediathek, in Rückblicken, Widgets oder der Fotoauswahl irgendeiner App.
 
-Der Tresor öffnet sich, wenn du ein [Muster auf einem 5×5-Raster](id:pattern-lock) zeichnest – nicht mit deinem Gerätecode oder Face ID. Selbst ein Kind, das deinen Code kennt, kann ihn also nicht öffnen. Öffnet es die App und zeichnet irgendetwas, sieht es einfach einen leeren Tresor – keine Fehlermeldung, nichts, was auf mehr hindeutet.
+Der Tresor öffnet sich, wenn du ein [Muster auf einem 5×5-Raster](id:pattern-lock) zeichnest – nicht mit deinem Gerätecode. Selbst ein Kind, das deinen Code kennt, kann ihn also nicht öffnen. Face ID ist standardmäßig aus und wird nur genutzt, wenn du es für diesen Tresor einschaltest. Öffnet es die App und zeichnet irgendetwas, sieht es einfach einen leeren Tresor – keine Fehlermeldung, nichts, was auf mehr hindeutet.
 
 Die [automatische Sperre](id:auto-lock) schließt den Tresor, sobald die App in den Hintergrund geht, und die Inhalte sind im App-Umschalter verborgen. Siehst du dir gerade ein Dokument an und gibst das Handy weiter, sperrt das Wegwechseln den Tresor.
 

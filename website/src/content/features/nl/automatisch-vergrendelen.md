@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "app automatisch vergrendelen iphone"
 keywords: ["fotokluis automatisch vergrendelen", "voorbeeld appkiezer verbergen", "app vergrendelt bij sluiten iphone", "kluis vergrendelen op achtergrond", "vertraging automatisch vergrendelen"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-11-21
 summary: "De kluis vergrendelt als de app naar de achtergrond gaat, na een vertraging die jij kiest, en blijft leeg in de appkiezer."
 status: available
 schemaType: WebPage
@@ -64,7 +64,7 @@ Velcrypt verbergt kluisinhoud in de appkiezer. Het voorbeeld verraadt niet waar 
 
 ## Waarom vergrendelen bij een patroon extra belangrijk is
 
-Velcrypt heeft bewust geen Face ID of Touch ID, dus een vergrendelde kluis opnieuw openen betekent altijd je patroon tekenen. Dat kan als gedoe voelen, en het is verleidelijk om een lange vertraging te kiezen om dat te vermijden. Doe dat liever niet te snel: het patroon beschermt de kluis alleen zolang die vergrendeld is. Een korte vertraging, gecombineerd met een patroon dat je snel op gevoel tekent, geeft je zowel privacy als gemak.
+Face ID en Touch ID staan in Velcrypt standaard uit, dus een vergrendelde kluis opnieuw openen betekent meestal je patroon tekenen. Dat kan als gedoe voelen, en het is verleidelijk om een lange vertraging te kiezen om dat te vermijden. Doe dat liever niet te snel: het patroon beschermt de kluis alleen zolang die vergrendeld is. Een korte vertraging, gecombineerd met een patroon dat je snel op gevoel tekent, geeft je zowel privacy als gemak.
 
 ## Praktische tips
 

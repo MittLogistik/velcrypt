@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "store intimate photos safely iphone"
 keywords: ["where to keep private photos on iphone", "hide nudes iphone safely", "private photos safety", "intimate image privacy", "keep private pictures safe"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "A respectful, step-by-step safety plan for intimate photos on iPhone, plus what to do if someone threatens to share your images."
 category: practical
 order: 32
@@ -113,6 +113,6 @@ If you are under 18, please talk to a trusted adult or a child-protection helpli
 
 ## Where Velcrypt fits
 
-Velcrypt is built for exactly the gap the Hidden album leaves: content that should stay on this iPhone, behind a secret only you know. Photos and videos you [hide in Velcrypt](id:hide-photos) are encrypted on the device with AES-256-GCM, stay out of iCloud and computer backups, and never touch a server. Photos and videos taken with the in-vault camera go straight into the vault and never into your photo library. Each pattern opens its own vault, there is no Face ID that someone could use while you sleep, and content is hidden in the app switcher.
+Velcrypt is built for exactly the gap the Hidden album leaves: content that should stay on this iPhone, behind a secret only you know. Photos and videos you [hide in Velcrypt](id:hide-photos) are encrypted on the device with AES-256-GCM, stay out of iCloud and computer backups, and never touch a server. Photos and videos taken with the in-vault camera go straight into the vault and never into your photo library. Each pattern opens its own vault, Face ID is off by default (keep it off for this vault, so nobody can use your face while you sleep), and content is hidden in the app switcher.
 
 Honest limits still apply: Velcrypt can’t reach copies on someone else’s phone, can’t stop someone watching you draw your pattern, and a forgotten pattern can’t be recovered. If a relationship has ended, the [after a breakup](id:after-a-breakup) page has more ideas.

@@ -10,11 +10,11 @@ keyFacts:
   - "Kinderen komen meestal in je filmrol via de Foto's-app, het deelmenu of de fotokiezer van een app."
   - "Schermtijd kan apps en content blokkeren, maar verbergt geen losse foto's."
   - "Het album Verborgen is sinds iOS 16 standaard vergrendeld, maar iedereen met je toegangscode kan het openen."
-  - "Een Velcrypt-kluis opent alleen met jouw patroon; de foto's erin staan helemaal niet in de fotobibliotheek."
+  - "Een Velcrypt-kluis opent met jouw patroon, niet met je toegangscode, en Face ID staat standaard uit; de foto's erin staan helemaal niet in de fotobibliotheek."
 primaryKeyword: "foto's verbergen voor kinderen iphone"
 keywords: ["kind gebruikt mijn telefoon foto's", "iphone delen met kind privacy", "begeleide toegang kinderen", "schermtijd kinderen iphone", "kind swipet door foto's"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Laat kinderen op je iPhone spelen zonder dat ze in je privéfoto's belanden: Begeleide toegang, Schermtijd en een kluis die dicht blijft."
 group: everyday
 schemaType: Article
@@ -71,7 +71,7 @@ Haal documenten zoals paspoorten of recepten uit je filmrol, controleer welke ap
 
 Velcrypt is een privékluis voor foto's, video's en documenten die volledig op je iPhone staat. Importeer je iets, dan wordt het naar een versleutelde kluis gekopieerd. Zodra je [het origineel verwijdert](id:delete-original-photos-after-import) (en Recent verwijderd leegt), staat het niet meer in je fotobibliotheek, Herinneringen, widgets of de fotokiezer van welke app dan ook.
 
-De kluis open je door een [patroon op een 5×5-raster](id:pattern-lock) te tekenen, niet met de toegangscode van je toestel of Face ID. Zelfs een kind dat je toegangscode kent, kan hem dus niet openen. Opent je kind de app en tekent het iets, dan ziet het gewoon een lege kluis: geen foutmelding en niets wat erop wijst dat er meer in zit.
+De kluis open je door een [patroon op een 5×5-raster](id:pattern-lock) te tekenen, niet met de toegangscode van je toestel; Face ID staat standaard uit en werkt alleen voor kluizen waarvoor je het zelf aanzet. Zelfs een kind dat je toegangscode kent, kan hem dus niet openen. Opent je kind de app en tekent het iets, dan ziet het gewoon een lege kluis: geen foutmelding en niets wat erop wijst dat er meer in zit.
 
 [Automatisch vergrendelen](id:auto-lock) sluit de kluis zodra de app naar de achtergrond gaat, en de inhoud is verborgen in de appkiezer. Kijk je naar een document en geef je de telefoon door, dan vergrendelt de kluis zodra er van app wordt gewisseld.
 

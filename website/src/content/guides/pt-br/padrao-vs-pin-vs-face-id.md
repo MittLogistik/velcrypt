@@ -10,11 +10,11 @@ keyFacts:
   - "Padrões escolhidos por pessoas são muito mais fracos que o máximo teórico: as pessoas preferem cantos, letras e formas curtas."
   - "A biometria é prática e difícil de espiar, mas um rosto ou um dedo pode ser usado enquanto você dorme, está contido ou sob coação."
   - "Marcas de dedo na tela vazam padrões com mais facilidade que PINs."
-  - "O Velcrypt usa um padrão numa grade de 5×5 (pelo menos 6 pontos) e, de propósito, não tem Face ID nem Touch ID."
+  - "O Velcrypt usa um padrão numa grade de 5×5 (pelo menos 6 pontos); o Face ID ou Touch ID é opcional, vem desativado e é ativado por cofre."
 primaryKeyword: "padrão vs pin"
 keywords: ["pin ou face id segurança", "bloqueio por padrão é seguro", "padrão ou senha", "face id ou código", "bloqueio de celular mais seguro", "desbloqueio biométrico forçado"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-11-21
 summary: "Cálculo de combinações, olhares por cima do ombro, marcas na tela e biometria forçada: uma comparação honesta das quatro formas comuns de bloqueio."
 category: security
 order: 40
@@ -28,8 +28,8 @@ faq:
     a: "Um PIN de 6 dígitos tem 1.000.000 de combinações possíveis (de 000000 a 999999), contra 10.000 de um PIN de 4 dígitos. Escolhas comuns como 123456 ou datas de aniversário reduzem drasticamente o número real."
   - q: "Alguém consegue descobrir meu padrão pelas marcas na tela?"
     a: "Às vezes. Com a luz certa, os rastros do dedo numa tela de vidro podem revelar o caminho de um padrão. Limpar a tela, usar uma película fosca e escolher um padrão que cruze a si mesmo dificultam esse tipo de ataque."
-  - q: "Por que o Velcrypt não oferece Face ID?"
-    a: "De propósito. Um rosto ou uma digital podem ser usados para desbloquear um aparelho sem a sua concordância, enquanto um padrão existe só na sua memória. O Velcrypt escolheu o padrão para que abrir um cofre sempre exija que você decida abri-lo."
+  - q: "O Velcrypt usa Face ID?"
+    a: "Só se você ativar. O Face ID ou Touch ID vem desativado e você o ativa por cofre, nos Ajustes daquele cofre. Um rosto ou uma digital pode ser usado sem a sua concordância, então quem fizer você olhar para o celular pode abrir todos os cofres que você adicionou. Mantenha o cofre mais privado só com o padrão."
 ---
 
 Todo bloqueio é um equilíbrio entre o quanto é difícil adivinhar, o quanto é fácil de observar e o quanto é fácil alguém obrigar você a abrir. A maioria das comparações olha só para o primeiro ponto. Este guia olha para os três, com números reais onde eles existem e ressalvas honestas onde não existem.
@@ -116,6 +116,10 @@ Você não precisa escolher um único bloqueio para tudo. Uma configuração sen
 
 ## Onde o Velcrypt se encaixa
 
-O Velcrypt faz uma escolha deliberada: o único jeito de entrar num cofre é um padrão numa grade de 5×5 pontos, uma linha contínua por pelo menos 6 pontos com pelo menos uma mudança de direção. Padrões mais longos, de 8 a 12 pontos, são recomendados. Não há Face ID nem Touch ID, porque um padrão não pode ser tirado do seu corpo.
+Todo cofre do Velcrypt abre com um padrão numa grade de 5×5 pontos, uma linha contínua por pelo menos 6 pontos com pelo menos uma mudança de direção. Padrões mais longos, de 8 a 12 pontos, são recomendados. O padrão sempre funciona, em todos os cofres.
 
-O design também muda o que significa “adivinhar”. Cada padrão é um cofre próprio, e um padrão que o Velcrypt nunca viu simplesmente abre um cofre vazio, sem mensagem de erro. Ou seja, um palpite errado não se anuncia como errado, e você pode manter um [cofre falso](id:what-is-a-decoy-vault) com um segundo padrão. A página de [cofres ocultos](id:hidden-vaults) explica o modelo, e a [visão geral de segurança](id:security) lista contra o que ele não protege, incluindo alguém observando você desenhar.
+O Face ID ou Touch ID é opcional e vem desativado. Você o ativa por cofre, de dentro dele (Ajustes › Face ID), e dá ao cofre um nome para a lista do Face ID. Assim que pelo menos um cofre o tiver, aparece o botão “Desbloquear com Face ID” na tela de bloqueio; depois do Face ID, você escolhe entre os cofres que adicionou, ou o cofre abre direto se houver só um. Não existe alternativa pelo código do iPhone, e a cópia da chave para o Face ID fica só no Keychain deste iPhone, não no iCloud nem em backups.
+
+O problema do desbloqueio forçado descrito acima é o motivo de ele vir desativado. Quem conseguir fazer você olhar para o celular pode ver e abrir todos os cofres da lista do Face ID. Uma divisão sensata: use o Face ID nos cofres do dia a dia, se quiser, e mantenha o cofre mais privado só com o padrão, porque um padrão não pode ser tirado do seu corpo. O [padrão de coação](id:duress-pattern) funciona apenas com padrões; a lista do Face ID não o aciona.
+
+O design também muda o que significa “adivinhar”. Cada padrão é um cofre próprio, e um padrão que o Velcrypt nunca viu simplesmente abre um cofre vazio, sem mensagem de erro. O Velcrypt nunca mostra uma lista de cofres, exceto os que você coloca de propósito na lista do Face ID. Ou seja, um palpite errado não se anuncia como errado e, com o Premium, você pode manter um [cofre falso](id:what-is-a-decoy-vault) com um segundo padrão. A página de [cofres ocultos](id:hidden-vaults) explica o modelo, e a [visão geral de segurança](id:security) lista contra o que ele não protege, incluindo alguém observando você desenhar.

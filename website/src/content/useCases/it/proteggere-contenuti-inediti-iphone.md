@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "proteggere foto inedite iphone"
 keywords: ["conservare foto dei clienti iphone", "privacy clienti fotografo telefono", "nascondere foto di lavoro iphone", "privacy contenuti creator", "tenere privati contenuti inediti"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Per fotografi, artisti e creator: tieni privati su iPhone lavori inediti e materiale dei clienti e condividili solo di proposito."
 group: professional
 schemaType: Article
@@ -63,7 +63,7 @@ Quando fotografi qualcuno, custodisci una parte della sua privacy. Buone pratich
 
 Velcrypt conserva foto, [video](id:hide-videos) e documenti in casseforti cifrate sul tuo iPhone, senza account e senza caricare nulla. Dentro una cassaforte puoi creare [album](id:albums) per progetto o cliente, usare la selezione multipla, spostare elementi tra album e guardare foto e video con zoom e scorrimento.
 
-Le casseforti si aprono con una sequenza disegnata su una griglia 5×5, non con il codice o Face ID. Ogni sequenza apre la propria cassaforte, quindi puoi tenere il lavoro per i clienti in una cassaforte, le foto personali in un'altra e una cassaforte per mostrare il portfolio che contiene solo ciò che chiunque può vedere. Una sequenza sconosciuta apre semplicemente una cassaforte vuota.
+Le casseforti si aprono con una sequenza disegnata su una griglia 5×5, non con il codice; Face ID è facoltativo e lo attivi solo per le casseforti che scegli. Ogni sequenza apre la propria cassaforte, quindi puoi tenere il lavoro per i clienti in una cassaforte, le foto personali in un'altra e una cassaforte per mostrare il portfolio che contiene solo ciò che chiunque può vedere. Una sequenza sconosciuta apre semplicemente una cassaforte vuota.
 
 L'esportazione sicura ti permette di estrarre un singolo file quando è il momento di consegnare o pubblicare. L'app si blocca automaticamente quando passa in background e nasconde i contenuti nel selettore app, cosa utile quando passi a un'app di messaggistica nel mezzo di una conversazione.
 

@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "dölja bilder iphone"
 keywords: ["gömma bilder iphone", "albumet gömda iphone", "dölja foton iphone", "dölja albumet gömda", "låsa gömda album iphone", "dölja bilder ios 18"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-11-21
 summary: "Använd funktionen Göm i Bilder, lås och dölj albumet Gömda och förstå vad döljandet inte skyddar mot."
 category: hiding
 order: 1
@@ -119,6 +119,6 @@ Baksidan är ansvaret. Ett valv som bara sparar data på enheten kan inte åters
 
 ## Var Velcrypt passar in
 
-Velcrypt är ett exempel på det andra sättet. Du låser upp appen genom att rita ett mönster på ett rutnät med 5×5 punkter i stället för att använda Face ID eller enhetens lösenkod, så att känna till lösenkoden till din iPhone öppnar inte valvet. Filerna krypteras med AES-256-GCM på enheten, det finns inget konto och valvdata ingår inte i iCloud-säkerhetskopior. Varje mönster öppnar ett eget, separat valv, och ett okänt mönster öppnar helt enkelt ett tomt valv; sidan om [dolda valv](id:hidden-vaults) förklarar varför det spelar roll.
+Velcrypt är ett exempel på det andra sättet. Du låser upp appen genom att rita ett mönster på ett rutnät med 5×5 punkter i stället för att använda enhetens lösenkod, så att känna till lösenkoden till din iPhone öppnar inte valvet. Face ID används bara för de valv du själv slår på det för. Filerna krypteras med AES-256-GCM på enheten, det finns inget konto och valvdata ingår inte i iCloud-säkerhetskopior. Varje mönster öppnar ett eget, separat valv, och ett okänt mönster öppnar helt enkelt ett tomt valv; sidan om [dolda valv](id:hidden-vaults) förklarar varför det spelar roll.
 
 När du importerar till Velcrypt kopieras bilden i stället för att flyttas, så originalet ligger kvar i Bilder tills du själv raderar det, även från Nyligen raderade. Guiden om att [radera originalen efter import](id:delete-original-photos-after-import) går igenom hur. En översikt över bildfunktionerna i appen finns i [dölj bilder med Velcrypt](id:hide-photos), och en jämförelse sida vid sida i [Velcrypt mot albumet Gömda på iPhone](id:velcrypt-vs-iphone-hidden-album).

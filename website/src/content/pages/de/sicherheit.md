@@ -9,13 +9,13 @@ keyFacts:
   - "Muster → PBKDF2-HMAC-SHA512, mindestens 600.000 Iterationen, gerätespezifischer Zufalls-Salt im iOS-Schlüsselbund."
   - "Jeder Tresor hat einen eigenen zufälligen 256-Bit-Hauptschlüssel; Schlüssel pro Datei werden mit HKDF abgeleitet."
   - "Dateien werden mit AES-256-GCM über Apple CryptoKit verschlüsselt, zusätzlich mit iOS-Datenschutz (Schutzklasse „Complete“)."
-  - "Ein unbekanntes Muster öffnet einen leeren Tresor – keine Tresorliste, keine Meldung „falsches Muster“."
+  - "Ein unbekanntes Muster öffnet einen leeren Tresor – keine Meldung „falsches Muster“, keine Tresorliste außer deiner Face-ID-Liste."
   - "Kein Netzwerk, kein Konto, keine Analyse von Tresorinhalten; Tresordaten sind von iCloud- und Computer-Backups ausgeschlossen, ein manuelles verschlüsseltes Backup ist möglich."
   - "Velcrypt wurde bisher keinem unabhängigen Sicherheitsaudit unterzogen."
 primaryKeyword: "velcrypt sicherheit"
 keywords: ["foto tresor verschlüsselung iphone", "wie funktioniert velcrypt verschlüsselung", "aes-256-gcm foto tresor", "pbkdf2 mustersperre", "foto tresor bedrohungsmodell", "tresor app glaubhafte abstreitbarkeit"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 schemaType: WebPage
 order: 1
 related: [encryption, pattern-lock, hidden-vaults, aes-256-encryption-explained, plausible-deniability-explained, forgot-vault-pattern]
@@ -29,7 +29,7 @@ faq:
   - q: "Wurde Velcrypt unabhängig geprüft?"
     a: "Noch nicht. Velcrypt basiert auf Apples CryptoKit und auf etablierten, gut untersuchten Algorithmen. Eine unabhängige Sicherheitsprüfung würden wir begrüßen, bisher hat aber keine stattgefunden."
   - q: "Verbirgt Velcrypt, dass ich einen verschlüsselten Tresor nutze?"
-    a: "Nicht vollständig. Die App ist auf deinem Home-Bildschirm sichtbar, und mit forensischen Werkzeugen lässt sich womöglich erkennen, dass Velcrypt verschlüsselte Daten speichert und ungefähr wie viele. Velcrypt verbirgt, wie viele Tresore du hast und was darin liegt."
+    a: "Nicht vollständig. Die App ist auf deinem Home-Bildschirm sichtbar, und mit forensischen Werkzeugen lässt sich womöglich erkennen, dass Velcrypt verschlüsselte Daten speichert und ungefähr wie viele. Velcrypt verbirgt, wie viele Tresore du hast und was darin liegt, außer bei Tresoren, die du selbst in die Face-ID-Liste aufnimmst."
 ---
 
 Diese Seite erklärt verständlich, was mit deinen Fotos, Videos und Dokumenten passiert, wenn du sie in Velcrypt ablegst – und wo der Schutz endet. Sie richtet sich an alle, die das Konzept verstehen wollen, bevor sie ihm etwas Persönliches anvertrauen.
@@ -76,7 +76,7 @@ Zusätzlich zur Verschlüsselung durch Velcrypt werden Tresordateien mit der iOS
 
 Die meisten Apps prüfen dein Passwort gegen etwas Gespeichertes – einen Hash, einen Prüfwert, eine „richtige Antwort“ – und melden dann *falsches Passwort*. Velcrypt tut das absichtlich nicht.
 
-Es gibt keine Tresorliste und keinen gespeicherten Wert, der bestätigt, ob ein Muster „richtig“ ist. Wenn du ein Muster zeichnest, leitet Velcrypt einen Schlüssel ab und versucht, den dazugehörigen Tresor zu öffnen. Passt kein Tresor, öffnet die App einfach einen neuen, leeren Tresor für dieses Muster. Für die Person, die das iPhone in der Hand hält, sehen ein nie benutztes Muster und ein echter, aber leerer Tresor gleich aus.
+Es gibt keine Tresorliste (außer den Tresoren, die du selbst in die Face-ID-Liste aufnimmst) und keinen gespeicherten Wert, der bestätigt, ob ein Muster „richtig“ ist. Wenn du ein Muster zeichnest, leitet Velcrypt einen Schlüssel ab und versucht, den dazugehörigen Tresor zu öffnen. Passt kein Tresor, öffnet die App einfach einen neuen, leeren Tresor für dieses Muster. Für die Person, die das iPhone in der Hand hält, sehen ein nie benutztes Muster und ein echter, aber leerer Tresor gleich aus.
 
 Das gibt dir **glaubhafte Abstreitbarkeit**: die Möglichkeit, glaubwürdig zu sagen, dass es nichts weiter zu sehen gibt, weil nichts in der App das Gegenteil beweist. Du kannst einen Köder-Tresor mit gewöhnlichen Fotos führen und einen separaten Tresor für das, was wirklich privat ist. Mehr dazu findest du auf der Seite [versteckte Tresore](id:hidden-vaults) und in unseren Anleitungen zu [Köder-Tresoren](id:what-is-a-decoy-vault) und [glaubhafter Abstreitbarkeit](id:plausible-deniability-explained).
 
@@ -86,7 +86,9 @@ Eine praktische Nebenwirkung: Liegst du bei deinem Muster um einen Punkt daneben
 
 Velcrypt sperrt sich automatisch, sobald die App in den Hintergrund wechselt – nach einer Verzögerung, die du einstellen kannst. Beim Sperren werden die Tresorschlüssel aus dem Speicher entfernt, und das Muster muss neu gezeichnet werden. Tresorinhalte sind außerdem in der iOS-App-Übersicht verborgen, sodass ein Blick auf deine zuletzt genutzten Apps keine Vorschau eines privaten Fotos zeigt. Die Einstellungen findest du unter [automatische Sperre](id:auto-lock).
 
-Ein Entsperren per Face ID oder Touch ID gibt es bewusst nicht. Ein Gesicht oder ein Finger lässt sich ohne deine Zustimmung benutzen – während du schläfst oder unter Druck. Ein Muster existiert nur in deinem Kopf.
+Face ID oder Touch ID ist optional und standardmäßig aus. Du schaltest es pro Tresor aus dem Tresor heraus ein (Einstellungen › Face ID). Dabei legt Velcrypt eine Kopie des Tresorschlüssels im Schlüsselbund ab, nur auf diesem Gerät: nicht in iCloud, nicht in Backups, und gebunden an die Gesichter und Fingerabdrücke, die in diesem Moment registriert sind. Wird ein Gesicht oder Finger hinzugefügt oder Face ID zurückgesetzt, schaltet sich Face ID für diese Tresore aus, bis du es nach dem Öffnen mit dem Muster wieder einschaltest. Einen Ausweich-Code gibt es nicht; dein iPhone-Code öffnet keinen Tresor.
+
+Standardmäßig aus ist es, weil sich ein Gesicht oder ein Finger ohne deine Zustimmung benutzen lässt – während du schläfst oder unter Druck. Wer dich dazu bringt, aufs Handy zu schauen, kann jeden Tresor in der Face-ID-Liste sehen und öffnen. Ein Muster existiert nur in deinem Kopf, darum bleibt dein privatester Tresor am besten nur beim Muster. Das Notfallmuster funktioniert nur über Muster; die Face-ID-Liste löst es nicht aus, und wenn es ausgelöst wird, verschwinden die gelöschten Tresore auch aus der Face-ID-Liste.
 
 ## Kein Netzwerk, kein Konto, keine automatischen Backups
 
@@ -104,7 +106,7 @@ Dagegen bietet Velcrypt ein **manuelles verschlüsseltes Backup**, kostenlos. Un
 |---|---|---|
 | Jemand scrollt durch deine Fotos-Mediathek | Ja | Was du importierst und danach in „Fotos“ löschst (inklusive „Zuletzt gelöscht“), liegt nur noch in Velcrypt. |
 | Jemand nimmt dein entsperrtes iPhone und öffnet Velcrypt | Ja | Die Person braucht dein Muster; ein falsches zeigt einen leeren Tresor. |
-| Jemand will beweisen, dass du weitere Tresore hast | Weitgehend | Keine Tresorliste, keine Meldung „falsches Muster“; die Anzahl der Tresore wird in der App nicht angezeigt. |
+| Jemand will beweisen, dass du weitere Tresore hast | Weitgehend | Keine Tresorliste, keine Meldung „falsches Muster“; die Anzahl der Tresore wird in der App nicht angezeigt. Ausnahme: Tresore, die du selbst in die Face-ID-Liste aufnimmst, sieht jeder, der an Face ID vorbeikommt. |
 | Diebstahl eines gesperrten iPhones | Ja | iOS-Datenschutz plus eigene AES-256-GCM-Verschlüsselung von Velcrypt. |
 | Brute-Force-Angriff auf das Muster mit ausgelesenen Dateien | Verlangsamt | PBKDF2 mit 600.000+ Iterationen und gerätespezifischem Salt; ein langes Muster zählt. |
 | Ein Cloud-Konto wird gehackt | Ja | Tresordaten werden nicht hochgeladen und sind von iCloud-Backups ausgeschlossen. Ein verschlüsseltes Backup, das du in iCloud Drive ablegst, bleibt durch dein Backup-Passwort geschützt. |

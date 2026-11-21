@@ -1,32 +1,32 @@
 ---
 pageId: hidden-vaults
 title: "Coffres cachés : chaque schéma ouvre son propre coffre"
-description: "Dans Velcrypt, chaque schéma est un coffre distinct. Aucune liste de coffres, et un schéma inconnu ouvre un coffre vide sans erreur. Explications."
+description: "Dans Velcrypt, chaque schéma est un coffre distinct. Aucune liste de coffres hors liste Face ID choisie, et un schéma inconnu ouvre un coffre vide."
 h1: "Coffres cachés : un schéma, un coffre, aucune liste"
 navTitle: "Coffres cachés"
-answer: "Dans Velcrypt, chaque schéma ouvre son propre coffre chiffré. Il n’existe aucune liste de coffres, et un schéma que l’app n’a jamais vu ouvre simplement un coffre vide, sans message d’erreur : rien à l’écran ne prouve que d’autres coffres existent."
+answer: "Dans Velcrypt, chaque schéma ouvre son propre coffre chiffré. Il n’existe aucune liste de coffres, hormis ceux que vous ajoutez vous-même à la liste Face ID, et un schéma que l’app n’a jamais vu ouvre simplement un coffre vide, sans message d’erreur : rien à l’écran ne prouve que d’autres coffres existent."
 keyFacts:
   - "Chaque schéma correspond à un coffre distinct, avec sa propre clé de chiffrement."
-  - "Velcrypt n’affiche jamais de liste de coffres."
+  - "Velcrypt n’affiche jamais de liste de coffres, sauf la liste Face ID des coffres que vous y ajoutez."
   - "Un schéma inconnu ouvre un coffre vide, sans message d’erreur."
   - "Vous pouvez garder un coffre leurre au contenu ordinaire."
   - "La version gratuite comprend un coffre ; les coffres supplémentaires font partie de Premium."
 primaryKeyword: "coffre-fort caché iphone"
 keywords: ["app coffre-fort photo plusieurs coffres", "coffre leurre iphone", "app coffre secret", "déni plausible coffre-fort photo", "deuxième coffre caché", "cacher un coffre-fort photo"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
-summary: "Chaque schéma est un coffre à part. Pas de liste, pas d’erreur pour un schéma inconnu, et la possibilité d’un coffre leurre crédible."
+dateModified: 2026-11-21
+summary: "Chaque schéma est un coffre à part. Pas de liste (hors Face ID choisi), pas d’erreur pour un schéma inconnu, et la possibilité d’un coffre leurre crédible."
 status: available
 schemaType: WebPage
 order: 2
 related: [pattern-lock, duress-pattern, encryption, what-is-a-decoy-vault, plausible-deniability-explained]
 faq:
   - q: "Comment voir tous mes coffres dans Velcrypt ?"
-    a: "C’est impossible, et c’est voulu. Velcrypt n’a pas de liste de coffres. Le seul moyen d’ouvrir un coffre est de tracer son schéma : notez donc vous-même mentalement quels schémas vous utilisez."
+    a: "C’est impossible, et c’est voulu. Velcrypt n’a pas de liste de coffres. Seuls les coffres pour lesquels vous activez Face ID apparaissent dans la liste Face ID. Pour les autres, le seul moyen de les ouvrir est de tracer leur schéma : notez donc vous-même mentalement quels schémas vous utilisez."
   - q: "Que se passe-t-il si je trace un mauvais schéma ?"
-    a: "Velcrypt ouvre un coffre vide pour ce schéma au lieu d’afficher une erreur. Si vous y ajoutiez des fichiers, ce schéma deviendrait un nouveau coffre. Si vous attendiez vos photos et ne voyez rien, vous avez probablement tracé un schéma légèrement différent."
+    a: "Velcrypt ouvre un coffre vide pour ce schéma au lieu d’afficher une erreur. Si vous y ajoutiez des fichiers, ce schéma deviendrait un nouveau coffre. Tant qu’il reste vide, il n’entame pas votre coffre gratuit. Si vous attendiez vos photos et ne voyez rien, vous avez probablement tracé un schéma légèrement différent."
   - q: "Peut-on savoir que j’ai plusieurs coffres cachés ?"
-    a: "Pas à partir de l’interface de l’app. Aucune liste, aucun compteur, aucun message d’erreur ne révèle d’autres coffres. Velcrypt ne peut toutefois pas cacher que l’app elle-même est installée, ni empêcher quelqu’un de vous regarder tracer un schéma."
+    a: "Pas à partir de l’interface de l’app, sauf pour les coffres que vous ajoutez à la liste Face ID. Aucune autre liste, aucun compteur, aucun message d’erreur ne révèle d’autres coffres. Velcrypt ne peut toutefois pas cacher que l’app elle-même est installée, ni empêcher quelqu’un de vous regarder tracer un schéma."
   - q: "Qu’est-ce qu’un coffre leurre ?"
     a: "Un coffre leurre est un coffre au contenu ordinaire et crédible, que vous pouvez ouvrir si l’on vous presse de montrer ce que contient l’app. Votre vrai coffre reste derrière un autre schéma."
 howTo:
@@ -48,7 +48,7 @@ La plupart des apps coffre-fort n’ont qu’un mot de passe et une seule zone v
 
 Un coffre caché est un coffre dont l’existence ne peut pas être confirmée de l’extérieur. Dans Velcrypt, chaque schéma valide sur la [grille 5×5](id:pattern-lock) correspond à un coffre distinct, avec sa propre clé maîtresse aléatoire et ses propres fichiers. Le schéma A affiche les photos rangées derrière le schéma A. Le schéma B affiche un ensemble totalement différent.
 
-Aucun écran de réglages ne les énumère, aucun menu « changer de coffre » n’existe et aucun chiffre n’indique combien il y en a. De l’intérieur de l’app, chaque coffre semble être le seul.
+Aucun écran de réglages ne les énumère (seule la liste Face ID montre les coffres pour lesquels vous l’activez), aucun menu « changer de coffre » n’existe et aucun chiffre n’indique combien il y en a. De l’intérieur de l’app, chaque coffre semble être le seul.
 
 ## Aucune erreur pour un schéma inconnu
 

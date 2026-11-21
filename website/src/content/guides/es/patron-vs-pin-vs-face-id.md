@@ -10,11 +10,11 @@ keyFacts:
   - "Los patrones que elegimos las personas son mucho más débiles que el máximo teórico: preferimos esquinas, letras y formas cortas."
   - "La biometría es cómoda y difícil de espiar, pero alguien puede usar tu cara o tu dedo mientras duermes, si te sujetan o bajo coacción."
   - "Las marcas de grasa en la pantalla delatan los patrones con más facilidad que los PIN."
-  - "Velcrypt usa un patrón en una cuadrícula de 5×5 (al menos 6 puntos) y, a propósito, no tiene Face ID ni Touch ID."
+  - "Velcrypt usa un patrón en una cuadrícula de 5×5 (al menos 6 puntos); Face ID o Touch ID es opcional, viene desactivado y se activa por bóveda."
 primaryKeyword: "patrón vs pin"
 keywords: ["pin vs face id seguridad", "es seguro el bloqueo por patrón", "patrón o contraseña", "face id o código", "bloqueo de móvil más seguro", "biometría bajo coacción"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-11-21
 summary: "Cálculo de combinaciones, miradas ajenas, marcas de dedos y biometría forzada: una comparación honesta de las cuatro formas habituales de bloquear datos."
 category: security
 order: 40
@@ -28,8 +28,8 @@ faq:
     a: "Un PIN de 6 dígitos tiene 1.000.000 de combinaciones posibles (de 000000 a 999999), frente a las 10.000 de un PIN de 4 dígitos. Las elecciones habituales como 123456 o las fechas de nacimiento reducen drásticamente el número real."
   - q: "¿Alguien puede adivinar mi patrón por las marcas de la pantalla?"
     a: "A veces. Con la luz adecuada, el rastro de los dedos sobre una pantalla de cristal puede revelar el recorrido de un patrón. Limpiar la pantalla, usar un protector mate y elegir un patrón que se cruce consigo mismo dificultan estos ataques."
-  - q: "¿Por qué Velcrypt no ofrece Face ID?"
-    a: "A propósito. Alguien puede usar una cara o una huella para desbloquear un dispositivo sin tu acuerdo, mientras que un patrón solo existe en tu memoria. Velcrypt eligió un patrón para que abrir una bóveda siempre requiera que tú decidas abrirla."
+  - q: "¿Velcrypt usa Face ID?"
+    a: "Solo si lo activas. Face ID o Touch ID viene desactivado y lo activas por bóveda, en los Ajustes de esa bóveda. Una cara o una huella pueden usarse sin tu acuerdo, así que quien consiga que mires el teléfono puede abrir todas las bóvedas que añadiste. Deja tu bóveda más privada solo con su patrón."
 ---
 
 Todo bloqueo es un equilibrio entre lo difícil que es adivinarlo, lo fácil que es observarlo y lo fácil que es que alguien te obligue a abrirlo. La mayoría de las comparaciones solo miran lo primero. Esta guía analiza las tres cosas, con cifras reales donde las hay y salvedades honestas donde no.
@@ -116,6 +116,10 @@ No tienes que elegir un único bloqueo para todo. Una configuración sensata par
 
 ## Dónde encaja Velcrypt
 
-Velcrypt toma una decisión deliberada: la única forma de entrar en una bóveda es un patrón en una cuadrícula de 5×5 puntos, una línea continua que pasa por al menos 6 puntos con al menos un cambio de dirección. Se recomiendan patrones más largos, de 8 a 12 puntos. No hay Face ID ni Touch ID, porque un patrón no se puede sacar de tu cuerpo.
+Toda bóveda de Velcrypt se abre con un patrón en una cuadrícula de 5×5 puntos, una línea continua que pasa por al menos 6 puntos con al menos un cambio de dirección. Se recomiendan patrones más largos, de 8 a 12 puntos. El patrón funciona siempre, en todas las bóvedas.
 
-El diseño también cambia lo que significa «adivinar». Cada patrón es su propia bóveda, y un patrón que Velcrypt nunca ha visto simplemente abre una bóveda vacía, sin ningún mensaje de error. Eso significa que un intento equivocado no se anuncia como equivocado, y puedes tener una [bóveda señuelo](id:what-is-a-decoy-vault) con un segundo patrón. La página de [bóvedas ocultas](id:hidden-vaults) explica el modelo, y el [resumen de seguridad](id:security) enumera lo que no puede proteger, incluido que alguien te vea dibujar.
+Face ID o Touch ID es opcional y viene desactivado. Lo activas por bóveda, desde dentro de ella (Ajustes › Face ID), y le das un nombre para la lista de Face ID. En cuanto al menos una bóveda lo tiene, aparece el botón «Desbloquear con Face ID» en la pantalla de bloqueo; tras Face ID eliges entre las bóvedas que añadiste, o la bóveda se abre directamente si solo hay una. No hay alternativa con el código del iPhone, y la copia de la clave para Face ID se queda solo en el llavero de este iPhone, no en iCloud ni en copias de seguridad.
+
+El problema del desbloqueo forzado que vimos arriba es la razón de que venga desactivado. Quien consiga que mires el teléfono puede ver y abrir todas las bóvedas de la lista de Face ID. Un reparto sensato: usa Face ID para las bóvedas de uso cómodo si lo quieres y deja tu bóveda más privada solo con su patrón, porque un patrón no se puede sacar de tu cuerpo. El [patrón de coacción](id:duress-pattern) funciona solo con patrones; la lista de Face ID no lo activa.
+
+El diseño también cambia lo que significa «adivinar». Cada patrón es su propia bóveda, y un patrón que Velcrypt nunca ha visto simplemente abre una bóveda vacía, sin ningún mensaje de error. Velcrypt nunca muestra una lista de bóvedas, salvo las que tú añades a propósito a la lista de Face ID. Eso significa que un intento equivocado no se anuncia como equivocado y, con Premium, puedes tener una [bóveda señuelo](id:what-is-a-decoy-vault) con un segundo patrón. La página de [bóvedas ocultas](id:hidden-vaults) explica el modelo, y el [resumen de seguridad](id:security) enumera lo que no puede proteger, incluido que alguien te vea dibujar.

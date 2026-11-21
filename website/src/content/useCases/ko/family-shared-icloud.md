@@ -13,7 +13,7 @@ keyFacts:
 primaryKeyword: "아이폰 사진 아이패드에 뜸"
 keywords: ["가족 아이패드 사진 동기화 끄기", "애플 계정 공유 사진", "iCloud 공유 사진 보관함 개인정보", "가족 iCloud 사진 분리", "다른 기기에 사진이 나타남"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "iPhone 사진이 가족 iPad나 Mac에 나타나는 이유, 공유 계정과 보관함을 정리하는 방법, 그리고 개인 사진을 둘 곳."
 group: everyday
 schemaType: Article
@@ -66,7 +66,7 @@ iCloud 사진은 암호화되지만, 기본적으로 Apple이 키를 보유합�
 
 Velcrypt는 다른 길을 택합니다. 개인 사진, 동영상, 문서를 오직 iPhone 안의 암호화된 금고에만 보관합니다. [계정, 서버, 동기화가 없으므로](id:offline-no-account), 금고에 넣은 어떤 것도 가족 iPad, Mac, 공유 보관함에 나타날 수 없습니다.
 
-가져오기는 사진을 금고에 복사합니다. 동기화된 모든 기기에서 사진을 없애려면 사진 앱에서 [원본을 삭제](id:delete-original-photos-after-import)하고 '최근 삭제된 항목'을 비우세요. iCloud 사진이 켜져 있으면 그 삭제가 다른 기기에도 동기화됩니다. 금고는 기기 암호나 Face ID가 아니라 5×5 그리드의 패턴으로 열립니다.
+가져오기는 사진을 금고에 복사합니다. 동기화된 모든 기기에서 사진을 없애려면 사진 앱에서 [원본을 삭제](id:delete-original-photos-after-import)하고 '최근 삭제된 항목'을 비우세요. iCloud 사진이 켜져 있으면 그 삭제가 다른 기기에도 동기화됩니다. 금고는 기기 암호가 아니라 5×5 그리드의 패턴으로 열립니다. Face ID는 그 금고에 직접 켠 경우에만 쓰입니다(기본값은 꺼짐).
 
 ## 솔직한 한계
 

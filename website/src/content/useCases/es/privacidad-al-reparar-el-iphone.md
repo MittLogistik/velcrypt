@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "privacidad fotos reparar iphone"
 keywords: ["ocultar fotos antes de reparar el móvil", "el servicio técnico verá mis fotos", "dar el código del iphone al reparar", "proteger datos al reparar el iphone", "consejos de privacidad al reparar el móvil"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Qué podría ver un técnico en tu iPhone, cómo prepararte y por qué necesitas un plan de copia para tu bóveda antes de entregarlo."
 group: everyday
 schemaType: Article
@@ -63,7 +63,7 @@ La mayoría de los técnicos de reparación son profesionales sin ningún inter�
 
 ## Cómo ayuda Velcrypt
 
-Velcrypt guarda fotos, vídeos y documentos en bóvedas cifradas en tu iPhone. La bóveda no se abre con el código del dispositivo ni con Face ID; necesita el [patrón que dibujas en una cuadrícula 5×5](id:pattern-lock). Así que, aunque un técnico tenga tu código y abra Velcrypt, dibujar cualquier cosa que no sea tu patrón solo muestra una bóveda vacía: sin error y sin ninguna pista de que existan otras bóvedas.
+Velcrypt guarda fotos, vídeos y documentos en bóvedas cifradas en tu iPhone. La bóveda no se abre con el código del dispositivo (y Face ID solo si tú lo activas); necesita el [patrón que dibujas en una cuadrícula 5×5](id:pattern-lock). Así que, aunque un técnico tenga tu código y abra Velcrypt, dibujar cualquier cosa que no sea tu patrón solo muestra una bóveda vacía: sin error y sin ninguna pista de que existan otras bóvedas.
 
 Las fotos importadas son copias, así que acuérdate de [borrar los originales](id:delete-original-photos-after-import) y vaciar el álbum Eliminado antes de la reparación. Si no, seguirán en Fotos.
 

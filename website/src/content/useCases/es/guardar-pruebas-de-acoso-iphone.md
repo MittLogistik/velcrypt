@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "cómo guardar pruebas de acoso en el iphone"
 keywords: ["guardar capturas de acoso en privado", "guardar pruebas en el iphone", "documentar pruebas de maltrato en el móvil", "ocultar capturas al agresor", "seguridad de las pruebas de acoso"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Un enfoque cuidadoso, con la seguridad primero, para mantener privadas, íntegras y respaldadas las capturas y fotos de un acoso."
 group: sensitive
 schemaType: Article
@@ -64,7 +64,7 @@ Una prueba que se puede perder no sirve de mucho. Los teléfonos se rompen, te l
 
 Velcrypt puede guardar una copia privada de capturas, fotos y documentos en tu iPhone, separada de la fototeca. Una vez que [borras los originales](id:delete-original-photos-after-import) de Fotos y vacías el álbum Eliminado, ya no aparecen en tu carrete, no se sincronizan con una cuenta compartida y no salen en Recuerdos.
 
-Las bóvedas se abren con un patrón dibujado en una cuadrícula 5×5, no con el código del dispositivo ni con Face ID, así que conocer tu código no basta. [Cada patrón abre su propia bóveda](id:hidden-vaults), y un patrón incorrecto abre una bóveda vacía sin error. Eso significa que nada en pantalla demuestra que exista tu bóveda de pruebas, como se explica en [negación plausible](id:plausible-deniability-explained). La app se [bloquea automáticamente](id:auto-lock) cuando sales de ella, y su contenido se oculta en el selector de apps.
+Las bóvedas se abren con un patrón dibujado en una cuadrícula 5×5, no con el código del dispositivo, así que conocer tu código no basta. Face ID viene desactivado; si alguien podría obligarte a mirar el teléfono, deja esta bóveda solo con su patrón. [Cada patrón abre su propia bóveda](id:hidden-vaults), y un patrón incorrecto abre una bóveda vacía sin error. Eso significa que nada en pantalla demuestra que exista tu bóveda de pruebas, como se explica en [negación plausible](id:plausible-deniability-explained). La app se [bloquea automáticamente](id:auto-lock) cuando sales de ella, y su contenido se oculta en el selector de apps.
 
 ## Límites, con honestidad: léelos, por favor
 

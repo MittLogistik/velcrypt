@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "ocultar fotos en notas bloqueadas"
 keywords: ["bloquear fotos en notas iphone", "notas bloqueadas fotos iphone", "app notas fotos privadas", "nota bloqueada o app bóveda", "proteger fotos con contraseña en notas"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Ocultar fotos en una nota bloqueada de Notas frente a una bóveda cifrada dedicada: comodidad, capacidad, sincronización y quién puede abrirlas."
 competitor: "Notas bloqueadas de la app Notas"
 lastChecked: "octubre de 2026"
@@ -53,7 +53,7 @@ Puedes añadir fotos de tu fototeca, hacer una foto dentro de la nota o escanear
 | Requiere cuenta | No | No para notas en el dispositivo; Cuenta de Apple para sincronizar con iCloud |
 | Copia de seguridad en la nube | No; copia de seguridad cifrada manual y gratuita en un archivo que guardas tú | Sí, con Notas en iCloud |
 | Método de desbloqueo | Patrón en una cuadrícula de 5×5 | Código del dispositivo o contraseña aparte de Notas |
-| Biometría | No disponible, por diseño | Face ID / Touch ID opcional |
+| Biometría | Opcional, desactivado de forma predeterminada (por bóveda) | Face ID / Touch ID opcional |
 | Señuelo / varias bóvedas | Cada patrón es su propia bóveda (con Premium) | No; todas las notas bloqueadas comparten una contraseña |
 | Patrón de coacción | Sí, con Premium (abre un señuelo y elimina las demás bóvedas) | No |
 | Recuperación si olvidas el código | Ninguna; solo restaurar una copia de seguridad propia | La opción del código evita una contraseña aparte; las contraseñas antiguas de Notas no se pueden recuperar |
@@ -78,7 +78,6 @@ La otra diferencia es el secreto. Si bloqueas las notas con el código del dispo
 - **Solo tienes unos pocos elementos.** Una nota bloqueada es más sencilla que instalar nada.
 - **Quieres sincronizar entre iPhone, iPad y Mac.** Velcrypt es solo para iPhone y no se sincroniza.
 - **Quieres poder recuperar los datos.** Con iCloud, tus notas bloqueadas sobreviven a la pérdida del teléfono.
-- **Te gusta la comodidad de Face ID.** Velcrypt no la ofrece a propósito.
 
 ## Cuándo puede encajarte mejor Velcrypt
 

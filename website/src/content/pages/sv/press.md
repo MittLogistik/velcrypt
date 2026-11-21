@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "velcrypt pressmaterial"
 keywords: ["velcrypt logotyp", "velcrypt mediekit", "velcrypt faktablad", "velcrypt varumärkesfärger"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 schemaType: WebPage
 order: 8
 related: [about, security, features, pricing]
@@ -37,7 +37,7 @@ Velcrypt är en iPhone-app för privata bilder, videor och dokument. Filerna kry
 
 ### 100 ord
 
-Velcrypt är en inbyggd iPhone-app som förvarar privata bilder, videor och dokument i krypterade valv på enheten. I stället för Face ID eller en PIN-kod öppnar du ett valv genom att rita ett mönster på ett 5×5-rutnät av punkter – en hemlighet som bara finns i ditt minne. Varje mönster är ett eget valv, och ett mönster appen aldrig sett öppnar ett tomt valv, så ingenting avslöjar hur många valv som finns. Filerna krypteras med AES-256-GCM via Apple CryptoKit. Det finns inget konto, ingen server och ingen spårning av valvinnehållet. Velcrypt har en gratisversion och en valfri Premium-uppgradering, och ges ut av Swedish Treats AB i Sverige.
+Velcrypt är en inbyggd iPhone-app som förvarar privata bilder, videor och dokument i krypterade valv på enheten. I stället för en PIN-kod öppnar du ett valv genom att rita ett mönster på ett 5×5-rutnät av punkter – en hemlighet som bara finns i ditt minne. Face ID är valfritt och avstängt som standard. Varje mönster är ett eget valv, och ett mönster appen aldrig sett öppnar ett tomt valv, så ingenting avslöjar hur många valv som finns, utom de valv användaren själv lägger i Face ID-listan. Filerna krypteras med AES-256-GCM via Apple CryptoKit. Det finns inget konto, ingen server och ingen spårning av valvinnehållet. Velcrypt har en gratisversion och en valfri Premium-uppgradering, och ges ut av Swedish Treats AB i Sverige.
 
 ## Faktablad
 
@@ -48,9 +48,9 @@ Velcrypt är en inbyggd iPhone-app som förvarar privata bilder, videor och doku
 | Plattform | iPhone, iOS 17 eller senare |
 | Kategori | Integritet / verktyg – krypterat valv för bilder, videor och dokument |
 | Utgivare | Swedish Treats AB, Sverige |
-| Prismodell | Gratis (ett valv, 50 objekt) med valfri Premium: 1,99 USD/vecka, 19,99 USD/år med 3 dagars gratis provperiod, 39,99 USD livstid. Priserna varierar mellan länder. |
-| Upplåsning | Mönster på ett 5×5-rutnät av punkter; ingen Face ID eller Touch ID, med avsikt |
-| Valv | Varje mönster är ett eget valv; ingen valvlista |
+| Prismodell | Gratis (ett valv, 50 objekt; ett tomt valv räknas inte) med valfri Premium: 1,99 USD/vecka, 19,99 USD/år med 3 dagars gratis provperiod, 39,99 USD livstid. Priserna varierar mellan länder. |
+| Upplåsning | Mönster på ett 5×5-rutnät av punkter; Face ID / Touch ID valfritt, avstängt som standard (per valv) |
+| Valv | Varje mönster är ett eget valv; ingen valvlista utom den Face ID-lista användaren väljer |
 | Kryptering | AES-256-GCM (Apple CryptoKit); nyckelhärledning med PBKDF2-HMAC-SHA512 |
 | Data | 100 % på enheten; inget konto, ingen molnsynk, inga annonser |
 | Säkerhetskopiering | Manuell krypterad säkerhetskopia (.velcrypt-fil) med eget lösenord, gratis |

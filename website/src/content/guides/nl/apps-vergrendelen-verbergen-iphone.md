@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "apps vergrendelen iphone"
 keywords: ["app verbergen iphone", "app op slot zetten iphone", "app vergrendelen met face id", "map vergrendelen iphone beginscherm", "map verborgen iphone", "vereis face id app"]
 datePublished: 2026-10-31
-dateModified: 2026-10-31
+dateModified: 2026-11-21
 summary: "Vereis Face ID, de map Verborgen en Schermtijd-limieten uitgelegd: wat het vergrendelen van apps beschermt en waarom mappen niet op slot kunnen."
 category: hiding
 order: 66
@@ -114,7 +114,7 @@ Daarom werkt de toegangscode als alternatief, en daarom beschermt appvergrendeli
 
 ## Waar Velcrypt past
 
-Velcrypt is geen appslot; het kan geen andere apps vergrendelen. Het is een kluis voor de foto's, video's en documenten die je anders probeert te beschermen door Foto's of Bestanden te vergrendelen. Je opent hem door een [patroon](id:pattern-lock) te tekenen op een raster van 5×5, en elk patroon opent zijn eigen versleutelde kluis. Face ID zit er bewust niet in, en het patroon heeft niets te maken met de toegangscode van je iPhone: wie die code kent, krijgt je kluizen nog steeds niet open. Wil je een ander antwoord klaar hebben als iemand aandringt, dan tonen [lokkluizen](id:hidden-vaults) (Premium) onschuldige inhoud onder een ander patroon.
+Velcrypt is geen appslot; het kan geen andere apps vergrendelen. Het is een kluis voor de foto's, video's en documenten die je anders probeert te beschermen door Foto's of Bestanden te vergrendelen. Je opent hem door een [patroon](id:pattern-lock) te tekenen op een raster van 5×5, en elk patroon opent zijn eigen versleutelde kluis. Face ID staat standaard uit en kun je per kluis aanzetten, en het patroon heeft niets te maken met de toegangscode van je iPhone: wie die code kent, krijgt je kluizen nog steeds niet open. Wil je een ander antwoord klaar hebben als iemand aandringt, dan tonen [lokkluizen](id:hidden-vaults) (Premium) onschuldige inhoud onder een ander patroon.
 
 Inhoud wordt op het apparaat versleuteld met AES-256-GCM, er wordt niets geüpload en er is geen account. De kluis [vergrendelt automatisch](id:auto-lock) als je de app verlaat. Omdat kluisgegevens niet in iCloud- of computerbackups terechtkomen, maak je voor alles wat je niet kwijt mag raken een versleutelde back-up via Instellingen → Back-up; een vergeten patroon kan niemand herstellen.
 

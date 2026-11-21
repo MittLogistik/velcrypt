@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "viajar com fotos privadas iphone"
 keywords: ["proteger fotos em viagem", "iphone roubado no exterior fotos", "proteção de dispositivo roubado viagem", "emprestar celular no exterior privacidade", "dicas de privacidade do celular em viagem"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Celular perdido, iPhone emprestado e revistas na fronteira: como viajar com fotos e documentos privados sem se preocupar com eles."
 group: travel
 schemaType: Article
@@ -60,7 +60,7 @@ Em viagem, o seu celular passa por mais mãos e mais lugares do que no dia a dia
 
 ## Como o Velcrypt ajuda
 
-O Velcrypt guarda fotos, vídeos e documentos privados em cofres criptografados armazenados apenas no seu iPhone. Um cofre abre com um padrão que você desenha em uma grade 5×5 — não com o código nem com o Face ID. Se um ladrão descobriu o seu código, só isso não abre o seu cofre. O motivo de usar um padrão em vez de biometria está explicado em [padrão x PIN x Face ID](id:pattern-lock-vs-pin-vs-face-id).
+O Velcrypt guarda fotos, vídeos e documentos privados em cofres criptografados armazenados apenas no seu iPhone. Um cofre abre com um padrão que você desenha em uma grade 5×5 — não com o código; o Face ID só se você o ativar para aquele cofre. Se um ladrão descobriu o seu código, só isso não abre o seu cofre. O motivo de o Face ID vir desativado, e de valer a pena manter o cofre mais privado só com o padrão, está explicado em [padrão x PIN x Face ID](id:pattern-lock-vs-pin-vs-face-id).
 
 Cada padrão abre o seu próprio cofre, e um padrão desconhecido abre um cofre vazio, sem nenhum erro. Assim, com o Premium, você pode manter um [cofre de fachada](id:what-is-a-decoy-vault) com fotos de viagem inofensivas e deixar o cofre privado atrás de outro padrão. O app também se bloqueia automaticamente quando vai para o segundo plano, e o conteúdo fica oculto no seletor de apps.
 

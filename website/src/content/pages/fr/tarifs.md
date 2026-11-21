@@ -15,13 +15,13 @@ keyFacts:
 primaryKeyword: "prix velcrypt"
 keywords: ["velcrypt premium", "velcrypt est-il gratuit", "prix app coffre-fort photo", "coffre-fort photo gratuit iphone", "abonnement velcrypt"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 schemaType: WebPage
 order: 2
 related: [features, duress-pattern, hidden-vaults, security, faq]
 faq:
   - q: "Velcrypt est-il gratuit ?"
-    a: "Oui. La version gratuite offre 1 coffre avec jusqu’à 50 éléments, le même chiffrement que Premium et la sauvegarde chiffrée. Premium est facultatif."
+    a: "Oui. La version gratuite offre 1 coffre avec jusqu’à 50 éléments, le même chiffrement que Premium et la sauvegarde chiffrée. Un coffre ne devient votre coffre gratuit qu’une fois qu’il contient un élément : un coffre vide ne l’entame jamais. Premium est facultatif."
   - q: "Combien coûte Velcrypt Premium ?"
     a: "En dollars américains : 1,99 $ par semaine, 19,99 $ par an avec 3 jours d’essai gratuit, ou 39,99 $ à vie en achat unique. Les prix varient selon le pays ; le prix exact dans votre devise s’affiche dans l’App Store avant tout paiement."
   - q: "Le schéma de contrainte fait-il partie de Premium ?"
@@ -51,6 +51,7 @@ Velcrypt est gratuit, avec une option Premium.
 | Albums, visionneuse, appareil photo intégré au coffre, notes sécurisées, import de documents, export sécurisé | Oui | Oui |
 | Verrouillage automatique et contenu masqué dans le sélecteur d’apps | Oui | Oui |
 | Sauvegarde chiffrée | Oui | Oui |
+| Face ID facultatif (par coffre) | Oui | Oui |
 | Nombre d’éléments | Jusqu’à 50 | Illimité |
 | Nombre de coffres | 1 | Plus de coffres (chaque autre motif ouvre son propre coffre) |
 | Schéma de contrainte | — | Oui |
@@ -73,7 +74,7 @@ Les prix de l’App Store varient selon le pays et la devise. Le prix exact pour
 
 La sécurité n’est pas une option payante. Chaque coffre, gratuit ou Premium, suit la conception décrite sur la page [modèle de sécurité](id:security) : clés dérivées de votre motif avec PBKDF2, clé maîtresse aléatoire par coffre et chiffrement AES-256-GCM via Apple CryptoKit. La sauvegarde chiffrée est elle aussi gratuite pour tous : dans Réglages → Sauvegarde, vous créez un fichier `.velcrypt` pour le coffre ouvert, protégé par un mot de passe de sauvegarde que vous choisissez.
 
-Comme la version gratuite comprend un seul coffre, les [coffres cachés](id:hidden-vaults) — où chaque autre motif ouvre son propre coffre, par exemple un coffre leurre — nécessitent Premium. Le schéma de contrainte aussi, puisqu’il se configure depuis un coffre leurre.
+Un coffre ne compte comme votre coffre gratuit qu’une fois qu’il contient au moins un élément : un coffre vide, ouvert par exemple par erreur avec un autre motif, ne l’entame jamais. Comme la version gratuite comprend un seul coffre, les [coffres cachés](id:hidden-vaults) — où chaque autre motif ouvre son propre coffre, par exemple un coffre leurre — nécessitent Premium. Le schéma de contrainte aussi, puisqu’il se configure depuis un coffre leurre.
 
 Aucune version ne demande de compte. Vous ne vous inscrivez pas, vous ne donnez pas d’adresse e-mail, et le contenu de vos coffres ne quitte votre iPhone que si vous créez vous-même une sauvegarde ou un export.
 

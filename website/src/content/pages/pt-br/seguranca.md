@@ -9,14 +9,14 @@ keyFacts:
   - "Padrão → PBKDF2-HMAC-SHA512, no mínimo 600.000 iterações, salt aleatório por aparelho guardado no Keychain do iOS."
   - "Cada cofre tem sua própria chave mestra aleatória de 256 bits; as chaves de cada arquivo são derivadas com HKDF."
   - "Os arquivos são criptografados com AES-256-GCM via Apple CryptoKit, além da Proteção de Dados do iOS (classe de proteção completa)."
-  - "Um padrão desconhecido abre um cofre vazio — sem lista de cofres, sem mensagem de “padrão incorreto”."
+  - "Um padrão desconhecido abre um cofre vazio — sem lista de cofres (exceto uma lista opcional do Face ID), sem mensagem de “padrão incorreto”."
   - "Sem rede, sem conta, sem análises sobre o conteúdo do cofre; os dados do cofre ficam fora dos backups do iCloud e do computador."
   - "Backup opcional: um arquivo .velcrypt criptografado, protegido por uma senha de backup que você escolhe."
   - "O Velcrypt ainda não passou por uma auditoria de segurança independente."
 primaryKeyword: "segurança velcrypt"
 keywords: ["criptografia cofre de fotos iphone", "como funciona a criptografia do velcrypt", "cofre de fotos aes-256-gcm", "bloqueio por padrão pbkdf2", "modelo de ameaças cofre de fotos", "app cofre com negação plausível"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 schemaType: WebPage
 order: 1
 related: [encryption, pattern-lock, hidden-vaults, aes-256-encryption-explained, plausible-deniability-explained, forgot-vault-pattern]
@@ -30,7 +30,7 @@ faq:
   - q: "O Velcrypt passou por auditoria independente?"
     a: "Ainda não. O Velcrypt usa o CryptoKit da Apple e algoritmos padrão e amplamente estudados. Uma revisão de segurança independente seria muito bem-vinda, mas nenhuma foi feita até agora."
   - q: "O Velcrypt esconde que eu uso um cofre criptografado?"
-    a: "Não totalmente. O app aparece na sua Tela de Início, e alguém com ferramentas forenses pode perceber que o Velcrypt guarda dados criptografados e mais ou menos quanto. O que o Velcrypt esconde é quantos cofres você tem e o que há dentro deles."
+    a: "Não totalmente. O app aparece na sua Tela de Início, e alguém com ferramentas forenses pode perceber que o Velcrypt guarda dados criptografados e mais ou menos quanto. O que o Velcrypt esconde é quantos cofres você tem e o que há dentro deles, exceto os cofres que você colocar na lista opcional do Face ID."
 ---
 
 Esta página explica, em linguagem simples, o que acontece com suas fotos, vídeos e documentos quando você os coloca no Velcrypt — e onde a proteção termina. Ela foi escrita para quem quer entender o funcionamento antes de confiar algo pessoal ao app.
@@ -77,7 +77,7 @@ Além da criptografia do próprio Velcrypt, os arquivos do cofre são gravados c
 
 A maioria dos apps compara sua senha com algo armazenado — um hash, um verificador, uma “resposta correta” — e então diz *senha incorreta*. O Velcrypt, de propósito, não faz isso.
 
-Não existe lista de cofres nem valor armazenado que confirme se um padrão está “correto”. Quando você desenha um padrão, o Velcrypt deriva uma chave e tenta abrir o cofre que pertence a ela. Se nenhum cofre corresponder, o app simplesmente abre um cofre novo e vazio para aquele padrão. Para quem está com o celular na mão, um padrão nunca usado e um cofre real, porém vazio, parecem idênticos.
+Não existe lista de cofres (além da lista opcional do Face ID, que só contém os cofres que você adiciona) nem valor armazenado que confirme se um padrão está “correto”. Quando você desenha um padrão, o Velcrypt deriva uma chave e tenta abrir o cofre que pertence a ela. Se nenhum cofre corresponder, o app simplesmente abre um cofre novo e vazio para aquele padrão. Para quem está com o celular na mão, um padrão nunca usado e um cofre real, porém vazio, parecem idênticos.
 
 Isso dá a você **negação plausível**: a possibilidade de dizer, com credibilidade, que não há mais nada para ver, porque nada no app prova o contrário. Com o Premium, que libera mais de um cofre, você pode manter um cofre de fachada com fotos comuns e um cofre separado para o que é realmente privado. A página de [cofres ocultos](id:hidden-vaults) e nossos guias sobre [cofres de fachada](id:what-is-a-decoy-vault) e [negação plausível](id:plausible-deniability-explained) trazem mais detalhes.
 
@@ -85,9 +85,13 @@ Um efeito colateral prático: se você lembrar o padrão com um ponto errado, va
 
 ## Bloqueio e o alternador de apps
 
-O Velcrypt bloqueia automaticamente quando vai para segundo plano, depois de um intervalo que você pode configurar. Ao bloquear, as chaves do cofre são descartadas da memória e o padrão precisa ser desenhado de novo. O conteúdo do cofre também fica oculto no alternador de apps do iOS, então uma olhada nos apps recentes não mostra a miniatura de uma foto privada. Veja [bloqueio automático](id:auto-lock) para as configurações.
+O Velcrypt bloqueia automaticamente quando vai para segundo plano, depois de um intervalo que você pode configurar. Ao bloquear, as chaves do cofre são descartadas da memória e o padrão precisa ser desenhado de novo (ou o Face ID usado, nos cofres em que você o ativou). O conteúdo do cofre também fica oculto no alternador de apps do iOS, então uma olhada nos apps recentes não mostra a miniatura de uma foto privada. Veja [bloqueio automático](id:auto-lock) para as configurações.
 
-Não há desbloqueio por Face ID ou Touch ID, por escolha de design. Um rosto ou um dedo pode ser usado sem o seu consentimento — enquanto você dorme ou sob pressão. Um padrão existe apenas na sua memória.
+### Face ID opcional
+
+O Face ID ou Touch ID é opcional e vem desativado em todos os cofres. Se você o ativar para um cofre (Ajustes › Face ID, de dentro desse cofre), o Velcrypt guarda uma cópia da chave desse cofre no Keychain do iPhone, só neste aparelho — nem no iCloud, nem em backups —, vinculada aos rostos e digitais cadastrados naquele momento. O código do iPhone não substitui o Face ID. Se um rosto ou uma digital for adicionado, ou se o Face ID for redefinido, o Face ID é desativado nesses cofres até você abri-los com o padrão e ativá-lo de novo.
+
+Ele vem desativado porque um rosto ou um dedo pode ser usado sem o seu consentimento — enquanto você dorme ou sob pressão —, e quem conseguir fazer você olhar para o celular pode ver e abrir todos os cofres da lista do Face ID. Um padrão existe apenas na sua memória, então mantenha o cofre mais privado só com o padrão. O padrão de coação funciona apenas com padrões; a lista do Face ID não o aciona.
 
 ## Sem rede, sem conta, sem backups automáticos
 
@@ -105,7 +109,7 @@ Para se proteger disso, você pode criar um **backup criptografado** em Ajustes 
 |---|---|---|
 | Alguém passa pela sua fototeca no app Fotos | Sim | Itens que você importa e depois apaga do Fotos (incluindo Apagados) ficam só no Velcrypt. |
 | Alguém pega seu celular desbloqueado e abre o Velcrypt | Sim | A pessoa precisa do seu padrão; um padrão errado mostra um cofre vazio. |
-| Alguém tenta provar que você tem mais cofres | Em grande parte | Sem lista de cofres, sem mensagem de “padrão incorreto”; o app não mostra quantos cofres existem. |
+| Alguém tenta provar que você tem mais cofres | Em grande parte | Sem lista de cofres, sem mensagem de “padrão incorreto”; o app não mostra quantos cofres existem. Os cofres que você coloca no Face ID são a exceção. |
 | Roubo de um iPhone bloqueado | Sim | Proteção de Dados do iOS mais a criptografia AES-256-GCM do próprio Velcrypt. |
 | Força bruta no padrão a partir de arquivos extraídos | Dificultada | PBKDF2 com mais de 600.000 iterações e salt por aparelho; um padrão longo faz diferença. |
 | Invasão de conta na nuvem | Sim | Os dados do cofre não são enviados e ficam fora dos backups do iCloud. Um backup do Velcrypt salvo no iCloud Drive continua criptografado com a sua senha de backup. |
@@ -121,13 +125,13 @@ Para se proteger disso, você pode criar um **backup criptografado** em Ajustes 
 Toda ferramenta de segurança tem limites, e você deve conhecer os do Velcrypt antes de depender dele.
 
 - **Olhares por cima do ombro.** Se alguém vir você desenhar seu padrão, pessoalmente ou por uma câmera, poderá abrir aquele cofre. Desenhe longe dos olhos dos outros e prefira um padrão que não pareça uma letra ou forma simples.
-- **Ser obrigado a desbloquear.** O Velcrypt não consegue impedir que alguém force você a desenhar um padrão. Um cofre de fachada pode ajudar, e com o Premium um [padrão de coação](id:duress-pattern) abre um cofre de fachada enquanto apaga de forma permanente os outros. Nenhum dos dois impede alguém que já conhece o seu padrão verdadeiro, e cofres apagados só podem ser restaurados de um arquivo de backup feito antes.
+- **Ser obrigado a desbloquear.** O Velcrypt não consegue impedir que alguém force você a desenhar um padrão, nem que aponte o celular para o seu rosto para abrir os cofres que você colocou no Face ID. Um cofre de fachada pode ajudar, e com o Premium um [padrão de coação](id:duress-pattern) abre um cofre de fachada enquanto apaga de forma permanente os outros. Nenhum dos dois impede alguém que já conhece o seu padrão verdadeiro, e cofres apagados só podem ser restaurados de um arquivo de backup feito antes.
 - **Celular entregue com o cofre aberto.** Enquanto um cofre está desbloqueado, qualquer pessoa com o celular na mão vê o que você vê. Bloqueie antes de passar o celular para alguém.
 - **Aparelhos comprometidos ou com jailbreak e malware.** Um software capaz de ler a tela, registrar toques ou inspecionar a memória dos apps em um aparelho comprometido pode derrotar qualquer criptografia no nível do app.
 - **Capturas de tela ou fotos da tela.** O Velcrypt não consegue impedir que outra câmera fotografe sua tela.
 - **Cópias em outros lugares.** Importar copia a foto; o original continua no Fotos até você apagá-lo e, depois disso, fica em Apagados por cerca de 30 dias. Também podem existir cópias no Fotos do iCloud, em apps de mensagem, no e-mail ou no celular de outra pessoa. Siga o guia sobre [apagar os originais depois de importar](id:delete-original-photos-after-import).
 - **Padrão esquecido ou perda do celular sem backup.** Nos dois casos, os dados se perdem. Não há frase de recuperação nem redefinição, e uma senha de backup esquecida também não pode ser recuperada. Veja [esqueceu o padrão do cofre](id:forgot-vault-pattern).
-- **Detecção de que o Velcrypt está em uso.** O ícone do app é visível, e ferramentas forenses podem perceber que o Velcrypt guarda dados criptografados e mais ou menos quanto. O Velcrypt não promete esconder isso — apenas o número de cofres e o conteúdo deles.
+- **Detecção de que o Velcrypt está em uso.** O ícone do app é visível, e ferramentas forenses podem perceber que o Velcrypt guarda dados criptografados e mais ou menos quanto. O Velcrypt não promete esconder isso — apenas o número de cofres e o conteúdo deles, exceto os cofres que você coloca na lista do Face ID.
 - **Padrões fracos ou fáceis de adivinhar.** Um padrão curto, ou em forma de L, Z ou quadrado, é muito mais fácil de adivinhar. Teste uma forma parecida no [verificador de força do padrão](id:pattern-strength-checker) — nunca o seu padrão real.
 
 ## Revisão independente

@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "velcrypt support"
 keywords: ["contact velcrypt", "velcrypt hulp", "velcrypt kluis gaat niet open", "velcrypt probleem oplossen", "velcrypt e-mail"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 schemaType: ContactPage
 order: 5
 related: [faq, forgot-vault-pattern, auto-lock, security, privacy]
@@ -66,7 +66,7 @@ Dat is geen beleid dat we op verzoek kunnen aanpassen; zo werkt de versleuteling
 
 Dit is de meest gestelde vraag. Velcrypt heeft geen melding ‘verkeerd patroon’: elk patroon dat de app nog niet kent, opent gewoon een nieuwe, lege kluis. Verwachtte je je foto’s, dan heb je waarschijnlijk een net iets ander patroon getekend — een stip te veel, een gemiste hoek of een ander beginpunt.
 
-Vergrendel de app en teken je patroon daarna langzaam en bewust opnieuw. Probeer alle varianten die je je herinnert. Je oorspronkelijke kluis is er nog en is onaangeroerd; de lege kluis vervangt hem niet.
+Vergrendel de app en teken je patroon daarna langzaam en bewust opnieuw. Probeer alle varianten die je je herinnert. Je oorspronkelijke kluis is er nog en is onaangeroerd; de lege kluis vervangt hem niet en gebruikt ook je gratis kluis niet op. Wil je de uitleg nog eens zien, open dan ‘Zo werkt Velcrypt’ vanaf het vergrendelscherm, het beginscherm van de kluis of Instellingen.
 
 ### De app vergrendelt te snel
 

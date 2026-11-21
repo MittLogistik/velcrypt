@@ -16,7 +16,7 @@ keyFacts:
 primaryKeyword: "patrón de coacción app bóveda"
 keywords: ["contraseña de coacción iphone", "patrón de pánico bóveda de fotos", "código de coacción app", "protección ante desbloqueo forzado", "patrón de autodestrucción bóveda"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Un patrón aparte que abre tu bóveda señuelo y elimina en silencio y para siempre todas las demás bóvedas del iPhone. Premium."
 status: available
 schemaType: WebPage
@@ -86,13 +86,14 @@ El recorrido completo, con consejos para practicar, está en [cómo configurar u
 - **Uno por iPhone.** Solo hay un patrón de coacción por dispositivo. Configurar uno nuevo sustituye al anterior.
 - **Para desactivarlo** hay que dibujar el patrón de coacción en Ajustes → Patrón de coacción. Dibujarlo ahí solo lo desactiva; no se elimina nada.
 - **Sigue funcionando aunque Premium caduque.** Solo configurarlo requiere Premium.
+- **Face ID no lo activa.** El patrón de coacción funciona solo con patrones. Cuando se ejecuta, las bóvedas eliminadas también desaparecen de la lista opcional de Face ID.
 - **Configúralo en un señuelo, no en tu única bóveda.** Si el señuelo es la única bóveda del teléfono, el patrón de coacción no tiene nada que eliminar. Velcrypt te avisa cuando ocurre.
 
 ## Nada revela que existe
 
 Un patrón de coacción solo sirve si nadie puede saber que está ahí. Velcrypt nunca muestra si hay uno configurado, ni en la interfaz ni en sus ajustes. Por detrás, en el llavero de iOS siempre existe un registro cifrado de tamaño fijo; cuando no hay patrón de coacción, contiene bytes aleatorios. Así, el registro tiene el mismo aspecto tanto si usas la función como si no.
 
-Esto se apoya en las [bóvedas ocultas](id:hidden-vaults): cada patrón abre su propia bóveda, no hay lista de bóvedas y un patrón desconocido abre una bóveda vacía sin error. La idea detrás de ambas se explica en [la negación plausible, explicada](id:plausible-deniability-explained).
+Esto se apoya en las [bóvedas ocultas](id:hidden-vaults): cada patrón abre su propia bóveda, no hay lista de bóvedas salvo las que tú añades a propósito a la lista de Face ID, y un patrón desconocido abre una bóveda vacía sin error. La idea detrás de ambas se explica en [la negación plausible, explicada](id:plausible-deniability-explained).
 
 ## Cuándo puede ayudar
 

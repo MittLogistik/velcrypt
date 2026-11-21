@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "spara bevis på trakasserier iphone"
 keywords: ["hålla skärmbilder på trakasserier privata", "spara bevis i iphone", "dokumentera bevis på övergrepp mobil", "dölja skärmbilder för förövare", "bevis trakasserier säkerhet"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Ett varsamt arbetssätt med säkerheten först för att hålla skärmbilder och bilder av trakasserier privata, intakta och säkerhetskopierade."
 group: sensitive
 schemaType: Article
@@ -66,7 +66,7 @@ Bevis som kan gå förlorade är inte till stor nytta. Telefoner går sönder, t
 
 Velcrypt kan hålla en privat kopia av skärmbilder, bilder och dokument i din iPhone, skild från bildbiblioteket. När du [raderat originalen](id:delete-original-photos-after-import) från Bilder och tömt Nyligen raderade syns de inte i kamerarullen, synkas inte till ett delat konto och dyker inte upp i Minnen.
 
-Valven öppnas med ett mönster som ritas på ett 5×5-rutnät, inte med enhetens lösenkod eller Face ID, så det räcker inte att kunna din lösenkod. [Varje mönster öppnar sitt eget valv](id:hidden-vaults), och ett felaktigt mönster öppnar ett tomt valv utan felmeddelande. Inget på skärmen bevisar alltså att ditt bevisvalv finns, vilket förklaras i [trovärdig förnekelse](id:plausible-deniability-explained). Appen [låses automatiskt](id:auto-lock) när du lämnar den, och innehållet döljs i appväxlaren.
+Valven öppnas med ett mönster som ritas på ett 5×5-rutnät, inte med enhetens lösenkod, så det räcker inte att kunna din lösenkod. Face ID är avstängt som standard; låt bevisvalvet bara ha sitt mönster. [Varje mönster öppnar sitt eget valv](id:hidden-vaults), och ett felaktigt mönster öppnar ett tomt valv utan felmeddelande. Inget på skärmen bevisar alltså att ditt bevisvalv finns, vilket förklaras i [trovärdig förnekelse](id:plausible-deniability-explained). Appen [låses automatiskt](id:auto-lock) när du lämnar den, och innehållet döljs i appväxlaren.
 
 ## Ärliga begränsningar – läs detta
 

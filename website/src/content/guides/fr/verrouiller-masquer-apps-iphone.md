@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "verrouiller une app iphone"
 keywords: ["masquer une app iphone", "verrouiller application iphone face id", "verrouiller un dossier iphone écran d’accueil", "mettre un code sur une app iphone", "dossier masquées iphone", "exiger face id app"]
 datePublished: 2026-10-31
-dateModified: 2026-10-31
+dateModified: 2026-11-21
 summary: "Exiger Face ID, le dossier Masquées et les limites de Temps d’écran : ce que protège le verrouillage d’apps et pourquoi les dossiers ne se verrouillent pas."
 category: hiding
 order: 66
@@ -114,7 +114,7 @@ C’est pour cela que le code sert de solution de repli, et que le verrouillage 
 
 ## La place de Velcrypt
 
-Velcrypt n’est pas un verrou d’apps ; il ne peut pas verrouiller d’autres apps. C’est un coffre pour les photos, vidéos et documents que vous tenteriez sinon de protéger en verrouillant Photos ou Fichiers. Vous l’ouvrez en traçant un [schéma](id:pattern-lock) sur une grille de 5×5, et chaque schéma ouvre son propre coffre chiffré. Il n’y a volontairement pas de Face ID, et le schéma n’a rien à voir avec le code de votre iPhone : quelqu’un qui connaît ce code ne peut toujours pas ouvrir vos coffres. Si vous voulez une autre réponse prête quand quelqu’un insiste, les [coffres leurres](id:hidden-vaults) (Premium) montrent un contenu anodin sous un autre schéma.
+Velcrypt n’est pas un verrou d’apps ; il ne peut pas verrouiller d’autres apps. C’est un coffre pour les photos, vidéos et documents que vous tenteriez sinon de protéger en verrouillant Photos ou Fichiers. Vous l’ouvrez en traçant un [schéma](id:pattern-lock) sur une grille de 5×5, et chaque schéma ouvre son propre coffre chiffré. Face ID est facultatif et désactivé par défaut, et le schéma n’a rien à voir avec le code de votre iPhone : quelqu’un qui connaît ce code ne peut toujours pas ouvrir vos coffres. Si vous voulez une autre réponse prête quand quelqu’un insiste, les [coffres leurres](id:hidden-vaults) (Premium) montrent un contenu anodin sous un autre schéma.
 
 Le contenu est chiffré sur l’appareil en AES-256-GCM, rien n’est envoyé en ligne et il n’y a pas de compte. Le coffre [se verrouille automatiquement](id:auto-lock) quand vous quittez l’app. Comme les données des coffres ne figurent pas dans les sauvegardes iCloud ou sur ordinateur, créez une sauvegarde chiffrée dans Réglages → Sauvegarde pour tout ce que vous ne pouvez pas perdre ; un schéma oublié ne peut être récupéré par personne.
 

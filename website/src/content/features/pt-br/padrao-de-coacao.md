@@ -16,7 +16,7 @@ keyFacts:
 primaryKeyword: "senha de coação cofre de fotos"
 keywords: ["senha de pânico iphone", "padrão de pânico cofre de fotos", "código de coação app", "proteção contra desbloqueio forçado", "cofre com autodestruição"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Um padrão separado que abre seu cofre de fachada e apaga em silêncio, de forma permanente, todos os outros cofres do iPhone. Premium."
 status: available
 schemaType: WebPage
@@ -86,13 +86,14 @@ O passo a passo completo, com dicas de prática, está em [como configurar um co
 - **Um por iPhone.** Existe só um padrão de coação por aparelho. Configurar um novo substitui o anterior.
 - **Para desativá-lo**, é preciso desenhar o padrão de coação em Ajustes → Padrão de Coação. Desenhá-lo ali só o desativa; nada é apagado.
 - **Ele continua funcionando se o Premium acabar.** Só a configuração exige o Premium.
+- **O Face ID não o aciona.** O padrão de coação funciona apenas com padrões. Quando ele é usado, os cofres apagados também somem da lista opcional do Face ID.
 - **Configure-o em um cofre de fachada, não no seu único cofre.** Se o cofre de fachada for o único do celular, não há nada para o padrão de coação apagar. O Velcrypt avisa você quando for esse o caso.
 
 ## Nada revela que ele existe
 
 Um padrão de coação só é útil se ninguém conseguir saber que ele está lá. O Velcrypt nunca mostra se há um configurado, nem na interface nem nos ajustes. Por trás, sempre existe no Keychain do iOS um registro criptografado de tamanho fixo; quando não há padrão de coação, ele guarda bytes aleatórios. Assim, o registro parece igual quer você use o recurso, quer não.
 
-Isso se apoia nos [cofres ocultos](id:hidden-vaults): cada padrão abre o seu próprio cofre, não existe lista de cofres, e um padrão desconhecido abre um cofre vazio, sem erro. A ideia por trás dos dois está explicada em [negação plausível, explicada](id:plausible-deniability-explained).
+Isso se apoia nos [cofres ocultos](id:hidden-vaults): cada padrão abre o seu próprio cofre, não existe lista de cofres exceto os que você coloca de propósito na lista do Face ID, e um padrão desconhecido abre um cofre vazio, sem erro. A ideia por trás dos dois está explicada em [negação plausível, explicada](id:plausible-deniability-explained).
 
 ## Quando ele pode ajudar
 

@@ -20,7 +20,7 @@ keywords:
   - "Keepsafe 替代"
   - "iPhone 隐藏照片 App"
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "选择照片保险箱的七条标准，并坦诚评估 Apple 工具、Keepsafe、Private Photo Vault、计算器伪装 App 和 Velcrypt。"
 category: choosing
 order: 20
@@ -71,7 +71,7 @@ faq:
 | 独立于设备密码的“秘密” | 否 | 可选 | 是 | 是 | 是 | 是 |
 | 需要账户 | iCloud 需 Apple 账户 | iCloud 需 Apple 账户 | 是（邮箱） | 基本使用无需账户 | 不一定 | 否 |
 | 云备份 / 同步 | 通过 iCloud 照片 | 通过 iCloud | 可选的高级版云服务 | 不一定 | 不一定 | 无云同步；可手动创建加密备份文件 |
-| Face ID / Touch ID | 是 | 是 | 是 | 是 | 不一定 | 否，有意为之 |
+| Face ID / Touch ID | 是 | 是 | 是 | 是 | 不一定 | 可选，默认关闭（按保险箱） |
 | 诱饵功能 | 否 | 否 | 假 PIN 码（高级版） | 诱饵密码 | 不一定 | 每个图案打开各自的保险箱 |
 | 伪装成其他 App | 否 | 否 | 否 | 否 | 是 | 否；Premium 提供备用 App 图标 |
 
@@ -115,12 +115,12 @@ Legendary Software 出品的 Private Photo Vault 是另一款历史悠久的选�
 
 ## Velcrypt
 
-Velcrypt 是一款原生 iPhone App，把照片、视频和文档存放在设备上的加密保险箱中。你在 5×5 点阵上画出图案来解锁保险箱（[图案锁](id:pattern-lock)）。每个图案打开各自的保险箱，陌生的图案只会打开一个空保险箱，所以 App 从不透露存在多少个保险箱（[隐藏保险箱](id:hidden-vaults)）。文件用从图案派生出的密钥以 AES-256-GCM 加密（[加密](id:encryption)）。没有账户、没有服务器、不上传（[离线、无需账户](id:offline-no-account)）。它提供免费版本（1 个保险箱、最多 50 个项目）以及可选的 Premium 升级，详见[价格](id:pricing)。
+Velcrypt 是一款原生 iPhone App，把照片、视频和文档存放在设备上的加密保险箱中。你在 5×5 点阵上画出图案来解锁保险箱（[图案锁](id:pattern-lock)）。每个图案打开各自的保险箱，陌生的图案只会打开一个空保险箱，所以 App 不会透露存在多少个保险箱，除了你主动加入面容 ID 列表的那些（[隐藏保险箱](id:hidden-vaults)）。文件用从图案派生出的密钥以 AES-256-GCM 加密（[加密](id:encryption)）。没有账户、没有服务器、不上传（[离线、无需账户](id:offline-no-account)）。它提供免费版本（1 个保险箱、最多 50 个项目；空保险箱不占用名额）以及可选的 Premium 升级，详见[价格](id:pricing)。
 
-它的局限是有意为之的，但确实存在：
+它的局限大多是有意为之的，但确实存在：
 
 - **没有自动备份。** 保险箱内容不包含在 iCloud 和电脑备份中。你可以在“设置”→“备份”中创建加密备份文件，但需要自己创建和存放。忘了图案，文件就无法恢复，你不行，我们也不行。
-- **不支持 Face ID**，这是有意的设计，所以解锁比看一眼要慢。
+- **Face ID 默认关闭。** 它是可选的，需要为每个保险箱单独开启；开启后，能让你看一眼手机的人就能打开面容 ID 列表里的保险箱，所以最私密的保险箱最好只用图案。
 - **没有能用的伪装。** App 打开后显示的是图案点阵。Premium 可以把主屏幕图标换成计算器、计时器或尺子等备用图标。
 - **没有云同步、分享链接，也没有 iPad / Mac 版 App。**
 

@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "poner contraseña a fotos iphone"
 keywords: ["contraseña para fotos iphone", "proteger fotos con contraseña iphone", "poner clave a fotos iphone", "bloquear fotos individuales iphone", "contraseña álbum fotos iphone"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-11-21
 summary: "Por qué iOS no tiene contraseña por foto y tres formas prácticas de poner un bloqueo real a fotos concretas."
 category: hiding
 order: 4
@@ -105,6 +105,6 @@ Elijas el bloqueo que elijas, una copia protegida no sirve de nada si sigue habi
 
 ## Dónde encaja Velcrypt
 
-Velcrypt responde a la segunda necesidad: un secreto que solo tú conoces. En lugar de escribir una contraseña, dibujas un [patrón](id:pattern-lock) en una cuadrícula de 5×5 puntos. Tiene que pasar por al menos seis puntos con al menos un cambio de dirección, y se recomiendan patrones de ocho a doce puntos. Velcrypt no usa Face ID ni Touch ID en absoluto, así que ni el código de tu iPhone ni tu cara pueden abrirlo.
+Velcrypt responde a la segunda necesidad: un secreto que solo tú conoces. En lugar de escribir una contraseña, dibujas un [patrón](id:pattern-lock) en una cuadrícula de 5×5 puntos. Tiene que pasar por al menos seis puntos con al menos un cambio de dirección, y se recomiendan patrones de ocho a doce puntos. El código de tu iPhone nunca lo abre, y Face ID o Touch ID viene desactivado: solo se usa en las bóvedas en las que tú lo actives.
 
 Cada patrón abre su propia bóveda, y las fotos que contiene están [cifradas](id:encryption) con AES-256-GCM mediante claves derivadas de ese patrón. Como todo se queda en el dispositivo y está excluido de las copias de seguridad, no hay forma de restablecer un patrón olvidado. Si prefieres una contraseña que se pueda recuperar, vale la pena sopesar esa limitación con honestidad antes de mover algo importante.

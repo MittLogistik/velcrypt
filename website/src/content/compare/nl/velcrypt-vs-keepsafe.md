@@ -8,13 +8,13 @@ answer: "Velcrypt houdt alles op je iPhone, zonder account, en ontgrendelt met e
 keyFacts:
   - "Velcrypt heeft geen account, e-mail of registratie nodig; Keepsafe gebruikt volgens de vermelding een account."
   - "Keepsafe biedt een optionele cloudback-up; Velcrypt bewaart kluizen op je iPhone, met een gratis versleuteld back-upbestand dat je zelf bewaart."
-  - "Velcrypt ontgrendelt met een patroon op een raster van 5×5 en heeft bewust geen Face ID of Touch ID."
+  - "Velcrypt ontgrendelt met een patroon op een raster van 5×5; Face ID of Touch ID is optioneel en staat standaard uit."
   - "In Velcrypt opent elk patroon een eigen kluis, en onbekende patronen openen een lege."
   - "Vergeet je je Velcrypt-patroon, dan kan de kluis niet worden hersteld."
 primaryKeyword: "velcrypt vs keepsafe"
 keywords: ["keepsafe vs velcrypt", "keepsafe vergelijking", "keepsafe fotokluis alternatief", "fotokluis zonder account", "keepsafe cloudback-up"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Een lokale kluis zonder account tegenover een kluis met account en cloudback-up. Waar elk van beide past, naast elkaar gezet."
 competitor: "Keepsafe"
 lastChecked: "oktober 2026"
@@ -51,7 +51,7 @@ Geen van beide benaderingen is altijd beter. De ene ruilt gemak in voor zo min m
 | Account nodig | Geen account, geen e-mail | Ja, volgens de vermelding |
 | Cloudback-up | Geen automatische; gratis versleuteld back-upbestand dat je zelf bewaart | Optionele “Private Cloud” met premium |
 | Ontgrendelen | Patroon op een raster van 5×5 | Pincode of toegangscode |
-| Biometrie (Face ID / Touch ID) | Bewust niet aangeboden | Ondersteund, volgens de vermelding |
+| Biometrie (Face ID / Touch ID) | Optioneel, standaard uit (per kluis) | Ondersteund, volgens de vermelding |
 | Lokkluis / meerdere kluizen | Elk patroon is een eigen kluis (tweede kluis met Premium) | Nep-/lokpincode in premium |
 | Dwangpatroon | Ja, met Premium (opent een lokkluis, verwijdert de andere kluizen) | Niet openbaar vermeld |
 | Meldingen bij inbraakpogingen | Niet aangeboden | Aangeboden in premium |
@@ -73,7 +73,7 @@ Keepsafe gebruikt een code in de stijl van een pincode en kan volgens de vermeld
 
 <!-- TODO verify -->
 
-Velcrypt gebruikt een getekend patroon op een raster van 5×5: één doorlopende lijn door minstens zes stippen met minstens één richtingsverandering. Face ID en Touch ID worden bewust overgeslagen, omdat een gezicht of vinger zonder je toestemming kan worden gebruikt, terwijl een patroon alleen in je geheugen bestaat. De vergelijking [patroon vs pincode vs Face ID](id:pattern-lock-vs-pin-vs-face-id) gaat dieper in op de afwegingen.
+Velcrypt gebruikt een getekend patroon op een raster van 5×5: één doorlopende lijn door minstens zes stippen met minstens één richtingsverandering. Face ID en Touch ID zijn optioneel en staan standaard uit, omdat een gezicht of vinger zonder je toestemming kan worden gebruikt, terwijl een patroon alleen in je geheugen bestaat. Je kunt Face ID per kluis aanzetten; het patroon blijft elke kluis openen. De vergelijking [patroon vs pincode vs Face ID](id:pattern-lock-vs-pin-vs-face-id) gaat dieper in op de afwegingen.
 
 ## Lokkluizen en ontkenning
 
@@ -81,13 +81,13 @@ Veel kluis-apps bieden een tweede, valse code die een onschuldige kluis opent. K
 
 <!-- TODO verify -->
 
-Bij Velcrypt zit dat in de structuur, niet in een extraatje. Elk patroon is een eigen kluis, er is geen lijst van kluizen, en een patroon dat de app nog nooit heeft gezien, opent gewoon een lege kluis zonder foutmelding. Niets op het scherm bewijst dat er andere kluizen bestaan. Dat is wat [verborgen kluizen](id:hidden-vaults) en [plausibele ontkenning](id:plausible-deniability-explained) in de praktijk betekenen. Een tweede kluis vraagt om Premium. Met Premium gaat een [dwangpatroon](id:duress-pattern) nog verder: het opent een lokkluis en verwijdert ongemerkt en definitief alle andere kluizen op de iPhone.
+Bij Velcrypt zit dat in de structuur, niet in een extraatje. Elk patroon is een eigen kluis, er is geen lijst van kluizen (behalve de kluizen die je zelf aan de Face ID-lijst toevoegt), en een patroon dat de app nog nooit heeft gezien, opent gewoon een lege kluis zonder foutmelding. Niets op het scherm bewijst dat er andere kluizen bestaan. Dat is wat [verborgen kluizen](id:hidden-vaults) en [plausibele ontkenning](id:plausible-deniability-explained) in de praktijk betekenen. Een tweede kluis vraagt om Premium. Met Premium gaat een [dwangpatroon](id:duress-pattern) nog verder: het opent een lokkluis en verwijdert ongemerkt en definitief alle andere kluizen op de iPhone.
 
 ## Wanneer Keepsafe misschien beter bij je past
 
 - **Je wilt back-up en synchronisatie.** Als een verloren telefoon niet mag betekenen dat je je foto’s kwijt bent, is een cloudback-up met account vandaag het eenvoudigste antwoord. Velcrypt biedt alleen een handmatig back-upbestand, dat je zelf moet maken en bijhouden.
 - **Je gebruikt ook Android.** Keepsafe is volgens de winkelvermeldingen op meer dan één platform beschikbaar; Velcrypt is alleen voor iPhone.
-- **Je hebt liever Face ID.** Weegt het gemak van biometrie voor jou zwaarder dan de zorg over gedwongen ontgrendelen, dan biedt Velcrypt dat bewust niet.
+- **Je wilt overal Face ID.** Velcrypt heeft Face ID, maar standaard uit en per kluis; wil je alles direct achter biometrie, dan past Keepsafe misschien beter.
 - **Je wilt meldingen bij inbraakpogingen.** Velcrypt maakt geen foto’s van indringers.
 
 <!-- TODO verify -->
@@ -96,7 +96,7 @@ Bij Velcrypt zit dat in de structuur, niet in een extraatje. Elk patroon is een 
 
 - **Je wilt geen account.** Niets koppelt je kluis aan een e-mailadres of identiteit.
 - **Je wilt dat niets de telefoon verlaat.** Geen uploads, geen servers, geen analyse van kluisinhoud.
-- **Je wilt kunnen ontkennen.** Aparte kluizen zonder lijst, waarbij een onbekend patroon niets verraadt.
+- **Je wilt kunnen ontkennen.** Aparte kluizen zonder lijst (tenzij je ze zelf aan de Face ID-lijst toevoegt), waarbij een onbekend patroon niets verraadt.
 - **Je wilt gepubliceerde cryptodetails.** Velcrypt documenteert zijn algoritmen op de [beveiligingspagina](id:security).
 
 Wat je ook kiest: als je een foto in een kluis importeert, wordt hij meestal gekopieerd. Verwijder daarna het origineel uit Foto’s en leeg Recent verwijderd; de stappen staan in [originele foto’s verwijderen na het importeren](id:delete-original-photos-after-import).

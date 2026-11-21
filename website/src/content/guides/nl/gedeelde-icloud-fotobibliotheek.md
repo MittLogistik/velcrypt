@@ -20,7 +20,7 @@ keywords:
   - "gedeelde bibliotheek of gedeeld album"
   - "versleutelde familiefoto's"
 datePublished: 2026-10-31
-dateModified: 2026-10-31
+dateModified: 2026-11-21
 summary: "Wie in een gedeelde iCloud-fotobibliotheek wat kan zien, bewerken en verwijderen, hoe foto's er vanzelf in komen en hoe je privéfoto's eruit houdt."
 category: apple
 order: 60
@@ -136,7 +136,7 @@ Zoek je naar 'versleutelde familiefoto's', dan is dit het eerlijke antwoord: het
 
 De gedeelde bibliotheek is gemaakt om te delen. Voor foto's die je nooit wilt delen, is het betrouwbaarder om ze helemaal uit de fotobibliotheek van Foto's te halen.
 
-Velcrypt is een kluis voor de iPhone die daar precies voor bedoeld is. Foto's, video's en documenten die je importeert, worden op de iPhone versleuteld met AES-256-GCM en geopend met een patroon op een raster van 5×5, niet met de toegangscode of Face ID. Er is [geen account, geen server en geen synchronisatie](id:offline-no-account), en kluisdata zijn uitgesloten van iCloud- en computerback-ups. Niets uit een kluis kan dus in een gedeelde bibliotheek, een gedeeld album of op de gezins-iPad verschijnen. Elk patroon opent een eigen kluis, dus je kunt ook een onschuldige lokkluis aanhouden.
+Velcrypt is een kluis voor de iPhone die daar precies voor bedoeld is. Foto's, video's en documenten die je importeert, worden op de iPhone versleuteld met AES-256-GCM en geopend met een patroon op een raster van 5×5, niet met de toegangscode (Face ID alleen als je het zelf per kluis aanzet). Er is [geen account, geen server en geen synchronisatie](id:offline-no-account), en kluisdata zijn uitgesloten van iCloud- en computerback-ups. Niets uit een kluis kan dus in een gedeelde bibliotheek, een gedeeld album of op de gezins-iPad verschijnen. Elk patroon opent een eigen kluis, dus je kunt ook een onschuldige lokkluis aanhouden.
 
 Importeren maakt een versleutelde kopie; het origineel blijft staan. Verwijder het daarna uit Foto's en leeg Recent verwijderd. Stond de foto in de gedeelde bibliotheek, zet hem dan eerst in je persoonlijke bibliotheek of verwijder hem daar, en onthoud dat alleen wie hem heeft toegevoegd hem definitief uit Recent verwijderd kan wissen.
 

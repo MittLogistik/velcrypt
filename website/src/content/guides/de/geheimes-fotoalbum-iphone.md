@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "geheimes fotoalbum iphone"
 keywords: ["geheimer ordner iphone", "geheimes album iphone", "versteckter ordner iphone", "privates album iphone erstellen", "geheime fotos iphone", "privates album iphone"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Ein wirklich geheimes Fotoalbum auf dem iPhone anlegen – und gängige Tricks vermeiden, die nur geheim aussehen."
 category: hiding
 order: 5
@@ -102,6 +102,6 @@ Eines kann kein Tresor vollständig verbergen: seine eigene Existenz. Das App-Sy
 
 Velcrypt geht das geheime Album von der Seite „niemand kann es öffnen“ an. In einem Tresor kannst du beliebig viele [Alben](id:albums) anlegen und Fotos und Videos zwischen ihnen verschieben – alles auf dem Gerät mit AES-256-GCM verschlüsselt.
 
-Ungewöhnlich ist, wie die Tresore funktionieren. Jedes Muster, das du auf das 5×5-Raster zeichnest, ist ein eigener Tresor, und die App führt keine Liste darüber. Ein Muster, das Velcrypt noch nie gesehen hat, öffnet einfach einen neuen, leeren Tresor – ohne Fehlermeldung. In der App gibt es also nichts, das verrät, wie viele [versteckte Tresore](id:hidden-vaults) du hast, und du kannst einen harmlosen als Köder behalten.
+Ungewöhnlich ist, wie die Tresore funktionieren. Jedes Muster, das du auf das 5×5-Raster zeichnest, ist ein eigener Tresor, und die App führt keine Liste darüber, außer der Face-ID-Liste mit den Tresoren, die du selbst hinzufügst. Ein Muster, das Velcrypt noch nie gesehen hat, öffnet einfach einen neuen, leeren Tresor – ohne Fehlermeldung. In der App gibt es also nichts, das verrät, wie viele [versteckte Tresore](id:hidden-vaults) du hast, und du kannst einen harmlosen als Köder behalten.
 
 Die ehrlichen Grenzen: Das Velcrypt-Symbol selbst ist sichtbar, solange du nicht die App-Ausblendung von iOS nutzt, und nichts schützt einen Tresor, wenn jemand dir beim Zeichnen des Musters zusieht oder das Handy nimmt, während der Tresor offen ist. Da Tresordaten nicht automatisch gesichert werden, bedeutet ein vergessenes Muster ein verlorenes Album, es sei denn, du hast vorher ein verschlüsseltes Backup erstellt.

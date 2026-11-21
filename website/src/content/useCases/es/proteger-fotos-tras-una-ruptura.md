@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "mi ex tiene acceso a mis fotos del iphone"
 keywords: ["cambiar el código del iphone tras una ruptura", "eliminar a mi ex de un álbum compartido", "comprobación de seguridad iphone", "mi ex sabe el código de mi iphone", "salir de la fototeca compartida de icloud"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Una lista tranquila para las semanas tras una ruptura: código nuevo, Comprobación de seguridad, álbumes compartidos y un sitio privado para tus fotos."
 group: everyday
 schemaType: Article
@@ -60,7 +60,7 @@ Si te sientes en peligro o tu ex te amenaza, pon tu seguridad por delante y habl
 
 Hay fotos que querrás conservar, como recuerdos, capturas de mensajes o documentos de la relación, sin que estén en un carrete que otra persona pueda ver de reojo. Velcrypt es una opción para eso.
 
-Velcrypt guarda fotos, vídeos y documentos en bóvedas cifradas en tu iPhone. No usa el código del dispositivo ni Face ID; una bóveda se abre con un [patrón que dibujas en una cuadrícula 5×5](id:pattern-lock), así que un código que tu ex conoció en su día no le sirve. [Cada patrón abre su propia bóveda](id:hidden-vaults), y un patrón desconocido solo abre una vacía sin error, así que nada revela lo que guardas.
+Velcrypt guarda fotos, vídeos y documentos en bóvedas cifradas en tu iPhone. No usa el código del dispositivo, y Face ID viene desactivado; una bóveda se abre con un [patrón que dibujas en una cuadrícula 5×5](id:pattern-lock), así que un código que tu ex conoció en su día no le sirve. [Cada patrón abre su propia bóveda](id:hidden-vaults), y un patrón desconocido solo abre una vacía sin error, así que nada revela lo que guardas.
 
 Después de importar, [borra los originales](id:delete-original-photos-after-import) de Fotos y vacía el álbum Eliminado; si no, seguirá habiendo copias en tu fototeca y, con Fotos de iCloud activado, en tus otros dispositivos. Si hay fotos íntimas de por medio, [esta guía](id:store-intimate-photos-safely-iphone) entra en más detalle.
 

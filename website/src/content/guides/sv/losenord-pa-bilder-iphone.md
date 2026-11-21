@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "lösenord på bilder iphone"
 keywords: ["lösenordsskydda bilder iphone", "sätta lösenord på bilder iphone", "lösenord enskilda bilder iphone", "låsa enskilda bilder iphone", "kod på bilder iphone"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-11-21
 summary: "Varför iOS saknar lösenord per bild, och tre praktiska sätt att ändå sätta ett riktigt lås på vissa bilder."
 category: hiding
 order: 4
@@ -105,6 +105,6 @@ Vilket lås du än väljer hjälper en skyddad kopia inte om en oskyddad kopia f
 
 ## Var Velcrypt passar in
 
-Velcrypt svarar mot det andra behovet, en hemlighet som bara du känner till. I stället för ett inskrivet lösenord ritar du ett [mönster](id:pattern-lock) på ett rutnät med 5×5 punkter. Det måste gå genom minst sex punkter med minst en riktningsändring, och mönster med åtta till tolv punkter rekommenderas. Velcrypt använder inte Face ID eller Touch ID alls, så varken iPhonens lösenkod eller ditt ansikte kan öppna appen.
+Velcrypt svarar mot det andra behovet, en hemlighet som bara du känner till. I stället för ett inskrivet lösenord ritar du ett [mönster](id:pattern-lock) på ett rutnät med 5×5 punkter. Det måste gå genom minst sex punkter med minst en riktningsändring, och mönster med åtta till tolv punkter rekommenderas. iPhonens lösenkod kan aldrig öppna ett valv, och Face ID är avstängt som standard: ditt ansikte öppnar bara de valv du själv har slagit på Face ID för.
 
 Varje mönster öppnar ett eget valv, och bilderna i det [krypteras](id:encryption) med AES-256-GCM med nycklar som härleds från mönstret. Eftersom allt stannar på enheten och undantas från säkerhetskopior finns det inget sätt att återställa ett glömt mönster. Föredrar du ett lösenord som går att återställa är den begränsningen värd att väga ärligt innan du flyttar något viktigt.

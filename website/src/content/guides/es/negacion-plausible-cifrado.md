@@ -8,13 +8,13 @@ answer: "La negación plausible en el cifrado significa que, incluso después de
 keyFacts:
   - "La negación plausible trata de lo que se puede demostrar, no de ocultar que existe una app o datos cifrados."
   - "Las herramientas de cifrado de disco iniciaron la idea con volúmenes ocultos dentro de volúmenes cifrados normales."
-  - "En Velcrypt, cualquier patrón desconocido abre una bóveda vacía, sin errores y sin lista de bóvedas."
+  - "En Velcrypt, cualquier patrón desconocido abre una bóveda vacía, sin errores y sin más lista de bóvedas que la lista opcional de Face ID."
   - "El tamaño del almacenamiento y un análisis forense pueden mostrar que existen datos cifrados, aunque no se puedan leer."
   - "La negación plausible protege frente a curiosos y presiones informales; no es un escudo legal."
 primaryKeyword: "negación plausible cifrado"
 keywords: ["qué es la negación plausible", "cifrado negable", "volumen oculto explicado", "negación plausible bóveda de fotos", "bóveda negable iphone"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "El concepto detrás de los volúmenes ocultos y las bóvedas señuelo, cómo lo usa Velcrypt con los patrones desconocidos y lo que honestamente no puede hacer."
 category: security
 order: 42
@@ -55,7 +55,7 @@ Con los años, esos mismos investigadores y profesionales también documentaron 
 Velcrypt adapta el principio a una bóveda de fotos y documentos en el iPhone. No hay volumen exterior e interior; en su lugar:
 
 - **Cada patrón es su propia bóveda.** Cada bóveda tiene su propia clave maestra aleatoria de 256 bits, que se desbloquea con una clave derivada de ese patrón.
-- **No hay lista de bóvedas.** La app no guarda nada que enumere cuántas bóvedas existen.
+- **No hay lista de bóvedas.** La app no guarda nada que enumere cuántas bóvedas existen, salvo la lista opcional de Face ID, que solo contiene las bóvedas que tú añades a propósito.
 - **Los patrones desconocidos abren una bóveda vacía.** Dibuja un patrón que Velcrypt nunca haya visto y llegarás a una bóveda nueva y vacía. No hay ningún mensaje de «patrón incorrecto».
 
 La consecuencia es que un patrón equivocado y una bóveda válida pero vacía se ven exactamente igual. Si abres una bóveda delante de alguien, nada en la interfaz muestra que existan otras. Eso convierte la [bóveda señuelo](id:what-is-a-decoy-vault) en una forma natural de uso y no en un modo especial. La página de la función de [bóvedas ocultas](id:hidden-vaults) muestra cómo funciona en la práctica.

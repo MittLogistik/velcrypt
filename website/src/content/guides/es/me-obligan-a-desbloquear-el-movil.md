@@ -15,7 +15,7 @@ keyFacts:
 primaryKeyword: "qué hacer si te obligan a desbloquear el móvil"
 keywords: ["me obligan a desbloquear el móvil", "mi pareja me obliga a desbloquear el móvil", "alguien me obliga a desbloquear mi iphone", "desbloqueo forzado del móvil", "robo del móvil desbloquear"]
 datePublished: 2026-10-22
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Pasos prácticos para cuando una pareja, un ladrón o un fisgón exige tu móvil desbloqueado, y cómo encajan una bóveda señuelo y un patrón de coacción."
 category: practical
 order: 35
@@ -76,11 +76,11 @@ La exposición más común no es un hackeo, sino alguien que va pasando fotos. M
 
 - **Usa un código del dispositivo robusto** de seis dígitos o más, y no lo compartas.
 - **Aprende a bloquear Face ID rápidamente.** En el iPhone 8 y posteriores, mantén pulsados el botón lateral y cualquiera de los botones de volumen hasta que aparezca la pantalla de apagado/Emergencia SOS, y toca Cancelar. Face ID y Touch ID quedan desactivados hasta que se introduzca el código. Según tus ajustes, pulsar el botón lateral varias veces seguidas puede llamar a emergencias, así que practica el gesto exacto antes.
-- **Velcrypt no tiene desbloqueo con Face ID por diseño**, así que nadie puede abrir una bóveda acercando el móvil a tu cara. Un patrón solo existe en tu memoria. [Patrón vs PIN vs Face ID](id:pattern-lock-vs-pin-vs-face-id) explica la contrapartida.
+- **En Velcrypt, Face ID es opcional y viene desactivado.** Una bóveda sin Face ID no se abre acercando el móvil a tu cara, porque un patrón solo existe en tu memoria. Si activas Face ID en alguna bóveda, deja la más privada solo con su patrón. [Patrón vs PIN vs Face ID](id:pattern-lock-vs-pin-vs-face-id) explica la contrapartida.
 
 ### Crea una bóveda señuelo
 
-Una [bóveda señuelo](id:what-is-a-decoy-vault) es una segunda bóveda con contenido inofensivo y creíble: tickets, escaneos de documentos, ideas para regalos. Si alguien exige ver lo que hay en la app, puedes abrir el señuelo. En Velcrypt, cada patrón abre su propia bóveda y no hay lista de bóvedas, así que nada en pantalla muestra que exista otra. Una segunda bóveda requiere Premium.
+Una [bóveda señuelo](id:what-is-a-decoy-vault) es una segunda bóveda con contenido inofensivo y creíble: tickets, escaneos de documentos, ideas para regalos. Si alguien exige ver lo que hay en la app, puedes abrir el señuelo. En Velcrypt, cada patrón abre su propia bóveda y no hay lista de bóvedas, así que nada en pantalla muestra que exista otra. La excepción son las bóvedas que añadas a la lista de Face ID: no pongas ahí tu bóveda real. Una segunda bóveda requiere Premium.
 
 ### Plantéate un patrón de coacción, con cuidado
 

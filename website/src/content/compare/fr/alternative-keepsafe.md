@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "alternative à keepsafe"
 keywords: ["alternative keepsafe iphone", "apps comme keepsafe", "quitter keepsafe", "remplacer keepsafe", "coffre-fort photo sans compte"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Pourquoi chercher une alternative à Keepsafe, quoi vérifier dans un coffre-fort photo, et comment migrer vos photos sans laisser de copies."
 competitor: "Keepsafe"
 lastChecked: "octobre 2026"
@@ -61,7 +61,7 @@ Un coffre-fort photo est une app qui stocke les photos et vidéos choisies à l�
 
 | Option | Compte | Copie dans le cloud | Secret distinct | Remarques |
 |---|---|---|---|---|
-| Velcrypt | Aucun | Non (sauvegarde chiffrée manuelle) | Oui, un motif | Coffres cachés, documents, sans Face ID |
+| Velcrypt | Aucun | Non (sauvegarde chiffrée manuelle) | Oui, un motif | Coffres cachés, documents, Face ID facultatif par coffre |
 | Album Masqués de l’iPhone | Compte Apple pour iCloud | Avec Photos iCloud | Non, code de l’appareil | Gratuit, intégré |
 | Notes verrouillées d’Apple Notes | Compte Apple pour iCloud | Avec Notes iCloud | Mot de passe Notes facultatif | Idéal pour quelques éléments |
 | Autres apps coffre-fort | Variable | Variable | Variable | Vérifiez chaque fiche |

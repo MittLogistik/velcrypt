@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "låsa bilder iphone"
 keywords: ["låsa bilder på iphone", "låsa bilder-appen iphone", "kräv face id bilder", "låsa albumet gömda", "låsa foton iphone", "face id lås bilder ios 18"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-11-21
 summary: "Fyra sätt att låsa bilder på iPhone, från albumet Gömda till applåsning och låsta anteckningar, jämförda sida vid sida."
 category: hiding
 order: 2
@@ -101,6 +101,6 @@ Det är också värt att fundera på biometri. Face ID går snabbt, men ett ansi
 
 ## Var Velcrypt passar in
 
-Velcrypt är ett valv i den fjärde kategorin. Appen har medvetet inget Face ID eller Touch ID: du låser upp den genom att rita ett [mönster](id:pattern-lock) på ett rutnät med 5×5 punkter, minst sex punkter med minst en riktningsändring, och längre mönster är bättre. Mönstret finns bara i ditt minne och har ingenting med iPhonens lösenkod att göra.
+Velcrypt är ett valv i den fjärde kategorin. Du låser upp den genom att rita ett [mönster](id:pattern-lock) på ett rutnät med 5×5 punkter, minst sex punkter med minst en riktningsändring, och längre mönster är bättre. Mönstret finns bara i ditt minne och har ingenting med iPhonens lösenkod att göra. Face ID och Touch ID är valfria och avstängda som standard; du kan slå på dem per valv, utan reserv via lösenkoden, och låta ditt mest privata valv bara ha sitt mönster.
 
 Innehållet krypteras på enheten med AES-256-GCM, valvet [låses automatiskt](id:auto-lock) när du lämnar appen och ingenting laddas upp. Priset för den utformningen är att det inte finns någon återställning: glömmer du mönstret kan varken du eller Velcrypt öppna valvet. Som alla lås kan det inte heller hjälpa om någon ser dig rita mönstret eller om du lämnar över telefonen med valvet redan öppet.

@@ -9,12 +9,12 @@ keyFacts:
   - "Private Photo Vault utvecklas av Legendary Software och låses med PIN- eller lösenkod, enligt sin App Store-sida."
   - "Velcrypt låses upp med ett mönster på ett 5×5-rutnät; varje mönster är ett separat valv."
   - "Velcrypt publicerar sin krypteringsdesign: AES-256-GCM med nyckelhärledning via PBKDF2-HMAC-SHA512."
-  - "Velcrypt har inga intrångsbilder och ingen Face ID, med avsikt."
+  - "Velcrypt har inga intrångsbilder med avsikt, och Face ID är valfritt och avstängt som standard."
   - "Velcrypt har ingen molnbackup, men du kan själv skapa en krypterad säkerhetskopia. Ett glömt mönster kan inte återställas."
 primaryKeyword: "velcrypt vs private photo vault"
 keywords: ["alternativ till private photo vault", "private photo vault jämförelse", "private photo vault vs", "fotovalv med lockkod", "fotovalv med mönsterlås"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "PIN-baserat valv med lockkod och intrångsfunktioner mot ett mönsterbaserat, kontofritt krypterat valv. Neutral jämförelse sida vid sida."
 competitor: "Private Photo Vault"
 lastChecked: "oktober 2026"
@@ -28,7 +28,7 @@ faq:
   - q: "Vilken app berättar mest om sin kryptering?"
     a: "Velcrypt dokumenterar sin design: AES-256-GCM, PBKDF2-HMAC-SHA512 med minst 600 000 iterationer, huvudnycklar per valv och nycklar per fil. För Private Photo Vault, se utvecklarens egen dokumentation, eftersom vi inte kunde bekräfta motsvarande detaljnivå."
   - q: "Kan jag använda Face ID med Velcrypt?"
-    a: "Nej. Velcrypt undviker medvetet Face ID och Touch ID eftersom biometri kan användas utan ditt samtycke. Du låser upp genom att rita ett mönster som bara du kan."
+    a: "Ja, om du vill. Face ID och Touch ID är avstängda som standard och slås på per valv, gratis. Mönstret öppnar alltid alla valv. Eftersom biometri kan användas utan ditt samtycke bör ditt mest privata valv bara öppnas med sitt mönster."
 ---
 
 *Senast kontrollerad: oktober 2026. Produktuppgifter ändras; se respektive apps sida i App Store för aktuell version.*
@@ -41,7 +41,7 @@ Private Photo Vault, från Legendary Software, är en valvapp som låses med PIN
 
 <!-- TODO verify -->
 
-Velcrypt är ett mönsterlåst valv på enheten. Ett mönster är en sammanhängande linje som ritas genom minst sex punkter på ett 5×5-rutnät, med minst ett riktningsbyte. Varje unikt mönster härleder en egen krypteringsnyckel och öppnar ett eget valv. Det finns inget konto, inget moln och ingen valvlista någonstans i appen.
+Velcrypt är ett mönsterlåst valv på enheten. Ett mönster är en sammanhängande linje som ritas genom minst sex punkter på ett 5×5-rutnät, med minst ett riktningsbyte. Varje unikt mönster härleder en egen krypteringsnyckel och öppnar ett eget valv. Det finns inget konto, inget moln och ingen valvlista, utom de valv du själv lägger i Face ID-listan.
 
 ## Jämförelse av funktioner
 
@@ -51,7 +51,7 @@ Velcrypt är ett mönsterlåst valv på enheten. Ett mönster är en sammanhäng
 | Kräver konto | Nej | Inte offentligt angivet |
 | Molnbackup | Nej; manuell krypterad säkerhetskopia (gratis) | Varierar; se aktuell App Store-sida |
 | Upplåsning | Mönster på ett 5×5-rutnät | PIN-kod / lösenkod |
-| Biometri (Face ID / Touch ID) | Erbjuds inte, med avsikt | Varierar |
+| Biometri (Face ID / Touch ID) | Valfritt, avstängt som standard (per valv) | Varierar |
 | Lockvalv / flera valv | Varje mönster är ett eget valv | Lösenord som lockbete |
 | Nödmönster | Ja, med Premium (öppnar ett lockbete, raderar de andra valven) | Inte offentligt angivet |
 | Intrångsrapporter | Erbjuds inte | Erbjuds, enligt App Store-sidan |
@@ -69,7 +69,7 @@ Lockvalv fungerar på olika sätt. Private Photo Vaults lockbete är, enligt bes
 
 <!-- TODO verify -->
 
-I Velcrypt är lockvalv inget särskilt läge. Du skapar helt enkelt ett annat valv med ett annat mönster och förvarar något ointressant där. Eftersom alla okända mönster öppnar ett nytt, tomt valv utan felmeddelande kan den som granskar appen inte avgöra hur många valv du har. Guiden om [lockvalv](id:what-is-a-decoy-vault) förklarar varför det spelar roll.
+I Velcrypt är lockvalv inget särskilt läge. Du skapar helt enkelt ett annat valv med ett annat mönster och förvarar något ointressant där. Eftersom alla okända mönster öppnar ett nytt, tomt valv utan felmeddelande kan den som granskar appen inte avgöra hur många valv du har, så länge de inte ligger i Face ID-listan. Guiden om [lockvalv](id:what-is-a-decoy-vault) förklarar varför det spelar roll.
 
 ## Kryptering och öppenhet
 
@@ -82,7 +82,7 @@ För Private Photo Vault hittade vi i skrivande stund ingen motsvarande offentli
 ## När Private Photo Vault kan passa dig bättre
 
 - **Du vill ha intrångsrapporter.** Om det är viktigt för dig att veta att någon har försökt öppna ditt valv erbjuder Velcrypt inte det.
-- **Du föredrar en sifferkod eller Face ID.** Vissa tycker att en PIN-kod går snabbare än att rita ett mönster.
+- **Du föredrar en sifferkod.** Vissa tycker att en PIN-kod går snabbare än att rita ett mönster.
 - **Du vill ha automatisk molnbackup eller synk.** Om versionen du använder har en sådan funktion är det något Velcrypt saknar; Velcrypt har bara en manuell krypterad säkerhetskopia.
 - **Du har redan kommit på plats.** Att flytta ett stort bibliotek kräver arbete; ett byte är bara rimligt om skillnaderna spelar roll för dig.
 
@@ -90,7 +90,7 @@ För Private Photo Vault hittade vi i skrivande stund ingen motsvarande offentli
 
 ## När Velcrypt kan passa dig bättre
 
-- **Du vill ha valv som inte avslöjar varandra.** Ingen valvlista, inget felmeddelande vid okända mönster.
+- **Du vill ha valv som inte avslöjar varandra.** Ingen valvlista (utom den Face ID-lista du själv väljer), inget felmeddelande vid okända mönster.
 - **Du vill slippa konto och servrar.** Se [offline utan konto](id:offline-no-account).
 - **Du vill ha dokumenterad kryptering.** Algoritmerna och nyckelhanteringen är offentliga.
 - **Du vill spara dokument också.** Velcrypt importerar filer från appen Filer tillsammans med bilder och videor.

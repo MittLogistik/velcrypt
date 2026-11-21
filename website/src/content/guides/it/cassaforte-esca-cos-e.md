@@ -7,14 +7,14 @@ navTitle: "Cos’è una cassaforte esca?"
 answer: "Una cassaforte esca è una seconda cassaforte, aperta con un segreto diverso, che contiene materiale innocuo ma plausibile. Se qualcuno ti fa pressione perché apra la tua cassaforte, puoi aprire l’esca. In Velcrypt ogni nuova sequenza apre una cassaforte propria, quindi un’esca è semplicemente una seconda sequenza che riempi di foto e documenti ordinari."
 keyFacts:
   - "Una cassaforte esca è una cassaforte vera e funzionante, piena di contenuti poco delicati che sei disposto a mostrare."
-  - "In Velcrypt ogni sequenza è una cassaforte a sé e non esiste un elenco di casseforti che tradisca le altre."
+  - "In Velcrypt ogni sequenza è una cassaforte a sé e non esiste un elenco di casseforti che tradisca le altre, salvo quelle che aggiungi all’elenco Face ID."
   - "Un’esca vuota è sospetta; un’esca vissuta, con album ed elementi recenti, è convincente."
   - "Un’esca protegge da curiosità e pressioni occasionali, non dall’analisi forense né da chi ti ha visto disegnare."
   - "Con il Premium, una sequenza di emergenza può aprire l’esca ed eliminare definitivamente tutte le altre casseforti sull’iPhone."
 primaryKeyword: "cassaforte esca"
 keywords: ["cos’è una cassaforte esca", "password esca app foto", "cassaforte finta app", "sequenza esca", "seconda cassaforte iphone"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Cos’è una cassaforte esca, come costruirne una credibile con una seconda sequenza in Velcrypt e i limiti da conoscere."
 category: security
 order: 41
@@ -38,7 +38,7 @@ faq:
   - q: "Come creo una cassaforte esca in Velcrypt?"
     a: "Disegna una seconda sequenza che non hai mai usato. Velcrypt apre per lei una nuova cassaforte vuota. Aggiungi contenuti quotidiani credibili, come scontrini, screenshot e foto ordinarie, e quella sequenza aprirà la tua esca. Poiché la versione gratuita ha una sola cassaforte, una seconda cassaforte richiede il Premium."
   - q: "Qualcuno può capire che una cassaforte è un’esca?"
-    a: "Non dall’interno dell’app: Velcrypt non tiene un elenco delle casseforti e non lascia intendere che ne esistano altre. Ciò che può tradire un’esca è il contenuto, per esempio se è vuota, ferma da tempo o palesemente costruita."
+    a: "Non dall’interno dell’app: Velcrypt non tiene un elenco delle casseforti (l’unica eccezione è l’elenco Face ID, con le casseforti per cui lo attivi tu) e non lascia intendere che ne esistano altre. Ciò che può tradire un’esca è il contenuto, per esempio se è vuota, ferma da tempo o palesemente costruita."
   - q: "Una cassaforte esca è la stessa cosa di una sequenza di emergenza?"
     a: "No. Un’esca apre semplicemente un’altra cassaforte e lascia intatte le altre. Una sequenza di emergenza, disponibile con Velcrypt Premium, apre la cassaforte esca ed elimina anche, in silenzio e definitivamente, tutte le altre casseforti sull’iPhone."
   - q: "Devo usare una cassaforte esca con la polizia o alla frontiera?"
@@ -59,7 +59,7 @@ A far funzionare un’esca non è la tecnologia ma la storia. Un’esca riesce q
 
 La maggior parte delle app tratta l’esca come un’impostazione speciale: un PIN vero, un PIN finto. Velcrypt segue un approccio più semplice. Ogni sequenza è una cassaforte a sé:
 
-- Nell’app non esiste alcun elenco di casseforti.
+- Nell’app non esiste alcun elenco di casseforti, a parte l’elenco Face ID facoltativo: non metterci la cassaforte vera.
 - Una sequenza che Velcrypt non ha mai visto apre una nuova cassaforte vuota.
 - Non c’è nessun messaggio di «sequenza errata», e nulla dimostra che esistano altre casseforti.
 
@@ -97,4 +97,4 @@ Un’esca apre un’altra cassaforte e lascia tutto il resto intatto. Una **sequ
 
 ## Dove si inserisce Velcrypt
 
-Velcrypt è stata progettata perché le esche siano naturali, non aggiunte a posteriori: ogni sequenza è una cassaforte a sé, non esiste un elenco delle casseforti, una sequenza sconosciuta non mostra errori, e non c’è un Face ID che qualcuno possa usare per saltare del tutto la domanda. Ogni cassaforte è cifrata sull’iPhone con AES-256-GCM con una chiave propria, quindi l’esca e la cassaforte vera sono protette allo stesso modo; l’unica differenza è ciò che ci metti dentro. Approfondisci nella [panoramica sulla sicurezza](id:security).
+Velcrypt è stata progettata perché le esche siano naturali, non aggiunte a posteriori: ogni sequenza è una cassaforte a sé, non esiste un elenco delle casseforti (tranne quelle che aggiungi di proposito all’elenco Face ID), una sequenza sconosciuta non mostra errori, e Face ID è spento per impostazione predefinita, quindi nessuno può usarlo per saltare del tutto la domanda. Se lo attivi per una cassaforte di comodo, non attivarlo per quella vera. Ogni cassaforte è cifrata sull’iPhone con AES-256-GCM con una chiave propria, quindi l’esca e la cassaforte vera sono protette allo stesso modo; l’unica differenza è ciò che ci metti dentro. Approfondisci nella [panoramica sulla sicurezza](id:security).

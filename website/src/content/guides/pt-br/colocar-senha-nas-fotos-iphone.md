@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "colocar senha nas fotos do iphone"
 keywords: ["senha nas fotos iphone", "colocar senha em foto iphone", "proteger fotos com senha iphone", "bloquear fotos individuais iphone", "senha para fotos iphone"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-11-21
 summary: "Por que o iOS não tem senha por foto, e três formas práticas de colocar um bloqueio de verdade em fotos específicas."
 category: hiding
 order: 4
@@ -105,6 +105,6 @@ Seja qual for o bloqueio escolhido, uma cópia protegida não adianta se ainda e
 
 ## Onde o Velcrypt se encaixa
 
-O Velcrypt atende à segunda necessidade: um segredo que só você sabe. Em vez de uma senha digitada, você desenha um [padrão](id:pattern-lock) numa grade de 5×5 pontos. Ele precisa passar por pelo menos seis pontos com pelo menos uma mudança de direção, e padrões de oito a doze pontos são recomendados. O Velcrypt não usa Face ID nem Touch ID, então nem o código do seu iPhone nem o seu rosto o abrem.
+O Velcrypt atende à segunda necessidade: um segredo que só você sabe. Em vez de uma senha digitada, você desenha um [padrão](id:pattern-lock) numa grade de 5×5 pontos. Ele precisa passar por pelo menos seis pontos com pelo menos uma mudança de direção, e padrões de oito a doze pontos são recomendados. O código do seu iPhone nunca o abre, e o Face ID ou Touch ID vem desativado: só é usado nos cofres em que você o ativar.
 
 Cada padrão abre o próprio cofre, e as fotos dentro dele são [criptografadas](id:encryption) com AES-256-GCM usando chaves derivadas desse padrão. Como tudo fica no aparelho e fora dos backups, não há como redefinir um padrão esquecido. Se você prefere uma senha que possa recuperar, vale pesar essa limitação com honestidade antes de mover qualquer coisa importante.

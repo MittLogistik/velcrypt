@@ -9,12 +9,12 @@ keyFacts:
   - "Établir un modèle de menace, c’est se demander qui pourrait vouloir ces contenus, ce qu’il peut faire et ce qui arrive s’il les obtient."
   - "La minimisation — garder moins, moins longtemps — est souvent la meilleure protection des sources."
   - "Les métadonnées d’une photo peuvent révéler où, quand et avec quel appareil elle a été prise."
-  - "Velcrypt n’a ni compte, ni serveurs, ni synchronisation ; les coffres s’ouvrent avec un schéma, pas avec Face ID."
+  - "Velcrypt n’a ni compte, ni serveurs, ni synchronisation ; les coffres s’ouvrent avec un schéma, et Face ID est désactivé par défaut."
   - "Un coffre ne protège pas les copies dans iCloud, les messageries, les e-mails ou sur le téléphone de la source."
 primaryKeyword: "journaliste protéger ses sources iphone"
 keywords: ["protection des sources journaliste téléphone", "sécurité numérique journaliste", "protéger les photos d’une source", "documents de sources iphone confidentialité", "modèle de menace journaliste", "sécurité smartphone reporter"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Modèle de menace, minimisation et métadonnées pour les reporters, et la place d’un coffre iPhone chiffré dans la protection des sources."
 group: professional
 schemaType: Article
@@ -63,7 +63,7 @@ Les réponses déterminent vos outils. Surprotéger un sujet à faible risque fa
 
 Velcrypt est une couche de ce dispositif. Il stocke photos, vidéos et documents dans des coffres chiffrés sur votre iPhone, en AES-256-GCM, avec des clés dérivées de votre schéma. Pas de compte, pas de serveur, pas de synchronisation et aucune statistique sur le contenu des coffres : il n’y a donc rien sur un serveur que quiconque pourrait réclamer.
 
-Les coffres s’ouvrent avec un schéma tracé sur une grille 5×5. Velcrypt ne prend volontairement pas en charge Face ID ni Touch ID, car la biométrie peut être utilisée sans votre consentement ; un schéma n’existe que dans votre mémoire. Le raisonnement est détaillé dans [schéma, code PIN ou Face ID](id:pattern-lock-vs-pin-vs-face-id). Chaque schéma ouvre son propre coffre, et un schéma inconnu ouvre un coffre vide sans erreur, ce qui favorise le [déni plausible](id:plausible-deniability-explained). Plusieurs coffres nécessitent Premium. Avec Premium, un [schéma de contrainte](id:duress-pattern) ouvre un coffre leurre et supprime définitivement les autres. Il est conçu pour des situations de sécurité personnelle comme un vol ou des menaces, pas pour supprimer des contenus lorsque les autorités exigent légalement d’y accéder, ce qui peut constituer en soi une infraction ; consultez un avocat si ce risque vous concerne.
+Les coffres s’ouvrent avec un schéma tracé sur une grille 5×5. Face ID et Touch ID sont facultatifs et désactivés par défaut, car la biométrie peut être utilisée sans votre consentement ; un schéma n’existe que dans votre mémoire. Pour un coffre lié à vos sources, laissez Face ID désactivé. Le raisonnement est détaillé dans [schéma, code PIN ou Face ID](id:pattern-lock-vs-pin-vs-face-id). Chaque schéma ouvre son propre coffre, et un schéma inconnu ouvre un coffre vide sans erreur, ce qui favorise le [déni plausible](id:plausible-deniability-explained). Plusieurs coffres nécessitent Premium. Avec Premium, un [schéma de contrainte](id:duress-pattern) ouvre un coffre leurre et supprime définitivement les autres. Il est conçu pour des situations de sécurité personnelle comme un vol ou des menaces, pas pour supprimer des contenus lorsque les autorités exigent légalement d’y accéder, ce qui peut constituer en soi une infraction ; consultez un avocat si ce risque vous concerne.
 
 ## Des limites honnêtes
 

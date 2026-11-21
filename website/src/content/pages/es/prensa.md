@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "kit de prensa velcrypt"
 keywords: ["logo velcrypt", "dossier de prensa velcrypt", "ficha de datos velcrypt", "colores de marca velcrypt"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 schemaType: WebPage
 order: 8
 related: [about, security, features, pricing]
@@ -37,7 +37,7 @@ Velcrypt es una app para iPhone para fotos, vídeos y documentos privados. Los a
 
 ### 100 palabras
 
-Velcrypt es una app nativa para iPhone que guarda fotos, vídeos y documentos privados en bóvedas cifradas en el dispositivo. En lugar de Face ID o un PIN, abres una bóveda dibujando un patrón en una cuadrícula de 5×5 puntos, un secreto que solo existe en tu memoria. Cada patrón es su propia bóveda, y un patrón que la app nunca ha visto abre una vacía, así que nada revela cuántas bóvedas existen. Los archivos se cifran con AES-256-GCM mediante Apple CryptoKit. No hay cuenta, ni servidor, ni rastreo del contenido de las bóvedas. Velcrypt tiene una versión gratuita y una mejora Premium opcional.
+Velcrypt es una app nativa para iPhone que guarda fotos, vídeos y documentos privados en bóvedas cifradas en el dispositivo. En lugar de un PIN, abres una bóveda dibujando un patrón en una cuadrícula de 5×5 puntos, un secreto que solo existe en tu memoria; Face ID es opcional por bóveda. Cada patrón es su propia bóveda, y un patrón que la app nunca ha visto abre una vacía, así que nada revela cuántas bóvedas existen, salvo las que añadas a Face ID. Los archivos se cifran con AES-256-GCM mediante Apple CryptoKit. No hay cuenta, ni servidor, ni rastreo del contenido de las bóvedas. Velcrypt tiene una versión gratuita y una mejora Premium opcional.
 
 ## Ficha de datos
 
@@ -48,11 +48,11 @@ Velcrypt es una app nativa para iPhone que guarda fotos, vídeos y documentos pr
 | Plataforma | iPhone, iOS 17 o posterior |
 | Idiomas | 11 (incluido el español) |
 | Categoría | Privacidad / utilidades: bóveda cifrada de fotos, vídeos y documentos |
-| Modelo de precios | Gratis (1 bóveda, hasta 50 elementos) con Premium opcional: semanal 1,99 US$, anual 19,99 US$ con 3 días de prueba, vitalicio 39,99 US$; los precios varían según el país |
+| Modelo de precios | Gratis (1 bóveda, hasta 50 elementos; una bóveda vacía no cuenta) con Premium opcional: semanal 1,99 US$, anual 19,99 US$ con 3 días de prueba, vitalicio 39,99 US$; los precios varían según el país |
 | Copia de seguridad | Copia de seguridad cifrada en un archivo, gratuita |
 | Editora | Swedish Treats AB, Suecia |
-| Desbloqueo | Patrón en una cuadrícula de 5×5 puntos; sin Face ID ni Touch ID por diseño |
-| Bóvedas | Cada patrón es su propia bóveda; no hay lista de bóvedas |
+| Desbloqueo | Patrón en una cuadrícula de 5×5 puntos; Face ID / Touch ID opcional, desactivado de forma predeterminada (por bóveda) |
+| Bóvedas | Cada patrón es su propia bóveda; no hay lista de bóvedas, salvo la lista opcional de Face ID |
 | Cifrado | AES-256-GCM (Apple CryptoKit); derivación de claves PBKDF2-HMAC-SHA512 |
 | Datos | 100 % en el dispositivo; sin cuenta, sin sincronización en la nube, sin anuncios |
 | Patrón de coacción | Sí (Premium): abre una bóveda señuelo y elimina para siempre las demás bóvedas |

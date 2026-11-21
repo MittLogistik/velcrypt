@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "il mio ragazzo guarda le mie foto"
 keywords: ["partner che guarda il mio telefono", "la mia ragazza controlla il mio telefono", "nascondere foto al partner", "foto private partner iphone", "privacy del telefono nella coppia"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-11-21
 summary: "Limiti sul telefono nella coppia, come le foto vengono viste per caso e come dare a poche immagini private uno spazio tutto loro."
 group: everyday
 schemaType: Article
@@ -62,7 +62,7 @@ Se i controlli sul telefono ti sembrano pretese, sono frequenti o ti spaventano,
 
 Velcrypt conserva foto, video e documenti privati in una cassaforte cifrata sul tuo iPhone, separata dalla libreria di Foto. Dopo che importi una foto e [elimini l'originale](id:delete-original-photos-after-import), non compare più nello scorrimento, nei Ricordi, nei widget o nella ricerca.
 
-La cassaforte si apre con una sequenza che disegni su una griglia 5×5, non con il codice o Face ID. Conoscere il tuo codice non basta ad aprirla. E poiché [ogni sequenza apre la propria cassaforte](id:hidden-vaults), non esiste un elenco di casseforti: una sequenza sconosciuta apre semplicemente una cassaforte vuota, senza errori. Questo ti lascia spazio per la privacy senza trasformare il telefono in una fortezza ben visibile, come spiegato in [negabilità plausibile](id:plausible-deniability-explained).
+La cassaforte si apre con una sequenza che disegni su una griglia 5×5, non con il codice, e Face ID è spento per impostazione predefinita. Conoscere il tuo codice non basta ad aprirla. E poiché [ogni sequenza apre la propria cassaforte](id:hidden-vaults), non esiste un elenco di casseforti, tranne quelle che aggiungi tu all'elenco Face ID: una sequenza sconosciuta apre semplicemente una cassaforte vuota, senza errori. Questo ti lascia spazio per la privacy senza trasformare il telefono in una fortezza ben visibile, come spiegato in [negabilità plausibile](id:plausible-deniability-explained).
 
 Per le foto intime in particolare, [questa guida](id:store-intimate-photos-safely-iphone) spiega l'attenzione in più che meritano.
 

@@ -1,21 +1,21 @@
 ---
 pageId: pattern-lock
 title: "Muster-Sperre fürs iPhone: Tresor per 5×5-Raster öffnen"
-description: "Velcrypt entsperrst du mit einem Muster auf einem 5×5-Punkteraster. Die Regeln, Tipps für ein starkes Muster und warum es kein Face ID gibt."
+description: "Velcrypt entsperrst du mit einem Muster auf einem 5×5-Punkteraster. Die Regeln, Tipps für ein starkes Muster und wie optionales Face ID funktioniert."
 h1: "Muster-Sperre: ein 5×5-Raster, das nur dein Gedächtnis öffnet"
 navTitle: "Muster-Sperre"
-answer: "Velcrypt öffnest du mit einem Muster, das du auf ein 5×5-Punkteraster zeichnest: eine durchgehende Linie über mindestens 6 Punkte mit mindestens einem Richtungswechsel. Empfohlen sind 8–12 Punkte, und Face ID oder Touch ID gibt es bewusst nicht."
+answer: "Velcrypt öffnest du mit einem Muster, das du auf ein 5×5-Punkteraster zeichnest: eine durchgehende Linie über mindestens 6 Punkte mit mindestens einem Richtungswechsel. Empfohlen sind 8–12 Punkte. Face ID oder Touch ID ist optional und standardmäßig aus; du kannst es pro Tresor einschalten, und das Muster öffnet weiterhin jeden Tresor."
 keyFacts:
   - "Entsperren durch eine durchgehende Linie auf einem 5×5-Raster mit 25 Punkten."
   - "Mindestregeln: mindestens 6 Punkte und mindestens ein Richtungswechsel."
   - "Empfohlene Länge: 8–12 Punkte."
-  - "Bewusst kein Face ID oder Touch ID, weil Biometrie erzwungen werden kann."
+  - "Face ID oder Touch ID ist optional, standardmäßig aus und wird pro Tresor eingeschaltet, weil Biometrie erzwungen werden kann."
   - "Dein Muster fließt auch in den Verschlüsselungsschlüssel des Tresors ein."
 primaryKeyword: "muster sperre app iphone"
 keywords: ["foto tresor mit muster", "5x5 muster sperre", "foto tresor ohne face id", "app mit muster entsperren iphone", "sicheres entsperrmuster"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
-summary: "Entsperren per Muster auf einem 5×5-Raster. Mindestens 6 Punkte und ein Knick; 8–12 Punkte empfohlen. Bewusst ohne Face ID."
+dateModified: 2026-11-21
+summary: "Entsperren per Muster auf einem 5×5-Raster. Mindestens 6 Punkte und ein Knick; 8–12 Punkte empfohlen. Face ID ist optional und standardmäßig aus."
 status: available
 schemaType: WebPage
 order: 1
@@ -23,8 +23,8 @@ related: [hidden-vaults, encryption, pattern-strength-checker, pattern-lock-vs-p
 faq:
   - q: "Wie viele Punkte braucht ein Velcrypt-Muster?"
     a: "Mindestens 6 Punkte, gezeichnet als eine durchgehende Linie mit mindestens einem Richtungswechsel. Besser geschützt bist du mit 8–12 Punkten und mehreren Knicks."
-  - q: "Warum hat Velcrypt kein Face ID oder Touch ID?"
-    a: "Gesicht und Fingerabdruck lassen sich ohne deine Zustimmung nutzen, etwa während du schläfst oder festgehalten wirst. Ein Muster existiert nur in deinem Kopf, niemand kann es dir körperlich abnehmen. Velcrypt verzichtet deshalb absichtlich auf Biometrie."
+  - q: "Kann ich Velcrypt mit Face ID oder Touch ID öffnen?"
+    a: "Ja, wenn du es willst. Es ist standardmäßig aus, und du schaltest es pro Tresor in dessen Einstellungen › Face ID ein. Gesicht und Finger lassen sich aber ohne deine Zustimmung nutzen: Wer dich zwingt, aufs Handy zu schauen, kann jeden Tresor in der Face-ID-Liste öffnen. Deinen privatesten Tresor lässt du daher nur beim Muster."
   - q: "Was passiert, wenn ich mein Muster vergesse?"
     a: "Dann lässt sich der Tresor nicht mehr öffnen, weder von dir noch von Velcrypt. Das Muster ist Teil der Schlüsselableitung, und es gibt weder Wiederherstellungsphrase noch Konto zum Zurücksetzen. Wähle ein Muster, das du dir zuverlässig merken kannst."
   - q: "Ist ein 5×5-Muster sicherer als das bekannte 3×3-Handymuster?"
@@ -69,11 +69,13 @@ Ein paar praktische Tipps:
 
 Wenn du eine zweite Meinung willst, liefert der [Musterstärke-Test](id:pattern-strength-checker) eine grobe Bewertung und eine Bit-Schätzung anhand von Länge, Knicks, Kreuzungen und Rasterabdeckung. Das ist eine Heuristik, keine Garantie, und du solltest ein Muster testen, das deinem ähnelt, nicht das echte.
 
-## Warum es kein Face ID oder Touch ID gibt
+## Optionales Face ID, standardmäßig aus
 
-Velcrypt hat keine biometrische Entsperrung, und das ist eine bewusste Entscheidung. Biometrie ist bequem, weil sie immer dabei ist – und genau das ist ihre Schwäche: Ein Gesicht lässt sich vor ein Handy halten und ein Finger ohne dein Einverständnis auf einen Sensor drücken.
+Face ID oder Touch ID kannst du pro Tresor einschalten: Öffne den Tresor mit seinem Muster, geh zu Einstellungen › Face ID und gib dem Tresor einen Namen für die Face-ID-Liste. Das ist kostenlos, kein Premium. Sobald mindestens ein Tresor Face ID nutzt, erscheint auf dem Sperrbildschirm „Mit Face ID entsperren“. Nach erfolgreichem Face ID wählst du einen der Tresore, die du hinzugefügt hast; ist es nur einer, öffnet er sich direkt. Tresore ohne Face ID erscheinen nie in dieser Liste, und das Muster öffnet weiterhin jeden Tresor, auch die mit Face ID.
 
-Ein Muster existiert nur in deinem Kopf. Niemand kann es dir von der Hand nehmen oder dein Handy auf dein Gesicht richten, um es zu bekommen. Bei einem Tresor für deine privatesten Dateien zählt dieser Unterschied mehr als eine gesparte Sekunde beim Entsperren. Die Vor- und Nachteile vergleicht [Muster vs. PIN vs. Face ID](id:pattern-lock-vs-pin-vs-face-id) ausführlicher.
+Einen Ausweich-Code gibt es nicht: Dein iPhone-Code kann Face ID in Velcrypt nicht ersetzen. Die Face-ID-Kopie des Tresorschlüssels bleibt nur auf diesem Gerät im Schlüsselbund, nicht in iCloud und nicht in Backups, und sie ist an die Gesichter und Fingerabdrücke gebunden, die beim Einschalten registriert waren. Fügst du ein Gesicht oder einen Finger hinzu oder setzt Face ID zurück, schaltet sich Face ID für diese Tresore aus; du schaltest es wieder ein, nachdem du den Tresor mit seinem Muster geöffnet hast.
+
+Warum standardmäßig aus? Biometrie ist bequem, weil sie immer dabei ist – und genau das ist ihre Schwäche: Ein Gesicht lässt sich vor ein Handy halten und ein Finger ohne dein Einverständnis auf einen Sensor drücken. Wer dich dazu bringt, aufs Handy zu schauen, kann jeden Tresor in der Face-ID-Liste sehen und öffnen. Ein Muster existiert dagegen nur in deinem Kopf. Nutze Face ID also gern für Alltagstresore und lass deinen privatesten Tresor nur beim Muster. Das [Notfallmuster](id:duress-pattern) funktioniert nur über Muster; die Face-ID-Liste löst es nicht aus. Die Vor- und Nachteile vergleicht [Muster vs. PIN vs. Face ID](id:pattern-lock-vs-pin-vs-face-id) ausführlicher.
 
 ## Dein Muster und der Verschlüsselungsschlüssel
 

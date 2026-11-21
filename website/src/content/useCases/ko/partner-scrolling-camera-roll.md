@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "애인이 내 폰 사진 볼 때"
 keywords: ["남자친구가 내 사진첩 봄", "여자친구가 내 폰 검사", "연인에게 사진 숨기기 아이폰", "애인 몰래 사진 숨기기", "연애 중 휴대폰 사생활"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-11-21
 summary: "연애 중 휴대폰의 경계, 사진이 우연히 보이게 되는 경로, 그리고 몇 장의 개인 사진을 위한 별도의 공간."
 group: everyday
 schemaType: Article
@@ -62,7 +62,7 @@ faq:
 
 Velcrypt는 개인 사진, 동영상, 문서를 사진 보관함과 분리된 iPhone 안의 암호화된 금고에 보관합니다. 사진을 가져오고 [원본을 삭제](id:delete-original-photos-after-import)하면, 더 이상 스와이프 넘겨 보기, 추억, 위젯, 검색에 나타나지 않습니다.
 
-금고는 암호나 Face ID가 아니라 5×5 그리드에 그리는 패턴으로 열립니다. 암호를 안다고 해서 열 수 없습니다. 또한 [패턴마다 각자의 금고가 열리므로](id:hidden-vaults) 금고 목록이 없습니다. 처음 보는 패턴은 오류 없이 빈 금고를 열 뿐입니다. [그럴듯한 부인 가능성](id:plausible-deniability-explained)에서 설명하듯, 휴대폰을 눈에 띄는 요새로 만들지 않고도 사생활을 지킬 여지가 생깁니다.
+금고는 암호가 아니라 5×5 그리드에 그리는 패턴으로 열립니다. 암호를 안다고 해서 열 수 없습니다. Face ID는 직접 켠 금고에서만 쓰이므로, 상대가 볼까 걱정되는 금고는 패턴만으로 두세요. 또한 [패턴마다 각자의 금고가 열리므로](id:hidden-vaults) 직접 Face ID를 켠 금고 외에는 금고 목록이 없습니다. 처음 보는 패턴은 오류 없이 빈 금고를 열 뿐입니다. [그럴듯한 부인 가능성](id:plausible-deniability-explained)에서 설명하듯, 휴대폰을 눈에 띄는 요새로 만들지 않고도 사생활을 지킬 여지가 생깁니다.
 
 특히 사적인 사진에 대해서는 [이 가이드](id:store-intimate-photos-safely-iphone)에서 필요한 추가 주의 사항을 다룹니다.
 

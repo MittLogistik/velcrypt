@@ -8,13 +8,13 @@ answer: "Plausible deniability in encryption means that, even after you unlock s
 keyFacts:
   - "Plausible deniability is about what can be proven, not about hiding that an app or encrypted data exists."
   - "Disk-encryption tools pioneered the idea with hidden volumes inside ordinary encrypted volumes."
-  - "In Velcrypt, any unknown pattern opens an empty vault, with no error and no list of vaults."
+  - "In Velcrypt, any unknown pattern opens an empty vault, with no error and no list of vaults beyond the optional Face ID list."
   - "Storage size and forensic analysis can show that encrypted data exists, even if it can’t be read."
   - "Deniability protects against snooping and informal pressure; it is not a legal shield."
 primaryKeyword: "plausible deniability encryption"
 keywords: ["what is plausible deniability", "deniable encryption", "hidden volume explained", "plausible deniability photo vault", "deniable vault iphone"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "The concept behind hidden volumes and decoy vaults, how Velcrypt’s unknown-pattern design uses it, and what it honestly can’t do."
 category: security
 order: 42
@@ -55,7 +55,7 @@ Over the years, the same researchers and practitioners have documented the limit
 Velcrypt adapts the principle to a photo and document vault on iPhone. There is no outer and inner volume; instead:
 
 - **Every pattern is its own vault.** Each vault has its own random 256-bit master key, unlocked by a key derived from that pattern.
-- **There is no list of vaults.** The app keeps nothing that enumerates how many vaults exist.
+- **There is no list of vaults.** The app keeps nothing that enumerates how many vaults exist, except the optional Face ID list, which holds only the vaults you deliberately add.
 - **Unknown patterns open an empty vault.** Draw a pattern Velcrypt has never seen and you land in a new, empty vault. There is no “wrong pattern” message.
 
 The consequence is that a wrong pattern and a valid-but-empty vault look identical. If you open a vault for someone, there is nothing in the interface that shows other vaults exist. That makes a [decoy vault](id:what-is-a-decoy-vault) a natural pattern of use rather than a special mode. The [hidden vaults](id:hidden-vaults) feature page shows how it works in practice.

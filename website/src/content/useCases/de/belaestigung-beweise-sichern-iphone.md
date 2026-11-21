@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "beweise belästigung sichern iphone"
 keywords: ["screenshots belästigung privat aufbewahren", "beweise auf dem iphone speichern", "beweise häusliche gewalt handy", "screenshots vor täter verstecken", "belästigung beweise sicherheit"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Ein behutsamer Ansatz mit Sicherheit zuerst: Screenshots und Fotos von Belästigung privat, unverändert und an einem sicheren Ort gesichert aufbewahren."
 group: sensitive
 schemaType: Article
@@ -64,7 +64,7 @@ Beweise, die verloren gehen können, nützen wenig. Handys gehen kaputt, werden 
 
 Velcrypt kann eine private Kopie von Screenshots, Fotos und Dokumenten auf deinem iPhone aufbewahren, getrennt von der Fotomediathek. Sobald du die [Originale](id:delete-original-photos-after-import) in Fotos gelöscht und „Zuletzt gelöscht“ geleert hast, erscheinen sie nicht mehr in deiner Mediathek, werden nicht mit einem geteilten Account synchronisiert und tauchen nicht in Rückblicken auf.
 
-Tresore öffnen sich mit einem Muster auf einem 5×5-Raster, nicht mit deinem Gerätecode oder Face ID – deinen Code zu kennen, reicht also nicht. [Jedes Muster öffnet seinen eigenen Tresor](id:hidden-vaults), und ein falsches Muster öffnet ohne Fehler einen leeren Tresor. Nichts auf dem Bildschirm beweist also, dass dein Beweis-Tresor existiert; mehr dazu unter [glaubhafte Abstreitbarkeit](id:plausible-deniability-explained). Die App [sperrt sich automatisch](id:auto-lock), wenn du sie verlässt, und ihre Inhalte sind im App-Umschalter verborgen.
+Tresore öffnen sich mit einem Muster auf einem 5×5-Raster, nicht mit deinem Gerätecode – deinen Code zu kennen, reicht also nicht. Face ID ist standardmäßig aus; lass es für deinen Beweis-Tresor am besten aus. [Jedes Muster öffnet seinen eigenen Tresor](id:hidden-vaults), und ein falsches Muster öffnet ohne Fehler einen leeren Tresor. Nichts auf dem Bildschirm beweist also, dass dein Beweis-Tresor existiert; mehr dazu unter [glaubhafte Abstreitbarkeit](id:plausible-deniability-explained). Die App [sperrt sich automatisch](id:auto-lock), wenn du sie verlässt, und ihre Inhalte sind im App-Umschalter verborgen.
 
 ## Ehrliche Grenzen – bitte lesen
 

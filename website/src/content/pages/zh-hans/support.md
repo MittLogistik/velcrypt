@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "Velcrypt 客服"
 keywords: ["联系 Velcrypt", "Velcrypt 帮助", "Velcrypt 打不开保险箱", "Velcrypt 故障排除", "Velcrypt 邮箱"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 schemaType: ContactPage
 order: 5
 related: [faq, forgot-vault-pattern, auto-lock, security, privacy]
@@ -70,7 +70,11 @@ Velcrypt 的设计使除你之外的任何人——包括我们——都无法�
 
 这是最常见的问题。Velcrypt 没有“图案错误”提示：任何它没见过的图案都只会打开一个新的空保险箱。如果你本来期待看到自己的照片，很可能你画的图案略有不同——多了一个点、漏了一个角，或者起点不同。
 
-先锁定 App，然后慢慢、仔细地再画一次图案。试试你记得的各种相近变体。你原来的保险箱仍然完好无损；空保险箱并不会取代它。
+先锁定 App，然后慢慢、仔细地再画一次图案。试试你记得的各种相近变体。你原来的保险箱仍然完好无损；空保险箱并不会取代它，也不会占用你的免费保险箱名额。想再看一遍原理，可以在保险箱主屏幕、锁定界面或“设置”中重新打开“Velcrypt 的工作方式”。
+
+### 面容 ID 不再可用
+
+面容 ID 默认关闭，需要在每个保险箱内通过“设置”›“面容 ID”单独开启。如果你之后添加了面容或指纹，或者重置了面容 ID，这些保险箱的面容 ID 会自动关闭。用图案打开保险箱，然后在“设置”中重新开启即可。iPhone 密码不能代替面容 ID。
 
 ### App 锁定得太快
 

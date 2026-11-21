@@ -9,12 +9,12 @@ keyFacts:
   - "Private Photo Vault è sviluppata da Legendary Software e usa un blocco con PIN o codice, secondo la sua scheda."
   - "Velcrypt si sblocca con una sequenza su una griglia 5×5; ogni sequenza è una cassaforte separata."
   - "Velcrypt pubblica lo schema di cifratura: AES-256-GCM con derivazione delle chiavi PBKDF2-HMAC-SHA512."
-  - "Velcrypt, per scelta, non scatta foto agli intrusi e non ha Face ID."
+  - "Velcrypt, per scelta, non scatta foto agli intrusi; Face ID è facoltativo e disattivato per impostazione predefinita."
   - "Velcrypt non ha backup cloud: offre un backup cifrato manuale e gratuito, e una sequenza dimenticata non si recupera."
 primaryKeyword: "velcrypt vs private photo vault"
 keywords: ["alternativa a private photo vault", "private photo vault confronto", "private photo vault opinioni", "cassaforte foto password esca", "cassaforte foto con sequenza"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Cassaforte con PIN, esca e rilevamento intrusioni contro una cassaforte cifrata a sequenza e senza account. Confronto neutrale."
 competitor: "Private Photo Vault"
 lastChecked: "ottobre 2026"
@@ -28,7 +28,7 @@ faq:
   - q: "Quale app pubblica più informazioni sulla cifratura?"
     a: "Velcrypt documenta il proprio schema: AES-256-GCM, PBKDF2-HMAC-SHA512 con almeno 600.000 iterazioni, chiavi master per cassaforte e chiavi per file. Per Private Photo Vault consulta la documentazione dello sviluppatore, perché non abbiamo potuto confermare un livello di dettaglio equivalente."
   - q: "Posso usare Face ID con Velcrypt?"
-    a: "No. Velcrypt evita volutamente Face ID e Touch ID perché la biometria può essere usata senza il tuo consenso. Sblocchi disegnando una sequenza che conosci solo tu."
+    a: "Sì, se lo attivi. Face ID è gratuito e disattivato per impostazione predefinita: lo accendi per singola cassaforte da Impostazioni › Face ID. La biometria può essere usata senza il tuo consenso, quindi tieni la cassaforte più privata solo con la sequenza, che apre sempre ogni cassaforte."
 ---
 
 *Ultimo controllo: ottobre 2026. Le caratteristiche dei prodotti cambiano; verifica la scheda di ciascuna app sull’App Store per la versione attuale.*
@@ -51,7 +51,7 @@ Velcrypt è una cassaforte sul dispositivo bloccata da una sequenza. Una sequenz
 | Account richiesto | No | Non dichiarato pubblicamente |
 | Backup cloud | Nessuna sincronizzazione; backup cifrato manuale gratuito in un file | Variabile; controlla la scheda attuale |
 | Metodo di sblocco | Sequenza su griglia 5×5 | PIN / codice |
-| Biometria (Face ID / Touch ID) | Non offerta, per scelta | Variabile |
+| Biometria (Face ID / Touch ID) | Facoltativa, spenta di base (per cassaforte) | Variabile |
 | Esca / più casseforti | Ogni sequenza è una cassaforte a sé (più casseforti con Premium) | Password esca |
 | Sequenza di emergenza | Sì, con il Premium (apre un’esca, elimina le altre casseforti) | Non dichiarato pubblicamente |
 | Report di intrusione | Non offerti | Offerti, secondo la sua scheda |
@@ -82,7 +82,7 @@ Per Private Photo Vault non abbiamo trovato, al momento della stesura, una descr
 ## Quando Private Photo Vault potrebbe fare più al caso tuo
 
 - **Vuoi i report di intrusione.** Se per te è importante sapere che qualcuno ha provato ad aprire la cassaforte, Velcrypt non lo offre.
-- **Preferisci un codice numerico o Face ID.** Alcune persone trovano un PIN più rapido che disegnare una sequenza.
+- **Preferisci un codice numerico.** Alcune persone trovano un PIN più rapido che disegnare una sequenza, e Velcrypt non ha PIN.
 - **Vuoi un’opzione di backup o trasferimento.** Velcrypt offre un backup cifrato manuale in un file, ma nessun trasferimento automatico o cloud.
 - **Ti sei già organizzato.** Spostare una libreria grande richiede impegno; cambiare ha senso solo se le differenze contano per te.
 
@@ -90,7 +90,7 @@ Per Private Photo Vault non abbiamo trovato, al momento della stesura, una descr
 
 ## Quando Velcrypt potrebbe fare più al caso tuo
 
-- **Vuoi casseforti che non si rivelano a vicenda.** Nessun elenco, nessun errore con sequenze sconosciute.
+- **Vuoi casseforti che non si rivelano a vicenda.** Nessun elenco (tranne l’elenco Face ID che scegli tu), nessun errore con sequenze sconosciute.
 - **Non vuoi account né server.** Vedi [offline, senza account](id:offline-no-account).
 - **Vuoi una cifratura documentata.** Algoritmi e gestione delle chiavi sono pubblici.
 - **Vuoi conservare anche documenti.** Velcrypt importa file dall’app File insieme a foto e video.

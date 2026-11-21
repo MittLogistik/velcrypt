@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "velcrypt assistenza"
 keywords: ["contattare velcrypt", "velcrypt aiuto", "velcrypt non apre la cassaforte", "velcrypt problemi", "email velcrypt"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 schemaType: ContactPage
 order: 5
 related: [faq, forgot-vault-pattern, auto-lock, security, privacy]
@@ -67,7 +67,7 @@ Non è una regola che possiamo cambiare su richiesta: è così che funziona la c
 
 È la domanda più frequente. Velcrypt non ha un messaggio di “sequenza errata”: qualsiasi sequenza mai vista prima apre semplicemente una cassaforte nuova e vuota. Se ti aspettavi le tue foto, molto probabilmente hai disegnato una sequenza leggermente diversa: un punto in più, un angolo saltato o un punto di partenza diverso.
 
-Blocca l’app, poi disegna di nuovo la sequenza con calma e attenzione. Prova le varianti simili che ricordi. La tua cassaforte originale è ancora lì, intatta; quella vuota non la sostituisce.
+Blocca l’app, poi disegna di nuovo la sequenza con calma e attenzione. Prova le varianti simili che ricordi. La tua cassaforte originale è ancora lì, intatta; quella vuota non la sostituisce e, finché resta vuota, non consuma la cassaforte della versione gratuita. Se vuoi ripassare le basi, “Come funziona Velcrypt” si riapre in qualsiasi momento dalla schermata di blocco, dalla schermata principale della cassaforte e da Impostazioni.
 
 ### L’app si blocca troppo in fretta
 

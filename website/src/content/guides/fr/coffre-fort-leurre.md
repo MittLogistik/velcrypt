@@ -7,14 +7,14 @@ navTitle: "Qu’est-ce qu’un coffre leurre ?"
 answer: "Un coffre leurre est un second coffre, ouvert avec un autre secret, qui contient un contenu anodin mais plausible. Si quelqu’un vous pousse à ouvrir votre coffre, vous pouvez ouvrir le leurre à la place. Dans Velcrypt, chaque nouveau schéma ouvre son propre coffre : un leurre est donc simplement un second schéma que vous remplissez de photos et de documents ordinaires."
 keyFacts:
   - "Un coffre leurre est un vrai coffre fonctionnel, rempli d’un contenu sans enjeu que vous acceptez de montrer."
-  - "Dans Velcrypt, chaque schéma est son propre coffre et aucune liste de coffres ne trahit les autres."
+  - "Dans Velcrypt, chaque schéma est son propre coffre et aucune liste ne trahit les autres, hormis la liste Face ID que vous choisissez."
   - "Un leurre vide éveille les soupçons ; un leurre vivant, avec des albums et des éléments récents, convainc."
   - "Un leurre protège contre la curiosité et une pression ponctuelle, pas contre une analyse forensique ou quelqu’un qui vous a vu tracer le schéma."
   - "Un leurre nécessite un deuxième coffre, donc Premium ; avec Premium, un schéma de contrainte peut aussi supprimer tous les autres coffres."
 primaryKeyword: "coffre-fort leurre"
 keywords: ["qu’est-ce qu’un coffre leurre", "mot de passe leurre coffre-fort photo", "faux coffre-fort app", "schéma leurre", "second coffre iphone"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Ce qu’est un coffre leurre, comment en créer un qui semble vivant avec un second schéma Velcrypt, et les limites à connaître."
 category: security
 order: 41
@@ -38,7 +38,7 @@ faq:
   - q: "Comment créer un coffre leurre dans Velcrypt ?"
     a: "Tracez un second schéma que vous n’avez jamais utilisé. Velcrypt ouvre un nouveau coffre vide pour lui. Ajoutez un contenu crédible du quotidien, comme des tickets, des captures d’écran et des photos ordinaires : ce schéma ouvre désormais votre leurre."
   - q: "Peut-on savoir qu’un coffre est un leurre ?"
-    a: "Pas depuis l’app : Velcrypt ne tient aucune liste de coffres et ne laisse rien deviner de l’existence d’autres coffres. Ce qui peut trahir un leurre, c’est son contenu, par exemple s’il est vide, figé ou visiblement mis en scène."
+    a: "Pas depuis l’app : Velcrypt ne tient aucune liste de coffres (seuls ceux pour lesquels vous activez Face ID figurent dans la liste Face ID) et ne laisse rien deviner de l’existence d’autres coffres. Ce qui peut trahir un leurre, c’est son contenu, par exemple s’il est vide, figé ou visiblement mis en scène."
   - q: "Un coffre leurre est-il la même chose qu’un schéma de contrainte ?"
     a: "Non. Un leurre ouvre simplement un autre coffre et laisse les autres intacts. Un schéma de contrainte, disponible avec Velcrypt Premium, ouvre le coffre leurre et supprime en même temps, en silence et définitivement, tous les autres coffres de l’iPhone."
   - q: "Faut-il utiliser un coffre leurre face à la police ou aux douaniers ?"
@@ -59,7 +59,7 @@ Ce qui fait fonctionner un leurre, ce n’est pas la technologie mais l’histoi
 
 La plupart des apps traitent le leurre comme un réglage spécial : un vrai code PIN, un faux. Velcrypt adopte une approche plus simple. Chaque schéma est son propre coffre :
 
-- Il n’existe aucune liste de coffres dans l’app.
+- Il n’existe aucune liste de coffres dans l’app, hormis la liste Face ID des coffres que vous y ajoutez.
 - Un schéma que Velcrypt n’a jamais vu ouvre un nouveau coffre vide.
 - Il n’y a pas de message d’erreur « mauvais schéma », et rien ne prouve que d’autres coffres existent.
 
@@ -97,4 +97,4 @@ Un leurre ouvre un autre coffre et laisse tout le reste intact. Un **schéma de 
 
 ## La place de Velcrypt
 
-Velcrypt a été conçu pour que les leurres soient naturels et non ajoutés après coup : chaque schéma est son propre coffre, il n’y a pas de liste de coffres, un schéma inconnu n’affiche aucune erreur, et il n’y a pas de Face ID qui permettrait d’éluder complètement la question. Chaque coffre est chiffré sur votre iPhone en AES-256-GCM avec sa propre clé : le leurre et le vrai coffre sont donc protégés de la même façon, la seule différence étant ce que vous y mettez. La version gratuite comprend un seul coffre : un coffre leurre nécessite donc Premium. Pour en savoir plus, consultez la [présentation de la sécurité](id:security).
+Velcrypt a été conçu pour que les leurres soient naturels et non ajoutés après coup : chaque schéma est son propre coffre, il n’y a pas de liste de coffres, un schéma inconnu n’affiche aucune erreur, et Face ID est désactivé par défaut. Si vous l’activez, faites-le pour le leurre plutôt que pour votre vrai coffre : tout coffre de la liste Face ID peut être ouvert par quiconque vous fait regarder le téléphone. Chaque coffre est chiffré sur votre iPhone en AES-256-GCM avec sa propre clé : le leurre et le vrai coffre sont donc protégés de la même façon, la seule différence étant ce que vous y mettez. La version gratuite comprend un seul coffre : un coffre leurre nécessite donc Premium. Pour en savoir plus, consultez la [présentation de la sécurité](id:security).

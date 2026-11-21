@@ -9,14 +9,14 @@ keyFacts:
   - "Patrón → PBKDF2-HMAC-SHA512, al menos 600.000 iteraciones, sal aleatoria por dispositivo guardada en el llavero de iOS."
   - "Cada bóveda tiene su propia clave maestra aleatoria de 256 bits; las claves por archivo se derivan con HKDF."
   - "Los archivos se cifran con AES-256-GCM mediante Apple CryptoKit, más la Protección de datos de iOS (clase de protección completa)."
-  - "Un patrón desconocido abre una bóveda vacía: no hay lista de bóvedas ni mensaje de «patrón incorrecto»."
+  - "Un patrón desconocido abre una bóveda vacía: no hay lista de bóvedas (salvo una lista opcional de Face ID) ni mensaje de «patrón incorrecto»."
   - "Sin red, sin cuenta y sin analítica sobre el contenido; las bóvedas se excluyen de las copias de iCloud y del ordenador."
   - "La copia de seguridad opcional es un archivo cifrado por bóveda, protegido con una contraseña que tú eliges."
   - "Velcrypt aún no ha pasado una auditoría de seguridad independiente."
 primaryKeyword: "seguridad velcrypt"
 keywords: ["cifrado bóveda de fotos iphone", "cómo funciona el cifrado de velcrypt", "bóveda de fotos aes-256-gcm", "bloqueo con patrón pbkdf2", "modelo de amenazas bóveda de fotos", "app bóveda negación plausible"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 schemaType: WebPage
 order: 1
 related: [encryption, pattern-lock, hidden-vaults, aes-256-encryption-explained, plausible-deniability-explained, forgot-vault-pattern]
@@ -30,7 +30,7 @@ faq:
   - q: "¿Velcrypt ha sido auditada de forma independiente?"
     a: "Todavía no. Velcrypt se basa en CryptoKit de Apple y en algoritmos estándar y muy estudiados. Una revisión de seguridad independiente sería bienvenida, pero hasta ahora no se ha realizado ninguna."
   - q: "¿Velcrypt oculta que uso una bóveda cifrada?"
-    a: "No del todo. La app se ve en tu pantalla de inicio y alguien con herramientas forenses podría saber que Velcrypt guarda datos cifrados y, aproximadamente, cuántos. Lo que Velcrypt oculta es cuántas bóvedas tienes y qué hay dentro."
+    a: "No del todo. La app se ve en tu pantalla de inicio y alguien con herramientas forenses podría saber que Velcrypt guarda datos cifrados y, aproximadamente, cuántos. Lo que Velcrypt oculta es cuántas bóvedas tienes y qué hay dentro, salvo las bóvedas que añadas a la lista opcional de Face ID."
 ---
 
 Esta página explica, en lenguaje claro, qué les ocurre a tus fotos, vídeos y documentos cuando los guardas en Velcrypt, y dónde termina la protección. Está pensada para quien quiere entender el diseño antes de confiarle algo personal.
@@ -77,7 +77,7 @@ Además del cifrado propio de Velcrypt, los archivos de las bóvedas se escriben
 
 La mayoría de las apps comparan tu contraseña con algo guardado (un hash, un verificador, una «respuesta correcta») y luego te dicen *contraseña incorrecta*. Velcrypt evita hacerlo a propósito.
 
-No hay lista de bóvedas ni ningún valor guardado que confirme si un patrón es «correcto». Cuando dibujas un patrón, Velcrypt deriva una clave e intenta abrir la bóveda que le corresponde. Si ninguna coincide, la app simplemente abre una bóveda nueva y vacía para ese patrón. Para quien tiene el teléfono en la mano, un patrón sin usar y una bóveda real pero vacía se ven exactamente igual.
+No hay lista de bóvedas (aparte de la lista opcional de Face ID, que solo contiene las bóvedas que tú añades) ni ningún valor guardado que confirme si un patrón es «correcto». Cuando dibujas un patrón, Velcrypt deriva una clave e intenta abrir la bóveda que le corresponde. Si ninguna coincide, la app simplemente abre una bóveda nueva y vacía para ese patrón. Para quien tiene el teléfono en la mano, un patrón sin usar y una bóveda real pero vacía se ven exactamente igual.
 
 Esto te da **negación plausible**: la posibilidad de afirmar de forma creíble que no hay nada más que ver, porque nada en la app demuestra lo contrario. Puedes tener una bóveda señuelo con fotos normales y otra bóveda aparte para lo que es realmente privado. La página de [bóvedas ocultas](id:hidden-vaults) y nuestras guías sobre [bóvedas señuelo](id:what-is-a-decoy-vault) y [negación plausible](id:plausible-deniability-explained) lo explican con más detalle.
 
@@ -85,9 +85,13 @@ Un efecto práctico: si recuerdas mal tu patrón por un solo punto, llegarás a 
 
 ## Bloqueo y selector de apps
 
-Velcrypt se bloquea automáticamente cuando pasa a segundo plano, tras un retardo que puedes configurar. Al bloquearse, las claves de la bóveda se eliminan de la memoria y hay que volver a dibujar el patrón. El contenido de la bóveda también se oculta en el selector de apps de iOS, así que un vistazo a tus apps recientes no muestra la miniatura de una foto privada. Consulta [bloqueo automático](id:auto-lock) para ver los ajustes.
+Velcrypt se bloquea automáticamente cuando pasa a segundo plano, tras un retardo que puedes configurar. Al bloquearse, las claves de la bóveda se eliminan de la memoria y hay que volver a dibujar el patrón (o usar Face ID, en las bóvedas en las que lo activaste). El contenido de la bóveda también se oculta en el selector de apps de iOS, así que un vistazo a tus apps recientes no muestra la miniatura de una foto privada. Consulta [bloqueo automático](id:auto-lock) para ver los ajustes.
 
-No hay desbloqueo con Face ID ni Touch ID, por diseño. Una cara o un dedo pueden usarse sin tu consentimiento: mientras duermes o bajo presión. Un patrón solo existe en tu memoria.
+### Face ID opcional
+
+Face ID o Touch ID es opcional y viene desactivado en todas las bóvedas. Si lo activas para una bóveda (Ajustes › Face ID, desde dentro de esa bóveda), Velcrypt guarda una copia de la clave de esa bóveda en el llavero del iPhone, solo en este dispositivo (ni en iCloud ni en copias de seguridad), ligada a las caras y huellas registradas en ese momento. El código del iPhone no puede sustituir a Face ID. Si se añade una cara o una huella, o se restablece Face ID, Face ID se desactiva en esas bóvedas hasta que las abras con el patrón y vuelvas a activarlo.
+
+Viene desactivado porque una cara o un dedo pueden usarse sin tu consentimiento (mientras duermes o bajo presión), y quien consiga que mires el teléfono puede ver y abrir todas las bóvedas de la lista de Face ID. Un patrón solo existe en tu memoria, así que deja tu bóveda más privada solo con su patrón. El patrón de coacción funciona solo con patrones; la lista de Face ID no lo activa.
 
 ## Sin red, sin cuenta, copias de seguridad solo si tú las creas
 
@@ -107,7 +111,7 @@ En Ajustes → Copia de seguridad, Velcrypt crea un archivo `.velcrypt` con la b
 |---|---|---|
 | Alguien revisa tu fototeca de Fotos | Sí | Lo que importas y luego borras de Fotos (incluido «Eliminado») solo está en Velcrypt. |
 | Alguien coge tu teléfono desbloqueado y abre Velcrypt | Sí | Necesita tu patrón; uno incorrecto muestra una bóveda vacía. |
-| Alguien intenta demostrar que tienes más bóvedas | En gran medida | No hay lista de bóvedas ni mensaje de «patrón incorrecto»; la app no muestra cuántas bóvedas hay. |
+| Alguien intenta demostrar que tienes más bóvedas | En gran medida | No hay lista de bóvedas ni mensaje de «patrón incorrecto»; la app no muestra cuántas bóvedas hay. Las bóvedas que añades a Face ID son la excepción. |
 | Robo de un iPhone bloqueado | Sí | Protección de datos de iOS más el cifrado AES-256-GCM propio de Velcrypt. |
 | Ataque de fuerza bruta al patrón con archivos extraídos | Ralentizado | PBKDF2 con más de 600.000 iteraciones y sal por dispositivo; un patrón largo marca la diferencia. |
 | Filtración de una cuenta en la nube | Sí | Los datos de las bóvedas no se suben y se excluyen de las copias de iCloud. Si guardas una copia de seguridad en iCloud Drive, sigue cifrada con tu contraseña. |
@@ -123,13 +127,13 @@ En Ajustes → Copia de seguridad, Velcrypt crea un archivo `.velcrypt` con la b
 Toda herramienta de seguridad tiene límites, y conviene que conozcas los de Velcrypt antes de confiar en ella.
 
 - **Mirar por encima del hombro.** Si alguien te ve dibujar el patrón, en persona o con una cámara, puede abrir esa bóveda. Dibújalo donde nadie te vea y piensa en un patrón que no parezca una letra o una forma simple.
-- **Que te obliguen a desbloquearla.** Velcrypt no puede impedir que alguien te coaccione para dibujar un patrón. Una bóveda señuelo puede ayudar y, con Premium, un [patrón de coacción](id:duress-pattern) abre una bóveda señuelo mientras elimina para siempre las demás. Ninguno de los dos puede frenar a alguien que ya conoce tu patrón real, y las bóvedas eliminadas solo se pueden restaurar desde una copia de seguridad que hayas hecho antes.
+- **Que te obliguen a desbloquearla.** Velcrypt no puede impedir que alguien te coaccione para dibujar un patrón, ni que te ponga el teléfono delante de la cara para abrir las bóvedas que añadiste a Face ID. Una bóveda señuelo puede ayudar y, con Premium, un [patrón de coacción](id:duress-pattern) abre una bóveda señuelo mientras elimina para siempre las demás. Ninguno de los dos puede frenar a alguien que ya conoce tu patrón real, y las bóvedas eliminadas solo se pueden restaurar desde una copia de seguridad que hayas hecho antes.
 - **Entregar el teléfono con la bóveda abierta.** Mientras una bóveda está desbloqueada, cualquiera que tenga el teléfono ve lo mismo que tú. Bloquéala antes de dejarle el móvil a nadie.
 - **Dispositivos comprometidos o con jailbreak y malware.** Un software capaz de leer la pantalla, registrar toques o inspeccionar la memoria de las apps en un dispositivo comprometido puede burlar cualquier cifrado a nivel de app.
 - **Capturas de pantalla o fotos de la pantalla.** Velcrypt no puede impedir que otra cámara fotografíe tu pantalla.
 - **Copias en otros lugares.** Importar copia la foto; el original sigue en Fotos hasta que lo borres y después permanece en «Eliminado» unos 30 días. También puede haber copias en Fotos en iCloud, apps de mensajería, el email o el teléfono de otra persona. Sigue la guía para [borrar los originales después de importar](id:delete-original-photos-after-import).
 - **Perder el teléfono u olvidar el patrón.** Sin una copia de seguridad, en ambos casos los datos se pierden. No hay frase de recuperación ni restablecimiento, y tampoco para una contraseña de copia de seguridad olvidada. Consulta [olvidé el patrón de mi bóveda](id:forgot-vault-pattern).
-- **Que se detecte que usas Velcrypt.** El icono de la app es visible y las herramientas forenses podrían ver que Velcrypt guarda datos cifrados y, aproximadamente, cuántos. Velcrypt no pretende ocultar eso, solo el número de bóvedas y su contenido.
+- **Que se detecte que usas Velcrypt.** El icono de la app es visible y las herramientas forenses podrían ver que Velcrypt guarda datos cifrados y, aproximadamente, cuántos. Velcrypt no pretende ocultar eso, solo el número de bóvedas y su contenido, salvo las bóvedas que añades a la lista de Face ID.
 - **Patrones débiles o fáciles de adivinar.** Un patrón corto, o con forma de L, Z o cuadrado, es mucho más fácil de adivinar. Prueba una forma parecida con el [comprobador de solidez de patrones](id:pattern-strength-checker), nunca la real.
 
 ## Revisión independiente

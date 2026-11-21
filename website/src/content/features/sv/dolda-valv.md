@@ -1,32 +1,32 @@
 ---
 pageId: hidden-vaults
 title: "Dolda valv: varje mönster öppnar sitt eget valv"
-description: "I Velcrypt är varje mönster ett eget valv. Det finns ingen valvlista, och ett okänt mönster öppnar ett tomt valv utan felmeddelande. Så fungerar det."
-h1: "Dolda valv: ett mönster, ett valv, ingen lista"
+description: "I Velcrypt är varje mönster ett eget valv. Ingen valvlista utom Face ID-listan du väljer, och ett okänt mönster öppnar ett tomt valv. Så fungerar det."
+h1: "Dolda valv: ett mönster, ett valv, inget som avslöjar fler"
 navTitle: "Dolda valv"
-answer: "I Velcrypt öppnar varje mönster sitt eget krypterade valv. Det finns ingen lista över valv, och ett mönster som appen aldrig sett öppnar helt enkelt ett tomt valv utan felmeddelande. Inget på skärmen bevisar alltså att det finns fler valv."
+answer: "I Velcrypt öppnar varje mönster sitt eget krypterade valv. Det finns ingen lista över valv, utom de valv du själv lägger till i Face ID-listan, och ett mönster som appen aldrig sett öppnar helt enkelt ett tomt valv utan felmeddelande. Inget på skärmen bevisar alltså att det finns fler valv."
 keyFacts:
   - "Varje mönster är ett eget valv med en egen krypteringsnyckel."
-  - "Velcrypt visar aldrig någon lista över valv."
+  - "Velcrypt visar aldrig någon lista över valv, utom de valv du själv har slagit på Face ID för."
   - "Ett okänt mönster öppnar ett tomt valv, utan felmeddelande."
   - "Du kan ha ett lockbetesvalv med vardagligt innehåll."
   - "Gratisversionen har ett valv; fler valv, och därmed ett lockbetesvalv, kräver Premium."
 primaryKeyword: "dolda valv app iphone"
 keywords: ["flera valv fotoapp", "lockbetesvalv iphone", "hemligt valv app", "trovärdig förnekelse fotovalv", "andra dolt valv"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
-summary: "Varje mönster är ett eget valv. Ingen valvlista, inget fel för okända mönster och plats för ett trovärdigt lockbetesvalv."
+dateModified: 2026-11-21
+summary: "Varje mönster är ett eget valv. Ingen valvlista utom den du väljer för Face ID, inget fel för okända mönster, plats för ett lockbetesvalv."
 status: available
 schemaType: WebPage
 order: 2
 related: [pattern-lock, duress-pattern, encryption, what-is-a-decoy-vault, plausible-deniability-explained]
 faq:
   - q: "Hur ser jag alla mina valv i Velcrypt?"
-    a: "Det gör du inte, och det är avsiktligt. Velcrypt har ingen valvlista. Det enda sättet att öppna ett valv är att rita dess mönster, så du får själv hålla reda på dina mönster."
+    a: "Det gör du inte, och det är avsiktligt. Velcrypt har ingen valvlista. Det enda undantaget är Face ID-listan, som bara visar de valv du själv har slagit på Face ID för. Alla andra valv öppnas bara med sitt mönster, så du får själv hålla reda på dina mönster."
   - q: "Vad händer om jag ritar fel mönster?"
     a: "Velcrypt öppnar ett tomt valv för det mönstret i stället för att visa ett fel. Om du lade till filer där skulle mönstret bli ett nytt valv. Väntade du dig dina bilder men ser ingenting har du troligen ritat ett något annorlunda mönster."
   - q: "Kan någon se att jag har mer än ett valv?"
-    a: "Inte i appens gränssnitt. Det finns ingen lista, räknare eller felmeddelande som avslöjar andra valv. Velcrypt kan inte dölja att själva appen är installerad, och kan inte hindra någon från att se dig rita ett mönster."
+    a: "Inte i appens gränssnitt. Det finns ingen lista, räknare eller felmeddelande som avslöjar andra valv. Undantaget är valv du själv har slagit på Face ID för: efter Face ID visas de i en lista, så låt det valv du vill hålla dolt bara ha sitt mönster. Velcrypt kan inte dölja att själva appen är installerad, och kan inte hindra någon från att se dig rita ett mönster."
   - q: "Vad är ett lockbetesvalv?"
     a: "Ett lockbetesvalv är ett valv med vardagligt, trovärdigt innehåll som du kan öppna om du pressas att visa vad som finns i appen. Ditt riktiga valv ligger kvar bakom ett annat mönster. Eftersom det är ett andra valv kräver det Premium."
 howTo:
@@ -48,7 +48,7 @@ De flesta valvappar har ett lösenord och ett låst område, så frågan ”vad 
 
 Ett dolt valv är ett valv vars existens inte kan bekräftas utifrån. I Velcrypt motsvarar varje giltigt mönster på [5×5-rutnätet](id:pattern-lock) ett separat valv med en egen slumpmässig huvudnyckel och egna filer. Mönster A visar bilderna du sparat bakom mönster A. Mönster B visar en helt annan uppsättning.
 
-Det finns ingen inställningsskärm som listar dem, ingen meny för att byta valv och ingen siffra som visar hur många som finns. Inifrån appen ser varje valv ut att vara det enda.
+Det finns ingen inställningsskärm som listar dem, ingen meny för att byta valv och ingen siffra som visar hur många som finns. Inifrån appen ser varje valv ut att vara det enda. Det enda du själv kan välja att visa är Face ID-listan: slår du på Face ID för ett valv visas det där efter lyckad Face ID. Valv utan Face ID visas aldrig.
 
 ## Inget felmeddelande för ett okänt mönster
 
@@ -64,7 +64,7 @@ Det har också en praktisk bieffekt. Ritar du ditt mönster fel hamnar du i ett 
 
 ## Så skapar du ett andra valv
 
-Gratisversionen har ett valv. För att lägga till objekt i ett andra valv behöver du [Premium](id:pricing), som ger andra mönster egna valv.
+Gratisversionen har ett valv. Ett valv räknas som ditt gratisvalv först när det innehåller något, så ett tomt valv som du öppnat med ett annat mönster förbrukar det aldrig. För att lägga till objekt i ett andra valv behöver du [Premium](id:pricing), som ger andra mönster egna valv.
 
 1. **Lås Velcrypt.** Lämna valvet du är i så att mönsterrutnätet visas.
 2. **Rita ett nytt mönster.** Använd ett du inte använt förut och följ de vanliga reglerna: minst 6 punkter och minst ett riktningsbyte.

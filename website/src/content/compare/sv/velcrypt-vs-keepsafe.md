@@ -8,13 +8,13 @@ answer: "Velcrypt håller allt på din iPhone utan konto och låses upp med ett 
 keyFacts:
   - "Velcrypt kräver inget konto, ingen e-post och ingen registrering; Keepsafe använder ett konto enligt sin App Store-sida."
   - "Keepsafe erbjuder valfri molnbackup; Velcrypt lagrar valven bara på din iPhone, med en manuell krypterad säkerhetskopia."
-  - "Velcrypt låses upp med ett mönster på ett 5×5-rutnät och saknar medvetet Face ID och Touch ID."
+  - "Velcrypt låses upp med ett mönster på ett 5×5-rutnät; Face ID och Touch ID är valfria och avstängda som standard."
   - "I Velcrypt öppnar varje mönster ett eget valv, och okända mönster öppnar ett tomt."
   - "Om du glömmer ditt Velcrypt-mönster eller tappar bort telefonen kan valvet inte återställas."
 primaryKeyword: "velcrypt vs keepsafe"
 keywords: ["keepsafe vs velcrypt", "keepsafe jämförelse", "alternativ till keepsafe fotovalv", "fotovalv utan konto", "keepsafe molnbackup"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Lokalt valv utan konto mot ett kontobaserat valv med molnbackup. Var vart och ett passar, sida vid sida."
 competitor: "Keepsafe"
 lastChecked: "oktober 2026"
@@ -51,7 +51,7 @@ Inget av upplägget är bäst för alla. Det ena byter bekvämlighet mot minimal
 | Kräver konto | Inget konto, ingen e-post | Ja, enligt App Store-sidan |
 | Molnbackup | Nej; manuell krypterad säkerhetskopia (gratis) | Valfri ”Private Cloud” med premium |
 | Upplåsning | Mönster på ett 5×5-rutnät | PIN-kod eller lösenkod |
-| Biometri (Face ID / Touch ID) | Erbjuds inte, med avsikt | Stöds, enligt App Store-sidan |
+| Biometri (Face ID / Touch ID) | Valfritt, avstängt som standard (per valv) | Stöds, enligt App Store-sidan |
 | Lockvalv / flera valv | Varje mönster är ett eget valv (fler valv med Premium) | Falsk lock-PIN i premium |
 | Nödmönster | Ja, med Premium (öppnar ett lockbete, raderar de andra valven) | Inte offentligt angivet |
 | Intrångsvarningar | Erbjuds inte | Erbjuds i premium |
@@ -73,7 +73,7 @@ Keepsafe använder en PIN-liknande kod och kan enligt sin App Store-sida använd
 
 <!-- TODO verify -->
 
-Velcrypt använder ett ritat mönster på ett 5×5-rutnät: en sammanhängande linje genom minst sex punkter med minst ett riktningsbyte. Appen hoppar medvetet över Face ID och Touch ID, eftersom ett ansikte eller ett finger kan användas utan ditt samtycke, medan ett mönster bara finns i ditt minne. Jämförelsen [mönsterlås, PIN-kod eller Face ID](id:pattern-lock-vs-pin-vs-face-id) går djupare in på avvägningarna.
+Velcrypt använder ett ritat mönster på ett 5×5-rutnät: en sammanhängande linje genom minst sex punkter med minst ett riktningsbyte. Face ID och Touch ID är valfria och avstängda som standard, eftersom ett ansikte eller ett finger kan användas utan ditt samtycke, medan ett mönster bara finns i ditt minne. Du kan slå på Face ID per valv för bekvämlighetens skull och låta ditt mest privata valv öppnas bara med mönstret. Jämförelsen [mönsterlås, PIN-kod eller Face ID](id:pattern-lock-vs-pin-vs-face-id) går djupare in på avvägningarna.
 
 ## Lockvalv och förnekande
 
@@ -81,13 +81,13 @@ Många valvappar erbjuder en andra, falsk kod som öppnar ett harmlöst valv. Ke
 
 <!-- TODO verify -->
 
-Velcrypts modell är inbyggd i strukturen snarare än ett tillägg. Varje mönster är ett eget valv, det finns ingen valvlista, och ett mönster appen aldrig sett öppnar helt enkelt ett tomt valv utan felmeddelande. Ingenting på skärmen bevisar att andra valv finns. Det är vad [dolda valv](id:hidden-vaults) och [trovärdigt förnekande](id:plausible-deniability-explained) betyder i praktiken. Med Premium går ett [nödmönster](id:duress-pattern) längre: det öppnar ett lockbetesvalv och raderar i tysthet och permanent alla andra valv på iPhonen.
+Velcrypts modell är inbyggd i strukturen snarare än ett tillägg. Varje mönster är ett eget valv, det finns ingen valvlista utöver de valv du själv lägger i Face ID-listan, och ett mönster appen aldrig sett öppnar helt enkelt ett tomt valv utan felmeddelande. Ingenting på skärmen bevisar att andra valv finns. Det är vad [dolda valv](id:hidden-vaults) och [trovärdigt förnekande](id:plausible-deniability-explained) betyder i praktiken. Med Premium går ett [nödmönster](id:duress-pattern) längre: det öppnar ett lockbetesvalv och raderar i tysthet och permanent alla andra valv på iPhonen.
 
 ## När Keepsafe kan passa dig bättre
 
 - **Du vill ha säkerhetskopiering och synk.** Om en förlorad telefon inte får betyda förlorade bilder är en automatisk, kontobaserad molnbackup den enklare lösningen. Velcrypt har bara en manuell krypterad säkerhetskopia som du själv måste komma ihåg att skapa.
 - **Du använder även Android.** Keepsafe finns på mer än en plattform enligt sina butikssidor; Velcrypt finns bara för iPhone.
-- **Du föredrar Face ID.** Om biometrisk bekvämlighet väger tyngre för dig än risken för framtvingad upplåsning erbjuder Velcrypt det medvetet inte.
+- **Du vill ha Face ID med PIN-kod som reserv.** Velcrypt har valfritt Face ID per valv, men iPhonens lösenkod eller en PIN-kod kan inte ersätta det.
 - **Du vill ha intrångsvarningar.** Velcrypt tar inga bilder av inkräktare.
 
 <!-- TODO verify -->
@@ -96,7 +96,7 @@ Velcrypts modell är inbyggd i strukturen snarare än ett tillägg. Varje mönst
 
 - **Du vill inte ha något konto.** Ingenting knyter ditt valv till en e-postadress eller identitet.
 - **Du vill att ingenting lämnar telefonen.** Inga uppladdningar, inga servrar, ingen analys av valvinnehållet.
-- **Du vill kunna förneka.** Separata valv utan lista, där ett okänt mönster inte avslöjar något.
+- **Du vill kunna förneka.** Separata valv utan lista (utom den Face ID-lista du själv väljer), där ett okänt mönster inte avslöjar något.
 - **Du vill ha publicerade kryptodetaljer.** Velcrypt dokumenterar sina algoritmer på [säkerhetssidan](id:security).
 
 Vad du än väljer: kom ihåg att import till ett valv oftast kopierar bilden. Radera originalet i Bilder och töm Nyligen raderade efteråt; stegen finns i [radera originalbilder efter import](id:delete-original-photos-after-import).

@@ -15,13 +15,13 @@ keyFacts:
 primaryKeyword: "velcrypt prezzo"
 keywords: ["velcrypt premium", "velcrypt è gratis", "prezzo app cassaforte foto", "cassaforte foto gratis iphone", "abbonamento velcrypt"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 schemaType: WebPage
 order: 2
 related: [features, duress-pattern, hidden-vaults, security, faq]
 faq:
   - q: "Velcrypt è gratis?"
-    a: "Sì. La versione gratuita offre 1 cassaforte con fino a 50 elementi, la stessa cifratura del Premium e il backup cifrato. Il Premium è facoltativo."
+    a: "Sì. La versione gratuita offre 1 cassaforte con fino a 50 elementi, la stessa cifratura del Premium e il backup cifrato. Una cassaforte vuota non la consuma: conta solo quando contiene almeno un elemento. Il Premium è facoltativo."
   - q: "Quanto costa Velcrypt Premium?"
     a: "In dollari USA: 1,99 $ a settimana, 19,99 $ all’anno con 3 giorni di prova gratuita o 39,99 $ a vita con un acquisto unico. I prezzi variano in base al paese; il prezzo esatto nella tua valuta è indicato nell’App Store prima del pagamento."
   - q: "Come funziona la prova gratuita?"
@@ -51,6 +51,7 @@ Velcrypt è gratuito, con un upgrade Premium facoltativo.
 | Album, visualizzatore, fotocamera nella cassaforte, note sicure, importazione documenti, esportazione sicura | Sì | Sì |
 | Blocco automatico e privacy nel selettore app | Sì | Sì |
 | Backup cifrato | Sì | Sì |
+| Face ID facoltativo (per cassaforte, disattivato per impostazione predefinita) | Sì | Sì |
 | Numero di elementi | Fino a 50 | Illimitato |
 | Numero di casseforti | 1 | Più casseforti (ogni altra sequenza apre la propria cassaforte) |
 | Sequenza di emergenza | — | Sì |
@@ -73,7 +74,7 @@ I prezzi dell’App Store variano in base al paese e alla valuta. Il prezzo esat
 
 La sicurezza non è un livello a pagamento. Ogni cassaforte, gratuita o Premium, usa lo stesso schema descritto nella pagina sul [modello di sicurezza](id:security): chiavi derivate dalla tua sequenza con PBKDF2, una chiave master casuale per ogni cassaforte e cifratura AES-256-GCM tramite Apple CryptoKit. Anche il backup cifrato è gratuito per tutti: in Impostazioni → Backup crei un file `.velcrypt` della cassaforte aperta, protetto da una password di backup scelta da te.
 
-Poiché la versione gratuita ha una sola cassaforte, per le [casseforti nascoste](id:hidden-vaults), dove ogni altra sequenza apre la propria cassaforte (per esempio una cassaforte civetta), serve il Premium.
+Poiché la versione gratuita ha una sola cassaforte, per le [casseforti nascoste](id:hidden-vaults), dove ogni altra sequenza apre la propria cassaforte (per esempio una cassaforte civetta), serve il Premium. Una cassaforte diventa la tua cassaforte gratuita solo quando contiene almeno un elemento, quindi una cassaforte vuota, per esempio aperta per sbaglio con una sequenza diversa, non la consuma mai.
 
 In nessuna versione c’è un account. Non ti registri, non fornisci un indirizzo email e i contenuti delle casseforti lasciano il tuo iPhone solo se sei tu a creare un backup o un’esportazione.
 

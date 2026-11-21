@@ -9,12 +9,12 @@ keyFacts:
   - "Private Photo Vault wordt gemaakt door Legendary Software en gebruikt volgens de vermelding een pincode- of toegangscodeslot."
   - "Velcrypt ontgrendelt met een patroon op een raster van 5×5; elk patroon is een aparte kluis."
   - "Velcrypt publiceert zijn versleutelingsontwerp: AES-256-GCM met sleutelafleiding via PBKDF2-HMAC-SHA512."
-  - "Velcrypt maakt bewust geen inbraakfoto’s en heeft geen Face ID."
+  - "Velcrypt maakt bewust geen inbraakfoto’s; Face ID is optioneel en staat standaard uit."
   - "Velcrypt heeft een gratis versleuteld back-upbestand, maar een vergeten patroon is niet te herstellen."
 primaryKeyword: "velcrypt vs private photo vault"
 keywords: ["private photo vault alternatief", "private photo vault vergelijking", "private photo vault vs", "fotokluis lokwachtwoord", "fotokluis met patroon"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Een kluis met pincode, lok- en inbraakfuncties tegenover een versleutelde patroonkluis zonder account. Neutraal naast elkaar gezet."
 competitor: "Private Photo Vault"
 lastChecked: "oktober 2026"
@@ -28,7 +28,7 @@ faq:
   - q: "Welke app publiceert meer over zijn versleuteling?"
     a: "Velcrypt documenteert zijn ontwerp: AES-256-GCM, PBKDF2-HMAC-SHA512 met minstens 600.000 iteraties, een hoofdsleutel per kluis en een sleutel per bestand. Kijk voor Private Photo Vault in de eigen documentatie van de ontwikkelaar, want vergelijkbare details konden we niet bevestigen."
   - q: "Kan ik Face ID gebruiken met Velcrypt?"
-    a: "Nee. Velcrypt vermijdt Face ID en Touch ID bewust, omdat biometrie zonder je toestemming kan worden gebruikt. Je ontgrendelt door een patroon te tekenen dat alleen jij kent."
+    a: "Ja, als je het zelf aanzet. Face ID en Touch ID staan standaard uit, omdat biometrie zonder je toestemming kan worden gebruikt. Je zet Face ID per kluis aan via Instellingen › Face ID; het patroon blijft elke kluis openen."
 ---
 
 *Laatst gecontroleerd: oktober 2026. Productdetails veranderen; bekijk de App Store-vermelding van elke app voor de actuele versie.*
@@ -41,7 +41,7 @@ Private Photo Vault, van Legendary Software, is een kluis-app die je met een pin
 
 <!-- TODO verify -->
 
-Velcrypt is een kluis op het apparaat die je met een patroon vergrendelt. Een patroon is een doorlopende lijn door minstens zes stippen op een raster van 5×5, met minstens één richtingsverandering. Elk afzonderlijk patroon levert een eigen versleutelingssleutel op en opent een eigen kluis. Er is geen account, geen cloud en nergens in de app een lijst van kluizen.
+Velcrypt is een kluis op het apparaat die je met een patroon vergrendelt. Een patroon is een doorlopende lijn door minstens zes stippen op een raster van 5×5, met minstens één richtingsverandering. Elk afzonderlijk patroon levert een eigen versleutelingssleutel op en opent een eigen kluis. Er is geen account, geen cloud en nergens in de app een lijst van kluizen, behalve de kluizen die je zelf aan de Face ID-lijst toevoegt.
 
 ## Functies vergeleken
 
@@ -51,7 +51,7 @@ Velcrypt is een kluis op het apparaat die je met een patroon vergrendelt. Een pa
 | Account nodig | Nee | Niet openbaar vermeld |
 | Cloudback-up | Geen automatische; gratis versleuteld back-upbestand dat je zelf bewaart | Verschilt; check de actuele vermelding |
 | Ontgrendelen | Patroon op een raster van 5×5 | Pincode / toegangscode |
-| Biometrie (Face ID / Touch ID) | Bewust niet aangeboden | Verschilt |
+| Biometrie (Face ID / Touch ID) | Optioneel, standaard uit (per kluis) | Verschilt |
 | Lokkluis / meerdere kluizen | Elk patroon is een eigen kluis (tweede kluis met Premium) | Lokwachtwoord |
 | Dwangpatroon | Ja, met Premium (opent een lokkluis, verwijdert de andere kluizen) | Niet openbaar vermeld |
 | Inbraakrapporten | Niet aangeboden | Aangeboden, volgens de vermelding |
@@ -82,7 +82,7 @@ Voor Private Photo Vault konden we op het moment van schrijven geen vergelijkbar
 ## Wanneer Private Photo Vault misschien beter bij je past
 
 - **Je wilt inbraakrapporten.** Wil je weten of iemand je kluis probeerde te openen, dan biedt Velcrypt dat niet.
-- **Je hebt liever een cijfercode of Face ID.** Sommige mensen vinden een pincode sneller dan een patroon tekenen.
+- **Je hebt liever een cijfercode.** Sommige mensen vinden een pincode sneller dan een patroon tekenen. (Face ID kan in Velcrypt wel, als je het per kluis aanzet.)
 - **Je wilt een automatische back-up of cloudsynchronisatie.** Biedt de versie die je gebruikt er een, dan is dat iets wat Velcrypt niet heeft; Velcrypt werkt met een handmatig back-upbestand.
 - **Je zit er al goed.** Een grote bibliotheek verhuizen kost moeite; overstappen heeft alleen zin als de verschillen voor jou tellen.
 
@@ -90,7 +90,7 @@ Voor Private Photo Vault konden we op het moment van schrijven geen vergelijkbar
 
 ## Wanneer Velcrypt misschien beter bij je past
 
-- **Je wilt kluizen die elkaar niet verraden.** Geen kluizenlijst, geen foutmelding bij onbekende patronen.
+- **Je wilt kluizen die elkaar niet verraden.** Geen kluizenlijst (tenzij je zelf een Face ID-lijst maakt), geen foutmelding bij onbekende patronen.
 - **Je wilt geen account en geen servers.** Zie [offline, zonder account](id:offline-no-account).
 - **Je wilt gedocumenteerde versleuteling.** De algoritmen en de omgang met sleutels zijn openbaar.
 - **Je wilt ook documenten bewaren.** Velcrypt importeert bestanden uit de app Bestanden, naast foto’s en video’s.

@@ -9,12 +9,12 @@ keyFacts:
   - "Private Photo Vault est édité par Legendary Software et utilise un verrou par code PIN ou code d’accès, d’après sa fiche."
   - "Velcrypt se déverrouille avec un motif sur une grille 5×5 ; chaque motif est un coffre distinct."
   - "Velcrypt publie la conception de son chiffrement : AES-256-GCM avec dérivation de clé PBKDF2-HMAC-SHA512."
-  - "Velcrypt n’a ni photos d’intrus ni Face ID, par choix."
+  - "Velcrypt ne prend pas de photos d’intrus ; Face ID y est facultatif et désactivé par défaut."
   - "Velcrypt n’a pas de sauvegarde cloud, mais une sauvegarde chiffrée manuelle et gratuite ; un motif oublié reste irrécupérable."
 primaryKeyword: "velcrypt vs private photo vault"
 keywords: ["alternative à private photo vault", "comparatif private photo vault", "private photo vault avis", "coffre-fort photo mot de passe leurre", "coffre-fort photo verrouillage par motif"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Un coffre à code PIN avec leurre et rapports d’intrusion face à un coffre chiffré par motif, sans compte. Comparatif neutre."
 competitor: "Private Photo Vault"
 lastChecked: "octobre 2026"
@@ -28,7 +28,7 @@ faq:
   - q: "Quelle app en dit le plus sur son chiffrement ?"
     a: "Velcrypt documente sa conception : AES-256-GCM, PBKDF2-HMAC-SHA512 avec au moins 600 000 itérations, une clé maîtresse par coffre et une clé par fichier. Pour Private Photo Vault, consultez la documentation du développeur : nous n’avons pas pu confirmer un niveau de détail équivalent."
   - q: "Puis-je utiliser Face ID avec Velcrypt ?"
-    a: "Non. Velcrypt évite volontairement Face ID et Touch ID, car la biométrie peut être utilisée sans votre consentement. Vous déverrouillez en traçant un motif que vous seul connaissez."
+    a: "Oui, si vous le souhaitez. Face ID est désactivé par défaut : vous l’activez coffre par coffre dans Réglages › Face ID, à l’intérieur du coffre. Le motif ouvre toujours chaque coffre. Comme la biométrie peut être utilisée sans votre consentement, gardez votre coffre le plus privé sur son seul motif."
 ---
 
 *Dernière vérification : octobre 2026. Les produits évoluent ; consultez la fiche App Store de chaque app pour la version actuelle.*
@@ -51,7 +51,7 @@ Velcrypt est un coffre sur l’appareil verrouillé par motif. Un motif est une 
 | Compte requis | Non | Non indiqué publiquement |
 | Sauvegarde cloud | Non ; sauvegarde chiffrée manuelle et gratuite (fichier protégé par mot de passe) | Variable ; vérifiez la fiche actuelle |
 | Méthode de déverrouillage | Motif sur une grille 5×5 | Code PIN / code d’accès |
-| Biométrie (Face ID / Touch ID) | Non proposée, par choix | Variable |
+| Biométrie (Face ID / Touch ID) | Facultative, désactivée par défaut (par coffre) | Variable |
 | Leurre / plusieurs coffres | Chaque motif est son propre coffre | Mot de passe leurre |
 | Schéma de contrainte | Oui, avec Premium (ouvre un leurre, supprime les autres coffres) | Non indiqué publiquement |
 | Rapports d’intrusion | Non proposés | Proposés, d’après sa fiche |
@@ -82,7 +82,7 @@ Pour Private Photo Vault, nous n’avons pas trouvé de description technique pu
 ## Quand Private Photo Vault peut mieux vous convenir
 
 - **Vous voulez des rapports d’intrusion.** Si savoir que quelqu’un a tenté d’ouvrir votre coffre compte pour vous, Velcrypt ne le propose pas.
-- **Vous préférez un code numérique ou Face ID.** Certaines personnes trouvent un code PIN plus rapide que tracer un motif.
+- **Vous préférez un code numérique.** Certaines personnes trouvent un code PIN plus rapide que tracer un motif. Velcrypt n’a pas de code PIN, mais propose Face ID en option, coffre par coffre.
 - **Vous voulez une option de sauvegarde ou de transfert.** Velcrypt propose une sauvegarde chiffrée manuelle, mais ni sauvegarde cloud automatique ni transfert direct entre appareils.
 - **Vous êtes déjà bien installé.** Déplacer une grande photothèque demande des efforts ; changer n’a de sens que si les différences comptent pour vous.
 
@@ -90,7 +90,7 @@ Pour Private Photo Vault, nous n’avons pas trouvé de description technique pu
 
 ## Quand Velcrypt peut mieux vous convenir
 
-- **Vous voulez des coffres qui ne se trahissent pas entre eux.** Aucune liste de coffres, aucune erreur pour un motif inconnu.
+- **Vous voulez des coffres qui ne se trahissent pas entre eux.** Aucune liste de coffres (hors ceux que vous ajoutez à la liste Face ID), aucune erreur pour un motif inconnu.
 - **Vous ne voulez ni compte ni serveur.** Voir [hors ligne, sans compte](id:offline-no-account).
 - **Vous voulez un chiffrement documenté.** Les algorithmes et la gestion des clés sont publics.
 - **Vous voulez aussi des documents.** Velcrypt importe des fichiers depuis l’app Fichiers, en plus des photos et vidéos.

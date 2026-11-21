@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "intieme foto's veilig bewaren iphone"
 keywords: ["privéfoto's bewaren op iphone", "naaktfoto's veilig verbergen iphone", "veiligheid privéfoto's", "privacy intieme beelden", "privéfoto's veilig houden"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Een respectvol veiligheidsplan in stappen voor intieme foto's op je iPhone, plus wat je doet als iemand dreigt je beelden te delen."
 category: practical
 order: 32
@@ -115,6 +115,6 @@ Ben je jonger dan 18, praat dan meteen met een volwassene die je vertrouwt of me
 
 ## Waar Velcrypt past
 
-Velcrypt is gemaakt voor precies het gat dat het album Verborgen laat: inhoud die op deze iPhone moet blijven, achter een geheim dat alleen jij kent. Foto's en video's die je [in Velcrypt verbergt](id:hide-photos), worden op het apparaat versleuteld met AES-256-GCM, blijven buiten iCloud- en computerback-ups en raken nooit een server van Velcrypt. Elk patroon opent een eigen kluis, er is geen Face ID die iemand kan gebruiken terwijl je slaapt, en inhoud is verborgen in de appkiezer.
+Velcrypt is gemaakt voor precies het gat dat het album Verborgen laat: inhoud die op deze iPhone moet blijven, achter een geheim dat alleen jij kent. Foto's en video's die je [in Velcrypt verbergt](id:hide-photos), worden op het apparaat versleuteld met AES-256-GCM, blijven buiten iCloud- en computerback-ups en raken nooit een server van Velcrypt. Elk patroon opent een eigen kluis, Face ID staat standaard uit, zodat niemand een kluis met alleen een patroon kan openen terwijl je slaapt, en inhoud is verborgen in de appkiezer.
 
 Eerlijke grenzen blijven gelden: Velcrypt kan niet bij kopieën op de telefoon van een ander, kan niet voorkomen dat iemand toekijkt terwijl je je patroon tekent, en een vergeten patroon is niet te herstellen. Is een relatie geëindigd, dan geeft de pagina [na een breuk](id:after-a-breakup) meer ideeën.

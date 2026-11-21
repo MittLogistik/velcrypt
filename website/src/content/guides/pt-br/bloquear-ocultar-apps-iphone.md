@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "bloquear apps iphone"
 keywords: ["ocultar apps iphone", "colocar senha em app iphone", "bloquear app com face id", "bloquear pasta iphone tela de início", "pasta ocultos iphone", "exigir face id app"]
 datePublished: 2026-10-31
-dateModified: 2026-10-31
+dateModified: 2026-11-21
 summary: "Exigir Face ID, a pasta Ocultos e os limites do Tempo de Uso explicados: o que o bloqueio de apps protege e por que pastas não podem ser bloqueadas."
 category: hiding
 order: 66
@@ -114,7 +114,7 @@ Por isso o código funciona como alternativa, e por isso o bloqueio de apps não
 
 ## Onde o Velcrypt se encaixa
 
-O Velcrypt não é um bloqueador de apps; ele não consegue bloquear outros apps. É um cofre para as fotos, os vídeos e os documentos que você tentaria proteger bloqueando o Fotos ou o Arquivos. Você o abre desenhando um [padrão](id:pattern-lock) numa grade de 5×5, e cada padrão abre o próprio cofre criptografado. Não há Face ID, de propósito, e o padrão não tem nada a ver com o código do seu iPhone, então quem sabe o código continua sem abrir seus cofres. Se você quer ter outra resposta pronta quando alguém insistir, os [cofres de fachada](id:hidden-vaults) (Premium) mostram conteúdo inofensivo com outro padrão.
+O Velcrypt não é um bloqueador de apps; ele não consegue bloquear outros apps. É um cofre para as fotos, os vídeos e os documentos que você tentaria proteger bloqueando o Fotos ou o Arquivos. Você o abre desenhando um [padrão](id:pattern-lock) numa grade de 5×5, e cada padrão abre o próprio cofre criptografado. O Face ID é opcional e vem desativado, e o padrão não tem nada a ver com o código do seu iPhone, então quem sabe o código continua sem abrir seus cofres. Se você quer ter outra resposta pronta quando alguém insistir, os [cofres de fachada](id:hidden-vaults) (Premium) mostram conteúdo inofensivo com outro padrão.
 
 O conteúdo é criptografado no aparelho com AES-256-GCM, nada é enviado e não há conta. O cofre [bloqueia automaticamente](id:auto-lock) quando você sai do app. Como os dados do cofre não entram nos backups do iCloud nem do computador, crie um backup criptografado em Ajustes → Backup para tudo o que você não pode perder; um padrão esquecido não pode ser recuperado por ninguém.
 

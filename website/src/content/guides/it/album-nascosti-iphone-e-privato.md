@@ -19,7 +19,7 @@ keywords:
   - "album nascosti face id"
   - "qualcuno può vedere le mie foto nascoste"
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Cosa protegge davvero l’album Nascosti, chi può ancora aprirlo e come cambiano le cose con iCloud e la Protezione avanzata dei dati."
 category: apple
 order: 10
@@ -120,6 +120,6 @@ Se decidi che l’album Nascosti basta per la tua situazione, alcune impostazion
 
 L’album Nascosti è pensato per l’ordine e per una privacy leggera, non per situazioni in cui qualcuno vicino a te conosce il tuo codice o potrebbe costringerti a sbloccare il telefono. In quei casi di solito vuoi uno spazio con un segreto proprio e una crittografia propria.
 
-Velcrypt segue questo approccio. Ogni cassaforte si apre con una sequenza disegnata su una griglia 5×5 invece che con Face ID o il codice del dispositivo, e i contenuti sono cifrati con AES-256-GCM usando chiavi derivate da quella sequenza ([come funziona la crittografia](id:encryption)). Ogni sequenza apre una cassaforte propria e una sequenza sconosciuta apre semplicemente una cassaforte vuota, quindi nulla rivela quante casseforti esistono ([casseforti nascoste](id:hidden-vaults)). Tutto resta sul dispositivo, senza account e senza copia nel cloud.
+Velcrypt segue questo approccio. Ogni cassaforte si apre con una sequenza disegnata su una griglia 5×5, mai con il codice del dispositivo (Face ID entra in gioco solo se lo attivi tu per quella cassaforte), e i contenuti sono cifrati con AES-256-GCM usando chiavi derivate da quella sequenza ([come funziona la crittografia](id:encryption)). Ogni sequenza apre una cassaforte propria e una sequenza sconosciuta apre semplicemente una cassaforte vuota, quindi nulla rivela quante casseforti esistono, a parte quelle che aggiungi tu all’elenco Face ID ([casseforti nascoste](id:hidden-vaults)). Tutto resta sul dispositivo, senza account e senza copia nel cloud.
 
 Questo comporta anche compromessi onesti. I contenuti della cassaforte non sono inclusi nei backup di iCloud o del computer: se dimentichi la sequenza non si possono recuperare, e se perdi il telefono li recuperi solo da un backup cifrato creato da te. E importare una foto la copia, quindi devi comunque rimuovere l’originale da Foto e da Eliminati di recente. Per un confronto diretto, leggi [Velcrypt vs album Nascosti dell’iPhone](id:velcrypt-vs-iphone-hidden-album).

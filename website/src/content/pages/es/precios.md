@@ -16,13 +16,13 @@ keyFacts:
 primaryKeyword: "velcrypt precio"
 keywords: ["velcrypt premium", "velcrypt es gratis", "precio app bóveda de fotos", "bóveda de fotos gratis iphone", "suscripción velcrypt"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 schemaType: WebPage
 order: 2
 related: [features, hidden-vaults, duress-pattern, security, faq]
 faq:
   - q: "¿Velcrypt es gratis?"
-    a: "Sí. La versión gratuita incluye 1 bóveda con hasta 50 elementos, el mismo cifrado que Premium y la copia de seguridad cifrada. Premium es opcional para quien quiera más."
+    a: "Sí. La versión gratuita incluye 1 bóveda con hasta 50 elementos, el mismo cifrado que Premium y la copia de seguridad cifrada. Una bóveda vacía nunca agota tu bóveda gratuita. Premium es opcional para quien quiera más."
   - q: "¿Cuánto cuesta Velcrypt Premium?"
     a: "En dólares estadounidenses: 1,99 US$ a la semana, 19,99 US$ al año (con 3 días de prueba gratuita) o 39,99 US$ en un pago único vitalicio. Los precios del App Store varían según el país, y siempre ves el importe en tu moneda antes de pagar."
   - q: "¿Qué desbloquea Premium?"
@@ -62,7 +62,7 @@ Velcrypt es gratis, con una mejora Premium opcional para quien quiera más.
 | Iconos alternativos de la app | — | Sí |
 | Anuncios | Ninguno | Ninguno |
 
-Con Premium, cada patrón nuevo obtiene su propia bóveda, así que una segunda bóveda (por ejemplo una [bóveda señuelo](id:hidden-vaults)) forma parte de Premium. También el patrón de coacción, que se configura desde dentro de una bóveda señuelo. Los iconos alternativos sustituyen el icono de la pantalla de inicio por diseños como una calculadora, un temporizador o una regla.
+Una bóveda solo cuenta como tu bóveda gratuita cuando contiene al menos un elemento, así que una bóveda vacía, por ejemplo una que abriste por error con otro patrón, nunca la agota. Con Premium, cada patrón nuevo obtiene su propia bóveda, así que una segunda bóveda (por ejemplo una [bóveda señuelo](id:hidden-vaults)) forma parte de Premium. También el patrón de coacción, que se configura desde dentro de una bóveda señuelo. Los iconos alternativos sustituyen el icono de la pantalla de inicio por diseños como una calculadora, un temporizador o una regla.
 
 ## Planes de Premium
 

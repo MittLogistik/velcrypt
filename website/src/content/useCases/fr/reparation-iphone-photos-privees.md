@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "réparation iphone photos privées"
 keywords: ["cacher ses photos avant une réparation", "le réparateur peut-il voir mes photos", "code iphone réparation", "protéger ses données réparation iphone", "confidentialité réparation téléphone"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Ce qu’un réparateur pourrait voir sur votre iPhone, comment vous préparer et pourquoi prévoir la sauvegarde du coffre avant de le confier."
 group: everyday
 schemaType: Article
@@ -59,7 +59,7 @@ La plupart des réparateurs sont des professionnels qui n’ont aucun intérêt 
 
 ## Comment Velcrypt vous aide
 
-Velcrypt conserve photos, vidéos et documents dans des coffres chiffrés sur votre iPhone. Le coffre ne s’ouvre ni avec le code de votre appareil ni avec Face ID : il faut le [schéma que vous tracez sur une grille 5×5](id:pattern-lock). Même si un technicien a votre code et ouvre Velcrypt, tracer autre chose que votre schéma affiche simplement un coffre vide — aucune erreur, aucun indice que d’autres coffres existent.
+Velcrypt conserve photos, vidéos et documents dans des coffres chiffrés sur votre iPhone. Le coffre ne s’ouvre jamais avec le code de votre appareil, et avec Face ID seulement si vous l’avez activé pour lui : sinon, il faut le [schéma que vous tracez sur une grille 5×5](id:pattern-lock). Même si un technicien a votre code et ouvre Velcrypt, tracer autre chose que votre schéma affiche simplement un coffre vide — aucune erreur, aucun indice que d’autres coffres existent.
 
 Les photos importées sont des copies : pensez à [supprimer les originaux](id:delete-original-photos-after-import) et à vider « Suppressions récentes » avant la réparation. Sinon, elles sont toujours dans Photos.
 

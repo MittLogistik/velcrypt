@@ -20,7 +20,7 @@ keywords:
   - "encrypted family photos"
   - "family photo encryption"
 datePublished: 2026-10-31
-dateModified: 2026-10-31
+dateModified: 2026-11-21
 summary: "Who can see, edit and delete what in an iCloud Shared Photo Library, how photos get in automatically, and how to keep private photos out."
 category: apple
 order: 60
@@ -136,7 +136,7 @@ If you're searching for "encrypted family photos", that is the honest answer: th
 
 A Shared Library is built for sharing. For the photos you never want shared, the more reliable approach is to keep them out of the Photos library entirely.
 
-Velcrypt is an iPhone vault for exactly that. Photos, videos and documents you import are encrypted on your iPhone with AES-256-GCM and opened with a pattern drawn on a 5×5 grid, not with the device passcode or Face ID. There is [no account, no server and no sync](id:offline-no-account), and vault data is excluded from iCloud and computer backups, so nothing in a vault can appear in a Shared Library, a shared album or on a family iPad. Each pattern opens its own vault, so you can keep a harmless decoy vault too.
+Velcrypt is an iPhone vault for exactly that. Photos, videos and documents you import are encrypted on your iPhone with AES-256-GCM and opened with a pattern drawn on a 5×5 grid, not with the device passcode (Face ID is optional and off by default). There is [no account, no server and no sync](id:offline-no-account), and vault data is excluded from iCloud and computer backups, so nothing in a vault can appear in a Shared Library, a shared album or on a family iPad. Each pattern opens its own vault, so you can keep a harmless decoy vault too.
 
 Importing creates an encrypted copy; it doesn't remove the original. Delete the original from Photos afterwards and empty Recently Deleted. If the photo was in the Shared Library, move it to your Personal Library first, or delete it there, and remember that only the contributor can permanently remove it from Recently Deleted.
 

@@ -13,7 +13,7 @@ keyFacts:
 primaryKeyword: "foto iphone compaiono su ipad"
 keywords: ["bloccare sincronizzazione foto ipad famiglia", "foto con id apple condiviso", "privacy libreria foto condivisa icloud", "separare foto icloud in famiglia", "foto che compaiono su un altro dispositivo"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Perché le foto dell'iPhone compaiono sull'iPad o sul Mac di famiglia, come sbrogliare account e librerie condivisi e dove tenere le foto private."
 group: everyday
 schemaType: Article
@@ -66,7 +66,7 @@ Foto di iCloud è cifrato, ma per impostazione predefinita le chiavi le ha Apple
 
 Velcrypt segue una strada diversa: conserva foto, video e documenti privati in una cassaforte cifrata solo sul tuo iPhone. Non ci sono [account, server né sincronizzazione](id:offline-no-account), quindi nulla di ciò che metti in una cassaforte può comparire sull'iPad di famiglia, sul Mac o in una Libreria condivisa.
 
-Importare copia una foto nella cassaforte. Per toglierla da tutti i dispositivi sincronizzati, [elimina l'originale](id:delete-original-photos-after-import) da Foto e svuota «Eliminati di recente»; con Foto di iCloud attivo, l'eliminazione si sincronizza anche sugli altri dispositivi. La cassaforte si apre con una sequenza su una griglia 5×5, non con il codice del dispositivo o Face ID.
+Importare copia una foto nella cassaforte. Per toglierla da tutti i dispositivi sincronizzati, [elimina l'originale](id:delete-original-photos-after-import) da Foto e svuota «Eliminati di recente»; con Foto di iCloud attivo, l'eliminazione si sincronizza anche sugli altri dispositivi. La cassaforte si apre con una sequenza su una griglia 5×5, non con il codice del dispositivo; Face ID si usa solo se lo attivi tu per quella cassaforte, e la chiave per Face ID resta solo su questo iPhone.
 
 ## Limiti, detti con onestà
 

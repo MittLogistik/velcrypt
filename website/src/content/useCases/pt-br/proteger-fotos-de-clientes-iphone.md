@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "proteger fotos de clientes iphone"
 keywords: ["guardar fotos de clientes com privacidade", "privacidade de clientes fotógrafo celular", "esconder fotos de trabalho iphone", "privacidade para criadores de conteúdo", "manter conteúdo inédito privado"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Para fotógrafos, artistas e criadores: mantenha trabalhos inéditos e material de clientes privados no iPhone e compartilhe só de propósito."
 group: professional
 schemaType: Article
@@ -63,7 +63,7 @@ Quando você fotografa alguém, guarda uma parte da privacidade dessa pessoa. Bo
 
 O Velcrypt guarda fotos, [vídeos](id:hide-videos) e documentos em cofres criptografados no seu iPhone, sem conta e sem enviar nada. Dentro de um cofre você pode criar [álbuns](id:albums) por projeto ou cliente, usar a seleção múltipla, mover itens entre álbuns e ver fotos e vídeos com zoom e deslize.
 
-Os cofres abrem com um padrão desenhado em uma grade 5×5, não com o código nem com o Face ID. Cada padrão abre o seu próprio cofre, então você pode manter o trabalho de clientes em um cofre, as fotos pessoais em outro e um cofre para mostrar o portfólio só com o que você não se importa que qualquer pessoa veja. Um padrão desconhecido simplesmente abre um cofre vazio.
+Os cofres abrem com um padrão desenhado em uma grade 5×5, não com o código; o Face ID é opcional e vem desativado. Cada padrão abre o seu próprio cofre, então você pode manter o trabalho de clientes em um cofre, as fotos pessoais em outro e um cofre para mostrar o portfólio só com o que você não se importa que qualquer pessoa veja. Um padrão desconhecido simplesmente abre um cofre vazio.
 
 A exportação segura permite tirar um único arquivo quando chega a hora de entregar ou publicar. O app se bloqueia automaticamente quando vai para o segundo plano e oculta o conteúdo no seletor de apps, o que ajuda quando você troca para um app de mensagens no meio de uma conversa.
 

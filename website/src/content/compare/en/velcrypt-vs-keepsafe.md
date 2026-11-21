@@ -8,13 +8,13 @@ answer: "Velcrypt keeps everything on your iPhone with no account and unlocks wi
 keyFacts:
   - "Velcrypt needs no account, email or sign-up; Keepsafe uses an account, according to its listing."
   - "Keepsafe offers an optional cloud backup; Velcrypt keeps vaults on your iPhone, with a manual encrypted backup file."
-  - "Velcrypt unlocks with a pattern on a 5×5 grid and deliberately has no Face ID or Touch ID."
+  - "Velcrypt unlocks with a pattern on a 5×5 grid; Face ID or Touch ID is optional and off by default."
   - "In Velcrypt every pattern opens its own vault, and unknown patterns open an empty one."
   - "A forgotten Velcrypt pattern can’t be recovered; a lost phone can only be covered by your own backup file."
 primaryKeyword: "velcrypt vs keepsafe"
 keywords: ["keepsafe vs velcrypt", "keepsafe comparison", "keepsafe photo vault alternative", "photo vault without account", "keepsafe cloud backup"]
 datePublished: 2026-10-21
-dateModified: 2026-10-31
+dateModified: 2026-11-21
 summary: "Local-only, account-free vault versus an account-based vault with cloud backup. Where each one fits, side by side."
 competitor: "Keepsafe"
 lastChecked: "October 2026"
@@ -51,7 +51,7 @@ Neither approach is universally better. One trades convenience for minimal expos
 | Account required | No account, no email | Yes, according to its listing |
 | Cloud backup | No cloud; optional encrypted backup file you store yourself (free) | Optional “Private Cloud” with premium |
 | Unlock method | Pattern on a 5×5 grid | PIN or passcode |
-| Biometrics (Face ID / Touch ID) | Not offered, by design | Supported, according to its listing |
+| Biometrics (Face ID / Touch ID) | Optional, off by default (per vault) | Supported, according to its listing |
 | Decoy / multiple vaults | Every pattern is its own vault (a second vault needs Premium) | Fake/decoy PIN in premium |
 | Duress pattern | Yes, with Premium (opens a decoy, deletes the other vaults) | Not stated publicly |
 | Break-in alerts | Not offered | Offered in premium |
@@ -73,7 +73,7 @@ Keepsafe uses a PIN-style code and, according to its listing, can use Face ID or
 
 <!-- TODO verify -->
 
-Velcrypt uses a drawn pattern on a 5×5 grid: one continuous line through at least six dots with at least one change of direction. It intentionally skips Face ID and Touch ID, because a face or finger can be used without your consent, while a pattern exists only in your memory. The comparison in [pattern lock vs PIN vs Face ID](id:pattern-lock-vs-pin-vs-face-id) goes deeper on the trade-offs.
+Velcrypt uses a drawn pattern on a 5×5 grid: one continuous line through at least six dots with at least one change of direction. Face ID and Touch ID are optional and off by default: you turn them on per vault, and the pattern still opens every vault. That default is deliberate, because a face or finger can be used without your consent, while a pattern exists only in your memory. The comparison in [pattern lock vs PIN vs Face ID](id:pattern-lock-vs-pin-vs-face-id) goes deeper on the trade-offs.
 
 ## Decoys and deniability
 
@@ -81,13 +81,13 @@ Many vault apps offer a second, fake code that opens a harmless vault. Keepsafe 
 
 <!-- TODO verify -->
 
-Velcrypt’s model is structural rather than an add-on. Every pattern is its own vault, there is no list of vaults, and a pattern the app has never seen simply opens an empty vault with no error. Nothing on screen proves other vaults exist. That is what [hidden vaults](id:hidden-vaults) and [plausible deniability](id:plausible-deniability-explained) mean in practice. With Premium, a [duress pattern](id:duress-pattern) goes further: it opens a decoy vault and silently, permanently deletes every other vault on the iPhone.
+Velcrypt’s model is structural rather than an add-on. Every pattern is its own vault, there is no list of vaults except the ones you deliberately add to the Face ID list, and a pattern the app has never seen simply opens an empty vault with no error. Nothing on screen proves other vaults exist. That is what [hidden vaults](id:hidden-vaults) and [plausible deniability](id:plausible-deniability-explained) mean in practice. With Premium, a [duress pattern](id:duress-pattern) goes further: it opens a decoy vault and silently, permanently deletes every other vault on the iPhone.
 
 ## When Keepsafe may suit you better
 
 - **You want backup and sync.** If losing your phone must not mean losing your photos, an automatic account-based cloud backup is the simpler answer. Velcrypt only offers a manual encrypted backup file.
 - **You use Android too.** Keepsafe is available on more than one platform, according to its store listings; Velcrypt is iPhone-only.
-- **You prefer Face ID.** If biometric convenience matters more to you than the compelled-unlock concern, Velcrypt deliberately won’t offer it.
+- **You prefer a PIN.** Velcrypt always uses a drawn pattern; Face ID is an optional extra per vault, not a replacement for it.
 - **You want break-in alerts.** Velcrypt does not take intruder photos.
 
 <!-- TODO verify -->

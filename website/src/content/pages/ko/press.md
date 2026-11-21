@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "velcrypt 보도 자료"
 keywords: ["velcrypt 로고", "velcrypt 미디어 키트", "velcrypt 팩트 시트", "velcrypt 브랜드 색상"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 schemaType: WebPage
 order: 8
 related: [about, security, features, pricing]
@@ -37,7 +37,7 @@ Velcrypt는 비공개 사진, 동영상, 문서를 위한 iPhone 앱입니다. �
 
 ### 긴 버전
 
-Velcrypt는 비공개 사진, 동영상, 문서를 기기 안의 암호화된 금고에 보관하는 네이티브 iPhone 앱입니다. Face ID나 PIN 대신 5×5 점 격자에 패턴을 그려 금고를 엽니다. 오직 기억 속에만 있는 비밀입니다. 패턴마다 각각의 금고가 되며, 앱이 처음 보는 패턴은 빈 금고를 열기 때문에 금고가 몇 개인지 드러나지 않습니다. 파일은 Apple CryptoKit을 통해 AES-256-GCM으로 암호화됩니다. 계정, 서버, 금고 콘텐츠 추적이 없습니다. Velcrypt는 무료 버전과 선택형 Premium 업그레이드를 제공합니다.
+Velcrypt는 비공개 사진, 동영상, 문서를 기기 안의 암호화된 금고에 보관하는 네이티브 iPhone 앱입니다. PIN 대신 5×5 점 격자에 패턴을 그려 금고를 엽니다. 오직 기억 속에만 있는 비밀입니다. Face ID는 선택 사항이며 기본적으로 꺼져 있고, 원하는 금고에만 켤 수 있습니다. 패턴마다 각각의 금고가 되며, 앱이 처음 보는 패턴은 빈 금고를 열기 때문에 금고가 몇 개인지 드러나지 않습니다. 파일은 Apple CryptoKit을 통해 AES-256-GCM으로 암호화됩니다. 계정, 서버, 금고 콘텐츠 추적이 없습니다. Velcrypt는 무료 버전과 선택형 Premium 업그레이드를 제공합니다.
 
 ## 팩트 시트
 
@@ -49,8 +49,8 @@ Velcrypt는 비공개 사진, 동영상, 문서를 기기 안의 암호화된 �
 | 카테고리 | 개인정보 보호 / 유틸리티 — 암호화 사진·동영상·문서 금고 |
 | 가격 모델 | 무료(금고 1개, 항목 50개) + 선택형 Premium: 주 1.99달러, 연 19.99달러(3일 무료 체험), 평생 39.99달러(USD, 국가마다 다름) |
 | 개발사 | Swedish Treats AB(스웨덴) |
-| 잠금 해제 | 5×5 점 격자 패턴, 설계상 Face ID·Touch ID 없음 |
-| 금고 | 패턴마다 각각의 금고, 금고 목록 없음 |
+| 잠금 해제 | 5×5 점 격자 패턴. Face ID·Touch ID는 선택 사항, 기본값 꺼짐(금고별) |
+| 금고 | 패턴마다 각각의 금고, 금고 목록 없음(직접 Face ID를 켠 금고 제외) |
 | 암호화 | AES-256-GCM(Apple CryptoKit), PBKDF2-HMAC-SHA512 키 파생 |
 | 데이터 | 100% 기기 내 처리, 계정·클라우드 동기화·광고 없음 |
 | 백업 | 무료 수동 암호화 백업 파일(.velcrypt), 사용자가 정한 암호로 보호 |

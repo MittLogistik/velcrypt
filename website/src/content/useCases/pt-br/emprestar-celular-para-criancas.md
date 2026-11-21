@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "esconder fotos das crianças iphone"
 keywords: ["criança mexendo no meu celular", "filho vendo minhas fotos", "acesso guiado para crianças", "tempo de uso para crianças iphone", "emprestar celular para criança com segurança"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Deixe as crianças brincarem no seu iPhone sem que elas cheguem às fotos privadas: Acesso Guiado, Tempo de Uso e um cofre que continua fechado."
 group: everyday
 schemaType: Article
@@ -71,7 +71,7 @@ Tire documentos como passaporte ou receitas do rolo da câmera, revise quais app
 
 O Velcrypt é um cofre privado para fotos, vídeos e documentos que fica inteiramente no seu iPhone. Quando você importa algo, o item é copiado para um cofre criptografado; depois que você [apaga o original](id:delete-original-photos-after-import) (e esvazia Apagados), ele não está mais na biblioteca do Fotos, em Memórias, em widgets nem no seletor de fotos de nenhum app.
 
-O cofre abre quando você desenha um [padrão em uma grade 5×5](id:pattern-lock), não com o código do aparelho nem com o Face ID. Então, mesmo uma criança que sabe o seu código não consegue abri-lo. Se ela abrir o app e desenhar alguma coisa, só vai ver um cofre vazio — sem mensagem de erro e sem nada que sugira que existe mais conteúdo.
+O cofre abre quando você desenha um [padrão em uma grade 5×5](id:pattern-lock), não com o código do aparelho, e o Face ID só funciona nos cofres em que você o ativar. Então, mesmo uma criança que sabe o seu código não consegue abri-lo. Se ela abrir o app e desenhar alguma coisa, só vai ver um cofre vazio — sem mensagem de erro e sem nada que sugira que existe mais conteúdo.
 
 O [bloqueio automático](id:auto-lock) fecha o cofre assim que o app vai para o segundo plano, e o conteúdo fica oculto no seletor de apps. Se você está vendo um documento e entrega o celular, sair do app o bloqueia.
 

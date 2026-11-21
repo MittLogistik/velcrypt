@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "vaultaire vs keepsafe"
 keywords: ["keepsafe vs vaultaire", "vaultaire recension", "alternativ till vaultaire", "alternativ till keepsafe", "jämförelse fotovalv iphone", "bästa fotovalv iphone"]
 datePublished: 2026-10-31
-dateModified: 2026-10-31
+dateModified: 2026-11-21
 summary: "Två populära fotovalv för iPhone sida vid sida: konto, upplåsning, lockvalv, backup, återställning och pris. Plus var Velcrypt passar in."
 competitor: "Vaultaire och Keepsafe"
 lastChecked: "oktober 2026"
@@ -24,7 +24,7 @@ faq:
   - q: "Är Vaultaire bättre än Keepsafe?"
     a: "Det beror på vad du värderar. Vaultaire kräver enligt sin webbplats inget konto, låses upp med ett mönster, stöder flera dolda valv och har krypterad iCloud-backup. Keepsafe använder ett konto, en PIN-kod med valfritt Face ID och ett premiummoln, och finns även för Android. Ingen av dem är bäst för alla."
   - q: "Har Vaultaire Face ID?"
-    a: "Nej. Enligt Vaultaires webbplats saknar appen medvetet Face ID, Touch ID och PIN-kod, eftersom biometri kan användas utan ditt samtycke. Du låser upp genom att rita ett mönster. Velcrypt gör samma val. Keepsafe stöder Face ID enligt sin App Store-sida."
+    a: "Nej. Enligt Vaultaires webbplats saknar appen medvetet Face ID, Touch ID och PIN-kod, eftersom biometri kan användas utan ditt samtycke. Du låser upp genom att rita ett mönster. Velcrypt låses också upp med ett mönster, men där är Face ID valfritt och avstängt som standard. Keepsafe stöder Face ID enligt sin App Store-sida."
   - q: "Vilken app har ett nödläge?"
     a: "Vaultaire erbjuder ett nödvalv i Pro-planen: ritar du det mönstret öppnas lockvalvet och åtkomsten till de andra valven på enheten tas bort. Velcrypt har ett nödmönster med Premium som öppnar ett lockvalv och permanent raderar de andra valven. Keepsafe har en falsk PIN-kod, men vi har inte hittat någon offentlig beskrivning av en nödradering."
   - q: "Vad händer om jag glömmer mitt mönster eller min PIN-kod?"
@@ -49,7 +49,7 @@ Vaultaire och Keepsafe hör till de appar som oftast jämförs när man vill dö
 |---|---|---|---|
 | Kräver konto | Nej | Ja, enligt App Store-sidan | Nej |
 | Upplåsning | Mönster på ett 5×5-rutnät | PIN-kod eller lösenkod | Mönster på ett 5×5-rutnät |
-| Face ID / Touch ID | Erbjuds inte, med avsikt | Stöds, enligt App Store-sidan | Erbjuds inte, med avsikt |
+| Face ID / Touch ID | Erbjuds inte, med avsikt | Stöds, enligt App Store-sidan | Valfritt, avstängt som standard (per valv) |
 | Dolda valv eller lockvalv | Varje mönster öppnar ett eget valv; upp till 3 valv gratis | Falsk PIN-kod (lockvalv) i premium | Varje mönster öppnar ett eget valv; fler än ett valv kräver Premium |
 | Nödläge | Nödvalv med Pro | Inte offentligt angivet | Nödmönster med Premium |
 | Publicerade detaljer om kryptering | Ja: AES-256-GCM, PBKDF2-HMAC-SHA512 | Inte offentligt beskrivet i detalj | Ja: AES-256-GCM, PBKDF2-HMAC-SHA512 (se [kryptering](id:encryption)) |
@@ -80,7 +80,7 @@ Keepsafe använder en PIN-liknande kod och, enligt sin App Store-sida, Face ID e
 
 <!-- TODO verify -->
 
-Vaultaire och Velcrypt använder båda ett mönster som ritas genom punkter på ett 5×5-rutnät, och båda utelämnar Face ID med avsikt. Resonemanget är detsamma: ett ansikte eller ett finger kan användas utan ditt samtycke, medan ett mönster bara finns i ditt minne. Ett 5×5-rutnät har också betydligt fler möjliga vägar än 3×3-rutnätet på Android-telefoner. Avvägningarna förklaras i [mönsterlås, PIN-kod eller Face ID](id:pattern-lock-vs-pin-vs-face-id).
+Vaultaire och Velcrypt använder båda ett mönster som ritas genom punkter på ett 5×5-rutnät. Vaultaire utelämnar enligt sin webbplats Face ID helt; i Velcrypt är Face ID valfritt, avstängt som standard och slås på per valv. Resonemanget bakom är detsamma: ett ansikte eller ett finger kan användas utan ditt samtycke, medan ett mönster bara finns i ditt minne. Därför bör ditt mest privata valv i Velcrypt bara öppnas med sitt mönster. Ett 5×5-rutnät har också betydligt fler möjliga vägar än 3×3-rutnätet på Android-telefoner. Avvägningarna förklaras i [mönsterlås, PIN-kod eller Face ID](id:pattern-lock-vs-pin-vs-face-id).
 
 ## Lockvalv och nödläge
 
@@ -88,7 +88,7 @@ Keepsafe har erbjudit en falsk PIN-kod som öppnar ett harmlöst lockvalv som pr
 
 <!-- TODO verify -->
 
-I Vaultaire och Velcrypt är lockvalv en del av konstruktionen snarare än ett tillägg. Varje mönster öppnar ett eget valv, det finns ingen valvlista, och ett mönster appen aldrig sett öppnar ett tomt valv i stället för ett felmeddelande. Ingenting på skärmen bevisar att andra valv finns; se [dolda valv](id:hidden-vaults).
+I Vaultaire och Velcrypt är lockvalv en del av konstruktionen snarare än ett tillägg. Varje mönster öppnar ett eget valv, det finns ingen valvlista (i Velcrypt med undantag för de valv du själv lägger i Face ID-listan), och ett mönster appen aldrig sett öppnar ett tomt valv i stället för ett felmeddelande. Ingenting på skärmen bevisar att andra valv finns; se [dolda valv](id:hidden-vaults).
 
 Båda har också ett nödalternativ i sina betalplaner, men de fungerar olika:
 

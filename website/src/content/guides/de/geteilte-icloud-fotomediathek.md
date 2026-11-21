@@ -20,7 +20,7 @@ keywords:
   - "geteilte mediathek verlassen"
   - "verschlüsselte familienfotos"
 datePublished: 2026-10-31
-dateModified: 2026-10-31
+dateModified: 2026-11-21
 summary: "Wer in der geteilten iCloud-Fotomediathek was sehen, bearbeiten und löschen kann, wie Fotos automatisch hineinkommen und wie private draußen bleiben."
 category: apple
 order: 60
@@ -138,7 +138,7 @@ Wer nach „verschlüsselten Familienfotos“ sucht, bekommt hier die ehrliche A
 
 Die geteilte Mediathek ist zum Teilen gebaut. Für Fotos, die nie geteilt werden sollen, ist es verlässlicher, sie ganz aus der Fotomediathek herauszunehmen.
 
-Velcrypt ist ein Tresor fürs iPhone, der genau dafür gemacht ist. Importierte Fotos, Videos und Dokumente werden auf dem iPhone mit AES-256-GCM verschlüsselt und mit einem Muster auf einem 5×5-Raster geöffnet, nicht mit dem Gerätecode oder Face ID. Es gibt [kein Konto, keinen Server und keine Synchronisierung](id:offline-no-account), und Tresordaten sind von iCloud- und Computer-Backups ausgeschlossen. Nichts aus einem Tresor kann also in einer geteilten Mediathek, einem geteilten Album oder auf dem Familien-iPad auftauchen. Jedes Muster öffnet seinen eigenen Tresor, sodass du auch einen harmlosen Köder-Tresor anlegen kannst.
+Velcrypt ist ein Tresor fürs iPhone, der genau dafür gemacht ist. Importierte Fotos, Videos und Dokumente werden auf dem iPhone mit AES-256-GCM verschlüsselt und mit einem Muster auf einem 5×5-Raster geöffnet, nicht mit dem Gerätecode (Face ID nur, wenn du es für einen Tresor einschaltest). Es gibt [kein Konto, keinen Server und keine Synchronisierung](id:offline-no-account), und Tresordaten sind von iCloud- und Computer-Backups ausgeschlossen. Nichts aus einem Tresor kann also in einer geteilten Mediathek, einem geteilten Album oder auf dem Familien-iPad auftauchen. Jedes Muster öffnet seinen eigenen Tresor, sodass du auch einen harmlosen Köder-Tresor anlegen kannst.
 
 Der Import legt eine verschlüsselte Kopie an, das Original bleibt. Lösche es danach in „Fotos“ und leere „Zuletzt gelöscht“. Lag das Foto in der geteilten Mediathek, bewege es vorher in deine persönliche Mediathek oder lösche es dort – und denk daran, dass nur die beitragende Person es endgültig aus „Zuletzt gelöscht“ entfernen kann.
 

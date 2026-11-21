@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "salvare prove di molestie iphone"
 keywords: ["tenere privati gli screenshot delle molestie", "conservare prove su iphone", "documentare prove di abusi telefono", "nascondere screenshot a chi maltratta", "sicurezza prove di molestie"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Un approccio attento, con la sicurezza al primo posto, per tenere screenshot e foto di molestie privati, integri e con una copia al sicuro."
 group: sensitive
 schemaType: Article
@@ -64,7 +64,7 @@ Una prova che può andare persa non serve a molto. I telefoni si rompono, vengon
 
 Velcrypt può conservare una copia privata di screenshot, foto e documenti sul tuo iPhone, separata dalla libreria di Foto. Una volta che [elimini gli originali](id:delete-original-photos-after-import) da Foto e svuoti «Eliminati di recente», non compaiono nel rullino, non si sincronizzano su un account condiviso e non spuntano nei Ricordi.
 
-Le casseforti si aprono con una sequenza disegnata su una griglia 5×5, non con il codice del dispositivo o Face ID, quindi conoscere il tuo codice non basta. [Ogni sequenza apre la propria cassaforte](id:hidden-vaults) e una sequenza sbagliata apre una cassaforte vuota senza errori. Questo significa che nulla sullo schermo dimostra che la tua cassaforte con le prove esista, come spiegato in [negabilità plausibile](id:plausible-deniability-explained). L'app [si blocca automaticamente](id:auto-lock) quando esci e i suoi contenuti sono nascosti nel selettore app.
+Le casseforti si aprono con una sequenza disegnata su una griglia 5×5, non con il codice del dispositivo, quindi conoscere il tuo codice non basta. Face ID è spento per impostazione predefinita: per la cassaforte con le prove, lascialo spento. [Ogni sequenza apre la propria cassaforte](id:hidden-vaults) e una sequenza sbagliata apre una cassaforte vuota senza errori. Questo significa che nulla sullo schermo dimostra che la tua cassaforte con le prove esista, come spiegato in [negabilità plausibile](id:plausible-deniability-explained). L'app [si blocca automaticamente](id:auto-lock) quando esci e i suoi contenuti sono nascosti nel selettore app.
 
 ## Limiti, detti con onestà: leggili con attenzione
 

@@ -8,8 +8,8 @@
 | Subtitle | 30 | 26 |
 | Keywords | 100 | 96 |
 | Promotional text | 170 | 168 |
-| Description | 4,000 | 3,149 |
-| What's New | 4,000 | 182 |
+| Description | 4,000 | 3,417 |
+| What's New | 4,000 | 437 |
 
 **Search phrases targeted:** Targets "Foto Tresor", "Fotos verstecken", "Bilder verstecken", "Videos verstecken", "geheime Fotos", "privates Album", "Foto Safe", "Fotos verschlüsseln" and "Galerie sperren".
 
@@ -37,13 +37,13 @@ geheim,privat,album,sicher,verschlüsselt,safe,galerie,versteckt,schützen,sperr
 Muster zeichnen, Tresor öffnen. Jedes Muster hat einen eigenen verschlüsselten Tresor. Kein Konto, keine Cloud: Alles bleibt auf dem iPhone, mit verschlüsseltem Backup.
 ```
 
-## Description (3,149/4,000)
+## Description (3,417/4,000)
 
 ```
 Velcrypt ist ein privater Tresor für Fotos, Videos, Dokumente und Notizen, die niemand sonst sehen soll. Alles wird auf deinem iPhone mit AES-256-GCM verschlüsselt. Kein Konto. Keine Cloud. Kein Tracking.
 
 EIN MUSTER, EIN TRESOR
-Du entsperrst Velcrypt, indem du ein Muster auf ein Raster aus 5×5 Punkten zeichnest. Jedes Muster öffnet einen eigenen, getrennten Tresor, und Velcrypt zeigt nie eine Liste der Tresore. Ein unbekanntes Muster öffnet einfach einen leeren Tresor: keine Fehlermeldung, kein Hinweis darauf, dass es noch mehr gibt.
+Du entsperrst Velcrypt, indem du ein Muster auf ein Raster aus 5×5 Punkten zeichnest. Jedes Muster öffnet einen eigenen, getrennten Tresor, und Velcrypt zeigt nie eine Liste der Tresore, außer den Tresoren, die du selbst für Face ID auswählst. Ein unbekanntes Muster öffnet einfach einen leeren Tresor: keine Fehlermeldung, kein Hinweis darauf, dass es noch mehr gibt.
 
 TÄUSCHUNGSTRESOR (PREMIUM)
 Fülle einen zweiten Tresor mit harmlosen Fotos. Falls dich jemand drängt, die App zu öffnen, zeichnest du einfach dieses Muster.
@@ -57,8 +57,8 @@ VERSCHLÜSSELT AUF DEINEM IPHONE
 • Kein Konto, keine Registrierung, keine Cloud, keine Werbung, kein Tracking
 • Tresordaten sind von iCloud- und Computer-Backups ausgeschlossen
 
-DEIN MUSTER, NICHT DEIN GESICHT
-Velcrypt verzichtet bewusst auf PIN und Face ID. Der Schlüssel steckt in deinem Kopf.
+DEIN MUSTER, FACE ID NUR AUF WUNSCH
+Keine PIN. Face ID ist optional und standardmäßig aus: Schalte es nur für die Tresore ein, die du auswählst. Dein privatester Tresor bleibt beim Muster, und der Schlüssel steckt in deinem Kopf.
 
 ALLES AN EINEM ORT
 • Import aus „Fotos“ oder „Dateien“
@@ -74,7 +74,7 @@ APP TARNEN (PREMIUM)
 Ersetze das Symbol auf dem Home-Bildschirm durch einen Rechner, einen Timer, ein Lineal und mehr.
 
 VELCRYPT PREMIUM
-Die kostenlose Version hat einen Tresor mit bis zu 50 Objekten. Premium bietet unbegrenzt viele Objekte, weitere Tresore, das Notfallmuster und alternative App-Symbole.
+Die kostenlose Version hat einen Tresor mit bis zu 50 Objekten. Ein leerer Tresor zählt nicht: Erst wenn ein Tresor etwas enthält, ist er dein kostenloser Tresor. Premium bietet unbegrenzt viele Objekte, weitere Tresore, das Notfallmuster und alternative App-Symbole.
 • Wähle ein Wochen- oder Jahresabo (das Jahresabo beginnt mit einer kostenlosen Testphase) oder einen einmaligen Kauf auf Lebenszeit.
 • Die Zahlung wird deinem Apple Account belastet. Abos verlängern sich automatisch, sofern sie nicht mindestens 24 Stunden vor Ende des aktuellen Zeitraums gekündigt werden. Verwalte oder kündige sie in den Einstellungen deines Apple Accounts.
 • Nutzungsbedingungen: https://velcrypt.app/terms/
@@ -88,8 +88,11 @@ BITTE BEACHTEN
 Velcrypt. Well Encrypted. Truly Private.
 ```
 
-## What's New (182/4,000)
+## What's New (437/4,000)
 
 ```
-Willkommen bei Velcrypt, unserer ersten Version. Zeichne ein Muster, öffne einen privaten Tresor und bewahre Fotos, Videos, Dokumente und Notizen verschlüsselt auf deinem iPhone auf.
+• Face ID, wenn du willst: Schalte es in den Einstellungen für jeden beliebigen Tresor ein. Standardmäßig ist es aus, und in der Face-ID-Liste erscheinen nur die Tresore, die du auswählst.
+• Eine klarere Einführung in drei Schritten, und „So funktioniert Velcrypt“ ist jederzeit nur einen Tipp entfernt.
+• Erst ausprobieren: Ein leerer Tresor verbraucht deinen kostenlosen Tresor nicht mehr.
+• Kleine Fehlerbehebungen und Verbesserungen.
 ```

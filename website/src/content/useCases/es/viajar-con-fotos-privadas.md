@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "viajar con fotos privadas iphone"
 keywords: ["proteger fotos en un viaje", "me robaron el iphone en el extranjero fotos", "protección en caso de robo viaje", "prestar el móvil en el extranjero privacidad", "consejos de privacidad del móvil para viajar"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Móviles perdidos, prestar el iPhone y controles fronterizos: cómo viajar con fotos y documentos privados sin preocuparte por ellos."
 group: travel
 schemaType: Article
@@ -60,7 +60,7 @@ Cuando viajas, tu móvil pasa por más manos y más lugares que en el día a dí
 
 ## Cómo ayuda Velcrypt
 
-Velcrypt guarda fotos, vídeos y documentos privados en bóvedas cifradas almacenadas solo en tu iPhone. Una bóveda se abre con un patrón que dibujas en una cuadrícula 5×5, no con tu código ni con Face ID. Si un ladrón ha visto tu código, eso por sí solo no abre tu bóveda. Por qué se usa un patrón en lugar de biometría se explica en [patrón vs PIN vs Face ID](id:pattern-lock-vs-pin-vs-face-id).
+Velcrypt guarda fotos, vídeos y documentos privados en bóvedas cifradas almacenadas solo en tu iPhone. Una bóveda se abre con un patrón que dibujas en una cuadrícula 5×5, no con tu código; Face ID solo si lo activas para esa bóveda. Si un ladrón ha visto tu código, eso por sí solo no abre tu bóveda. Por qué Face ID viene desactivado y conviene dejar la bóveda más privada solo con su patrón se explica en [patrón vs PIN vs Face ID](id:pattern-lock-vs-pin-vs-face-id).
 
 Cada patrón abre su propia bóveda, y un patrón desconocido abre una vacía sin ningún error. Con Premium, eso te permite tener una [bóveda señuelo](id:what-is-a-decoy-vault) con fotos inofensivas del viaje y mantener tu bóveda privada detrás de otro patrón. La app también se bloquea automáticamente al pasar a segundo plano, y su contenido se oculta en el selector de apps.
 

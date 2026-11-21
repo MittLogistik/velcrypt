@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "voyager avec des photos privées iphone"
 keywords: ["protéger ses photos en voyage", "iphone volé à l’étranger photos", "protection en cas de vol de l’appareil voyage", "prêter son téléphone à l’étranger", "conseils confidentialité téléphone voyage"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Téléphone perdu, iPhone prêté, contrôles aux frontières : voyager avec vos photos et documents privés sans vous inquiéter."
 group: travel
 schemaType: Article
@@ -58,7 +58,7 @@ En voyage, votre téléphone passe entre plus de mains et par plus d’endroits 
 
 ## Comment Velcrypt vous aide
 
-Velcrypt conserve vos photos, vidéos et documents privés dans des coffres chiffrés stockés uniquement sur votre iPhone. Un coffre s’ouvre avec un schéma tracé sur une grille 5×5 — pas avec votre code ni Face ID. Si un voleur a appris votre code, cela ne suffit pas à ouvrir votre coffre. Pourquoi un schéma plutôt que la biométrie ? C’est expliqué dans [schéma, code PIN ou Face ID](id:pattern-lock-vs-pin-vs-face-id).
+Velcrypt conserve vos photos, vidéos et documents privés dans des coffres chiffrés stockés uniquement sur votre iPhone. Un coffre s’ouvre avec un schéma tracé sur une grille 5×5 — jamais avec votre code, et avec Face ID seulement si vous l’activez pour ce coffre. Si un voleur a appris votre code, cela ne suffit pas à ouvrir votre coffre. Pourquoi Face ID est désactivé par défaut ? C’est expliqué dans [schéma, code PIN ou Face ID](id:pattern-lock-vs-pin-vs-face-id).
 
 Chaque schéma ouvre son propre coffre, et un schéma inconnu ouvre un coffre vide sans la moindre erreur. Avec Premium, vous pouvez ainsi garder un [coffre leurre](id:what-is-a-decoy-vault) avec des photos de voyage anodines, et votre coffre privé derrière un autre schéma. L’app se verrouille aussi automatiquement quand elle passe en arrière-plan, et son contenu est masqué dans le sélecteur d’apps.
 

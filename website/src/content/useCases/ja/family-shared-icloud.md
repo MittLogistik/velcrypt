@@ -13,7 +13,7 @@ keyFacts:
 primaryKeyword: "iPhone 写真 iPad 同期 させない"
 keywords: ["iPhone 写真 iPad に表示される", "家族 iPad 写真 共有 やめる", "Apple ID 共有 写真", "iCloud共有写真ライブラリ プライバシー", "家族 iCloud 写真 分ける"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "iPhoneの写真が家族のiPadやMacに表示される理由、共有アカウントとライブラリの整理方法、そしてプライベートな写真の置き場所。"
 group: everyday
 schemaType: Article
@@ -64,7 +64,7 @@ iCloud写真は暗号化されていますが、デフォルトでは鍵をApple
 
 Velcryptは別のアプローチをとります。プライベートな写真・ビデオ・書類を、あなたのiPhone上の暗号化された保管庫にだけ保存します。[アカウントもサーバーも同期もない](id:offline-no-account)ため、保管庫に入れたものが家族のiPadやMac、共有ライブラリに表示されることはありません。
 
-取り込むと写真は保管庫にコピーされます。同期しているすべてのデバイスから消すには、「写真」から[元の写真を削除](id:delete-original-photos-after-import)し、「最近削除した項目」を空にします。iCloud写真がオンなら、その削除はほかのデバイスにも同期されます。保管庫はデバイスのパスコードやFace IDではなく、5×5のグリッドに描くパターンで開きます。
+取り込むと写真は保管庫にコピーされます。同期しているすべてのデバイスから消すには、「写真」から[元の写真を削除](id:delete-original-photos-after-import)し、「最近削除した項目」を空にします。iCloud写真がオンなら、その削除はほかのデバイスにも同期されます。保管庫はデバイスのパスコードではなく、5×5のグリッドに描くパターンで開きます（Face IDは、その保管庫で自分でオンにした場合にだけ使えます。初期設定はオフです）。
 
 ## 正直にお伝えする限界
 

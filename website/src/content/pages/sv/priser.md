@@ -15,13 +15,13 @@ keyFacts:
 primaryKeyword: "velcrypt pris"
 keywords: ["velcrypt premium", "är velcrypt gratis", "fotovalv app pris", "gratis fotovalv iphone", "velcrypt prenumeration"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 schemaType: WebPage
 order: 2
 related: [features, hidden-vaults, duress-pattern, security, faq, support]
 faq:
   - q: "Är Velcrypt gratis?"
-    a: "Ja. Gratisversionen ger dig ett krypterat valv med upp till 50 objekt, samma kryptering som Premium och krypterad säkerhetskopiering. Premium är en valfri uppgradering för dig som vill ha mer."
+    a: "Ja. Gratisversionen ger dig ett krypterat valv med upp till 50 objekt, samma kryptering som Premium och krypterad säkerhetskopiering. Ett valv räknas som ditt gratisvalv först när det innehåller minst ett objekt, så ett tomt valv förbrukar det aldrig. Premium är en valfri uppgradering för dig som vill ha mer."
   - q: "Vad kostar Velcrypt Premium?"
     a: "I USD kostar Premium 1,99 i veckan, 19,99 om året eller 39,99 som engångsköp för livstid. Årsplanen börjar med 3 dagars gratis provperiod. Priserna varierar mellan länder, och App Store visar ditt pris innan du köper."
   - q: "Vad ingår i Premium?"
@@ -42,7 +42,7 @@ Velcrypt är utformat så att grundlöftet – dina privata filer krypterade på
 
 ## Gratis och Premium
 
-Velcrypt är gratis att ladda ned och använda. Premium är en valfri uppgradering för dig som behöver mer plats, fler valv eller en annan appikon.
+Velcrypt är gratis att ladda ned och använda. Ett valv räknas som ditt gratisvalv först när det innehåller minst ett objekt, så ett tomt valv som du råkat öppna med ett annat mönster förbrukar det aldrig. Premium är en valfri uppgradering för dig som behöver mer plats, fler valv eller en annan appikon.
 
 | | Gratis | Premium |
 |---|---|---|

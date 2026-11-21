@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "해외여행 아이폰 사진 보안"
 keywords: ["여행 중 사진 보호", "해외에서 아이폰 도난 사진", "도난당한 기기 보호 여행", "해외에서 휴대폰 빌려줄 때", "여행 휴대폰 보안 팁"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "분실, 휴대폰 빌려주기, 입국 심사까지: 개인 사진과 문서를 걱정 없이 지니고 여행하는 방법."
 group: travel
 schemaType: Article
@@ -58,7 +58,7 @@ faq:
 
 ## Velcrypt가 도움이 되는 방식
 
-Velcrypt는 개인 사진, 동영상, 문서를 iPhone에만 저장되는 암호화된 금고에 보관합니다. 금고는 암호나 Face ID가 아니라 5×5 그리드에 그리는 패턴으로 열립니다. 도둑이 암호를 알아냈더라도 그것만으로는 금고를 열 수 없습니다. 생체 인증 대신 패턴을 쓰는 이유는 [패턴 vs PIN vs Face ID](id:pattern-lock-vs-pin-vs-face-id)에서 설명합니다.
+Velcrypt는 개인 사진, 동영상, 문서를 iPhone에만 저장되는 암호화된 금고에 보관합니다. 금고는 암호가 아니라 5×5 그리드에 그리는 패턴으로 열립니다. Face ID는 그 금고에 직접 켠 경우에만 쓰입니다(기본값은 꺼짐). 도둑이 암호를 알아냈더라도 그것만으로는 금고를 열 수 없습니다. Face ID가 기본적으로 꺼져 있는 이유는 [패턴 vs PIN vs Face ID](id:pattern-lock-vs-pin-vs-face-id)에서 설명합니다.
 
 패턴마다 각자의 금고가 열리고, 처음 보는 패턴은 오류 없이 빈 금고를 엽니다. 그래서 무해한 여행 사진을 담은 [위장 금고](id:what-is-a-decoy-vault)를 두고, 개인 금고는 다른 패턴 뒤에 둘 수 있습니다. 앱이 백그라운드로 전환되면 자동으로 잠기고, 앱 전환기에서도 내용이 숨겨집니다.
 

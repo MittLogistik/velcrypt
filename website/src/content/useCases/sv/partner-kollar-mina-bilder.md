@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "partner kollar mina bilder i telefonen"
 keywords: ["pojkvän går igenom mina bilder", "flickvän kollar min telefon", "hålla bilder privata för partner iphone", "dölja bilder för partner", "integritet i relationen telefon"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-11-21
 summary: "Gränser för telefonen i en relation, hur bilder syns av misstag och hur du ger några privata bilder en egen plats."
 group: everyday
 schemaType: Article
@@ -62,7 +62,7 @@ Om granskningen av din telefon känns krävande, återkommande eller skrämmande
 
 Velcrypt förvarar privata bilder, videor och dokument i ett krypterat valv i din iPhone, åtskilt från bildbiblioteket. När du importerat en bild och [raderat originalet](id:delete-original-photos-after-import) syns den inte längre när någon sveper, i Minnen, i widgetar eller i sökningen.
 
-Valvet öppnas med ett mönster som du ritar på ett 5×5-rutnät, inte med din lösenkod eller Face ID. Att kunna din lösenkod öppnar det inte. Och eftersom [varje mönster öppnar sitt eget valv](id:hidden-vaults) finns det ingen lista över valv: ett okänt mönster öppnar helt enkelt ett tomt valv utan felmeddelande. Det ger dig utrymme för integritet utan att din telefon blir en synlig fästning, som förklaras i [trovärdig förnekelse](id:plausible-deniability-explained).
+Valvet öppnas med ett mönster som du ritar på ett 5×5-rutnät, inte med din lösenkod, och med Face ID bara om du själv slår på det. Att kunna din lösenkod öppnar det inte. Och eftersom [varje mönster öppnar sitt eget valv](id:hidden-vaults) finns det ingen lista över valv, utom de valv du själv lägger i Face ID-listan: ett okänt mönster öppnar helt enkelt ett tomt valv utan felmeddelande. Det ger dig utrymme för integritet utan att din telefon blir en synlig fästning, som förklaras i [trovärdig förnekelse](id:plausible-deniability-explained).
 
 För just intima bilder tar [den här guiden](id:store-intimate-photos-safely-iphone) upp den extra omsorg de förtjänar.
 

@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "foto’s vergrendelen in notities iphone"
 keywords: ["foto’s verbergen in vergrendelde notitie", "apple notities foto’s vergrendelen", "vergrendelde notities iphone foto’s", "notities app privéfoto’s", "vergrendelde notitie vs kluis-app"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Foto’s verbergen in een vergrendelde notitie tegenover een aparte versleutelde kluis: gemak, capaciteit, synchronisatie en wie ze kan openen."
 competitor: "Vergrendelde notities in Apple Notities"
 lastChecked: "oktober 2026"
@@ -53,7 +53,7 @@ Je kunt foto’s uit je bibliotheek toevoegen, een foto in de notitie zelf maken
 | Account nodig | Nee | Niet voor notities op het apparaat; Apple Account voor iCloud-synchronisatie |
 | Cloudback-up | Geen automatische; gratis versleuteld back-upbestand dat je zelf bewaart | Ja, met Notities in iCloud |
 | Ontgrendelen | Patroon op een raster van 5×5 | Toegangscode van het toestel of apart Notities-wachtwoord |
-| Biometrie | Bewust niet aangeboden | Optioneel Face ID / Touch ID |
+| Biometrie | Optioneel, standaard uit (per kluis) | Optioneel Face ID / Touch ID |
 | Lokkluis / meerdere kluizen | Elk patroon is een eigen kluis (tweede kluis met Premium) | Niet ondersteund; alle vergrendelde notities delen één wachtwoord |
 | Herstel als je de code vergeet | Geen | Optie met toegangscode voorkomt een apart wachtwoord; oude Notities-wachtwoorden zijn niet te herstellen |
 | Dwangpatroon | Ja, met Premium (opent een lokkluis, verwijdert de andere kluizen) | Nee |
@@ -78,7 +78,7 @@ Het andere verschil is het geheim. Vergrendel je notities met de toegangscode va
 - **Je hebt maar een paar items.** Een vergrendelde notitie is simpeler dan iets installeren.
 - **Je wilt synchroniseren tussen iPhone, iPad en Mac.** Velcrypt is alleen voor iPhone en synchroniseert niet.
 - **Je wilt dat herstel vanzelf gaat.** Met iCloud overleven je vergrendelde notities een verloren telefoon zonder dat je zelf een back-up hoeft te maken.
-- **Je houdt van het gemak van Face ID.** Velcrypt biedt dat bewust niet.
+- **Je wilt Face ID voor alles.** In Velcrypt staat Face ID standaard uit en zet je het per kluis aan; Notities maakt het makkelijker om alles achter je gezicht te zetten.
 
 ## Wanneer Velcrypt misschien beter bij je past
 

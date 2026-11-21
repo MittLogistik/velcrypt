@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "velcrypt vanliga frågor"
 keywords: ["velcrypt frågor", "hur fungerar velcrypt", "fotovalv app frågor", "velcrypt mönster hjälp", "velcrypt säkerhetskopia"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 schemaType: FAQPage
 order: 3
 related: [security, pricing, support, pattern-lock, forgot-vault-pattern, hidden-vaults]
@@ -41,15 +41,15 @@ faqGroups:
       - q: "Varför öppnade mitt mönster ett tomt valv?"
         a: "Troligen ritade du ett något annorlunda mönster, och Velcrypt behandlar det som ett annat valv. Försök igen långsamt; appen visar aldrig något meddelande om ”fel mönster”, med avsikt."
       - q: "Kan jag se en lista över mina valv?"
-        a: "Nej. Velcrypt har ingen valvlista, så ingenting i appen avslöjar hur många valv som finns. Du måste själv komma ihåg varje mönster."
+        a: "Nej. Velcrypt har ingen valvlista, så ingenting i appen avslöjar hur många valv som finns. Det enda undantaget är Face ID-listan, som bara visar de valv du själv har slagit på Face ID för. Du måste själv komma ihåg varje mönster."
       - q: "Vad är ett lockvalv?"
         a: "Ett lockvalv är ett vanligt utseende valv med harmlöst innehåll som du kan öppna om du blir pressad, medan ditt privata valv ligger bakom ett annat mönster. Ingenting i Velcrypt bevisar att det andra valvet finns. Eftersom ett lockvalv är ett andra valv kräver det Premium."
       - q: "Vad är nödmönstret?"
         a: "En Premium-funktion som du ställer in under Inställningar → Nödmönster inifrån ett lockbetesvalv. Att rita det på låsskärmen öppnar lockbetet och raderar i tysthet och permanent alla andra valv på iPhonen. Raderade valv kan bara återställas från en krypterad säkerhetskopia som du gjort tidigare."
       - q: "Kan jag ordna objekt i ett valv?"
         a: "Ja. Varje valv kan innehålla album, och du kan markera flera objekt och flytta dem mellan album i samma valv."
-      - q: "Varför använder Velcrypt inte Face ID eller Touch ID?"
-        a: "Det är ett medvetet val. Ett ansikte eller ett finger kan användas utan ditt samtycke, till exempel medan du sover eller under press, medan ett mönster bara finns i ditt minne."
+      - q: "Använder Velcrypt Face ID eller Touch ID?"
+        a: "Bara om du vill. Face ID är avstängt som standard och slås på per valv under Inställningar › Face ID i valvet, gratis. Därefter visas ”Lås upp med Face ID” på låsskärmen, och efter Face ID väljer du bland de valv du har slagit på det för. Ett ansikte kan användas utan ditt samtycke, så låt ditt mest privata valv bara ha sitt mönster."
   - title: "Säkerhet och kryptering"
     items:
       - q: "Hur krypterar Velcrypt mina filer?"
@@ -93,7 +93,7 @@ faqGroups:
   - title: "Priser och tillgänglighet"
     items:
       - q: "Är Velcrypt gratis?"
-        a: "Ja. Gratisversionen har ett valv med upp till 50 objekt. Premium kostar 1,99 USD i veckan, 19,99 USD om året (med 3 dagars gratis provperiod) eller 39,99 USD som engångsköp. Priserna varierar mellan länder och visas i App Store."
+        a: "Ja. Gratisversionen har ett valv med upp till 50 objekt, och ett tomt valv räknas inte som ditt gratisvalv. Premium kostar 1,99 USD i veckan, 19,99 USD om året (med 3 dagars gratis provperiod) eller 39,99 USD som engångsköp. Priserna varierar mellan länder och visas i App Store."
       - q: "Vad ingår i Premium?"
         a: "Obegränsat antal objekt, fler valv (andra mönster får egna valv), nödmönstret och alternativa appikoner. Krypteringen och den krypterade säkerhetskopieringen är desamma i gratisversionen."
       - q: "Var kan jag skaffa Velcrypt?"

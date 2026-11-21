@@ -1,32 +1,32 @@
 ---
 pageId: hidden-vaults
 title: "Cofres ocultos: cada padrão abre o seu próprio cofre"
-description: "No Velcrypt, cada padrão é um cofre separado. Não há lista de cofres, e um padrão desconhecido abre um cofre vazio, sem erro. Veja como funciona."
-h1: "Cofres ocultos: um padrão, um cofre, nenhuma lista"
+description: "No Velcrypt, cada padrão é um cofre separado. Sem lista de cofres, a não ser que você ative o Face ID, e um padrão desconhecido abre um cofre vazio."
+h1: "Cofres ocultos: um padrão, um cofre, nenhuma lista, a menos que você queira"
 navTitle: "Cofres ocultos"
-answer: "No Velcrypt, cada padrão abre o seu próprio cofre criptografado. Não existe lista de cofres, e um padrão que o app nunca viu simplesmente abre um cofre vazio, sem erro, então nada na tela prova que existem outros cofres."
+answer: "No Velcrypt, cada padrão abre o seu próprio cofre criptografado. Não existe lista de cofres, exceto os que você coloca de propósito na lista opcional do Face ID, e um padrão que o app nunca viu simplesmente abre um cofre vazio, sem erro."
 keyFacts:
   - "Cada padrão é um cofre próprio, com a sua própria chave de criptografia."
-  - "O Velcrypt nunca mostra uma lista de cofres."
+  - "O Velcrypt nunca mostra uma lista de cofres, exceto os que você coloca de propósito na lista do Face ID."
   - "Um padrão desconhecido abre um cofre vazio, sem mensagem de erro."
   - "Você pode manter um cofre de fachada com conteúdo comum."
   - "A versão grátis tem 1 cofre; mais cofres fazem parte do Premium opcional."
 primaryKeyword: "app cofre oculto iphone"
 keywords: ["cofre secreto iphone", "app com vários cofres de fotos", "cofre falso iphone", "cofre de fachada", "negação plausível cofre de fotos", "segundo cofre oculto"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
-summary: "Cada padrão é um cofre próprio. Sem lista de cofres, sem erro para padrões desconhecidos e com espaço para um cofre de fachada convincente."
+dateModified: 2026-11-21
+summary: "Cada padrão é um cofre próprio. Sem lista de cofres, a não ser que ative o Face ID, sem erro para padrões desconhecidos e com espaço para fachada."
 status: available
 schemaType: WebPage
 order: 2
 related: [pattern-lock, duress-pattern, encryption, what-is-a-decoy-vault, plausible-deniability-explained]
 faq:
   - q: "Como vejo todos os meus cofres no Velcrypt?"
-    a: "Não vê, e isso é intencional. O Velcrypt não tem lista de cofres. O único jeito de abrir um cofre é desenhar o padrão dele, então guarde de memória quais são os seus padrões."
+    a: "Não vê, e isso é intencional. O Velcrypt não tem lista de cofres. O único jeito de abrir um cofre é desenhar o padrão dele, então guarde de memória quais são os seus padrões. A única exceção é o Face ID, que é opcional: os cofres em que você o ativa aparecem na lista do Face ID. Cofres sem Face ID nunca aparecem."
   - q: "O que acontece se eu desenhar o padrão errado?"
     a: "O Velcrypt abre um cofre vazio para aquele padrão em vez de mostrar um erro. Se você adicionasse arquivos ali, esse padrão viraria um novo cofre. Se esperava ver suas fotos e não aparece nada, provavelmente desenhou um padrão um pouco diferente."
   - q: "Alguém consegue saber que eu tenho mais de um cofre secreto?"
-    a: "Não pela interface do app. Não há lista, contador nem mensagem de erro que revele outros cofres. O Velcrypt não consegue esconder que o próprio app está instalado e não impede que alguém veja você desenhar um padrão."
+    a: "Não pela interface do app, nos cofres sem Face ID. Não há lista, contador nem mensagem de erro que os revele. Os cofres que você coloca na lista opcional do Face ID são a exceção: quem fizer você olhar para o celular pode vê-los e abri-los. O Velcrypt não consegue esconder que o próprio app está instalado e não impede que alguém veja você desenhar um padrão."
   - q: "O que é um cofre de fachada?"
     a: "Um cofre de fachada é um cofre com conteúdo comum e convincente, que você pode abrir se for pressionado a mostrar o que há dentro do app. O cofre verdadeiro fica atrás de outro padrão."
 howTo:
@@ -49,6 +49,8 @@ A maioria dos apps de cofre tem uma senha e uma área bloqueada, então pergunta
 Um cofre oculto é um cofre cuja existência não pode ser confirmada por quem está de fora. No Velcrypt, cada padrão válido na [grade 5×5](id:pattern-lock) corresponde a um cofre separado, com chave mestra aleatória e arquivos próprios. O padrão A mostra as fotos que você guardou atrás do padrão A. O padrão B mostra um conjunto completamente diferente.
 
 Não existe tela de ajustes que liste os cofres, nem menu “trocar de cofre”, nem número que diga quantos existem. De dentro do app, cada cofre parece ser o único.
+
+A única exceção é uma escolha sua. O Face ID é opcional e vem desativado. Se você o ativar para um cofre, em Ajustes › Face ID dentro desse cofre, a tela de bloqueio mostra o botão “Desbloquear com Face ID” e, depois do Face ID, você escolhe entre os cofres que adicionou. Cofres sem Face ID nunca aparecem ali. Como quem conseguir fazer você olhar para o celular pode ver e abrir essa lista, mantenha o cofre mais privado só com o padrão.
 
 ## Nenhum erro para um padrão desconhecido
 

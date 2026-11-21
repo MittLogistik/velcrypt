@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "mon ex a accès à mes photos iphone"
 keywords: ["changer de code après une rupture", "retirer son ex d’un album partagé", "contrôle de sécurité iphone", "mon ex connaît mon code iphone", "quitter la photothèque partagée icloud", "protéger ses photos après une rupture"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Une liste de contrôle sereine pour les semaines qui suivent une rupture : nouveau code, Contrôle de sécurité, partages et un endroit privé pour vos photos."
 group: everyday
 schemaType: Article
@@ -60,7 +60,7 @@ Si vous ne vous sentez pas en sécurité, ou si votre ex vous menace, faites pas
 
 Certaines photos, vous voudrez les conserver — des souvenirs, des captures de messages, des documents liés à la relation — sans qu’elles traînent dans une pellicule sur laquelle quelqu’un pourrait jeter un œil. Velcrypt est une option pour cela.
 
-Velcrypt stocke photos, vidéos et documents dans des coffres chiffrés sur votre iPhone. Il n’utilise ni le code de votre appareil ni Face ID ; un coffre s’ouvre avec un [schéma tracé sur une grille 5×5](id:pattern-lock) : un code que votre ex a connu ne lui sert donc à rien. [Chaque schéma ouvre son propre coffre](id:hidden-vaults), et un schéma inconnu ouvre simplement un coffre vide, sans erreur : rien ne révèle ce qui est stocké.
+Velcrypt stocke photos, vidéos et documents dans des coffres chiffrés sur votre iPhone. Il n’utilise jamais le code de votre appareil, et Face ID seulement si vous l’activez pour un coffre ; un coffre s’ouvre avec un [schéma tracé sur une grille 5×5](id:pattern-lock) : un code que votre ex a connu ne lui sert donc à rien. [Chaque schéma ouvre son propre coffre](id:hidden-vaults), et un schéma inconnu ouvre simplement un coffre vide, sans erreur : rien ne révèle ce qui est stocké.
 
 Après l’import, [supprimez les originaux](id:delete-original-photos-after-import) dans Photos et videz « Suppressions récentes » — sinon, des copies restent dans votre photothèque et, avec Photos iCloud activé, sur vos autres appareils. S’il s’agit aussi de photos intimes, [ce guide](id:store-intimate-photos-safely-iphone) entre davantage dans les détails.
 

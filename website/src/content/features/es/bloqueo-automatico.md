@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "bloqueo automático app bóveda iphone"
 keywords: ["bóveda de fotos con bloqueo automático", "ocultar vista previa selector de apps", "app que se bloquea al cerrarla iphone", "bloquear bóveda en segundo plano", "retardo de bloqueo automático"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-11-21
 summary: "La bóveda se bloquea cuando la app pasa a segundo plano, tras el retardo que elijas, y no se ve en el selector de apps."
 status: available
 schemaType: WebPage
@@ -64,7 +64,7 @@ Velcrypt oculta el contenido de la bóveda en el selector de apps. La vista prev
 
 ## Por qué bloquear importa más con un patrón
 
-Velcrypt no tiene Face ID ni Touch ID a propósito, así que volver a abrir una bóveda bloqueada siempre implica dibujar tu patrón. Puede parecer una molestia, y es tentador elegir un retardo largo para evitarla. Resiste un poco la tentación: el patrón solo protege la bóveda mientras está bloqueada. Un retardo corto, combinado con un patrón que puedas dibujar rápido y de memoria, te da privacidad y comodidad a la vez.
+En Velcrypt, Face ID es opcional y viene desactivado, así que en la mayoría de las bóvedas volver a abrirlas implica dibujar tu patrón. Puede parecer una molestia, y es tentador elegir un retardo largo para evitarla. Resiste un poco la tentación: el patrón solo protege la bóveda mientras está bloqueada. Un retardo corto, combinado con un patrón que puedas dibujar rápido y de memoria, te da privacidad y comodidad a la vez.
 
 ## Consejos prácticos
 

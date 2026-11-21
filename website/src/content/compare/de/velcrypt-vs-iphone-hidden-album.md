@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "iphone album ausgeblendet vs tresor app"
 keywords: ["album ausgeblendet sicher", "fotos ausblenden iphone alternative", "ausgeblendete fotos face id", "ausgeblendete fotos icloud", "fotos verstecken iphone"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Apples eingebautes Album „Ausgeblendet“ gegen einen separaten verschlüsselten Tresor: was jeweils schützt, wohin Fotos synchronisieren und wer sie öffnen kann."
 competitor: "iPhone-Album „Ausgeblendet“"
 lastChecked: "Oktober 2026"
@@ -53,7 +53,7 @@ Ist iCloud-Fotos aktiviert, werden ausgeblendete Objekte wie alles andere synchr
 | Konto erforderlich | Nein | Teil von „Fotos“; Apple Account für iCloud-Synchronisierung nötig |
 | Cloud-Backup | Nein; kostenloses manuelles verschlüsseltes Backup | Ja, mit iCloud-Fotos oder iCloud-Backup |
 | Entsperren | Muster auf einem 5×5-Raster, getrennt vom Code | Face ID, Touch ID oder Gerätecode |
-| Biometrie | Bewusst nicht angeboten | Ja |
+| Biometrie | Optional, standardmäßig aus (pro Tresor) | Ja |
 | Köder- / mehrere Tresore | Jedes Muster ist ein eigener Tresor (mehrere Tresore mit Premium) | Ein Album „Ausgeblendet“ |
 | Notfallmuster | Ja, mit Premium (öffnet einen Köder, löscht die anderen Tresore) | Nein |
 | Wiederherstellung bei vergessenem Code | Keine | Über Gerätecode und Wiederherstellung des Apple Accounts |
@@ -67,7 +67,7 @@ Ist iCloud-Fotos aktiviert, werden ausgeblendete Objekte wie alles andere synchr
 
 Der größte praktische Unterschied ist, wer hineinkommt. Das Album „Ausgeblendet“ vertraut deinem Gerätecode. Gegenüber Fremden ist das vernünftig, aber viele teilen ihren Code mit Partner, Kind oder Familie oder haben ihn vor ihnen eingetippt. Wer den Code kennt, kann das Album „Ausgeblendet“ öffnen – auch wenn Face ID eingerichtet ist, denn der Code wird immer als Ausweichmethode akzeptiert.
 
-Das Muster von Velcrypt ist ein separates Geheimnis. Deinen Code zu kennen oder dein Gesicht vor das iPhone zu halten, öffnet keinen Tresor. Deshalb hat Velcrypt auch bewusst kein Face ID: Ein Gesicht oder Finger lässt sich ohne deine Zustimmung benutzen. Siehe [Mustersperre](id:pattern-lock).
+Das Muster von Velcrypt ist ein separates Geheimnis. Deinen Code zu kennen, öffnet keinen Tresor, und dein Gesicht nur die Tresore, für die du Face ID selbst eingeschaltet hast. Face ID ist in Velcrypt optional und standardmäßig aus, weil sich ein Gesicht oder Finger ohne deine Zustimmung benutzen lässt; einen Ausweich-Code gibt es nicht. Siehe [Mustersperre](id:pattern-lock).
 
 ## Kopien und die Cloud
 
@@ -79,7 +79,7 @@ Velcrypt funktioniert andersherum. Ein importiertes Foto wird in einen verschlü
 
 ## Abstreitbarkeit
 
-Es gibt genau ein Album „Ausgeblendet“, und seine Existenz ist für jeden offensichtlich, der „Fotos“ öffnet (außer du blendest es aus). Velcrypt hat keine Tresorliste. Jedes Muster öffnet einen eigenen Tresor, und ein Muster, das die App noch nie gesehen hat, öffnet ohne Fehlermeldung einen leeren Tresor. So kannst du mit Premium einen Köder-Tresor führen, und es lässt sich nicht beweisen, dass weitere existieren. Siehe [versteckte Tresore](id:hidden-vaults).
+Es gibt genau ein Album „Ausgeblendet“, und seine Existenz ist für jeden offensichtlich, der „Fotos“ öffnet (außer du blendest es aus). Velcrypt hat keine Tresorliste, außer den Tresoren, die du selbst in die Face-ID-Liste aufnimmst. Jedes Muster öffnet einen eigenen Tresor, und ein Muster, das die App noch nie gesehen hat, öffnet ohne Fehlermeldung einen leeren Tresor. So kannst du mit Premium einen Köder-Tresor führen, und es lässt sich nicht beweisen, dass weitere existieren. Siehe [versteckte Tresore](id:hidden-vaults).
 
 ## Wann das Album „Ausgeblendet“ besser passen kann
 

@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "app cassaforte blocco automatico iphone"
 keywords: ["blocco automatico cassaforte foto", "nascondere anteprima selettore app", "app che si blocca quando la chiudi iphone", "bloccare cassaforte in background", "ritardo blocco automatico"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-11-21
 summary: "La cassaforte si blocca quando l'app passa in background, dopo un ritardo a tua scelta, e resta oscurata nel selettore app."
 status: available
 schemaType: WebPage
@@ -64,7 +64,7 @@ Velcrypt nasconde i contenuti della cassaforte nel selettore app. L'anteprima no
 
 ## Perché il blocco conta di più con una sequenza
 
-Velcrypt non ha di proposito Face ID né Touch ID, quindi riaprire una cassaforte bloccata significa sempre disegnare la sequenza. Può sembrare scomodo e viene la tentazione di scegliere un ritardo lungo per evitarlo. Resisti un po': la sequenza protegge la cassaforte solo mentre la cassaforte è bloccata. Un ritardo breve, unito a una sequenza che disegni velocemente a memoria di gesto, ti dà sia privacy sia comodità.
+In Velcrypt Face ID e Touch ID sono disattivati per impostazione predefinita, quindi riaprire una cassaforte bloccata di solito significa disegnare la sequenza. Può sembrare scomodo e viene la tentazione di scegliere un ritardo lungo per evitarlo. Per le casseforti di comodo puoi attivare Face ID; per quella più privata conviene restare sulla sequenza. Resisti un po': la sequenza protegge la cassaforte solo mentre la cassaforte è bloccata. Un ritardo breve, unito a una sequenza che disegni velocemente a memoria di gesto, ti dà sia privacy sia comodità.
 
 ## Consigli pratici
 

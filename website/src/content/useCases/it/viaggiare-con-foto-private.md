@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "viaggiare con foto private iphone"
 keywords: ["proteggere le foto in viaggio", "iphone rubato all'estero foto", "protezione del dispositivo rubato viaggio", "prestare il telefono all'estero privacy", "consigli privacy telefono in viaggio"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Telefoni persi, iPhone prestati e controlli di frontiera: come viaggiare con foto e documenti privati senza pensieri."
 group: travel
 schemaType: Article
@@ -58,7 +58,7 @@ In viaggio il telefono passa per più mani e più luoghi che nella vita di tutti
 
 ## Come ti aiuta Velcrypt
 
-Velcrypt conserva foto, video e documenti privati in casseforti cifrate salvate solo sul tuo iPhone. Una cassaforte si apre con una sequenza che disegni su una griglia 5×5, non con il codice o Face ID. Se un ladro ha scoperto il tuo codice, questo da solo non apre la tua cassaforte. Il motivo per cui si usa una sequenza invece della biometria è spiegato in [sequenza, PIN o Face ID](id:pattern-lock-vs-pin-vs-face-id).
+Velcrypt conserva foto, video e documenti privati in casseforti cifrate salvate solo sul tuo iPhone. Una cassaforte si apre con una sequenza che disegni su una griglia 5×5, non con il codice; Face ID è facoltativo e spento per impostazione predefinita. Se un ladro ha scoperto il tuo codice, questo da solo non apre la tua cassaforte. Il motivo per cui la sequenza resta la base e la biometria è solo un'opzione è spiegato in [sequenza, PIN o Face ID](id:pattern-lock-vs-pin-vs-face-id).
 
 Ogni sequenza apre la propria cassaforte e una sequenza sconosciuta ne apre una vuota, senza errori. Così puoi tenere una [cassaforte esca](id:what-is-a-decoy-vault) con innocue foto di viaggio e lasciare la cassaforte privata dietro una sequenza diversa. L'app si blocca anche automaticamente quando passa in background e i suoi contenuti sono nascosti nel selettore app.
 

@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "il mio ex ha accesso alle mie foto"
 keywords: ["cambiare codice dopo una rottura", "rimuovere ex da album condiviso", "controllo di sicurezza iphone", "il mio ex conosce il codice dell'iphone", "uscire dalla libreria foto condivisa icloud"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Una checklist tranquilla per le settimane dopo una rottura: nuovo codice, Controllo di sicurezza, album e librerie condivisi e un posto privato per le foto."
 group: everyday
 schemaType: Article
@@ -60,7 +60,7 @@ Se non ti senti al sicuro o il tuo ex ti minaccia, metti al primo posto la tua s
 
 Alcune foto vorrai tenerle (ricordi, screenshot di messaggi, documenti legati alla relazione) senza che restino in un rullino su cui qualcun altro potrebbe posare lo sguardo. Velcrypt è un'opzione per questo.
 
-Velcrypt conserva foto, video e documenti in casseforti cifrate sul tuo iPhone. Non usa il codice del dispositivo né Face ID: una cassaforte si apre con una [sequenza che disegni su una griglia 5×5](id:pattern-lock), quindi un codice che il tuo ex conosceva non gli serve a nulla. [Ogni sequenza apre la propria cassaforte](id:hidden-vaults) e una sequenza sconosciuta apre semplicemente una cassaforte vuota senza errori, quindi nulla rivela cosa è conservato.
+Velcrypt conserva foto, video e documenti in casseforti cifrate sul tuo iPhone. Non usa il codice del dispositivo: una cassaforte si apre con una [sequenza che disegni su una griglia 5×5](id:pattern-lock), quindi un codice che il tuo ex conosceva non gli serve a nulla. Face ID è disattivato per impostazione predefinita; se lo hai attivato per una cassaforte e il tuo ex aveva aggiunto un aspetto o un'impronta, reimposta Face ID in Impostazioni: Velcrypt lo disattiva per quelle casseforti, che riaprirai con la sequenza. [Ogni sequenza apre la propria cassaforte](id:hidden-vaults) e una sequenza sconosciuta apre semplicemente una cassaforte vuota senza errori, quindi nulla rivela cosa è conservato.
 
 Dopo l'importazione, [elimina gli originali](id:delete-original-photos-after-import) da Foto e svuota «Eliminati di recente»; altrimenti le copie restano nella libreria e, con Foto di iCloud attivo, sugli altri tuoi dispositivi. Se ci sono di mezzo foto intime, [questa guida](id:store-intimate-photos-safely-iphone) entra più nel dettaglio.
 

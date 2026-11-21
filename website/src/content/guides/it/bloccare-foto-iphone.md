@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "bloccare foto iphone"
 keywords: ["come bloccare le foto su iphone", "bloccare app foto iphone", "richiedi face id foto", "bloccare album nascosti", "proteggere foto iphone", "bloccare foto con face id ios 18"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-11-21
 summary: "Quattro modi per bloccare le foto su iPhone, dall’album Nascosti al blocco app e alle note protette, messi a confronto."
 category: hiding
 order: 2
@@ -103,6 +103,6 @@ Vale la pena riflettere anche sui dati biometrici. Face ID è rapido, ma un volt
 
 ## Dove si inserisce Velcrypt
 
-Velcrypt è una cassaforte della quarta categoria. Non ha Face ID né Touch ID per scelta: la sblocchi disegnando una [sequenza](id:pattern-lock) su una griglia 5×5 di punti, con almeno sei punti e almeno un cambio di direzione; le sequenze più lunghe sono migliori. Quella sequenza esiste solo nella tua memoria e non ha nulla a che fare con il codice del tuo iPhone.
+Velcrypt è una cassaforte della quarta categoria. La sblocchi disegnando una [sequenza](id:pattern-lock) su una griglia 5×5 di punti, con almeno sei punti e almeno un cambio di direzione; le sequenze più lunghe sono migliori. Quella sequenza esiste solo nella tua memoria e non ha nulla a che fare con il codice del tuo iPhone. Face ID è facoltativo e disattivato per impostazione predefinita: lo attivi solo per le casseforti che scegli, e il codice dell’iPhone non può mai sostituirlo.
 
 I contenuti sono cifrati sul dispositivo con AES-256-GCM, la cassaforte [si blocca automaticamente](id:auto-lock) quando esci dall’app e nulla viene caricato online. Il prezzo di questa scelta è che non esiste recupero: se dimentichi la sequenza, né tu né Velcrypt potete aprire la cassaforte. Come qualsiasi blocco, non può aiutarti nemmeno se qualcuno ti guarda mentre disegni la sequenza o se consegni il telefono con la cassaforte già aperta.

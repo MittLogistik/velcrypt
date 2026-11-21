@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "nascondere foto ai bambini iphone"
 keywords: ["bambini che usano il mio telefono foto", "prestare iphone ai figli", "accesso guidato bambini", "tempo di utilizzo bambini iphone", "figli che scorrono le foto"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Lascia giocare i bambini sul tuo iPhone senza che finiscano tra le foto private: Accesso Guidato, Tempo di utilizzo e una cassaforte chiusa."
 group: everyday
 schemaType: Article
@@ -69,7 +69,7 @@ Togli dal rullino documenti come passaporti o prescrizioni, controlla quali app 
 
 Velcrypt è una cassaforte privata per foto, video e documenti che vive interamente sul tuo iPhone. Quando importi qualcosa, viene copiato in una cassaforte cifrata; una volta che [elimini l'originale](id:delete-original-photos-after-import) (e svuoti «Eliminati di recente»), non è più nella libreria di Foto, nei Ricordi, nei widget né nel selettore foto di nessuna app.
 
-La cassaforte si apre disegnando una [sequenza su una griglia 5×5](id:pattern-lock), non con il codice del dispositivo o Face ID. Quindi nemmeno un bambino che conosce il tuo codice può aprirla. Se apre l'app e disegna qualcosa, vede semplicemente una cassaforte vuota: nessun messaggio di errore e nulla che lasci intendere che ci sia altro.
+La cassaforte si apre disegnando una [sequenza su una griglia 5×5](id:pattern-lock), non con il codice del dispositivo, e Face ID si usa solo se lo attivi tu per quella cassaforte. Quindi nemmeno un bambino che conosce il tuo codice può aprirla. Se apre l'app e disegna qualcosa, vede semplicemente una cassaforte vuota: nessun messaggio di errore e nulla che lasci intendere che ci sia altro.
 
 Il [blocco automatico](id:auto-lock) chiude la cassaforte non appena l'app passa in background e i suoi contenuti sono nascosti nel selettore app. Se stai guardando un documento e passi il telefono, basta cambiare app per bloccarla.
 

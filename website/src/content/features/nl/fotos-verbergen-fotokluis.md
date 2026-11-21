@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "foto's verbergen iphone app"
 keywords: ["fotokluis iphone", "versleutelde fotokluis", "privé fotoalbum app", "foto's vergrendelen app", "geheime fotokluis"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Importeer foto's als versleutelde kopieën, wis de originelen en Recent verwijderd, en blader door albums met zoomen en vegen."
 status: available
 schemaType: WebPage
@@ -71,7 +71,7 @@ Foto's openen in de ingebouwde viewer van Velcrypt. Knijp om in te zoomen op det
 | | Album Verborgen op iPhone | Velcrypt-kluis |
 | --- | --- | --- |
 | Waar de foto staat | In je fotobibliotheek | In een versleutelde kluis in de app |
-| Hoe je ontgrendelt | Face ID, Touch ID of toegangscode van je toestel | Je Velcrypt-patroon |
+| Hoe je ontgrendelt | Face ID, Touch ID of toegangscode van je toestel | Je Velcrypt-patroon (Face ID optioneel, standaard uit) |
 | iCloud | Synchroniseert met iCloud-foto's als dat aanstaat | Niet in iCloud- of computerbackups |
 | Aparte verzamelingen | Eén album Verborgen | Een aparte kluis per patroon |
 

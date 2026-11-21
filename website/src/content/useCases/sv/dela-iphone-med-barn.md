@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "dölja bilder för barn iphone"
 keywords: ["barn använder min telefon bilder", "låna ut iphone till barn", "guidad åtkomst barn", "skärmtid barn iphone", "barn bläddrar bland bilder"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Låt barnen spela på din iPhone utan att de hamnar bland privata bilder: Guidad åtkomst, Skärmtid och ett valv som förblir stängt."
 group: everyday
 schemaType: Article
@@ -71,7 +71,7 @@ Flytta dokument som pass eller recept ut ur kamerarullen, se över vilka appar s
 
 Velcrypt är ett privat valv för bilder, videor och dokument som finns helt i din iPhone. När du importerar något kopieras det till ett krypterat valv; när du [raderat originalet](id:delete-original-photos-after-import) (och tömt Nyligen raderade) finns det inte längre i ditt bildbibliotek, i Minnen, i widgetar eller i någon apps bildväljare.
 
-Valvet öppnas genom att du ritar ett [mönster på ett 5×5-rutnät](id:pattern-lock), inte med enhetens lösenkod eller Face ID. Så även ett barn som kan din lösenkod kan inte öppna det. Om barnet öppnar appen och ritar något ser det bara ett tomt valv; det finns inget felmeddelande och inget som antyder att det finns mer.
+Valvet öppnas genom att du ritar ett [mönster på ett 5×5-rutnät](id:pattern-lock), aldrig med enhetens lösenkod. Face ID är avstängt som standard och används bara för valv du själv slår på det för. Så även ett barn som kan din lösenkod kan inte öppna det. Om barnet öppnar appen och ritar något ser det bara ett tomt valv; det finns inget felmeddelande och inget som antyder att det finns mer.
 
 [Automatisk låsning](id:auto-lock) stänger valvet så fort appen går till bakgrunden, och innehållet döljs i appväxlaren. Tittar du på ett dokument och lämnar över telefonen låses valvet när ni byter bort från appen.
 

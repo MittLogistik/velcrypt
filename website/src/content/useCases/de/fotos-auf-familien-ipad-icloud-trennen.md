@@ -13,7 +13,7 @@ keyFacts:
 primaryKeyword: "iphone fotos erscheinen auf ipad"
 keywords: ["fotos nicht mehr auf familien ipad synchronisieren", "geteilte apple id fotos", "geteilte icloud fotomediathek privatsphäre", "icloud fotos familie trennen", "fotos erscheinen auf anderem gerät"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Warum deine iPhone-Fotos auf iPad oder Mac der Familie auftauchen, wie du geteilte Accounts und Mediatheken entwirrst und wohin private Fotos gehören."
 group: everyday
 schemaType: Article
@@ -64,7 +64,7 @@ iCloud-Fotos ist verschlüsselt, doch standardmäßig hält Apple die Schlüssel
 
 Velcrypt geht einen anderen Weg: Es bewahrt private Fotos, Videos und Dokumente in einem verschlüsselten Tresor nur auf deinem iPhone auf. Es gibt [kein Konto, keinen Server und keine Synchronisierung](id:offline-no-account), also kann nichts aus einem Tresor auf dem Familien-iPad, dem Mac oder in einer geteilten Mediathek auftauchen.
 
-Der Import kopiert ein Foto in den Tresor. Um es von allen synchronisierten Geräten zu entfernen, [lösch das Original](id:delete-original-photos-after-import) in Fotos und leere „Zuletzt gelöscht“; mit iCloud-Fotos wird diese Löschung auch auf deine anderen Geräte übertragen. Der Tresor öffnet sich mit einem Muster auf einem 5×5-Raster, nicht mit dem Gerätecode oder Face ID.
+Der Import kopiert ein Foto in den Tresor. Um es von allen synchronisierten Geräten zu entfernen, [lösch das Original](id:delete-original-photos-after-import) in Fotos und leere „Zuletzt gelöscht“; mit iCloud-Fotos wird diese Löschung auch auf deine anderen Geräte übertragen. Der Tresor öffnet sich mit einem Muster auf einem 5×5-Raster, nicht mit dem Gerätecode. Face ID nutzt er nur, wenn du es für diesen Tresor einschaltest.
 
 ## Ehrliche Grenzen
 

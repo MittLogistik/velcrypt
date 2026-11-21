@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "how to save evidence of harassment iphone"
 keywords: ["keep harassment screenshots private", "store evidence on iphone", "document abuse evidence phone", "hide screenshots from abuser", "harassment evidence safety"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "A careful, safety-first approach to keeping screenshots and photos of harassment private, intact and backed up somewhere safe."
 group: sensitive
 schemaType: Article
@@ -64,7 +64,7 @@ Evidence that can be lost isn’t much use. Phones break, get taken, or get eras
 
 Velcrypt can keep a private copy of screenshots, photos and documents on your iPhone, separate from the Photos library. Once you [delete the originals](id:delete-original-photos-after-import) from Photos and empty Recently Deleted, they don’t appear in your camera roll, sync to a shared account or show up in Memories.
 
-Vaults open with a pattern drawn on a 5×5 grid, not your device passcode or Face ID, so knowing your passcode isn’t enough. [Every pattern opens its own vault](id:hidden-vaults), and a wrong pattern opens an empty vault without an error. That means nothing on screen proves your evidence vault exists, which is explained in [plausible deniability](id:plausible-deniability-explained). The app [locks automatically](id:auto-lock) when you leave it, and its content is hidden in the app switcher.
+Vaults open with a pattern drawn on a 5×5 grid, not your device passcode, so knowing your passcode isn’t enough. Face ID is optional and off by default; keep it off for your evidence vault, because anyone who can get you to look at your phone could open it. [Every pattern opens its own vault](id:hidden-vaults), and a wrong pattern opens an empty vault without an error. That means nothing on screen proves your evidence vault exists, which is explained in [plausible deniability](id:plausible-deniability-explained). The app [locks automatically](id:auto-lock) when you leave it, and its content is hidden in the app switcher.
 
 ## Honest limits — please read
 

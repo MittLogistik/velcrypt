@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "keepsafe 대안"
 keywords: ["keepsafe 대체 앱", "keepsafe 같은 앱", "keepsafe에서 옮기기", "아이폰 사진 숨기기 앱 추천", "계정 없는 사진 금고"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Keepsafe 대안을 찾는 이유, 사진 금고에서 확인할 점, 사본을 남기지 않고 사진을 옮기는 방법을 정리했습니다."
 competitor: "Keepsafe"
 lastChecked: "2026년 10월"
@@ -61,7 +61,7 @@ Keepsafe는 가장 잘 알려진 사진 금고 앱 중 하나이며, 만족하�
 
 | 선택지 | 계정 | 클라우드 사본 | 별도의 비밀 | 비고 |
 |---|---|---|---|---|
-| Velcrypt | 없음 | 없음(수동 암호화 백업 파일) | 예, 패턴 | 숨겨진 금고, 문서, Face ID 없음 |
+| Velcrypt | 없음 | 없음(수동 암호화 백업 파일) | 예, 패턴 | 숨겨진 금고, 문서, Face ID는 선택(기본값 꺼짐) |
 | iPhone 가려진 항목 앨범 | iCloud용 Apple 계정 | iCloud 사진 사용 시 | 아니요, 기기 암호 | 무료, 기본 내장 |
 | Apple 메모 잠긴 메모 | iCloud용 Apple 계정 | iCloud 메모 사용 시 | 선택형 메모 암호 | 항목이 적을 때 적합 |
 | 다른 금고 앱 | 앱마다 다름 | 앱마다 다름 | 앱마다 다름 | 각 설명 확인 |

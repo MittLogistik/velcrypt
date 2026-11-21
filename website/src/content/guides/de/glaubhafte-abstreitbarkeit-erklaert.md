@@ -8,13 +8,13 @@ answer: "Glaubhafte Abstreitbarkeit bei Verschlüsselung bedeutet: Selbst nachde
 keyFacts:
   - "Bei glaubhafter Abstreitbarkeit geht es darum, was sich beweisen lässt – nicht darum, die Existenz einer App oder verschlüsselter Daten zu verbergen."
   - "Festplatten-Verschlüsselungswerkzeuge haben die Idee mit versteckten Volumes innerhalb normaler verschlüsselter Volumes geprägt."
-  - "In Velcrypt öffnet jedes unbekannte Muster einen leeren Tresor – ohne Fehlermeldung und ohne Tresorliste."
+  - "In Velcrypt öffnet jedes unbekannte Muster einen leeren Tresor – ohne Fehlermeldung und ohne Tresorliste, außer deiner Face-ID-Liste."
   - "Speichergröße und forensische Analyse können zeigen, dass verschlüsselte Daten existieren, auch wenn sie nicht lesbar sind."
   - "Abstreitbarkeit schützt vor Herumschnüffeln und informellem Druck; ein rechtlicher Schutzschild ist sie nicht."
 primaryKeyword: "glaubhafte abstreitbarkeit verschlüsselung"
 keywords: ["was ist glaubhafte abstreitbarkeit", "abstreitbare verschlüsselung", "verstecktes volume erklärt", "plausible deniability foto tresor", "abstreitbarer tresor iphone"]
 datePublished: 2026-10-21
-dateModified: 2026-10-31
+dateModified: 2026-11-21
 summary: "Das Konzept hinter versteckten Volumes und Köder-Tresoren, wie Velcrypts Design mit unbekannten Mustern es nutzt – und was es ehrlicherweise nicht kann."
 category: security
 order: 42
@@ -55,7 +55,7 @@ Forschende haben „abstreitbare Verschlüsselung“ auch formaler untersucht, b
 Velcrypt überträgt das Prinzip auf einen Foto- und Dokumenten-Tresor auf dem iPhone. Es gibt kein äußeres und inneres Volume, stattdessen gilt:
 
 - **Jedes Muster ist ein eigener Tresor.** Jeder Tresor hat einen eigenen zufälligen 256-Bit-Hauptschlüssel, entsperrt mit einem Schlüssel, der aus diesem Muster abgeleitet wird.
-- **Es gibt keine Tresorliste.** Die App speichert nichts, was aufzählt, wie viele Tresore existieren.
+- **Es gibt keine Tresorliste.** Die App speichert nichts, was aufzählt, wie viele Tresore existieren. Einzige Ausnahme: Tresore, für die du Face ID selbst einschaltest, erscheinen in der Face-ID-Liste. Für diese Tresore gilt die Abstreitbarkeit nicht.
 - **Unbekannte Muster öffnen einen leeren Tresor.** Zeichnest du ein Muster, das Velcrypt noch nie gesehen hat, landest du in einem neuen, leeren Tresor. Eine Meldung „falsches Muster“ gibt es nicht.
 
 Die Folge: Ein falsches Muster und ein gültiger, aber leerer Tresor sehen identisch aus. Öffnest du für jemanden einen Tresor, zeigt nichts in der Oberfläche, dass es weitere gibt. Damit wird ein [Köder-Tresor](id:what-is-a-decoy-vault) zu einer natürlichen Nutzungsweise statt zu einem Sondermodus. Die Funktionsseite [versteckte Tresore](id:hidden-vaults) zeigt, wie das in der Praxis funktioniert.

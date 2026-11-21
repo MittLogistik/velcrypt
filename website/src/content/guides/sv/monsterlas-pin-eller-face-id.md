@@ -10,11 +10,11 @@ keyFacts:
   - "Mönster som människor väljer är mycket svagare än det teoretiska maxvärdet: vi föredrar hörn, bokstäver och korta former."
   - "Biometri är smidigt och svårt att kika på, men ett ansikte eller finger kan användas medan du sover, hålls fast eller tvingas."
   - "Fettfläckar på skärmen kan avslöja mönster lättare än PIN-koder."
-  - "Velcrypt använder ett mönster på ett 5×5-rutnät (minst 6 punkter) och har medvetet inget Face ID eller Touch ID."
+  - "Velcrypt använder ett mönster på ett 5×5-rutnät (minst 6 punkter). Face ID är valfritt, avstängt som standard och slås på per valv."
 primaryKeyword: "mönsterlås eller pin-kod"
 keywords: ["pin-kod eller face id säkerhet", "är mönsterlås säkert", "mönster eller lösenord", "face id eller lösenkod", "säkraste låset för mobilen", "tvingad biometri"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-11-21
 summary: "Antal kombinationer, kikande, fettfläckar och tvingad biometri: en ärlig jämförelse av de fyra vanligaste sätten att låsa privata data."
 category: security
 order: 40
@@ -28,8 +28,8 @@ faq:
     a: "En sexsiffrig PIN-kod har 1 000 000 möjliga kombinationer (000000 till 999999), jämfört med 10 000 för en fyrsiffrig. Vanliga val som 123456 eller födelsedagar krymper det verkliga antalet dramatiskt."
   - q: "Kan någon lista ut mitt mönster från fläckar på skärmen?"
     a: "Ibland. I rätt ljus kan fingerspår på en glasskärm avslöja mönstrets väg. Att torka av skärmen, använda ett matt skärmskydd och välja ett mönster som korsar sig själv gör sådana attacker svårare."
-  - q: "Varför har Velcrypt inte Face ID?"
-    a: "Det är medvetet. Ett ansikte eller fingeravtryck kan användas för att låsa upp en enhet utan ditt medgivande, medan ett mönster bara finns i ditt minne. Velcrypt valde ett mönster så att det alltid krävs ditt eget beslut för att öppna ett valv."
+  - q: "Använder Velcrypt Face ID?"
+    a: "Bara om du slår på det. Face ID är avstängt som standard och slås på per valv i det valvets inställningar. Efter Face ID väljer du bland de valv du har slagit på det för, och mönstret öppnar fortfarande alla valv. Eftersom ett ansikte kan användas utan ditt samtycke bör ditt mest privata valv bara ha mönster."
 ---
 
 Varje lås är en avvägning mellan hur svårt det är att gissa, hur lätt det är att se och hur lätt någon kan tvinga dig att öppna det. De flesta jämförelser tittar bara på det första. Den här guiden tittar på alla tre, med riktiga siffror där siffror finns och ärliga förbehåll där de saknas.
@@ -116,6 +116,10 @@ Du behöver inte välja ett enda lås för allt. En förnuftig uppsättning för
 
 ## Var Velcrypt passar in
 
-Velcrypt gör ett medvetet val: den enda vägen in i ett valv är ett mönster på ett rutnät med 5×5 punkter, en sammanhängande linje genom minst 6 punkter med minst en riktningsändring. Längre mönster med 8–12 punkter rekommenderas. Det finns inget Face ID eller Touch ID, eftersom ett mönster inte kan tas från din kropp.
+I Velcrypt öppnas varje valv med ett mönster på ett rutnät med 5×5 punkter, en sammanhängande linje genom minst 6 punkter med minst en riktningsändring. Längre mönster med 8–12 punkter rekommenderas. Mönstret öppnar alltid alla dina valv.
 
-Designen ändrar också vad ”gissa” betyder. Varje mönster är ett eget valv, och ett mönster som Velcrypt aldrig har sett öppnar helt enkelt ett tomt valv, utan felmeddelande. En felaktig gissning avslöjar alltså inte att den är fel, och du kan ha ett [lockbetesvalv](id:what-is-a-decoy-vault) under ett andra mönster. Sidan om [dolda valv](id:hidden-vaults) förklarar modellen, och [säkerhetsöversikten](id:security) räknar upp vad den inte kan skydda mot, bland annat att någon ser dig rita.
+Face ID och Touch ID är valfria och avstängda som standard, just av skälen ovan: en kroppsdel kan användas utan ditt samtycke, ett mönster i ditt minne kan inte det. Vill du ändå ha bekvämligheten slår du på Face ID för ett visst valv inifrån det valvet, under Inställningar › Face ID, och ger valvet ett namn för Face ID-listan. Det är gratis. Därefter visas knappen ”Lås upp med Face ID” på låsskärmen, och efter lyckad Face ID väljer du bland de valv du har slagit på det för (finns det bara ett öppnas det direkt). Valv utan Face ID visas aldrig i listan.
+
+Avvägningen är verklig: den som får dig att titta på telefonen kan se och öppna alla valv i Face ID-listan. Använd därför Face ID för vardagsvalv om du vill, och låt ditt mest privata valv bara öppnas med sitt mönster. Det finns ingen reserv via iPhonens lösenkod, och Face ID-nyckeln stannar i nyckelringen på just den här iPhonen, utanför iCloud och säkerhetskopior. Lägger du till ett ansikte eller fingeravtryck, eller återställer Face ID, stängs Face ID av för de valven tills du öppnar dem med mönstret och slår på det igen.
+
+Designen ändrar också vad ”gissa” betyder. Varje mönster är ett eget valv, och ett mönster som Velcrypt aldrig har sett öppnar helt enkelt ett tomt valv, utan felmeddelande. En felaktig gissning avslöjar alltså inte att den är fel, och utöver de valv du själv lägger i Face ID-listan visar Velcrypt ingen lista över valv. Du kan ha ett [lockbetesvalv](id:what-is-a-decoy-vault) under ett andra mönster. Sidan om [dolda valv](id:hidden-vaults) förklarar modellen, och [säkerhetsöversikten](id:security) räknar upp vad den inte kan skydda mot, bland annat att någon ser dig rita.

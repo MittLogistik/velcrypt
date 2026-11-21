@@ -9,12 +9,12 @@ keyFacts:
   - "Modelar ameaças é perguntar quem pode querer o material, o que essa pessoa consegue fazer e o que acontece se ela o obtiver."
   - "A minimização, guardar menos por menos tempo, costuma ser a proteção mais forte para as fontes."
   - "Os metadados de uma foto podem revelar onde e quando ela foi tirada, e com qual aparelho."
-  - "O Velcrypt não tem conta, servidores nem sincronização; os cofres abrem com um padrão, não com Face ID."
+  - "O Velcrypt não tem conta, servidores nem sincronização; os cofres abrem com um padrão, e o Face ID vem desativado."
   - "Um cofre não protege cópias no iCloud, em apps de mensagens, no e-mail ou no celular da própria fonte."
 primaryKeyword: "jornalista proteger fontes iphone"
 keywords: ["proteger fotos de fontes no celular", "segurança do celular para jornalistas", "privacidade de documentos de fontes iphone", "segurança digital para repórteres", "modelagem de ameaças para jornalistas"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Modelagem de ameaças, minimização e metadados para repórteres, e onde um cofre criptografado no iPhone entra como uma camada de proteção das fontes."
 group: professional
 schemaType: Article
@@ -63,7 +63,7 @@ As respostas definem as suas ferramentas. Exagerar na proteção de uma pauta de
 
 O Velcrypt é uma camada desse plano. Ele guarda fotos, vídeos e documentos em cofres criptografados no seu iPhone, usando AES-256-GCM com chaves derivadas do seu padrão. Não há conta, servidor, sincronização nem análise do conteúdo do cofre, então não existe nada em um servidor para alguém solicitar.
 
-Os cofres abrem com um padrão em uma grade 5×5. O Velcrypt não oferece Face ID nem Touch ID de propósito, porque a biometria pode ser usada sem o seu consentimento; um padrão existe só na sua memória. O raciocínio está em [padrão x PIN x Face ID](id:pattern-lock-vs-pin-vs-face-id). Cada padrão abre o seu próprio cofre, e um padrão desconhecido abre um cofre vazio, sem erro, o que sustenta a [negação plausível](id:plausible-deniability-explained). Com o Premium, um [padrão de coação](id:duress-pattern) abre um cofre de fachada e apaga de forma permanente os outros. Ele foi feito para situações de segurança pessoal, como furto ou ameaças, e não para apagar material quando autoridades exigem acesso legalmente, o que pode ser crime por si só; procure orientação jurídica se esse for um risco para você.
+Os cofres abrem com um padrão em uma grade 5×5. O Face ID e o Touch ID são opcionais e vêm desativados, porque a biometria pode ser usada sem o seu consentimento; um padrão existe só na sua memória. Para material de fontes, mantenha o cofre só com o padrão. O raciocínio está em [padrão x PIN x Face ID](id:pattern-lock-vs-pin-vs-face-id). Cada padrão abre o seu próprio cofre, e um padrão desconhecido abre um cofre vazio, sem erro, o que sustenta a [negação plausível](id:plausible-deniability-explained). Com o Premium, um [padrão de coação](id:duress-pattern) abre um cofre de fachada e apaga de forma permanente os outros. Ele foi feito para situações de segurança pessoal, como furto ou ameaças, e não para apagar material quando autoridades exigem acesso legalmente, o que pode ser crime por si só; procure orientação jurídica se esse for um risco para você.
 
 ## Limites honestos
 

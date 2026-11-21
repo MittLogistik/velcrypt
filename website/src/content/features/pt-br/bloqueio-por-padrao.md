@@ -1,21 +1,21 @@
 ---
 pageId: pattern-lock
 title: "Bloqueio por padrão: desbloqueie o cofre em uma grade 5×5"
-description: "O Velcrypt desbloqueia com um padrão desenhado em uma grade de 5×5 pontos. Conheça as regras, como criar um padrão forte e por que não há Face ID."
+description: "O Velcrypt desbloqueia com um padrão desenhado em uma grade de 5×5 pontos. Regras, como criar um padrão forte e como funciona o Face ID opcional."
 h1: "Bloqueio por padrão: uma grade 5×5 que só a sua memória abre"
 navTitle: "Bloqueio por padrão"
-answer: "O Velcrypt abre com um padrão que você desenha em uma grade de 5×5 pontos: uma linha contínua por pelo menos 6 pontos, com pelo menos uma mudança de direção. Padrões de 8 a 12 pontos são recomendados, e não há Face ID nem Touch ID, de propósito."
+answer: "O Velcrypt abre com um padrão que você desenha em uma grade de 5×5 pontos: uma linha contínua por pelo menos 6 pontos, com pelo menos uma mudança de direção. Padrões de 8 a 12 pontos são recomendados. O Face ID ou Touch ID é opcional e vem desativado; você pode ativá-lo por cofre, e o padrão continua abrindo todos."
 keyFacts:
   - "Desbloqueie desenhando uma linha contínua em uma grade 5×5 de 25 pontos."
   - "Regras mínimas: pelo menos 6 pontos e pelo menos uma mudança de direção."
   - "Tamanho recomendado: de 8 a 12 pontos."
-  - "Sem Face ID ou Touch ID por design, porque a biometria pode ser forçada."
+  - "O Face ID ou Touch ID é opcional, vem desativado e é ativado por cofre, porque a biometria pode ser forçada."
   - "Seu padrão também é a base da chave de criptografia do cofre."
 primaryKeyword: "app com senha de padrão iphone"
 keywords: ["bloqueio por padrão iphone", "cofre de fotos com padrão", "desenho de desbloqueio iphone", "padrão 5x5", "cofre de fotos sem face id", "padrão de desbloqueio forte"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
-summary: "Desbloqueie com um padrão desenhado em uma grade 5×5. Pelo menos 6 pontos e uma curva; 8 a 12 pontos recomendados. Sem Face ID, de propósito."
+dateModified: 2026-11-21
+summary: "Desbloqueie com um padrão desenhado em uma grade 5×5. Pelo menos 6 pontos e uma curva; 8 a 12 pontos recomendados. Face ID opcional e desativado por padrão."
 status: available
 schemaType: WebPage
 order: 1
@@ -23,8 +23,8 @@ related: [hidden-vaults, encryption, pattern-strength-checker, pattern-lock-vs-p
 faq:
   - q: "Quantos pontos um padrão do Velcrypt precisa ter?"
     a: "Pelo menos 6 pontos, desenhados como uma linha contínua com pelo menos uma mudança de direção. Para uma proteção melhor, use de 8 a 12 pontos e inclua várias curvas."
-  - q: "Por que o Velcrypt não usa Face ID nem Touch ID?"
-    a: "Um rosto ou uma digital podem ser usados sem o seu consentimento, por exemplo enquanto você dorme ou está sendo contido. Um padrão existe só na sua memória, então ninguém pode tirá-lo de você fisicamente. O Velcrypt deixa a biometria de fora de propósito."
+  - q: "O Velcrypt usa Face ID ou Touch ID?"
+    a: "Só se você ativar. Vem desativado, é grátis e você o ativa por cofre nos Ajustes daquele cofre. Um rosto ou uma digital pode ser usado sem o seu consentimento, então quem fizer você olhar para o celular pode abrir todos os cofres que você adicionou. Mantenha o cofre mais privado só com o padrão."
   - q: "O que acontece se eu esquecer o meu padrão?"
     a: "O cofre não pode mais ser aberto, nem por você nem pelo Velcrypt. O padrão faz parte de como a chave de criptografia é derivada, e não há frase de recuperação nem conta para redefini-lo. Escolha um padrão de que você consiga se lembrar com segurança."
   - q: "Uma senha de padrão 5×5 é mais segura que o padrão 3×3 de celular?"
@@ -69,11 +69,13 @@ Algumas dicas práticas:
 
 Se quiser uma segunda opinião, o [verificador de força de padrão](id:pattern-strength-checker) dá uma nota aproximada e uma estimativa em bits com base no tamanho, nas curvas, nos cruzamentos e na cobertura da grade. É uma heurística, não uma garantia, e você deve testar um padrão parecido com o seu, não o verdadeiro.
 
-## Por que não há Face ID nem Touch ID
+## Face ID opcional, desativado por padrão
 
-O Velcrypt não tem desbloqueio biométrico, e essa é uma decisão deliberada. A biometria é prática justamente porque está sempre com você, e essa também é a sua fraqueza: um rosto pode ser colocado na frente do celular e um dedo pode ser pressionado no sensor sem o seu consentimento.
+O Face ID ou Touch ID é opcional, grátis e vem desativado em todos os cofres. Para ativá-lo, abra o cofre com o padrão e vá em Ajustes › Face ID; você dá ao cofre um nome para a lista do Face ID. Assim que pelo menos um cofre tiver o Face ID, aparece o botão “Desbloquear com Face ID” na tela de bloqueio. Depois do Face ID, você escolhe entre os cofres que adicionou, ou o cofre abre direto se houver só um. Cofres sem Face ID nunca aparecem, e o padrão continua abrindo todos os cofres.
 
-Um padrão existe só na sua cabeça. Ninguém consegue tirá-lo da sua mão nem apontar o celular para o seu rosto para obtê-lo. Para um cofre feito para proteger seus arquivos mais privados, essa diferença importa mais do que economizar um segundo no desbloqueio. As vantagens e desvantagens são comparadas com mais detalhe em [padrão x PIN x Face ID](id:pattern-lock-vs-pin-vs-face-id).
+Não existe alternativa pelo código: o código do iPhone não substitui o Face ID dentro do Velcrypt. A cópia da chave de um cofre para o Face ID fica só no Keychain deste iPhone, não no iCloud nem em backups, e fica vinculada aos rostos e digitais cadastrados quando você o ativou. Se alguém adicionar um rosto ou uma digital, ou se o Face ID for redefinido, o Face ID é desativado nesses cofres até você abri-los com o padrão e ativá-lo de novo.
+
+Por que vem desativado? A biometria é prática justamente porque está sempre com você, e essa também é a sua fraqueza: um rosto pode ser colocado na frente do celular e um dedo pode ser pressionado no sensor sem o seu consentimento. Quem conseguir fazer você olhar para o celular pode ver e abrir todos os cofres da lista do Face ID. Um padrão existe só na sua cabeça; ninguém consegue tirá-lo da sua mão. Então mantenha o cofre mais privado só com o padrão e use o Face ID, se quiser, nos cofres do dia a dia. O [padrão de coação](id:duress-pattern) funciona apenas com padrões, e a lista do Face ID não o aciona. As vantagens e desvantagens são comparadas com mais detalhe em [padrão x PIN x Face ID](id:pattern-lock-vs-pin-vs-face-id).
 
 ## Seu padrão e a chave de criptografia
 

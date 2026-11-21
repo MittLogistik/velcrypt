@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "how to hide photos on iphone"
 keywords: ["hide photos on iphone", "iphone hidden album", "hide pictures iphone", "hide hidden album iphone", "lock hidden album iphone", "hide photos ios 18"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-11-21
 summary: "Use the Photos app’s Hide feature, lock and conceal the Hidden album, and understand what hiding does not protect."
 category: hiding
 order: 1
@@ -113,6 +113,6 @@ The trade-off is responsibility. A vault that keeps data only on your device can
 
 ## Where Velcrypt fits
 
-Velcrypt is one example of that second approach. You unlock it by drawing a pattern on a 5×5 grid of dots instead of using Face ID or your device passcode, so knowing your iPhone passcode does not open it. Files are encrypted with AES-256-GCM on the device, there is no account, and vault data is not included in iCloud backups. Each pattern opens its own separate vault, and an unknown pattern simply opens an empty one; the page on [hidden vaults](id:hidden-vaults) explains why that matters.
+Velcrypt is one example of that second approach. You unlock it by drawing a pattern on a 5×5 grid of dots instead of using your device passcode, so knowing your iPhone passcode does not open it. Face ID is optional and off by default. Files are encrypted with AES-256-GCM on the device, there is no account, and vault data is not included in iCloud backups. Each pattern opens its own separate vault, and an unknown pattern simply opens an empty one; the page on [hidden vaults](id:hidden-vaults) explains why that matters.
 
 Importing to Velcrypt copies a photo rather than moving it, so the original stays in Photos until you delete it yourself, including from Recently Deleted. The guide to [deleting originals after import](id:delete-original-photos-after-import) walks through that. For an overview of the photo side of the app, see [hide photos with Velcrypt](id:hide-photos), and for a side-by-side view, [Velcrypt vs the iPhone Hidden album](id:velcrypt-vs-iphone-hidden-album).

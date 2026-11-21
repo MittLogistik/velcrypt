@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "fotos verstecken iphone"
 keywords: ["iphone fotos verstecken", "bilder verstecken iphone", "album ausgeblendet iphone", "ausgeblendetes album verstecken", "ausgeblendet album sperren", "fotos ausblenden ios 18"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-11-21
 summary: "Fotos mit der Ausblenden-Funktion verstecken, das Album „Ausgeblendet“ sperren und verbergen – und verstehen, was Ausblenden nicht schützt."
 category: hiding
 order: 1
@@ -117,6 +117,6 @@ Der Preis dafür ist Verantwortung. Ein Tresor, der Daten nur auf deinem Gerät 
 
 ## Wo Velcrypt ins Spiel kommt
 
-Velcrypt ist ein Beispiel für diesen zweiten Ansatz. Du entsperrst die App, indem du ein Muster auf ein 5×5-Punkteraster zeichnest – nicht mit Face ID oder deinem Gerätecode. Wer deinen iPhone-Code kennt, kommt also trotzdem nicht hinein. Dateien werden auf dem Gerät mit AES-256-GCM verschlüsselt, es gibt kein Konto, und Tresordaten sind nicht in iCloud-Backups enthalten. Jedes Muster öffnet einen eigenen, getrennten Tresor, und ein unbekanntes Muster öffnet einfach einen leeren. Warum das wichtig ist, erklärt die Seite zu [versteckten Tresoren](id:hidden-vaults).
+Velcrypt ist ein Beispiel für diesen zweiten Ansatz. Du entsperrst die App, indem du ein Muster auf ein 5×5-Punkteraster zeichnest – nicht mit deinem Gerätecode. Face ID nutzt Velcrypt nur für Tresore, für die du es selbst einschaltest. Wer deinen iPhone-Code kennt, kommt also trotzdem nicht hinein. Dateien werden auf dem Gerät mit AES-256-GCM verschlüsselt, es gibt kein Konto, und Tresordaten sind nicht in iCloud-Backups enthalten. Jedes Muster öffnet einen eigenen, getrennten Tresor, und ein unbekanntes Muster öffnet einfach einen leeren. Warum das wichtig ist, erklärt die Seite zu [versteckten Tresoren](id:hidden-vaults).
 
 Beim Import in Velcrypt wird ein Foto kopiert, nicht verschoben. Das Original bleibt in „Fotos“, bis du es selbst löschst – auch aus „Zuletzt gelöscht“. Wie das geht, zeigt die Anleitung [Originale nach dem Import löschen](id:delete-original-photos-after-import). Einen Überblick über die Fotofunktionen der App bietet [Fotos verstecken mit Velcrypt](id:hide-photos), den direkten Vergleich findest du unter [Velcrypt vs. Album „Ausgeblendet“](id:velcrypt-vs-iphone-hidden-album).

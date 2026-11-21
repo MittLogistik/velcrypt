@@ -16,7 +16,7 @@ keyFacts:
 primaryKeyword: "sequenza di emergenza app cassaforte"
 keywords: ["password di emergenza iphone", "codice antipanico cassaforte foto", "password di coercizione app", "protezione sblocco forzato", "cassaforte foto autodistruzione"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Una sequenza separata che apre la cassaforte esca ed elimina in silenzio e per sempre tutte le altre casseforti sull'iPhone. Premium."
 status: available
 schemaType: WebPage
@@ -92,7 +92,7 @@ La procedura completa, con consigli per esercitarti, è in [come configurare una
 
 Una sequenza di emergenza serve solo se nessuno può capire che c'è. Velcrypt non mostra mai se ne è impostata una, né nell'interfaccia né nelle impostazioni. Dietro le quinte, nel Portachiavi di iOS esiste sempre un record cifrato di dimensione fissa; quando non c'è una sequenza di emergenza contiene byte casuali. Così il record appare identico, che tu usi la funzione o no.
 
-Tutto questo si basa sulle [casseforti nascoste](id:hidden-vaults): ogni sequenza apre la propria cassaforte, non esiste un elenco di casseforti e una sequenza sconosciuta apre una cassaforte vuota senza errori. L'idea dietro entrambe è spiegata in [negabilità plausibile, spiegata](id:plausible-deniability-explained).
+Tutto questo si basa sulle [casseforti nascoste](id:hidden-vaults): ogni sequenza apre la propria cassaforte, non esiste un elenco di casseforti (tranne quelle che aggiungi di proposito all'elenco Face ID) e una sequenza sconosciuta apre una cassaforte vuota senza errori. La sequenza di emergenza funziona solo tramite sequenze: l'elenco Face ID non la attiva, e quando scatta le casseforti eliminate spariscono anche da quell'elenco. L'idea dietro entrambe è spiegata in [negabilità plausibile, spiegata](id:plausible-deniability-explained).
 
 ## Quando può aiutare
 

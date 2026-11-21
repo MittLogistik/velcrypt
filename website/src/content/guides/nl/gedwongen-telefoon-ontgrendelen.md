@@ -15,7 +15,7 @@ keyFacts:
 primaryKeyword: "iemand dwingt me mijn telefoon te ontgrendelen"
 keywords: ["gedwongen telefoon ontgrendelen", "partner wil mijn telefoon zien", "partner controleert mijn telefoon", "gedwongen iphone ontgrendelen", "telefoon ontgrendelen bij beroving"]
 datePublished: 2026-10-22
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Rustige, praktische stappen als een partner, dief of snuffelaar je ontgrendelde telefoon eist, en hoe een lokkluis en dwangpatroon daarin passen."
 category: practical
 order: 35
@@ -76,11 +76,11 @@ De meest voorkomende blootstelling is geen hack, maar iemand die scrolt. Zet pri
 
 - **Gebruik een sterke toegangscode** van zes cijfers of meer, en deel die niet.
 - **Leer Face ID snel uit te schakelen.** Houd op iPhone 8 en nieuwer de zijknop en een van de volumeknoppen ingedrukt tot het scherm voor uitschakelen/SOS verschijnt, en tik dan op Annuleer. Face ID en Touch ID blijven uit tot de toegangscode is ingevoerd. Afhankelijk van je instellingen kan herhaaldelijk op de zijknop drukken de hulpdiensten bellen, dus oefen het precieze gebaar vooraf.
-- **Velcrypt heeft bewust geen ontgrendeling met Face ID**, dus niemand kan een kluis openen door de telefoon voor je gezicht te houden. Een patroon bestaat alleen in je geheugen. [Patroon vs pincode vs Face ID](id:pattern-lock-vs-pin-vs-face-id) legt de afweging uit.
+- **In Velcrypt staat Face ID standaard uit.** Houd je een kluis op alleen het patroon, dan kan niemand die openen door de telefoon voor je gezicht te houden. Zet je Face ID voor een kluis aan, dan kan iemand die je naar je telefoon laat kijken die kluis wel zien en openen. Houd je meest privékluis dus op het patroon, dat alleen in je geheugen bestaat. [Patroon vs pincode vs Face ID](id:pattern-lock-vs-pin-vs-face-id) legt de afweging uit.
 
 ### Maak een lokkluis
 
-Een [lokkluis](id:what-is-a-decoy-vault) is een tweede kluis met onschuldige, geloofwaardige inhoud: bonnetjes, scans van je identiteitsbewijs, cadeau-ideeën. Eist iemand te zien wat er in de app staat, dan kun je de lokkluis openen. In Velcrypt opent elk patroon een eigen kluis en is er geen lijst van kluizen, dus niets op het scherm laat zien dat er nog een bestaat. Een tweede kluis vraagt om Premium.
+Een [lokkluis](id:what-is-a-decoy-vault) is een tweede kluis met onschuldige, geloofwaardige inhoud: bonnetjes, scans van je identiteitsbewijs, cadeau-ideeën. Eist iemand te zien wat er in de app staat, dan kun je de lokkluis openen. In Velcrypt opent elk patroon een eigen kluis en is er geen lijst van kluizen (behalve de kluizen die je zelf aan de Face ID-lijst toevoegt), dus niets op het scherm laat zien dat er nog een bestaat. Een tweede kluis vraagt om Premium.
 
 ### Overweeg een dwangpatroon, zorgvuldig
 

@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "resa med privata bilder iphone"
 keywords: ["skydda bilder på resan", "iphone stulen utomlands bilder", "skydd för stulen enhet resa", "låna ut telefonen utomlands integritet", "integritetstips mobil på resa"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Borttappade telefoner, att låna ut din iPhone och gränskontroller: så reser du med privata bilder och dokument utan oro."
 group: travel
 schemaType: Article
@@ -60,7 +60,7 @@ På resan hamnar telefonen i fler händer och på fler platser än i vardagen. D
 
 ## Så hjälper Velcrypt
 
-Velcrypt förvarar privata bilder, videor och dokument i krypterade valv som bara lagras i din iPhone. Ett valv öppnas med ett mönster som du ritar på ett 5×5-rutnät, inte med din lösenkod eller Face ID. Om en tjuv har lärt sig din lösenkod räcker det inte för att öppna valvet. Varför ett mönster används i stället för biometri förklaras i [mönster, PIN eller Face ID](id:pattern-lock-vs-pin-vs-face-id).
+Velcrypt förvarar privata bilder, videor och dokument i krypterade valv som bara lagras i din iPhone. Ett valv öppnas med ett mönster som du ritar på ett 5×5-rutnät, inte med din lösenkod. Face ID är avstängt som standard och kan slås på per valv. Om en tjuv har lärt sig din lösenkod räcker det inte för att öppna valvet. Varför mönstret är förvalt framför biometri förklaras i [mönster, PIN eller Face ID](id:pattern-lock-vs-pin-vs-face-id).
 
 Varje mönster öppnar sitt eget valv, och ett okänt mönster öppnar ett tomt valv utan felmeddelande. Därför kan du, med Premium, ha ett [lockbetesvalv](id:what-is-a-decoy-vault) med harmlösa resebilder och hålla ditt privata valv bakom ett annat mönster. Appen låses också automatiskt när den går till bakgrunden, och innehållet döljs i appväxlaren.
 

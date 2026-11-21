@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "iPhone 照片设置密码"
 keywords: ["iPhone 单张照片加密码", "苹果相册设置密码", "iPhone 相册加密码", "iPhone 照片加密", "苹果手机照片怎么加密"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-11-21
 summary: "为什么 iOS 不能给单张照片设密码，以及给特定照片真正加锁的三种实用办法。"
 category: hiding
 order: 4
@@ -105,6 +105,6 @@ Apple“备忘录”是唯一一个能让你为自选内容设置独立密码（
 
 ## Velcrypt 的定位
 
-Velcrypt 解决的是第二种需求：一个只有你知道的“秘密”。你不是输入密码，而是在 5×5 的点阵上画出一个 [图案](id:pattern-lock)。图案至少要经过 6 个点并至少改变一次方向，推荐使用 8 到 12 个点。Velcrypt 完全不使用 Face ID 或 Touch ID，所以你的 iPhone 密码和你的脸都打不开它。
+Velcrypt 解决的是第二种需求：一个只有你知道的“秘密”。你不是输入密码，而是在 5×5 的点阵上画出一个 [图案](id:pattern-lock)。图案至少要经过 6 个点并至少改变一次方向，推荐使用 8 到 12 个点。你的 iPhone 密码打不开它。Face ID 和 Touch ID 是可选的，每个保险箱默认关闭，所以除非你主动为某个保险箱开启，你的脸也打不开它。
 
 每个图案打开各自的保险箱，里面的照片用从该图案派生出的密钥以 AES-256-GCM [加密](id:encryption)。由于所有内容都留在设备上，并且不包含在备份中，忘记的图案无法重置。如果你更想要一个可以找回的密码，在移入任何重要内容之前，值得认真权衡这个限制。

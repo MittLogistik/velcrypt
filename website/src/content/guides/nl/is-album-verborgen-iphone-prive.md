@@ -19,7 +19,7 @@ keywords:
   - "album verborgen face id"
   - "kan iemand mijn verborgen foto's zien"
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Wat het album Verborgen echt beschermt, wie het nog kan openen en hoe iCloud-synchronisatie en Geavanceerde databescherming het beeld veranderen."
 category: apple
 order: 10
@@ -120,6 +120,6 @@ Besluit je dat het album Verborgen genoeg is voor jouw situatie, dan maken een p
 
 Het album Verborgen is ontworpen voor orde en lichte privacy, niet voor situaties waarin iemand dicht bij je je toegangscode kent of je onder druk zou kunnen zetten om de telefoon te ontgrendelen. Dan wil je meestal een ruimte met een eigen geheim en een eigen versleuteling.
 
-Velcrypt kiest die aanpak. Elke kluis opent met een patroon dat je op een raster van 5×5 tekent in plaats van met Face ID of je toegangscode, en de inhoud is versleuteld met AES-256-GCM, met sleutels die van dat patroon zijn afgeleid ([hoe de versleuteling werkt](id:encryption)). Elk patroon opent een eigen kluis en een onbekend patroon opent gewoon een lege, dus niets verraadt hoeveel kluizen er zijn ([verborgen kluizen](id:hidden-vaults)). Alles blijft op het apparaat, zonder account en zonder cloudkopie.
+Velcrypt kiest die aanpak. Elke kluis opent met een patroon dat je op een raster van 5×5 tekent in plaats van met je toegangscode (Face ID alleen als je het zelf voor die kluis aanzet), en de inhoud is versleuteld met AES-256-GCM, met sleutels die van dat patroon zijn afgeleid ([hoe de versleuteling werkt](id:encryption)). Elk patroon opent een eigen kluis en een onbekend patroon opent gewoon een lege, dus niets verraadt hoeveel kluizen er zijn, behalve de kluizen die je zelf aan de Face ID-lijst toevoegt ([verborgen kluizen](id:hidden-vaults)). Alles blijft op het apparaat, zonder account en zonder cloudkopie.
 
 Dat brengt ook eerlijke afwegingen mee. Kluisinhoud zit niet in iCloud- of computerback-ups. Vergeet je het patroon, dan is de inhoud niet te herstellen, en verlies je de telefoon, dan alleen met een versleuteld back-upbestand dat je zelf hebt gemaakt. En een foto importeren kopieert hem, dus je moet het origineel nog uit Foto's en Recent verwijderd halen. Voor een vergelijking naast elkaar, lees [Velcrypt vs het album Verborgen op de iPhone](id:velcrypt-vs-iphone-hidden-album).

@@ -20,7 +20,7 @@ keywords:
   - "fototeca compartida vs álbum compartido"
   - "fotos familiares cifradas"
 datePublished: 2026-10-31
-dateModified: 2026-10-31
+dateModified: 2026-11-21
 summary: "Quién puede ver, editar y eliminar qué en la fototeca compartida de iCloud, cómo entran fotos solas y cómo mantener fuera las privadas."
 category: apple
 order: 60
@@ -136,7 +136,7 @@ Si buscas «fotos familiares cifradas», esta es la respuesta honesta: lo más c
 
 La fototeca compartida está hecha para compartir. Para las fotos que nunca quieres compartir, lo más fiable es sacarlas por completo de la fototeca de Fotos.
 
-Velcrypt es una bóveda para iPhone pensada justo para eso. Las fotos, vídeos y documentos que importas se cifran en el iPhone con AES-256-GCM y se abren con un patrón dibujado en una cuadrícula de 5×5, no con el código del dispositivo ni con Face ID. [No hay cuenta, ni servidor, ni sincronización](id:offline-no-account), y los datos de la bóveda se excluyen de las copias de seguridad de iCloud y del ordenador, así que nada de una bóveda puede aparecer en una fototeca compartida, un álbum compartido o el iPad familiar. Cada patrón abre su propia bóveda, así que también puedes tener una bóveda señuelo inofensiva.
+Velcrypt es una bóveda para iPhone pensada justo para eso. Las fotos, vídeos y documentos que importas se cifran en el iPhone con AES-256-GCM y se abren con un patrón dibujado en una cuadrícula de 5×5, no con el código del dispositivo (Face ID solo si lo activas para una bóveda). [No hay cuenta, ni servidor, ni sincronización](id:offline-no-account), y los datos de la bóveda se excluyen de las copias de seguridad de iCloud y del ordenador, así que nada de una bóveda puede aparecer en una fototeca compartida, un álbum compartido o el iPad familiar. Cada patrón abre su propia bóveda, así que también puedes tener una bóveda señuelo inofensiva.
 
 Importar crea una copia cifrada; no elimina el original. Después, borra el original de Fotos y vacía Eliminado. Si la foto estaba en la fototeca compartida, trasládala antes a tu fototeca personal o elimínala allí, y recuerda que solo quien la aportó puede borrarla definitivamente de Eliminado.
 

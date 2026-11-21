@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "foto's vergrendelen iphone"
 keywords: ["foto's vergrendelen op iphone", "foto's app vergrendelen iphone", "vereis face id foto's", "album verborgen vergrendelen", "foto's beveiligen iphone", "foto's vergrendelen face id ios 18"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-11-21
 summary: "Vier manieren om foto's te vergrendelen op je iPhone, van het album Verborgen tot apps vergrendelen en notities, naast elkaar."
 category: hiding
 order: 2
@@ -101,6 +101,6 @@ Denk ook even na over biometrie. Face ID is snel, maar een gezicht kan zonder ec
 
 ## Waar Velcrypt past
 
-Velcrypt is een kluis uit de vierde categorie. De app heeft bewust geen Face ID of Touch ID: je ontgrendelt hem door een [patroon](id:pattern-lock) te tekenen op een raster van 5×5 stippen, minstens zes stippen met minstens één richtingsverandering, en langere patronen zijn beter. Dat patroon bestaat alleen in je geheugen en staat los van je iPhone-toegangscode.
+Velcrypt is een kluis uit de vierde categorie. Face ID en Touch ID staan standaard uit: je ontgrendelt de app door een [patroon](id:pattern-lock) te tekenen op een raster van 5×5 stippen, minstens zes stippen met minstens één richtingsverandering, en langere patronen zijn beter. Dat patroon bestaat alleen in je geheugen en staat los van je iPhone-toegangscode.
 
 Inhoud wordt op het apparaat versleuteld met AES-256-GCM, de kluis [vergrendelt automatisch](id:auto-lock) als je de app verlaat, en er wordt niets geüpload. De prijs van dat ontwerp: er is geen herstel. Vergeet je het patroon, dan kunnen jij noch Velcrypt de kluis openen. Zoals elk slot helpt het ook niet als iemand toekijkt terwijl je het patroon tekent, of als je de telefoon doorgeeft met de kluis al open.

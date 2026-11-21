@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "album nascosti iphone vs velcrypt"
 keywords: ["nascondere foto iphone", "album nascosti iphone è sicuro", "alternativa album nascosti", "album nascosti face id", "foto nascoste icloud"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "L’album Nascosti integrato di Apple contro una cassaforte cifrata separata: cosa protegge ciascuno, dove si sincronizzano le foto e chi può aprirle."
 competitor: "Album Nascosti dell’iPhone"
 lastChecked: "ottobre 2026"
@@ -53,7 +53,7 @@ Se Foto di iCloud è attivo, gli elementi nascosti si sincronizzano come tutto i
 | Account richiesto | No | Parte di Foto; serve un Account Apple per la sincronizzazione iCloud |
 | Backup cloud | Nessuna sincronizzazione; backup cifrato manuale gratuito in un file | Sì, con Foto di iCloud o Backup iCloud |
 | Metodo di sblocco | Sequenza su griglia 5×5, separata dal codice | Face ID, Touch ID o codice del dispositivo |
-| Biometria | Non offerta, per scelta | Sì |
+| Biometria | Facoltativa, spenta di base (per cassaforte) | Sì |
 | Esca / più casseforti | Ogni sequenza è una cassaforte a sé (più casseforti con Premium) | Un solo album Nascosti |
 | Sequenza di emergenza | Sì, con il Premium (apre un’esca, elimina le altre casseforti) | No |
 | Recupero se dimentichi il codice | Nessuno | Codice del dispositivo e recupero dell’Account Apple |
@@ -67,7 +67,7 @@ Se Foto di iCloud è attivo, gli elementi nascosti si sincronizzano come tutto i
 
 La differenza pratica più grande è chi può entrare. L’album Nascosti si fida del codice del dispositivo. Contro gli sconosciuti è ragionevole, ma molte persone condividono il codice con il partner, un figlio o un familiare, o l’hanno digitato davanti a loro. Chiunque abbia il codice può aprire l’album Nascosti, anche con Face ID configurato, perché il codice è sempre accettato come alternativa.
 
-La sequenza di Velcrypt è un segreto separato. Conoscere il tuo codice, o avere il tuo volto davanti al telefono, non apre una cassaforte. È anche il motivo per cui Velcrypt non ha volutamente Face ID: un volto o un dito possono essere usati senza il tuo consenso. Vedi [sblocco a sequenza](id:pattern-lock).
+La sequenza di Velcrypt è un segreto separato. Conoscere il tuo codice non apre una cassaforte, perché in Velcrypt il codice dell’iPhone non sostituisce mai la sequenza. Face ID è facoltativo e spento per impostazione predefinita: un volto o un dito possono essere usati senza il tuo consenso, quindi lo attivi solo per le casseforti che scegli e tieni la più privata solo con la sequenza. Vedi [sblocco a sequenza](id:pattern-lock).
 
 ## Copie e cloud
 
@@ -79,7 +79,7 @@ Velcrypt funziona al contrario. Una foto importata viene copiata in una cassafor
 
 ## Negabilità
 
-Esiste un solo album Nascosti, e la sua esistenza è evidente a chiunque apra Foto (a meno che tu non ne disattivi la visualizzazione). Velcrypt non ha un elenco di casseforti. Ogni sequenza apre la propria cassaforte, e una sequenza mai vista dall’app apre una cassaforte vuota senza errori. Così puoi tenere una cassaforte esca ed è impossibile dimostrare che ne esistano altre. Vedi [casseforti nascoste](id:hidden-vaults).
+Esiste un solo album Nascosti, e la sua esistenza è evidente a chiunque apra Foto (a meno che tu non ne disattivi la visualizzazione). Velcrypt non ha un elenco di casseforti, tranne quelle che aggiungi tu all’elenco Face ID. Ogni sequenza apre la propria cassaforte, e una sequenza mai vista dall’app apre una cassaforte vuota senza errori. Così puoi tenere una cassaforte esca ed è impossibile dimostrare che ne esistano altre. Vedi [casseforti nascoste](id:hidden-vaults).
 
 ## Quando l’album Nascosti potrebbe fare più al caso tuo
 

@@ -8,13 +8,13 @@ answer: "Negabilità plausibile, nella crittografia, significa che anche dopo av
 keyFacts:
   - "La negabilità plausibile riguarda ciò che si può dimostrare, non il nascondere che esistano un’app o dei dati cifrati."
   - "Gli strumenti di cifratura dei dischi hanno introdotto l’idea con volumi nascosti dentro volumi cifrati ordinari."
-  - "In Velcrypt qualsiasi sequenza sconosciuta apre una cassaforte vuota, senza errori e senza un elenco delle casseforti."
+  - "In Velcrypt qualsiasi sequenza sconosciuta apre una cassaforte vuota, senza errori e senza un elenco delle casseforti, salvo quelle che aggiungi all’elenco Face ID."
   - "Lo spazio occupato e l’analisi forense possono mostrare che esistono dati cifrati, anche se non si possono leggere."
   - "La negabilità protegge da curiosità e pressioni informali; non è uno scudo legale."
 primaryKeyword: "negabilità plausibile crittografia"
 keywords: ["cos’è la negabilità plausibile", "crittografia negabile", "volume nascosto spiegato", "negabilità plausibile cassaforte foto", "cassaforte negabile iphone"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Il concetto dietro volumi nascosti e casseforti esca, come lo usa Velcrypt con le sequenze sconosciute e cosa, onestamente, non può fare."
 category: security
 order: 42
@@ -55,7 +55,7 @@ Negli anni, gli stessi ricercatori e professionisti ne hanno documentato anche i
 Velcrypt adatta il principio a una cassaforte per foto e documenti su iPhone. Non ci sono un volume esterno e uno interno; invece:
 
 - **Ogni sequenza è una cassaforte a sé.** Ogni cassaforte ha una propria chiave master casuale a 256 bit, sbloccata da una chiave derivata da quella sequenza.
-- **Non esiste un elenco delle casseforti.** L’app non conserva nulla che enumeri quante casseforti esistono.
+- **Non esiste un elenco delle casseforti.** L’app non conserva nulla che enumeri quante casseforti esistono. L’unica eccezione è facoltativa: le casseforti per cui attivi Face ID compaiono nell’elenco Face ID, che chiunque riesca a farti guardare il telefono può vedere. Le casseforti senza Face ID non vi compaiono mai.
 - **Le sequenze sconosciute aprono una cassaforte vuota.** Disegna una sequenza che Velcrypt non ha mai visto e ti ritrovi in una nuova cassaforte vuota. Non c’è nessun messaggio di «sequenza errata».
 
 La conseguenza è che una sequenza sbagliata e una cassaforte valida ma vuota sono identiche. Se apri una cassaforte per qualcuno, nell’interfaccia non c’è nulla che mostri l’esistenza di altre casseforti. Questo rende la [cassaforte esca](id:what-is-a-decoy-vault) un uso naturale invece di una modalità speciale. La pagina della funzione [casseforti nascoste](id:hidden-vaults) mostra come funziona in pratica.

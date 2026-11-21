@@ -20,7 +20,7 @@ keywords:
   - "alternatieven voor keepsafe"
   - "app om foto's te verbergen iphone"
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Zeven criteria om een fotokluis te kiezen en een eerlijke blik op Apples tools, Keepsafe, Private Photo Vault, rekenmachinekluizen en Velcrypt."
 category: choosing
 order: 20
@@ -73,7 +73,7 @@ Even openheid vooraf: Velcrypt is onze app. We hebben geprobeerd hem even neutra
 | Apart geheim naast de toegangscode | Nee | Optioneel | Ja | Ja | Ja | Ja |
 | Account vereist | Apple Account voor iCloud | Apple Account voor iCloud | Ja (e-mail) | Niet nodig voor basisgebruik | Wisselt | Nee |
 | Cloudback-up / synchronisatie | Via iCloud-foto's | Via iCloud | Optionele premiumcloud | Wisselt | Wisselt | Geen synchronisatie; gratis versleuteld back-upbestand |
-| Face ID / Touch ID | Ja | Ja | Ja | Ja | Wisselt | Nee, bewust |
+| Face ID / Touch ID | Ja | Ja | Ja | Ja | Wisselt | Optioneel, standaard uit (per kluis) |
 | Lokfunctie | Nee | Nee | Nep-pincode (premium) | Lokwachtwoord | Wisselt | Elk patroon opent een eigen kluis (Premium) |
 | Vermomming als andere app | Nee | Nee | Nee | Nee | Ja | Alleen alternatief appsymbool (Premium) |
 
@@ -117,12 +117,12 @@ We kennen geen veelgebruikte, actief onderhouden opensource-fotokluis in de iOS 
 
 ## Velcrypt
 
-Velcrypt is een native iPhone-app die foto's, video's en documenten bewaart in versleutelde kluizen op het apparaat. Je ontgrendelt een kluis door een patroon te tekenen op een raster van 5×5 ([patroonslot](id:pattern-lock)). Elk patroon opent een eigen kluis, en een onbekend patroon opent gewoon een lege, dus de app verraadt nooit hoeveel kluizen er zijn ([verborgen kluizen](id:hidden-vaults)). Bestanden worden versleuteld met AES-256-GCM, met sleutels die van het patroon zijn afgeleid ([versleuteling](id:encryption)). Er is geen account, geen server en geen upload ([offline, zonder account](id:offline-no-account)). De gratis versie heeft één kluis met tot 50 onderdelen; Premium voegt onbeperkt onderdelen, meer kluizen en alternatieve appsymbolen toe.
+Velcrypt is een native iPhone-app die foto's, video's en documenten bewaart in versleutelde kluizen op het apparaat. Je ontgrendelt een kluis door een patroon te tekenen op een raster van 5×5 ([patroonslot](id:pattern-lock)). Elk patroon opent een eigen kluis, en een onbekend patroon opent gewoon een lege, dus de app verraadt nooit hoeveel kluizen er zijn, behalve de kluizen die je zelf aan de Face ID-lijst toevoegt ([verborgen kluizen](id:hidden-vaults)). Bestanden worden versleuteld met AES-256-GCM, met sleutels die van het patroon zijn afgeleid ([versleuteling](id:encryption)). Er is geen account, geen server en geen upload ([offline, zonder account](id:offline-no-account)). De gratis versie heeft één kluis met tot 50 onderdelen, en een lege kluis telt daarbij niet mee; Premium voegt onbeperkt onderdelen, meer kluizen en alternatieve appsymbolen toe.
 
 De grenzen zijn bewust gekozen, maar wel echt:
 
 - **Geen automatische back-up.** Kluisinhoud valt buiten iCloud- en computerback-ups. Een versleuteld back-upbestand maak je zelf, gratis, via Instellingen → Back-up. Vergeet je het patroon of het back-upwachtwoord, dan kunnen jij noch wij de bestanden herstellen.
-- **Geen Face ID**, bewust, dus ontgrendelen gaat trager dan één blik.
+- **Face ID standaard uit.** Je kunt het per kluis aanzetten, maar wie je naar je telefoon laat kijken, kan dan elke kluis in de Face ID-lijst openen. Voor je meest privékluis blijft het patroon de veiligste keuze.
 - **Geen echte vermomming.** Met Premium kies je een alternatief appsymbool, maar de naam Velcrypt blijft op je beginscherm staan.
 - **Geen cloudsynchronisatie, deellinks of apps voor iPad/Mac.**
 

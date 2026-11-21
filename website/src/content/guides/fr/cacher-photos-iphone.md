@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "cacher des photos sur iphone"
 keywords: ["comment cacher des photos sur iphone", "masquer des photos iphone", "album masqué iphone", "cacher l’album masqué iphone", "verrouiller album masqué iphone", "cacher photos ios 18"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-11-21
 summary: "Utilisez la fonction Masquer de Photos, verrouillez et dissimulez l’album Masqués, et comprenez ce que le masquage ne protège pas."
 category: hiding
 order: 1
@@ -117,6 +117,6 @@ La contrepartie, c’est la responsabilité. Un coffre qui garde les données un
 
 ## La place de Velcrypt
 
-Velcrypt est un exemple de cette seconde approche. Vous le déverrouillez en traçant un schéma sur une grille de 5×5 points, et non avec Face ID ou le code de l’appareil : connaître le code de votre iPhone ne suffit donc pas à l’ouvrir. Les fichiers sont chiffrés en AES-256-GCM sur l’appareil, il n’y a pas de compte, et les données du coffre ne sont pas incluses dans les sauvegardes iCloud. Chaque schéma ouvre son propre coffre, et un schéma inconnu ouvre simplement un coffre vide ; la page sur les [coffres cachés](id:hidden-vaults) explique pourquoi c’est important.
+Velcrypt est un exemple de cette seconde approche. Vous le déverrouillez en traçant un schéma sur une grille de 5×5 points, et non avec le code de l’appareil : connaître le code de votre iPhone ne suffit donc pas à l’ouvrir. Face ID n’est utilisé que si vous l’activez pour un coffre. Les fichiers sont chiffrés en AES-256-GCM sur l’appareil, il n’y a pas de compte, et les données du coffre ne sont pas incluses dans les sauvegardes iCloud. Chaque schéma ouvre son propre coffre, et un schéma inconnu ouvre simplement un coffre vide ; la page sur les [coffres cachés](id:hidden-vaults) explique pourquoi c’est important.
 
 Importer dans Velcrypt copie une photo au lieu de la déplacer : l’original reste dans Photos jusqu’à ce que vous le supprimiez vous-même, y compris dans Suppressions récentes. Le guide pour [supprimer les originaux après l’import](id:delete-original-photos-after-import) détaille la marche à suivre. Pour un aperçu du volet photo de l’app, voir [cacher des photos avec Velcrypt](id:hide-photos), et pour une comparaison point par point, [Velcrypt ou l’album Masqués de l’iPhone](id:velcrypt-vs-iphone-hidden-album).

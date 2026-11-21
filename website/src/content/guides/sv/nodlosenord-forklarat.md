@@ -16,7 +16,7 @@ keyFacts:
 primaryKeyword: "nödlösenord"
 keywords: ["paniklösenord", "panikkod", "tvångskod", "vad är ett nödlösenord", "nödlösenord betydelse", "kodord vid fara", "kodord exempel", "överfallskod larm", "nöd-pin", "pin-kod baklänges bankomat myt", "tvångsfingeravtryck", "nödkod mobil", "android duress pin", "grapheneos duress pin", "nödmönster"]
 datePublished: 2026-10-22
-dateModified: 2026-10-31
+dateModified: 2026-11-21
 summary: "Vad nödlösenord, kodord och nöd-PIN är, vad iPhone och Android erbjuder och hur Velcrypts nödmönster fungerar."
 category: security
 order: 45
@@ -108,7 +108,7 @@ Den som söker efter ”nödkod till mobilen”, ”nöd-PIN” eller ”tvångs
 
 ### Vad ”tvångsfingeravtryck” betyder
 
-Ett **tvångsfingeravtryck** (*duress fingerprint*) är ett särskilt finger som registreras som tyst larm. Vissa biometriska passersystem har stöd för det: du skannar det fingret, dörren öppnas som vanligt och ett överfallslarm går till väktarna. Vanliga mobiler erbjuder inte detta. <!-- TODO verify --> I en mobil är biometrin snarare den svaga punkten under tvång, eftersom någon kan hålla telefonen framför ditt ansikte eller trycka ditt finger mot sensorn. Därför är det viktigt att snabbt kunna stänga av Face ID, och därför har Velcrypt [medvetet ingen upplåsning med Face ID](id:pattern-lock-vs-pin-vs-face-id).
+Ett **tvångsfingeravtryck** (*duress fingerprint*) är ett särskilt finger som registreras som tyst larm. Vissa biometriska passersystem har stöd för det: du skannar det fingret, dörren öppnas som vanligt och ett överfallslarm går till väktarna. Vanliga mobiler erbjuder inte detta. <!-- TODO verify --> I en mobil är biometrin snarare den svaga punkten under tvång, eftersom någon kan hålla telefonen framför ditt ansikte eller trycka ditt finger mot sensorn. Därför är det viktigt att snabbt kunna stänga av Face ID, och därför är Face ID i Velcrypt [avstängt som standard och valfritt per valv](id:pattern-lock-vs-pin-vs-face-id).
 
 ## Så använder mobilappar nödkoder
 
@@ -137,6 +137,7 @@ Velcrypt låses upp med ett mönster som ritas på ett rutnät med 5×5 punkter,
 - **Appen visar aldrig om ett nödmönster är inställt.** En krypterad post med fast storlek finns alltid i iOS-nyckelringen; när inget nödmönster är inställt innehåller den slumpmässiga byte.
 - **Ett per iPhone.** Ställer du in ett nytt nödmönster ersätter det det gamla. För att stänga av det måste du rita det, och att stänga av det raderar ingenting.
 - **Det fortsätter att fungera om Premium upphör.** Det är bara inställningen som kräver Premium.
+- **Det fungerar bara via mönster.** Face ID-listan utlöser aldrig nödmönstret, och valv som nödmönstret raderar försvinner också ur Face ID-listan.
 
 Ställer du in det i det enda valvet på telefonen finns det inget annat att radera, och Velcrypt varnar dig för det.
 

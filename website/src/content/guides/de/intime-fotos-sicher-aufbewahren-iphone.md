@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "intime fotos sicher aufbewahren iphone"
 keywords: ["private fotos iphone wo aufbewahren", "nacktbilder iphone sicher verstecken", "private fotos sicherheit", "intime bilder datenschutz", "private bilder sicher aufbewahren"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Ein respektvoller Schutzplan Schritt für Schritt für intime Fotos auf dem iPhone – und was du tun kannst, wenn jemand droht, deine Bilder zu verbreiten."
 category: practical
 order: 32
@@ -117,6 +117,6 @@ Bist du unter 18, sprich bitte sofort mit einer erwachsenen Vertrauensperson ode
 
 ## Wo Velcrypt ins Spiel kommt
 
-Velcrypt ist genau für die Lücke gebaut, die das Album „Ausgeblendet“ lässt: Inhalte, die auf diesem iPhone bleiben sollen, hinter einem Geheimnis, das nur du kennst. Fotos und Videos, die du [in Velcrypt versteckst](id:hide-photos), werden auf dem Gerät mit AES-256-GCM verschlüsselt, bleiben aus iCloud- und Computer-Backups heraus und berühren nie einen Server. Jedes Muster öffnet einen eigenen Tresor, es gibt kein Face ID, das jemand nutzen könnte, während du schläfst, und in der App-Übersicht sind die Inhalte verborgen.
+Velcrypt ist genau für die Lücke gebaut, die das Album „Ausgeblendet“ lässt: Inhalte, die auf diesem iPhone bleiben sollen, hinter einem Geheimnis, das nur du kennst. Fotos und Videos, die du [in Velcrypt versteckst](id:hide-photos), werden auf dem Gerät mit AES-256-GCM verschlüsselt, bleiben aus iCloud- und Computer-Backups heraus und berühren nie einen Server. Jedes Muster öffnet einen eigenen Tresor, Face ID ist standardmäßig aus, sodass niemand den Tresor mit deinem Gesicht öffnen kann, während du schläfst, solange du es nicht selbst einschaltest, und in der App-Übersicht sind die Inhalte verborgen.
 
 Ehrliche Grenzen gelten trotzdem: Velcrypt erreicht keine Kopien auf dem Handy einer anderen Person, kann nicht verhindern, dass dir jemand beim Zeichnen des Musters zusieht, und ein vergessenes Muster lässt sich nicht wiederherstellen. Ist eine Beziehung zu Ende gegangen, findest du auf der Seite [Nach einer Trennung](id:after-a-breakup) weitere Ideen.

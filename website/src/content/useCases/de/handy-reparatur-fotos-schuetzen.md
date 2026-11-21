@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "handy reparatur fotos schützen"
 keywords: ["fotos verstecken vor handy reparatur", "sieht die werkstatt meine fotos", "iphone reparatur code", "daten schützen iphone reparatur", "handy reparatur datenschutz tipps"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Worauf ein Techniker bei der Reparatur auf deinem iPhone zugreifen könnte, wie du dich vorbereitest und warum ein Backup-Plan für den Tresor zählt."
 group: everyday
 schemaType: Article
@@ -61,7 +61,7 @@ Die meisten Reparaturtechniker sind Profis ohne jedes Interesse an deinen Fotos.
 
 ## Wie Velcrypt hilft
 
-Velcrypt bewahrt Fotos, Videos und Dokumente in verschlüsselten Tresoren auf deinem iPhone auf. Der Tresor öffnet sich nicht mit deinem Gerätecode oder Face ID; er braucht das [Muster, das du auf ein 5×5-Raster zeichnest](id:pattern-lock). Selbst wenn ein Techniker deinen Code hat und Velcrypt öffnet, zeigt alles außer deinem Muster nur einen leeren Tresor – keine Fehlermeldung, kein Hinweis darauf, dass es andere Tresore gibt.
+Velcrypt bewahrt Fotos, Videos und Dokumente in verschlüsselten Tresoren auf deinem iPhone auf. Der Tresor öffnet sich nicht mit deinem Gerätecode, und Face ID nur, wenn du es für ihn eingeschaltet hast; ansonsten braucht er das [Muster, das du auf ein 5×5-Raster zeichnest](id:pattern-lock). Selbst wenn ein Techniker deinen Code hat und Velcrypt öffnet, zeigt alles außer deinem Muster nur einen leeren Tresor – keine Fehlermeldung, kein Hinweis darauf, dass es andere Tresore gibt.
 
 Importierte Fotos sind Kopien. Denk also daran, vor der Reparatur die [Originale zu löschen](id:delete-original-photos-after-import) und „Zuletzt gelöscht“ zu leeren. Sonst liegen sie weiterhin in Fotos.
 

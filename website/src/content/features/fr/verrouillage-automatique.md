@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "verrouillage automatique app iphone"
 keywords: ["coffre-fort photo verrouillage automatique", "masquer l’aperçu dans le sélecteur d’apps", "app qui se verrouille à la fermeture iphone", "verrouiller une app en arrière-plan", "délai de verrouillage automatique"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-11-21
 summary: "Le coffre se verrouille quand l’app passe en arrière-plan, après le délai choisi, et reste masqué dans le sélecteur d’apps."
 status: available
 schemaType: WebPage
@@ -64,7 +64,7 @@ Velcrypt masque le contenu des coffres dans le sélecteur d’apps. L’aperçu 
 
 ## Pourquoi le verrouillage compte encore plus avec un schéma
 
-Velcrypt n’a volontairement ni Face ID ni Touch ID : rouvrir un coffre verrouillé implique donc toujours de tracer votre schéma. Cela peut sembler contraignant, et il est tentant de choisir un long délai pour l’éviter. Résistez un peu à cette tentation : le schéma ne protège le coffre que tant que celui-ci est verrouillé. Un délai court, associé à un schéma que vous tracez vite et « à la sensation », vous apporte à la fois confidentialité et confort.
+Face ID est désactivé par défaut dans Velcrypt : à moins de l’activer pour un coffre, rouvrir un coffre verrouillé implique donc de tracer votre schéma. Cela peut sembler contraignant, et il est tentant de choisir un long délai pour l’éviter. Résistez un peu à cette tentation : le schéma ne protège le coffre que tant que celui-ci est verrouillé. Un délai court, associé à un schéma que vous tracez vite et « à la sensation », vous apporte à la fois confidentialité et confort.
 
 ## Conseils pratiques
 

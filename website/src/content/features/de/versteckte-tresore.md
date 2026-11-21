@@ -1,32 +1,32 @@
 ---
 pageId: hidden-vaults
 title: "Versteckte Tresore: ein Muster, ein eigener Tresor"
-description: "In Velcrypt ist jedes Muster ein eigener Tresor. Es gibt keine Tresorliste, und ein unbekanntes Muster öffnet ohne Fehler einen leeren Tresor."
-h1: "Versteckte Tresore: ein Muster, ein Tresor, keine Liste"
+description: "In Velcrypt ist jedes Muster ein eigener Tresor. Keine Tresorliste außer der Face-ID-Liste, die du selbst füllst; Unbekanntes öffnet einen leeren Tresor."
+h1: "Versteckte Tresore: ein Muster, ein Tresor, keine Liste ohne dein Zutun"
 navTitle: "Versteckte Tresore"
-answer: "In Velcrypt öffnet jedes Muster seinen eigenen verschlüsselten Tresor. Es gibt keine Liste der Tresore, und ein Muster, das die App noch nie gesehen hat, öffnet einfach einen leeren Tresor ohne Fehlermeldung. Nichts auf dem Bildschirm beweist, dass weitere Tresore existieren."
+answer: "In Velcrypt öffnet jedes Muster seinen eigenen verschlüsselten Tresor. Es gibt keine Liste der Tresore, außer der Face-ID-Liste mit den Tresoren, die du selbst hinzufügst, und ein Muster, das die App noch nie gesehen hat, öffnet einfach einen leeren Tresor ohne Fehlermeldung. Nichts auf dem Bildschirm beweist, dass weitere Tresore existieren."
 keyFacts:
   - "Jedes Muster ist ein eigener Tresor mit eigenem Verschlüsselungsschlüssel."
-  - "Velcrypt zeigt nie eine Liste der Tresore."
+  - "Velcrypt zeigt nie eine Liste der Tresore, außer den Tresoren, die du selbst in die Face-ID-Liste aufnimmst."
   - "Ein unbekanntes Muster öffnet einen leeren Tresor, ohne Fehlermeldung."
   - "Mit Premium kannst du einen Köder-Tresor mit gewöhnlichen Inhalten anlegen."
   - "Die kostenlose Version hat einen Tresor; mehr Tresore gehören zu Premium."
 primaryKeyword: "versteckter tresor app iphone"
 keywords: ["mehrere tresore foto app", "köder tresor iphone", "geheimer tresor app", "glaubhafte abstreitbarkeit foto tresor", "zweiter versteckter tresor"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
-summary: "Jedes Muster ist ein eigener Tresor. Keine Tresorliste, kein Fehler bei unbekannten Mustern und Platz für einen glaubwürdigen Köder."
+dateModified: 2026-11-21
+summary: "Jedes Muster ist ein eigener Tresor. Keine Tresorliste außer deiner Face-ID-Liste, kein Fehler bei unbekannten Mustern, Platz für einen Köder."
 status: available
 schemaType: WebPage
 order: 2
 related: [pattern-lock, duress-pattern, encryption, what-is-a-decoy-vault, plausible-deniability-explained]
 faq:
   - q: "Wie sehe ich alle meine Tresore in Velcrypt?"
-    a: "Gar nicht, und das ist Absicht. Velcrypt hat keine Tresorliste. Einen Tresor öffnest du nur, indem du sein Muster zeichnest, also behalte deine Muster selbst im Blick."
+    a: "Gar nicht, und das ist Absicht. Velcrypt hat keine Tresorliste. Einen Tresor öffnest du, indem du sein Muster zeichnest, also behalte deine Muster selbst im Blick. Die einzige Ausnahme ist die Face-ID-Liste: Sie zeigt nur die Tresore, für die du Face ID selbst eingeschaltet hast."
   - q: "Was passiert, wenn ich ein falsches Muster zeichne?"
     a: "Velcrypt öffnet für dieses Muster einen leeren Tresor, statt einen Fehler anzuzeigen. Fügst du dort Dateien hinzu, wird daraus ein neuer Tresor. Siehst du statt deiner Fotos nichts, hast du wahrscheinlich ein leicht abweichendes Muster gezeichnet."
   - q: "Kann jemand erkennen, dass ich mehr als einen Tresor habe?"
-    a: "Nicht über die Oberfläche der App. Es gibt keine Liste, keinen Zähler und keine Fehlermeldung, die andere Tresore verrät. Velcrypt kann aber nicht verbergen, dass die App installiert ist, und nicht verhindern, dass dir jemand beim Zeichnen zusieht."
+    a: "Nicht über die Oberfläche der App. Es gibt keine Liste, keinen Zähler und keine Fehlermeldung, die andere Tresore verrät. Ausnahme: Hast du Face ID für einige Tresore eingeschaltet, sieht jeder, der dich an Face ID vorbeibringt, genau diese Tresore in der Face-ID-Liste. Velcrypt kann aber nicht verbergen, dass die App installiert ist, und nicht verhindern, dass dir jemand beim Zeichnen zusieht."
   - q: "Was ist ein Köder-Tresor?"
     a: "Ein Köder-Tresor ist ein Tresor mit gewöhnlichen, glaubwürdigen Inhalten, den du öffnen kannst, wenn du unter Druck zeigen sollst, was in der App ist. Dein echter Tresor bleibt hinter einem anderen Muster. Weil dafür ein zweiter Tresor nötig ist, braucht ein Köder-Tresor Premium."
 howTo:
@@ -48,7 +48,7 @@ Die meisten Tresor-Apps haben ein Passwort und einen geschützten Bereich. Die F
 
 Ein versteckter Tresor ist ein Tresor, dessen Existenz sich von außen nicht bestätigen lässt. In Velcrypt gehört zu jedem gültigen Muster auf dem [5×5-Raster](id:pattern-lock) ein eigener Tresor mit eigenem zufälligem Hauptschlüssel und eigenen Dateien. Muster A zeigt die Fotos, die du hinter Muster A abgelegt hast. Muster B zeigt etwas völlig anderes.
 
-Es gibt keinen Einstellungsbildschirm, der sie auflistet, kein „Tresor wechseln“-Menü und keine Zahl, die verrät, wie viele es gibt. Von innen wirkt jeder Tresor, als wäre er der einzige.
+Es gibt keinen Einstellungsbildschirm, der sie auflistet, kein „Tresor wechseln“-Menü und keine Zahl, die verrät, wie viele es gibt. Die einzige Liste ist die Face-ID-Liste, und in ihr stehen nur die Tresore, die du selbst hinzugefügt hast; Tresore ohne Face ID erscheinen dort nie. Von innen wirkt jeder Tresor, als wäre er der einzige.
 
 ## Kein Fehler bei unbekanntem Muster
 

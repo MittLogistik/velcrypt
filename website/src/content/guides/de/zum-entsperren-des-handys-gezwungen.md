@@ -15,7 +15,7 @@ keyFacts:
 primaryKeyword: "gezwungen handy zu entsperren"
 keywords: ["zum entsperren gezwungen", "partner will mein handy kontrollieren", "jemand zwingt mich iphone zu entsperren", "erzwungenes entsperren handy", "handy raub entsperren"]
 datePublished: 2026-10-22
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Ruhige, praktische Schritte, wenn Partner, Dieb oder Schnüffler dein entsperrtes Handy verlangen, und wie Köder-Tresor und Notfallmuster dazu passen."
 category: practical
 order: 35
@@ -76,11 +76,11 @@ Das häufigste Risiko ist kein Hack, sondern jemand, der durch deine Fotos scrol
 
 - **Nutze einen starken Gerätecode** mit mindestens sechs Ziffern und gib ihn nicht weiter.
 - **Lerne, Face ID schnell zu sperren.** Halte ab iPhone 8 die Seitentaste und eine der Lautstärketasten gedrückt, bis der Bildschirm zum Ausschalten bzw. für den Notruf SOS erscheint, und tippe dann auf „Abbrechen“. Face ID und Touch ID bleiben aus, bis der Code eingegeben wird. Je nach Einstellungen kann mehrfaches Drücken der Seitentaste den Notruf wählen. Übe die genaue Geste also vorher.
-- **Velcrypt hat bewusst kein Entsperren per Face ID**, also kann niemand einen Tresor öffnen, indem er dir das Handy vors Gesicht hält. Ein Muster existiert nur in deinem Gedächtnis. [Muster vs. PIN vs. Face ID](id:pattern-lock-vs-pin-vs-face-id) erklärt die Abwägung.
+- **Face ID ist in Velcrypt standardmäßig aus.** Solange du es für einen Tresor nicht einschaltest, kann niemand ihn öffnen, indem er dir das Handy vors Gesicht hält; wer es schafft, sieht und öffnet jeden Tresor in der Face-ID-Liste. Lass deinen privatesten Tresor deshalb nur beim Muster, denn ein Muster existiert nur in deinem Gedächtnis. [Muster vs. PIN vs. Face ID](id:pattern-lock-vs-pin-vs-face-id) erklärt die Abwägung.
 
 ### Richte einen Köder-Tresor ein
 
-Ein [Köder-Tresor](id:what-is-a-decoy-vault) ist ein zweiter Tresor mit harmlosen, glaubwürdigen Inhalten: Quittungen, Ausweisscans, Geschenkideen. Verlangt jemand zu sehen, was in der App ist, kannst du den Köder öffnen. In Velcrypt öffnet jedes Muster einen eigenen Tresor, und es gibt keine Tresorliste, also zeigt nichts auf dem Bildschirm, dass es noch einen gibt. Ein zweiter Tresor braucht Premium.
+Ein [Köder-Tresor](id:what-is-a-decoy-vault) ist ein zweiter Tresor mit harmlosen, glaubwürdigen Inhalten: Quittungen, Ausweisscans, Geschenkideen. Verlangt jemand zu sehen, was in der App ist, kannst du den Köder öffnen. In Velcrypt öffnet jedes Muster einen eigenen Tresor, und es gibt keine Tresorliste (außer der Face-ID-Liste, die du selbst füllst), also zeigt nichts auf dem Bildschirm, dass es noch einen gibt. Ein zweiter Tresor braucht Premium.
 
 ### Überleg dir ein Notfallmuster, mit Bedacht
 

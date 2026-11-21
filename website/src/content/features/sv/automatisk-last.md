@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "automatisk låsning valvapp iphone"
 keywords: ["fotovalv låses automatiskt", "dölja förhandsvisning i appväxlaren", "app låses när den stängs iphone", "låsa valv i bakgrunden", "fördröjning automatisk låsning"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-11-21
 summary: "Valvet låses när appen går till bakgrunden, efter en fördröjning du väljer, och visas tomt i appväxlaren."
 status: available
 schemaType: WebPage
@@ -64,7 +64,7 @@ Velcrypt döljer valvinnehållet i appväxlaren. Förhandsvisningen avslöjar in
 
 ## Varför låsning betyder mer med ett mönster
 
-Velcrypt har medvetet inget Face ID eller Touch ID, så att öppna ett låst valv betyder alltid att rita ditt mönster. Det kan kännas omständligt, och det är frestande att välja en lång fördröjning för att slippa det. Stå emot lite: mönstret skyddar bara valvet medan valvet är låst. En kort fördröjning, kombinerad med ett mönster du snabbt kan rita på känsla, ger dig både integritet och bekvämlighet.
+Face ID är avstängt som standard i Velcrypt, så för de flesta valv betyder öppna ett låst valv att rita ditt mönster. Du kan slå på Face ID för vardagsvalv, men ditt mest privata valv bör bara ha sitt mönster. Det kan kännas omständligt, och det är frestande att välja en lång fördröjning för att slippa det. Stå emot lite: mönstret skyddar bara valvet medan valvet är låst. En kort fördröjning, kombinerad med ett mönster du snabbt kan rita på känsla, ger dig både integritet och bekvämlighet.
 
 ## Praktiska tips
 

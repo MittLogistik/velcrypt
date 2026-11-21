@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "garder des preuves de harcèlement iphone"
 keywords: ["conserver des captures d’écran de harcèlement", "stocker des preuves sur iphone", "preuves de violences téléphone", "cacher des captures d’écran à son agresseur", "preuves cyberharcèlement sécurité", "sauvegarder des preuves de harcèlement"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Une approche prudente, sécurité d’abord, pour garder vos captures et photos de harcèlement privées, intactes et sauvegardées en lieu sûr."
 group: sensitive
 schemaType: Article
@@ -64,7 +64,7 @@ Une preuve qui peut disparaître ne sert pas à grand-chose. Les téléphones se
 
 Velcrypt peut garder une copie privée de captures d’écran, de photos et de documents sur votre iPhone, à l’écart de la photothèque. Une fois [les originaux supprimés](id:delete-original-photos-after-import) de Photos et « Suppressions récentes » vidé, ils n’apparaissent plus dans votre pellicule, ne se synchronisent plus avec un compte partagé et ne ressurgissent plus dans les Souvenirs.
 
-Les coffres s’ouvrent avec un schéma tracé sur une grille 5×5, pas avec le code de votre appareil ni Face ID : connaître votre code ne suffit donc pas. [Chaque schéma ouvre son propre coffre](id:hidden-vaults), et un mauvais schéma ouvre un coffre vide sans erreur. Rien à l’écran ne prouve donc que votre coffre de preuves existe, comme l’explique [le déni plausible](id:plausible-deniability-explained). L’app [se verrouille automatiquement](id:auto-lock) quand vous la quittez, et son contenu est masqué dans le sélecteur d’apps.
+Les coffres s’ouvrent avec un schéma tracé sur une grille 5×5, jamais avec le code de votre appareil, et Face ID reste désactivé tant que vous ne l’activez pas pour un coffre : connaître votre code ne suffit donc pas. [Chaque schéma ouvre son propre coffre](id:hidden-vaults), et un mauvais schéma ouvre un coffre vide sans erreur. Rien à l’écran ne prouve donc que votre coffre de preuves existe, comme l’explique [le déni plausible](id:plausible-deniability-explained). L’app [se verrouille automatiquement](id:auto-lock) quand vous la quittez, et son contenu est masqué dans le sélecteur d’apps.
 
 ## Des limites honnêtes — à lire
 

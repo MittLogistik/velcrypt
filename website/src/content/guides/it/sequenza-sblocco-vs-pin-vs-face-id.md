@@ -10,11 +10,11 @@ keyFacts:
   - "Le sequenze scelte dalle persone sono molto più deboli del massimo teorico: si preferiscono angoli, lettere e forme corte."
   - "I dati biometrici sono comodi e difficili da spiare, ma un volto o un dito possono essere usati mentre dormi, sei trattenuto o costretto."
   - "Le ditate sullo schermo possono tradire una sequenza più facilmente di un PIN."
-  - "Velcrypt usa una sequenza su una griglia 5×5 (almeno 6 punti) e per scelta non ha Face ID né Touch ID."
+  - "Velcrypt usa una sequenza su una griglia 5×5 (almeno 6 punti). Face ID è facoltativo e disattivato per impostazione predefinita: lo attivi solo per le casseforti che scegli."
 primaryKeyword: "sequenza di sblocco vs pin"
 keywords: ["pin o face id sicurezza", "la sequenza di sblocco è sicura", "sequenza o password", "face id o codice", "blocco telefono più sicuro", "sblocco biometrico forzato"]
 datePublished: 2026-10-21
-dateModified: 2026-10-31
+dateModified: 2026-11-21
 summary: "Calcolo delle combinazioni, sguardi indiscreti, ditate e biometria forzata: un confronto onesto tra i quattro modi più comuni di bloccare i dati privati."
 category: security
 order: 40
@@ -28,8 +28,8 @@ faq:
     a: "Un PIN a 6 cifre ha 1.000.000 di combinazioni possibili (da 000000 a 999999), contro le 10.000 di un PIN a 4 cifre. Scelte comuni come 123456 o le date di nascita riducono drasticamente il numero reale."
   - q: "Qualcuno può indovinare la mia sequenza dalle ditate sullo schermo?"
     a: "A volte. Con la luce giusta, le tracce delle dita su uno schermo di vetro possono rivelare il percorso di una sequenza. Pulire lo schermo, usare una pellicola opaca e scegliere una sequenza che si incrocia rendono più difficili questi attacchi."
-  - q: "Perché Velcrypt non offre Face ID?"
-    a: "Per scelta. Un volto o un’impronta possono essere usati per sbloccare un dispositivo senza il tuo consenso, mentre una sequenza esiste solo nella tua memoria. Velcrypt ha scelto una sequenza perché aprire una cassaforte richieda sempre una tua decisione."
+  - q: "Velcrypt usa Face ID?"
+    a: "Solo se lo vuoi. Face ID è gratuito, facoltativo e disattivato per impostazione predefinita. Lo attivi per una singola cassaforte da Impostazioni › Face ID al suo interno; poi tocchi “Sblocca con Face ID” e scegli tra le casseforti attivate. Chi ti fa guardare il telefono può aprirle tutte, quindi tieni la più privata solo con la sequenza."
 ---
 
 Ogni blocco è un compromesso tra quanto è difficile da indovinare, quanto è facile da spiare e quanto è facile costringerti ad aprirlo. La maggior parte dei confronti guarda solo al primo aspetto. Questa guida li considera tutti e tre, con numeri reali dove esistono e avvertenze oneste dove mancano.
@@ -39,7 +39,7 @@ Ogni blocco è un compromesso tra quanto è difficile da indovinare, quanto è f
 - **Il PIN** è una breve sequenza di cifre, di solito 4 o 6 su iPhone.
 - **La password alfanumerica** è una stringa di lettere, numeri e simboli di qualsiasi lunghezza.
 - **La sequenza** è un percorso tracciato su una griglia di punti. Android ha reso popolare la griglia 3×3; il [blocco a sequenza di Velcrypt](id:pattern-lock) usa una griglia 5×5.
-- **I dati biometrici** (Face ID, Touch ID) sbloccano con il volto o l’impronta, con un codice come riserva.
+- **I dati biometrici** (Face ID, Touch ID) sbloccano con il volto o l’impronta. Sul blocco del dispositivo il codice fa da riserva; dentro Velcrypt no, lì la riserva è sempre la sequenza.
 
 ## Spazio di ricerca: quanti tentativi servirebbero?
 
@@ -116,6 +116,10 @@ Non devi scegliere un unico blocco per tutto. Una configurazione sensata per la 
 
 ## Dove si inserisce Velcrypt
 
-Velcrypt fa una scelta precisa: l’unico modo per entrare in una cassaforte è una sequenza su una griglia 5×5 di punti, una linea continua che passa per almeno 6 punti con almeno un cambio di direzione. Sono consigliate sequenze più lunghe, da 8 a 12 punti. Non c’è Face ID né Touch ID, perché una sequenza non si può prendere dal tuo corpo.
+In Velcrypt ogni cassaforte si apre con una sequenza su una griglia 5×5 di punti, una linea continua che passa per almeno 6 punti con almeno un cambio di direzione. Sono consigliate sequenze più lunghe, da 8 a 12 punti. La sequenza apre sempre ogni cassaforte, perché non si può prendere dal tuo corpo.
 
-Questo design cambia anche il significato di «indovinare». Ogni sequenza è una cassaforte a sé, e una sequenza che Velcrypt non ha mai visto apre semplicemente una cassaforte vuota, senza messaggi di errore. Quindi un tentativo sbagliato non si rivela come sbagliato, e puoi tenere una [cassaforte esca](id:what-is-a-decoy-vault) sotto una seconda sequenza. La pagina sulle [casseforti nascoste](id:hidden-vaults) spiega il modello, e la [panoramica sulla sicurezza](id:security) elenca ciò da cui non può proteggerti, compreso qualcuno che ti guarda mentre disegni.
+Face ID (o Touch ID) è facoltativo, gratuito e disattivato per impostazione predefinita per ogni cassaforte. Se vuoi, lo attivi dentro una cassaforte da Impostazioni › Face ID e le dai un nome per l’elenco Face ID. Nella schermata di blocco compare allora il pulsante “Sblocca con Face ID”: dopo il riconoscimento scegli una delle casseforti che hai attivato (se è una sola, si apre subito). Non c’è riserva con il codice dell’iPhone, e la copia della chiave per Face ID resta nel Portachiavi di questo iPhone, non su iCloud né nei backup. Se aggiungi un volto o un’impronta, o reimposti Face ID, si disattiva per quelle casseforti finché non lo riattivi dopo averle aperte con la sequenza.
+
+Il motivo per cui è spento di base è quello visto sopra: chi riesce a farti guardare il telefono può vedere e aprire ogni cassaforte dell’elenco Face ID. Usalo per le casseforti di comodo e tieni la più privata solo con la sequenza. La sequenza di emergenza funziona solo tramite sequenze, non tramite l’elenco Face ID; quando scatta, le casseforti eliminate spariscono anche da quell’elenco.
+
+Questo design cambia anche il significato di «indovinare». Ogni sequenza è una cassaforte a sé, e una sequenza che Velcrypt non ha mai visto apre semplicemente una cassaforte vuota, senza messaggi di errore. Velcrypt non elenca mai le casseforti, tranne quelle che aggiungi di proposito all’elenco Face ID. Quindi un tentativo sbagliato non si rivela come sbagliato, e puoi tenere una [cassaforte esca](id:what-is-a-decoy-vault) sotto una seconda sequenza. La pagina sulle [casseforti nascoste](id:hidden-vaults) spiega il modello, e la [panoramica sulla sicurezza](id:security) elenca ciò da cui non può proteggerti, compreso qualcuno che ti guarda mentre disegni.

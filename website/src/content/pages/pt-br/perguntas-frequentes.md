@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "velcrypt perguntas frequentes"
 keywords: ["dúvidas velcrypt", "como funciona o velcrypt", "perguntas app cofre de fotos", "ajuda padrão velcrypt", "backup velcrypt"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 schemaType: FAQPage
 order: 3
 related: [security, pricing, support, pattern-lock, forgot-vault-pattern, hidden-vaults]
@@ -39,17 +39,17 @@ faqGroups:
       - q: "Como crio um segundo cofre?"
         a: "Desenhe um padrão novo que você ainda não usou. Cada padrão é um cofre próprio, então um padrão novo abre um cofre novo e vazio, que você pode começar a preencher."
       - q: "Por que meu padrão abriu um cofre vazio?"
-        a: "O mais provável é que você tenha desenhado um padrão um pouco diferente, que o Velcrypt trata como outro cofre. Tente de novo, com calma; por design, o app nunca mostra mensagem de “padrão incorreto”."
+        a: "O mais provável é que você tenha desenhado um padrão um pouco diferente, que o Velcrypt trata como outro cofre. Tente de novo, com calma; por design, o app nunca mostra mensagem de “padrão incorreto”. Um cofre vazio aberto por engano não consome o seu cofre grátis."
       - q: "Posso ver uma lista dos meus cofres?"
-        a: "Não. O Velcrypt não mantém lista de cofres, então nada no app revela quantos existem. Você precisa lembrar de cada padrão por conta própria."
+        a: "Não. O Velcrypt não mantém lista de cofres, então nada no app revela quantos existem. Você precisa lembrar de cada padrão por conta própria. A única exceção é o Face ID, que é opcional: os cofres em que você o ativa aparecem na lista do Face ID, e os que não o têm nunca aparecem."
       - q: "O que é um cofre de fachada?"
         a: "Um cofre de fachada é um cofre de aparência comum, com conteúdo inofensivo, que você pode abrir se for pressionado, enquanto seu cofre privado fica atrás de outro padrão. Nada no Velcrypt prova que o segundo cofre existe."
       - q: "O que é o padrão de coação?"
         a: "Um recurso Premium que você configura em Ajustes → Padrão de Coação, de dentro de um cofre de fachada. Desenhá-lo na tela de bloqueio abre esse cofre de fachada e apaga em silêncio, de forma permanente, todos os outros cofres do iPhone. Cofres apagados só podem ser restaurados de um backup criptografado feito antes."
       - q: "Posso organizar os itens dentro de um cofre?"
         a: "Sim. Cada cofre pode ter álbuns, e você pode selecionar vários itens e movê-los entre os álbuns daquele cofre."
-      - q: "Por que o Velcrypt não usa Face ID nem Touch ID?"
-        a: "Por design. Um rosto ou um dedo pode ser usado sem o seu consentimento, por exemplo enquanto você dorme ou sob pressão, enquanto um padrão existe apenas na sua memória."
+      - q: "O Velcrypt usa Face ID ou Touch ID?"
+        a: "Só se você ativar. É grátis e vem desativado; você o ativa por cofre em Ajustes › Face ID, dentro daquele cofre. Depois do Face ID, você escolhe entre os cofres que adicionou. Um rosto ou um dedo pode ser usado sem o seu consentimento, então quem fizer você olhar para o celular pode abrir esses cofres. Mantenha o cofre mais privado só com o padrão."
   - title: "Segurança e criptografia"
     items:
       - q: "Como o Velcrypt criptografa meus arquivos?"
@@ -95,7 +95,7 @@ faqGroups:
   - title: "Preços e disponibilidade"
     items:
       - q: "O Velcrypt é grátis?"
-        a: "Sim. A versão grátis tem 1 cofre com até 50 itens e o ícone padrão do app. O Premium é opcional: US$ 1,99 por semana, US$ 19,99 por ano (com 3 dias de teste grátis) ou US$ 39,99 vitalício, em compra única. Os preços variam por país e aparecem na App Store."
+        a: "Sim. A versão grátis tem 1 cofre com até 50 itens e o ícone padrão do app; um cofre vazio nunca consome o seu cofre grátis. O Premium é opcional: US$ 1,99 por semana, US$ 19,99 por ano (com 3 dias de teste grátis) ou US$ 39,99 vitalício, em compra única. Os preços variam por país e aparecem na App Store."
       - q: "O que o Premium inclui?"
         a: "Itens ilimitados, mais cofres (outros padrões ganham seus próprios cofres), o padrão de coação e ícones alternativos do app. A criptografia e o backup criptografado são os mesmos na versão grátis."
       - q: "Como cancelo a assinatura?"

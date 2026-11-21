@@ -16,7 +16,7 @@ keyFacts:
 primaryKeyword: "notfallpasswort"
 keywords: ["panik passwort", "duress code", "was ist ein notfallpasswort", "notfallpasswort bedeutung", "duress password bedeutung", "codewort bei bedrohung", "codewort notfall beispiele", "bedrohungscode alarmanlage", "notfall pin", "pin rückwärts eingeben polizei", "duress fingerabdruck", "panik pin handy", "android duress pin", "grapheneos duress pin", "notfallmuster"]
 datePublished: 2026-10-22
-dateModified: 2026-10-31
+dateModified: 2026-11-21
 summary: "Was Notfallpasswörter, Codewörter und Notfall-PINs sind, was iPhone und Android bieten und wie Velcrypts Notfallmuster funktioniert."
 category: security
 order: 45
@@ -108,7 +108,7 @@ Wer nach einem „Notfallcode fürs Handy“, einer „Duress-PIN“ oder einem 
 
 ### Was „Duress-Fingerabdruck“ bedeutet
 
-Ein **Duress-Fingerabdruck** (Bedrohungsfinger) ist ein bestimmter Finger, der als stiller Alarm registriert ist. Manche biometrischen Zutrittssysteme unterstützen das: Du scannst diesen Finger, die Tür öffnet sich wie gewohnt, und ein Bedrohungsalarm geht an den Sicherheitsdienst. Gängige Handys bieten das nicht. <!-- TODO verify --> Auf dem Handy ist Biometrie unter Zwang eher die Schwachstelle, weil jemand dir das Handy vors Gesicht halten oder deinen Finger auf den Sensor drücken kann. Deshalb ist es wichtig, Face ID schnell abschalten zu können, und deshalb hat Velcrypt [bewusst kein Entsperren per Face ID](id:pattern-lock-vs-pin-vs-face-id).
+Ein **Duress-Fingerabdruck** (Bedrohungsfinger) ist ein bestimmter Finger, der als stiller Alarm registriert ist. Manche biometrischen Zutrittssysteme unterstützen das: Du scannst diesen Finger, die Tür öffnet sich wie gewohnt, und ein Bedrohungsalarm geht an den Sicherheitsdienst. Gängige Handys bieten das nicht. <!-- TODO verify --> Auf dem Handy ist Biometrie unter Zwang eher die Schwachstelle, weil jemand dir das Handy vors Gesicht halten oder deinen Finger auf den Sensor drücken kann. Deshalb ist es wichtig, Face ID schnell abschalten zu können, und deshalb ist [Face ID in Velcrypt standardmäßig aus](id:pattern-lock-vs-pin-vs-face-id). Das Notfallmuster funktioniert nur über Muster; die Face-ID-Liste löst es nicht aus.
 
 ## Wie Handy-Apps Notfallcodes umsetzen
 

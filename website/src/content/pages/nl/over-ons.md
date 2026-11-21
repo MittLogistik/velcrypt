@@ -1,20 +1,20 @@
 ---
 pageId: about
 title: "Over Velcrypt: privacy als uitgangspunt"
-description: "Waarom Velcrypt bestaat en de principes erachter: versleuteling op het apparaat, geen account, bewust geen biometrie, eerlijke grenzen, geen advertenties."
+description: "Waarom Velcrypt bestaat en de principes erachter: versleuteling op het apparaat, geen account, Face ID standaard uit, eerlijke grenzen, geen reclame."
 h1: "Over Velcrypt"
 navTitle: "Over ons"
-answer: "Velcrypt bestaat om iPhone-gebruikers een eenvoudige, eerlijke plek te geven voor privéfoto’s, video’s en documenten: versleuteld op het apparaat, alleen te openen met een patroon dat jij onthoudt, zonder account, zonder cloud en zonder advertenties."
+answer: "Velcrypt bestaat om iPhone-gebruikers een eenvoudige, eerlijke plek te geven voor privéfoto’s, video’s en documenten: versleuteld op het apparaat, te openen met een patroon dat jij onthoudt, zonder account, zonder cloud en zonder advertenties."
 keyFacts:
   - "Gebouwd rond versleuteling op het apparaat, zonder account en zonder servers voor je inhoud."
-  - "Bewust geen Face ID of Touch ID — een patroon bestaat alleen in je geheugen."
+  - "Face ID en Touch ID zijn optioneel en staan standaard uit — een patroon bestaat alleen in je geheugen."
   - "Geen advertenties en geen verkoop van gegevens."
   - "Eerlijk over grenzen, ook over het feit dat een vergeten patroon niet te herstellen is."
   - "Gratis versleutelde back-up voor iedereen; met Premium een dwangpatroon voor situaties van dwang."
 primaryKeyword: "over velcrypt"
 keywords: ["velcrypt app", "wie maakt velcrypt", "principes velcrypt", "privé fotokluis iphone"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 schemaType: AboutPage
 order: 4
 related: [security, features, offline-no-account, pricing, press]
@@ -47,9 +47,9 @@ Je kluisinhoud wordt versleuteld en opgeslagen op je iPhone en nergens anders. E
 
 Er is geen registratie, geen e-mailadres en geen procedure om een wachtwoord te resetten. Een account zou nog iets zijn wat gehackt kan worden of gebruikt kan worden om jou aan je gegevens te koppelen.
 
-### Bewust geen biometrie
+### Biometrie standaard uit
 
-Velcrypt biedt bewust geen Face ID of Touch ID. Biometrie is handig, maar een gezicht of vinger kan zonder je toestemming worden gebruikt. Een patroon bestaat alleen in je geheugen. De redenering lees je in [patroon vs pincode vs Face ID](id:pattern-lock-vs-pin-vs-face-id).
+Face ID en Touch ID staan in Velcrypt standaard uit. Biometrie is handig, maar een gezicht of vinger kan zonder je toestemming worden gebruikt, terwijl een patroon alleen in je geheugen bestaat. Wil je het gemak toch, dan zet je Face ID per kluis aan, alleen voor de kluizen die jij kiest; je meest privékluis houd je het best op alleen het patroon. De redenering lees je in [patroon vs pincode vs Face ID](id:pattern-lock-vs-pin-vs-face-id).
 
 ### Eerlijke grenzen
 

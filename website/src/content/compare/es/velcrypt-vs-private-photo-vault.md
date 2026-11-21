@@ -9,12 +9,12 @@ keyFacts:
   - "Private Photo Vault es de Legendary Software y se bloquea con PIN o código, según su ficha."
   - "Velcrypt se desbloquea con un patrón en una cuadrícula de 5×5; cada patrón es una bóveda distinta."
   - "Velcrypt publica el diseño de su cifrado: AES-256-GCM con derivación de claves PBKDF2-HMAC-SHA512."
-  - "Velcrypt no hace fotos de intrusos ni usa Face ID, por diseño."
+  - "Velcrypt no hace fotos de intrusos, por diseño; Face ID es opcional y viene desactivado."
   - "Velcrypt no tiene nube: solo una copia de seguridad cifrada manual protege ante un teléfono perdido; un patrón olvidado no se recupera."
 primaryKeyword: "velcrypt vs private photo vault"
 keywords: ["alternativa a private photo vault", "private photo vault comparativa", "private photo vault opiniones", "bóveda de fotos contraseña señuelo", "bóveda de fotos con patrón"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Bóveda con PIN, señuelo e informes de intrusión frente a una bóveda cifrada con patrón y sin cuenta. Comparativa neutral."
 competitor: "Private Photo Vault"
 lastChecked: "octubre de 2026"
@@ -28,7 +28,7 @@ faq:
   - q: "¿Qué app publica más información sobre su cifrado?"
     a: "Velcrypt documenta su diseño: AES-256-GCM, PBKDF2-HMAC-SHA512 con al menos 600.000 iteraciones, claves maestras por bóveda y claves por archivo. Para Private Photo Vault, consulta la documentación del propio desarrollador, ya que no pudimos confirmar un nivel de detalle equivalente."
   - q: "¿Puedo usar Face ID con Velcrypt?"
-    a: "No. Velcrypt evita a propósito Face ID y Touch ID porque la biometría puede usarse sin tu consentimiento. Desbloqueas dibujando un patrón que solo tú conoces."
+    a: "Sí, si lo activas. Face ID o Touch ID viene desactivado; lo activas por bóveda en los Ajustes de esa bóveda, y el patrón sigue abriendo todas. Como la biometría puede usarse sin tu consentimiento, deja tu bóveda más privada solo con su patrón."
 ---
 
 *Última revisión: octubre de 2026. Los productos cambian; consulta la ficha del App Store de cada app para ver la versión actual.*
@@ -41,7 +41,7 @@ Private Photo Vault, de Legendary Software, es una app de bóveda bloqueada con 
 
 <!-- TODO verify -->
 
-Velcrypt es una bóveda en el dispositivo bloqueada con patrón. Un patrón es una línea continua que pasa por al menos seis puntos de una cuadrícula de 5×5, con al menos un cambio de dirección. Cada patrón distinto deriva su propia clave de cifrado y abre su propia bóveda. No hay cuenta, ni nube, ni lista de bóvedas en ninguna parte de la app.
+Velcrypt es una bóveda en el dispositivo bloqueada con patrón. Un patrón es una línea continua que pasa por al menos seis puntos de una cuadrícula de 5×5, con al menos un cambio de dirección. Cada patrón distinto deriva su propia clave de cifrado y abre su propia bóveda. No hay cuenta, ni nube, ni lista de bóvedas en ninguna parte de la app, salvo las bóvedas que tú añades a propósito a la lista de Face ID.
 
 ## Comparativa de funciones
 
@@ -51,7 +51,7 @@ Velcrypt es una bóveda en el dispositivo bloqueada con patrón. Un patrón es u
 | Requiere cuenta | No | No se indica públicamente |
 | Copia de seguridad en la nube | No; copia de seguridad cifrada manual y gratuita en un archivo que guardas tú | Depende; consulta la ficha actual |
 | Método de desbloqueo | Patrón en una cuadrícula de 5×5 | PIN / código |
-| Biometría (Face ID / Touch ID) | No disponible, por diseño | Depende |
+| Biometría (Face ID / Touch ID) | Opcional, desactivado de forma predeterminada (por bóveda) | Depende |
 | Señuelo / varias bóvedas | Cada patrón es su propia bóveda (con Premium) | Contraseña señuelo |
 | Patrón de coacción | Sí, con Premium (abre un señuelo y elimina las demás bóvedas) | No se indica públicamente |
 | Informes de intrusión | No disponibles | Disponibles, según su ficha |
@@ -69,7 +69,7 @@ Los señuelos funcionan de otra forma. La contraseña señuelo de Private Photo 
 
 <!-- TODO verify -->
 
-En Velcrypt, los señuelos no son un modo especial. Con Premium, simplemente creas otra bóveda con otro patrón y guardas en ella algo sin importancia. Como cualquier patrón no visto abre una bóveda nueva y vacía sin error, quien revise la app no puede saber cuántas bóvedas tienes. La guía sobre [bóvedas señuelo](id:what-is-a-decoy-vault) explica por qué es importante.
+En Velcrypt, los señuelos no son un modo especial. Con Premium, simplemente creas otra bóveda con otro patrón y guardas en ella algo sin importancia. Como cualquier patrón no visto abre una bóveda nueva y vacía sin error, quien revise la app no puede saber cuántas bóvedas tienes, salvo las que hayas añadido a la lista de Face ID. La guía sobre [bóvedas señuelo](id:what-is-a-decoy-vault) explica por qué es importante.
 
 ## Cifrado y transparencia
 
@@ -82,7 +82,7 @@ En el caso de Private Photo Vault, no encontramos una descripción técnica púb
 ## Cuándo puede encajarte mejor Private Photo Vault
 
 - **Quieres informes de intrusión.** Si te importa saber que alguien intentó abrir tu bóveda, Velcrypt no lo ofrece.
-- **Prefieres un código numérico o Face ID.** Hay quien encuentra un PIN más rápido que dibujar un patrón.
+- **Prefieres un código numérico.** Hay quien encuentra un PIN más rápido que dibujar un patrón.
 - **Quieres una opción de copia o transferencia.** Si la versión que usas la ofrece, puede ser más cómoda que la copia de seguridad manual de Velcrypt.
 - **Ya estás instalado en ella.** Mover una fototeca grande cuesta esfuerzo; cambiar solo tiene sentido si las diferencias te importan.
 
@@ -90,7 +90,7 @@ En el caso de Private Photo Vault, no encontramos una descripción técnica púb
 
 ## Cuándo puede encajarte mejor Velcrypt
 
-- **Quieres bóvedas que no se delaten entre sí.** Sin lista de bóvedas y sin error ante patrones desconocidos.
+- **Quieres bóvedas que no se delaten entre sí.** Sin lista de bóvedas (salvo las que añadas a Face ID) y sin error ante patrones desconocidos.
 - **No quieres cuenta ni servidores.** Consulta [sin conexión y sin cuenta](id:offline-no-account).
 - **Quieres un cifrado documentado.** Los algoritmos y la gestión de claves son públicos.
 - **También quieres guardar documentos.** Velcrypt importa archivos de la app Archivos además de fotos y vídeos.

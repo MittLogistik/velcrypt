@@ -8,8 +8,8 @@
 | Subtitle | 30 | 23 |
 | Keywords | 100 | 98 |
 | Promotional text | 170 | 167 |
-| Description | 4,000 | 3,160 |
-| What's New | 4,000 | 171 |
+| Description | 4,000 | 3,379 |
+| What's New | 4,000 | 413 |
 
 **Search phrases targeted:** Targets "coffre-fort photo", "cacher photos" (name and subtitle combine), "cacher vidéos", "masquer photos", "album secret", "photos privées", "galerie cachée", "photos chiffrées" and "verrouiller photos".
 
@@ -37,13 +37,13 @@ secret,album,privé,chiffré,sécurisé,galerie,masquer,caché,cadenas,schéma,d
 Dessinez un schéma, ouvrez votre coffre. Chaque schéma ouvre son propre coffre chiffré. Sans compte ni cloud : tout reste sur l’iPhone, avec des sauvegardes chiffrées.
 ```
 
-## Description (3,160/4,000)
+## Description (3,379/4,000)
 
 ```
 Velcrypt est un coffre privé pour les photos, vidéos, documents et notes que personne d’autre ne doit voir. Tout est chiffré sur votre iPhone en AES-256-GCM. Pas de compte. Pas de cloud. Pas de pistage.
 
 UN SCHÉMA, UN COFFRE
-Vous déverrouillez Velcrypt en dessinant un schéma sur une grille de 5×5 points. Chaque schéma ouvre son propre coffre, et Velcrypt n’affiche jamais la liste des coffres. Un schéma inconnu ouvre simplement un coffre vide : aucune erreur, aucun indice que d’autres coffres existent.
+Vous déverrouillez Velcrypt en dessinant un schéma sur une grille de 5×5 points. Chaque schéma ouvre son propre coffre, et Velcrypt n’affiche jamais la liste des coffres, hormis ceux que vous ajoutez vous-même à la liste Face ID. Un schéma inconnu ouvre simplement un coffre vide : aucune erreur, aucun indice que d’autres coffres existent.
 
 GARDEZ UN COFFRE LEURRE (PREMIUM)
 Remplissez un second coffre de photos anodines. Si l’on vous pousse un jour à ouvrir l’app, dessinez ce schéma-là.
@@ -57,8 +57,8 @@ CHIFFRÉ SUR VOTRE IPHONE
 • Pas de compte, pas d’inscription, pas de cloud, pas de publicité, pas de pistage
 • Les données du coffre sont exclues des sauvegardes iCloud et sur ordinateur
 
-VOTRE SCHÉMA, PAS VOTRE VISAGE
-Velcrypt n’utilise volontairement ni code PIN ni Face ID. La clé est dans votre tête.
+VOTRE SCHÉMA D’ABORD
+Pas de code PIN. Face ID est facultatif et désactivé par défaut : activez-le uniquement pour les coffres de votre choix. La clé reste dans votre tête.
 
 TOUT AU MÊME ENDROIT
 • Importez depuis Photos ou Fichiers
@@ -74,7 +74,7 @@ DÉGUISEZ L’APP (PREMIUM)
 Remplacez l’icône de l’écran d’accueil par une calculatrice, un minuteur, une règle et bien d’autres.
 
 VELCRYPT PREMIUM
-La version gratuite comprend un coffre de 50 éléments au maximum. Premium débloque les éléments illimités, des coffres supplémentaires, le schéma de contrainte et des icônes d’app alternatives.
+La version gratuite comprend un coffre de 50 éléments au maximum. Un coffre vide ne compte pas : il ne devient votre coffre gratuit qu’une fois qu’il contient un élément. Premium débloque les éléments illimités, des coffres supplémentaires, le schéma de contrainte et des icônes d’app alternatives.
 • Choisissez un abonnement hebdomadaire ou annuel (l’abonnement annuel commence par un essai gratuit) ou un achat unique à vie.
 • Le paiement est débité de votre compte Apple. Les abonnements se renouvellent automatiquement, sauf résiliation au moins 24 heures avant la fin de la période en cours. Gérez-les ou résiliez-les dans les réglages de votre compte Apple.
 • Conditions d’utilisation : https://velcrypt.app/terms/
@@ -88,8 +88,11 @@ La version gratuite comprend un coffre de 50 éléments au maximum. Premium déb
 Velcrypt. Well Encrypted. Truly Private.
 ```
 
-## What's New (171/4,000)
+## What's New (413/4,000)
 
 ```
-Bienvenue dans Velcrypt, notre première version. Dessinez un schéma pour ouvrir un coffre privé et gardez vos photos, vidéos, documents et notes chiffrés sur votre iPhone.
+• Face ID, si vous le souhaitez : activez-le pour n’importe quel coffre dans Réglages. Il est désactivé par défaut, et seuls les coffres que vous choisissez apparaissent dans la liste Face ID.
+• Une introduction plus claire en trois étapes, et « Fonctionnement de Velcrypt » toujours à portée de main.
+• Essayez d’abord : un coffre vide n’utilise plus votre coffre gratuit.
+• Petites corrections et améliorations.
 ```

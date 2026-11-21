@@ -1,20 +1,20 @@
 ---
 pageId: about
 title: "Velcrypt 소개: 설계부터 개인정보 보호"
-description: "Velcrypt가 존재하는 이유와 원칙. 기기 내 암호화, 계정 없음, 의도적으로 뺀 생체 인증, 정직한 한계, 광고·데이터 판매 없음."
+description: "Velcrypt가 존재하는 이유와 원칙. 기기 내 암호화, 계정 없음, 선택 사항인 생체 인증, 정직한 한계, 광고·데이터 판매 없음."
 h1: "Velcrypt 소개"
 navTitle: "소개"
 answer: "Velcrypt는 iPhone 사용자에게 비공개 사진, 동영상, 문서를 위한 단순하고 정직한 공간을 제공하기 위해 만들어졌습니다. 기기에서 암호화되고, 내가 기억하는 패턴으로만 열리며, 계정도 클라우드도 광고도 없습니다."
 keyFacts:
   - "기기 내 암호화를 중심으로 만들어졌으며, 계정도 콘텐츠용 서버도 없습니다."
-  - "설계상 Face ID나 Touch ID가 없습니다. 패턴은 기억 속에만 존재합니다."
+  - "Face ID와 Touch ID는 선택 사항이며 기본적으로 꺼져 있습니다. 패턴은 기억 속에만 존재합니다."
   - "광고도 데이터 판매도 없습니다."
   - "잊어버린 패턴은 복구할 수 없다는 점을 포함해 한계를 솔직하게 밝힙니다."
   - "암호화 백업은 모두에게 무료이며, 강요 상황을 위한 비상 패턴은 Premium에서 제공됩니다."
 primaryKeyword: "velcrypt 소개"
 keywords: ["velcrypt 앱", "velcrypt 개발사", "velcrypt 원칙", "아이폰 비밀 사진 금고"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 schemaType: AboutPage
 order: 4
 related: [security, features, offline-no-account, pricing, press]
@@ -47,9 +47,9 @@ Velcrypt가 바로 그 앱입니다. 사진, 동영상, 문서를 암호화된 �
 
 가입, 이메일 주소, 비밀번호 재설정 절차가 없습니다. 계정은 해킹당하거나 나와 내 데이터를 연결하는 데 쓰일 수 있는 또 하나의 요소일 뿐입니다.
 
-### 의도적으로 뺀 생체 인증
+### 기본값은 꺼짐인 생체 인증
 
-Velcrypt는 의도적으로 Face ID나 Touch ID를 제공하지 않습니다. 생체 인증은 편리하지만 얼굴이나 손가락은 동의 없이 사용될 수 있습니다. 패턴은 오직 기억 속에만 존재합니다. 그 이유는 [패턴 잠금 vs PIN vs Face ID](id:pattern-lock-vs-pin-vs-face-id)에서 읽어 보세요.
+Velcrypt에서 Face ID와 Touch ID는 선택 사항이며 모든 금고에서 기본적으로 꺼져 있습니다. 원하는 금고에만 직접 켤 수 있습니다. 생체 인증은 편리하지만 얼굴이나 손가락은 동의 없이 사용될 수 있습니다. 패턴은 오직 기억 속에만 존재하며 언제나 모든 금고를 엽니다. 그래서 가장 사적인 금고는 패턴만으로 두기를 권합니다. 그 이유는 [패턴 잠금 vs PIN vs Face ID](id:pattern-lock-vs-pin-vs-face-id)에서 읽어 보세요.
 
 ### 정직한 한계
 

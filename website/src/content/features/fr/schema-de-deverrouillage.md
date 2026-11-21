@@ -1,21 +1,21 @@
 ---
 pageId: pattern-lock
 title: "Schéma de déverrouillage : votre coffre sur une grille 5×5"
-description: "Velcrypt se déverrouille avec un schéma tracé sur une grille de 5×5 points. Les règles, comment créer un schéma solide et pourquoi il n’y a pas de Face ID."
+description: "Velcrypt se déverrouille avec un schéma tracé sur une grille de 5×5 points. Les règles, comment créer un schéma solide et le rôle de Face ID, facultatif."
 h1: "Verrouillage par schéma : une grille 5×5 que seule votre mémoire peut ouvrir"
 navTitle: "Schéma de déverrouillage"
-answer: "Velcrypt s’ouvre avec un schéma que vous tracez sur une grille de 5×5 points : une ligne continue passant par au moins 6 points, avec au moins un changement de direction. Un schéma de 8 à 12 points est recommandé, et il n’y a volontairement ni Face ID ni Touch ID."
+answer: "Velcrypt s’ouvre avec un schéma que vous tracez sur une grille de 5×5 points : une ligne continue passant par au moins 6 points, avec au moins un changement de direction. Un schéma de 8 à 12 points est recommandé. Face ID est facultatif et désactivé par défaut : vous l’activez coffre par coffre."
 keyFacts:
   - "Déverrouillage par une ligne continue tracée sur une grille de 25 points (5×5)."
   - "Règles minimales : au moins 6 points et au moins un changement de direction."
   - "Longueur recommandée : 8 à 12 points."
-  - "Pas de Face ID ni de Touch ID, par choix : la biométrie peut être obtenue sous la contrainte."
+  - "Face ID et Touch ID sont facultatifs et désactivés par défaut : la biométrie peut être obtenue sous la contrainte."
   - "Votre schéma sert aussi à dériver la clé de chiffrement du coffre."
 primaryKeyword: "app verrouillage par schéma iphone"
 keywords: ["schéma de déverrouillage iphone", "coffre-fort photo avec schéma", "verrouillage schéma 5x5", "coffre-fort photo sans face id", "verrouiller une app iphone avec un schéma", "créer un schéma de déverrouillage sûr"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
-summary: "Déverrouillez en traçant un schéma sur une grille 5×5. Au moins 6 points et un virage ; 8 à 12 points conseillés. Pas de Face ID, par choix."
+dateModified: 2026-11-21
+summary: "Déverrouillez en traçant un schéma sur une grille 5×5. Au moins 6 points et un virage ; 8 à 12 points conseillés. Face ID facultatif, désactivé par défaut."
 status: available
 schemaType: WebPage
 order: 1
@@ -23,8 +23,8 @@ related: [hidden-vaults, encryption, pattern-strength-checker, pattern-lock-vs-p
 faq:
   - q: "Combien de points faut-il pour un schéma Velcrypt ?"
     a: "Au moins 6 points, tracés en une seule ligne continue avec au moins un changement de direction. Pour une meilleure protection, utilisez 8 à 12 points avec plusieurs virages."
-  - q: "Pourquoi Velcrypt n’utilise-t-il pas Face ID ou Touch ID ?"
-    a: "Un visage ou une empreinte peuvent être utilisés sans votre accord, par exemple pendant votre sommeil ou si l’on vous retient. Un schéma n’existe que dans votre mémoire : personne ne peut vous le prendre physiquement. Velcrypt écarte donc la biométrie volontairement."
+  - q: "Velcrypt utilise-t-il Face ID ou Touch ID ?"
+    a: "Seulement si vous le voulez. C’est désactivé par défaut et gratuit : activez-le coffre par coffre dans Réglages › Face ID, à l’intérieur du coffre. Un bouton « Déverrouiller avec Face ID » apparaît alors sur l’écran de verrouillage. Comme un visage ou une empreinte peuvent être utilisés sans votre accord, gardez votre coffre le plus privé sur son seul schéma."
   - q: "Que se passe-t-il si j’oublie mon schéma de déverrouillage ?"
     a: "Le coffre ne peut plus être ouvert, ni par vous ni par Velcrypt. Le schéma intervient dans la dérivation de la clé de chiffrement, et il n’existe ni phrase de récupération ni compte pour le réinitialiser. Choisissez un schéma dont vous vous souviendrez à coup sûr."
   - q: "Un schéma 5×5 est-il plus sûr qu’un schéma 3×3 de téléphone ?"
@@ -69,11 +69,20 @@ Quelques conseils pratiques :
 
 Pour un second avis, le [testeur de solidité de schéma](id:pattern-strength-checker) donne une note approximative et une estimation en bits selon la longueur, les virages, les croisements et la couverture de la grille. C’est une heuristique, pas une garantie, et vous devriez tester un schéma proche du vôtre plutôt que le vrai.
 
-## Pourquoi il n’y a ni Face ID ni Touch ID
+## Face ID et Touch ID : facultatifs, désactivés par défaut
 
-Velcrypt n’a pas de déverrouillage biométrique, et c’est une décision délibérée. La biométrie est pratique justement parce qu’elle vous accompagne toujours, et c’est aussi sa faiblesse : on peut placer un téléphone devant votre visage ou appuyer votre doigt sur un capteur sans votre accord.
+La biométrie est pratique justement parce qu’elle vous accompagne toujours, et c’est aussi sa faiblesse : on peut placer un téléphone devant votre visage ou appuyer votre doigt sur un capteur sans votre accord. Un schéma, lui, n’existe que dans votre tête. Personne ne peut le prélever sur votre main ni pointer votre téléphone vers votre visage pour l’obtenir.
 
-Un schéma n’existe que dans votre tête. Personne ne peut le prélever sur votre main ni pointer votre téléphone vers votre visage pour l’obtenir. Pour un coffre censé protéger vos fichiers les plus privés, cette différence compte plus que la seconde gagnée au déverrouillage. Les compromis sont comparés plus en détail dans [schéma, code PIN ou Face ID](id:pattern-lock-vs-pin-vs-face-id).
+C’est pourquoi Face ID est désactivé par défaut pour chaque coffre. Si vous le voulez pour un coffre du quotidien, ouvrez ce coffre avec son schéma, puis activez-le dans Réglages › Face ID et donnez au coffre un nom pour la liste Face ID. C’est gratuit, sans Premium. Dès qu’un coffre utilise Face ID, un bouton « Déverrouiller avec Face ID » apparaît sur l’écran de verrouillage. Après la reconnaissance, vous choisissez parmi les coffres pour lesquels vous l’avez activé ; s’il n’y en a qu’un, il s’ouvre directement. Le schéma continue d’ouvrir chaque coffre, y compris ceux qui utilisent Face ID.
+
+Quelques règles à connaître :
+
+- **Pas de repli sur le code.** Le code de l’iPhone ne remplace jamais Face ID dans Velcrypt.
+- **Lié à cet appareil.** La copie de la clé utilisée par Face ID reste dans le trousseau de cet iPhone uniquement, ni dans iCloud ni dans les sauvegardes. Elle est liée aux visages et empreintes enregistrés au moment de l’activation : si vous en ajoutez un ou réinitialisez Face ID, Face ID se désactive pour ces coffres, et vous le réactivez après les avoir ouverts avec leur schéma.
+- **Le compromis est réel.** Toute personne capable de vous faire regarder votre téléphone peut voir et ouvrir chaque coffre de la liste Face ID. Les coffres sans Face ID n’y apparaissent jamais. Gardez donc votre coffre le plus privé sur son seul schéma.
+- **Contrainte.** Le [schéma de contrainte](id:duress-pattern) ne fonctionne qu’avec un schéma, jamais depuis la liste Face ID. Quand il s’exécute, les coffres supprimés disparaissent aussi de la liste Face ID.
+
+Les compromis sont comparés plus en détail dans [schéma, code PIN ou Face ID](id:pattern-lock-vs-pin-vs-face-id).
 
 ## Votre schéma et la clé de chiffrement
 

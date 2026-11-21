@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "conservare foto intime iphone"
 keywords: ["dove tenere le foto private su iphone", "nascondere foto intime iphone", "sicurezza foto private", "privacy immagini intime", "proteggere foto private"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Un piano di sicurezza rispettoso e passo per passo per le foto intime su iPhone, e cosa fare se qualcuno minaccia di diffondere le tue immagini."
 category: practical
 order: 32
@@ -115,6 +115,6 @@ Se hai meno di 18 anni, parla subito con un adulto di fiducia o con una linea di
 
 ## Dove si inserisce Velcrypt
 
-Velcrypt è pensata proprio per la falla che lascia l’album Nascosti: contenuti che devono restare su questo iPhone, dietro un segreto che conosci solo tu. Le foto e i video che [nascondi in Velcrypt](id:hide-photos) vengono cifrati sul dispositivo con AES-256-GCM, restano fuori dai backup di iCloud e del computer, e non toccano mai un server. Ogni sequenza apre una cassaforte propria, non c’è un Face ID che qualcuno possa usare mentre dormi, e i contenuti sono nascosti nel selettore app.
+Velcrypt è pensata proprio per la falla che lascia l’album Nascosti: contenuti che devono restare su questo iPhone, dietro un segreto che conosci solo tu. Le foto e i video che [nascondi in Velcrypt](id:hide-photos) vengono cifrati sul dispositivo con AES-256-GCM, restano fuori dai backup di iCloud e del computer, e non toccano mai un server. Ogni sequenza apre una cassaforte propria, Face ID è spento per impostazione predefinita (lascialo spento per le foto intime, così nessuno può usare il tuo volto mentre dormi), e i contenuti sono nascosti nel selettore app.
 
 Restano comunque limiti onesti: Velcrypt non può raggiungere le copie sul telefono di qualcun altro, non può impedire a qualcuno di guardarti mentre disegni la sequenza, e una sequenza dimenticata non si può recuperare. Se una relazione è finita, la pagina [dopo una rottura](id:after-a-breakup) contiene altre idee.

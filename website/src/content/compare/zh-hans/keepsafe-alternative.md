@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "Keepsafe 替代"
 keywords: ["Keepsafe 替代 iPhone", "类似 Keepsafe 的 App", "从 Keepsafe 迁移", "Keepsafe 换什么", "不用注册的私密相册"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "为什么有人寻找 Keepsafe 替代方案，任何照片保险箱该检查什么，以及如何迁移照片而不留下副本。"
 competitor: "Keepsafe"
 lastChecked: "2026 年 10 月"
@@ -61,7 +61,7 @@ Keepsafe 是最知名的照片保险箱 App 之一，很多人用得很满意。
 
 | 选项 | 账户 | 云端副本 | 独立的秘密 | 说明 |
 |---|---|---|---|---|
-| Velcrypt | 无 | 无云备份；可手动创建加密备份文件 | 是，图案 | 隐藏保险箱、文档、不用面容 ID |
+| Velcrypt | 无 | 无云备份；可手动创建加密备份文件 | 是，图案 | 隐藏保险箱、文档、面容 ID 可选（默认关闭） |
 | iPhone“已隐藏”相簿 | iCloud 需要 Apple 账户 | 开启 iCloud 照片时有 | 否，使用设备密码 | 免费，系统自带 |
 | Apple 备忘录锁定备忘录 | iCloud 需要 Apple 账户 | 开启 iCloud 备忘录时有 | 可选的备忘录密码 | 最适合少量项目 |
 | 其他保险箱 App | 因 App 而异 | 因 App 而异 | 因 App 而异 | 请逐一查看商店页面 |

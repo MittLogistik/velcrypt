@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "protéger photos intimes iphone"
 keywords: ["où garder ses photos privées sur iphone", "cacher des nudes iphone en sécurité", "sécurité photos privées", "confidentialité images intimes", "protéger ses photos privées"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Un plan de sécurité respectueux, étape par étape, pour vos photos intimes sur iPhone, et que faire si quelqu’un menace de les diffuser."
 category: practical
 order: 32
@@ -117,6 +117,6 @@ Si vous avez moins de 18 ans, parlez-en tout de suite à un adulte de confiance 
 
 ## La place de Velcrypt
 
-Velcrypt est conçu précisément pour la faille que laisse l’album Masqués : un contenu qui doit rester sur cet iPhone, derrière un secret que vous êtes seul à connaître. Les photos et vidéos que vous [cachez dans Velcrypt](id:hide-photos) sont chiffrées sur l’appareil en AES-256-GCM, restent hors des sauvegardes iCloud et sur ordinateur, et ne touchent jamais un serveur. L’appareil photo intégré au coffre permet même de prendre une photo sans qu’elle passe par la photothèque. Chaque schéma ouvre son propre coffre, il n’y a pas de Face ID que quelqu’un pourrait utiliser pendant votre sommeil, et le contenu est masqué dans le sélecteur d’apps.
+Velcrypt est conçu précisément pour la faille que laisse l’album Masqués : un contenu qui doit rester sur cet iPhone, derrière un secret que vous êtes seul à connaître. Les photos et vidéos que vous [cachez dans Velcrypt](id:hide-photos) sont chiffrées sur l’appareil en AES-256-GCM, restent hors des sauvegardes iCloud et sur ordinateur, et ne touchent jamais un serveur. L’appareil photo intégré au coffre permet même de prendre une photo sans qu’elle passe par la photothèque. Chaque schéma ouvre son propre coffre, Face ID est désactivé par défaut (laissez-le ainsi pour ce coffre si vous craignez qu’on l’utilise pendant votre sommeil), et le contenu est masqué dans le sélecteur d’apps.
 
 Des limites honnêtes demeurent : Velcrypt ne peut pas atteindre les copies sur le téléphone de quelqu’un d’autre, ne peut pas empêcher quelqu’un de vous regarder tracer votre schéma, et un schéma oublié est irrécupérable. Si une relation vient de se terminer, la page [après une rupture](id:after-a-breakup) propose d’autres pistes.

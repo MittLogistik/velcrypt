@@ -1,20 +1,20 @@
 ---
 pageId: about
 title: "À propos de Velcrypt : la confidentialité par conception"
-description: "Pourquoi Velcrypt existe et ses principes : chiffrement sur l’appareil, sans compte, sans biométrie par choix, limites assumées, ni pub ni revente."
+description: "Pourquoi Velcrypt existe et ses principes : chiffrement sur l’appareil, sans compte, Face ID seulement si vous le voulez, limites assumées, ni pub."
 h1: "À propos de Velcrypt"
 navTitle: "À propos"
-answer: "Velcrypt existe pour offrir aux utilisateurs d’iPhone un endroit simple et honnête pour leurs photos, vidéos et documents privés : chiffrés sur l’appareil, ouverts uniquement par un motif que vous retenez, sans compte, sans cloud et sans publicité."
+answer: "Velcrypt existe pour offrir aux utilisateurs d’iPhone un endroit simple et honnête pour leurs photos, vidéos et documents privés : chiffrés sur l’appareil, ouverts par un motif que vous retenez, sans compte, sans cloud et sans publicité."
 keyFacts:
   - "Conçu autour du chiffrement sur l’appareil, sans compte et sans serveur pour votre contenu."
-  - "Pas de Face ID ni de Touch ID, par choix — un motif n’existe que dans votre mémoire."
+  - "Face ID et Touch ID facultatifs et désactivés par défaut — un motif n’existe que dans votre mémoire."
   - "Ni publicité ni revente de données."
   - "Honnête sur ses limites, y compris l’impossibilité de récupérer un motif oublié."
   - "Sauvegarde chiffrée gratuite pour tous ; un schéma de contrainte pour les situations de coercition, avec Premium."
 primaryKeyword: "à propos de velcrypt"
 keywords: ["app velcrypt", "qui développe velcrypt", "principes velcrypt", "coffre-fort photo privé iphone"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 schemaType: AboutPage
 order: 4
 related: [security, features, offline-no-account, pricing, press]
@@ -47,9 +47,9 @@ Le contenu de vos coffres est chiffré et stocké sur votre iPhone, et nulle par
 
 Pas d’inscription, pas d’adresse e-mail, pas de procédure de réinitialisation de mot de passe. Un compte serait une chose de plus susceptible de fuiter ou de servir à vous relier à vos données.
 
-### Sans biométrie, par choix
+### La biométrie, seulement si vous la choisissez
 
-Velcrypt ne propose volontairement ni Face ID ni Touch ID. La biométrie est pratique, mais un visage ou un doigt peut être utilisé sans votre consentement. Un motif n’existe que dans votre mémoire. Notre raisonnement est détaillé dans [motif, code PIN ou Face ID](id:pattern-lock-vs-pin-vs-face-id).
+Face ID et Touch ID sont facultatifs et désactivés par défaut pour chaque coffre. La biométrie est pratique, mais un visage ou un doigt peut être utilisé sans votre consentement, alors qu’un motif n’existe que dans votre mémoire. Vous pouvez donc activer Face ID pour un coffre du quotidien et garder votre coffre le plus privé sur son seul motif. Notre raisonnement est détaillé dans [motif, code PIN ou Face ID](id:pattern-lock-vs-pin-vs-face-id).
 
 ### Des limites assumées
 

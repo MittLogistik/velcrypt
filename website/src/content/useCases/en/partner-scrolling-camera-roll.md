@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "partner looking through my phone photos"
 keywords: ["boyfriend goes through my photos", "girlfriend looks through my phone", "keep photos private from partner iphone", "hide photos from partner", "phone privacy relationship"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-11-21
 summary: "Phone boundaries in a relationship, how photos get seen by accident, and how to keep a few private pictures in a space of their own."
 group: everyday
 schemaType: Article
@@ -60,7 +60,7 @@ If checking your phone feels demanding, frequent or frightening, that’s differ
 
 Velcrypt keeps private photos, videos and documents in an encrypted vault on your iPhone, separate from the Photos library. After you import a photo and [delete the original](id:delete-original-photos-after-import), it no longer appears in swipe-through, Memories, widgets or search.
 
-The vault opens with a pattern you draw on a 5×5 grid, not your passcode or Face ID. Knowing your passcode doesn’t open it. And because [every pattern opens its own vault](id:hidden-vaults), there’s no list of vaults: an unknown pattern simply opens an empty one with no error. That gives you room for privacy without turning your phone into a visible fortress, as explained in [plausible deniability](id:plausible-deniability-explained).
+The vault opens with a pattern you draw on a 5×5 grid, not your passcode. Knowing your passcode doesn’t open it, and Face ID is only used if you turn it on for a vault. And because [every pattern opens its own vault](id:hidden-vaults), there’s no list of vaults (except any you deliberately add to Face ID): an unknown pattern simply opens an empty one with no error. That gives you room for privacy without turning your phone into a visible fortress, as explained in [plausible deniability](id:plausible-deniability-explained).
 
 For intimate photos specifically, [this guide](id:store-intimate-photos-safely-iphone) covers the extra care they deserve.
 

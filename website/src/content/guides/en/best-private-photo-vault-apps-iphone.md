@@ -20,7 +20,7 @@ keywords:
   - "keepsafe alternatives"
   - "hidden photo app iphone"
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Seven criteria for choosing a photo vault and an honest look at Apple’s tools, Keepsafe, Private Photo Vault, calculator vaults and Velcrypt."
 category: choosing
 order: 20
@@ -71,7 +71,7 @@ A quick disclosure: Velcrypt is our app. We’ve tried to describe it with the s
 | Separate secret from device passcode | No | Optional | Yes | Yes | Yes | Yes |
 | Account required | Apple Account for iCloud | Apple Account for iCloud | Yes (email) | Not required for basic use | Varies | No |
 | Cloud backup / sync | Via iCloud Photos | Via iCloud | Optional premium cloud | Varies | Varies | No sync; free encrypted backup file you store yourself |
-| Face ID / Touch ID | Yes | Yes | Yes | Yes | Varies | No, by design |
+| Face ID / Touch ID | Yes | Yes | Yes | Yes | Varies | Optional, off by default (per vault) |
 | Decoy feature | No | No | Fake PIN (premium) | Decoy password | Varies | Every pattern opens its own vault (extra vaults with Premium) |
 | Disguise as another app | No | No | No | No | Yes | Alternate app icons (Premium) |
 
@@ -120,7 +120,7 @@ Velcrypt is a native iPhone app that stores photos, videos and documents in encr
 Its limits are deliberate but real:
 
 - **Backup is manual.** Vault content is excluded from iCloud and computer backups. Velcrypt’s free encrypted backup creates a file you save yourself; without one, a lost phone means lost files. A forgotten pattern or backup password can’t be recovered by you or by us.
-- **No Face ID**, by design, so unlocking is slower than a glance.
+- **Face ID is opt-in per vault.** It is off by default, and anyone who can get you to look at your phone can open the vaults you add, so your most private vault is best kept on its pattern only.
 - **No full disguise.** Premium offers alternate Home Screen icons, such as a calculator or timer, but the app doesn’t pretend to be a working calculator.
 - **No cloud sync, sharing links or iPad/Mac apps.**
 

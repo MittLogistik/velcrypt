@@ -8,13 +8,13 @@ answer: "Velcrypt is een iPhone-app (iOS 17 of nieuwer) die privéfoto’s, vide
 keyFacts:
   - "Tagline: “Well Encrypted. Truly Private.”"
   - "Platform: iPhone, iOS 17 of nieuwer."
-  - "Prijsmodel: gratis (1 kluis, 50 onderdelen) met optioneel Premium vanaf $ 1,99 per week (USD)."
+  - "Prijsmodel: gratis (1 kluis, 50 onderdelen; een lege kluis telt niet mee) met optioneel Premium vanaf $ 1,99 per week (USD)."
   - "Downloads: logo en beeldmerk (transparante PNG) en app-symbool van 1024 px."
   - "Perscontact: press@velcrypt.app."
 primaryKeyword: "velcrypt perskit"
 keywords: ["velcrypt logo", "velcrypt mediakit", "velcrypt factsheet", "velcrypt merkkleuren"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 schemaType: WebPage
 order: 8
 related: [about, security, features, pricing]
@@ -37,7 +37,7 @@ Velcrypt is een iPhone-app voor privéfoto’s, video’s en documenten. Bestand
 
 ### 100 woorden
 
-Velcrypt is een native iPhone-app die privéfoto’s, video’s en documenten in versleutelde kluizen op het apparaat bewaart. In plaats van Face ID of een pincode open je een kluis door een patroon te tekenen op een raster van 5×5 stippen — een geheim dat alleen in je geheugen bestaat. Elk patroon is een eigen kluis, en een patroon dat de app nog nooit heeft gezien opent een lege, dus niets verraadt hoeveel kluizen er zijn. Bestanden worden versleuteld met AES-256-GCM via Apple CryptoKit. Er is geen account, geen server en geen tracking van kluisinhoud. Velcrypt heeft een gratis versie, een gratis versleutelde back-up en een optionele Premium-upgrade.
+Velcrypt is een native iPhone-app die privéfoto’s, video’s en documenten in versleutelde kluizen op het apparaat bewaart. In plaats van een pincode open je een kluis door een patroon te tekenen op een raster van 5×5 stippen — een geheim dat alleen in je geheugen bestaat. Face ID is optioneel en staat standaard uit. Elk patroon is een eigen kluis, en een patroon dat de app nog nooit heeft gezien opent een lege, dus niets verraadt hoeveel kluizen er zijn. Bestanden worden versleuteld met AES-256-GCM via Apple CryptoKit. Er is geen account, geen server en geen tracking van kluisinhoud. Velcrypt heeft een gratis versie, een gratis versleutelde back-up en een optionele Premium-upgrade.
 
 ## Factsheet
 
@@ -47,9 +47,9 @@ Velcrypt is een native iPhone-app die privéfoto’s, video’s en documenten in
 | Tagline | Well Encrypted. Truly Private. |
 | Platform | iPhone, iOS 17 of nieuwer |
 | Categorie | Privacy / hulpprogramma’s — versleutelde kluis voor foto’s, video’s en documenten |
-| Prijsmodel | Gratis (1 kluis, tot 50 onderdelen); Premium $ 1,99 per week, $ 19,99 per jaar of $ 39,99 eenmalig (USD, verschilt per land) |
-| Ontgrendelen | Patroon op een raster van 5×5 stippen; bewust geen Face ID of Touch ID |
-| Kluizen | Elk patroon is een eigen kluis; geen kluizenlijst |
+| Prijsmodel | Gratis (1 kluis, tot 50 onderdelen; een lege kluis telt niet mee); Premium $ 1,99 per week, $ 19,99 per jaar of $ 39,99 eenmalig (USD, verschilt per land) |
+| Ontgrendelen | Patroon op een raster van 5×5 stippen; Face ID / Touch ID optioneel, standaard uit (per kluis) |
+| Kluizen | Elk patroon is een eigen kluis; geen kluizenlijst, behalve een Face ID-lijst die de gebruiker zelf kiest |
 | Versleuteling | AES-256-GCM (Apple CryptoKit); sleutelafleiding met PBKDF2-HMAC-SHA512 |
 | Gegevens | 100% op het apparaat; geen account, geen cloudsynchronisatie, geen advertenties |
 | Back-up | Gratis versleuteld back-upbestand (.velcrypt) dat de gebruiker zelf bewaart |

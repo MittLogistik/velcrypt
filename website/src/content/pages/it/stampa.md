@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "velcrypt press kit"
 keywords: ["logo velcrypt", "velcrypt cartella stampa", "scheda informativa velcrypt", "colori brand velcrypt"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 schemaType: WebPage
 order: 8
 related: [about, security, features, pricing]
@@ -37,7 +37,7 @@ Velcrypt è un’app per iPhone dedicata a foto, video e documenti privati. I fi
 
 ### 100 parole
 
-Velcrypt è un’app nativa per iPhone che conserva foto, video e documenti privati in casseforti cifrate sul dispositivo. Invece di Face ID o di un PIN, apri una cassaforte disegnando una sequenza su una griglia di 5×5 punti: un segreto che esiste solo nella tua memoria. Ogni sequenza è una cassaforte a sé, e una sequenza mai vista dall’app ne apre una vuota, quindi nulla rivela quante casseforti esistono. I file sono cifrati con AES-256-GCM tramite Apple CryptoKit. Non ci sono account, server né tracciamento dei contenuti. Velcrypt ha una versione gratuita e un upgrade Premium facoltativo.
+Velcrypt è un’app nativa per iPhone che conserva foto, video e documenti privati in casseforti cifrate sul dispositivo. Invece di un PIN, apri una cassaforte disegnando una sequenza su una griglia di 5×5 punti: un segreto che esiste solo nella tua memoria. Face ID è facoltativo e disattivato per impostazione predefinita. Ogni sequenza è una cassaforte a sé, e una sequenza mai vista dall’app ne apre una vuota, quindi nulla rivela quante casseforti esistono, a parte quelle che aggiungi tu all’elenco Face ID. I file sono cifrati con AES-256-GCM tramite Apple CryptoKit. Non ci sono account, server né tracciamento dei contenuti. Velcrypt ha una versione gratuita e un upgrade Premium facoltativo.
 
 ## Scheda informativa
 
@@ -47,9 +47,9 @@ Velcrypt è un’app nativa per iPhone che conserva foto, video e documenti priv
 | Tagline | Well Encrypted. Truly Private. |
 | Piattaforma | iPhone, iOS 17 o successivo |
 | Categoria | Privacy / utility: cassaforte cifrata per foto, video e documenti |
-| Modello di prezzo | Gratuito (1 cassaforte, fino a 50 elementi); Premium a 1,99 $/settimana, 19,99 $/anno con 3 giorni di prova gratuita o 39,99 $ a vita (USD, i prezzi variano in base al paese) |
-| Sblocco | Sequenza su una griglia di 5×5 punti; niente Face ID né Touch ID per scelta |
-| Casseforti | Ogni sequenza è una cassaforte a sé; nessun elenco di casseforti |
+| Modello di prezzo | Gratuito (1 cassaforte, fino a 50 elementi; una cassaforte vuota non conta); Premium a 1,99 $/settimana, 19,99 $/anno con 3 giorni di prova gratuita o 39,99 $ a vita (USD, i prezzi variano in base al paese) |
+| Sblocco | Sequenza su una griglia di 5×5 punti; Face ID / Touch ID facoltativi, disattivati per impostazione predefinita (per cassaforte) |
+| Casseforti | Ogni sequenza è una cassaforte a sé; nessun elenco di casseforti, salvo l’elenco Face ID scelto dall’utente |
 | Cifratura | AES-256-GCM (Apple CryptoKit); derivazione delle chiavi con PBKDF2-HMAC-SHA512 |
 | Dati | 100% sul dispositivo; nessun account, nessuna sincronizzazione cloud, nessuna pubblicità |
 | Backup | Backup cifrato gratuito in un file .velcrypt protetto da password |

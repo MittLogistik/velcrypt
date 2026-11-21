@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "bloccare app iphone"
 keywords: ["nascondere app iphone", "mettere password alle app iphone", "bloccare app con face id", "bloccare cartella iphone schermata home", "cartella nascoste iphone", "richiedi face id app"]
 datePublished: 2026-10-31
-dateModified: 2026-10-31
+dateModified: 2026-11-21
 summary: "Richiedi Face ID, la cartella Nascoste e i limiti di Tempo di utilizzo: cosa protegge il blocco delle app e perché le cartelle non si bloccano."
 category: hiding
 order: 66
@@ -114,7 +114,7 @@ Per questo il codice funziona come alternativa, e per questo il blocco delle app
 
 ## Dove si inserisce Velcrypt
 
-Velcrypt non è un blocco per app; non può bloccare altre app. È una cassaforte per le foto, i video e i documenti che altrimenti cercheresti di proteggere bloccando Foto o File. La apri disegnando una [sequenza](id:pattern-lock) su una griglia 5×5, e ogni sequenza apre la propria cassaforte cifrata. Face ID non c’è, per scelta, e la sequenza non ha niente a che fare con il codice dell’iPhone: chi conosce il codice non riesce comunque ad aprire le tue casseforti. Se vuoi avere un’altra risposta pronta quando qualcuno insiste, le [casseforti esca](id:hidden-vaults) (Premium) mostrano contenuti innocui con un’altra sequenza.
+Velcrypt non è un blocco per app; non può bloccare altre app. È una cassaforte per le foto, i video e i documenti che altrimenti cercheresti di proteggere bloccando Foto o File. La apri disegnando una [sequenza](id:pattern-lock) su una griglia 5×5, e ogni sequenza apre la propria cassaforte cifrata. La sequenza non ha niente a che fare con il codice dell’iPhone: chi conosce il codice non riesce comunque ad aprire le tue casseforti. Face ID è facoltativo e spento per impostazione predefinita; se lo attivi per una cassaforte, il codice non può comunque sostituirlo. Se vuoi avere un’altra risposta pronta quando qualcuno insiste, le [casseforti esca](id:hidden-vaults) (Premium) mostrano contenuti innocui con un’altra sequenza.
 
 I contenuti sono cifrati sul dispositivo con AES-256-GCM, nulla viene caricato e non c’è nessun account. La cassaforte [si blocca automaticamente](id:auto-lock) quando esci dall’app. Poiché i dati della cassaforte non finiscono nei backup di iCloud o del computer, crea un backup cifrato in Impostazioni → Backup per tutto ciò che non puoi perdere; una sequenza dimenticata non può recuperarla nessuno.
 

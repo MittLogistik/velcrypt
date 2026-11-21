@@ -16,7 +16,7 @@ keyFacts:
 primaryKeyword: "contraseña de coacción"
 keywords: ["contraseña de pánico", "código de coacción", "qué es una contraseña de coacción", "contraseña de coacción significado", "palabra clave de coacción", "ejemplos de palabras clave de coacción", "pin de coacción", "código de coacción alarma", "pin al revés cajero mito", "huella de coacción", "código de coacción móvil", "pin de coacción android", "grapheneos pin de coacción", "pin de pánico móvil", "patrón de coacción"]
 datePublished: 2026-10-22
-dateModified: 2026-10-31
+dateModified: 2026-11-21
 summary: "Qué son las contraseñas, palabras clave y PIN de coacción, qué ofrecen iPhone y Android y cómo funciona el patrón de coacción de Velcrypt."
 category: security
 order: 45
@@ -108,7 +108,7 @@ Quien busca un «código de coacción para el móvil», un «PIN de coacción» 
 
 ### Qué significa «huella de coacción»
 
-Una **huella de coacción** es un dedo concreto registrado como alarma silenciosa. Algunos sistemas biométricos de control de acceso lo admiten: escaneas ese dedo, la puerta se abre como siempre y se envía una alarma de coacción a seguridad. Los móviles convencionales no lo ofrecen. <!-- TODO verify --> En un teléfono, la biometría es justamente el punto débil bajo coacción, porque alguien puede acercarte el móvil a la cara o presionar tu dedo contra el sensor. Por eso importa desactivar Face ID rápido, y por eso Velcrypt [no tiene desbloqueo con Face ID, por diseño](id:pattern-lock-vs-pin-vs-face-id).
+Una **huella de coacción** es un dedo concreto registrado como alarma silenciosa. Algunos sistemas biométricos de control de acceso lo admiten: escaneas ese dedo, la puerta se abre como siempre y se envía una alarma de coacción a seguridad. Los móviles convencionales no lo ofrecen. <!-- TODO verify --> En un teléfono, la biometría es justamente el punto débil bajo coacción, porque alguien puede acercarte el móvil a la cara o presionar tu dedo contra el sensor. Por eso importa desactivar Face ID rápido, y por eso en Velcrypt [Face ID es opcional y viene desactivado](id:pattern-lock-vs-pin-vs-face-id): deja tu bóveda más privada solo con su patrón.
 
 ## Cómo implementan las apps del móvil los códigos de coacción
 

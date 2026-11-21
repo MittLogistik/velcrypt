@@ -8,13 +8,13 @@ answer: "Velcrypt lo guarda todo en tu iPhone, sin cuenta, y se desbloquea con u
 keyFacts:
   - "Velcrypt no necesita cuenta, email ni registro; Keepsafe usa una cuenta, según su ficha."
   - "Keepsafe ofrece una copia opcional en la nube; Velcrypt guarda las bóvedas solo en tu iPhone, con una copia de seguridad cifrada manual."
-  - "Velcrypt se desbloquea con un patrón en una cuadrícula de 5×5 y no tiene Face ID ni Touch ID a propósito."
+  - "Velcrypt se desbloquea con un patrón en una cuadrícula de 5×5; Face ID o Touch ID es opcional y viene desactivado."
   - "En Velcrypt cada patrón abre su propia bóveda y los patrones desconocidos abren una vacía."
   - "Si olvidas tu patrón de Velcrypt o pierdes el teléfono, la bóveda no se puede recuperar."
 primaryKeyword: "velcrypt vs keepsafe"
 keywords: ["keepsafe vs velcrypt", "keepsafe opiniones comparativa", "alternativa a keepsafe bóveda de fotos", "bóveda de fotos sin cuenta", "keepsafe copia en la nube"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Bóveda solo local y sin cuenta frente a una bóveda con cuenta y copia en la nube. Dónde encaja cada una, lado a lado."
 competitor: "Keepsafe"
 lastChecked: "octubre de 2026"
@@ -51,7 +51,7 @@ Ningún enfoque es mejor para todo el mundo. Uno sacrifica comodidad a cambio de
 | Requiere cuenta | Sin cuenta, sin email | Sí, según su ficha |
 | Copia de seguridad en la nube | No; copia de seguridad cifrada manual y gratuita en un archivo que guardas tú | «Private Cloud» opcional con premium |
 | Método de desbloqueo | Patrón en una cuadrícula de 5×5 | PIN o código |
-| Biometría (Face ID / Touch ID) | No disponible, por diseño | Compatible, según su ficha |
+| Biometría (Face ID / Touch ID) | Opcional, desactivado de forma predeterminada (por bóveda) | Compatible, según su ficha |
 | Señuelo / varias bóvedas | Cada patrón es su propia bóveda (con Premium) | PIN falso/señuelo en premium |
 | Patrón de coacción | Sí, con Premium (abre un señuelo y elimina las demás bóvedas) | No se indica públicamente |
 | Alertas de intrusión | No disponibles | Disponibles en premium |
@@ -73,7 +73,7 @@ Keepsafe usa un código tipo PIN y, según su ficha, puede usar Face ID o Touch 
 
 <!-- TODO verify -->
 
-Velcrypt usa un patrón dibujado en una cuadrícula de 5×5: una línea continua que pasa por al menos seis puntos con al menos un cambio de dirección. Prescinde a propósito de Face ID y Touch ID, porque una cara o un dedo pueden usarse sin tu consentimiento, mientras que un patrón solo existe en tu memoria. La comparativa [patrón frente a PIN frente a Face ID](id:pattern-lock-vs-pin-vs-face-id) profundiza en las ventajas e inconvenientes.
+Velcrypt usa un patrón dibujado en una cuadrícula de 5×5: una línea continua que pasa por al menos seis puntos con al menos un cambio de dirección. Face ID y Touch ID son opcionales y vienen desactivados: los activas por bóveda y el patrón sigue abriendo todas. Ese valor predeterminado es deliberado, porque una cara o un dedo pueden usarse sin tu consentimiento, mientras que un patrón solo existe en tu memoria. Deja tu bóveda más privada solo con su patrón. La comparativa [patrón frente a PIN frente a Face ID](id:pattern-lock-vs-pin-vs-face-id) profundiza en las ventajas e inconvenientes.
 
 ## Señuelos y negación plausible
 
@@ -81,13 +81,13 @@ Muchas apps de bóveda ofrecen un segundo código falso que abre una bóveda ino
 
 <!-- TODO verify -->
 
-En Velcrypt, el modelo forma parte de la estructura en lugar de ser un añadido. Cada patrón es su propia bóveda, no hay lista de bóvedas y un patrón que la app nunca ha visto simplemente abre una bóveda vacía, sin ningún error. Nada en pantalla demuestra que existan otras bóvedas. Eso es lo que significan en la práctica las [bóvedas ocultas](id:hidden-vaults) y la [negación plausible](id:plausible-deniability-explained). Con Premium, un [patrón de coacción](id:duress-pattern) va más allá: abre una bóveda señuelo y elimina en silencio y de forma permanente todas las demás bóvedas del iPhone.
+En Velcrypt, el modelo forma parte de la estructura en lugar de ser un añadido. Cada patrón es su propia bóveda, no hay lista de bóvedas salvo las que tú añades a propósito a la lista de Face ID, y un patrón que la app nunca ha visto simplemente abre una bóveda vacía, sin ningún error. Nada en pantalla demuestra que existan otras bóvedas. Eso es lo que significan en la práctica las [bóvedas ocultas](id:hidden-vaults) y la [negación plausible](id:plausible-deniability-explained). Con Premium, un [patrón de coacción](id:duress-pattern) va más allá: abre una bóveda señuelo y elimina en silencio y de forma permanente todas las demás bóvedas del iPhone.
 
 ## Cuándo puede encajarte mejor Keepsafe
 
 - **Quieres copia de seguridad y sincronización.** Si perder el teléfono no puede significar perder tus fotos, una copia en la nube basada en cuenta es la respuesta más automática. Velcrypt solo ofrece una copia de seguridad cifrada manual.
 - **También usas Android.** Keepsafe está disponible en más de una plataforma, según sus fichas en las tiendas; Velcrypt es solo para iPhone.
-- **Prefieres Face ID.** Si la comodidad de la biometría te importa más que el riesgo de un desbloqueo forzado, Velcrypt no la ofrecerá a propósito.
+- **Prefieres un PIN.** Velcrypt siempre usa un patrón dibujado; Face ID es un extra opcional por bóveda, no un sustituto del patrón.
 - **Quieres alertas de intrusión.** Velcrypt no hace fotos a los intrusos.
 
 <!-- TODO verify -->
@@ -96,7 +96,7 @@ En Velcrypt, el modelo forma parte de la estructura en lugar de ser un añadido.
 
 - **No quieres una cuenta.** Nada vincula tu bóveda a una dirección de email ni a tu identidad.
 - **Quieres que nada salga del teléfono.** Sin subidas, sin servidores, sin analítica sobre el contenido de las bóvedas.
-- **Quieres negación plausible.** Bóvedas separadas y sin listar, en las que un patrón desconocido no revela nada.
+- **Quieres negación plausible.** Bóvedas separadas que no se listan (salvo las que añadas a Face ID), en las que un patrón desconocido no revela nada.
 - **Quieres detalles criptográficos publicados.** Velcrypt documenta sus algoritmos en la [página de seguridad](id:security).
 
 Elijas la que elijas, recuerda que importar una foto a cualquier bóveda normalmente la copia. Después, borra el original de Fotos y vacía «Eliminado»; los pasos están en [borrar las fotos originales después de importar](id:delete-original-photos-after-import).

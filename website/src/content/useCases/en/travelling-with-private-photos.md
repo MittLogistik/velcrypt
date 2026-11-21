@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "travelling with private photos iphone"
 keywords: ["protect photos while travelling", "iphone stolen abroad photos", "stolen device protection travel", "lend phone abroad privacy", "travel phone privacy tips"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Lost phones, lending your iPhone and border checks: how to travel with private photos and documents without worrying about them."
 group: travel
 schemaType: Article
@@ -58,7 +58,7 @@ Travel puts your phone in more hands and more places than everyday life. You use
 
 ## How Velcrypt helps
 
-Velcrypt keeps private photos, videos and documents in encrypted vaults stored only on your iPhone. A vault opens with a pattern you draw on a 5×5 grid — not with your passcode or Face ID. If a thief has learned your passcode, that alone doesn’t open your vault. Why a pattern is used instead of biometrics is explained in [pattern vs PIN vs Face ID](id:pattern-lock-vs-pin-vs-face-id).
+Velcrypt keeps private photos, videos and documents in encrypted vaults stored only on your iPhone. A vault opens with a pattern you draw on a 5×5 grid — not with your passcode, and Face ID is off unless you turn it on for a vault. If a thief has learned your passcode, that alone doesn’t open your vault. Why the pattern comes first and biometrics are opt-in is explained in [pattern vs PIN vs Face ID](id:pattern-lock-vs-pin-vs-face-id).
 
 Every pattern opens its own vault, and an unknown pattern opens an empty one without any error. With Premium, which allows more than one vault, that lets you keep a [decoy vault](id:what-is-a-decoy-vault) with harmless travel photos and keep your private vault behind a different pattern. The app also auto-locks when it goes to the background, and its content is hidden in the app switcher.
 

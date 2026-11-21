@@ -9,14 +9,14 @@ keyFacts:
   - "Patroon → PBKDF2-HMAC-SHA512, minstens 600.000 iteraties, willekeurige salt per apparaat in de iOS-sleutelhanger."
   - "Elke kluis heeft een eigen willekeurige 256-bits hoofdsleutel; sleutels per bestand worden afgeleid met HKDF."
   - "Bestanden worden versleuteld met AES-256-GCM via Apple CryptoKit, plus iOS-gegevensbescherming (klasse ‘volledige bescherming’)."
-  - "Een onbekend patroon opent een lege kluis — geen kluizenlijst, geen melding ‘verkeerd patroon’."
+  - "Een onbekend patroon opent een lege kluis — geen kluizenlijst (behalve de kluizen die je zelf aan de Face ID-lijst toevoegt), geen melding ‘verkeerd patroon’."
   - "Geen netwerk, geen account, geen analyse van kluisinhoud; kluisgegevens zijn uitgesloten van iCloud- en computerback-ups."
   - "Optionele versleutelde back-up: een .velcrypt-bestand, beveiligd met een back-upwachtwoord dat je zelf kiest."
   - "Velcrypt is nog niet onafhankelijk op beveiliging gecontroleerd (geen audit)."
 primaryKeyword: "velcrypt beveiliging"
 keywords: ["fotokluis versleuteling iphone", "hoe werkt velcrypt versleuteling", "aes-256-gcm fotokluis", "pbkdf2 patroonvergrendeling", "dreigingsmodel fotokluis", "plausibele ontkenning kluis-app"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 schemaType: WebPage
 order: 1
 related: [encryption, pattern-lock, hidden-vaults, aes-256-encryption-explained, plausible-deniability-explained, forgot-vault-pattern]
@@ -77,7 +77,7 @@ Bovenop de eigen versleuteling van Velcrypt worden kluisbestanden weggeschreven 
 
 De meeste apps vergelijken je wachtwoord met iets wat is opgeslagen — een hash, een verificatiewaarde, een ‘goed antwoord’ — en melden dan *verkeerd wachtwoord*. Velcrypt doet dat bewust niet.
 
-Er is geen lijst van kluizen en geen opgeslagen waarde die bevestigt of een patroon ‘klopt’. Als je een patroon tekent, leidt Velcrypt een sleutel af en probeert het de kluis te openen die erbij hoort. Past er geen kluis bij, dan opent de app gewoon een nieuwe, lege kluis voor dat patroon. Voor wie de telefoon vasthoudt, zien een nooit gebruikt patroon en een echte maar lege kluis er hetzelfde uit.
+Er is geen lijst van kluizen (behalve de Face ID-lijst, waarin alleen de kluizen staan waarvoor je zelf Face ID hebt aangezet) en geen opgeslagen waarde die bevestigt of een patroon ‘klopt’. Als je een patroon tekent, leidt Velcrypt een sleutel af en probeert het de kluis te openen die erbij hoort. Past er geen kluis bij, dan opent de app gewoon een nieuwe, lege kluis voor dat patroon. Voor wie de telefoon vasthoudt, zien een nooit gebruikt patroon en een echte maar lege kluis er hetzelfde uit.
 
 Dat geeft je **plausibele ontkenning**: je kunt geloofwaardig zeggen dat er niets meer te zien is, omdat niets in de app het tegendeel bewijst. Je kunt een lokkluis met gewone foto’s aanhouden en een aparte kluis voor wat echt privé is. De pagina over [verborgen kluizen](id:hidden-vaults) en onze gidsen over [lokkluizen](id:what-is-a-decoy-vault) en [plausibele ontkenning](id:plausible-deniability-explained) gaan er dieper op in.
 
@@ -87,7 +87,7 @@ Een praktisch gevolg: als je je patroon één stip verkeerd onthoudt, kom je in 
 
 Velcrypt vergrendelt automatisch wanneer het naar de achtergrond gaat, na een vertraging die je zelf instelt. Bij het vergrendelen worden de kluissleutels uit het geheugen gewist en moet je het patroon opnieuw tekenen. Kluisinhoud is ook verborgen in de appkiezer van iOS, dus een blik op je recente apps toont geen miniatuur van een privéfoto. Zie [automatisch vergrendelen](id:auto-lock) voor de instellingen.
 
-Ontgrendelen met Face ID of Touch ID kan bewust niet. Een gezicht of vinger kan zonder je toestemming worden gebruikt — terwijl je slaapt of onder druk. Een patroon bestaat alleen in je geheugen.
+Face ID en Touch ID zijn optioneel en staan standaard uit, voor elke kluis. Een gezicht of vinger kan zonder je toestemming worden gebruikt — terwijl je slaapt of onder druk — terwijl een patroon alleen in je geheugen bestaat. Zet je Face ID aan voor een kluis (Instellingen › Face ID in die kluis), dan wordt een kopie van de kluissleutel in de sleutelhanger bewaard, alleen op dit apparaat: niet in iCloud en niet in back-ups. Die kopie is gekoppeld aan de gezichten en vingerafdrukken die op dat moment zijn ingesteld. Voeg je er een toe of stel je Face ID opnieuw in, dan gaat Face ID uit voor die kluizen tot je ze met het patroon opent en het opnieuw aanzet. De toegangscode van je iPhone kan Face ID in Velcrypt niet vervangen. Wie je naar je telefoon laat kijken, kan wel elke kluis in de Face ID-lijst zien en openen; houd je meest privékluis daarom op alleen het patroon.
 
 ## Geen netwerk, geen account, geen automatische back-ups
 
@@ -107,7 +107,7 @@ Via Instellingen → Back-up maak je een versleuteld `.velcrypt`-bestand van de 
 |---|---|---|
 | Iemand scrolt door je fotobibliotheek | Ja | Items die je importeert en daarna uit Foto’s verwijdert (ook uit Recent verwijderd), staan alleen nog in Velcrypt. |
 | Iemand pakt je ontgrendelde telefoon en opent Velcrypt | Ja | Diegene heeft je patroon nodig; een verkeerd patroon toont een lege kluis. |
-| Iemand probeert te bewijzen dat je meer kluizen hebt | Grotendeels | Geen kluizenlijst, geen melding ‘verkeerd patroon’; het aantal kluizen staat nergens in de app. |
+| Iemand probeert te bewijzen dat je meer kluizen hebt | Grotendeels | Geen kluizenlijst, geen melding ‘verkeerd patroon’; het aantal kluizen staat nergens in de app. Uitzondering: kluizen die je zelf aan de Face ID-lijst toevoegt. |
 | Diefstal van een vergrendelde iPhone | Ja | iOS-gegevensbescherming plus de eigen AES-256-GCM-versleuteling van Velcrypt. |
 | Het patroon kraken vanuit uitgelezen bestanden | Vertraagd | PBKDF2 met 600.000+ iteraties en een salt per apparaat; een lang patroon maakt verschil. |
 | Inbraak in een cloudaccount | Ja | Kluisgegevens worden niet geüpload en zijn uitgesloten van iCloud-back-ups. Een back-upbestand dat je in de cloud bewaart, blijft versleuteld met je back-upwachtwoord. |

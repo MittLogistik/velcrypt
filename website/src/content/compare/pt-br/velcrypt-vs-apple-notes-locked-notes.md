@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "esconder fotos no app notas"
 keywords: ["esconder fotos em nota bloqueada", "bloquear fotos no app notas", "notas bloqueadas iphone fotos", "app notas fotos privadas", "nota bloqueada vs app cofre"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Esconder fotos em uma nota bloqueada da Apple versus um cofre criptografado dedicado: praticidade, capacidade, sincronização e quem consegue abrir."
 competitor: "Notas bloqueadas do app Notas"
 lastChecked: "outubro de 2026"
@@ -53,7 +53,7 @@ Você pode adicionar fotos da fototeca, tirar uma foto dentro da nota ou digital
 | Exige conta | Não | Não para notas no aparelho; Conta Apple para sincronizar pelo iCloud |
 | Backup na nuvem | Não; backup criptografado manual em arquivo (grátis) | Sim, com as Notas do iCloud |
 | Forma de desbloqueio | Padrão em uma grade 5×5 | Código do aparelho ou senha separada do Notas |
-| Biometria | Não oferecida, por design | Face ID / Touch ID opcional |
+| Biometria | Opcional, desativado por padrão (por cofre) | Face ID / Touch ID opcional |
 | Fachada / vários cofres | Cada padrão é um cofre próprio (mais de um cofre exige o Premium) | Não; todas as notas bloqueadas usam a mesma senha |
 | Padrão de coação | Sim, com o Premium (abre um cofre de fachada e apaga os outros cofres) | Não |
 | Recuperação se você esquecer o código | Nenhuma | A opção do código evita uma senha separada; senhas antigas do Notas não podem ser recuperadas |
@@ -78,7 +78,6 @@ A outra diferença é o segredo. Se você bloqueia as notas com o código do apa
 - **Você tem só alguns itens.** Uma nota bloqueada é mais simples do que instalar qualquer coisa.
 - **Você quer sincronizar entre iPhone, iPad e Mac.** O Velcrypt é só para iPhone e não sincroniza.
 - **Você quer poder recuperar.** Com o iCloud, suas notas bloqueadas sobrevivem à perda do celular.
-- **Você gosta da praticidade do Face ID.** O Velcrypt, de propósito, não oferece.
 
 ## Quando o Velcrypt pode ser melhor para você
 

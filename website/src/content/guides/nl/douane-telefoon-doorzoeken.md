@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "mag de douane mijn telefoon doorzoeken"
 keywords: ["telefoon doorzoeken grens", "telefoonprivacy grensovergang", "checklist privacy telefoon op reis", "douane telefoon controle iphone", "face id snel uitschakelen"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-11-21
 summary: "Een algemeen overzicht van apparaatcontroles aan de grens, een checklist voor je iPhone, waar een lokkluis past en welke ethische grenzen je niet overschrijdt."
 category: practical
 order: 33
@@ -109,6 +109,6 @@ Privacy aan de grens is een legitieme zorg. De meeste mensen willen gewoon niet 
 
 ## Waar Velcrypt past
 
-Velcrypt is een verstandig onderdeel van je reisopzet voor persoonlijke inhoud die je op je iPhone wilt houden. Kluizen worden op het apparaat versleuteld met AES-256-GCM, er is geen account of server, en er is geen Face ID waarmee een kluis zonder jouw medewerking kan worden geopend. Elk patroon opent een eigen [verborgen kluis](id:hidden-vaults), dus je kunt een geleefde lokkluis houden tegen alledaags rondsnuffelen.
+Velcrypt is een verstandig onderdeel van je reisopzet voor persoonlijke inhoud die je op je iPhone wilt houden. Kluizen worden op het apparaat versleuteld met AES-256-GCM, er is geen account of server, en Face ID staat standaard uit, dus een kluis die je op alleen het patroon houdt, kan niet zonder jouw medewerking worden geopend. Elk patroon opent een eigen [verborgen kluis](id:hidden-vaults), dus je kunt een geleefde lokkluis houden tegen alledaags rondsnuffelen.
 
 Velcrypt kan niet beschermen tegen iemand die toekijkt terwijl je je patroon tekent, tegen kopieën die in Foto's, iCloud of chats zijn achtergebleven, of tegen wettelijke verplichtingen in het land waar je binnenkomt. Gebruik het naast de checklist hierboven, niet in plaats daarvan.

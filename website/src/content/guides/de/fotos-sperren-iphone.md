@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "fotos sperren iphone"
 keywords: ["iphone fotos sperren", "fotos app sperren iphone", "face id fotos app", "album ausgeblendet sperren", "bilder sperren iphone", "fotos mit face id sperren ios 18"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-11-21
 summary: "Vier Wege, Fotos auf dem iPhone zu sperren – vom Album „Ausgeblendet“ über die App-Sperre bis zu gesperrten Notizen, direkt verglichen."
 category: hiding
 order: 2
@@ -101,6 +101,6 @@ Denk auch über Biometrie nach. Face ID ist schnell, aber ein Gesicht lässt sic
 
 ## Wo Velcrypt ins Spiel kommt
 
-Velcrypt ist ein Tresor der vierten Kategorie. Face ID und Touch ID fehlen bewusst: Du entsperrst die App, indem du ein [Muster](id:pattern-lock) auf ein 5×5-Punkteraster zeichnest – mindestens sechs Punkte mit mindestens einem Richtungswechsel, und längere Muster sind besser. Dieses Muster existiert nur in deinem Gedächtnis und hat nichts mit deinem iPhone-Code zu tun.
+Velcrypt ist ein Tresor der vierten Kategorie. Face ID und Touch ID sind optional und standardmäßig aus: Du entsperrst die App, indem du ein [Muster](id:pattern-lock) auf ein 5×5-Punkteraster zeichnest – mindestens sechs Punkte mit mindestens einem Richtungswechsel, und längere Muster sind besser. Dieses Muster existiert nur in deinem Gedächtnis und hat nichts mit deinem iPhone-Code zu tun.
 
 Inhalte werden auf dem Gerät mit AES-256-GCM verschlüsselt, der Tresor [sperrt sich automatisch](id:auto-lock), sobald du die App verlässt, und nichts wird hochgeladen. Der Preis dieses Designs: Es gibt keine Wiederherstellung. Vergisst du das Muster, können weder du noch Velcrypt den Tresor öffnen. Wie jede Sperre hilft sie auch nicht, wenn dir jemand beim Zeichnen zusieht oder du das Handy mit geöffnetem Tresor weitergibst.

@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "fotos in notizen sperren"
 keywords: ["fotos in gesperrten notizen verstecken", "apple notizen fotos sperren", "gesperrte notizen iphone fotos", "notizen app private fotos", "gesperrte notiz vs tresor app"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Fotos in einer gesperrten Apple-Notiz verstecken oder ein eigener verschlüsselter Tresor: Komfort, Kapazität, Synchronisierung und wer sie öffnen kann."
 competitor: "Gesperrte Notizen in Apple Notizen"
 lastChecked: "Oktober 2026"
@@ -53,7 +53,7 @@ Du kannst Fotos aus deiner Mediathek hinzufügen, in der Notiz ein Foto aufnehme
 | Konto erforderlich | Nein | Nein für Notizen auf dem Gerät; Apple Account für iCloud-Synchronisierung |
 | Cloud-Backup | Nein; kostenloses manuelles verschlüsseltes Backup | Ja, mit iCloud-Notizen |
 | Entsperren | Muster auf einem 5×5-Raster | Gerätecode oder separates Notizen-Passwort |
-| Biometrie | Bewusst nicht angeboten | Optional Face ID / Touch ID |
+| Biometrie | Optional, standardmäßig aus (pro Tresor) | Optional Face ID / Touch ID |
 | Köder- / mehrere Tresore | Jedes Muster ist ein eigener Tresor (mehrere Tresore mit Premium) | Nicht unterstützt; alle gesperrten Notizen teilen ein Passwort |
 | Notfallmuster | Ja, mit Premium (öffnet einen Köder, löscht die anderen Tresore) | Nein |
 | Wiederherstellung bei vergessenem Code | Keine | Mit Gerätecode entfällt ein separates Passwort; alte Notizen-Passwörter lassen sich nicht wiederherstellen |
@@ -78,7 +78,7 @@ Der andere Unterschied ist das Geheimnis. Sperrst du Notizen mit deinem Gerätec
 - **Du hast nur wenige Objekte.** Eine gesperrte Notiz ist einfacher, als etwas zu installieren.
 - **Du willst Synchronisierung über iPhone, iPad und Mac.** Velcrypt gibt es nur fürs iPhone und es synchronisiert nicht.
 - **Du willst Wiederherstellbarkeit.** Mit iCloud überstehen deine gesperrten Notizen ein verlorenes iPhone.
-- **Du magst den Komfort von Face ID.** Velcrypt bietet das bewusst nicht an.
+- **Du willst Face ID mit dem Gerätecode als Rückfall.** Velcrypt bietet Face ID optional pro Tresor an, aber ohne Ausweich-Code: Scheitert Face ID, zeichnest du das Muster.
 
 ## Wann Velcrypt besser passen kann
 

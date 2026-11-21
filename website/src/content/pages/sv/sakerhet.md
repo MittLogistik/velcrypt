@@ -9,13 +9,13 @@ keyFacts:
   - "Mönster → PBKDF2-HMAC-SHA512, minst 600 000 iterationer, slumpmässigt salt per enhet i iOS-nyckelringen."
   - "Varje valv har en egen slumpmässig 256-bitars huvudnyckel; nycklar per fil härleds med HKDF."
   - "Filerna krypteras med AES-256-GCM via Apple CryptoKit, plus iOS Dataskydd (fullständig skyddsklass)."
-  - "Ett okänt mönster öppnar ett tomt valv – ingen valvlista, inget meddelande om ”fel mönster”."
+  - "Ett okänt mönster öppnar ett tomt valv – ingen valvlista (utom valv du lägger i Face ID-listan), inget ”fel mönster”."
   - "Inget nätverk, inget konto, ingen analys av valvinnehållet; valvdata undantas från iCloud- och datorsäkerhetskopior."
   - "Velcrypt har ännu inte granskats av en oberoende säkerhetsrevision."
 primaryKeyword: "krypterat fotovalv iphone säkerhet"
 keywords: ["velcrypt säkerhet", "kryptering fotovalv iphone", "hur fungerar velcrypts kryptering", "aes-256-gcm fotovalv", "pbkdf2 mönsterlås", "trovärdigt förnekande valvapp"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 schemaType: WebPage
 order: 1
 related: [encryption, pattern-lock, hidden-vaults, aes-256-encryption-explained, plausible-deniability-explained, forgot-vault-pattern]
@@ -76,7 +76,7 @@ Utöver Velcrypts egen kryptering skrivs valvfilerna med iOS Dataskydd i klassen
 
 De flesta appar jämför ditt lösenord med något som finns lagrat – en hash, en verifierare, ett ”rätt svar” – och säger sedan *fel lösenord*. Velcrypt gör medvetet inte så.
 
-Det finns ingen valvlista och inget lagrat värde som bekräftar om ett mönster är ”rätt”. När du ritar ett mönster härleder Velcrypt en nyckel och försöker öppna valvet som hör till den. Om inget valv matchar öppnar appen helt enkelt ett nytt, tomt valv för det mönstret. För den som håller i telefonen ser ett aldrig använt mönster och ett riktigt men tomt valv likadana ut.
+Det finns ingen valvlista (utom de valv du själv lägger till i Face ID-listan) och inget lagrat värde som bekräftar om ett mönster är ”rätt”. När du ritar ett mönster härleder Velcrypt en nyckel och försöker öppna valvet som hör till den. Om inget valv matchar öppnar appen helt enkelt ett nytt, tomt valv för det mönstret. För den som håller i telefonen ser ett aldrig använt mönster och ett riktigt men tomt valv likadana ut.
 
 Det ger dig **trovärdigt förnekande**: möjligheten att trovärdigt säga att det inte finns något mer att se, eftersom ingenting i appen bevisar motsatsen. Du kan ha ett lockvalv med vanliga bilder och ett separat valv för det som verkligen är privat. Sidan om [dolda valv](id:hidden-vaults) och våra guider om [lockvalv](id:what-is-a-decoy-vault) och [trovärdigt förnekande](id:plausible-deniability-explained) går in mer på detaljerna.
 
@@ -86,7 +86,9 @@ En praktisk bieffekt: om du minns fel med en enda punkt hamnar du i ett tomt val
 
 Velcrypt låses automatiskt när appen går till bakgrunden, efter en fördröjning du själv ställer in. När appen låses rensas valvnycklarna ur minnet och mönstret måste ritas igen. Valvinnehållet döljs också i iOS appväxlare, så en snabb blick på dina senaste appar visar ingen miniatyr av en privat bild. Inställningarna beskrivs under [autolås](id:auto-lock).
 
-Det finns ingen upplåsning med Face ID eller Touch ID, med avsikt. Ett ansikte eller ett finger kan användas utan ditt samtycke – medan du sover eller under press. Ett mönster finns bara i ditt minne.
+Face ID och Touch ID är valfria och avstängda som standard för varje valv. Ett ansikte eller ett finger kan användas utan ditt samtycke – medan du sover eller under press – medan ett mönster bara finns i ditt minne. Du slår på Face ID inifrån ett valv (Inställningar › Face ID), och då visas ”Lås upp med Face ID” på låsskärmen. Efter lyckad Face ID väljer du bland de valv du har slagit på det för; valv utan Face ID visas aldrig, och mönstret öppnar fortfarande alla valv. Den som får dig att titta på telefonen kan alltså se och öppna alla valv i Face ID-listan, så låt ditt mest privata valv bara ha sitt mönster.
+
+Det finns ingen reserv via lösenkoden: iPhonens lösenkod kan inte ersätta Face ID i Velcrypt. Face ID-kopian av valvnyckeln ligger i nyckelringen på den här iPhonen och bara där, varken i iCloud eller i säkerhetskopior, och den är knuten till de ansikten och fingeravtryck som var registrerade när du slog på funktionen. Läggs ett ansikte eller fingeravtryck till, eller återställs Face ID, stängs Face ID av för de valven tills du öppnar dem med mönstret och slår på det igen. Nödmönstret fungerar bara via mönster; Face ID-listan utlöser det inte.
 
 ## Inget nätverk, inget konto, inga automatiska säkerhetskopior
 
@@ -104,7 +106,7 @@ Därför kan du själv skapa en **krypterad säkerhetskopia** under Inställning
 |---|---|---|
 | Någon scrollar i ditt bildbibliotek | Ja | Objekt du importerar och sedan raderar i Bilder (inklusive Nyligen raderade) finns bara i Velcrypt. |
 | Någon tar din upplåsta telefon och öppnar Velcrypt | Ja | Personen behöver ditt mönster; ett fel mönster visar ett tomt valv. |
-| Någon försöker bevisa att du har fler valv | Till stor del | Ingen valvlista, inget ”fel mönster”-meddelande; antalet valv visas inte i appen. |
+| Någon försöker bevisa att du har fler valv | Till stor del | Ingen valvlista (utom valv du själv lägger i Face ID-listan), inget ”fel mönster”-meddelande; antalet valv visas inte i appen. |
 | Stöld av en låst iPhone | Ja | iOS Dataskydd plus Velcrypts egen AES-256-GCM-kryptering. |
 | Brute force mot mönstret ur utdragna filer | Försvårad | PBKDF2 med 600 000+ iterationer och salt per enhet; ett långt mönster gör skillnad. |
 | Intrång i ett molnkonto | Ja | Valvdata laddas inte upp och undantas från iCloud-säkerhetskopior. En säkerhetskopia du sparar i iCloud Drive är krypterad med ditt lösenord. |

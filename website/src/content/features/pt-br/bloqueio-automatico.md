@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "app com bloqueio automático iphone"
 keywords: ["cofre de fotos bloqueio automático", "ocultar prévia no seletor de apps", "app que tranca ao sair iphone", "bloquear cofre em segundo plano", "tempo de bloqueio automático"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-11-21
 summary: "O cofre é bloqueado quando o app vai para o segundo plano, após o tempo que você escolhe, e fica em branco no seletor de apps."
 status: available
 schemaType: WebPage
@@ -64,7 +64,7 @@ O Velcrypt oculta o conteúdo do cofre no seletor de apps. A prévia não revela
 
 ## Por que o bloqueio pesa mais com um padrão
 
-O Velcrypt não tem Face ID nem Touch ID, de propósito, então reabrir um cofre bloqueado sempre significa desenhar o padrão. Isso pode parecer um atrito, e dá vontade de escolher um intervalo longo para evitá-lo. Resista um pouco: o padrão só protege o cofre enquanto ele está bloqueado. Um intervalo curto, somado a um padrão que você desenha rápido e de memória, oferece privacidade e conforto ao mesmo tempo.
+No Velcrypt, o Face ID é opcional e vem desativado, então, na maioria dos cofres, reabrir significa desenhar o padrão. Isso pode parecer um atrito, e dá vontade de escolher um intervalo longo para evitá-lo. Resista um pouco: o padrão só protege o cofre enquanto ele está bloqueado. Um intervalo curto, somado a um padrão que você desenha rápido e de memória, oferece privacidade e conforto ao mesmo tempo.
 
 ## Dicas práticas
 

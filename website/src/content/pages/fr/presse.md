@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "kit presse velcrypt"
 keywords: ["logo velcrypt", "kit média velcrypt", "fiche d’information velcrypt", "couleurs de la marque velcrypt"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 schemaType: WebPage
 order: 8
 related: [about, security, features, pricing]
@@ -37,7 +37,7 @@ Velcrypt est une app iPhone pour vos photos, vidéos et documents privés. Les f
 
 ### 100 mots
 
-Velcrypt est une app iPhone native qui conserve photos, vidéos et documents privés dans des coffres chiffrés sur l’appareil. Au lieu de Face ID ou d’un code PIN, vous ouvrez un coffre en traçant un motif sur une grille de 5×5 points — un secret qui n’existe que dans votre mémoire. Chaque motif est son propre coffre, et un motif que l’app n’a jamais vu ouvre un coffre vide : rien ne révèle combien de coffres existent. Les fichiers sont chiffrés en AES-256-GCM via Apple CryptoKit. Ni compte, ni serveur, ni suivi du contenu des coffres. Velcrypt propose une version gratuite et une option Premium.
+Velcrypt est une app iPhone native qui conserve photos, vidéos et documents privés dans des coffres chiffrés sur l’appareil. Au lieu d’un code PIN, vous ouvrez un coffre en traçant un motif sur une grille de 5×5 points — un secret qui n’existe que dans votre mémoire. Face ID est facultatif et désactivé par défaut, coffre par coffre. Chaque motif est son propre coffre, et un motif que l’app n’a jamais vu ouvre un coffre vide : rien ne révèle combien de coffres existent. Les fichiers sont chiffrés en AES-256-GCM via Apple CryptoKit. Ni compte, ni serveur, ni suivi du contenu des coffres. Velcrypt propose une version gratuite et une option Premium.
 
 ## Fiche d’information
 
@@ -47,9 +47,9 @@ Velcrypt est une app iPhone native qui conserve photos, vidéos et documents pri
 | Signature | Well Encrypted. Truly Private. |
 | Plateforme | iPhone, iOS 17 ou version ultérieure |
 | Catégorie | Confidentialité / utilitaires — coffre-fort chiffré pour photos, vidéos et documents |
-| Modèle tarifaire | Gratuit (1 coffre, 50 éléments) ; Premium : 1,99 $/semaine, 19,99 $/an avec 3 jours d’essai gratuit, ou 39,99 $ à vie (USD, prix variables selon le pays) |
-| Déverrouillage | Motif sur une grille de 5×5 points ; ni Face ID ni Touch ID, par choix |
-| Coffres | Chaque motif est son propre coffre ; aucune liste de coffres |
+| Modèle tarifaire | Gratuit (1 coffre, 50 éléments ; un coffre vide ne compte pas) ; Premium : 1,99 $/semaine, 19,99 $/an avec 3 jours d’essai gratuit, ou 39,99 $ à vie (USD, prix variables selon le pays) |
+| Déverrouillage | Motif sur une grille de 5×5 points ; Face ID / Touch ID facultatifs, désactivés par défaut (par coffre) |
+| Coffres | Chaque motif est son propre coffre ; aucune liste de coffres, hormis ceux que vous ajoutez à la liste Face ID |
 | Chiffrement | AES-256-GCM (Apple CryptoKit) ; dérivation de clé PBKDF2-HMAC-SHA512 |
 | Données | 100 % sur l’appareil ; sans compte, sans synchronisation cloud, sans publicité ; sauvegarde chiffrée manuelle et gratuite |
 | Éditeur | Swedish Treats AB, Suède |

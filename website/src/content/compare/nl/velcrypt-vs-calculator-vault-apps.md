@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "rekenmachine kluis app"
 keywords: ["rekenmachine kluis app iphone", "foto’s verbergen rekenmachine app", "nep rekenmachine kluis iphone", "alternatief rekenmachine kluis", "geheime rekenmachine app"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Vermomming tegenover versleuteling: hoe rekenmachine-kluisapps zich verhouden tot de verborgen patroonkluizen van Velcrypt."
 competitor: "Rekenmachine-kluisapps"
 lastChecked: "oktober 2026"
@@ -51,7 +51,7 @@ Beide kunnen nuttig zijn. De vraag is waartegen je je beschermt. Een vermomming 
 | Account nodig | Nee | Verschilt |
 | Cloudback-up | Geen automatische; gratis versleuteld back-upbestand dat je zelf bewaart | Verschilt; sommige bieden cloudfuncties |
 | Ontgrendelen | Patroon op een raster van 5×5 | Cijfercode, ingetypt als som |
-| Biometrie (Face ID / Touch ID) | Bewust niet aangeboden | Verschilt |
+| Biometrie (Face ID / Touch ID) | Optioneel, standaard uit (per kluis) | Verschilt |
 | Vermomming | Geen; alternatieve appsymbolen met Premium, naam blijft Velcrypt | Ziet eruit als een werkende rekenmachine |
 | Lokkluis / meerdere kluizen | Elk patroon is een eigen kluis (tweede kluis met Premium) | Verschilt; sommige bieden een lokcode |
 | Dwangpatroon | Ja, met Premium (opent een lokkluis, verwijdert de andere kluizen) | Verschilt |
@@ -70,7 +70,7 @@ Een rekenmachinesymbool kan op het eerste gezicht overtuigen. Maar een vermommin
 
 ## Het soort ontkenbaarheid van Velcrypt
 
-Velcrypt doet zich niet voor als iets anders. De ontkenbaarheid zit in de app zelf. Elk patroon levert een eigen sleutel op en opent een eigen kluis. Er is geen kluizenlijst, en een patroon dat de app nog nooit heeft gezien, opent gewoon een lege kluis: geen foutmelding, niets wat erop wijst dat er andere kluizen zijn. Je kunt een alledaagse lokkluis en een privékluis aanhouden, en niemand kan bewijzen dat de tweede bestaat. [Verborgen kluizen](id:hidden-vaults) en [plausibele ontkenning](id:plausible-deniability-explained) leggen het model uit.
+Velcrypt doet zich niet voor als iets anders. De ontkenbaarheid zit in de app zelf. Elk patroon levert een eigen sleutel op en opent een eigen kluis. Er is geen kluizenlijst (behalve de kluizen die je zelf aan de Face ID-lijst toevoegt), en een patroon dat de app nog nooit heeft gezien, opent gewoon een lege kluis: geen foutmelding, niets wat erop wijst dat er andere kluizen zijn. Je kunt een alledaagse lokkluis en een privékluis aanhouden, en niemand kan bewijzen dat de tweede bestaat. [Verborgen kluizen](id:hidden-vaults) en [plausibele ontkenning](id:plausible-deniability-explained) leggen het model uit.
 
 De inhoud wordt versleuteld met AES-256-GCM, met sleutels die uit je patroon worden afgeleid via PBKDF2-HMAC-SHA512 (minstens 600.000 iteraties) en een salt per apparaat in de iOS-sleutelhanger. De details staan op de pagina over [versleuteling](id:encryption).
 
@@ -88,7 +88,7 @@ Wil je de app ook uit het zicht hebben, dan kun je vanaf iOS 18 elke app in een 
 ## Wanneer Velcrypt misschien beter bij je past
 
 - **Het gaat je vooral om wat erin zit.** Gedocumenteerde versleuteling weegt voor jou zwaarder dan een vermomming.
-- **Je wilt kluizen die niet te tellen zijn.** Geen lijst, geen foutmelding bij onbekende patronen.
+- **Je wilt kluizen die niet te tellen zijn.** Geen lijst (tenzij je zelf kluizen aan de Face ID-lijst toevoegt), geen foutmelding bij onbekende patronen.
 - **Je wilt geen account en geen cloud.** Zie [offline, zonder account](id:offline-no-account).
 - **Je gebruikt liever de eigen functie van iOS om apps te verbergen** dan op een vermomming te vertrouwen.
 

@@ -7,14 +7,14 @@ navTitle: "Vad är ett lockbetesvalv?"
 answer: "Ett lockbetesvalv är ett andra valv, som öppnas med en annan hemlighet och innehåller harmlöst men trovärdigt innehåll. Om någon pressar dig att öppna ditt valv kan du öppna lockbetet i stället. I Velcrypt öppnar varje nytt mönster ett eget valv, så ett lockbete är helt enkelt ett andra mönster som du fyller med vanliga bilder och dokument."
 keyFacts:
   - "Ett lockbetesvalv är ett riktigt, fungerande valv fyllt med harmlöst innehåll som du inte har något emot att visa."
-  - "I Velcrypt är varje mönster ett eget valv, och det finns ingen valvlista som avslöjar de andra."
+  - "I Velcrypt är varje mönster ett eget valv, och ingen valvlista avslöjar de andra, utom valv du själv lägger i Face ID-listan."
   - "Ett tomt lockbete väcker misstankar; ett levande lockbete med album och nya objekt övertygar."
   - "Ett lockbete skyddar mot snokande och tillfällig press, inte mot forensisk analys eller någon som såg dig rita."
   - "Gratisversionen har ett valv, så ett lockbete kräver Premium. Med Premium kan ett nödmönster öppna lockbetet och permanent radera alla andra valv på iPhonen."
 primaryKeyword: "lockbetesvalv"
 keywords: ["vad är ett lockbetesvalv", "lockbetes-lösenord fotovalv", "falskt valv app", "lockbetesmönster", "andra valv iphone"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Vad ett lockbetesvalv är, hur du bygger ett som ser levande ut med ett andra mönster i Velcrypt och vilka gränser du bör känna till."
 category: security
 order: 41
@@ -38,7 +38,7 @@ faq:
   - q: "Hur skapar jag ett lockbetesvalv i Velcrypt?"
     a: "Rita ett andra mönster som du aldrig har använt. Velcrypt öppnar ett nytt, tomt valv för det. Lägg till trovärdigt vardagsinnehåll, som kvitton, skärmbilder och vanliga bilder, så öppnar det mönstret nu ditt lockbete."
   - q: "Kan någon se att ett valv är ett lockbete?"
-    a: "Inte inifrån appen: Velcrypt sparar ingen lista över valv och visar ingen antydan om att andra finns. Det som kan avslöja ett lockbete är innehållet, till exempel om det är tomt, inaktuellt eller tydligt arrangerat."
+    a: "Inte inifrån appen: Velcrypt sparar ingen lista över valv och visar ingen antydan om att andra finns, utom de valv du själv har slagit på Face ID för. Håll därför det riktiga valvet utanför Face ID-listan. Det som kan avslöja ett lockbete är innehållet, till exempel om det är tomt, inaktuellt eller tydligt arrangerat."
   - q: "Är ett lockbetesvalv samma sak som ett nödmönster?"
     a: "Nej. Ett lockbete öppnar helt enkelt ett annat valv och lämnar de andra orörda. Ett nödmönster, som finns med Velcrypt Premium, öppnar lockbetesvalvet och raderar samtidigt i tysthet och permanent alla andra valv på iPhonen."
   - q: "Ska jag använda ett lockbetesvalv mot polis eller gränstjänstemän?"
@@ -59,7 +59,7 @@ Det som får ett lockbete att fungera är inte tekniken utan historien. Ett lock
 
 De flesta appar behandlar lockbetet som en särskild inställning: en riktig PIN-kod, en falsk PIN-kod. Velcrypt gör det enklare. Varje mönster är ett eget valv:
 
-- Det finns ingen lista över valv någonstans i appen.
+- Det finns ingen lista över valv någonstans i appen, utom Face ID-listan med de valv du själv väljer.
 - Ett mönster som Velcrypt aldrig har sett öppnar ett nytt, tomt valv.
 - Det finns inget felmeddelande om ”fel mönster”, och ingenting bevisar att andra valv finns.
 
@@ -97,4 +97,4 @@ Ett lockbete öppnar ett annat valv och lämnar allt annat orört. Ett **nödmö
 
 ## Var Velcrypt passar in
 
-Velcrypt är utformat så att lockbeten är naturliga, inte påklistrade: varje mönster är ett eget valv, det finns ingen valvlista, ett okänt mönster visar inget fel, och det finns inget Face ID som någon kan använda för att helt kringgå frågan. Varje valv krypteras i din iPhone med AES-256-GCM under en egen nyckel, så lockbetet och det riktiga valvet är lika väl skyddade; den enda skillnaden är vad du lägger i dem. Läs mer i [säkerhetsöversikten](id:security).
+Velcrypt är utformat så att lockbeten är naturliga, inte påklistrade: varje mönster är ett eget valv, det finns ingen valvlista (utom Face ID-listan du själv väljer), ett okänt mönster visar inget fel, och Face ID är avstängt som standard, så ingen kan använda ditt ansikte för att kringgå frågan om du inte själv slagit på det för ett valv. Varje valv krypteras i din iPhone med AES-256-GCM under en egen nyckel, så lockbetet och det riktiga valvet är lika väl skyddade; den enda skillnaden är vad du lägger i dem. Läs mer i [säkerhetsöversikten](id:security).

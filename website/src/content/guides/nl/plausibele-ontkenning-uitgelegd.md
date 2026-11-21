@@ -8,13 +8,13 @@ answer: "Plausibele ontkenning bij versleuteling betekent dat niemand, ook nadat
 keyFacts:
   - "Plausibele ontkenning gaat over wat bewezen kan worden, niet over verbergen dat een app of versleutelde gegevens bestaan."
   - "Programma's voor schijfversleuteling bedachten het idee met verborgen volumes binnen gewone versleutelde volumes."
-  - "In Velcrypt opent elk onbekend patroon een lege kluis, zonder foutmelding en zonder kluizenlijst."
+  - "In Velcrypt opent elk onbekend patroon een lege kluis, zonder foutmelding en zonder kluizenlijst (op een Face ID-lijst na die je zelf aanzet)."
   - "Opslaggrootte en forensisch onderzoek kunnen laten zien dat versleutelde gegevens bestaan, ook als ze niet te lezen zijn."
   - "Ontkenbaarheid beschermt tegen rondsnuffelen en informele druk; het is geen juridisch schild."
 primaryKeyword: "plausibele ontkenning versleuteling"
 keywords: ["wat is plausibele ontkenning", "ontkenbare versleuteling", "verborgen volume uitgelegd", "plausibele ontkenning fotokluis", "ontkenbare kluis iphone"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Het concept achter verborgen volumes en lokkluizen, hoe Velcrypts ontwerp met onbekende patronen het gebruikt en wat het eerlijk gezegd niet kan."
 category: security
 order: 42
@@ -55,7 +55,7 @@ Door de jaren heen hebben dezelfde onderzoekers en vakmensen ook de grenzen besc
 Velcrypt past het principe toe op een kluis voor foto's en documenten op de iPhone. Er is geen buitenste en binnenste volume; in plaats daarvan:
 
 - **Elk patroon is een eigen kluis.** Elke kluis heeft een eigen willekeurige hoofdsleutel van 256 bits, ontgrendeld met een sleutel die van dat patroon is afgeleid.
-- **Er is geen kluizenlijst.** De app bewaart niets wat opsomt hoeveel kluizen er zijn.
+- **Er is geen kluizenlijst.** De app bewaart niets wat opsomt hoeveel kluizen er zijn. De enige uitzondering kies je zelf: kluizen waarvoor je Face ID aanzet, staan in de Face ID-lijst. Voor die kluizen geldt ontkenbaarheid dus niet.
 - **Onbekende patronen openen een lege kluis.** Teken een patroon dat Velcrypt nooit heeft gezien en je komt in een nieuwe, lege kluis. Er is geen melding „verkeerd patroon”.
 
 Het gevolg is dat een verkeerd patroon en een geldige maar lege kluis er precies hetzelfde uitzien. Open je een kluis voor iemand, dan toont niets in de interface dat er andere kluizen bestaan. Daardoor is een [lokkluis](id:what-is-a-decoy-vault) een natuurlijke manier van gebruiken in plaats van een speciale modus. De functiepagina over [verborgen kluizen](id:hidden-vaults) laat zien hoe het in de praktijk werkt.

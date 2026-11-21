@@ -9,12 +9,12 @@ keyFacts:
   - "Private Photo Vault is made by Legendary Software and uses a PIN or passcode lock, according to its listing."
   - "Velcrypt unlocks with a pattern on a 5×5 grid; each pattern is a separate vault."
   - "Velcrypt publishes its encryption design: AES-256-GCM with PBKDF2-HMAC-SHA512 key derivation."
-  - "Velcrypt has no break-in photos and no Face ID, by design."
+  - "Velcrypt has no break-in photos by design; Face ID is optional and off by default."
   - "A forgotten Velcrypt pattern can’t be recovered; a lost phone needs an encrypted backup."
 primaryKeyword: "velcrypt vs private photo vault"
 keywords: ["private photo vault alternative", "private photo vault comparison", "private photo vault vs", "photo vault decoy password", "pattern lock photo vault"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "PIN-based vault with decoy and break-in features versus a pattern-based, account-free encrypted vault. Neutral side-by-side."
 competitor: "Private Photo Vault"
 lastChecked: "October 2026"
@@ -28,7 +28,7 @@ faq:
   - q: "Which app publishes more about its encryption?"
     a: "Velcrypt documents its design: AES-256-GCM, PBKDF2-HMAC-SHA512 with at least 600,000 iterations, per-vault master keys and per-file keys. For Private Photo Vault, check the developer’s own documentation, as we could not confirm equivalent detail."
   - q: "Can I use Face ID with Velcrypt?"
-    a: "No. Velcrypt deliberately avoids Face ID and Touch ID because biometrics can be used without your consent. You unlock by drawing a pattern that only you know."
+    a: "Yes, if you turn it on. Face ID or Touch ID is off by default; you enable it per vault in that vault’s Settings, and the pattern still opens every vault. Because biometrics can be used without your consent, keep your most private vault on its pattern only."
 ---
 
 *Last checked: October 2026. Product details change; check each app's App Store listing for the current version.*
@@ -41,7 +41,7 @@ Private Photo Vault, from Legendary Software, is a PIN- or passcode-locked vault
 
 <!-- TODO verify -->
 
-Velcrypt is a pattern-locked, on-device vault. A pattern is a continuous line drawn through at least six dots on a 5×5 grid, with at least one change of direction. Each distinct pattern derives its own encryption key and opens its own vault. There is no account, no cloud and no list of vaults anywhere in the app.
+Velcrypt is a pattern-locked, on-device vault. A pattern is a continuous line drawn through at least six dots on a 5×5 grid, with at least one change of direction. Each distinct pattern derives its own encryption key and opens its own vault. There is no account, no cloud and no list of vaults anywhere in the app, except the vaults you deliberately add to the optional Face ID list.
 
 ## Feature comparison
 
@@ -51,7 +51,7 @@ Velcrypt is a pattern-locked, on-device vault. A pattern is a continuous line dr
 | Account required | No | Not stated publicly |
 | Cloud backup | No cloud; optional encrypted backup file you store yourself (free) | Varies; check current listing |
 | Unlock method | Pattern on a 5×5 grid | PIN / passcode |
-| Biometrics (Face ID / Touch ID) | Not offered, by design | Varies |
+| Biometrics (Face ID / Touch ID) | Optional, off by default (per vault) | Varies |
 | Decoy / multiple vaults | Every pattern is its own vault (a second vault needs Premium) | Decoy password |
 | Duress pattern | Yes, with Premium (opens a decoy, deletes the other vaults) | Not stated publicly |
 | Break-in reports | Not offered | Offered, according to its listing |
@@ -82,14 +82,14 @@ For Private Photo Vault, we could not find an equivalent public technical descri
 ## When Private Photo Vault may suit you better
 
 - **You want break-in reports.** If knowing that someone tried to open your vault matters to you, Velcrypt does not offer this.
-- **You prefer a numeric code or Face ID.** Some people find a PIN quicker than drawing a pattern.
+- **You prefer a numeric code.** Some people find a PIN quicker than drawing a pattern.
 - **You’re already settled in.** Moving a large library takes effort; switching only makes sense if the differences matter to you.
 
 <!-- TODO verify -->
 
 ## When Velcrypt may suit you better
 
-- **You want vaults that don’t reveal each other.** No vault list, no error on unknown patterns.
+- **You want vaults that don’t reveal each other.** No vault list (unless you add vaults to Face ID), no error on unknown patterns.
 - **You want no account and no servers.** See [offline, no account](id:offline-no-account).
 - **You want documented encryption.** The algorithms and key handling are public.
 - **You want documents too.** Velcrypt imports files from the Files app alongside photos and videos.

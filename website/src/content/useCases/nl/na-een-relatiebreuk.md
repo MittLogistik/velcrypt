@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "ex heeft toegang tot mijn foto's iphone"
 keywords: ["toegangscode wijzigen na relatiebreuk", "ex verwijderen uit gedeeld album", "veiligheidscontrole iphone", "ex kent mijn toegangscode", "gedeelde icloud-fotobibliotheek verlaten"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Een rustige checklist voor de weken na een relatiebreuk: nieuwe toegangscode, Veiligheidscontrole, gedeelde albums en een privéplek voor foto's."
 group: everyday
 schemaType: Article
@@ -60,7 +60,7 @@ Voel je je onveilig of bedreigt je ex je, zet je veiligheid dan voorop en zoek c
 
 Sommige foto's wil je houden, zoals herinneringen, screenshots van berichten of documenten uit de relatie, zonder dat ze in een filmrol staan waar iemand anders een glimp van kan opvangen. Velcrypt is daar één optie voor.
 
-Velcrypt bewaart foto's, video's en documenten in versleutelde kluizen op je iPhone. Het gebruikt niet de toegangscode van je toestel of Face ID; een kluis opent met een [patroon dat je op een 5×5-raster tekent](id:pattern-lock), dus een toegangscode die je ex ooit kende, helpt niet. [Elk patroon opent een eigen kluis](id:hidden-vaults), en een onbekend patroon opent zonder foutmelding gewoon een lege kluis, dus niets verraadt wat er is opgeslagen.
+Velcrypt bewaart foto's, video's en documenten in versleutelde kluizen op je iPhone. Het gebruikt niet de toegangscode van je toestel, en Face ID alleen als je het zelf per kluis aanzet; een kluis opent met een [patroon dat je op een 5×5-raster tekent](id:pattern-lock), dus een toegangscode die je ex ooit kende, helpt niet. [Elk patroon opent een eigen kluis](id:hidden-vaults), en een onbekend patroon opent zonder foutmelding gewoon een lege kluis, dus niets verraadt wat er is opgeslagen.
 
 [Verwijder na het importeren de originelen](id:delete-original-photos-after-import) uit Foto's en leeg Recent verwijderd. Anders blijven er kopieën in je bibliotheek staan en, met iCloud-foto's aan, op je andere apparaten. Gaat het ook om intieme foto's, dan gaat [deze gids](id:store-intimate-photos-safely-iphone) daar dieper op in.
 

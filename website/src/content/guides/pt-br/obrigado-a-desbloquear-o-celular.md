@@ -15,7 +15,7 @@ keyFacts:
 primaryKeyword: "obrigado a desbloquear o celular"
 keywords: ["me obrigaram a desbloquear o celular", "namorado pede para ver meu celular", "alguém me forçando a desbloquear o iphone", "desbloqueio forçado celular", "assalto desbloquear celular"]
 datePublished: 2026-10-22
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Passos práticos para quando um parceiro, um ladrão ou um bisbilhoteiro exige o seu celular desbloqueado, e o papel do cofre de fachada e do padrão de coação."
 category: practical
 order: 35
@@ -76,11 +76,11 @@ A exposição mais comum não é uma invasão, mas alguém rolando a tela. Mova 
 
 - **Use um código forte no aparelho**, de seis dígitos ou mais, e não o compartilhe.
 - **Aprenda o bloqueio rápido do Face ID.** No iPhone 8 ou posterior, mantenha pressionados o botão lateral e qualquer botão de volume até aparecer a tela de desligar/SOS e toque em Cancelar. O Face ID e o Touch ID ficam desativados até o código ser digitado. Dependendo dos seus ajustes, apertar o botão lateral várias vezes pode ligar para os serviços de emergência, então pratique o gesto exato antes.
-- **O Velcrypt não tem desbloqueio por Face ID, de propósito**, então ninguém consegue abrir um cofre apontando o celular para o seu rosto. Um padrão existe só na sua memória. [Padrão x PIN x Face ID](id:pattern-lock-vs-pin-vs-face-id) explica a troca.
+- **No Velcrypt, o Face ID é opcional e vem desativado.** Um cofre sem Face ID não abre apontando o celular para o seu rosto, porque um padrão existe só na sua memória. Se você ativar o Face ID em algum cofre, mantenha o mais privado só com o padrão. [Padrão x PIN x Face ID](id:pattern-lock-vs-pin-vs-face-id) explica a troca.
 
 ### Monte um cofre de fachada
 
-Um [cofre de fachada](id:what-is-a-decoy-vault) é um segundo cofre com conteúdo inofensivo e plausível: recibos, cópias de documentos, ideias de presente. Se alguém exigir ver o que há no app, você pode abrir o cofre de fachada. No Velcrypt, cada padrão abre o seu próprio cofre e não existe lista de cofres, então nada na tela mostra que existe outro. Um segundo cofre exige o Premium.
+Um [cofre de fachada](id:what-is-a-decoy-vault) é um segundo cofre com conteúdo inofensivo e plausível: recibos, cópias de documentos, ideias de presente. Se alguém exigir ver o que há no app, você pode abrir o cofre de fachada. No Velcrypt, cada padrão abre o seu próprio cofre e não existe lista de cofres, então nada na tela mostra que existe outro. A exceção são os cofres que você colocar na lista do Face ID: não coloque ali o seu cofre real. Um segundo cofre exige o Premium.
 
 ### Considere um padrão de coação, com cuidado
 

@@ -9,13 +9,13 @@ keyFacts:
   - "Sequenza → PBKDF2-HMAC-SHA512, almeno 600.000 iterazioni, salt casuale per dispositivo conservato nel portachiavi di iOS."
   - "Ogni cassaforte ha una propria chiave master casuale a 256 bit; le chiavi per file sono derivate con HKDF."
   - "I file sono cifrati con AES-256-GCM tramite Apple CryptoKit, più la Protezione dati di iOS (classe di protezione completa)."
-  - "Una sequenza sconosciuta apre una cassaforte vuota: nessun elenco di casseforti, nessun messaggio di “sequenza errata”."
+  - "Una sequenza sconosciuta apre una cassaforte vuota: nessun messaggio di “sequenza errata” e nessun elenco, tranne le casseforti che aggiungi all’elenco Face ID."
   - "Nessuna rete, nessun account, nessuna analisi dei contenuti; i dati sono esclusi dai backup iCloud e sul computer; il backup cifrato è un file manuale."
   - "Velcrypt non è ancora stato sottoposto a un audit di sicurezza indipendente."
 primaryKeyword: "velcrypt sicurezza"
 keywords: ["cifratura cassaforte foto iphone", "come funziona la cifratura di velcrypt", "cassaforte foto aes-256-gcm", "sblocco a sequenza pbkdf2", "modello di minaccia app cassaforte", "negabilità plausibile app cassaforte"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 schemaType: WebPage
 order: 1
 related: [encryption, pattern-lock, hidden-vaults, aes-256-encryption-explained, plausible-deniability-explained, forgot-vault-pattern]
@@ -76,7 +76,7 @@ Oltre alla cifratura di Velcrypt, i file delle casseforti vengono scritti con la
 
 La maggior parte delle app confronta la tua password con qualcosa di salvato (un hash, un verificatore, una “risposta corretta”) e poi ti dice *password errata*. Velcrypt volutamente non lo fa.
 
-Non c’è un elenco di casseforti né un valore salvato che confermi se una sequenza è “corretta”. Quando disegni una sequenza, Velcrypt deriva una chiave e prova ad aprire la cassaforte corrispondente. Se nessuna cassaforte corrisponde, l’app apre semplicemente una cassaforte nuova e vuota per quella sequenza. Per chi tiene in mano il telefono, una sequenza mai usata e una cassaforte reale ma vuota hanno lo stesso aspetto.
+Non c’è un elenco di casseforti (l’unica eccezione è l’elenco Face ID, con le sole casseforti per cui l’hai attivato) né un valore salvato che confermi se una sequenza è “corretta”. Quando disegni una sequenza, Velcrypt deriva una chiave e prova ad aprire la cassaforte corrispondente. Se nessuna cassaforte corrisponde, l’app apre semplicemente una cassaforte nuova e vuota per quella sequenza. Per chi tiene in mano il telefono, una sequenza mai usata e una cassaforte reale ma vuota hanno lo stesso aspetto.
 
 Questo ti dà la **negabilità plausibile**: la possibilità di affermare in modo credibile che non c’è altro da vedere, perché nulla nell’app dimostra il contrario. Puoi tenere una cassaforte esca con foto qualunque e una cassaforte separata per ciò che è davvero privato. La pagina sulle [casseforti nascoste](id:hidden-vaults) e le nostre guide sulle [casseforti esca](id:what-is-a-decoy-vault) e sulla [negabilità plausibile](id:plausible-deniability-explained) entrano nei dettagli.
 
@@ -86,7 +86,9 @@ Un effetto pratico: se ricordi male la sequenza anche di un solo punto, finirai 
 
 Velcrypt si blocca automaticamente quando passa in background, dopo un ritardo che puoi configurare. Quando si blocca, le chiavi della cassaforte vengono rimosse dalla memoria e la sequenza va disegnata di nuovo. I contenuti delle casseforti sono anche nascosti nel selettore app di iOS, così un’occhiata alle app recenti non mostra l’anteprima di una foto privata. Vedi [blocco automatico](id:auto-lock) per le impostazioni.
 
-Non c’è sblocco con Face ID o Touch ID, per scelta. Un volto o un dito possono essere usati senza il tuo consenso, mentre dormi o sotto pressione. Una sequenza esiste solo nella tua memoria.
+Face ID e Touch ID sono facoltativi e disattivati per impostazione predefinita per ogni cassaforte. Li attivi dall’interno di una cassaforte, in Impostazioni › Face ID. In quel caso una copia della chiave della cassaforte viene conservata nel portachiavi di iOS solo su questo iPhone (non su iCloud né nei backup) ed è legata ai volti e alle impronte registrati in quel momento: se ne aggiungi uno o reimposti Face ID, lo sblocco biometrico si disattiva per quelle casseforti finché non lo riattivi dopo averle aperte con la sequenza. Il codice dell’iPhone non può mai sostituire Face ID dentro Velcrypt.
+
+Il motivo per cui è spento di base: un volto o un dito possono essere usati senza il tuo consenso, mentre dormi o sotto pressione, e chi riesce a farti guardare il telefono può vedere e aprire ogni cassaforte dell’elenco Face ID. Una sequenza esiste solo nella tua memoria, quindi tieni la cassaforte più privata solo con la sequenza. La sequenza di emergenza funziona solo con le sequenze e l’elenco Face ID non la attiva; quando scatta, le casseforti eliminate spariscono anche da quell’elenco.
 
 ## Nessuna rete, nessun account, backup solo se lo crei tu
 
@@ -103,8 +105,8 @@ Per questo Velcrypt offre un **backup cifrato** gratuito. In Impostazioni → Ba
 | Minaccia | Protetto? | Note |
 |---|---|---|
 | Qualcuno scorre la tua libreria di Foto | Sì | Gli elementi che importi e poi elimini da Foto (compreso Eliminati di recente) sono solo in Velcrypt. |
-| Qualcuno prende il telefono sbloccato e apre Velcrypt | Sì | Serve la tua sequenza; una sbagliata mostra una cassaforte vuota. |
-| Qualcuno cerca di dimostrare che hai altre casseforti | In gran parte | Nessun elenco, nessun messaggio di “sequenza errata”; l’app non mostra il numero di casseforti. |
+| Qualcuno prende il telefono sbloccato e apre Velcrypt | Sì | Serve la tua sequenza (o il tuo volto, per le casseforti con Face ID); una sequenza sbagliata mostra una cassaforte vuota. |
+| Qualcuno cerca di dimostrare che hai altre casseforti | In gran parte | Nessun messaggio di “sequenza errata” e nessun elenco, tranne le casseforti che metti nell’elenco Face ID; l’app non mostra il numero di casseforti. |
 | Furto di un iPhone bloccato | Sì | Protezione dati di iOS più la cifratura AES-256-GCM di Velcrypt. |
 | Attacco a forza bruta sulla sequenza da file estratti | Rallentato | PBKDF2 con oltre 600.000 iterazioni e salt per dispositivo; una sequenza lunga fa la differenza. |
 | Violazione di un account cloud | Sì | I dati non vengono caricati e sono esclusi dai backup iCloud; un backup cifrato che salvi su iCloud Drive resta cifrato con la tua password. |

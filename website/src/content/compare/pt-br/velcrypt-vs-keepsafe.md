@@ -8,13 +8,13 @@ answer: "O Velcrypt mantém tudo no seu iPhone, sem conta, e desbloqueia com um 
 keyFacts:
   - "O Velcrypt não exige conta, e-mail nem cadastro; o Keepsafe usa uma conta, segundo sua página na loja."
   - "O Keepsafe oferece backup opcional na nuvem; o Velcrypt guarda os cofres só no seu iPhone, com um backup criptografado manual em arquivo."
-  - "O Velcrypt desbloqueia com um padrão em uma grade 5×5 e, de propósito, não tem Face ID nem Touch ID."
+  - "O Velcrypt desbloqueia com um padrão em uma grade 5×5; o Face ID ou Touch ID é opcional e vem desativado."
   - "No Velcrypt, cada padrão abre seu próprio cofre, e padrões desconhecidos abrem um cofre vazio."
   - "Um padrão esquecido do Velcrypt não pode ser recuperado; um celular perdido só pode, se você tiver criado um backup."
 primaryKeyword: "velcrypt vs keepsafe"
 keywords: ["keepsafe vs velcrypt", "keepsafe é seguro", "alternativa ao keepsafe cofre de fotos", "cofre de fotos sem conta", "keepsafe backup na nuvem"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Cofre só local e sem conta versus cofre com conta e backup na nuvem. Onde cada um se encaixa, lado a lado."
 competitor: "Keepsafe"
 lastChecked: "outubro de 2026"
@@ -51,7 +51,7 @@ Nenhuma das abordagens é melhor para todo mundo. Uma troca conveniência por ex
 | Exige conta | Sem conta, sem e-mail | Sim, segundo sua página na loja |
 | Backup na nuvem | Não; backup criptografado manual em arquivo (grátis) | “Private Cloud” opcional com o premium |
 | Forma de desbloqueio | Padrão em uma grade 5×5 | PIN ou código |
-| Biometria (Face ID / Touch ID) | Não oferecida, por design | Compatível, segundo sua página na loja |
+| Biometria (Face ID / Touch ID) | Opcional, desativado por padrão (por cofre) | Compatível, segundo sua página na loja |
 | Fachada / vários cofres | Cada padrão é um cofre próprio (mais de um cofre exige o Premium) | PIN falso/de fachada no premium |
 | Padrão de coação | Sim, com o Premium (abre um cofre de fachada e apaga os outros cofres) | Não informado publicamente |
 | Alertas de invasão | Não oferecidos | Oferecidos no premium |
@@ -73,7 +73,7 @@ O Keepsafe usa um código no estilo PIN e, segundo sua página na loja, pode usa
 
 <!-- TODO verify -->
 
-O Velcrypt usa um padrão desenhado em uma grade 5×5: uma linha contínua por pelo menos seis pontos, com pelo menos uma mudança de direção. Ele deixa de fora o Face ID e o Touch ID de propósito, porque um rosto ou um dedo pode ser usado sem o seu consentimento, enquanto um padrão existe apenas na sua memória. A comparação [padrão vs PIN vs Face ID](id:pattern-lock-vs-pin-vs-face-id) aprofunda as vantagens e desvantagens.
+O Velcrypt usa um padrão desenhado em uma grade 5×5: uma linha contínua por pelo menos seis pontos, com pelo menos uma mudança de direção. O Face ID e o Touch ID são opcionais e vêm desativados: você os ativa por cofre, e o padrão continua abrindo todos. Essa configuração inicial é proposital, porque um rosto ou um dedo pode ser usado sem o seu consentimento, enquanto um padrão existe apenas na sua memória. Mantenha o cofre mais privado só com o padrão. A comparação [padrão vs PIN vs Face ID](id:pattern-lock-vs-pin-vs-face-id) aprofunda as vantagens e desvantagens.
 
 ## Fachadas e negação plausível
 
@@ -81,13 +81,13 @@ Muitos apps de cofre oferecem um segundo código, falso, que abre um cofre inofe
 
 <!-- TODO verify -->
 
-No Velcrypt, esse modelo é estrutural, não um complemento. Cada padrão é um cofre próprio, não existe lista de cofres, e um padrão que o app nunca viu simplesmente abre um cofre vazio, sem erro. Nada na tela prova que existem outros cofres. É isso que [cofres ocultos](id:hidden-vaults) e [negação plausível](id:plausible-deniability-explained) significam na prática. Mais de um cofre exige o Premium. Com o Premium, um [padrão de coação](id:duress-pattern) vai além: ele abre um cofre de fachada e apaga em silêncio, de forma permanente, todos os outros cofres do iPhone.
+No Velcrypt, esse modelo é estrutural, não um complemento. Cada padrão é um cofre próprio, não existe lista de cofres exceto os que você coloca de propósito na lista do Face ID, e um padrão que o app nunca viu simplesmente abre um cofre vazio, sem erro. Nada na tela prova que existem outros cofres. É isso que [cofres ocultos](id:hidden-vaults) e [negação plausível](id:plausible-deniability-explained) significam na prática. Mais de um cofre exige o Premium. Com o Premium, um [padrão de coação](id:duress-pattern) vai além: ele abre um cofre de fachada e apaga em silêncio, de forma permanente, todos os outros cofres do iPhone.
 
 ## Quando o Keepsafe pode ser melhor para você
 
 - **Você quer backup e sincronização.** Se perder o celular não pode significar perder as fotos, um backup na nuvem com conta é a resposta mais simples hoje. O Velcrypt só oferece um backup criptografado manual, que você precisa lembrar de refazer.
 - **Você também usa Android.** O Keepsafe está disponível em mais de uma plataforma, segundo suas páginas nas lojas; o Velcrypt é só para iPhone.
-- **Você prefere Face ID.** Se a praticidade da biometria importa mais para você do que o risco de desbloqueio forçado, o Velcrypt, de propósito, não vai oferecê-la.
+- **Você prefere um PIN.** O Velcrypt sempre usa um padrão desenhado; o Face ID é um extra opcional por cofre, não um substituto do padrão.
 - **Você quer alertas de invasão.** O Velcrypt não tira fotos de intrusos.
 
 <!-- TODO verify -->
@@ -96,7 +96,7 @@ No Velcrypt, esse modelo é estrutural, não um complemento. Cada padrão é um 
 
 - **Você não quer conta.** Nada liga seu cofre a um e-mail ou a uma identidade.
 - **Você não quer que nada saia do celular.** Sem envios, sem servidores, sem análises sobre o conteúdo do cofre.
-- **Você quer negação plausível.** Cofres separados e não listados, em que um padrão desconhecido não revela nada.
+- **Você quer negação plausível.** Cofres separados e não listados (exceto os que você adicionar ao Face ID), em que um padrão desconhecido não revela nada.
 - **Você quer detalhes de criptografia publicados.** O Velcrypt documenta seus algoritmos na [página de segurança](id:security).
 
 Seja qual for a escolha, lembre-se de que importar uma foto para qualquer cofre normalmente cria uma cópia. Depois, apague o original do Fotos e esvazie a pasta Apagados; os passos estão em [apagar as fotos originais depois de importar](id:delete-original-photos-after-import).

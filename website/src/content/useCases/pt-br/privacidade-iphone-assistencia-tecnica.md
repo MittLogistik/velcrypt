@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "assistência técnica pode ver minhas fotos"
 keywords: ["esconder fotos antes de mandar o celular para o conserto", "técnico pode ver minhas fotos", "dar a senha do iphone na assistência", "proteger dados no conserto do iphone", "privacidade no conserto do celular"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "O que um técnico poderia acessar no seu iPhone, como se preparar e por que um plano de backup do cofre importa antes de entregar o aparelho."
 group: everyday
 schemaType: Article
@@ -59,7 +59,7 @@ A maioria dos técnicos são profissionais sem nenhum interesse nas suas fotos. 
 
 ## Como o Velcrypt ajuda
 
-O Velcrypt guarda fotos, vídeos e documentos em cofres criptografados no seu iPhone. O cofre não abre com o código do aparelho nem com o Face ID; ele precisa do [padrão que você desenha em uma grade 5×5](id:pattern-lock). Então, mesmo que um técnico tenha o seu código e abra o Velcrypt, desenhar qualquer coisa que não seja o seu padrão só mostra um cofre vazio — sem erro, sem nenhuma pista de que existam outros cofres.
+O Velcrypt guarda fotos, vídeos e documentos em cofres criptografados no seu iPhone. O cofre não abre com o código do aparelho (e o Face ID só se você o ativar); ele precisa do [padrão que você desenha em uma grade 5×5](id:pattern-lock). Então, mesmo que um técnico tenha o seu código e abra o Velcrypt, desenhar qualquer coisa que não seja o seu padrão só mostra um cofre vazio — sem erro, sem nenhuma pista de que existam outros cofres.
 
 As fotos importadas são cópias, então lembre-se de [apagar os originais](id:delete-original-photos-after-import) e esvaziar Apagados antes do conserto. Caso contrário, elas continuam no Fotos.
 

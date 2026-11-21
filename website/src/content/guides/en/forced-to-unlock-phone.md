@@ -15,7 +15,7 @@ keyFacts:
 primaryKeyword: "what to do if someone forces you to unlock your phone"
 keywords: ["forced to unlock phone", "partner makes me unlock my phone", "someone forcing me to unlock my iphone", "coerced phone unlock", "phone robbery unlock"]
 datePublished: 2026-10-22
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Calm, practical steps for when a partner, a thief or a snoop demands your unlocked phone, and how a decoy vault and duress pattern fit in."
 category: practical
 order: 35
@@ -76,11 +76,11 @@ The most common exposure is not a hack but someone scrolling. Move private photo
 
 - **Use a strong device passcode** of six digits or more, and don’t share it.
 - **Learn the quick Face ID lockout.** On iPhone 8 and later, press and hold the side button and either volume button until the power-off/SOS screen appears, then tap Cancel. Face ID and Touch ID stay off until the passcode is entered. Depending on your settings, pressing the side button repeatedly can call emergency services, so practise the exact gesture beforehand.
-- **Velcrypt has no Face ID unlock by design**, so nobody can open a vault by holding the phone up to your face. A pattern exists only in your memory. [Pattern vs PIN vs Face ID](id:pattern-lock-vs-pin-vs-face-id) explains the trade-off.
+- **Keep Velcrypt’s Face ID off for your private vault.** Face ID in Velcrypt is optional and off by default, so nobody can open a vault by holding the phone up to your face unless you turned it on for that vault. A pattern exists only in your memory. [Pattern vs PIN vs Face ID](id:pattern-lock-vs-pin-vs-face-id) explains the trade-off.
 
 ### Set up a decoy vault
 
-A [decoy vault](id:what-is-a-decoy-vault) is a second vault with harmless, believable content: receipts, ID scans, gift ideas. If someone demands to see what is in the app, you can open the decoy. In Velcrypt, every pattern opens its own vault and there is no list of vaults, so nothing on screen shows that another one exists. A second vault needs Premium.
+A [decoy vault](id:what-is-a-decoy-vault) is a second vault with harmless, believable content: receipts, ID scans, gift ideas. If someone demands to see what is in the app, you can open the decoy. In Velcrypt, every pattern opens its own vault and there is no list of vaults, so nothing on screen shows that another one exists. A second vault needs Premium. The one exception is optional Face ID: anyone who can get you to look at your phone can see and open every vault you added to the Face ID list, so keep your private vault on its pattern only.
 
 ### Consider a duress pattern, carefully
 

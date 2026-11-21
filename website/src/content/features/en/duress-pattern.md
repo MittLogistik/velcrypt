@@ -16,7 +16,7 @@ keyFacts:
 primaryKeyword: "duress pattern vault app"
 keywords: ["duress password iphone", "panic pattern photo vault", "duress code app", "coerced unlock protection", "self-destruct vault pattern"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "A separate pattern that opens your decoy vault and silently, permanently deletes every other vault on the iPhone. Premium."
 status: available
 schemaType: WebPage
@@ -86,13 +86,14 @@ The full walkthrough, including practice tips, is in [how to set up a decoy vaul
 - **One per iPhone.** There is only one duress pattern on a device. Setting a new one replaces the old.
 - **Turning it off** requires drawing the duress pattern in Settings → Duress Pattern. Drawing it there only turns it off; nothing is deleted.
 - **It keeps working if Premium lapses.** Only setting it up needs Premium.
+- **Face ID does not trigger it.** The duress pattern works through patterns only. When it runs, the deleted vaults also disappear from the optional Face ID list.
 - **Set it up in a decoy, not in your only vault.** If the decoy is the only vault on the phone, there is nothing for the duress pattern to delete. Velcrypt warns you when this is the case.
 
 ## Nothing reveals that it exists
 
 A duress pattern is only useful if nobody can tell it is there. Velcrypt never shows whether one is set, in the interface or in its settings. Behind the scenes, a fixed-size encrypted record always exists in the iOS Keychain; when no duress pattern is set, it holds random bytes. So the record looks the same whether you use the feature or not.
 
-This builds on [hidden vaults](id:hidden-vaults): every pattern opens its own vault, there is no list of vaults, and an unknown pattern opens an empty vault without an error. The idea behind both is explained in [plausible deniability, explained](id:plausible-deniability-explained).
+This builds on [hidden vaults](id:hidden-vaults): every pattern opens its own vault, there is no list of vaults except the ones you deliberately add to the Face ID list, and an unknown pattern opens an empty vault without an error. The idea behind both is explained in [plausible deniability, explained](id:plausible-deniability-explained).
 
 ## When it can help
 

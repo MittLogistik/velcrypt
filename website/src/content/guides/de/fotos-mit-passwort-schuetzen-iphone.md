@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "fotos mit passwort schützen iphone"
 keywords: ["einzelne fotos mit passwort schützen iphone", "passwort auf fotos iphone", "bilder mit passwort schützen iphone", "einzelne fotos sperren iphone", "foto passwort iphone"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-11-21
 summary: "Warum iOS kein Passwort pro Foto kennt – und drei praktische Wege, bestimmte Fotos trotzdem wirklich zu sperren."
 category: hiding
 order: 4
@@ -105,6 +105,6 @@ Egal welche Sperre du wählst: Eine geschützte Kopie bringt nichts, wenn noch e
 
 ## Wo Velcrypt ins Spiel kommt
 
-Velcrypt erfüllt das zweite Bedürfnis: ein Geheimnis, das nur du kennst. Statt ein Passwort einzutippen, zeichnest du ein [Muster](id:pattern-lock) auf ein 5×5-Punkteraster. Es muss durch mindestens sechs Punkte führen und mindestens einmal die Richtung wechseln; empfohlen sind Muster mit acht bis zwölf Punkten. Velcrypt nutzt Face ID und Touch ID überhaupt nicht – weder dein iPhone-Code noch dein Gesicht öffnen die App.
+Velcrypt erfüllt das zweite Bedürfnis: ein Geheimnis, das nur du kennst. Statt ein Passwort einzutippen, zeichnest du ein [Muster](id:pattern-lock) auf ein 5×5-Punkteraster. Es muss durch mindestens sechs Punkte führen und mindestens einmal die Richtung wechseln; empfohlen sind Muster mit acht bis zwölf Punkten. Dein iPhone-Code öffnet keinen Tresor. Face ID oder Touch ID nutzt Velcrypt nur, wenn du es für einen bestimmten Tresor einschaltest; standardmäßig ist es aus.
 
 Jedes Muster öffnet einen eigenen Tresor, und die Fotos darin sind mit AES-256-GCM [verschlüsselt](id:encryption), mit Schlüsseln, die aus diesem Muster abgeleitet werden. Weil alles auf dem Gerät bleibt und von Backups ausgeschlossen ist, lässt sich ein vergessenes Muster nicht zurücksetzen. Wenn dir ein wiederherstellbares Passwort lieber ist, solltest du diese Einschränkung ehrlich abwägen, bevor du etwas Wichtiges verschiebst.

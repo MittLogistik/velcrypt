@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "ex hat zugriff auf meine fotos iphone"
 keywords: ["code ändern nach trennung", "ex aus geteiltem album entfernen", "sicherheitsprüfung iphone", "ex kennt meinen iphone code", "geteilte icloud fotomediathek verlassen"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Eine ruhige Checkliste für die Wochen nach einer Trennung: neuer Code, Sicherheitsprüfung, geteilte Alben und Mediatheken und ein privater Ort für Fotos."
 group: everyday
 schemaType: Article
@@ -60,7 +60,7 @@ Fühlst du dich unsicher oder bedroht dich dein Ex, geht deine Sicherheit vor: W
 
 Manche Fotos willst du behalten – Erinnerungen, Screenshots von Nachrichten, Dokumente aus der Beziehung –, ohne dass sie in einer Mediathek liegen, in die jemand anderes einen Blick werfen könnte. Velcrypt ist eine Möglichkeit dafür.
 
-Velcrypt speichert Fotos, Videos und Dokumente in verschlüsselten Tresoren auf deinem iPhone. Es nutzt weder deinen Gerätecode noch Face ID; ein Tresor öffnet sich mit einem [Muster, das du auf ein 5×5-Raster zeichnest](id:pattern-lock). Ein Code, den dein Ex mal kannte, hilft also nicht. [Jedes Muster öffnet seinen eigenen Tresor](id:hidden-vaults), und ein unbekanntes Muster öffnet einfach einen leeren, ohne Fehler – nichts verrät, was gespeichert ist.
+Velcrypt speichert Fotos, Videos und Dokumente in verschlüsselten Tresoren auf deinem iPhone. Es nutzt nicht deinen Gerätecode, und Face ID nur für Tresore, für die du es selbst einschaltest; ein Tresor öffnet sich mit einem [Muster, das du auf ein 5×5-Raster zeichnest](id:pattern-lock). Ein Code, den dein Ex mal kannte, hilft also nicht. [Jedes Muster öffnet seinen eigenen Tresor](id:hidden-vaults), und ein unbekanntes Muster öffnet einfach einen leeren, ohne Fehler – nichts verrät, was gespeichert ist.
 
 Lösch nach dem Import die [Originale](id:delete-original-photos-after-import) in Fotos und leere „Zuletzt gelöscht“ – sonst bleiben Kopien in deiner Mediathek und, mit iCloud-Fotos, auf deinen anderen Geräten. Geht es auch um intime Fotos, findest du in [dieser Anleitung](id:store-intimate-photos-safely-iphone) mehr Details.
 

@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "mi pareja mira mis fotos del móvil"
 keywords: ["mi novio revisa mis fotos", "mi novia mira mi móvil", "ocultar fotos a mi pareja iphone", "esconder fotos de mi pareja", "privacidad del móvil en pareja"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-11-21
 summary: "Límites con el móvil en pareja, cómo se ven fotos por accidente y cómo guardar unas pocas imágenes privadas en un espacio propio."
 group: everyday
 schemaType: Article
@@ -64,7 +64,7 @@ Si las revisiones de tu móvil te parecen exigentes, frecuentes o te dan miedo, 
 
 Velcrypt guarda fotos, vídeos y documentos privados en una bóveda cifrada en tu iPhone, separada de la fototeca. Después de importar una foto y [borrar el original](id:delete-original-photos-after-import), deja de aparecer al deslizar, en Recuerdos, en los widgets y en la búsqueda.
 
-La bóveda se abre con un patrón que dibujas en una cuadrícula 5×5, no con tu código ni con Face ID. Conocer tu código no la abre. Y como [cada patrón abre su propia bóveda](id:hidden-vaults), no hay una lista de bóvedas: un patrón desconocido simplemente abre una vacía, sin error. Eso te da espacio para tu privacidad sin convertir tu móvil en una fortaleza a la vista, como se explica en [negación plausible](id:plausible-deniability-explained).
+La bóveda se abre con un patrón que dibujas en una cuadrícula 5×5, no con tu código; Face ID solo si tú lo activas para esa bóveda. Conocer tu código no la abre. Y como [cada patrón abre su propia bóveda](id:hidden-vaults), no hay una lista de bóvedas, salvo las que añadas a Face ID: un patrón desconocido simplemente abre una vacía, sin error. Eso te da espacio para tu privacidad sin convertir tu móvil en una fortaleza a la vista, como se explica en [negación plausible](id:plausible-deniability-explained).
 
 Para las fotos íntimas en concreto, [esta guía](id:store-intimate-photos-safely-iphone) explica el cuidado adicional que merecen.
 

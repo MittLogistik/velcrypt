@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "iphone repair privacy photos"
 keywords: ["hide photos before phone repair", "will repair shop see my photos", "iphone repair passcode", "protect data iphone repair", "phone repair privacy tips"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "What a repair technician could access on your iPhone, how to prepare, and why a vault backup plan matters before you hand it over."
 group: everyday
 schemaType: Article
@@ -59,7 +59,7 @@ Most repair technicians are professionals who have no interest in your photos. S
 
 ## How Velcrypt helps
 
-Velcrypt keeps photos, videos and documents in encrypted vaults on your iPhone. The vault doesn’t open with your device passcode or Face ID; it needs the [pattern you draw on a 5×5 grid](id:pattern-lock). So even if a technician has your passcode and opens Velcrypt, drawing anything other than your pattern just shows an empty vault — no error, no hint that other vaults exist.
+Velcrypt keeps photos, videos and documents in encrypted vaults on your iPhone. The vault doesn’t open with your device passcode, and Face ID is only used if you turned it on for that vault; otherwise it needs the [pattern you draw on a 5×5 grid](id:pattern-lock). So even if a technician has your passcode and opens Velcrypt, drawing anything other than your pattern just shows an empty vault — no error, no hint that other vaults exist.
 
 Imported photos are copies, so remember to [delete the originals](id:delete-original-photos-after-import) and empty Recently Deleted before the repair. Otherwise they’re still in Photos.
 

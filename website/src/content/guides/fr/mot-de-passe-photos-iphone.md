@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "mettre un mot de passe sur ses photos iphone"
 keywords: ["mot de passe photos iphone", "protéger une photo par mot de passe iphone", "mettre un code sur une photo iphone", "verrouiller une photo iphone", "photo protégée par mot de passe iphone"]
 datePublished: 2026-10-21
-dateModified: 2026-10-31
+dateModified: 2026-11-21
 summary: "Pourquoi iOS n’a pas de mot de passe par photo, et trois façons concrètes de mettre un vrai verrou sur certaines photos."
 category: hiding
 order: 4
@@ -107,6 +107,6 @@ Quel que soit le verrou choisi, une copie protégée ne sert à rien si une copi
 
 ## La place de Velcrypt
 
-Velcrypt répond au second besoin : un secret que vous êtes seul à connaître. Au lieu d’un mot de passe tapé, vous tracez un [schéma](id:pattern-lock) sur une grille de 5×5 points. Il doit passer par au moins six points avec au moins un changement de direction, et des schémas de huit à douze points sont recommandés. Velcrypt n’utilise ni Face ID ni Touch ID : ni le code de votre iPhone ni votre visage ne peuvent l’ouvrir.
+Velcrypt répond au second besoin : un secret que vous êtes seul à connaître. Au lieu d’un mot de passe tapé, vous tracez un [schéma](id:pattern-lock) sur une grille de 5×5 points. Il doit passer par au moins six points avec au moins un changement de direction, et des schémas de huit à douze points sont recommandés. Le code de votre iPhone ne peut jamais ouvrir un coffre, et Face ID n’est utilisé que si vous l’activez pour un coffre précis : il est désactivé par défaut.
 
 Chaque schéma ouvre son propre coffre, et les photos qu’il contient sont [chiffrées](id:encryption) en AES-256-GCM avec des clés dérivées de ce schéma. Comme tout reste sur l’appareil et est exclu des sauvegardes, un schéma oublié ne peut pas être réinitialisé. Si vous préférez un mot de passe récupérable, cette limite mérite d’être pesée honnêtement avant d’y placer quoi que ce soit d’important.

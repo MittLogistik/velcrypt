@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "namorado mexe nas minhas fotos"
 keywords: ["namorado mexendo no meu celular", "namorada olha meu celular", "esconder fotos do namorado iphone", "esconder fotos do parceiro", "privacidade do celular no relacionamento"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-11-21
 summary: "Limites com o celular no relacionamento, como as fotos acabam sendo vistas sem querer e como guardar algumas imagens privadas em um espaço só delas."
 group: everyday
 schemaType: Article
@@ -62,7 +62,7 @@ Se a checagem do seu celular parece exigente, frequente ou assustadora, aí é d
 
 O Velcrypt guarda fotos, vídeos e documentos privados em um cofre criptografado no seu iPhone, separado da biblioteca do Fotos. Depois que você importa uma foto e [apaga o original](id:delete-original-photos-after-import), ela não aparece mais no deslize, em Memórias, em widgets nem na busca.
 
-O cofre abre com um padrão que você desenha em uma grade 5×5, não com o código nem com o Face ID. Saber o seu código não o abre. E como [cada padrão abre o seu próprio cofre](id:hidden-vaults), não existe lista de cofres: um padrão desconhecido simplesmente abre um cofre vazio, sem erro. Isso dá espaço para a sua privacidade sem transformar o celular em uma fortaleza à vista de todos, como explicado em [negação plausível](id:plausible-deniability-explained).
+O cofre abre com um padrão que você desenha em uma grade 5×5, não com o código; o Face ID só se você o ativar para aquele cofre. Saber o seu código não o abre. E como [cada padrão abre o seu próprio cofre](id:hidden-vaults), não existe lista de cofres, exceto os que você colocar no Face ID: um padrão desconhecido simplesmente abre um cofre vazio, sem erro. Isso dá espaço para a sua privacidade sem transformar o celular em uma fortaleza à vista de todos, como explicado em [negação plausível](id:plausible-deniability-explained).
 
 Especificamente para fotos íntimas, [este guia](id:store-intimate-photos-safely-iphone) mostra os cuidados extras que elas merecem.
 

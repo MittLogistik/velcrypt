@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "vaultaire vs keepsafe"
 keywords: ["keepsafe vs vaultaire", "vaultaire review", "vaultaire alternatief", "keepsafe alternatief", "fotokluis vergelijken iphone", "beste fotokluis app iphone"]
 datePublished: 2026-10-31
-dateModified: 2026-10-31
+dateModified: 2026-11-21
 summary: "Twee populaire fotokluizen voor iPhone naast elkaar: account, ontgrendelen, lokkluizen, back-up, herstel en prijs. Plus waar Velcrypt past."
 competitor: "Vaultaire en Keepsafe"
 lastChecked: "oktober 2026"
@@ -24,7 +24,7 @@ faq:
   - q: "Is Vaultaire beter dan Keepsafe?"
     a: "Dat hangt af van wat je belangrijk vindt. Vaultaire heeft volgens de website geen account nodig, ontgrendelt met een patroon, ondersteunt meerdere verborgen kluizen en heeft een versleutelde iCloud-back-up. Keepsafe gebruikt een account, een pincode met optioneel Face ID en een premiumcloud, en is ook beschikbaar op Android. Geen van beide is voor iedereen beter."
   - q: "Heeft Vaultaire Face ID?"
-    a: "Nee. Volgens de website heeft Vaultaire bewust geen Face ID, Touch ID of pincode, omdat biometrie zonder je toestemming kan worden gebruikt. Je ontgrendelt door een patroon te tekenen. Velcrypt maakt dezelfde keuze. Keepsafe ondersteunt volgens de vermelding wel Face ID."
+    a: "Nee. Volgens de website heeft Vaultaire bewust geen Face ID, Touch ID of pincode, omdat biometrie zonder je toestemming kan worden gebruikt. Je ontgrendelt door een patroon te tekenen. Bij Velcrypt is Face ID optioneel en staat het standaard uit, per kluis. Keepsafe ondersteunt volgens de vermelding wel Face ID."
   - q: "Welke app heeft een dwang- of paniekmodus?"
     a: "Vaultaire biedt met het Pro-abonnement een dwangkluis: teken je dat patroon, dan opent de lokkluis en verdwijnt de toegang tot de andere kluizen op het apparaat. Velcrypt biedt met Premium een dwangpatroon dat een lokkluis opent en de andere kluizen definitief verwijdert. Keepsafe biedt een neppincode, maar we vonden geen openbare beschrijving van een noodwissing."
   - q: "Wat gebeurt er als ik mijn patroon of pincode vergeet?"
@@ -49,7 +49,7 @@ Vaultaire en Keepsafe zijn twee van de apps die mensen het vaakst vergelijken al
 |---|---|---|---|
 | Account nodig | Nee | Ja, volgens de vermelding | Nee |
 | Ontgrendelen | Patroon op een raster van 5×5 | Pincode of toegangscode | Patroon op een raster van 5×5 |
-| Face ID / Touch ID | Bewust niet aangeboden | Ondersteund, volgens de vermelding | Bewust niet aangeboden |
+| Face ID / Touch ID | Bewust niet aangeboden | Ondersteund, volgens de vermelding | Optioneel, standaard uit (per kluis) |
 | Verborgen kluizen of lokkluizen | Elk patroon opent een eigen kluis; tot 3 kluizen gratis | Nep-/lokpincode in premium | Elk patroon opent een eigen kluis; meer dan één kluis vraagt om Premium |
 | Dwangmodus | Dwangkluis met Pro | Niet openbaar vermeld | Dwangpatroon met Premium |
 | Details over versleuteling gepubliceerd | Ja: AES-256-GCM, PBKDF2-HMAC-SHA512 | Niet in detail openbaar | Ja: AES-256-GCM, PBKDF2-HMAC-SHA512 (zie [versleuteling](id:encryption)) |
@@ -58,7 +58,7 @@ Vaultaire en Keepsafe zijn twee van de apps die mensen het vaakst vergelijken al
 | Herstel als je het vergeet | Herstelzin van 9 woorden | Verschilt; herstel via het account is mogelijk beschikbaar | Geen |
 | Meldingen bij inbraakpogingen | Niet aangeboden | Aangeboden in premium | Niet aangeboden |
 | Analytics | Standaard aan, uit te zetten, volgens het privacybeleid | Hier niet vermeld; zie het privacylabel | Geen; 'Geen gegevens verzameld' |
-| Gratis versie | Tot 3 kluizen, 100 foto’s en 10 video’s | Gratis versie met beperkingen | 1 kluis, tot 50 onderdelen |
+| Gratis versie | Tot 3 kluizen, 100 foto’s en 10 video’s | Gratis versie met beperkingen | 1 kluis, tot 50 onderdelen; een lege kluis telt niet mee |
 | Betaalde abonnementen (USD) | $ 1,99 per week, $ 5,99 per maand, $ 19,99 per jaar (7 dagen proef), $ 39,99 levenslang, gezinsabonnementen | Premiumabonnement | $ 1,99 per week, $ 19,99 per jaar (3 dagen proef), $ 39,99 levenslang (zie [prijzen](id:pricing)) |
 | Platforms | iPhone en iPad (iOS 17+) | iOS en Android | iPhone (iOS 17+) |
 
@@ -80,7 +80,7 @@ Keepsafe gebruikt een code in de stijl van een pincode en volgens de vermelding 
 
 <!-- TODO verify -->
 
-Vaultaire en Velcrypt gebruiken allebei een patroon dat je door de stippen van een raster van 5×5 tekent, en laten Face ID allebei bewust weg. De redenering is dezelfde: een gezicht of vinger kan zonder je toestemming worden gebruikt, terwijl een patroon alleen in je geheugen bestaat. Een raster van 5×5 heeft bovendien veel meer mogelijke routes dan het raster van 3×3 op Android-telefoons. De afwegingen worden uitgelegd in [patroon vs pincode vs Face ID](id:pattern-lock-vs-pin-vs-face-id).
+Vaultaire en Velcrypt gebruiken allebei een patroon dat je door de stippen van een raster van 5×5 tekent. Vaultaire laat Face ID volgens de website bewust weg, omdat een gezicht of vinger zonder je toestemming kan worden gebruikt, terwijl een patroon alleen in je geheugen bestaat. Velcrypt deelt die zorg, maar maakt Face ID optioneel: het staat standaard uit en je zet het alleen aan voor de kluizen die jij kiest, terwijl het patroon elke kluis blijft openen. Een raster van 5×5 heeft bovendien veel meer mogelijke routes dan het raster van 3×3 op Android-telefoons. De afwegingen worden uitgelegd in [patroon vs pincode vs Face ID](id:pattern-lock-vs-pin-vs-face-id).
 
 ## Lokkluizen en dwang
 
@@ -88,7 +88,7 @@ Keepsafe heeft als premiumfunctie een neppincode aangeboden die een onschuldige 
 
 <!-- TODO verify -->
 
-Bij Vaultaire en Velcrypt horen lokkluizen bij het ontwerp in plaats van een extraatje te zijn. Elk patroon opent een eigen kluis, er is geen lijst van kluizen, en een patroon dat de app nog nooit heeft gezien, opent een lege kluis in plaats van een foutmelding. Niets op het scherm bewijst dat er andere kluizen bestaan; zie [verborgen kluizen](id:hidden-vaults).
+Bij Vaultaire en Velcrypt horen lokkluizen bij het ontwerp in plaats van een extraatje te zijn. Elk patroon opent een eigen kluis, er is geen lijst van kluizen (bij Velcrypt op de kluizen na die je zelf aan de Face ID-lijst toevoegt), en een patroon dat de app nog nooit heeft gezien, opent een lege kluis in plaats van een foutmelding. Niets op het scherm bewijst dat er andere kluizen bestaan; zie [verborgen kluizen](id:hidden-vaults).
 
 Beide hebben in hun betaalde abonnement ook een dwangoptie, maar die werken verschillend:
 
@@ -99,7 +99,7 @@ Welk gedrag juist is, hangt af van jouw situatie. Een herstelbare wissing besche
 
 ## Prijs
 
-Vaultaire en Velcrypt kosten in de Amerikaanse App Store allebei $ 1,99 per week, $ 19,99 per jaar of eenmalig $ 39,99 voor levenslange toegang. Vaultaire heeft daarnaast een maandabonnement, gezinsabonnementen en een proefperiode van 7 dagen op het jaarabonnement; Velcrypt heeft een proefperiode van 3 dagen. De gratis versie van Vaultaire is ruimer: tot 3 kluizen, 100 foto’s en 10 video’s, tegenover één kluis met tot 50 onderdelen bij Velcrypt. Keepsafe heeft een gratis versie en een premiumabonnement; bekijk de App Store-vermelding voor de actuele prijzen in jouw land.
+Vaultaire en Velcrypt kosten in de Amerikaanse App Store allebei $ 1,99 per week, $ 19,99 per jaar of eenmalig $ 39,99 voor levenslange toegang. Vaultaire heeft daarnaast een maandabonnement, gezinsabonnementen en een proefperiode van 7 dagen op het jaarabonnement; Velcrypt heeft een proefperiode van 3 dagen. De gratis versie van Vaultaire is ruimer: tot 3 kluizen, 100 foto’s en 10 video’s, tegenover één kluis met tot 50 onderdelen bij Velcrypt, waarbij een lege kluis je gratis kluis niet opgebruikt. Keepsafe heeft een gratis versie en een premiumabonnement; bekijk de App Store-vermelding voor de actuele prijzen in jouw land.
 
 <!-- TODO verify -->
 

@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "wachtwoord op foto's iphone"
 keywords: ["foto's beveiligen met wachtwoord iphone", "wachtwoord op foto zetten iphone", "losse foto's vergrendelen iphone", "afbeeldingen beveiligen iphone", "foto wachtwoord iphone"]
 datePublished: 2026-10-21
-dateModified: 2026-10-31
+dateModified: 2026-11-21
 summary: "Waarom iOS geen wachtwoord per foto kent, en drie praktische manieren om specifieke foto's toch echt af te sluiten."
 category: hiding
 order: 4
@@ -105,6 +105,6 @@ Welk slot je ook kiest, een beveiligde kopie helpt niet als er nog een onbeveili
 
 ## Waar Velcrypt past
 
-Velcrypt beantwoordt de tweede behoefte: een geheim dat alleen jij kent. In plaats van een getypt wachtwoord teken je een [patroon](id:pattern-lock) op een raster van 5×5 stippen. Het moet door minstens zes stippen gaan met minstens één richtingsverandering, en patronen van acht tot twaalf stippen worden aangeraden. Velcrypt gebruikt helemaal geen Face ID of Touch ID, dus je iPhone-toegangscode en je gezicht kunnen hem niet openen.
+Velcrypt beantwoordt de tweede behoefte: een geheim dat alleen jij kent. In plaats van een getypt wachtwoord teken je een [patroon](id:pattern-lock) op een raster van 5×5 stippen. Het moet door minstens zes stippen gaan met minstens één richtingsverandering, en patronen van acht tot twaalf stippen worden aangeraden. Je iPhone-toegangscode kan geen kluis openen, en Face ID of Touch ID staat standaard uit: alleen als je het zelf voor een kluis aanzet, opent je gezicht die kluis.
 
 Elk patroon opent zijn eigen kluis, en de foto's erin zijn [versleuteld](id:encryption) met AES-256-GCM, met sleutels die van dat patroon zijn afgeleid. Omdat alles op het apparaat blijft en buiten back-ups valt, is er geen manier om een vergeten patroon te resetten. Heb je liever een wachtwoord dat je kunt herstellen, weeg die beperking dan eerlijk af voordat je iets belangrijks verplaatst.

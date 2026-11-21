@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "velcrypt kit de imprensa"
 keywords: ["logo velcrypt", "kit de mídia velcrypt", "ficha técnica velcrypt", "cores da marca velcrypt"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 schemaType: WebPage
 order: 8
 related: [about, security, features, pricing]
@@ -37,7 +37,7 @@ O Velcrypt é um app para iPhone para fotos, vídeos e documentos privados. Os a
 
 ### 100 palavras
 
-O Velcrypt é um app nativo para iPhone que guarda fotos, vídeos e documentos privados em cofres criptografados no aparelho. Em vez de Face ID ou PIN, você abre um cofre desenhando um padrão em uma grade de 5×5 pontos — um segredo que existe apenas na sua memória. Cada padrão é um cofre próprio, e um padrão que o app nunca viu abre um cofre vazio, então nada revela quantos cofres existem. Os arquivos são criptografados com AES-256-GCM pelo Apple CryptoKit. Não há conta, servidor nem rastreamento do conteúdo dos cofres. O Velcrypt tem uma versão grátis, backup criptografado grátis e um upgrade Premium opcional.
+O Velcrypt é um app nativo para iPhone que guarda fotos, vídeos e documentos privados em cofres criptografados no aparelho. Em vez de um PIN, você abre um cofre desenhando um padrão em uma grade de 5×5 pontos — um segredo que existe apenas na sua memória; o Face ID é opcional por cofre. Cada padrão é um cofre próprio, e um padrão que o app nunca viu abre um cofre vazio, então nada revela quantos cofres existem, exceto os que você colocar no Face ID. Os arquivos são criptografados com AES-256-GCM pelo Apple CryptoKit. Não há conta, servidor nem rastreamento do conteúdo dos cofres. O Velcrypt tem uma versão grátis, backup criptografado grátis e um upgrade Premium opcional.
 
 ## Ficha técnica
 
@@ -49,9 +49,9 @@ O Velcrypt é um app nativo para iPhone que guarda fotos, vídeos e documentos p
 | Categoria | Privacidade / utilitários — cofre criptografado de fotos, vídeos e documentos |
 | Empresa | Swedish Treats AB, Suécia |
 | Idiomas | 11, incluindo português do Brasil |
-| Modelo de preços | Grátis (1 cofre, até 50 itens) com Premium opcional: US$ 1,99/semana, US$ 19,99/ano com 3 dias grátis ou US$ 39,99 vitalício (os preços variam por país) |
-| Desbloqueio | Padrão em uma grade de 5×5 pontos; sem Face ID nem Touch ID por design |
-| Cofres | Cada padrão é um cofre próprio; sem lista de cofres |
+| Modelo de preços | Grátis (1 cofre, até 50 itens; um cofre vazio não conta) com Premium opcional: US$ 1,99/semana, US$ 19,99/ano com 3 dias grátis ou US$ 39,99 vitalício (os preços variam por país) |
+| Desbloqueio | Padrão em uma grade de 5×5 pontos; Face ID / Touch ID opcional, desativado por padrão (por cofre) |
+| Cofres | Cada padrão é um cofre próprio; sem lista de cofres, exceto a lista opcional do Face ID |
 | Criptografia | AES-256-GCM (Apple CryptoKit); derivação de chave PBKDF2-HMAC-SHA512 |
 | Dados | 100% no aparelho; sem conta, sem sincronização na nuvem, sem anúncios |
 | Backup | Arquivo .velcrypt criptografado e protegido por senha, criado manualmente; grátis |

@@ -7,7 +7,7 @@ navTitle: "What is a decoy vault?"
 answer: "A decoy vault is a second vault, opened with a different secret, that holds harmless but plausible content. If someone pressures you to open your vault, you can open the decoy instead. In Velcrypt, any new pattern opens its own vault, so a decoy is simply a second pattern that you fill with ordinary photos and documents."
 keyFacts:
   - "A decoy vault is a real, working vault filled with low-stakes content you are comfortable showing."
-  - "In Velcrypt, every pattern is its own vault and there is no list of vaults to give the others away."
+  - "In Velcrypt, every pattern is its own vault and there is no list of vaults to give the others away, unless you add them to Face ID."
   - "An empty decoy is suspicious; a lived-in decoy with albums and recent items is convincing."
   - "A decoy protects against snooping and casual pressure, not against forensic analysis or someone who watched you draw."
   - "A second vault, and so a decoy, needs Velcrypt Premium; the free version has one vault."
@@ -15,7 +15,7 @@ keyFacts:
 primaryKeyword: "decoy vault"
 keywords: ["what is a decoy vault", "decoy password photo vault", "fake vault app", "decoy pattern", "second vault iphone"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "What a decoy vault is, how to build one that looks lived-in with a second Velcrypt pattern, and the limits you should know."
 category: security
 order: 41
@@ -39,7 +39,7 @@ faq:
   - q: "How do I create a decoy vault in Velcrypt?"
     a: "With Premium, draw a second pattern you have never used before. Velcrypt opens a new, empty vault for it. Add believable everyday content, such as receipts, screenshots and ordinary photos, and that pattern now opens your decoy."
   - q: "Can someone tell that a vault is a decoy?"
-    a: "Not from inside the app: Velcrypt keeps no list of vaults and shows no hint that others exist. What can give a decoy away is its content, for example if it is empty, stale, or clearly staged."
+    a: "Not from inside the app: Velcrypt keeps no list of vaults, except the ones you deliberately add to the optional Face ID list, and shows no hint that others exist. What can give a decoy away is its content, for example if it is empty, stale, or clearly staged."
   - q: "Is a decoy vault the same as a duress pattern?"
     a: "No. A decoy simply opens a different vault and leaves the others untouched. A duress pattern, available with Velcrypt Premium, opens the decoy vault and also silently and permanently deletes every other vault on the iPhone."
   - q: "Should I use a decoy vault with police or border officials?"
@@ -60,7 +60,7 @@ What makes a decoy work is not the technology but the story. A decoy succeeds wh
 
 Most apps treat the decoy as a special setting: one real PIN, one fake PIN. Velcrypt takes a simpler approach. Every pattern is its own vault:
 
-- There is no list of vaults anywhere in the app.
+- There is no list of vaults anywhere in the app, except the optional Face ID list, which holds only the vaults you add.
 - A pattern Velcrypt has never seen opens a new, empty vault.
 - There is no “wrong pattern” error message, and nothing proves that other vaults exist.
 
@@ -98,4 +98,4 @@ A decoy opens a different vault and leaves everything else untouched. A **duress
 
 ## Where Velcrypt fits
 
-Velcrypt was designed so that decoys are natural, not bolted on: every pattern is its own vault, there is no vault list, an unknown pattern shows no error, and there is no Face ID that someone could use to skip the question entirely. Each vault is encrypted on your iPhone with AES-256-GCM under its own key, so the decoy and the real vault are equally protected; the only difference is what you put in them. Read more in the [security overview](id:security).
+Velcrypt was designed so that decoys are natural, not bolted on: every pattern is its own vault, there is no vault list (except the vaults you deliberately add to the Face ID list), an unknown pattern shows no error, and Face ID is off by default, so nobody can skip the question by holding the phone up to your face. If you turn Face ID on, use it for the decoy, not for your real vault. Each vault is encrypted on your iPhone with AES-256-GCM under its own key, so the decoy and the real vault are equally protected; the only difference is what you put in them. Read more in the [security overview](id:security).

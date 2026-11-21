@@ -1,21 +1,21 @@
 ---
 pageId: pattern-lock
 title: "Blocco con sequenza: sblocca la cassaforte su griglia 5×5"
-description: "Velcrypt si sblocca con una sequenza disegnata su una griglia 5×5. Scopri le regole, come creare una sequenza sicura e perché non c'è Face ID."
+description: "Velcrypt si sblocca con una sequenza disegnata su una griglia 5×5. Scopri le regole, come creare una sequenza sicura e quando usare Face ID."
 h1: "Blocco con sequenza: una griglia 5×5 che solo la tua memoria può aprire"
 navTitle: "Blocco con sequenza"
-answer: "Velcrypt si apre con una sequenza che disegni su una griglia 5×5 di punti: una linea continua che tocca almeno 6 punti e cambia direzione almeno una volta. Si consigliano sequenze da 8–12 punti e, per scelta, non ci sono Face ID né Touch ID."
+answer: "Velcrypt si apre con una sequenza che disegni su una griglia 5×5 di punti: una linea continua che tocca almeno 6 punti e cambia direzione almeno una volta. Si consigliano sequenze da 8–12 punti. Face ID è facoltativo, disattivato per impostazione predefinita e si attiva cassaforte per cassaforte."
 keyFacts:
   - "Sblocchi disegnando una linea continua su una griglia 5×5 di 25 punti."
   - "Regole minime: almeno 6 punti e almeno un cambio di direzione."
   - "Lunghezza consigliata: 8–12 punti."
-  - "Niente Face ID né Touch ID per scelta, perché la biometria può essere estorta."
+  - "Face ID e Touch ID sono facoltativi e disattivati per impostazione predefinita, perché la biometria può essere estorta: li attivi solo per le casseforti che scegli."
   - "La tua sequenza è anche il punto di partenza della chiave di cifratura della cassaforte."
 primaryKeyword: "app blocco con sequenza iphone"
 keywords: ["cassaforte foto con sequenza", "sequenza di sblocco 5x5", "cassaforte foto senza face id", "sbloccare app iphone con sequenza", "sequenza di sblocco sicura"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
-summary: "Sblocca con una sequenza disegnata su una griglia 5×5. Almeno 6 punti e una svolta; consigliati 8–12 punti. Niente Face ID, per scelta."
+dateModified: 2026-11-21
+summary: "Sblocca con una sequenza disegnata su una griglia 5×5. Almeno 6 punti e una svolta; consigliati 8–12 punti. Face ID solo se lo attivi tu."
 status: available
 schemaType: WebPage
 order: 1
@@ -23,8 +23,8 @@ related: [hidden-vaults, encryption, pattern-strength-checker, pattern-lock-vs-p
 faq:
   - q: "Quanti punti deve avere una sequenza di Velcrypt?"
     a: "Almeno 6 punti, tracciati come un'unica linea continua con almeno un cambio di direzione. Per una protezione migliore usa 8–12 punti e inserisci diverse svolte."
-  - q: "Perché Velcrypt non usa Face ID o Touch ID?"
-    a: "Un volto o un'impronta possono essere usati senza il tuo consenso, per esempio mentre dormi o vieni trattenuto. Una sequenza esiste solo nella tua memoria, quindi nessuno può sottrartela fisicamente. Velcrypt esclude la biometria di proposito."
+  - q: "Velcrypt usa Face ID o Touch ID?"
+    a: "Solo se lo attivi tu. È gratuito e disattivato per impostazione predefinita: lo accendi dentro una cassaforte da Impostazioni › Face ID. Nella schermata di blocco tocchi “Sblocca con Face ID” e scegli tra le casseforti attivate. Un volto può essere usato senza il tuo consenso, quindi tieni la cassaforte più privata solo con la sequenza."
   - q: "Cosa succede se dimentico la sequenza?"
     a: "La cassaforte non può più essere aperta, né da te né da Velcrypt. La sequenza fa parte del modo in cui viene derivata la chiave di cifratura e non esiste una frase di recupero o un account per reimpostarla. Scegli una sequenza che ricorderai con sicurezza."
   - q: "Una sequenza 5×5 è più sicura di una sequenza 3×3 come quella dei telefoni?"
@@ -69,11 +69,13 @@ Qualche consiglio pratico:
 
 Se vuoi un secondo parere, il [verificatore di sicurezza delle sequenze](id:pattern-strength-checker) fornisce una valutazione approssimativa e una stima in bit basate su lunghezza, svolte, incroci e copertura della griglia. È un'euristica, non una garanzia, e conviene provare una sequenza simile alla tua invece di quella vera.
 
-## Perché non ci sono Face ID né Touch ID
+## Face ID e Touch ID: facoltativi e spenti di base
 
-Velcrypt non ha lo sblocco biometrico, ed è una scelta precisa. La biometria è comoda proprio perché è sempre con te, e questa è anche la sua debolezza: un volto può essere messo davanti al telefono e un dito premuto sul sensore senza il tuo consenso.
+La sequenza apre sempre ogni cassaforte. Face ID (o Touch ID) è un'aggiunta facoltativa e gratuita, disattivata per impostazione predefinita. Se vuoi, lo attivi dentro una cassaforte da Impostazioni › Face ID e le dai un nome per l'elenco Face ID. Nella schermata di blocco compare il pulsante “Sblocca con Face ID” solo quando almeno una cassaforte lo ha attivo: dopo il riconoscimento scegli dall'elenco delle casseforti attivate, e se è una sola si apre direttamente. Le casseforti senza Face ID non compaiono mai.
 
-Una sequenza esiste solo nella tua testa. Nessuno può prendertela dalla mano o puntarti il telefono in faccia per ottenerla. Per una cassaforte pensata per proteggere i tuoi file più privati, questa differenza conta più di un secondo risparmiato allo sblocco. I pro e i contro sono confrontati più nel dettaglio in [sequenza, PIN o Face ID](id:pattern-lock-vs-pin-vs-face-id).
+Non c'è riserva con il codice dell'iPhone. La copia della chiave per Face ID resta nel Portachiavi di questo iPhone (non su iCloud né nei backup) ed è legata ai volti e alle impronte registrati in quel momento: se ne aggiungi uno o reimposti Face ID, si disattiva per quelle casseforti e va riattivato dopo averle aperte con la sequenza.
+
+Perché è spento di base? La biometria è comoda proprio perché è sempre con te, e questa è anche la sua debolezza: un volto può essere messo davanti al telefono e un dito premuto sul sensore senza il tuo consenso. Chi riesce a farti guardare il telefono può vedere e aprire ogni cassaforte dell'elenco Face ID. Una sequenza invece esiste solo nella tua testa. Per questo il consiglio è semplice: tieni la cassaforte più privata solo con la sequenza e usa Face ID, se ti va, per quelle di comodo. La sequenza di emergenza funziona solo con le sequenze e l'elenco Face ID non la attiva; quando scatta, le casseforti eliminate spariscono anche dall'elenco. I pro e i contro sono confrontati più nel dettaglio in [sequenza, PIN o Face ID](id:pattern-lock-vs-pin-vs-face-id).
 
 ## La tua sequenza e la chiave di cifratura
 

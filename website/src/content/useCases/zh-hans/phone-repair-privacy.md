@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "iPhone 维修 照片隐私"
 keywords: ["手机维修前 隐藏照片", "维修店 会看我的照片吗", "iPhone 维修 要密码", "iPhone 维修 保护数据", "手机维修 隐私 注意事项"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "维修人员可能接触到你 iPhone 上的哪些内容、如何做好准备，以及为什么送修前要先想好保险箱的备份方案。"
 group: everyday
 schemaType: Article
@@ -61,7 +61,7 @@ faq:
 
 ## Velcrypt 如何帮忙
 
-Velcrypt 把照片、视频和文档保存在你 iPhone 上的加密保险箱中。保险箱不能用设备密码或 Face ID 打开；它需要你[在 5×5 网格上绘制的图案](id:pattern-lock)。所以即使维修人员知道你的密码并打开了 Velcrypt，画出任何不是你图案的东西，都只会显示一个空保险箱——没有错误提示，也没有任何迹象表明存在其他保险箱。
+Velcrypt 把照片、视频和文档保存在你 iPhone 上的加密保险箱中。保险箱不能用设备密码打开；它需要你[在 5×5 网格上绘制的图案](id:pattern-lock)，Face ID 只用于你主动开启它的保险箱（默认关闭）。所以即使维修人员知道你的密码并打开了 Velcrypt，画出任何不是你图案的东西，都只会显示一个空保险箱——没有错误提示，也没有任何迹象表明存在其他保险箱。
 
 导入的照片是副本，所以请记得在维修前[删除原件](id:delete-original-photos-after-import)并清空「最近删除」。否则它们仍在「照片」中。
 

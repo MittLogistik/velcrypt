@@ -15,13 +15,13 @@ keyFacts:
 primaryKeyword: "velcrypt preise"
 keywords: ["velcrypt premium", "ist velcrypt kostenlos", "foto tresor app preis", "foto tresor app kostenlos iphone", "velcrypt abo"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 schemaType: WebPage
 order: 2
 related: [features, duress-pattern, hidden-vaults, security, faq]
 faq:
   - q: "Ist Velcrypt kostenlos?"
-    a: "Ja. Die kostenlose Version bietet 1 Tresor mit bis zu 50 Objekten, dieselbe Verschlüsselung wie Premium und das verschlüsselte Backup. Premium ist optional."
+    a: "Ja. Die kostenlose Version bietet 1 Tresor mit bis zu 50 Objekten, dieselbe Verschlüsselung wie Premium und das verschlüsselte Backup. Ein leerer Tresor verbraucht deinen kostenlosen Tresor nicht. Premium ist optional."
   - q: "Was kostet Velcrypt Premium?"
     a: "In US-Dollar: 1,99 $ pro Woche, 19,99 $ pro Jahr mit 3 Tagen Gratistest oder 39,99 $ einmalig für lebenslangen Zugang. Die Preise variieren je nach Land; der genaue Preis in deiner Währung steht im App Store, bevor du bezahlst."
   - q: "Wie funktioniert der Gratistest?"
@@ -73,7 +73,7 @@ Die Preise im App Store variieren je nach Land und Währung. Der genaue Preis f�
 
 Sicherheit ist keine Bezahlstufe. Jeder Tresor, ob kostenlos oder Premium, nutzt das Konzept, das auf der Seite zum [Sicherheitsmodell](id:security) beschrieben ist: Schlüssel, die mit PBKDF2 aus deinem Muster abgeleitet werden, ein zufälliger Hauptschlüssel pro Tresor und AES-256-GCM-Verschlüsselung über Apple CryptoKit. Auch das verschlüsselte Backup ist für alle kostenlos: Unter Einstellungen → Backup erstellst du eine `.velcrypt`-Datei für den geöffneten Tresor, geschützt mit einem Backup-Passwort, das du selbst wählst.
 
-Weil die kostenlose Version einen Tresor hat, brauchst du für [versteckte Tresore](id:hidden-vaults) – jedes weitere Muster öffnet einen eigenen Tresor, etwa einen Köder-Tresor – Premium. Das gilt auch für das Notfallmuster, das du aus einem Köder-Tresor heraus einrichtest.
+Ein Tresor zählt erst als dein kostenloser Tresor, sobald er mindestens ein Objekt enthält. Ein leerer Tresor, etwa einer, den du versehentlich mit einem anderen Muster geöffnet hast, verbraucht ihn also nie. Weil die kostenlose Version einen Tresor hat, brauchst du für [versteckte Tresore](id:hidden-vaults) – jedes weitere Muster öffnet einen eigenen Tresor, etwa einen Köder-Tresor – Premium. Das gilt auch für das Notfallmuster, das du aus einem Köder-Tresor heraus einrichtest.
 
 Ein Konto gibt es in keiner Version. Du registrierst dich nicht, gibst keine E-Mail-Adresse an, und deine Tresorinhalte verlassen dein iPhone nur, wenn du selbst ein Backup oder einen Export anlegst.
 

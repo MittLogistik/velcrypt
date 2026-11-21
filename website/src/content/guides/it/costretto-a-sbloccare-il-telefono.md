@@ -15,7 +15,7 @@ keyFacts:
 primaryKeyword: "costretto a sbloccare il telefono"
 keywords: ["il mio partner mi obbliga a sbloccare il telefono", "qualcuno mi costringe a sbloccare l'iphone", "sblocco forzato telefono", "rapina telefono sblocco", "partner controlla il telefono"]
 datePublished: 2026-10-22
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Passi pratici quando un partner, un ladro o un ficcanaso pretende il tuo telefono sbloccato, e il ruolo di cassaforte esca e sequenza di emergenza."
 category: practical
 order: 35
@@ -76,11 +76,11 @@ L'esposizione più comune non è un attacco informatico, ma qualcuno che scorre 
 
 - **Usa un codice del dispositivo robusto** di almeno sei cifre e non condividerlo.
 - **Impara a bloccare in fretta Face ID.** Su iPhone 8 e modelli successivi tieni premuti il tasto laterale e uno dei tasti del volume finché compare la schermata di spegnimento/SOS, poi tocca Annulla. Face ID e Touch ID restano disattivati finché non viene inserito il codice. A seconda delle impostazioni, premere più volte il tasto laterale può chiamare i servizi di emergenza, quindi esercitati prima con il gesto esatto.
-- **Velcrypt non ha lo sblocco con Face ID, per scelta**, quindi nessuno può aprire una cassaforte avvicinando il telefono al tuo viso. Una sequenza esiste solo nella tua memoria. [Sequenza, PIN o Face ID](id:pattern-lock-vs-pin-vs-face-id) spiega il compromesso.
+- **In Velcrypt Face ID è spento per impostazione predefinita**, quindi nessuno può aprire una cassaforte avvicinando il telefono al tuo viso, a meno che tu non l'abbia attivato per quella cassaforte. Chi ti fa guardare il telefono può aprire ogni cassaforte dell'elenco Face ID: tieni quella più privata solo con la sequenza, che esiste solo nella tua memoria. La sequenza di emergenza funziona solo con le sequenze, non tramite Face ID. [Sequenza, PIN o Face ID](id:pattern-lock-vs-pin-vs-face-id) spiega il compromesso.
 
 ### Configura una cassaforte esca
 
-Una [cassaforte esca](id:what-is-a-decoy-vault) è una seconda cassaforte con contenuti innocui e credibili: scontrini, scansioni di documenti, idee regalo. Se qualcuno pretende di vedere cosa c'è nell'app, puoi aprire l'esca. In Velcrypt ogni sequenza apre la propria cassaforte e non esiste un elenco di casseforti, quindi sullo schermo nulla mostra che ne esiste un'altra. Una seconda cassaforte richiede il Premium.
+Una [cassaforte esca](id:what-is-a-decoy-vault) è una seconda cassaforte con contenuti innocui e credibili: scontrini, scansioni di documenti, idee regalo. Se qualcuno pretende di vedere cosa c'è nell'app, puoi aprire l'esca. In Velcrypt ogni sequenza apre la propria cassaforte e non esiste un elenco di casseforti (salvo quelle che aggiungi tu all'elenco Face ID: non metterci la cassaforte vera), quindi sullo schermo nulla mostra che ne esiste un'altra. Una seconda cassaforte richiede il Premium.
 
 ### Valuta con attenzione una sequenza di emergenza
 

@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "album segreto iphone"
 keywords: ["cartella segreta iphone", "album foto segreto iphone", "cartella nascosta iphone", "creare album privato iphone", "foto segrete iphone", "album privato iphone"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-11-21
 summary: "Crea un album foto davvero segreto su iPhone ed evita i trucchi comuni che sembrano segreti ma non lo sono."
 category: hiding
 order: 5
@@ -104,6 +104,6 @@ C’è una cosa che nessuna cassaforte può nascondere del tutto: la propria esi
 
 Velcrypt affronta l’album segreto dal lato del «nessuno può aprirlo». Dentro una cassaforte puoi creare tutti gli [album](id:albums) che vuoi e spostare foto e video da uno all’altro, tutto cifrato sul dispositivo con AES-256-GCM.
 
-La parte insolita è il funzionamento delle casseforti. Ogni sequenza che disegni sulla griglia 5×5 è una cassaforte a sé, e l’app non ne tiene alcun elenco. Una sequenza che Velcrypt non ha mai visto apre semplicemente una nuova cassaforte vuota, senza messaggi di errore. Quindi nell’app non c’è nulla che riveli quante [casseforti nascoste](id:hidden-vaults) hai, e puoi tenerne una innocua come esca.
+La parte insolita è il funzionamento delle casseforti. Ogni sequenza che disegni sulla griglia 5×5 è una cassaforte a sé, e l’app non ne tiene alcun elenco, tranne per le casseforti che aggiungi tu all’elenco Face ID. Una sequenza che Velcrypt non ha mai visto apre semplicemente una nuova cassaforte vuota, senza messaggi di errore. Quindi nell’app non c’è nulla che riveli quante [casseforti nascoste](id:hidden-vaults) hai, e puoi tenerne una innocua come esca.
 
 I limiti onesti: l’icona di Velcrypt è visibile a meno che tu non usi la funzione di iOS per nascondere le app, e nulla protegge una cassaforte se qualcuno ti vede disegnare la sequenza o prende il telefono mentre la cassaforte è aperta. Poiché i dati della cassaforte non finiscono nei backup, una sequenza dimenticata significa un album perso.

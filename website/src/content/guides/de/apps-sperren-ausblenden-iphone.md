@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "apps sperren iphone"
 keywords: ["app sperren iphone", "apps ausblenden iphone", "iphone ordner mit passwort schützen home-bildschirm", "app mit face id sperren", "ordner ausgeblendet iphone", "app mit code sperren iphone", "telefonsperre apps"]
 datePublished: 2026-10-31
-dateModified: 2026-10-31
+dateModified: 2026-11-21
 summary: "„Face ID anfordern“, der Ordner „Ausgeblendet“ und Bildschirmzeit-Limits erklärt: was die App-Sperre schützt und warum Ordner nicht sperrbar sind."
 category: hiding
 order: 66
@@ -114,7 +114,7 @@ Deshalb funktioniert der Code als Alternative, und deshalb schützt die App-Sper
 
 ## Wo Velcrypt ins Spiel kommt
 
-Velcrypt ist kein App-Sperrer; andere Apps sperren kann es nicht. Es ist ein Tresor für die Fotos, Videos und Dokumente, die du sonst durch das Sperren von „Fotos“ oder „Dateien“ zu schützen versuchst. Du öffnest ihn, indem du ein [Muster](id:pattern-lock) auf einem 5×5-Raster zeichnest, und jedes Muster öffnet seinen eigenen verschlüsselten Tresor. Face ID gibt es bewusst nicht, und das Muster hat nichts mit deinem iPhone-Code zu tun – wer den Code kennt, kommt trotzdem nicht an deine Tresore. Wenn du eine andere Antwort parat haben willst, falls jemand drängt, zeigen [Köder-Tresore](id:hidden-vaults) (Premium) unter einem anderen Muster harmlose Inhalte.
+Velcrypt ist kein App-Sperrer; andere Apps sperren kann es nicht. Es ist ein Tresor für die Fotos, Videos und Dokumente, die du sonst durch das Sperren von „Fotos“ oder „Dateien“ zu schützen versuchst. Du öffnest ihn, indem du ein [Muster](id:pattern-lock) auf einem 5×5-Raster zeichnest, und jedes Muster öffnet seinen eigenen verschlüsselten Tresor. Face ID ist optional und standardmäßig aus, und das Muster hat nichts mit deinem iPhone-Code zu tun – wer den Code kennt, kommt trotzdem nicht an deine Tresore. Wenn du eine andere Antwort parat haben willst, falls jemand drängt, zeigen [Köder-Tresore](id:hidden-vaults) (Premium) unter einem anderen Muster harmlose Inhalte.
 
 Inhalte werden auf dem Gerät mit AES-256-GCM verschlüsselt, nichts wird hochgeladen, und es gibt kein Konto. Der Tresor [sperrt sich automatisch](id:auto-lock), wenn du die App verlässt. Weil Tresordaten nicht in iCloud- oder Computer-Backups landen, erstellst du für alles, was du nicht verlieren darfst, unter Einstellungen → Backup ein verschlüsseltes Backup; ein vergessenes Muster kann niemand wiederherstellen.
 

@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "unveröffentlichte fotos schützen iphone"
 keywords: ["kundenfotos privat speichern iphone", "fotograf kunden datenschutz handy", "arbeitsfotos verstecken iphone", "creator inhalte privatsphäre", "unveröffentlichte inhalte privat halten"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Für Fotografen, Künstler und Creator: unveröffentlichte Arbeiten und Kundenmaterial auf dem iPhone privat halten und nur gezielt teilen."
 group: professional
 schemaType: Article
@@ -63,7 +63,7 @@ Wenn du jemanden fotografierst, hältst du einen Teil seiner Privatsphäre in de
 
 Velcrypt speichert Fotos, [Videos](id:hide-videos) und Dokumente in verschlüsselten Tresoren auf deinem iPhone, ohne Konto und ohne Uploads. In einem Tresor kannst du [Alben](id:albums) pro Projekt oder Kunde anlegen, die Mehrfachauswahl nutzen, Objekte zwischen Alben verschieben und Fotos und Videos mit Zoom und Wischen ansehen.
 
-Tresore öffnen sich mit einem Muster auf einem 5×5-Raster, nicht mit deinem Code oder Face ID. Jedes Muster öffnet seinen eigenen Tresor, du kannst also Kundenarbeiten in einem Tresor und private Fotos in einem anderen aufbewahren – und dazu einen Tresor zum Vorzeigen deines Portfolios, in dem nur liegt, was jeder sehen darf. Ein unbekanntes Muster öffnet einfach einen leeren Tresor.
+Tresore öffnen sich mit einem Muster auf einem 5×5-Raster, nicht mit deinem Code; Face ID nur, wenn du es für einen Tresor einschaltest. Jedes Muster öffnet seinen eigenen Tresor, du kannst also Kundenarbeiten in einem Tresor und private Fotos in einem anderen aufbewahren – und dazu einen Tresor zum Vorzeigen deines Portfolios, in dem nur liegt, was jeder sehen darf. Ein unbekanntes Muster öffnet einfach einen leeren Tresor.
 
 Mit dem sicheren Export holst du eine einzelne Datei heraus, wenn es Zeit für Lieferung oder Veröffentlichung ist. Die App sperrt sich automatisch, wenn sie in den Hintergrund geht, und verbirgt ihre Inhalte im App-Umschalter – hilfreich, wenn du mitten im Gespräch in eine Messenger-App wechselst.
 

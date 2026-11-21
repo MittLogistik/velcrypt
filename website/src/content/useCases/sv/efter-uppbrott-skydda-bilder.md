@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "ex har tillgång till mina bilder iphone"
 keywords: ["byta lösenkod efter uppbrott", "ta bort ex från delat album", "säkerhetskontroll iphone", "ex kan min lösenkod", "lämna delat icloud-bildbibliotek"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "En lugn checklista för veckorna efter ett uppbrott: ny lösenkod, Säkerhetskontroll, delade album och bibliotek, och en privat plats för bilder."
 group: everyday
 schemaType: Article
@@ -60,7 +60,7 @@ Om du känner dig otrygg, eller om ditt ex hotar dig, sätt din säkerhet först
 
 Vissa bilder vill du behålla, som minnen, skärmbilder av meddelanden eller dokument från relationen, utan att de ligger i en kamerarulle som någon annan kan skymta. Velcrypt är ett alternativ för det.
 
-Velcrypt förvarar bilder, videor och dokument i krypterade valv i din iPhone. Appen använder inte enhetens lösenkod eller Face ID; ett valv öppnas med ett [mönster du ritar på ett 5×5-rutnät](id:pattern-lock), så en lösenkod som ditt ex en gång kunde hjälper inte. [Varje mönster öppnar sitt eget valv](id:hidden-vaults), och ett okänt mönster öppnar bara ett tomt valv utan felmeddelande, så inget avslöjar vad som är sparat.
+Velcrypt förvarar bilder, videor och dokument i krypterade valv i din iPhone. Appen använder inte enhetens lösenkod, och Face ID är avstängt som standard; ett valv öppnas med ett [mönster du ritar på ett 5×5-rutnät](id:pattern-lock), så en lösenkod som ditt ex en gång kunde hjälper inte. Har du slagit på Face ID för ett valv stängs det av automatiskt om ett nytt utseende eller fingeravtryck läggs till. [Varje mönster öppnar sitt eget valv](id:hidden-vaults), och ett okänt mönster öppnar bara ett tomt valv utan felmeddelande, så inget avslöjar vad som är sparat.
 
 Efter importen [raderar du originalen](id:delete-original-photos-after-import) från Bilder och tömmer Nyligen raderade, annars finns kopior kvar i ditt bibliotek och, med iCloud-bilder på, på dina andra enheter. Om intima bilder är en del av det här går [den här guiden](id:store-intimate-photos-safely-iphone) in mer i detalj.
 

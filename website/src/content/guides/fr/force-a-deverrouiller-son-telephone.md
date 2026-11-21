@@ -15,7 +15,7 @@ keyFacts:
 primaryKeyword: "forcé à déverrouiller son téléphone"
 keywords: ["mon copain veut voir mon téléphone", "obligé de déverrouiller son iphone", "quelqu’un me force à déverrouiller mon téléphone", "déverrouillage sous la contrainte", "vol de téléphone déverrouillage", "code panique téléphone"]
 datePublished: 2026-10-22
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Que faire quand un partenaire, un voleur ou un curieux exige votre téléphone déverrouillé, et la place du coffre leurre et du schéma de contrainte."
 category: practical
 order: 35
@@ -76,11 +76,11 @@ L’exposition la plus courante n’est pas un piratage, mais quelqu’un qui fa
 
 - **Utilisez un code d’appareil solide**, de six chiffres ou plus, et ne le partagez pas.
 - **Apprenez le geste qui bloque Face ID.** Sur l’iPhone 8 et les modèles ultérieurs, maintenez le bouton latéral et l’un des boutons de volume jusqu’à l’apparition de l’écran d’extinction / SOS, puis touchez Annuler. Face ID et Touch ID restent désactivés jusqu’à la saisie du code. Selon vos réglages, appuyer plusieurs fois sur le bouton latéral peut appeler les secours : entraînez-vous au geste exact à l’avance.
-- **Velcrypt n’a volontairement pas de déverrouillage par Face ID** : personne ne peut ouvrir un coffre en tenant le téléphone devant votre visage. Un schéma n’existe que dans votre mémoire. [Schéma, code PIN ou Face ID](id:pattern-lock-vs-pin-vs-face-id) explique ce compromis.
+- **Laissez Face ID désactivé pour vos coffres sensibles.** Dans Velcrypt, Face ID est désactivé par défaut : tant que vous ne l’activez pas pour un coffre, personne ne peut l’ouvrir en tenant le téléphone devant votre visage. Un schéma n’existe que dans votre mémoire. [Schéma, code PIN ou Face ID](id:pattern-lock-vs-pin-vs-face-id) explique ce compromis.
 
 ### Créez un coffre leurre
 
-Un [coffre leurre](id:what-is-a-decoy-vault) est un deuxième coffre au contenu anodin et crédible : tickets de caisse, copies de papiers d’identité, idées de cadeaux. Si quelqu’un exige de voir ce que contient l’app, vous pouvez ouvrir le leurre. Dans Velcrypt, chaque schéma ouvre son propre coffre et il n’existe aucune liste de coffres : rien à l’écran ne montre qu’un autre coffre existe. Un deuxième coffre nécessite Premium.
+Un [coffre leurre](id:what-is-a-decoy-vault) est un deuxième coffre au contenu anodin et crédible : tickets de caisse, copies de papiers d’identité, idées de cadeaux. Si quelqu’un exige de voir ce que contient l’app, vous pouvez ouvrir le leurre. Dans Velcrypt, chaque schéma ouvre son propre coffre et il n’existe aucune liste de coffres hormis la liste Face ID, qui ne contient que les coffres que vous y ajoutez : rien à l’écran ne montre qu’un autre coffre existe. Un deuxième coffre nécessite Premium.
 
 ### Envisagez un schéma de contrainte, avec prudence
 

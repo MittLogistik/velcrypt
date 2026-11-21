@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "vaultaire vs keepsafe"
 keywords: ["keepsafe vs vaultaire", "vaultaire é bom", "alternativa ao vaultaire", "alternativa ao keepsafe", "comparação de cofre de fotos iphone", "melhor app para esconder fotos iphone"]
 datePublished: 2026-10-31
-dateModified: 2026-10-31
+dateModified: 2026-11-21
 summary: "Dois cofres de fotos populares para iPhone lado a lado: conta, desbloqueio, disfarces, backup, recuperação e preço. E onde o Velcrypt se encaixa."
 competitor: "Vaultaire e Keepsafe"
 lastChecked: "outubro de 2026"
@@ -24,7 +24,7 @@ faq:
   - q: "O Vaultaire é melhor que o Keepsafe?"
     a: "Depende do que você valoriza. Segundo seu site, o Vaultaire não exige conta, desbloqueia com um padrão, permite vários cofres ocultos e inclui backup criptografado no iCloud. O Keepsafe usa conta, PIN com Face ID opcional e uma nuvem premium, e também existe para Android. Nenhum dos dois é melhor para todo mundo."
   - q: "O Vaultaire tem Face ID?"
-    a: "Não. O site do Vaultaire diz que ele deixa de fora, de propósito, Face ID, Touch ID e PIN, porque a biometria pode ser usada sem o seu consentimento. Você desbloqueia desenhando um padrão. O Velcrypt faz a mesma escolha. O Keepsafe é compatível com Face ID, segundo sua página na loja."
+    a: "Não. O site do Vaultaire diz que ele deixa de fora, de propósito, Face ID, Touch ID e PIN, porque a biometria pode ser usada sem o seu consentimento. Você desbloqueia desenhando um padrão. O Velcrypt também desbloqueia com um padrão, mas oferece o Face ID como opção, desativada por padrão e ativada por cofre. O Keepsafe é compatível com Face ID, segundo sua página na loja."
   - q: "Qual app tem modo de coação ou pânico?"
     a: "O Vaultaire oferece um cofre de coação no plano Pro: desenhar esse padrão abre o disfarce e remove o acesso aos outros cofres do aparelho. O Velcrypt oferece um padrão de coação com o Premium, que abre um cofre de fachada e apaga permanentemente os outros cofres. O Keepsafe oferece um PIN falso, mas não encontramos descrição pública de uma exclusão por coação."
   - q: "O que acontece se eu esquecer o padrão ou o PIN?"
@@ -49,7 +49,7 @@ Vaultaire e Keepsafe estão entre os apps mais comparados por quem quer esconder
 |---|---|---|---|
 | Exige conta | Não | Sim, segundo sua página na loja | Não |
 | Forma de desbloqueio | Padrão em uma grade 5×5 | PIN ou código | Padrão em uma grade 5×5 |
-| Face ID / Touch ID | Não oferecido, por design | Compatível, segundo sua página na loja | Não oferecido, por design |
+| Face ID / Touch ID | Não oferecido, por design | Compatível, segundo sua página na loja | Opcional, desativado por padrão (por cofre) |
 | Cofres ocultos ou de fachada | Cada padrão abre seu próprio cofre; até 3 cofres grátis | PIN falso/de fachada no premium | Cada padrão abre seu próprio cofre; mais de um cofre exige o Premium |
 | Modo de coação | Cofre de coação com o Pro | Não informado publicamente | Padrão de coação com o Premium |
 | Detalhes da criptografia publicados | Sim: AES-256-GCM, PBKDF2-HMAC-SHA512 | Não detalhados publicamente | Sim: AES-256-GCM, PBKDF2-HMAC-SHA512 (veja [criptografia](id:encryption)) |
@@ -80,7 +80,7 @@ O Keepsafe usa um código no estilo PIN e, segundo sua página na loja, Face ID 
 
 <!-- TODO verify -->
 
-O Vaultaire e o Velcrypt usam um padrão desenhado pelos pontos de uma grade 5×5, e os dois deixam o Face ID de fora de propósito. O motivo é o mesmo: um rosto ou um dedo pode ser usado sem o seu consentimento, enquanto um padrão existe apenas na sua memória. Uma grade 5×5 também tem muito mais caminhos possíveis do que a grade 3×3 dos celulares Android. As vantagens e desvantagens estão explicadas em [padrão vs PIN vs Face ID](id:pattern-lock-vs-pin-vs-face-id).
+O Vaultaire e o Velcrypt usam um padrão desenhado pelos pontos de uma grade 5×5. Segundo seu site, o Vaultaire deixa o Face ID de fora de propósito, porque um rosto ou um dedo pode ser usado sem o seu consentimento, enquanto um padrão existe apenas na sua memória. O Velcrypt compartilha essa preocupação, mas lida com ela de outro jeito: o Face ID é opcional e vem desativado, você o ativa só nos cofres que escolher, e o padrão continua abrindo todos. Quem conseguir fazer você olhar para o celular pode abrir os cofres que você adicionou, então o ideal é manter o cofre mais privado só com o padrão. Uma grade 5×5 também tem muito mais caminhos possíveis do que a grade 3×3 dos celulares Android. As vantagens e desvantagens estão explicadas em [padrão vs PIN vs Face ID](id:pattern-lock-vs-pin-vs-face-id).
 
 ## Disfarces e coação
 
@@ -88,7 +88,7 @@ O Keepsafe já ofereceu, como recurso premium, um PIN falso que abre um cofre de
 
 <!-- TODO verify -->
 
-No Vaultaire e no Velcrypt, os disfarces fazem parte do design, não são um complemento. Cada padrão abre seu próprio cofre, não existe lista de cofres, e um padrão que o app nunca viu abre um cofre vazio em vez de um erro. Nada na tela prova que existem outros cofres; veja [cofres ocultos](id:hidden-vaults).
+No Vaultaire e no Velcrypt, os disfarces fazem parte do design, não são um complemento. Cada padrão abre seu próprio cofre, não existe lista de cofres (no Velcrypt, exceto os que você coloca de propósito na lista do Face ID), e um padrão que o app nunca viu abre um cofre vazio em vez de um erro. Nada na tela prova que existem outros cofres; veja [cofres ocultos](id:hidden-vaults).
 
 Os dois também têm uma opção de coação nos planos pagos, mas ela funciona de formas diferentes:
 
@@ -112,7 +112,7 @@ Na loja dos EUA, o Vaultaire e o Velcrypt cobram $1.99 por semana, $19.99 por an
 
 ## Quando o Keepsafe pode ser melhor para você
 
-- **Você quer Face ID.** Se o desbloqueio rápido por biometria importa mais do que o risco de desbloqueio forçado, o Keepsafe oferece isso.
+- **Você quer Face ID com PIN.** O Keepsafe combina um PIN conhecido com o Face ID, segundo sua página na loja. O Velcrypt também oferece Face ID, como opção por cofre, mas sempre ao lado de um padrão, não de um PIN.
 - **Você também usa Android.** O Keepsafe está disponível em mais de uma plataforma.
 - **Você quer alertas de invasão.** O Keepsafe pode fotografar quem digita um PIN errado, segundo sua página na loja.
 - **Você prefere ter uma conta.** A recuperação pela conta é a forma mais conhecida de recuperar suas fotos.

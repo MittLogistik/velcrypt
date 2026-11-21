@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "como guardar provas de assédio no celular"
 keywords: ["guardar prints de assédio em sigilo", "salvar provas no iphone", "registrar provas de abuso no celular", "esconder prints do agressor", "segurança de provas de assédio"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Um jeito cuidadoso, com a segurança em primeiro lugar, de manter prints e fotos de assédio privados, intactos e com cópia em lugar seguro."
 group: sensitive
 schemaType: Article
@@ -66,7 +66,7 @@ Uma prova que pode se perder não ajuda muito. Celulares quebram, são tomados o
 
 O Velcrypt pode manter uma cópia privada de prints, fotos e documentos no seu iPhone, separada da biblioteca do Fotos. Depois que você [apaga os originais](id:delete-original-photos-after-import) do Fotos e esvazia Apagados, eles não aparecem no rolo da câmera, não sincronizam com uma conta compartilhada e não surgem em Memórias.
 
-Os cofres abrem com um padrão desenhado em uma grade 5×5, não com o código do aparelho nem com o Face ID, então saber o seu código não basta. [Cada padrão abre o seu próprio cofre](id:hidden-vaults), e um padrão errado abre um cofre vazio, sem erro. Isso significa que nada na tela prova que o seu cofre de provas existe, como explicado em [negação plausível](id:plausible-deniability-explained). O app [se bloqueia automaticamente](id:auto-lock) quando você sai dele, e o conteúdo fica oculto no seletor de apps.
+Os cofres abrem com um padrão desenhado em uma grade 5×5, não com o código do aparelho, então saber o seu código não basta. O Face ID vem desativado; se alguém puder forçar você a olhar para o celular, mantenha este cofre só com o padrão. [Cada padrão abre o seu próprio cofre](id:hidden-vaults), e um padrão errado abre um cofre vazio, sem erro. Isso significa que nada na tela prova que o seu cofre de provas existe, como explicado em [negação plausível](id:plausible-deniability-explained). O app [se bloqueia automaticamente](id:auto-lock) quando você sai dele, e o conteúdo fica oculto no seletor de apps.
 
 ## Limites honestos — leia, por favor
 

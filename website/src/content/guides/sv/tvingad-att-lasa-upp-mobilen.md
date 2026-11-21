@@ -15,7 +15,7 @@ keyFacts:
 primaryKeyword: "vad gör man om någon tvingar en att låsa upp mobilen"
 keywords: ["tvingad att låsa upp mobilen", "partner tvingar mig att låsa upp telefonen", "någon tvingar mig att låsa upp min iphone", "tvingad upplåsning mobil", "rånad tvingad låsa upp telefon"]
 datePublished: 2026-10-22
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Lugna, praktiska steg när en partner, en tjuv eller en snokare kräver din upplåsta mobil, och hur ett lockbetesvalv och ett nödmönster passar in."
 category: practical
 order: 35
@@ -76,11 +76,11 @@ Den vanligaste exponeringen är inte ett hackerangrepp utan att någon scrollar.
 
 - **Använd en stark lösenkod** med sex siffror eller fler, och dela den inte.
 - **Lär dig den snabba Face ID-spärren.** På iPhone 8 och senare håller du in sidoknappen och en av volymknapparna tills skärmen för avstängning och nödsamtal visas, och trycker sedan på Avbryt. Face ID och Touch ID är avstängda tills lösenkoden anges. Beroende på dina inställningar kan upprepade tryck på sidoknappen ringa nödsamtal, så öva in exakt rörelse i förväg.
-- **Velcrypt har med avsikt ingen upplåsning med Face ID**, så ingen kan öppna ett valv genom att hålla upp telefonen framför ditt ansikte. Ett mönster finns bara i ditt minne. [Mönster, PIN eller Face ID](id:pattern-lock-vs-pin-vs-face-id) förklarar avvägningen.
+- **I Velcrypt är Face ID avstängt som standard.** Slår du på det för ett valv kan den som håller upp telefonen framför ditt ansikte se och öppna alla valv i Face ID-listan, så låt ditt mest privata valv bara ha sitt mönster. Ett mönster finns bara i ditt minne, och nödmönstret fungerar bara via mönster. [Mönster, PIN eller Face ID](id:pattern-lock-vs-pin-vs-face-id) förklarar avvägningen.
 
 ### Skapa ett lockbetesvalv
 
-Ett [lockbetesvalv](id:what-is-a-decoy-vault) är ett andra valv med harmlöst, trovärdigt innehåll: kvitton, id-kopior, presentidéer. Om någon kräver att få se vad som finns i appen kan du öppna lockbetet. I Velcrypt öppnar varje mönster sitt eget valv och det finns ingen valvlista, så inget på skärmen visar att det finns ett till. Ett andra valv kräver Premium.
+Ett [lockbetesvalv](id:what-is-a-decoy-vault) är ett andra valv med harmlöst, trovärdigt innehåll: kvitton, id-kopior, presentidéer. Om någon kräver att få se vad som finns i appen kan du öppna lockbetet. I Velcrypt öppnar varje mönster sitt eget valv och det finns ingen valvlista (utom valv du själv lägger i Face ID-listan), så inget på skärmen visar att det finns ett till. Ett andra valv kräver Premium.
 
 ### Överväg ett nödmönster, med eftertanke
 

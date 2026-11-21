@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "velcrypt faq"
 keywords: ["velcrypt fragen", "wie funktioniert velcrypt", "foto tresor app faq", "velcrypt muster hilfe", "velcrypt backup"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 schemaType: FAQPage
 order: 3
 related: [security, pricing, support, pattern-lock, forgot-vault-pattern, hidden-vaults]
@@ -41,15 +41,15 @@ faqGroups:
       - q: "Warum hat mein Muster einen leeren Tresor geöffnet?"
         a: "Wahrscheinlich hast du ein leicht anderes Muster gezeichnet, das Velcrypt als anderen Tresor behandelt. Versuche es langsam noch einmal; eine Meldung „falsches Muster“ zeigt die App absichtlich nie."
       - q: "Kann ich eine Liste meiner Tresore sehen?"
-        a: "Nein. Velcrypt führt keine Tresorliste, daher verrät nichts in der App, wie viele existieren. Jedes Muster musst du dir selbst merken."
+        a: "Nein. Velcrypt führt keine Tresorliste, daher verrät nichts in der App, wie viele existieren. Die einzige Ausnahme ist die Face-ID-Liste mit den Tresoren, für die du Face ID selbst eingeschaltet hast. Jedes Muster musst du dir selbst merken."
       - q: "Was ist ein Köder-Tresor?"
         a: "Ein Köder-Tresor ist ein unauffälliger Tresor mit harmlosen Inhalten, den du unter Druck öffnen kannst, während dein privater Tresor hinter einem anderen Muster bleibt. Nichts in Velcrypt beweist, dass der zweite Tresor existiert. Weil dafür ein zweiter Tresor nötig ist, braucht ein Köder-Tresor Premium."
       - q: "Was ist das Notfallmuster?"
         a: "Eine Premium-Funktion, die du unter Einstellungen → Notfallmuster aus einem Köder-Tresor heraus einrichtest. Zeichnest du es auf dem Sperrbildschirm, öffnet sich dieser Köder, und alle anderen Tresore auf dem iPhone werden still und endgültig gelöscht. Gelöschte Tresore lassen sich nur aus einer vorher erstellten verschlüsselten Backup-Datei wiederherstellen."
       - q: "Kann ich Objekte in einem Tresor ordnen?"
         a: "Ja. Jeder Tresor kann Alben enthalten, und du kannst mehrere Objekte auswählen und zwischen den Alben dieses Tresors verschieben."
-      - q: "Warum nutzt Velcrypt kein Face ID oder Touch ID?"
-        a: "Mit Absicht. Ein Gesicht oder Finger lässt sich ohne deine Zustimmung benutzen, etwa während du schläfst oder unter Druck – ein Muster existiert dagegen nur in deinem Kopf."
+      - q: "Nutzt Velcrypt Face ID oder Touch ID?"
+        a: "Nur wenn du es willst. Face ID ist standardmäßig aus; du schaltest es pro Tresor unter Einstellungen › Face ID ein, kostenlos. Danach erscheint auf dem Sperrbildschirm „Mit Face ID entsperren“, und du wählst aus den Tresoren, die du hinzugefügt hast. Weil sich ein Gesicht ohne deine Zustimmung nutzen lässt, lässt du deinen privatesten Tresor am besten nur beim Muster."
   - title: "Sicherheit und Verschlüsselung"
     items:
       - q: "Wie verschlüsselt Velcrypt meine Dateien?"
@@ -93,7 +93,7 @@ faqGroups:
   - title: "Preise und Verfügbarkeit"
     items:
       - q: "Ist Velcrypt kostenlos?"
-        a: "Ja. Die kostenlose Version hat 1 Tresor mit bis zu 50 Objekten und das verschlüsselte Backup. Premium kostet 1,99 $ pro Woche, 19,99 $ pro Jahr mit 3 Tagen Gratistest oder 39,99 $ einmalig (USD; die Preise variieren je nach Land und stehen im App Store)."
+        a: "Ja. Die kostenlose Version hat 1 Tresor mit bis zu 50 Objekten und das verschlüsselte Backup. Ein Tresor zählt erst als dein kostenloser Tresor, wenn er mindestens ein Objekt enthält; ein leerer Tresor verbraucht ihn nie. Premium kostet 1,99 $ pro Woche, 19,99 $ pro Jahr mit 3 Tagen Gratistest oder 39,99 $ einmalig (USD; die Preise variieren je nach Land und stehen im App Store)."
       - q: "Was enthält Premium?"
         a: "Unbegrenzte Objekte, mehr Tresore (andere Muster bekommen eigene Tresore), das Notfallmuster und alternative App-Symbole. Abos verlängern sich automatisch, wenn du sie nicht mindestens 24 Stunden vor Ende des Zeitraums in den Einstellungen deines Apple Accounts kündigst."
       - q: "Wo bekomme ich Velcrypt?"

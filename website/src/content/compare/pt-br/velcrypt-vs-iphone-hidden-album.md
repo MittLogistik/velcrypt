@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "esconder fotos iphone álbum ocultos"
 keywords: ["álbum ocultos iphone é seguro", "álbum ocultos vs app cofre", "alternativa ao álbum ocultos", "álbum ocultos face id", "fotos ocultas icloud"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "O álbum Ocultos nativo da Apple versus um cofre criptografado separado: o que cada um protege, onde as fotos sincronizam e quem consegue abri-las."
 competitor: "Álbum Ocultos do iPhone"
 lastChecked: "outubro de 2026"
@@ -53,7 +53,7 @@ Se o Fotos do iCloud estiver ativado, os itens ocultos sincronizam como todo o r
 | Exige conta | Não | Faz parte do Fotos; Conta Apple necessária para sincronizar pelo iCloud |
 | Backup na nuvem | Não; backup criptografado manual em arquivo (grátis) | Sim, com o Fotos do iCloud ou o Backup do iCloud |
 | Forma de desbloqueio | Padrão em uma grade 5×5, separado do código | Face ID, Touch ID ou código do aparelho |
-| Biometria | Não oferecida, por design | Sim |
+| Biometria | Opcional, desativado por padrão (por cofre) | Sim |
 | Fachada / vários cofres | Cada padrão é um cofre próprio (mais de um cofre exige o Premium) | Um único álbum Ocultos |
 | Padrão de coação | Sim, com o Premium (abre um cofre de fachada e apaga os outros cofres) | Não |
 | Recuperação se você esquecer o código | Nenhuma | Código do aparelho e recuperação da Conta Apple |
@@ -67,7 +67,7 @@ Se o Fotos do iCloud estiver ativado, os itens ocultos sincronizam como todo o r
 
 A maior diferença prática é quem consegue entrar. O álbum Ocultos confia no código do seu aparelho. Isso é razoável contra desconhecidos, mas muita gente compartilha o código com o parceiro ou a parceira, um filho ou alguém da família, ou já o digitou na frente dessas pessoas. Qualquer um com o código consegue abrir o álbum Ocultos, mesmo com o Face ID configurado, porque o código é sempre aceito como alternativa.
 
-O padrão do Velcrypt é um segredo separado. Saber o seu código, ou ter o seu rosto na frente do celular, não abre um cofre. É também por isso que o Velcrypt, de propósito, não tem Face ID: um rosto ou um dedo pode ser usado sem o seu consentimento. Veja [bloqueio por padrão](id:pattern-lock).
+O padrão do Velcrypt é um segredo separado. Saber o seu código não abre um cofre, e o código não serve como alternativa. O Face ID só é usado se você o ativar para um cofre, e vem desativado, porque um rosto ou um dedo pode ser usado sem o seu consentimento. Veja [bloqueio por padrão](id:pattern-lock).
 
 ## Cópias e a nuvem
 
@@ -79,7 +79,7 @@ O Velcrypt funciona ao contrário. Uma foto importada é copiada para um cofre c
 
 ## Negação plausível
 
-Existe exatamente um álbum Ocultos, e a existência dele é óbvia para quem abre o Fotos (a menos que você desative a exibição). O Velcrypt não tem lista de cofres. Cada padrão abre seu próprio cofre, e um padrão que o app nunca viu abre um cofre vazio, sem erro. Isso permite manter um cofre de fachada e torna impossível provar que existem outros. Veja [cofres ocultos](id:hidden-vaults).
+Existe exatamente um álbum Ocultos, e a existência dele é óbvia para quem abre o Fotos (a menos que você desative a exibição). O Velcrypt não tem lista de cofres, exceto os que você coloca de propósito na lista do Face ID. Cada padrão abre seu próprio cofre, e um padrão que o app nunca viu abre um cofre vazio, sem erro. Isso permite manter um cofre de fachada e torna impossível provar que existem outros. Veja [cofres ocultos](id:hidden-vaults).
 
 ## Quando o álbum Ocultos pode ser melhor para você
 

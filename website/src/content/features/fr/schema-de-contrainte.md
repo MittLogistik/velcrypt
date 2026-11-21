@@ -16,7 +16,7 @@ keyFacts:
 primaryKeyword: "code de contrainte coffre-fort photo"
 keywords: ["code de panique iphone", "mot de passe de contrainte", "schéma de panique coffre-fort photo", "déverrouillage sous contrainte", "coffre autodestructeur", "code de détresse app"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Un schéma distinct qui ouvre votre coffre leurre et supprime en silence, définitivement, tous les autres coffres de l’iPhone. Premium."
 status: available
 schemaType: WebPage
@@ -67,6 +67,8 @@ Un schéma de contrainte est un schéma de déverrouillage distinct, que vous n�
 3. Velcrypt ouvre le coffre leurre, exactement comme lors d’un déverrouillage normal.
 4. Au même moment, il supprime en silence et définitivement tous les autres coffres de cet iPhone.
 
+Le schéma de contrainte ne fonctionne qu’avec des schémas : la liste Face ID ne le déclenche pas. Quand il s’exécute, les coffres supprimés disparaissent aussi de la liste Face ID.
+
 Rien à l’écran n’indique à l’autre personne ce qui s’est passé. Pas d’alerte, pas d’animation, pas de délai supplémentaire : le déverrouillage a la même apparence et prend le même temps que n’importe quel autre.
 
 ## Comment le configurer
@@ -92,7 +94,7 @@ Le pas-à-pas complet, avec des conseils pour s’entraîner, se trouve dans [co
 
 Un schéma de contrainte n’est utile que si personne ne peut savoir qu’il existe. Velcrypt n’indique jamais s’il en existe un, ni dans l’interface ni dans ses réglages. En coulisses, un enregistrement chiffré de taille fixe existe toujours dans le trousseau iOS ; sans schéma de contrainte, il contient des octets aléatoires. L’enregistrement a donc la même apparence, que vous utilisiez la fonction ou non.
 
-Cela s’appuie sur les [coffres cachés](id:hidden-vaults) : chaque schéma ouvre son propre coffre, il n’existe aucune liste de coffres, et un schéma inconnu ouvre un coffre vide sans message d’erreur. L’idée derrière les deux est expliquée dans [le déni plausible expliqué](id:plausible-deniability-explained).
+Cela s’appuie sur les [coffres cachés](id:hidden-vaults) : chaque schéma ouvre son propre coffre, il n’existe aucune liste de coffres (hormis ceux que vous ajoutez à la liste Face ID), et un schéma inconnu ouvre un coffre vide sans message d’erreur. L’idée derrière les deux est expliquée dans [le déni plausible expliqué](id:plausible-deniability-explained).
 
 ## Quand il peut aider
 

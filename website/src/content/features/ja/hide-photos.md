@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "写真 隠す iPhone アプリ"
 keywords: ["iPhone 写真 隠す", "写真 ロック アプリ", "暗号化 写真保管庫 iPhone", "秘密のアルバム アプリ", "写真 見られたくない iPhone"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "写真を暗号化されたコピーとして取り込み、元の写真と「最近削除した項目」を消去。アルバムで整理し、ズームとスワイプで閲覧。"
 status: available
 schemaType: WebPage
@@ -71,7 +71,7 @@ iOS 16以降、「最近削除した項目」と「非表示」はデフォル�
 | | iPhoneの「非表示」アルバム | Velcryptの保管庫 |
 | --- | --- | --- |
 | 写真の保存場所 | 「写真」ライブラリ | アプリ内の暗号化された保管庫 |
-| ロック解除の方法 | Face ID、Touch ID、またはデバイスのパスコード | Velcryptのパターン |
+| ロック解除の方法 | Face ID、Touch ID、またはデバイスのパスコード | Velcryptのパターン（Face IDは保管庫ごとに任意） |
 | iCloud | 有効ならiCloud写真で同期 | iCloudやコンピュータのバックアップに含まれない |
 | 別々のコレクション | 「非表示」アルバムが1つ | パターンごとに別の保管庫 |
 

@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "verrouiller ses photos sur iphone"
 keywords: ["verrouiller photos iphone", "verrouiller l’app photos iphone", "exiger face id photos", "verrouiller album masqué", "protéger ses photos iphone", "verrouiller photos face id ios 18"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-11-21
 summary: "Quatre façons de verrouiller vos photos sur iPhone, de l’album Masqués au verrouillage d’app et aux notes verrouillées, comparées."
 category: hiding
 order: 2
@@ -103,6 +103,6 @@ Pensez aussi à la biométrie. Face ID est rapide, mais un visage peut être pr�
 
 ## La place de Velcrypt
 
-Velcrypt est un coffre-fort de la quatrième catégorie. Il n’utilise volontairement ni Face ID ni Touch ID : vous le déverrouillez en traçant un [schéma](id:pattern-lock) sur une grille de 5×5 points, d’au moins six points avec au moins un changement de direction, et les schémas plus longs sont préférables. Ce schéma n’existe que dans votre mémoire et n’a aucun lien avec le code de votre iPhone.
+Velcrypt est un coffre-fort de la quatrième catégorie. Face ID et Touch ID y sont facultatifs et désactivés par défaut : vous le déverrouillez en traçant un [schéma](id:pattern-lock) sur une grille de 5×5 points, d’au moins six points avec au moins un changement de direction, et les schémas plus longs sont préférables. Ce schéma n’existe que dans votre mémoire et n’a aucun lien avec le code de votre iPhone.
 
 Le contenu est chiffré sur l’appareil en AES-256-GCM, le coffre [se verrouille automatiquement](id:auto-lock) quand vous quittez l’app, et rien n’est envoyé en ligne. Le prix de cette conception, c’est l’absence de récupération : si vous oubliez le schéma, ni vous ni Velcrypt ne pouvez ouvrir le coffre. Comme tout verrou, il ne peut rien non plus si quelqu’un vous regarde tracer le schéma ou si vous remettez le téléphone avec le coffre déjà ouvert.

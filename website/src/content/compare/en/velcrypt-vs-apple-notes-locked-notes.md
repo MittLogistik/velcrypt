@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "apple notes locked notes vs photo vault"
 keywords: ["hide photos in locked notes", "apple notes lock photos", "locked notes iphone photos", "notes app private photos", "locked note vs vault app"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Hiding photos in a locked Apple Note versus a dedicated encrypted vault: convenience, capacity, sync and who can open them."
 competitor: "Apple Notes locked notes"
 lastChecked: "October 2026"
@@ -53,7 +53,7 @@ You can add photos from your library, take a photo inside the note, or scan a do
 | Account required | No | No for on-device notes; Apple Account for iCloud sync |
 | Cloud backup | No cloud; optional encrypted backup file you store yourself (free) | Yes, with iCloud Notes |
 | Unlock method | Pattern on a 5×5 grid | Device passcode or separate Notes password |
-| Biometrics | Not offered, by design | Optional Face ID / Touch ID |
+| Biometrics | Optional, off by default (per vault) | Optional Face ID / Touch ID |
 | Decoy / multiple vaults | Every pattern is its own vault (a second vault needs Premium) | Not supported; all locked notes share one password |
 | Duress pattern | Yes, with Premium (opens a decoy, deletes the other vaults) | No |
 | Recovery if you forget the code | None | Passcode option avoids a separate password; old Notes passwords can’t be recovered |
@@ -78,7 +78,6 @@ The other difference is the secret. If you lock notes with your device passcode,
 - **You only have a few items.** A locked note is simpler than installing anything.
 - **You want sync across iPhone, iPad and Mac.** Velcrypt is iPhone-only and doesn’t sync.
 - **You want recoverability.** With iCloud, your locked notes survive a lost phone.
-- **You like Face ID convenience.** Velcrypt deliberately doesn’t offer it.
 
 ## When Velcrypt may suit you better
 

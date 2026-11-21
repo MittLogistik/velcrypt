@@ -1,32 +1,32 @@
 ---
 pageId: hidden-vaults
 title: "Verborgen kluizen: elk patroon opent een eigen kluis"
-description: "In Velcrypt is elk patroon een aparte kluis. Er is geen kluizenlijst en een onbekend patroon opent zonder foutmelding een lege kluis. Zo werkt het."
-h1: "Verborgen kluizen: één patroon, één kluis, geen lijst"
+description: "In Velcrypt is elk patroon een aparte kluis. Geen kluizenlijst, tenzij je zelf Face ID aanzet, en een onbekend patroon opent gewoon een lege kluis."
+h1: "Verborgen kluizen: één patroon, één eigen kluis"
 navTitle: "Verborgen kluizen"
-answer: "In Velcrypt opent elk patroon een eigen versleutelde kluis. Er is geen lijst met kluizen, en een patroon dat de app nog nooit heeft gezien opent zonder foutmelding gewoon een lege kluis. Niets op het scherm bewijst dus dat er andere kluizen bestaan."
+answer: "In Velcrypt opent elk patroon een eigen versleutelde kluis. Er is geen lijst met kluizen, behalve de kluizen die je zelf aan de Face ID-lijst toevoegt, en een patroon dat de app nog nooit heeft gezien opent zonder foutmelding gewoon een lege kluis. Niets op het scherm bewijst dus dat er andere kluizen bestaan."
 keyFacts:
   - "Elk patroon is een eigen kluis met een eigen versleutelingssleutel."
-  - "Velcrypt toont nooit een lijst met kluizen."
+  - "Velcrypt toont nooit een lijst met kluizen, behalve de kluizen die je zelf aan de Face ID-lijst toevoegt."
   - "Een onbekend patroon opent een lege kluis, zonder foutmelding."
   - "Je kunt een lokkluis met gewone inhoud bijhouden."
   - "De gratis versie heeft één kluis; met Premium krijgt elk ander patroon een eigen kluis."
 primaryKeyword: "verborgen kluis app iphone"
 keywords: ["meerdere kluizen foto app", "lokkluis iphone", "geheime kluis app", "plausibele ontkenning fotokluis", "tweede verborgen kluis"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
-summary: "Elk patroon is een eigen kluis. Geen kluizenlijst, geen foutmelding bij onbekende patronen en ruimte voor een geloofwaardige lokkluis."
+dateModified: 2026-11-21
+summary: "Elk patroon is een eigen kluis. Geen kluizenlijst (op een Face ID-lijst na die jij kiest), geen foutmelding en ruimte voor een lokkluis."
 status: available
 schemaType: WebPage
 order: 2
 related: [pattern-lock, duress-pattern, encryption, what-is-a-decoy-vault, plausible-deniability-explained]
 faq:
   - q: "Hoe zie ik al mijn kluizen in Velcrypt?"
-    a: "Dat kan niet, en dat is bewust zo. Velcrypt heeft geen kluizenlijst. Een kluis open je alleen door het bijbehorende patroon te tekenen, dus houd je patronen zelf goed bij."
+    a: "Dat kan niet, en dat is bewust zo. Velcrypt heeft geen kluizenlijst. De enige uitzondering is de Face ID-lijst: die toont alleen de kluizen waarvoor je zelf Face ID hebt aangezet. Elke andere kluis open je alleen door het bijbehorende patroon te tekenen, dus houd je patronen zelf goed bij."
   - q: "Wat gebeurt er als ik een verkeerd patroon teken?"
     a: "Velcrypt opent dan een lege kluis voor dat patroon in plaats van een foutmelding te tonen. Voeg je daar bestanden aan toe, dan wordt dat patroon een nieuwe kluis. Verwachtte je je foto's en zie je niets, dan heb je waarschijnlijk een net iets ander patroon getekend."
   - q: "Kan iemand zien dat ik meer dan één verborgen kluis heb?"
-    a: "Niet via de interface van de app. Er is geen lijst, teller of foutmelding die andere kluizen verraadt. Velcrypt kan niet verbergen dat de app zelf is geïnstalleerd, en kan niet voorkomen dat iemand meekijkt terwijl je een patroon tekent."
+    a: "Niet via de interface van de app, zolang je die kluizen niet aan de Face ID-lijst toevoegt. Er is verder geen lijst, teller of foutmelding die andere kluizen verraadt. Velcrypt kan niet verbergen dat de app zelf is geïnstalleerd, en kan niet voorkomen dat iemand meekijkt terwijl je een patroon tekent."
   - q: "Wat is een lokkluis?"
     a: "Een lokkluis is een kluis met gewone, geloofwaardige inhoud die je kunt openen als je onder druk wordt gezet om te laten zien wat er in de app staat. Je echte kluis blijft achter een ander patroon. Voor een tweede kluis heb je Premium nodig."
 howTo:
@@ -50,6 +50,8 @@ Een verborgen kluis is een kluis waarvan het bestaan van buitenaf niet kan worde
 
 Er is geen instellingenscherm dat ze opsomt, geen menu om van kluis te wisselen en geen getal dat zegt hoeveel er zijn. Van binnenuit lijkt elke kluis de enige.
 
+Eén uitzondering kies je zelf: zet je Face ID aan voor een kluis, dan komt die kluis met een naam in de Face ID-lijst die na een geslaagde scan verschijnt. Wie je naar je telefoon laat kijken, ziet en opent die kluizen. Face ID staat daarom standaard uit; houd je meest privékluis op alleen het patroon, dan blijft die onvindbaar.
+
 ## Geen foutmelding bij een onbekend patroon
 
 Teken je een patroon dat Velcrypt nog nooit heeft gezien, dan zegt de app niet „verkeerd patroon”. Er opent een lege kluis. Dat gedrag is de kern van de functie:
@@ -64,7 +66,7 @@ Het heeft ook een praktisch bijeffect. Teken je je patroon net verkeerd, dan kom
 
 ## Zo maak je een tweede kluis
 
-De gratis versie heeft één kluis. Met Premium krijgt elk ander patroon een eigen kluis.
+De gratis versie heeft één kluis. Een kluis telt pas als je gratis kluis zodra er minstens één onderdeel in staat, dus een lege kluis die je per ongeluk met een ander patroon opent, gebruikt hem niet op. Met Premium krijgt elk ander patroon een eigen kluis.
 
 1. **Vergrendel Velcrypt.** Verlaat de kluis waarin je zit, zodat het patroonraster verschijnt.
 2. **Teken een nieuw patroon.** Gebruik er een dat je nog niet eerder hebt gebruikt, volgens de gewone regels: minstens 6 stippen en minstens één richtingsverandering.

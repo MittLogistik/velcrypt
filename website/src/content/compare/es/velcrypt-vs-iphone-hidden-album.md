@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "álbum oculto iphone vs velcrypt"
 keywords: ["ocultar fotos iphone álbum oculto", "es seguro el álbum oculto", "alternativa al álbum oculto", "álbum oculto face id", "fotos ocultas icloud"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "El álbum Oculto integrado de Apple frente a una bóveda cifrada aparte: qué protege cada uno, dónde se sincronizan las fotos y quién puede abrirlas."
 competitor: "Álbum Oculto del iPhone"
 lastChecked: "octubre de 2026"
@@ -53,7 +53,7 @@ Si Fotos en iCloud está activado, los elementos ocultos se sincronizan como tod
 | Requiere cuenta | No | Forma parte de Fotos; hace falta Cuenta de Apple para sincronizar con iCloud |
 | Copia de seguridad en la nube | No; copia de seguridad cifrada manual y gratuita en un archivo que guardas tú | Sí, con Fotos en iCloud o la copia de seguridad de iCloud |
 | Método de desbloqueo | Patrón en una cuadrícula de 5×5, independiente del código | Face ID, Touch ID o código del dispositivo |
-| Biometría | No disponible, por diseño | Sí |
+| Biometría | Opcional, desactivado de forma predeterminada (por bóveda) | Sí |
 | Señuelo / varias bóvedas | Cada patrón es su propia bóveda (con Premium) | Un único álbum Oculto |
 | Patrón de coacción | Sí, con Premium (abre un señuelo y elimina las demás bóvedas) | No |
 | Recuperación si olvidas el código | Ninguna; solo restaurar una copia de seguridad propia | Código del dispositivo y recuperación de la Cuenta de Apple |
@@ -67,7 +67,7 @@ Si Fotos en iCloud está activado, los elementos ocultos se sincronizan como tod
 
 La mayor diferencia práctica es quién puede entrar. El álbum Oculto confía en el código de tu dispositivo. Es razonable frente a desconocidos, pero mucha gente comparte su código con su pareja, un hijo o un familiar, o lo ha tecleado delante de ellos. Cualquiera con el código puede abrir el álbum Oculto, aunque tengas Face ID configurado, porque el código siempre se acepta como alternativa.
 
-El patrón de Velcrypt es un secreto independiente. Conocer tu código, o poner tu cara delante del teléfono, no abre ninguna bóveda. Por eso Velcrypt tampoco tiene Face ID a propósito: una cara o un dedo pueden usarse sin tu consentimiento. Consulta [bloqueo con patrón](id:pattern-lock).
+El patrón de Velcrypt es un secreto independiente. Conocer tu código no abre ninguna bóveda, y el código no sirve como alternativa. Face ID solo se usa si lo activas para una bóveda, y viene desactivado, porque una cara o un dedo pueden usarse sin tu consentimiento. Consulta [bloqueo con patrón](id:pattern-lock).
 
 ## Copias y nube
 
@@ -79,7 +79,7 @@ Velcrypt funciona al revés. Una foto importada se copia en una bóveda cifrada 
 
 ## Negación plausible
 
-Hay exactamente un álbum Oculto, y su existencia es evidente para cualquiera que abra Fotos (salvo que desactives que se muestre). Velcrypt no tiene lista de bóvedas. Cada patrón abre su propia bóveda, y un patrón que la app nunca ha visto abre una bóveda vacía sin ningún error. Eso te permite tener una bóveda señuelo y hace imposible demostrar que existen otras. Consulta [bóvedas ocultas](id:hidden-vaults).
+Hay exactamente un álbum Oculto, y su existencia es evidente para cualquiera que abra Fotos (salvo que desactives que se muestre). Velcrypt no tiene lista de bóvedas, salvo las que tú añades a propósito a la lista de Face ID. Cada patrón abre su propia bóveda, y un patrón que la app nunca ha visto abre una bóveda vacía sin ningún error. Eso te permite tener una bóveda señuelo y hace imposible demostrar que existen otras. Consulta [bóvedas ocultas](id:hidden-vaults).
 
 ## Cuándo puede encajarte mejor el álbum Oculto
 

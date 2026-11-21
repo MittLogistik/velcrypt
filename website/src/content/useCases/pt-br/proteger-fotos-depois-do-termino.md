@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "ex tem acesso às minhas fotos iphone"
 keywords: ["trocar código do iphone depois do término", "remover ex do álbum compartilhado", "verificação de segurança iphone", "ex sabe meu código do iphone", "sair da fototeca compartilhada do icloud"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Um checklist tranquilo para as semanas depois de um término: código novo, Verificação de Segurança, álbuns compartilhados e um lugar privado para as fotos."
 group: everyday
 schemaType: Article
@@ -60,7 +60,7 @@ Se você se sente em perigo ou se o seu ex está fazendo ameaças, coloque sua s
 
 Algumas fotos você vai querer guardar — lembranças, prints de conversas, documentos do relacionamento — sem que fiquem num rolo da câmera que outra pessoa pode ver de relance. O Velcrypt é uma opção para isso.
 
-O Velcrypt guarda fotos, vídeos e documentos em cofres criptografados no seu iPhone. Ele não usa o código do aparelho nem o Face ID; um cofre abre com um [padrão desenhado em uma grade 5×5](id:pattern-lock), então um código que o seu ex conhecia não ajuda em nada. [Cada padrão abre o seu próprio cofre](id:hidden-vaults), e um padrão desconhecido só abre um cofre vazio, sem erro, então nada revela o que está guardado.
+O Velcrypt guarda fotos, vídeos e documentos em cofres criptografados no seu iPhone. Ele não usa o código do aparelho, e o Face ID vem desativado; um cofre abre com um [padrão desenhado em uma grade 5×5](id:pattern-lock), então um código que o seu ex conhecia não ajuda em nada. [Cada padrão abre o seu próprio cofre](id:hidden-vaults), e um padrão desconhecido só abre um cofre vazio, sem erro, então nada revela o que está guardado.
 
 Depois de importar, [apague os originais](id:delete-original-photos-after-import) do Fotos e esvazie Apagados — caso contrário, as cópias continuam na sua biblioteca e, com as Fotos do iCloud ativadas, nos seus outros aparelhos. Se houver fotos íntimas envolvidas, [este guia](id:store-intimate-photos-safely-iphone) traz mais detalhes.
 

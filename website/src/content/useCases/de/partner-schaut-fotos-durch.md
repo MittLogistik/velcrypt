@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "partner schaut mein handy durch"
 keywords: ["freund schaut meine fotos durch", "freundin schaut in mein handy", "fotos vor partner verstecken iphone", "fotos vor freund verstecken", "privatsphäre handy beziehung"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-11-21
 summary: "Grenzen beim Handy in der Beziehung, wie Fotos versehentlich gesehen werden und wie ein paar private Bilder einen eigenen Platz bekommen."
 group: everyday
 schemaType: Article
@@ -64,7 +64,7 @@ Fühlt sich die Kontrolle deines Handys fordernd, häufig oder beängstigend an,
 
 Velcrypt bewahrt private Fotos, Videos und Dokumente in einem verschlüsselten Tresor auf deinem iPhone auf, getrennt von der Fotomediathek. Hast du ein Foto importiert und das [Original gelöscht](id:delete-original-photos-after-import), taucht es beim Durchwischen, in Rückblicken, Widgets und der Suche nicht mehr auf.
 
-Der Tresor öffnet sich mit einem Muster, das du auf ein 5×5-Raster zeichnest, nicht mit deinem Code oder Face ID. Deinen Code zu kennen, öffnet ihn nicht. Und weil [jedes Muster seinen eigenen Tresor öffnet](id:hidden-vaults), gibt es keine Tresorliste: Ein unbekanntes Muster öffnet einfach einen leeren Tresor, ohne Fehler. So hast du Raum für Privatsphäre, ohne dein Handy in eine sichtbare Festung zu verwandeln – wie [glaubhafte Abstreitbarkeit](id:plausible-deniability-explained) erklärt.
+Der Tresor öffnet sich mit einem Muster, das du auf ein 5×5-Raster zeichnest, nicht mit deinem Code. Deinen Code zu kennen, öffnet ihn nicht, und Face ID ist standardmäßig aus. Und weil [jedes Muster seinen eigenen Tresor öffnet](id:hidden-vaults), gibt es keine Tresorliste (außer der Face-ID-Liste, die du selbst füllst): Ein unbekanntes Muster öffnet einfach einen leeren Tresor, ohne Fehler. So hast du Raum für Privatsphäre, ohne dein Handy in eine sichtbare Festung zu verwandeln – wie [glaubhafte Abstreitbarkeit](id:plausible-deniability-explained) erklärt.
 
 Speziell für intime Fotos beschreibt [diese Anleitung](id:store-intimate-photos-safely-iphone) die zusätzliche Sorgfalt, die sie verdienen.
 

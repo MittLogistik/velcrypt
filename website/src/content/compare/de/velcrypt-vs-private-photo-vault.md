@@ -9,12 +9,12 @@ keyFacts:
   - "Private Photo Vault stammt von Legendary Software und nutzt laut Store-Eintrag eine Sperre per PIN oder Code."
   - "Velcrypt entsperrt mit einem Muster auf einem 5×5-Raster; jedes Muster ist ein separater Tresor."
   - "Velcrypt veröffentlicht sein Verschlüsselungskonzept: AES-256-GCM mit Schlüsselableitung per PBKDF2-HMAC-SHA512."
-  - "Velcrypt hat bewusst keine Einbruchsfotos und kein Face ID."
+  - "Velcrypt hat bewusst keine Einbruchsfotos; Face ID ist optional und standardmäßig aus."
   - "Velcrypt hat kein Cloud-Backup, nur ein manuelles verschlüsseltes Backup; ein vergessenes Muster lässt sich nicht wiederherstellen."
 primaryKeyword: "velcrypt vs private photo vault"
 keywords: ["private photo vault alternative", "private photo vault vergleich", "private photo vault vs", "foto tresor köder passwort", "foto tresor mit mustersperre"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "PIN-Tresor mit Köder- und Einbruchsfunktionen gegen einen kontofreien, verschlüsselten Tresor mit Mustersperre. Neutral nebeneinander."
 competitor: "Private Photo Vault"
 lastChecked: "Oktober 2026"
@@ -28,7 +28,7 @@ faq:
   - q: "Welche App veröffentlicht mehr über ihre Verschlüsselung?"
     a: "Velcrypt dokumentiert sein Konzept: AES-256-GCM, PBKDF2-HMAC-SHA512 mit mindestens 600.000 Iterationen, Hauptschlüssel pro Tresor und Schlüssel pro Datei. Zu Private Photo Vault prüfe bitte die Dokumentation des Entwicklers; vergleichbare Details konnten wir nicht bestätigen."
   - q: "Kann ich Velcrypt mit Face ID nutzen?"
-    a: "Nein. Velcrypt verzichtet bewusst auf Face ID und Touch ID, weil biometrische Merkmale ohne deine Zustimmung benutzt werden können. Du entsperrst, indem du ein Muster zeichnest, das nur du kennst."
+    a: "Ja, wenn du es einschaltest. Face ID oder Touch ID ist standardmäßig aus, und du aktivierst es pro Tresor in dessen Einstellungen. Weil biometrische Merkmale ohne deine Zustimmung benutzt werden können, lässt du deinen privatesten Tresor am besten nur beim Muster. Das Muster öffnet weiterhin jeden Tresor."
 ---
 
 *Zuletzt geprüft: Oktober 2026. Produktdetails ändern sich; prüfe für die aktuelle Version den App-Store-Eintrag der jeweiligen App.*
@@ -51,7 +51,7 @@ Velcrypt ist ein Tresor auf dem Gerät mit Mustersperre. Ein Muster ist eine dur
 | Konto erforderlich | Nein | Nicht öffentlich angegeben |
 | Cloud-Backup | Nein; kostenloses manuelles verschlüsseltes Backup | Unterschiedlich; aktuellen Store-Eintrag prüfen |
 | Entsperren | Muster auf einem 5×5-Raster | PIN / Code |
-| Biometrie (Face ID / Touch ID) | Bewusst nicht angeboten | Unterschiedlich |
+| Biometrie (Face ID / Touch ID) | Optional, standardmäßig aus (pro Tresor) | Unterschiedlich |
 | Köder- / mehrere Tresore | Jedes Muster ist ein eigener Tresor (mehrere Tresore mit Premium) | Köder-Passwort |
 | Notfallmuster | Ja, mit Premium (öffnet einen Köder, löscht die anderen Tresore) | Nicht öffentlich angegeben |
 | Einbruchsberichte | Nicht angeboten | Angeboten, laut Store-Eintrag |
@@ -82,7 +82,7 @@ Für Private Photo Vault haben wir zum Zeitpunkt des Schreibens keine vergleichb
 ## Wann Private Photo Vault besser passen kann
 
 - **Du willst Einbruchsberichte.** Wenn es dir wichtig ist zu wissen, dass jemand versucht hat, deinen Tresor zu öffnen – das bietet Velcrypt nicht.
-- **Du bevorzugst einen Zahlencode oder Face ID.** Manche finden eine PIN schneller als das Zeichnen eines Musters.
+- **Du bevorzugst einen Zahlencode.** Manche finden eine PIN schneller als das Zeichnen eines Musters.
 - **Du willst ein automatisches Cloud-Backup.** Falls deine Version eins bietet, ist das etwas, das Velcrypt fehlt; Velcrypt bietet nur ein manuelles verschlüsseltes Backup.
 - **Du bist dort schon eingerichtet.** Eine große Sammlung umzuziehen kostet Mühe; ein Wechsel lohnt sich nur, wenn dir die Unterschiede wichtig sind.
 
@@ -90,7 +90,7 @@ Für Private Photo Vault haben wir zum Zeitpunkt des Schreibens keine vergleichb
 
 ## Wann Velcrypt besser passen kann
 
-- **Du willst Tresore, die sich nicht gegenseitig verraten.** Keine Tresorliste, keine Fehlermeldung bei unbekannten Mustern.
+- **Du willst Tresore, die sich nicht gegenseitig verraten.** Keine Tresorliste außer der Face-ID-Liste, die du selbst füllst, und keine Fehlermeldung bei unbekannten Mustern.
 - **Du willst kein Konto und keine Server.** Siehe [offline, ohne Konto](id:offline-no-account).
 - **Du willst dokumentierte Verschlüsselung.** Algorithmen und Schlüsselverwaltung sind öffentlich.
 - **Du willst auch Dokumente speichern.** Velcrypt importiert neben Fotos und Videos auch Dateien aus der App „Dateien“.

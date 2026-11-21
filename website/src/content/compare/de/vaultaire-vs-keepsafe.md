@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "vaultaire vs keepsafe"
 keywords: ["keepsafe vs vaultaire", "vaultaire test", "vaultaire alternative", "keepsafe alternative", "foto tresor app vergleich iphone", "beste foto tresor app iphone"]
 datePublished: 2026-10-31
-dateModified: 2026-10-31
+dateModified: 2026-11-21
 summary: "Zwei beliebte Foto-Tresore fürs iPhone im Vergleich: Konto, Entsperren, Köder-Tresore, Backup, Wiederherstellung und Preis. Plus: wo Velcrypt passt."
 competitor: "Vaultaire und Keepsafe"
 lastChecked: "Oktober 2026"
@@ -24,7 +24,7 @@ faq:
   - q: "Ist Vaultaire besser als Keepsafe?"
     a: "Das hängt davon ab, was dir wichtig ist. Vaultaire braucht laut Website kein Konto, entsperrt per Muster, unterstützt mehrere versteckte Tresore und enthält ein verschlüsseltes iCloud-Backup. Keepsafe nutzt ein Konto, eine PIN mit optionalem Face ID und eine Premium-Cloud und gibt es auch für Android. Keine der beiden ist für alle die bessere."
   - q: "Hat Vaultaire Face ID?"
-    a: "Nein. Laut Website verzichtet Vaultaire bewusst auf Face ID, Touch ID und PIN, weil sich Biometrie ohne deine Zustimmung nutzen lässt. Du entsperrst, indem du ein Muster zeichnest. Velcrypt trifft dieselbe Entscheidung. Keepsafe unterstützt laut Store-Eintrag Face ID."
+    a: "Nein. Laut Website verzichtet Vaultaire bewusst auf Face ID, Touch ID und PIN, weil sich Biometrie ohne deine Zustimmung nutzen lässt. Du entsperrst, indem du ein Muster zeichnest. Velcrypt entsperrt ebenfalls per Muster, bietet Face ID aber optional pro Tresor an, standardmäßig aus. Keepsafe unterstützt laut Store-Eintrag Face ID."
   - q: "Welche App hat einen Notfall- oder Panikmodus?"
     a: "Vaultaire bietet mit dem Pro-Plan einen Notfalltresor: Zeichnest du dieses Muster, öffnet sich der Köder-Tresor und der Zugriff auf die anderen Tresore auf dem Gerät wird entfernt. Velcrypt bietet mit Premium ein Notfallmuster, das einen Köder-Tresor öffnet und die anderen Tresore endgültig löscht. Keepsafe bietet eine Fake-PIN, eine öffentliche Beschreibung einer Notfalllöschung haben wir aber nicht gefunden."
   - q: "Was passiert, wenn ich mein Muster oder meine PIN vergesse?"
@@ -49,7 +49,7 @@ Vaultaire und Keepsafe gehören zu den Apps, die am häufigsten verglichen werde
 |---|---|---|---|
 | Konto erforderlich | Nein | Ja, laut Store-Eintrag | Nein |
 | Entsperren | Muster auf einem 5×5-Raster | PIN oder Code | Muster auf einem 5×5-Raster |
-| Face ID / Touch ID | Bewusst nicht angeboten | Unterstützt, laut Store-Eintrag | Bewusst nicht angeboten |
+| Face ID / Touch ID | Bewusst nicht angeboten | Unterstützt, laut Store-Eintrag | Optional, standardmäßig aus (pro Tresor) |
 | Versteckte Tresore / Köder-Tresore | Jedes Muster öffnet einen eigenen Tresor; bis zu 3 Tresore kostenlos | Fake-/Täuschungs-PIN in Premium | Jedes Muster öffnet einen eigenen Tresor; mehr als ein Tresor erfordert Premium |
 | Notfallmodus | Notfalltresor mit Pro | Nicht öffentlich angegeben | Notfallmuster mit Premium |
 | Details zur Verschlüsselung veröffentlicht | Ja: AES-256-GCM, PBKDF2-HMAC-SHA512 | Nicht im Detail öffentlich angegeben | Ja: AES-256-GCM, PBKDF2-HMAC-SHA512 (siehe [Verschlüsselung](id:encryption)) |
@@ -74,13 +74,13 @@ Vaultaire geht beim Konto den umgekehrten Weg: Es gibt keine Registrierung, das 
 
 Velcrypt geht in dieselbe Richtung noch einen Schritt weiter. Es gibt kein Konto und keinerlei Cloud, Tresordaten sind von iCloud- und Computer-Backups ausgeschlossen, und die App stellt keine Netzwerkanfragen. Der Kompromiss ist real: Verlierst du das iPhone oder vergisst das Muster, kann niemand den Tresor wiederherstellen – außer du hast selbst unter Einstellungen → Backup eine verschlüsselte Backup-Datei erstellt. Die Details stehen unter [offline, ohne Konto](id:offline-no-account).
 
-## Entsperren: Muster statt PIN und Face ID
+## Entsperren: Muster statt PIN
 
 Keepsafe nutzt einen PIN-artigen Code und laut Store-Eintrag bequem Face ID oder Touch ID.
 
 <!-- TODO verify -->
 
-Vaultaire und Velcrypt nutzen beide ein Muster, das durch Punkte auf einem 5×5-Raster gezeichnet wird, und beide verzichten absichtlich auf Face ID. Die Begründung ist dieselbe: Ein Gesicht oder Finger lässt sich ohne deine Zustimmung benutzen, während ein Muster nur in deinem Kopf existiert. Ein 5×5-Raster bietet außerdem weit mehr mögliche Wege als das 3×3-Raster auf Android-Handys. Die Abwägungen erklärt [Mustersperre vs. PIN vs. Face ID](id:pattern-lock-vs-pin-vs-face-id).
+Vaultaire und Velcrypt nutzen beide ein Muster, das durch Punkte auf einem 5×5-Raster gezeichnet wird. Vaultaire verzichtet laut Website ganz auf Face ID; bei Velcrypt ist Face ID optional, standardmäßig aus und wird pro Tresor eingeschaltet. Der Grund ist derselbe: Ein Gesicht oder Finger lässt sich ohne deine Zustimmung benutzen, während ein Muster nur in deinem Kopf existiert. Deinen privatesten Tresor lässt du in Velcrypt deshalb am besten nur beim Muster. Ein 5×5-Raster bietet außerdem weit mehr mögliche Wege als das 3×3-Raster auf Android-Handys. Die Abwägungen erklärt [Mustersperre vs. PIN vs. Face ID](id:pattern-lock-vs-pin-vs-face-id).
 
 ## Köder-Tresore und Notfallmodus
 
@@ -88,7 +88,7 @@ Keepsafe hat eine Fake-PIN, die einen harmlosen Köder-Tresor öffnet, als Premi
 
 <!-- TODO verify -->
 
-Bei Vaultaire und Velcrypt sind Köder-Tresore Teil der Architektur statt ein Zusatz. Jedes Muster öffnet einen eigenen Tresor, es gibt keine Tresorliste, und ein Muster, das die App noch nie gesehen hat, öffnet einen leeren Tresor statt einer Fehlermeldung. Nichts auf dem Bildschirm beweist, dass weitere Tresore existieren; siehe [versteckte Tresore](id:hidden-vaults).
+Bei Vaultaire und Velcrypt sind Köder-Tresore Teil der Architektur statt ein Zusatz. Jedes Muster öffnet einen eigenen Tresor, es gibt keine Tresorliste (bei Velcrypt außer den Tresoren, die du selbst in die Face-ID-Liste aufnimmst), und ein Muster, das die App noch nie gesehen hat, öffnet einen leeren Tresor statt einer Fehlermeldung. Nichts auf dem Bildschirm beweist, dass weitere Tresore existieren; siehe [versteckte Tresore](id:hidden-vaults).
 
 Beide haben in ihren Bezahlplänen auch eine Notfalloption, die sich aber unterschiedlich verhält:
 

@@ -1,32 +1,32 @@
 ---
 pageId: hidden-vaults
 title: "Casseforti nascoste: ogni sequenza apre la sua cassaforte"
-description: "In Velcrypt ogni sequenza è una cassaforte separata. Non c'è un elenco e una sequenza sconosciuta apre una cassaforte vuota, senza errori."
+description: "In Velcrypt ogni sequenza è una cassaforte separata. Nessun elenco, salvo quello Face ID che scegli tu; una sequenza sconosciuta apre una cassaforte vuota."
 h1: "Casseforti nascoste: una sequenza, una cassaforte, nessun elenco"
 navTitle: "Casseforti nascoste"
-answer: "In Velcrypt ogni sequenza apre la propria cassaforte cifrata. Non esiste un elenco delle casseforti e una sequenza mai vista prima apre semplicemente una cassaforte vuota senza errori, quindi niente sullo schermo prova che ne esistano altre."
+answer: "In Velcrypt ogni sequenza apre la propria cassaforte cifrata. Non esiste un elenco delle casseforti (tranne quelle che aggiungi di proposito all'elenco Face ID) e una sequenza mai vista prima apre semplicemente una cassaforte vuota senza errori, quindi niente sullo schermo prova che ne esistano altre."
 keyFacts:
   - "Ogni sequenza è una cassaforte a sé, con la propria chiave di cifratura."
-  - "Velcrypt non mostra mai un elenco delle casseforti."
+  - "Velcrypt non mostra mai un elenco delle casseforti, tranne quelle che aggiungi tu all'elenco Face ID."
   - "Una sequenza sconosciuta apre una cassaforte vuota, senza messaggi di errore."
   - "Puoi tenere una cassaforte esca con contenuti qualsiasi."
   - "La versione gratuita ha una cassaforte; più casseforti, e quindi un'esca, fanno parte del Premium."
 primaryKeyword: "app cassaforte nascosta iphone"
 keywords: ["app foto con più casseforti", "cassaforte esca iphone", "app cassaforte segreta", "negabilità plausibile cassaforte foto", "seconda cassaforte nascosta"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
-summary: "Ogni sequenza è una cassaforte a sé. Nessun elenco, nessun errore per sequenze sconosciute e spazio per una cassaforte esca credibile."
+dateModified: 2026-11-21
+summary: "Ogni sequenza è una cassaforte a sé. Nessun elenco, salvo quello Face ID che scegli tu, nessun errore e spazio per una cassaforte esca."
 status: available
 schemaType: WebPage
 order: 2
 related: [pattern-lock, duress-pattern, encryption, what-is-a-decoy-vault, plausible-deniability-explained]
 faq:
   - q: "Come vedo tutte le mie casseforti in Velcrypt?"
-    a: "Non puoi, ed è voluto. Velcrypt non ha un elenco delle casseforti. L'unico modo per aprirne una è disegnarne la sequenza, quindi tieni traccia tu delle tue sequenze."
+    a: "Non puoi, ed è voluto. Velcrypt non elenca le casseforti: l'unico elenco è quello Face ID, con solo le casseforti per cui hai attivato Face ID. Tutte le altre si aprono solo disegnandone la sequenza, quindi tieni traccia tu delle tue sequenze."
   - q: "Cosa succede se disegno una sequenza sbagliata?"
     a: "Velcrypt apre una cassaforte vuota per quella sequenza invece di mostrare un errore. Se ci aggiungessi dei file, quella sequenza diventerebbe una nuova cassaforte. Se ti aspettavi le tue foto e non vedi nulla, probabilmente hai disegnato una sequenza leggermente diversa."
   - q: "Qualcuno può capire che ho più di una cassaforte?"
-    a: "Non dall'interfaccia dell'app. Non ci sono elenchi, contatori o messaggi di errore che rivelino altre casseforti. Velcrypt non può nascondere che l'app sia installata e non può impedire a qualcuno di guardarti mentre disegni una sequenza."
+    a: "Non dall'interfaccia dell'app. Non ci sono contatori o messaggi di errore che rivelino altre casseforti, e nessun elenco, a parte le casseforti che metti tu nell'elenco Face ID. Velcrypt non può nascondere che l'app sia installata e non può impedire a qualcuno di guardarti mentre disegni una sequenza."
   - q: "Cos'è una cassaforte esca?"
     a: "Una cassaforte esca è una cassaforte con contenuti normali e credibili che puoi aprire se vieni messo sotto pressione per mostrare cosa c'è nell'app. La tua cassaforte vera resta dietro una sequenza diversa."
 howTo:
@@ -48,7 +48,7 @@ La maggior parte delle app cassaforte ha una sola password e una sola area prote
 
 Una cassaforte nascosta è una cassaforte la cui esistenza non può essere confermata dall'esterno. In Velcrypt ogni sequenza valida sulla [griglia 5×5](id:pattern-lock) corrisponde a una cassaforte separata, con la propria chiave principale casuale e i propri file. La sequenza A mostra le foto che hai salvato dietro la sequenza A. La sequenza B mostra un insieme completamente diverso.
 
-Non c'è una schermata di impostazioni che le elenchi, né un menu «cambia cassaforte», né un numero che dica quante ne esistono. Dall'interno dell'app, ogni cassaforte sembra l'unica.
+Non c'è una schermata di impostazioni che le elenchi, né un menu «cambia cassaforte», né un numero che dica quante ne esistono. L'unica eccezione la scegli tu: se attivi Face ID per una cassaforte, quella compare nell'elenco Face ID dopo il riconoscimento. Le casseforti senza Face ID non vi compaiono mai. Dall'interno dell'app, ogni cassaforte sembra l'unica.
 
 ## Nessun errore per una sequenza sconosciuta
 

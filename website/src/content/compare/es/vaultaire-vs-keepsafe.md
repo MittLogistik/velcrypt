@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "vaultaire vs keepsafe"
 keywords: ["keepsafe vs vaultaire", "vaultaire opiniones", "alternativa a vaultaire", "alternativa a keepsafe", "comparativa bóveda de fotos iphone", "mejor app para ocultar fotos iphone"]
 datePublished: 2026-10-31
-dateModified: 2026-10-31
+dateModified: 2026-11-21
 summary: "Dos bóvedas de fotos populares para iPhone, lado a lado: cuenta, desbloqueo, señuelos, copia, recuperación y precio. Y dónde encaja Velcrypt."
 competitor: "Vaultaire y Keepsafe"
 lastChecked: "octubre de 2026"
@@ -24,7 +24,7 @@ faq:
   - q: "¿Es Vaultaire mejor que Keepsafe?"
     a: "Depende de lo que valores. Vaultaire, según su web, no necesita cuenta, se desbloquea con un patrón, admite varias bóvedas ocultas e incluye una copia de seguridad cifrada en iCloud. Keepsafe usa una cuenta, un PIN con Face ID opcional y una nube premium, y también está en Android. Ninguna es mejor para todo el mundo."
   - q: "¿Vaultaire tiene Face ID?"
-    a: "No. La web de Vaultaire dice que no tiene Face ID, Touch ID ni PIN a propósito, porque la biometría puede usarse sin tu consentimiento. Se desbloquea dibujando un patrón. Velcrypt toma la misma decisión. Keepsafe es compatible con Face ID, según su ficha."
+    a: "No. La web de Vaultaire dice que no tiene Face ID, Touch ID ni PIN a propósito, porque la biometría puede usarse sin tu consentimiento. Se desbloquea dibujando un patrón. Velcrypt también se desbloquea con un patrón, pero ofrece Face ID como opción, desactivada de forma predeterminada y activable por bóveda. Keepsafe es compatible con Face ID, según su ficha."
   - q: "¿Qué app tiene un modo de coacción o de pánico?"
     a: "Vaultaire ofrece una bóveda de coacción con su plan Pro: al dibujar ese patrón se abre el señuelo y se elimina el acceso a las demás bóvedas del dispositivo. Velcrypt ofrece con Premium un patrón de coacción que abre una bóveda señuelo y elimina de forma permanente las demás bóvedas. Keepsafe ofrece un PIN falso, pero no hemos encontrado ninguna descripción pública de un borrado por coacción."
   - q: "¿Qué pasa si olvido mi patrón o mi PIN?"
@@ -49,7 +49,7 @@ Vaultaire y Keepsafe son dos de las apps que más se comparan cuando alguien qui
 |---|---|---|---|
 | Requiere cuenta | No | Sí, según su ficha | No |
 | Método de desbloqueo | Patrón en una cuadrícula de 5×5 | PIN o código | Patrón en una cuadrícula de 5×5 |
-| Face ID / Touch ID | No disponible, por diseño | Compatible, según su ficha | No disponible, por diseño |
+| Face ID / Touch ID | No disponible, por diseño | Compatible, según su ficha | Opcional, desactivado de forma predeterminada (por bóveda) |
 | Bóvedas ocultas o señuelo | Cada patrón abre su propia bóveda; hasta 3 bóvedas gratis | PIN falso/señuelo en premium | Cada patrón abre su propia bóveda; más de una bóveda requiere Premium |
 | Modo de coacción | Bóveda de coacción con Pro | No se indica públicamente | Patrón de coacción con Premium |
 | Detalles del cifrado publicados | Sí: AES-256-GCM, PBKDF2-HMAC-SHA512 | No se detallan públicamente | Sí: AES-256-GCM, PBKDF2-HMAC-SHA512 (ver [cifrado](id:encryption)) |
@@ -80,7 +80,7 @@ Keepsafe usa un código tipo PIN y, según su ficha, Face ID o Touch ID por como
 
 <!-- TODO verify -->
 
-Vaultaire y Velcrypt usan un patrón dibujado a través de los puntos de una cuadrícula de 5×5, y ambas prescinden de Face ID a propósito. El razonamiento es el mismo: una cara o un dedo pueden usarse sin tu consentimiento, mientras que un patrón solo existe en tu memoria. Además, una cuadrícula de 5×5 admite muchísimos más recorridos posibles que la de 3×3 de los teléfonos Android. Las ventajas e inconvenientes se explican en [patrón frente a PIN frente a Face ID](id:pattern-lock-vs-pin-vs-face-id).
+Vaultaire y Velcrypt usan un patrón dibujado a través de los puntos de una cuadrícula de 5×5. Vaultaire, según su web, prescinde de Face ID a propósito, porque una cara o un dedo pueden usarse sin tu consentimiento, mientras que un patrón solo existe en tu memoria. Velcrypt comparte esa preocupación, pero la resuelve de otra forma: Face ID es opcional y viene desactivado, lo activas solo en las bóvedas que elijas y el patrón sigue abriendo todas. Quien consiga que mires el teléfono puede abrir las bóvedas que añadiste, así que lo mejor es dejar tu bóveda más privada solo con su patrón. Además, una cuadrícula de 5×5 admite muchísimos más recorridos posibles que la de 3×3 de los teléfonos Android. Las ventajas e inconvenientes se explican en [patrón frente a PIN frente a Face ID](id:pattern-lock-vs-pin-vs-face-id).
 
 ## Señuelos y coacción
 
@@ -88,7 +88,7 @@ Keepsafe ha ofrecido como función premium un PIN falso que abre una bóveda se�
 
 <!-- TODO verify -->
 
-En Vaultaire y Velcrypt, los señuelos forman parte del diseño en lugar de ser un añadido. Cada patrón abre su propia bóveda, no hay lista de bóvedas y un patrón que la app nunca ha visto abre una bóveda vacía en lugar de un error. Nada en pantalla demuestra que existan otras bóvedas; consulta [bóvedas ocultas](id:hidden-vaults).
+En Vaultaire y Velcrypt, los señuelos forman parte del diseño en lugar de ser un añadido. Cada patrón abre su propia bóveda, no hay lista de bóvedas (en Velcrypt, salvo las que tú añades a propósito a la lista de Face ID) y un patrón que la app nunca ha visto abre una bóveda vacía en lugar de un error. Nada en pantalla demuestra que existan otras bóvedas; consulta [bóvedas ocultas](id:hidden-vaults).
 
 Las dos tienen además una opción de coacción en sus planes de pago, pero se comportan de forma distinta:
 
@@ -112,7 +112,7 @@ Vaultaire y Velcrypt cobran $1.99 a la semana, $19.99 al año o $39.99 en un ún
 
 ## Cuándo puede encajarte mejor Keepsafe
 
-- **Quieres Face ID.** Si el desbloqueo biométrico rápido te importa más que el riesgo de un desbloqueo forzado, Keepsafe lo ofrece.
+- **Quieres Face ID con un PIN.** Keepsafe combina un PIN de toda la vida con Face ID, según su ficha. Velcrypt también ofrece Face ID, como opción por bóveda, pero siempre junto a un patrón y no a un PIN.
 - **También usas Android.** Keepsafe está disponible en más de una plataforma.
 - **Quieres alertas de intrusión.** Keepsafe puede hacer una foto a quien introduzca un PIN incorrecto, según su ficha.
 - **Prefieres tener una cuenta.** La recuperación mediante cuenta es la forma más conocida de recuperar tus fotos.

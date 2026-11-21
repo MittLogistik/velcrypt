@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "Velcrypt 媒体资料"
 keywords: ["Velcrypt 标志", "Velcrypt 媒体资料包", "Velcrypt 概况", "Velcrypt 品牌色"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 schemaType: WebPage
 order: 8
 related: [about, security, features, pricing]
@@ -37,7 +37,7 @@ Velcrypt 是一款用于存放私密照片、视频和文档的 iPhone App。文
 
 ### 完整版
 
-Velcrypt 是一款原生 iPhone App，把私密照片、视频和文档存放在设备上的加密保险箱中。它不用面容 ID 或 PIN 码，而是通过在 5×5 点阵上画图案来打开保险箱——这个秘密只存在于你的记忆中。每个图案都是一个独立的保险箱，App 从未见过的图案会打开一个空保险箱，因此没有任何东西会暴露保险箱的数量。文件通过 Apple CryptoKit 以 AES-256-GCM 加密。没有账户，没有服务器，也不追踪保险箱内容。Velcrypt 提供免费版和可选的 Premium 升级。
+Velcrypt 是一款原生 iPhone App，把私密照片、视频和文档存放在设备上的加密保险箱中。它不用 PIN 码，而是通过在 5×5 点阵上画图案来打开保险箱——这个秘密只存在于你的记忆中。面容 ID 是可选的，默认关闭，可为单个保险箱开启。每个图案都是一个独立的保险箱，App 从未见过的图案会打开一个空保险箱，因此除了用户主动加入面容 ID 列表的保险箱，没有任何东西会暴露保险箱的数量。文件通过 Apple CryptoKit 以 AES-256-GCM 加密。没有账户，没有服务器，也不追踪保险箱内容。Velcrypt 提供免费版和可选的 Premium 升级。
 
 ## 概况表
 
@@ -47,9 +47,9 @@ Velcrypt 是一款原生 iPhone App，把私密照片、视频和文档存放在
 | 标语 | Well Encrypted. Truly Private. |
 | 平台 | iPhone，iOS 17 或更高版本 |
 | 类别 | 隐私 / 工具——加密照片、视频和文档保险箱 |
-| 定价 | 免费版（1 个保险箱、最多 50 个项目）；Premium 每周 1.99 美元、每年 19.99 美元（含 3 天免费试用）或终身 39.99 美元。各国价格不同，以 App Store 为准 |
-| 解锁方式 | 5×5 点阵上的图案；刻意不用面容 ID 或触控 ID |
-| 保险箱 | 每个图案都是独立的保险箱；没有保险箱列表 |
+| 定价 | 免费版（1 个保险箱、最多 50 个项目；空保险箱不计入）；Premium 每周 1.99 美元、每年 19.99 美元（含 3 天免费试用）或终身 39.99 美元。各国价格不同，以 App Store 为准 |
+| 解锁方式 | 5×5 点阵上的图案；面容 ID / 触控 ID 可选，默认关闭（按保险箱开启） |
+| 保险箱 | 每个图案都是独立的保险箱；除用户主动开启面容 ID 的保险箱外，不列出任何保险箱 |
 | 加密 | AES-256-GCM（Apple CryptoKit）；PBKDF2-HMAC-SHA512 密钥派生 |
 | 数据 | 100% 在设备上；无需账户，没有云同步，没有广告 |
 | 备份 | 免费的手动加密备份文件（.velcrypt），由用户自己存放 |

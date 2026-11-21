@@ -13,7 +13,7 @@ keyFacts:
 primaryKeyword: "iphone photos showing on ipad"
 keywords: ["stop photos syncing to family ipad", "shared apple id photos", "icloud shared photo library privacy", "separate icloud photos family", "photos appearing on another device"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Why your iPhone photos appear on a family iPad or Mac, how to untangle shared accounts and libraries, and where private photos belong."
 group: everyday
 schemaType: Article
@@ -62,7 +62,7 @@ iCloud Photos is encrypted, but by default Apple holds the keys. With [Advanced 
 
 Velcrypt takes a different route: it keeps private photos, videos and documents in an encrypted vault on your iPhone only. There’s [no account, no server and no sync](id:offline-no-account), so nothing you put in a vault can appear on the family iPad, the Mac or a Shared Library.
 
-Importing copies a photo into the vault. To take it off every synced device, [delete the original](id:delete-original-photos-after-import) from Photos and empty Recently Deleted; with iCloud Photos on, that deletion syncs to your other devices too. The vault opens with a pattern on a 5×5 grid, not with the device passcode or Face ID.
+Importing copies a photo into the vault. To take it off every synced device, [delete the original](id:delete-original-photos-after-import) from Photos and empty Recently Deleted; with iCloud Photos on, that deletion syncs to your other devices too. The vault opens with a pattern on a 5×5 grid, not with the device passcode; Face ID is optional and off by default.
 
 ## Honest limits
 

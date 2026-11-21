@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "partner kijkt in mijn telefoon foto's"
 keywords: ["vriend kijkt door mijn foto's", "vriendin kijkt in mijn telefoon", "foto's privé houden voor partner iphone", "foto's verbergen voor partner", "privacy telefoon relatie"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-11-21
 summary: "Grenzen rond je telefoon in een relatie, hoe foto's per ongeluk gezien worden en hoe je een paar privéfoto's een eigen plek geeft."
 group: everyday
 schemaType: Article
@@ -62,7 +62,7 @@ Voelt het controleren van je telefoon eisend, frequent of beangstigend, dan is h
 
 Velcrypt bewaart privéfoto's, video's en documenten in een versleutelde kluis op je iPhone, los van de fotobibliotheek. Nadat je een foto hebt geïmporteerd en [het origineel hebt verwijderd](id:delete-original-photos-after-import), verschijnt hij niet meer bij het doorvegen, in Herinneringen, in widgets of in zoekresultaten.
 
-De kluis opent met een patroon dat je op een 5×5-raster tekent, niet met je toegangscode of Face ID. Je toegangscode kennen opent hem dus niet. En omdat [elk patroon een eigen kluis opent](id:hidden-vaults), is er geen lijst met kluizen: een onbekend patroon opent zonder foutmelding gewoon een lege kluis. Zo heb je ruimte voor privacy zonder van je telefoon een zichtbaar fort te maken, zoals uitgelegd bij [plausibele ontkenning](id:plausible-deniability-explained).
+De kluis opent met een patroon dat je op een 5×5-raster tekent, niet met je toegangscode; Face ID staat standaard uit en wordt alleen gebruikt als je het zelf per kluis aanzet. Je toegangscode kennen opent hem dus niet. En omdat [elk patroon een eigen kluis opent](id:hidden-vaults), is er geen lijst met kluizen (behalve de kluizen die je zelf aan de Face ID-lijst toevoegt): een onbekend patroon opent zonder foutmelding gewoon een lege kluis. Zo heb je ruimte voor privacy zonder van je telefoon een zichtbaar fort te maken, zoals uitgelegd bij [plausibele ontkenning](id:plausible-deniability-explained).
 
 Voor intieme foto's in het bijzonder behandelt [deze gids](id:store-intimate-photos-safely-iphone) de extra zorg die ze verdienen.
 

@@ -9,12 +9,12 @@ keyFacts:
   - "Bescherming gestolen apparaat (iOS 17.3+) vraagt Face ID of Touch ID voor gevoelige wijzigingen buiten vertrouwde locaties."
   - "Een verloren telefoon, je telefoon uitlenen en gedeelde hotelkamers zijn de meest voorkomende risico's op reis."
   - "Begeleide toegang houdt een geleende iPhone vast op één app, zoals Kaarten of Telefoon."
-  - "Een Velcrypt-kluis opent alleen met jouw patroon; een onbekend patroon opent een lege kluis."
+  - "Een Velcrypt-kluis opent met jouw patroon, niet met je toegangscode; Face ID staat standaard uit. Een onbekend patroon opent een lege kluis."
   - "Velcrypt-kluisgegevens zitten niet in iCloud- of computerback-ups, dus maak voor vertrek een versleutelde back-up."
 primaryKeyword: "privéfoto's beschermen op reis iphone"
 keywords: ["foto's beveiligen op reis", "iphone gestolen buitenland foto's", "bescherming gestolen apparaat reizen", "telefoon uitlenen buitenland privacy", "privacy tips telefoon op reis"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Verloren telefoons, je iPhone uitlenen en grenscontroles: zo reis je met privéfoto's en documenten zonder je zorgen te maken."
 group: travel
 schemaType: Article
@@ -60,7 +60,7 @@ Op reis gaat je telefoon door meer handen en naar meer plekken dan in het dageli
 
 ## Hoe Velcrypt helpt
 
-Velcrypt bewaart privéfoto's, video's en documenten in versleutelde kluizen die alleen op je iPhone staan. Een kluis opent met een patroon dat je op een 5×5-raster tekent, niet met je toegangscode of Face ID. Heeft een dief je toegangscode afgekeken, dan opent dat alleen je kluis nog niet. Waarom er een patroon wordt gebruikt in plaats van biometrie, lees je in [patroon vs pincode vs Face ID](id:pattern-lock-vs-pin-vs-face-id).
+Velcrypt bewaart privéfoto's, video's en documenten in versleutelde kluizen die alleen op je iPhone staan. Een kluis opent met een patroon dat je op een 5×5-raster tekent, niet met je toegangscode; Face ID staat standaard uit. Heeft een dief je toegangscode afgekeken, dan opent dat alleen je kluis nog niet. Waarom het patroon de basis is en biometrie standaard uit staat, lees je in [patroon vs pincode vs Face ID](id:pattern-lock-vs-pin-vs-face-id).
 
 Elk patroon opent een eigen kluis, en een onbekend patroon opent zonder foutmelding een lege kluis. Zo kun je een [lokkluis](id:what-is-a-decoy-vault) met onschuldige reisfoto's bijhouden en je privékluis achter een ander patroon zetten. De app vergrendelt ook automatisch als hij naar de achtergrond gaat, en de inhoud is verborgen in de appkiezer.
 

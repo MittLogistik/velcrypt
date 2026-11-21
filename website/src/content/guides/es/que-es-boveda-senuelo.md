@@ -7,7 +7,7 @@ navTitle: "¿Qué es una bóveda señuelo?"
 answer: "Una bóveda señuelo es una segunda bóveda, que se abre con otro secreto, con contenido inofensivo pero verosímil. Si alguien te presiona para abrir tu bóveda, puedes abrir el señuelo. En Velcrypt Premium, cualquier patrón nuevo abre su propia bóveda, así que un señuelo es simplemente un segundo patrón que llenas de fotos y documentos corrientes."
 keyFacts:
   - "Una bóveda señuelo es una bóveda real y funcional con contenido de poca importancia que no te importa enseñar."
-  - "En Velcrypt, cada patrón es su propia bóveda y no existe ninguna lista de bóvedas que delate a las demás."
+  - "En Velcrypt, cada patrón es su propia bóveda y ninguna lista delata a las demás, salvo la lista de Face ID si tú añades bóvedas a ella."
   - "Un señuelo vacío resulta sospechoso; uno con uso real, álbumes y elementos recientes resulta convincente."
   - "Un señuelo protege frente a curiosos y presiones informales, no frente a un análisis forense ni a quien te vio dibujar."
   - "La versión gratuita tiene una bóveda; un señuelo, como segunda bóveda, requiere Premium."
@@ -15,7 +15,7 @@ keyFacts:
 primaryKeyword: "bóveda señuelo"
 keywords: ["qué es una bóveda señuelo", "contraseña señuelo bóveda de fotos", "app de bóveda falsa", "patrón señuelo", "segunda bóveda iphone"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Qué es una bóveda señuelo, cómo crear una que parezca usada con un segundo patrón de Velcrypt y qué límites debes conocer."
 category: security
 order: 41
@@ -39,7 +39,7 @@ faq:
   - q: "¿Cómo creo una bóveda señuelo en Velcrypt?"
     a: "Con Premium, dibuja un segundo patrón que nunca hayas usado. Velcrypt abre para él una bóveda nueva y vacía. Añade contenido cotidiano creíble, como tickets, capturas y fotos corrientes, y ese patrón abrirá a partir de entonces tu señuelo."
   - q: "¿Alguien puede saber que una bóveda es un señuelo?"
-    a: "Desde dentro de la app, no: Velcrypt no guarda ninguna lista de bóvedas ni da pistas de que existan otras. Lo que puede delatar un señuelo es su contenido, por ejemplo si está vacío, desactualizado o claramente preparado."
+    a: "Desde dentro de la app, no: Velcrypt no guarda ninguna lista de bóvedas ni da pistas de que existan otras, salvo las bóvedas que tú añadas a la lista opcional de Face ID. Lo que puede delatar un señuelo es su contenido, por ejemplo si está vacío, desactualizado o claramente preparado."
   - q: "¿Una bóveda señuelo es lo mismo que un patrón de coacción?"
     a: "No. Un señuelo simplemente abre otra bóveda y deja las demás intactas. Un patrón de coacción, disponible con Velcrypt Premium, abre la bóveda señuelo y además elimina en silencio y de forma permanente todas las demás bóvedas del iPhone."
   - q: "¿Debería usar una bóveda señuelo con la policía o en la frontera?"
@@ -60,7 +60,7 @@ Lo que hace funcionar un señuelo no es la tecnología, sino la historia. Un se�
 
 La mayoría de las apps tratan el señuelo como un ajuste especial: un PIN real y un PIN falso. Velcrypt sigue un enfoque más sencillo. Cada patrón es su propia bóveda:
 
-- No hay ninguna lista de bóvedas en ningún lugar de la app.
+- No hay ninguna lista de bóvedas en ningún lugar de la app, salvo la lista opcional de Face ID con las bóvedas que tú añades.
 - Un patrón que Velcrypt nunca ha visto abre una bóveda nueva y vacía.
 - No hay ningún mensaje de error de «patrón incorrecto», y nada demuestra que existan otras bóvedas.
 
@@ -98,4 +98,4 @@ Un señuelo abre otra bóveda y deja todo lo demás intacto. Un **patrón de coa
 
 ## Dónde encaja Velcrypt
 
-Velcrypt se diseñó para que los señuelos sean algo natural y no un añadido: cada patrón es su propia bóveda, no hay lista de bóvedas, un patrón desconocido no muestra ningún error y no hay Face ID que alguien pueda usar para saltarse la pregunta. Cada bóveda se cifra en tu iPhone con AES-256-GCM con su propia clave, así que el señuelo y la bóveda real están igual de protegidos; la única diferencia es lo que guardas en cada una. Lee más en el [resumen de seguridad](id:security).
+Velcrypt se diseñó para que los señuelos sean algo natural y no un añadido: cada patrón es su propia bóveda, no hay lista de bóvedas salvo las que tú añades a propósito a la lista de Face ID, y un patrón desconocido no muestra ningún error. Face ID viene desactivado; si lo usas, deja fuera de la lista tu bóveda real para que nadie pueda saltarse la pregunta con tu cara. Cada bóveda se cifra en tu iPhone con AES-256-GCM con su propia clave, así que el señuelo y la bóveda real están igual de protegidos; la única diferencia es lo que guardas en cada una. Lee más en el [resumen de seguridad](id:security).

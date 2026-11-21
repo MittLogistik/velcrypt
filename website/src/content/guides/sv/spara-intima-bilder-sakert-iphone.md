@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "spara intima bilder säkert iphone"
 keywords: ["var spara privata bilder iphone", "dölja nakenbilder iphone säkert", "privata bilder säkerhet", "intima bilder integritet", "skydda privata bilder"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "En respektfull säkerhetsplan steg för steg för intima bilder på iPhone, och vad du gör om någon hotar att sprida dina bilder."
 category: practical
 order: 32
@@ -115,6 +115,6 @@ Om du är under 18 år, prata med en vuxen du litar på eller en hjälplinje fö
 
 ## Var Velcrypt passar in
 
-Velcrypt är byggt för just den lucka som albumet Gömda lämnar: innehåll som ska stanna i den här iPhonen, bakom en hemlighet som bara du känner till. Bilder och videor som du [döljer i Velcrypt](id:hide-photos) krypteras på enheten med AES-256-GCM, hålls utanför iCloud- och datorsäkerhetskopior och rör aldrig någon server. Varje mönster öppnar ett eget valv, det finns inget Face ID som någon kan använda medan du sover, och innehållet döljs i appväxlaren.
+Velcrypt är byggt för just den lucka som albumet Gömda lämnar: innehåll som ska stanna i den här iPhonen, bakom en hemlighet som bara du känner till. Bilder och videor som du [döljer i Velcrypt](id:hide-photos) krypteras på enheten med AES-256-GCM, hålls utanför iCloud- och datorsäkerhetskopior och rör aldrig någon server. Varje mönster öppnar ett eget valv, Face ID är avstängt som standard så att ingen kan använda ditt ansikte medan du sover (om du inte själv slår på det för ett valv), och innehållet döljs i appväxlaren.
 
 Ärliga gränser gäller fortfarande: Velcrypt når inte kopior i någon annans telefon, kan inte hindra någon från att se dig rita ditt mönster, och ett glömt mönster kan inte återställas. Om en relation har tagit slut har sidan [efter ett uppbrott](id:after-a-breakup) fler idéer.

@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "how to lock apps on iphone"
 keywords: ["lock apps iphone", "hide apps iphone", "can you lock a folder on iphone home screen", "how to lock a folder in iphone", "require face id app", "hidden apps folder iphone", "vault lock"]
 datePublished: 2026-10-31
-dateModified: 2026-10-31
+dateModified: 2026-11-21
 summary: "Require Face ID, the Hidden apps folder and Screen Time limits explained, with what app locking protects and why Home Screen folders can’t be locked."
 category: hiding
 order: 66
@@ -114,7 +114,7 @@ That is why the passcode works as a fallback, and why app locking can’t protec
 
 ## Where Velcrypt fits
 
-Velcrypt is not an app locker; it can’t lock other apps. It is a vault for the photos, videos and documents you would otherwise try to protect by locking Photos or Files. You open it by drawing a [pattern](id:pattern-lock) on a 5×5 grid, and each pattern opens its own encrypted vault. There is no Face ID by design, and the pattern has nothing to do with your iPhone passcode, so someone who knows the passcode still can’t open your vaults. If you’d like a different answer ready when someone insists, [decoy vaults](id:hidden-vaults) (Premium) show harmless content under another pattern.
+Velcrypt is not an app locker; it can’t lock other apps. It is a vault for the photos, videos and documents you would otherwise try to protect by locking Photos or Files. You open it by drawing a [pattern](id:pattern-lock) on a 5×5 grid, and each pattern opens its own encrypted vault. Face ID is optional and off by default, there is no passcode fallback, and the pattern has nothing to do with your iPhone passcode, so someone who knows the passcode still can’t open your vaults. If you’d like a different answer ready when someone insists, [decoy vaults](id:hidden-vaults) (Premium) show harmless content under another pattern.
 
 Content is encrypted on the device with AES-256-GCM, nothing is uploaded and there is no account. The vault [locks automatically](id:auto-lock) when you leave the app. Because vault data isn’t included in iCloud or computer backups, make an encrypted backup in Settings → Backup for anything you can’t afford to lose; a forgotten pattern can’t be recovered by anyone.
 

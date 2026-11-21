@@ -20,7 +20,7 @@ keywords:
   - "alternative a keepsafe"
   - "app per nascondere foto iphone"
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Sette criteri per scegliere una cassaforte per foto e uno sguardo onesto a strumenti Apple, Keepsafe, Private Photo Vault, calcolatrici e Velcrypt."
 category: choosing
 order: 20
@@ -73,7 +73,7 @@ Una premessa doverosa: Velcrypt è la nostra app. Abbiamo cercato di descriverla
 | Segreto separato dal codice del dispositivo | No | Facoltativo | Sì | Sì | Sì | Sì |
 | Account richiesto | Account Apple per iCloud | Account Apple per iCloud | Sì (email) | Non necessario per l’uso base | Variabile | No |
 | Backup / sincronizzazione nel cloud | Tramite iCloud Foto | Tramite iCloud | Cloud premium facoltativo | Variabile | Variabile | Nessuna sincronizzazione; backup cifrato manuale gratuito |
-| Face ID / Touch ID | Sì | Sì | Sì | Sì | Variabile | No, per scelta |
+| Face ID / Touch ID | Sì | Sì | Sì | Sì | Variabile | Facoltativi, spenti di base (per cassaforte) |
 | Funzione esca | No | No | PIN falso (premium) | Password esca | Variabile | Ogni sequenza apre una cassaforte propria |
 | Travestimento da altra app | No | No | No | No | Sì | No |
 
@@ -117,12 +117,12 @@ Non conosciamo una cassaforte per foto open source diffusa e mantenuta attivamen
 
 ## Velcrypt
 
-Velcrypt è un’app nativa per iPhone che conserva foto, video e documenti in casseforti cifrate sul dispositivo. Sblocchi una cassaforte disegnando una sequenza su una griglia 5×5 ([blocco a sequenza](id:pattern-lock)). Ogni sequenza apre una cassaforte propria, e una sequenza sconosciuta apre semplicemente una cassaforte vuota, quindi l’app non rivela mai quante casseforti esistono ([casseforti nascoste](id:hidden-vaults)). I file sono cifrati con AES-256-GCM usando chiavi derivate dalla sequenza ([crittografia](id:encryption)). Non c’è nessun account, nessun server e nessun caricamento online ([offline, senza account](id:offline-no-account)). È disponibile come versione gratuita (1 cassaforte, fino a 50 elementi) più un upgrade Premium facoltativo con elementi illimitati e più casseforti.
+Velcrypt è un’app nativa per iPhone che conserva foto, video e documenti in casseforti cifrate sul dispositivo. Sblocchi una cassaforte disegnando una sequenza su una griglia 5×5 ([blocco a sequenza](id:pattern-lock)). Ogni sequenza apre una cassaforte propria, e una sequenza sconosciuta apre semplicemente una cassaforte vuota, quindi l’app non rivela mai quante casseforti esistono, salvo quelle che aggiungi tu all’elenco Face ID ([casseforti nascoste](id:hidden-vaults)). I file sono cifrati con AES-256-GCM usando chiavi derivate dalla sequenza ([crittografia](id:encryption)). Non c’è nessun account, nessun server e nessun caricamento online ([offline, senza account](id:offline-no-account)). È disponibile come versione gratuita (1 cassaforte, fino a 50 elementi) più un upgrade Premium facoltativo con elementi illimitati e più casseforti.
 
 I suoi limiti sono voluti, ma reali:
 
 - **Backup solo manuale.** I contenuti della cassaforte sono esclusi dai backup di iCloud e del computer. Puoi creare un backup cifrato gratuito, ma se dimentichi la sequenza, o perdi il telefono senza backup, i file non possono essere recuperati né da te né da noi.
-- **Niente Face ID**, per scelta, quindi sbloccare richiede più di uno sguardo.
+- **Face ID spento di base.** È facoltativo e va attivato cassaforte per cassaforte, senza riserva con il codice dell’iPhone; finché non lo fai, sbloccare richiede più di uno sguardo.
 - **Nessun travestimento.** Nella schermata Home l’app si presenta per quello che è; con il Premium puoi solo scegliere un’icona alternativa.
 - **Nessuna sincronizzazione nel cloud, link di condivisione o app per iPad/Mac.**
 

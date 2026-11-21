@@ -10,11 +10,11 @@ keyFacts:
   - "Human-chosen patterns are far weaker than the theoretical maximum: people favour corners, letters and short shapes."
   - "Biometrics are convenient and hard to shoulder-surf, but a face or finger can be used while you are asleep, restrained or compelled."
   - "Smudges on the screen can leak patterns more easily than PINs."
-  - "Velcrypt uses a pattern on a 5×5 grid (at least 6 dots) and deliberately has no Face ID or Touch ID."
+  - "Velcrypt uses a pattern on a 5×5 grid (at least 6 dots); Face ID or Touch ID is optional, off by default and turned on per vault."
 primaryKeyword: "pattern lock vs pin"
 keywords: ["pin vs face id security", "is a pattern lock secure", "pattern vs password", "face id vs passcode", "most secure phone lock", "compelled biometrics"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Search-space math, shoulder surfing, smudges and compelled biometrics: an honest comparison of the four common ways to lock private data."
 category: security
 order: 40
@@ -28,8 +28,8 @@ faq:
     a: "A 6-digit PIN has 1,000,000 possible combinations (000000 to 999999), compared with 10,000 for a 4-digit PIN. Common choices like 123456 or birthdays shrink the real number dramatically."
   - q: "Can someone guess my pattern from screen smudges?"
     a: "Sometimes. Under the right light, finger trails on a glass screen can reveal the path of a pattern. Wiping the screen, using a matte protector and choosing a pattern that crosses itself all make smudge attacks harder."
-  - q: "Why doesn't Velcrypt offer Face ID?"
-    a: "On purpose. A face or fingerprint can be used to unlock a device without your agreement, while a pattern exists only in your memory. Velcrypt chose a pattern so that opening a vault always requires you to choose to open it."
+  - q: "Does Velcrypt use Face ID?"
+    a: "Only if you turn it on. Face ID or Touch ID is off by default and you enable it per vault, in that vault's Settings. A face or fingerprint can be used without your agreement, so anyone who gets you to look at the phone can open every vault you added. Keep your most private vault on its pattern only."
 ---
 
 Every lock is a trade-off between how hard it is to guess, how easy it is to watch, and how easily someone can make you open it. Most comparisons look only at the first. This guide looks at all three, with real numbers where numbers exist and honest caveats where they don’t.
@@ -116,6 +116,10 @@ You don’t have to pick one lock for everything. A sensible setup for most peop
 
 ## Where Velcrypt fits
 
-Velcrypt makes a deliberate choice: the only way into a vault is a pattern on a 5×5 grid of dots, one continuous line through at least 6 dots with at least one change of direction. Longer patterns of 8–12 dots are recommended. There is no Face ID or Touch ID, because a pattern can’t be lifted from your body.
+Every Velcrypt vault opens with a pattern on a 5×5 grid of dots, one continuous line through at least 6 dots with at least one change of direction. Longer patterns of 8–12 dots are recommended. The pattern always works, for every vault.
 
-The design also changes what “guessing” means. Every pattern is its own vault, and a pattern Velcrypt has never seen simply opens an empty vault, with no error message. That means a wrong guess doesn’t announce itself as wrong, and with Premium you can keep a [decoy vault](id:what-is-a-decoy-vault) under a second pattern. The [hidden vaults](id:hidden-vaults) page explains the model, and the [security overview](id:security) lists what it can’t protect against, including someone watching you draw.
+Face ID or Touch ID is optional and off by default. You turn it on per vault, from inside that vault (Settings › Face ID), and give the vault a name for the Face ID list. Once at least one vault has it, an “Unlock with Face ID” button appears on the lock screen; after Face ID succeeds you pick from the vaults you added, or the vault opens directly if there is only one. There is no passcode fallback, and the Face ID copy of the key stays in this iPhone’s Keychain only, not in iCloud or backups.
+
+The compelled-unlocking problem above is why it is off by default. Anyone who can get you to look at your phone can see and open every vault in the Face ID list. A sensible split: use Face ID for convenience vaults if you want it, and keep your most private vault on its pattern only, because a pattern can’t be lifted from your body. The [duress pattern](id:duress-pattern) works through patterns only; the Face ID list does not trigger it.
+
+The design also changes what “guessing” means. Every pattern is its own vault, and a pattern Velcrypt has never seen simply opens an empty vault, with no error message. Velcrypt never lists vaults, except the ones you deliberately add to the Face ID list. That means a wrong guess doesn’t announce itself as wrong, and with Premium you can keep a [decoy vault](id:what-is-a-decoy-vault) under a second pattern. The [hidden vaults](id:hidden-vaults) page explains the model, and the [security overview](id:security) lists what it can’t protect against, including someone watching you draw.

@@ -9,13 +9,13 @@ keyFacts:
   - "Motif → PBKDF2-HMAC-SHA512, au moins 600 000 itérations, sel aléatoire propre à l’appareil conservé dans le trousseau iOS."
   - "Chaque coffre a sa propre clé maîtresse aléatoire de 256 bits ; les clés par fichier sont dérivées avec HKDF."
   - "Les fichiers sont chiffrés en AES-256-GCM via Apple CryptoKit, avec en plus la protection des données iOS (classe de protection complète)."
-  - "Un motif inconnu ouvre un coffre vide — aucune liste de coffres, aucun message « motif incorrect »."
+  - "Un motif inconnu ouvre un coffre vide — aucune liste de coffres hors liste Face ID choisie, aucun message « motif incorrect »."
   - "Ni réseau, ni compte, ni analyse du contenu des coffres ; données exclues des sauvegardes iCloud et ordinateur, sauvegarde chiffrée manuelle possible."
   - "Velcrypt n’a pas encore fait l’objet d’un audit de sécurité indépendant."
 primaryKeyword: "sécurité velcrypt"
 keywords: ["chiffrement coffre-fort photo iphone", "comment fonctionne le chiffrement velcrypt", "coffre-fort photo aes-256-gcm", "verrouillage par motif pbkdf2", "modèle de menace coffre-fort photo", "app coffre-fort déni plausible"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 schemaType: WebPage
 order: 1
 related: [encryption, pattern-lock, hidden-vaults, aes-256-encryption-explained, plausible-deniability-explained, forgot-vault-pattern]
@@ -76,7 +76,7 @@ En plus du chiffrement propre à Velcrypt, les fichiers des coffres sont écrits
 
 La plupart des apps comparent votre mot de passe à quelque chose de stocké — une empreinte, un vérificateur, une « bonne réponse » — puis affichent *mot de passe incorrect*. Velcrypt ne le fait volontairement pas.
 
-Il n’existe ni liste de coffres ni valeur stockée qui confirme qu’un motif est « correct ». Quand vous tracez un motif, Velcrypt dérive une clé et tente d’ouvrir le coffre correspondant. Si aucun coffre ne correspond, l’app ouvre simplement un nouveau coffre vide pour ce motif. Pour la personne qui tient le téléphone, un motif jamais utilisé et un vrai coffre vide se ressemblent parfaitement.
+Il n’existe ni liste de coffres (hormis la liste Face ID des coffres que vous y ajoutez) ni valeur stockée qui confirme qu’un motif est « correct ». Quand vous tracez un motif, Velcrypt dérive une clé et tente d’ouvrir le coffre correspondant. Si aucun coffre ne correspond, l’app ouvre simplement un nouveau coffre vide pour ce motif. Pour la personne qui tient le téléphone, un motif jamais utilisé et un vrai coffre vide se ressemblent parfaitement.
 
 Cela vous offre un **déni plausible** : la possibilité d’affirmer de façon crédible qu’il n’y a rien d’autre à voir, puisque rien dans l’app ne prouve le contraire. Vous pouvez garder un coffre leurre avec des photos ordinaires et un coffre séparé pour ce qui est vraiment privé. La page sur les [coffres cachés](id:hidden-vaults) et nos guides sur le [coffre leurre](id:what-is-a-decoy-vault) et le [déni plausible](id:plausible-deniability-explained) entrent dans le détail.
 
@@ -86,7 +86,9 @@ Conséquence pratique : si vous vous trompez d’un seul point dans votre motif,
 
 Velcrypt se verrouille automatiquement lorsqu’il passe en arrière-plan, après un délai que vous pouvez régler. Au verrouillage, les clés du coffre sont effacées de la mémoire et il faut retracer le motif. Le contenu du coffre est aussi masqué dans le sélecteur d’apps d’iOS : un coup d’œil à vos apps récentes ne montre aucune miniature de photo privée. Voir [verrouillage automatique](id:auto-lock) pour les réglages.
 
-Il n’y a pas de déverrouillage par Face ID ou Touch ID, par choix. Un visage ou un doigt peut être utilisé sans votre consentement — pendant votre sommeil, ou sous la pression. Un motif n’existe que dans votre mémoire.
+Face ID et Touch ID sont facultatifs et désactivés par défaut pour chaque coffre. Un visage ou un doigt peut être utilisé sans votre consentement — pendant votre sommeil, ou sous la pression —, alors qu’un motif n’existe que dans votre mémoire. Si vous activez Face ID pour un coffre (Réglages › Face ID, depuis ce coffre), une copie de sa clé est conservée dans le trousseau de cet iPhone uniquement, ni dans iCloud ni dans les sauvegardes, et liée aux visages et empreintes enregistrés à ce moment-là. Si un visage ou une empreinte est ajouté, ou si Face ID est réinitialisé, Face ID se désactive pour ces coffres jusqu’à ce que vous le réactiviez après les avoir ouverts avec leur motif. Le code de l’iPhone ne peut jamais remplacer Face ID dans Velcrypt.
+
+Le compromis est réel : toute personne capable de vous faire regarder votre téléphone peut voir et ouvrir chaque coffre de la liste Face ID. Les coffres sans Face ID n’y apparaissent jamais. Gardez votre coffre le plus privé sur son seul motif. Le schéma de contrainte ne fonctionne qu’avec des motifs, et les coffres qu’il supprime disparaissent aussi de la liste Face ID.
 
 ## Ni réseau, ni compte, ni sauvegarde automatique
 
@@ -104,7 +106,7 @@ Pour vous en prémunir, Velcrypt propose une **sauvegarde chiffrée manuelle**, 
 |---|---|---|
 | Quelqu’un fait défiler votre photothèque | Oui | Les éléments importés puis supprimés de Photos (y compris de « Suppressions récentes ») ne se trouvent plus que dans Velcrypt. |
 | Quelqu’un prend votre téléphone déverrouillé et ouvre Velcrypt | Oui | Il lui faut votre motif ; un mauvais motif affiche un coffre vide. |
-| Quelqu’un tente de prouver que vous avez d’autres coffres | En grande partie | Aucune liste de coffres, aucun message « motif incorrect » ; le nombre de coffres n’apparaît pas dans l’app. |
+| Quelqu’un tente de prouver que vous avez d’autres coffres | En grande partie | Aucune liste de coffres (hormis ceux que vous ajoutez à la liste Face ID), aucun message « motif incorrect » ; le nombre de coffres n’apparaît pas dans l’app. |
 | Vol d’un iPhone verrouillé | Oui | Protection des données iOS plus le chiffrement AES-256-GCM propre à Velcrypt. |
 | Attaque par force brute du motif à partir de fichiers extraits | Ralentie | PBKDF2 avec plus de 600 000 itérations et un sel propre à l’appareil ; un motif long fait la différence. |
 | Piratage d’un compte cloud | Oui | Les données des coffres ne sont pas envoyées et sont exclues des sauvegardes iCloud. Une sauvegarde chiffrée que vous placez dans iCloud Drive reste protégée par votre mot de passe de sauvegarde. |

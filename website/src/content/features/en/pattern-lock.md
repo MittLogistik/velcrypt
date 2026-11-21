@@ -1,21 +1,21 @@
 ---
 pageId: pattern-lock
 title: "Pattern Lock: Unlock Your Vault on a 5×5 Grid"
-description: "Velcrypt unlocks with a pattern drawn on a 5×5 grid of dots. Learn the rules, how to draw a strong pattern, and why there is no Face ID."
+description: "Velcrypt unlocks with a pattern drawn on a 5×5 grid of dots. Learn the rules, how to draw a strong pattern, and how optional Face ID works."
 h1: "Pattern lock: a 5×5 grid that only your memory can open"
 navTitle: "Pattern lock"
-answer: "Velcrypt opens with a pattern you draw on a 5×5 grid of dots: one continuous line through at least 6 dots with at least one change of direction. Patterns of 8–12 dots are recommended, and there is deliberately no Face ID or Touch ID."
+answer: "Velcrypt opens with a pattern you draw on a 5×5 grid of dots: one continuous line through at least 6 dots with at least one change of direction. Patterns of 8–12 dots are recommended. Face ID or Touch ID is optional and off by default; you can turn it on per vault, and the pattern still opens every vault."
 keyFacts:
   - "Unlock by drawing one continuous line on a 5×5 grid of 25 dots."
   - "Minimum rules: at least 6 dots and at least one change of direction."
   - "Recommended length: 8–12 dots."
-  - "No Face ID or Touch ID by design, because biometrics can be compelled."
+  - "Face ID or Touch ID is optional, off by default and turned on per vault, because biometrics can be compelled."
   - "Your pattern is also the input to the vault's encryption key."
 primaryKeyword: "pattern lock app iphone"
 keywords: ["pattern lock photo vault", "5x5 pattern lock", "photo vault without face id", "draw pattern to unlock iphone app", "strong unlock pattern"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
-summary: "Unlock with a pattern drawn on a 5×5 grid. At least 6 dots and one turn; 8–12 dots recommended. No Face ID, by design."
+dateModified: 2026-11-21
+summary: "Unlock with a pattern drawn on a 5×5 grid. At least 6 dots and one turn; 8–12 dots recommended. Face ID is optional, off by default."
 status: available
 schemaType: WebPage
 order: 1
@@ -23,8 +23,8 @@ related: [hidden-vaults, encryption, pattern-strength-checker, pattern-lock-vs-p
 faq:
   - q: "How many dots does a Velcrypt pattern need?"
     a: "At least 6 dots, drawn as one continuous line with at least one change of direction. For better protection, use 8–12 dots and include several turns."
-  - q: "Why doesn't Velcrypt use Face ID or Touch ID?"
-    a: "A face or a fingerprint can be used without your consent, for example while you are asleep or held. A pattern exists only in your memory, so nobody can take it from you physically. Velcrypt leaves biometrics out on purpose."
+  - q: "Does Velcrypt use Face ID or Touch ID?"
+    a: "Only if you turn it on. It is off by default and free; you enable it per vault in that vault's Settings. A face or fingerprint can be used without your consent, so anyone who gets you to look at the phone can open every vault you added. Keep your most private vault on its pattern only."
   - q: "What happens if I forget my pattern?"
     a: "The vault cannot be opened again, by you or by Velcrypt. The pattern is part of how the encryption key is derived, and there is no recovery phrase or account to reset it. Choose a pattern you can reliably remember."
   - q: "Is a 5×5 pattern safer than a phone-style 3×3 pattern?"
@@ -69,11 +69,13 @@ Some practical tips:
 
 If you want a second opinion, the [pattern strength checker](id:pattern-strength-checker) gives a rough rating and bit estimate based on length, turns, crossings and grid coverage. It is a heuristic, not a guarantee, and you should test a pattern similar to yours rather than the real one.
 
-## Why there is no Face ID or Touch ID
+## Optional Face ID, off by default
 
-Velcrypt has no biometric unlock, and that is a deliberate decision. Biometrics are convenient precisely because they are always with you, which is also their weakness: a face can be held in front of a phone and a finger can be pressed onto a sensor without your agreement.
+Face ID or Touch ID is optional, free and off by default for every vault. To turn it on, open the vault with its pattern and go to Settings › Face ID; you give the vault a name for the Face ID list. Once at least one vault has Face ID, an "Unlock with Face ID" button appears on the lock screen. After Face ID succeeds you choose from the vaults you added, or the vault opens directly if there is only one. Vaults without Face ID are never listed, and the pattern still opens every vault.
 
-A pattern exists only in your head. Nobody can lift it from your hand or point your phone at your face to get it. For a vault meant to protect your most private files, that difference matters more than saving a second at unlock. The trade-offs are compared in more depth in [pattern lock vs PIN vs Face ID](id:pattern-lock-vs-pin-vs-face-id).
+There is no passcode fallback: your iPhone passcode cannot stand in for Face ID inside Velcrypt. The Face ID copy of a vault key stays in this iPhone's Keychain only, not in iCloud or backups, and it is tied to the faces and fingerprints enrolled when you turned it on. If someone adds a face or fingerprint, or Face ID is reset, Face ID turns off for those vaults until you open them with the pattern and turn it on again.
+
+Why off by default? Biometrics are convenient precisely because they are always with you, which is also their weakness: a face can be held in front of a phone and a finger can be pressed onto a sensor without your agreement. Anyone who can get you to look at your phone can see and open every vault in the Face ID list. A pattern exists only in your head; nobody can lift it from your hand. So keep your most private vault on its pattern only and use Face ID, if you want it, for convenience vaults. The [duress pattern](id:duress-pattern) works through patterns only, and the Face ID list does not trigger it. The trade-offs are compared in more depth in [pattern lock vs PIN vs Face ID](id:pattern-lock-vs-pin-vs-face-id).
 
 ## Your pattern and the encryption key
 

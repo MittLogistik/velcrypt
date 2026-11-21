@@ -16,7 +16,7 @@ keyFacts:
 primaryKeyword: "senha de coação"
 keywords: ["senha de pânico", "código de coação", "o que é senha de coação", "senha de coação significado", "palavra-código de coação", "exemplos de palavra-código de emergência", "pin de coação", "senha de coação alarme", "senha invertida caixa eletrônico mito", "digital de coação", "senha de coação celular", "pin de coação android", "grapheneos pin de coação", "senha de pânico celular", "padrão de coação"]
 datePublished: 2026-10-22
-dateModified: 2026-10-31
+dateModified: 2026-11-21
 summary: "O que são senhas, palavras-código e PINs de coação, o que iPhone e Android oferecem e como funciona o padrão de coação do Velcrypt."
 category: security
 order: 45
@@ -108,7 +108,7 @@ Quem procura por “código de coação no celular”, “PIN de coação” ou 
 
 ### O que significa “digital de coação”
 
-Uma **digital de coação** é um dedo específico cadastrado como alarme silencioso. Alguns sistemas biométricos de controle de acesso oferecem isso: você escaneia esse dedo, a porta abre normalmente e um alarme de coação vai para a segurança. Os celulares comuns não oferecem isso. <!-- TODO verify --> No celular, a biometria é justamente o ponto fraco sob coação, porque alguém pode apontar o aparelho para o seu rosto ou pressionar seu dedo no sensor. Por isso vale saber desativar o Face ID rápido, e por isso o Velcrypt [não tem desbloqueio por Face ID, de propósito](id:pattern-lock-vs-pin-vs-face-id).
+Uma **digital de coação** é um dedo específico cadastrado como alarme silencioso. Alguns sistemas biométricos de controle de acesso oferecem isso: você escaneia esse dedo, a porta abre normalmente e um alarme de coação vai para a segurança. Os celulares comuns não oferecem isso. <!-- TODO verify --> No celular, a biometria é justamente o ponto fraco sob coação, porque alguém pode apontar o aparelho para o seu rosto ou pressionar seu dedo no sensor. Por isso vale saber desativar o Face ID rápido, e por isso, no Velcrypt, o [Face ID é opcional e vem desativado](id:pattern-lock-vs-pin-vs-face-id): mantenha o cofre mais privado só com o padrão.
 
 ## Como os apps de celular usam códigos de coação
 

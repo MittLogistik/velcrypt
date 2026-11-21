@@ -8,8 +8,8 @@
 | Subtitle | 30 | 28 |
 | Keywords | 100 | 96 |
 | Promotional text | 170 | 161 |
-| Description | 4,000 | 3,041 |
-| What's New | 4,000 | 165 |
+| Description | 4,000 | 3,295 |
+| What's New | 4,000 | 380 |
 
 **Search phrases targeted:** Targets "foto's verbergen", "fotokluis", "geheime foto's", "privé album", "video's verbergen", "foto's beveiligen", "verborgen album" and "foto kluis". The keyword "kluis" is listed separately because Apple does not split compound words such as "fotokluis".
 
@@ -37,13 +37,13 @@ kluis,geheim,album,video,galerij,veilig,slot,beveiligen,verborgen,patroon,bestan
 Teken een patroon, open je kluis. Elk patroon opent een eigen versleutelde kluis. Geen account, geen cloud: alles blijft op je iPhone, met versleutelde back-ups.
 ```
 
-## Description (3,041/4,000)
+## Description (3,295/4,000)
 
 ```
 Velcrypt is een privékluis voor de foto's, video's, documenten en notities die niemand anders mag zien. Alles wordt op je iPhone versleuteld met AES-256-GCM. Geen account. Geen cloud. Geen tracking.
 
 EÉN PATROON, ÉÉN KLUIS
-Je ontgrendelt Velcrypt door een patroon te tekenen op een raster van 5×5 stippen. Elk patroon opent een eigen, aparte kluis en Velcrypt toont nooit een lijst met kluizen. Een onbekend patroon opent gewoon een lege kluis: geen foutmelding en geen hint dat er meer is.
+Je ontgrendelt Velcrypt door een patroon te tekenen op een raster van 5×5 stippen. Elk patroon opent een eigen, aparte kluis en Velcrypt toont nooit een lijst met kluizen, behalve de kluizen die jij zelf aan de Face ID-lijst toevoegt. Een onbekend patroon opent gewoon een lege kluis: geen foutmelding en geen hint dat er meer is.
 
 HOUD EEN AFLEIDINGSKLUIS (PREMIUM)
 Vul een tweede kluis met onschuldige foto's. Word je ooit onder druk gezet om de app te openen, teken dan dat patroon.
@@ -57,8 +57,8 @@ VERSLEUTELD OP JE IPHONE
 • Geen account, geen registratie, geen cloud, geen advertenties, geen tracking
 • Kluisgegevens worden uitgesloten van iCloud- en computerback-ups
 
-JE PATROON, NIET JE GEZICHT
-Velcrypt gebruikt bewust geen pincode en geen Face ID. De sleutel zit in je hoofd.
+JE PATROON, FACE ID ALS JE WILT
+Geen pincode. Face ID is optioneel en staat standaard uit: zet het alleen aan voor de kluizen die jij kiest. Houd je meest privékluis op alleen je patroon, want die sleutel zit in je hoofd.
 
 ALLES OP ÉÉN PLEK
 • Importeer uit Foto's of Bestanden
@@ -74,7 +74,7 @@ VERMOM DE APP (PREMIUM)
 Vervang het symbool op je beginscherm door een rekenmachine, een timer, een liniaal en meer.
 
 VELCRYPT PREMIUM
-De gratis versie heeft één kluis met maximaal 50 onderdelen. Premium ontgrendelt onbeperkt onderdelen, meer kluizen, het noodpatroon en alternatieve appsymbolen.
+De gratis versie heeft één kluis met maximaal 50 onderdelen. Een lege kluis telt niet mee: pas als er iets in staat, is het je gratis kluis. Premium ontgrendelt onbeperkt onderdelen, meer kluizen, het noodpatroon en alternatieve appsymbolen.
 • Kies een wekelijks of jaarlijks abonnement (het jaarabonnement begint met een gratis proefperiode) of een eenmalige, levenslange aankoop.
 • De betaling wordt in rekening gebracht via je Apple Account. Abonnementen worden automatisch verlengd, tenzij ze minstens 24 uur voor het einde van de huidige periode worden opgezegd. Beheer of zeg ze op in de instellingen van je Apple Account.
 • Gebruiksvoorwaarden: https://velcrypt.app/terms/
@@ -88,8 +88,11 @@ GOED OM TE WETEN
 Velcrypt. Well Encrypted. Truly Private.
 ```
 
-## What's New (165/4,000)
+## What's New (380/4,000)
 
 ```
-Welkom bij Velcrypt, onze eerste versie. Teken een patroon om een privékluis te openen en bewaar je foto's, video's, documenten en notities versleuteld op je iPhone.
+• Face ID, als je dat wilt: zet het voor een kluis aan in Instellingen. Het staat standaard uit, en alleen de kluizen die jij kiest, verschijnen in de Face ID-lijst.
+• Een duidelijkere introductie in drie stappen, en 'Zo werkt Velcrypt' is altijd één tik verwijderd.
+• Eerst uitproberen: een lege kluis gebruikt je gratis kluis niet meer op.
+• Kleine verbeteringen en oplossingen.
 ```

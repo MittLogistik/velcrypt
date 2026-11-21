@@ -8,13 +8,13 @@ answer: "En chiffrement, le déni plausible signifie que, même après avoir dé
 keyFacts:
   - "Le déni plausible porte sur ce qui peut être prouvé, pas sur le fait de cacher l’existence d’une app ou de données chiffrées."
   - "Les outils de chiffrement de disque ont lancé l’idée avec des volumes cachés à l’intérieur de volumes chiffrés ordinaires."
-  - "Dans Velcrypt, tout schéma inconnu ouvre un coffre vide, sans erreur ni liste de coffres."
+  - "Dans Velcrypt, tout schéma inconnu ouvre un coffre vide, sans erreur ni liste de coffres (hors liste Face ID choisie)."
   - "La taille du stockage et l’analyse forensique peuvent montrer que des données chiffrées existent, même illisibles."
   - "Le déni plausible protège contre la curiosité et les pressions informelles ; ce n’est pas un bouclier juridique."
 primaryKeyword: "déni plausible chiffrement"
 keywords: ["qu’est-ce que le déni plausible", "chiffrement niable", "volume caché expliqué", "déni plausible coffre-fort photo", "coffre niable iphone"]
 datePublished: 2026-10-21
-dateModified: 2026-10-31
+dateModified: 2026-11-21
 summary: "Le concept derrière les volumes cachés et les coffres leurres, comment Velcrypt l’utilise avec les schémas inconnus, et ce qu’il ne peut pas faire."
 category: security
 order: 42
@@ -55,7 +55,7 @@ Au fil des années, ces mêmes chercheurs et praticiens ont aussi documenté les
 Velcrypt adapte le principe à un coffre-fort de photos et de documents sur iPhone. Pas de volume extérieur et intérieur ; à la place :
 
 - **Chaque schéma est son propre coffre.** Chaque coffre a sa propre clé maîtresse aléatoire de 256 bits, déverrouillée par une clé dérivée de ce schéma.
-- **Il n’y a pas de liste de coffres.** L’app ne conserve rien qui énumère combien de coffres existent.
+- **Il n’y a pas de liste de coffres.** L’app ne conserve rien qui énumère combien de coffres existent. Seule exception : les coffres pour lesquels vous activez vous-même Face ID apparaissent dans la liste Face ID.
 - **Les schémas inconnus ouvrent un coffre vide.** Tracez un schéma que Velcrypt n’a jamais vu et vous arrivez dans un nouveau coffre vide. Aucun message « mauvais schéma ».
 
 Conséquence : un mauvais schéma et un coffre valide mais vide sont identiques. Si vous ouvrez un coffre devant quelqu’un, rien dans l’interface ne montre que d’autres coffres existent. Le [coffre leurre](id:what-is-a-decoy-vault) devient ainsi un usage naturel plutôt qu’un mode spécial. La page de la fonction [coffres cachés](id:hidden-vaults) montre comment cela fonctionne en pratique.

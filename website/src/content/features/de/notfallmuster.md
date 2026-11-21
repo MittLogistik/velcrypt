@@ -16,7 +16,7 @@ keyFacts:
 primaryKeyword: "notfallmuster tresor app"
 keywords: ["panik passwort iphone", "notfall pin foto tresor", "duress code app", "schutz bei erzwungenem entsperren", "tresor selbstzerstörung muster"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Ein eigenes Muster, das deinen Köder-Tresor öffnet und still und endgültig alle anderen Tresore auf dem iPhone löscht. Premium."
 status: available
 schemaType: WebPage
@@ -86,13 +86,14 @@ Die vollständige Anleitung mit Tipps zum Üben findest du unter [Köder-Tresor 
 - **Eines pro iPhone.** Auf einem Gerät gibt es nur ein Notfallmuster. Ein neues ersetzt das alte.
 - **Zum Ausschalten** zeichnest du das Notfallmuster unter Einstellungen → Notfallmuster. Dort gezeichnet schaltet es sich nur aus; es wird nichts gelöscht.
 - **Es funktioniert weiter, wenn Premium ausläuft.** Nur das Einrichten braucht Premium.
+- **Nur über Muster.** Die Face-ID-Liste löst das Notfallmuster nicht aus. Wird es ausgelöst, verschwinden die gelöschten Tresore auch aus der Face-ID-Liste.
 - **Richte es in einem Köder ein, nicht in deinem einzigen Tresor.** Ist der Köder der einzige Tresor auf dem Handy, gibt es für das Notfallmuster nichts zu löschen. Velcrypt warnt dich in diesem Fall.
 
 ## Nichts verrät, dass es existiert
 
 Ein Notfallmuster nützt nur, wenn niemand erkennen kann, dass es da ist. Velcrypt zeigt nie an, ob eines eingerichtet ist, weder in der Oberfläche noch in den Einstellungen. Im Hintergrund liegt im iOS-Schlüsselbund immer ein verschlüsselter Eintrag fester Größe; ohne Notfallmuster enthält er Zufallsbytes. Der Eintrag sieht also gleich aus, ob du die Funktion nutzt oder nicht.
 
-Das baut auf [versteckten Tresoren](id:hidden-vaults) auf: Jedes Muster öffnet seinen eigenen Tresor, es gibt keine Tresorliste, und ein unbekanntes Muster öffnet ohne Fehlermeldung einen leeren Tresor. Die Idee hinter beidem erklärt [glaubhafte Abstreitbarkeit, erklärt](id:plausible-deniability-explained).
+Das baut auf [versteckten Tresoren](id:hidden-vaults) auf: Jedes Muster öffnet seinen eigenen Tresor, es gibt keine Tresorliste (außer den Tresoren, die du selbst in die Face-ID-Liste aufnimmst), und ein unbekanntes Muster öffnet ohne Fehlermeldung einen leeren Tresor. Die Idee hinter beidem erklärt [glaubhafte Abstreitbarkeit, erklärt](id:plausible-deniability-explained).
 
 ## Wann es helfen kann
 

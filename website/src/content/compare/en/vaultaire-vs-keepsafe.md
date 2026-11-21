@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "vaultaire vs keepsafe"
 keywords: ["keepsafe vs vaultaire", "vaultaire review", "vaultaire alternative", "keepsafe alternative", "photo vault comparison iphone", "best photo vault iphone"]
 datePublished: 2026-10-31
-dateModified: 2026-10-31
+dateModified: 2026-11-21
 summary: "Two popular iPhone photo vaults side by side: account, unlock, decoys, backup, recovery and price. Plus where Velcrypt fits in."
 competitor: "Vaultaire and Keepsafe"
 lastChecked: "October 2026"
@@ -24,7 +24,7 @@ faq:
   - q: "Is Vaultaire better than Keepsafe?"
     a: "It depends on what you value. Vaultaire, according to its website, needs no account, unlocks with a pattern, supports several hidden vaults and includes an encrypted iCloud backup. Keepsafe uses an account, a PIN with optional Face ID and a premium cloud, and is also on Android. Neither is better for everyone."
   - q: "Does Vaultaire have Face ID?"
-    a: "No. Vaultaire's website says it deliberately has no Face ID, Touch ID or PIN, because biometrics can be used without your consent. You unlock it by drawing a pattern. Velcrypt makes the same choice. Keepsafe supports Face ID, according to its listing."
+    a: "No. Vaultaire's website says it deliberately has no Face ID, Touch ID or PIN, because biometrics can be used without your consent. You unlock it by drawing a pattern. Velcrypt also unlocks with a pattern, but offers Face ID as an option that is off by default and turned on per vault. Keepsafe supports Face ID, according to its listing."
   - q: "Which app has a duress or panic mode?"
     a: "Vaultaire offers a duress vault with its Pro plan: drawing that pattern opens the decoy and removes access to the other vaults on the device. Velcrypt offers a duress pattern with Premium that opens a decoy vault and permanently deletes the other vaults. Keepsafe offers a fake PIN, but we found no public description of a duress wipe."
   - q: "What happens if I forget my pattern or PIN?"
@@ -49,7 +49,7 @@ Vaultaire and Keepsafe are two of the apps people compare most when they want to
 |---|---|---|---|
 | Account required | No | Yes, according to its listing | No |
 | Unlock method | Pattern on a 5×5 grid | PIN or passcode | Pattern on a 5×5 grid |
-| Face ID / Touch ID | Not offered, by design | Supported, according to its listing | Not offered, by design |
+| Face ID / Touch ID | Not offered, by design | Supported, according to its listing | Optional, off by default (per vault) |
 | Hidden or decoy vaults | Every pattern opens its own vault; up to 3 vaults free | Fake/decoy PIN in premium | Every pattern opens its own vault; more than one vault needs Premium |
 | Duress mode | Duress vault with Pro | Not stated publicly | Duress pattern with Premium |
 | Encryption details published | Yes: AES-256-GCM, PBKDF2-HMAC-SHA512 | Not stated publicly in detail | Yes: AES-256-GCM, PBKDF2-HMAC-SHA512 (see [encryption](id:encryption)) |
@@ -80,7 +80,7 @@ Keepsafe uses a PIN-style code and, according to its listing, Face ID or Touch I
 
 <!-- TODO verify -->
 
-Vaultaire and Velcrypt both use a pattern drawn through dots on a 5×5 grid, and both leave out Face ID on purpose. The reasoning is the same: a face or a finger can be used without your consent, while a pattern only exists in your memory. A 5×5 grid also has far more possible paths than the 3×3 grid on Android phones. The trade-offs are explained in [pattern lock vs PIN vs Face ID](id:pattern-lock-vs-pin-vs-face-id).
+Vaultaire and Velcrypt both use a pattern drawn through dots on a 5×5 grid. Vaultaire, per its website, leaves out Face ID on purpose, because a face or a finger can be used without your consent, while a pattern only exists in your memory. Velcrypt shares that concern but handles it differently: Face ID is optional and off by default, you turn it on only for the vaults you choose, and the pattern still opens every vault. Anyone who can get you to look at your phone can open the vaults you added, so your most private vault is best kept on its pattern only. A 5×5 grid also has far more possible paths than the 3×3 grid on Android phones. The trade-offs are explained in [pattern lock vs PIN vs Face ID](id:pattern-lock-vs-pin-vs-face-id).
 
 ## Decoys and duress
 
@@ -88,7 +88,7 @@ Keepsafe has offered a fake PIN that opens a harmless decoy vault as a premium f
 
 <!-- TODO verify -->
 
-In Vaultaire and Velcrypt, decoys are part of the design rather than an add-on. Every pattern opens its own vault, there is no list of vaults, and a pattern the app has never seen opens an empty vault instead of an error. Nothing on the screen proves that other vaults exist; see [hidden vaults](id:hidden-vaults).
+In Vaultaire and Velcrypt, decoys are part of the design rather than an add-on. Every pattern opens its own vault, there is no list of vaults (in Velcrypt, except the ones you deliberately add to the Face ID list), and a pattern the app has never seen opens an empty vault instead of an error. Nothing on the screen proves that other vaults exist; see [hidden vaults](id:hidden-vaults).
 
 Both also have a duress option on their paid plans, but they behave differently:
 
@@ -112,7 +112,7 @@ Both Vaultaire and Velcrypt charge $1.99 a week, $19.99 a year or $39.99 once fo
 
 ## When Keepsafe may suit you better
 
-- **You want Face ID.** If quick biometric unlock matters more than the compelled-unlock concern, Keepsafe offers it.
+- **You want Face ID with a PIN.** Keepsafe pairs a familiar PIN with Face ID, according to its listing. Velcrypt also offers Face ID, as an option per vault, but always alongside a pattern rather than a PIN.
 - **You use Android too.** Keepsafe is available on more than one platform.
 - **You want break-in alerts.** Keepsafe can photograph someone who enters a wrong PIN, according to its listing.
 - **You prefer an account.** Account-based recovery is the most familiar way to get your photos back.

@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "álbum secreto iphone"
 keywords: ["pasta secreta iphone", "álbum privado iphone", "pasta oculta iphone", "criar álbum privado no iphone", "fotos secretas iphone", "álbum escondido iphone"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-11-21
 summary: "Crie um álbum de fotos realmente secreto no iPhone e evite os truques comuns que só parecem secretos."
 category: hiding
 order: 5
@@ -104,6 +104,6 @@ Uma coisa que nenhum cofre consegue esconder totalmente é a própria existênci
 
 O Velcrypt aborda o álbum secreto pelo lado do “ninguém consegue abrir”. Dentro de um cofre você pode criar quantos [álbuns](id:albums) quiser e mover fotos e vídeos entre eles, tudo criptografado no aparelho com AES-256-GCM.
 
-O diferencial é como os cofres funcionam. Cada padrão que você desenha na grade de 5×5 é um cofre próprio, e o app não guarda nenhuma lista deles. Um padrão que o Velcrypt nunca viu simplesmente abre um cofre novo e vazio, sem mensagem de erro. Ou seja, nada no app revela quantos [cofres ocultos](id:hidden-vaults) você tem, e você pode manter um inofensivo como cofre falso.
+O diferencial é como os cofres funcionam. Cada padrão que você desenha na grade de 5×5 é um cofre próprio, e o app não guarda nenhuma lista deles, exceto a lista opcional do Face ID com os cofres que você adicionar. Um padrão que o Velcrypt nunca viu simplesmente abre um cofre novo e vazio, sem mensagem de erro. Ou seja, nada no app revela quantos [cofres ocultos](id:hidden-vaults) você tem, e você pode manter um inofensivo como cofre falso.
 
 Os limites honestos: o ícone do Velcrypt fica visível, a menos que você use o recurso do próprio iOS para ocultar apps, e nada protege um cofre se alguém vir você desenhar o padrão ou pegar o celular com o cofre aberto. Como os dados do cofre não entram em backup, um padrão esquecido significa um álbum perdido.

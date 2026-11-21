@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "前任能看到我的 iPhone 照片"
 keywords: ["分手后 更改手机密码", "共享相簿 移除前任", "iPhone 安全检查", "前任知道我的 iPhone 密码", "退出 iCloud 共享图库"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "分手后几周的冷静清单：新密码、安全检查、共享相簿与图库，以及一个存放照片的私密空间。"
 group: everyday
 schemaType: Article
@@ -60,7 +60,7 @@ faq:
 
 有些照片你会想留下来——回忆、聊天记录截图、这段关系中的文件——但又不想让它们留在可能被别人瞥见的相机胶卷里。Velcrypt 是其中一个选择。
 
-Velcrypt 把照片、视频和文档存放在你 iPhone 上的加密保险箱中。它不使用设备密码或面容 ID；保险箱通过[在 5×5 网格上绘制的图案](id:pattern-lock)打开，所以前任曾经知道的密码对他毫无用处。[每个图案都会打开各自的保险箱](id:hidden-vaults)，陌生图案只会打开一个空保险箱而不报错，因此没有任何东西会透露里面存了什么。
+Velcrypt 把照片、视频和文档存放在你 iPhone 上的加密保险箱中。它不使用设备密码；保险箱通过[在 5×5 网格上绘制的图案](id:pattern-lock)打开，所以前任曾经知道的密码对他毫无用处。面容 ID 是可选的，默认关闭，只用于你主动开启的保险箱。[每个图案都会打开各自的保险箱](id:hidden-vaults)，陌生图案只会打开一个空保险箱而不报错，因此没有任何东西会透露里面存了什么。
 
 导入后，请从「照片」中[删除原件](id:delete-original-photos-after-import)并清空「最近删除」——否则副本仍会留在你的图库中，开启 iCloud 照片时还会留在你的其他设备上。如果其中涉及私密照片，[这篇指南](id:store-intimate-photos-safely-iphone)有更详细的说明。
 

@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "app para ocultar fotos iphone"
 keywords: ["bóveda de fotos cifrada iphone", "app álbum de fotos privado", "esconder fotos iphone", "app para bloquear fotos", "bóveda de fotos secreta"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Importa fotos como copias cifradas, borra los originales y el álbum Eliminado y míralas en álbumes con zoom y deslizamiento."
 status: available
 schemaType: WebPage
@@ -71,7 +71,7 @@ Las fotos se abren en el visor integrado de Velcrypt. Puedes pellizcar para ampl
 | | Álbum Oculto del iPhone | Bóveda de Velcrypt |
 | --- | --- | --- |
 | Dónde está la foto | En tu fototeca | En una bóveda cifrada dentro de la app |
-| Cómo se desbloquea | Face ID, Touch ID o código del dispositivo | Tu patrón de Velcrypt |
+| Cómo se desbloquea | Face ID, Touch ID o código del dispositivo | Tu patrón de Velcrypt (o Face ID, si lo activas para esa bóveda) |
 | iCloud | Se sincroniza con Fotos de iCloud si está activado | No se incluye en las copias de iCloud ni del ordenador |
 | Colecciones separadas | Un único álbum Oculto | Una bóveda distinta por patrón |
 

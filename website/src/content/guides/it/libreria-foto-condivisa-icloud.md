@@ -20,7 +20,7 @@ keywords:
   - "abbandonare libreria condivisa"
   - "foto di famiglia crittografate"
 datePublished: 2026-10-31
-dateModified: 2026-10-31
+dateModified: 2026-11-21
 summary: "Chi può vedere, modificare ed eliminare cosa nella Libreria foto condivisa su iCloud, come entrano foto da sole e come tenere fuori quelle private."
 category: apple
 order: 60
@@ -136,7 +136,7 @@ Se cerchi «foto di famiglia crittografate», questa è la risposta onesta: il m
 
 La libreria condivisa è fatta per condividere. Per le foto che non vuoi condividere mai, la soluzione più affidabile è toglierle del tutto dalla libreria di Foto.
 
-Velcrypt è una cassaforte per iPhone pensata proprio per questo. Foto, video e documenti importati vengono crittografati sull’iPhone con AES-256-GCM e si aprono con una sequenza tracciata su una griglia 5×5, non con il codice del dispositivo né con Face ID. [Non ci sono account, server o sincronizzazione](id:offline-no-account), e i dati della cassaforte sono esclusi dai backup di iCloud e del computer: niente di ciò che è in una cassaforte può comparire in una libreria condivisa, in un album condiviso o sull’iPad di famiglia. Ogni sequenza apre la propria cassaforte, quindi puoi tenere anche una cassaforte esca innocua.
+Velcrypt è una cassaforte per iPhone pensata proprio per questo. Foto, video e documenti importati vengono crittografati sull’iPhone con AES-256-GCM e si aprono con una sequenza tracciata su una griglia 5×5, non con il codice del dispositivo; Face ID si usa solo se lo attivi tu per una cassaforte. [Non ci sono account, server o sincronizzazione](id:offline-no-account), e i dati della cassaforte sono esclusi dai backup di iCloud e del computer: niente di ciò che è in una cassaforte può comparire in una libreria condivisa, in un album condiviso o sull’iPad di famiglia. Ogni sequenza apre la propria cassaforte, quindi puoi tenere anche una cassaforte esca innocua.
 
 L’importazione crea una copia crittografata; l’originale resta dov’è. Poi elimina l’originale da Foto e svuota Eliminati di recente. Se la foto era nella libreria condivisa, spostala prima nella libreria personale o eliminala lì, e ricorda che solo chi l’ha aggiunta può eliminarla definitivamente da Eliminati di recente.
 

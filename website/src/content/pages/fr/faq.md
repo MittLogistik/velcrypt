@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "faq velcrypt"
 keywords: ["questions velcrypt", "comment fonctionne velcrypt", "faq app coffre-fort photo", "aide motif velcrypt", "sauvegarde velcrypt"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 schemaType: FAQPage
 order: 3
 related: [security, pricing, support, pattern-lock, forgot-vault-pattern, hidden-vaults]
@@ -39,17 +39,17 @@ faqGroups:
       - q: "Comment créer un deuxième coffre ?"
         a: "Tracez un nouveau motif que vous n’avez jamais utilisé. Chaque motif est son propre coffre : un nouveau motif ouvre donc un nouveau coffre vide, que vous pouvez commencer à remplir. La version gratuite comprend un coffre ; les coffres supplémentaires font partie de Premium."
       - q: "Pourquoi mon motif a-t-il ouvert un coffre vide ?"
-        a: "Le plus probable, c’est que vous avez tracé un motif légèrement différent, que Velcrypt traite comme un autre coffre. Réessayez lentement ; par choix, l’app n’affiche jamais de message « motif incorrect »."
+        a: "Le plus probable, c’est que vous avez tracé un motif légèrement différent, que Velcrypt traite comme un autre coffre. Ce coffre vide n’entame pas votre coffre gratuit. Réessayez lentement ; par choix, l’app n’affiche jamais de message « motif incorrect »."
       - q: "Puis-je voir la liste de mes coffres ?"
-        a: "Non. Velcrypt ne tient aucune liste de coffres : rien dans l’app ne révèle combien il en existe. Vous devez retenir chaque motif vous-même."
+        a: "Non. Velcrypt ne tient aucune liste de coffres : rien dans l’app ne révèle combien il en existe. Seule exception, celle que vous choisissez : les coffres pour lesquels vous activez Face ID apparaissent dans la liste Face ID. Pour les autres, vous devez retenir chaque motif vous-même."
       - q: "Qu’est-ce qu’un coffre leurre ?"
         a: "Un coffre leurre est un coffre d’apparence ordinaire, au contenu anodin, que vous pouvez ouvrir si l’on vous met la pression, tandis que votre coffre privé reste derrière un autre motif. Rien dans Velcrypt ne prouve l’existence du second coffre. Comme il faut un deuxième coffre, un coffre leurre nécessite Premium."
       - q: "Qu’est-ce que le schéma de contrainte ?"
         a: "Une fonction Premium que vous configurez dans Réglages → Schéma de contrainte depuis un coffre leurre. Le tracer sur l’écran de verrouillage ouvre ce leurre et supprime en silence, définitivement, tous les autres coffres de l’iPhone. Les coffres supprimés ne se restaurent qu’à partir d’un fichier de sauvegarde chiffré créé auparavant."
       - q: "Puis-je organiser les éléments dans un coffre ?"
         a: "Oui. Chaque coffre peut contenir des albums, et vous pouvez sélectionner plusieurs éléments et les déplacer d’un album à l’autre au sein de ce coffre."
-      - q: "Pourquoi Velcrypt n’utilise-t-il pas Face ID ou Touch ID ?"
-        a: "Par choix. Un visage ou un doigt peut être utilisé sans votre consentement, par exemple pendant votre sommeil ou sous la pression, alors qu’un motif n’existe que dans votre mémoire."
+      - q: "Velcrypt utilise-t-il Face ID ou Touch ID ?"
+        a: "Seulement si vous l’activez. C’est gratuit et désactivé par défaut : activez-le coffre par coffre dans Réglages › Face ID, à l’intérieur du coffre. Sur l’écran de verrouillage, « Déverrouiller avec Face ID » vous laisse ensuite choisir parmi ces coffres ; le motif les ouvre toujours tous. Un visage peut être utilisé sans votre consentement : gardez votre coffre le plus privé sur son seul motif."
   - title: "Sécurité et chiffrement"
     items:
       - q: "Comment Velcrypt chiffre-t-il mes fichiers ?"
@@ -93,7 +93,7 @@ faqGroups:
   - title: "Tarifs et disponibilité"
     items:
       - q: "Velcrypt est-il gratuit ?"
-        a: "Oui. La version gratuite offre 1 coffre avec jusqu’à 50 éléments et la sauvegarde chiffrée. Premium coûte 1,99 $ par semaine, 19,99 $ par an avec 3 jours d’essai gratuit, ou 39,99 $ à vie en achat unique (USD ; les prix varient selon le pays et s’affichent dans l’App Store)."
+        a: "Oui. La version gratuite offre 1 coffre avec jusqu’à 50 éléments et la sauvegarde chiffrée ; un coffre ne compte comme votre coffre gratuit qu’une fois qu’il contient un élément. Premium coûte 1,99 $ par semaine, 19,99 $ par an avec 3 jours d’essai gratuit, ou 39,99 $ à vie en achat unique (USD ; les prix varient selon le pays et s’affichent dans l’App Store)."
       - q: "Que comprend le Premium ?"
         a: "Des éléments illimités, plus de coffres (d’autres motifs ouvrent leurs propres coffres), le schéma de contrainte et des icônes d’app alternatives. Les abonnements se renouvellent automatiquement, sauf résiliation au moins 24 heures avant la fin de la période dans les réglages de votre compte Apple."
       - q: "Où obtenir Velcrypt ?"

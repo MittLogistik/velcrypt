@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "iPhone 照片上锁"
 keywords: ["iPhone 相册加密", "iPhone 照片加锁", "照片 App 上锁", "相册需要面容 ID", "隐藏相簿上锁", "iOS 18 锁定照片"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-11-21
 summary: "从“已隐藏”相簿到 App 锁和锁定备忘录，四种给 iPhone 照片上锁的方法并排对比。"
 category: hiding
 order: 2
@@ -101,6 +101,6 @@ iOS 18 引入了 App 锁定，这是一项系统功能：每次打开某个 App 
 
 ## Velcrypt 的定位
 
-Velcrypt 属于第四类保险箱。它刻意不支持 Face ID 或 Touch ID：你在 5×5 的点阵上画出一个 [图案](id:pattern-lock) 来解锁，至少经过 6 个点并至少改变一次方向，图案越长越好。这个图案只存在于你的记忆中，与你的 iPhone 密码毫无关系。
+Velcrypt 属于第四类保险箱。你在 5×5 的点阵上画出一个 [图案](id:pattern-lock) 来解锁，至少经过 6 个点并至少改变一次方向，图案越长越好。这个图案只存在于你的记忆中，与你的 iPhone 密码毫无关系。Face ID 是可选的，默认关闭：只有你在某个保险箱的“设置”›“面容 ID”中开启后才会用到，而且 iPhone 密码不能代替它。最私密的保险箱最好只用图案。
 
 内容在设备上用 AES-256-GCM 加密，离开 App 时保险箱会 [自动锁定](id:auto-lock)，并且不会上传任何东西。这种设计的代价是无法恢复：如果你忘了图案，你和 Velcrypt 都打不开保险箱。和任何锁一样，如果有人看着你画图案，或者你把已经打开保险箱的手机交给别人，它也帮不上忙。

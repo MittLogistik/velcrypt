@@ -8,13 +8,13 @@ answer: "Velcrypt hält alles ohne Konto auf deinem iPhone und entsperrt mit ein
 keyFacts:
   - "Velcrypt braucht kein Konto, keine E-Mail und keine Registrierung; Keepsafe nutzt laut Store-Eintrag ein Konto."
   - "Keepsafe bietet ein optionales Cloud-Backup; Velcrypt speichert Tresore nur auf deinem iPhone, plus manuelles verschlüsseltes Backup."
-  - "Velcrypt entsperrt mit einem Muster auf einem 5×5-Raster und verzichtet bewusst auf Face ID und Touch ID."
+  - "Velcrypt entsperrt mit einem Muster auf einem 5×5-Raster; Face ID oder Touch ID ist optional und standardmäßig aus."
   - "In Velcrypt öffnet jedes Muster einen eigenen Tresor, unbekannte Muster öffnen einen leeren."
   - "Ein vergessenes Velcrypt-Muster lässt sich nicht wiederherstellen; ein verlorenes iPhone nur mit eigenem Backup."
 primaryKeyword: "velcrypt vs keepsafe"
 keywords: ["keepsafe vs velcrypt", "keepsafe vergleich", "keepsafe foto tresor alternative", "foto tresor ohne konto", "keepsafe cloud backup"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Rein lokaler Tresor ohne Konto gegen kontobasierten Tresor mit Cloud-Backup. Wo welcher passt – direkt nebeneinander."
 competitor: "Keepsafe"
 lastChecked: "Oktober 2026"
@@ -51,7 +51,7 @@ Keiner der beiden Ansätze ist grundsätzlich besser. Der eine tauscht Komfort g
 | Konto erforderlich | Kein Konto, keine E-Mail | Ja, laut Store-Eintrag |
 | Cloud-Backup | Nein; kostenloses manuelles verschlüsseltes Backup | Optionale „Private Cloud“ mit Premium |
 | Entsperren | Muster auf einem 5×5-Raster | PIN oder Code |
-| Biometrie (Face ID / Touch ID) | Bewusst nicht angeboten | Unterstützt, laut Store-Eintrag |
+| Biometrie (Face ID / Touch ID) | Optional, standardmäßig aus (pro Tresor) | Unterstützt, laut Store-Eintrag |
 | Köder- / mehrere Tresore | Jedes Muster ist ein eigener Tresor (mehrere Tresore mit Premium) | Fake-/Köder-PIN in Premium |
 | Notfallmuster | Ja, mit Premium (öffnet einen Köder, löscht die anderen Tresore) | Nicht öffentlich angegeben |
 | Einbruchswarnungen | Nicht angeboten | In Premium angeboten |
@@ -73,7 +73,7 @@ Keepsafe nutzt einen PIN-artigen Code und kann laut Store-Eintrag bequem per Fac
 
 <!-- TODO verify -->
 
-Velcrypt nutzt ein gezeichnetes Muster auf einem 5×5-Raster: eine durchgehende Linie durch mindestens sechs Punkte mit mindestens einem Richtungswechsel. Auf Face ID und Touch ID verzichtet die App absichtlich, denn ein Gesicht oder Finger lässt sich ohne deine Zustimmung benutzen, während ein Muster nur in deinem Kopf existiert. Der Vergleich [Mustersperre vs. PIN vs. Face ID](id:pattern-lock-vs-pin-vs-face-id) geht tiefer auf die Abwägungen ein.
+Velcrypt nutzt ein gezeichnetes Muster auf einem 5×5-Raster: eine durchgehende Linie durch mindestens sechs Punkte mit mindestens einem Richtungswechsel. Face ID oder Touch ID ist optional und standardmäßig aus; du kannst es pro Tresor einschalten. Dass es nicht von Anfang an aktiv ist, hat einen Grund: Ein Gesicht oder Finger lässt sich ohne deine Zustimmung benutzen, während ein Muster nur in deinem Kopf existiert. Deinen privatesten Tresor lässt du also am besten nur beim Muster. Der Vergleich [Mustersperre vs. PIN vs. Face ID](id:pattern-lock-vs-pin-vs-face-id) geht tiefer auf die Abwägungen ein.
 
 ## Köder-Tresore und Abstreitbarkeit
 
@@ -81,13 +81,13 @@ Viele Tresor-Apps bieten einen zweiten, falschen Code, der einen harmlosen Treso
 
 <!-- TODO verify -->
 
-Bei Velcrypt ist das Prinzip Teil der Architektur statt ein Zusatz. Jedes Muster ist ein eigener Tresor, es gibt keine Tresorliste, und ein Muster, das die App noch nie gesehen hat, öffnet einfach ohne Fehlermeldung einen leeren Tresor. Nichts auf dem Bildschirm beweist, dass weitere Tresore existieren. Genau das bedeuten [versteckte Tresore](id:hidden-vaults) und [glaubhafte Abstreitbarkeit](id:plausible-deniability-explained) in der Praxis. Mit Premium geht ein [Notfallmuster](id:duress-pattern) noch weiter: Es öffnet einen Köder-Tresor und löscht still und endgültig alle anderen Tresore auf dem iPhone.
+Bei Velcrypt ist das Prinzip Teil der Architektur statt ein Zusatz. Jedes Muster ist ein eigener Tresor, es gibt keine Tresorliste (außer den Tresoren, die du selbst in die Face-ID-Liste aufnimmst), und ein Muster, das die App noch nie gesehen hat, öffnet einfach ohne Fehlermeldung einen leeren Tresor. Nichts auf dem Bildschirm beweist, dass weitere Tresore existieren. Genau das bedeuten [versteckte Tresore](id:hidden-vaults) und [glaubhafte Abstreitbarkeit](id:plausible-deniability-explained) in der Praxis. Mit Premium geht ein [Notfallmuster](id:duress-pattern) noch weiter: Es öffnet einen Köder-Tresor und löscht still und endgültig alle anderen Tresore auf dem iPhone.
 
 ## Wann Keepsafe besser passen kann
 
 - **Du willst Backup und Synchronisierung.** Wenn ein verlorenes iPhone auf keinen Fall verlorene Fotos bedeuten darf, ist ein kontobasiertes Cloud-Backup die einfachere Lösung. Velcrypt sichert nicht automatisch; du musst selbst daran denken, ein Backup zu erstellen.
 - **Du nutzt auch Android.** Keepsafe ist laut Store-Einträgen auf mehr als einer Plattform verfügbar; Velcrypt gibt es nur fürs iPhone.
-- **Du bevorzugst Face ID.** Ist dir biometrischer Komfort wichtiger als die Sorge vor erzwungenem Entsperren – Velcrypt bietet das bewusst nicht an.
+- **Du willst Face ID mit PIN als Rückfall.** Velcrypt bietet Face ID optional pro Tresor an, aber ohne Ausweich-Code.
 - **Du willst Einbruchswarnungen.** Velcrypt macht keine Fotos von Eindringlingen.
 
 <!-- TODO verify -->
@@ -96,7 +96,7 @@ Bei Velcrypt ist das Prinzip Teil der Architektur statt ein Zusatz. Jedes Muster
 
 - **Du willst kein Konto.** Nichts verknüpft deinen Tresor mit einer E-Mail-Adresse oder Identität.
 - **Nichts soll das iPhone verlassen.** Keine Uploads, keine Server, keine Analyse von Tresorinhalten.
-- **Du willst Abstreitbarkeit.** Getrennte, nicht aufgelistete Tresore, bei denen ein unbekanntes Muster nichts verrät.
+- **Du willst Abstreitbarkeit.** Getrennte Tresore, die nirgends aufgelistet werden, außer du nimmst sie selbst in die Face-ID-Liste auf, und bei denen ein unbekanntes Muster nichts verrät.
 - **Du willst veröffentlichte Krypto-Details.** Velcrypt dokumentiert seine Algorithmen auf der [Sicherheitsseite](id:security).
 
 Egal, wofür du dich entscheidest: Beim Import in einen Tresor wird ein Foto meist kopiert. Lösche danach das Original in „Fotos“ und leere „Zuletzt gelöscht“; die Schritte stehen unter [Originalfotos nach dem Import löschen](id:delete-original-photos-after-import).

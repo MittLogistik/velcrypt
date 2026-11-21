@@ -9,12 +9,12 @@ keyFacts:
   - "Fare un modello di minaccia significa chiedersi chi potrebbe volere il materiale, cosa può fare e cosa succede se lo ottiene."
   - "La minimizzazione, cioè tenere meno materiale per meno tempo, è spesso la protezione più forte per le fonti."
   - "I metadati di una foto possono rivelare dove e quando è stata scattata e con quale dispositivo."
-  - "Velcrypt non ha account, server né sincronizzazione; le casseforti si aprono con una sequenza, non con Face ID."
+  - "Velcrypt non ha account, server né sincronizzazione; le casseforti si aprono con una sequenza, e Face ID è facoltativo e spento di base."
   - "Una cassaforte non protegge le copie su iCloud, nelle app di messaggistica, nelle email o sul telefono della fonte."
 primaryKeyword: "giornalisti proteggere le fonti iphone"
 keywords: ["proteggere foto delle fonti telefono", "sicurezza telefono giornalisti", "documenti delle fonti privacy iphone", "sicurezza dispositivi reporter", "modello di minaccia giornalisti"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Modello di minaccia, minimizzazione e metadati per chi fa informazione, e dove si colloca una cassaforte cifrata per iPhone nella tutela delle fonti."
 group: professional
 schemaType: Article
@@ -63,7 +63,7 @@ Le risposte determinano gli strumenti. Proteggere in modo eccessivo una storia a
 
 Velcrypt è un livello di questo piano. Conserva foto, video e documenti in casseforti cifrate sul tuo iPhone, con AES-256-GCM e chiavi derivate dalla tua sequenza. Non ci sono account, server, sincronizzazione né analisi dei contenuti, quindi su nessun server c'è qualcosa che qualcuno possa richiedere.
 
-Le casseforti si aprono con una sequenza su una griglia 5×5. Velcrypt non supporta di proposito Face ID né Touch ID, perché la biometria può essere usata senza il tuo consenso; una sequenza vive solo nella tua memoria. Il ragionamento è in [sequenza, PIN o Face ID](id:pattern-lock-vs-pin-vs-face-id). Ogni sequenza apre la propria cassaforte e una sequenza sconosciuta ne apre una vuota senza errori, il che favorisce la [negabilità plausibile](id:plausible-deniability-explained). Con il Premium, una [sequenza di emergenza](id:duress-pattern) apre una cassaforte esca ed elimina definitivamente le altre. È pensata per situazioni di sicurezza personale come furti o minacce, non per eliminare materiale quando le autorità chiedono legittimamente l'accesso, cosa che può essere di per sé un reato; se per te è un rischio, chiedi una consulenza legale.
+Le casseforti si aprono con una sequenza su una griglia 5×5. Face ID e Touch ID sono facoltativi e disattivati per impostazione predefinita, perché la biometria può essere usata senza il tuo consenso; una sequenza vive solo nella tua memoria. Per il materiale sulle fonti, non attivare Face ID: chi ti fa guardare il telefono può aprire ogni cassaforte dell'elenco Face ID. Il ragionamento è in [sequenza, PIN o Face ID](id:pattern-lock-vs-pin-vs-face-id). Ogni sequenza apre la propria cassaforte e una sequenza sconosciuta ne apre una vuota senza errori, il che favorisce la [negabilità plausibile](id:plausible-deniability-explained). Con il Premium, una [sequenza di emergenza](id:duress-pattern) apre una cassaforte esca ed elimina definitivamente le altre. È pensata per situazioni di sicurezza personale come furti o minacce, non per eliminare materiale quando le autorità chiedono legittimamente l'accesso, cosa che può essere di per sé un reato; se per te è un rischio, chiedi una consulenza legale.
 
 ## Limiti, detti con onestà
 

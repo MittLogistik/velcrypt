@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "keepsafe 代わり"
 keywords: ["keepsafe 代わり iphone", "keepsafe 似た アプリ", "keepsafe 乗り換え", "keepsafe 代替アプリ", "アカウント不要 写真 隠す アプリ"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Keepsafeの代わりを探す理由、写真保管庫アプリで確認すべき点、そしてコピーを残さずに写真を移す方法。"
 competitor: "Keepsafe"
 lastChecked: "2026年10月"
@@ -61,7 +61,7 @@ Keepsafeは最もよく知られた写真保管庫アプリの1つで、満足�
 
 | 選択肢 | アカウント | クラウドのコピー | 専用の秘密 | 補足 |
 |---|---|---|---|---|
-| Velcrypt | なし | 自動なし（手動の暗号化バックアップ） | あり、パターン | 隠し保管庫、書類に対応、Face IDなし |
+| Velcrypt | なし | 自動なし（手動の暗号化バックアップ） | あり、パターン | 隠し保管庫、書類に対応、Face IDは任意（初期設定オフ） |
 | iPhoneの「非表示」アルバム | iCloudにはApple Account | iCloud写真で | なし、端末のパスコード | 無料、標準搭載 |
 | メモアプリのロックしたメモ | iCloudにはApple Account | iCloudのメモで | 任意でメモ用パスワード | 少数の項目向き |
 | ほかの保管庫アプリ | さまざま | さまざま | さまざま | 各アプリの説明を確認 |

@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "note bloccate iphone vs cassaforte foto"
 keywords: ["nascondere foto nelle note bloccate", "bloccare foto con note iphone", "note bloccate iphone foto", "app note foto private", "nota bloccata vs app cassaforte"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Nascondere foto in una nota bloccata di Apple contro una cassaforte cifrata dedicata: comodità, capienza, sincronizzazione e chi può aprirle."
 competitor: "Note bloccate di Apple"
 lastChecked: "ottobre 2026"
@@ -53,7 +53,7 @@ Puoi aggiungere foto dalla libreria, scattare una foto dentro la nota o scansion
 | Account richiesto | No | No per le note sul dispositivo; Account Apple per la sincronizzazione iCloud |
 | Backup cloud | Nessuna sincronizzazione; backup cifrato manuale gratuito in un file | Sì, con Note di iCloud |
 | Metodo di sblocco | Sequenza su griglia 5×5 | Codice del dispositivo o password di Note separata |
-| Biometria | Non offerta, per scelta | Face ID / Touch ID facoltativi |
+| Biometria | Facoltativa, spenta di base (per cassaforte) | Face ID / Touch ID facoltativi |
 | Esca / più casseforti | Ogni sequenza è una cassaforte a sé (più casseforti con Premium) | Non supportato; tutte le note bloccate condividono una password |
 | Sequenza di emergenza | Sì, con il Premium (apre un’esca, elimina le altre casseforti) | No |
 | Recupero se dimentichi il codice | Nessuno | L’opzione con codice evita una password separata; le vecchie password di Note non si recuperano |
@@ -78,7 +78,7 @@ L’altra differenza è il segreto. Se blocchi le note con il codice del disposi
 - **Hai solo pochi elementi.** Una nota bloccata è più semplice che installare qualcosa.
 - **Vuoi la sincronizzazione tra iPhone, iPad e Mac.** Velcrypt è solo per iPhone e non sincronizza.
 - **Vuoi poter recuperare i dati.** Con iCloud, le note bloccate sopravvivono a un telefono perso.
-- **Ti piace la comodità di Face ID.** Velcrypt per scelta non la offre.
+- **Vuoi Face ID per tutto.** In Velcrypt Face ID è facoltativo e va attivato cassaforte per cassaforte; con Note basta il blocco che già usi.
 
 ## Quando Velcrypt potrebbe fare più al caso tuo
 

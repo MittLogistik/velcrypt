@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "verrouiller une note avec des photos iphone"
 keywords: ["cacher des photos dans une note verrouillée", "apple notes verrouiller photos", "notes verrouillées iphone photos", "app notes photos privées", "note verrouillée ou app coffre-fort"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Cacher des photos dans une note verrouillée ou dans un coffre chiffré dédié : confort, capacité, synchronisation et qui peut les ouvrir."
 competitor: "Notes verrouillées d’Apple Notes"
 lastChecked: "octobre 2026"
@@ -53,7 +53,7 @@ Vous pouvez ajouter des photos de votre photothèque, prendre une photo depuis l
 | Compte requis | Non | Non pour les notes sur l’appareil ; compte Apple pour la synchronisation iCloud |
 | Sauvegarde cloud | Non ; sauvegarde chiffrée manuelle et gratuite (fichier protégé par mot de passe) | Oui, avec Notes iCloud |
 | Méthode de déverrouillage | Motif sur une grille 5×5 | Code de l’appareil ou mot de passe Notes distinct |
-| Biométrie | Non proposée, par choix | Face ID / Touch ID en option |
+| Biométrie | Facultative, désactivée par défaut (par coffre) | Face ID / Touch ID en option |
 | Leurre / plusieurs coffres | Chaque motif est son propre coffre | Non pris en charge ; toutes les notes verrouillées partagent un même mot de passe |
 | Schéma de contrainte | Oui, avec Premium (ouvre un leurre, supprime les autres coffres) | Non |
 | Récupération en cas d’oubli du code | Aucune | L’option du code évite un mot de passe distinct ; les anciens mots de passe Notes ne sont pas récupérables |
@@ -78,7 +78,7 @@ L’autre différence, c’est le secret. Si vous verrouillez vos notes avec le 
 - **Vous n’avez que quelques éléments.** Une note verrouillée est plus simple que d’installer quoi que ce soit.
 - **Vous voulez une synchronisation entre iPhone, iPad et Mac.** Velcrypt est réservé à l’iPhone et ne se synchronise pas.
 - **Vous voulez pouvoir récupérer vos données.** Avec iCloud, vos notes verrouillées survivent à la perte du téléphone.
-- **Vous aimez le confort de Face ID.** Velcrypt ne le propose volontairement pas.
+- **Vous voulez Face ID sans y penser.** Notes l’accepte comme raccourci. Dans Velcrypt, Face ID est désactivé par défaut et s’active coffre par coffre.
 
 ## Quand Velcrypt peut mieux vous convenir
 

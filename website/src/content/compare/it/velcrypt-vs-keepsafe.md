@@ -8,13 +8,13 @@ answer: "Velcrypt tiene tutto sul tuo iPhone, senza account, e si sblocca con un
 keyFacts:
   - "Velcrypt non richiede account, email né registrazione; Keepsafe usa un account, secondo la sua scheda."
   - "Keepsafe offre un backup cloud facoltativo; Velcrypt conserva le casseforti solo sul tuo iPhone, con un backup cifrato manuale."
-  - "Velcrypt si sblocca con una sequenza su una griglia 5×5 e, per scelta, non ha Face ID né Touch ID."
+  - "Velcrypt si sblocca con una sequenza su una griglia 5×5; Face ID e Touch ID sono facoltativi e disattivati per impostazione predefinita."
   - "In Velcrypt ogni sequenza apre la propria cassaforte e le sequenze sconosciute ne aprono una vuota."
   - "Se dimentichi la sequenza di Velcrypt o perdi il telefono, la cassaforte non si può recuperare."
 primaryKeyword: "velcrypt vs keepsafe"
 keywords: ["keepsafe vs velcrypt", "keepsafe confronto", "alternativa a keepsafe", "cassaforte foto senza account", "keepsafe backup cloud"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Cassaforte solo locale e senza account contro una cassaforte con account e backup cloud. Dove si colloca ciascuna, fianco a fianco."
 competitor: "Keepsafe"
 lastChecked: "ottobre 2026"
@@ -51,7 +51,7 @@ Nessuno dei due approcci è migliore in assoluto. Uno rinuncia a un po’ di com
 | Account richiesto | Nessun account, nessuna email | Sì, secondo la sua scheda |
 | Backup cloud | Nessuna sincronizzazione; backup cifrato manuale gratuito in un file | “Private Cloud” facoltativo con premium |
 | Metodo di sblocco | Sequenza su griglia 5×5 | PIN o codice |
-| Biometria (Face ID / Touch ID) | Non offerta, per scelta | Supportata, secondo la sua scheda |
+| Biometria (Face ID / Touch ID) | Facoltativa, spenta di base (per cassaforte) | Supportata, secondo la sua scheda |
 | Esca / più casseforti | Ogni sequenza è una cassaforte a sé (più casseforti con Premium) | PIN falso/esca nel premium |
 | Sequenza di emergenza | Sì, con il Premium (apre un’esca, elimina le altre casseforti) | Non dichiarato pubblicamente |
 | Avvisi di intrusione | Non offerti | Offerti nel premium |
@@ -73,7 +73,7 @@ Keepsafe usa un codice tipo PIN e, secondo la sua scheda, può usare Face ID o T
 
 <!-- TODO verify -->
 
-Velcrypt usa una sequenza disegnata su una griglia 5×5: una linea continua che passa per almeno sei punti con almeno un cambio di direzione. Esclude volutamente Face ID e Touch ID, perché un volto o un dito possono essere usati senza il tuo consenso, mentre una sequenza esiste solo nella tua memoria. Il confronto [sequenza, PIN o Face ID](id:pattern-lock-vs-pin-vs-face-id) approfondisce i pro e i contro.
+Velcrypt usa una sequenza disegnata su una griglia 5×5: una linea continua che passa per almeno sei punti con almeno un cambio di direzione. Face ID e Touch ID sono facoltativi e spenti per impostazione predefinita: li attivi solo per le casseforti che scegli, perché un volto o un dito possono essere usati senza il tuo consenso, mentre una sequenza esiste solo nella tua memoria. La sequenza apre comunque sempre ogni cassaforte. Il confronto [sequenza, PIN o Face ID](id:pattern-lock-vs-pin-vs-face-id) approfondisce i pro e i contro.
 
 ## Esche e negabilità
 
@@ -81,13 +81,13 @@ Molte app cassaforte offrono un secondo codice falso che apre una cassaforte inn
 
 <!-- TODO verify -->
 
-Il modello di Velcrypt è strutturale, non un componente aggiuntivo. Ogni sequenza è una cassaforte a sé, non c’è un elenco di casseforti e una sequenza mai vista dall’app apre semplicemente una cassaforte vuota, senza errori. Nulla sullo schermo prova che esistano altre casseforti. È questo il significato pratico di [casseforti nascoste](id:hidden-vaults) e [negabilità plausibile](id:plausible-deniability-explained). Con il Premium, una [sequenza di emergenza](id:duress-pattern) va oltre: apre una cassaforte esca ed elimina in silenzio e definitivamente tutte le altre casseforti sull’iPhone.
+Il modello di Velcrypt è strutturale, non un componente aggiuntivo. Ogni sequenza è una cassaforte a sé, non c’è un elenco di casseforti (salvo quelle che aggiungi all’elenco Face ID) e una sequenza mai vista dall’app apre semplicemente una cassaforte vuota, senza errori. Nulla sullo schermo prova che esistano altre casseforti. È questo il significato pratico di [casseforti nascoste](id:hidden-vaults) e [negabilità plausibile](id:plausible-deniability-explained). Con il Premium, una [sequenza di emergenza](id:duress-pattern) va oltre: apre una cassaforte esca ed elimina in silenzio e definitivamente tutte le altre casseforti sull’iPhone.
 
 ## Quando Keepsafe potrebbe fare più al caso tuo
 
 - **Vuoi backup e sincronizzazione.** Se perdere il telefono non deve significare perdere le foto, oggi un backup cloud automatico legato a un account è la risposta più semplice. Velcrypt offre solo un backup cifrato manuale.
 - **Usi anche Android.** Secondo le sue schede negli store, Keepsafe è disponibile su più piattaforme; Velcrypt è solo per iPhone.
-- **Preferisci Face ID.** Se la comodità della biometria conta più del rischio di sblocco forzato, Velcrypt per scelta non la offrirà.
+- **Vuoi Face ID ovunque, attivo da subito.** In Velcrypt Face ID è facoltativo e va acceso cassaforte per cassaforte; Keepsafe, secondo la sua scheda, lo supporta insieme al PIN.
 - **Vuoi gli avvisi di intrusione.** Velcrypt non scatta foto agli intrusi.
 
 <!-- TODO verify -->
@@ -96,7 +96,7 @@ Il modello di Velcrypt è strutturale, non un componente aggiuntivo. Ogni sequen
 
 - **Non vuoi un account.** Nulla collega la tua cassaforte a un indirizzo email o a un’identità.
 - **Vuoi che nulla lasci il telefono.** Nessun caricamento, nessun server, nessuna analisi dei contenuti.
-- **Vuoi la negabilità.** Casseforti separate e non elencate, dove una sequenza sconosciuta non rivela nulla.
+- **Vuoi la negabilità.** Casseforti separate e non elencate (a meno che tu non attivi Face ID per loro), dove una sequenza sconosciuta non rivela nulla.
 - **Vuoi dettagli crittografici pubblici.** Velcrypt documenta i propri algoritmi nella [pagina sulla sicurezza](id:security).
 
 Qualunque app scegli, ricorda che importare una foto in una cassaforte di solito la copia. Poi elimina l’originale da Foto e svuota Eliminati di recente; i passaggi sono in [eliminare gli originali dopo l’importazione](id:delete-original-photos-after-import).

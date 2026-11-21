@@ -1,20 +1,20 @@
 ---
 pageId: about
 title: "关于 Velcrypt：为隐私而设计"
-description: "Velcrypt 为什么存在，以及背后的原则：设备端加密、无需账户、刻意不用生物识别、坦诚说明局限、没有广告、不出售数据。"
+description: "Velcrypt 为什么存在，以及背后的原则：设备端加密、无需账户、生物识别默认关闭、坦诚说明局限、没有广告、不出售数据。"
 h1: "关于 Velcrypt"
 navTitle: "关于我们"
-answer: "Velcrypt 的目标是为 iPhone 用户提供一个简单、坦诚的地方存放私密照片、视频和文档：在设备上加密，只能用你记住的图案打开，无需账户，不用云端，没有广告。"
+answer: "Velcrypt 的目标是为 iPhone 用户提供一个简单、坦诚的地方存放私密照片、视频和文档：在设备上加密，用你记住的图案打开，无需账户，不用云端，没有广告。"
 keyFacts:
   - "围绕设备端加密构建，无需账户，你的内容不经过任何服务器。"
-  - "刻意不用面容 ID 或触控 ID——图案只存在于你的记忆中。"
+  - "面容 ID / 触控 ID 可选且默认关闭——最私密的保险箱可以只靠记忆中的图案。"
   - "没有广告，不出售数据。"
   - "坦诚说明局限，包括忘记图案后无法恢复。"
   - "所有人都能免费使用加密备份；Premium 还提供用于被胁迫情境的胁迫图案。"
 primaryKeyword: "关于 Velcrypt"
 keywords: ["Velcrypt App", "Velcrypt 开发者", "Velcrypt 隐私原则", "iPhone 私密相册"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 schemaType: AboutPage
 order: 4
 related: [security, features, offline-no-account, pricing, press]
@@ -47,9 +47,9 @@ Velcrypt 就是这样的 App。它把照片、视频和文档存放在加密保�
 
 不需要注册，不需要邮箱地址，也没有重置密码的流程。多一个账户，就多一个可能被入侵、或被用来把你和你的数据联系起来的东西。
 
-### 刻意不用生物识别
+### 生物识别默认关闭
 
-Velcrypt 刻意不提供面容 ID 或触控 ID。生物识别很方便，但你的脸或手指可能在你不同意的情况下被使用。图案只存在于你的记忆中。具体理由可以阅读[图案锁、PIN 码和面容 ID 对比](id:pattern-lock-vs-pin-vs-face-id)。
+在 Velcrypt 中，面容 ID 和触控 ID 是可选的，每个保险箱默认关闭，由你在保险箱内的“设置”›“面容 ID”中单独开启。生物识别很方便，但你的脸或手指可能在你不同意的情况下被使用，任何能让你看一眼手机的人都能打开面容 ID 列表中的保险箱。图案只存在于你的记忆中，所以我们建议把最私密的保险箱只留给图案。具体理由可以阅读[图案锁、PIN 码和面容 ID 对比](id:pattern-lock-vs-pin-vs-face-id)。
 
 ### 坦诚说明局限
 

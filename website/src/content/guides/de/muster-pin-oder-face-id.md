@@ -10,11 +10,11 @@ keyFacts:
   - "Von Menschen gewählte Muster sind weit schwächer als das theoretische Maximum: Ecken, Buchstaben und kurze Formen sind beliebt."
   - "Biometrie ist bequem und schwer mitzulesen, aber Gesicht oder Finger lassen sich nutzen, während du schläfst, festgehalten oder gezwungen wirst."
   - "Fingerspuren auf dem Display verraten Muster leichter als PINs."
-  - "Velcrypt nutzt ein Muster auf einem 5×5-Raster (mindestens 6 Punkte) und verzichtet bewusst auf Face ID und Touch ID."
+  - "Velcrypt nutzt ein Muster auf einem 5×5-Raster (mindestens 6 Punkte); Face ID oder Touch ID ist optional, standardmäßig aus und wird pro Tresor eingeschaltet."
 primaryKeyword: "muster oder pin sicherer"
 keywords: ["pin oder face id sicherheit", "ist eine mustersperre sicher", "muster vs passwort", "face id oder code", "sicherste handysperre", "erzwungene biometrie"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-11-21
 summary: "Kombinatorik, Mitlesen, Fingerspuren und erzwungene Biometrie: ein ehrlicher Vergleich der vier üblichen Wege, private Daten zu sperren."
 category: security
 order: 40
@@ -28,8 +28,8 @@ faq:
     a: "Eine 6-stellige PIN hat 1.000.000 mögliche Kombinationen (000000 bis 999999), eine 4-stellige 10.000. Beliebte Codes wie 123456 oder Geburtstage verkleinern die tatsächliche Zahl drastisch."
   - q: "Kann jemand mein Muster an Fingerspuren auf dem Display erkennen?"
     a: "Manchmal. Bei passendem Licht können Fingerspuren auf Glas den Verlauf eines Musters zeigen. Das Display abwischen, eine matte Schutzfolie und ein Muster, das sich selbst kreuzt, erschweren solche Angriffe."
-  - q: "Warum bietet Velcrypt kein Face ID an?"
-    a: "Mit Absicht. Ein Gesicht oder Fingerabdruck kann ein Gerät ohne deine Zustimmung entsperren, ein Muster existiert dagegen nur in deinem Gedächtnis. Velcrypt hat sich für ein Muster entschieden, damit das Öffnen eines Tresors immer deine eigene Entscheidung erfordert."
+  - q: "Nutzt Velcrypt Face ID?"
+    a: "Nur wenn du es einschaltest. Face ID oder Touch ID ist standardmäßig aus, und du aktivierst es pro Tresor in dessen Einstellungen. Gesicht oder Finger lassen sich ohne deine Zustimmung nutzen: Wer dich dazu bringt, aufs Handy zu schauen, kann jeden Tresor öffnen, den du hinzugefügt hast. Deinen privatesten Tresor lässt du deshalb nur beim Muster."
 ---
 
 Jede Sperre ist ein Kompromiss zwischen drei Dingen: wie schwer sie zu erraten ist, wie leicht man sie beobachten kann und wie leicht dich jemand zwingen kann, sie zu öffnen. Die meisten Vergleiche betrachten nur das Erste. Diese Anleitung betrachtet alle drei – mit echten Zahlen, wo es sie gibt, und ehrlichen Vorbehalten, wo nicht.
@@ -116,6 +116,10 @@ Du musst nicht eine Sperre für alles wählen. Ein sinnvolles Setup für die mei
 
 ## Wo Velcrypt ins Spiel kommt
 
-Velcrypt trifft eine bewusste Entscheidung: Der einzige Weg in einen Tresor ist ein Muster auf einem 5×5-Punkteraster – eine durchgehende Linie durch mindestens 6 Punkte mit mindestens einem Richtungswechsel. Empfohlen sind längere Muster mit 8–12 Punkten. Face ID und Touch ID gibt es nicht, weil sich ein Muster nicht von deinem Körper abnehmen lässt.
+Jeder Tresor in Velcrypt öffnet sich mit einem Muster auf einem 5×5-Punkteraster – einer durchgehenden Linie durch mindestens 6 Punkte mit mindestens einem Richtungswechsel. Empfohlen sind längere Muster mit 8–12 Punkten. Das Muster funktioniert immer, für jeden Tresor.
 
-Das Design verändert auch, was „Erraten“ bedeutet. Jedes Muster ist ein eigener Tresor, und ein Muster, das Velcrypt noch nie gesehen hat, öffnet einfach einen leeren Tresor – ohne Fehlermeldung. Ein falscher Versuch gibt sich also nicht als falsch zu erkennen, und du kannst unter einem zweiten Muster einen [Köder-Tresor](id:what-is-a-decoy-vault) führen. Die Seite zu [versteckten Tresoren](id:hidden-vaults) erklärt das Modell, und die [Sicherheitsübersicht](id:security) nennt, wogegen es nicht schützt – auch dagegen, dass dir jemand beim Zeichnen zusieht.
+Face ID oder Touch ID ist optional und standardmäßig aus. Du schaltest es pro Tresor ein, und zwar aus dem Tresor heraus (Einstellungen › Face ID), und gibst dem Tresor dabei einen Namen für die Face-ID-Liste. Sobald mindestens ein Tresor Face ID nutzt, erscheint auf dem Sperrbildschirm die Taste „Mit Face ID entsperren“. Nach erfolgreichem Face ID wählst du aus den Tresoren, die du hinzugefügt hast; ist es nur einer, öffnet er sich direkt. Einen Ausweich-Code gibt es nicht: Der iPhone-Code ersetzt Face ID in Velcrypt nicht. Die Face-ID-Kopie des Schlüssels bleibt im Schlüsselbund dieses iPhone, nicht in iCloud und nicht in Backups.
+
+Das oben beschriebene Problem des erzwungenen Entsperrens ist der Grund, warum Face ID standardmäßig aus ist. Wer dich dazu bringt, aufs Handy zu schauen, kann jeden Tresor in der Face-ID-Liste sehen und öffnen. Eine sinnvolle Aufteilung: Face ID für Alltagstresore, wenn du es willst, und deinen privatesten Tresor nur mit seinem Muster – denn ein Muster lässt sich nicht von deinem Körper abnehmen. Das [Notfallmuster](id:duress-pattern) funktioniert nur über Muster; die Face-ID-Liste löst es nicht aus.
+
+Das Design verändert auch, was „Erraten“ bedeutet. Jedes Muster ist ein eigener Tresor, und ein Muster, das Velcrypt noch nie gesehen hat, öffnet einfach einen leeren Tresor – ohne Fehlermeldung. Velcrypt listet nie Tresore auf, außer denen, die du selbst in die Face-ID-Liste aufnimmst. Ein falscher Versuch gibt sich also nicht als falsch zu erkennen, und mit Premium kannst du unter einem zweiten Muster einen [Köder-Tresor](id:what-is-a-decoy-vault) führen. Die Seite zu [versteckten Tresoren](id:hidden-vaults) erklärt das Modell, und die [Sicherheitsübersicht](id:security) nennt, wogegen es nicht schützt – auch dagegen, dass dir jemand beim Zeichnen zusieht.

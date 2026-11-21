@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "pueden revisar mi móvil en la aduana"
 keywords: ["registro del teléfono en la frontera", "privacidad del celular en la aduana", "lista de privacidad del teléfono para viajar", "revisión del iphone en aduanas", "desactivar face id rápidamente"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-11-21
 summary: "Un panorama general de los registros de dispositivos en frontera, una lista para preparar el iPhone, el papel de una bóveda señuelo y los límites éticos."
 category: practical
 order: 33
@@ -107,6 +107,6 @@ La privacidad en la frontera es una preocupación legítima. La mayoría de la g
 
 ## Dónde encaja Velcrypt
 
-Velcrypt es una pieza sensata en la preparación de un viaje para el contenido personal que quieres mantener en tu iPhone, sea tu móvil o tu celular de todos los días. Las bóvedas se cifran en el dispositivo con AES-256-GCM, no hay cuenta ni servidor, y no hay Face ID que pueda usarse para abrir una bóveda sin tu participación. Cada patrón abre su propia [bóveda oculta](id:hidden-vaults), así que puedes mantener un señuelo con uso real para los curiosos del día a día.
+Velcrypt es una pieza sensata en la preparación de un viaje para el contenido personal que quieres mantener en tu iPhone, sea tu móvil o tu celular de todos los días. Las bóvedas se cifran en el dispositivo con AES-256-GCM, no hay cuenta ni servidor, y Face ID viene desactivado: si no lo activas, nadie puede abrir una bóveda con tu cara sin tu participación. Antes de viajar, deja tus bóvedas más privadas solo con su patrón. Cada patrón abre su propia [bóveda oculta](id:hidden-vaults), así que puedes mantener un señuelo con uso real para los curiosos del día a día.
 
 No puede protegerte frente a alguien que te vea dibujar el patrón, frente a las copias que queden en Fotos, iCloud o chats, ni frente a las obligaciones legales del país en el que entras. Úsala junto con la lista anterior, no en su lugar.

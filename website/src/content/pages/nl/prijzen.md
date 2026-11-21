@@ -6,7 +6,7 @@ h1: "Wat kost Velcrypt?"
 navTitle: "Prijzen"
 answer: "Velcrypt is gratis met één kluis, tot 50 onderdelen en versleutelde back-up. Premium voegt onbeperkt onderdelen, meer kluizen, een dwangpatroon en alternatieve appsymbolen toe voor $ 1,99 per week, $ 19,99 per jaar (met 3 dagen gratis proberen) of eenmalig $ 39,99 voor altijd. Prijzen in USD; ze verschillen per land. Geen enkele versie toont advertenties."
 keyFacts:
-  - "Gratis versie: 1 kluis met tot 50 onderdelen en het standaard appsymbool."
+  - "Gratis versie: 1 kluis met tot 50 onderdelen en het standaard appsymbool; een lege kluis telt niet mee."
   - "Premium: onbeperkt onderdelen, meer kluizen, een dwangpatroon en alternatieve appsymbolen."
   - "Prijzen (USD): $ 1,99 per week, $ 19,99 per jaar met 3 dagen gratis proberen, $ 39,99 eenmalig."
   - "Versleutelde back-up is voor iedereen gratis."
@@ -15,7 +15,7 @@ keyFacts:
 primaryKeyword: "velcrypt prijs"
 keywords: ["velcrypt premium", "is velcrypt gratis", "fotokluis app prijs", "gratis fotokluis iphone", "velcrypt abonnement"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 schemaType: WebPage
 order: 2
 related: [features, hidden-vaults, duress-pattern, security, faq]
@@ -51,13 +51,14 @@ Velcrypt is gratis te downloaden, met een optionele Premium-upgrade.
 | Albums, viewer, camera in de kluis, beveiligde notities, documenten importeren, veilig exporteren | Ja | Ja |
 | Automatisch vergrendelen en privacy in de appkiezer | Ja | Ja |
 | Versleutelde back-up | Ja | Ja |
+| Face ID / Touch ID (optioneel, per kluis) | Ja | Ja |
 | Aantal onderdelen | Tot 50 | Onbeperkt |
 | Aantal kluizen | 1 | Meer kluizen (elk patroon opent een eigen kluis) |
 | Dwangpatroon | — | Ja |
 | Alternatieve appsymbolen | — | Ja |
 | Advertenties | Geen | Geen |
 
-Omdat de gratis versie één kluis heeft, heb je voor een tweede kluis — zoals een [lokkluis](id:hidden-vaults) — Premium nodig. Dat geldt ook voor het dwangpatroon, dat je vanuit een lokkluis instelt.
+Een kluis telt pas als je gratis kluis zodra er minstens één onderdeel in staat, dus een lege kluis — bijvoorbeeld een die je per ongeluk met een ander patroon opent — gebruikt hem nooit op. Omdat de gratis versie één kluis heeft, heb je voor een tweede kluis — zoals een [lokkluis](id:hidden-vaults) — Premium nodig. Dat geldt ook voor het dwangpatroon, dat je vanuit een lokkluis instelt.
 
 ## Prijzen van Premium
 

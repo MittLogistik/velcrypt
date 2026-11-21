@@ -16,13 +16,13 @@ keyFacts:
 primaryKeyword: "velcrypt preço"
 keywords: ["velcrypt premium", "velcrypt é grátis", "preço app cofre de fotos", "cofre de fotos grátis iphone", "assinatura velcrypt"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 schemaType: WebPage
 order: 2
 related: [features, duress-pattern, hidden-vaults, security, faq]
 faq:
   - q: "O Velcrypt é grátis?"
-    a: "Sim. A versão grátis tem 1 cofre com até 50 itens, a mesma criptografia do Premium e o backup criptografado. O Premium é opcional para quem quiser mais."
+    a: "Sim. A versão grátis tem 1 cofre com até 50 itens, a mesma criptografia do Premium e o backup criptografado. Um cofre vazio nunca consome o seu cofre grátis. O Premium é opcional para quem quiser mais."
   - q: "Quanto custa o Velcrypt Premium?"
     a: "Em dólares americanos: US$ 1,99 por semana, US$ 19,99 por ano (com 3 dias de teste grátis) ou US$ 39,99 vitalício, em compra única. Os preços na App Store variam por país, e você sempre vê o valor na sua moeda antes de pagar."
   - q: "O que o Premium libera?"
@@ -60,7 +60,7 @@ O Velcrypt é grátis para baixar e usar. O Premium é um upgrade opcional para 
 | Ícones alternativos do app | — (ícone padrão) | Sim |
 | Anúncios | Nenhum | Nenhum |
 
-Como a versão grátis tem um cofre, um segundo cofre — como um [cofre de fachada](id:what-is-a-decoy-vault) — exige o Premium. O padrão de coação também, já que você o configura de dentro de um cofre de fachada.
+Um cofre só conta como o seu cofre grátis quando tem pelo menos um item, então um cofre vazio, por exemplo um aberto por engano com outro padrão, nunca o consome. Como a versão grátis tem um cofre, um segundo cofre — como um [cofre de fachada](id:what-is-a-decoy-vault) — exige o Premium. O padrão de coação também, já que você o configura de dentro de um cofre de fachada.
 
 ## Planos do Premium
 

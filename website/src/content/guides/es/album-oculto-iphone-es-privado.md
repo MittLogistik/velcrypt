@@ -19,7 +19,7 @@ keywords:
   - "álbum oculto face id"
   - "pueden ver mis fotos ocultas"
 datePublished: 2026-10-21
-dateModified: 2026-10-31
+dateModified: 2026-11-21
 summary: "Lo que protege de verdad el álbum Oculto, quién puede seguir abriéndolo y cómo cambian las cosas con iCloud y la Protección de datos avanzada."
 category: apple
 order: 10
@@ -120,6 +120,6 @@ Si decides que el álbum Oculto basta para tu situación, unos cuantos ajustes l
 
 El álbum Oculto está pensado para el orden y una privacidad ligera, no para situaciones en las que alguien cercano conoce tu código o podría presionarte para desbloquear el teléfono. En esos casos, lo que normalmente quieres es un espacio con su propio secreto y su propio cifrado.
 
-Velcrypt sigue ese enfoque. Cada bóveda se abre con un patrón dibujado en una cuadrícula de 5×5 en lugar de con Face ID o el código del dispositivo, y su contenido se cifra con AES-256-GCM mediante claves derivadas de ese patrón ([cómo funciona el cifrado](id:encryption)). Cada patrón abre su propia bóveda y un patrón desconocido simplemente abre una vacía, así que nada revela cuántas bóvedas existen ([bóvedas ocultas](id:hidden-vaults)). Todo se queda en el dispositivo, sin cuenta y sin copia en la nube.
+Velcrypt sigue ese enfoque. Cada bóveda se abre con un patrón dibujado en una cuadrícula de 5×5, nunca con el código del dispositivo (Face ID solo si tú lo activas para esa bóveda), y su contenido se cifra con AES-256-GCM mediante claves derivadas de ese patrón ([cómo funciona el cifrado](id:encryption)). Cada patrón abre su propia bóveda y un patrón desconocido simplemente abre una vacía, así que nada revela cuántas bóvedas existen, salvo las que tú añadas a la lista de Face ID ([bóvedas ocultas](id:hidden-vaults)). Todo se queda en el dispositivo, sin cuenta y sin copia en la nube.
 
 Eso también trae contrapartidas honestas. El contenido de la bóveda no se incluye en las copias de seguridad de iCloud ni del ordenador, así que un patrón olvidado no se puede recuperar, y si pierdes el teléfono solo te salva una copia de seguridad cifrada que hayas creado en Ajustes → Copia de seguridad. E importar una foto la copia, así que sigues teniendo que eliminar el original de Fotos y de Eliminado. Para una comparación directa, lee [Velcrypt frente al álbum Oculto del iPhone](id:velcrypt-vs-iphone-hidden-album).

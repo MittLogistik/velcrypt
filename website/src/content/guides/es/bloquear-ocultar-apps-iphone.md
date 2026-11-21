@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "bloquear apps iphone"
 keywords: ["ocultar apps iphone", "bloquear una app con face id", "bloquear carpeta iphone pantalla de inicio", "poner contraseña a una app iphone", "carpeta oculto iphone", "requerir face id app"]
 datePublished: 2026-10-31
-dateModified: 2026-10-31
+dateModified: 2026-11-21
 summary: "Requerir Face ID, la carpeta Oculto y los límites de Tiempo de uso: qué protege el bloqueo de apps y por qué no se pueden bloquear carpetas."
 category: hiding
 order: 66
@@ -116,7 +116,7 @@ Por eso el código sirve de alternativa, y por eso el bloqueo de apps no te prot
 
 ## Dónde encaja Velcrypt
 
-Velcrypt no es un bloqueador de apps; no puede bloquear otras apps. Es una bóveda para las fotos, los videos y los documentos que de otro modo intentarías proteger bloqueando Fotos o Archivos. Se abre dibujando un [patrón](id:pattern-lock) en una cuadrícula de 5×5, y cada patrón abre su propia bóveda cifrada. No usa Face ID a propósito, y el patrón no tiene nada que ver con el código de tu iPhone, así que quien conozca el código sigue sin poder abrir tus bóvedas. Si quieres tener otra respuesta preparada cuando alguien insista, las [bóvedas señuelo](id:hidden-vaults) (Premium) muestran contenido inofensivo con otro patrón.
+Velcrypt no es un bloqueador de apps; no puede bloquear otras apps. Es una bóveda para las fotos, los videos y los documentos que de otro modo intentarías proteger bloqueando Fotos o Archivos. Se abre dibujando un [patrón](id:pattern-lock) en una cuadrícula de 5×5, y cada patrón abre su propia bóveda cifrada. Face ID es opcional y viene desactivado, y el patrón no tiene nada que ver con el código de tu iPhone, así que quien conozca el código sigue sin poder abrir tus bóvedas. Si quieres tener otra respuesta preparada cuando alguien insista, las [bóvedas señuelo](id:hidden-vaults) (Premium) muestran contenido inofensivo con otro patrón.
 
 El contenido se cifra en el dispositivo con AES-256-GCM, no se sube nada y no hay cuenta. La bóveda [se bloquea automáticamente](id:auto-lock) cuando sales de la app. Como los datos de la bóveda no se incluyen en las copias de iCloud ni del ordenador, crea una copia de seguridad cifrada en Ajustes → Copia de seguridad para todo lo que no puedas perder; un patrón olvidado no lo puede recuperar nadie.
 

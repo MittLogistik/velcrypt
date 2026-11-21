@@ -7,7 +7,7 @@ navTitle: "Was ist ein Köder-Tresor?"
 answer: "Ein Köder-Tresor (Decoy-Tresor) ist ein zweiter Tresor mit eigenem Geheimnis, der harmlose, aber plausible Inhalte enthält. Drängt dich jemand, deinen Tresor zu öffnen, kannst du stattdessen den Köder öffnen. In Velcrypt öffnet jedes neue Muster einen eigenen Tresor – ein Köder ist also einfach ein zweites Muster, das du mit gewöhnlichen Fotos und Dokumenten füllst."
 keyFacts:
   - "Ein Köder-Tresor ist ein echter, funktionierender Tresor mit unverfänglichen Inhalten, die du ohne Bedenken zeigen kannst."
-  - "In Velcrypt ist jedes Muster ein eigener Tresor, und es gibt keine Tresorliste, die die anderen verraten würde."
+  - "In Velcrypt ist jedes Muster ein eigener Tresor, und keine Tresorliste verrät die anderen, außer der Face-ID-Liste, die du selbst füllst."
   - "Ein leerer Köder wirkt verdächtig; ein benutzt wirkender Köder mit Alben und neuen Objekten überzeugt."
   - "Ein Köder schützt vor Herumschnüffeln und beiläufigem Druck, nicht vor forensischer Analyse oder jemandem, der dir beim Zeichnen zugesehen hat."
   - "Ein Köder braucht einen zweiten Tresor und damit Premium; die kostenlose Version hat einen Tresor."
@@ -15,7 +15,7 @@ keyFacts:
 primaryKeyword: "köder tresor"
 keywords: ["was ist ein köder tresor", "fake passwort foto tresor", "fake tresor app", "köder muster", "zweiter tresor iphone", "decoy tresor"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Was ein Köder-Tresor ist, wie du mit einem zweiten Velcrypt-Muster einen benutzt wirkenden baust – und welche Grenzen du kennen solltest."
 category: security
 order: 41
@@ -39,7 +39,7 @@ faq:
   - q: "Wie erstelle ich einen Köder-Tresor in Velcrypt?"
     a: "Zeichne ein zweites Muster, das du noch nie verwendet hast. Velcrypt öffnet dafür einen neuen, leeren Tresor. Füge glaubwürdige Alltagsinhalte hinzu – Belege, Screenshots, gewöhnliche Fotos –, und dieses Muster öffnet fortan deinen Köder. Weil die kostenlose Version einen Tresor hat, brauchst du für den zweiten Premium."
   - q: "Kann jemand erkennen, dass ein Tresor ein Köder ist?"
-    a: "Nicht aus der App heraus: Velcrypt führt keine Tresorliste und zeigt keinen Hinweis, dass weitere existieren. Verraten kann einen Köder sein Inhalt – etwa wenn er leer, veraltet oder offensichtlich inszeniert ist."
+    a: "Nicht aus der App heraus: Velcrypt führt keine Tresorliste (außer der Face-ID-Liste mit den Tresoren, die du selbst hinzufügst) und zeigt keinen Hinweis, dass weitere existieren. Verraten kann einen Köder sein Inhalt – etwa wenn er leer, veraltet oder offensichtlich inszeniert ist."
   - q: "Ist ein Köder-Tresor dasselbe wie ein Notfallmuster?"
     a: "Nein. Ein Köder öffnet einfach einen anderen Tresor und lässt die anderen unberührt. Ein Notfallmuster, verfügbar mit Velcrypt Premium, öffnet den Köder-Tresor und löscht zugleich still und endgültig alle anderen Tresore auf dem iPhone."
   - q: "Sollte ich einen Köder-Tresor gegenüber Polizei oder Grenzbeamten nutzen?"
@@ -60,7 +60,7 @@ Was einen Köder funktionieren lässt, ist nicht die Technik, sondern die Geschi
 
 Die meisten Apps behandeln den Köder als besondere Einstellung: eine echte PIN, eine falsche PIN. Velcrypt geht einen einfacheren Weg. Jedes Muster ist ein eigener Tresor:
 
-- Es gibt nirgends in der App eine Tresorliste.
+- Es gibt nirgends in der App eine Tresorliste, außer der Face-ID-Liste mit den Tresoren, die du selbst hinzufügst. Schalte Face ID für deinen echten Tresor also nicht ein.
 - Ein Muster, das Velcrypt noch nie gesehen hat, öffnet einen neuen, leeren Tresor.
 - Es gibt keine Fehlermeldung „falsches Muster“, und nichts beweist, dass weitere Tresore existieren.
 
@@ -98,4 +98,4 @@ Ein Köder öffnet einen anderen Tresor und lässt alles andere unberührt. Ein 
 
 ## Wo Velcrypt ins Spiel kommt
 
-Velcrypt wurde so gebaut, dass Köder natürlich sind und nicht nachträglich angeflanscht: Jedes Muster ist ein eigener Tresor, es gibt keine Tresorliste, ein unbekanntes Muster zeigt keinen Fehler, und es gibt kein Face ID, mit dem jemand die Frage ganz überspringen könnte. Jeder Tresor ist auf deinem iPhone mit AES-256-GCM unter einem eigenen Schlüssel verschlüsselt, Köder und echter Tresor sind also gleich gut geschützt; der einzige Unterschied ist, was du hineinlegst. Mehr dazu in der [Sicherheitsübersicht](id:security).
+Velcrypt wurde so gebaut, dass Köder natürlich sind und nicht nachträglich angeflanscht: Jedes Muster ist ein eigener Tresor, es gibt keine Tresorliste (außer den Tresoren, die du selbst in die Face-ID-Liste aufnimmst), ein unbekanntes Muster zeigt keinen Fehler, und Face ID ist standardmäßig aus. Schaltest du es für deinen echten Tresor nicht ein, kann niemand die Frage mit deinem Gesicht überspringen. Jeder Tresor ist auf deinem iPhone mit AES-256-GCM unter einem eigenen Schlüssel verschlüsselt, Köder und echter Tresor sind also gleich gut geschützt; der einzige Unterschied ist, was du hineinlegst. Mehr dazu in der [Sicherheitsübersicht](id:security).

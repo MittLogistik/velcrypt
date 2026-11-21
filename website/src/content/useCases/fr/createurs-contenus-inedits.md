@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "protéger ses photos clients iphone"
 keywords: ["stocker des photos clients en privé iphone", "photographe confidentialité clients téléphone", "cacher des photos de travail iphone", "créateur de contenu vie privée", "garder des contenus inédits privés", "protéger des photos non publiées"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Photographes, artistes et créateurs : gardez vos créations inédites et contenus clients privés sur iPhone, et ne les partagez que volontairement."
 group: professional
 schemaType: Article
@@ -63,7 +63,7 @@ Quand vous photographiez quelqu’un, vous détenez une part de sa vie privée. 
 
 Velcrypt stocke photos, [vidéos](id:hide-videos) et documents dans des coffres chiffrés sur votre iPhone, sans compte et sans aucun envoi. Dans un coffre, vous pouvez créer des [albums](id:albums) par projet ou par client, utiliser la sélection multiple, déplacer des éléments d’un album à l’autre et regarder photos et vidéos avec zoom et balayage.
 
-Les coffres s’ouvrent avec un schéma tracé sur une grille 5×5, pas avec votre code ni Face ID. Chaque schéma ouvre son propre coffre : vous pouvez donc garder le travail client dans un coffre, vos photos personnelles dans un autre, et un coffre « portfolio » ne contenant que ce que n’importe qui peut voir. Un schéma inconnu ouvre simplement un coffre vide.
+Les coffres s’ouvrent avec un schéma tracé sur une grille 5×5, jamais avec votre code ; Face ID est facultatif et désactivé par défaut. Chaque schéma ouvre son propre coffre : vous pouvez donc garder le travail client dans un coffre, vos photos personnelles dans un autre, et un coffre « portfolio » ne contenant que ce que n’importe qui peut voir. Un schéma inconnu ouvre simplement un coffre vide.
 
 L’export sécurisé vous permet de sortir un seul fichier au moment de livrer ou de publier. L’app se verrouille automatiquement en arrière-plan et masque son contenu dans le sélecteur d’apps, ce qui aide quand vous basculez vers une messagerie en pleine conversation.
 

@@ -16,7 +16,7 @@ keyFacts:
 primaryKeyword: "dwangpatroon kluis app"
 keywords: ["noodwachtwoord iphone", "paniekpatroon fotokluis", "dwangcode app", "bescherming bij gedwongen ontgrendelen", "kluis wissen met patroon"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Een apart patroon dat je lokkluis opent en ongemerkt en definitief alle andere kluizen op de iPhone verwijdert. Premium."
 status: available
 schemaType: WebPage
@@ -92,7 +92,7 @@ De volledige uitleg, met tips om te oefenen, staat in [een lokkluis en dwangpatr
 
 Een dwangpatroon is alleen nuttig als niemand kan zien dat het er is. Velcrypt laat nooit zien of er een is ingesteld, niet in de interface en niet in de instellingen. Achter de schermen staat er altijd een versleuteld record van vaste grootte in de iOS-sleutelhanger; is er geen dwangpatroon, dan bevat het willekeurige bytes. Het record ziet er dus hetzelfde uit, of je de functie nu gebruikt of niet.
 
-Dit bouwt voort op [verborgen kluizen](id:hidden-vaults): elk patroon opent een eigen kluis, er is geen lijst van kluizen en een onbekend patroon opent zonder foutmelding een lege kluis. Het idee achter beide lees je in [plausibele ontkenning uitgelegd](id:plausible-deniability-explained).
+Dit bouwt voort op [verborgen kluizen](id:hidden-vaults): elk patroon opent een eigen kluis, er is geen lijst van kluizen (behalve de kluizen die je zelf aan de Face ID-lijst toevoegt) en een onbekend patroon opent zonder foutmelding een lege kluis. Het dwangpatroon werkt alleen met patronen: de Face ID-lijst activeert het niet. Gaat het dwangpatroon af, dan verdwijnen de verwijderde kluizen ook uit de Face ID-lijst. Het idee achter beide lees je in [plausibele ontkenning uitgelegd](id:plausible-deniability-explained).
 
 ## Wanneer het kan helpen
 

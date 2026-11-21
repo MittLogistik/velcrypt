@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "private fotos iphone reise schützen"
 keywords: ["fotos auf reisen schützen", "iphone im ausland gestohlen fotos", "schutz für gestohlene geräte reise", "handy im ausland verleihen privatsphäre", "handy datenschutz tipps reise"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Verlorene Handys, verliehene iPhones und Grenzkontrollen: So reist du mit privaten Fotos und Dokumenten, ohne dir Sorgen zu machen."
 group: travel
 schemaType: Article
@@ -58,7 +58,7 @@ Auf Reisen ist dein Handy in mehr Händen und an mehr Orten als im Alltag. Es is
 
 ## Wie Velcrypt hilft
 
-Velcrypt bewahrt private Fotos, Videos und Dokumente in verschlüsselten Tresoren auf, die nur auf deinem iPhone liegen. Ein Tresor öffnet sich mit einem Muster, das du auf ein 5×5-Raster zeichnest – nicht mit deinem Code oder Face ID. Hat ein Dieb deinen Code ausgespäht, öffnet das allein deinen Tresor nicht. Warum statt Biometrie ein Muster verwendet wird, erklärt [Muster vs. PIN vs. Face ID](id:pattern-lock-vs-pin-vs-face-id).
+Velcrypt bewahrt private Fotos, Videos und Dokumente in verschlüsselten Tresoren auf, die nur auf deinem iPhone liegen. Ein Tresor öffnet sich mit einem Muster, das du auf ein 5×5-Raster zeichnest – nicht mit deinem Code. Hat ein Dieb deinen Code ausgespäht, öffnet das allein deinen Tresor nicht. Face ID ist optional und standardmäßig aus; warum das Muster der Standard ist, erklärt [Muster vs. PIN vs. Face ID](id:pattern-lock-vs-pin-vs-face-id).
 
 Jedes Muster öffnet seinen eigenen Tresor, und ein unbekanntes Muster öffnet ohne Fehler einen leeren. So kannst du einen [Köder-Tresor](id:what-is-a-decoy-vault) mit harmlosen Reisefotos führen und deinen privaten Tresor hinter einem anderen Muster halten. Die App sperrt sich außerdem automatisch, wenn sie in den Hintergrund geht, und ihre Inhalte sind im App-Umschalter verborgen.
 

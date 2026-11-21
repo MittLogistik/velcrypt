@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "vaultaire vs keepsafe"
 keywords: ["keepsafe vs vaultaire", "vaultaire avis", "alternative à vaultaire", "alternative à keepsafe", "comparatif coffre-fort photo iphone", "meilleure app pour cacher des photos iphone"]
 datePublished: 2026-10-31
-dateModified: 2026-10-31
+dateModified: 2026-11-21
 summary: "Deux coffres-forts photo populaires sur iPhone, côte à côte : compte, déverrouillage, leurres, sauvegarde, récupération et prix. Et la place de Velcrypt."
 competitor: "Vaultaire et Keepsafe"
 lastChecked: "octobre 2026"
@@ -24,7 +24,7 @@ faq:
   - q: "Vaultaire est-il meilleur que Keepsafe ?"
     a: "Tout dépend de ce qui compte pour vous. Vaultaire, d’après son site, ne demande aucun compte, se déverrouille avec un schéma, prend en charge plusieurs coffres cachés et inclut une sauvegarde iCloud chiffrée. Keepsafe utilise un compte, un code PIN avec Face ID facultatif et un cloud premium, et existe aussi sur Android. Aucun des deux n’est meilleur pour tout le monde."
   - q: "Vaultaire propose-t-il Face ID ?"
-    a: "Non. Le site de Vaultaire indique qu’il n’a volontairement ni Face ID, ni Touch ID, ni code PIN, car la biométrie peut être utilisée sans votre consentement. On le déverrouille en traçant un schéma. Velcrypt fait le même choix. Keepsafe prend en charge Face ID, d’après sa fiche."
+    a: "Non. Le site de Vaultaire indique qu’il n’a volontairement ni Face ID, ni Touch ID, ni code PIN, car la biométrie peut être utilisée sans votre consentement. On le déverrouille en traçant un schéma. Dans Velcrypt, Face ID est facultatif et désactivé par défaut : vous l’activez coffre par coffre. Keepsafe prend en charge Face ID, d’après sa fiche."
   - q: "Quelle app propose un mode de contrainte ou de panique ?"
     a: "Vaultaire propose un coffre de contrainte avec son offre Pro : tracer ce schéma ouvre le leurre et supprime l’accès aux autres coffres de l’appareil. Velcrypt propose avec Premium un schéma de contrainte qui ouvre un coffre leurre et supprime définitivement les autres coffres. Keepsafe propose un faux code PIN, mais nous n’avons trouvé aucune description publique d’un effacement sous contrainte."
   - q: "Que se passe-t-il si j’oublie mon schéma ou mon code PIN ?"
@@ -49,7 +49,7 @@ Vaultaire et Keepsafe font partie des apps que l’on compare le plus quand on v
 |---|---|---|---|
 | Compte requis | Non | Oui, d’après sa fiche | Non |
 | Méthode de déverrouillage | Schéma sur une grille 5×5 | Code PIN ou code d’accès | Schéma sur une grille 5×5 |
-| Face ID / Touch ID | Non proposé, par choix | Pris en charge, d’après sa fiche | Non proposé, par choix |
+| Face ID / Touch ID | Non proposé, par choix | Pris en charge, d’après sa fiche | Facultatif, désactivé par défaut (par coffre) |
 | Coffres cachés ou leurres | Chaque schéma ouvre son propre coffre ; jusqu’à 3 coffres gratuits | Faux code PIN (leurre) en premium | Chaque schéma ouvre son propre coffre ; plus d’un coffre nécessite Premium |
 | Mode de contrainte | Coffre de contrainte avec Pro | Non indiqué publiquement | Schéma de contrainte avec Premium |
 | Détails du chiffrement publiés | Oui : AES-256-GCM, PBKDF2-HMAC-SHA512 | Pas détaillés publiquement | Oui : AES-256-GCM, PBKDF2-HMAC-SHA512 (voir [chiffrement](id:encryption)) |
@@ -80,7 +80,7 @@ Keepsafe utilise un code de type PIN et, d’après sa fiche, Face ID ou Touch I
 
 <!-- TODO verify -->
 
-Vaultaire et Velcrypt utilisent tous deux un schéma tracé à travers les points d’une grille 5×5, et tous deux renoncent volontairement à Face ID. Le raisonnement est le même : un visage ou un doigt peut être utilisé sans votre consentement, alors qu’un schéma n’existe que dans votre mémoire. Une grille 5×5 offre aussi bien plus de tracés possibles que la grille 3×3 des téléphones Android. Les compromis sont expliqués dans [schéma, code PIN ou Face ID](id:pattern-lock-vs-pin-vs-face-id).
+Vaultaire et Velcrypt utilisent tous deux un schéma tracé à travers les points d’une grille 5×5, pour la même raison : un visage ou un doigt peut être utilisé sans votre consentement, alors qu’un schéma n’existe que dans votre mémoire. Vaultaire renonce entièrement à Face ID. Velcrypt le propose en option, désactivé par défaut : vous l’activez coffre par coffre, et le schéma ouvre toujours chaque coffre. Une grille 5×5 offre aussi bien plus de tracés possibles que la grille 3×3 des téléphones Android. Les compromis sont expliqués dans [schéma, code PIN ou Face ID](id:pattern-lock-vs-pin-vs-face-id).
 
 ## Leurres et contrainte
 
@@ -88,7 +88,7 @@ Keepsafe a proposé en fonction premium un faux code PIN qui ouvre un coffre leu
 
 <!-- TODO verify -->
 
-Dans Vaultaire et Velcrypt, les leurres font partie de la conception, ce ne sont pas des options. Chaque schéma ouvre son propre coffre, il n’existe aucune liste de coffres, et un schéma que l’app n’a jamais vu ouvre un coffre vide au lieu d’afficher une erreur. Rien à l’écran ne prouve que d’autres coffres existent ; voir [coffres cachés](id:hidden-vaults).
+Dans Vaultaire et Velcrypt, les leurres font partie de la conception, ce ne sont pas des options. Chaque schéma ouvre son propre coffre, il n’existe aucune liste de coffres (dans Velcrypt, seuls ceux que vous ajoutez vous-même à la liste Face ID apparaissent), et un schéma que l’app n’a jamais vu ouvre un coffre vide au lieu d’afficher une erreur. Rien à l’écran ne prouve que d’autres coffres existent ; voir [coffres cachés](id:hidden-vaults).
 
 Les deux proposent aussi une option de contrainte dans leurs offres payantes, mais elles ne se comportent pas de la même façon :
 

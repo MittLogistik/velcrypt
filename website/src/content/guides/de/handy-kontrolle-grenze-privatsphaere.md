@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "handy kontrolle zoll"
 keywords: ["darf der zoll mein handy durchsuchen", "handy durchsuchung grenze", "handy datenschutz grenzkontrolle", "reise checkliste handy datenschutz", "face id schnell deaktivieren"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-11-21
 summary: "Überblick über Handy-Durchsuchungen an der Grenze, eine iPhone-Checkliste, die Rolle eines Köder-Tresors und ethische Grenzen, die du einhalten solltest."
 category: practical
 order: 33
@@ -107,6 +107,6 @@ Privatsphäre an der Grenze ist ein berechtigtes Anliegen. Die meisten wollen ei
 
 ## Wo Velcrypt ins Spiel kommt
 
-Velcrypt ist ein sinnvoller Teil eines Reise-Setups für persönliche Inhalte, die du auf dem iPhone behalten willst. Tresore sind auf dem Gerät mit AES-256-GCM verschlüsselt, es gibt kein Konto und keinen Server, und es gibt kein Face ID, mit dem sich ein Tresor ohne deine Mitwirkung öffnen ließe. Jedes Muster öffnet einen eigenen [versteckten Tresor](id:hidden-vaults), du kannst also einen benutzt wirkenden Köder für alltägliches Herumschnüffeln führen.
+Velcrypt ist ein sinnvoller Teil eines Reise-Setups für persönliche Inhalte, die du auf dem iPhone behalten willst. Tresore sind auf dem Gerät mit AES-256-GCM verschlüsselt, es gibt kein Konto und keinen Server, und Face ID ist standardmäßig aus: Ohne dein Muster öffnet sich ein Tresor nur, wenn du Face ID für ihn selbst eingeschaltet hast. Vor einer Kontrolle lässt du deine privaten Tresore daher am besten nur beim Muster. Jedes Muster öffnet einen eigenen [versteckten Tresor](id:hidden-vaults), du kannst also einen benutzt wirkenden Köder für alltägliches Herumschnüffeln führen.
 
 Nicht schützen kann die App dagegen, dass dir jemand beim Zeichnen des Musters zusieht, gegen Kopien in „Fotos“, iCloud oder Chats oder gegen rechtliche Pflichten im Einreiseland. Nutze sie zusammen mit der Checkliste oben, nicht statt ihrer.

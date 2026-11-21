@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "keepsafe alternative"
 keywords: ["keepsafe alternative iphone", "apps wie keepsafe", "von keepsafe wechseln", "keepsafe ersatz", "foto tresor ohne konto"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Warum Leute eine Keepsafe-Alternative suchen, worauf du bei jedem Foto-Tresor achten solltest und wie du ohne zurückbleibende Kopien umziehst."
 competitor: "Keepsafe"
 lastChecked: "Oktober 2026"
@@ -61,7 +61,7 @@ Ein Foto-Tresor ist eine App, die ausgewählte Fotos und Videos getrennt von dei
 
 | Option | Konto | Cloud-Kopie | Eigenes Geheimnis | Hinweise |
 |---|---|---|---|---|
-| Velcrypt | Keins | Nein; manuelles verschlüsseltes Backup | Ja, ein Muster | Versteckte Tresore, Dokumente, kein Face ID |
+| Velcrypt | Keins | Nein; manuelles verschlüsseltes Backup | Ja, ein Muster | Versteckte Tresore, Dokumente, Face ID optional (standardmäßig aus) |
 | iPhone-Album „Ausgeblendet“ | Apple Account für iCloud | Mit iCloud-Fotos | Nein, Gerätecode | Kostenlos, eingebaut |
 | Gesperrte Notizen in Apple Notizen | Apple Account für iCloud | Mit iCloud-Notizen | Optionales Notizen-Passwort | Am besten für wenige Objekte |
 | Andere Tresor-Apps | Unterschiedlich | Unterschiedlich | Unterschiedlich | Jeweiligen Store-Eintrag prüfen |

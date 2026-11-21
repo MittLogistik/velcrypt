@@ -8,13 +8,13 @@ answer: "Negação plausível na criptografia significa que, mesmo depois de voc
 keyFacts:
   - "Negação plausível diz respeito ao que pode ser provado, não a esconder que um app ou dados criptografados existem."
   - "Ferramentas de criptografia de disco criaram a ideia com volumes ocultos dentro de volumes criptografados comuns."
-  - "No Velcrypt, qualquer padrão desconhecido abre um cofre vazio, sem erro e sem lista de cofres."
+  - "No Velcrypt, qualquer padrão desconhecido abre um cofre vazio, sem erro e sem outra lista de cofres além da lista opcional do Face ID."
   - "O tamanho do armazenamento e a análise forense podem mostrar que existem dados criptografados, mesmo que não possam ser lidos."
   - "A negação protege contra bisbilhotice e pressão informal; não é um escudo jurídico."
 primaryKeyword: "negação plausível criptografia"
 keywords: ["o que é negação plausível", "criptografia negável", "volume oculto explicado", "negação plausível cofre de fotos", "cofre negável iphone"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "O conceito por trás de volumes ocultos e cofres falsos, como o design de padrões desconhecidos do Velcrypt o usa e o que ele não consegue fazer."
 category: security
 order: 42
@@ -55,7 +55,7 @@ Ao longo dos anos, esses mesmos pesquisadores e profissionais também documentar
 O Velcrypt adapta o princípio a um cofre de fotos e documentos no iPhone. Não há volume externo e interno; em vez disso:
 
 - **Cada padrão é um cofre próprio.** Cada cofre tem a própria chave mestra aleatória de 256 bits, desbloqueada por uma chave derivada daquele padrão.
-- **Não existe lista de cofres.** O app não guarda nada que enumere quantos cofres existem.
+- **Não existe lista de cofres.** O app não guarda nada que enumere quantos cofres existem, exceto a lista opcional do Face ID, que só contém os cofres que você adiciona de propósito.
 - **Padrões desconhecidos abrem um cofre vazio.** Desenhe um padrão que o Velcrypt nunca viu e você cai num cofre novo e vazio. Não há mensagem de “padrão errado”.
 
 A consequência é que um padrão errado e um cofre válido, mas vazio, parecem idênticos. Se você abrir um cofre para alguém, nada na interface mostra que existem outros cofres. Isso faz de um [cofre falso](id:what-is-a-decoy-vault) uma forma natural de uso, e não um modo especial. A página do recurso de [cofres ocultos](id:hidden-vaults) mostra como isso funciona na prática.

@@ -13,7 +13,7 @@ keyFacts:
 primaryKeyword: "iphone bilder syns på ipad"
 keywords: ["stoppa bildsynk till familjens ipad", "delat apple-id bilder", "delat icloud-bildbibliotek integritet", "separera icloud-bilder familj", "bilder syns på annan enhet"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Varför bilder från din iPhone syns på familjens iPad eller Mac, hur du reder ut delade konton och bibliotek, och var privata bilder hör hemma."
 group: everyday
 schemaType: Article
@@ -64,7 +64,7 @@ iCloud-bilder är krypterade, men som standard har Apple nycklarna. Med [Avancer
 
 Velcrypt går en annan väg: appen förvarar privata bilder, videor och dokument i ett krypterat valv enbart i din iPhone. Det finns [inget konto, ingen server och ingen synkning](id:offline-no-account), så inget du lägger i ett valv kan dyka upp på familjens iPad, på Macen eller i ett delat bibliotek.
 
-Import kopierar en bild till valvet. För att ta bort den från alla synkade enheter [raderar du originalet](id:delete-original-photos-after-import) från Bilder och tömmer Nyligen raderade; med iCloud-bilder på synkas raderingen även till dina andra enheter. Valvet öppnas med ett mönster på ett 5×5-rutnät, inte med enhetens lösenkod eller Face ID.
+Import kopierar en bild till valvet. För att ta bort den från alla synkade enheter [raderar du originalet](id:delete-original-photos-after-import) från Bilder och tömmer Nyligen raderade; med iCloud-bilder på synkas raderingen även till dina andra enheter. Valvet öppnas med ett mönster på ett 5×5-rutnät, aldrig med enhetens lösenkod, och med Face ID bara om du själv slår på det för det valvet.
 
 ## Ärliga begränsningar
 

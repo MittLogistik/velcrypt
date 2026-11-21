@@ -19,7 +19,7 @@ keywords:
   - "ausgeblendet album face id"
   - "kann jemand meine ausgeblendeten fotos sehen"
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Was das Album „Ausgeblendet“ wirklich schützt, wer es trotzdem öffnen kann und was iCloud-Sync und Erweiterter Datenschutz daran ändern."
 category: apple
 order: 10
@@ -122,6 +122,6 @@ Reicht dir das Album für deine Situation, machen es ein paar Einstellungen spü
 
 Das Album „Ausgeblendet“ ist für Ordnung und leichte Privatsphäre gedacht, nicht für Situationen, in denen jemand aus deinem Umfeld deinen Code kennt oder dich drängen könnte, das Handy zu entsperren. Dann willst du in der Regel einen Bereich mit eigenem Geheimnis und eigener Verschlüsselung.
 
-Velcrypt verfolgt diesen Ansatz. Jeder Tresor öffnet sich mit einem Muster auf einem 5×5-Raster statt mit Face ID oder deinem Gerätecode, und sein Inhalt ist mit AES-256-GCM verschlüsselt, mit Schlüsseln, die aus diesem Muster abgeleitet werden ([so funktioniert die Verschlüsselung](id:encryption)). Jedes Muster öffnet einen eigenen Tresor, ein unbekanntes Muster einfach einen leeren – nichts verrät, wie viele Tresore es gibt ([versteckte Tresore](id:hidden-vaults)). Alles bleibt auf dem Gerät, ohne Konto und ohne Cloud-Kopie.
+Velcrypt verfolgt diesen Ansatz. Jeder Tresor öffnet sich mit einem Muster auf einem 5×5-Raster statt mit deinem Gerätecode (Face ID ist optional und standardmäßig aus), und sein Inhalt ist mit AES-256-GCM verschlüsselt, mit Schlüsseln, die aus diesem Muster abgeleitet werden ([so funktioniert die Verschlüsselung](id:encryption)). Jedes Muster öffnet einen eigenen Tresor, ein unbekanntes Muster einfach einen leeren – nichts verrät, wie viele Tresore es gibt, außer den Tresoren, die du selbst in die Face-ID-Liste aufnimmst ([versteckte Tresore](id:hidden-vaults)). Alles bleibt auf dem Gerät, ohne Konto und ohne Cloud-Kopie.
 
 Das bringt auch ehrliche Kompromisse mit sich. Tresorinhalte sind nicht in iCloud- oder Computer-Backups enthalten. Verlierst du das Handy, hilft nur ein verschlüsseltes Backup, das du vorher selbst erstellt hast, und ein vergessenes Muster lässt sich nicht wiederherstellen. Und beim Import wird ein Foto kopiert, du musst das Original also weiterhin aus „Fotos“ und „Zuletzt gelöscht“ entfernen. Den direkten Vergleich findest du unter [Velcrypt vs. Album „Ausgeblendet“](id:velcrypt-vs-iphone-hidden-album).

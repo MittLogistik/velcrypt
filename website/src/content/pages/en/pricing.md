@@ -15,13 +15,13 @@ keyFacts:
 primaryKeyword: "velcrypt pricing"
 keywords: ["velcrypt premium", "is velcrypt free", "photo vault app price", "free photo vault iphone", "velcrypt subscription"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 schemaType: WebPage
 order: 2
 related: [features, hidden-vaults, duress-pattern, security, faq]
 faq:
   - q: "Is Velcrypt free?"
-    a: "Yes. The free version gives you one vault with up to 50 items, the same encryption as Premium and encrypted backup. Premium is an optional upgrade for people who want more."
+    a: "Yes. The free version gives you one vault with up to 50 items, the same encryption as Premium and encrypted backup. An empty vault never uses up your free vault. Premium is an optional upgrade for people who want more."
   - q: "How much does Velcrypt Premium cost?"
     a: "In the US, Premium costs $1.99 a week, $19.99 a year (with a 3-day free trial) or $39.99 once for lifetime access. Prices vary by country, and the App Store shows the price in your currency before you buy."
   - q: "Does the free version of Velcrypt have ads?"
@@ -57,7 +57,7 @@ Velcrypt is a free download with an optional Premium upgrade.
 | Alternate app icons | — | Yes |
 | Ads | None | None |
 
-Because the free version has one vault, a second vault — such as a [decoy vault](id:hidden-vaults) — needs Premium. So does the duress pattern, which you set up from inside a decoy vault.
+A vault only counts as your free vault once it holds at least one item, so an empty vault, for example one opened by mistake with a different pattern, never uses it up. Because the free version has one vault, a second vault — such as a [decoy vault](id:hidden-vaults) — needs Premium. So does the duress pattern, which you set up from inside a decoy vault.
 
 ## Premium prices
 

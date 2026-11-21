@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "sharing iphone with kids privacy"
 keywords: ["kids using my phone photos", "hide photos from kids iphone", "guided access for kids", "screen time kids iphone", "child swiping through photos"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Let kids play on your iPhone without them wandering into private photos: Guided Access, Screen Time and a vault that stays closed."
 group: everyday
 schemaType: Article
@@ -69,7 +69,7 @@ Move documents like passports or prescriptions out of the camera roll, review wh
 
 Velcrypt is a private vault for photos, videos and documents that lives entirely on your iPhone. When you import something, it’s copied into an encrypted vault; once you [delete the original](id:delete-original-photos-after-import) (and empty Recently Deleted), it’s no longer in your Photos library, Memories, widgets or any app’s photo picker.
 
-The vault opens by drawing a [pattern on a 5×5 grid](id:pattern-lock), not with your device passcode or Face ID. So even a child who knows your passcode can’t open it. If they open the app and draw something, they simply see an empty vault — there’s no error message and nothing to suggest there’s more inside.
+The vault opens by drawing a [pattern on a 5×5 grid](id:pattern-lock), not with your device passcode, and Face ID is off by default. So even a child who knows your passcode can’t open it. If they open the app and draw something, they simply see an empty vault — there’s no error message and nothing to suggest there’s more inside.
 
 [Auto-lock](id:auto-lock) closes the vault as soon as the app goes to the background, and its contents are hidden in the app switcher. If you’re looking at a document and hand the phone over, switching away locks it.
 

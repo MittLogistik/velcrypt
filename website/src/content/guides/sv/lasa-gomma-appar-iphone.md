@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "låsa appar iphone"
 keywords: ["gömma appar iphone", "låsa app med face id", "lösenord på app iphone", "låsa mapp iphone hemskärm", "mappen gömda iphone", "kräv face id app"]
 datePublished: 2026-10-31
-dateModified: 2026-10-31
+dateModified: 2026-11-21
 summary: "Kräv Face ID, mappen Gömda och Skärmtidsgränser förklarade: vad applåset skyddar och varför mappar på hemskärmen inte går att låsa."
 category: hiding
 order: 66
@@ -114,7 +114,7 @@ Därför fungerar lösenkoden som reserv, och därför skyddar applåset inte mo
 
 ## Var Velcrypt passar in
 
-Velcrypt är inget applås; det kan inte låsa andra appar. Det är ett valv för bilder, videor och dokument som du annars skulle försöka skydda genom att låsa Bilder eller Filer. Du öppnar det genom att rita ett [mönster](id:pattern-lock) på ett rutnät med 5×5 punkter, och varje mönster öppnar sitt eget krypterade valv. Face ID finns medvetet inte, och mönstret har inget med iPhonens lösenkod att göra, så den som kan koden kommer ändå inte in i dina valv. Vill du ha ett annat svar redo när någon insisterar visar [lockbetesvalv](id:hidden-vaults) (Premium) harmlöst innehåll under ett annat mönster.
+Velcrypt är inget applås; det kan inte låsa andra appar. Det är ett valv för bilder, videor och dokument som du annars skulle försöka skydda genom att låsa Bilder eller Filer. Du öppnar det genom att rita ett [mönster](id:pattern-lock) på ett rutnät med 5×5 punkter, och varje mönster öppnar sitt eget krypterade valv. Face ID är avstängt som standard och används bara för de valv du själv slår på det för, och mönstret har inget med iPhonens lösenkod att göra, så den som kan koden kommer ändå inte in i dina valv. Vill du ha ett annat svar redo när någon insisterar visar [lockbetesvalv](id:hidden-vaults) (Premium) harmlöst innehåll under ett annat mönster.
 
 Innehållet krypteras på enheten med AES-256-GCM, inget laddas upp och det finns inget konto. Valvet [låses automatiskt](id:auto-lock) när du lämnar appen. Eftersom valvdata inte ingår i iCloud- eller datorbackuper gör du en krypterad säkerhetskopia i Inställningar → Säkerhetskopiering av allt du inte har råd att förlora; ett glömt mönster kan ingen återställa.
 

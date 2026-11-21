@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "como bloquear fotos no iphone"
 keywords: ["bloquear fotos iphone", "bloquear app fotos iphone", "exigir face id fotos", "bloquear álbum ocultos", "trancar fotos iphone", "bloquear fotos com face id ios 18"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Quatro formas de bloquear fotos no iPhone, do álbum Ocultos ao bloqueio de apps e às notas bloqueadas, lado a lado."
 category: hiding
 order: 2
@@ -101,6 +101,6 @@ Também vale pensar na biometria. O Face ID é rápido, mas um rosto pode ser ap
 
 ## Onde o Velcrypt se encaixa
 
-O Velcrypt é um cofre da quarta categoria. Ele não tem Face ID nem Touch ID de propósito: você o desbloqueia desenhando um [padrão](id:pattern-lock) numa grade de 5×5 pontos, com pelo menos seis pontos e pelo menos uma mudança de direção, e padrões mais longos são melhores. Esse padrão existe só na sua memória e não tem relação com o código do seu iPhone.
+O Velcrypt é um cofre da quarta categoria. Você o desbloqueia desenhando um [padrão](id:pattern-lock) numa grade de 5×5 pontos, com pelo menos seis pontos e pelo menos uma mudança de direção, e padrões mais longos são melhores. Esse padrão existe só na sua memória e não tem relação com o código do seu iPhone. O Face ID ou Touch ID é opcional e vem desativado; se você o ativar para um cofre, lembre que quem fizer você olhar para o celular pode abri-lo.
 
 O conteúdo é criptografado no aparelho com AES-256-GCM, o cofre [se bloqueia automaticamente](id:auto-lock) quando você sai do app e nada é enviado para fora. O preço desse design é que não há redefinição: se você esquecer o padrão, nem você nem o Velcrypt conseguem abrir o cofre. Só um backup criptografado feito antes permite recuperar o conteúdo. Como qualquer bloqueio, ele também não ajuda se alguém vir você desenhar o padrão ou se você entregar o celular com o cofre já aberto.

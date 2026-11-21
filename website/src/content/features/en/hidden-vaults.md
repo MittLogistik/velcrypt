@@ -1,32 +1,32 @@
 ---
 pageId: hidden-vaults
 title: "Hidden Vaults: Every Pattern Opens Its Own Vault"
-description: "In Velcrypt every pattern is a separate vault. There is no vault list, and an unknown pattern opens an empty vault with no error. Here is how it works."
-h1: "Hidden vaults: one pattern, one vault, no list"
+description: "In Velcrypt every pattern is a separate vault. No vault list unless you opt in to Face ID, and an unknown pattern opens an empty vault with no error."
+h1: "Hidden vaults: one pattern, one vault, no list by default"
 navTitle: "Hidden vaults"
-answer: "In Velcrypt every pattern opens its own encrypted vault. There is no list of vaults, and a pattern the app has never seen simply opens an empty vault without an error, so nothing on screen proves that other vaults exist."
+answer: "In Velcrypt every pattern opens its own encrypted vault. There is no list of vaults, except the ones you deliberately add to the optional Face ID list, and a pattern the app has never seen simply opens an empty vault without an error."
 keyFacts:
   - "Each pattern is its own vault with its own encryption key."
-  - "Velcrypt never shows a list of vaults."
+  - "Velcrypt never lists vaults, except the ones you deliberately add to the Face ID list."
   - "An unknown pattern opens an empty vault, with no error message."
   - "You can keep a decoy vault with ordinary content."
   - "The free version has one vault; more vaults, including a decoy, need Premium."
 primaryKeyword: "hidden vault app iphone"
 keywords: ["multiple vaults photo app", "decoy vault iphone", "secret vault app", "plausible deniability photo vault", "second hidden vault"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
-summary: "Every pattern is its own vault. No vault list, no error for unknown patterns, and room for a believable decoy vault."
+dateModified: 2026-11-21
+summary: "Every pattern is its own vault. No vault list unless you opt in to Face ID, no error for unknown patterns, and room for a decoy vault."
 status: available
 schemaType: WebPage
 order: 2
 related: [pattern-lock, duress-pattern, encryption, what-is-a-decoy-vault, plausible-deniability-explained]
 faq:
   - q: "How do I see all my vaults in Velcrypt?"
-    a: "You can't, and that is intentional. Velcrypt has no vault list. The only way to open a vault is to draw its pattern, so keep track of your patterns yourself."
+    a: "You can't, and that is intentional. Velcrypt has no vault list. The only way to open a vault is to draw its pattern, so keep track of your patterns yourself. The one exception is optional Face ID: vaults you turn it on for appear in the Face ID list. Vaults without Face ID are never listed."
   - q: "What happens if I draw a wrong pattern?"
     a: "Velcrypt opens an empty vault for that pattern instead of showing an error. If you added files there, that pattern would become a new vault. If you expected your photos and see nothing, you probably drew a slightly different pattern."
   - q: "Can someone tell that I have more than one vault?"
-    a: "Not from the app's interface. There is no list, counter or error message that reveals other vaults. Velcrypt cannot hide that the app itself is installed, and it cannot prevent someone from watching you draw a pattern."
+    a: "Not from the app's interface, for vaults without Face ID. There is no list, counter or error message that reveals them. Vaults you add to the optional Face ID list are the exception: anyone who gets you to look at the phone can see and open those. Velcrypt cannot hide that the app itself is installed, and it cannot prevent someone from watching you draw a pattern."
   - q: "What is a decoy vault?"
     a: "A decoy vault is a vault with ordinary, believable content that you can open if you are pressured to show what is inside the app. Your real vault stays behind a different pattern."
 howTo:
@@ -49,6 +49,8 @@ Most vault apps have one password and one locked area, so asking "what's the pas
 A hidden vault is a vault whose existence cannot be confirmed from the outside. In Velcrypt, every valid pattern on the [5×5 grid](id:pattern-lock) maps to a separate vault with its own random master key and its own files. Pattern A shows the photos you stored behind pattern A. Pattern B shows a completely different set.
 
 There is no settings screen that lists them, no "switch vault" menu and no number that says how many exist. From inside the app, each vault looks like it is the only one.
+
+The one exception is a choice you make yourself. Face ID is optional and off by default. If you turn it on for a vault, in that vault's Settings › Face ID, the lock screen shows an "Unlock with Face ID" button, and after Face ID succeeds you pick from the vaults you added. Vaults without Face ID never appear there. Because anyone who can get you to look at your phone can see and open that list, keep your most private vault on its pattern only.
 
 ## No error for an unknown pattern
 

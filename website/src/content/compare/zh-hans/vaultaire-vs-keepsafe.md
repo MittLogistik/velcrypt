@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "vaultaire vs keepsafe"
 keywords: ["Vaultaire 和 Keepsafe 哪个好", "Vaultaire 评测", "Vaultaire 替代", "Keepsafe 替代", "iPhone 私密相册 对比", "iPhone 私密相册 推荐"]
 datePublished: 2026-10-31
-dateModified: 2026-10-31
+dateModified: 2026-11-21
 summary: "两款热门 iPhone 私密相册逐项对比：账户、解锁、诱饵、备份、恢复和价格，并说明 Velcrypt 适合哪些人。"
 competitor: "Vaultaire and Keepsafe"
 lastChecked: "2026 年 10 月"
@@ -24,7 +24,7 @@ faq:
   - q: "Vaultaire 比 Keepsafe 更好吗？"
     a: "取决于你看重什么。根据其官网，Vaultaire 无需账户，通过图案解锁，支持多个隐藏保险箱，并自带加密的 iCloud 备份。Keepsafe 使用账户、可选面容 ID 的 PIN 码和高级版云端，并且也有安卓版。没有哪一款对所有人都更好。"
   - q: "Vaultaire 支持面容 ID 吗？"
-    a: "不支持。Vaultaire 官网称，它刻意不提供面容 ID、触控 ID 或 PIN 码，因为生物识别可能在你不同意的情况下被使用。你需要画图案来解锁。Velcrypt 也做了同样的选择。根据 Keepsafe 的商店页面，它支持面容 ID。"
+    a: "不支持。Vaultaire 官网称，它刻意不提供面容 ID、触控 ID 或 PIN 码，因为生物识别可能在你不同意的情况下被使用。你需要画图案来解锁。Velcrypt 同样以图案为主，但面容 ID 是可选的，默认关闭，可为单个保险箱开启。根据 Keepsafe 的商店页面，它支持面容 ID。"
   - q: "哪款 App 有胁迫模式或紧急模式？"
     a: "Vaultaire 的 Pro 方案提供胁迫保险箱：画出那个图案会打开诱饵保险箱，并移除对设备上其他保险箱的访问。Velcrypt 的 Premium 提供胁迫图案，会打开诱饵保险箱并永久删除其他保险箱。Keepsafe 提供假 PIN 码，但我们没有找到关于胁迫清除功能的公开说明。"
   - q: "忘记图案或 PIN 码会怎样？"
@@ -49,7 +49,7 @@ faq:
 |---|---|---|---|
 | 是否需要账户 | 否 | 需要，据其商店页面 | 否 |
 | 解锁方式 | 5×5 点阵图案 | PIN 码或密码 | 5×5 点阵图案 |
-| 面容 ID / 触控 ID | 刻意不提供 | 支持，据其商店页面 | 刻意不提供 |
+| 面容 ID / 触控 ID | 刻意不提供 | 支持，据其商店页面 | 可选，默认关闭（按保险箱） |
 | 隐藏保险箱 / 诱饵保险箱 | 每个图案打开各自的保险箱；免费最多 3 个 | 高级版提供假 PIN 码/诱饵 PIN 码 | 每个图案打开各自的保险箱；多于一个需要 Premium |
 | 胁迫模式 | Pro 提供胁迫保险箱 | 未公开说明 | Premium 提供胁迫图案 |
 | 是否公开加密细节 | 是：AES-256-GCM，PBKDF2-HMAC-SHA512 | 未公开详细说明 | 是：AES-256-GCM，PBKDF2-HMAC-SHA512（见[加密](id:encryption)） |
@@ -80,7 +80,7 @@ Keepsafe 使用 PIN 码式的密码，并且根据其商店页面，可以为了
 
 <!-- TODO verify -->
 
-Vaultaire 和 Velcrypt 都使用在 5×5 点阵上连点画出的图案，并且都刻意不提供面容 ID。理由相同：脸或手指可能在你不同意的情况下被使用，而图案只存在于你的记忆中。5×5 点阵可能的路径也远多于安卓手机上的 3×3 点阵。其中的取舍见[图案锁、PIN 码和面容 ID 对比](id:pattern-lock-vs-pin-vs-face-id)。
+Vaultaire 和 Velcrypt 都使用在 5×5 点阵上连点画出的图案。根据其官网，Vaultaire 刻意不提供面容 ID。Velcrypt 则把面容 ID 做成可选功能，每个保险箱默认关闭，由你在保险箱的“设置”中单独开启。顾虑是一样的：脸或手指可能在你不同意的情况下被使用，所以最私密的保险箱最好只用图案。5×5 点阵可能的路径也远多于安卓手机上的 3×3 点阵。其中的取舍见[图案锁、PIN 码和面容 ID 对比](id:pattern-lock-vs-pin-vs-face-id)。
 
 ## 诱饵与胁迫
 
@@ -88,7 +88,7 @@ Keepsafe 曾将打开无害诱饵保险箱的假 PIN 码作为高级功能提供
 
 <!-- TODO verify -->
 
-在 Vaultaire 和 Velcrypt 中，诱饵是设计的一部分，而不是附加功能。每个图案打开各自的保险箱，没有保险箱列表，App 从未见过的图案会打开一个空保险箱，而不是报错。屏幕上没有任何东西能证明还存在其他保险箱；见[隐藏保险箱](id:hidden-vaults)。
+在 Vaultaire 和 Velcrypt 中，诱饵是设计的一部分，而不是附加功能。每个图案打开各自的保险箱，没有保险箱列表（在 Velcrypt 中，只有你主动加入面容 ID 列表的保险箱会被列出），App 从未见过的图案会打开一个空保险箱，而不是报错。屏幕上没有任何东西能证明还存在其他保险箱；见[隐藏保险箱](id:hidden-vaults)。
 
 两者的付费方案都有胁迫选项，但行为不同：
 
@@ -99,7 +99,7 @@ Keepsafe 曾将打开无害诱饵保险箱的假 PIN 码作为高级功能提供
 
 ## 价格
 
-在美国商店，Vaultaire 和 Velcrypt 的价格都是每周 $1.99、每年 $19.99，或一次性 $39.99 终身使用。Vaultaire 还有月度方案和家庭方案，年度方案有 7 天试用；Velcrypt 提供 3 天试用。Vaultaire 的免费版更大方：最多 3 个保险箱、100 张照片和 10 个视频，而 Velcrypt 只有 1 个保险箱，最多 50 个项目。Keepsafe 有免费版和高级订阅；你所在国家或地区的当前价格请查看其 App Store 页面。
+在美国商店，Vaultaire 和 Velcrypt 的价格都是每周 $1.99、每年 $19.99，或一次性 $39.99 终身使用。Vaultaire 还有月度方案和家庭方案，年度方案有 7 天试用；Velcrypt 提供 3 天试用。Vaultaire 的免费版更大方：最多 3 个保险箱、100 张照片和 10 个视频，而 Velcrypt 只有 1 个保险箱，最多 50 个项目（空保险箱不占用这个名额）。Keepsafe 有免费版和高级订阅；你所在国家或地区的当前价格请查看其 App Store 页面。
 
 <!-- TODO verify -->
 
@@ -112,7 +112,7 @@ Keepsafe 曾将打开无害诱饵保险箱的假 PIN 码作为高级功能提供
 
 ## 什么情况下 Keepsafe 可能更适合你
 
-- **你想要面容 ID。** 如果快速的生物识别解锁对你来说比被迫解锁的风险更重要，Keepsafe 提供这一功能。
+- **你想要 PIN 码加面容 ID。** 如果你更习惯数字密码，并希望用生物识别快速解锁，Keepsafe 提供这一组合。
 - **你也用安卓。** Keepsafe 支持不止一个平台。
 - **你想要入侵警报。** 根据其商店页面，Keepsafe 可以拍下输错 PIN 码的人。
 - **你更喜欢账户。** 基于账户的恢复是找回照片最熟悉的方式。

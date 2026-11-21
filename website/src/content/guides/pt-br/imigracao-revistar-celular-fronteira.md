@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "imigração pode revistar meu celular"
 keywords: ["revista de celular na fronteira", "privacidade do celular na imigração", "checklist de privacidade do celular para viagem", "alfândega revistar iphone", "desativar face id rapidamente"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-11-21
 summary: "Uma visão geral das revistas de aparelhos na fronteira, um checklist de preparação do iPhone, o papel de um cofre falso e os limites éticos."
 category: practical
 order: 33
@@ -107,6 +107,6 @@ A privacidade na fronteira é uma preocupação legítima. A maioria das pessoas
 
 ## Onde o Velcrypt se encaixa
 
-O Velcrypt é uma parte sensata de uma preparação de viagem para o conteúdo pessoal que você quer manter no iPhone. Os cofres são criptografados no aparelho com AES-256-GCM, não há conta nem servidor, e não existe Face ID que possa ser usado para abrir um cofre sem a sua participação. Cada padrão abre o próprio [cofre oculto](id:hidden-vaults), então você pode manter um cofre falso com cara de usado para a bisbilhotice do dia a dia.
+O Velcrypt é uma parte sensata de uma preparação de viagem para o conteúdo pessoal que você quer manter no iPhone. Os cofres são criptografados no aparelho com AES-256-GCM, não há conta nem servidor, e o Face ID vem desativado: se você não o ativar, ninguém abre um cofre com o seu rosto sem a sua participação. Antes de viajar, mantenha os cofres mais privados só com o padrão. Cada padrão abre o próprio [cofre oculto](id:hidden-vaults), então você pode manter um cofre falso com cara de usado para a bisbilhotice do dia a dia.
 
 Ele não protege contra alguém que vê você desenhar o padrão, contra cópias deixadas no Fotos, no iCloud ou em conversas, nem contra obrigações legais do país em que você está entrando. Use-o junto com o checklist acima, não no lugar dele.

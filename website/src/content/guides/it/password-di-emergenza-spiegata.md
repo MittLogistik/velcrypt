@@ -16,7 +16,7 @@ keyFacts:
 primaryKeyword: "password di emergenza"
 keywords: ["codice antipanico", "password di coercizione", "cos'è una password di emergenza", "password di coercizione significato", "parola in codice di emergenza", "esempi di parole in codice", "codice antirapina allarme", "pin di coercizione", "pin al contrario bancomat mito", "impronta di coercizione", "codice di emergenza telefono", "pin di coercizione android", "grapheneos duress pin", "pin di emergenza telefono", "sequenza di emergenza"]
 datePublished: 2026-10-22
-dateModified: 2026-10-31
+dateModified: 2026-11-21
 summary: "Cosa sono password, parole in codice e PIN di emergenza, cosa offrono iPhone e Android e come funziona la sequenza di emergenza di Velcrypt."
 category: security
 order: 45
@@ -108,7 +108,7 @@ Chi cerca un «codice di emergenza per il telefono», un «PIN di coercizione» 
 
 ### Cosa significa «impronta di coercizione»
 
-Una **impronta di coercizione** è un dito specifico registrato come allarme silenzioso. Alcuni sistemi biometrici di controllo accessi la supportano: scansioni quel dito, la porta si apre come sempre e un allarme di coercizione arriva alla vigilanza. I telefoni comuni non la offrono. <!-- TODO verify --> Su un telefono, sotto costrizione, la biometria è semmai il punto debole, perché qualcuno può avvicinare il telefono al tuo viso o premere il tuo dito sul sensore. Per questo conta saper disattivare Face ID in fretta, ed è per questo che Velcrypt [non ha lo sblocco con Face ID, per scelta](id:pattern-lock-vs-pin-vs-face-id).
+Una **impronta di coercizione** è un dito specifico registrato come allarme silenzioso. Alcuni sistemi biometrici di controllo accessi la supportano: scansioni quel dito, la porta si apre come sempre e un allarme di coercizione arriva alla vigilanza. I telefoni comuni non la offrono. <!-- TODO verify --> Su un telefono, sotto costrizione, la biometria è semmai il punto debole, perché qualcuno può avvicinare il telefono al tuo viso o premere il tuo dito sul sensore. Per questo conta saper disattivare Face ID in fretta, ed è per questo che in Velcrypt [Face ID è facoltativo e spento per impostazione predefinita](id:pattern-lock-vs-pin-vs-face-id).
 
 ## Come le app per telefono usano i codici di emergenza
 
@@ -135,6 +135,7 @@ Velcrypt si sblocca con una sequenza disegnata su una griglia 5×5 e ogni sequen
 - **Nella schermata di blocco, disegnare la sequenza di emergenza apre l'esca** ed elimina in silenzio e definitivamente tutte le altre casseforti su quell'iPhone.
 - **Sullo schermo nulla mostra che è successo.** Lo sblocco ha lo stesso aspetto e la stessa durata di uno normale.
 - **L'app non mostra mai se è impostata una sequenza di emergenza.** Nel Portachiavi di iOS esiste sempre un record cifrato di dimensione fissa; quando non c'è una sequenza di emergenza contiene byte casuali.
+- **Solo con le sequenze.** La sequenza di emergenza funziona solo disegnandola: l'elenco Face ID non la attiva. Quando scatta, le casseforti eliminate spariscono anche dall'elenco Face ID.
 - **Una per iPhone.** Impostare una nuova sequenza di emergenza sostituisce la precedente. Per disattivarla devi disegnarla, e disattivarla non elimina nulla.
 - **Continua a funzionare se il Premium scade.** Solo la configurazione richiede il Premium.
 

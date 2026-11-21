@@ -1,20 +1,20 @@
 ---
 pageId: about
 title: "Über Velcrypt: Privatsphäre als Prinzip"
-description: "Warum es Velcrypt gibt und welche Prinzipien dahinterstehen: Verschlüsselung auf dem Gerät, kein Konto, ohne Biometrie, ehrliche Grenzen, keine Werbung."
+description: "Warum es Velcrypt gibt und welche Prinzipien dahinterstehen: Verschlüsselung auf dem Gerät, kein Konto, Face ID nur auf Wunsch, keine Werbung."
 h1: "Über Velcrypt"
 navTitle: "Über uns"
 answer: "Velcrypt soll iPhone-Nutzern einen einfachen, ehrlichen Ort für private Fotos, Videos und Dokumente geben: verschlüsselt auf dem Gerät, geöffnet nur mit einem Muster, das du dir merkst – ohne Konto, ohne Cloud und ohne Werbung."
 keyFacts:
   - "Aufgebaut auf Verschlüsselung auf dem Gerät, ohne Konto und ohne Server für deine Inhalte."
-  - "Bewusst kein Face ID oder Touch ID – ein Muster existiert nur in deinem Kopf."
+  - "Face ID ist optional und standardmäßig aus – ein Muster existiert nur in deinem Kopf."
   - "Keine Werbung und kein Datenverkauf."
   - "Ehrlich bei den Grenzen, etwa: keine Wiederherstellung vergessener Muster."
   - "Verschlüsseltes Backup kostenlos für alle; ein Notfallmuster für Situationen unter Zwang, mit Premium."
 primaryKeyword: "über velcrypt"
 keywords: ["velcrypt app", "wer steckt hinter velcrypt", "velcrypt prinzipien", "privater foto tresor iphone"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 schemaType: AboutPage
 order: 4
 related: [security, features, offline-no-account, pricing, press]
@@ -35,7 +35,7 @@ Auf deinem iPhone liegen Dinge, die du nie einem Fremden geben würdest: ein Sca
 
 Viele Tresor-Apps verlangen ein Konto, schieben deine Dateien in eine Cloud oder verpacken eine einfache PIN in Marketingsprache. Wir wollten etwas Fokussierteres, dem man leichter vertrauen kann: eine native iPhone-App, die deine Dateien auf dem Gerät verschlüsselt, sich mit einem Muster öffnet, das nur du kennst, und klar sagt, was sie nicht kann.
 
-Velcrypt ist diese App. Sie speichert Fotos, Videos und Dokumente in verschlüsselten Tresoren, die jeweils mit einem eigenen Muster auf einem 5×5-Raster geöffnet werden. Ein Muster, das sie noch nie gesehen hat, öffnet einen leeren Tresor – nichts in der App verrät also, wie viele Tresore du hast. Die Details stehen auf der Seite zum [Sicherheitsmodell](id:security).
+Velcrypt ist diese App. Sie speichert Fotos, Videos und Dokumente in verschlüsselten Tresoren, die jeweils mit einem eigenen Muster auf einem 5×5-Raster geöffnet werden. Ein Muster, das sie noch nie gesehen hat, öffnet einen leeren Tresor – nichts in der App verrät also, wie viele Tresore du hast, außer den Tresoren, die du selbst in die Face-ID-Liste aufnimmst. Die Details stehen auf der Seite zum [Sicherheitsmodell](id:security).
 
 ## Unsere Prinzipien
 
@@ -47,9 +47,9 @@ Deine Tresorinhalte werden auf deinem iPhone verschlüsselt und gespeichert – 
 
 Es gibt keine Registrierung, keine E-Mail-Adresse und keinen Ablauf zum Zurücksetzen eines Passworts. Ein Konto wäre nur eine weitere Angriffsfläche oder etwas, das dich mit deinen Daten in Verbindung bringen könnte.
 
-### Bewusst ohne Biometrie
+### Biometrie nur auf Wunsch
 
-Velcrypt bietet absichtlich kein Face ID oder Touch ID an. Biometrie ist bequem, aber ein Gesicht oder ein Finger lässt sich ohne deine Zustimmung benutzen. Ein Muster existiert nur in deinem Kopf. Die Begründung liest du unter [Mustersperre vs. PIN vs. Face ID](id:pattern-lock-vs-pin-vs-face-id).
+Face ID oder Touch ID ist in Velcrypt optional und standardmäßig aus; du schaltest es nur für die Tresore ein, die du auswählst. Biometrie ist bequem, aber ein Gesicht oder ein Finger lässt sich ohne deine Zustimmung benutzen. Ein Muster existiert nur in deinem Kopf, und es öffnet weiterhin jeden Tresor. Die Begründung liest du unter [Mustersperre vs. PIN vs. Face ID](id:pattern-lock-vs-pin-vs-face-id).
 
 ### Ehrliche Grenzen
 

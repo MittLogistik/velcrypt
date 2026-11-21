@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "foto's verbergen iphone"
 keywords: ["foto's verbergen op iphone", "album verborgen iphone", "afbeeldingen verbergen iphone", "album verborgen verbergen", "album verborgen vergrendelen", "foto's verbergen ios 18"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-11-21
 summary: "Gebruik de verbergfunctie van Foto's, vergrendel en verstop het album Verborgen en weet wat verbergen niet beschermt."
 category: hiding
 order: 1
@@ -119,6 +119,6 @@ De keerzijde is verantwoordelijkheid. Een kluis die gegevens alleen op je appara
 
 ## Waar Velcrypt past
 
-Velcrypt is een voorbeeld van die tweede aanpak. Je ontgrendelt de app door een patroon te tekenen op een raster van 5×5 stippen, niet met Face ID of je toegangscode. Je iPhone-toegangscode kennen opent hem dus niet. Bestanden worden op het apparaat versleuteld met AES-256-GCM, er is geen account en kluisgegevens zitten niet in iCloud-back-ups. Elk patroon opent een eigen, aparte kluis, en een onbekend patroon opent gewoon een lege kluis; de pagina over [verborgen kluizen](id:hidden-vaults) legt uit waarom dat ertoe doet.
+Velcrypt is een voorbeeld van die tweede aanpak. Je ontgrendelt de app door een patroon te tekenen op een raster van 5×5 stippen, niet met je toegangscode; Face ID wordt alleen gebruikt als je het zelf voor een kluis aanzet. Je iPhone-toegangscode kennen opent hem dus niet. Bestanden worden op het apparaat versleuteld met AES-256-GCM, er is geen account en kluisgegevens zitten niet in iCloud-back-ups. Elk patroon opent een eigen, aparte kluis, en een onbekend patroon opent gewoon een lege kluis; de pagina over [verborgen kluizen](id:hidden-vaults) legt uit waarom dat ertoe doet.
 
 Importeren in Velcrypt kopieert een foto in plaats van hem te verplaatsen. Het origineel blijft dus in Foto's staan tot je het zelf verwijdert, ook uit Recent verwijderd. De gids over [originelen verwijderen na het importeren](id:delete-original-photos-after-import) loopt dat stap voor stap door. Voor een overzicht van de fotokant van de app, zie [foto's verbergen met Velcrypt](id:hide-photos), en voor een vergelijking naast elkaar, [Velcrypt vs het album Verborgen op de iPhone](id:velcrypt-vs-iphone-hidden-album).

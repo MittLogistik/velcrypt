@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "velcrypt press kit"
 keywords: ["velcrypt logo", "velcrypt media kit", "velcrypt fact sheet", "velcrypt brand colors"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 schemaType: WebPage
 order: 8
 related: [about, security, features, pricing]
@@ -37,7 +37,7 @@ Velcrypt is an iPhone app for private photos, videos and documents. Files are en
 
 ### 100 words
 
-Velcrypt is a native iPhone app that keeps private photos, videos and documents in encrypted vaults on the device. Instead of Face ID or a PIN, you open a vault by drawing a pattern on a 5×5 grid of dots — a secret that lives only in your memory. Every pattern is its own vault, and a pattern the app has never seen opens an empty one, so nothing reveals how many vaults exist. Files are encrypted with AES-256-GCM through Apple CryptoKit. There is no account, no server and no tracking of vault content. Velcrypt has a free version and an optional Premium upgrade.
+Velcrypt is a native iPhone app that keeps private photos, videos and documents in encrypted vaults on the device. Instead of a PIN, you open a vault by drawing a pattern on a 5×5 grid of dots — a secret that lives only in your memory. Face ID is optional and off by default. Every pattern is its own vault, and a pattern the app has never seen opens an empty one, so nothing reveals how many vaults exist. Files are encrypted with AES-256-GCM through Apple CryptoKit. There is no account, no server and no tracking of vault content. Velcrypt has a free version and an optional Premium upgrade.
 
 ## Fact sheet
 
@@ -48,8 +48,8 @@ Velcrypt is a native iPhone app that keeps private photos, videos and documents 
 | Platform | iPhone, iOS 17 or later |
 | Category | Privacy / utilities — encrypted photo, video and document vault |
 | Pricing model | Free (1 vault, up to 50 items) with optional Premium: $1.99/week, $19.99/year with a 3-day free trial, $39.99 lifetime (USD; prices vary by country) |
-| Unlock | Pattern on a 5×5 dot grid; no Face ID or Touch ID by design |
-| Vaults | Every pattern is its own vault; no vault list |
+| Unlock | Pattern on a 5×5 dot grid; Face ID or Touch ID optional, off by default (per vault) |
+| Vaults | Every pattern is its own vault; no vault list, except vaults the user adds to Face ID |
 | Encryption | AES-256-GCM (Apple CryptoKit); PBKDF2-HMAC-SHA512 key derivation |
 | Data | 100% on-device; no account, no cloud sync, no ads; free encrypted backup file the user stores |
 | Publisher | Swedish Treats AB, Sweden |

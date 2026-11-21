@@ -1,32 +1,32 @@
 ---
 pageId: hidden-vaults
 title: "Bóvedas ocultas: cada patrón abre su propia bóveda"
-description: "En Velcrypt cada patrón es una bóveda distinta. No hay lista de bóvedas y un patrón desconocido abre una bóveda vacía, sin error. Así funciona."
-h1: "Bóvedas ocultas: un patrón, una bóveda, ninguna lista"
+description: "En Velcrypt cada patrón es una bóveda distinta. Sin lista de bóvedas, salvo si activas Face ID, y un patrón desconocido abre una bóveda vacía, sin error."
+h1: "Bóvedas ocultas: un patrón, una bóveda, ninguna lista de forma predeterminada"
 navTitle: "Bóvedas ocultas"
-answer: "En Velcrypt cada patrón abre su propia bóveda cifrada. No hay una lista de bóvedas y un patrón que la app nunca ha visto simplemente abre una bóveda vacía, sin mensaje de error, así que nada en pantalla demuestra que existan otras bóvedas."
+answer: "En Velcrypt cada patrón abre su propia bóveda cifrada. No hay una lista de bóvedas, salvo las que tú añades a propósito a la lista opcional de Face ID, y un patrón que la app nunca ha visto simplemente abre una bóveda vacía, sin mensaje de error."
 keyFacts:
   - "Cada patrón es una bóveda propia con su propia clave de cifrado."
-  - "Velcrypt nunca muestra una lista de bóvedas."
+  - "Velcrypt nunca muestra una lista de bóvedas, salvo las que tú añades a propósito a la lista de Face ID."
   - "Un patrón desconocido abre una bóveda vacía, sin mensaje de error."
   - "Con Premium puedes tener una bóveda señuelo con contenido corriente."
   - "La versión gratuita tiene una bóveda; más bóvedas forman parte de Premium."
 primaryKeyword: "app bóveda oculta iphone"
 keywords: ["app de fotos con varias bóvedas", "bóveda señuelo iphone", "app bóveda secreta", "negación plausible bóveda de fotos", "segunda bóveda oculta"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
-summary: "Cada patrón es su propia bóveda. Sin lista de bóvedas, sin error ante patrones desconocidos y con espacio para una bóveda señuelo creíble."
+dateModified: 2026-11-21
+summary: "Cada patrón es su propia bóveda. Sin lista de bóvedas salvo si activas Face ID, sin error ante patrones desconocidos y con sitio para un señuelo."
 status: available
 schemaType: WebPage
 order: 2
 related: [pattern-lock, duress-pattern, encryption, what-is-a-decoy-vault, plausible-deniability-explained]
 faq:
   - q: "¿Cómo veo todas mis bóvedas en Velcrypt?"
-    a: "No puedes, y es intencionado. Velcrypt no tiene lista de bóvedas. La única forma de abrir una bóveda es dibujar su patrón, así que lleva tú mismo la cuenta de tus patrones."
+    a: "No puedes, y es intencionado. Velcrypt no tiene lista de bóvedas. La única forma de abrir una bóveda es dibujar su patrón, así que lleva tú mismo la cuenta de tus patrones. La única excepción es Face ID, que es opcional: las bóvedas en las que lo activas aparecen en la lista de Face ID. Las bóvedas sin Face ID nunca aparecen."
   - q: "¿Qué pasa si dibujo un patrón incorrecto?"
     a: "Velcrypt abre una bóveda vacía para ese patrón en lugar de mostrar un error. Si añadieras archivos ahí, ese patrón se convertiría en una bóveda nueva. Si esperabas ver tus fotos y no aparece nada, probablemente dibujaste un patrón ligeramente distinto."
   - q: "¿Puede alguien saber que tengo más de una bóveda?"
-    a: "No a partir de la interfaz de la app. No hay lista, contador ni mensaje de error que revele otras bóvedas. Velcrypt no puede ocultar que la app está instalada ni impedir que alguien te vea dibujar un patrón."
+    a: "No a partir de la interfaz de la app, en las bóvedas sin Face ID. No hay lista, contador ni mensaje de error que las revele. Las bóvedas que añades a la lista opcional de Face ID son la excepción: quien consiga que mires el teléfono puede verlas y abrirlas. Velcrypt no puede ocultar que la app está instalada ni impedir que alguien te vea dibujar un patrón."
   - q: "¿Qué es una bóveda señuelo?"
     a: "Una bóveda señuelo es una bóveda con contenido corriente y creíble que puedes abrir si te presionan para enseñar lo que hay en la app. Tu bóveda real sigue detrás de otro patrón. Como necesitas una segunda bóveda, requiere Premium."
 howTo:
@@ -49,6 +49,8 @@ La mayoría de las apps de bóveda tienen una contraseña y una zona bloqueada, 
 Una bóveda oculta es una bóveda cuya existencia no se puede confirmar desde fuera. En Velcrypt, cada patrón válido en la [cuadrícula 5×5](id:pattern-lock) corresponde a una bóveda distinta, con su propia clave maestra aleatoria y sus propios archivos. El patrón A muestra las fotos que guardaste tras el patrón A. El patrón B muestra un conjunto completamente diferente.
 
 No hay ninguna pantalla de ajustes que las enumere, ningún menú para «cambiar de bóveda» y ningún número que diga cuántas existen. Desde dentro de la app, cada bóveda parece ser la única.
+
+La única excepción es una decisión que tomas tú. Face ID es opcional y viene desactivado. Si lo activas para una bóveda, en Ajustes › Face ID dentro de esa bóveda, la pantalla de bloqueo muestra el botón «Desbloquear con Face ID» y, tras Face ID, eliges entre las bóvedas que añadiste. Las bóvedas sin Face ID nunca aparecen ahí. Como quien consiga que mires el teléfono puede ver y abrir esa lista, deja tu bóveda más privada solo con su patrón.
 
 ## Ningún error ante un patrón desconocido
 

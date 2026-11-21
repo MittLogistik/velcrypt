@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "velcrypt pressekit"
 keywords: ["velcrypt logo", "velcrypt presse", "velcrypt faktenblatt", "velcrypt markenfarben"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 schemaType: WebPage
 order: 8
 related: [about, security, features, pricing]
@@ -37,7 +37,7 @@ Velcrypt ist eine iPhone-App für private Fotos, Videos und Dokumente. Die Datei
 
 ### 100 Wörter
 
-Velcrypt ist eine native iPhone-App, die private Fotos, Videos und Dokumente in verschlüsselten Tresoren auf dem Gerät aufbewahrt. Statt mit Face ID oder einer PIN öffnest du einen Tresor, indem du ein Muster auf ein 5×5-Punkteraster zeichnest – ein Geheimnis, das nur in deinem Kopf existiert. Jedes Muster ist ein eigener Tresor, und ein Muster, das die App noch nie gesehen hat, öffnet einen leeren – nichts verrät also, wie viele Tresore existieren. Die Dateien werden mit AES-256-GCM über Apple CryptoKit verschlüsselt. Es gibt kein Konto, keinen Server und kein Tracking von Tresorinhalten. Velcrypt hat eine kostenlose Version und ein optionales Premium-Upgrade.
+Velcrypt ist eine native iPhone-App, die private Fotos, Videos und Dokumente in verschlüsselten Tresoren auf dem Gerät aufbewahrt. Statt mit einer PIN öffnest du einen Tresor, indem du ein Muster auf ein 5×5-Punkteraster zeichnest – ein Geheimnis, das nur in deinem Kopf existiert. Face ID ist optional und standardmäßig aus. Jedes Muster ist ein eigener Tresor, und ein Muster, das die App noch nie gesehen hat, öffnet einen leeren – nichts verrät also, wie viele Tresore existieren, außer den Tresoren, die man selbst in die Face-ID-Liste aufnimmt. Die Dateien werden mit AES-256-GCM über Apple CryptoKit verschlüsselt. Es gibt kein Konto, keinen Server und kein Tracking von Tresorinhalten. Velcrypt hat eine kostenlose Version und ein optionales Premium-Upgrade.
 
 ## Faktenblatt
 
@@ -48,8 +48,8 @@ Velcrypt ist eine native iPhone-App, die private Fotos, Videos und Dokumente in 
 | Plattform | iPhone, iOS 17 oder neuer |
 | Kategorie | Datenschutz / Dienstprogramme – verschlüsselter Tresor für Fotos, Videos und Dokumente |
 | Preismodell | Kostenlos: 1 Tresor mit bis zu 50 Objekten. Premium (unbegrenzte Objekte, mehr Tresore, Notfallmuster, alternative App-Symbole): 1,99 $/Woche, 19,99 $/Jahr mit 3 Tagen Gratistest oder 39,99 $ einmalig (USD; Preise variieren je nach Land) |
-| Entsperren | Muster auf einem 5×5-Punkteraster; bewusst kein Face ID oder Touch ID |
-| Tresore | Jedes Muster ist ein eigener Tresor; keine Tresorliste |
+| Entsperren | Muster auf einem 5×5-Punkteraster; Face ID oder Touch ID optional, standardmäßig aus und pro Tresor einschaltbar |
+| Tresore | Jedes Muster ist ein eigener Tresor; keine Tresorliste, außer den Tresoren, die du selbst in die Face-ID-Liste aufnimmst |
 | Verschlüsselung | AES-256-GCM (Apple CryptoKit); Schlüsselableitung mit PBKDF2-HMAC-SHA512 |
 | Daten | 100 % auf dem Gerät; kein Konto, keine Cloud-Synchronisierung, keine Werbung |
 | Backup | Kostenloses, manuelles verschlüsseltes Backup als passwortgeschützte .velcrypt-Datei |

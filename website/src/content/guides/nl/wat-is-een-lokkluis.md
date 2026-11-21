@@ -7,7 +7,7 @@ navTitle: "Wat is een lokkluis?"
 answer: "Een lokkluis (of nepkluis) is een tweede kluis, geopend met een ander geheim, met onschuldige maar geloofwaardige inhoud. Zet iemand je onder druk om je kluis te openen, dan open je in plaats daarvan de lokkluis. In Velcrypt opent elk nieuw patroon een eigen kluis, dus een lokkluis is gewoon een tweede patroon dat je vult met gewone foto's en documenten. Een tweede kluis vraagt om Premium."
 keyFacts:
   - "Een lokkluis is een echte, werkende kluis gevuld met onschuldige inhoud die je zonder bezwaar laat zien."
-  - "In Velcrypt is elk patroon een eigen kluis en is er geen lijst van kluizen die de andere verraadt."
+  - "In Velcrypt is elk patroon een eigen kluis en is er geen lijst van kluizen die de andere verraadt, behalve een Face ID-lijst als je die zelf aanzet."
   - "Een lege lokkluis is verdacht; een geleefde lokkluis met albums en recente items overtuigt."
   - "Een lokkluis beschermt tegen rondsnuffelen en lichte druk, niet tegen forensisch onderzoek of iemand die je zag tekenen."
   - "Een tweede kluis, en dus een lokkluis, vraagt om Premium; de gratis versie heeft één kluis."
@@ -15,7 +15,7 @@ keyFacts:
 primaryKeyword: "lokkluis"
 keywords: ["wat is een lokkluis", "nepkluis app", "lokwachtwoord fotokluis", "nep kluis app", "lokpatroon", "tweede kluis iphone"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Wat een lokkluis is, hoe je met een tweede Velcrypt-patroon een geleefde lokkluis bouwt en welke grenzen je moet kennen."
 category: security
 order: 41
@@ -39,7 +39,7 @@ faq:
   - q: "Hoe maak ik een lokkluis in Velcrypt?"
     a: "Teken een tweede patroon dat je nooit eerder hebt gebruikt. Velcrypt opent er een nieuwe, lege kluis voor. Voeg geloofwaardige alledaagse inhoud toe, zoals bonnetjes, schermafbeeldingen en gewone foto's, en dat patroon opent voortaan je lokkluis."
   - q: "Kan iemand zien dat een kluis een lokkluis is?"
-    a: "Niet vanuit de app: Velcrypt houdt geen lijst van kluizen bij en geeft geen enkele hint dat er andere bestaan. Wat een lokkluis kan verraden, is de inhoud, bijvoorbeeld als hij leeg, verouderd of duidelijk in scène gezet is."
+    a: "Niet vanuit de app: Velcrypt houdt geen lijst van kluizen bij (behalve de kluizen die je zelf aan de Face ID-lijst toevoegt) en geeft geen enkele hint dat er andere bestaan. Wat een lokkluis kan verraden, is de inhoud, bijvoorbeeld als hij leeg, verouderd of duidelijk in scène gezet is."
   - q: "Is een lokkluis hetzelfde als een dwangpatroon?"
     a: "Nee. Een lokkluis opent gewoon een andere kluis en laat de rest ongemoeid. Een dwangpatroon, beschikbaar met Velcrypt Premium, opent de lokkluis en verwijdert daarnaast ongemerkt en definitief alle andere kluizen op de iPhone."
   - q: "Moet ik een lokkluis gebruiken bij politie of grensbeambten?"
@@ -60,7 +60,7 @@ Wat een lokkluis laat werken, is niet de techniek maar het verhaal. Een lokkluis
 
 De meeste apps behandelen de lokkluis als een speciale instelling: één echte pincode, één nep-pincode. Velcrypt kiest een eenvoudiger aanpak. Elk patroon is een eigen kluis (de gratis versie heeft één kluis; meer kluizen horen bij Premium):
 
-- Er is nergens in de app een lijst van kluizen.
+- Er is nergens in de app een lijst van kluizen, behalve de Face ID-lijst met de kluizen waarvoor je zelf Face ID aanzet. Zet het dus nooit aan voor je echte kluis.
 - Een patroon dat Velcrypt nooit heeft gezien, opent een nieuwe, lege kluis.
 - Er is geen foutmelding voor een „verkeerd patroon”, en niets bewijst dat er andere kluizen bestaan.
 
@@ -98,4 +98,4 @@ Een lokkluis opent een andere kluis en laat al het andere ongemoeid. Een **dwang
 
 ## Waar Velcrypt past
 
-Velcrypt is zo ontworpen dat lokkluizen vanzelfsprekend zijn, niet achteraf aangeplakt: elk patroon is een eigen kluis, er is geen kluizenlijst, een onbekend patroon geeft geen foutmelding en er is geen Face ID waarmee iemand de vraag helemaal kan overslaan. Elke kluis wordt op je iPhone versleuteld met AES-256-GCM onder een eigen sleutel, dus de lokkluis en de echte kluis zijn even goed beschermd; het enige verschil is wat je erin stopt. Lees meer in het [beveiligingsoverzicht](id:security).
+Velcrypt is zo ontworpen dat lokkluizen vanzelfsprekend zijn, niet achteraf aangeplakt: elk patroon is een eigen kluis, er is geen kluizenlijst, een onbekend patroon geeft geen foutmelding en Face ID staat standaard uit, zodat niemand de vraag kan overslaan voor een kluis die je op alleen het patroon houdt. Elke kluis wordt op je iPhone versleuteld met AES-256-GCM onder een eigen sleutel, dus de lokkluis en de echte kluis zijn even goed beschermd; het enige verschil is wat je erin stopt. Lees meer in het [beveiligingsoverzicht](id:security).

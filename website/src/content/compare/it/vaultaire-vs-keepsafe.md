@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "vaultaire vs keepsafe"
 keywords: ["keepsafe vs vaultaire", "vaultaire recensione", "alternativa a vaultaire", "alternativa a keepsafe", "confronto app nascondere foto iphone", "migliore app cassaforte foto iphone"]
 datePublished: 2026-10-31
-dateModified: 2026-10-31
+dateModified: 2026-11-21
 summary: "Due note app cassaforte per iPhone a confronto: account, sblocco, esche, backup, recupero e prezzo. E dove si colloca Velcrypt."
 competitor: "Vaultaire e Keepsafe"
 lastChecked: "ottobre 2026"
@@ -24,7 +24,7 @@ faq:
   - q: "Vaultaire è meglio di Keepsafe?"
     a: "Dipende da cosa conta per te. Vaultaire, secondo il suo sito, non richiede account, si sblocca con una sequenza, supporta più casseforti nascoste e include un backup iCloud cifrato. Keepsafe usa un account, un PIN con Face ID facoltativo e un cloud premium, ed è disponibile anche su Android. Nessuna delle due è la migliore per tutti."
   - q: "Vaultaire ha Face ID?"
-    a: "No. Il sito di Vaultaire dice che, per scelta, non ha Face ID, Touch ID né PIN, perché la biometria può essere usata senza il tuo consenso. La sblocchi disegnando una sequenza. Velcrypt fa la stessa scelta. Keepsafe supporta Face ID, secondo la sua scheda."
+    a: "No. Il sito di Vaultaire dice che, per scelta, non ha Face ID, Touch ID né PIN, perché la biometria può essere usata senza il tuo consenso. La sblocchi disegnando una sequenza. Velcrypt invece offre Face ID come opzione, disattivata per impostazione predefinita e da attivare cassaforte per cassaforte. Keepsafe supporta Face ID, secondo la sua scheda."
   - q: "Quale app ha una modalità di emergenza o antipanico?"
     a: "Vaultaire offre una cassaforte di emergenza con il piano Pro: disegnando quella sequenza si apre l’esca e si toglie l’accesso alle altre casseforti sul dispositivo. Velcrypt offre con il Premium una sequenza di emergenza che apre una cassaforte esca ed elimina definitivamente le altre casseforti. Keepsafe offre un PIN falso, ma non abbiamo trovato alcuna descrizione pubblica di una cancellazione di emergenza."
   - q: "Cosa succede se dimentico la sequenza o il PIN?"
@@ -49,7 +49,7 @@ Vaultaire e Keepsafe sono tra le app che si confrontano più spesso quando si vo
 |---|---|---|---|
 | Account richiesto | No | Sì, secondo la sua scheda | No |
 | Metodo di sblocco | Sequenza su griglia 5×5 | PIN o codice | Sequenza su griglia 5×5 |
-| Face ID / Touch ID | Non offerti, per scelta | Supportati, secondo la sua scheda | Non offerti, per scelta |
+| Face ID / Touch ID | Non offerti, per scelta | Supportati, secondo la sua scheda | Facoltativi, spenti di base (per cassaforte) |
 | Casseforti nascoste o esca | Ogni sequenza apre la propria cassaforte; fino a 3 casseforti gratis | PIN falso/esca nel premium | Ogni sequenza apre la propria cassaforte; più di una cassaforte richiede il Premium |
 | Modalità di emergenza | Cassaforte di emergenza con Pro | Non dichiarata pubblicamente | Sequenza di emergenza con Premium |
 | Dettagli della cifratura pubblicati | Sì: AES-256-GCM, PBKDF2-HMAC-SHA512 | Non dichiarati pubblicamente nel dettaglio | Sì: AES-256-GCM, PBKDF2-HMAC-SHA512 (vedi [cifratura](id:encryption)) |
@@ -80,7 +80,7 @@ Keepsafe usa un codice tipo PIN e, secondo la sua scheda, Face ID o Touch ID per
 
 <!-- TODO verify -->
 
-Vaultaire e Velcrypt usano entrambe una sequenza disegnata tra i punti di una griglia 5×5 ed entrambe escludono volutamente Face ID. Il ragionamento è lo stesso: un volto o un dito possono essere usati senza il tuo consenso, mentre una sequenza esiste solo nella tua memoria. Una griglia 5×5 offre inoltre molti più percorsi possibili rispetto alla griglia 3×3 dei telefoni Android. I pro e i contro sono spiegati in [sequenza, PIN o Face ID](id:pattern-lock-vs-pin-vs-face-id).
+Vaultaire e Velcrypt usano entrambe una sequenza disegnata tra i punti di una griglia 5×5. Vaultaire esclude volutamente Face ID; Velcrypt lo rende facoltativo e lo lascia spento per impostazione predefinita, da attivare solo per le casseforti che scegli. Il ragionamento di fondo è lo stesso: un volto o un dito possono essere usati senza il tuo consenso, mentre una sequenza esiste solo nella tua memoria. Per questo in Velcrypt la cassaforte più privata conviene tenerla solo con la sequenza. Una griglia 5×5 offre inoltre molti più percorsi possibili rispetto alla griglia 3×3 dei telefoni Android. I pro e i contro sono spiegati in [sequenza, PIN o Face ID](id:pattern-lock-vs-pin-vs-face-id).
 
 ## Esche ed emergenza
 
@@ -88,7 +88,7 @@ Keepsafe ha offerto come funzione premium un PIN falso che apre una cassaforte e
 
 <!-- TODO verify -->
 
-In Vaultaire e Velcrypt le esche fanno parte del progetto, non sono un’aggiunta. Ogni sequenza apre la propria cassaforte, non c’è un elenco di casseforti e una sequenza mai vista dall’app apre una cassaforte vuota invece di un errore. Nulla sullo schermo prova che esistano altre casseforti; vedi [casseforti nascoste](id:hidden-vaults).
+In Vaultaire e Velcrypt le esche fanno parte del progetto, non sono un’aggiunta. Ogni sequenza apre la propria cassaforte, non c’è un elenco di casseforti (in Velcrypt, salvo quelle che aggiungi all’elenco Face ID) e una sequenza mai vista dall’app apre una cassaforte vuota invece di un errore. Nulla sullo schermo prova che esistano altre casseforti; vedi [casseforti nascoste](id:hidden-vaults).
 
 Entrambe hanno anche un’opzione di emergenza nei piani a pagamento, ma si comportano in modo diverso:
 

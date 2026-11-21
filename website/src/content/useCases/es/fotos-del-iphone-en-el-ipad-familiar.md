@@ -13,7 +13,7 @@ keyFacts:
 primaryKeyword: "fotos del iphone aparecen en el ipad"
 keywords: ["dejar de sincronizar fotos con el ipad familiar", "fotos con id de apple compartido", "privacidad fototeca compartida de icloud", "separar fotos de icloud en familia", "mis fotos aparecen en otro dispositivo"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Por qué las fotos de tu iPhone aparecen en el iPad o el Mac familiar, cómo separar cuentas y fototecas y dónde deben ir las fotos privadas."
 group: everyday
 schemaType: Article
@@ -66,7 +66,7 @@ Fotos de iCloud está cifrado, pero por defecto Apple tiene las claves. Con la [
 
 Velcrypt sigue otro camino: guarda fotos, vídeos y documentos privados en una bóveda cifrada solo en tu iPhone. No hay [cuenta, ni servidor, ni sincronización](id:offline-no-account), así que nada de lo que pongas en una bóveda puede aparecer en el iPad familiar, en el Mac ni en una Fototeca compartida.
 
-Importar copia la foto en la bóveda. Para quitarla de todos los dispositivos sincronizados, [borra el original](id:delete-original-photos-after-import) de Fotos y vacía el álbum Eliminado; con Fotos de iCloud activado, ese borrado también se sincroniza con tus otros dispositivos. La bóveda se abre con un patrón en una cuadrícula 5×5, no con el código del dispositivo ni con Face ID.
+Importar copia la foto en la bóveda. Para quitarla de todos los dispositivos sincronizados, [borra el original](id:delete-original-photos-after-import) de Fotos y vacía el álbum Eliminado; con Fotos de iCloud activado, ese borrado también se sincroniza con tus otros dispositivos. La bóveda se abre con un patrón en una cuadrícula 5×5, no con el código del dispositivo; Face ID solo se usa si lo activas para esa bóveda.
 
 ## Límites, con honestidad
 

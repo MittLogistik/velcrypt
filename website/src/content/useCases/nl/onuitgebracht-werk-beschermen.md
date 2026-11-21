@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "klantfoto's veilig bewaren iphone"
 keywords: ["onuitgebrachte foto's beschermen iphone", "fotograaf privacy klant telefoon", "werkfoto's verbergen iphone", "privacy content creators", "onuitgebrachte content privé houden"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Voor fotografen, kunstenaars en makers: houd onuitgebracht werk en klantmateriaal privé op je iPhone en deel het alleen bewust."
 group: professional
 schemaType: Article
@@ -63,7 +63,7 @@ Als je iemand fotografeert, beheer je een deel van diens privacy. Goede gewoonte
 
 Velcrypt bewaart foto's, [video's](id:hide-videos) en documenten in versleutelde kluizen op je iPhone, zonder account en zonder dat er iets wordt geüpload. In een kluis maak je [albums](id:albums) per project of klant, selecteer je meerdere items tegelijk, verplaats je items tussen albums en bekijk je foto's en video's met zoomen en vegen.
 
-Kluizen openen met een patroon op een 5×5-raster, niet met je toegangscode of Face ID. Elk patroon opent een eigen kluis, dus je kunt klantwerk in de ene kluis bewaren en privéfoto's in een andere, plus een kluis om een portfolio te laten zien met alleen wat iedereen mag zien. Een onbekend patroon opent gewoon een lege kluis.
+Kluizen openen met een patroon op een 5×5-raster, niet met je toegangscode; Face ID alleen als je het zelf per kluis aanzet. Elk patroon opent een eigen kluis, dus je kunt klantwerk in de ene kluis bewaren en privéfoto's in een andere, plus een kluis om een portfolio te laten zien met alleen wat iedereen mag zien. Een onbekend patroon opent gewoon een lege kluis.
 
 Met veilig exporteren haal je één bestand uit de kluis als het tijd is om op te leveren of te publiceren. De app vergrendelt automatisch als hij naar de achtergrond gaat en verbergt de inhoud in de appkiezer. Handig als je midden in een gesprek naar een berichtenapp wisselt.
 

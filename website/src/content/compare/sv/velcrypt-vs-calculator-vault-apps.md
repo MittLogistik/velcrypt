@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "kalkylator app dölja bilder"
 keywords: ["kalkylatorvalv", "miniräknare app dölja bilder", "falsk miniräknare fotovalv iphone", "alternativ till kalkylatorvalv", "hemlig kalkylator app"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Förklädnad mot kryptering: så står sig kalkylatorappar som döljer bilder mot Velcrypts mönsterbaserade dolda valv."
 competitor: "Kalkylatorvalv"
 lastChecked: "oktober 2026"
@@ -24,7 +24,7 @@ faq:
   - q: "Är kalkylatorappar som döljer bilder säkra?"
     a: "Det beror på appen. Miniräknarförklädnaden döljer bara att ett valv finns; hur väl filerna skyddas beror på om och hur appen krypterar dem, vilket många appar inte dokumenterar. Läs varje apps egen information om integritet och säkerhet."
   - q: "Har Velcrypt en kalkylatorförklädnad?"
-    a: "Inte som en fungerande miniräknare. Med Premium kan du byta till en alternativ appikon, till exempel en miniräknare, timer eller linjal, men appen öppnas fortfarande med mönsterrutnätet. I stället gör appen innehållet förnekbart: varje mönster öppnar ett eget valv och ingenting avslöjar hur många valv som finns. I iOS 18 och senare kan du dessutom dölja själva appen med systemets funktion för dolda appar."
+    a: "Inte som en fungerande miniräknare. Med Premium kan du byta till en alternativ appikon, till exempel en miniräknare, timer eller linjal, men appen öppnas fortfarande med mönsterrutnätet. I stället gör appen innehållet förnekbart: varje mönster öppnar ett eget valv och ingenting avslöjar hur många valv som finns, utom de valv du själv lägger i Face ID-listan. I iOS 18 och senare kan du dessutom dölja själva appen med systemets funktion för dolda appar."
   - q: "Kan någon se att en kalkylatorapp egentligen är ett valv?"
     a: "Ibland. Appens namn och beskrivning i App Store, din köphistorik, lagringsanvändningen i Inställningar och appens beteende kan avslöja den för någon som vet vad hen ska leta efter."
   - q: "Vilket är bäst för trovärdigt förnekande?"
@@ -51,7 +51,7 @@ Båda kan vara användbara. Frågan är vad du skyddar dig mot. En förklädnad 
 | Kräver konto | Nej | Varierar |
 | Molnbackup | Nej; manuell krypterad säkerhetskopia (gratis) | Varierar; vissa har molnfunktioner |
 | Upplåsning | Mönster på ett 5×5-rutnät | Sifferkod som skrivs in som en uträkning |
-| Biometri (Face ID / Touch ID) | Erbjuds inte, med avsikt | Varierar |
+| Biometri (Face ID / Touch ID) | Valfritt, avstängt som standard (per valv) | Varierar |
 | Förklädnad | Ingen fungerande förklädnad; alternativa appikoner med Premium | Ser ut som en fungerande miniräknare |
 | Lockvalv / flera valv | Varje mönster är ett eget valv | Varierar; vissa har en lockkod |
 | Nödmönster | Ja, med Premium (öppnar ett lockbete, raderar de andra valven) | Varierar |
@@ -70,7 +70,7 @@ En miniräknarikon kan vara övertygande vid en snabb blick. Men en förklädnad
 
 ## Velcrypts sorts förnekbarhet
 
-Velcrypt låtsas inte vara något annat. Förnekbarheten finns inne i appen. Varje mönster härleder en egen nyckel och öppnar ett eget valv. Det finns ingen valvlista, och ett mönster appen aldrig sett öppnar helt enkelt ett tomt valv: inget felmeddelande, ingenting som antyder att andra valv finns. Du kan ha ett lockvalv för vardagen och ett privat valv, och ingen kan bevisa att det andra finns. [Dolda valv](id:hidden-vaults) och [trovärdigt förnekande](id:plausible-deniability-explained) förklarar modellen.
+Velcrypt låtsas inte vara något annat. Förnekbarheten finns inne i appen. Varje mönster härleder en egen nyckel och öppnar ett eget valv. Det finns ingen valvlista utöver de valv du själv lägger i Face ID-listan, och ett mönster appen aldrig sett öppnar helt enkelt ett tomt valv: inget felmeddelande, ingenting som antyder att andra valv finns. Du kan ha ett lockvalv för vardagen och ett privat valv, och ingen kan bevisa att det andra finns. [Dolda valv](id:hidden-vaults) och [trovärdigt förnekande](id:plausible-deniability-explained) förklarar modellen.
 
 Innehållet krypteras med AES-256-GCM, med nycklar som härleds från ditt mönster via PBKDF2-HMAC-SHA512 (minst 600 000 iterationer) och ett salt per enhet i iOS-nyckelringen. Detaljerna finns på sidan om [kryptering](id:encryption).
 
@@ -88,7 +88,7 @@ Vill du också ha appen utom synhåll kan du i iOS 18 och senare dölja vilken a
 ## När Velcrypt kan passa dig bättre
 
 - **Du bryr dig mest om innehållet.** Dokumenterad kryptering betyder mer för dig än en förklädnad.
-- **Du vill ha valv som inte går att räkna.** Ingen lista, inget felmeddelande vid okända mönster.
+- **Du vill ha valv som inte går att räkna.** Ingen lista (utom den Face ID-lista du själv väljer), inget felmeddelande vid okända mönster.
 - **Du vill slippa konto och moln.** Se [offline utan konto](id:offline-no-account).
 - **Du använder hellre iOS egen funktion för dolda appar** än förlitar dig på en förklädnad.
 

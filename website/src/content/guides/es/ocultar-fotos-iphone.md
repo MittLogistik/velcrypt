@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "ocultar fotos iphone"
 keywords: ["cómo ocultar fotos en iphone", "álbum oculto iphone", "esconder fotos iphone", "ocultar álbum oculto iphone", "bloquear álbum oculto iphone", "ocultar fotos ios 18"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-11-21
 summary: "Usa la función Ocultar de Fotos, bloquea y esconde el álbum Oculto y entiende lo que ocultar no protege."
 category: hiding
 order: 1
@@ -117,6 +117,6 @@ La contrapartida es la responsabilidad. Una bóveda que guarda los datos solo en
 
 ## Dónde encaja Velcrypt
 
-Velcrypt es un ejemplo de ese segundo enfoque. Lo desbloqueas dibujando un patrón en una cuadrícula de 5×5 puntos en lugar de usar Face ID o el código del dispositivo, así que conocer el código de tu iPhone no lo abre. Los archivos se cifran con AES-256-GCM en el propio dispositivo, no hay cuenta y los datos de la bóveda no se incluyen en las copias de seguridad de iCloud. Cada patrón abre su propia bóveda independiente, y un patrón desconocido simplemente abre una vacía; la página sobre [bóvedas ocultas](id:hidden-vaults) explica por qué eso importa.
+Velcrypt es un ejemplo de ese segundo enfoque. Lo desbloqueas dibujando un patrón en una cuadrícula de 5×5 puntos, no con el código del dispositivo, así que conocer el código de tu iPhone no lo abre. Face ID es opcional y solo se usa en las bóvedas en las que lo actives. Los archivos se cifran con AES-256-GCM en el propio dispositivo, no hay cuenta y los datos de la bóveda no se incluyen en las copias de seguridad de iCloud. Cada patrón abre su propia bóveda independiente, y un patrón desconocido simplemente abre una vacía; la página sobre [bóvedas ocultas](id:hidden-vaults) explica por qué eso importa.
 
 Importar a Velcrypt copia la foto en lugar de moverla, así que el original sigue en Fotos hasta que lo elimines tú, también de Eliminado. La guía para [borrar los originales después de importar](id:delete-original-photos-after-import) te lo explica paso a paso. Para una visión general de la parte de fotos de la app, consulta [ocultar fotos con Velcrypt](id:hide-photos), y para una comparación directa, [Velcrypt frente al álbum Oculto del iPhone](id:velcrypt-vs-iphone-hidden-album).

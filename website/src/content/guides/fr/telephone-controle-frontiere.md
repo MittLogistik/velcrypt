@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "douane fouille téléphone"
 keywords: ["fouille du téléphone à la frontière", "confidentialité téléphone passage de frontière", "liste confidentialité téléphone en voyage", "douane fouille iphone", "désactiver face id rapidement"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-11-21
 summary: "Un aperçu général des fouilles d’appareils aux frontières, une liste de préparation pour iPhone, la place d’un coffre leurre et les limites éthiques."
 category: practical
 order: 33
@@ -107,6 +107,6 @@ La confidentialité à la frontière est une préoccupation légitime. La plupar
 
 ## La place de Velcrypt
 
-Velcrypt a toute sa place dans une configuration de voyage pour le contenu personnel que vous voulez garder sur votre iPhone. Les coffres sont chiffrés sur l’appareil en AES-256-GCM, il n’y a ni compte ni serveur, et pas de Face ID qui permettrait d’ouvrir un coffre sans votre participation. Chaque schéma ouvre son propre [coffre caché](id:hidden-vaults) : vous pouvez donc garder un leurre bien vivant contre la curiosité du quotidien.
+Velcrypt a toute sa place dans une configuration de voyage pour le contenu personnel que vous voulez garder sur votre iPhone. Les coffres sont chiffrés sur l’appareil en AES-256-GCM, il n’y a ni compte ni serveur, et Face ID est désactivé par défaut : laissez-le désactivé pour vos coffres sensibles, afin que personne ne puisse les ouvrir sans votre participation. Chaque schéma ouvre son propre [coffre caché](id:hidden-vaults) : vous pouvez donc garder un leurre bien vivant contre la curiosité du quotidien.
 
 Il ne peut rien contre quelqu’un qui vous regarde tracer votre schéma, contre les copies laissées dans Photos, iCloud ou les conversations, ni contre les obligations légales du pays où vous entrez. Utilisez-le en complément de la liste ci-dessus, pas à sa place.

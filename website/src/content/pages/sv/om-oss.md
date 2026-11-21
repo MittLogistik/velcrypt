@@ -1,20 +1,20 @@
 ---
 pageId: about
 title: "Om Velcrypt: integritet som grundprincip"
-description: "Varför Velcrypt finns och principerna bakom appen: kryptering på enheten, inget konto, ingen biometri, ärliga gränser, inga annonser eller dataförsäljning."
+description: "Varför Velcrypt finns och principerna bakom appen: kryptering på enheten, inget konto, Face ID bara om du vill, ärliga gränser, inga annonser."
 h1: "Om Velcrypt"
 navTitle: "Om oss"
 answer: "Velcrypt finns för att ge iPhone-användare en enkel, ärlig plats för privata bilder, videor och dokument: krypterade på enheten, öppnade bara med ett mönster du minns, utan konto, utan moln och utan annonser."
 keyFacts:
   - "Byggt kring kryptering på enheten, utan konto och utan servrar för ditt innehåll."
-  - "Ingen Face ID eller Touch ID, med avsikt – ett mönster finns bara i ditt minne."
+  - "Face ID och Touch ID är valfria och avstängda som standard – ett mönster finns bara i ditt minne."
   - "Inga annonser och ingen försäljning av data."
   - "Ärliga om begränsningarna, bland annat att glömda mönster inte kan återställas."
   - "Krypterad säkerhetskopiering ingår gratis för alla; ett nödmönster för tvångssituationer finns med Premium."
 primaryKeyword: "om velcrypt"
 keywords: ["velcrypt app", "vem står bakom velcrypt", "velcrypts principer", "privat fotovalv iphone"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 schemaType: AboutPage
 order: 4
 related: [security, features, offline-no-account, pricing, press]
@@ -35,7 +35,7 @@ Din telefon innehåller saker du aldrig skulle ge till en främling: en skanning
 
 Många valvappar vill att du skapar ett konto, skickar dina filer till ett moln eller klär en enkel PIN-kod i marknadsföringsspråk. Vi ville ha något smalare och lättare att lita på: en inbyggd iPhone-app som krypterar dina filer på enheten, öppnas med ett mönster bara du kan och tydligt berättar vad den inte klarar.
 
-Velcrypt är den appen. Den förvarar bilder, videor och dokument i krypterade valv som öppnas med varsitt mönster på ett 5×5-rutnät. Ett mönster appen aldrig sett öppnar ett tomt valv, så ingenting i appen avslöjar hur många valv du har. Detaljerna finns på sidan om [säkerhetsmodellen](id:security).
+Velcrypt är den appen. Den förvarar bilder, videor och dokument i krypterade valv som öppnas med varsitt mönster på ett 5×5-rutnät. Ett mönster appen aldrig sett öppnar ett tomt valv, så ingenting i appen avslöjar hur många valv du har, utom de valv du själv lägger i Face ID-listan. Detaljerna finns på sidan om [säkerhetsmodellen](id:security).
 
 ## Våra principer
 
@@ -47,9 +47,9 @@ Ditt valvinnehåll krypteras och lagras på din iPhone och ingen annanstans. Det
 
 Det finns ingen registrering, ingen e-postadress och ingen funktion för att återställa lösenord. Ett konto vore ännu en sak som kan utsättas för intrång eller användas för att koppla dig till dina data.
 
-### Ingen biometri, med avsikt
+### Biometri bara om du vill
 
-Velcrypt erbjuder medvetet inte Face ID eller Touch ID. Biometri är bekvämt, men ett ansikte eller ett finger kan användas utan ditt samtycke. Ett mönster finns bara i ditt minne. Resonemanget hittar du i [mönsterlås, PIN-kod eller Face ID](id:pattern-lock-vs-pin-vs-face-id).
+Face ID och Touch ID är avstängda som standard för varje valv. Biometri är bekvämt, men ett ansikte eller ett finger kan användas utan ditt samtycke, medan ett mönster bara finns i ditt minne. Därför slår du själv på Face ID per valv om du vill ha det, och ditt mest privata valv kan fortsätta att öppnas bara med sitt mönster. Resonemanget hittar du i [mönsterlås, PIN-kod eller Face ID](id:pattern-lock-vs-pin-vs-face-id).
 
 ### Ärliga gränser
 

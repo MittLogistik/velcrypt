@@ -9,12 +9,12 @@ keyFacts:
   - "Ein Bedrohungsmodell fragt: Wer könnte das Material wollen, was kann diese Person tun, und was passiert, wenn sie es bekommt?"
   - "Datensparsamkeit – weniger, kürzer aufbewahren – ist oft der stärkste Schutz für Quellen."
   - "Foto-Metadaten können verraten, wo, wann und mit welchem Gerät ein Bild aufgenommen wurde."
-  - "Velcrypt hat kein Konto, keine Server und keine Synchronisierung; Tresore öffnen sich per Muster, nicht per Face ID."
+  - "Velcrypt hat kein Konto, keine Server und keine Synchronisierung; Tresore öffnen sich per Muster; Face ID ist optional und standardmäßig aus."
   - "Ein Tresor schützt keine Kopien in iCloud, Messengern, E-Mails oder auf dem Handy der Quelle."
 primaryKeyword: "quellenschutz journalisten iphone"
 keywords: ["quellenfotos auf dem handy schützen", "handy sicherheit journalisten", "quellendokumente iphone datenschutz", "geräte sicherheit reporter", "bedrohungsmodell journalisten"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Bedrohungsmodell, Datensparsamkeit und Metadaten für Reporter – und wo ein verschlüsselter iPhone-Tresor als eine Schutzschicht passt."
 group: professional
 schemaType: Article
@@ -63,7 +63,7 @@ Die Antworten bestimmen deine Werkzeuge. Eine Geschichte mit geringem Risiko zu 
 
 Velcrypt ist eine Schicht in diesem Plan. Es speichert Fotos, Videos und Dokumente in verschlüsselten Tresoren auf deinem iPhone, mit AES-256-GCM und Schlüsseln, die aus deinem Muster abgeleitet werden. Es gibt kein Konto, keinen Server, keine Synchronisierung und keine Analyse von Tresorinhalten – auf keinem Server liegt also etwas, das jemand anfordern könnte.
 
-Tresore öffnen sich mit einem Muster auf einem 5×5-Raster. Velcrypt unterstützt Face ID und Touch ID bewusst nicht, weil Biometrie ohne deine Zustimmung genutzt werden kann; ein Muster existiert nur in deinem Gedächtnis. Die Begründung steht in [Muster vs. PIN vs. Face ID](id:pattern-lock-vs-pin-vs-face-id). Jedes Muster öffnet seinen eigenen Tresor, und ein unbekanntes Muster öffnet ohne Fehler einen leeren – das unterstützt [glaubhafte Abstreitbarkeit](id:plausible-deniability-explained). Weitere Tresore gehören zu Premium. Mit Premium öffnet ein [Notfallmuster](id:duress-pattern) einen Köder-Tresor und löscht die anderen endgültig. Es ist für Situationen wie Diebstahl oder Drohungen gedacht, nicht zum Löschen von Material, wenn Behörden rechtmäßig Zugriff verlangen – das kann selbst eine Straftat sein. Hol dir rechtlichen Rat, wenn das für dich ein Risiko ist.
+Tresore öffnen sich mit einem Muster auf einem 5×5-Raster. Face ID und Touch ID sind optional und standardmäßig aus, weil Biometrie ohne deine Zustimmung genutzt werden kann; ein Muster existiert nur in deinem Gedächtnis. Für Quellenmaterial schaltest du Face ID am besten nicht ein. Die Begründung steht in [Muster vs. PIN vs. Face ID](id:pattern-lock-vs-pin-vs-face-id). Jedes Muster öffnet seinen eigenen Tresor, und ein unbekanntes Muster öffnet ohne Fehler einen leeren – das unterstützt [glaubhafte Abstreitbarkeit](id:plausible-deniability-explained). Weitere Tresore gehören zu Premium. Mit Premium öffnet ein [Notfallmuster](id:duress-pattern) einen Köder-Tresor und löscht die anderen endgültig. Es ist für Situationen wie Diebstahl oder Drohungen gedacht, nicht zum Löschen von Material, wenn Behörden rechtmäßig Zugriff verlangen – das kann selbst eine Straftat sein. Hol dir rechtlichen Rat, wenn das für dich ein Risiko ist.
 
 ## Ehrliche Grenzen
 

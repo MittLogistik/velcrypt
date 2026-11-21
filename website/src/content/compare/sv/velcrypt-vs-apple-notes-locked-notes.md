@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "låsa bilder i anteckningar iphone"
 keywords: ["dölja bilder i låsta anteckningar", "apple anteckningar låsa bilder", "låst anteckning iphone bilder", "anteckningar privata bilder", "låst anteckning vs valvapp"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Dölja bilder i en låst anteckning i Apple Anteckningar mot ett särskilt krypterat valv: bekvämlighet, kapacitet, synk och vem som kan öppna dem."
 competitor: "Låsta anteckningar i Apple Anteckningar"
 lastChecked: "oktober 2026"
@@ -53,7 +53,7 @@ Du kan lägga till bilder från ditt bibliotek, ta en bild inne i anteckningen e
 | Kräver konto | Nej | Nej för anteckningar på enheten; Apple-konto för iCloud-synk |
 | Molnbackup | Nej; manuell krypterad säkerhetskopia (gratis) | Ja, med iCloud-anteckningar |
 | Upplåsning | Mönster på ett 5×5-rutnät | Enhetens lösenkod eller separat lösenord för Anteckningar |
-| Biometri | Erbjuds inte, med avsikt | Valfritt Face ID / Touch ID |
+| Biometri | Valfritt, avstängt som standard (per valv) | Valfritt Face ID / Touch ID |
 | Lockvalv / flera valv | Varje mönster är ett eget valv | Stöds inte; alla låsta anteckningar delar ett lösenord |
 | Nödmönster | Ja, med Premium (öppnar ett lockbete, raderar de andra valven) | Nej |
 | Återställning om du glömmer koden | Ingen | Lösenkodsalternativet slipper ett separat lösenord; gamla lösenord för Anteckningar kan inte återställas |
@@ -78,7 +78,7 @@ Den andra skillnaden är hemligheten. Om du låser anteckningar med enhetens lö
 - **Du har bara några få objekt.** En låst anteckning är enklare än att installera något.
 - **Du vill synka mellan iPhone, iPad och Mac.** Velcrypt finns bara för iPhone och synkar inte.
 - **Du vill kunna återställa.** Med iCloud överlever dina låsta anteckningar en förlorad telefon.
-- **Du gillar bekvämligheten med Face ID.** Velcrypt erbjuder det medvetet inte.
+- **Du vill kunna falla tillbaka på lösenkoden.** Velcrypt har Face ID om du slår på det, men ingen reserv via iPhonens lösenkod.
 
 ## När Velcrypt kan passa dig bättre
 

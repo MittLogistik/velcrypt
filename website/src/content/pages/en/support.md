@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "velcrypt support"
 keywords: ["contact velcrypt", "velcrypt help", "velcrypt not opening vault", "velcrypt troubleshooting", "velcrypt email"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 schemaType: ContactPage
 order: 5
 related: [faq, forgot-vault-pattern, auto-lock, security, privacy]
@@ -66,7 +66,7 @@ This is not a policy we could change on request; it’s how the encryption works
 
 This is the most common question. Velcrypt has no “wrong pattern” message: any pattern it hasn’t seen before simply opens a new, empty vault. If you expected your photos, you most likely drew a slightly different pattern — an extra dot, a missed corner, or a different starting point.
 
-Lock the app, then draw your pattern again slowly and deliberately. Try any close variations you remember. Your original vault is still there, untouched; the empty one doesn’t replace it.
+Lock the app, then draw your pattern again slowly and deliberately. Try any close variations you remember. Your original vault is still there, untouched; the empty one doesn’t replace it, and an empty vault doesn’t use up your free vault.
 
 ### The app locks too fast
 

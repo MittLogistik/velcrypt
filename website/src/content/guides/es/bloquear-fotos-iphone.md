@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "bloquear fotos iphone"
 keywords: ["cómo bloquear fotos en iphone", "bloquear app fotos iphone", "requerir face id fotos", "bloquear álbum oculto", "poner bloqueo a fotos iphone", "bloquear fotos con face id ios 18"]
 datePublished: 2026-10-21
-dateModified: 2026-10-21
+dateModified: 2026-11-21
 summary: "Cuatro formas de bloquear fotos en el iPhone, del álbum Oculto al bloqueo de apps y las notas bloqueadas, comparadas lado a lado."
 category: hiding
 order: 2
@@ -101,6 +101,6 @@ También conviene pensar en la biometría. Face ID es rápido, pero alguien pued
 
 ## Dónde encaja Velcrypt
 
-Velcrypt es una bóveda de la cuarta categoría. A propósito, no tiene Face ID ni Touch ID: la desbloqueas dibujando un [patrón](id:pattern-lock) en una cuadrícula de 5×5 puntos, con al menos seis puntos y al menos un cambio de dirección, y los patrones más largos son mejores. Ese patrón solo existe en tu memoria y no tiene relación con el código de tu iPhone.
+Velcrypt es una bóveda de la cuarta categoría. La desbloqueas dibujando un [patrón](id:pattern-lock) en una cuadrícula de 5×5 puntos, con al menos seis puntos y al menos un cambio de dirección, y los patrones más largos son mejores. Ese patrón solo existe en tu memoria y no tiene relación con el código de tu iPhone. Face ID o Touch ID es opcional y viene desactivado; si lo activas para una bóveda, recuerda que quien consiga que mires el teléfono puede abrirla.
 
 El contenido se cifra en el dispositivo con AES-256-GCM, la bóveda [se bloquea automáticamente](id:auto-lock) cuando sales de la app y no se sube nada. El precio de ese diseño es que no hay recuperación: si olvidas el patrón, no podrás abrir la bóveda, y Velcrypt tampoco. Como cualquier bloqueo, tampoco sirve si alguien te ve dibujar el patrón o si entregas el teléfono con la bóveda ya abierta.

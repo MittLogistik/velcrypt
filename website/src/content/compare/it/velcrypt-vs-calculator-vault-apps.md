@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "app calcolatrice segreta vs velcrypt"
 keywords: ["app calcolatrice segreta", "calcolatrice per nascondere foto", "finta calcolatrice cassaforte iphone", "alternativa calcolatrice segreta", "app cassaforte calcolatrice"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Travestimento contro cifratura: come si confrontano le app cassaforte a forma di calcolatrice con le casseforti nascoste a sequenza di Velcrypt."
 competitor: "App cassaforte calcolatrice"
 lastChecked: "ottobre 2026"
@@ -51,7 +51,7 @@ Entrambi possono essere utili. La domanda è da cosa ti stai proteggendo. Un tra
 | Account richiesto | No | Variabile |
 | Backup cloud | Nessuna sincronizzazione; backup cifrato manuale gratuito in un file | Variabile; alcune offrono funzioni cloud |
 | Metodo di sblocco | Sequenza su griglia 5×5 | Codice numerico digitato come calcolo |
-| Biometria (Face ID / Touch ID) | Non offerta, per scelta | Variabile |
+| Biometria (Face ID / Touch ID) | Facoltativa, spenta di base (per cassaforte) | Variabile |
 | Travestimento | Icone alternative (Premium); nessuna app travestita funzionante | Sembra una calcolatrice funzionante |
 | Esca / più casseforti | Ogni sequenza è una cassaforte a sé (più casseforti con Premium) | Variabile; alcune offrono un codice esca |
 | Sequenza di emergenza | Sì, con il Premium (apre un’esca, elimina le altre casseforti) | Variabile |
@@ -70,7 +70,7 @@ Un’icona da calcolatrice può essere convincente a prima vista. Ma un travesti
 
 ## Il tipo di negabilità di Velcrypt
 
-Velcrypt non finge di essere qualcos’altro. La sua negabilità vive dentro l’app. Ogni sequenza deriva la propria chiave e apre la propria cassaforte. Non c’è un elenco di casseforti e una sequenza mai vista dall’app apre semplicemente una cassaforte vuota: nessun errore, nulla che suggerisca l’esistenza di altre casseforti. Puoi tenere una cassaforte esca per le cose di tutti i giorni e una privata, e nessuno può dimostrare che la seconda esista. [Casseforti nascoste](id:hidden-vaults) e [negabilità plausibile](id:plausible-deniability-explained) spiegano il modello.
+Velcrypt non finge di essere qualcos’altro. La sua negabilità vive dentro l’app. Ogni sequenza deriva la propria chiave e apre la propria cassaforte. Non c’è un elenco di casseforti, salvo quelle che aggiungi di proposito all’elenco Face ID, e una sequenza mai vista dall’app apre semplicemente una cassaforte vuota: nessun errore, nulla che suggerisca l’esistenza di altre casseforti. Puoi tenere una cassaforte esca per le cose di tutti i giorni e una privata, e nessuno può dimostrare che la seconda esista. [Casseforti nascoste](id:hidden-vaults) e [negabilità plausibile](id:plausible-deniability-explained) spiegano il modello.
 
 I contenuti sono cifrati con AES-256-GCM, con chiavi derivate dalla tua sequenza tramite PBKDF2-HMAC-SHA512 (almeno 600.000 iterazioni) e un salt per dispositivo nel portachiavi di iOS. I dettagli sono nella pagina sulla [cifratura](id:encryption).
 
@@ -88,7 +88,7 @@ Se vuoi anche togliere l’app dalla vista, da iOS 18 puoi nascondere qualsiasi 
 ## Quando Velcrypt potrebbe fare più al caso tuo
 
 - **Ti interessa soprattutto ciò che c’è dentro.** Una cifratura documentata conta più di un costume.
-- **Vuoi casseforti che non si possono contare.** Nessun elenco, nessun errore con sequenze sconosciute.
+- **Vuoi casseforti che non si possono contare.** Nessun elenco (tranne l’elenco Face ID che scegli tu), nessun errore con sequenze sconosciute.
 - **Non vuoi account né cloud.** Vedi [offline, senza account](id:offline-no-account).
 - **Preferisci la funzione di iOS per nascondere le app** piuttosto che affidarti a un travestimento.
 

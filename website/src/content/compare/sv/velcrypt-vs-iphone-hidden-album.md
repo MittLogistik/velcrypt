@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "dölja bilder iphone gömda album"
 keywords: ["albumet gömda vs valvapp", "är albumet gömda säkert", "alternativ till albumet gömda", "gömda album face id", "dolda bilder icloud"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Apples inbyggda album Gömda mot ett separat krypterat valv: vad vart och ett skyddar, var bilderna synkas och vem som kan öppna dem."
 competitor: "iPhones album Gömda"
 lastChecked: "oktober 2026"
@@ -53,7 +53,7 @@ Om iCloud-bilder är påslaget synkas dolda objekt som allt annat. De är krypte
 | Kräver konto | Nej | Del av Bilder; Apple-konto krävs för iCloud-synk |
 | Molnbackup | Nej; manuell krypterad säkerhetskopia (gratis) | Ja, med iCloud-bilder eller iCloud-säkerhetskopiering |
 | Upplåsning | Mönster på ett 5×5-rutnät, skilt från lösenkoden | Face ID, Touch ID eller enhetens lösenkod |
-| Biometri | Erbjuds inte, med avsikt | Ja |
+| Biometri | Valfritt, avstängt som standard (per valv) | Ja |
 | Lockvalv / flera valv | Varje mönster är ett eget valv | Ett album Gömda |
 | Nödmönster | Ja, med Premium (öppnar ett lockbete, raderar de andra valven) | Nej |
 | Återställning om du glömmer koden | Ingen | Enhetens lösenkod och återställning av Apple-kontot |
@@ -67,7 +67,7 @@ Om iCloud-bilder är påslaget synkas dolda objekt som allt annat. De är krypte
 
 Den största praktiska skillnaden är vem som kommer in. Albumet Gömda litar på enhetens lösenkod. Det är rimligt mot främlingar, men många delar sin lösenkod med en partner, ett barn eller en familjemedlem, eller har knappat in den framför dem. Den som kan lösenkoden kan öppna albumet Gömda, även om Face ID är inställt, eftersom lösenkoden alltid godtas som reserv.
 
-Velcrypts mönster är en separat hemlighet. Att kunna din lösenkod, eller att hålla telefonen framför ditt ansikte, öppnar inget valv. Det är också därför Velcrypt medvetet saknar Face ID: ett ansikte eller ett finger kan användas utan ditt samtycke. Se [mönsterlås](id:pattern-lock).
+Velcrypts mönster är en separat hemlighet. Att kunna din lösenkod öppnar inget valv, och att hålla telefonen framför ditt ansikte öppnar bara de valv du själv har slagit på Face ID för. Face ID är avstängt som standard, eftersom ett ansikte eller ett finger kan användas utan ditt samtycke; låt ditt mest privata valv bara ha sitt mönster. Se [mönsterlås](id:pattern-lock).
 
 ## Kopior och molnet
 
@@ -79,7 +79,7 @@ Velcrypt fungerar tvärtom. En importerad bild kopieras till ett krypterat valv 
 
 ## Förnekbarhet
 
-Det finns exakt ett album Gömda, och att det finns är uppenbart för alla som öppnar Bilder (om du inte stänger av att det visas). Velcrypt har ingen valvlista. Varje mönster öppnar ett eget valv, och ett mönster appen aldrig sett öppnar ett tomt valv utan felmeddelande. Det gör att du kan ha ett lockvalv och omöjliggör bevis för att andra valv finns. Se [dolda valv](id:hidden-vaults).
+Det finns exakt ett album Gömda, och att det finns är uppenbart för alla som öppnar Bilder (om du inte stänger av att det visas). Velcrypt har ingen valvlista, utom de valv du själv lägger i Face ID-listan. Varje mönster öppnar ett eget valv, och ett mönster appen aldrig sett öppnar ett tomt valv utan felmeddelande. Det gör att du kan ha ett lockvalv och omöjliggör bevis för att andra valv finns. Se [dolda valv](id:hidden-vaults).
 
 ## När albumet Gömda kan passa dig bättre
 

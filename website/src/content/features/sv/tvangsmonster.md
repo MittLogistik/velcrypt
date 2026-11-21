@@ -16,7 +16,7 @@ keyFacts:
 primaryKeyword: "nödmönster valvapp"
 keywords: ["nödlösenord iphone", "paniklösenord fotovalv", "panikkod app", "skydd mot tvingad upplåsning", "självförstörande valv mönster"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Ett separat mönster som öppnar ditt lockbetesvalv och i tysthet, permanent raderar alla andra valv på iPhonen. Premium."
 status: available
 schemaType: WebPage
@@ -92,7 +92,7 @@ Hela genomgången, med tips för att öva, finns i [så ställer du in ett lockb
 
 Ett nödmönster är bara användbart om ingen kan se att det finns. Velcrypt visar aldrig om ett är inställt, varken i gränssnittet eller i inställningarna. I bakgrunden finns alltid en krypterad post med fast storlek i iOS-nyckelringen; när inget nödmönster är inställt innehåller den slumpmässiga byte. Posten ser alltså likadan ut oavsett om du använder funktionen eller inte.
 
-Det bygger vidare på [dolda valv](id:hidden-vaults): varje mönster öppnar sitt eget valv, det finns ingen valvlista och ett okänt mönster öppnar ett tomt valv utan felmeddelande. Tanken bakom båda förklaras i [trovärdig förnekelse, förklarat](id:plausible-deniability-explained).
+Det bygger vidare på [dolda valv](id:hidden-vaults): varje mönster öppnar sitt eget valv, det finns ingen valvlista (utom de valv du själv lägger i Face ID-listan) och ett okänt mönster öppnar ett tomt valv utan felmeddelande. Nödmönstret fungerar bara via mönster; Face ID-listan utlöser det inte, och valven som nödmönstret raderar försvinner också ur Face ID-listan. Tanken bakom båda förklaras i [trovärdig förnekelse, förklarat](id:plausible-deniability-explained).
 
 ## När det kan hjälpa
 

@@ -14,7 +14,7 @@ keyFacts:
 primaryKeyword: "proteger fotos inéditas iphone"
 keywords: ["guardar fotos de clientes en privado iphone", "fotógrafo privacidad de clientes en el móvil", "ocultar fotos de trabajo iphone", "privacidad para creadores de contenido", "mantener privado el contenido inédito"]
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Para fotógrafos, artistas y creadores: mantén privado en el iPhone tu trabajo inédito y el de tus clientes, y compártelo solo a propósito."
 group: professional
 schemaType: Article
@@ -63,7 +63,7 @@ Cuando fotografías a alguien, tienes en tus manos parte de su privacidad. Buena
 
 Velcrypt guarda fotos, [vídeos](id:hide-videos) y documentos en bóvedas cifradas en tu iPhone, sin cuenta y sin subir nada. Dentro de una bóveda puedes crear [álbumes](id:albums) por proyecto o por cliente, usar la selección múltiple, mover elementos entre álbumes y ver fotos y vídeos con zoom y deslizando.
 
-Las bóvedas se abren con un patrón dibujado en una cuadrícula 5×5, no con tu código ni con Face ID. Cada patrón abre su propia bóveda, así que puedes tener el trabajo de clientes en una, las fotos personales en otra y una bóveda para enseñar tu portafolio que contenga solo lo que no te importa que vea cualquiera. Un patrón desconocido simplemente abre una bóveda vacía.
+Las bóvedas se abren con un patrón dibujado en una cuadrícula 5×5, no con tu código; Face ID es opcional y viene desactivado. Cada patrón abre su propia bóveda, así que puedes tener el trabajo de clientes en una, las fotos personales en otra y una bóveda para enseñar tu portafolio que contenga solo lo que no te importa que vea cualquiera. Un patrón desconocido simplemente abre una bóveda vacía.
 
 La exportación segura te permite sacar un único archivo cuando llega el momento de entregar o publicar. La app se bloquea automáticamente al pasar a segundo plano y oculta su contenido en el selector de apps, algo útil cuando cambias a una app de mensajería en mitad de una conversación.
 

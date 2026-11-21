@@ -19,7 +19,7 @@ keywords:
   - "fotokluis privacy"
   - "geheime foto app veilig"
 datePublished: 2026-10-21
-dateModified: 2026-10-22
+dateModified: 2026-11-21
 summary: "Een praktische checklist om elke fotokluis te beoordelen: versleuteling, privacylabel, account, cloud, advertenties, verwijderen en herstel."
 category: choosing
 order: 21
@@ -115,7 +115,7 @@ Ook een goedgebouwde kluis heeft grenzen, en een eerlijke app zegt dat. Hij kan 
 Voor de transparantie: zo scoort onze eigen app:
 
 - **Versleuteling:** AES-256-GCM via Apple CryptoKit. Sleutels komen van je patroon via PBKDF2-HMAC-SHA512 met minstens 600.000 iteraties, elke kluis heeft een eigen willekeurige hoofdsleutel, en iOS-gegevensbescherming komt daar nog bovenop. Details op onze [beveiligingspagina](id:security) en de [functiepagina over versleuteling](id:encryption).
-- **Geheim:** een patroon op een raster van 5×5, los van je toegangscode; bewust geen Face ID.
+- **Geheim:** een patroon op een raster van 5×5, los van je toegangscode; Face ID is optioneel, staat standaard uit en valt niet terug op de toegangscode.
 - **Account en cloud:** geen. Geen registratie, geen servers, geen uploads ([offline, zonder account](id:offline-no-account)).
 - **Herstel:** alleen via een back-up die je zelf maakt. Kluisinhoud valt buiten iCloud- en computerback-ups; een gratis versleuteld back-upbestand, beveiligd met een eigen back-upwachtwoord, zet je terug op elke iPhone. Een vergeten patroon of back-upwachtwoord is niet te herstellen.
 - **Originelen:** importeren kopieert een item; het origineel verwijder je zelf.
