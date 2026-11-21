@@ -9,7 +9,7 @@ options:
 settings:
   base:
     SWIFT_VERSION: "5.0"
-    MARKETING_VERSION: "1.0.0"
+    MARKETING_VERSION: "1.1.0"
     CURRENT_PROJECT_VERSION: "1"
     CODE_SIGN_STYLE: Automatic
     ENABLE_USER_SCRIPT_SANDBOXING: YES
@@ -36,6 +36,7 @@ targets:
         NSPhotoLibraryUsageDescription: Velcrypt only uses photo access to delete originals you choose to remove after importing them.
         NSCameraUsageDescription: Photos and videos you take in Velcrypt go straight into your encrypted vault, never into your photo library.
         NSMicrophoneUsageDescription: Velcrypt records sound only when you film a video into your vault.
+        NSFaceIDUsageDescription: Velcrypt uses Face ID only for vaults you turn it on for. It is off by default.
         ITSAppUsesNonExemptEncryption: false
         UTExportedTypeDeclarations:
           - UTTypeIdentifier: com.velcrypt.backup

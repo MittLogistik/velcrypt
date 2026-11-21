@@ -13,6 +13,7 @@ struct VaultHomeView: View {
     @State private var showSettings = false
     @State private var showImporter = false
     @State private var showWelcomePaywall = false
+    @State private var showGuide = false
 
     var body: some View {
         NavigationStack {
@@ -52,6 +53,7 @@ struct VaultHomeView: View {
             }
             .sheet(isPresented: $showSettings) { SettingsView() }
             .sheet(isPresented: $showWelcomePaywall) { PaywallView(reason: .welcome) }
+            .sheet(isPresented: $showGuide) { HowItWorksView() }
             .vaultImporter(isPresented: $showImporter)
         }
         .alert(
@@ -65,8 +67,9 @@ struct VaultHomeView: View {
         .task {
             await library.load()
             ReviewPrompt.shared.recordVaultOpened()
-            // Shown once, the first time a vault opens (right after onboarding): most purchases happen on day one.
-            if !hasSeenWelcomePaywall && !premium.isPremium {
+            // Shown once, the first time a vault opens that already holds files. Never right after onboarding:
+            // people should be able to try the free version first.
+            if !hasSeenWelcomePaywall && !premium.isPremium && !library.items.isEmpty {
                 hasSeenWelcomePaywall = true
                 try? await Task.sleep(for: .milliseconds(500))
                 showWelcomePaywall = true
@@ -80,6 +83,7 @@ struct VaultHomeView: View {
         HStack(spacing: 4) {
             VelcryptWordmark(markSize: 30)
             Spacer()
+            headerButton("questionmark", label: "How Velcrypt Works") { showGuide = true }
             headerButton("lock.fill", label: "Lock vault") {
                 Haptics.tap()
                 session.lock()
@@ -170,6 +174,9 @@ struct VaultHomeView: View {
                     .font(VCFont.callout)
                     .foregroundStyle(VCColor.textSecondary)
                     .multilineTextAlignment(.center)
+                Button("How Velcrypt Works") { showGuide = true }
+                    .font(VCFont.callout.weight(.semibold))
+                    .foregroundStyle(VCColor.accentCyan)
             }
             .frame(maxWidth: .infinity)
         }

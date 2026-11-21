@@ -69,19 +69,20 @@ final class PremiumStore {
 
     /// Why adding to `library` needs Premium, or nil if it's allowed.
     func blockReason(adding library: VaultLibrary, session: VaultSession) -> PaywallView.Reason? {
-        if library.isNewVault, !PremiumLimits.canCreateVault(savedVaults: session.savedVaultCount, isPremium: isPremium) {
-            return .vaultLimit
-        }
+        if let reason = blockReason(creatingIn: library, session: session) { return reason }
         if PremiumLimits.remainingItems(current: library.items.count, isPremium: isPremium) == 0 {
             return .itemLimit
         }
         return nil
     }
 
-    /// Why creating something in a new vault (e.g. an album or a restore) needs Premium, or nil.
+    /// Why starting to use an empty vault (its first file or album) needs Premium, or nil.
+    ///
+    /// Only vaults that hold files count towards the free vault. An empty vault, for example one opened by
+    /// drawing a different pattern by mistake, never uses it up.
     func blockReason(creatingIn library: VaultLibrary, session: VaultSession) -> PaywallView.Reason? {
-        guard library.isNewVault else { return nil }
-        return PremiumLimits.canCreateVault(savedVaults: session.savedVaultCount, isPremium: isPremium) ? nil : .vaultLimit
+        guard library.items.isEmpty else { return nil }
+        return PremiumLimits.canCreateVault(savedVaults: session.otherVaultsWithItemsCount, isPremium: isPremium) ? nil : .vaultLimit
     }
 
     func remainingItems(in library: VaultLibrary) -> Int? {

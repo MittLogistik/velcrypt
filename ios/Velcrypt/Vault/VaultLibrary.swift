@@ -32,6 +32,8 @@ final class VaultLibrary {
 
     private(set) var items: [VaultItem] = []
     private(set) var albums: [Album] = []
+    /// The vault's name in the Face ID list, stored encrypted in its index.
+    private(set) var name: String?
     private(set) var importProgress: ImportProgress?
     /// Items written to or read from a backup so far, while one is being created or restored.
     private(set) var backupProgress: ImportProgress?
@@ -369,6 +371,13 @@ final class VaultLibrary {
         return urls
     }
 
+    /// Saves the vault's name for the Face ID list. The vault must already be saved.
+    func setName(_ newName: String) async throws {
+        let store = try await ensureStore()
+        try await store.setName(newName)
+        await refresh(from: store)
+    }
+
     // MARK: Index
 
     /// Writes the index in the current format now. The duress pattern finds its decoy by the index, and a
@@ -453,6 +462,7 @@ final class VaultLibrary {
         let snapshot = await store.snapshot
         items = snapshot.items
         albums = snapshot.albums
+        name = snapshot.name
     }
 
     nonisolated private static func openStore(files: VaultFileStore, vaultID: String, key: SymmetricKey) async throws -> VaultStore {

@@ -284,6 +284,77 @@
           }
         }
       }
+    },
+    "NSFaceIDUsageDescription" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Velcrypt uses Face ID only for vaults you turn it on for. It is off by default."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Velcrypt solo usa Face ID en las bóvedas para las que lo actives. Está desactivado de forma predeterminada."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Velcrypt nutzt Face ID nur für Tresore, für die du es einschaltest. Standardmäßig ist es aus."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Velcrypt utilise Face ID uniquement pour les coffres pour lesquels vous l’activez. Il est désactivé par défaut."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O Velcrypt usa o Face ID só nos cofres em que você o ativar. Ele vem desativado por padrão."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "VelcryptはFace IDを、オンにした保管庫でのみ使用します。初期設定ではオフです。"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Velcrypt는 사용자가 켠 금고에서만 Face ID를 사용합니다. 기본적으로 꺼져 있습니다."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Velcrypt 只会在你开启了面容 ID 的保险库中使用它。默认关闭。"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Velcrypt usa Face ID solo per le casseforti per cui lo attivi. È disattivato per impostazione predefinita."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Velcrypt gebruikt Face ID alleen voor kluizen waarvoor je het aanzet. Het staat standaard uit."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Velcrypt använder Face ID bara för valv som du slår på det för. Det är av som standard."
+          }
+        }
+      }
     }
   },
   "version" : "1.0"

@@ -15,6 +15,7 @@ struct SettingsView: View {
     @State private var errorMessage: String?
     @State private var showPaywall = false
     @State private var showManageSubscriptions = false
+    @State private var showGuide = false
 
     var body: some View {
         @Bindable var session = session
@@ -35,6 +36,17 @@ struct SettingsView: View {
                         showChangePattern = true
                     } label: {
                         Label("Change This Vault's Pattern", systemImage: "circle.grid.3x3.fill")
+                    }
+                    if BiometricAuth.hasHardware || session.currentVaultUsesBiometrics {
+                        NavigationLink {
+                            BiometricSettingsView()
+                        } label: {
+                            LabeledContent {
+                                Text(session.currentVaultUsesBiometrics ? LocalizedStringKey("On") : "Off")
+                            } label: {
+                                Label(BiometricAuth.displayName, systemImage: BiometricAuth.symbolName)
+                            }
+                        }
                     }
                     NavigationLink {
                         DuressSettingsView()
@@ -101,6 +113,11 @@ struct SettingsView: View {
                 }
 
                 Section {
+                    Button {
+                        showGuide = true
+                    } label: {
+                        Label("How Velcrypt Works", systemImage: "questionmark.circle")
+                    }
                     LabeledContent("Version", value: Self.versionString)
                     Link(destination: URL(string: "https://velcrypt.app/privacy/")!) {
                         Label("Privacy Policy", systemImage: "hand.raised.fill")
@@ -150,6 +167,7 @@ struct SettingsView: View {
             .sheet(isPresented: $showPaywall) {
                 PaywallView(reason: .upgrade)
             }
+            .sheet(isPresented: $showGuide) { HowItWorksView() }
             .manageSubscriptionsSheet(isPresented: $showManageSubscriptions)
             .confirmationDialog("Delete this vault?", isPresented: $showDeleteVaultConfirm, titleVisibility: .visible) {
                 Button("Delete Vault", role: .destructive, action: deleteVault)
@@ -229,7 +247,7 @@ struct SettingsView: View {
     /// A feedback email with the version filled in, so replies can be matched to a build.
     static var feedbackURL: URL {
         var components = URLComponents(string: "mailto:support@velcrypt.app")!
-        components.queryItems = [URLQueryItem(name: "subject", value: "Velcrypt feedback ((versionString))")]
+        components.queryItems = [URLQueryItem(name: "subject", value: "Velcrypt feedback (\(versionString))")]
         return components.url ?? URL(string: "mailto:support@velcrypt.app")!
     }
 

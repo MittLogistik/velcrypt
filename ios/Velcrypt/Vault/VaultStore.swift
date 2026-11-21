@@ -201,6 +201,11 @@ actor VaultStore {
         try saveIndex()
     }
 
+    func setName(_ name: String?) throws {
+        index.name = name
+        try saveIndex()
+    }
+
     // MARK: Duress
 
     /// Writes the index even if nothing changed, so the vault can be recognised by `indexOpens`.

@@ -100,7 +100,7 @@ struct PaywallView: View {
     private var subtitle: LocalizedStringKey {
         switch reason {
         case .itemLimit: "The free version holds \(PremiumLimits.freeItems) items. Go Premium to store as much as you like."
-        case .vaultLimit: "The free version has one vault. Go Premium to give other patterns their own vaults."
+        case .vaultLimit: "This pattern opens a different, empty vault. The free version keeps your files in one vault: draw your usual pattern to go back to it, or go Premium for more vaults."
         case .appIcons: "Alternate app icons are part of Premium."
         case .duress: "The duress pattern is part of Premium."
         case .welcome, .upgrade: "Everything in Velcrypt, without limits."

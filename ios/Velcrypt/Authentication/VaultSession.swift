@@ -1,5 +1,6 @@
 import CryptoKit
 import Foundation
+import LocalAuthentication
 import Observation
 
 /// Auto-lock delay after the app leaves the foreground.
@@ -35,9 +36,25 @@ final class VaultSession {
     }
 
     private struct OpenVault {
-        var credentials: VaultCredentials
+        var vaultID: String
+        /// Nil when the vault was opened with Face ID; the pattern is then not known.
+        var credentials: VaultCredentials?
         /// Nil until the vault is first written to.
         var masterKey: SymmetricKey?
+        /// Set when the duress pattern opened this vault and deleted the others.
+        var isDuressDecoy = false
+
+        init(credentials: VaultCredentials, masterKey: SymmetricKey?) {
+            vaultID = credentials.vaultID
+            self.credentials = credentials
+            self.masterKey = masterKey
+        }
+
+        init(vaultID: String, masterKey: SymmetricKey) {
+            self.vaultID = vaultID
+            credentials = nil
+            self.masterKey = masterKey
+        }
     }
 
     private enum DefaultsKey {
@@ -55,27 +72,36 @@ final class VaultSession {
     /// Content of the open vault. Nil whenever the session is locked.
     private(set) var library: VaultLibrary?
 
+    /// True if at least one vault can be opened with Face ID, so the lock screen offers it.
+    private(set) var hasBiometricVaults = false
+    /// True if the open vault has Face ID turned on. Off for every vault until the user turns it on.
+    private(set) var currentVaultUsesBiometrics = false
+
     @ObservationIgnored private var openVault: OpenVault?
     @ObservationIgnored private var backgroundedAt: Date?
     @ObservationIgnored private let keyring: VaultKeyring
     @ObservationIgnored private let files: VaultFileStore
     @ObservationIgnored private let defaults: UserDefaults
+    @ObservationIgnored private let biometrics: BiometricKeyStore
 
     init(
         store: SecretStore = KeychainSecretStore(),
         files: VaultFileStore = VaultFileStore(),
         defaults: UserDefaults = .standard,
-        keyring: VaultKeyring? = nil
+        keyring: VaultKeyring? = nil,
+        biometrics: BiometricKeyStore = KeychainBiometricKeyStore()
     ) {
         let keyring = keyring ?? VaultKeyring(store: store)
         self.keyring = keyring
         self.files = files
         self.defaults = defaults
+        self.biometrics = biometrics
 
         // Keychain items outlive app deletion. A fresh install must never inherit an old device salt.
         if !defaults.bool(forKey: DefaultsKey.hasLaunched) {
             try? store.deleteAll()
             try? files.deleteAll()
+            try? biometrics.removeAll()
             defaults.set(true, forKey: DefaultsKey.hasLaunched)
         }
         // Plaintext temp files from a previous run (e.g. after a crash) must not survive a relaunch.
@@ -85,13 +111,21 @@ final class VaultSession {
         self.phase = keyring.isSetUp ? .locked : .onboarding
         try? keyring.ensureDuressRecord()
         self.autoLockDelay = AutoLockDelay(rawValue: defaults.integer(forKey: DefaultsKey.autoLock)) ?? .immediately
+        refreshBiometricState()
     }
 
     var isUnlocked: Bool { phase == .unlocked }
 
-    /// Vaults saved on this iPhone, for the free-version limit only. Never shown in the UI.
+    /// Vaults saved on this iPhone. Never shown in the UI.
     var savedVaultCount: Int {
         files.vaultIDs().filter(files.vaultExists).count
+    }
+
+    /// Vaults other than the open one that hold at least one file, for the free-version limit only.
+    /// An empty vault, such as one opened by mistake with a different pattern, never counts.
+    var otherVaultsWithItemsCount: Int {
+        let current = openVault?.vaultID
+        return files.vaultIDs().filter { $0 != current && files.vaultExists($0) && files.hasItems($0) }.count
     }
 
     /// The open vault's master key, or nil if locked or the vault has never been written to.
@@ -126,13 +160,62 @@ final class VaultSession {
         let opened = try await Task.detached(priority: .userInitiated) {
             let credentials = try keyring.credentials(for: pattern)
             if let decoyKey = keyring.duressDecoyKey(for: credentials) {
-                return try Self.triggerDuress(credentials: credentials, decoyKey: decoyKey, files: files)
+                var decoy = try Self.triggerDuress(credentials: credentials, decoyKey: decoyKey, files: files)
+                decoy.isDuressDecoy = true
+                return decoy
             }
             return OpenVault(credentials: credentials, masterKey: try Self.loadMasterKey(credentials, files: files))
         }.value
+        if opened.isDuressDecoy {
+            // Deleted vaults must not linger in the Face ID list.
+            for id in biometrics.enabledVaultIDs() where id != opened.vaultID || opened.masterKey == nil {
+                try? biometrics.remove(vaultID: id)
+            }
+        }
         activate(opened)
         backgroundedAt = nil
         phase = .unlocked
+    }
+
+    // MARK: Face ID
+
+    /// The vaults that have Face ID turned on, read with a context that has already passed Face ID.
+    /// Entries whose vault no longer exists are removed.
+    func biometricVaults(authenticatedWith context: LAContext) -> [BiometricVault] {
+        let vaults = biometrics.entries(authenticatedWith: context).filter { vault in
+            if files.vaultExists(vault.vaultID) { return true }
+            try? biometrics.remove(vaultID: vault.vaultID)
+            return false
+        }
+        refreshBiometricState()
+        return vaults.sorted { $0.name.localizedStandardCompare($1.name) == .orderedAscending }
+    }
+
+    /// Opens a vault picked from the Face ID list.
+    func unlock(biometricVault vault: BiometricVault) {
+        activate(OpenVault(vaultID: vault.vaultID, masterKey: vault.masterKey))
+        backgroundedAt = nil
+        phase = .unlocked
+    }
+
+    /// Turns Face ID on for the open vault, under `name` in the Face ID list. The vault must already be saved.
+    /// Also used to rename it there.
+    func enableBiometricUnlock(name: String) throws {
+        guard let vault = openVault, let masterKey = vault.masterKey else { throw VaultError.locked }
+        try biometrics.save(vaultID: vault.vaultID, name: name, masterKey: masterKey)
+        refreshBiometricState()
+    }
+
+    func disableBiometricUnlock() throws {
+        guard let vault = openVault else { throw VaultError.locked }
+        try biometrics.remove(vaultID: vault.vaultID)
+        refreshBiometricState()
+    }
+
+    private func refreshBiometricState() {
+        let enabled = biometrics.enabledVaultIDs()
+        hasBiometricVaults = !enabled.isEmpty
+        currentVaultUsesBiometrics = openVault.map { enabled.contains($0.vaultID) } ?? false
     }
 
     private func activate(_ vault: OpenVault) {
@@ -140,19 +223,20 @@ final class VaultSession {
         openVault = vault
         library = VaultLibrary(
             files: files,
-            vaultID: vault.credentials.vaultID,
+            vaultID: vault.vaultID,
             masterKey: vault.masterKey,
             keyProvider: { [weak self] in
                 guard let self else { throw VaultError.locked }
                 return try await self.masterKeyForWriting()
             }
         )
+        refreshBiometricState()
     }
 
     /// True if `pattern` belongs to the open vault. Used to confirm a pattern before a new vault is first saved,
     /// so a mis-drawn pattern can't silently create a vault the user can never find again.
     func patternOpensCurrentVault(_ pattern: UnlockPattern) async -> Bool {
-        guard let currentID = openVault?.credentials.vaultID else { return false }
+        guard let currentID = openVault?.vaultID else { return false }
         let keyring = keyring
         let id = try? await Task.detached(priority: .userInitiated) {
             try keyring.credentials(for: pattern).vaultID
@@ -166,7 +250,8 @@ final class VaultSession {
     func masterKeyForWriting() async throws -> SymmetricKey {
         guard let vault = openVault else { throw VaultError.locked }
         if let key = vault.masterKey { return key }
-        let files = files, credentials = vault.credentials
+        guard let credentials = vault.credentials else { throw VaultError.locked }
+        let files = files
         let key = try await Task.detached(priority: .userInitiated) {
             try Self.createMasterKey(credentials, files: files)
         }.value
@@ -182,6 +267,7 @@ final class VaultSession {
         openVault = nil
         backgroundedAt = nil
         TemporaryFiles.purgeAll()
+        currentVaultUsesBiometrics = false
         if phase == .unlocked { phase = .locked }
     }
 
@@ -211,7 +297,8 @@ final class VaultSession {
         guard let vault = openVault else { throw VaultError.locked }
         let masterKey = try await masterKeyForWriting()
         try await library?.saveIndexNow()
-        let keyring = keyring, files = files, oldID = vault.credentials.vaultID
+        let keyring = keyring, files = files, oldID = vault.vaultID
+        let hadBiometrics = biometrics.enabledVaultIDs().contains(oldID)
         let newCredentials = try await Task.detached(priority: .userInitiated) {
             let credentials = try keyring.credentials(for: newPattern)
             guard credentials.vaultID != oldID else { return credentials }
@@ -222,6 +309,12 @@ final class VaultSession {
             try files.rekey(from: oldID, to: credentials.vaultID, newRecord: record)
             return credentials
         }.value
+        // Face ID follows the vault to its new location, under the same name.
+        if hadBiometrics && newCredentials.vaultID != oldID {
+            let name = library?.name ?? String(localized: "Vault")
+            try? biometrics.save(vaultID: newCredentials.vaultID, name: name, masterKey: masterKey)
+            try? biometrics.remove(vaultID: oldID)
+        }
         // The vault directory moved, so the library must reopen it at its new location.
         activate(OpenVault(credentials: newCredentials, masterKey: masterKey))
         await library?.load()
@@ -235,7 +328,7 @@ final class VaultSession {
         guard let vault = openVault, let masterKey = vault.masterKey, let library else { throw VaultError.locked }
         // The decoy is found by its index, so make sure there is one.
         try await library.saveIndexNow()
-        let keyring = keyring, files = files, currentID = vault.credentials.vaultID
+        let keyring = keyring, files = files, currentID = vault.vaultID
         try await Task.detached(priority: .userInitiated) {
             let credentials = try keyring.credentials(for: pattern)
             guard credentials.vaultID != currentID, !files.vaultExists(credentials.vaultID) else {
@@ -274,18 +367,22 @@ final class VaultSession {
     /// Permanently deletes the open vault and locks.
     func deleteCurrentVault() throws {
         guard let vault = openVault else { throw VaultError.locked }
-        try files.deleteVault(vault.credentials.vaultID)
+        try files.deleteVault(vault.vaultID)
+        try? biometrics.remove(vaultID: vault.vaultID)
         lock()
+        refreshBiometricState()
     }
 
     /// Deletes every vault and the device salt, returning to onboarding.
     func eraseEverything() throws {
         try files.deleteAll()
         try keyring.destroy()
+        try? biometrics.removeAll()
         library?.close()
         library = nil
         openVault = nil
         TemporaryFiles.purgeAll()
+        refreshBiometricState()
         phase = .onboarding
     }
 

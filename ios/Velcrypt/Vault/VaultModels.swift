@@ -73,6 +73,8 @@ struct VaultIndex: Codable, Sendable {
     var version = 1
     var items: [VaultItem] = []
     var albums: [Album] = []
+    /// The name the user gave this vault for the Face ID list. Nil until Face ID is first turned on.
+    var name: String? = nil
 }
 
 /// What a grid shows.

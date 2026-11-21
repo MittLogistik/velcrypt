@@ -45,6 +45,13 @@ final class VaultFileStore: @unchecked Sendable {
         fileManager.fileExists(atPath: keyURL(vaultID).path(percentEncoded: false))
     }
 
+    /// True if the vault holds at least one stored item. Looks only at file names, never decrypts anything.
+    func hasItems(_ vaultID: String) -> Bool {
+        let items = directory(for: vaultID).appending(path: "items", directoryHint: .isDirectory)
+        let names = (try? fileManager.contentsOfDirectory(atPath: items.path(percentEncoded: false))) ?? []
+        return names.contains { $0.hasSuffix(".vcf") }
+    }
+
     /// Primary key record plus any pending record left by an interrupted pattern change.
     func keyRecords(_ vaultID: String) -> [Data] {
         [keyURL(vaultID), directory(for: vaultID).appending(path: Self.pendingKeyFileName)]

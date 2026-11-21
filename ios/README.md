@@ -14,7 +14,7 @@ ios/
 ├── Velcrypt/
 │   ├── App/               Entry point, root routing, lifecycle locking
 │   ├── DesignSystem/      Colors, typography, buttons, cards, logo, haptics
-│   ├── Onboarding/        5-step first-launch flow (creates the first pattern)
+│   ├── Onboarding/        3-step introduction, then creates the first pattern; "How Velcrypt Works" replays it
 │   ├── Authentication/    UnlockPattern, PatternGrid, VaultKeyring, VaultSession, lock screen
 │   ├── Encryption/        AES-GCM + HKDF (CryptoKit), PBKDF2 (CommonCrypto)
 │   ├── SecureStorage/     Keychain SecretStore, VaultFileStore

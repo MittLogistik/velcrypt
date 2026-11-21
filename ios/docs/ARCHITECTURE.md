@@ -31,9 +31,10 @@ tasks off the main actor.
 * **Every valid pattern opens a vault.** If the pattern has never been used, the
   user gets an empty vault that exists only in memory. It is written to disk the
   first time something is stored in it. The UI is identical either way, so an
-  observer cannot tell a real pattern from a new one, and there is no list of vaults.
-* There is no PIN and no Face ID/Touch ID, **by design**. Biometrics can be
-  compelled, while a pattern exists only in the user's memory.
+  observer cannot tell a real pattern from a new one, and there is no list of vaults
+  (except the opt-in Face ID list below).
+* There is no PIN. **Face ID / Touch ID is opt-in per vault and off by default**, because
+  biometrics can be compelled while a pattern exists only in the user's memory. See "Face ID".
 * Because a "wrong" pattern does not exist, there is no attempt counter or lockout.
   Resistance to guessing comes from the size of the pattern space and the cost of
   PBKDF2 (see Limitations).
@@ -142,11 +143,32 @@ Keychain items survive app deletion. On the first launch after an install
   user deletes them.
 * There is no recovery: a forgotten pattern means that vault is lost, unless the user
   has a backup and remembers its password.
-* **The free version's one-vault limit is visible.** Without Premium, writing to a second vault
-  shows the paywall, which tells someone holding the unlocked phone that another vault exists.
+* **The free version's one-vault limit is visible.** Without Premium, adding the first item to a second vault
+  shows the paywall when another vault already holds items, which tells someone holding the unlocked phone that
+  such a vault exists.
   Premium removes the limit and with it this signal, so decoy vaults are effectively a Premium
   feature.
 * Not independently audited.
+
+## Face ID (opt-in, per vault)
+
+* Off for every vault until the user turns it on from inside that vault (Settings → Face ID) and names it.
+* `KeychainBiometricKeyStore` keeps one Keychain item per opted-in vault (service `com.velcrypt.biometric`,
+  account = vaultID). The item holds the vault's master key and its name. Its access control is
+  `kSecAttrAccessibleWhenPasscodeSetThisDeviceOnly` + `.biometryCurrentSet`, so it never leaves the device,
+  needs a passcode to be set, and becomes unreadable if a face or finger is enrolled. Unreadable entries are
+  deleted the next time the list is read, and the user turns Face ID on again after opening the vault with
+  its pattern.
+* The lock screen shows "Unlock with Face ID" only if at least one entry exists (attributes only, no prompt).
+  `BiometricAuth.authenticate` evaluates `.deviceOwnerAuthenticationWithBiometrics` with no passcode fallback,
+  and the evaluated `LAContext` reads every entry without further prompts. One entry opens directly. Several
+  show a picker with their names. Vaults without Face ID never appear.
+* A vault opened with Face ID has no pattern credentials in memory (`OpenVault.credentials == nil`). Everything
+  that needs them already has the master key. The vault name lives in the encrypted index (`VaultIndex.name`),
+  so a pattern change can re-save the entry under the new vault ID.
+* Deleting a vault, erasing everything, a fresh install and the duress pattern all remove the entries of the
+  vaults they delete. The Face ID list never triggers duress.
+* Trade-off: anyone who gets past Face ID sees the names of the vaults in the list. The settings screen says so.
 
 ## Premium (StoreKit 2)
 
@@ -154,7 +176,9 @@ Keychain items survive app deletion. On the first launch after an install
 (auto-renewable, in one subscription group, and the yearly plan has a free-trial introductory offer), plus
 `com.velcrypt.app.premium.lifetime` (non-consumable). Any verified, unrevoked entitlement unlocks Premium.
 
-The free version allows one vault with 50 items and only the standard icon (`PremiumLimits`). Restoring a backup
+The free version allows one vault with 50 items and only the standard icon (`PremiumLimits`). Only vaults that hold
+at least one item count (`VaultFileStore.hasItems` looks at file names, nothing is decrypted), so the empty vault
+left behind by onboarding or a mistyped pattern never uses up the free vault. Restoring a backup
 is never limited, so moving to a new iPhone always works. A lapsed subscription keeps every existing item, but
-nothing more can be added above the limit. The paywall appears once after onboarding, when a limit is reached,
-and from Settings.
+nothing more can be added above the limit. The welcome paywall appears once, the first time a vault opens that
+already holds items (never straight after onboarding). It also appears when a limit is reached and from Settings.

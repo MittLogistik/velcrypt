@@ -1,4 +1,6 @@
+import CryptoKit
 import Foundation
+import LocalAuthentication
 @testable import Velcrypt
 
 /// In-memory `SecretStore` for tests.
@@ -40,4 +42,32 @@ extension UnlockPattern {
     /// L shape down the left edge and along the bottom.
     static let other = try! UnlockPattern(dots: [0, 5, 10, 15, 20, 21, 22])
     static let third = try! UnlockPattern(dots: [6, 7, 8, 13, 18, 17, 16])
+}
+
+/// In-memory `BiometricKeyStore` for tests. Ignores the authentication context.
+final class InMemoryBiometricKeyStore: BiometricKeyStore, @unchecked Sendable {
+    private var items: [String: (name: String, key: SymmetricKey)] = [:]
+    private let lock = NSLock()
+
+    func enabledVaultIDs() -> Set<String> {
+        lock.withLock { Set(items.keys) }
+    }
+
+    func save(vaultID: String, name: String, masterKey: SymmetricKey) throws {
+        lock.withLock { items[vaultID] = (name, masterKey) }
+    }
+
+    func remove(vaultID: String) throws {
+        lock.withLock { items[vaultID] = nil }
+    }
+
+    func removeAll() throws {
+        lock.withLock { items.removeAll() }
+    }
+
+    func entries(authenticatedWith context: LAContext) -> [BiometricVault] {
+        lock.withLock {
+            items.map { BiometricVault(vaultID: $0.key, name: $0.value.name, masterKey: $0.value.key) }
+        }
+    }
 }

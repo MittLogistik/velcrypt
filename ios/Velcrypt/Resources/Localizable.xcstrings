@@ -1284,70 +1284,6 @@
         }
       }
     },
-    "A pattern Velcrypt hasn't seen before simply opens an empty vault. There's no error and no hint that other vaults exist." : {
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Un patrón que Velcrypt no conoce simplemente abre una bóveda vacía. Sin errores ni pistas de que existan otras bóvedas."
-          }
-        },
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ein Muster, das Velcrypt noch nicht kennt, öffnet einfach einen leeren Tresor. Ohne Fehlermeldung und ohne Hinweis auf andere Tresore."
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Un schéma que Velcrypt ne connaît pas ouvre simplement un coffre vide. Aucune erreur, aucun indice que d’autres coffres existent."
-          }
-        },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Um padrão que o Velcrypt não conhece simplesmente abre um cofre vazio. Sem erro e sem nenhum indício de que existem outros cofres."
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Velcryptが知らないパターンを描くと、空の保管庫が開くだけです。エラーは表示されず、ほかの保管庫の存在を示すものもありません。"
-          }
-        },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Velcrypt가 모르는 패턴을 그리면 빈 금고가 열릴 뿐입니다. 오류도 없고 다른 금고가 있다는 단서도 없습니다."
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Velcrypt 未见过的图案只会打开一个空的保险库。不会报错，也不会透露其他保险库的存在。"
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Una sequenza che Velcrypt non conosce apre semplicemente una cassaforte vuota. Nessun errore e nessun indizio che esistano altre casseforti."
-          }
-        },
-        "nl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Een patroon dat Velcrypt niet kent, opent gewoon een lege kluis. Geen foutmelding en geen hint dat er andere kluizen bestaan."
-          }
-        },
-        "sv" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ett mönster som Velcrypt inte känner igen öppnar bara ett tomt valv. Inget felmeddelande och ingen antydan om att andra valv finns."
-          }
-        }
-      }
-    },
     "About" : {
       "localizations" : {
         "es" : {
@@ -3956,70 +3892,6 @@
         }
       }
     },
-    "Create vaults on the fly" : {
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Crea bóvedas al momento"
-          }
-        },
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Tresore im Handumdrehen anlegen"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Créez des coffres à la volée"
-          }
-        },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Crie cofres na hora"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "保管庫はその場で作成"
-          }
-        },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "언제든 바로 금고 만들기"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "随时创建保险库"
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Crea casseforti al volo"
-          }
-        },
-        "nl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Maak direct nieuwe kluizen"
-          }
-        },
-        "sv" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Skapa valv direkt"
-          }
-        }
-      }
-    },
     "Dark" : {
       "localizations" : {
         "es" : {
@@ -5508,70 +5380,6 @@
         }
       }
     },
-    "Draw a new pattern and add something to it. The vault is saved the moment it holds a file." : {
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Dibuja un patrón nuevo y añade algo. La bóveda se guarda en cuanto contiene un archivo."
-          }
-        },
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Zeichne ein neues Muster und füge etwas hinzu. Der Tresor wird gespeichert, sobald er eine Datei enthält."
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Dessinez un nouveau schéma et ajoutez-y quelque chose. Le coffre est enregistré dès qu’il contient un fichier."
-          }
-        },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Desenhe um novo padrão e adicione algo. O cofre é salvo assim que tiver um arquivo."
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "新しいパターンを描いて、何かを追加しましょう。ファイルが1つ入った時点で保管庫が保存されます。"
-          }
-        },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "새 패턴을 그리고 무언가를 추가하세요. 파일이 하나라도 들어가는 순간 금고가 저장됩니다."
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "绘制一个新图案并添加内容。保险库一旦存入文件就会被保存。"
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Disegna una nuova sequenza e aggiungi qualcosa. La cassaforte viene salvata non appena contiene un file."
-          }
-        },
-        "nl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Teken een nieuw patroon en voeg iets toe. De kluis wordt bewaard zodra er een bestand in zit."
-          }
-        },
-        "sv" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Rita ett nytt mönster och lägg till något. Valvet sparas så fort det innehåller en fil."
-          }
-        }
-      }
-    },
     "Draw it again to confirm" : {
       "localizations" : {
         "es" : {
@@ -5839,7 +5647,7 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Jedes Muster öffnet einen eigenen Tresor"
+            "value" : "Jedes Muster öffnet seinen eigenen Tresor"
           }
         },
         "fr" : {
@@ -5857,31 +5665,31 @@
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "パターンごとに別々の保管庫が開きます"
+            "value" : "パターンごとに別の保管庫が開きます"
           }
         },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "패턴마다 별도의 금고가 열립니다"
+            "value" : "패턴마다 각자의 금고가 열립니다"
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "每个图案都会打开各自的保险库"
+            "value" : "每个图案打开各自的保险库"
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ogni sequenza apre la propria cassaforte"
+            "value" : "Ogni sequenza apre la sua cassaforte"
           }
         },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Elk patroon opent een eigen kluis"
+            "value" : "Elk patroon opent zijn eigen kluis"
           }
         },
         "sv" : {
@@ -6272,70 +6080,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Radera alla valv på den här iPhonen?"
-          }
-        }
-      }
-    },
-    "Every pattern you draw opens its own separate vault. Velcrypt never shows a list of vaults." : {
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Cada patrón que dibujas abre su propia bóveda independiente. Velcrypt nunca muestra una lista de bóvedas."
-          }
-        },
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Jedes Muster, das du zeichnest, öffnet einen eigenen, getrennten Tresor. Velcrypt zeigt nie eine Liste der Tresore."
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Chaque schéma que vous dessinez ouvre un coffre distinct. Velcrypt n’affiche jamais la liste des coffres."
-          }
-        },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Cada padrão que você desenha abre um cofre separado. O Velcrypt nunca mostra uma lista de cofres."
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "描いたパターンごとに、それぞれ独立した保管庫が開きます。Velcryptが保管庫の一覧を表示することはありません。"
-          }
-        },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "그리는 패턴마다 각각 독립된 금고가 열립니다. Velcrypt는 금고 목록을 절대 표시하지 않습니다."
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "你绘制的每个图案都会打开一个独立的保险库。Velcrypt 从不显示保险库列表。"
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ogni sequenza che disegni apre una cassaforte separata. Velcrypt non mostra mai un elenco delle casseforti."
-          }
-        },
-        "nl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Elk patroon dat je tekent, opent een eigen, aparte kluis. Velcrypt toont nooit een lijst met kluizen."
-          }
-        },
-        "sv" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Varje mönster du ritar öppnar ett eget, separat valv. Velcrypt visar aldrig en lista över valv."
           }
         }
       }
@@ -9108,70 +8852,6 @@
         }
       }
     },
-    "No account. No cloud." : {
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Sin cuenta. Sin nube."
-          }
-        },
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Kein Konto. Keine Cloud."
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Pas de compte. Pas de cloud."
-          }
-        },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Sem conta. Sem nuvem."
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "アカウント不要。クラウドなし。"
-          }
-        },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "계정도, 클라우드도 없습니다."
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "无需账户，不用云端。"
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Nessun account. Nessun cloud."
-          }
-        },
-        "nl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Geen account. Geen cloud."
-          }
-        },
-        "sv" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Inget konto. Inget moln."
-          }
-        }
-      }
-    },
     "No Album" : {
       "localizations" : {
         "es" : {
@@ -9428,70 +9108,6 @@
         }
       }
     },
-    "Nothing to give away" : {
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Nada que te delate"
-          }
-        },
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Nichts, was dich verrät"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Rien qui vous trahisse"
-          }
-        },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Nada que entregue você"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "何も明かさない"
-          }
-        },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "들킬 단서가 없습니다"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "不露任何痕迹"
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Niente che ti tradisca"
-          }
-        },
-        "nl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Niets dat je verraadt"
-          }
-        },
-        "sv" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Inget som avslöjar dig"
-          }
-        }
-      }
-    },
     "Offer to Delete Originals" : {
       "localizations" : {
         "es" : {
@@ -9684,70 +9300,6 @@
         }
       }
     },
-    "One pattern, one vault" : {
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Un patrón, una bóveda"
-          }
-        },
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ein Muster, ein Tresor"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Un schéma, un coffre"
-          }
-        },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Um padrão, um cofre"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "1つのパターンに1つの保管庫"
-          }
-        },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "패턴 하나에 금고 하나"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "一个图案，一个保险库"
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Una sequenza, una cassaforte"
-          }
-        },
-        "nl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Eén patroon, één kluis"
-          }
-        },
-        "sv" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ett mönster, ett valv"
-          }
-        }
-      }
-    },
     "Only you hold the key" : {
       "localizations" : {
         "es" : {
@@ -9936,70 +9488,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Öppna valvet"
-          }
-        }
-      }
-    },
-    "Opened by a pattern" : {
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Se abre con un patrón"
-          }
-        },
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Wird mit einem Muster geöffnet"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "S’ouvre avec un schéma"
-          }
-        },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Aberto com um padrão"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "パターンで開く"
-          }
-        },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "패턴으로 열기"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "用图案打开"
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Si apre con una sequenza"
-          }
-        },
-        "nl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Geopend met een patroon"
-          }
-        },
-        "sv" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Öppnas med ett mönster"
           }
         }
       }
@@ -14100,70 +13588,6 @@
         }
       }
     },
-    "Velcrypt keeps your most personal photos, videos and documents in encrypted vaults that only you can open." : {
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Velcrypt guarda tus fotos, vídeos y documentos más personales en bóvedas cifradas que solo tú puedes abrir."
-          }
-        },
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Velcrypt bewahrt deine persönlichsten Fotos, Videos und Dokumente in verschlüsselten Tresoren auf, die nur du öffnen kannst."
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Velcrypt conserve vos photos, vidéos et documents les plus personnels dans des coffres chiffrés que vous seul pouvez ouvrir."
-          }
-        },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "O Velcrypt guarda suas fotos, vídeos e documentos mais pessoais em cofres criptografados que só você pode abrir."
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Velcryptは、あなたの大切な写真、ビデオ、書類を、あなたにしか開けない暗号化された保管庫にしまっておきます。"
-          }
-        },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Velcrypt는 가장 개인적인 사진, 비디오, 문서를 오직 당신만 열 수 있는 암호화된 금고에 보관합니다."
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Velcrypt 将你最私密的照片、视频和文稿保存在只有你能打开的加密保险库中。"
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Velcrypt conserva le tue foto, i video e i documenti più personali in casseforti cifrate che solo tu puoi aprire."
-          }
-        },
-        "nl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Velcrypt bewaart je meest persoonlijke foto's, video's en documenten in versleutelde kluizen die alleen jij kunt openen."
-          }
-        },
-        "sv" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Velcrypt förvarar dina mest personliga bilder, videor och dokument i krypterade valv som bara du kan öppna."
-          }
-        }
-      }
-    },
     "Velcrypt stays installed and can still be found in the App Library." : {
       "localizations" : {
         "es" : {
@@ -14484,70 +13908,6 @@
         }
       }
     },
-    "Want a decoy? Lock Velcrypt, draw a different pattern and add a few harmless photos." : {
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "¿Quieres una bóveda señuelo? Bloquea Velcrypt, dibuja otro patrón y añade unas cuantas fotos inofensivas."
-          }
-        },
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Du möchtest einen Täuschungstresor? Sperre Velcrypt, zeichne ein anderes Muster und füge ein paar harmlose Fotos hinzu."
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Envie d’un coffre leurre ? Verrouillez Velcrypt, dessinez un autre schéma et ajoutez quelques photos anodines."
-          }
-        },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Quer um cofre de disfarce? Bloqueie o Velcrypt, desenhe outro padrão e adicione algumas fotos inofensivas."
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ダミーの保管庫が必要なら、Velcryptをロックして別のパターンを描き、当たり障りのない写真をいくつか追加しましょう。"
-          }
-        },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "위장 금고가 필요하신가요? Velcrypt를 잠그고 다른 패턴을 그린 다음 무난한 사진 몇 장을 추가하세요."
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "想要伪装保险库？锁定 Velcrypt，绘制另一个图案，然后添加几张无关紧要的照片。"
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Vuoi una cassaforte civetta? Blocca Velcrypt, disegna un’altra sequenza e aggiungi qualche foto innocua."
-          }
-        },
-        "nl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Een afleidingskluis nodig? Vergrendel Velcrypt, teken een ander patroon en voeg een paar onschuldige foto's toe."
-          }
-        },
-        "sv" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Vill du ha ett skenvalv? Lås Velcrypt, rita ett annat mönster och lägg till några harmlösa bilder."
-          }
-        }
-      }
-    },
     "Your imported items are safe in the vault. The originals are still in Photos or Files — delete them there (and in Recently Deleted) if you no longer want them outside Velcrypt." : {
       "localizations" : {
         "es" : {
@@ -14612,70 +13972,6 @@
         }
       }
     },
-    "Your pattern is the key. It lives in your head, not in your face or fingerprint." : {
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Tu patrón es la llave. Vive en tu cabeza, no en tu cara ni en tu huella."
-          }
-        },
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Dein Muster ist der Schlüssel. Es steckt in deinem Kopf, nicht in deinem Gesicht oder Fingerabdruck."
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Votre schéma est la clé. Il est dans votre tête, pas dans votre visage ni votre empreinte."
-          }
-        },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Seu padrão é a chave. Ele está na sua cabeça, não no seu rosto nem na sua digital."
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "パターンが鍵です。それは顔や指紋ではなく、あなたの頭の中にあります。"
-          }
-        },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "패턴이 곧 열쇠입니다. 얼굴이나 지문이 아니라 당신의 머릿속에 있습니다."
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "图案就是密钥。它存在于你的脑海中，而不是你的面容或指纹里。"
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "La tua sequenza è la chiave. Sta nella tua testa, non nel tuo volto o nella tua impronta."
-          }
-        },
-        "nl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Je patroon is de sleutel. Het zit in je hoofd, niet in je gezicht of vingerafdruk."
-          }
-        },
-        "sv" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ditt mönster är nyckeln. Det finns i ditt huvud, inte i ditt ansikte eller fingeravtryck."
-          }
-        }
-      }
-    },
     "Your pattern is turned into an encryption key on this iPhone. Nobody else has a copy — not even us." : {
       "localizations" : {
         "es" : {
@@ -14736,134 +14032,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ditt mönster omvandlas till en krypteringsnyckel på den här iPhonen. Ingen annan har en kopia – inte ens vi."
-          }
-        }
-      }
-    },
-    "Your private files never leave this device." : {
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Tus archivos privados nunca salen de este dispositivo."
-          }
-        },
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Deine privaten Dateien verlassen nie dieses Gerät."
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Vos fichiers privés ne quittent jamais cet appareil."
-          }
-        },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Seus arquivos privados nunca saem deste dispositivo."
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "プライベートなファイルがこのデバイスの外に出ることはありません。"
-          }
-        },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "개인 파일은 절대 이 기기를 벗어나지 않습니다."
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "你的私密文件永远不会离开此设备。"
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "I tuoi file privati non lasciano mai questo dispositivo."
-          }
-        },
-        "nl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Je privébestanden verlaten dit apparaat nooit."
-          }
-        },
-        "sv" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Dina privata filer lämnar aldrig den här enheten."
-          }
-        }
-      }
-    },
-    "Your private world. Protected." : {
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Tu mundo privado. Protegido."
-          }
-        },
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Deine private Welt. Geschützt."
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Votre monde privé. Protégé."
-          }
-        },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Seu mundo privado. Protegido."
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "あなたのプライベートを、しっかり守る。"
-          }
-        },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "당신만의 세계를 안전하게."
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "你的私密世界，安全守护。"
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Il tuo mondo privato. Protetto."
-          }
-        },
-        "nl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Jouw privéwereld. Beschermd."
-          }
-        },
-        "sv" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Din privata värld. Skyddad."
           }
         }
       }
@@ -18300,70 +17468,6 @@
         }
       }
     },
-    "The free version has one vault. Go Premium to give other patterns their own vaults." : {
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "La versión gratuita tiene una bóveda. Hazte Premium para que otros patrones tengan sus propias bóvedas."
-          }
-        },
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Die kostenlose Version hat einen Tresor. Mit Premium bekommen andere Muster eigene Tresore."
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "La version gratuite comprend un coffre. Passez à Premium pour donner à d’autres schémas leurs propres coffres."
-          }
-        },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "A versão gratuita tem um cofre. Assine o Premium para dar a outros padrões seus próprios cofres."
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "無料版の保管庫は1つです。プレミアムなら、ほかのパターンにもそれぞれの保管庫を作れます。"
-          }
-        },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "무료 버전에는 금고가 하나입니다. 프리미엄으로 다른 패턴에도 각각의 금고를 만드세요."
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "免费版只有一个保险库。升级到高级版即可为其他图案创建各自的保险库。"
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "La versione gratuita ha una cassaforte. Passa a Premium per dare ad altre sequenze le loro casseforti."
-          }
-        },
-        "nl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "De gratis versie heeft één kluis. Met Premium krijgen andere patronen hun eigen kluis."
-          }
-        },
-        "sv" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Gratisversionen har ett valv. Med Premium får andra mönster egna valv."
-          }
-        }
-      }
-    },
     "Alternate app icons are part of Premium." : {
       "localizations" : {
         "es" : {
@@ -20993,7 +20097,7 @@
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Añade algo primero"
+            "value" : "Primero añade algo"
           }
         },
         "de" : {
@@ -21005,7 +20109,7 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ajoutez d’abord du contenu"
+            "value" : "Ajoutez d’abord quelque chose"
           }
         },
         "pt-BR" : {
@@ -21017,7 +20121,7 @@
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "先に項目を追加してください"
+            "value" : "先に何か追加してください"
           }
         },
         "ko" : {
@@ -21035,7 +20139,7 @@
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Aggiungi prima qualcosa"
+            "value" : "Prima aggiungi qualcosa"
           }
         },
         "nl" : {
@@ -22712,6 +21816,2374 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Det här är det enda valvet på den här iPhonen, så nödmönstret skulle bara öppna det och inte radera något. Skapa först ett skenvalv med ett annat mönster och ställ in nödmönstret där."
+          }
+        }
+      }
+    },
+    "Next" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Siguiente"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Weiter"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Suivant"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Avançar"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "次へ"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "다음"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "下一步"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Avanti"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Volgende"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nästa"
+          }
+        }
+      }
+    },
+    "Back" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Atrás"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zurück"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Retour"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Voltar"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "戻る"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "뒤로"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "返回"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Indietro"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Terug"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tillbaka"
+          }
+        }
+      }
+    },
+    "On" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sí"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ein"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Oui"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sim"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "オン"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "켬"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "开"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sì"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aan"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "På"
+          }
+        }
+      }
+    },
+    "Off" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aus"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Non"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Não"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "オフ"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "끔"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "关"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uit"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Av"
+          }
+        }
+      }
+    },
+    "Vault" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bóveda"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tresor"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Coffre"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cofre"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "保管庫"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "금고"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "保险库"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cassaforte"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kluis"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Valv"
+          }
+        }
+      }
+    },
+    "My Vault" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mi bóveda"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mein Tresor"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mon coffre"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Meu cofre"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "マイ保管庫"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "내 금고"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "我的保险库"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La mia cassaforte"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mijn kluis"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mitt valv"
+          }
+        }
+      }
+    },
+    "Your pattern opens your vault" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tu patrón abre tu bóveda"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dein Muster öffnet deinen Tresor"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Votre schéma ouvre votre coffre"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Seu padrão abre seu cofre"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "パターンで保管庫を開きます"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "패턴으로 금고를 엽니다"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "用图案打开你的保险库"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La tua sequenza apre la tua cassaforte"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Je patroon opent je kluis"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ditt mönster öppnar ditt valv"
+          }
+        }
+      }
+    },
+    "Velcrypt has no password and no account. You draw a pattern by connecting dots on a grid, and that pattern opens your vault." : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Velcrypt no tiene contraseña ni cuenta. Dibujas un patrón uniendo puntos en una cuadrícula, y ese patrón abre tu bóveda."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Velcrypt hat kein Passwort und kein Konto. Du zeichnest ein Muster, indem du Punkte auf einem Raster verbindest, und dieses Muster öffnet deinen Tresor."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Velcrypt n’a ni mot de passe ni compte. Vous tracez un schéma en reliant des points sur une grille, et ce schéma ouvre votre coffre."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O Velcrypt não tem senha nem conta. Você desenha um padrão ligando pontos em uma grade, e esse padrão abre seu cofre."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Velcryptにはパスワードもアカウントもありません。グリッド上のドットをつないでパターンを描くと、そのパターンで保管庫が開きます。"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Velcrypt에는 암호도 계정도 없습니다. 격자 위의 점을 이어 패턴을 그리면, 그 패턴이 금고를 엽니다."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Velcrypt 没有密码，也没有账户。你在网格上连接点来绘制图案，这个图案就能打开你的保险库。"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Velcrypt non ha password né account. Disegni una sequenza collegando i punti di una griglia, e quella sequenza apre la tua cassaforte."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Velcrypt heeft geen wachtwoord en geen account. Je tekent een patroon door stippen op een raster te verbinden, en dat patroon opent je kluis."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Velcrypt har inget lösenord och inget konto. Du ritar ett mönster genom att koppla ihop punkter i ett rutnät, och det mönstret öppnar ditt valv."
+          }
+        }
+      }
+    },
+    "Draw it the same way every time" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dibújalo siempre igual"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zeichne es jedes Mal gleich"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tracez-le toujours de la même façon"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Desenhe sempre do mesmo jeito"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "毎回同じように描く"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "매번 똑같이 그리세요"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "每次都按同样的方式绘制"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Disegnala sempre allo stesso modo"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Teken het elke keer hetzelfde"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rita det likadant varje gång"
+          }
+        }
+      }
+    },
+    "Same dots, same order. That is how Velcrypt finds your vault again." : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Los mismos puntos, en el mismo orden. Así Velcrypt vuelve a encontrar tu bóveda."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dieselben Punkte, dieselbe Reihenfolge. So findet Velcrypt deinen Tresor wieder."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Les mêmes points, dans le même ordre. C’est ainsi que Velcrypt retrouve votre coffre."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Os mesmos pontos, na mesma ordem. É assim que o Velcrypt encontra seu cofre de novo."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "同じドットを同じ順番で。そうすることで、Velcryptはあなたの保管庫をもう一度見つけます。"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "같은 점을 같은 순서로. 그래야 Velcrypt가 금고를 다시 찾습니다."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "相同的点，相同的顺序。Velcrypt 就是这样再次找到你的保险库的。"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stessi punti, stesso ordine. È così che Velcrypt ritrova la tua cassaforte."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dezelfde stippen, in dezelfde volgorde. Zo vindt Velcrypt je kluis terug."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Samma punkter, i samma ordning. Det är så Velcrypt hittar ditt valv igen."
+          }
+        }
+      }
+    },
+    "Face ID if you want it" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Face ID, si lo quieres"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Face ID, wenn du willst"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Face ID, si vous le souhaitez"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Face ID, se você quiser"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "必要ならFace IDも"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "원하면 Face ID도"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "需要的话也可用面容 ID"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Face ID, se lo vuoi"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Face ID als je dat wilt"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Face ID om du vill"
+          }
+        }
+      }
+    },
+    "Off by default. You can turn it on for a vault later in Settings." : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Desactivado de forma predeterminada. Puedes activarlo para una bóveda más adelante en Ajustes."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Standardmäßig aus. Du kannst es später in den Einstellungen für einen Tresor einschalten."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Désactivé par défaut. Vous pouvez l’activer plus tard pour un coffre dans les Réglages."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Desativado por padrão. Você pode ativá-lo para um cofre depois, nos Ajustes."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "初期設定ではオフです。あとから「設定」で保管庫ごとにオンにできます。"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "기본적으로 꺼져 있습니다. 나중에 설정에서 금고별로 켤 수 있습니다."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "默认关闭。你可以稍后在“设置”中为某个保险库开启。"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Disattivato per impostazione predefinita. Puoi attivarlo per una cassaforte più tardi in Impostazioni."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Standaard uit. Je kunt het later in Instellingen voor een kluis aanzetten."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Av som standard. Du kan slå på det för ett valv senare i Inställningar."
+          }
+        }
+      }
+    },
+    "A different pattern never shows an error. It opens a different vault, new and empty. That is how your vaults stay hidden." : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Un patrón distinto nunca muestra un error. Abre otra bóveda, nueva y vacía. Así tus bóvedas siguen ocultas."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ein anderes Muster zeigt nie einen Fehler. Es öffnet einen anderen Tresor, neu und leer. So bleiben deine Tresore verborgen."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Un autre schéma n’affiche jamais d’erreur. Il ouvre un autre coffre, nouveau et vide. C’est ainsi que vos coffres restent cachés."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Um padrão diferente nunca mostra erro. Ele abre outro cofre, novo e vazio. É assim que seus cofres ficam escondidos."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "違うパターンを描いてもエラーは表示されません。別の新しい空の保管庫が開きます。こうして保管庫は隠されたままになります。"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "다른 패턴을 그려도 오류가 표시되지 않습니다. 새로 비어 있는 다른 금고가 열립니다. 이렇게 금고가 숨겨진 채로 유지됩니다."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "绘制不同的图案永远不会显示错误，而是打开另一个全新的空保险库。你的保险库就是这样保持隐藏的。"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Una sequenza diversa non mostra mai un errore. Apre un’altra cassaforte, nuova e vuota. È così che le tue casseforti restano nascoste."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Een ander patroon geeft nooit een foutmelding. Het opent een andere kluis, nieuw en leeg. Zo blijven je kluizen verborgen."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ett annat mönster visar aldrig något fel. Det öppnar ett annat valv, nytt och tomt. Det är så dina valv förblir dolda."
+          }
+        }
+      }
+    },
+    "Seeing an empty vault?" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "¿Ves una bóveda vacía?"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Du siehst einen leeren Tresor?"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vous voyez un coffre vide ?"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Está vendo um cofre vazio?"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "空の保管庫が表示された？"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "빈 금고가 보이나요?"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "看到的是空保险库？"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vedi una cassaforte vuota?"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zie je een lege kluis?"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ser du ett tomt valv?"
+          }
+        }
+      }
+    },
+    "You probably drew a different pattern. Lock Velcrypt and draw your usual one. Your files are still there." : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Seguramente dibujaste otro patrón. Bloquea Velcrypt y dibuja el de siempre. Tus archivos siguen ahí."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wahrscheinlich hast du ein anderes Muster gezeichnet. Sperre Velcrypt und zeichne dein übliches. Deine Dateien sind noch da."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vous avez sans doute tracé un autre schéma. Verrouillez Velcrypt et tracez votre schéma habituel. Vos fichiers sont toujours là."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Você provavelmente desenhou outro padrão. Bloqueie o Velcrypt e desenhe o de sempre. Seus arquivos continuam lá."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "おそらく違うパターンを描いています。Velcryptをロックして、いつものパターンを描いてください。ファイルはそのまま残っています。"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "아마 다른 패턴을 그렸을 거예요. Velcrypt를 잠그고 평소 패턴을 그리세요. 파일은 그대로 있습니다."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "你可能画了另一个图案。锁定 Velcrypt，再画你平常用的那个。你的文件都还在。"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Probabilmente hai disegnato una sequenza diversa. Blocca Velcrypt e disegna quella di sempre. I tuoi file sono ancora lì."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Je hebt waarschijnlijk een ander patroon getekend. Vergrendel Velcrypt en teken je gewone patroon. Je bestanden zijn er nog."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Du ritade förmodligen ett annat mönster. Lås Velcrypt och rita ditt vanliga. Dina filer finns kvar."
+          }
+        }
+      }
+    },
+    "Free: one vault with up to %lld items" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gratis: una bóveda con hasta %lld elementos"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kostenlos: ein Tresor mit bis zu %lld Objekten"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gratuit : un coffre avec jusqu’à %lld éléments"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Grátis: um cofre com até %lld itens"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "無料：最大%lld項目の保管庫を1つ"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "무료: 최대 %lld개 항목의 금고 1개"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "免费：一个保险库，最多 %lld 个项目"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gratis: una cassaforte con un massimo di %lld elementi"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gratis: één kluis met maximaal %lld onderdelen"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gratis: ett valv med upp till %lld objekt"
+          }
+        }
+      }
+    },
+    "A vault only counts once you add something to it, so trying another pattern never uses it up." : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Una bóveda solo cuenta cuando le añades algo, así que probar otro patrón nunca la gasta."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ein Tresor zählt erst, wenn du etwas hinzufügst. Ein anderes Muster auszuprobieren verbraucht ihn also nie."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Un coffre ne compte qu’une fois que vous y ajoutez quelque chose : essayer un autre schéma ne l’épuise donc jamais."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Um cofre só conta quando você adiciona algo a ele, então testar outro padrão nunca gasta o seu."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "保管庫は何かを追加したときに初めてカウントされます。別のパターンを試しても無料枠は減りません。"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "금고는 무언가를 추가해야만 계산되므로, 다른 패턴을 시험해도 무료 금고가 소진되지 않습니다."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "保险库只有在你添加内容后才会计入，所以尝试其他图案永远不会用掉免费名额。"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Una cassaforte conta solo quando ci aggiungi qualcosa, quindi provare un’altra sequenza non la consuma mai."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Een kluis telt pas mee zodra je er iets aan toevoegt, dus een ander patroon proberen kost je nooit je gratis kluis."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ett valv räknas först när du lägger till något i det, så att prova ett annat mönster förbrukar det aldrig."
+          }
+        }
+      }
+    },
+    "Make your own backup" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Haz tu propia copia de seguridad"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Erstelle dein eigenes Backup"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Faites votre propre sauvegarde"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Faça seu próprio backup"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "自分でバックアップを作成"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "직접 백업하세요"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "自己动手备份"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fai il tuo backup"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Maak je eigen back-up"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gör din egen säkerhetskopia"
+          }
+        }
+      }
+    },
+    "Settings › Backup saves a vault to an encrypted file that you can restore on a new iPhone." : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ajustes › Copia de seguridad guarda una bóveda en un archivo cifrado que puedes restaurar en un iPhone nuevo."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Einstellungen › Backup sichert einen Tresor in einer verschlüsselten Datei, die du auf einem neuen iPhone wiederherstellen kannst."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Réglages › Sauvegarde enregistre un coffre dans un fichier chiffré que vous pouvez restaurer sur un nouvel iPhone."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ajustes › Backup salva um cofre em um arquivo criptografado que você pode restaurar em um iPhone novo."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "「設定」›「バックアップ」で、保管庫を暗号化ファイルに保存できます。新しいiPhoneで復元できます。"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "설정 › 백업에서 금고를 암호화된 파일로 저장해 새 iPhone에서 복원할 수 있습니다."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "“设置”›“备份”可将保险库存储为加密文件，并在新 iPhone 上恢复。"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Impostazioni › Backup salva una cassaforte in un file cifrato che puoi ripristinare su un nuovo iPhone."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Instellingen › Back-up bewaart een kluis in een versleuteld bestand dat je op een nieuwe iPhone kunt terugzetten."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Inställningar › Säkerhetskopiering sparar ett valv i en krypterad fil som du kan återställa på en ny iPhone."
+          }
+        }
+      }
+    },
+    "How Velcrypt Works" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cómo funciona Velcrypt"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "So funktioniert Velcrypt"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fonctionnement de Velcrypt"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Como o Velcrypt Funciona"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Velcryptの使い方"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Velcrypt 사용 방법"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Velcrypt 的工作方式"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Come funziona Velcrypt"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zo werkt Velcrypt"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Så fungerar Velcrypt"
+          }
+        }
+      }
+    },
+    "Next time, draw this same pattern to open this vault. A different pattern opens a different, empty vault." : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La próxima vez, dibuja este mismo patrón para abrir esta bóveda. Un patrón distinto abre otra bóveda, vacía."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zeichne beim nächsten Mal dasselbe Muster, um diesen Tresor zu öffnen. Ein anderes Muster öffnet einen anderen, leeren Tresor."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La prochaine fois, tracez ce même schéma pour ouvrir ce coffre. Un autre schéma ouvre un autre coffre, vide."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Na próxima vez, desenhe este mesmo padrão para abrir este cofre. Um padrão diferente abre outro cofre, vazio."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "次回も同じパターンを描くと、この保管庫が開きます。違うパターンでは、別の空の保管庫が開きます。"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "다음에도 같은 패턴을 그려야 이 금고가 열립니다. 다른 패턴은 비어 있는 다른 금고를 엽니다."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "下次请画同一个图案来打开这个保险库。不同的图案会打开另一个空保险库。"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La prossima volta, disegna la stessa sequenza per aprire questa cassaforte. Una sequenza diversa apre un’altra cassaforte, vuota."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Teken de volgende keer hetzelfde patroon om deze kluis te openen. Een ander patroon opent een andere, lege kluis."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rita samma mönster nästa gång för att öppna det här valvet. Ett annat mönster öppnar ett annat, tomt valv."
+          }
+        }
+      }
+    },
+    "Unlock with %@" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Desbloquear con %@"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mit %@ entsperren"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Déverrouiller avec %@"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Desbloquear com %@"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@でロック解除"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@(으)로 잠금 해제"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "使用 %@ 解锁"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sblocca con %@"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ontgrendel met %@"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lås upp med %@"
+          }
+        }
+      }
+    },
+    "Open a vault you turned Face ID on for" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Abre una bóveda para la que activaste Face ID"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Öffne einen Tresor, für den du Face ID eingeschaltet hast"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ouvrez un coffre pour lequel vous avez activé Face ID"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Abra um cofre para o qual você ativou o Face ID"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Face IDをオンにした保管庫を開きます"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Face ID를 켠 금고를 엽니다"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "打开你已开启面容 ID 的保险库"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apri una cassaforte per cui hai attivato Face ID"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Open een kluis waarvoor je Face ID hebt aangezet"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Öppna ett valv som du har slagit på Face ID för"
+          }
+        }
+      }
+    },
+    "%@ didn’t work. Draw your pattern instead." : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ no ha funcionado. Dibuja tu patrón."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ hat nicht funktioniert. Zeichne stattdessen dein Muster."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ n’a pas fonctionné. Tracez plutôt votre schéma."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O %@ não funcionou. Desenhe seu padrão."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@が使えませんでした。代わりにパターンを描いてください。"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@이(가) 작동하지 않았습니다. 대신 패턴을 그리세요."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ 未能成功。请改为绘制你的图案。"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ non ha funzionato. Disegna invece la tua sequenza."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ werkte niet. Teken in plaats daarvan je patroon."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ fungerade inte. Rita ditt mönster i stället."
+          }
+        }
+      }
+    },
+    "%@ was reset on this iPhone. Open your vault with its pattern and turn it on again in Settings." : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ se ha restablecido en este iPhone. Abre tu bóveda con su patrón y vuelve a activarlo en Ajustes."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ wurde auf diesem iPhone zurückgesetzt. Öffne deinen Tresor mit seinem Muster und schalte es in den Einstellungen wieder ein."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ a été réinitialisé sur cet iPhone. Ouvrez votre coffre avec son schéma et réactivez-le dans les Réglages."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O %@ foi redefinido neste iPhone. Abra seu cofre com o padrão dele e ative-o de novo nos Ajustes."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "このiPhoneで%@がリセットされました。パターンで保管庫を開き、「設定」でもう一度オンにしてください。"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "이 iPhone에서 %@이(가) 재설정되었습니다. 패턴으로 금고를 열고 설정에서 다시 켜세요."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "此 iPhone 上的 %@ 已被重置。请用图案打开你的保险库，然后在“设置”中重新开启。"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ è stato reimpostato su questo iPhone. Apri la cassaforte con la sua sequenza e riattivalo in Impostazioni."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ is op deze iPhone opnieuw ingesteld. Open je kluis met het patroon en zet het in Instellingen weer aan."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ har återställts på den här iPhonen. Öppna ditt valv med dess mönster och slå på det igen i Inställningar."
+          }
+        }
+      }
+    },
+    "Choose a Vault" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Elige una bóveda"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tresor auswählen"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Choisissez un coffre"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Escolha um Cofre"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "保管庫を選択"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "금고 선택"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "选择保险库"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scegli una cassaforte"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kies een kluis"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Välj ett valv"
+          }
+        }
+      }
+    },
+    "Off by default. When it's on, tap “Unlock with %@” on the lock screen and choose this vault from the list. Its pattern keeps working too." : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Desactivado de forma predeterminada. Cuando está activado, toca «Desbloquear con %@» en la pantalla de bloqueo y elige esta bóveda en la lista. Su patrón sigue funcionando."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Standardmäßig aus. Wenn es eingeschaltet ist, tippe auf dem Sperrbildschirm auf „Mit %@ entsperren“ und wähle diesen Tresor aus der Liste. Sein Muster funktioniert weiterhin."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Désactivé par défaut. Une fois activé, touchez « Déverrouiller avec %@ » sur l’écran de verrouillage et choisissez ce coffre dans la liste. Son schéma fonctionne toujours."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Desativado por padrão. Quando ativado, toque em “Desbloquear com %@” na tela de bloqueio e escolha este cofre na lista. O padrão dele continua funcionando."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "初期設定ではオフです。オンにすると、ロック画面で「%@でロック解除」をタップし、リストからこの保管庫を選べます。パターンも引き続き使えます。"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "기본적으로 꺼져 있습니다. 켜면 잠금 화면에서 ‘%@(으)로 잠금 해제’를 탭하고 목록에서 이 금고를 선택하세요. 패턴도 계속 사용할 수 있습니다."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "默认关闭。开启后，在锁定屏幕上轻点“使用 %@ 解锁”，然后从列表中选择这个保险库。它的图案也仍然可用。"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Disattivato per impostazione predefinita. Quando è attivo, tocca “Sblocca con %@” nella schermata di blocco e scegli questa cassaforte dall’elenco. Anche la sua sequenza continua a funzionare."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Standaard uit. Als het aan staat, tik je op het vergrendelscherm op ‘Ontgrendel met %@’ en kies je deze kluis uit de lijst. Het patroon blijft ook werken."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Av som standard. När det är på trycker du på ”Lås upp med %@” på låsskärmen och väljer det här valvet i listan. Dess mönster fungerar fortfarande."
+          }
+        }
+      }
+    },
+    "Set up %@ in the iOS Settings app first." : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Primero configura %@ en la app Ajustes de iOS."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Richte zuerst %@ in der App „Einstellungen“ von iOS ein."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Configurez d’abord %@ dans l’app Réglages d’iOS."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Primeiro configure o %@ no app Ajustes do iOS."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "先にiOSの「設定」アプリで%@を設定してください。"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "먼저 iOS 설정 앱에서 %@을(를) 설정하세요."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "请先在 iOS 的“设置”App 中设置 %@。"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Prima configura %@ nell’app Impostazioni di iOS."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stel eerst %@ in via de app Instellingen van iOS."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ställ först in %@ i appen Inställningar i iOS."
+          }
+        }
+      }
+    },
+    "Anyone who gets past %@ on this iPhone, including someone who forces you, can see and open every vault in the %@ list. Vaults without %@ are never listed. Keep your most private vault on its pattern only." : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cualquiera que supere %@ en este iPhone, incluido alguien que te obligue, puede ver y abrir todas las bóvedas de la lista de %@. Las bóvedas sin %@ nunca aparecen. Deja tu bóveda más privada solo con su patrón."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wer auf diesem iPhone an %@ vorbeikommt, auch jemand, der dich dazu zwingt, kann jeden Tresor in der %@-Liste sehen und öffnen. Tresore ohne %@ erscheinen nie in der Liste. Schütze deinen privatesten Tresor nur mit seinem Muster."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Toute personne qui passe %@ sur cet iPhone, y compris quelqu’un qui vous y oblige, peut voir et ouvrir chaque coffre de la liste %@. Les coffres sans %@ n’y figurent jamais. Gardez votre coffre le plus privé sur son seul schéma."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Qualquer pessoa que passe pelo %@ neste iPhone, inclusive alguém que force você, pode ver e abrir todos os cofres da lista do %@. Cofres sem %@ nunca aparecem. Mantenha seu cofre mais privado só com o padrão."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "このiPhoneで%@を通過できる人は、あなたに強要する人も含めて、%@リストのすべての保管庫を見て開くことができます。%@を使わない保管庫はリストに表示されません。最もプライベートな保管庫はパターンだけにしておきましょう。"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "이 iPhone에서 %@을(를) 통과한 사람은 당신에게 강요하는 사람을 포함해 누구나 %@ 목록의 모든 금고를 보고 열 수 있습니다. %@을(를) 쓰지 않는 금고는 목록에 나타나지 않습니다. 가장 사적인 금고는 패턴으로만 열리게 두세요."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "任何能在此 iPhone 上通过 %@ 的人（包括强迫你的人）都能看到并打开 %@ 列表中的每个保险库。未开启 %@ 的保险库永远不会出现在列表中。请让你最私密的保险库只用图案打开。"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chiunque superi %@ su questo iPhone, anche qualcuno che ti costringe, può vedere e aprire ogni cassaforte dell’elenco %@. Le casseforti senza %@ non compaiono mai. Lascia la tua cassaforte più privata solo con la sua sequenza."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Iedereen die op deze iPhone langs %@ komt, ook iemand die je dwingt, kan elke kluis in de %@-lijst zien en openen. Kluizen zonder %@ staan er nooit in. Houd je meest privékluis alleen op het patroon."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Den som tar sig förbi %@ på den här iPhonen, även någon som tvingar dig, kan se och öppna alla valv i %@-listan. Valv utan %@ visas aldrig. Låt ditt mest privata valv bara öppnas med sitt mönster."
+          }
+        }
+      }
+    },
+    "Name in List" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nombre en la lista"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Name in der Liste"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nom dans la liste"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nome na Lista"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "リストでの名前"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "목록에 표시될 이름"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "列表中的名称"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nome nell’elenco"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Naam in lijst"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Namn i listan"
+          }
+        }
+      }
+    },
+    "Name This Vault" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ponle nombre a esta bóveda"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tresor benennen"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nommer ce coffre"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dar Nome a Este Cofre"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "この保管庫に名前を付ける"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "이 금고 이름 지정"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "为此保险库命名"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dai un nome a questa cassaforte"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Geef deze kluis een naam"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Namnge det här valvet"
+          }
+        }
+      }
+    },
+    "The name is shown in the %@ list so you can tell your vaults apart. Only you see it, after %@." : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "El nombre aparece en la lista de %@ para que distingas tus bóvedas. Solo tú lo ves, después de %@."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Der Name erscheint in der %@-Liste, damit du deine Tresore auseinanderhalten kannst. Nur du siehst ihn, nach %@."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Le nom s’affiche dans la liste %@ pour distinguer vos coffres. Vous seul le voyez, après %@."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O nome aparece na lista do %@ para você diferenciar seus cofres. Só você o vê, depois do %@."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "名前は%@リストに表示され、保管庫を見分けるのに使います。表示されるのは%@を通過したあとだけです。"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "이름은 %@ 목록에 표시되어 금고를 구분하는 데 쓰입니다. %@을(를) 통과한 후에만 보입니다."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "名称会显示在 %@ 列表中，方便你区分保险库。只有通过 %@ 后才能看到。"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Il nome compare nell’elenco %@ per distinguere le tue casseforti. Lo vedi solo tu, dopo %@."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "De naam staat in de %@-lijst, zodat je je kluizen uit elkaar kunt houden. Alleen jij ziet hem, na %@."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Namnet visas i %@-listan så att du kan skilja dina valv åt. Bara du ser det, efter %@."
+          }
+        }
+      }
+    },
+    "%@ can be turned on once this vault holds at least one item." : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Puedes activar %@ cuando esta bóveda tenga al menos un elemento."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ lässt sich einschalten, sobald dieser Tresor mindestens ein Objekt enthält."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ peut être activé dès que ce coffre contient au moins un élément."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O %@ pode ser ativado quando este cofre tiver pelo menos um item."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "この保管庫に項目が1つ以上あれば、%@をオンにできます。"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "이 금고에 항목이 하나 이상 있으면 %@을(를) 켤 수 있습니다."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "此保险库中至少有一个项目后，才能开启 %@。"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Puoi attivare %@ quando questa cassaforte contiene almeno un elemento."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ kan aan zodra deze kluis minstens één onderdeel bevat."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ kan slås på när det här valvet innehåller minst ett objekt."
+          }
+        }
+      }
+    },
+    "Turn on Face ID for this vault" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Activa Face ID para esta bóveda"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Face ID für diesen Tresor einschalten"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Activer Face ID pour ce coffre"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ative o Face ID para este cofre"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "この保管庫でFace IDをオンにします"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "이 금고에 Face ID를 켭니다"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "为此保险库开启面容 ID"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Attiva Face ID per questa cassaforte"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zet Face ID aan voor deze kluis"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Slå på Face ID för det här valvet"
+          }
+        }
+      }
+    },
+    "Face ID couldn't be turned on. Please try again." : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No se ha podido activar Face ID. Inténtalo de nuevo."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Face ID konnte nicht eingeschaltet werden. Bitte versuche es erneut."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Impossible d’activer Face ID. Veuillez réessayer."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Não foi possível ativar o Face ID. Tente novamente."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Face IDをオンにできませんでした。もう一度お試しください。"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Face ID를 켤 수 없습니다. 다시 시도하세요."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "无法开启面容 ID。请再试一次。"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Impossibile attivare Face ID. Riprova."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Face ID kon niet worden aangezet. Probeer het opnieuw."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Face ID kunde inte slås på. Försök igen."
+          }
+        }
+      }
+    },
+    "Face ID couldn't be turned off. Please try again." : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No se ha podido desactivar Face ID. Inténtalo de nuevo."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Face ID konnte nicht ausgeschaltet werden. Bitte versuche es erneut."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Impossible de désactiver Face ID. Veuillez réessayer."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Não foi possível desativar o Face ID. Tente novamente."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Face IDをオフにできませんでした。もう一度お試しください。"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Face ID를 끌 수 없습니다. 다시 시도하세요."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "无法关闭面容 ID。请再试一次。"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Impossibile disattivare Face ID. Riprova."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Face ID kon niet worden uitgezet. Probeer het opnieuw."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Face ID kunde inte stängas av. Försök igen."
+          }
+        }
+      }
+    },
+    "This pattern opens a different, empty vault. The free version keeps your files in one vault: draw your usual pattern to go back to it, or go Premium for more vaults." : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Este patrón abre otra bóveda, vacía. La versión gratuita guarda tus archivos en una sola bóveda: dibuja tu patrón de siempre para volver a ella o pásate a Premium para tener más bóvedas."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dieses Muster öffnet einen anderen, leeren Tresor. Die kostenlose Version bewahrt deine Dateien in einem Tresor auf: Zeichne dein übliches Muster, um zurückzukehren, oder hol dir Premium für mehr Tresore."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ce schéma ouvre un autre coffre, vide. La version gratuite garde vos fichiers dans un seul coffre : tracez votre schéma habituel pour y revenir, ou passez à Premium pour avoir plus de coffres."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Este padrão abre outro cofre, vazio. A versão gratuita guarda seus arquivos em um só cofre: desenhe seu padrão de sempre para voltar a ele ou assine o Premium para ter mais cofres."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "このパターンでは、別の空の保管庫が開きます。無料版ではファイルを1つの保管庫に保存します。いつものパターンを描いて戻るか、プレミアムで保管庫を増やしましょう。"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "이 패턴은 비어 있는 다른 금고를 엽니다. 무료 버전은 파일을 금고 하나에만 보관합니다. 평소 패턴을 그려 돌아가거나, 프리미엄으로 금고를 늘리세요."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "这个图案会打开另一个空保险库。免费版只能在一个保险库中存放文件：画你平常的图案即可返回，或升级到高级版以获得更多保险库。"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Questa sequenza apre un’altra cassaforte, vuota. La versione gratuita tiene i tuoi file in una sola cassaforte: disegna la sequenza di sempre per tornarci, o passa a Premium per avere più casseforti."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dit patroon opent een andere, lege kluis. De gratis versie bewaart je bestanden in één kluis: teken je gewone patroon om ernaar terug te gaan, of neem Premium voor meer kluizen."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Det här mönstret öppnar ett annat, tomt valv. Gratisversionen sparar dina filer i ett valv: rita ditt vanliga mönster för att gå tillbaka dit, eller skaffa Premium för fler valv."
           }
         }
       }

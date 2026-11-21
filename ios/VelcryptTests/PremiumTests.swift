@@ -39,4 +39,41 @@ final class PremiumLimitsTests: XCTestCase {
         _ = try await session.masterKeyForWriting()
         XCTAssertEqual(session.savedVaultCount, 2)
     }
+
+    /// The vault created in onboarding stays empty if the user never adds anything. It must not use up the
+    /// free vault, or a user who drew a different pattern by mistake could never start a vault for free.
+    @MainActor
+    func testOnlyVaultsWithItemsUseUpTheFreeVault() async throws {
+        let files = makeTemporaryFileStore()
+        defer { try? files.deleteAll() }
+        let store = InMemorySecretStore()
+        let defaults = try XCTUnwrap(UserDefaults(suiteName: "PremiumTests.\(UUID().uuidString)"))
+        let session = VaultSession(store: store, files: files, defaults: defaults,
+                                   keyring: VaultKeyring(store: store, roundsProvider: { TestConstants.fastRounds }),
+                                   biometrics: InMemoryBiometricKeyStore())
+        let premium = PremiumStore(defaults: defaults)
+
+        // Onboarding vault, left empty.
+        try await session.createFirstVault(pattern: .sample)
+        session.finishOnboarding()
+        session.lock()
+
+        // A different pattern may still be used for free.
+        try await session.unlock(pattern: .other)
+        var library = try XCTUnwrap(session.library)
+        await library.load()
+        XCTAssertEqual(session.otherVaultsWithItemsCount, 0)
+        XCTAssertNil(premium.blockReason(adding: library, session: session))
+        _ = await library.createNote(in: nil)
+        session.lock()
+
+        // Now one vault holds files, so the empty onboarding vault can't become a second one.
+        try await session.unlock(pattern: .sample)
+        library = try XCTUnwrap(session.library)
+        await library.load()
+        XCTAssertEqual(session.otherVaultsWithItemsCount, 1)
+        if !premium.isPremium {
+            XCTAssertEqual(premium.blockReason(adding: library, session: session), .vaultLimit)
+        }
+    }
 }

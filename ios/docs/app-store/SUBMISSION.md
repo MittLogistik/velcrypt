@@ -60,7 +60,7 @@ Answer **None** or **No** to every content question: violence, sexual content, p
 Velcrypt is a private photo vault with no account and no login.
 
 HOW TO GET IN
-On first launch, a short onboarding asks you to draw an unlock pattern on a 5×5 grid of dots (at least 6 dots, drag your finger across them) and draw it again to confirm. That pattern opens your first vault. There is no PIN and no Face ID by design.
+On first launch, a three-step introduction explains how Velcrypt works. Then you draw an unlock pattern on a 5×5 grid of dots (at least 6 dots, drag your finger across them) and draw it again to confirm. That pattern opens your first vault. There is no PIN. Face ID is optional and off by default (see below). "How Velcrypt Works" (the "?" button in the vault, or the link on the lock screen) shows the introduction again.
 
 IMPORTANT DESIGN NOTE
 Every different pattern opens its own separate vault. Drawing a pattern the app hasn't seen before does NOT show an error; it opens an empty vault on purpose, so nobody can tell whether other vaults exist (plausible deniability). To return to your first vault, lock the app (lock icon) and draw your original pattern again.
@@ -69,10 +69,11 @@ WHAT TO TRY
 • "+" adds photos and videos (Photos picker), files (Files), camera captures or a secure note. Items are stored AES-256 encrypted on the device.
 • Settings (gear icon) → Backup creates an encrypted .velcrypt file protected by a password, and can restore it.
 • Settings → App Icon offers alternate icons (Premium).
+• Settings → Face ID (free, off by default): turn it on for the open vault and give it a name. After locking, the lock screen shows "Unlock with Face ID". After Face ID you choose from the vaults you turned it on for. Vaults without Face ID are never listed, and the pattern keeps working for every vault.
 
 PREMIUM (IN-APP PURCHASES)
-The free version allows one vault with up to 50 items. Velcrypt Premium (weekly or yearly subscription with a 3-day free trial on yearly, or a lifetime purchase) unlocks unlimited items, more vaults, the duress pattern and alternate app icons.
-The paywall appears: once after onboarding; from Settings → "Upgrade to Premium"; when adding a 51st item; when saving into a second vault (draw a new pattern, then tap "+"); when setting up a duress pattern; and when choosing an alternate icon. "Restore Purchases" is on the paywall.
+The free version allows one vault with up to 50 items. Only a vault that holds at least one item counts, so an empty vault never uses up the free vault. Velcrypt Premium (weekly or yearly subscription with a 3-day free trial on yearly, or a lifetime purchase) unlocks unlimited items, more vaults, the duress pattern and alternate app icons.
+The paywall appears: once, the first time you open a vault that already holds items (not right after onboarding); from Settings → "Upgrade to Premium"; when adding a 51st item; when adding to a second vault while another vault already holds items (draw a new pattern, then tap "+"); when setting up a duress pattern; and when choosing an alternate icon. "Restore Purchases" is on the paywall.
 
 DURESS PATTERN (PREMIUM, OPTIONAL, USER-INITIATED)
 A safety feature for people who are forced to unlock their phone, for example by an abusive partner. The user sets up a separate duress pattern inside a decoy vault. Drawing it on the lock screen opens that decoy vault and permanently deletes every other vault on the device, with no visible sign. It never runs unless the user has set it up and then draws that exact pattern. Setup requires drawing it twice and confirming a warning that names the deletion. For safety, the app never shows whether a duress pattern is set.
