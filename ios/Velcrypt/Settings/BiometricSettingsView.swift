@@ -1,3 +1,4 @@
+import LocalAuthentication
 import SwiftUI
 
 /// Face ID for the open vault. Off by default. Turning it on adds this vault, under a name the user picks,
@@ -101,7 +102,7 @@ struct BiometricSettingsView: View {
                 Haptics.success()
             } catch {
                 if !BiometricAuth.isCancellation(error) {
-                    errorMessage = String(localized: "Face ID couldn't be turned on. Please try again.")
+                    errorMessage = String(localized: "Face ID couldn't be turned on. Please try again.") + " (\(Self.code(for: error)))"
                 }
             }
         }
@@ -112,7 +113,14 @@ struct BiometricSettingsView: View {
             try session.disableBiometricUnlock()
             Haptics.tap()
         } catch {
-            errorMessage = String(localized: "Face ID couldn't be turned off. Please try again.")
+            errorMessage = String(localized: "Face ID couldn't be turned off. Please try again.") + " (\(Self.code(for: error)))"
         }
+    }
+
+    /// A short code for support, e.g. "-25293" for a Keychain status or "LA -2" for a Face ID error.
+    private static func code(for error: Error) -> String {
+        if case SecretStoreError.unexpectedStatus(let status) = error { return "\(status)" }
+        if let error = error as? LAError { return "LA \(error.code.rawValue)" }
+        return String(describing: error)
     }
 }

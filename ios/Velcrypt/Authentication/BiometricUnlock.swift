@@ -30,6 +30,10 @@ protocol BiometricKeyStore {
 
 /// Keychain-backed `BiometricKeyStore`. Each entry is `ThisDeviceOnly`, needs a device passcode, and is bound
 /// to the faces or fingerprints enrolled when it was saved: enrolling a new one invalidates every entry.
+///
+/// Each vault has two items: the key, behind Face ID, and a plain marker (no secret, just the vault ID) in a
+/// separate service. Which vaults have Face ID on is read from the markers only, because querying items behind
+/// Face ID without a prompt is not reliable: iOS may refuse with `errSecInteractionNotAllowed`.
 struct KeychainBiometricKeyStore: BiometricKeyStore {
     private struct Payload: Codable {
         var version = 1
@@ -38,26 +42,25 @@ struct KeychainBiometricKeyStore: BiometricKeyStore {
     }
 
     let service: String
+    private var markerService: String { service + ".index" }
 
     init(service: String = "com.velcrypt.biometric") {
         self.service = service
     }
 
-    private var serviceQuery: [String: Any] {
-        [
+    private func baseQuery(_ service: String, _ vaultID: String? = nil) -> [String: Any] {
+        var query: [String: Any] = [
             kSecClass as String: kSecClassGenericPassword,
             kSecAttrService as String: service,
         ]
+        if let vaultID { query[kSecAttrAccount as String] = vaultID }
+        return query
     }
 
     func enabledVaultIDs() -> Set<String> {
-        var query = serviceQuery
+        var query = baseQuery(markerService)
         query[kSecReturnAttributes as String] = true
         query[kSecMatchLimit as String] = kSecMatchLimitAll
-        // Attributes don't need Face ID; this context makes sure no prompt can ever appear.
-        let context = LAContext()
-        context.interactionNotAllowed = true
-        query[kSecUseAuthenticationContext as String] = context
         var result: CFTypeRef?
         guard SecItemCopyMatching(query as CFDictionary, &result) == errSecSuccess,
               let rows = result as? [[String: Any]] else { return [] }
@@ -73,44 +76,54 @@ struct KeychainBiometricKeyStore: BiometricKeyStore {
             throw SecretStoreError.unexpectedStatus(errSecParam)
         }
         let payload = Payload(name: name, key: masterKey.withUnsafeBytes { Data($0) })
-        var query = serviceQuery
-        query[kSecAttrAccount as String] = vaultID
-        query[kSecAttrAccessControl as String] = access
-        query[kSecValueData as String] = try JSONEncoder().encode(payload)
-        let status = SecItemAdd(query as CFDictionary, nil)
+        var keyItem = baseQuery(service, vaultID)
+        keyItem[kSecAttrAccessControl as String] = access
+        keyItem[kSecValueData as String] = try JSONEncoder().encode(payload)
+        let status = SecItemAdd(keyItem as CFDictionary, nil)
         guard status == errSecSuccess else { throw SecretStoreError.unexpectedStatus(status) }
+
+        var marker = baseQuery(markerService, vaultID)
+        marker[kSecAttrAccessible as String] = kSecAttrAccessibleWhenUnlockedThisDeviceOnly
+        marker[kSecValueData as String] = Data()
+        let markerStatus = SecItemAdd(marker as CFDictionary, nil)
+        guard markerStatus == errSecSuccess else {
+            try? remove(vaultID: vaultID)
+            throw SecretStoreError.unexpectedStatus(markerStatus)
+        }
     }
 
     func remove(vaultID: String) throws {
-        var query = serviceQuery
-        query[kSecAttrAccount as String] = vaultID
-        let status = SecItemDelete(query as CFDictionary)
-        guard status == errSecSuccess || status == errSecItemNotFound else {
-            throw SecretStoreError.unexpectedStatus(status)
+        for itemService in [self.service, markerService] {
+            let status = SecItemDelete(baseQuery(itemService, vaultID) as CFDictionary)
+            guard status == errSecSuccess || status == errSecItemNotFound else {
+                throw SecretStoreError.unexpectedStatus(status)
+            }
         }
     }
 
     func removeAll() throws {
-        let status = SecItemDelete(serviceQuery as CFDictionary)
-        guard status == errSecSuccess || status == errSecItemNotFound else {
-            throw SecretStoreError.unexpectedStatus(status)
+        for itemService in [self.service, markerService] {
+            let status = SecItemDelete(baseQuery(itemService) as CFDictionary)
+            guard status == errSecSuccess || status == errSecItemNotFound else {
+                throw SecretStoreError.unexpectedStatus(status)
+            }
         }
     }
 
     func entries(authenticatedWith context: LAContext) -> [BiometricVault] {
         // One read per entry, so a single invalidated entry can't hide the others.
         enabledVaultIDs().sorted().compactMap { vaultID in
-            var query = serviceQuery
-            query[kSecAttrAccount as String] = vaultID
-            query[kSecReturnData as String] = true
-            query[kSecMatchLimit as String] = kSecMatchLimitOne
-            query[kSecUseAuthenticationContext as String] = context
+            var keyQuery = baseQuery(service, vaultID)
+            keyQuery[kSecReturnData as String] = true
+            keyQuery[kSecMatchLimit as String] = kSecMatchLimitOne
+            keyQuery[kSecUseAuthenticationContext as String] = context
             var result: CFTypeRef?
-            let status = SecItemCopyMatching(query as CFDictionary, &result)
+            let status = SecItemCopyMatching(keyQuery as CFDictionary, &result)
             guard status == errSecSuccess,
                   let data = result as? Data,
                   let payload = try? JSONDecoder().decode(Payload.self, from: data),
                   payload.key.count == 32 else {
+                // Gone or invalidated (Face ID was reset): drop it. A cancelled prompt changes nothing.
                 if status != errSecUserCanceled && status != errSecInteractionNotAllowed {
                     try? remove(vaultID: vaultID)
                 }

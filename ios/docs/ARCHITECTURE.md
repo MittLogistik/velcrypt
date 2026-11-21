@@ -159,7 +159,7 @@ Keychain items survive app deletion. On the first launch after an install
   needs a passcode to be set, and becomes unreadable if a face or finger is enrolled. Unreadable entries are
   deleted the next time the list is read, and the user turns Face ID on again after opening the vault with
   its pattern.
-* The lock screen shows "Unlock with Face ID" only if at least one entry exists (attributes only, no prompt).
+* The lock screen shows "Unlock with Face ID" only if at least one entry exists (read from a plain marker item per vault in `com.velcrypt.biometric.index`, because iOS may refuse to list Face ID–protected items without a prompt).
   `BiometricAuth.authenticate` evaluates `.deviceOwnerAuthenticationWithBiometrics` with no passcode fallback,
   and the evaluated `LAContext` reads every entry without further prompts. One entry opens directly. Several
   show a picker with their names. Vaults without Face ID never appear.
