@@ -102,6 +102,9 @@ if (!version) {
 
 // 2. Description and What's New for every locale file.
 const existing = (await api("GET", `/v1/appStoreVersions/${version.id}/appStoreVersionLocalizations?limit=50`)).data;
+// A locale new to this version also needs its URLs (Support URL is required); reuse the English ones.
+const english = existing.find((l) => l.attributes.locale === "en-US")?.attributes ?? {};
+const urls = Object.fromEntries(["supportUrl", "marketingUrl"].filter((k) => english[k]).map((k) => [k, english[k]]));
 for (const { locale, attributes } of storeCopy()) {
   const loc = existing.find((l) => l.attributes.locale === locale);
   if (loc) {
@@ -111,7 +114,7 @@ for (const { locale, attributes } of storeCopy()) {
   } else {
     await api("POST", "/v1/appStoreVersionLocalizations", {
       type: "appStoreVersionLocalizations",
-      attributes: { locale, ...attributes },
+      attributes: { locale, ...urls, ...attributes },
       relationships: { appStoreVersion: { data: { type: "appStoreVersions", id: version.id } } },
     });
   }
