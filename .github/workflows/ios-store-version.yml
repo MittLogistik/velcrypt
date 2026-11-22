@@ -1,0 +1,45 @@
+name: iOS App Store version
+
+# Prepares a version in App Store Connect for review: store copy for every locale from ios/docs/app-store,
+# review notes and the build. It does not submit; press "Submit for Review" in App Store Connect.
+# Trigger by pushing a tag store-<version>-<build>, e.g. store-1.1.0-17, or from "Run workflow".
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: Version, e.g. 1.1.0
+        required: true
+      build:
+        description: Build number, e.g. 17
+        required: true
+  push:
+    tags: ["store-*"]
+
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Prepare version in App Store Connect
+        env:
+          ASC_KEY_ID: ${{ secrets.ASC_KEY_ID }}
+          ASC_ISSUER_ID: ${{ secrets.ASC_ISSUER_ID }}
+          ASC_KEY_P8_BASE64: ${{ secrets.ASC_KEY_P8_BASE64 }}
+          APP_ID: "6825482326"
+          INPUT_VERSION: ${{ github.event.inputs.version }}
+          INPUT_BUILD: ${{ github.event.inputs.build }}
+        run: |
+          if [ -n "$INPUT_VERSION" ]; then
+            export VERSION="$INPUT_VERSION" BUILD="$INPUT_BUILD"
+          else
+            REST="${GITHUB_REF_NAME#store-}"
+            export VERSION="${REST%-*}" BUILD="${REST##*-}"
+          fi
+          export ASC_KEY_P8="$(echo "$ASC_KEY_P8_BASE64" | base64 --decode)"
+          node ios/scripts/asc-prepare-version.mjs

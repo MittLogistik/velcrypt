@@ -8,8 +8,8 @@
 | Subtitle | 30 | 25 |
 | Keywords | 100 | 98 |
 | Promotional text | 170 | 155 |
-| Description | 4,000 | 2,907 |
-| What's New | 4,000 | 169 |
+| Description | 4,000 | 3,080 |
+| What's New | 4,000 | 350 |
 
 **Search phrases targeted:** Targets "cofre de fotos", "esconder fotos" (name and subtitle combine), "ocultar fotos", "galeria secreta", "álbum privado", "fotos ocultas", "bloquear fotos" and "cadeado de fotos".
 
@@ -37,13 +37,13 @@ ocultar,galeria,secreta,álbum,privado,seguro,criptografia,cadeado,bloquear,padr
 Desenhe um padrão e abra seu cofre. Cada padrão abre um cofre criptografado próprio. Sem conta, sem nuvem: tudo fica no iPhone, com backups criptografados.
 ```
 
-## Description (2,907/4,000)
+## Description (3,080/4,000)
 
 ```
 O Velcrypt é um cofre privado para as fotos, vídeos, documentos e notas que você não quer que mais ninguém veja. Tudo é criptografado no seu iPhone com AES-256-GCM. Sem conta. Sem nuvem. Sem rastreamento.
 
 UM PADRÃO, UM COFRE
-Você desbloqueia o Velcrypt desenhando um padrão em uma grade de 5×5 pontos. Cada padrão abre um cofre separado, e o Velcrypt nunca mostra uma lista de cofres. Um padrão desconhecido simplesmente abre um cofre vazio: sem erro e sem nenhum indício de que existe algo mais.
+Você desbloqueia o Velcrypt desenhando um padrão em uma grade de 5×5 pontos. Cada padrão abre um cofre separado, e o Velcrypt nunca mostra uma lista de cofres, exceto os que você mesmo adicionar ao Face ID. Um padrão desconhecido simplesmente abre um cofre vazio: sem erro e sem nenhum indício de que existe algo mais.
 
 TENHA UM COFRE DE DISFARCE (PREMIUM)
 Encha um segundo cofre com fotos inofensivas. Se algum dia pressionarem você a abrir o app, desenhe esse padrão.
@@ -57,8 +57,8 @@ CRIPTOGRAFADO NO SEU IPHONE
 • Sem conta, sem cadastro, sem nuvem, sem anúncios, sem rastreamento
 • Os dados do cofre ficam fora dos backups do iCloud e do computador
 
-SEU PADRÃO, NÃO SEU ROSTO
-O Velcrypt não usa PIN nem Face ID, de propósito. A chave está na sua cabeça.
+SEU PADRÃO, SUA ESCOLHA
+Sem PIN. O Face ID é opcional e vem desativado: ative-o só nos cofres que você escolher. O seu cofre mais privado pode ficar só com o padrão, e a chave está na sua cabeça.
 
 TUDO EM UM SÓ LUGAR
 • Importe do Fotos ou do Arquivos
@@ -74,7 +74,7 @@ DISFARCE O APP (PREMIUM)
 Troque o ícone da Tela de Início por uma calculadora, um timer, uma régua e muito mais.
 
 VELCRYPT PREMIUM
-A versão gratuita inclui um cofre com até 50 itens. O Premium libera itens ilimitados, mais cofres, o padrão de coação e ícones alternativos do app.
+A versão gratuita inclui um cofre com até 50 itens, e um cofre vazio nunca o consome. O Premium libera itens ilimitados, mais cofres, o padrão de coação e ícones alternativos do app.
 • Escolha uma assinatura semanal ou anual (o plano anual começa com um teste gratuito) ou uma compra única vitalícia.
 • O pagamento é cobrado na sua Conta Apple. As assinaturas são renovadas automaticamente, a menos que sejam canceladas pelo menos 24 horas antes do fim do período atual. Gerencie ou cancele as assinaturas nos ajustes da sua Conta Apple.
 • Termos de Uso: https://velcrypt.app/terms/
@@ -88,8 +88,11 @@ IMPORTANTE
 Velcrypt. Well Encrypted. Truly Private.
 ```
 
-## What's New (169/4,000)
+## What's New (350/4,000)
 
 ```
-Boas-vindas ao Velcrypt, nossa primeira versão. Desenhe um padrão para abrir um cofre privado e mantenha suas fotos, vídeos, documentos e notas criptografados no iPhone.
+• Face ID, se você quiser: ative-o em qualquer cofre nos Ajustes. Ele vem desativado, e só os cofres que você escolher aparecem na lista do Face ID.
+• Uma introdução mais clara em três passos, e “Como o Velcrypt Funciona” sempre a um toque.
+• Experimente primeiro: um cofre vazio não consome mais o seu cofre grátis.
+• Pequenas correções e melhorias.
 ```

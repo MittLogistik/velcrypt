@@ -84,7 +84,7 @@ To test (needs Premium; the sandbox purchase is free):
 Turning it off: Settings → Duress Pattern → Turn Off, then draw the duress pattern.
 
 DELETING ORIGINALS FROM PHOTOS (OPTIONAL, USER-INITIATED)
-Importing makes an encrypted copy; it never removes anything by itself. After an import from the Photos picker, the app asks whether the user also wants to remove the originals. Only if the user taps "Delete Originals" does the app request Photos access and call PHAssetChangeRequest.deleteAssets for exactly the items the user just picked. iOS then shows its own system confirmation, and the items go to Recently Deleted for 30 days. Nothing is hidden or deleted without that explicit two-step confirmation, and the user can turn the offer off in Settings → Import. This mirrors what users would otherwise do by hand in the Photos app after moving files into a vault.
+Importing makes an encrypted copy; it never removes anything by itself. After an import from the Photos picker, the app asks whether the user also wants to remove the originals. Only if the user taps "Delete Originals" does the app request Photos access and call PHAssetChangeRequest.deleteAssets for exactly the items the user just picked. iOS then shows its own system confirmation, and the items go to Recently Deleted for 30 days. The user can turn the offer off in Settings → Import.
 
 The app makes no network requests, collects no data and has no account.
 ```

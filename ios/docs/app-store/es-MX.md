@@ -8,8 +8,8 @@
 | Subtitle | 30 | 30 |
 | Keywords | 100 | 96 |
 | Promotional text | 170 | 159 |
-| Description | 4,000 | 3,003 |
-| What's New | 4,000 | 176 |
+| Description | 4,000 | 3,187 |
+| What's New | 4,000 | 346 |
 
 **Search phrases targeted:** Targets "ocultar fotos", "bóveda de fotos", "álbum secreto/privado", "esconder fotos" and "galería oculta" for Mexico and for US Spanish speakers. Because the US storefront also indexes es-MX, the keywords add two English terms that en-US does not use ("lockbox", "image") and leave out everything that is already in en-US. No keyword overlaps with en-US name, subtitle or keywords.
 
@@ -37,13 +37,13 @@ esconder,video,galería,candado,cifrado,caja,fuerte,patrón,documento,oculto,gua
 Dibuja un patrón y abre tu bóveda. Cada patrón abre su propia bóveda cifrada. Sin cuenta ni nube: todo se queda en tu iPhone, con copias de seguridad cifradas.
 ```
 
-## Description (3,003/4,000)
+## Description (3,187/4,000)
 
 ```
 Velcrypt es una bóveda privada para las fotos, los videos, los documentos y las notas que no quieres que vea nadie más. Todo se cifra en tu iPhone con AES-256-GCM. Sin cuenta. Sin nube. Sin rastreo.
 
 UN PATRÓN, UNA BÓVEDA
-Desbloqueas Velcrypt dibujando un patrón en una cuadrícula de 5×5 puntos. Cada patrón abre su propia bóveda independiente y Velcrypt nunca muestra una lista de bóvedas. Un patrón desconocido simplemente abre una bóveda vacía: sin errores ni pistas de que exista nada más.
+Desbloqueas Velcrypt dibujando un patrón en una cuadrícula de 5×5 puntos. Cada patrón abre su propia bóveda independiente y Velcrypt nunca muestra una lista de bóvedas, salvo las que tú mismo agregues a Face ID. Un patrón desconocido simplemente abre una bóveda vacía: sin errores ni pistas de que exista nada más.
 
 TEN UNA BÓVEDA SEÑUELO (PREMIUM)
 Llena una segunda bóveda con fotos inofensivas. Si alguna vez te presionan para abrir la app, dibuja ese patrón.
@@ -57,8 +57,8 @@ CIFRADO EN TU IPHONE
 • Sin cuenta, sin registro, sin nube, sin anuncios, sin rastreo
 • Los datos de la bóveda se excluyen de las copias de seguridad de iCloud y de la computadora
 
-TU PATRÓN, NO TU CARA
-Velcrypt no usa PIN ni Face ID, a propósito. La llave está en tu cabeza.
+TU PATRÓN, TU DECISIÓN
+Sin PIN. Face ID es opcional y viene desactivado: actívalo solo en las bóvedas que elijas. Tu bóveda más privada puede quedarse solo con su patrón, y la llave está en tu cabeza.
 
 TODO EN UN SOLO LUGAR
 • Importa desde Fotos o Archivos
@@ -74,7 +74,7 @@ DISFRAZA LA APP (PREMIUM)
 Cambia el icono de la pantalla de inicio por una calculadora, un temporizador, una regla y más.
 
 VELCRYPT PREMIUM
-La versión gratuita incluye una bóveda con hasta 50 elementos. Premium desbloquea elementos ilimitados, más bóvedas, el patrón de coacción e iconos alternativos de la app.
+La versión gratuita incluye una bóveda con hasta 50 elementos, y una bóveda vacía nunca la agota. Premium desbloquea elementos ilimitados, más bóvedas, el patrón de coacción e iconos alternativos de la app.
 • Elige una suscripción semanal o anual (el plan anual empieza con una prueba gratuita) o una compra única vitalicia.
 • El pago se carga en tu cuenta de Apple. Las suscripciones se renuevan automáticamente salvo que se cancelen al menos 24 horas antes del final del periodo actual. Gestiónalas o cancélalas en los ajustes de tu cuenta de Apple.
 • Términos de uso: https://velcrypt.app/terms/
@@ -88,8 +88,11 @@ TEN EN CUENTA
 Velcrypt. Well Encrypted. Truly Private.
 ```
 
-## What's New (176/4,000)
+## What's New (346/4,000)
 
 ```
-Te damos la bienvenida a Velcrypt, nuestra primera versión. Dibuja un patrón para abrir una bóveda privada y guarda tus fotos, videos, documentos y notas cifrados en tu iPhone.
+• Face ID, si lo quieres: actívalo en cualquier bóveda desde Ajustes. Viene desactivado, y solo las bóvedas que elijas aparecen en la lista de Face ID.
+• Una introducción más clara en tres pasos, y “Cómo funciona Velcrypt” siempre a un toque.
+• Pruébala primero: una bóveda vacía ya no agota tu bóveda gratuita.
+• Pequeñas correcciones y mejoras.
 ```

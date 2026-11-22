@@ -8,8 +8,8 @@
 | Subtitle | 30 | 26 |
 | Keywords | 100 | 94 |
 | Promotional text | 170 | 169 |
-| Description | 4,000 | 2,776 |
-| What's New | 4,000 | 176 |
+| Description | 4,000 | 2,968 |
+| What's New | 4,000 | 351 |
 
 **Search phrases targeted:** Targets "dölj bilder", "dölja bilder", "gömma bilder", "fotovalv", "hemligt album", "dölja video", "låsa bilder", "privata bilder" and "dolt album". "valv" and "foto" are listed separately because Apple does not split the compound "fotovalv".
 
@@ -37,13 +37,13 @@ gömma,hemlig,album,valv,säker,lås,galleri,skydda,dold,mönster,dokument,fil,f
 Rita ett mönster och öppna ditt valv. Varje mönster öppnar ett eget krypterat valv. Inget konto, inget moln – allt stannar på din iPhone, med krypterade säkerhetskopior.
 ```
 
-## Description (2,776/4,000)
+## Description (2,968/4,000)
 
 ```
 Velcrypt är ett privat valv för bilder, videor, dokument och anteckningar som ingen annan ska se. Allt krypteras på din iPhone med AES-256-GCM. Inget konto. Inget moln. Ingen spårning.
 
 ETT MÖNSTER, ETT VALV
-Du låser upp Velcrypt genom att rita ett mönster på ett rutnät med 5×5 punkter. Varje mönster öppnar ett eget, separat valv och Velcrypt visar aldrig en lista över valv. Ett okänt mönster öppnar bara ett tomt valv: inget felmeddelande och ingen antydan om att något mer finns.
+Du låser upp Velcrypt genom att rita ett mönster på ett rutnät med 5×5 punkter. Varje mönster öppnar ett eget, separat valv och Velcrypt visar aldrig en lista över valv, utom de valv du själv lägger till i Face ID-listan. Ett okänt mönster öppnar bara ett tomt valv: inget felmeddelande och ingen antydan om att något mer finns.
 
 HA ETT SKENVALV (PREMIUM)
 Fyll ett andra valv med harmlösa bilder. Om någon pressar dig att öppna appen ritar du det mönstret.
@@ -57,8 +57,8 @@ KRYPTERAT PÅ DIN IPHONE
 • Inget konto, ingen registrering, inget moln, ingen reklam, ingen spårning
 • Valvdata undantas från säkerhetskopior till iCloud och dator
 
-DITT MÖNSTER, INTE DITT ANSIKTE
-Velcrypt använder medvetet varken pinkod eller Face ID. Nyckeln finns i ditt huvud.
+DITT MÖNSTER, FACE ID OM DU VILL
+Ingen pinkod. Face ID är valfritt och avstängt som standard: slå på det bara för de valv du väljer. Ditt mest privata valv kan fortsätta att öppnas enbart med sitt mönster.
 
 ALLT PÅ ETT STÄLLE
 • Importera från Bilder eller Filer
@@ -74,7 +74,7 @@ FÖRKLÄD APPEN (PREMIUM)
 Byt symbolen på hemskärmen mot en miniräknare, en timer, en linjal med mera.
 
 VELCRYPT PREMIUM
-Gratisversionen har ett valv med upp till 50 objekt. Premium ger obegränsat antal objekt, fler valv, nödmönster och alternativa appsymboler.
+Gratisversionen har ett valv med upp till 50 objekt. Ett tomt valv räknas inte, så du kan prova fritt. Premium ger obegränsat antal objekt, fler valv, nödmönster och alternativa appsymboler.
 • Välj en vecko- eller årsprenumeration (årsprenumerationen börjar med en gratis provperiod) eller ett engångsköp som gäller livet ut.
 • Betalningen debiteras ditt Apple-konto. Prenumerationer förnyas automatiskt om de inte sägs upp minst 24 timmar innan den aktuella perioden tar slut. Hantera eller avsluta dem i inställningarna för ditt Apple-konto.
 • Användarvillkor: https://velcrypt.app/terms/
@@ -88,8 +88,11 @@ BRA ATT VETA
 Velcrypt. Well Encrypted. Truly Private.
 ```
 
-## What's New (176/4,000)
+## What's New (351/4,000)
 
 ```
-Välkommen till Velcrypt, vår första version. Rita ett mönster för att öppna ett privat valv och förvara dina bilder, videor, dokument och anteckningar krypterade på din iPhone.
+• Face ID om du vill: slå på det för valfritt valv i Inställningar. Det är avstängt som standard, och bara de valv du väljer visas i Face ID-listan.
+• En tydligare introduktion i tre steg, och ”Så fungerar Velcrypt” finns alltid ett tryck bort.
+• Prova först: ett tomt valv förbrukar inte längre ditt gratisvalv.
+• Små korrigeringar och förbättringar.
 ```

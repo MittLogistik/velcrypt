@@ -8,8 +8,8 @@
 | Subtitle | 30 | 28 |
 | Keywords | 100 | 100 |
 | Promotional text | 170 | 167 |
-| Description | 4,000 | 3,133 |
-| What's New | 4,000 | 168 |
+| Description | 4,000 | 3,377 |
+| What's New | 4,000 | 401 |
 
 **Search phrases targeted:** Targets "nascondere foto", "nascondi foto", "cassaforte foto", "foto private", "album segreto", "nascondere video", "galleria nascosta", "foto con lucchetto" and "bloccare foto".
 
@@ -37,13 +37,13 @@ album,segreto,video,galleria,sicuro,nascosto,proteggere,lucchetto,sequenza,docum
 Disegna una sequenza e apri la tua cassaforte. Ogni sequenza apre una cassaforte cifrata diversa. Niente account né cloud: tutto resta sull’iPhone, con backup cifrati.
 ```
 
-## Description (3,133/4,000)
+## Description (3,377/4,000)
 
 ```
 Velcrypt è una cassaforte privata per le foto, i video, i documenti e le note che non vuoi far vedere a nessuno. Tutto viene cifrato sul tuo iPhone con AES-256-GCM. Nessun account. Nessun cloud. Nessun tracciamento.
 
 UNA SEQUENZA, UNA CASSAFORTE
-Sblocchi Velcrypt disegnando una sequenza su una griglia di 5×5 punti. Ogni sequenza apre una cassaforte separata e Velcrypt non mostra mai un elenco delle casseforti. Una sequenza sconosciuta apre semplicemente una cassaforte vuota: nessun errore, nessun indizio che esista altro.
+Sblocchi Velcrypt disegnando una sequenza su una griglia di 5×5 punti. Ogni sequenza apre una cassaforte separata e Velcrypt non mostra mai un elenco delle casseforti, tranne quelle che aggiungi tu all’elenco Face ID. Una sequenza sconosciuta apre semplicemente una cassaforte vuota: nessun errore, nessun indizio che esista altro.
 
 TIENI UNA CASSAFORTE CIVETTA (PREMIUM)
 Riempi una seconda cassaforte con foto innocue. Se qualcuno ti costringe ad aprire l’app, disegna quella sequenza.
@@ -57,8 +57,8 @@ CIFRATO SUL TUO IPHONE
 • Nessun account, nessuna registrazione, nessun cloud, nessuna pubblicità, nessun tracciamento
 • I dati della cassaforte sono esclusi dai backup di iCloud e del computer
 
-LA TUA SEQUENZA, NON IL TUO VOLTO
-Velcrypt non usa di proposito né PIN né Face ID. La chiave è nella tua testa.
+LA TUA SEQUENZA, E FACE ID SOLO SE LO VUOI
+Nessun PIN. Face ID è facoltativo e disattivato per impostazione predefinita: attivalo solo per le casseforti che scegli. La chiave resta nella tua testa.
 
 TUTTO IN UN UNICO POSTO
 • Importa da Foto o File
@@ -74,7 +74,7 @@ TRAVESTI L’APP (PREMIUM)
 Sostituisci l’icona nella schermata Home con una calcolatrice, un timer, un righello e altro ancora.
 
 VELCRYPT PREMIUM
-La versione gratuita include una cassaforte con un massimo di 50 elementi. Premium sblocca elementi illimitati, più casseforti, la sequenza di emergenza e icone alternative dell’app.
+La versione gratuita include una cassaforte con un massimo di 50 elementi. Una cassaforte vuota non conta: diventa la tua cassaforte gratuita solo quando contiene almeno un elemento. Premium sblocca elementi illimitati, più casseforti, la sequenza di emergenza e icone alternative dell’app.
 • Scegli un abbonamento settimanale o annuale (il piano annuale inizia con una prova gratuita) oppure un acquisto a vita una tantum.
 • Il pagamento viene addebitato sul tuo Account Apple. Gli abbonamenti si rinnovano automaticamente se non vengono annullati almeno 24 ore prima della fine del periodo in corso. Gestiscili o annullali nelle impostazioni del tuo Account Apple.
 • Termini di utilizzo: https://velcrypt.app/terms/
@@ -88,8 +88,11 @@ DA SAPERE
 Velcrypt. Well Encrypted. Truly Private.
 ```
 
-## What's New (168/4,000)
+## What's New (401/4,000)
 
 ```
-Benvenuto in Velcrypt, la nostra prima versione. Disegna una sequenza per aprire una cassaforte privata e conserva foto, video, documenti e note cifrati sul tuo iPhone.
+• Face ID, se lo vuoi: attivalo per qualsiasi cassaforte in Impostazioni. È disattivato per impostazione predefinita e nell’elenco Face ID compaiono solo le casseforti che scegli.
+• Un’introduzione in tre passaggi più chiara, e “Come funziona Velcrypt” è sempre a portata di tocco.
+• Provala prima: una cassaforte vuota non consuma più la tua cassaforte gratuita.
+• Piccole correzioni e miglioramenti.
 ```

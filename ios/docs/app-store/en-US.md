@@ -8,8 +8,8 @@
 | Subtitle | 30 | 27 |
 | Keywords | 100 | 97 |
 | Promotional text | 170 | 156 |
-| Description | 4,000 | 2,674 |
-| What's New | 4,000 | 154 |
+| Description | 4,000 | 2,855 |
+| What's New | 4,000 | 328 |
 
 **Search phrases targeted:** Name is already live. Subtitle adds "hide pictures/photos" and "lock videos". With the name, Apple can combine "hide photo", "lock photo", "private album", "secret photo vault", "photo locker", "hidden photos", "secure gallery", "photo safe" and "encrypt photo". Plurals and words from name and subtitle are not repeated.
 
@@ -39,13 +39,13 @@ secret,album,safe,hidden,locker,gallery,secure,encrypt,decoy,pattern,protect,fol
 Draw a pattern, open your vault. Every pattern opens its own encrypted vault. No account, no cloud: everything stays on your iPhone, with encrypted backups.
 ```
 
-## Description (2,674/4,000)
+## Description (2,855/4,000)
 
 ```
 Velcrypt is a private vault for the photos, videos, documents and notes you don't want anyone else to see. Everything is encrypted on your iPhone with AES-256-GCM. No account. No cloud. No tracking.
 
 ONE PATTERN, ONE VAULT
-You unlock Velcrypt by drawing a pattern on a 5×5 grid of dots. Every pattern opens its own separate vault, and Velcrypt never shows a list of vaults. A pattern it hasn't seen before simply opens an empty vault: no error, no hint that anything else exists.
+You unlock Velcrypt by drawing a pattern on a 5×5 grid of dots. Every pattern opens its own separate vault, and Velcrypt never shows a list of vaults, except the ones you add to Face ID yourself. A pattern it hasn't seen before simply opens an empty vault: no error, no hint that anything else exists.
 
 KEEP A DECOY (PREMIUM)
 Fill a second vault with harmless photos. If you're ever pressured to open the app, draw that pattern instead.
@@ -59,8 +59,8 @@ ENCRYPTED ON YOUR IPHONE
 • No account, no sign-up, no cloud, no ads, no tracking
 • Vault data is excluded from iCloud and computer backups
 
-YOUR PATTERN, NOT YOUR FACE
-Velcrypt deliberately has no PIN and no Face ID. The key lives in your head.
+YOUR PATTERN, YOUR CHOICE
+No PIN. Face ID is optional and off by default: turn it on only for the vaults you choose. Your most private vault can stay on its pattern alone, and the key lives in your head.
 
 EVERYTHING IN ONE PLACE
 • Import from Photos or Files
@@ -76,7 +76,7 @@ DISGUISE THE APP (PREMIUM)
 Swap the Home Screen icon for a calculator, a timer, a ruler and more.
 
 VELCRYPT PREMIUM
-The free version includes one vault with up to 50 items. Premium unlocks unlimited items, more vaults, the duress pattern and alternate app icons.
+The free version includes one vault with up to 50 items, and an empty vault never uses it up. Premium unlocks unlimited items, more vaults, the duress pattern and alternate app icons.
 • Choose a weekly or yearly subscription (the yearly plan starts with a free trial) or a one-time lifetime purchase.
 • Payment is charged to your Apple Account. Subscriptions renew automatically unless cancelled at least 24 hours before the end of the current period. Manage or cancel them in your Apple Account settings.
 • Terms of Use: https://velcrypt.app/terms/
@@ -90,8 +90,11 @@ PLEASE NOTE
 Velcrypt. Well Encrypted. Truly Private.
 ```
 
-## What's New (154/4,000)
+## What's New (328/4,000)
 
 ```
-Welcome to Velcrypt, our first release. Draw a pattern to open a private vault and keep your photos, videos, documents and notes encrypted on your iPhone.
+• Face ID, if you want it: turn it on for any vault in Settings. It's off by default, and only the vaults you choose appear in the Face ID list.
+• A clearer three-step introduction, and "How Velcrypt Works" is always one tap away.
+• Try it first: an empty vault no longer uses up your free vault.
+• Small fixes and improvements.
 ```
