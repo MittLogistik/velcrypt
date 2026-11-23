@@ -9,7 +9,7 @@
 | Keywords | 100 | 98 |
 | Promotional text | 170 | 156 |
 | Description | 4,000 | 2,855 |
-| What's New | 4,000 | 328 |
+| What's New | 4,000 | 221 |
 
 **Search phrases targeted:** Leads with "hide photos" and "hide videos", the main phrasing of the intent, so en-US ("private photo vault") and en-GB together cover both. The subtitle adds "secret vault", "private album" and "secret photo vault". The keywords add terms that are weaker in en-US: "picture", "lockbox", "image", "confidential", "storage". Overlap with en-US: safe, locker, encrypt, gallery, secure, decoy, pattern, folder.
 
@@ -88,11 +88,10 @@ PLEASE NOTE
 Velcrypt. Well Encrypted. Truly Private.
 ```
 
-## What's New (328/4,000)
+## What's New (221/4,000)
 
 ```
-• Face ID, if you want it: turn it on for any vault in Settings. It's off by default, and only the vaults you choose appear in the Face ID list.
-• A clearer three-step introduction, and "How Velcrypt Works" is always one tap away.
-• Try it first: an empty vault no longer uses up your free vault.
+• A new Velcrypt Premium screen.
+• Purchases are now handled with RevenueCat, our in-app purchase provider. It receives only purchase information; your vaults still never leave your iPhone.
 • Small fixes and improvements.
 ```

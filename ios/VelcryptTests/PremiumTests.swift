@@ -14,6 +14,26 @@ final class PremiumLimitsTests: XCTestCase {
         XCTAssertNil(PremiumLimits.remainingItems(current: 10_000, isPremium: true))
     }
 
+    /// Must match the entitlement identifier in the RevenueCat dashboard.
+    func testEntitlementIdentifier() {
+        XCTAssertEqual(RevenueCatSetup.entitlementID, "velcrypt_private_photo_vault_pro")
+    }
+
+    func testRevenueCatKeyPlaceholderIsIgnored() {
+        XCTAssertFalse(RevenueCatSetup.isValid("appl_REPLACE_ME"))
+        XCTAssertFalse(RevenueCatSetup.isValid(""))
+        XCTAssertFalse(RevenueCatSetup.isValid("sk_secretKey"))
+        XCTAssertTrue(RevenueCatSetup.isValid("appl_abcDEF123"))
+        // Unit tests never configure the SDK, so they make no network requests.
+        XCTAssertNil(RevenueCatSetup.apiKey)
+    }
+
+    @MainActor
+    func testStoreWithoutKeyRunsOnStoreKitAlone() throws {
+        let defaults = try XCTUnwrap(UserDefaults(suiteName: "PremiumTests.\(UUID().uuidString)"))
+        XCTAssertFalse(PremiumStore(defaults: defaults, revenueCatAPIKey: nil).usesRevenueCat)
+    }
+
     func testFreeVersionAllowsOneVault() {
         XCTAssertTrue(PremiumLimits.canCreateVault(savedVaults: 0, isPremium: false))
         XCTAssertFalse(PremiumLimits.canCreateVault(savedVaults: 1, isPremium: false))

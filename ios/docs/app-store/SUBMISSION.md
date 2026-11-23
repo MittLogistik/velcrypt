@@ -2,6 +2,17 @@
 
 This is the checklist and the copy-paste answers for App Store Connect. Metadata per locale is in the other files in this folder. Run `node ios/scripts/count-metadata.mjs` after editing any of them.
 
+## Version 1.2 (RevenueCat)
+
+1.2 adds RevenueCat. Before submitting it, also check these:
+
+- [ ] RevenueCat is set up as described in `ios/docs/REVENUECAT.md`, and the real `appl_` key is in `project.yml`.
+- [ ] A sandbox purchase and Restore Purchases work in TestFlight, and the purchase shows up in RevenueCat → Customers.
+- [ ] **App Privacy** is changed to "Purchases → Purchase History" (see below). This is the one App Store Connect setting that changes.
+- [ ] Every published RevenueCat paywall shows prices, renewal terms, Restore Purchases, Terms and Privacy.
+- [ ] Before merging the website branch, change the privacy policy's effective date (now 23 November 2026) to the day 1.2 is released, in all 11 languages (`website/src/content/pages/*/` privacy page, plus `dateModified`).
+- [ ] On release day, merge the `website/revenuecat-privacy` branch to `main`, so the website's privacy policy matches the app.
+
 ## Checklist
 
 - [ ] **Paid Apps Agreement** is *Active* (Business → Agreements). Bank and tax were submitted on 2026-10-22.
@@ -34,17 +45,26 @@ This is the checklist and the copy-paste answers for App Store Connect. Metadata
 
 ## App Privacy ("nutrition label")
 
-App Store Connect → App Privacy → Get Started:
+From version 1.2, Velcrypt includes the RevenueCat SDK for purchases, paywalls and A/B tests. RevenueCat counts as a third-party partner, so the label is no longer "Data Not Collected". Update it **before** submitting 1.2 (the label applies to the app, not to one version, so change it on the day 1.2 is submitted).
 
-- **Do you or your third-party partners collect data from this app?** Choose **No, we do not collect data from this app**.
+App Store Connect → App Privacy → Edit:
 
-The result is **Data Not Collected**. This is accurate because:
-- Velcrypt has no account, no server, no analytics SDK, no ads SDK and no networking code. Vault content never leaves the device.
+1. **Do you or your third-party partners collect data from this app?** Choose **Yes, we collect data from this app**.
+2. Tick only **Purchases → Purchase History**. Leave everything else unticked: Velcrypt sets no custom user ID, turns off RevenueCat's automatic device identifier collection, and has no ads or attribution SDKs.
+3. **Purchase History → how is it used?** Tick **Analytics** and **App Functionality**.
+4. **Is it linked to the user's identity?** Choose **No**. Velcrypt uses RevenueCat's anonymous app user IDs and has no account.
+5. **Is it used for tracking?** Choose **No**.
+6. Publish. The App Store then shows **Data Not Linked to You: Purchases**.
+
+What stays true:
+- Velcrypt has no account, no server of its own, no analytics SDK and no ads SDK. Vault content never leaves the device, and the vault works fully offline.
+- The only network traffic is for purchases: Apple's App Store and RevenueCat (purchase history, an anonymous app user ID, and technical request data such as app version, locale and IP address).
 - Backups are files the user saves wherever they choose. Velcrypt never receives them.
-- Purchases go through StoreKit. Apple processes them, and Velcrypt stores no purchase data of its own.
 - Crash reports and TestFlight feedback are Apple's opt-in services and are not collected by the developer.
 
-Privacy Policy URL: `https://velcrypt.app/privacy/`.
+RevenueCat's guidance: <https://www.revenuecat.com/docs/platform-resources/apple-platform-resources/apple-app-privacy>.
+
+Privacy Policy URL: `https://velcrypt.app/privacy/`. The policy that mentions RevenueCat is on the branch `website/revenuecat-privacy`. Merge it to `main` (which deploys the site) on the day 1.2 is released.
 
 ## Age rating
 
@@ -86,7 +106,10 @@ Turning it off: Settings → Duress Pattern → Turn Off, then draw the duress p
 DELETING ORIGINALS FROM PHOTOS (OPTIONAL, USER-INITIATED)
 Importing makes an encrypted copy; it never removes anything by itself. After an import from the Photos picker, the app asks whether the user also wants to remove the originals. Only if the user taps "Delete Originals" does the app request Photos access and call PHAssetChangeRequest.deleteAssets for exactly the items the user just picked. iOS then shows its own system confirmation, and the items go to Recently Deleted for 30 days. The user can turn the offer off in Settings → Import.
 
-The app makes no network requests, collects no data and has no account.
+PAYWALL
+The paywall's design may be served by RevenueCat (our in-app purchase provider) and can differ between users, because we test paywall variants. Every variant offers the same three products, shows the price and renewal terms, and has "Restore Purchases", Terms and Privacy links. If RevenueCat can't be reached, the app shows its built-in paywall.
+
+The app has no account. Vault content never leaves the device. The only network requests are for in-app purchases (App Store and RevenueCat).
 ```
 
 > Apple has rejected at least one competitor under Guideline 2.5.1 for deleting originals after import ("decoy functionality to hide user's photos"). If we are rejected for this, reply that the deletion is user-initiated, confirmed twice (by the app and by iOS) and recoverable from Recently Deleted. If Apple still insists, ship without the deletion step and show a hint to delete the originals in Photos instead.

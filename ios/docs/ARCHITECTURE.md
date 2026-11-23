@@ -170,11 +170,23 @@ Keychain items survive app deletion. On the first launch after an install
   vaults they delete. The Face ID list never triggers duress.
 * Trade-off: anyone who gets past Face ID sees the names of the vaults in the list. The settings screen says so.
 
-## Premium (StoreKit 2)
+## Premium (StoreKit 2 and RevenueCat)
 
 `PremiumStore` offers three products: `com.velcrypt.app.premium.weekly` and `com.velcrypt.app.premium.yearly`
 (auto-renewable, in one subscription group, and the yearly plan has a free-trial introductory offer), plus
-`com.velcrypt.app.premium.lifetime` (non-consumable). Any verified, unrevoked entitlement unlocks Premium.
+`com.velcrypt.app.premium.lifetime` (non-consumable).
+
+From 1.2, purchases go through the RevenueCat SDK, configured with the public key `REVENUECAT_API_KEY` from
+`project.yml`. Premium is on when RevenueCat's `velcrypt_private_photo_vault_pro` entitlement is active or StoreKit
+has a verified, unrevoked entitlement for one of the products. StoreKit's local check keeps Premium working offline
+and covers purchases from before RevenueCat; those are synced to RevenueCat once. `PaywallView` shows the
+remotely designed paywall of the current offering (`Offerings.current`, never a hard-coded offering, so
+experiments work). If the current offering has no paywall, or RevenueCat doesn't answer within 4 seconds, it shows
+the built-in paywall. Without a valid key, or in
+unit tests, the SDK is never configured and everything runs on StoreKit alone. Setup: `docs/REVENUECAT.md`.
+
+Privacy: the SDK is the app's only network code. It uses an anonymous app user ID (no `logIn`), automatic device
+identifier collection is off, and nothing from a vault is ever passed to it.
 
 The free version allows one vault with 50 items and only the standard icon (`PremiumLimits`). Only vaults that hold
 at least one item count (`VaultFileStore.hasItems` looks at file names, nothing is decrypted), so the empty vault

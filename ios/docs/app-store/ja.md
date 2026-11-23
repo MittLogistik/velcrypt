@@ -9,7 +9,7 @@
 | Keywords | 100 | 98 |
 | Promotional text | 170 | 82 |
 | Description | 4,000 | 1,548 |
-| What's New | 4,000 | 185 |
+| What's New | 4,000 | 144 |
 
 **Search phrases targeted:** Targets 写真 隠す, 動画 隠す, 写真 金庫, 鍵付き アルバム, シークレットアルバム, 写真 非表示, 秘密 写真, 写真 保管庫 and 隠しフォルダ. In-app text uses 保管庫 for "vault", but 金庫 is the more common search word, so the name uses 金庫 and 保管庫 goes in the keywords.
 
@@ -88,11 +88,10 @@ Velcrypt Premium
 Velcrypt. Well Encrypted. Truly Private.
 ```
 
-## What's New (185/4,000)
+## What's New (144/4,000)
 
 ```
-・必要ならFace IDも:「設定」から、好きな保管庫でFace IDをオンにできます。初期設定はオフで、Face IDの一覧に表示されるのは自分で選んだ保管庫だけです。
-・3ステップのわかりやすい紹介を追加。「Velcryptの使い方」はいつでもワンタップで見直せます。
-・まずは試せます:空の保管庫で無料の保管庫を使い切ることはなくなりました。
+・Velcrypt Premiumの画面を新しくしました。
+・App内課金はRevenueCat（App内課金の提供事業者）で処理されるようになりました。RevenueCatが受け取るのは購入情報のみで、保管庫がiPhoneの外に出ることはこれまでどおりありません。
 ・細かな修正と改善。
 ```

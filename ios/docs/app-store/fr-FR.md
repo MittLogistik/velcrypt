@@ -9,7 +9,7 @@
 | Keywords | 100 | 98 |
 | Promotional text | 170 | 167 |
 | Description | 4,000 | 3,379 |
-| What's New | 4,000 | 413 |
+| What's New | 4,000 | 257 |
 
 **Search phrases targeted:** Targets "coffre-fort photo", "cacher photos" (name and subtitle combine), "cacher vidéos", "masquer photos", "album secret", "photos privées", "galerie cachée", "photos chiffrées" and "verrouiller photos".
 
@@ -88,11 +88,10 @@ La version gratuite comprend un coffre de 50 éléments au maximum. Un coffre vi
 Velcrypt. Well Encrypted. Truly Private.
 ```
 
-## What's New (413/4,000)
+## What's New (257/4,000)
 
 ```
-• Face ID, si vous le souhaitez : activez-le pour n’importe quel coffre dans Réglages. Il est désactivé par défaut, et seuls les coffres que vous choisissez apparaissent dans la liste Face ID.
-• Une introduction plus claire en trois étapes, et « Fonctionnement de Velcrypt » toujours à portée de main.
-• Essayez d’abord : un coffre vide n’utilise plus votre coffre gratuit.
+• Un nouvel écran Velcrypt Premium.
+• Les achats passent désormais par RevenueCat, notre prestataire d’achats intégrés. Il ne reçoit que les informations d’achat ; vos coffres ne quittent toujours jamais votre iPhone.
 • Petites corrections et améliorations.
 ```

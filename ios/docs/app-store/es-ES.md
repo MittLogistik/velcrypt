@@ -9,7 +9,7 @@
 | Keywords | 100 | 98 |
 | Promotional text | 170 | 159 |
 | Description | 4,000 | 3,178 |
-| What's New | 4,000 | 346 |
+| What's New | 4,000 | 256 |
 
 **Search phrases targeted:** Targets "ocultar fotos", "caja fuerte fotos" (in Spain, "caja fuerte" is more common than "bóveda"), "fotos privadas", "esconder fotos", "álbum secreto", "galería oculta", "bóveda de fotos" and "fotos cifradas".
 
@@ -88,11 +88,10 @@ TEN EN CUENTA
 Velcrypt. Well Encrypted. Truly Private.
 ```
 
-## What's New (346/4,000)
+## What's New (256/4,000)
 
 ```
-• Face ID, si lo quieres: actívalo en cualquier bóveda desde Ajustes. Viene desactivado, y solo las bóvedas que elijas aparecen en la lista de Face ID.
-• Una introducción más clara en tres pasos, y “Cómo funciona Velcrypt” siempre a un toque.
-• Pruébala primero: una bóveda vacía ya no agota tu bóveda gratuita.
+• Una nueva pantalla de Velcrypt Premium.
+• Las compras ahora se gestionan con RevenueCat, nuestro proveedor de compras dentro de la app. Solo recibe información de compra; tus bóvedas siguen sin salir nunca de tu iPhone.
 • Pequeñas correcciones y mejoras.
 ```

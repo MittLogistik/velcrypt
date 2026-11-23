@@ -9,7 +9,7 @@
 | Keywords | 100 | 100 |
 | Promotional text | 170 | 167 |
 | Description | 4,000 | 3,377 |
-| What's New | 4,000 | 401 |
+| What's New | 4,000 | 280 |
 
 **Search phrases targeted:** Targets "nascondere foto", "nascondi foto", "cassaforte foto", "foto private", "album segreto", "nascondere video", "galleria nascosta", "foto con lucchetto" and "bloccare foto".
 
@@ -88,11 +88,10 @@ DA SAPERE
 Velcrypt. Well Encrypted. Truly Private.
 ```
 
-## What's New (401/4,000)
+## What's New (280/4,000)
 
 ```
-• Face ID, se lo vuoi: attivalo per qualsiasi cassaforte in Impostazioni. È disattivato per impostazione predefinita e nell’elenco Face ID compaiono solo le casseforti che scegli.
-• Un’introduzione in tre passaggi più chiara, e “Come funziona Velcrypt” è sempre a portata di tocco.
-• Provala prima: una cassaforte vuota non consuma più la tua cassaforte gratuita.
+• Una nuova schermata di Velcrypt Premium.
+• Gli acquisti ora sono gestiti con RevenueCat, il nostro fornitore per gli acquisti in-app. Riceve solo le informazioni sugli acquisti; le tue cassaforti continuano a non lasciare mai il tuo iPhone.
 • Piccole correzioni e miglioramenti.
 ```

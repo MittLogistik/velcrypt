@@ -9,7 +9,7 @@
 | Keywords | 100 | 96 |
 | Promotional text | 170 | 161 |
 | Description | 4,000 | 3,295 |
-| What's New | 4,000 | 380 |
+| What's New | 4,000 | 237 |
 
 **Search phrases targeted:** Targets "foto's verbergen", "fotokluis", "geheime foto's", "privé album", "video's verbergen", "foto's beveiligen", "verborgen album" and "foto kluis". The keyword "kluis" is listed separately because Apple does not split compound words such as "fotokluis".
 
@@ -88,11 +88,10 @@ GOED OM TE WETEN
 Velcrypt. Well Encrypted. Truly Private.
 ```
 
-## What's New (380/4,000)
+## What's New (237/4,000)
 
 ```
-• Face ID, als je dat wilt: zet het voor een kluis aan in Instellingen. Het staat standaard uit, en alleen de kluizen die jij kiest, verschijnen in de Face ID-lijst.
-• Een duidelijkere introductie in drie stappen, en 'Zo werkt Velcrypt' is altijd één tik verwijderd.
-• Eerst uitproberen: een lege kluis gebruikt je gratis kluis niet meer op.
-• Kleine verbeteringen en oplossingen.
+• Een nieuw scherm voor Velcrypt Premium.
+• Aankopen lopen nu via RevenueCat, onze aanbieder voor in-app-aankopen. Het ontvangt alleen aankoopgegevens; je kluizen verlaten je iPhone nog steeds nooit.
+• Kleine verbeteringen en reparaties.
 ```

@@ -3,8 +3,9 @@
 **Well Encrypted. Truly Private.** A native SwiftUI vault for private photos, videos and documents.
 
 - Swift · SwiftUI · CryptoKit · Keychain · iOS 17+
-- No third-party dependencies
+- One third-party dependency: the RevenueCat SDK, for purchases and paywalls only. Vault code uses Apple frameworks alone.
 - Architecture and security model: [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md)
+- RevenueCat setup and A/B tests: [docs/REVENUECAT.md](docs/REVENUECAT.md)
 
 ## Project layout
 
@@ -70,7 +71,8 @@ cd ios && xcodegen generate && open Velcrypt.xcodeproj
 | 2 | 5×5 pattern unlock, one vault per pattern, key hierarchy, auto-lock | ✅ |
 | 3 | Photo/video/document import, encrypted storage, viewer, albums, camera, notes, encrypted backup | ✅ |
 | 4 | Full settings, error handling, accessibility pass, integration tests | ⏳ |
-| 5 | StoreKit 2, paywall, duress pattern (Premium) | ⏳ |
+| 5 | StoreKit 2, paywall, duress pattern (Premium) | ✅ |
+| 6 | RevenueCat: remote paywalls, A/B tests, charts (1.2) | ⏳ |
 
 ## Backlog
 
@@ -78,8 +80,6 @@ cd ios && xcodegen generate && open Velcrypt.xcodeproj
   - an App Group container and Keychain sharing with the main app
   - normal signing, which in turn needs at least one registered device
   - migrating vault storage into the App Group container
-- **Duress pattern** (Premium). A designated pattern opens a chosen vault and removes access to all other vaults.
-- **StoreKit 2 paywall** (Milestone 5).
 
 ## Known limitations before App Store submission
 

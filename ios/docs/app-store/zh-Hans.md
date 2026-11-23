@@ -9,7 +9,7 @@
 | Keywords | 100 | 61 |
 | Promotional text | 170 | 64 |
 | Description | 4,000 | 1,216 |
-| What's New | 4,000 | 131 |
+| What's New | 4,000 | 100 |
 
 **Search phrases targeted:** Targets 私密相册, 照片保险箱, 隐藏照片, 隐藏视频, 加密相册, 隐私相册, 照片上锁 and 保险柜. The name uses 相册, the common search word; in-app text follows the iOS term 相簿. Both are covered.
 
@@ -88,11 +88,10 @@ Velcrypt 高级版
 Velcrypt. Well Encrypted. Truly Private.
 ```
 
-## What's New (131/4,000)
+## What's New (100/4,000)
 
 ```
-• 需要的话可以用面容 ID：在“设置”中为任意保险库开启。它默认关闭，只有你选定的保险库才会出现在面容 ID 列表中。
-• 更清晰的三步介绍，“Velcrypt 的工作方式”随时一点即达。
-• 先试再说：空保险库不再占用你的免费保险库。
-• 若干小修复和改进。
+• 全新的 Velcrypt 高级版页面。
+• 购买现由我们的 App 内购买服务提供商 RevenueCat 处理。它只接收购买信息；你的保险库依然不会离开你的 iPhone。
+• 细节修正与改进。
 ```

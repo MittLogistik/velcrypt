@@ -9,7 +9,7 @@
 | Keywords | 100 | 94 |
 | Promotional text | 170 | 169 |
 | Description | 4,000 | 2,968 |
-| What's New | 4,000 | 351 |
+| What's New | 4,000 | 221 |
 
 **Search phrases targeted:** Targets "dölj bilder", "dölja bilder", "gömma bilder", "fotovalv", "hemligt album", "dölja video", "låsa bilder", "privata bilder" and "dolt album". "valv" and "foto" are listed separately because Apple does not split the compound "fotovalv".
 
@@ -88,11 +88,10 @@ BRA ATT VETA
 Velcrypt. Well Encrypted. Truly Private.
 ```
 
-## What's New (351/4,000)
+## What's New (221/4,000)
 
 ```
-• Face ID om du vill: slå på det för valfritt valv i Inställningar. Det är avstängt som standard, och bara de valv du väljer visas i Face ID-listan.
-• En tydligare introduktion i tre steg, och ”Så fungerar Velcrypt” finns alltid ett tryck bort.
-• Prova först: ett tomt valv förbrukar inte längre ditt gratisvalv.
+• En ny skärm för Velcrypt Premium.
+• Köp hanteras nu med RevenueCat, vår leverantör för köp i appen. Den får bara information om köp; dina valv lämnar fortfarande aldrig din iPhone.
 • Små korrigeringar och förbättringar.
 ```

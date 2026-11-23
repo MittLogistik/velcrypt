@@ -9,7 +9,7 @@
 | Keywords | 100 | 96 |
 | Promotional text | 170 | 159 |
 | Description | 4,000 | 3,187 |
-| What's New | 4,000 | 346 |
+| What's New | 4,000 | 256 |
 
 **Search phrases targeted:** Targets "ocultar fotos", "bóveda de fotos", "álbum secreto/privado", "esconder fotos" and "galería oculta" for Mexico and for US Spanish speakers. Because the US storefront also indexes es-MX, the keywords add two English terms that en-US does not use ("lockbox", "image") and leave out everything that is already in en-US. No keyword overlaps with en-US name, subtitle or keywords.
 
@@ -88,11 +88,10 @@ TEN EN CUENTA
 Velcrypt. Well Encrypted. Truly Private.
 ```
 
-## What's New (346/4,000)
+## What's New (256/4,000)
 
 ```
-• Face ID, si lo quieres: actívalo en cualquier bóveda desde Ajustes. Viene desactivado, y solo las bóvedas que elijas aparecen en la lista de Face ID.
-• Una introducción más clara en tres pasos, y “Cómo funciona Velcrypt” siempre a un toque.
-• Pruébala primero: una bóveda vacía ya no agota tu bóveda gratuita.
+• Una nueva pantalla de Velcrypt Premium.
+• Las compras ahora se gestionan con RevenueCat, nuestro proveedor de compras dentro de la app. Solo recibe información de compra; tus bóvedas siguen sin salir nunca de tu iPhone.
 • Pequeñas correcciones y mejoras.
 ```

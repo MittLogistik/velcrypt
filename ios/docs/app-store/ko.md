@@ -9,7 +9,7 @@
 | Keywords | 100 | 76 |
 | Promotional text | 170 | 88 |
 | Description | 4,000 | 1,654 |
-| What's New | 4,000 | 211 |
+| What's New | 4,000 | 134 |
 
 **Search phrases targeted:** Targets 사진 숨기기, 사진 금고, 비밀 앨범, 앨범 잠금, 동영상 숨기기, 사진 잠금, 비공개 갤러리 and 숨김 폴더. In-app text uses 금고 for "vault" because iOS already uses 보관함 for the Photos library. 보관함 is still a search term, so it is in the keywords.
 
@@ -88,11 +88,10 @@ Velcrypt 프리미엄
 Velcrypt. Well Encrypted. Truly Private.
 ```
 
-## What's New (211/4,000)
+## What's New (134/4,000)
 
 ```
-• 원하면 Face ID도: 설정에서 원하는 금고에 Face ID를 켜세요. 기본적으로 꺼져 있으며, 직접 고른 금고만 Face ID 목록에 나타납니다.
-• 더 명확해진 세 단계 소개, 그리고 ‘Velcrypt 사용 방법’은 언제든 한 번의 탭으로 다시 볼 수 있습니다.
-• 먼저 사용해 보세요: 빈 금고는 더 이상 무료 금고를 차지하지 않습니다.
-• 작은 버그 수정 및 개선.
+• 새로운 Velcrypt 프리미엄 화면.
+• 이제 구입은 인앱 구입 제공업체인 RevenueCat을 통해 처리됩니다. RevenueCat은 구입 정보만 받으며, 금고는 여전히 iPhone 밖으로 나가지 않습니다.
+• 사소한 수정 및 개선.
 ```

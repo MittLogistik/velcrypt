@@ -9,7 +9,7 @@
 | Keywords | 100 | 96 |
 | Promotional text | 170 | 168 |
 | Description | 4,000 | 3,417 |
-| What's New | 4,000 | 437 |
+| What's New | 4,000 | 262 |
 
 **Search phrases targeted:** Targets "Foto Tresor", "Fotos verstecken", "Bilder verstecken", "Videos verstecken", "geheime Fotos", "privates Album", "Foto Safe", "Fotos verschlüsseln" and "Galerie sperren".
 
@@ -88,11 +88,10 @@ BITTE BEACHTEN
 Velcrypt. Well Encrypted. Truly Private.
 ```
 
-## What's New (437/4,000)
+## What's New (262/4,000)
 
 ```
-• Face ID, wenn du willst: Schalte es in den Einstellungen für jeden beliebigen Tresor ein. Standardmäßig ist es aus, und in der Face-ID-Liste erscheinen nur die Tresore, die du auswählst.
-• Eine klarere Einführung in drei Schritten, und „So funktioniert Velcrypt“ ist jederzeit nur einen Tipp entfernt.
-• Erst ausprobieren: Ein leerer Tresor verbraucht deinen kostenlosen Tresor nicht mehr.
-• Kleine Fehlerbehebungen und Verbesserungen.
+• Ein neuer Bildschirm für Velcrypt Premium.
+• Käufe werden jetzt über RevenueCat abgewickelt, unseren Anbieter für In-App-Käufe. RevenueCat erhält nur Kaufinformationen; deine Tresore verlassen dein iPhone weiterhin nie.
+• Kleine Korrekturen und Verbesserungen.
 ```

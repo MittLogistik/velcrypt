@@ -6,13 +6,22 @@ options:
   createIntermediateGroups: true
   developmentLanguage: en
 
+packages:
+  RevenueCat:
+    url: https://github.com/RevenueCat/purchases-ios-spm
+    exactVersion: 5.102.0
+
 settings:
   base:
     SWIFT_VERSION: "5.0"
-    MARKETING_VERSION: "1.1.0"
+    MARKETING_VERSION: "1.2.0"
     CURRENT_PROJECT_VERSION: "1"
     CODE_SIGN_STYLE: Automatic
     ENABLE_USER_SCRIPT_SANDBOXING: YES
+    # RevenueCat public SDK key (RevenueCat → Project settings → API keys, the App Store key starting with appl_).
+    # It is meant to ship inside the app, so it is fine in the repo. With the placeholder appl_REPLACE_ME, Premium
+    # runs on StoreKit alone and the built-in paywall is shown.
+    REVENUECAT_API_KEY: appl_jjVDSaJZVStzeXYpWVhGwBbbbAG
 
 targets:
   Velcrypt:
@@ -20,6 +29,11 @@ targets:
     platform: iOS
     sources:
       - path: Velcrypt
+    dependencies:
+      - package: RevenueCat
+        product: RevenueCat
+      - package: RevenueCat
+        product: RevenueCatUI
     info:
       path: Velcrypt/Info.plist
       properties:
@@ -38,6 +52,7 @@ targets:
         NSMicrophoneUsageDescription: Velcrypt records sound only when you film a video into your vault.
         NSFaceIDUsageDescription: Velcrypt uses Face ID only for vaults you turn it on for. It is off by default.
         ITSAppUsesNonExemptEncryption: false
+        RevenueCatAPIKey: $(REVENUECAT_API_KEY)
         UTExportedTypeDeclarations:
           - UTTypeIdentifier: com.velcrypt.backup
             UTTypeDescription: Velcrypt Backup

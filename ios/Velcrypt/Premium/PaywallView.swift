@@ -1,15 +1,62 @@
+import RevenueCat
+import RevenueCatUI
 import StoreKit
 import SwiftUI
 
-/// Velcrypt Premium paywall: yearly (with free trial), weekly and lifetime.
+/// The Velcrypt Premium paywall, shown as a sheet.
+///
+/// Shows the paywall of RevenueCat's current offering (`Offerings.current`), which can be changed and A/B tested
+/// without an app update: an active experiment decides which offering is current for this user. Falls back to
+/// the built-in paywall when RevenueCat isn't set up, the current offering has no paywall, or RevenueCat can't
+/// be reached.
 struct PaywallView: View {
-    /// Why the paywall is shown; it changes only the subtitle.
+    /// Why the paywall is shown. It changes the built-in paywall's subtitle.
     enum Reason: String, Identifiable {
         case welcome, upgrade, itemLimit, vaultLimit, appIcons, duress
         var id: String { rawValue }
     }
 
     let reason: Reason
+
+    @Environment(PremiumStore.self) private var store
+    @Environment(\.dismiss) private var dismiss
+
+    private enum Content {
+        case loading
+        case remote
+        case builtIn
+    }
+
+    @State private var content = Content.loading
+
+    var body: some View {
+        Group {
+            switch content {
+            case .loading:
+                ProgressView()
+                    .tint(VCColor.accentCyan)
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+                    .background(VCBackground())
+            case .remote:
+                // No offering is passed, so the paywall loads Offerings.current and respects experiments.
+                RevenueCatUI.PaywallView(displayCloseButton: true)
+            case .builtIn:
+                BuiltInPaywallView(reason: reason)
+            }
+        }
+        .task {
+            guard case .loading = content else { return }
+            content = await store.currentOfferingHasPaywall() ? .remote : .builtIn
+        }
+        .onChange(of: store.isPremium) { _, premium in
+            if premium { dismiss() }
+        }
+    }
+}
+
+/// The paywall built into the app: yearly (with free trial), weekly and lifetime.
+private struct BuiltInPaywallView: View {
+    let reason: PaywallView.Reason
 
     @Environment(PremiumStore.self) private var store
     @Environment(\.dismiss) private var dismiss
@@ -74,9 +121,6 @@ struct PaywallView: View {
                 Text(message ?? "")
             }
             .task { await store.loadProducts() }
-            .onChange(of: store.isPremium) { _, premium in
-                if premium { dismiss() }
-            }
         }
     }
 

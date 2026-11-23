@@ -9,7 +9,7 @@
 | Keywords | 100 | 98 |
 | Promotional text | 170 | 155 |
 | Description | 4,000 | 3,080 |
-| What's New | 4,000 | 350 |
+| What's New | 4,000 | 249 |
 
 **Search phrases targeted:** Targets "cofre de fotos", "esconder fotos" (name and subtitle combine), "ocultar fotos", "galeria secreta", "álbum privado", "fotos ocultas", "bloquear fotos" and "cadeado de fotos".
 
@@ -88,11 +88,10 @@ IMPORTANTE
 Velcrypt. Well Encrypted. Truly Private.
 ```
 
-## What's New (350/4,000)
+## What's New (249/4,000)
 
 ```
-• Face ID, se você quiser: ative-o em qualquer cofre nos Ajustes. Ele vem desativado, e só os cofres que você escolher aparecem na lista do Face ID.
-• Uma introdução mais clara em três passos, e “Como o Velcrypt Funciona” sempre a um toque.
-• Experimente primeiro: um cofre vazio não consome mais o seu cofre grátis.
+• Uma nova tela do Velcrypt Premium.
+• As compras agora são processadas pelo RevenueCat, nosso fornecedor de compras no app. Ele recebe apenas informações de compra; seus cofres continuam nunca saindo do seu iPhone.
 • Pequenas correções e melhorias.
 ```
